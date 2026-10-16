@@ -191,9 +191,6 @@ global-in/
   - 환경 변수 관리
 
 
----
-
-
 
 ## data/
 
@@ -208,9 +205,6 @@ global-in/
 
 
 
----
-
-
 
 ## docs/
 
@@ -220,10 +214,6 @@ global-in/
   - 시스템 구조 및 아키텍처 문서
 - docs/planning/
   - 프로젝트 기획, 정책, 데이터 설계 문서
-
-
-
----
 
 
 
@@ -244,10 +234,6 @@ Streamlit 기반 사용자 화면을 구현합니다.
 
 
 
----
-
-
-
 ## scripts/
 
 서비스 실행 코드와 분리된 작업용 스크립트를 관리합니다.
@@ -258,10 +244,6 @@ Streamlit 기반 사용자 화면을 구현합니다.
   - PostgreSQL 및 pgvector 데이터 적재
 - scripts/evaluate/
   - RAG, Rule Evaluator, 응답 품질 평가
-
-
-
----
 
 
 
@@ -278,10 +260,6 @@ Streamlit 기반 사용자 화면을 구현합니다.
 
 
 
----
-
-
-
 ## .env.example
 
 필요한 환경 변수의 형식을 공유하는 파일입니다.
@@ -292,10 +270,6 @@ ANTHROPIC_API_KEY=
 DATABASE_URL=
 ```
 실제 API Key는 입력하지 않습니다.
-
-
-
----
 
 
 
@@ -313,10 +287,6 @@ __pycache__/
 
 
 
----
-
-
-
 ## requirements.txt
 
 프로젝트에서 사용하는 Python 패키지와 버전을 관리합니다.
@@ -325,10 +295,6 @@ __pycache__/
 ```
 pip install -r requirements.txt
 ```
-
-
-
----
 
 
 
@@ -342,10 +308,6 @@ GET /
 GET /health
 ```
 향후 Agent API와 서비스 API를 이 계층에서 연결합니다. 
-
-
-
----
 
 
 
