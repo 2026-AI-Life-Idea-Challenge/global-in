@@ -142,7 +142,7 @@ app/models/README.md
 
 
 
-## retrieval
+## retrieval/
 
 공식 문서 검색 및 RAG 로직을 구현합니다.
 
