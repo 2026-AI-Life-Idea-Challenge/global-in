@@ -1,409 +1,486 @@
-# app/services
+# data
 
-Global-In에서 외부 시스템과 연결되는 공통 Service Layer를 구현하는 디렉터리입니다.
+Global-In에서 사용하는 원본 데이터, 정제 데이터, Seed Data를 관리하는 디렉터리입니다.
 
-Agent, Retrieval, API가 PostgreSQL, pgvector, LLM API, Embedding API 같은 외부 시스템에
-직접 반복 접근하지 않도록 공통 기능을 `app/services/`에서 관리합니다.
+Global-In은 단순한 비자 정보뿐 아니라,
+실제 해외 진출 Program, 국내외 SupportProgram, 자격조건, 신청정보, 필요서류, 공식 Evidence를 함께 다룹니다.
 
-Service Layer는 비즈니스 판단을 수행하는 Agent나 Rule Evaluator와 달리,
-외부 리소스 접근과 공통 연결 로직을 담당합니다.
+데이터는 가능한 한 공식 기관의 원문을 기준으로 수집하고,
+구조화 가능한 정보와 RAG용 비정형 문서를 구분하여 관리합니다.
 
 ---
 
 ## 주요 역할
 
-`app/services/`는 다음과 같은 기능을 담당합니다.
+`data/`는 다음 종류의 데이터를 관리합니다.
 
 ```text
-Database 연결
-PostgreSQL Query
-pgvector 접근
-LLM 호출
-Embedding 호출
-Program 조회
-SupportProgram 조회
-Evidence 조회
-Session / Conversation 저장
-공통 외부 Service 예외 처리
+원본 수집 데이터
+
+정제된 구조화 데이터
+
+Database Seed Data
+
+Program 정보
+
+SupportProgram 정보
+
+Eligibility Requirement
+
+Application Information
+
+Required Document
+
+Evidence Metadata
+
+공식 문서 원문 / Chunk 생성 전 데이터
 ```
 
 ---
 
-## 전체 구조에서의 위치
+## 기본 디렉터리 구조
 
 ```text
-Frontend
-   ↓
-FastAPI
-   ↓
-LangGraph / Agent
-   ↓
-Service Layer
-   ↓
-External Resources
-```
-
-예:
-
-```text
-자격 검토 에이전트
-   ↓
-Program Service
-   ↓
-PostgreSQL
-```
-
-```text
-공식 정보 안내 에이전트
-   ↓
-Retrieval
-   ↓
-Embedding Service
-   ↓
-Embedding API
-```
-
-```text
-Agent
-   ↓
-LLM Service
-   ↓
-OpenAI / Claude
-```
-
----
-
-## Service Layer를 사용하는 이유
-
-외부 시스템 연결 코드를 각 Agent에 직접 작성하면
-다음 문제가 발생할 수 있습니다.
-
-```text
-DB 연결 코드 중복
-LLM 호출 코드 중복
-Timeout 처리 중복
-Retry 정책 불일치
-환경변수 사용 방식 불일치
-Exception 처리 방식 불일치
-테스트 어려움
-```
-
-따라서 외부 연결 로직을 Service Layer로 분리합니다.
-
----
-
-## 기본 원칙
-
-```text
-Agent는 비즈니스 흐름 담당
-
-Rules는 결정적 자격 판정 담당
-
-Retrieval은 검색 로직 담당
-
-Services는 외부 시스템 연결 담당
-```
-
-즉:
-
-```text
-Agent
-→ 무엇을 해야 하는지 결정
-
-Service
-→ 필요한 외부 데이터와 기능 제공
-```
-
-으로 역할을 분리합니다.
-
----
-
-## 예상 파일 구조
-
-현재 구조를 기준으로 다음과 같은 구성을 고려합니다.
-
-```text
-app/services/
-├─ __init__.py
-├─ database.py
-├─ program_service.py
-├─ support_service.py
-├─ evidence_service.py
-├─ llm.py
-├─ embedding.py
-├─ session_service.py
+data/
+├─ raw/
+├─ processed/
+├─ seed/
 └─ README.md
 ```
 
-실제 구현 과정에서 파일명과 구조는 변경될 수 있습니다.
-
 ---
 
-# `database.py`
+# `raw/`
 
-PostgreSQL과 연결되는 공통 Database Service입니다.
+공식 기관에서 최초 수집한 원본 데이터를 저장합니다.
 
-주요 역할:
-
-```text
-Database Connection
-Connection Pool
-Transaction 관리
-공통 Query 실행
-예외 처리
-```
-
----
-
-## Database 연결
-
-환경변수:
-
-```text
-DATABASE_URL
-```
-
-을 사용합니다.
+가능한 한 원문 상태를 유지합니다.
 
 예:
 
 ```text
-postgresql://user:password@host:port/database
+HTML
+
+JSON
+
+CSV
+
+PDF
+
+TXT
+
+공식 페이지에서 추출한 Text
 ```
 
-실제 연결 정보는 `.env`에 저장하고
-Git에 Commit하지 않습니다.
+원본을 바로 수정하지 않고,
+정제 작업은 `processed/`에서 수행합니다.
 
 ---
 
-## Database Connection 흐름
+## Raw Data 예시
 
 ```text
-Agent / Module
-   ↓
-Service
-   ↓
-Database Connection
-   ↓
-PostgreSQL
+data/raw/
+├─ japan/
+├─ australia/
+├─ usa/
+├─ germany/
+└─ canada/
 ```
 
-각 Agent가 직접 새로운 DB Connection을 생성하지 않는 구조를 지향합니다.
+국가별로 다시 다음과 같이 구분할 수 있습니다.
+
+```text
+germany/
+├─ programs/
+├─ support_programs/
+├─ laws/
+├─ guides/
+└─ faq/
+```
+
+실제 구조는 수집되는 데이터 형태를 확인한 뒤 조정합니다.
 
 ---
 
-## PostgreSQL 역할
+# `processed/`
 
-구조화된 정보를 저장합니다.
+수집한 원본 데이터를
+Global-In에서 사용할 수 있도록 정제한 데이터를 저장합니다.
 
 예:
 
 ```text
-Program
-SupportProgram
-EligibilityRequirement
-ApplicationInfo
-ApplicationAvailability
-RequiredDocument
-SupportDetail
+정규화된 Program Data
+
+정규화된 SupportProgram Data
+
+Eligibility Requirement
+
+Application Information
+
+Required Document
+
 Evidence Metadata
+
+공식 문서 정제 Text
 ```
 
 ---
 
-## pgvector 역할
+## Processed Data 역할
 
-PostgreSQL의 `pgvector` 확장을 이용하여
-공식 문서 Embedding을 저장하고 검색합니다.
+```text
+Raw Data
+   ↓
+Parsing
+   ↓
+Cleaning
+   ↓
+Normalization
+   ↓
+Validation
+   ↓
+Processed Data
+```
+
+이후 Processed Data를 기반으로
+PostgreSQL 또는 pgvector에 적재합니다.
+
+---
+
+# `seed/`
+
+개발 및 초기 Database 구축에 사용할
+Seed Data를 저장합니다.
 
 예:
 
 ```text
-Official Document
-Document Chunk
-Embedding
-Metadata
-```
+Program Seed
 
-Vector Search 자체의 검색 전략은
-`app/retrieval/`에서 담당합니다.
+SupportProgram Seed
 
-Service Layer는 DB Query 실행을 지원합니다.
+Eligibility Requirement Seed
 
----
+ApplicationInfo Seed
 
-# `program_service.py`
+RequiredDocument Seed
 
-비자·체류·교환 등 실제 해외 진출 Program 관련
-구조화 데이터를 조회하는 Service입니다.
-
----
-
-## 주요 역할
-
-```text
-Program 조회
-
-국가별 Program 조회
-
-목적별 Program 조회
-
-Program 상세 정보 조회
-
-Eligibility Requirement 조회
-
-ApplicationInfo 조회
-
-RequiredDocument 조회
-
-관련 SupportProgram 조회
+Evidence Seed
 ```
 
 ---
 
-## 조회 예시
+## Seed Data의 목적
+
+다음과 같은 상황에서 사용합니다.
 
 ```text
-destination_country = Germany
-purpose = Employment
+초기 Database 생성
+
+개발 환경 재구성
+
+테스트 환경 구성
+
+Demo 환경 구성
 ```
 
-입력:
+Seed Data는 가능한 한
+검증된 공식 정보를 기반으로 작성합니다.
+
+---
+
+# 데이터 범위
+
+Global-In은 크게 다음 세 영역의 데이터를 수집합니다.
+
+---
+
+## 1. 한국에서 제공하는 해외 진출 지원 정보
+
+예:
 
 ```text
-Germany
-Employment
+해외 취업 지원
+
+해외 연수
+
+준비 교육
+
+지원금
+
+해외 진출 Guide
 ```
 
-출력:
+주요 출처:
 
 ```text
-관련 실제 Program 목록
+한국 정부
+
+공공기관
+
+지원사업 운영기관
 ```
 
 ---
 
-## Program Resolver와의 관계
+## 2. 목적지 국가의 외국인 진출·정착 지원 정보
 
-Program Resolver는:
+예:
 
 ```text
-사용자의 국가와 목적에 맞는 실제 Program 후보 결정
+외국 인재 유치
+
+외국인 취업 지원
+
+유학 지원
+
+장학 지원
+
+정착 지원
 ```
 
-을 담당합니다.
-
-Program Service는:
+주요 출처:
 
 ```text
-Program Resolver가 사용할 구조화된 Program 데이터 제공
+목적지 국가 정부
+
+공공기관
+
+교육기관
+
+지원제도 운영기관
 ```
 
-을 담당합니다.
+---
 
-구조:
+## 3. 목적지 국가의 비자·법률 정보
+
+예:
 
 ```text
-진출 경로 탐색·추천 에이전트
+비자
+
+입국
+
+체류
+
+근로
+
+학업
+
+자격 요건
+
+신청 절차
+
+필요 서류
+
+제한
+
+의무
+
+예외 규정
+```
+
+주요 출처:
+
+```text
+공식 법령
+
+이민기관
+
+대사관 / 영사관
+
+노동 관련 기관
+
+교육 관련 기관
+
+관할 행정기관
+```
+
+---
+
+# 대상 국가
+
+초기 MVP에서는 다음 5개 국가를 대상으로 합니다.
+
+```text
+일본
+
+호주
+
+미국
+
+독일
+
+캐나다
+```
+
+---
+
+# 상위 진출 경로
+
+```text
+워킹홀리데이 / 교환
+
+유학
+
+취업
+```
+
+이 3개는 사용자에게 보여주는 상위 진출 경로입니다.
+
+5개 국가 × 3개 경로가
+15개의 개별 비자를 의미하지 않습니다.
+
+실제 데이터에서는 각 상위 경로와
+실제 비자·체류·교환 Program을 연결합니다.
+
+---
+
+## 예시
+
+```text
+USA
++
+워킹홀리데이 / 교환
    ↓
-Program Resolver
-   ↓
-Program Service
-   ↓
-PostgreSQL
+J-1 등 관련 Exchange Program
+```
+
+국가별 제도 구조가 다르므로
+상위 경로와 실제 Program을 분리하여 저장합니다.
+
+---
+
+# Program
+
+Program은 사용자가 실제 해외 진출을 위해 검토하는
+비자·체류·교환 등의 경로입니다.
+
+예:
+
+```text
+Working Holiday
+
+Student Visa
+
+Employment Visa
+
+Exchange Program
+
+Residence Status
 ```
 
 ---
 
-# `support_service.py`
+## Program 예상 정보
 
-한국 또는 목적지 국가의 SupportProgram 데이터를 조회합니다.
+```text
+program_id
 
-SupportProgram 예:
+destination_country
+
+purpose
+
+official_program_name
+
+display_name
+
+description
+
+program_type
+
+eligibility
+
+application
+
+documents
+
+stay
+
+preparation
+
+evidence
+```
+
+---
+
+# SupportProgram
+
+SupportProgram은 해외 진출 과정에서
+사용할 수 있는 국내외 지원제도입니다.
+
+예:
 
 ```text
 해외취업 지원
+
 해외 연수
+
 준비 교육
-지원금
+
 장학금
+
+지원금
+
 외국인 취업 지원
+
 정착 지원
 ```
 
 ---
 
-## 주요 역할
+## SupportProgram 예상 정보
 
 ```text
-SupportProgram 조회
+support_program_id
 
-issuer_country 기준 조회
+official_name
 
-destination_country 기준 조회
+display_name
 
-목적별 지원제도 조회
+description
 
-한국인 적용 가능 대상 조회
+issuer_country
 
-관련 Program 조회
+destination_country
 
-Eligibility Requirement 조회
+official_agency
 
-ApplicationInfo 조회
+target_nationality
 
-RequiredDocument 조회
+target_region
 
-Support Detail 조회
+purpose
+
+support_type
+
+eligibility
+
+application
+
+support_detail
+
+related_programs
+
+evidence
 ```
 
 ---
 
-## SupportProgram 검색 예
+# Program과 SupportProgram 관계
 
-사용자:
-
-```text
-독일 취업 준비할 때 받을 수 있는 지원 알려줘.
-```
-
-조건 예:
+Program과 SupportProgram은 같은 개념이 아닙니다.
 
 ```text
-destination_country = Germany
-purpose = Employment
-target_nationality = Korean
+Program
+→ 실제 해외 진출 경로
+
+SupportProgram
+→ 해당 진출을 지원하는 제도
 ```
-
-Service는 해당 조건과 관련된
-SupportProgram 후보를 반환합니다.
-
----
-
-## 한국 측 지원제도 예
-
-```text
-issuer_country = Korea
-destination_country = Germany
-purpose = Employment
-```
-
----
-
-## 목적지 국가 지원제도 예
-
-```text
-issuer_country = Germany
-destination_country = Germany
-target_nationality = Korean
-```
-
-한국 국적 사용자에게 적용 가능한지
-별도로 확인해야 합니다.
-
----
-
-## Program과 SupportProgram 관계
 
 하나의 SupportProgram은
 여러 Program과 연결될 수 있습니다.
@@ -417,15 +494,7 @@ SupportProgram A
    └─ Japan Employment Program
 ```
 
-DB에서는 연결 Entity를 사용할 수 있습니다.
-
-예:
-
-```text
-ProgramSupportLink
-```
-
-구조:
+DB에서는 연결 Table을 둘 수 있습니다.
 
 ```text
 Program
@@ -439,35 +508,374 @@ SupportProgram
 
 ---
 
-# `evidence_service.py`
+# 국가 관련 Field
 
-공식 Evidence Metadata와 문서 정보를 조회하는 Service입니다.
+Global-In에서는 국가 정보를 단순히 `country` 하나로 저장하지 않고,
+역할에 따라 구분합니다.
 
 ---
 
-## 주요 역할
+## `issuer_country`
+
+제도 또는 문서를 발행한 국가입니다.
+
+예:
 
 ```text
-Evidence 조회
+한국 정부 해외취업 지원제도
 
-Program 관련 Evidence 조회
-
-SupportProgram 관련 Evidence 조회
-
-공식 기관 기준 조회
-
-URL 기준 조회
-
-날짜 Metadata 조회
-
-Document / Chunk 조회
+issuer_country = Korea
 ```
 
 ---
 
-## Evidence 기본 정보
+## `destination_country`
+
+사용자가 진출하려는 목적지 국가입니다.
 
 예:
+
+```text
+독일 취업 지원
+
+destination_country = Germany
+```
+
+---
+
+## `target_nationality`
+
+해당 제도 또는 Program이 적용되는 대상 국적입니다.
+
+예:
+
+```text
+target_nationality = Korean
+```
+
+---
+
+## `residence_requirement`
+
+신청자의 현재 거주 조건입니다.
+
+예:
+
+```text
+한국 거주자만 신청 가능
+
+특정 주 / 지역 거주 필요
+```
+
+이 정보는 `issuer_country`와 별도로 관리합니다.
+
+---
+
+# Eligibility Data
+
+Program과 SupportProgram 각각의
+공식 자격조건을 구조화합니다.
+
+예:
+
+```text
+age
+
+nationality
+
+current_residence
+
+education
+
+major
+
+career_years
+
+career_field
+
+language
+
+financial_capacity
+
+student_status
+
+employment_status
+
+previous_participation
+
+previous_benefit_history
+```
+
+---
+
+## Eligibility Requirement 예시
+
+```json
+{
+  "field": "career_years",
+  "operator": ">=",
+  "value": 2,
+  "required": true,
+  "judgeability": "rule_based"
+}
+```
+
+---
+
+## 자동 판정 가능 여부
+
+모든 공식 조건을
+Rule로 강제 변환하지 않습니다.
+
+예:
+
+```text
+rule_based
+
+manual_check
+
+conditional
+```
+
+---
+
+### `rule_based`
+
+Python Rule Evaluator로 비교 가능한 조건
+
+예:
+
+```text
+age <= 30
+
+career_years >= 2
+```
+
+---
+
+### `manual_check`
+
+기관 판단이나 별도 확인이 필요한 조건
+
+예:
+
+```text
+관련 경력으로 인정되는지
+
+예외 대상인지
+
+특정 자격을 동등하게 인정하는지
+```
+
+---
+
+### `conditional`
+
+다른 조건에 따라 적용 여부가 달라지는 경우입니다.
+
+---
+
+# Eligibility와 Application Availability
+
+다음 두 정보는 별도로 저장합니다.
+
+```text
+Eligibility
+→ 사용자가 조건을 충족하는가
+```
+
+```text
+Application Availability
+→ 현재 실제 신청 가능한가
+```
+
+예:
+
+```text
+Eligibility = 조건 충족
+
+Application Availability = CLOSED
+```
+
+가능합니다.
+
+---
+
+## 신청 가능 상태 예시
+
+```text
+OPEN
+
+CLOSED
+
+UPCOMING
+
+UNKNOWN
+```
+
+현재 상태를 검증하지 못한 경우:
+
+```text
+UNKNOWN
+```
+
+으로 유지합니다.
+
+---
+
+# 지원제도 검증 항목
+
+SupportProgram은 최소 다음 항목을 별도로 확인합니다.
+
+```text
+제도가 실제 존재하는가
+
+한국인에게 적용 가능한가
+
+현재 적용 가능한 제도인가
+
+현재 신청 가능한가
+```
+
+이 항목들을 하나의 Boolean으로 합치지 않습니다.
+
+---
+
+# Application Information
+
+Program 및 SupportProgram의 신청 정보를 관리합니다.
+
+예:
+
+```text
+application_agency
+
+application_method
+
+application_url
+
+application_period
+
+application_status
+
+fee
+```
+
+---
+
+## 신청 기간
+
+신청 기간이 공식적으로 확인된 경우에만 저장합니다.
+
+예:
+
+```text
+application_start
+
+application_end
+```
+
+확인할 수 없다면:
+
+```text
+null
+```
+
+또는:
+
+```text
+UNKNOWN
+```
+
+으로 유지합니다.
+
+임의로 날짜를 생성하지 않습니다.
+
+---
+
+# Required Document
+
+Program 및 SupportProgram의 필요 서류를 관리합니다.
+
+예:
+
+```text
+document_id
+
+target_type
+
+target_id
+
+document_name
+
+description
+
+required
+
+conditional
+
+stage
+
+evidence_id
+```
+
+---
+
+## 서류 구분
+
+```text
+Program 필수 서류
+
+Program 조건부 서류
+
+SupportProgram 필수 서류
+
+SupportProgram 조건부 서류
+
+공통 준비 서류
+```
+
+---
+
+# 준비 단계
+
+Program 및 SupportProgram의 준비 절차는
+다음과 같이 단계별로 관리할 수 있습니다.
+
+```text
+preparation
+
+application
+
+post_approval
+
+pre_departure
+
+post_entry
+```
+
+사용자에게는 다음과 같이 표현할 수 있습니다.
+
+```text
+준비
+
+신청
+
+승인 후
+
+출국 준비
+
+입국 후
+```
+
+---
+
+# Evidence
+
+모든 핵심 정보는 가능한 한
+공식 Evidence와 연결합니다.
+
+Evidence에는 최소한 다음 정보를 저장합니다.
 
 ```text
 evidence_id
@@ -475,16 +883,27 @@ evidence_id
 official_agency
 
 issuer_country
+
 destination_country
 
 source_title
+
 source_url
+
 source_type
 
+information_topic
+
+program_id
+
+support_program_id
+
 original_published_at
+
 original_updated_at
 
 effective_from
+
 effective_until
 
 verified_at
@@ -492,1112 +911,1029 @@ verified_at
 
 ---
 
-## Evidence Service와 Retrieval의 차이
+# 날짜 Field 구분
 
-Evidence Service는:
-
-```text
-DB에 저장된 Evidence 정보 조회
-```
-
-를 담당합니다.
-
-Retrieval은:
-
-```text
-사용자 질문과 가장 관련 있는 Evidence 후보 검색
-```
-
-을 담당합니다.
-
-즉:
-
-```text
-Evidence Service
-→ 데이터 접근
-
-Retrieval
-→ 검색 전략
-```
-
-으로 구분합니다.
+다음 날짜는 서로 다른 의미를 가집니다.
 
 ---
 
-# `llm.py`
+## `original_published_at`
 
-Global-In에서 사용하는 LLM 호출을 공통화합니다.
-
-현재 사용할 수 있는 모델 Provider:
-
-```text
-OpenAI
-Claude
-```
+공식 원문의 최초 게시일
 
 ---
 
-## 주요 역할
+## `original_updated_at`
 
-```text
-LLM Client 생성
-
-Prompt 전달
-
-Response 반환
-
-Model 설정
-
-Temperature 설정
-
-Timeout
-
-Retry
-
-Provider 선택
-
-Exception 처리
-```
-
-Agent마다 직접 OpenAI Client를 생성하지 않는 구조를 목표로 합니다.
+공식 원문의 마지막 수정일
 
 ---
 
-## LLM Service 사용 예
+## `effective_from`
 
-```text
-사용자 이해 에이전트
-   ↓
-LLM Service
-   ↓
-Intent / Profile Extraction
-```
-
-```text
-진출 경로 탐색·추천 에이전트
-   ↓
-LLM Service
-   ↓
-추천 이유 생성
-```
-
-```text
-공식 정보 안내 에이전트
-   ↓
-LLM Service
-   ↓
-Evidence 기반 한국어 설명
-```
-
-```text
-준비 계획 에이전트
-   ↓
-LLM Service
-   ↓
-Roadmap 설명
-```
+정책·제도·규정이 실제 적용되기 시작하는 시점
 
 ---
 
-## LLM이 하지 않는 역할
+## `effective_until`
 
-다음 기능을 LLM Service가 직접 담당하지 않습니다.
-
-```text
-공식 Program 조회
-
-SupportProgram 조회
-
-Eligibility Rule 판정
-
-Vector Search
-
-Evidence Validity 판정
-
-Database Transaction
-```
-
-LLM Service는 모델 호출 Wrapper 역할에 집중합니다.
+정책·제도·규정의 적용 종료 시점
 
 ---
 
-## OpenAI 환경변수
+## `verified_at`
 
-```text
-OPENAI_API_KEY
-```
+Global-In이 해당 정보를 실제로 확인한 날짜
 
 ---
 
-## Claude 환경변수
+## 중요한 원칙
 
 ```text
-ANTHROPIC_API_KEY
+verified_at이 최근
+≠
+정책 자체가 최신 / 현재 유효함
 ```
+
+따라서 날짜를 각각 분리합니다.
+
+공식 원문에 날짜가 없다면
+임의로 추정하지 않습니다.
 
 ---
 
-## Provider 추상화
+# Source Type
 
-향후 Provider 변경에 대응하기 위해
-가능하면 Agent 코드가 특정 SDK에 강하게 의존하지 않도록 합니다.
+공식 자료의 성격을 구분합니다.
 
 예:
 
 ```text
-Agent
-   ↓
-LLM Service
-   ↓
-Provider Adapter
-   ├─ OpenAI
-   └─ Claude
+law
+
+administrative_guidance
+
+program_notice
+
+official_guide
+
+faq
+
+embassy_notice
+
+education_information
 ```
 
-초기 MVP에서 지나치게 복잡한 추상화를 만들 필요는 없지만,
-Agent 내부에 Provider 전용 코드를 반복 작성하지 않습니다.
+법령과 일반 FAQ를 동일한 수준의 자료처럼 취급하지 않습니다.
 
 ---
 
-# `embedding.py`
+# Information Topic
 
-문서와 사용자 Query의 Embedding 생성을 담당합니다.
+문서가 어떤 정보를 담고 있는지도 구분합니다.
+
+예:
+
+```text
+visa
+
+entry
+
+residence
+
+work
+
+employment
+
+study
+
+education
+
+working_holiday
+
+exchange
+
+support
+
+training
+
+scholarship
+
+settlement
+
+eligibility
+
+application
+
+document
+
+fee
+
+exception
+```
+
+실제 값은 데이터 수집 결과를 보면서 정규화합니다.
 
 ---
 
-## 주요 역할
+# Structured Data와 Unstructured Data
+
+Global-In은 두 종류의 데이터를 분리하여 관리합니다.
+
+---
+
+## Structured Data
+
+PostgreSQL에 저장합니다.
+
+예:
 
 ```text
-Query Embedding 생성
+Program
 
-Document Embedding 생성
+SupportProgram
 
-Embedding Model 설정
+EligibilityRequirement
 
-Batch Embedding
+ApplicationInfo
 
-Timeout
+ApplicationAvailability
 
-Retry
+RequiredDocument
 
-Exception 처리
+SupportDetail
+
+Evidence Metadata
 ```
 
 ---
 
-## Retrieval과의 관계
+## Unstructured Data
+
+긴 공식 문서나 FAQ 등은
+pgvector 기반 RAG 검색에 사용합니다.
+
+예:
 
 ```text
-Retrieval
-   ↓
-Embedding Service
-   ↓
-Embedding Model
+법령 본문
+
+행정 안내
+
+공식 Guide
+
+FAQ
+
+예외 규정
+
+지원사업 상세 설명
 ```
 
-검색 흐름:
+---
+
+# 공식 문서 처리 흐름
 
 ```text
-User Query
+Official Source
    ↓
-Embedding Service
+Raw Data
    ↓
-Query Vector
+Text Extraction
    ↓
-pgvector Search
+Cleaning
+   ↓
+Metadata 추가
+   ↓
+Processed Data
+   ↓
+Chunking
+   ↓
+Embedding
+   ↓
+PostgreSQL + pgvector
 ```
 
-문서 적재:
+---
+
+# 데이터 수집 원칙
+
+가능하면 공식 출처를 우선합니다.
+
+우선순위 예:
 
 ```text
-Document Chunk
+관할 정부 / 법령
+
+공식 이민기관
+
+공식 운영기관
+
+공식 대사관 / 영사관
+
+공식 교육기관
+
+공식 FAQ / Guide
+```
+
+비공식 Blog나 커뮤니티 글을
+핵심 Eligibility 근거로 사용하지 않습니다.
+
+---
+
+# 비자 정보 출처 원칙
+
+비자·체류 관련 조건은
+가능하면 해당 국가의 관할 기관 자료를 우선합니다.
+
+예:
+
+```text
+이민기관
+
+외교기관
+
+공식 법령
+
+대사관
+```
+
+---
+
+# SupportProgram 출처 원칙
+
+지원제도의 자격조건과 신청정보는
+해당 제도를 실제 운영하는 기관 자료를 우선합니다.
+
+예:
+
+```text
+지원사업 운영기관
+
+정부 부처
+
+공공기관
+
+교육기관
+```
+
+---
+
+# 공식 정보 충돌 처리
+
+서로 다른 공식 자료의 내용이 충돌할 수 있습니다.
+
+예:
+
+```text
+Source A
+age <= 30
+
+Source B
+age <= 35
+```
+
+이 경우 다음을 비교합니다.
+
+```text
+Program
+
+SupportProgram
+
+적용 대상
+
+관할 기관
+
+Source Type
+
+적용 시점
+
+원문 수정일
+```
+
+해결되지 않는다면:
+
+```text
+추가 확인 필요
+```
+
+로 유지합니다.
+
+---
+
+# 한국인 적용 여부
+
+목적지 국가에서 제공하는 외국인 지원제도라고 해서
+자동으로 한국인에게 적용되는 것은 아닙니다.
+
+반드시 다음을 구분합니다.
+
+```text
+외국인 대상
+
+한국인 포함 여부
+
+특정 국적 제외 여부
+
+거주 조건
+
+학생 / 근로자 등 대상 상태
+```
+
+불명확하다면:
+
+```text
+추가 확인 필요
+```
+
+로 유지합니다.
+
+---
+
+# 데이터 정규화
+
+국가마다 공식 용어와 데이터 형식이 다를 수 있습니다.
+
+예:
+
+```text
+Germany
+→ residence permit
+
+USA
+→ visa category
+
+Japan
+→ status of residence
+```
+
+원문 명칭을 유지하면서,
+서비스 내부에서는 공통 개념과 연결합니다.
+
+예:
+
+```text
+official_name
+→ 원문 명칭
+
+display_name
+→ 사용자에게 보여줄 한국어 명칭
+
+program_type
+→ 내부 공통 분류
+```
+
+---
+
+# 원문 보존
+
+중요한 Program명,
+법률 용어,
+지원제도명은 원문을 보존합니다.
+
+예:
+
+```text
+display_name:
+독일 EU 블루카드
+
+official_name:
+EU Blue Card
+```
+
+번역명만 저장하지 않습니다.
+
+---
+
+# 데이터 ID
+
+각 Entity는 안정적인 내부 ID를 사용합니다.
+
+예:
+
+```text
+program_id
+
+support_program_id
+
+requirement_id
+
+document_id
+
+evidence_id
+```
+
+공식 명칭 자체를 Primary Key처럼 사용하는 것을 피합니다.
+
+명칭은 변경될 수 있기 때문입니다.
+
+---
+
+# 데이터 수집 Script와 관계
+
+실제 데이터 수집 Script는:
+
+```text
+scripts/crawl/
+```
+
+에서 관리합니다.
+
+수집 흐름:
+
+```text
+scripts/crawl/
    ↓
-Embedding Service
+data/raw/
+```
+
+---
+
+# 데이터 처리 Script와 관계
+
+정제 및 변환 Script는
+필요에 따라 `scripts/`에서 관리합니다.
+
+예:
+
+```text
+Raw Data
    ↓
-Embedding Vector
+Processing Script
+   ↓
+Processed Data
+```
+
+---
+
+# Database 적재 Script와 관계
+
+PostgreSQL 또는 pgvector 적재용 Script는:
+
+```text
+scripts/ingest/
+```
+
+에서 관리합니다.
+
+흐름:
+
+```text
+data/processed/
+   ↓
+scripts/ingest/
    ↓
 PostgreSQL / pgvector
 ```
 
 ---
 
-## Embedding Model 선택 기준
+# Seed Data 적재
+
+초기 개발 환경에서는:
 
 ```text
-한국어 성능
-
-영어 성능
-
-다국어 성능
-
-비용
-
-Latency
-
-Embedding Dimension
-```
-
-실제 모델은 Retrieval 평가 후 결정합니다.
-
----
-
-# `session_service.py`
-
-여러 Turn에 걸친 사용자 대화를 관리하기 위한 Service입니다.
-
-초기 MVP에서 실제 구현 여부와 저장 방식은
-Agent Workflow 구현 과정에서 결정합니다.
-
----
-
-## 필요한 이유
-
-Global-In은 사용자에게 추가 질문을 할 수 있습니다.
-
-예:
-
-```text
-User:
-독일 취업하고 싶어요.
-
-AI:
-경력은 몇 년인가요?
-
-User:
-2년입니다.
-```
-
-두 번째 User Message를 처리할 때
-이전 UserProfile과 AgentState를 확인할 필요가 있습니다.
-
----
-
-## 예상 역할
-
-```text
-Session 조회
-
-Conversation 조회
-
-UserProfile 저장
-
-UserProfile 갱신
-
-Selected Program 저장
-
-Agent State 일부 저장
-
-Conversation History 저장
-```
-
----
-
-## Session 관련 예상 정보
-
-```text
-session_id
-
-user_profile
-
-intent
-
-selected_program
-
-selected_support_programs
-
-conversation_history
-
-updated_at
-```
-
-민감하거나 불필요한 정보를
-무조건 저장하지 않도록 합니다.
-
----
-
-# Agent와 Service 관계
-
-5개 Agent 기준 주요 Service 사용 예:
-
----
-
-## 사용자 이해 에이전트
-
-```text
-LLM Service
-Session Service
-```
-
-사용 목적:
-
-```text
-Intent Extraction
-Profile Extraction
-기존 UserProfile 조회 / 갱신
-```
-
----
-
-## 진출 경로 탐색·추천 에이전트
-
-```text
-Program Service
-SupportProgram Service
-LLM Service
-```
-
-사용 목적:
-
-```text
-Program 후보 조회
-SupportProgram 후보 조회
-후보 비교
-추천 이유 생성
-```
-
----
-
-## 자격 검토 에이전트
-
-```text
-Program Service
-SupportProgram Service
-Evidence Service
-```
-
-그리고:
-
-```text
-Rule Evaluator
-```
-
-를 사용합니다.
-
-Rule Evaluator는 Service가 아니라
-`app/rules/`의 결정적 Module입니다.
-
----
-
-## 공식 정보 안내 에이전트
-
-```text
-Evidence Service
-Embedding Service
-LLM Service
-```
-
-그리고:
-
-```text
-Retrieval
-```
-
-을 사용합니다.
-
----
-
-## 준비 계획 에이전트
-
-```text
-Program Service
-SupportProgram Service
-Evidence Service
-LLM Service
-```
-
-를 활용하여:
-
-```text
-필요 서류
-신청 절차
-공식 일정
-Checklist
-Roadmap
-```
-
-을 구성합니다.
-
----
-
-# Services와 Models의 관계
-
-Service가 반환하는 데이터는
-가능한 한 `app/models/`의 공통 Model을 사용합니다.
-
-예:
-
-```text
-Program Service
-→ Program
-
-SupportProgram Service
-→ SupportProgram
-
-Evidence Service
-→ Evidence
-
-Session Service
-→ UserProfile / AgentState
-```
-
-Raw Dictionary를 프로젝트 전체에
-무분별하게 전달하지 않는 것을 원칙으로 합니다.
-
----
-
-# Services와 API의 관계
-
-FastAPI도 필요한 경우 Service Layer를 사용할 수 있습니다.
-
-예:
-
-```text
-Session 조회
-Conversation 저장
-```
-
-구조:
-
-```text
-API
+data/seed/
    ↓
-Session Service
-   ↓
-Database
-```
-
-하지만 비즈니스 흐름을 API에서 직접 조합하지 않습니다.
-
----
-
-# Database Service와 Repository Pattern
-
-프로젝트 규모가 커질 경우
-Service와 DB Query 책임을 더 분리할 수 있습니다.
-
-예:
-
-```text
-Agent
-   ↓
-Service
-   ↓
-Repository
+scripts/ingest/
    ↓
 PostgreSQL
 ```
 
-예상 구조:
-
-```text
-ProgramService
-   ↓
-ProgramRepository
-```
-
-초기 MVP에서는 불필요한 계층 증가를 피하고,
-DB Query가 복잡해지는 시점에 Repository Layer 도입을 검토합니다.
+형태로 사용할 수 있습니다.
 
 ---
 
-# 환경변수 관리
+# 데이터 파일 형식
 
-현재 주요 환경변수:
-
-```text
-OPENAI_API_KEY
-ANTHROPIC_API_KEY
-DATABASE_URL
-```
-
-`.env.example`:
+구조화 Data는 초기에는
+다음 형식을 사용할 수 있습니다.
 
 ```text
-OPENAI_API_KEY=
-ANTHROPIC_API_KEY=
-DATABASE_URL=
+JSON
+
+JSONL
+
+CSV
 ```
 
-실제 값은 `.env`에서 관리합니다.
+복잡한 중첩 구조가 많은 경우:
 
-`.env`는 `.gitignore`에 포함하여
-Repository에 업로드하지 않습니다.
+```text
+JSON
+```
+
+을 우선 고려합니다.
+
+실제 DB Schema가 확정되면
+Seed Data 형식도 함께 확정합니다.
 
 ---
 
-# Service Configuration
+# JSON 예시
 
-향후 공통 설정값이 증가하면
-별도 Config Module을 둘 수 있습니다.
+Program 예:
 
-예:
+```json
+{
+  "program_id": "example_program",
+  "destination_country": "Germany",
+  "purpose": "employment",
 
-```text
-app/config.py
+  "official_program_name": "Example Program",
+  "display_name": "예시 취업 프로그램",
+
+  "eligibility": [],
+
+  "evidence": []
+}
 ```
-
-관리할 수 있는 설정:
-
-```text
-Database URL
-
-LLM Model Name
-
-Embedding Model
-
-Timeout
-
-Retry Count
-
-Retrieval Top-K
-```
-
-환경변수 해석을 여러 Service 파일에서
-반복하지 않는 것을 권장합니다.
 
 ---
 
-# Timeout
+# SupportProgram 예시
 
-외부 Service 호출에는 Timeout을 설정합니다.
+```json
+{
+  "support_program_id": "example_support",
 
-예:
+  "issuer_country": "Korea",
+  "destination_country": "Germany",
 
-```text
-Database Connection Timeout
+  "target_nationality": [
+    "Korean"
+  ],
 
-LLM Request Timeout
+  "purpose": "employment",
 
-Embedding Request Timeout
+  "official_name": "Example Support Program",
+
+  "eligibility": [],
+
+  "evidence": []
+}
 ```
-
-외부 서비스 장애로 인해
-Agent Workflow가 무한 대기하지 않도록 합니다.
 
 ---
 
-# Retry
+# 저장하지 말아야 할 정보
 
-일시적인 네트워크 오류에 대해서는
-제한된 Retry를 사용할 수 있습니다.
-
-예:
-
-```text
-LLM 5xx
-
-Rate Limit
-
-일시적인 DB 연결 실패
-```
-
-다만 모든 Error를 무조건 재시도하지 않습니다.
-
-예:
-
-```text
-Authentication Error
-
-잘못된 Request
-
-잘못된 SQL
-
-Schema Validation Error
-```
-
-등은 Retry로 해결되지 않습니다.
-
----
-
-# Error Handling
-
-Service Layer에서는
-외부 SDK Exception을 그대로 상위 Layer에 노출하지 않는 것을 권장합니다.
-
-예:
-
-```text
-OpenAI SDK Exception
-   ↓
-LLM Service
-   ↓
-공통 Service Error
-   ↓
-Agent / API
-```
-
-이를 통해 Provider 변경 시
-상위 코드 변경을 줄일 수 있습니다.
-
----
-
-# Logging
-
-Service Layer에서는
-외부 연결 문제를 추적할 수 있도록
-필요한 Logging을 남길 수 있습니다.
-
-예:
-
-```text
-Service Name
-
-Request Type
-
-처리 시간
-
-Error Type
-
-Retry 여부
-```
-
-단 다음 정보는 Log에 직접 남기지 않도록 주의합니다.
+다음 정보는 수집 Data에 포함하지 않습니다.
 
 ```text
 API Key
 
 Database Password
 
-민감한 User Data
+개인 Password
 
-전체 Prompt
+Secret Token
 
-전체 개인정보
+민감한 사용자 개인정보
+```
+
+환경변수와 사용자 Data는
+별도 정책에 따라 관리합니다.
+
+---
+
+# Git 관리
+
+모든 수집 Data를 무조건 Git Repository에 Commit하지 않습니다.
+
+특히 다음을 고려합니다.
+
+```text
+파일 크기
+
+저작권
+
+공개 가능 여부
+
+개인정보 포함 여부
+
+재배포 가능 여부
 ```
 
 ---
 
-# Database Transaction
-
-여러 DB 변경이 하나의 작업으로 묶이는 경우
-Transaction을 사용합니다.
+## Git에 포함하기 좋은 데이터
 
 예:
 
 ```text
-Program 저장
+작은 Seed Data
 
-Eligibility Requirement 저장
+Schema Sample
 
-Evidence 연결
+테스트용 Dummy Data
+
+공개 가능한 공식 Metadata
 ```
-
-중간에 실패하면
-부분적으로 데이터가 남지 않도록 처리할 수 있습니다.
 
 ---
 
-# Connection Pool
-
-FastAPI 환경에서는 Request마다
-새로운 Database Connection을 무제한 생성하는 것을 피합니다.
-
-필요한 경우 Connection Pool을 사용합니다.
+## Git 제외를 고려할 데이터
 
 예:
 
 ```text
-FastAPI
-   ↓
-DB Connection Pool
-   ↓
-PostgreSQL
-```
+대용량 Raw Data
 
-실제 방식은 사용하는 PostgreSQL Driver에 맞춰 결정합니다.
+대량 PDF
 
-현재 설치 환경:
-
-```text
-psycopg
-```
-
----
-
-# Async 여부
-
-Service 함수의 동기 / 비동기 여부는
-실제 API 및 Agent 실행 방식에 맞춰 결정합니다.
-
-예:
-
-```python
-async def call_llm(...):
-    ...
-```
-
-또는:
-
-```python
-def get_program(...):
-    ...
-```
-
-모든 함수를 이유 없이 `async`로 만들 필요는 없습니다.
-
-외부 I/O와 LangGraph 실행 구조를 기준으로 결정합니다.
-
----
-
-# Cache
-
-초기 MVP에서는 Cache를 필수로 두지 않습니다.
-
-향후 다음 데이터는 Cache 후보가 될 수 있습니다.
-
-```text
-변경이 적은 Program 정보
-
-SupportProgram 기본 정보
+대량 HTML
 
 Embedding 결과
 
-공식 문서 Metadata
+Database Dump
+
+민감 정보가 포함된 자료
 ```
 
-단, 정책과 신청 상태처럼 시점에 민감한 정보는
-오래된 Cache가 잘못된 안내로 이어질 수 있으므로
-별도 정책이 필요합니다.
+필요한 경우 `.gitignore`에 추가합니다.
 
 ---
 
-# Program Service 예시 Interface
+# File Naming
 
-예상 형태:
-
-```python
-def get_program(program_id: str):
-    ...
-```
-
-```python
-def find_programs(
-    destination_country: str,
-    purpose: str
-):
-    ...
-```
-
----
-
-# SupportProgram Service 예시 Interface
+파일명은 가능한 한 일관되게 작성합니다.
 
 예:
 
-```python
-def get_support_program(
-    support_program_id: str
-):
-    ...
+```text
+germany_employment_programs.json
+
+korea_germany_support_programs.json
+
+canada_study_programs.json
 ```
 
-```python
-def find_support_programs(
-    destination_country: str,
-    purpose: str,
-    nationality: str | None = None
-):
-    ...
-```
-
-실제 Type은 Pydantic Model과 DB Schema 확정 후 정의합니다.
-
----
-
-# Evidence Service 예시 Interface
-
-```python
-def get_evidence(
-    evidence_id: str
-):
-    ...
-```
-
-```python
-def get_program_evidence(
-    program_id: str
-):
-    ...
-```
-
-```python
-def get_support_program_evidence(
-    support_program_id: str
-):
-    ...
-```
-
----
-
-# LLM Service 예시 Interface
-
-```python
-async def generate(
-    messages,
-    model=None,
-    temperature=0
-):
-    ...
-```
-
-또는 Provider별 기능을 내부에서 분기할 수 있습니다.
-
----
-
-# Embedding Service 예시 Interface
-
-```python
-async def embed_query(
-    text: str
-):
-    ...
-```
-
-```python
-async def embed_documents(
-    texts: list[str]
-):
-    ...
-```
-
----
-
-# Service 테스트
-
-Service Layer는 Agent와 별도로 테스트할 수 있어야 합니다.
-
----
-
-## Database Service Test
+날짜 Snapshot이 필요한 경우:
 
 ```text
-DB 연결 성공
+germany_employment_programs_2026-10-17.json
+```
 
-DB 연결 실패 처리
+형태를 사용할 수 있습니다.
 
-Query 실행
+---
 
-Transaction Rollback
+# 데이터 검증
+
+수집한 Data는 DB에 넣기 전에
+최소한 다음 항목을 확인합니다.
+
+```text
+필수 ID 존재
+
+Program / SupportProgram 구분
+
+국가 정보 정상
+
+공식 기관 존재
+
+원문 URL 존재
+
+Eligibility 구조 정상
+
+Application 정보 정상
+
+Evidence 연결 정상
+
+날짜 형식 정상
 ```
 
 ---
 
-## Program Service Test
+# 중복 데이터
+
+같은 Program이나 SupportProgram이
+여러 Source에서 등장할 수 있습니다.
+
+단순히 각각 새로운 Entity로 저장하지 않고,
+동일 Entity인지 확인한 후 Evidence를 여러 개 연결하는 방식을 고려합니다.
+
+예:
 
 ```text
-program_id 조회
-
-country + purpose 조회
-
-없는 Program 처리
-
-관련 Requirement 반환
+Program A
+   ├─ Evidence 1
+   ├─ Evidence 2
+   └─ Evidence 3
 ```
 
 ---
 
-## SupportProgram Service Test
+# 정보 갱신
+
+초기 MVP에서는
+실시간 자동 갱신을 구현하지 않습니다.
+
+대신:
 
 ```text
-지원제도 조회
+original_updated_at
 
-issuer_country Filter
+effective_from
 
-destination_country Filter
+effective_until
 
-target_nationality Filter
+verified_at
+```
 
-Program 연결 관계 조회
+등을 저장하여
+향후 정보 갱신이 가능하도록 설계합니다.
+
+---
+
+# 현재 모집 여부
+
+SupportProgram이나 특정 Program의
+신청 기간이 수시로 변경될 수 있습니다.
+
+현재 모집 여부를 확인하지 못한 경우:
+
+```text
+UNKNOWN
+```
+
+으로 저장합니다.
+
+다음처럼 임의로 표시하지 않습니다.
+
+```text
+현재 신청 가능
 ```
 
 ---
 
-## Evidence Service Test
+# 데이터 품질 상태
+
+향후 필요하다면
+각 데이터에 품질 상태를 추가할 수 있습니다.
+
+예:
 
 ```text
-Evidence 조회
+verified
 
-잘못된 Evidence ID
+needs_review
 
-URL / Agency Metadata 유지
+conflicted
 
-날짜 Metadata 유지
+outdated
 ```
+
+다만 실제 필요성이 확인되기 전까지
+불필요한 Field를 과도하게 추가하지 않습니다.
 
 ---
 
-## LLM Service Test
+# 데이터 설계 원칙
+
+Global-In의 Schema는
+처음부터 모든 국가의 모든 경우를 완벽하게 표현하려 하지 않습니다.
+
+다음 순서로 확장합니다.
 
 ```text
-정상 Response
-
-Timeout
-
-Provider Error
-
-잘못된 API Key
-
-Response Parsing
-```
-
-실제 외부 API 호출 대신 Mock을 활용할 수 있습니다.
-
----
-
-## Embedding Service Test
-
-```text
-Query Embedding
-
-Document Batch Embedding
-
-빈 문자열 처리
-
-Timeout
-
-Embedding Dimension
-```
-
----
-
-## Session Service Test
-
-```text
-Session 생성
-
-Profile 저장
-
-Profile 조회
-
-Profile 갱신
-
-없는 Session 처리
-```
-
----
-
-# Integration Test 예시
-
-```text
-진출 경로 탐색·추천 에이전트
+Agent가 필요한 정보 정의
    ↓
-Program Service
+공통 Entity 정의
+   ↓
+기본 Schema 정의
+   ↓
+실제 공식 데이터 수집
+   ↓
+국가별 차이 확인
+   ↓
+Field 수정 / 확장
+```
+
+즉:
+
+```text
+데이터를 Schema에 억지로 끼워맞춤
+```
+
+이 아니라:
+
+```text
+기본 Schema를 만든 뒤
+실제 데이터를 확인하면서 보완
+```
+
+하는 방식입니다.
+
+---
+
+# Agent와 Data의 관계
+
+---
+
+## 사용자 이해 에이전트
+
+주로 사용하는 데이터:
+
+```text
+UserProfile
+Program이 요구하는 사용자 조건 Field
+SupportProgram이 요구하는 사용자 조건 Field
+```
+
+---
+
+## 진출 경로 탐색·추천 에이전트
+
+주로 사용하는 데이터:
+
+```text
+Program
+
+SupportProgram
+
+ProgramSupportLink
+```
+
+---
+
+## 자격 검토 에이전트
+
+주로 사용하는 데이터:
+
+```text
+EligibilityRequirement
+
+UserProfile
+
+Evidence
+```
+
+---
+
+## 공식 정보 안내 에이전트
+
+주로 사용하는 데이터:
+
+```text
+Evidence
+
+Official Document
+
+Document Chunk
+```
+
+---
+
+## 준비 계획 에이전트
+
+주로 사용하는 데이터:
+
+```text
+ApplicationInfo
+
+RequiredDocument
+
+SupportDetail
+
+Stay Information
+
+Evidence
+```
+
+---
+
+# Models와 Data의 관계
+
+```text
+data/
+→ 실제 데이터
+
+app/models/
+→ Python에서 사용하는 데이터 구조
+```
+
+예:
+
+```text
+data/processed/programs.json
+   ↓
+Program Model
    ↓
 PostgreSQL
 ```
 
-또는:
-
-```text
-공식 정보 안내 에이전트
-   ↓
-Retrieval
-   ↓
-Embedding Service
-   ↓
-pgvector
-```
-
-또는:
-
-```text
-사용자 이해 에이전트
-   ↓
-Session Service
-   ↓
-UserProfile
-```
-
 ---
 
-# 구현 원칙
+# docs와 Data의 관계
 
-- Agent에서 외부 SDK Client를 반복 생성하지 않음
-- Database 접근을 공통 Service로 관리
-- Program과 SupportProgram Service를 구분
-- Retrieval 전략과 Database 연결 책임을 구분
-- Rule Evaluator를 Service Layer에 섞지 않음
-- 공통 Model을 사용하여 반환값 구조를 유지
-- API Key를 코드에 직접 작성하지 않음
-- Timeout과 Error Handling을 고려
-- 민감한 정보를 Log에 남기지 않음
-- 국가별 Service를 불필요하게 별도로 만들지 않음
-- 변경 가능한 정책 Data를 Python 코드에 Hard Coding하지 않음
-- Service는 데이터 접근과 외부 연결 책임에 집중
-- 과도한 추상화는 초기 MVP에서 피함
+```text
+docs/
+→ Schema 설계 및 ERD 문서
+
+data/
+→ 실제 데이터
+```
+
+예:
+
+```text
+docs/database/schema.md
+
+data/processed/programs.json
+```
 
 ---
 
 # 개발 순서
 
-현재 예상 개발 순서는 다음과 같습니다.
+현재 예상 데이터 작업 순서는 다음과 같습니다.
 
 ```text
-1. Database Service 구현
+1. 핵심 Entity 정의
 
-2. PostgreSQL 연결 테스트
+2. Program 기본 Schema 정의
 
-3. Program Service 구현
+3. SupportProgram 기본 Schema 정의
 
-4. SupportProgram Service 구현
+4. EligibilityRequirement 정의
 
-5. Evidence Service 구현
+5. Evidence Metadata 정의
 
-6. LLM Service 구현
+6. 국가별 공식 출처 목록 작성
 
-7. Embedding Service 구현
+7. Sample Data 수집
 
-8. Agent / Retrieval 연결
+8. 실제 데이터 구조 확인
 
-9. Error Handling 추가
+9. Schema 보완
 
-10. Timeout / Retry 정책 추가
+10. Processed Data 생성
 
-11. 필요 시 Session Service 구현
+11. Seed Data 생성
 
-12. Unit Test
+12. PostgreSQL 적재
 
-13. Integration Test
+13. Official Document Chunk 생성
 
-14. 필요 시 Repository Layer 분리
+14. pgvector 적재
+
+15. Agent 연결
+
+16. 데이터 검증
+```
+
+---
+
+# 테스트 포인트
+
+```text
+Program과 SupportProgram이 구분되는가
+
+issuer_country와 destination_country가 구분되는가
+
+한국인 적용 여부를 확인할 수 있는가
+
+Eligibility와 Application Availability가 구분되는가
+
+Evidence URL이 유지되는가
+
+원문 날짜와 verified_at이 구분되는가
+
+지원제도와 관련 Program 연결이 정상적인가
+
+Missing Information에 필요한 Field를 알 수 있는가
+
+Rule Evaluator가 사용할 수 있는 구조인가
+
+Retrieval Metadata Filter에 사용할 수 있는 구조인가
 ```
 
 ---
 
 # 현재 상태
 
-현재는 Service Layer의 책임과 구조를 정의한 단계입니다.
+현재는 Global-In의 공식 데이터 범위와
+기본 Entity 구조를 정의한 단계입니다.
 
-초기 구현에서는 우선 다음 기능을 중심으로 시작합니다.
-
-```text
-Database 연결
-
-Program 조회
-
-SupportProgram 조회
-
-LLM 호출
-
-Embedding 호출
-```
-
-이후 Agent와 데이터베이스 구조가 구체화되면서:
+다음 단계에서는 실제 5개 국가의
+Program, SupportProgram, 공식 규정 및 지원제도 데이터를 수집하면서:
 
 ```text
-Evidence Service
+Field
 
-Session Service
+Entity 관계
 
-공통 Error Handling
+Eligibility 표현
 
-Connection Pool
+Application Availability
 
-Retry / Timeout
+Evidence Metadata
+
+ProgramSupportLink
 ```
 
-등을 단계적으로 추가합니다.
+구조를 실제 데이터에 맞춰 구체화합니다.
 
-Service Layer는 Global-In의 Agent가
-외부 시스템 구현 세부사항에 과도하게 의존하지 않도록 만드는
-공통 연결 계층으로 사용합니다.
+초기 Schema를 절대적인 최종 구조로 고정하지 않고,
+실제 공식 데이터와 Agent 요구사항을 기준으로 지속적으로 보완합니다.
