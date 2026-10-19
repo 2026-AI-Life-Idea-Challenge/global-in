@@ -1,0 +1,393 @@
+{
+  "route_id": "JP-WH",
+  "program_id": "JP-WH-01",
+  "target_nationality": "KR",
+  "source": {
+    "official_agency": "Embassy of Japan in Korea",
+    "source_title": "Working Holiday 사증 안내(제출자료 안내)",
+    "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+    "page_display_date": "2025-11-04",
+    "extracted_at": "2026-10-19T05:33:07.281799+00:00",
+    "collection_mode": "manual",
+    "verified_at": null,
+    "source_license": null,
+    "needs_verification": true
+  },
+  "documents": [
+    {
+      "document_id": "JP_WH_DOC_001",
+      "requirement_type": "required",
+      "name": "사증신청서",
+      "original_text": "사증신청서 (소정양식: 한국어(PDF ) 영어(PDF ) ) ※ 사진부착: 대강 가로3.5cm X 세로4.5cm. 무배경 6개월 이내에 촬영한 것.",
+      "validation_status": "needs_review",
+      "allowed_languages": null,
+      "alternative_submission": null,
+      "applicant_must_complete": true,
+      "applicant_signature_required": null,
+      "photo_requirements": {
+        "required": true,
+        "width_cm": 3.5,
+        "height_cm": 4.5,
+        "size_is_approximate": true,
+        "background": "plain",
+        "taken_within_months": 6,
+        "evidence_text": "사진부착: 대강 가로3.5cm X 세로4.5cm. 무배경 6개월 이내에 촬영한 것.",
+        "validation_status": "needs_review"
+      }
+    },
+    {
+      "document_id": "JP_WH_DOC_002",
+      "requirement_type": "required",
+      "name": "이력서",
+      "original_text": "이력서 (소정양식, 일본어 또는 영어로 기재)",
+      "validation_status": "needs_review",
+      "allowed_languages": [
+        "ja",
+        "en"
+      ],
+      "alternative_submission": null,
+      "applicant_must_complete": true,
+      "applicant_signature_required": null
+    },
+    {
+      "document_id": "JP_WH_DOC_003",
+      "requirement_type": "required",
+      "name": "워킹홀리데이 지원 이유 진술서",
+      "original_text": "Working-Holiday 제도를 이용하고 싶은 이유를 적은 진술서(일본어 또는 영어로 기재)",
+      "validation_status": "needs_review",
+      "allowed_languages": [
+        "ja",
+        "en"
+      ],
+      "alternative_submission": null,
+      "applicant_must_complete": true,
+      "applicant_signature_required": null
+    },
+    {
+      "document_id": "JP_WH_DOC_004",
+      "requirement_type": "required",
+      "name": "일본 체류 활동계획 진술서",
+      "original_text": "Working-Holiday 제도로 일본에 입국해서 무엇을 하고 싶은가를 적은 진술서(일본어 또는 영어로 기재) ※ 영어로 작성한 자는 영어능력입증자료(TOEFL,TOEIC,영어권의 대학 등의 졸업증명서 등)가 있는 경우는 제출해 주십시오. 또한 이들 입증자료가 없어도 신청은 가능합니다.",
+      "validation_status": "needs_review",
+      "allowed_languages": [
+        "ja",
+        "en"
+      ],
+      "alternative_submission": null,
+      "applicant_must_complete": true,
+      "applicant_signature_required": null,
+      "conditional_rules": [
+        {
+          "rule_id": "JP_WH_DOC_004_C01",
+          "requirement_type": "optional",
+          "field": "activity_plan_language",
+          "operator": "eq",
+          "value": "en",
+          "optional_supporting_documents": [
+            "TOEFL 성적표",
+            "TOEIC 성적표",
+            "영어권 대학 등의 졸업증명서"
+          ],
+          "can_apply_without_documents": true,
+          "evidence_text": "영어로 작성한 자는 영어능력입증자료(TOEFL,TOEIC,영어권의 대학 등의 졸업증명서 등)가 있는 경우는 제출해 주십시오. 또한 이들 입증자료가 없어도 신청은 가능합니다.",
+          "validation_status": "needs_review"
+        }
+      ]
+    },
+    {
+      "document_id": "JP_WH_DOC_005",
+      "requirement_type": "required",
+      "name": "조사표",
+      "original_text": "조사표 (소정양식, 일본어로 기재, 신청자 본인이 서명해 주십시오.) ※1~5의 서류는 반드시 신청자 본인이 작성해 주십시오.",
+      "validation_status": "needs_review",
+      "allowed_languages": [
+        "ja"
+      ],
+      "alternative_submission": null,
+      "applicant_must_complete": true,
+      "applicant_signature_required": true
+    },
+    {
+      "document_id": "JP_WH_DOC_006",
+      "requirement_type": "required",
+      "name": "기본증명서(상세)",
+      "original_text": "기본증명서 (상세)",
+      "validation_status": "needs_review",
+      "allowed_languages": null,
+      "alternative_submission": null,
+      "applicant_must_complete": null,
+      "applicant_signature_required": null
+    },
+    {
+      "document_id": "JP_WH_DOC_007",
+      "requirement_type": "required",
+      "name": "주민등록초본 또는 대체 신분·주소 증빙",
+      "original_text": "주민등록초본 ※ 주민등록증(앞, 뒷면) 복사 또는 주민등록등본도 신청은 가능합니다.",
+      "validation_status": "needs_review",
+      "allowed_languages": null,
+      "alternative_submission": {
+        "alternatives": [
+          "주민등록증 앞·뒷면 사본",
+          "주민등록등본"
+        ],
+        "condition": null,
+        "note": "대사관 원문에서 대체 제출 가능하다고 안내함"
+      },
+      "applicant_must_complete": null,
+      "applicant_signature_required": null
+    },
+    {
+      "document_id": "JP_WH_DOC_008",
+      "requirement_type": "required",
+      "name": "재학증명서 또는 최종학력증명서",
+      "original_text": "재학증명서 또는 최종학력을 증명 하는 자료(졸업증명서 등) ※ 1.일본에 유학한 적이 있는 자(교환유학, 단기유학 등을 포함)는 재적한 학교의 졸업, 수료 등을 증명할 수 있는 자료를 제출해 주십시오. ※ 2.한국 및 일본 이외 국가 등의 대학교이나 대학원을 졸업 및 수료한 경우로 일본어, 한국어 및 영어 이외의 언어로 쓰여진 증명서인 경우, 번역을 첨부해 주십시오.(공증된 것) ※ 3.대학교나 대학원을 휴학하거나 퇴학한 경우 그것을 증명할 수 있는 서류를 제출해 주십시오.(휴학증명서, 제적증명서 등)",
+      "validation_status": "needs_review",
+      "allowed_languages": null,
+      "alternative_submission": {
+        "alternatives": [
+          "최종학력증명서"
+        ],
+        "condition": "신청인의 학적 상태에 따라 적합한 증빙 제출",
+        "note": "휴학·퇴학·해외 학력 등에 대한 추가 자료 조건은 별도 검토 필요"
+      },
+      "applicant_must_complete": null,
+      "applicant_signature_required": null,
+      "conditional_rules": [
+        {
+          "rule_id": "JP_WH_DOC_008_C01",
+          "requirement_type": "conditional",
+          "field": "academic_status",
+          "operator": "in",
+          "values": [
+            "on_leave",
+            "withdrawn"
+          ],
+          "required_documents_by_status": {
+            "on_leave": [
+              "휴학증명서"
+            ],
+            "withdrawn": [
+              "제적증명서"
+            ]
+          },
+          "evidence_text": "대학교나 대학원을 휴학하거나 퇴학한 경우 그것을 증명할 수 있는 서류를 제출해 주십시오.(휴학증명서, 제적증명서 등)",
+          "validation_status": "needs_review"
+        },
+        {
+          "rule_id": "JP_WH_DOC_008_C02",
+          "requirement_type": "conditional",
+          "field": "has_studied_in_japan",
+          "operator": "eq",
+          "value": true,
+          "required_documents": [
+            "일본에서 재적한 학교의 졸업·수료 등 증명자료"
+          ],
+          "note": "교환유학 및 단기유학 경험도 포함",
+          "evidence_text": "일본에 유학한 적이 있는 자(교환유학, 단기유학 등을 포함)는 재적한 학교의 졸업, 수료 등을 증명할 수 있는 자료를 제출해 주십시오.",
+          "validation_status": "needs_review"
+        },
+        {
+          "rule_id": "JP_WH_DOC_008_C03",
+          "requirement_type": "conditional",
+          "operator": "and",
+          "conditions": [
+            {
+              "field": "has_completed_higher_education_outside_kr_jp",
+              "operator": "eq",
+              "value": true
+            },
+            {
+              "field": "academic_document_language",
+              "operator": "not_in",
+              "values": [
+                "ko",
+                "ja",
+                "en"
+              ]
+            }
+          ],
+          "required_documents": [
+            "학력증명서의 공증된 번역문"
+          ],
+          "evidence_text": "한국 및 일본 이외 국가 등의 대학교이나 대학원을 졸업 및 수료한 경우로 일본어, 한국어 및 영어 이외의 언어로 쓰여진 증명서인 경우, 번역을 첨부해 주십시오.(공증된 것)",
+          "validation_status": "needs_review"
+        }
+      ]
+    },
+    {
+      "document_id": "JP_WH_DOC_009",
+      "requirement_type": "required",
+      "name": "은행 잔고증명서",
+      "original_text": "귀국 하기 위한 비행기 표를 구입할 수 있는 자금과 일본에서의 체재초기에 생계를 유지하기 위한 자금(1인: 280 만원 정도)을 소지한 것을 증명하는 은행 발행의 잔고증명서 ※ 학생 등이 가족으로부터 부양을 받고 있는 경우는 신청인 계좌(통장)가 아니라도 부양하는 가족의 은행 발행의 잔고증명서도 가능하지만, 이때는 부양자와의 관계를 알 수 있는 가족관계증명서를 제출해 주십시오.",
+      "validation_status": "needs_review",
+      "allowed_languages": null,
+      "alternative_submission": {
+        "alternatives": [
+          "부양하는 가족 명의의 은행 잔고증명서"
+        ],
+        "condition": "가족의 부양을 받는 학생 등",
+        "additional_documents": [
+          "가족관계증명서"
+        ],
+        "note": "가족 명의 잔고증명서 제출 시 부양자와의 관계 증빙 필요"
+      },
+      "applicant_must_complete": null,
+      "applicant_signature_required": null
+    },
+    {
+      "document_id": "JP_WH_DOC_010",
+      "requirement_type": "required",
+      "name": "여권 사본",
+      "original_text": "여권복사(신분사항 란 및 지금까지 일본으로의 출입국도장이 있는 페이지 전부) ※1 아래 11의 자료에 있어서 만 18세 이후 90일이상의 출입국사실이 있는 경우는, 도항처를 불문하고, 해당하는 사증 및 출입국도장이 있는 페이지의 복사를 제출해 주십시오. ※2 과거에 워킹홀리데이 사증을 발급받은 경우에는 해당 사증이 부착된 페이지의 복사를 제출해 주십시오",
+      "validation_status": "needs_review",
+      "allowed_languages": null,
+      "alternative_submission": null,
+      "applicant_must_complete": null,
+      "applicant_signature_required": null,
+      "passport_copy_requirements": {
+        "required": true,
+        "required_pages": [
+          "여권 신분사항 페이지",
+          "과거 일본 출입국 도장이 있는 모든 페이지"
+        ],
+        "include_all_japan_entry_exit_stamps": true,
+        "evidence_text": "여권복사(신분사항 란 및 지금까지 일본으로의 출입국도장이 있는 페이지 전부)",
+        "validation_status": "needs_review"
+      },
+      "conditional_rules": [
+        {
+          "rule_id": "JP_WH_DOC_010_C01",
+          "requirement_type": "conditional",
+          "field": "has_90day_travel_record_after_18",
+          "operator": "eq",
+          "value": true,
+          "required_documents": [
+            "해당 해외 출입국 이력과 관련된 사증 및 출입국 도장 페이지 사본"
+          ],
+          "note": "만 18세 이후 90일 이상에 해당하는 출입국 이력. 방문 국가와 관계없이 관련 페이지를 제출.",
+          "evidence_text": "아래 11의 자료에 있어서 만 18세 이후 90일이상의 출입국사실이 있는 경우는, 도항처를 불문하고, 해당하는 사증 및 출입국도장이 있는 페이지의 복사를 제출해 주십시오.",
+          "validation_status": "needs_review"
+        },
+        {
+          "rule_id": "JP_WH_DOC_010_C02",
+          "requirement_type": "conditional",
+          "field": "previous_japan_wh_visa_issuances",
+          "operator": "gte",
+          "value": 1,
+          "required_documents": [
+            "과거 발급받은 일본 워킹홀리데이 사증이 부착된 여권 페이지 사본"
+          ],
+          "note": "실제 일본 입국 여부가 아닌 사증 발급 이력 기준. 사용하지 않고 실효된 사증도 발급 이력에 포함될 수 있음.",
+          "evidence_text": "과거에 워킹홀리데이 사증을 발급받은 경우에는 해당 사증이 부착된 페이지의 복사를 제출해 주십시오",
+          "validation_status": "needs_review"
+        }
+      ]
+    },
+    {
+      "document_id": "JP_WH_DOC_011",
+      "requirement_type": "required",
+      "name": "출입국사실증명서",
+      "original_text": "한국의 출입국사실증명서 ※ 출생 후 현재까지의 기간의 출입국사실증명서를 제출해 주십시오. 또, 개명 등을 했을 경우, 개명 전후의 모든 기록을 제출해 주십시오.",
+      "validation_status": "needs_review",
+      "allowed_languages": null,
+      "alternative_submission": null,
+      "applicant_must_complete": null,
+      "applicant_signature_required": null,
+      "travel_history_requirements": {
+        "required": true,
+        "period_start": "birth",
+        "period_end": "application_date",
+        "note": "출생 후 현재까지의 출입국 기록 제출",
+        "evidence_text": "출생 후 현재까지의 기간의 출입국사실증명서를 제출해 주십시오.",
+        "validation_status": "needs_review"
+      },
+      "conditional_rules": [
+        {
+          "rule_id": "JP_WH_DOC_011_C01",
+          "requirement_type": "conditional",
+          "field": "has_name_change_history",
+          "operator": "eq",
+          "value": true,
+          "required_documents": [
+            "개명 전후의 모든 출입국 기록"
+          ],
+          "evidence_text": "또, 개명 등을 했을 경우, 개명 전후의 모든 기록을 제출해 주십시오.",
+          "validation_status": "needs_review"
+        }
+      ]
+    },
+    {
+      "document_id": "JP_WH_DOC_012",
+      "requirement_type": "required",
+      "name": "제출자료 체크리스트",
+      "original_text": "제출 자료의 체크리스트(PDF ) ※ 반드시 신청인 본인이 작성하십시오. ※ 자료의 제출이 누락된 경우가 있으니, 제출하기 전에 신중하게 확인해주십시오.",
+      "validation_status": "needs_review",
+      "allowed_languages": null,
+      "alternative_submission": null,
+      "applicant_must_complete": true,
+      "applicant_signature_required": null
+    },
+    {
+      "document_id": "JP_WH_DOC_013",
+      "requirement_type": "conditional",
+      "name": "병역 관련 증명서",
+      "original_text": "병역에 종사한 것을 증명할 수 있는 서류 (7의 주민등록초본과 겸용가능)",
+      "validation_status": "needs_review",
+      "allowed_languages": null,
+      "alternative_submission": null,
+      "applicant_must_complete": null,
+      "applicant_signature_required": null,
+      "conditional_rules": [
+        {
+          "rule_id": "JP_WH_DOC_013_C01",
+          "requirement_type": "conditional",
+          "field": "has_military_service_history",
+          "operator": "eq",
+          "value": true,
+          "required_documents": [
+            "병역에 종사한 사실을 증명할 수 있는 서류"
+          ],
+          "alternative_documents": [
+            "병역사항이 기재된 주민등록초본"
+          ],
+          "note": "일본대사관 안내에 따라 주민등록초본과 겸용 가능. 해당 초본에 필요한 병역사항이 기재되어 있는지 확인해야 함.",
+          "evidence_text": "병역에 종사한 것을 증명할 수 있는 서류 (7의 주민등록초본과 겸용가능)",
+          "validation_status": "needs_review"
+        }
+      ]
+    },
+    {
+      "document_id": "JP_WH_DOC_014",
+      "requirement_type": "conditional",
+      "name": "일본어 능력 입증자료",
+      "original_text": "일본어능력입증자료 (일본국제교육지원협회인정의 일본어능력시험(JLPT)인정증, 일본어학교의 수료증서 등) 그 외에도 일본어 학습능력을 증명하는 자료(학습 기간이나 학습 내용이 기재되어 있는 것)가 있으면 제출해 주시기 바랍니다. 자료가 없다면 이력서나 사유서 안에서 지금까지의 일본어 학습이력에 대해 설명해 주시기 바랍니다.",
+      "validation_status": "needs_review",
+      "allowed_languages": null,
+      "alternative_submission": null,
+      "applicant_must_complete": null,
+      "applicant_signature_required": null,
+      "conditional_rules": [
+        {
+          "rule_id": "JP_WH_DOC_014_C01",
+          "field": "has_japanese_proficiency_evidence",
+          "operator": "eq",
+          "value": false,
+          "requirement_type": "conditional",
+          "can_apply_without_documents": true,
+          "alternative_action": "이력서 또는 지원 이유 진술서에 지금까지의 일본어 학습 이력을 설명",
+          "accepted_evidence_examples": [
+            "JLPT 인정증",
+            "일본어학교 수료증서",
+            "학습 기간과 학습 내용이 기재된 일본어 학습자료"
+          ],
+          "evidence_text": "자료가 없다면 이력서나 사유서 안에서 지금까지의 일본어 학습이력에 대해 설명해 주시기 바랍니다.",
+          "validation_status": "needs_review"
+        }
+      ]
+    }
+  ],
+  "submission_notes": [
+    "※ 제출자료에 대해서 요구한 자료를 적절하게 제출하지 않을 경우에는 불합격 처분이 되므로, 신청시에는 필요자료가 모두 갖추어져 있는지, 필요사항이 기입되어 있는지 확인한 후에 신청해 주십시오."
+  ],
+  "validation_status": "needs_review"
+}
