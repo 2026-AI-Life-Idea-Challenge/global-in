@@ -1,0 +1,130 @@
+{
+  "route_id": "JP-WH",
+  "program_id": "JP-WH-01",
+  "target_nationality": "KR",
+  "data_type": "application",
+  "source": {
+    "official_agency": "Embassy of Japan in Korea",
+    "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+    "page_display_date": "2026-09-30",
+    "collection_mode": "manual",
+    "extracted_at": "2026-10-20T05:21:48.771044+00:00",
+    "verified_at": null,
+    "source_license": null,
+    "needs_verification": true
+  },
+  "application_dates": {
+    "application_period": {
+      "year": 2026,
+      "quarter": 4,
+      "start_date": "2026-10-12",
+      "end_date": "2026-10-16",
+      "original_text": "2026년의 신청기간은 다음과 같습니다. 제 4사분기 10월 12일(월)부터 16일(금)까지 ※ 신청기간 최종 일은 신청자가 많아 대단히 혼잡하므로 가능한 한 최종 일은 피해서 신청해 주시기 바랍니다. ※ 최신 신청 수속에 대해서는 여기 를 참조해 주십시오.",
+      "validation_status": "needs_review"
+    },
+    "result_announcement": {
+      "year": 2026,
+      "quarter": 4,
+      "announcement_date": "2026-11-24",
+      "original_text": "심사결과는 홈페이지에 게시해서 알려 드립니다. (注)전화로의 문의에는 답하지 않습니다. 제 4사분기 11월 24일(화) 또한, 사증발급 대상자로 된 경우라도 발급시 제출된 여권 등에 의한 최종심사에 있어서 사증발급 요건이 충족되지 않은 것이 판명된 경우에는 사증이 발급되지 않습니다.",
+      "validation_status": "needs_review"
+    }
+  },
+  "application_method": {
+    "submission_channel": "designated_travel_agency",
+    "individual_embassy_submission_allowed": false,
+    "postal_submission_allowed": false,
+    "multiple_applications_allowed": false,
+    "designated_agencies": null,
+    "original_text": "당관에서의 사증 신청이 인정 되고 있는 지정 여행업자 등을 통해서 신청해 주십시오. 자세한 것은, 이 페이지 를 참조해 주십시오. ※ 현재는 대사관 창구에 의한 개인 신청이나 우편에 의한 신청은 접수하지 않으므로 주의하시기 바랍니다. 실수로 대사관에 우송된 신청 서류는 반환 받을 수 없습니다. ※ 또한, 동일 신청자로부터의 복수 신청은 모두 무효처리 됩니다.",
+    "validation_status": "needs_review"
+  },
+  "application_location": {
+    "address_basis": "resident_registration_address",
+    "jurisdictions": [
+      {
+        "office_id": "JP_EMBASSY_KR",
+        "office_name": "주대한민국일본국대사관 영사부",
+        "regions": [],
+        "region_match": "all_except_other_jurisdictions"
+      },
+      {
+        "office_id": "JP_CONSULATE_BUSAN",
+        "office_name": "주부산일본국총영사관",
+        "regions": [
+          "부산광역시",
+          "대구광역시",
+          "울산광역시",
+          "경상남도",
+          "경상북도"
+        ],
+        "region_match": "in_list"
+      },
+      {
+        "office_id": "JP_CONSULATE_JEJU",
+        "office_name": "주제주일본국총영사관",
+        "regions": [
+          "제주특별자치도"
+        ],
+        "region_match": "in_list"
+      }
+    ],
+    "original_text": "주민등록상 주소에 따라 다음 세 곳에서 신청해 주십시오. 주대한민국일본국대사관 영사부: 현주소가 부산총영사관, 제주총영사관의 관활 이외인 자 주부산일본국총영사관: 현주소가 부산광역시, 대구광역시, 울산광역시, 경상남ㆍ북도인 자 주제주일본국총영사관: 현주소가 제주특별자치도인 자",
+    "validation_status": "needs_review"
+  },
+  "result_notification": {
+    "notification_channel": "official_website",
+    "telephone_inquiry_supported": false,
+    "announcement_guarantees_visa_issuance": false,
+    "final_review_required": true,
+    "announcement_date_field": "structured_dates.result_announcement.announcement_date",
+    "original_text": "심사결과는 홈페이지에 게시해서 알려 드립니다. (注)전화로의 문의에는 답하지 않습니다. 제 4사분기 11월 24일(화) 또한, 사증발급 대상자로 된 경우라도 발급시 제출된 여권 등에 의한 최종심사에 있어서 사증발급 요건이 충족되지 않은 것이 판명된 경우에는 사증이 발급되지 않습니다.",
+    "validation_status": "needs_review"
+  },
+  "document_guidance": {
+    "check_missing_documents_before_submission": true,
+    "stapled_documents_allowed": false,
+    "submit_documents_as_separate_sheets": true,
+    "passport_copy": {
+      "resize_allowed": false,
+      "personal_information_must_be_legible": true,
+      "related_document_id": "JP_WH_DOC_010"
+    },
+    "related_documents_dataset": "japan_working_holiday_documents_structured.json",
+    "original_text": "(각 자료가 누락되지 않게 신청 전에 잘 확인해 주십시오) ※ 각 자료는 호치키스 등의 스테이플러로 서류를 묶지 마시고 각각의 낱장 상태로 제출해 주십시오. ※ 10번의 여권 사본은, 여권 원본과 같도록 사본의 크기를 변경하지 마시고 여권 인적 사항 내용이 명확하게 보이도록 복사하여 제출해 주십시오.",
+    "validation_status": "needs_review"
+  },
+  "source_sections": [
+    {
+      "field": "application_method",
+      "heading": "(1) 신청방법",
+      "original_text": "당관에서의 사증 신청이 인정 되고 있는 지정 여행업자 등을 통해서 신청해 주십시오. 자세한 것은, 이 페이지 를 참조해 주십시오. ※ 현재는 대사관 창구에 의한 개인 신청이나 우편에 의한 신청은 접수하지 않으므로 주의하시기 바랍니다. 실수로 대사관에 우송된 신청 서류는 반환 받을 수 없습니다. ※ 또한, 동일 신청자로부터의 복수 신청은 모두 무효처리 됩니다.",
+      "validation_status": "needs_review"
+    },
+    {
+      "field": "required_documents_guidance",
+      "heading": "(2) 제출자료",
+      "original_text": "(각 자료가 누락되지 않게 신청 전에 잘 확인해 주십시오) ※ 각 자료는 호치키스 등의 스테이플러로 서류를 묶지 마시고 각각의 낱장 상태로 제출해 주십시오. ※ 10번의 여권 사본은, 여권 원본과 같도록 사본의 크기를 변경하지 마시고 여권 인적 사항 내용이 명확하게 보이도록 복사하여 제출해 주십시오.",
+      "validation_status": "needs_review"
+    },
+    {
+      "field": "application_period",
+      "heading": "(3) 신청기간",
+      "original_text": "2026년의 신청기간은 다음과 같습니다. 제 4사분기 10월 12일(월)부터 16일(금)까지 ※ 신청기간 최종 일은 신청자가 많아 대단히 혼잡하므로 가능한 한 최종 일은 피해서 신청해 주시기 바랍니다. ※ 최신 신청 수속에 대해서는 여기 를 참조해 주십시오.",
+      "validation_status": "needs_review"
+    },
+    {
+      "field": "application_location",
+      "heading": "(4) 신청 장소",
+      "original_text": "주민등록상 주소에 따라 다음 세 곳에서 신청해 주십시오. 주대한민국일본국대사관 영사부: 현주소가 부산총영사관, 제주총영사관의 관활 이외인 자 주부산일본국총영사관: 현주소가 부산광역시, 대구광역시, 울산광역시, 경상남ㆍ북도인 자 주제주일본국총영사관: 현주소가 제주특별자치도인 자",
+      "validation_status": "needs_review"
+    },
+    {
+      "field": "result_notification",
+      "heading": "(5) 심사결과 알림",
+      "original_text": "심사결과는 홈페이지에 게시해서 알려 드립니다. (注)전화로의 문의에는 답하지 않습니다. 제 4사분기 11월 24일(화) 또한, 사증발급 대상자로 된 경우라도 발급시 제출된 여권 등에 의한 최종심사에 있어서 사증발급 요건이 충족되지 않은 것이 판명된 경우에는 사증이 발급되지 않습니다.",
+      "validation_status": "needs_review"
+    }
+  ],
+  "validation_status": "needs_review"
+}
