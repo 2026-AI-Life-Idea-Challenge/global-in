@@ -1,0 +1,316 @@
+{
+  "route_id": "JP-EM",
+  "program_id": "JP-EM-01",
+  "application_type": "coe",
+  "status_of_residence": "技術・人文知識・国際業務",
+  "source": {
+    "official_agency": "Immigration Services Agency of Japan",
+    "pdf_filename": "001404131.pdf",
+    "source_url": "https://www.moj.go.jp/isa/content/001404131.pdf",
+    "source_sha256": "82c73ffac31d8ae19bfa87a573d2f87e3c79ce316451cdab86ea26fff7bba895"
+  },
+  "category_columns": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "document_count": 6,
+  "validation_status": "needs_review",
+  "documents": [
+    {
+      "document_id": "JP_EM_COE_DOC_001",
+      "row_number": 1,
+      "page": 1,
+      "raw_row_text_ja": "1 在留資格認定証明書交付申請書             ○        ○        ○        ○      □",
+      "category_requirements": {
+        "1": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "2": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "row_position_y": 161.3,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_horizontal_boundaries"
+    },
+    {
+      "document_id": "JP_EM_COE_DOC_002",
+      "row_number": 2,
+      "page": 1,
+      "raw_row_text_ja": "写真（縦４cm×横３cm）\n  ※申請前６か月以内に正面から撮影された無帽、無背\n2 景で鮮明なもの。                 ○        ○        ○        ○      □\n  ※写真の裏面に申請人の氏名を記載し、申請書の写真\n  欄に貼付してください。",
+      "category_requirements": {
+        "1": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "2": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "row_position_y": 213.14,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_horizontal_boundaries"
+    },
+    {
+      "document_id": "JP_EM_COE_DOC_003",
+      "row_number": 3,
+      "page": 1,
+      "raw_row_text_ja": "返信用封筒\n  （定形封筒に宛名及び宛先を明記の上、必要な額の郵\n3 便切手（簡易書留用）を貼付したもの）         ○        ○        ○        ○      □\n  ※申請結果（在留資格認定証明書等）の返送に使用す\n  るものです。",
+      "category_requirements": {
+        "1": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "2": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "row_position_y": 289.34,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_horizontal_boundaries"
+    },
+    {
+      "document_id": "JP_EM_COE_DOC_004",
+      "row_number": 4,
+      "page": 1,
+      "raw_row_text_ja": "○四季報の写し又は日本\n                           の証券取引所に上場して\n                           いることを証明する文書\n                           （写し）\n                           ○主務官庁から設立の許\n                           可を受けたことを証明す ○前年分の職員の給与所\n                           る文書（写し）     得の源泉徴収票等の法定\n  所属機関がいずれのカテゴリーに該当するかを証明す\n                           ○高度専門職省令第１条 調書合計表（写し）\n  る文書\n                           第１項各号の表の特別加 ○在留申請オンラインシ ○前年分の職員の給与所\n  ※右記の書類の中で、提出可能な書類を提出してくだ\n4                          算の項の中欄イ又はロの ステムに係る利用申出の 得の源泉徴収票等の法定            □  さい。\n                           対象企業（イノベーショ 承認を受けていることを 調書合計表（写し）\n  ※提出可能な書類がない場合は、カテゴリー４に該当\n                           ン創出企業）であること 証明する文書（利用申出\n  することとなります。\n                           を証明する文書（例え  に係る承認のお知らせ\n                           ば、補助金交付決定通知 メール等）\n                           書の写し）\n                           ○「一定の条件を満たす\n                           企業等」であることを証\n                           明する文書（例えば、認\n                           定証等の写し）",
+      "category_requirements": {
+        "1": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "2": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "3": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "4": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        }
+      },
+      "row_position_y": 446.54,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_horizontal_boundaries",
+      "category_evidence": {
+        "1": {
+          "original_text_ja": "○四季報の写し又は日本\nの証券取引所に上場して\nいることを証明する文書\n（写し）\n○主務官庁から設立の許\n可を受けたことを証明す\nる文書（写し）\n○高度専門職省令第１条\n第１項各号の表の特別加\n算の項の中欄イ又はロの\n対象企業（イノベーショ\nン創出企業）であること\nを証明する文書（例え\nば、補助金交付決定通知\n書の写し）\n○「一定の条件を満たす\n企業等」であることを証\n明する文書（例えば、認\n定証等の写し）",
+          "source_cell_status": "text_present",
+          "validation_status": "needs_review"
+        },
+        "2": {
+          "original_text_ja": "○前年分の職員の給与所\n得の源泉徴収票等の法定\n調書合計表（写し）\n○在留申請オンラインシ\nステムに係る利用申出の\n承認を受けていることを\n証明する文書（利用申出\nに係る承認のお知らせ\nメール等）",
+          "source_cell_status": "text_present",
+          "validation_status": "needs_review"
+        },
+        "3": {
+          "original_text_ja": "○前年分の職員の給与所\n得の源泉徴収票等の法定\n調書合計表（写し）",
+          "source_cell_status": "text_present",
+          "validation_status": "needs_review"
+        },
+        "4": {
+          "original_text_ja": "",
+          "source_cell_status": "empty",
+          "validation_status": "needs_review"
+        }
+      },
+      "category_evidence_source": {
+        "pdf_filename": "001404131.pdf",
+        "page": 1,
+        "extraction_method": "pdf_column_coordinates",
+        "source_sha256": "82c73ffac31d8ae19bfa87a573d2f87e3c79ce316451cdab86ea26fff7bba895"
+      },
+      "category_evidence_notes": "카테고리 4의 원문 공란은 제출서류 면제를 뜻하지 않음. 카테고리 분류 및 제출 조건은 별도 검토 필요.",
+      "category_evidence_options": {
+        "1": {
+          "evidence_count": 4,
+          "evidence_options": [
+            {
+              "evidence_id": "JP_EM_CAT1_E01",
+              "name_ko": "상장기업 증빙",
+              "source_keywords_ja": [
+                "四季報",
+                "証券取引所",
+                "証明する文書"
+              ],
+              "source_pdf": "001404131.pdf",
+              "validation_status": "needs_review"
+            },
+            {
+              "evidence_id": "JP_EM_CAT1_E02",
+              "name_ko": "주무관청 설립허가 증빙",
+              "source_keywords_ja": [
+                "主務官庁",
+                "設立",
+                "許可"
+              ],
+              "source_pdf": "001404131.pdf",
+              "validation_status": "needs_review"
+            },
+            {
+              "evidence_id": "JP_EM_CAT1_E03",
+              "name_ko": "혁신창출기업 해당 증빙",
+              "source_keywords_ja": [
+                "高度専門職省令",
+                "イノベーショ",
+                "補助金交付"
+              ],
+              "source_pdf": "001404131.pdf",
+              "validation_status": "needs_review"
+            },
+            {
+              "evidence_id": "JP_EM_CAT1_E04",
+              "name_ko": "일정 조건을 충족하는 기업 등의 증빙",
+              "source_keywords_ja": [
+                "一定の条件",
+                "企業等",
+                "認定証"
+              ],
+              "source_pdf": "001404131.pdf",
+              "validation_status": "needs_review"
+            }
+          ],
+          "validation_status": "needs_review"
+        },
+        "2": {
+          "evidence_count": 2,
+          "evidence_options": [
+            {
+              "evidence_id": "JP_EM_CAT2_E01",
+              "name_ko": "전년도 법정조서합계표 사본",
+              "source_keywords_ja": [
+                "前年分",
+                "法定",
+                "調書合計表"
+              ],
+              "source_pdf": "001404131.pdf",
+              "validation_status": "needs_review"
+            },
+            {
+              "evidence_id": "JP_EM_CAT2_E02",
+              "name_ko": "재류신청 온라인 시스템 이용승인 증빙",
+              "source_keywords_ja": [
+                "在留申請オンライン",
+                "利用申出",
+                "承認"
+              ],
+              "source_pdf": "001404131.pdf",
+              "validation_status": "needs_review"
+            }
+          ],
+          "validation_status": "needs_review"
+        },
+        "3": {
+          "evidence_count": 1,
+          "evidence_options": [
+            {
+              "evidence_id": "JP_EM_CAT3_E01",
+              "name_ko": "전년도 법정조서합계표 사본",
+              "source_keywords_ja": [
+                "前年分",
+                "法定",
+                "調書合計表"
+              ],
+              "source_pdf": "001404131.pdf",
+              "validation_status": "needs_review"
+            }
+          ],
+          "validation_status": "needs_review"
+        },
+        "4": {
+          "evidence_count": 0,
+          "evidence_options": [],
+          "validation_status": "needs_review"
+        }
+      },
+      "category_evidence_interpretation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_EM_COE_DOC_005",
+      "row_number": 5,
+      "page": 1,
+      "raw_row_text_ja": "専門学校を卒業し、専門士又は高度専門士の称号を付\n  与された者については、専門士又は高度専門士の称号\n5 を付与されたことを証明する文書            △        △        △        △      □\n  ※専門学校の専攻科を修了した者については、当該専\n  攻科を修了したことを証明する文書",
+      "category_requirements": {
+        "1": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "2": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "3": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "4": {
+          "symbol": "△",
+          "status": "conditional"
+        }
+      },
+      "row_position_y": 598.1,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_horizontal_boundaries"
+    },
+    {
+      "document_id": "JP_EM_COE_DOC_006",
+      "row_number": 6,
+      "page": 1,
+      "raw_row_text_ja": "派遣契約に基づいて就労する場合（申請人が被派遣者\n  の場合）\n  （１）申請人の派遣労働に関する誓約書\n    ア 所属機関（派遣元）用\n6   イ 派遣先用                 △        △        △        △      □\n  （２）申請人の派遣先での活動内容及び派遣契約期間\n  を明らかにする次の資料の写し\n    ア 労働条件通知書（雇用契約書）\n    イ 労働者派遣個別契約書",
+      "category_requirements": {
+        "1": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "2": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "3": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "4": {
+          "symbol": "△",
+          "status": "conditional"
+        }
+      },
+      "row_position_y": 701.3,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_horizontal_boundaries"
+    }
+  ]
+}
