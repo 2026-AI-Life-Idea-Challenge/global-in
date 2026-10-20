@@ -1,0 +1,172 @@
+{
+  "route_id": "JP-EM",
+  "program_id": "JP-EM-01",
+  "application_type": "change",
+  "status_of_residence": "技術・人文知識・国際業務",
+  "source": {
+    "official_agency": "Immigration Services Agency of Japan",
+    "pdf_filename": "001437255.pdf",
+    "source_url": "https://www.moj.go.jp/isa/content/001437255.pdf",
+    "source_sha256": "9eab6a01e10204096ad569adafa70cab06246634000621442b0651c0e730bdb3"
+  },
+  "category_columns": [
+    "3",
+    "4"
+  ],
+  "document_count": 8,
+  "validation_status": "needs_review",
+  "documents": [
+    {
+      "document_id": "JP_EM_CHANGE_DOC_007",
+      "row_number": 7,
+      "page": 1,
+      "raw_row_text_ja": "活動内容等を明らかにするいずれかの資料\n（１）労働契約を締結する場合\n　　労働基準法第15条第１項及び同法施行規則第５条に基づき、労働者\n　　に交付される労働条件を明示する文書\n（２）日本法人である会社の役員に就任する場合\n　　役員報酬を定める定款の写し又は役員報酬を決議した株主総会の\n　　議事録（報酬委員会が設置されている会社にあっては同委員会の\n　　議事録）の写し\n（３）外国法人内の日本支店に転勤する場合及び会社以外の団体の役員\n　　に就任する場合\n　　地位（担当業務）、期間及び支払われる報酬額を明らかにする所属\n　　団体の文書",
+      "category_requirements": {
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "row_position_y": 178.99,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_boundaries_body_column"
+    },
+    {
+      "document_id": "JP_EM_CHANGE_DOC_008",
+      "row_number": 8,
+      "page": 1,
+      "raw_row_text_ja": "学歴及び職歴その他経歴等を証明する文書\n（１）申請に係る技術又は知識を要する職務に従事した機関及び内容並びに期間\n　　を明示した履歴書\n（２）学歴又は職歴等を証明する次のいずれかの文書\n　　ア　大学等の卒業証明書又はこれと同等以上の教育を受けたことを証明する\n　　　文書。なお、DOEACC制度の資格保有者の場合は、DOEACC資格の認定証\n　　　（レベル「A」、「B」又は「C」に限る。）\n　　イ　在職証明書等で、関連する業務に従事した期間を証明する文書（大学、高等\n　　　専門学校、高等学校又は専修学校の専門課程若しくは専攻科において当該技術\n　　　又は知識に係る科目を専攻した期間の記載された当該学校からの証明書を含\n　　　む。）\n　　ウ　IT技術者については、法務大臣が特例告示をもって定める「情報処理\n　　　技術」に関する試験又は資格の合格証書又は資格証書\n　　　※５の資料を提出している場合は不要\n　　エ　外国の文化に基盤を有する思考又は感受性を必要とする業務に従事する\n　　　場合（大学を卒業した者が翻訳・通訳又は語学の指導に従事する場合を除\n　　　く。）は、関連する業務について３年以上の実務経験を証明する文書",
+      "category_requirements": {
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "row_position_y": 331.18,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_boundaries_body_column"
+    },
+    {
+      "document_id": "JP_EM_CHANGE_DOC_009",
+      "row_number": 9,
+      "page": 1,
+      "raw_row_text_ja": "登記事項証明書",
+      "category_requirements": {
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "row_position_y": 431.4,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_boundaries_body_column"
+    },
+    {
+      "document_id": "JP_EM_CHANGE_DOC_010",
+      "row_number": 10,
+      "page": 1,
+      "raw_row_text_ja": "事業内容を明らかにする次のいずれかの資料\n（１）勤務先等の沿革、役員、組織、事業内容（主要取引先と取引実績を含む。）\n　　等が詳細に記載された案内書\n（２）その他勤務先等の作成した上記（１）に準ずる文書",
+      "category_requirements": {
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "row_position_y": 464.52,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_boundaries_body_column"
+    },
+    {
+      "document_id": "JP_EM_CHANGE_DOC_011",
+      "row_number": 11,
+      "page": 1,
+      "raw_row_text_ja": "直近年度の決算文書の写し\n※新規事業の場合は事業計画書",
+      "category_requirements": {
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "row_position_y": 505.68,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_boundaries_body_column"
+    },
+    {
+      "document_id": "JP_EM_CHANGE_DOC_012",
+      "row_number": 12,
+      "page": 1,
+      "raw_row_text_ja": "所属機関の代表者に関する申告書（参考様式）",
+      "category_requirements": {
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "row_position_y": 535.56,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_boundaries_body_column"
+    },
+    {
+      "document_id": "JP_EM_CHANGE_DOC_013",
+      "row_number": 13,
+      "page": 1,
+      "raw_row_text_ja": "（主に言語能力を用いて対人業務等に従事する場合）\n業務上使用する言語について、ＣＥＦＲ・Ｂ２相当の言語能力を有することを証する資料",
+      "category_requirements": {
+        "3": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "4": {
+          "symbol": "△",
+          "status": "conditional"
+        }
+      },
+      "row_position_y": 591.03,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_boundaries_body_column"
+    },
+    {
+      "document_id": "JP_EM_CHANGE_DOC_014",
+      "row_number": 14,
+      "page": 1,
+      "raw_row_text_ja": "前年分の職員の給与所得の源泉徴収票等の法定調書合計表を提出できない理由を\n明らかにする次のいずれかの資料\n（１）源泉徴収の免除を受ける機関の場合\n　　外国法人の源泉徴収に対する免除証明書その他の源泉徴収を要しないことを\n　　明らかにする資料\n（２）上記（１）を除く機関の場合\n　　ア 給与支払事務所等の開設届書の写し\n　　イ 次のいずれかの資料\n　　（ア）直近３か月分の給与所得・退職所得等の所得税徴収高計算書（領収日\n　　　　付印のあるものの写し）\n　　（イ）納期の特例を受けている場合は、その承認を受けていることを明らか\n　　　　にする資料",
+      "category_requirements": {
+        "3": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "row_position_y": 698.79,
+      "validation_status": "needs_review",
+      "text_extraction_method": "pdf_table_boundaries_body_column"
+    }
+  ]
+}

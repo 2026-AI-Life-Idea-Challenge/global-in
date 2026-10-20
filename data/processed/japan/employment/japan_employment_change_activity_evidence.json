@@ -1,0 +1,36 @@
+{
+  "route_id": "JP-EM",
+  "application_type": "change",
+  "parent_document_id": "JP_EM_CHANGE_DOC_007",
+  "source_row_number": 7,
+  "source_json_sha256": "489ae6144f2f52b8af26092ccd44713ec91220583ceb3640127bb2fbad2517d0",
+  "selection_type": "activity_based_alternatives",
+  "option_count": 3,
+  "options": [
+    {
+      "option_id": "JP_EM_CHANGE_DOC_007_OPT_01",
+      "source_clause": "(1)",
+      "activity_type": "employment_contract",
+      "condition_text_ja": "（１）労働契約を締結する場合",
+      "evidence_text_ja": "（１）労働契約を締結する場合\n　　労働基準法第15条第１項及び同法施行規則第５条に基づき、労働者\n　　に交付される労働条件を明示する文書",
+      "validation_status": "needs_review"
+    },
+    {
+      "option_id": "JP_EM_CHANGE_DOC_007_OPT_02",
+      "source_clause": "(2)",
+      "activity_type": "japanese_company_officer",
+      "condition_text_ja": "（２）日本法人である会社の役員に就任する場合",
+      "evidence_text_ja": "（２）日本法人である会社の役員に就任する場合\n　　役員報酬を定める定款の写し又は役員報酬を決議した株主総会の\n　　議事録（報酬委員会が設置されている会社にあっては同委員会の\n　　議事録）の写し",
+      "validation_status": "needs_review"
+    },
+    {
+      "option_id": "JP_EM_CHANGE_DOC_007_OPT_03",
+      "source_clause": "(3)",
+      "activity_type": "foreign_branch_transfer_or_other_organization_officer",
+      "condition_text_ja": "（３）外国法人内の日本支店に転勤する場合及び会社以外の団体の役員",
+      "evidence_text_ja": "（３）外国法人内の日本支店に転勤する場合及び会社以外の団体の役員\n　　に就任する場合\n　　地位（担当業務）、期間及び支払われる報酬額を明らかにする所属\n　　団体の文書",
+      "validation_status": "needs_review"
+    }
+  ],
+  "validation_status": "needs_review"
+}

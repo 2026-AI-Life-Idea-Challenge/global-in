@@ -1,0 +1,54 @@
+{
+  "route_id": "JP-EM",
+  "application_type": "change",
+  "parent_document_id": "JP_EM_CHANGE_DOC_008",
+  "source_row_number": 8,
+  "source_json_sha256": "489ae6144f2f52b8af26092ccd44713ec91220583ceb3640127bb2fbad2517d0",
+  "resume_evidence": {
+    "source_clause": "(1)",
+    "evidence_text_ja": "（１）申請に係る技術又は知識を要する職務に従事した機関及び内容並びに期間\n　　を明示した履歴書",
+    "validation_status": "needs_review"
+  },
+  "alternative_evidence": {
+    "source_clause": "(2)",
+    "selection_type": "source_stated_alternatives",
+    "source_intro_ja": "（２）学歴又は職歴等を証明する次のいずれかの文書",
+    "option_count": 4,
+    "options": [
+      {
+        "option_id": "JP_EM_CHANGE_DOC_008_OPT_01",
+        "source_clause": "ア",
+        "evidence_type": "education",
+        "evidence_text_ja": "ア　大学等の卒業証明書又はこれと同等以上の教育を受けたことを証明する\n　　　文書。なお、DOEACC制度の資格保有者の場合は、DOEACC資格の認定証\n　　　（レベル「A」、「B」又は「C」に限る。）",
+        "source_note_ja": null,
+        "validation_status": "needs_review"
+      },
+      {
+        "option_id": "JP_EM_CHANGE_DOC_008_OPT_02",
+        "source_clause": "イ",
+        "evidence_type": "employment_history",
+        "evidence_text_ja": "イ　在職証明書等で、関連する業務に従事した期間を証明する文書（大学、高等\n　　　専門学校、高等学校又は専修学校の専門課程若しくは専攻科において当該技術\n　　　又は知識に係る科目を専攻した期間の記載された当該学校からの証明書を含\n　　　む。）",
+        "source_note_ja": null,
+        "validation_status": "needs_review"
+      },
+      {
+        "option_id": "JP_EM_CHANGE_DOC_008_OPT_03",
+        "source_clause": "ウ",
+        "evidence_type": "it_exam_or_qualification",
+        "evidence_text_ja": "ウ　IT技術者については、法務大臣が特例告示をもって定める「情報処理\n　　　技術」に関する試験又は資格の合格証書又は資格証書\n　　　※５の資料を提出している場合は不要",
+        "source_note_ja": "※５の資料を提出している場合は不要",
+        "validation_status": "needs_review"
+      },
+      {
+        "option_id": "JP_EM_CHANGE_DOC_008_OPT_04",
+        "source_clause": "エ",
+        "evidence_type": "international_services_experience",
+        "evidence_text_ja": "エ　外国の文化に基盤を有する思考又は感受性を必要とする業務に従事する\n　　　場合（大学を卒業した者が翻訳・通訳又は語学の指導に従事する場合を除\n　　　く。）は、関連する業務について３年以上の実務経験を証明する文書",
+        "source_note_ja": null,
+        "validation_status": "needs_review"
+      }
+    ]
+  },
+  "automatic_eligibility_rules_enabled": false,
+  "validation_status": "needs_review"
+}

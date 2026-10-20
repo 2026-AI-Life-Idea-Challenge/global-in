@@ -1,0 +1,60 @@
+{
+  "route_id": "JP-EM",
+  "application_type": "change",
+  "parent_document_id": "JP_EM_CHANGE_DOC_014",
+  "source_row_number": 14,
+  "source_json_sha256": "489ae6144f2f52b8af26092ccd44713ec91220583ceb3640127bb2fbad2517d0",
+  "source_intro_ja": "前年分の職員の給与所得の源泉徴収票等の法定調書合計表を提出できない理由を\n明らかにする次のいずれかの資料",
+  "category_requirements": {
+    "3": {
+      "symbol": null,
+      "status": "not_explicitly_marked"
+    },
+    "4": {
+      "symbol": "○",
+      "status": "required"
+    }
+  },
+  "branches": [
+    {
+      "branch_id": "JP_EM_CHANGE_DOC_014_BRANCH_01",
+      "source_clause": "(1)",
+      "condition_type": "withholding_exempt_institution",
+      "source_text_ja": "（１）源泉徴収の免除を受ける機関の場合\n　　外国法人の源泉徴収に対する免除証明書その他の源泉徴収を要しないことを\n　　明らかにする資料",
+      "validation_status": "needs_review"
+    },
+    {
+      "branch_id": "JP_EM_CHANGE_DOC_014_BRANCH_02",
+      "source_clause": "(2)",
+      "condition_type": "other_institution",
+      "source_intro_ja": "（２）上記（１）を除く機関の場合",
+      "items": [
+        {
+          "source_clause": "ア",
+          "evidence_type": "payroll_office_notification",
+          "source_text_ja": "ア 給与支払事務所等の開設届書の写し"
+        },
+        {
+          "source_clause": "イ",
+          "selection_type": "source_stated_alternatives",
+          "source_intro_ja": "イ 次のいずれかの資料",
+          "options": [
+            {
+              "source_clause": "(ア)",
+              "evidence_type": "recent_tax_payment_statements",
+              "source_text_ja": "（ア）直近３か月分の給与所得・退職所得等の所得税徴収高計算書（領収日\n　　　　付印のあるものの写し）"
+            },
+            {
+              "source_clause": "(イ)",
+              "evidence_type": "special_payment_deadline_approval",
+              "source_text_ja": "（イ）納期の特例を受けている場合は、その承認を受けていることを明らか\n　　　　にする資料"
+            }
+          ]
+        }
+      ],
+      "validation_status": "needs_review"
+    }
+  ],
+  "automatic_eligibility_rules_enabled": false,
+  "validation_status": "needs_review"
+}
