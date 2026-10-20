@@ -1,0 +1,69 @@
+{
+  "route_id": "JP-WH",
+  "program_id": "JP-WH-01",
+  "target_nationality": "KR",
+  "data_type": "post_entry",
+  "source": {
+    "official_agency": "Ministry of Foreign Affairs of Japan",
+    "source_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/",
+    "page_display_date": "2026-04-01",
+    "collection_mode": "manual",
+    "extracted_at": "2026-10-20T05:50:49.090990+00:00",
+    "verified_at": null,
+    "source_license": null,
+    "needs_verification": true
+  },
+  "post_entry": {
+    "procedure_type": "residence_address_notification",
+    "reporting_office": "municipal_office",
+    "reporting_office_evidence": "municipal office where they live",
+    "legal_notification_recipient": "ministry_of_justice",
+    "legal_notification_recipient_evidence": "notify the Ministry of Justice",
+    "deadline_days": 14,
+    "deadline_trigger": "finding_a_place_to_settle_down",
+    "deadline_evidence": "within 14 days of finding a place to settle down",
+    "separate_immigration_office_visit_required": false,
+    "separate_visit_verification_status": "supported_by_official_isa_source",
+    "detail_reference": "immigration_services_agency_of_japan",
+    "detail_reference_evidence": "Immigration Services Agency of Japan",
+    "required_documents": {
+      "standard": [
+        "residence_card"
+      ],
+      "alternative": {
+        "document": "passport",
+        "condition": "residence_card_to_be_issued_later_notation"
+      },
+      "additional_local_requirements": "confirm_with_municipality"
+    },
+    "validation_status": "needs_review",
+    "separate_visit_condition": "qualifying_municipal_residence_notification_completed",
+    "additional_official_sources": [
+      {
+        "official_agency": "Immigration Services Agency of Japan",
+        "source_url": "https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00021.html",
+        "supports": [
+          "deadline_days",
+          "reporting_office",
+          "separate_immigration_office_visit_required",
+          "required_documents"
+        ],
+        "verified_at": null,
+        "needs_verification": true
+      },
+      {
+        "official_agency": "Immigration Services Agency of Japan",
+        "source_url": "https://www.moj.go.jp/isa/support/guidance/index.html?hl=en",
+        "supports": [
+          "deadline_days",
+          "reporting_office",
+          "required_documents"
+        ],
+        "verified_at": null,
+        "needs_verification": true
+      }
+    ]
+  },
+  "original_text": "The working holiday programmes participants must visit the municipal office where they live and notify the Ministry of Justice where they live within 14 days of finding a place to settle down. Please check the Immigration Bureau of Japan's website for the detail. ( Immigration Services Agency of Japan (Japanese) )",
+  "validation_status": "needs_review"
+}
