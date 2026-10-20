@@ -1,0 +1,445 @@
+{
+  "file_count": 88,
+  "files": [
+    {
+      "path": "data/README.md",
+      "size_bytes": 24961,
+      "sha256": "2fe453db535e0126f099ffa55bbf93c45173ca56ec441541cd4d3b3170ead9cb"
+    },
+    {
+      "path": "data/processed/japan_student_coe_university_class12_structured.json",
+      "size_bytes": 6050,
+      "sha256": "2befd53a0ea256e267df344da637647fc51c15f25d2b4610fc1219b78bee7ebf"
+    },
+    {
+      "path": "data/processed/japan_student_coe_university_non_appropriate_structured.json",
+      "size_bytes": 9679,
+      "sha256": "d570b15fd60b97f20e2d1d3e4b6c4cbd29da1d132ee7cf97df90bc4345abed19"
+    },
+    {
+      "path": "data/processed/japan_working_holiday_accredited_agencies_structured.json",
+      "size_bytes": 14877,
+      "sha256": "9ce7dfda4b7aebf78ff25bd8d25b60d35c4d084d503e64431faffda66506495b"
+    },
+    {
+      "path": "data/processed/japan_working_holiday_application_structured.json",
+      "size_bytes": 8358,
+      "sha256": "fa09675746375db259d83089c7c7ae0c788a3f154ad5b6214b4fa72656b9f564"
+    },
+    {
+      "path": "data/processed/japan_working_holiday_documents_before_refactor.json",
+      "size_bytes": 18971,
+      "sha256": "57129e7da05274f542f4de68ace109c0a13d903402a6f65370b66afcbe050250"
+    },
+    {
+      "path": "data/processed/japan_working_holiday_documents_before_refactor_v2.json",
+      "size_bytes": 18971,
+      "sha256": "57129e7da05274f542f4de68ace109c0a13d903402a6f65370b66afcbe050250"
+    },
+    {
+      "path": "data/processed/japan_working_holiday_documents_structured.json",
+      "size_bytes": 18971,
+      "sha256": "0b186c108da853cf9ea91ff977c471cd66175bd64b95a1531bd8839e96a86c2a"
+    },
+    {
+      "path": "data/processed/japan_working_holiday_korea.json",
+      "size_bytes": 1056,
+      "sha256": "426f088789600d6dee838e140386fbb7106f50a7b229d96214b14cfe57f2b350"
+    },
+    {
+      "path": "data/processed/japan_working_holiday_post_entry_structured.json",
+      "size_bytes": 2920,
+      "sha256": "2250ac026a108f40142ab14fae4bed4fbb938316b7df962ed6608506ffa6d602"
+    },
+    {
+      "path": "data/processed/japan_working_holiday_programme_overview_structured.json",
+      "size_bytes": 1093,
+      "sha256": "5e3baf1ef627ad19d11a50dec05aaeadd900cf85504229924dce20bf5ef6f55e"
+    },
+    {
+      "path": "data/processed/japan_working_holiday_rules.json",
+      "size_bytes": 13045,
+      "sha256": "a01fb41d13f9462daf5480ef231c446597033d19bcb0ea9eb60c212245c34446"
+    },
+    {
+      "path": "data/processed/japan_working_holiday_useful_information_structured.json",
+      "size_bytes": 3621,
+      "sha256": "407874049f5dfb88950bd7317b56a2d81b11e4a63dd92ba5c0a0e0ca456f3954"
+    },
+    {
+      "path": "data/processed/japan_working_holiday_visa_validity_structured.json",
+      "size_bytes": 2150,
+      "sha256": "8b701d2249f4c06c7930f137ba90091dbf00f2f68a77b7ac21c60355fe78e8d2"
+    },
+    {
+      "path": "data/processed/japan_working_holiday_work_conditions_structured.json",
+      "size_bytes": 2960,
+      "sha256": "16ba7d3e21f4619cf8771fe45317fb05d2ed8f5a6cb27cf54d0493af3146108f"
+    },
+    {
+      "path": "data/raw/japan_student_coe.json",
+      "size_bytes": 4437,
+      "sha256": "2058b85c853f02ee4c71d0fbd67c873ec57d206547e0d91b60577884cc8ce8dd"
+    },
+    {
+      "path": "data/raw/japan_student_coe_country_list.json",
+      "size_bytes": 3297,
+      "sha256": "a43c84e8a888f9d7774691dc75e5285a2dc12a1519d8182646b5ef534179cae0"
+    },
+    {
+      "path": "data/raw/japan_student_coe_document_pdf_manifest.json",
+      "size_bytes": 2557,
+      "sha256": "63148e3bd09bf61a5018ac7a261b449107aceb7dbb8039581395808145bf7608"
+    },
+    {
+      "path": "data/raw/japan_student_coe_elementary_secondary_pdf_text.json",
+      "size_bytes": 10660,
+      "sha256": "ab9c74490c84c747c756635d374360e587d007e62d5196fb42e851c51422d21b"
+    },
+    {
+      "path": "data/raw/japan_student_coe_language_school_pdf_text.json",
+      "size_bytes": 23554,
+      "sha256": "0de45069bcbc97dba8dec4b5ddfe95aaa3a48f87f72b56e6e7c4aeb650aaca77"
+    },
+    {
+      "path": "data/raw/japan_student_coe_pdfs/001363332.pdf",
+      "size_bytes": 34370,
+      "sha256": "167ace852ab22a03173ae0d5b59a031ed64cf1e9baf214e04a4018758239ba45"
+    },
+    {
+      "path": "data/raw/japan_student_coe_pdfs/001463585.pdf",
+      "size_bytes": 413989,
+      "sha256": "192d15403ff7ef4f88f77381ce60274eb2bff36bec4a8a0702e7b333990519fd"
+    },
+    {
+      "path": "data/raw/japan_student_coe_pdfs/001463586.pdf",
+      "size_bytes": 428256,
+      "sha256": "4594c3c0e7a4edfc1923644772db3fbf69b208fd22c7f373da5e06d1b1727ccd"
+    },
+    {
+      "path": "data/raw/japan_student_coe_pdfs/001463587.pdf",
+      "size_bytes": 376961,
+      "sha256": "705edf7521db01c141f5cc30393a65e5bec51d68b785f428e8987b553bb43b73"
+    },
+    {
+      "path": "data/raw/japan_student_coe_pdfs/001463588.pdf",
+      "size_bytes": 398020,
+      "sha256": "340bc4838dada0644784c6d90a3aaca050213831ade69d6c9a74506bc1729407"
+    },
+    {
+      "path": "data/raw/japan_student_coe_pdfs/001463589.pdf",
+      "size_bytes": 407390,
+      "sha256": "53719263f5629331aab500de70a3af3760d18d62d319a6a05cc73820a5fd0807"
+    },
+    {
+      "path": "data/raw/japan_student_coe_pdfs/001463590.pdf",
+      "size_bytes": 373077,
+      "sha256": "0de1641c111639d67ac3919ab2462f5384e75666bd6f22e7400412bd38f664ee"
+    },
+    {
+      "path": "data/raw/japan_student_coe_pdfs/001463591.pdf",
+      "size_bytes": 407287,
+      "sha256": "a7b42ac4464a34c8eef06c6ab7a897547f16e5218f6f9845db80942a8b589a5f"
+    },
+    {
+      "path": "data/raw/japan_student_coe_pdfs/001463592.pdf",
+      "size_bytes": 399558,
+      "sha256": "50416a1f5c39cec4d4c19bd2383ecf51d007af3148b59e98ee7cf12b051f536d"
+    },
+    {
+      "path": "data/raw/japan_student_coe_pdfs/001463593.pdf",
+      "size_bytes": 420159,
+      "sha256": "d594cca1e0435a7e265a8440ea652e3407ef306fd8fb2045473e71e9412c9160"
+    },
+    {
+      "path": "data/raw/japan_student_coe_university_pdf_text.json",
+      "size_bytes": 19329,
+      "sha256": "48fc7e79798528a1cb0a27622b8749fb9e7adae7c7edb3407028077743a367b3"
+    },
+    {
+      "path": "data/raw/japan_student_coe_vocational_pdf_text.json",
+      "size_bytes": 22506,
+      "sha256": "d9bde52fce25cf90dcfe087a0afdb19cccda4ff9ab8d12c3c861cb13d76b423f"
+    },
+    {
+      "path": "data/raw/japan_student_immigration.html",
+      "size_bytes": 65981,
+      "sha256": "62bca24f2917208c6b14198c9962e46c82a646164a085f15743ebd77f952a97f"
+    },
+    {
+      "path": "data/raw/japan_student_immigration.json",
+      "size_bytes": 23846,
+      "sha256": "9d65a55a5b213570769b3842d67f87b4847714ec2263882bc0cd1da4d0e70db3"
+    },
+    {
+      "path": "data/raw/japan_student_immigration_ja.html",
+      "size_bytes": 52012,
+      "sha256": "a77ca7296bb74322f36c7f873b978b00ad8cc13d4dddb967eab8e4e6f015b1b8"
+    },
+    {
+      "path": "data/raw/japan_working_holiday.html",
+      "size_bytes": 35994,
+      "sha256": "c867a780feb270e31d7c602732d0795dee8e71d39fce48ee774997037e3d1b86"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_accredited_agencies.pdf",
+      "size_bytes": 141132,
+      "sha256": "35eb8c4913dfcc21a354f3f807d8dd8434af5d5a12ff66b202103d084ce1782f"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_application.json",
+      "size_bytes": 8363,
+      "sha256": "c8c73ff34f9f72c43e3dd435091304aef89c142b31c80fba01692f7f18d52ebc"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents.html",
+      "size_bytes": 20403,
+      "sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents.json",
+      "size_bytes": 4567,
+      "sha256": "6d76feeed5738357ffbc28baa5df181790d71f894f30d7cc91fec2095bcc795b"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents_files/100000041.gif",
+      "size_bytes": 1722,
+      "sha256": "0dbca42c2fc90349398b40a5a97d5076eb68944638e53d943f7785a0fa4d2b55"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents_files/100002065.gif",
+      "size_bytes": 2141,
+      "sha256": "0cf81fc9687a190e6775536e21b1048722466604858b50aa982f536c6614e604"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents_files/amazonmenu.js.다운로드",
+      "size_bytes": 3271,
+      "sha256": "9a6a7f12d40ba52d55f26e2366fb4632240250d3dd6176ac25f34f78ba0fa847"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents_files/brand",
+      "size_bytes": 13880,
+      "sha256": "6395e6f9f6fbcd953f0ffa40615094c565d86c265fb5028e64dd2dc872b5ce69"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents_files/common.css",
+      "size_bytes": 80806,
+      "sha256": "fd8cb0e678f0475dd8c819458cb3db68725bf9ea113f38db61f301a434ca7760"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents_files/common_new.js.다운로드",
+      "size_bytes": 31887,
+      "sha256": "a117027a315584469a27ef2e76106b8913d4b6d20f04379579a47e7a682ab8cb"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents_files/fixHeight.js.다운로드",
+      "size_bytes": 3102,
+      "sha256": "88a62943f85f46a6e7a2b322773c92a84746be73fd69e9d32a43b862b6158bed"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents_files/import.css",
+      "size_bytes": 213,
+      "sha256": "a5771cec6f6aebda284ab8d2b52c192ab4488551c2107d0ba244a9987f1c5856"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents_files/jquery-3-6-0.js.다운로드",
+      "size_bytes": 89501,
+      "sha256": "ee11e902416a1d896f538103110337b39a0e2e2606bc1faf5cd0652914891127"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents_files/jquery_textresize_event.js.다운로드",
+      "size_bytes": 1339,
+      "sha256": "c63ebae1d2e3f906adcc96f2cafdafc850869dc0c76ff601a3236a94b99d103d"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents_files/layout_new.css",
+      "size_bytes": 17030,
+      "sha256": "b04e27ff41d53a0dd9ea2123a77b1884b47e8f728a4ce602c654cee3235d1f18"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_documents_files/old_adjust.css",
+      "size_bytes": 7654,
+      "sha256": "1c723e286250309030b7429f3cd90a7baed42dc88aadd2220a72b755bc6d7ac3"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_eligibility.json",
+      "size_bytes": 3511,
+      "sha256": "64efbf2b856f1230d23ee6eb8093e6a30bfcfcf5353315d6863abbfdcca1b053"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_embassy.html",
+      "size_bytes": 20539,
+      "sha256": "e92d57ef78942c127dd48e33bfadb31f3da5a5c2c38d803bc120d9b42c56f2d6"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_embassy_eligibility.json",
+      "size_bytes": 1619,
+      "sha256": "5bd661647162593535c30ace826d5a65f428bfcaafbd2482e597e9c40a799841"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_embassy_files/100002065.gif",
+      "size_bytes": 2141,
+      "sha256": "0cf81fc9687a190e6775536e21b1048722466604858b50aa982f536c6614e604"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_embassy_files/amazonmenu.js.다운로드",
+      "size_bytes": 3271,
+      "sha256": "9a6a7f12d40ba52d55f26e2366fb4632240250d3dd6176ac25f34f78ba0fa847"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_embassy_files/brand",
+      "size_bytes": 13880,
+      "sha256": "6395e6f9f6fbcd953f0ffa40615094c565d86c265fb5028e64dd2dc872b5ce69"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_embassy_files/common.css",
+      "size_bytes": 80806,
+      "sha256": "fd8cb0e678f0475dd8c819458cb3db68725bf9ea113f38db61f301a434ca7760"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_embassy_files/common_new.js.다운로드",
+      "size_bytes": 31887,
+      "sha256": "a117027a315584469a27ef2e76106b8913d4b6d20f04379579a47e7a682ab8cb"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_embassy_files/fixHeight.js.다운로드",
+      "size_bytes": 3102,
+      "sha256": "88a62943f85f46a6e7a2b322773c92a84746be73fd69e9d32a43b862b6158bed"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_embassy_files/import.css",
+      "size_bytes": 213,
+      "sha256": "a5771cec6f6aebda284ab8d2b52c192ab4488551c2107d0ba244a9987f1c5856"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_embassy_files/jquery-3-6-0.js.다운로드",
+      "size_bytes": 89501,
+      "sha256": "ee11e902416a1d896f538103110337b39a0e2e2606bc1faf5cd0652914891127"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_embassy_files/jquery_textresize_event.js.다운로드",
+      "size_bytes": 1339,
+      "sha256": "c63ebae1d2e3f906adcc96f2cafdafc850869dc0c76ff601a3236a94b99d103d"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_embassy_files/layout_new.css",
+      "size_bytes": 17030,
+      "sha256": "b04e27ff41d53a0dd9ea2123a77b1884b47e8f728a4ce602c654cee3235d1f18"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_embassy_files/old_adjust.css",
+      "size_bytes": 7654,
+      "sha256": "1c723e286250309030b7429f3cd90a7baed42dc88aadd2220a72b755bc6d7ac3"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/000062250.gif",
+      "size_bytes": 1138,
+      "sha256": "1ab6eb0131f4b5ee0732e600dd2b3140e1803bc8461b126f29ba552413906d05"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/100000047.png",
+      "size_bytes": 5743,
+      "sha256": "efa75cea5f63e77ca4197eaa368d7bfca229c907b5e3f0cfc18b81b10e3b509c"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/1wu2QLdHhT9.webp",
+      "size_bytes": 168,
+      "sha256": "194f568e3f4d54c5c0fc7f024d65c885248fde76f9cfda94f3823392c94faf79"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/brand",
+      "size_bytes": 13880,
+      "sha256": "6395e6f9f6fbcd953f0ffa40615094c565d86c265fb5028e64dd2dc872b5ce69"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/button.2276a045429f6681b56da5eb1dcfa53c.js.다운로드",
+      "size_bytes": 7884,
+      "sha256": "4ee4dba1ddfe03aec77c811a8a891642f7b64c8b8aa676e8dcf0dd42b0151e7d"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/common.js.다운로드",
+      "size_bytes": 35664,
+      "sha256": "ed1d323aa7133c5d15abb0149459b1ed8eea2512a4ff16d27bffae73a1f8de43"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/d9kayN79Jjh.js.다운로드",
+      "size_bytes": 562204,
+      "sha256": "b514207800dafd6fbd1a98354fca2de520593c60fc6c6f5b43635403090bc649"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/jquery-3-6-0.js.다운로드",
+      "size_bytes": 89501,
+      "sha256": "ee11e902416a1d896f538103110337b39a0e2e2606bc1faf5cd0652914891127"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/layout.css",
+      "size_bytes": 17529,
+      "sha256": "92b6e79fa193a6069fbe396bf329c1ad7429348d9dd43a08c0d3ab994cb0ab64"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/new_aly.css",
+      "size_bytes": 2186,
+      "sha256": "cf33cda83d3cf60829080a9dd5bb1a8c478ef7c4b1bf84a45868d3fbf206a5c9"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/new_common.css",
+      "size_bytes": 94043,
+      "sha256": "52f502e1f18b946f8e1ca4befe512da3954232c57ca09acc3c09fb4468b2ca79"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/old_import_en.css",
+      "size_bytes": 594,
+      "sha256": "9d4668eed53cada8af3c671b14cddd1a48fad35954455db5af64219e5f2df5a7"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/print.css",
+      "size_bytes": 17855,
+      "sha256": "5bba0111d8c30f2d0329783b64d1d8e2bd9de6284cd9a37eb71f7e89ec3ac482"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/saved_resource.html",
+      "size_bytes": 291,
+      "sha256": "1badcf6ec543b7e53733a096beae32e958508bcd8afe7604b6cc205878b508c3"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/share_button.html",
+      "size_bytes": 44362,
+      "sha256": "248db3ceba16d70b87a0ebf60dd34d5f538c9d88a825a226d4da9cf593466a92"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/tweet_button.1227a5674072e080ffb1ba14ac0c1079.en.html",
+      "size_bytes": 34720,
+      "sha256": "751faa2ec07647c418cf20ccdb48273868d2a6f93790daf337f34bb4b41e346a"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/widget_iframe.1227a5674072e080ffb1ba14ac0c1079.html",
+      "size_bytes": 327412,
+      "sha256": "242060189e7874e452215fc19a2f58c175acc97f42cba9e447826f991b82fca6"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_files/widgets.js.다운로드",
+      "size_bytes": 93967,
+      "sha256": "2ba02cd55d865d24d23534d6f33db4654634d5ecaea53e2e5c2df6c8e9700e6f"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_hash_baseline.json",
+      "size_bytes": 1234,
+      "sha256": "85f8dc6f21bb8a629e50c7fce977d0936bb4479374a0ced4942e51138b32950b"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_post_entry.json",
+      "size_bytes": 868,
+      "sha256": "15985bb509274c174ae8e24e00ec8d375a4b3a235c26af76e02e5f74da1f73b3"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_useful_information.json",
+      "size_bytes": 1409,
+      "sha256": "7b600f17506c7c759d5ed7313abcfbd365e03fc36102f7bae2c5718fd73dde95"
+    },
+    {
+      "path": "data/raw/japan_working_holiday_work_conditions.json",
+      "size_bytes": 1359,
+      "sha256": "f6ca1e209cb9b143da4604cab05e8de2a9bd1a6f1adf77b92e3f8eec5cf6d132"
+    }
+  ]
+}
