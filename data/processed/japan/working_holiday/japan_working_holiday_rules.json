@@ -1,0 +1,324 @@
+{
+  "route_id": "JP-WH",
+  "program_id": "JP-WH-01",
+  "target_nationality": "KR",
+  "sources": {
+    "mofa": "https://www.mofa.go.jp/j_info/visit/w_holiday/",
+    "embassy": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html"
+  },
+  "source_metadata": {
+    "collection_mode": "manual",
+    "page_display_dates": {
+      "mofa": "2026-04-01",
+      "embassy": "2026-09-30"
+    },
+    "extracted_at": null,
+    "verified_at": null,
+    "source_license": null,
+    "needs_verification": true,
+    "validation_status": "needs_review"
+  },
+  "requirements": [
+    {
+      "rule_id": "JP_WH_001",
+      "field": "nationality",
+      "operator": "equals",
+      "value": "KR",
+      "source": "embassy",
+      "description": "대한민국 국민일 것",
+      "validation_status": "needs_review",
+      "evidence": {
+        "source": "embassy",
+        "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "original_text": "대한민국에 거주하는 대한민국 국민일 것."
+      },
+      "evaluation_mode": "automatic",
+      "evaluator_tested": false
+    },
+    {
+      "rule_id": "JP_WH_002",
+      "field": "residence_country",
+      "operator": "equals",
+      "value": "KR",
+      "source": "embassy",
+      "description": "현재 대한민국에 거주할 것",
+      "validation_status": "needs_review",
+      "evidence": {
+        "source": "embassy",
+        "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "original_text": "대한민국에 거주하는 대한민국 국민일 것."
+      },
+      "evaluation_mode": "automatic",
+      "evaluator_tested": false
+    },
+    {
+      "rule_id": "JP_WH_003",
+      "field": "age_at_application",
+      "operator": "range_with_exception",
+      "normal_range": {
+        "min": 18,
+        "max": 25
+      },
+      "exception_range": {
+        "min": 26,
+        "max": 30
+      },
+      "exception_condition": "부득이한 사정 인정 필요",
+      "source": "embassy",
+      "description": "신청 시 원칙적으로 18~25세, 예외적으로 30세 이하",
+      "validation_status": "needs_review",
+      "evidence": {
+        "source": "embassy",
+        "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "original_text": "사증신청 시점에서 원칙적으로 18세 이상 25세(부득이한 사정이 있다고 인정되는 경우는 30세) 이하일 것."
+      },
+      "evaluation_mode": "automatic_with_exception",
+      "evaluator_tested": false
+    },
+    {
+      "rule_id": "JP_WH_004",
+      "field": "previous_visa_issuances",
+      "operator": "less_than_or_equal",
+      "value": 1,
+      "source": "embassy",
+      "description": "과거 워킹홀리데이 사증 발급 횟수가 0회 또는 1회일 것",
+      "note": "특단의 사정 없이 출국을 취소하거나 연기하여 발급된 워킹홀리데이 사증을 사용하지 않은 채 실효된 경우에도 발급 1회로 계산",
+      "additional_evidence": {
+        "source": "embassy",
+        "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "original_text": "※특단의 사정 없이 도항을 취소하거나 연기하여, 이미 발급된 워킹홀리데이 사증을 사용하지 않은 채 실효된 경우 1회 발급받은 것으로 간주함."
+      },
+      "visa_issuance_policy": {
+        "effective_from": "2025-10-01",
+        "maximum_lifetime_participations": 2,
+        "stay_pattern": "two_nonconsecutive_one_year_stays",
+        "previous_issuances_allowed": [
+          0,
+          1
+        ],
+        "evidence": {
+          "source": "mofa",
+          "source_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/",
+          "original_text": "Starting from 1 October, 2025, the nationals of South Korea are allowed to participate in the Working Holiday Programmes twice in lifetime (two inconsecutive one-year stays in total)."
+        },
+        "validation_status": "needs_review"
+      },
+      "validation_status": "needs_review",
+      "evidence": {
+        "source": "embassy",
+        "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "original_text": "과거 워킹홀리데이 사증을 발급받은 횟수가 1회 또는 0회일 것."
+      },
+      "evaluation_mode": "automatic",
+      "evaluator_tested": false
+    },
+    {
+      "rule_id": "JP_WH_005",
+      "field": "accompanying_children",
+      "operator": "equals",
+      "value": false,
+      "source": "embassy",
+      "description": "자녀를 동반하지 않을 것",
+      "additional_evidence": {
+        "source": "mofa",
+        "source_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/",
+        "original_text": "Not being accompanied by dependents or children.",
+        "note": "외무성 일반 안내는 부양가족과 자녀를 모두 언급하지만, 주한일본대사관의 한국 대상 안내는 자녀만 명시함. 적용 범위에 대한 추가 검토가 필요함.",
+        "validation_status": "needs_review"
+      },
+      "review_fields": [
+        {
+          "field": "accompanying_dependents",
+          "value_type": "boolean",
+          "question": "일본 체류 시 부양가족을 동반할 예정인가요?",
+          "review_when": true,
+          "review_status": "NEEDS_REVIEW",
+          "validation_status": "needs_review"
+        }
+      ],
+      "validation_status": "needs_review",
+      "evidence": {
+        "source": "embassy",
+        "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "original_text": "자녀를 동반하지 않는 자일 것."
+      },
+      "evaluation_mode": "automatic",
+      "evaluator_tested": false
+    },
+    {
+      "rule_id": "JP_WH_006",
+      "field": "available_funds_krw",
+      "operator": "manual_review",
+      "reference_amount": 2800000,
+      "source": "embassy",
+      "description": "귀국 항공권 구입비 및 초기 체류비로 약 280만 원",
+      "note": "안내 금액이므로 단순 수치 비교만으로 최종 자격 확정 금지",
+      "funds_evidence_policy": {
+        "primary_document": "본인 명의 은행 잔고증명서",
+        "family_support_allowed": true,
+        "family_support_condition": "가족으로부터 부양을 받고 있는 학생 등",
+        "family_support_documents": [
+          "부양하는 가족 명의의 은행 잔고증명서",
+          "부양자와의 관계를 증명하는 가족관계증명서"
+        ],
+        "related_document_id": "JP_WH_DOC_009",
+        "amount_is_approximate": true,
+        "evidence_text": "학생 등이 가족으로부터 부양을 받고 있는 경우는 신청인 계좌(통장)가 아니라도 부양하는 가족의 은행 발행의 잔고증명서도 가능하지만, 이때는 부양자와의 관계를 알 수 있는 가족관계증명서를 제출해 주십시오.",
+        "validation_status": "needs_review"
+      },
+      "evidence": {
+        "source": "embassy",
+        "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "original_text": "귀국 시 비행기 표를 구입하기에 충분한 자금과 일본에서의 체재 초기에 생계를 유지할 수 있을 만큼의 자금을 소지할 것 (280만원 정도)."
+      },
+      "validation_status": "needs_review",
+      "evaluation_mode": "manual",
+      "evaluator_tested": false
+    },
+    {
+      "rule_id": "JP_WH_007",
+      "field": "health",
+      "operator": "manual_review",
+      "source": "embassy",
+      "description": "건강할 것",
+      "evidence": {
+        "source": "embassy",
+        "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "original_text": "건강할 것."
+      },
+      "validation_status": "needs_review",
+      "evaluation_mode": "manual",
+      "evaluator_tested": false
+    },
+    {
+      "rule_id": "JP_WH_008",
+      "field": "japanese_language",
+      "operator": "manual_review",
+      "source": "embassy",
+      "description": "최소한의 일본어 능력 또는 일본어 습득 의욕",
+      "japanese_language_policy": {
+        "option_logic": "OR",
+        "acceptable_conditions": [
+          "basic_japanese_proficiency",
+          "willingness_to_learn_japanese"
+        ],
+        "related_document_id": "JP_WH_DOC_014",
+        "certificate_required_for_eligibility": false,
+        "requires_individual_review": true,
+        "validation_status": "needs_review"
+      },
+      "evidence": {
+        "source": "embassy",
+        "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "original_text": "일본에서 생활하기 위해 필요한 최저한도의 일본어 능력을 갖고 있거나, 혹은 습득할 의욕을 가질 것."
+      },
+      "validation_status": "needs_review",
+      "evaluation_mode": "manual",
+      "evaluator_tested": false
+    },
+    {
+      "rule_id": "JP_WH_009",
+      "field": "primary_purpose",
+      "operator": "manual_review",
+      "source": "embassy",
+      "description": "일본에서 휴가를 보내는 것이 주목적",
+      "purpose_policy": {
+        "required_primary_purpose": "holiday",
+        "review_fields": [
+          {
+            "field": "primary_purpose",
+            "question": "일본에 체류하려는 가장 주된 목적은 무엇인가요?",
+            "example_options": [
+              "holiday",
+              "cultural_experience",
+              "employment",
+              "study",
+              "other"
+            ]
+          }
+        ],
+        "requires_individual_review": true,
+        "related_document_ids": [
+          "JP_WH_DOC_003",
+          "JP_WH_DOC_004"
+        ],
+        "validation_status": "needs_review"
+      },
+      "evidence": {
+        "source": "embassy",
+        "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "original_text": "주된 목적이 휴가를 보내기 위해 일본에 입국할 의도를 가질 것."
+      },
+      "validation_status": "needs_review",
+      "evaluation_mode": "manual",
+      "evaluator_tested": false
+    },
+    {
+      "rule_id": "JP_WH_010",
+      "field": "valid_passport",
+      "operator": "equals",
+      "value": true,
+      "source": "mofa",
+      "description": "유효한 여권을 소지할 것",
+      "passport_policy": {
+        "valid_passport_required": true,
+        "related_document_id": "JP_WH_DOC_010",
+        "minimum_remaining_validity_months": null,
+        "copy_requirements_defined_in_document": true,
+        "validation_status": "needs_review"
+      },
+      "evidence": {
+        "source": "mofa",
+        "source_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/",
+        "original_text": "Possessing a valid passport of his or her country/region and a return travel ticket or sufficient funds with which to purchase such a ticket."
+      },
+      "validation_status": "needs_review",
+      "evaluation_mode": "automatic",
+      "evaluator_tested": false
+    },
+    {
+      "rule_id": "JP_WH_011",
+      "field": "return_travel_funds",
+      "operator": "manual_review",
+      "source": "mofa",
+      "description": "귀국 항공권 또는 이를 구입할 충분한 자금",
+      "note": "대사관은 귀국 항공권 구입비와 초기 체류비로 약 280만 원을 안내함. JP_WH_006과 함께 검토할 것.",
+      "return_travel_policy": {
+        "acceptable_options": [
+          "return_ticket",
+          "sufficient_funds_to_purchase_return_ticket"
+        ],
+        "option_logic": "OR",
+        "related_rule_id": "JP_WH_006",
+        "related_document_id": "JP_WH_DOC_009",
+        "avoid_double_counting": true,
+        "requires_individual_review": true,
+        "validation_status": "needs_review"
+      },
+      "evidence": {
+        "source": "mofa",
+        "source_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/",
+        "original_text": "Possessing a valid passport of his or her country/region and a return travel ticket or sufficient funds with which to purchase such a ticket."
+      },
+      "validation_status": "needs_review",
+      "evaluation_mode": "manual",
+      "evaluator_tested": false
+    }
+  ],
+  "validation_status": "evidence_attached_needs_review",
+  "evaluation_policy": {
+    "supported_statuses": [
+      "ELIGIBLE",
+      "INELIGIBLE",
+      "NEEDS_REVIEW",
+      "UNKNOWN",
+      "BLOCKED_BY_KR_RULE"
+    ],
+    "missing_input_status": "UNKNOWN",
+    "manual_review_status": "NEEDS_REVIEW",
+    "exception_review_status": "NEEDS_REVIEW",
+    "kr_rule_block_requires_evidence": true,
+    "implementation_status": "not_implemented",
+    "validation_status": "needs_review"
+  }
+}

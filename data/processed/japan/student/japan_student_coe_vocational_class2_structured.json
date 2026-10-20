@@ -1,0 +1,231 @@
+{
+  "program_id": "JP-ST-01",
+  "route_id": "JP-ST",
+  "application_type": "certificate_of_eligibility",
+  "school_category": "vocational_school",
+  "school_classification": "appropriate_school_class_2",
+  "target_nationality": "KR",
+  "nationality_category": "listed_countries",
+  "source_language": "ja",
+  "source_url": "https://www.moj.go.jp/isa/content/001463588.pdf",
+  "source_sha256": "340bc4838dada0644784c6d90a3aaca050213831ade69d6c9a74506bc1729407",
+  "validation_status": "needs_review",
+  "documents": [
+    {
+      "document_id": "JP_ST_COE_VOC_C2_001",
+      "row_number": 1,
+      "name_ja": "在留資格認定証明書交付申請書",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "nationality_columns": {
+        "listed_countries": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "other_countries": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463588",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463588.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_C2_002",
+      "row_number": 2,
+      "name_ja": "提出書類一覧表（本表及び別紙「各種確認書」）",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "nationality_columns": {
+        "listed_countries": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "other_countries": {
+          "symbol": "△",
+          "status": "conditional"
+        }
+      },
+      "condition_original_ja": "専修学校又は各種学校に入学する場合は「各種確認書」の提出は不要",
+      "source": {
+        "document_id": "001463588",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463588.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_C2_003",
+      "row_number": 3,
+      "name_ja": "旅券の身分事項ページ（写し）及び追記欄に記載がある旅券については追記欄ページ（写し）",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "nationality_columns": {
+        "listed_countries": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "other_countries": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463588",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463588.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_C2_004",
+      "row_number": 4,
+      "name_ja": "日本語能力に係る資料",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "nationality_columns": {
+        "listed_countries": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "other_countries": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463588",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463588.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_C2_005",
+      "row_number": 5,
+      "name_ja": "経費支弁書",
+      "requirement_symbol": "－",
+      "requirement_status": "not_applicable",
+      "nationality_columns": {
+        "listed_countries": {
+          "symbol": "－",
+          "status": "not_applicable"
+        },
+        "other_countries": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463588",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463588.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_C2_006",
+      "row_number": 6,
+      "name_ja": "預金残高証明書(原本)",
+      "requirement_symbol": "－",
+      "requirement_status": "not_applicable",
+      "nationality_columns": {
+        "listed_countries": {
+          "symbol": "－",
+          "status": "not_applicable"
+        },
+        "other_countries": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463588",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463588.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_C2_007",
+      "row_number": 7,
+      "name_ja": "奨学金の給付に関する証明書",
+      "requirement_symbol": "－",
+      "requirement_status": "not_applicable",
+      "nationality_columns": {
+        "listed_countries": {
+          "symbol": "－",
+          "status": "not_applicable"
+        },
+        "other_countries": {
+          "symbol": "△",
+          "status": "conditional"
+        }
+      },
+      "condition_original_ja": "奨学金の給付を受ける場合（詳細は奨学金の給付に関する証明書一覧のとおり）",
+      "source": {
+        "document_id": "001463588",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463588.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_C2_008",
+      "row_number": 8,
+      "name_ja": "申請人の身の回りの世話や生活上の相談及び助言等を行う体制について教育機関が確認したことを証する資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "nationality_columns": {
+        "listed_countries": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "other_countries": {
+          "symbol": "△",
+          "status": "conditional"
+        }
+      },
+      "condition_original_ja": "18歳未満の申請人が単身で生活する場合（入寮等する場合を除く。）",
+      "source": {
+        "document_id": "001463588",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463588.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_C2_009",
+      "row_number": 9,
+      "name_ja": "認定不交付処分又は在留不許可処分について、処分理由を払拭する説明及び資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "nationality_columns": {
+        "listed_countries": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "other_countries": {
+          "symbol": "△",
+          "status": "conditional"
+        }
+      },
+      "condition_original_ja": "在留資格認定証明書交付申請の不交付処分、在留期間更新許可申請又は在留資格変更許可申請の不許可処分を受けたことがある場合",
+      "source": {
+        "document_id": "001463588",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463588.pdf"
+      },
+      "validation_status": "needs_review"
+    }
+  ]
+}

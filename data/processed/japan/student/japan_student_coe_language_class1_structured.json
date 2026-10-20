@@ -1,0 +1,98 @@
+{
+  "program_id": "JP-ST-01",
+  "route_id": "JP-ST",
+  "application_type": "certificate_of_eligibility",
+  "school_category": "japanese_language_school",
+  "school_classification": "appropriate_school_class_1",
+  "target_nationality": "KR",
+  "source_language": "ja",
+  "source_url": "https://www.moj.go.jp/isa/content/001463590.pdf",
+  "source_sha256": "0de1641c111639d67ac3919ab2462f5384e75666bd6f22e7400412bd38f664ee",
+  "validation_status": "needs_review",
+  "documents": [
+    {
+      "document_id": "JP_ST_COE_LANG_C1_001",
+      "row_number": 1,
+      "name_ja": "在留資格認定証明書交付申請書",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463590",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463590.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_LANG_C1_002",
+      "row_number": 2,
+      "name_ja": "提出書類一覧表（本表及び別紙「各種確認書」）",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "別表掲載国・地域の出身国籍である申請人が外国の高等教育機関（大学等）を卒業し、その卒業証書等を提出する場合、「各種確認書」の提出は不要",
+      "source": {
+        "document_id": "001463590",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463590.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_LANG_C1_003",
+      "row_number": 3,
+      "name_ja": "旅券の身分事項ページ（写し）及び追記欄に記載がある旅券は追記欄ページ（写し）",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463590",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463590.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_LANG_C1_004",
+      "row_number": 4,
+      "name_ja": "日本語能力に係る資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "上記２の「各種確認書」で試験を選択した場合、試験の証明書を併せて提出（面接欄にも記載する場合を除く。）",
+      "source": {
+        "document_id": "001463590",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463590.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_LANG_C1_005",
+      "row_number": 5,
+      "name_ja": "申請人の身の回りの世話や生活上の相談及び助言等を行う体制について教育機関が確認したことを証する資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "18歳未満の申請人が単身で生活する場合（入寮等する場合を除く。）",
+      "source": {
+        "document_id": "001463590",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463590.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_LANG_C1_006",
+      "row_number": 6,
+      "name_ja": "認定不交付処分又は在留不許可処分について、処分理由を払拭する説明及び資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "在留資格認定証明書交付申請の不交付処分、在留期間更新許可申請又は在留資格変更許可申請の不許可処分を受けたことがある場合",
+      "source": {
+        "document_id": "001463590",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463590.pdf"
+      },
+      "validation_status": "needs_review"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "program_id": "JP-ST-01",
+  "route_id": "JP-ST",
+  "application_type": "certificate_of_eligibility",
+  "school_category": "vocational_school",
+  "school_classification": "not_notified_as_appropriate_school",
+  "target_nationality": "KR",
+  "source_language": "ja",
+  "source_url": "https://www.moj.go.jp/isa/content/001463589.pdf",
+  "source_sha256": "53719263f5629331aab500de70a3af3760d18d62d319a6a05cc73820a5fd0807",
+  "validation_status": "needs_review",
+  "documents": [
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_001",
+      "row_number": 1,
+      "name_ja": "在留資格認定証明書交付申請書",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_002",
+      "row_number": 2,
+      "name_ja": "提出書類一覧表（本表及び別紙「各種確認書」）",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "専修学校又は各種学校に入学する場合は「各種確認書」の提出は不要",
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_003",
+      "row_number": 3,
+      "name_ja": "旅券の身分事項ページ（写し）及び追記欄に記載がある旅券については追記欄ページ（写し）",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_004",
+      "row_number": 4,
+      "name_ja": "最終学校の卒業証明書",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "所属機関が大学・専修学校専門課程（専ら日本語教育を受ける者を除く。）以外の場合",
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_005",
+      "row_number": 5,
+      "name_ja": "日本語能力に係る資料",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_006",
+      "row_number": 6,
+      "name_ja": "経費支弁書",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_007",
+      "row_number": 7,
+      "name_ja": "経費支弁者と申請人の関係を立証する資料",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_008",
+      "row_number": 8,
+      "name_ja": "預金残高証明書(原本)",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_009",
+      "row_number": 9,
+      "name_ja": "過去１年間の資金形成経緯を明らかにする資料",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_010",
+      "row_number": 10,
+      "name_ja": "経費支弁者の職業を立証する資料",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_011",
+      "row_number": 11,
+      "name_ja": "過去１年間の経費支弁者の収入を立証する資料",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_012",
+      "row_number": 12,
+      "name_ja": "奨学金の給付に関する証明書",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "奨学金の給付を受ける場合（詳細は奨学金の給付に関する証明書一覧のとおり）",
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_013",
+      "row_number": 13,
+      "name_ja": "申請人の身の回りの世話や生活上の相談及び助言等を行う体制について教育機関が確認したことを証する資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "18歳未満の申請人が単身で生活する場合（入寮等する場合を除く。）",
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_VOC_NONAPP_014",
+      "row_number": 14,
+      "name_ja": "認定不交付処分又は在留不許可処分について、処分理由を払拭する説明及び資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "在留資格認定証明書交付申請の不交付処分、在留期間更新許可申請又は在留資格変更許可申請の不許可処分を受けたことがある場合",
+      "source": {
+        "document_id": "001463589",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463589.pdf"
+      },
+      "validation_status": "needs_review"
+    }
+  ]
+}

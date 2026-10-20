@@ -1,0 +1,329 @@
+{
+  "program_id": "JP-ST-01",
+  "route_id": "JP-ST",
+  "application_type": "certificate_of_eligibility",
+  "school_category": "elementary_secondary_school",
+  "school_classification": "elementary_junior_high_high_school",
+  "target_nationality": "KR",
+  "source_language": "ja",
+  "source_url": "https://www.moj.go.jp/isa/content/001463593.pdf",
+  "source_sha256": "d594cca1e0435a7e265a8440ea652e3407ef306fd8fb2045473e71e9412c9160",
+  "validation_status": "needs_review",
+  "documents": [
+    {
+      "document_id": "JP_ST_COE_SCHOOL_001",
+      "row_number": 1,
+      "name_ja": "在留資格認定証明書交付申請書",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "condition_scope": null,
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_002",
+      "row_number": 2,
+      "name_ja": "提出書類一覧表（本表及び別紙「各種確認書」）",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "高校に入学する場合は「各種確認書」の提出は不要",
+      "condition_scope": "individual_row",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_003",
+      "row_number": 3,
+      "name_ja": "旅券の身分事項ページ（写し）及び追記欄に記載がある旅券は追記欄ページ（写し）",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "condition_scope": null,
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_004",
+      "row_number": 4,
+      "name_ja": "戸籍又はこれに代わる証明書",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "condition_scope": null,
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_005",
+      "row_number": 5,
+      "name_ja": "最終学校の卒業証明書",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "高校に入学する場合",
+      "condition_scope": "inline_text",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_006",
+      "row_number": 6,
+      "name_ja": "日本語学習歴を証明する資料（本国政府等から認可を受けた施設で学習したもの。オンライン学習が含まれている場合はその時間数を明記したもの。）",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "高校に入学する場合であって、かつ、教育機関において１年以上の日本語学習歴を有している場合",
+      "condition_scope": "individual_row",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_007",
+      "row_number": 7,
+      "name_ja": "学生交換計画その他これに準ずる国際交流計画に関する資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "学生交換計画又はこれに準ずる国際交流計画を策定している場合",
+      "condition_scope": "individual_row",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_008",
+      "row_number": 8,
+      "name_ja": "経費支弁書",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "condition_scope": null,
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_009",
+      "row_number": 9,
+      "name_ja": "経費支弁者と申請人の関係を立証する資料",
+      "requirement_symbol": "○",
+      "requirement_status": "required",
+      "condition_original_ja": null,
+      "condition_scope": null,
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_010",
+      "row_number": 10,
+      "name_ja": "預金残高証明書(原本)",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "高校に入学する場合であって、学生交換計画又はこれに準ずる国際交流計画を策定していない場合",
+      "condition_scope": "merged_cell",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_011",
+      "row_number": 11,
+      "name_ja": "過去１年間の資金形成経緯を明らかにする資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "高校に入学する場合であって、学生交換計画又はこれに準ずる国際交流計画を策定していない場合",
+      "condition_scope": "merged_cell",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_012",
+      "row_number": 12,
+      "name_ja": "経費支弁者の職業を立証する資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "高校に入学する場合であって、学生交換計画又はこれに準ずる国際交流計画を策定していない場合",
+      "condition_scope": "merged_cell",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_013",
+      "row_number": 13,
+      "name_ja": "過去１年間の経費支弁者の収入を立証する資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "高校に入学する場合であって、学生交換計画又はこれに準ずる国際交流計画を策定していない場合",
+      "condition_scope": "merged_cell",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_014",
+      "row_number": 14,
+      "name_ja": "監護するに至った経緯、監護計画を説明する資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": null,
+      "condition_scope": null,
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_015",
+      "row_number": 15,
+      "name_ja": "監護人と申請人の関係を立証する資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "中学校又は小学校に入学する場合",
+      "condition_scope": "merged_cell",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_016",
+      "row_number": 16,
+      "name_ja": "宿泊施設の概要を明らかにする資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "中学校又は小学校に入学する場合",
+      "condition_scope": "merged_cell",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_017",
+      "row_number": 17,
+      "name_ja": "生活指導担当者の在職証明書",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "中学校又は小学校に入学する場合",
+      "condition_scope": "merged_cell",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_018",
+      "row_number": 18,
+      "name_ja": "特待生受入れに関する資料（待遇や選抜方法等について）",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "高校に特待生として入学する場合",
+      "condition_scope": "inline_text",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_019",
+      "row_number": 19,
+      "name_ja": "親権者の同意書（申請人が留学をすることについて親権者が同意したことを疎明する任意の様式）",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "本国法において申請人が未成年である場合。ただし、学生交換計画を策定している場合は不要。",
+      "condition_scope": "individual_row",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_020",
+      "row_number": 20,
+      "name_ja": "申請人の身の回りの世話や生活上の相談及び助言等を行う体制について教育機関が確認したことを証する資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "18歳未満の申請人が高校に入学し、単身で生活する場合（入寮等する場合を除く。）",
+      "condition_scope": "individual_row",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_ST_COE_SCHOOL_021",
+      "row_number": 21,
+      "name_ja": "認定不交付処分又は在留不許可処分について、処分理由を払拭する説明及び資料",
+      "requirement_symbol": "△",
+      "requirement_status": "conditional",
+      "condition_original_ja": "在留資格認定証明書交付申請の不交付処分、在留期間更新許可申請又は在留資格変更許可申請の不許可処分を受けたことがある場合",
+      "condition_scope": "individual_row",
+      "source": {
+        "document_id": "001463593",
+        "page": 1,
+        "url": "https://www.moj.go.jp/isa/content/001463593.pdf"
+      },
+      "validation_status": "needs_review"
+    }
+  ]
+}
