@@ -1,0 +1,547 @@
+{
+  "step": "64-46",
+  "mode": "dry_run",
+  "total_scripts": 40,
+  "ingest_scripts": 35,
+  "crawl_scripts": 5,
+  "categories": {
+    "crawl/west": 5,
+    "employment/west": 9,
+    "shared/evidence": 11,
+    "shared/retrieval": 3,
+    "shared/review": 9,
+    "shared/setup": 3
+  },
+  "path_risk_counts": {
+    "relative_root_depth": 40,
+    "uses___file__": 40
+  },
+  "destination_conflicts": [],
+  "references": [],
+  "files": [
+    {
+      "source": "scripts/ingest/usa/create_usa_program_directories.py",
+      "destination": "scripts/ingest/usa/shared/setup/create_usa_program_directories.py",
+      "category": "shared/setup",
+      "source_sha256": "a4b29f286febcb34a68f395e5ade1c0ee6f42d559023f1d0d457685c77015481",
+      "source_size": 5051,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/organize_usa_program_files.py",
+      "destination": "scripts/ingest/usa/shared/setup/organize_usa_program_files.py",
+      "category": "shared/setup",
+      "source_sha256": "7395f16528d5f3ae2beb6dbf45fb464970716de39ba063de155c72cb77567d1d",
+      "source_size": 9044,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/verify_usa_all_programs.py",
+      "destination": "scripts/ingest/usa/shared/setup/verify_usa_all_programs.py",
+      "category": "shared/setup",
+      "source_sha256": "2cf291e8ed8a495e35f8c7415afb7e8a62db56f7fa4ecb01b72d781c8eb164a2",
+      "source_size": 11323,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/build_bridgeusa_evidence_batch.py",
+      "destination": "scripts/ingest/usa/shared/evidence/build_bridgeusa_evidence_batch.py",
+      "category": "shared/evidence",
+      "source_sha256": "a768ee1e2165e0365591a9b944dea982da4ab479bebdbef99af3ca749d2a4c24",
+      "source_size": 10341,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/build_f1_h1b_evidence_batch.py",
+      "destination": "scripts/ingest/usa/shared/evidence/build_f1_h1b_evidence_batch.py",
+      "category": "shared/evidence",
+      "source_sha256": "afee2bce6b89ccc633a7c52e09fa7a22faec96613a98952262182a20fa4fc0cd",
+      "source_size": 10768,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/build_usa_program_snapshot_mapping.py",
+      "destination": "scripts/ingest/usa/shared/evidence/build_usa_program_snapshot_mapping.py",
+      "category": "shared/evidence",
+      "source_sha256": "85b7a53f05e39aab10b1f980527e6124dadeb0a832c0a0d174ce4417f64df380",
+      "source_size": 7557,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/build_usa_program_source_content.py",
+      "destination": "scripts/ingest/usa/shared/evidence/build_usa_program_source_content.py",
+      "category": "shared/evidence",
+      "source_sha256": "8c7d738695860ed72c43458d041c839c60a3eec101bc711872b2cb0e8d6a1968",
+      "source_size": 12868,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/build_usa_program_source_manifest.py",
+      "destination": "scripts/ingest/usa/shared/evidence/build_usa_program_source_manifest.py",
+      "category": "shared/evidence",
+      "source_sha256": "988b6e45d027b23ec39f7415cbf18315eeeee439139033c68c8db59801ee8c64",
+      "source_size": 7426,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/collect_f1_h1b_alternative_sources.py",
+      "destination": "scripts/ingest/usa/shared/evidence/collect_f1_h1b_alternative_sources.py",
+      "category": "shared/evidence",
+      "source_sha256": "5b412f43d7cb9c0a44061d70dfcbb3e9a776489ff48c83e95ab5b90992b385de",
+      "source_size": 8230,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/collect_usa_accessible_official_html.py",
+      "destination": "scripts/ingest/usa/shared/evidence/collect_usa_accessible_official_html.py",
+      "category": "shared/evidence",
+      "source_sha256": "55a0b19fe0d8822fd511114b7510a322d5dfc8871bb312c17c374ae78db419ac",
+      "source_size": 7816,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/collect_usa_f1_h1b_sources.py",
+      "destination": "scripts/ingest/usa/shared/evidence/collect_usa_f1_h1b_sources.py",
+      "category": "shared/evidence",
+      "source_sha256": "cd246f8cd4378ba568b1365ccc1b84619033a5abe095de11e9740f2e41538d0e",
+      "source_size": 8216,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/inspect_usa_official_html_content.py",
+      "destination": "scripts/ingest/usa/shared/evidence/inspect_usa_official_html_content.py",
+      "category": "shared/evidence",
+      "source_sha256": "a4322146ecb84ea6138f4fc5e3b06b785e0d9f9dcc158c6876d5a88a80da3255",
+      "source_size": 8011,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/verify_usa_program_snapshot_mapping.py",
+      "destination": "scripts/ingest/usa/shared/evidence/verify_usa_program_snapshot_mapping.py",
+      "category": "shared/evidence",
+      "source_sha256": "bc93ab2fe51addbc4c02723b151c96b013bca842f116a07f2ede31c532943f28",
+      "source_size": 6754,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/verify_usa_program_source_urls.py",
+      "destination": "scripts/ingest/usa/shared/evidence/verify_usa_program_source_urls.py",
+      "category": "shared/evidence",
+      "source_sha256": "d6fc45ade1b89e7c01876fe75a2bbcf1bf56d19b7f36f00e518daf893fcf9881",
+      "source_size": 5092,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/audit_usa_retrieval_quality.py",
+      "destination": "scripts/ingest/usa/shared/retrieval/audit_usa_retrieval_quality.py",
+      "category": "shared/retrieval",
+      "source_sha256": "ccf44a9842a11667da3330a6de3de8814fd34a9c8b353618fa027b4098038195",
+      "source_size": 9451,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/build_usa_retrieval_dataset.py",
+      "destination": "scripts/ingest/usa/shared/retrieval/build_usa_retrieval_dataset.py",
+      "category": "shared/retrieval",
+      "source_sha256": "02ce2bb3ddeea4e5ce055f485f2aa821c52c1e8cf4638605f0f102cba6b018a1",
+      "source_size": 14292,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/prepare_usa_retrieval_review_queue.py",
+      "destination": "scripts/ingest/usa/shared/retrieval/prepare_usa_retrieval_review_queue.py",
+      "category": "shared/retrieval",
+      "source_sha256": "8719da0e41b8ccc2f5fcf6a8d5a21ebfffb39d1c8f2ccd01c17f8b95039c707c",
+      "source_size": 9323,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/clean_usa_policy_chunks.py",
+      "destination": "scripts/ingest/usa/shared/review/clean_usa_policy_chunks.py",
+      "category": "shared/review",
+      "source_sha256": "53974047d62b4e4624fcd751c8ef2cad64777fe191351e3c77bbd500fa14026f",
+      "source_size": 10776,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/finalize_usa_ui_cleaning.py",
+      "destination": "scripts/ingest/usa/shared/review/finalize_usa_ui_cleaning.py",
+      "category": "shared/review",
+      "source_sha256": "a4c74793c52a8fe93bab4f7c018d3fdf1a4d4a893b05c07b5da4b140b0b24fd6",
+      "source_size": 8777,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/install_usa_policy_review.py",
+      "destination": "scripts/ingest/usa/shared/review/install_usa_policy_review.py",
+      "category": "shared/review",
+      "source_sha256": "96234485b93073a75d23363488efd0214da0ba0b93b2a367b8732514c348af62",
+      "source_size": 9008,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/prepare_usa_policy_freshness_review.py",
+      "destination": "scripts/ingest/usa/shared/review/prepare_usa_policy_freshness_review.py",
+      "category": "shared/review",
+      "source_sha256": "eb69e96774552b8f30a01b6d7d3943233d130278158b633765ad9fefc0ab2e0e",
+      "source_size": 7185,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/prepare_usa_policy_review.py",
+      "destination": "scripts/ingest/usa/shared/review/prepare_usa_policy_review.py",
+      "category": "shared/review",
+      "source_sha256": "7a8057797f0db367a7b9ca9dd5a2300b0f599ef5b61f4f6c1e833ea987de339b",
+      "source_size": 12840,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/record_usa_policy_verification.py",
+      "destination": "scripts/ingest/usa/shared/review/record_usa_policy_verification.py",
+      "category": "shared/review",
+      "source_sha256": "801bdfc2049e0027f1da20f0b84d8d024a5a7e5ee20106fd14e48213d2b1b283",
+      "source_size": 9806,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/review_usa_duplicate_chunks.py",
+      "destination": "scripts/ingest/usa/shared/review/review_usa_duplicate_chunks.py",
+      "category": "shared/review",
+      "source_sha256": "b8889265d41a114f829ce1a37237b15e38639b5a1cda6ca361a6e394e302b722",
+      "source_size": 8248,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/review_usa_policy_scope.py",
+      "destination": "scripts/ingest/usa/shared/review/review_usa_policy_scope.py",
+      "category": "shared/review",
+      "source_sha256": "6a572c164295615b40aa08ae9ac088b6bb91b1403e3258e30cd602e6cc7f66c0",
+      "source_size": 6402,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/verify_usa_official_policy_evidence.py",
+      "destination": "scripts/ingest/usa/shared/review/verify_usa_official_policy_evidence.py",
+      "category": "shared/review",
+      "source_sha256": "5dbc0813c5b83c01c8eac79eaecfc5ac544af076f970145ea92e08463884243a",
+      "source_size": 9153,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/build_west_column_ordered_text.py",
+      "destination": "scripts/ingest/usa/employment/west/build_west_column_ordered_text.py",
+      "category": "employment/west",
+      "source_sha256": "684730aca6a1a216fe2492111244622b0cfca99dccf5f47aa502b9dfc7c21e99",
+      "source_size": 7950,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/build_west_evidence_inventory.py",
+      "destination": "scripts/ingest/usa/employment/west/build_west_evidence_inventory.py",
+      "category": "employment/west",
+      "source_sha256": "f238cfcda7e73ad006f2de1586471e54cb51dcdf253d979ec52c42745a1265b3",
+      "source_size": 9359,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/build_west_full_review_data.py",
+      "destination": "scripts/ingest/usa/employment/west/build_west_full_review_data.py",
+      "category": "employment/west",
+      "source_sha256": "8556644abb33bb77c699fa38dd79e35f38b3ff6e134f147c080abb6a9026f2c3",
+      "source_size": 10940,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/build_west_program_draft.py",
+      "destination": "scripts/ingest/usa/employment/west/build_west_program_draft.py",
+      "category": "employment/west",
+      "source_sha256": "a54b0fa8febcdc992661f88a56b0df47b2913303c8672b123478c26716a6237e",
+      "source_size": 9604,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/build_west_reviewed_program_data.py",
+      "destination": "scripts/ingest/usa/employment/west/build_west_reviewed_program_data.py",
+      "category": "employment/west",
+      "source_sha256": "e655304112572dbede6b6508fd3c1ce81df267b44d2116505477b1165236af52",
+      "source_size": 10526,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/build_west_review_package.py",
+      "destination": "scripts/ingest/usa/employment/west/build_west_review_package.py",
+      "category": "employment/west",
+      "source_sha256": "43783a3b23ef8c0d7f3172202228ff3d9fc048d0d896b1a8d9bd136f32443ebb",
+      "source_size": 9476,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/collect_west_official_notice.py",
+      "destination": "scripts/ingest/usa/employment/west/collect_west_official_notice.py",
+      "category": "employment/west",
+      "source_sha256": "7fe449f4e6c6b15a6afae6218c8e77134b9c547dc1a30ec995a0b65973506434",
+      "source_size": 7098,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/inspect_west_pdf_layout.py",
+      "destination": "scripts/ingest/usa/employment/west/inspect_west_pdf_layout.py",
+      "category": "employment/west",
+      "source_sha256": "9599c8eb16641ab996ab6584f5732df93f8a1fe8e52774f0c4583c819ab3dbd3",
+      "source_size": 6548,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/ingest/usa/review_west_table_chunks.py",
+      "destination": "scripts/ingest/usa/employment/west/review_west_table_chunks.py",
+      "category": "employment/west",
+      "source_sha256": "f3c05b2f1b2047e3475285b0cdb5daf88bf2f1e8a8e37f8fb402ed6e40fd3736",
+      "source_size": 9513,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/crawl/usa/collect_west_2026_second_half.py",
+      "destination": "scripts/crawl/usa/west/collect_west_2026_second_half.py",
+      "category": "crawl/west",
+      "source_sha256": "5d234545269f42297e0f1435da71323350efd4b6a1712ef5903f7ac1c8d03c4d",
+      "source_size": 8537,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/crawl/usa/verify_west_2026_second_half.py",
+      "destination": "scripts/crawl/usa/west/verify_west_2026_second_half.py",
+      "category": "crawl/west",
+      "source_sha256": "c0b596773945165b771296d96526bd7e7b55e784f11e64334abbe73b77a9ec14",
+      "source_size": 2930,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/crawl/usa/extract_west_2026_second_half.py",
+      "destination": "scripts/crawl/usa/west/extract_west_2026_second_half.py",
+      "category": "crawl/west",
+      "source_sha256": "7e7526605deb69569683d0cf19895397f051e6e540fe18b9a7d90d00a488895d",
+      "source_size": 10430,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/crawl/usa/inspect_west_2026_second_half_layout.py",
+      "destination": "scripts/crawl/usa/west/inspect_west_2026_second_half_layout.py",
+      "category": "crawl/west",
+      "source_sha256": "f459225144e8cc708464193f9406d50ecd2cb2a9351989e27625d9d580b5fc28",
+      "source_size": 8823,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    },
+    {
+      "source": "scripts/crawl/usa/split_west_2026_second_half_pages.py",
+      "destination": "scripts/crawl/usa/west/split_west_2026_second_half_pages.py",
+      "category": "crawl/west",
+      "source_sha256": "41541f813b6b3086fed2ae22557e6e8497733d21addfa16ba335ab2da3f22cf6",
+      "source_size": 9326,
+      "path_risks": [
+        "relative_root_depth",
+        "uses___file__"
+      ],
+      "destination_conflict": false,
+      "move_status": "not_started"
+    }
+  ],
+  "source_files_modified": false,
+  "source_files_moved": false,
+  "data_files_modified": false,
+  "git_commit_or_push": false
+}
