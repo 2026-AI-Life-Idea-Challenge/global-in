@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[4]
 SCRIPTS = ROOT / "scripts/ingest/japan/employment"
 FINAL = ROOT / "data/processed/japan/employment"
 
-WORK = ROOT / "_local_backup/japan_employment_pipeline_run02"
+WORK = Path(os.environ["JP_EM_COE_PIPELINE_WORK_DIR"]).resolve() if os.environ.get("JP_EM_COE_PIPELINE_WORK_DIR") else ROOT / "_local_backup/japan_employment_pipeline_run02"
 BASELINE = WORK / "baseline"
 CATEGORY = WORK / "category"
 EDUCATION = WORK / "education"

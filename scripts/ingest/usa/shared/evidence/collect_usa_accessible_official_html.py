@@ -66,7 +66,8 @@ print("===== STEP 64-03C 공식 HTML 수집 =====")
 
 manifest_bytes = MANIFEST.read_bytes()
 
-assert sha256(manifest_bytes) == EXPECTED_MANIFEST_SHA
+if sha256(manifest_bytes) != EXPECTED_MANIFEST_SHA:
+    raise ValueError("원본 manifest SHA-256 불일치")
 
 manifest = json.loads(manifest_bytes.decode("utf-8"))
 
@@ -78,22 +79,26 @@ for program in manifest["programs"]:
             source["url"], []
         ).append(program["program_id"])
 
-assert TARGET_URLS.issubset(set(url_programs))
-assert len(TARGET_URLS) == 5
+if not TARGET_URLS.issubset(set(url_programs)):
+    raise ValueError("대상 URL이 manifest에 포함되지 않았습니다")
+if len(TARGET_URLS) != 5:
+    raise ValueError("수집 대상 URL 개수가 5개가 아닙니다")
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 index_path = OUTPUT_DIR / "snapshot_index.json"
 
 # 재실행으로 기존 스냅샷이 덮어써지는 것을 방지
-assert not index_path.exists(), (
+if index_path.exists():
+    raise FileExistsError(
     "기존 snapshot_index.json이 존재합니다. "
     "원본을 보존하고 먼저 상태를 확인하세요."
 )
 
 for url in TARGET_URLS:
     path = OUTPUT_DIR / f"{url_key(url)}.html"
-    assert not path.exists(), f"기존 스냅샷 존재: {path}"
+    if path.exists():
+        raise FileExistsError(f"기존 스냅샷 존재: {path}")
 
 print("[PASS] Manifest SHA-256")
 print("[PASS] 대상 공식 URL 5개 확인")
@@ -229,7 +234,8 @@ for item in downloads:
     with output_path.open("xb") as f:
         f.write(item["raw"])
 
-    assert output_path.read_bytes() == item["raw"]
+    if output_path.read_bytes() != item["raw"]:
+        raise IOError(f"스냅샷 저장 후 검증 실패: {output_path}")
 
     metadata = {
         key: value
@@ -248,16 +254,20 @@ index_payload = (
 with index_path.open("xb") as f:
     f.write(index_payload)
 
-assert json.loads(
+if json.loads(
     index_path.read_text(encoding="utf-8")
-) == index
+) != index:
+    raise IOError("스냅샷 Index 저장 후 검증 실패")
+
 
 for snapshot in index["snapshots"]:
     path = OUTPUT_DIR / snapshot["filename"]
 
-    assert sha256(path.read_bytes()) == snapshot["sha256"]
+    if sha256(path.read_bytes()) != snapshot["sha256"]:
+        raise IOError(f"스냅샷 SHA-256 저장 후 검증 실패: {path}")
 
-assert MANIFEST.read_bytes() == manifest_bytes
+if MANIFEST.read_bytes() != manifest_bytes:
+    raise IOError("수집 중 Manifest가 변경됐습니다")
 
 print("\n===== STEP 64-03C 최종 결과 =====")
 print("[PASS] 공식 HTML 5개 저장")

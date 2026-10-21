@@ -30,14 +30,16 @@ PROCESSED_DIR = PROCESSED_DIR.resolve()
 PROTECTED_DIR = (
     ROOT / "data/processed/japan/employment"
 ).resolve()
+RAW_PROTECTED_DIR = (ROOT / "data/raw").resolve()
 
-assert PROCESSED_DIR != PROTECTED_DIR, (
-    "기존 processed JSON에 직접 출력할 수 없습니다."
-)
+if PROCESSED_DIR == RAW_PROTECTED_DIR or RAW_PROTECTED_DIR in PROCESSED_DIR.parents:
+    raise ValueError("data/raw 영역에는 출력할 수 없습니다.")
 
-assert PROTECTED_DIR not in PROCESSED_DIR.parents, (
-    "processed 하위 경로도 출력할 수 없습니다."
-)
+# assert는 python -O 환경에서 생략될 수 있으므로 데이터 보호에는 사용하지 않습니다.
+if PROCESSED_DIR == PROTECTED_DIR or PROTECTED_DIR in PROCESSED_DIR.parents:
+    raise ValueError(
+        "보호된 data/processed/japan/employment 경로에는 출력할 수 없습니다."
+    )
 
 HASH_PATH = RAW_DIR / "japan_employment_coe_pdf_hashes.json"
 
@@ -115,9 +117,8 @@ PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 # 기존 결과 파일을 하나라도 덮어쓰지 않도록 사전 검사
 for config in CONFIGS:
     output_path = PROCESSED_DIR / config["output"]
-    assert not output_path.exists(), (
-        f"기존 JSON이 존재합니다: {output_path}"
-    )
+    if output_path.exists():
+        raise FileExistsError(f"기존 JSON이 존재합니다: {output_path}")
 
 outputs = []
 
@@ -286,7 +287,7 @@ for output_name, dataset in outputs:
     saved = json.loads(output_path.read_text(encoding="utf-8"))
     assert saved == dataset, f"저장 검증 실패: {output_name}"
 
-    print("\n저장 파일:", output_path.relative_to(ROOT))
+    print("\n저장 파일:", output_path)
     print("서류 개수:", dataset["document_count"])
 
     for row in dataset["documents"]:

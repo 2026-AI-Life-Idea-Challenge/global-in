@@ -18,44 +18,36 @@ SOURCE_URL = "https://www.mofa.go.jp/j_info/visit/w_holiday/"
 PAGE_DISPLAY_DATE = "2026-04-01"
 
 
-def extract_post_entry(soup: BeautifulSoup) -> str:
-    """입국 후 행정 절차 섹션의 원문만 추출한다."""
+def extract_official_section(soup: BeautifulSoup, heading_phrase: str) -> str:
+    """Return the same heading-bounded source text as the original extractors.
 
+    This helper neither rewrites original text nor infers policy meaning.
+    """
     heading = next(
-        (
-            h for h in soup.find_all(["h1", "h2", "h3"])
-            if "Procedure at a municipal office"
-            in h.get_text(" ", strip=True)
-        ),
+        (h for h in soup.find_all(["h1", "h2", "h3"])
+         if heading_phrase in h.get_text(" ", strip=True)),
         None,
     )
-
     if heading is None:
-        raise ValueError("입국 후 행정 절차 섹션을 찾지 못했습니다.")
+        raise ValueError(f"공식 원문 섹션을 찾지 못했습니다: {heading_phrase}")
 
     parts = []
-
     for element in heading.next_elements:
-        # 다음 제목을 만나면 다른 섹션이므로 중단
-        if isinstance(element, Tag) and element.name in (
-            "h1", "h2", "h3"
-        ):
+        if isinstance(element, Tag) and element.name in ("h1", "h2", "h3"):
             break
-
         if not isinstance(element, NavigableString):
             continue
-
-        # 제목과 스크립트 등 불필요한 텍스트 제외
-        if element.find_parent(
-            ["h1", "h2", "h3", "script", "style"]
-        ):
+        if element.find_parent(["h1", "h2", "h3", "script", "style"]):
             continue
-
         text = str(element).strip()
         if text:
             parts.append(text)
-
     return " ".join(parts)
+
+
+def extract_post_entry(soup: BeautifulSoup) -> str:
+    """Preserved public interface for historical reproducibility."""
+    return extract_official_section(soup, "Procedure at a municipal office")
 
 
 def main() -> None:

@@ -97,6 +97,8 @@ with tempfile.TemporaryDirectory() as temp_dir:
 
     shutil.copy2(INPUT, temp_input)
     shutil.copy2(SCRIPT, temp_script)
+    # v2 shares its pure extraction function with the original v1 module.
+    shutil.copy2(SCRIPT.with_name("build_japan_employment_search_text.py"), temp_scripts / "build_japan_employment_search_text.py")
 
     assert sha256(temp_input) == INPUT_SHA
     assert not temp_output.exists()

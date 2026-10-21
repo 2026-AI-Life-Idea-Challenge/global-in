@@ -33,6 +33,15 @@ STATUS_MAP = {
 }
 
 
+
+def save_structured_json(output_path, result):
+    """공통 COE 구조화 JSON 저장 형식을 유지합니다."""
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(
+        json.dumps(result, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
 def extract_rows(page):
     """PDF 표의 실제 가로 구분선을 기준으로 행을 추출한다."""
 
@@ -231,19 +240,7 @@ def main():
         "documents": documents,
     }
 
-    OUTPUT_PATH.parent.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    OUTPUT_PATH.write_text(
-        json.dumps(
-            result,
-            ensure_ascii=False,
-            indent=2,
-        ) + "\n",
-        encoding="utf-8",
-    )
+    save_structured_json(OUTPUT_PATH, result)
 
     # 저장된 내용 검증
     saved = json.loads(

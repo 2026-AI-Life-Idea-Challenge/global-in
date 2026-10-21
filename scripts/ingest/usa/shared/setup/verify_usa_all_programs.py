@@ -113,8 +113,10 @@ print("===== STEP 64-20 미국 7개 프로그램 통합 검증 =====")
 assert REPORT.parent.is_dir()
 assert H1B_V2.parent.is_dir()
 
-assert not REPORT.exists(), "기존 통합 리포트 존재"
-assert not H1B_V2.exists(), "기존 H-1B v2 파일 존재"
+if REPORT.exists():
+    raise FileExistsError("기존 통합 리포트 존재")
+if H1B_V2.exists():
+    raise FileExistsError("기존 H-1B v2 파일 존재")
 
 mapping, mapping_raw = read_verified(
     MAPPING, EXPECTED_MAPPING_SHA

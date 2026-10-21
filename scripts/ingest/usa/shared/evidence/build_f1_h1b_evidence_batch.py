@@ -215,7 +215,8 @@ for program_id, config in PROGRAMS.items():
     assert processed_folder.is_dir()
 
     output = processed_folder / "official_evidence.json"
-    assert not output.exists(), f"기존 파일 존재: {output}"
+    if output.exists():
+        raise FileExistsError(f"기존 파일 존재: {output}")
 
     records = []
 
@@ -340,7 +341,8 @@ print("[PASS] 공식 HTML 4개 추출 및 근거 JSON 준비")
 
 # 기존 출력 파일 충돌 사전 검사
 for path, _, _ in prepared:
-    assert not path.exists()
+    if path.exists():
+        raise FileExistsError(f"기존 파일 존재: {path}")
     assert path.parent.is_dir()
 
 # 저장 후 재읽기·해시 대조

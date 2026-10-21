@@ -18,43 +18,13 @@ SOURCE_URL = "https://www.mofa.go.jp/j_info/visit/w_holiday/"
 PAGE_DISPLAY_DATE = "2026-04-01"
 
 
+# Reuse the original post-entry extractor module: no additional helper file.
+from extract_japan_working_holiday_post_entry import extract_official_section
+
+
 def extract_work_conditions(soup: BeautifulSoup) -> str:
-    """Work Conditions 제목부터 다음 제목 직전까지 원문을 추출한다."""
-
-    heading = next(
-        (
-            h for h in soup.find_all(["h1", "h2", "h3"])
-            if "Work Conditions" in h.get_text(" ", strip=True)
-        ),
-        None,
-    )
-
-    if heading is None:
-        raise ValueError("Work Conditions 섹션을 찾지 못했습니다.")
-
-    parts = []
-
-    for element in heading.next_elements:
-        # 다음 제목부터는 다른 섹션이므로 수집 중단
-        if isinstance(element, Tag) and element.name in (
-            "h1", "h2", "h3"
-        ):
-            break
-
-        if not isinstance(element, NavigableString):
-            continue
-
-        # 제목, 스크립트, 스타일 내용 제외
-        if element.find_parent(
-            ["h1", "h2", "h3", "script", "style"]
-        ):
-            continue
-
-        text = str(element).strip()
-        if text:
-            parts.append(text)
-
-    return " ".join(parts)
+    """Preserved public interface for historical reproducibility."""
+    return extract_official_section(soup, "Work Conditions")
 
 
 def main() -> None:

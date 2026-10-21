@@ -6,6 +6,8 @@ from pathlib import Path
 
 import pymupdf
 
+from structure_japan_student_coe_documents import save_structured_json
+
 
 # 프로젝트 루트
 PROJECT_ROOT = Path(__file__).resolve().parents[4]
@@ -217,16 +219,7 @@ def main():
         "documents": documents,
     }
 
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-    OUTPUT_PATH.write_text(
-        json.dumps(
-            result,
-            ensure_ascii=False,
-            indent=2,
-        ) + "\n",
-        encoding="utf-8",
-    )
+    save_structured_json(OUTPUT_PATH, result)
 
     saved = json.loads(
         OUTPUT_PATH.read_text(encoding="utf-8")

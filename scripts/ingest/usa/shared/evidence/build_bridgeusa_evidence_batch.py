@@ -229,9 +229,8 @@ for program_id, config in PROGRAMS.items():
     assert source_path.is_file()
     assert html_path.is_file()
     assert registry_path.is_file()
-    assert not output_path.exists(), (
-        f"기존 결과 파일 존재: {output_path}"
-    )
+    if output_path.exists():
+        raise FileExistsError(f"기존 결과 파일 존재: {output_path}")
 
     source_raw = source_path.read_bytes()
     html_raw = html_path.read_bytes()

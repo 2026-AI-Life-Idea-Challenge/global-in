@@ -1,6 +1,7 @@
 
 from pathlib import Path
 from collections import Counter
+from build_japan_employment_search_text import extract_evidence_segments
 import hashlib
 import json
 
@@ -45,51 +46,6 @@ TEXT_FIELDS = {
 
 def sha256(data):
     return hashlib.sha256(data).hexdigest()
-
-
-def extract_evidence_segments(value, path="evidence"):
-    """
-    상세 증빙에서 일본어 텍스트를 추출한다.
-
-    - 원본 evidence 수정 없음
-    - 원본 JSON 경로 보존
-    - 리스트 순서 보존
-    - 조건 관계를 자동으로 해석하지 않음
-    """
-    segments = []
-
-    if isinstance(value, dict):
-        for key, child in value.items():
-            child_path = f"{path}.{key}"
-
-            if (
-                key in TEXT_FIELDS
-                and isinstance(child, str)
-                and child.strip()
-            ):
-                segments.append({
-                    "source_path": child_path,
-                    "text_ja": child,
-                })
-
-            elif isinstance(child, (dict, list)):
-                segments.extend(
-                    extract_evidence_segments(
-                        child,
-                        child_path,
-                    )
-                )
-
-    elif isinstance(value, list):
-        for index, child in enumerate(value):
-            segments.extend(
-                extract_evidence_segments(
-                    child,
-                    f"{path}[{index}]",
-                )
-            )
-
-    return segments
 
 
 print("===== STEP 63-99 검색 본문 생성 =====")
@@ -148,7 +104,7 @@ for record in records:
     assert isinstance(evidence, dict)
 
     # 상세 증빙 원문을 경로와 함께 추출
-    segments = extract_evidence_segments(evidence)
+    segments = extract_evidence_segments(evidence, text_fields=TEXT_FIELDS)
 
     for segment in segments:
         assert segment["source_path"].startswith("evidence.")
