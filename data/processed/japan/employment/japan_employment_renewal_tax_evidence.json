@@ -1,0 +1,75 @@
+{
+  "route_id": "JP-EM",
+  "application_type": "renewal",
+  "parent_document_id": "JP_EM_RENEWAL_DOC_013",
+  "source_row_number": 13,
+  "source_page": 2,
+  "source_pdf_sha256": "472a27d772b1649e61fb99a2ec569e8eb48ee8cc6811789160cf1160a17fa622",
+  "source_json_sha256": "ed24d73198981d6885cfa5fdb98a92cc2ca3acc06e5dfd4c8e73553e4f3e62ef",
+  "raw_body_text_ja": "前年分の職員の給与所得の源泉徴収票等の法定調書合計表を提出できな\nい理由を明らかにする次のいずれかの資料\n（１）源泉徴収の免除を受ける機関の場合\n　　外国法人の源泉徴収に対する免除証明書その他の源泉徴収を\n　　要しないことを明らかにする資料\n（２）上記（１）を除く機関の場合\n　　ア給与支払事務所等の開設届書の写し\n　　イ次のいずれかの資料\n　　（ア）直近３か月分の給与所得・退職所得等の所得税徴収\n　　　　高計算書（領収日付印のあるものの写し）\n　　（イ）納期の特例を受けている場合は、その承認を受けている\n　　　　ことを明らかにする資料",
+  "source_intro_ja": "前年分の職員の給与所得の源泉徴収票等の法定調書合計表を提出できな\nい理由を明らかにする次のいずれかの資料",
+  "category_requirements": {
+    "1": {
+      "symbol": null,
+      "status": "not_explicitly_marked"
+    },
+    "2": {
+      "symbol": null,
+      "status": "not_explicitly_marked"
+    },
+    "3": {
+      "symbol": null,
+      "status": "not_explicitly_marked"
+    },
+    "4": {
+      "symbol": "○",
+      "status": "required"
+    }
+  },
+  "applicability_scope": "additional_documents_after_job_change",
+  "applicability_note_ja": "※カテゴリー３又は４の企業等に転職後の初回の更新許可申請の場合は、上記資料に加え、以下の資料も併せて提出願います（カテゴリー３の場合は、提出資\n料１３は不要）。\n（注）カテゴリー３又は４の企業等に所属していて、当初申請していた業務内容から言語能力を用いた対人業務等へ業務内容が変更した際は、提出書類１２を\n提出願います。",
+  "branch_count": 2,
+  "branches": [
+    {
+      "branch_id": "JP_EM_RENEWAL_DOC_013_BRANCH_01",
+      "source_clause": "（１）",
+      "branch_type": "withholding_tax_exempt_institution",
+      "source_text_ja": "（１）源泉徴収の免除を受ける機関の場合\n　　外国法人の源泉徴収に対する免除証明書その他の源泉徴収を\n　　要しないことを明らかにする資料",
+      "validation_status": "needs_review"
+    },
+    {
+      "branch_id": "JP_EM_RENEWAL_DOC_013_BRANCH_02",
+      "source_clause": "（２）",
+      "branch_type": "other_institution",
+      "source_text_ja": "（２）上記（１）を除く機関の場合\n　　ア給与支払事務所等の開設届書の写し\n　　イ次のいずれかの資料\n　　（ア）直近３か月分の給与所得・退職所得等の所得税徴収\n　　　　高計算書（領収日付印のあるものの写し）\n　　（イ）納期の特例を受けている場合は、その承認を受けている\n　　　　ことを明らかにする資料",
+      "source_intro_ja": "（２）上記（１）を除く機関の場合",
+      "components": [
+        {
+          "source_clause": "ア",
+          "component_type": "payroll_office_notification",
+          "source_text_ja": "ア給与支払事務所等の開設届書の写し"
+        },
+        {
+          "source_clause": "イ",
+          "component_type": "tax_payment_evidence",
+          "source_text_ja": "イ次のいずれかの資料\n　　（ア）直近３か月分の給与所得・退職所得等の所得税徴収\n　　　　高計算書（領収日付印のあるものの写し）\n　　（イ）納期の特例を受けている場合は、その承認を受けている\n　　　　ことを明らかにする資料",
+          "selection_type": "source_stated_alternatives",
+          "source_intro_ja": "イ次のいずれかの資料",
+          "options": [
+            {
+              "source_clause": "（ア）",
+              "source_text_ja": "（ア）直近３か月分の給与所得・退職所得等の所得税徴収\n　　　　高計算書（領収日付印のあるものの写し）"
+            },
+            {
+              "source_clause": "（イ）",
+              "source_text_ja": "（イ）納期の特例を受けている場合は、その承認を受けている\n　　　　ことを明らかにする資料"
+            }
+          ]
+        }
+      ],
+      "validation_status": "needs_review"
+    }
+  ],
+  "automatic_eligibility_rules_enabled": false,
+  "validation_status": "needs_review"
+}

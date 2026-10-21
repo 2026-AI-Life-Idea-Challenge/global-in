@@ -1,0 +1,58 @@
+{
+  "route_id": "JP-EM",
+  "application_type": "renewal",
+  "parent_document_id": "JP_EM_RENEWAL_DOC_008",
+  "source_row_number": 8,
+  "source_page": 2,
+  "source_pdf_sha256": "472a27d772b1649e61fb99a2ec569e8eb48ee8cc6811789160cf1160a17fa622",
+  "source_json_sha256": "ed24d73198981d6885cfa5fdb98a92cc2ca3acc06e5dfd4c8e73553e4f3e62ef",
+  "source_intro_ja": "活動内容等を明らかにするいずれかの資料",
+  "raw_body_text_ja": "活動内容等を明らかにするいずれかの資料\n（１）労働契約を締結する場合\n　　労働基準法第15条第１項及び同法施行規則第５条に基づき、\n　　労働者に交付される労働条件を明示する文書\n（２）日本法人である会社の役員に就任する場合\n　　役員報酬を定める定款の写し又は役員報酬を決議した株主\n　　総会の議事録（報酬委員会が設置されている会社にあっては\n　　同委員会の議事録）の写し\n（３）外国法人内の日本支店に転勤する場合及び会社以外の団体\n　　の役員に就任する場合\n　　地位（担当業務）、期間及び支払われる報酬額を明らかにする\n　　所属団体の文書",
+  "applicability_scope": "additional_documents_after_job_change",
+  "applicability_note_ja": "※カテゴリー３又は４の企業等に転職後の初回の更新許可申請の場合は、上記資料に加え、以下の資料も併せて提出願います（カテゴリー３の場合は、提出資\n料１３は不要）。\n（注）カテゴリー３又は４の企業等に所属していて、当初申請していた業務内容から言語能力を用いた対人業務等へ業務内容が変更した際は、提出書類１２を\n提出願います。",
+  "category_requirements": {
+    "1": {
+      "symbol": null,
+      "status": "not_explicitly_marked"
+    },
+    "2": {
+      "symbol": null,
+      "status": "not_explicitly_marked"
+    },
+    "3": {
+      "symbol": "○",
+      "status": "required"
+    },
+    "4": {
+      "symbol": "○",
+      "status": "required"
+    }
+  },
+  "selection_type": "activity_based_alternatives",
+  "option_count": 3,
+  "options": [
+    {
+      "option_id": "JP_EM_RENEWAL_DOC_008_OPT_01",
+      "source_clause": "(1)",
+      "activity_type": "employment_contract",
+      "source_text_ja": "（１）労働契約を締結する場合\n　　労働基準法第15条第１項及び同法施行規則第５条に基づき、\n　　労働者に交付される労働条件を明示する文書",
+      "validation_status": "needs_review"
+    },
+    {
+      "option_id": "JP_EM_RENEWAL_DOC_008_OPT_02",
+      "source_clause": "(2)",
+      "activity_type": "japanese_company_officer",
+      "source_text_ja": "（２）日本法人である会社の役員に就任する場合\n　　役員報酬を定める定款の写し又は役員報酬を決議した株主\n　　総会の議事録（報酬委員会が設置されている会社にあっては\n　　同委員会の議事録）の写し",
+      "validation_status": "needs_review"
+    },
+    {
+      "option_id": "JP_EM_RENEWAL_DOC_008_OPT_03",
+      "source_clause": "(3)",
+      "activity_type": "foreign_branch_transfer_or_other_organization_officer",
+      "source_text_ja": "（３）外国法人内の日本支店に転勤する場合及び会社以外の団体\n　　の役員に就任する場合\n　　地位（担当業務）、期間及び支払われる報酬額を明らかにする\n　　所属団体の文書",
+      "validation_status": "needs_review"
+    }
+  ],
+  "automatic_eligibility_rules_enabled": false,
+  "validation_status": "needs_review"
+}

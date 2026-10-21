@@ -1,0 +1,84 @@
+{
+  "route_id": "JP-EM",
+  "application_type": "renewal",
+  "parent_document_id": "JP_EM_RENEWAL_DOC_004",
+  "source_row_number": 4,
+  "source_pdf_sha256": "472a27d772b1649e61fb99a2ec569e8eb48ee8cc6811789160cf1160a17fa622",
+  "source_json_sha256": "ed24d73198981d6885cfa5fdb98a92cc2ca3acc06e5dfd4c8e73553e4f3e62ef",
+  "selection_type": "category_specific_evidence",
+  "category_evidence": {
+    "1": {
+      "source_column": "カテゴリー1",
+      "source_text_ja": "○四季報の写し又は日\n本の証券取引所に上場\nしていることを証明す\nる文書（写し）\n○主務官庁から設立の\n許可を受けたことを証\n明する文書（写し）\n○高度専門職省令第１\n条第１項各号の表の特\n別加算の項の中欄イ又\nはロの対象企業（イノ\nベーション創出企業）\nであることを証明する\n文書（例えば、補助金\n交付決定通知書の写\nし）\n○「一定の条件を満た\nす企業等」であること\nを証明する文書（例え\nば、認定証等の写し）",
+      "option_count": 4,
+      "options": [
+        {
+          "option_id": "JP_EM_RENEWAL_DOC_004_CAT1_OPT_01",
+          "source_text_ja": "四季報の写し又は日\n本の証券取引所に上場\nしていることを証明す\nる文書（写し）",
+          "validation_status": "needs_review"
+        },
+        {
+          "option_id": "JP_EM_RENEWAL_DOC_004_CAT1_OPT_02",
+          "source_text_ja": "主務官庁から設立の\n許可を受けたことを証\n明する文書（写し）",
+          "validation_status": "needs_review"
+        },
+        {
+          "option_id": "JP_EM_RENEWAL_DOC_004_CAT1_OPT_03",
+          "source_text_ja": "高度専門職省令第１\n条第１項各号の表の特\n別加算の項の中欄イ又\nはロの対象企業（イノ\nベーション創出企業）\nであることを証明する\n文書（例えば、補助金\n交付決定通知書の写\nし）",
+          "validation_status": "needs_review"
+        },
+        {
+          "option_id": "JP_EM_RENEWAL_DOC_004_CAT1_OPT_04",
+          "source_text_ja": "「一定の条件を満た\nす企業等」であること\nを証明する文書（例え\nば、認定証等の写し）",
+          "validation_status": "needs_review"
+        }
+      ],
+      "no_separate_evidence_text": false,
+      "validation_status": "needs_review"
+    },
+    "2": {
+      "source_column": "カテゴリー2",
+      "source_text_ja": "○前年分の職員の給与\n所得の源泉徴収票等の\n法定調書合計表（写\nし）\n○在留申請オンライン\nシステムに係る利用申\n出の承認を受けている\nことを証明する文書\n（利用申出に係る承認\nのお知らせメール等）",
+      "option_count": 2,
+      "options": [
+        {
+          "option_id": "JP_EM_RENEWAL_DOC_004_CAT2_OPT_01",
+          "source_text_ja": "前年分の職員の給与\n所得の源泉徴収票等の\n法定調書合計表（写\nし）",
+          "validation_status": "needs_review"
+        },
+        {
+          "option_id": "JP_EM_RENEWAL_DOC_004_CAT2_OPT_02",
+          "source_text_ja": "在留申請オンライン\nシステムに係る利用申\n出の承認を受けている\nことを証明する文書\n（利用申出に係る承認\nのお知らせメール等）",
+          "validation_status": "needs_review"
+        }
+      ],
+      "no_separate_evidence_text": false,
+      "validation_status": "needs_review"
+    },
+    "3": {
+      "source_column": "カテゴリー3",
+      "source_text_ja": "前年分の職員の給与所\n得の源泉徴収票等の法\n定調書合計表（写し）",
+      "option_count": 1,
+      "options": [
+        {
+          "option_id": "JP_EM_RENEWAL_DOC_004_CAT3_OPT_01",
+          "source_text_ja": "前年分の職員の給与所\n得の源泉徴収票等の法\n定調書合計表（写し）",
+          "validation_status": "needs_review"
+        }
+      ],
+      "no_separate_evidence_text": false,
+      "validation_status": "needs_review"
+    },
+    "4": {
+      "source_column": "カテゴリー4",
+      "source_text_ja": "",
+      "option_count": 0,
+      "options": [],
+      "no_separate_evidence_text": true,
+      "validation_status": "needs_review"
+    }
+  },
+  "category_4_interpretation": "No separate evidence text in the source column; this does not establish a submission exemption.",
+  "automatic_eligibility_rules_enabled": false,
+  "validation_status": "needs_review"
+}

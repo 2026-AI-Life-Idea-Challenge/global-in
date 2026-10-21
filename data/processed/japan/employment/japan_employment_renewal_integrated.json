@@ -1,0 +1,608 @@
+{
+  "route_id": "JP-EM",
+  "program_id": "JP-EM-01",
+  "application_type": "renewal",
+  "status_of_residence": "技術・人文知識・国際業務",
+  "source": {
+    "official_agency": "Immigration Services Agency of Japan",
+    "pdf_filename": "001367009.pdf",
+    "source_url": "https://www.moj.go.jp/isa/content/001367009.pdf",
+    "source_sha256": "472a27d772b1649e61fb99a2ec569e8eb48ee8cc6811789160cf1160a17fa622"
+  },
+  "category_columns": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "additional_submission_note_ja": "※カテゴリー３又は４の企業等に転職後の初回の更新許可申請の場合は、上記資料に加え、以下の資料も併せて提出願います（カテゴリー３の場合は、提出資\n料１３は不要）。\n（注）カテゴリー３又は４の企業等に所属していて、当初申請していた業務内容から言語能力を用いた対人業務等へ業務内容が変更した際は、提出書類１２を\n提出願います。",
+  "additional_submission_note_interpretation_status": "needs_review",
+  "automatic_eligibility_rules_enabled": false,
+  "document_count": 13,
+  "validation_status": "needs_review",
+  "documents": [
+    {
+      "document_id": "JP_EM_RENEWAL_DOC_001",
+      "row_number": 1,
+      "page": 1,
+      "raw_row_text_ja": "在留期間更新許可申請書                           ○          ○          ○          ○",
+      "category_requirements": {
+        "1": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "2": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "applicability_scope": "general_renewal_table",
+      "text_extraction_method": "pdf_table_boundaries_full_row",
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_EM_RENEWAL_DOC_002",
+      "row_number": 2,
+      "page": 1,
+      "raw_row_text_ja": "写真（縦４cm×横３cm）\n※申請前６か月以内に正面から撮影された無帽、無背景で鮮明なもの。\n                                      ○          ○          ○          ○\n※写真の裏面に申請人の氏名を記載し、申請書の写真欄に貼付してくだ\nさい。",
+      "category_requirements": {
+        "1": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "2": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "applicability_scope": "general_renewal_table",
+      "text_extraction_method": "pdf_table_boundaries_full_row",
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_EM_RENEWAL_DOC_003",
+      "row_number": 3,
+      "page": 1,
+      "raw_row_text_ja": "パスポート及び在留カード　【提示】                     ○          ○          ○          ○",
+      "category_requirements": {
+        "1": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "2": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "applicability_scope": "general_renewal_table",
+      "text_extraction_method": "pdf_table_boundaries_full_row",
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_EM_RENEWAL_DOC_004",
+      "row_number": 4,
+      "page": 1,
+      "raw_row_text_ja": "○四季報の写し又は日\n                                 本の証券取引所に上場\n                                 していることを証明す\n                                 る文書（写し）\n                                 ○主務官庁から設立の\n                                 許可を受けたことを証 ○前年分の職員の給与\n                                 明する文書（写し）  所得の源泉徴収票等の\n                                 ○高度専門職省令第１ 法定調書合計表（写\n所属機関がいずれのカテゴリーに該当するかを証明する文書      条第１項各号の表の特 し）\n                                                      前年分の職員の給与所\n※右記の書類の中で、提出可能な書類を提出してください。      別加算の項の中欄イ又 ○在留申請オンライン\n                                                      得の源泉徴収票等の法\n※提出可能な書類がない場合は、カテゴリー４に該当することとなりま はロの対象企業（イノ システムに係る利用申\n                                                      定調書合計表（写し）\nす。                               ベーション創出企業） 出の承認を受けている\n                                 であることを証明する ことを証明する文書\n                                 文書（例えば、補助金 （利用申出に係る承認\n                                 交付決定通知書の写  のお知らせメール等）\n                                 し）\n                                 ○「一定の条件を満た\n                                 す企業等」であること\n                                 を証明する文書（例え\n                                 ば、認定証等の写し）",
+      "category_requirements": {
+        "1": {
+          "symbol": null,
+          "status": "category_specific_evidence_text"
+        },
+        "2": {
+          "symbol": null,
+          "status": "category_specific_evidence_text"
+        },
+        "3": {
+          "symbol": null,
+          "status": "category_specific_evidence_text"
+        },
+        "4": {
+          "symbol": null,
+          "status": "category_specific_evidence_text"
+        }
+      },
+      "applicability_scope": "general_renewal_table",
+      "text_extraction_method": "pdf_table_boundaries_full_row",
+      "validation_status": "needs_review",
+      "category_evidence": {
+        "selection_type": "category_specific_evidence",
+        "category_evidence": {
+          "1": {
+            "source_column": "カテゴリー1",
+            "source_text_ja": "○四季報の写し又は日\n本の証券取引所に上場\nしていることを証明す\nる文書（写し）\n○主務官庁から設立の\n許可を受けたことを証\n明する文書（写し）\n○高度専門職省令第１\n条第１項各号の表の特\n別加算の項の中欄イ又\nはロの対象企業（イノ\nベーション創出企業）\nであることを証明する\n文書（例えば、補助金\n交付決定通知書の写\nし）\n○「一定の条件を満た\nす企業等」であること\nを証明する文書（例え\nば、認定証等の写し）",
+            "option_count": 4,
+            "options": [
+              {
+                "option_id": "JP_EM_RENEWAL_DOC_004_CAT1_OPT_01",
+                "source_text_ja": "四季報の写し又は日\n本の証券取引所に上場\nしていることを証明す\nる文書（写し）",
+                "validation_status": "needs_review"
+              },
+              {
+                "option_id": "JP_EM_RENEWAL_DOC_004_CAT1_OPT_02",
+                "source_text_ja": "主務官庁から設立の\n許可を受けたことを証\n明する文書（写し）",
+                "validation_status": "needs_review"
+              },
+              {
+                "option_id": "JP_EM_RENEWAL_DOC_004_CAT1_OPT_03",
+                "source_text_ja": "高度専門職省令第１\n条第１項各号の表の特\n別加算の項の中欄イ又\nはロの対象企業（イノ\nベーション創出企業）\nであることを証明する\n文書（例えば、補助金\n交付決定通知書の写\nし）",
+                "validation_status": "needs_review"
+              },
+              {
+                "option_id": "JP_EM_RENEWAL_DOC_004_CAT1_OPT_04",
+                "source_text_ja": "「一定の条件を満た\nす企業等」であること\nを証明する文書（例え\nば、認定証等の写し）",
+                "validation_status": "needs_review"
+              }
+            ],
+            "no_separate_evidence_text": false,
+            "validation_status": "needs_review"
+          },
+          "2": {
+            "source_column": "カテゴリー2",
+            "source_text_ja": "○前年分の職員の給与\n所得の源泉徴収票等の\n法定調書合計表（写\nし）\n○在留申請オンライン\nシステムに係る利用申\n出の承認を受けている\nことを証明する文書\n（利用申出に係る承認\nのお知らせメール等）",
+            "option_count": 2,
+            "options": [
+              {
+                "option_id": "JP_EM_RENEWAL_DOC_004_CAT2_OPT_01",
+                "source_text_ja": "前年分の職員の給与\n所得の源泉徴収票等の\n法定調書合計表（写\nし）",
+                "validation_status": "needs_review"
+              },
+              {
+                "option_id": "JP_EM_RENEWAL_DOC_004_CAT2_OPT_02",
+                "source_text_ja": "在留申請オンライン\nシステムに係る利用申\n出の承認を受けている\nことを証明する文書\n（利用申出に係る承認\nのお知らせメール等）",
+                "validation_status": "needs_review"
+              }
+            ],
+            "no_separate_evidence_text": false,
+            "validation_status": "needs_review"
+          },
+          "3": {
+            "source_column": "カテゴリー3",
+            "source_text_ja": "前年分の職員の給与所\n得の源泉徴収票等の法\n定調書合計表（写し）",
+            "option_count": 1,
+            "options": [
+              {
+                "option_id": "JP_EM_RENEWAL_DOC_004_CAT3_OPT_01",
+                "source_text_ja": "前年分の職員の給与所\n得の源泉徴収票等の法\n定調書合計表（写し）",
+                "validation_status": "needs_review"
+              }
+            ],
+            "no_separate_evidence_text": false,
+            "validation_status": "needs_review"
+          },
+          "4": {
+            "source_column": "カテゴリー4",
+            "source_text_ja": "",
+            "option_count": 0,
+            "options": [],
+            "no_separate_evidence_text": true,
+            "validation_status": "needs_review"
+          }
+        },
+        "category_4_interpretation": "No separate evidence text in the source column; this does not establish a submission exemption.",
+        "automatic_eligibility_rules_enabled": false,
+        "validation_status": "needs_review"
+      }
+    },
+    {
+      "document_id": "JP_EM_RENEWAL_DOC_005",
+      "row_number": 5,
+      "page": 1,
+      "raw_row_text_ja": "派遣契約に基づいて就労する場合（申請人が被派遣者の場合）\n（１）申請人の派遣労働に関する誓約書（参考様式）\n　　ア　所属機関（派遣元）用\n　　イ　派遣先用\n（２）申請人の派遣先での活動内容及び派遣契約期間を明らかにする\n　　　次の資料の写し\n　　　※直近の在留期間中の資料も提出してください。             △          △          △          △\n　　ア　労働条件通知書（雇用契約書）\n　　イ　労働者派遣個別契約書\n　　ウ　派遣元管理台帳\n　　エ　派遣先管理台帳\n　　オ　就業状況報告書",
+      "category_requirements": {
+        "1": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "2": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "3": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "4": {
+          "symbol": "△",
+          "status": "conditional"
+        }
+      },
+      "applicability_scope": "general_renewal_table",
+      "text_extraction_method": "pdf_table_boundaries_full_row",
+      "validation_status": "needs_review",
+      "dispatch_evidence": {
+        "applicability_condition_ja": "派遣契約に基づいて就労する場合（申請人が被派遣者の場合）",
+        "pledge_documents": {
+          "source_clause": "(1)",
+          "source_text_ja": "（１）申請人の派遣労働に関する誓約書（参考様式）\n　　ア　所属機関（派遣元）用\n　　イ　派遣先用",
+          "item_count": 2,
+          "items": [
+            {
+              "source_clause": "ア",
+              "source_text_ja": "ア　所属機関（派遣元）用"
+            },
+            {
+              "source_clause": "イ",
+              "source_text_ja": "イ　派遣先用"
+            }
+          ]
+        },
+        "dispatch_activity_documents": {
+          "source_clause": "(2)",
+          "source_text_ja": "（２）申請人の派遣先での活動内容及び派遣契約期間を明らかにする\n　　　次の資料の写し\n　　　※直近の在留期間中の資料も提出してください。\n　　ア　労働条件通知書（雇用契約書）\n　　イ　労働者派遣個別契約書\n　　ウ　派遣元管理台帳\n　　エ　派遣先管理台帳\n　　オ　就業状況報告書",
+          "source_note_ja": "※直近の在留期間中の資料も提出してください。",
+          "item_count": 5,
+          "items": [
+            {
+              "source_clause": "ア",
+              "source_text_ja": "労働条件通知書（雇用契約書）"
+            },
+            {
+              "source_clause": "イ",
+              "source_text_ja": "労働者派遣個別契約書"
+            },
+            {
+              "source_clause": "ウ",
+              "source_text_ja": "派遣元管理台帳"
+            },
+            {
+              "source_clause": "エ",
+              "source_text_ja": "派遣先管理台帳"
+            },
+            {
+              "source_clause": "オ",
+              "source_text_ja": "就業状況報告書"
+            }
+          ],
+          "selection_type": "source_listed_documents"
+        },
+        "automatic_eligibility_rules_enabled": false,
+        "validation_status": "needs_review"
+      }
+    },
+    {
+      "document_id": "JP_EM_RENEWAL_DOC_006",
+      "row_number": 6,
+      "page": 1,
+      "raw_row_text_ja": "所属機関の代表者に関する申告書（参考様式）                                      ○          ○",
+      "category_requirements": {
+        "1": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "2": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "applicability_scope": "general_renewal_table",
+      "text_extraction_method": "pdf_table_boundaries_full_row",
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_EM_RENEWAL_DOC_007",
+      "row_number": 7,
+      "page": 1,
+      "raw_row_text_ja": "住民税の課税（又は非課税）証明書及び納税証明書（１年間の総所得及\nび納税状況が記載されたもの）\n※１月１日現在お住まいの市区町村の区役所・市役所・役場から発行さ\n                                                           ○          ○\nれます。\n※１年間の総所得及び納税状況（税金を納めているかどうか）の両方が\n記載されている証明書であれば、いずれか一方でかまいません。",
+      "category_requirements": {
+        "1": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "2": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "applicability_scope": "general_renewal_table",
+      "text_extraction_method": "pdf_table_boundaries_full_row",
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_EM_RENEWAL_DOC_008",
+      "row_number": 8,
+      "page": 2,
+      "raw_row_text_ja": "活動内容等を明らかにするいずれかの資料\n（１）労働契約を締結する場合\n　　労働基準法第15条第１項及び同法施行規則第５条に基づき、\n　　労働者に交付される労働条件を明示する文書\n（２）日本法人である会社の役員に就任する場合\n　　役員報酬を定める定款の写し又は役員報酬を決議した株主\n                                                           ○          ○\n　　総会の議事録（報酬委員会が設置されている会社にあっては\n　　同委員会の議事録）の写し\n（３）外国法人内の日本支店に転勤する場合及び会社以外の団体\n　　の役員に就任する場合\n　　地位（担当業務）、期間及び支払われる報酬額を明らかにする\n　　所属団体の文書",
+      "category_requirements": {
+        "1": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "2": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "applicability_scope": "additional_documents_after_job_change",
+      "text_extraction_method": "pdf_table_boundaries_full_row",
+      "validation_status": "needs_review",
+      "activity_evidence": {
+        "source_intro_ja": "活動内容等を明らかにするいずれかの資料",
+        "selection_type": "activity_based_alternatives",
+        "option_count": 3,
+        "options": [
+          {
+            "option_id": "JP_EM_RENEWAL_DOC_008_OPT_01",
+            "source_clause": "(1)",
+            "activity_type": "employment_contract",
+            "source_text_ja": "（１）労働契約を締結する場合\n　　労働基準法第15条第１項及び同法施行規則第５条に基づき、\n　　労働者に交付される労働条件を明示する文書",
+            "validation_status": "needs_review"
+          },
+          {
+            "option_id": "JP_EM_RENEWAL_DOC_008_OPT_02",
+            "source_clause": "(2)",
+            "activity_type": "japanese_company_officer",
+            "source_text_ja": "（２）日本法人である会社の役員に就任する場合\n　　役員報酬を定める定款の写し又は役員報酬を決議した株主\n　　総会の議事録（報酬委員会が設置されている会社にあっては\n　　同委員会の議事録）の写し",
+            "validation_status": "needs_review"
+          },
+          {
+            "option_id": "JP_EM_RENEWAL_DOC_008_OPT_03",
+            "source_clause": "(3)",
+            "activity_type": "foreign_branch_transfer_or_other_organization_officer",
+            "source_text_ja": "（３）外国法人内の日本支店に転勤する場合及び会社以外の団体\n　　の役員に就任する場合\n　　地位（担当業務）、期間及び支払われる報酬額を明らかにする\n　　所属団体の文書",
+            "validation_status": "needs_review"
+          }
+        ],
+        "automatic_eligibility_rules_enabled": false,
+        "validation_status": "needs_review"
+      }
+    },
+    {
+      "document_id": "JP_EM_RENEWAL_DOC_009",
+      "row_number": 9,
+      "page": 2,
+      "raw_row_text_ja": "登記事項証明書                                                    ○          ○",
+      "category_requirements": {
+        "1": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "2": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "applicability_scope": "additional_documents_after_job_change",
+      "text_extraction_method": "pdf_table_boundaries_full_row",
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_EM_RENEWAL_DOC_010",
+      "row_number": 10,
+      "page": 2,
+      "raw_row_text_ja": "事業内容を明らかにする次のいずれかの資料\n（１）勤務先等の沿革、役員、組織、事業内容（主要取引先と取引\n                                                           ○          ○\n　　実績を含む。）等が詳細に記載された案内書\n（２）その他勤務先等の作成した上記（１）に準ずる文書",
+      "category_requirements": {
+        "1": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "2": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "applicability_scope": "additional_documents_after_job_change",
+      "text_extraction_method": "pdf_table_boundaries_full_row",
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_EM_RENEWAL_DOC_011",
+      "row_number": 11,
+      "page": 2,
+      "raw_row_text_ja": "直近年度の決算文書の写し\n                                                           ○          ○\n※新規事業の場合は事業計画書",
+      "category_requirements": {
+        "1": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "2": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "3": {
+          "symbol": "○",
+          "status": "required"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "applicability_scope": "additional_documents_after_job_change",
+      "text_extraction_method": "pdf_table_boundaries_full_row",
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_EM_RENEWAL_DOC_012",
+      "row_number": 12,
+      "page": 2,
+      "raw_row_text_ja": "（主に言語能力を用いて対人業務等に従事する場合）\n                                                           △          △\n業務上使用する言語について、ＣＥＦＲ・Ｂ２相当の言語能力を有する\n                                                          （注）        （注）\nことを証する資料",
+      "category_requirements": {
+        "1": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "2": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "3": {
+          "symbol": "△",
+          "status": "conditional"
+        },
+        "4": {
+          "symbol": "△",
+          "status": "conditional"
+        }
+      },
+      "applicability_scope": "additional_documents_after_job_change",
+      "text_extraction_method": "pdf_table_boundaries_full_row",
+      "validation_status": "needs_review"
+    },
+    {
+      "document_id": "JP_EM_RENEWAL_DOC_013",
+      "row_number": 13,
+      "page": 2,
+      "raw_row_text_ja": "前年分の職員の給与所得の源泉徴収票等の法定調書合計表を提出できな\nい理由を明らかにする次のいずれかの資料\n（１）源泉徴収の免除を受ける機関の場合\n　　外国法人の源泉徴収に対する免除証明書その他の源泉徴収を\n　　要しないことを明らかにする資料\n（２）上記（１）を除く機関の場合\n                                                                     ○\n　　ア 給与支払事務所等の開設届書の写し\n　　イ 次のいずれかの資料\n　　（ア）直近３か月分の給与所得・退職所得等の所得税徴収\n　　　　高計算書（領収日付印のあるものの写し）\n　　（イ）納期の特例を受けている場合は、その承認を受けている\n　　　　ことを明らかにする資料",
+      "category_requirements": {
+        "1": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "2": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "3": {
+          "symbol": null,
+          "status": "not_explicitly_marked"
+        },
+        "4": {
+          "symbol": "○",
+          "status": "required"
+        }
+      },
+      "applicability_scope": "additional_documents_after_job_change",
+      "text_extraction_method": "pdf_table_boundaries_full_row",
+      "validation_status": "needs_review",
+      "tax_evidence": {
+        "source_intro_ja": "前年分の職員の給与所得の源泉徴収票等の法定調書合計表を提出できな\nい理由を明らかにする次のいずれかの資料",
+        "branch_count": 2,
+        "branches": [
+          {
+            "branch_id": "JP_EM_RENEWAL_DOC_013_BRANCH_01",
+            "source_clause": "（１）",
+            "branch_type": "withholding_tax_exempt_institution",
+            "source_text_ja": "（１）源泉徴収の免除を受ける機関の場合\n　　外国法人の源泉徴収に対する免除証明書その他の源泉徴収を\n　　要しないことを明らかにする資料",
+            "validation_status": "needs_review"
+          },
+          {
+            "branch_id": "JP_EM_RENEWAL_DOC_013_BRANCH_02",
+            "source_clause": "（２）",
+            "branch_type": "other_institution",
+            "source_text_ja": "（２）上記（１）を除く機関の場合\n　　ア給与支払事務所等の開設届書の写し\n　　イ次のいずれかの資料\n　　（ア）直近３か月分の給与所得・退職所得等の所得税徴収\n　　　　高計算書（領収日付印のあるものの写し）\n　　（イ）納期の特例を受けている場合は、その承認を受けている\n　　　　ことを明らかにする資料",
+            "source_intro_ja": "（２）上記（１）を除く機関の場合",
+            "components": [
+              {
+                "source_clause": "ア",
+                "component_type": "payroll_office_notification",
+                "source_text_ja": "ア給与支払事務所等の開設届書の写し"
+              },
+              {
+                "source_clause": "イ",
+                "component_type": "tax_payment_evidence",
+                "source_text_ja": "イ次のいずれかの資料\n　　（ア）直近３か月分の給与所得・退職所得等の所得税徴収\n　　　　高計算書（領収日付印のあるものの写し）\n　　（イ）納期の特例を受けている場合は、その承認を受けている\n　　　　ことを明らかにする資料",
+                "selection_type": "source_stated_alternatives",
+                "source_intro_ja": "イ次のいずれかの資料",
+                "options": [
+                  {
+                    "source_clause": "（ア）",
+                    "source_text_ja": "（ア）直近３か月分の給与所得・退職所得等の所得税徴収\n　　　　高計算書（領収日付印のあるものの写し）"
+                  },
+                  {
+                    "source_clause": "（イ）",
+                    "source_text_ja": "（イ）納期の特例を受けている場合は、その承認を受けている\n　　　　ことを明らかにする資料"
+                  }
+                ]
+              }
+            ],
+            "validation_status": "needs_review"
+          }
+        ],
+        "automatic_eligibility_rules_enabled": false,
+        "validation_status": "needs_review"
+      }
+    }
+  ],
+  "dataset_type": "integrated_renewal_documents",
+  "integration_sources": [
+    {
+      "role": "main",
+      "filename": "japan_employment_renewal_structured.json",
+      "sha256": "ed24d73198981d6885cfa5fdb98a92cc2ca3acc06e5dfd4c8e73553e4f3e62ef"
+    },
+    {
+      "role": "category",
+      "filename": "japan_employment_renewal_category_evidence.json",
+      "sha256": "27db1ad63a15ba5b2c4a0e9946983ffd6656fef7e21b58d5b5152e3240317b7a"
+    },
+    {
+      "role": "dispatch",
+      "filename": "japan_employment_renewal_dispatch_evidence.json",
+      "sha256": "3f735ab9b7c7c9581c38e83e0a176c321cebe6e413575a1b661e75e9c7691df5"
+    },
+    {
+      "role": "activity",
+      "filename": "japan_employment_renewal_activity_evidence.json",
+      "sha256": "67421741ccb63c4a3b5dd105588cba5479353ef9c9c0037d8fedadd981d153db"
+    },
+    {
+      "role": "tax",
+      "filename": "japan_employment_renewal_tax_evidence.json",
+      "sha256": "f48361c0db679f78c276e4a3cf7da0d48ddf8f87d6d83c204ff83ed551036447"
+    }
+  ]
+}

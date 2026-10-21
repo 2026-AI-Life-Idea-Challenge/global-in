@@ -1,0 +1,72 @@
+{
+  "route_id": "JP-EM",
+  "application_type": "renewal",
+  "parent_document_id": "JP_EM_RENEWAL_DOC_005",
+  "source_row_number": 5,
+  "source_json_sha256": "ed24d73198981d6885cfa5fdb98a92cc2ca3acc06e5dfd4c8e73553e4f3e62ef",
+  "applicability_condition_ja": "派遣契約に基づいて就労する場合（申請人が被派遣者の場合）",
+  "category_requirements": {
+    "1": {
+      "symbol": "△",
+      "status": "conditional"
+    },
+    "2": {
+      "symbol": "△",
+      "status": "conditional"
+    },
+    "3": {
+      "symbol": "△",
+      "status": "conditional"
+    },
+    "4": {
+      "symbol": "△",
+      "status": "conditional"
+    }
+  },
+  "pledge_documents": {
+    "source_clause": "(1)",
+    "source_text_ja": "（１）申請人の派遣労働に関する誓約書（参考様式）\n　　ア　所属機関（派遣元）用\n　　イ　派遣先用",
+    "item_count": 2,
+    "items": [
+      {
+        "source_clause": "ア",
+        "source_text_ja": "ア　所属機関（派遣元）用"
+      },
+      {
+        "source_clause": "イ",
+        "source_text_ja": "イ　派遣先用"
+      }
+    ]
+  },
+  "dispatch_activity_documents": {
+    "source_clause": "(2)",
+    "source_text_ja": "（２）申請人の派遣先での活動内容及び派遣契約期間を明らかにする\n　　　次の資料の写し\n　　　※直近の在留期間中の資料も提出してください。\n　　ア　労働条件通知書（雇用契約書）\n　　イ　労働者派遣個別契約書\n　　ウ　派遣元管理台帳\n　　エ　派遣先管理台帳\n　　オ　就業状況報告書",
+    "source_note_ja": "※直近の在留期間中の資料も提出してください。",
+    "item_count": 5,
+    "items": [
+      {
+        "source_clause": "ア",
+        "source_text_ja": "労働条件通知書（雇用契約書）"
+      },
+      {
+        "source_clause": "イ",
+        "source_text_ja": "労働者派遣個別契約書"
+      },
+      {
+        "source_clause": "ウ",
+        "source_text_ja": "派遣元管理台帳"
+      },
+      {
+        "source_clause": "エ",
+        "source_text_ja": "派遣先管理台帳"
+      },
+      {
+        "source_clause": "オ",
+        "source_text_ja": "就業状況報告書"
+      }
+    ],
+    "selection_type": "source_listed_documents"
+  },
+  "automatic_eligibility_rules_enabled": false,
+  "validation_status": "needs_review"
+}
