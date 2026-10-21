@@ -1,0 +1,255 @@
+
+{
+  "dataset_type": "west_final_integrated_review_draft",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "review_step": "64-65",
+  "source": {
+    "agency": "국립국제교육원",
+    "notice_number": "2026-94",
+    "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+    "historical_notice": true,
+    "current_policy_verified": false
+  },
+  "source_review_files": [
+    "west_2026_second_half_review_register.json",
+    "west_2026_second_half_cross_agency_review.json",
+    "west_2026_second_half_integrated_audit.json",
+    "west_2026_h2_evidence_fields_review_draft.json",
+    "west_2026_h2_remaining_fields_review_draft.json",
+    "west_2026_h2_issue_field_linkage_draft.json"
+  ],
+  "structural_checks": {
+    "original_policy_field_count": 27,
+    "original_policy_field_tracking_passed": true,
+    "original_manual_issue_count": 16,
+    "faq_count": 49,
+    "faq_numbering_passed": true,
+    "integrated_consistency_check_passed": true
+  },
+  "cross_agency_review": {
+    "task_count": 7,
+    "tasks_preliminarily_compared": 7,
+    "task_ids": [
+      "WEST-H2-CROSS-01",
+      "WEST-H2-CROSS-02",
+      "WEST-H2-CROSS-03",
+      "WEST-H2-CROSS-04",
+      "WEST-H2-CROSS-05",
+      "WEST-H2-CROSS-06",
+      "WEST-H2-CROSS-07"
+    ],
+    "conditional_scope_review": [
+      "WEST-H2-CROSS-03",
+      "WEST-H2-CROSS-06"
+    ],
+    "manual_review_finalized": false,
+    "review_status": "needs_review"
+  },
+  "additional_policy_fields": {
+    "field_count": 7,
+    "drafts_created": true,
+    "fields": [
+      "vulnerable_group_evidence",
+      "graduation_evidence_examples",
+      "score_report_identifiers",
+      "toeic_speaking_conversion_reference",
+      "eligibility_exceptions",
+      "internship_restrictions",
+      "j1_visa_conditions"
+    ],
+    "semantic_review_completed": false,
+    "review_status": "needs_review"
+  },
+  "original_issue_tracking": {
+    "original_issue_count": 16,
+    "directly_linked_issue_count": 5,
+    "other_issue_count": 11,
+    "duplicate_candidate_pairs": [
+      {
+        "issue_ids": [
+          "WEST-H2-ELIGIBILITY-01",
+          "WEST-H2-SELECTION-04"
+        ],
+        "reason": "FAQ Q3 모집 회차 표기 불일치",
+        "confirmed_duplicate": false,
+        "automatically_merged": false
+      }
+    ],
+    "issues_automatically_resolved": 0,
+    "all_issues_resolved": false
+  },
+  "faq_review": {
+    "faq_count": 49,
+    "question_answer_numbering_verified": true,
+    "key_review_questions": [
+      3,
+      7,
+      15,
+      20,
+      21,
+      23,
+      25,
+      26,
+      28,
+      31,
+      34,
+      35,
+      39,
+      40,
+      41,
+      43,
+      46,
+      47,
+      48
+    ],
+    "known_source_inconsistency": {
+      "faq_number": 3,
+      "issue": "2026년 하반기 공고에 2026년 상반기 선발이라는 표기 존재",
+      "publisher_correction_verified": false,
+      "status": "needs_review"
+    },
+    "all_faq_semantics_approved": false,
+    "review_status": "needs_review"
+  },
+  "financial_table_review": {
+    "printed_pages": [
+      6,
+      7
+    ],
+    "exchange_rate_krw_per_usd": 1472,
+    "airfare_support_krw": 2000000,
+    "reviewed_row_count": 8,
+    "participation_fee_sum_checked": true,
+    "independent_total_calculation_performed": true,
+    "rounding_policy_verified": false,
+    "rows": [
+      {
+        "program": "short",
+        "support_bracket": "basic_to_5",
+        "government_fee_usd": 7045,
+        "self_fee_usd": 0,
+        "living_support_usd": 8400,
+        "published_total_krw": 24735000,
+        "calculated_total_krw": 24735040,
+        "difference_krw": 40
+      },
+      {
+        "program": "short",
+        "support_bracket": "6_to_7",
+        "government_fee_usd": 3523,
+        "self_fee_usd": 3522,
+        "living_support_usd": 4200,
+        "published_total_krw": 13368000,
+        "calculated_total_krw": 13368256,
+        "difference_krw": 256
+      },
+      {
+        "program": "short",
+        "support_bracket": "8_to_9",
+        "government_fee_usd": 2466,
+        "self_fee_usd": 4579,
+        "living_support_usd": 4200,
+        "published_total_krw": 11812000,
+        "calculated_total_krw": 11812352,
+        "difference_krw": 352
+      },
+      {
+        "program": "short",
+        "support_bracket": "10",
+        "government_fee_usd": 1761,
+        "self_fee_usd": 5284,
+        "living_support_usd": 2100,
+        "published_total_krw": 7684000,
+        "calculated_total_krw": 7683392,
+        "difference_krw": -608
+      },
+      {
+        "program": "medium",
+        "support_bracket": "basic_to_5",
+        "government_fee_usd": 8912,
+        "self_fee_usd": 0,
+        "living_support_usd": 12600,
+        "published_total_krw": 33665000,
+        "calculated_total_krw": 33665664,
+        "difference_krw": 664
+      },
+      {
+        "program": "medium",
+        "support_bracket": "6_to_7",
+        "government_fee_usd": 4456,
+        "self_fee_usd": 4456,
+        "living_support_usd": 6300,
+        "published_total_krw": 17833000,
+        "calculated_total_krw": 17832832,
+        "difference_krw": -168
+      },
+      {
+        "program": "medium",
+        "support_bracket": "8_to_9",
+        "government_fee_usd": 3119,
+        "self_fee_usd": 5793,
+        "living_support_usd": 6300,
+        "published_total_krw": 15865000,
+        "calculated_total_krw": 15864768,
+        "difference_krw": -232
+      },
+      {
+        "program": "medium",
+        "support_bracket": "10",
+        "government_fee_usd": 2228,
+        "self_fee_usd": 6684,
+        "living_support_usd": 3150,
+        "published_total_krw": 9916000,
+        "calculated_total_krw": 9916416,
+        "difference_krw": 416
+      }
+    ],
+    "rows_requiring_rounding_review": [
+      "short/10",
+      "medium/basic_to_5"
+    ],
+    "published_totals_automatically_corrected": false,
+    "review_status": "needs_review"
+  },
+  "remaining_review_tasks": [
+    {
+      "topic": "faq_q3_notice_period",
+      "description": "발행기관의 공식 정정 여부 확인"
+    },
+    {
+      "topic": "financial_rounding",
+      "description": "지원총액 표의 반올림 또는 산정 기준 확인"
+    },
+    {
+      "topic": "individual_academic_and_loan_conditions",
+      "description": "학적별 대출 실행 조건과 개인별 적용 범위 확인"
+    },
+    {
+      "topic": "j1_visa_legal_conditions",
+      "description": "현행 미국 규정과 개인별 INA 212(e) 적용 여부 분리"
+    },
+    {
+      "topic": "faq_semantic_final_review",
+      "description": "FAQ 전체의 최종 정책 의미 승인"
+    },
+    {
+      "topic": "cross_agency_final_review",
+      "description": "기관 간 대조 결과 최종 확정"
+    }
+  ],
+  "review_summary": {
+    "source_evidence_reviewed": true,
+    "structural_consistency_passed": true,
+    "semantic_review_completed": false,
+    "all_issues_resolved": false,
+    "individual_eligibility_determined": false,
+    "current_policy_verified": false,
+    "final_policy_approved": false
+  },
+  "original_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

@@ -1,0 +1,98 @@
+
+{
+  "dataset_type": "bridgeusa_j1_legal_reference_draft",
+  "country": "US",
+  "program_ids": [
+    "US-EM-02",
+    "US-EM-03"
+  ],
+  "legal_source": {
+    "title": "22 CFR 62.22 - Trainees and interns",
+    "source_agency": "U.S. Department of State",
+    "source_type": "eCFR historical version XML",
+    "version_date": "2026-10-01",
+    "source_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-10-01/title-22.xml?part=62&section=62.22",
+    "local_path": "data/raw/usa/source_snapshots/22_cfr_62_22_2026-10-01.xml",
+    "sha256": "81efbb45c45df87caf9474cbdfd91a97c8d7b098a780fbc5acd02c6033429d08",
+    "xml_parse_verified": true,
+    "full_legal_semantic_review_completed": false
+  },
+  "legal_reference_records": [
+    {
+      "topic": "intern_eligibility",
+      "legal_subsection": "62.22(d)(3)",
+      "program_ids": ["US-EM-02"],
+      "rule_summary": "Foreign post-secondary students or graduates within 12 months before the exchange visitor program begins.",
+      "verification_status": "source_text_checked",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "trainee_eligibility",
+      "legal_subsection": "62.22(d)(2)",
+      "program_ids": ["US-EM-03"],
+      "rule_summary": "Relevant foreign degree or professional certificate plus at least one year of related work experience outside the United States, or five years of relevant work experience outside the United States.",
+      "verification_status": "source_text_checked",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "program_duration",
+      "program_ids": ["US-EM-02", "US-EM-03"],
+      "legal_subsection": "62.22(k)",
+      "intern_general_max_months": 12,
+      "trainee_general_max_months": 18,
+      "trainee_agriculture_general_max_months": 12,
+      "trainee_hospitality_tourism_max_months": 12,
+      "agriculture_exception": "Up to 18 months if the original training plan includes at least six months of related classroom participation and studies.",
+      "verification_status": "source_text_checked",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "minimum_weekly_hours",
+      "legal_subsection": "62.22(f)(1)(iv)",
+      "program_ids": ["US-EM-02", "US-EM-03"],
+      "minimum_hours_per_week": 32,
+      "verification_status": "source_text_checked",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "clerical_work_limit",
+      "legal_subsection": "62.22(j)(4)",
+      "program_ids": ["US-EM-02", "US-EM-03"],
+      "source_phrase": "more than 20 per cent clerical work",
+      "threshold_percent": 20,
+      "verification_status": "source_text_checked",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "host_site_visits",
+      "legal_subsection": "62.22(g)(4)",
+      "program_ids": ["US-EM-02", "US-EM-03"],
+      "condition_logic": "no_prior_successful_participation AND (employees_under_25 OR annual_revenue_under_usd_3000000)",
+      "excluded_host_types": [
+        "academic_institutions",
+        "federal_government_offices",
+        "state_government_offices",
+        "local_government_offices"
+      ],
+      "verification_status": "source_text_checked",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "training_plan",
+      "program_ids": ["US-EM-02", "US-EM-03"],
+      "legal_subsection": "62.22(i)",
+      "form": "DS-7002",
+      "rule_summary": "Individualized training or internship placement plan must be completed and signed before DS-2019 issuance.",
+      "verification_status": "source_text_checked",
+      "review_status": "needs_review"
+    }
+  ],
+  "source_content_modified": false,
+  "official_evidence_modified": false,
+  "retrieval_chunks_modified": false,
+  "semantic_review_completed": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

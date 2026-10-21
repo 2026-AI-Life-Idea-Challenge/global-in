@@ -1,0 +1,24 @@
+{
+  "dataset_type": "usa_policy_scope_review",
+  "total_records": 13,
+  "h1b_records": 10,
+  "west_historical_records": 3,
+  "category_counts": {
+    "filing_fee": 1,
+    "h1b_cap": 3,
+    "h1b_filing": 1,
+    "historical_west": 3,
+    "premium_processing_fee": 1,
+    "presidential_proclamation": 4
+  },
+  "source_sha256": "00c45a9eb12a3b110b227a32530cb0fd03a50e12391c6996544e4dc13c151d25",
+  "review_records_sha256": "b1115f49c20e2ee005450c0302a6157c420e10f17e7ff8c978dbc98e98b647e6",
+  "note": "Review focus and official source targets are recorded. This is not a completed current-law verification.",
+  "live_official_page_verified": false,
+  "current_legal_effect_verified": false,
+  "human_review_completed": false,
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "validation_status": "needs_review"
+}

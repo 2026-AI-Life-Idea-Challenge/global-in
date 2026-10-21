@@ -1,0 +1,19 @@
+{
+  "dataset_type": "west_documents_scores_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "input_previous_sha256": "c3cb750badb91b75e25746c6bf1ccb18e39a8302a3d5ccfed3b5a03577d48925",
+  "pdf_phrase_checks_passed": 30,
+  "faq_extracted_count": 5,
+  "review_item_count": 5,
+  "score_identifier_types": 5,
+  "manual_review_issues": 4,
+  "toeic_speaking_table_values_verified": false,
+  "original_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "473fad7f914ed47eb0c570b82f36a39d250097923ef7318de1ec04a28699c6d7"
+}

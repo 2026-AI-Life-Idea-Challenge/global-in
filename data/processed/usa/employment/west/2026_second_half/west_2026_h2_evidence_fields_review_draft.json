@@ -1,0 +1,102 @@
+
+{
+  "dataset_type": "west_evidence_visual_review_draft",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "source": "NIIED notice No.2026-94, local uploaded PDF",
+  "scope": "Four document/evidence fields; archival source transcription, not policy approval",
+  "review_items": [
+    {
+      "field": "vulnerable_group_evidence",
+      "printed_pages": [9],
+      "source_observations": [
+        "기초생활수급·차상위계층 세부 범주, 제출 증명서·발급처 확인",
+        "기타 취업취약계층: 장애인·다문화가족·북향민(자녀) 증빙 설명 확인",
+        "증빙자료는 2026-07-01 이후 발급 조건 표시"
+      ],
+      "not_verified": [
+        "개별 신청인의 자격, 서류 진위·유효기간",
+        "세부 유형별 행정상 예외 및 후속 변경"
+      ],
+      "source_presence_verified": true,
+      "source_text_visual_check_completed": true,
+      "semantic_review_completed": false,
+      "review_status": "needs_review",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false,
+      "automatic_eligibility_rules_enabled": false
+    },
+    {
+      "field": "graduation_evidence_examples",
+      "printed_pages": [5, 9, 14, 19],
+      "source_observations": [
+        "기초생활수급·차상위 졸업생: 해당 증명서 분기",
+        "그 외 졸업생: 학자금 지원구간 통지서; 발급 불가 시 학자금대출·장학금 신청증명서",
+        "붙임4는 재학 중 국가장학금 신청 이력이 없어 통지서 발급이 불가능한 졸업생의 예시이며, 제출 시 10구간에 준한 지원금 표시"
+      ],
+      "not_verified": [
+        "실제 신청인별 증빙 발급 가능 여부",
+        "모든 통지서 발급 불가 사유에 10구간을 일괄 적용할 수 있는지"
+      ],
+      "source_presence_verified": true,
+      "source_text_visual_check_completed": true,
+      "semantic_review_completed": false,
+      "review_status": "needs_review",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false,
+      "automatic_eligibility_rules_enabled": false
+    },
+    {
+      "field": "score_report_identifiers",
+      "printed_pages": [12, 20, 21, 22],
+      "source_observations": [
+        "TOEIC·TOEIC Speaking: Registration Number 숫자 6자리",
+        "OPIc: Test ID 12자리(숫자 1, 영문 대문자 1, 숫자 10)",
+        "G-TELP: 수험번호 숫자 11자리(앞 4 + 뒤 7)",
+        "G-TELP Speaking: 수험번호 8자리(문서 표기 알파벳 s + 숫자 7)"
+      ],
+      "not_verified": [
+        "개별 성적표 진위 검증",
+        "시험 주관사의 이후 번호 체계 변경"
+      ],
+      "source_presence_verified": true,
+      "source_text_visual_check_completed": true,
+      "semantic_review_completed": false,
+      "review_status": "needs_review",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false,
+      "automatic_eligibility_rules_enabled": false
+    },
+    {
+      "field": "toeic_speaking_conversion_reference",
+      "printed_pages": [20],
+      "source_observations": [
+        "ACTFL AH=200, AM=180~190, AL=160~170, IH=140~150, IM3=130, IM2=120, IM1=110 (PDF 붙임5 표)",
+        "온라인 지원에는 ACTFL 등급이 아니라 200점 만점 숫자 점수를 입력하도록 안내"
+      ],
+      "not_verified": [
+        "시험 주관사 최신 기준과의 일치",
+        "전체 점수 도메인의 누락 범위에 대한 임의 매핑",
+        "자동 어학성적 요건 판정"
+      ],
+      "source_presence_verified": true,
+      "source_text_visual_check_completed": true,
+      "semantic_review_completed": false,
+      "review_status": "needs_review",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false,
+      "automatic_eligibility_rules_enabled": false
+    }
+  ],
+  "unreviewed_fields": [
+    "eligibility_exceptions",
+    "internship_restrictions",
+    "j1_visa_conditions"
+  ],
+  "original_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

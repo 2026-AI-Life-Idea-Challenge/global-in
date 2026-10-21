@@ -1,0 +1,745 @@
+﻿chunk_id,program_id,source_url,source_kind,heading,classification_candidate,review_issues,source_text,source_text_sha256,human_review_status,approved_for_embedding,approved_for_user_answers
+US-EM-01-S01-B0002-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language"", ""time_sensitive_policy""]","Form I-129 petitions postmarked or electronically submitted on or after Sept. 9, 2026, must include the fees as required under the final rule. For additional information on fees, see the G-1055, Fee Schedule .",cc4f9f48d0c10b2a76c2afc47cf1efaeae0bc6be8e95709356ab05177f2a366c,pending,False,False
+US-EM-01-S01-B0005-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language"", ""time_sensitive_policy""]","On Sept. 19, 2025, the President issued a Proclamation, Restriction on Entry of Certain Nonimmigrant Workers , an important initial step to reform the H-1B nonimmigrant visa program. Under the Proclamation, certain H-1B petitions filed at or after 12:01 a.m. Eastern on Sept. 21, 2025, must be accompanied by an additional $100,000 payment as a condition of eligibility.",9c861ed7c48d10117bfea979d3889bb9dd972e488231943b8bb3dcf5ebf37d7e,pending,False,False
+US-EM-01-S01-B0008-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language"", ""time_sensitive_policy""]","In addition, if a petition filed at or after 12:01 a.m. Eastern on Sept. 21, 2025, requests a change of status or amendment or extension of stay and USCIS determines that the alien is ineligible for a change of status or an amendment or extension of stay (for example, is not in a valid nonimmigrant visa status or if the alien departs the United States prior to adjudication of a change of status request), the Proclamation will apply and the payment must be paid according to the instructions provided by USCIS.",1c8caa5a2c29bf537e74a6f9b5c35bd98e13ae6463e022be82431e68404b695e,pending,False,False
+US-EM-01-S01-B0012-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language"", ""time_sensitive_policy""]","Petitioners should submit the required $100,000 payment using pay.gov, following the instructions on pay.gov at H-1B Visa Payment to Remove Restriction .",9f3c08b7cada35461299aaa2373baf5e208389075d06f954915c397762ee74cb,pending,False,False
+US-EM-01-S01-B0014-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language"", ""time_sensitive_policy""]","Payment must be made before filing a petition with USCIS, as petitioners must submit proof that the payment has been scheduled from pay.gov or evidence of an exception from the $100,000 payment from the Secretary of Homeland Security at the time of filing the H-1B petition. Petitions subject to the $100,000 payment that are filed without a copy of the proof of the payment from pay.gov or evidence of an exception from the Secretary of Homeland Security will be denied.",9ca4ee137aded9e7388ef970eb350656785440f4b61fac8f0fcf591d6d0b8a65,pending,False,False
+US-EM-01-S01-B0019-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",The position must also meet one of the following criteria to qualify as a specialty occupation:,8f87d545e9130f131bb9556af4ba64464ac44262134fde107e4561ca068263fc,pending,False,False
+US-EM-01-S01-B0021-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","A U.S. bachelor’s or higher degree in a directly related specific specialty, or its equivalent, is normally required to perform job duties in parallel positions among similar organizations in the employer’s industry in the United States;",8a9e7a2516a8237babc6b954997a089779a1ba5f1420e4f8937190915fd15ec3,pending,False,False
+US-EM-01-S01-B0023-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","The specific duties of the offered position are so specialized, complex, or unique that the knowledge required to perform them is normally associated with the attainment of a U.S. bachelor’s or higher degree in a directly related specific specialty, or its equivalent.*",4fce531b599592b78430f3195d40086225193ca3cc639890a6161e0d78671152,pending,False,False
+US-EM-01-S01-B0024-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",For you to qualify to perform services in a specialty occupation you must meet one of the following criteria:,1fe833ffc5fccaa1a2fed423043d3c6f3d42dfd8da41f14db2e501e9187aec22,pending,False,False
+US-EM-01-S01-B0025-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",Hold a U.S. bachelor’s or higher degree required by the specialty occupation from an accredited college or university;,13f1111d7c555e6d6e983d55e29631dcaf0ee191c81c9219fe3f49454315c00a,pending,False,False
+US-EM-01-S01-B0026-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",Hold a foreign degree that is the equivalent to a U.S. bachelor’s or higher degree required by the specialty occupation from an accredited college or university;,63e9c87ffca6ee2d99b4ecf8b49832779c1d3c40aab8e6f2200f391cc153f9ec,pending,False,False
+US-EM-01-S01-B0029-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","Yes. The prospective petitioner must include evidence that a Form ETA-9035/9035E, Labor Condition Application (LCA) has been certified by the Department of Labor (DOL), with Form I-129, Petition for a Nonimmigrant Worker . See the DOL’s Office of Foreign Labor Certification .",d220e61a96f6d4d12e9fd41950380397840e60eefa6f32e3fddaff699f39a98c,pending,False,False
+US-EM-01-S01-B0032-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","The job must require a bachelor’s or higher degree, or its equivalent, to perform the duties. The petition must be accompanied by:",e1185117eee0bc48e8bcb9a9b02d1cbeed89cb4069307e8791616b372544e818,pending,False,False
+US-EM-01-S01-B0033-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",A verification letter from the DOD project manager for the particular project stating that the beneficiary will be working on a cooperative research and development project or a coproduction project under a reciprocal government-to-government agreement administered by DOD. Details about the specific project are not required.,0f4fd6b7572e0c3060369246c9e6e836164ab552e623a48812ab0625b8b84797,pending,False,False
+US-EM-01-S01-B0036-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",To be eligible for this classification you must have a bachelor's or higher degree or its equivalent in the occupational field in which you will be performing services. This requirement can be met based on one of the following criteria:,28dbae4e0ad52a18944a5a3e99a7509637d64bc0a6b7d2338ae2d2b23d3e39a6,pending,False,False
+US-EM-01-S01-B0037-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",Hold a U.S. bachelor’s or higher degree required by the duties from an accredited college or university;,7e985c096da0f6f9b9b043a39c140b0231a4966771edea566699619bfce66ef6,pending,False,False
+US-EM-01-S01-B0041-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language"", ""short_text""]",The position or services must require a fashion model of prominence.,d0cfa1ec2f62f1f9a8a9d7f944e56452acd8ea24669e99bfbeea3e7c53d24832,pending,False,False
+US-EM-01-S01-B0042-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",To be eligible for this visa category you must be a fashion model of distinguished merit and ability.,d3607f21d91c6d5822b86d9040c62a2dfe6392664454a440e803e3072df5d1f5,pending,False,False
+US-EM-01-S01-B0044-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","For purposes of the specialty occupation definition and criteria, “directly related” means that there is a logical connection between the required degree, or its equivalent, and the duties of the position. See 8 CFR 214.2(h)(4)(ii).",e3a5583393087421528ab2a9d8e7065a02c0e08c8a2b01f72230b075bab918c7,pending,False,False
+US-EM-01-S01-B0047-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","If an occupation in the state of intended employment requires such a license, an H-1B beneficiary seeking classification in that occupation generally must have that license before the petition is approved, rather than at the time of filing the petition. See 8 CFR 214.2(h)(4)(v)(A)–(B) . When a license is required, but there is no evidence of the beneficiary holding one, USCIS will generally issue a request for evidence of the required license.",a6aca79accafb48cfb56bd392d01d969f8ff949a39c10d7c26962693c0cf8785,pending,False,False
+US-EM-01-S01-B0049-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","Step 1: (only required for specialty occupation and fashion model petitions): Employer or Agent Submits LCA to DOL for Certification. The employer or agent must apply for and receive DOL certification of an LCA. For further information regarding LCA requirements and DOL's process, see the Department of Labor’s Foreign Labor Certification page.",69a97c1e8eeae0f7df2d8cf40d88a4abb54a624ec7fde34d8b22d45035664e65,pending,False,False
+US-EM-01-S01-B0050-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language"", ""time_sensitive_policy""]","Step 2: Employer or Agent Submits Completed Form I-129 to USCIS. The employer or agent should file Form I-129, Petition for a Nonimmigrant Worker, at the correct location or online. Please see our I-129 Direct Filing Chart page. If subject to the Presidential Proclamation discussed above, the Form I-129 must be accompanied by either proof from pay.gov that the $100,000 payment has been scheduled for the specific beneficiary or by evidence of an exception from the $100,000 payment from the Secretary of Homeland Security. The DOL-certified LCA should also be submitted with the Form I-129 (only for specialty occupation and fashion models). See the instructions to the Form I-129 (PDF, 534.77 KB) for additional filing requirements.",963851be365416f8cd73e5034de93db9fc7d3d4134ca9da49b5b87ee6baca247,pending,False,False
+US-EM-01-S01-B0051-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","Step 3: Prospective Workers Outside the United States Apply for Visa or Admission. If the Form I-129 petition is approved, the prospective H-1B worker who is outside the United States may apply with the U.S. Department of State at a U.S. Embassy or Consulate abroad for an H-1B visa (if a visa is required). Regardless of whether a visa is required, the prospective H-1B worker must then apply to U.S. Customs and Border Protection for admission to the United States in H-1B classification.",36a2e4180676c36dd86c1907342583412ce134d28c0acc0e369c4a7942b6e2a1,pending,False,False
+US-EM-01-S01-B0052-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","Prospective specialty occupation and distinguished fashion model employers or agents must obtain a certification of an LCA from the DOL. This application includes certain attestations, a violation which can result in fines, bars on sponsoring nonimmigrant or immigrant petitions, and other sanctions to the employer/agent. The application requires the employer or agent to attest that it will comply with the following labor requirements:",cf6a702cd184391d932ab30ee5d9f17f20539c5deaff55abdb9a487683e4d325,pending,False,False
+US-EM-01-S01-B0058-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","However, you may be eligible for an H-1B extension beyond the sixth year under 8 CFR 214.2(h)(13)(iii)(E) if you are the beneficiary of an approved immigrant visa petition under the EB-1, EB-2, or EB-3 classifications, and are eligible to be granted that immigrant status but for application of the per country or worldwide limitations on immigrant visas. Petitioners must demonstrate the visa is not available as of the date they file an H-1B petition with USCIS. We may grant extensions on this basis in up to 3-year increments until we make a final decision to revoke the approval of the immigrant visa petition or to approve or deny your application for an immigrant visa or application to adjust status to lawful permanent residence.",50021647111176e1e2759bdc0b011834a23ba77750a713f3e59caa64234de400,pending,False,False
+US-EM-01-S01-B0059-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","Alternatively, under 8 CFR 214.2(h)(13)(iii)(D) , you may be eligible for an H-1B extension beyond the sixth year if at least 365 days have passed since a labor certification was filed with the Department of Labor on your behalf (if such certification is required) or an immigrant visa petition was filed with USCIS on your behalf.",c8a602804a329788b345a29971056a9f13c968701b1a9171e87090cb10cbd2d3,pending,False,False
+US-EM-01-S01-B0060-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","You are ineligible for this extension beyond the sixth year if you fail to file an adjustment of status application or apply for an immigrant visa within 1 year of an immigrant visa being available. If the accrual of such 1-year period is interrupted by the unavailability of an immigrant visa, you will have a new 1-year period after an immigrant visa again becomes immediately available, during which you generally must file an adjustment of status application or apply for an immigrant visa. We may, in our discretion, excuse a failure to file an adjustment of status application or apply for an immigrant visa within 1 year of an immigrant visa being available if your employer establishes that the failure to apply was due to circumstances beyond your control. When considering whether to excuse a failure to timely file within 1 year, we will look at the totality of the circumstances, which may include:",12419516316a9a89d50606f06976729707590b729bdd913a5c4cb8c412b4f6cc,pending,False,False
+US-EM-01-S01-B0071-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,[],"The H-1B classification has an annual numerical limit (cap) of 65,000 new statuses or visas each fiscal year (with certain deductions and additions based on H-1B1 set asides and usage). An additional 20,000 petitions filed on behalf of beneficiaries who have earned a master’s degree or higher from a U.S. institution of higher education are exempt from the cap. Additionally, H-1B workers who are petitioned for or employed at an institution of higher education or its affiliated or related nonprofit entities, a nonprofit research organization, or a government research organization, are not subject to this numerical cap.",c14373ca7cb499fb4fd48fab7f01396d8029bc1eebf299de8d1d5e56049ddb0b,pending,False,False
+US-EM-01-S01-B0075-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","To be eligible for portability, you must not have been employed without authorization from the time of your last admission into the United States, and your new employer must properly file a new, non-frivolous petition before your H-1B period of authorized stay expires.",13d1239c8f8d4fc589fb32dcbd49e09eef02dc83085f9cfd6ff9ebf88fea9a17,pending,False,False
+US-EM-01-S01-B0077-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","If you are eligible for H-1B portability, your employment is authorized until USCIS has made a decision on the Form I-129.",eb25f17fe7bf2bf02ece80cd2ea0bc813774aaf161178bbd2f2ff6bfde59db21,pending,False,False
+US-EM-01-S01-B0081-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""short_text""]",Can I move from cap-exempt to cap-subject employment?,0165cc075f679bb5232d7af76d3ec4d758ce2d79d364ea402e62af1610ded382,pending,False,False
+US-EM-01-S01-B0082-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","If you are moving from cap-exempt to cap-subject employment, your new employer’s H-1B petition will be subject to the H-1B cap . If subject to the cap, your new employer must first submit an electronic registration when registration period opens. This is typically in March.",2df9da03c8a21a10830164ba18eeb04ebb7a54499692bcb4f84dc617e5823b31,pending,False,False
+US-EM-01-S01-B0083-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",All registrants of selected beneficiaries will be notified of selection and selection notices will be uploaded to their account informing them that they may file a petition for the beneficiary named in the selection notice during the applicable filing period. H-1B cap petitions must have a start date of Oct. 1 (or later) of the applicable fiscal year and may not be filed more than 6 months before the requested start date on the petition.,1f8f9386059860e8c47448dbbd4087339d5d792eb75cb75d28fe6e3dc4245796,pending,False,False
+US-EM-01-S01-B0084-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations,official_html,H-1B Specialty Occupations | USCIS,h1b_policy_or_procedure,[],"If you are currently employed in a cap-exempt position, you may engage in concurrent employment in a cap-subject position as long as you will continue to be employed in the cap-exempt position. You may begin working concurrently for the cap-subject employer as soon as they properly file a non-frivolous Form I-129 petition on your behalf, or as of the requested start date on that petition, whichever is later. As long as you continue your cap-exempt employment, were previously counted toward the cap, or otherwise remain cap exempt, you will not become subject to the H-1B cap again during the same H-1B validity period.",2b1c03ad26429fb43b7bf342da6a12c557db9db100dd09211cfea7c6fda75ca5,pending,False,False
+US-EM-01-S02-B0002-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,[],"Congress set the current annual regular cap for the H-1B category at 65,000 (commonly known as the “regular cap”). Up to 6,800 visas are set aside from the 65,000 each fiscal year for the H-1B1 program under the terms of the legislation implementing the U.S.-Chile and U.S.-Singapore free trade agreements. Unused visas in this group become available for H-1B use for the next fiscal year’s regular H-1B cap. An additional 20,000 petitions filed on behalf of beneficiaries who have earned a master’s degree or higher from a U.S. institution of higher education are exempt from the cap.",7be306bc34d47010df446f604b19eb2c25492848cc0c5d1fec7cd00a502f4a57,pending,False,False
+US-EM-01-S02-B0003-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""time_sensitive_policy""]","Not all H-1B nonimmigrant visas (or status grants) are subject to this annual cap (for example, petitions filed by U.S. institutions of higher education are cap exempt). H-1B workers performing labor or services in the Commonwealth of the Northern Mariana Islands (CNMI) and Guam may also be exempt from the H-1B cap (see the Consolidated Natural Resources Act of 2008 (CNRA), Public Law 110-229). H-1B workers in Guam and the CNMI are exempt from the H-1B cap if their employers file the petition before Dec. 31, 2029.",e46c858f307324b7cd79afe070d68ff1ca57d23be7406c2e0b34be93e3b6d254,pending,False,False
+US-EM-01-S02-B0004-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",Prospective petitioners who are subject to the annual cap must first go through the electronic registration process (unless registration is suspended).,883f346d9e059defa9b1b9ab01b091aee71289ac47818e1facacc7b49e0589da,pending,False,False
+US-EM-01-S02-B0005-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",Prospective petitioners seeking to file H-1B cap-subject petitions must first complete an electronic registration for each prospective beneficiary. USCIS then runs the H-1B selection process to select unique beneficiaries based on properly submitted electronic registrations. See the H-1B Electronic Registration Process webpage for more information.,dde58bd3c737aafff5c94e60a251500112f25bc2d02ea7f3af631e368842218a,pending,False,False
+US-EM-01-S02-B0006-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language"", ""time_sensitive_policy""]","Starting in fiscal year (FY) 2027, USCIS has implemented a weighted selection process which favors the allocation of H-1B visas to higher skilled and higher paid aliens, while maintaining the opportunity for employers to secure H-1B workers at all wage levels. When random selection is required because USCIS receives more registrations than projected to be needed to meet the numerical allocations, USCIS will conduct a weighted selection among the registrations for unique beneficiaries received generally based on the highest Occupational Employment and Wage Statistics (OEWS) wage level that the beneficiary's proffered wage equals or exceeds for the relevant Standard Occupational Classification (SOC) code in the area(s) of intended employment.",81f98fae874af23e0814ac92bd348b348b47fda4582bc38ad689734f4872ef3c,pending,False,False
+US-EM-01-S02-B0010-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","H-1B cap-subject petitions, including those eligible for the advanced degree exemption, may not be filed unless based on a valid and selected registration for the beneficiary named in the petition (unless the registration requirement is suspended).",c27930fd1caaa50af772888db23178ce96127d47ef50178d204ed11db6868ffd,pending,False,False
+US-EM-01-S02-B0012-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","Petitioners also have the option of filing a paper Form I-129 H-1B petition and any associated Form I-907 if they prefer. However, users will not be able to link paper-filed Forms I-129 and I-907 to their online accounts. For paper-filed forms, you must file the petition at the correct location. Please see our Direct Filing Addresses for Form I-129 page.",e3b1b1361177c12d7fef70f0a5c1620f19002f34dc50e4000ea0336e5312f6f0,pending,False,False
+US-EM-01-S02-B0013-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","Complete all required sections of Form I-129, Petition for a Nonimmigrant Worker , including the H Classification Supplement and the H-1B Data Collection and Filing Fee Exemption Supplement, in accordance with the regulations and form instructions. Get the most current versions of forms at uscis.gov/forms .",fade4e4fe95a9b634f72534cd6e81968e178d47c10e94ab49abeb99701dd2af6,pending,False,False
+US-EM-01-S02-B0014-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","You must indicate a start date of Oct. 1 or later (of the applicable FY, and 6 months or less from the receipt date of the petition) on your petition, or we will reject or deny your petition.",65949ba5e46e64031fbce2e94734f735bfe30051f65ace5fefb0c06794da8bd5,pending,False,False
+US-EM-01-S02-B0015-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","You must provide a copy of the H-1B Registration Selection Notice for the registration filed by your organization for the beneficiary with the petition. Ensure that you also entered the corresponding “Beneficiary Confirmation Number” on the H Classification Supplement (Page 13, Question 5).",72f28309c2847f123532b11a9dd8acca104865d19df34cb1e1ee77dd0fe14379,pending,False,False
+US-EM-01-S02-B0016-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",You must submit evidence of the basis of the wage level selected on the registration as of the date that the registration underlying the petition was submitted.,27186ca6e3f456487a2f0fa3e0c40bc292d4c97007212404985b91823b42fbd6,pending,False,False
+US-EM-01-S02-B0017-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","You must submit evidence of the beneficiary’s passport or travel document used at the time of registration to identify the beneficiary. If the passport or travel document expires between when a registration is submitted and when the H-1B petition is filed, the petitioner should follow the form instructions about which passport information to enter on Page 3, Part 3 of Form I-129, Petition for Nonimmigrant Worker . The petitioner should support the H-1B petition with documentation for both passports or travel documents to establish that the passport or travel document was valid at the time of registration and also explain why there was a change in identifying information.",cc020691568baf12f52fcbfd007efdda145d7b776492fc62e5fac707d053bcd3,pending,False,False
+US-EM-01-S02-B0018-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","Ensure that any information provided during the electronic registration process matches the information provided on the petition. An H-1B petition filed for a beneficiary must contain and be supported by the same identifying information and position information as provided in the selected registration. For instance, the petition must include the same Standard Occupational Classification (SOC code as provided in the selected registration and indicated on the labor condition application used to support the petition. It also must include a proffered wage that equals or exceeds the prevailing wage for the corresponding OEWS wage level in the registration for the SOC code in the area(s) of intended employment. If any information does not match, you should include an explanation with your petition and supporting documentation explaining why there was a change or why the information does not match. If information on the registration and petition does not match, we may reject or deny the petition. We encourage you to use a brightly colored coversheet to flag the issue. This will help ensure that we review this when we receive your petition. Note that certain occupations may have an 8-digit detailed O*NET-SOC code. If you are filing an H-1B petition based on a valid and selected registration, you may use the 6 digits of the SOC code on Form I-129, to align with the H-1B electronic regis",a653dcb7fc96357b1e960030a74e4210c5d82bc11ff2de7e18aabe5bf8f933d9,pending,False,False
+US-EM-01-S02-B0019-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","Ensure that any information provided during the electronic registration process matches the information provided on the petition. An H-1B petition filed for a beneficiary must contain and be supported by the same identifying information and position information as provided in the selected registration. For instance, the petition must include the same Standard Occupational Classification (SOC code as provided in the selected registration and indicated on the labor condition application used to support the petition. It also must include a proffered wage that equals or exceeds the prevailing wage for the corresponding OEWS wage level in the registration for the SOC code in the area(s) of intended employment. If any information does not match, you should include an explanation with your petition and supporting documentation explaining why there was a change or why the information does not match. If information on the registration and petition does not match, we may reject or deny the petition. We encourage you to use a brightly colored coversheet to flag the issue. This will help ensure that we review this when we receive your petition.",7db4b084c0f606a517a7bc2802f4a7835fd2e897d25dae68d573f38c12423417,pending,False,False
+US-EM-01-S02-B0023-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",Pay all required fees. See the required fees section below for detailed information.,159bded3ce4123c6c6c4d372e1ec65aa948c3ae004b0b57be52628391353f1b0,pending,False,False
+US-EM-01-S02-B0024-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","Submit all required documentation and evidence with the petition when you file it, to ensure timely processing.",4de50a4fc7b7c4ad5192de89ee714df27561fc68f978834514433a77c8127a54,pending,False,False
+US-EM-01-S02-B0026-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","For paper-filed forms, you must file the petition at the correct location. See the section below on Where to Mail Your H-1B Petition .",155b520d330326e36de1fff9ab5d1bc734dfa34a1ab808f29354ad34a3d7d380,pending,False,False
+US-EM-01-S02-B0030-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","When filing your H-1B petition with USCIS, you must include evidence that an LCA (ETA 9035) has been certified by the U.S. Department of Labor. This may include a copy of the signed, certified LCA. (Note: USCIS encourages petitioners to keep Department of Labor LCA processing times in mind when preparing the H-1B petition and to plan accordingly.) If the LCA was previously submitted in a petition that has been approved, you must submit a list including the name and USCIS case receipt number of any foreign worker who has previously used the LCA. You may not use an LCA for more workers than specified in Part B, Question 7 of the LCA.",cca808ed812417d6278bbba23a276f4fea6715b999bfac4d64df4e784ed5086b,pending,False,False
+US-EM-01-S02-B0033-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","You must submit evidence of the beneficiary’s education credentials (with English translations when applicable) at the time you file your petition. If the beneficiary has met all of the requirements for a degree, but the degree has not yet been awarded, you may submit the following alternate evidence:",f59cc0e8fcb3ec792d4f41c0a5982c9b81a68a7be18d1fb031420b98a399887b,pending,False,False
+US-EM-01-S02-B0035-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","A letter from the registrar confirming that the beneficiary has met all of the degree requirements. If the educational institution does not have a registrar, then the letter must be signed by the person in charge of educational records where the degree will be awarded.",e4269edba5fce3b04a18849804cafec34d9783b5e35ba060b4d2f4df23a17c98,pending,False,False
+US-EM-01-S02-B0038-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",You must submit evidence that you have a bona fide position in a specialty occupation available for the beneficiary as of the start date of the validity period requested on the petition. You are not required to establish specific day-to-day assignments for the entire time period requested in the petition.,6ed35c6cdb539d37900103bbb31cd1906069ebded7ed67967d457602861888fd,pending,False,False
+US-EM-01-S02-B0041-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","Petitioners also have the option of filing a paper Form I-129 H-1B petition and any associated Form I-907 if they prefer. However, users will not be able to link paper-filed Forms I-129 and I-907 to their online accounts. For paper-filed forms, you must file your petition at the correct location. We have specific mailing addresses for cases that are subject to the H-1B cap. To determine the correct mailing address see our Direct Filing Addresses for Form I-129, Petition for a Nonimmigrant Worker page .",c966eb657c2cc44de52622836fc67e5317eff9e19112502a010da7e13ec5e339,pending,False,False
+US-EM-01-S02-B0052-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language"", ""time_sensitive_policy""]","This rule is effective March 1, 2026. If you submit a request for premium processing postmarked on or after March 1, 2026, you must include the new fee for the specific benefit you are requesting. If we receive a Form I-907 postmarked on or after March 1, 2026, with the incorrect filing fee, we will reject Form I-907 and return the filing fee.",8e6a717e5f81645733171b0f613094df7e25cc05c9afb720320b71b6c6b6ebb3,pending,False,False
+US-EM-01-S02-B0073-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",Complete all required sections of the form accurately and in accordance with the regulations and form instructions.,0ff99d8671cd2fd52c5396841414f89185d38ea9927445e3284550a9e816a831,pending,False,False
+US-EM-01-S02-B0074-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language"", ""time_sensitive_policy""]","H-1B cap petitions and advanced degree exemption petitions for the FY 2027 cap must include an employment start date of no earlier than Oct. 1, 2026. You must indicate a start date of Oct. 1, 2026, or later (and 6 months or less from the receipt date of the petition) on your petition or your petition will be rejected or denied. Do not file petitions earlier than 6 months before the requested employment start date. We will reject H-1B petitions requesting a start date of “As Soon As Possible” or “ASAP.”",40bcd7f6d2014776644d913d311befe49756af2d6a6b95bb435118bc4bc11c84,pending,False,False
+US-EM-01-S02-B0078-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","You must include the beneficiary’s passport or travel document number, country of issuance, and expiration date on the Form I-129. The passport or travel document information helps USCIS to confirm that the beneficiary named in the registration notice is the same individual as the beneficiary named in the petition and avoid processing delays.",427fe54afd8b08099e48f39bcd727086180b4efd3b7f4b63f7f2052a290608b9,pending,False,False
+US-EM-01-S02-B0081-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]","If the beneficiary is seeking an extension of stay, amendment of stay, or change of status, the petition must include evidence (such as a Form I-94 or Form I-797 approval notice) to establish that the beneficiary will have maintained a valid nonimmigrant status through the employment start date being requested.",e622fdd56d3ff2ffa730bf54e1b658258b29b96587b7287ca27ce605d0de65ba,pending,False,False
+US-EM-01-S02-B0085-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language""]",Please complete all required sections of the form accurately and in accordance with the regulations and the form instructions.,9fba9d411032f5ef0af9d5b86749cc2cb5433896de57081ae5edd9100df6b0ea,pending,False,False
+US-EM-01-S02-B0087-C001,US-EM-01,https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season,official_html,H-1B Cap Season | USCIS,h1b_policy_or_procedure,"[""obligation_or_eligibility_language"", ""short_text""]","The petitioner must sign the form, preferably in black ink.",d8669a7fdfa3a282df84188311e19c8341703604631e16d19cd5725d64bbffe7,pending,False,False
+US-EM-02-SECTION-003-C001,US-EM-02,https://j1visa.state.gov/programs/intern/,official_html,Interns must be foreign nationals:,participant_eligibility_candidate,"[""obligation_or_eligibility_language""]",Interns must be foreign nationals: Who are currently enrolled in and pursuing studies at a foreign degree- or certificate-granting post-secondary academic institution outside the United States; or Who have graduated from such an institution no more than 12 months prior to their exchange visitor program start date.,08cc919b9a8f74c09d9077d521fd6cfdff113923abd3baf635de3cb2e7b73b71,pending,False,False
+US-EM-02-SECTION-010-C001,US-EM-02,https://j1visa.state.gov/programs/intern/,official_html,Sponsors are required to:,sponsor_or_host_obligations,"[""obligation_or_eligibility_language""]","Sponsors are required to: Conduct site visits of host organizations that: Have not previously participated successfully in the sponsor’s program; Have fewer than 25 employees; and Have less than $3 million in annual revenue. Collect the following information from all host organizations: Employer Identification Number (EIN); Verification of telephone number, address, brochures, website, etc.; and Proof of Worker’s Compensation Insurance Policy.",7926f4e8c0113fc3b1b3d941a2666ead2cc081c26d0d3d5622bd7c6b609c4570,pending,False,False
+US-EM-02-SECTION-011-C001,US-EM-02,https://j1visa.state.gov/programs/intern/,official_html,Sponsors must ensure the following:,sponsor_or_host_obligations,"[""obligation_or_eligibility_language"", ""possible_site_ui_contamination""]","Sponsors must ensure the following: Participants in programs that exceed six months must be evaluated at midpoint and at the conclusion of the program; and For programs with durations of less than six months, an evaluation is required at the conclusion of the program. All evaluations must be received by the sponsoring organization prior to the end of the participant’s exchange program and must be signed by both the participant and his or her immediate supervisor. Program Resources Common Questions SEVIS Information end tab 2 tab 3",c51b3f411a326ee8fd4bef3313554ea642e2d2003828677a4fa9cb88b551377f,pending,False,False
+US-EM-02-SECTION-013-C001,US-EM-02,https://j1visa.state.gov/programs/intern/,official_html,Hosts are required to:,sponsor_or_host_obligations,"[""obligation_or_eligibility_language""]","Hosts are required to: Sign a completed Form DS–7002 – Training/Internship Placement Plan (T/IPP) to verify that all placements are appropriate and consistent with the objectives of the interns as outlined in their program applications and as set forth in their T/IPPs. All parties involved in internship programs should recognize that interns are seeking entry-level training and experience. Accordingly, all placements must be tailored to the skills and experience level of the individual intern; Notify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs and contact sponsors immediately in the event of any emergency involving trainees or interns; Abide by all federal, state and local occupational health and safety laws; Abide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations; Have sufficient resources, plant, equipment and trained personnel available; Provide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and Ensure that interns obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances",9d9dde704e6bf8c6284e17aec4ae8285155b5e0905042392d41bad421e6a633b,pending,False,False
+US-EM-03-SECTION-003-C001,US-EM-03,https://j1visa.state.gov/programs/trainee/,official_html,A trainee must be a foreign national who:,participant_eligibility_candidate,"[""obligation_or_eligibility_language""]",A trainee must be a foreign national who: Has a degree or professional certificate from a foreign post-secondary academic institution and at least one year of prior related work experience in his or her occupational field outside the United States; or Has five years of work experience outside the United States in the occupational field in which they are seeking training,b253baa925ef9168c41074a5fb8cb1e42a6758b0f6cdb3630a823b8bbec2669c,pending,False,False
+US-EM-03-SECTION-006-C001,US-EM-03,https://j1visa.state.gov/programs/trainee/,official_html,Limitations or Exceptions,sponsor_or_host_obligations,"[""obligation_or_eligibility_language""]","Limitations or Exceptions Trainees cannot work in unskilled or casual labor positions, in positions that require or involve childcare or elder care, or in any kind of position that involves patient care or contact. Further, sponsors must not place trainees in positions that require more than 20 percent clerical or office support work. Use of the Exchange Visitor Program for ordinary employment or work purposes is strictly prohibited. Sponsors are not to place trainee participants in positions, which are filled or would be filled by full-time or part-time employees. Also, the training cannot duplicate a trainee participant’s prior work experience or training.",08fda21f4243553a094558b3eab1e2b20b9d6fe506afd2c96a23994513b26757,pending,False,False
+US-EM-03-SECTION-010-C001,US-EM-03,https://j1visa.state.gov/programs/trainee/,official_html,Sponsors are required to:,sponsor_or_host_obligations,"[""obligation_or_eligibility_language""]","Sponsors are required to: Conduct site visits of host organizations that: Have not previously participated successfully in the sponsor’s program; Have fewer than 25 employees; Have less than $3 million in annual revenue. Collect the following information from all host organizations: Employer Identification Number (EIN) Verification of telephone number, address, brochures, website, etc.; and Proof of worker’s compensation insurance policy or equivalent.",40f609911959eb1b7853be4c6f0ec840305c53229dfc48e29c30d1dd4c77f568,pending,False,False
+US-EM-03-SECTION-011-C001,US-EM-03,https://j1visa.state.gov/programs/trainee/,official_html,Sponsors must ensure the following for participants:,sponsor_or_host_obligations,"[""obligation_or_eligibility_language"", ""possible_site_ui_contamination""]","Sponsors must ensure the following for participants: Participants in programs that exceed six months must be evaluated at mid-point and at the conclusion of the program; For programs with durations of less than six months, the participant must be evaluated at the conclusion of the program. All evaluations must be received by the sponsoring organization prior to the end of the participant’s exchange program and must be signed by both the participant and his or her immediate supervisor; Ensure that trainees are appropriately selected, oriented, supervised and evaluated; Be available to trainees to assist as facilitators and information resources; and Ensure that the training program is full-time (at least 32 hours a week). Program Resources Common Questions SEVIS Information end tab 2 tab 3",c8b930e8e971dcbd1a407dbbf88b7280d9307bbb2e4bf846aedf3243c32aa073,pending,False,False
+US-EM-03-SECTION-013-C001,US-EM-03,https://j1visa.state.gov/programs/trainee/,official_html,Host Organizations are required to:,sponsor_or_host_obligations,"[""obligation_or_eligibility_language"", ""possible_site_ui_contamination""]","Host Organizations are required to: Sign a completed Form DS–7002 to verify that all placements are appropriate and consistent with the objectives of the trainees or interns as outlined in their program applications and as set forth in their T/IPPs; Notify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs; Contact sponsors immediately in the event of any emergency involving trainees or interns; Abide by all federal, state and local occupational health and safety laws; Abide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations; Have sufficient resources, plant, equipment and trained personnel available; Provide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and Ensure that trainees obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances. Program Resources <a class=""button button-find"" title=""View a list of sponsors for this program"" href=""/participants/how-to-apply/sponsor-search/?program=Trainee&amp;state=any""><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Qu",9a9d5cfd388f8283b750aa060df0d39a0a2025624bc3195b5e854c4ca51732c7,pending,False,False
+US-ST-01-S01-B0001-C001,US-ST-01,https://studyinthestates.dhs.gov/school-search,official_html,School Search | Study in the States,f1_school_or_i20_guidance,"[""obligation_or_eligibility_language""]","Use the School Search Map to find Student and Exchange Visitor Program (SEVP)-certified schools and programs eligible to enroll F-1 and M-1 students in the United States. Search by school name, location, education or visa type. The green and blue icons displayed next to the search results indicate the category of international students (F-1 or M-1) a school is certified to enroll.",48e0b538a1466f594d7a311288e6ab542779e3578b1249c248186147f476b781,pending,False,False
+US-ST-01-S02-B0003-C001,US-ST-01,https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20,official_html,Students and the Form I-20 | Study in the States,f1_school_or_i20_guidance,"[""obligation_or_eligibility_language""]","You must also obtain a Form I-20 for any eligible dependents you plan to bring to the United States with you. However, please note that the name (i.e., Academic and Language students vs. Vocational Students) on the Form I-20 an SEVP-certified school issues you will dictate the type of student visa you may obtain from the U.S. Department of State and the status you will need to maintain in the United States. You and your DSO must both sign the Form I-20. If you are under age 18, your parents must sign the Form I-20 for you.",8f8214387c02e08b487973e093afbdaeb696a409be3dc1b59fdf80b47adf30f7,pending,False,False
+US-ST-01-S02-B0005-C001,US-ST-01,https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20,official_html,Students and the Form I-20 | Study in the States,f1_school_or_i20_guidance,"[""obligation_or_eligibility_language""]","Before you pay the I-901 Student and Exchange Visitor Information System (SEVIS) Fee, you must receive the Form I-20 from a DSO at the school you plan to attend. You will need information from the Form I-20 to pay the fee. The I-901 SEVIS Fee is mandatory and must be paid before you enter the United States.",334e37911e0d99801a8efa093f438c9c423fa19daa0d4af670f7a6009ec06d79,pending,False,False
+US-ST-01-S02-B0011-C001,US-ST-01,https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20,official_html,Students and the Form I-20 | Study in the States,f1_school_or_i20_guidance,"[""obligation_or_eligibility_language""]","The Form I-20 lists your program start date, 30 days before which you are allowed to enter the United States. F-1 and M-1 student visas can be issued up to 365 days in advance of your course of study start date. Your type of student visa must match the type of Form I-20 you have (e.g., F-1 or M-1). You are expected to have the original Form I-20 at your visa interview. The consular officer may accept a copy of the Form I-20 in limited circumstances that warrant visa issuance prior to you receiving the original Form I-20.",dd9be928ae002997038d8f265216d92e7a552076b208a754fbf84d70a3bc02d6,pending,False,False
+US-ST-01-S02-B0014-C001,US-ST-01,https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20,official_html,Students and the Form I-20 | Study in the States,f1_school_or_i20_guidance,"[""obligation_or_eligibility_language""]","Your Form I-20 proves that you are legally enrolled in a program of study in the United States. Therefore, it may be needed when you apply for the benefits available to F and M students. If you are eligible to apply for a driver’s license or a social security number , remember to bring your Form I-20 with you.",55b48f15182a85b319ba7dd747b74e30f49784388c5720e1233cfed7fef54b5f,pending,False,False
+US-ST-01-S02-B0019-C001,US-ST-01,https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20,official_html,Students and the Form I-20 | Study in the States,f1_school_or_i20_guidance,"[""obligation_or_eligibility_language""]","As of July 1, 2016, the redesigned Form I-20 is required for all F and M nonimmigrant visa applications, entry into the United States, travel and applications for nonimmigrant benefits. The previous version of the Form I-20 (with a barcode) is now invalid. Students please note that your DSOs were responsible for providing an updated, hard copy of the Form I-20 with original signatures to all F-1 and M-1 students at their schools.",4faac060c815862a92463847e24d05e9fc8d431b20b96477e66e9be579bb5401,pending,False,False
+US-ST-03-SECTION-003-C001,US-ST-03,https://j1visa.state.gov/programs/college-and-university-student/,official_html,College/University Students must:,participant_eligibility_candidate,"[""obligation_or_eligibility_language""]","College/University Students must: Be financed directly or indirectly by the U.S. government, the government of their home country, an international organization of which the United States is a member by treaty or statute, or supported substantially by funding from any source other than personal or family funds; Be carried out according to an agreement between the U.S. government and a foreign government, or according to a written agreement between American and foreign educational institutions, an American educational institution and a foreign government or a state or local government in the United States and a foreign government; or Student is participating in a student internship program that will fulfill the educational objectives for the student’s degree program in his or her home country; or Pursue a non-degree program must be enrolled full-time in a prescribed course of study. The maximum duration of a non-degree program is 24 months inclusive of academic training.",3861a72f07b35839d878e3afac9d255ede93d94d340f21fbc39f079bd0181782,pending,False,False
+US-ST-03-SECTION-008-C001,US-ST-03,https://j1visa.state.gov/programs/college-and-university-student/,official_html,Sponsors are required to:,sponsor_or_host_obligations,"[""obligation_or_eligibility_language""]","Sponsors are required to: Secure sufficient background information on the students to ensure that they have the academic credentials required for enrollment; or Ensure that the foreign national has been admitted to, or accepted for a student internship program offered by, the post-secondary accredited academic institution.",39d852c70d292323f62893a3915069db622e48ae08c5f0ecd0b53ec51235b3a0,pending,False,False
+US-ST-03-SECTION-009-C001,US-ST-03,https://j1visa.state.gov/programs/college-and-university-student/,official_html,Sponsors must ensure the following for participants:,sponsor_or_host_obligations,"[""obligation_or_eligibility_language"", ""possible_site_ui_contamination""]",Sponsors must ensure the following for participants: Ensure that they pursue a full course of study at a post-secondary accredited academic institution in the United States. Program Resources Common Questions SEVIS Information end tab 2 tab 3,5089ded7b057692484b7f3f53a379a80aea74ea780debea66628a0a42bd8886e,pending,False,False
+US-WEST-01-P01-L-C001,US-WEST-01,https://www.niied.go.kr/web/main/nid/niied_board/5570,official_pdf,2026년 상반기 WEST 모집 공고,historical_west_notice,"[""historical_2026_first_half"", ""time_sensitive_policy""]","국립국제교육원공고제2026–15호
+
+2026년 상반기 한․미 대학생 연수(WEST) 참가자 모집 공고
+
+- 중기(12개월) 제15기 / 단기(6개월) 제15기 -
+
+국립국제교육원은 글로벌 감각을 갖춘 핵심인재를 양성하고자 어학연수와 다양한
+
+미국 인턴십 기회를 제공하는『한‧미 대학생 연수(WEST)』에 참가할 지원자를 아래와
+
+같이 모집합니다.
+
+2026년  2월  11일
+
+국립국제교육원장
+
+< WEST 프로그램의특징>
+
+◦WEST(Work, English Study, Travel) 프로그램은 ’08년 8월 한․미 정상회담에서
+
+합의된 어학연수와 인턴근무를 연계한 프로그램으로 교육부 글로벌현장학습
+
+프로그램의 일환으로 추진되고 있습니다.
+
+◦ 현지 적응과 실무영어 습득을 겸한 어학연수와 다양한 분야의 미국 내 기업에서
+
+인턴십 경험이 가능합니다.
+
+◦미국 국무부가 추천한 현지중개기관(SPONSOR)이 참가자의 어학연수 및 인턴십을
+
+주선하고, 미국 현지 정착과 생활을 지원합니다.
+
+※ J-1 비자규정상인턴십비허용분야(간호학/의학)가있으며, 참가자의전공분야인턴십배치가어려운경우
+
+부(복수)전공또는관련경험등을고려하여배치(공공기관, 비영리기관, 연구소, 교육기관, 기업체등)
+
+◦ 정부 추천과 재정보증으로 비자(J-1) 발급 구비서류가 간소합니다.
+
+◦ 한․미 양국 정부의 적극적인 지원으로 인턴기관 확정 전에 미국 입국이 가능한
+
+비자(J-1) 발급이 신속하게 이루어집니다.
+
+◦모든 참가자에게왕복항공료를 지원하며, 참가비 및 생활비를 지원구간에 따라 정
+
+부재정지원금으로 차등 지원합니다.
+
+◦문제를 사전에 예방하고 효율적으로 대응하기 위해 미국 내 WEST 주재원 및
+
+재외공관을 통해 참가 학생을 지원하고 있습니다.
+
+- 1 -",5c0789e5045d95e91e3a3c57e8853bb2c9eeb8016b2a492e42de2b37dd2b2a51,pending,False,False
+US-WEST-01-P03-L-C001,US-WEST-01,https://www.niied.go.kr/web/main/nid/niied_board/5570,official_pdf,2026년 상반기 WEST 모집 공고,historical_west_notice,"[""historical_2026_first_half"", ""obligation_or_eligibility_language""]","③ 학자금지원구간 확인 신청
+  ③-1. 재학생: 한국장학재단 포털사이트에서 신청
+
+※ 휴학생, 초과학기자, 수료자, 졸업유예자포함
+
+◦WEST 프로그램 참가자들은 학자금지원구간에 따라 정부재정지원금을 수령하므로, 
+프로그램 지원 시(졸업생 제외) 지원구간 확인 절차(한국장학재단의 WEST 어학
+연수비 대출 신청)가 반드시 완료되어야 합니다.
+
+※ 기존(재단 내 타사업)의 신청 여부와 관계없이, WEST 지원자의 지원구간 확인을 위해 ‘어학
+
+연수비대출’을 신규 신청하여야 합니다. (실제 대출 신청이 아님)
+
+※ 한국장학재단 어학연수비 대출 실행 여부는 최종합격 발표 후 선택 가능합니다.
+
+(대출 실행은 재학생‧휴학생·초과학기자·수료자에 한하며, 졸업유예자는 불가, 수료자는 26년 1학기
+
+등록 여부에 따라 대출이 불가한 경우가 있으므로 장학재단 누리집에서 지원대상 확인)
+
+※ 위 재학생 중 최종 합격 후 학적이 졸업/졸업 유예로 변경되는 경우 어학연수비 대출 실행이 불가합니다.
+
+◦신청 방법 안내
+
+1. 한국장학재단 사이트(www.kosaf.go.kr)에 접속
+
+2. 전자서명으로 로그인 (지원자 본인 명의)
+
+3. 학자금대출 > 학자금대출안내 > 한미대학생연수(WEST) 프로그램 어학연수비 대출 >신청하기를
+
+클릭하고 신청
+
+※ 제출 서류 (지원기간 내 반드시 제출, 서류제출 완료까지 되어야 함)
+
+⑴ 한국장학재단 누리집>학자금대출>학자금대출신청>서류제출현황 :필요서류 목록 확인 후 이미지 업로드
+
+⑵ 신청완료일 1~3일(휴일 제외) 후 누리집에서 서류제출 필요 여부(서류제출 완료여부) 확인
+
+⑶ 선택서류(기초/차상위) 미제출 시 필수서류 기준으로 학자금 지원구간 심사 진행
+
+⑷ 지원기간 마지막 날 신청 완료한 학생은 (3.⑵) 확인이 기한 내 불가하므로, 서류제출 완료
+
+여부(추가 서류제출 필요 여부)를 사전에 확인하고 필수/선택서류 모두 제출 요망
+
+< 유의사항 >
+
+1. 2015년부터 지원구간 파악을 위해 부모 또는 배우자의 정보제공 동의가 필요함에 따라 
+신청기간 내 대상 가구원 모두가 소득 재산 조사에 대한 동의가 완료되어야 합니다.
+
+(기존의 신청여부와 관계없이 신규 신청)
+
+2. 부모 또는 배우자와 동일 세대 구성이 아닐 경우 가족관계증명서 제출(동일 세대 구성 시 제출 서류 생략)
+
+3. ‘재외국민 특별전형’으로 대학에 입학한 자는 반드시 해당 여부에 체크하여 주시기 바랍니다. 
+누락 시 학자금 지원구간과 상관없이 10구간에 준하여 정부지원금이 지급됩니다.
+
+4. 자세한 신청방법 및 구비서류는 한국장학재단 누리집을 참고하시기 바랍니다.
+
+③-2. 졸업생: 학자금지원구간 확인 서류 소속 대학에 제출 ([붙임1] 참조)
+
+㉮ 기초생활수급자 및 차상위계층: 수급자 증명서 또는 확인서 (본인 명의로 발급)
+
+㉯ 그 외 졸업생: 학자금 지원구간 통지서
+
+",d789d10b0cbf059e2dffb88d2cf3375848eb9ae3fe32e0ecec4858a805879891,pending,False,False
+US-WEST-01-P06-L-C001,US-WEST-01,https://www.niied.go.kr/web/main/nid/niied_board/5570,official_pdf,2026년 상반기 WEST 모집 공고,historical_west_notice,"[""historical_2026_first_half"", ""obligation_or_eligibility_language"", ""time_sensitive_policy""]","붙임 3
+ 2026년 WEST 프로그램 관련 FAQ
+
+1. 지원 단계
+
+Q1. 공인 어학성적 점수가 조금 부족합니다. 지원서 마감 후 제출 가능한가요? 토플, 아이엘츠 등
+
+다른 성적도 인정 가능한가요?
+
+A1. 지원 자격 요건보다 어학성적이 미달될 경우 지원이 불가하며, 어학성적 결과도 접수 마감일
+
+내에 유효한 성적을 제출해야 합니다(온라인 지원 및 소속대학에 동일한 성적표 제출 필수).
+
+따라서 마감일 이후의 어학성적은 인정 및 제출이 불가합니다. 또한 모집공고문에 명시된
+
+시험성적만 인정합니다.
+
+Q2. 서류전형 심사 과정이 어떻게 되나요?
+
+A2. WEST 참여 이력 조회, 어학성적 일치 여부 등 참가제한(결격사유) 해당 여부를 확인하며,
+
+지원서(자기소개서), 영어성적, 학점을 종합적으로 평가합니다(학점 제한은 없지만 서류심사 시
+
+반영). 자기소개서에서는 프로그램에 대한 이해도 및 목표의식, 내용의 충실성 등을 중점으
+
+로 평가하며, 내용이 극히 불성실한 경우 선발에서 제외될 수 있습니다.
+
+그 외 우대비율 및 심사 반영 비율은 공개하기 어려운 점 양해 바랍니다.
+
+Q3. 지원 자격(대상) 중, 최근 1년 이내의 졸업생 기준은 어떻게 되나요?
+
+A3. 본 프로그램의 어학연수 시작일이 기준이 됩니다. 현지중개기관 및 어학연수 기관별로 어학
+
+연수 시작일이 다르므로 지원 프로그램의 어학연수 시작일을 확인한 후 지원해주시기 바랍니다.
+
+어학연수 시작일은 월드잡플러스(www.worldjob.or.kr) 공지사항에 게시 예정입니다.
+
+(예시) 2026년 상반기 선발은 어학연수 시작일(’26년 8월)을 기준으로, ‘25년 8월, ’26년 2월
+
+졸업자가 지원 가능합니다.
+
+Q4. WEST 참가 시 소속 학교에서 학점 인정은 얼마나 받을 수 있나요?
+
+A4. 학점 인정 여부 및 방법은 개별 학교의 학칙에 따라 상이하므로, 소속(출신)대학 관계자
+
+(국제교류처, 취업지원처, 경력개발센터 등)에게 문의하여 주시기 바랍니다. 제도상으로는
+
+학점 인정 여부와 상관없이 WEST에 지원이 가능합니다.
+
+Q5. 이전에 다른 정부재정지원을 받는 프로그램이나 “정부해외인턴사업”에 참여한 경우에도
+
+WEST 프로그램 지원이 가능한가요?
+
+A5. “정부재정지원 직접 일자리 사업” 및 타 “정부해외인턴사업” 참여자에 대한 지원 제한이 없기
+
+때문에 WEST 프로그램을 제외한 기타 프로그램의 참여자는 지원 가능합니다.
+
+※  WEST 기참가자 및 참가비 납부 마감 이후 포기자는 지원이 불가합니다.
+
+- 11 -",0ecfc49dd72930de2508722d6473835cabed3147f8bd6296dd51f19d344dc1cc,pending,False,False
+US-WEST-01-P06-R-C001,US-WEST-01,https://www.niied.go.kr/web/main/nid/niied_board/5570,official_pdf,2026년 상반기 WEST 모집 공고,historical_west_notice,"[""historical_2026_first_half"", ""obligation_or_eligibility_language""]","Q6. 워크넷에서 일자리 사업 참여 이력을 확인했는데, WEST 프로그램 지원이 가능한가요?
+
+A6. 네, 지원 가능합니다. 일자리 사업 기 참가자에 대한 지원 제한은 없습니다.
+
+Q7. 취업성공패키지에 참여 중인데 WEST 지원이 가능하나요?
+
+A7. 취업성공패키지 참여자의 경우 WEST 지원이 가능하지만, WEST 수료 후 취업성공패키지
+
+재참여가 불가능할 수 있습니다. 단계별로 조건이 다를 수 있으니 자세한 사항은 반드시
+
+취업성공패키지 담당자와 상의하시기 바랍니다.
+
+2. 온라인 지원서 작성 단계
+
+Q8. 영문이름 작성 시 유의사항이 있나요?
+
+A8. 성(Surname)-이름(Given name) 순서로, 반드시 영문철자, 띄어쓰기 칸 수와 영문 이름 내 하이픈(-) 여부
+
+등 모든 내용을 여권과 동일하게 맞추어 모두 대문자로 작성해 주시기 바랍니다(예. HONG GILDONG).
+
+※ 합격 후 비자 인터뷰에 필요한 서류 발급 시 지원서 상의 이름으로 발급
+
+Q9. 학교 성적은 어느 기간의 성적을 기입하는 건가요?
+
+A9. 입학 후 현재까지 취득한 전체학점의 평점을 말합니다.
+
+Q10. 학적은 언제를 기준으로 기입해야 하나요?
+
+A10. 온라인지원서 마감일 기준의 학적상태를 입력해 주시기 바랍니다. (예시) 재학, 졸업유예 등
+
+Q11. 졸업유예를 해서 재학생으로 분류되는 경우 학년을 어떻게 입력하면 되나요?
+
+A11. 실제 학년을 입력하시면 됩니다. (ex. 3학년, 6학년 등)
+
+Q12. 어학점수 기재 시 등록번호는 무엇인가요?
+
+A12. 성적표의 Registration Number(토익 및 토익스피킹, 6자리), Test ID(오픽, 12자리), 혹은
+
+수험번호(G-TELP 11자리, G-TELP 스피킹 8자리)를 의미합니다. 어학시험별 등록번호 확인
+
+방법은 FAQ 하단의 [붙임5]를 참고하시기 바랍니다.
+
+Q13. 미국 현지중개기관(SPONSOR)이 무엇인가요?
+
+A13. 미국 국무부에서 지정한 미국 소재의 현지중개기관(SPONSOR)은 참가자들의 J-1 비자*
+
+발급을 지원하고, 비자 상태를 관리하는 기관입니다. 또한 참가자들에게 프로그램 기간 중
+
+어학연수기관과의 연계를 통해 어학연수를 제공하고, 인턴십 배치를 담당합니다.
+
+* 미국을 문화교류 목적으로 방문하는 교환 방문자용 비자로, WEST 참가자는 해당 비자 발급
+
+Q14. 미국 현지중개기관 선택은 어떻게 해야 하나요? 선택한 곳으로 배정되나요?
+
+A14. 월드잡플러스 누리집 해외인턴(WEST) 공지사항에 게시된 ‘현지중개기관별 정보‘ 중 인턴십
+
+분야와 본인의 전공 등을 고려하여 희망하는 현지중개기관을 선택해주시기 바랍니다. 다만,
+
+현지중개기관의 배정인원 및 면접 결과에 따라 선택한 곳으로 배정되지 않을 수도 있습니다.
+
+- 12 -",3dde2f122a8bc344072b3447160e1e994e8b790bcbbe0a38143b1d10749db309,pending,False,False
+US-WEST-01-P07-L-C001,US-WEST-01,https://www.niied.go.kr/web/main/nid/niied_board/5570,official_pdf,2026년 상반기 WEST 모집 공고,historical_west_notice,"[""historical_2026_first_half"", ""obligation_or_eligibility_language""]","Q15. 재외국민전형 입학 여부를 잘못 선택하였을 경우 불이익이 있나요?
+
+A15. 2017년부터 지원구간 조회에 국외소득‧재산이 반영됨에 따라 학생이 신청하신 재외국민
+
+전형 입학 여부와 소속대학의 정보가 상이할 경우 합격 후 재정지원에 불이익이 발생할
+
+수 있으므로 신중하게 선택하여 주시기 바랍니다. 온라인지원서 작성 시 해당 사실을 누락한
+
+경우 실제 지원구간과 상관없이 10구간에 준하여 정부지원금이 지급됩니다.
+
+만약 한국장학재단의 WEST 프로그램 신청 단계에서 재외국민 특별전형 입학여부(Y/N)를
+
+잘못 선택하였을 경우, 학생의 국내 소득 재산조사가 개시되기 전 그리고 WEST 프로그램
+
+신청기간 내에 학생 본인이 한국장학재단 누리집을 통해 입학전형 변경이 가능합니다. 국
+
+내 소득조사가 개시된 후에는 한국장학재단 콜센터(1599-2000)로 확인한 후 「입학전형사
+
+실확인서」를 제출하여 입학 정보 수정을 신청하여야 합니다. 「입학전형사실확인서」 양
+
+식은 한국장학재단 누리집>고객센터>자료실>학자금 지원구간에 게시되어 있습니다.
+
+Q16. 월드잡플러스 온라인 지원서 작성 도중 임시저장 대신 최종제출 버튼을 눌렀는데 수정
+
+가능한가요?
+
+A16. 온라인 지원서는 접수 마감일 이내에 수정이 가능합니다. 그러나 마감일 이후에는 수정이
+
+불가능하므로, 공지사항을 상세하게 살펴보신 후 제출하시기 바랍니다.
+
+※ [월드잡플러스-마이페이지-인턴지원현황]에서 ‘취소’ 버튼을 눌러 수정 및 저장 후, 제출
+
+버튼을 누르고, ‘지원일자’가 나오는지 확인하시기 바랍니다.
+
+3. 서류 제출 단계
+
+Q17. 온라인 지원 시 온라인 지원서(자기소개서 포함), 개인정보동의서 외에도 취득한 자격증
+
+서류를 제출해야 되나요?
+
+A17. 월드잡 사이트에서 온라인 지원서(자기소개서 포함)와 개인정보동의서만 제출하시면 됩니다.
+
+자격증 관련 서류는 제출할 필요가 없습니다.
+
+Q18. 학교 추천을 어떻게 받나요?
+
+A18. 소속(출신) 대학 관련 부서에 어학증명서 등의 제반서류를 제출하시면 담당 부서에서 이를
+
+검토 후 국립국제교육원에 공문으로 추천 명단을 송부합니다. 서류 제출 방법 및 제출 마감일은
+
+소속대학에 문의하시기 바랍니다. (대학별 추천 인원의 제한은 없음)
+
+Q19. 학교에는 어떤 서류를 제출해야 하나요?
+
+A19. WEST 온라인지원서 출력물(자기소개서 포함), 재학(졸업/휴학)증명서, 전 학년 성적증명서,
+
+공인영어성적 증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking, G-TELP Speaking), 취업취약
+
+계층 증빙자료(해당자에 한하며, 선발공고문 [붙임1] 확인 요망), 지원구간 증빙자료(졸
+
+업생에 한하며, 선발공고문 [붙임1] 확인 요망)이며 공인영어성적 증명서는 반드시 공고
+
+문의 기준요건을 확인하여 유효한 성적을 제출해야 합니다.
+
+",560827e2dd998782901882cfa46567b5b67b9efed3cf2969be6ab237f9a35955,pending,False,False
+US-WEST-01-P07-R-C001,US-WEST-01,https://www.niied.go.kr/web/main/nid/niied_board/5570,official_pdf,2026년 상반기 WEST 모집 공고,historical_west_notice,"[""historical_2026_first_half"", ""obligation_or_eligibility_language"", ""time_sensitive_policy""]","4. 학자금 지원구간 확인
+
+Q20. 지원구간(학자금 지원구간) 확인 신청(어학연수비 대출)은 어떻게 하나요?
+
+A20. 한국장학재단 누리집(www.kosaf.go.kr) 재단소개 > 알림 > 공지사항 탭의 ‘2026년 상반기
+
+한·미대학생연수(WEST) 프로그램 어학연수비 대출 신청 안내’를 참고하여 신청해주시고,
+
+관련 문의사항은 한국장학재단 콜센터(1599-2000)로 해주시기 바랍니다.
+
+※ 장학재단 누리집 지원구간 확인 신청 : 재학생, 휴학생, 초과 학기자, 수료자, 졸업유예자
+
+※ 졸업생은 한국장학재단 사이트 신청 불필요(학교에 별도 서류 제출)
+
+Q21. 대출이 필요 없는데도 한국장학재단 누리집에 신청을 해야 하나요?
+
+A21. 한국장학재단 누리집 신청은 지원서 접수를 위한 필수적인 절차로, 실제 대출과는 무관합
+
+니다. 재학생(휴학생, 초과 학기자, 수료자, 졸업유예자)의 정부재정지원금은 한국장학재단의
+
+지원구간 확인 결과에 따라 결정되며, 미신청 시 서류심사 대상에서 제외되니 반드시 신청
+
+해주시기 바랍니다. ※ 졸업생은 한국장학재단 사이트 신청 불필요(학교에 별도 서류 제출)
+
+재학/졸업
+
+구분
+구분
+(모집 기간내) 한국장학재단
+
+(최종 합격 후) 
+어학연수비 대출 실행
+
+어학연수비 대출 신청
+
+재학생
+필요
+가능
+
+휴학생
+필요
+가능
+
+재학생
+
+초과학기자
+필요
+가능
+
+수료자
+필요
+조건에 따라 다름(한국장학재단 홈페이지 참고)
+
+졸업유예자
+필요
+불가능
+
+졸업생
+졸업생
+불필요
+불가능
+
+※ 재학생 중 최종 합격 후 학적이 졸업/졸업 유예로 변경되는 경우 대출 실행이 불가합니다.
+
+Q22. 학자금 지원구간은 언제 나오나요?
+
+A22. 가구원 동의 후 약 6~8주 정도 시간이 소요되며, 자세한 사항은 장학재단 콜센터(1599-2000)
+
+으로 문의해 주시기 바랍니다.
+
+Q23. 한국장학재단의 학자금 지원구간 산정 이의신청을 했는데 언제 바뀌나요?
+
+A23. 이의신청은 사안에 따라 산정 기간이 달라지며, 프로그램 일정으로 이의신청기한에 제한이
+
+있을 때는 합격자 발표 이전에 확인된 학자금 지원구간으로 적용됩니다.
+
+Q24. 졸업생은 한국장학재단으로 학자금 지원구간 확인 신청을 하지 않는데 지원구간은 어떻게
+
+산정되며, 어떤 자료를 제출해야 하나요?
+
+A24. 학자금 지원구간 통지서를 제출하면 가장 최근 학기 학자금 지원구간을 반영합니다. 기초
+
+생활수급자증명서나 차상위계층증명서를 제출하는 경우, 해당 증명서 기준으로 정부지원
+
+금을 산정합니다. 재학 중 국가장학금 신청 이력이 없는 경우, 해당 내용 증명을 위해 학
+
+자금대출‧장학금 신청증명서([붙임4] 참조)를 제출해주시면 됩니다.
+
+※ 학자금 지원구간 통지서는 국가장학금 또는 학자금 대출 신청 이력이 있는 경우, 학자금‧
+
+대출장학금 신청증명서는 국가장학금 또는 학자금 대출 신청 이력이 없는 경우 발급",e33581f0abc2d795e2fca093afd132601faf6a064985073b2f0ec9449c056405,pending,False,False
+US-WEST-01-P08-L-C001,US-WEST-01,https://www.niied.go.kr/web/main/nid/niied_board/5570,official_pdf,2026년 상반기 WEST 모집 공고,historical_west_notice,"[""historical_2026_first_half"", ""obligation_or_eligibility_language""]","Q25. 초과 학기자, 수료자, 졸업유예자의 차이는 무엇인가요?
+
+A25. 초과학기자, 수료자, 졸업유예자 모두 재학생/졸업생 구분에서는 재학생에 해당하기 때문에
+
+한국장학재단 사이트에 지원구간 확인신청을 해주셔야 하며, 구분은 다음과 같습니다.
+
+1. 초과 학기자: 정규학기를 초과한 학생 중 졸업기준학점을 미충족한 학생
+
+2. 수료자: 졸업기준학점을 충족하였으나, 졸업요건을 미충족한 학생
+
+3. 졸업유예자: 졸업기준학점을 충족하고, 졸업요건도 충족한 학생
+
+Q26. 어학연수, 인턴기간 동안 지원구간이 변경되면 지원금 규모도 바뀌나요?
+
+A26. 합격자 발표일 기준 지원구간으로 활동 종료 시까지 지원합니다.
+
+Q27. 정부 재정지원금 외에 추가적으로 재정 지원을 받을 수 있나요?
+
+A27. WEST 프로그램 참가자 대상으로 WEST 프로그램 공모전, WEST 서포터즈 등을 운영하고
+
+있습니다.
+
+Q28. 국외 소득·재산 조사 신고대상자는 어떻게 선정되나요?
+
+A28. 국외 소득·재산 신고 대상은 학부생(입학예정 포함) 중 ①재외국민 특별전형 입학자(학생
+
+및 가구원 전부) 또는 ②주민등록상 재외국민으로 확인된 학생 및 가구원입니다.
+
+국외 소득·재산 신고 대상자 확인 절차는 다음과 같습니다. 먼저 재외국민 특별전형 입학자의
+
+경우 학자금지원 신청 당시 특별전형 입학 여부를 선택하게 됩니다. 주민등록상 재외국민의
+
+경우 학생 및 가구원 정보제공 동의 완료 후 주민등록 거주 상태 코드 확인을 통해 국외
+
+소득·재산 신고 대상자를 선정하게 됩니다.
+
+5. 참가비 납부
+
+Q29. 부모님 명의로 참가비를 납부해도 되나요?
+
+A29. 반드시 본인 명의로 납부하셔야 합니다.
+
+Q30. 참가비를 원화로 납부해도 되나요? 분할납부는 가능한가요?
+
+A30. 참가비는 외화(USD)로 납부해야 하며, 납부기간(은행영업일 5일 내) 내 일시 납부해야 합니다.
+
+기간 내 미납 시 참가 포기로 간주하니, 합격에 대비해 미리 준비하는 것을 권장합니다.
+
+※ 최종합격자 안내문에 기재된 참가자 부담금(=참가비-정부재정지원금)을 납부기간 내 납부
+
+Q31. 참가비 납부 마감 이후 포기하는 경우 불이익이 있나요?
+
+A31. 참가비 납부 마감 이후 포기 시, WEST 프로그램에 재지원하실 수 없습니다.
+
+또한 프로그램 시작 이후 본인의 귀책사유로 프로그램 중단 시, 지원받은 정부재정지원금은
+
+프로그램 규정에 따라 환수되니, 신중하게 참가 여부를 결정하시기 바랍니다.
+
+※ 참가비 납부 마감 이후 포기 시, 추가 합격자 선정이 불가하므로 타인의 참여기회까지 박탈하는 결과가
+
+되므로 최종 참가 여부에 신중을 기해 주시기 바랍니다.
+
+※ WEST 어학연수비 대출을 실행한 이후 WEST 프로그램 중단 시 즉시 대출 상환을 해야 하며,
+
+미상환시 다음 학기 학자금 대출 제한 대상으로 지정됩니다.
+
+- 15 -",030c6ecc87086720048e3f7703005b829d8e23ca914fd20d158bee4321dc01e5,pending,False,False
+US-WEST-01-P08-R-C001,US-WEST-01,https://www.niied.go.kr/web/main/nid/niied_board/5570,official_pdf,2026년 상반기 WEST 모집 공고,historical_west_notice,"[""historical_2026_first_half"", ""obligation_or_eligibility_language""]","6. 어학연수 & 인턴십
+
+Q32. 합격 후 출국은 언제부터 가능한가요?
+
+A32. 비자 발급 완료 후 어학연수 시작일 30일 전부터 개별적으로 출국이 가능합니다.
+
+Q33. 어학연수기관(지역)을 선택할 수 있나요?
+A33. 어학연수기관은 현지중개기관에서 면접 결과 등을 반영하여 결정합니다. 배정된 어학연수
+
+기관은 최종합격자 발표 시 함께 안내하며 변경은 불가합니다.
+
+Q34. 어학연수 기간이나 인턴 기간 조정은 가능한가요?
+
+A34. 어학연수는 기간 조정이 불가합니다(단기 8주, 중기 12주). 인턴십은 최소 수료기준(단기 12주,
+
+중기 24주)만 충족하면 수료 가능하며, 최대기간(단기 16주, 중기 32주)까지 인턴십을 희망할 경우,
+
+현지중개기관과 사전에 협의 및 조정해주시기 바랍니다.
+
+Q35. 프로그램 전 기간 동안(단기 6개월, 중기 12개월) 미국에 있어야 하나요?
+
+A35. 최장 체류 가능기간이 6개월(단기), 12개월(중기)이며, 최소 수료기준*만 충족해도 WEST를
+
+수료할 수 있습니다. 
+   * (수료기준) 단기: 어학 8주, 인턴십 12주 이상 / 중기: 어학 12주, 인턴십 24주 이상
+
+Q36. 인턴십 배치 과정은 어떻게 되나요?
+
+A36. 현지중개기관별로 인턴십 배치과정에 차이가 있을 수 있으나, 일반적으로 이력서 및 관련
+
+서류를 현지중개기관에 먼저 제출한 뒤, 배치 기간 동안 현지중개기관과의 상담 및 인터뷰 
+등을 거쳐 인턴십 배치가 완료됩니다.
+
+∙ 참가자 후기
+
+“인턴십 배치 과정 중에 현지중개기관(스폰서)이 현실적으로 다수의 참가자 개개인의 요구사항을 100% 반영
+
+하여 인턴십 배정을 하기 어려운 것은 사실입니다. 참가자들이 동시에 인턴십 배치과정에 참여하게 되는 점을
+
+이해하고 참가하는 것이 좋습니다.”
+
+Q37. 인턴십을 하고 싶은 미국기업이 있는데, 현지중개기관에서 연결해 주나요? 아니면 개인적
+
+으로 해당 기업에 직접 지원할 수 있나요? 
+A37. 참가자는 특정 지역 혹은 기업의 인턴십을 요구할 수 없습니다. 또한 WEST 프로그램 규정에
+
+따라 개인적인 구직활동은 불가하며, 미국무부가 지정한 현지중개기관의 상담 및 인턴십
+
+배치 과정을 통해 배정된 인턴기관에서 인턴십을 수행해야 합니다.
+
+Q38. 특수전공인데 정확히 일치하는 인턴분야가 없다면 관련 분야로 지원해도 되나요?
+
+A38. 참가자의 전공분야 인턴십 매칭이 어려울 경우, 최대한 유사 전공 분야로 매칭됩니다. 다
+
+만, 특정 인턴십 기관이나 분야는 보장해 드리지 않습니다. 현지중개기관별 상황에 따라 전공
+
+관련 매칭이 어려울 시 부전공, 경험 등을 고려하여 다른 분야의 인턴십이 매칭될 수 있습니다.
+
+∙ 참가자 후기
+
+""현지중개기관(스폰서)에서 기존에 보유하고 있는 분야 이외의 전공자가 있는 경우 전공 관련 인턴십 매칭이
+
+어려운 것 같습니다. 그도 그럴",1b56fa3ce209d0d2767439b67286ac2e09c6ac574c2243590d74e9ebaa6adec1,pending,False,False
+US-WEST-01-P09-L-C001,US-WEST-01,https://www.niied.go.kr/web/main/nid/niied_board/5570,official_pdf,2026년 상반기 WEST 모집 공고,historical_west_notice,"[""historical_2026_first_half"", ""obligation_or_eligibility_language""]","Q39. 인턴십이 허용되지 않는 분야도 있나요?
+
+A39. 간호학/의학 전공자의 경우 환자 등과 직접 접촉(medical patient care or contact) 하는
+
+인턴십은 J-1 규정에 의거하여 금지되어 있습니다.
+
+Q40. 자신의 전공과 무관한 분야에서의 인턴십도 가능한가요?
+
+A40. 인턴십은 본인의 전공 관련 분야에서 하도록 되어 있으며, 복수전공 또는 다른 경험이
+
+있는 경우 인턴십 배치 시 고려될 수 있습니다. 인턴십 배치 분야는 본인이 결정하는 것이
+
+아니라 현지중개기관과의 상담을 통한 배치과정에서 결정됩니다.
+
+Q41. 코로나19의 영향으로 현지에서 비대면 인턴십으로 할 경우가 있을까요?
+
+A41. J-1 비자 규정에 따라 참가자는 주 32시간 이상의 근무를 해야 합니다. 다만 배치된 인턴
+
+기관의 상황에 따라 근무기간 중 일부를 재택근무 형태로 근무할 수 있습니다.
+
+Q42. 인턴십은 무급으로 진행되나요?
+
+A42. 인턴십은 무급으로 진행되는 것이 일반적입니다. 인턴십은 인턴기관이 참가자에게 기업문화 및
+
+실무 경험 기회를 제공한다는 의미가 크고, 인턴기관의 재량에 따라 교통비 등을 보조하
+
+거나 인턴십 중에 유급으로 전환되는 경우도 있으나 참가자별 상황은 모두 다릅니다.
+
+Q43. 미국 현지에서 인턴십 중 취업이 되면 돌아오지 않아도 되나요?
+
+A43. WEST 프로그램은 문화교류를 목적으로 하는 J-1 비자를 통해 어학연수와 인턴십을 하게
+
+되며, 참가자는 미국 국무부 규정에 의거 현지 프로그램 종료 후 2년간 본국(=한국)에서
+
+거주해야하는 의무가 있으므로, 반드시 귀국한 후 프로그램을 수료하여야 합니다. 현지에서
+
+취업 결정 시에도 반드시 귀국하여 취업 관련 비자를 발급 받아 출국해야 합니다.
+
+Q44. 항공료와 어학연수 및 인턴생활비는 원화로 지급되나요?
+
+A44. 네, 항공료 및 생활비는 모두 원화로 지급됩니다. 항공료는 2,000,000원이 정액 지원되며,
+
+생활비는 지원구간에 따라 상이합니다. 특히 생활비는 지급 년도의 기준환율이 적용되어
+
+지급됨을 양지하시기 바랍니다. 자세한 내용은 모집 공고문의 ‘참가비 및 정부재정지원’을
+
+확인하시기 바랍니다.
+
+Q45. 정부 지원금 외에 개인 경비는 얼마나 필요할까요?
+
+A45. 프로그램별 기간, 거주 지역 등에 따라 필요한 자금은 상이합니다. 어학연수/인턴생활비 지급기간
+
+(8주 간격으로 지급), 물가 등 여러 요소를 고려해 필요한 경비를 미리 준비하시는 것이 좋습니다.
+
+※ 초기정착금과 현지 생활비 등은 거주지역과 개인의 소비 습관 및 생활 방식에 따라 매우
+
+상이하므로 정확한 금액을 알려드리기 어렵습니다.
+
+∙ 참가자 후기
+
+""실제 생활비와 경비는 예상보다 많이 필요하였습니다. 미국은 지역에 따라 하우징 가격과 물가 차이가
+
+큰데, 인턴십 배정을 받을 당시 미국 내에서도 물가가",9736b0f4f5530a0725000a3abd4a37f40c92f0ea3db4dcf04cd810d05d2c69be,pending,False,False
+US-WEST-01-P09-R-C001,US-WEST-01,https://www.niied.go.kr/web/main/nid/niied_board/5570,official_pdf,2026년 상반기 WEST 모집 공고,historical_west_notice,"[""historical_2026_first_half"", ""obligation_or_eligibility_language""]","Q46. 비자 유효기간(Expiration Date) 내에 여행을 하면 되나요?
+
+A46. 프로그램을 성공적으로 이행하는 참가자는 인턴십 종료 이후 주어지는 출국유예기간(30일) 내
+
+에 미국 여행이 가능합니다. 단, 만료된 비자로 출국유예기간 동안 미국을 출국한 경우, 동일
+
+비자로 재입국이 불가합니다. 또한, 미국 여행 종료 후 30일 이내에 귀국하여 수료하셔야 합니다.
+
+Q47. 미국 출국 후 프로그램을 중단할 경우 어떻게 되나요?
+
+A47. 프로그램 중단은 불가피한 개인사유에 의한 자의적 중단과 규정 위반, 부적절한 행동으로
+
+인한 강제 중단으로 나뉩니다. 프로그램을 중단할 시, 해당 현지중개기관에서 안내 받은
+
+기한 내에 미국에서 출국해야 하며, 프로그램 수료증 발급 불가 및 소속학교에 미수료자
+
+통보, WEST 프로그램 규정에 따른 정부지원금 환수* 등의 절차가 진행됩니다.
+
+* 환수금액은 프로그램 중단 사유에 대한 참가자의 고의성 유무에 따라 다르게 결정됩니다. 고의성
+
+있는 사유(규정 위반, 어학연수 출석률 미달, 무리한 요구·불성실한 태도로 인한 인턴배치 실패
+
+혹은 인턴십 해고 등)는 정부지원금 전액(출국항공료, 참가비, 어학연수/인턴 생활비)을 반납해야
+
+하며, 고의성 없는 사유(참가자 본인 및 가족의 건강, 경제적 사정, 기타 불가피한 사유)는 과지급된
+
+어학연수/인턴 생활비를 일할 계산하여 산정된 금액을 반납해야 합니다.
+
+7. 프로그램 수료 후
+
+Q48. WEST 종료 후, 바로 미국으로 취업할 수 있나요?
+
+A48. 프로그램을 수료 후 개별상황에 따라 미국으로 취업하는 것은 가능하나 비자 발급 절차는
+
+개인적으로 준비하여야 하며, 별도로 지원해 드리지 않습니다. 미국 국무부의 문화교류
+
+비자에 속하는 J-1비자 중 정부의 재정지원을 받은 경우, 본국(한국)에서 2년간 체류해야
+
+하는 의무가 발생합니다. 2년 본국거주의무(two year rule)를 다하지 않고, 미국에 취업(H),
+
+주재원으로 파견(L), 미국 시민권자와의 약혼/결혼(K)의 사유로 미국에 재입국하기 위해서
+
+는 미국 국무부와 주미한국대사관(지역별 영사관)을 통해 2년 본국거주의무 면제 신청(웨
+
+이버 신청)을 반드시 해야 합니다. 국립국제교육원에서는 이 웨이버 신청 시 필요한 제출
+
+서류 중 하나인 ‘귀국의무면제 확인서’를 발급해 드립니다(WEST 수료자에 한함). 다른 국가
+
+입국 시에는 2년 본국거주의무가 적용되지 않지만, 다른 국가에 거주 후에도 H,L,K 비자로
+
+미국에 입국하기 위해서는 2년 본국거주의무를 완료해야 합니다.
+
+Q49. WEST 수료 후 다음 참가자에 대한 지원 활동을 할 수 있는 방법이 있을까요?
+
+A49. 다양한 형태의 멘토링*과 WEST 프로그램 설명회에 멘토로 참여할 수 있습니다. 행사 안내
+
+및 멘토 모집 소식은 WEST 대표메일 또는 ",a64ea65f4be37e03973caf8ccfa1c4a08e356a8a5e0c8af1cafb2fdb51524834,pending,False,False
+US-WEST-01-P10-L-C001,US-WEST-01,https://www.niied.go.kr/web/main/nid/niied_board/5570,official_pdf,2026년 상반기 WEST 모집 공고,historical_west_notice,"[""historical_2026_first_half"", ""obligation_or_eligibility_language""]","붙임4
+ 학자금대출·장학금 신청증명서 (졸업생)
+
+<재학 중 국가장학금 신청 이력이 없는 졸업생>
+
+“학자금 지원구간 통지서” 발급이 불가능하므로 “학자금대출·장학금 신청증명서”로 지원구간 증빙 서류 대체
+
+※ 해당 서류 제출 시 10구간에 준하는 정부지원금 지급
+
+- 19 -",7bcef16f9584b817a1bf89a03aea0dc4dd2de2ed42e34876a73e58a6a3177bfd,pending,False,False
+US-WH-01-SECTION-003-C001,US-WH-01,https://j1visa.state.gov/programs/summer-work-travel/,official_html,Summer Work Travel Students must be:,participant_eligibility_candidate,"[""obligation_or_eligibility_language""]","Summer Work Travel Students must be: Sufficiently proficient in English to successfully interact in an English speaking environment; Post-secondary school students enrolled in and actively pursuing a degree or other full-time course of study at an accredited classroom based, post-secondary educational institution outside the United States; Have successfully completed at least one semester or equivalent of post-secondary academic study; and Pre-placed in a job prior to entry unless from a visa waiver country.",db608702ee151f6de86fd813d8acdbdb9cc5877fad347ad3178801904546c483,pending,False,False
+US-WH-01-SECTION-008-C001,US-WH-01,https://j1visa.state.gov/programs/summer-work-travel/,official_html,"Readmittance, Program Length, and Returning Home",program_policy_or_procedure,"[""obligation_or_eligibility_language""]","Readmittance, Program Length, and Returning Home Readmittance: Participants can be admitted to the program more than once; Program Length: The maximum length of the program is four months; and Returning Home: Students must return to their home country prior to the start date of their university or college.",9efb7e8475c74331352ee0717d039fed1ca6fd3bb4864ae04dd22e1115f537cb,pending,False,False
+US-WH-01-SECTION-009-C001,US-WH-01,https://j1visa.state.gov/programs/summer-work-travel/,official_html,Program Exclusions,sponsor_or_host_obligations,"[""duplicate_candidate"", ""obligation_or_eligibility_language""]","Program Exclusions Sponsors must not place participants: In positions that could bring notoriety or disrepute to the Exchange Visitor Program; In sales positions that require participants to purchase inventory that they must sell in order to support themselves; In domestic help positions in private homes (e.g., child care, elder care, gardener, chauffeur); As pedicab or rolling chair drivers or operators; As operators or drivers of vehicles or vessels for which drivers’ licenses are required regardless of whether they carry passengers or not; In positions related to clinical care that involves patient contact; In any position in the adult entertainment industry (including, but not limited to jobs with escort services, adult book/video stores, and strip clubs); In positions requiring work hours that fall predominantly between 10:00 pm and 6:00 am; In positions declared hazardous to youth by the Secretary of Labor at Subpart E of 29 CFR part 570; In positions that require sustained physical contact with other people and/or adherence to the Centers for Disease Control and Prevention’s Universal Blood and Body Fluid Precautions guidelines (e.g., body piercing, tattooing, massage, manicure); In positions that are substantially commission-based and thus do not guarantee that participants will be paid minimum wage in accordance with federal and state standards; In positions involved i",8b9cdfa08fa5d73c5898891694e28ef5d2db6533c51ecac76d7e6f255dbe1b3e,pending,False,False
+US-WH-01-SECTION-009-C002,US-WH-01,https://j1visa.state.gov/programs/summer-work-travel/,official_html,Program Exclusions,program_policy_or_procedure,"[""duplicate_candidate"", ""obligation_or_eligibility_language""]","on-based and thus do not guarantee that participants will be paid minimum wage in accordance with federal and state standards; In positions involved in gaming and gambling that include direct participation in wagering and/or betting; In positions in chemical pest control, warehousing, catalogue/online order distribution centers; In positions with traveling fairs or itinerant concessionaires; In jobs that do not allow participants to work alongside U.S. citizens and interact regularly with U.S. citizens and to experience U.S. culture during the workday portion of their Summer Work Travel programs; With employers that fill non-seasonal or non-temporary job openings with exchange visitors with staggered vacation schedules; In positions that require licensing; In positions for which there is another specific J visa category (e.g., Camp Counselor, Trainee, Intern); In positions with staffing agencies, unless the placements meet the following three criteria: Participants must be employees of and paid by the staffing agencies Staffing agencies must provide full-time, primary, on-site supervision of the participants Staffing agencies must effectively control the work sites, e.g., have hands-on management responsibility for the participants After November 1, 2012, in positions in the North American Industry Classification System’s (NAICS) Goods-Producing Industries occupational categori",6618a4a1f16a3f9cb3b88e256702681292bb48f1f7936a3abf4959da3f777855,pending,False,False
+US-WH-01-SECTION-009-C003,US-WH-01,https://j1visa.state.gov/programs/summer-work-travel/,official_html,Program Exclusions,sponsor_or_host_obligations,"[""duplicate_candidate"", ""obligation_or_eligibility_language""]","s After November 1, 2012, in positions in the North American Industry Classification System’s (NAICS) Goods-Producing Industries occupational categories industry sectors 11, 21, 23, 31-33 numbers (set forth at http://www.bls.gov/iag/tgs/iag_index_naics.htm ). Sponsors must also: Use extra caution when placing students in positions at employers in lines of business that are frequently associated with trafficking persons (e.g., modeling agencies, housekeeping, janitorial services); Consider the availability of suitable, affordable housing (e.g., that meets local codes and ordinances) and reliable, affordable, and convenient transportation to and from work when making job placements; Actively and immediately assist participants with arranging appropriate housing and transportation, if employers do not provide or arrange housing and/or transportation, or if participants decline employer-provided housing or transportation; Confirm at the beginning of each placement season: The number of job placements available with host employers That host employers will not displace domestic U.S. workers at worksites where they will place program participants That host employers have not experienced layoffs in the past 120 days and do not have workers on lockout or on strike Sponsors may place participants only in jobs that: Are seasonal or temporary; Provide opportunities for regular communicatio",d846b3f0115a9c7da6767e04a4d66c490af9aeea41743688a39fca1ef171d677,pending,False,False
+US-WH-01-SECTION-013-C001,US-WH-01,https://j1visa.state.gov/programs/summer-work-travel/,official_html,Sponsors are required to:,sponsor_or_host_obligations,"[""obligation_or_eligibility_language""]","Sponsors are required to: Provide pre-arranged and fully-vetted employment to all participants who are not from a visa waiver country. Provide all participants, prior to entry: A copy of the Department of State Summer Work Travel Program Brochure; The Department of State’s toll-free emergency hotline telephone number; The sponsor’s 24/7 immediate contact telephone number; Information advising participants of their obligation to notify their sponsor when they arrive in the United States and to provide information of any change in jobs or residence; and Information concerning any contractual obligations related to participants’ acceptance of paid employment in the United States, if pre-arranged. Sponsors of participants who are nationals of Visa Waiver Program countries must: Ensure that participants entering the United States without prearranged employment have sufficient financial resources to support themselves during their search for employment; Provide such participants with information on how to seek employment and secure lodging in the United States before they depart their home countries; and Provide participants with a job directory that includes at least as many job listings as the number of participants in their program who are entering the United States without prearranged employment. Sponsors must undertake reasonable efforts to secure suitable employment for partici",3d412a94c0dffc586ea2a573f42917a40a2a0518d778a16c9ad9e5e5fc8b2b0b,pending,False,False
+US-WH-01-SECTION-013-C002,US-WH-01,https://j1visa.state.gov/programs/summer-work-travel/,official_html,Sponsors are required to:,sponsor_or_host_obligations,"[""obligation_or_eligibility_language""]","ho are entering the United States without prearranged employment. Sponsors must undertake reasonable efforts to secure suitable employment for participants unable to find jobs on their own after one week; Sponsors must inform program participants of Federal Minimum Wage requirements and ensure that, at a minimum, participants are compensated at the prevailing local wage, which must meet the higher of either the applicable state or the Federal minimum wage requirement, including payment for overtime in accordance with state-specific employment; and Sponsors must maintain, at a minimum, a monthly schedule of personal contact with the program participants (in-person, by telephone or via-electronic mail), document such contact, and ensure that issues affecting the health, safety and welfare of participants are addressed immediately.",41515b066c1225401e2bf64ab797688e484aa58ea82c8840de30cb4b5bd19bc9,pending,False,False
+US-WH-01-SECTION-016-C001,US-WH-01,https://j1visa.state.gov/programs/summer-work-travel/,official_html,Program Exclusions,sponsor_or_host_obligations,"[""duplicate_candidate"", ""obligation_or_eligibility_language""]","Program Exclusions Sponsors must not place participants: In positions that could bring notoriety or disrepute to the Exchange Visitor Program; In sales positions that require participants to purchase inventory that they must sell in order to support themselves; In domestic help positions in private homes (e.g., child care, elder care, gardener, chauffeur); As pedicab or rolling chair drivers or operators; As operators or drivers of vehicles or vessels for which drivers’ licenses are required regardless of whether they carry passengers or not; In positions related to clinical care that involves patient contact; In any position in the adult entertainment industry (including, but not limited to jobs with escort services, adult book/video stores, and strip clubs); In positions requiring work hours that fall predominantly between 10:00 pm and 6:00 am; In positions declared hazardous to youth by the Secretary of Labor at Subpart E of 29 CFR part 570; In positions that require sustained physical contact with other people and/or adherence to the Centers for Disease Control and Prevention’s Universal Blood and Body Fluid Precautions guidelines (e.g., body piercing, tattooing, massage, manicure); In positions that are substantially commission-based and thus do not guarantee that participants will be paid minimum wage in accordance with federal and state standards; In positions involved i",8b9cdfa08fa5d73c5898891694e28ef5d2db6533c51ecac76d7e6f255dbe1b3e,pending,False,False
+US-WH-01-SECTION-016-C002,US-WH-01,https://j1visa.state.gov/programs/summer-work-travel/,official_html,Program Exclusions,program_policy_or_procedure,"[""duplicate_candidate"", ""obligation_or_eligibility_language""]","on-based and thus do not guarantee that participants will be paid minimum wage in accordance with federal and state standards; In positions involved in gaming and gambling that include direct participation in wagering and/or betting; In positions in chemical pest control, warehousing, catalogue/online order distribution centers; In positions with traveling fairs or itinerant concessionaires; In jobs that do not allow participants to work alongside U.S. citizens and interact regularly with U.S. citizens and to experience U.S. culture during the workday portion of their Summer Work Travel programs; With employers that fill non-seasonal or non-temporary job openings with exchange visitors with staggered vacation schedules; In positions that require licensing; In positions for which there is another specific J visa category (e.g., Camp Counselor, Trainee, Intern); In positions with staffing agencies, unless the placements meet the following three criteria: Participants must be employees of and paid by the staffing agencies Staffing agencies must provide full-time, primary, on-site supervision of the participants Staffing agencies must effectively control the work sites, e.g., have hands-on management responsibility for the participants After November 1, 2012, in positions in the North American Industry Classification System’s (NAICS) Goods-Producing Industries occupational categori",6618a4a1f16a3f9cb3b88e256702681292bb48f1f7936a3abf4959da3f777855,pending,False,False
+US-WH-01-SECTION-016-C003,US-WH-01,https://j1visa.state.gov/programs/summer-work-travel/,official_html,Program Exclusions,sponsor_or_host_obligations,"[""duplicate_candidate"", ""obligation_or_eligibility_language""]","s After November 1, 2012, in positions in the North American Industry Classification System’s (NAICS) Goods-Producing Industries occupational categories industry sectors 11, 21, 23, 31-33 numbers (set forth at http://www.bls.gov/iag/tgs/iag_index_naics.htm ). Sponsors must also: Use extra caution when placing students in positions at employers in lines of business that are frequently associated with trafficking persons (e.g., modeling agencies, housekeeping, janitorial services); Consider the availability of suitable, affordable housing (e.g., that meets local codes and ordinances) and reliable, affordable, and convenient transportation to and from work when making job placements; Actively and immediately assist participants with arranging appropriate housing and transportation, if employers do not provide or arrange housing and/or transportation, or if participants decline employer-provided housing or transportation; Confirm at the beginning of each placement season: The number of job placements available with host employers That host employers will not displace domestic U.S. workers at worksites where they will place program participants That host employers have not experienced layoffs in the past 120 days and do not have workers on lockout or on strike Sponsors may place participants only in jobs that: Are seasonal or temporary; Provide opportunities for regular communicatio",d846b3f0115a9c7da6767e04a4d66c490af9aeea41743688a39fca1ef171d677,pending,False,False
+US-WH-01-SECTION-019-C001,US-WH-01,https://j1visa.state.gov/programs/summer-work-travel/,official_html,Host employers are required to:,program_policy_or_procedure,"[""obligation_or_eligibility_language"", ""possible_site_ui_contamination""]","Host employers are required to: Provide participants the number of hours of paid employment per week as identified on the job offer and agreed to when the sponsor vetted the jobs; Pay those participants eligible for overtime worked in accordance with applicable state or federal law; Notify sponsors promptly when participants arrive at the work site and begins their programs; when there are any changes or deviations in the job placements during the participants’ programs; when participants are not meeting the requirements of job placements; or when participants leave their position ahead of their planned departure; and Contact sponsors immediately in the event of any emergency involving participants or any situation that impacts the health, safety or welfare of participants. Program Resources <a class=""button button-find"" title=""View a list of sponsors for this program"" href=""/participants/how-to-apply/sponsor-search/?program=Summer%20Work%20Travel&amp;state=any""><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions featured host experience component “As an employer of international kids, keep your door open and be proactive in solving their issues.” WISP Resort, Summer Work Travel featured host experience component end tab 3 Visa Basics Facts & Figures About J-2 Visa Other U.S. Student Visas Common Questions Participants How to Apply Current Participan",569dddb6158f2b4ccb1b7bbe285ab3d40b993ca69ee3fbff8524342d537cf6aa,pending,False,False

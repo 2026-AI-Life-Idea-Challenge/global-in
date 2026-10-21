@@ -1,0 +1,18 @@
+{
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "input_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "input_financial_sha256": "8d381edebe88569b087050cedcd8046f5adae0dd30c4b0e19ea30372f657ca3a",
+  "selection_schedule_fields": 14,
+  "faq_question_count": 49,
+  "faq_answer_count": 49,
+  "faq_meaning_approved": false,
+  "loan_eligibility_approved": false,
+  "manual_review_issues": 6,
+  "original_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "a2b8e320f65228e1650439f4663a23c0f6608db2c9edae52aee2f61dbce5c505"
+}

@@ -1,0 +1,319 @@
+{
+  "dataset_type": "west_remaining_fields_review",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "historical_notice": true,
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "integrated_audit_sha256": "a1e29f60f5e73af7946d72f85418af5e0cdb5cb5ec8a03f0fee6977869893ec7",
+  "reviewed_field_count": 7,
+  "fields": {
+    "vulnerable_group_evidence": {
+      "field": "vulnerable_group_evidence",
+      "source_summary": "취업취약계층 범주 및 증빙서류 유형 확인",
+      "source_phrase_checks": [
+        {
+          "phrase": "취업취약계층",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "기초생활수급자",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "차상위계층",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "장애인",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "다문화가족",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "북향민",
+          "found_in_pdf": true
+        }
+      ],
+      "evidence": [
+        {
+          "printed_page": 9,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP09",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_presence_verified": true,
+      "source_semantics_fully_verified": false,
+      "remaining_review": "지원자 유형별 세부 증빙 분기와 서류 유효성은 개별 검토 필요",
+      "validation_status": "needs_review",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false,
+      "automatic_eligibility_rules_enabled": false
+    },
+    "eligibility_exceptions": {
+      "field": "eligibility_exceptions",
+      "source_summary": "지원 제한 및 FAQ 자격 관련 문구 확인",
+      "source_phrase_checks": [
+        {
+          "phrase": "복수 국적자",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "외국 소재 대학",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "WEST 프로그램 기 참가자",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "Q1.",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "Q2.",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "Q3.",
+          "found_in_pdf": true
+        }
+      ],
+      "evidence": [
+        {
+          "printed_page": 2,
+          "physical_pdf_page": 1,
+          "candidate_id": "WEST-2026H2-LP02",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 11,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP11",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_presence_verified": true,
+      "source_semantics_fully_verified": false,
+      "remaining_review": "FAQ Q3의 선발 회차 예시 불일치와 개인별 자격 적용은 별도 검토",
+      "validation_status": "needs_review",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false,
+      "automatic_eligibility_rules_enabled": false
+    },
+    "internship_restrictions": {
+      "field": "internship_restrictions",
+      "source_summary": "의료 분야의 환자 직접 접촉 인턴십 제한 설명 확인",
+      "source_phrase_checks": [
+        {
+          "phrase": "Q39.",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "간호학/의학",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "medical patient care or contact",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "Q40.",
+          "found_in_pdf": true
+        }
+      ],
+      "evidence": [
+        {
+          "printed_page": 17,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP17",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_presence_verified": true,
+      "source_semantics_fully_verified": false,
+      "remaining_review": "모든 의료 관련 인턴십을 일괄 금지하는 규칙으로 변환하지 않음",
+      "validation_status": "needs_review",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false,
+      "automatic_eligibility_rules_enabled": false
+    },
+    "j1_visa_conditions": {
+      "field": "j1_visa_conditions",
+      "source_summary": "J-1 비자 및 본국거주의무 관련 공고 설명 확인",
+      "source_phrase_checks": [
+        {
+          "phrase": "Q43.",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "Q48.",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "2년",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "웨이버",
+          "found_in_pdf": true
+        }
+      ],
+      "evidence": [
+        {
+          "printed_page": 17,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP17",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 18,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP18",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_presence_verified": true,
+      "source_semantics_fully_verified": false,
+      "remaining_review": "현행 미국 법률, 비자 유형 및 개인별 적용 범위 별도 법률 검증 필요",
+      "validation_status": "needs_review",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false,
+      "automatic_eligibility_rules_enabled": false
+    },
+    "graduation_evidence_examples": {
+      "field": "graduation_evidence_examples",
+      "source_summary": "학자금 지원구간 통지서 발급이 불가능한 졸업생의 증빙 예시 확인",
+      "source_phrase_checks": [
+        {
+          "phrase": "붙임4",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "학자금대출",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "장학금 신청증명서",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "졸업생",
+          "found_in_pdf": true
+        }
+      ],
+      "evidence": [
+        {
+          "printed_page": 19,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP19",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_presence_verified": true,
+      "source_semantics_fully_verified": false,
+      "remaining_review": "졸업생의 실제 발급 가능 서류와 지원구간 적용 조건은 별도 검토",
+      "validation_status": "needs_review",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false,
+      "automatic_eligibility_rules_enabled": false
+    },
+    "score_report_identifiers": {
+      "field": "score_report_identifiers",
+      "source_summary": "TOEIC·OPIc·G-TELP 등 시험별 등록번호 식별 안내 확인",
+      "source_phrase_checks": [
+        {
+          "phrase": "Registration Number",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "Test ID",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "수험번호",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "G-TELP Speaking",
+          "found_in_pdf": true
+        }
+      ],
+      "evidence": [
+        {
+          "printed_page": 12,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP12",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 20,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP20",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 21,
+          "physical_pdf_page": 11,
+          "candidate_id": "WEST-2026H2-LP21",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 22,
+          "physical_pdf_page": 11,
+          "candidate_id": "WEST-2026H2-LP22",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_presence_verified": true,
+      "source_semantics_fully_verified": false,
+      "remaining_review": "시험별 입력 형식은 확인 가능하나 개별 성적표의 진위 검증은 별도",
+      "validation_status": "needs_review",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false,
+      "automatic_eligibility_rules_enabled": false
+    },
+    "toeic_speaking_conversion_reference": {
+      "field": "toeic_speaking_conversion_reference",
+      "source_summary": "TOEIC Speaking ACTFL 등급 환산표 및 숫자 점수 입력 안내 확인",
+      "source_phrase_checks": [
+        {
+          "phrase": "TOEIC Speaking",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "ACTFL",
+          "found_in_pdf": true
+        },
+        {
+          "phrase": "200점 만점",
+          "found_in_pdf": true
+        }
+      ],
+      "evidence": [
+        {
+          "printed_page": 20,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP20",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_presence_verified": true,
+      "source_semantics_fully_verified": false,
+      "remaining_review": "이미지 기반 환산표의 전체 점수-등급 대응은 독립 검증 전까지 사용 금지",
+      "validation_status": "needs_review",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false,
+      "automatic_eligibility_rules_enabled": false
+    }
+  },
+  "all_field_source_presence_verified": true,
+  "semantic_review_completed": false,
+  "current_policy_verified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

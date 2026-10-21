@@ -1,0 +1,121 @@
+{
+  "dataset_type": "west_cross_agency_review",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "historical_notice": true,
+  "source_inputs_sha256": {
+    "registry": "4bb986ba36156642c52d8aaa6a5b14a752fe4db6349977a09c070d9449c83fee",
+    "pdf_findings": "76aff3a860078f75bc5cf5ac26865f481fdcf69a6f20183c71648994a9b41601",
+    "academic_finance": "c3cb750badb91b75e25746c6bf1ccb18e39a8302a3d5ccfed3b5a03577d48925"
+  },
+  "official_sources": {
+    "niied_notice": {
+      "agency": "국립국제교육원",
+      "published_date": "2026-06-26",
+      "url": "https://www.niied.go.kr/web/main/nid/niied_board/5749",
+      "description": "2026년 하반기 WEST 참가자 모집 공고"
+    },
+    "kosaf_notice": {
+      "agency": "한국장학재단",
+      "published_date": "2026-06-30",
+      "url": "https://www.kosaf.go.kr/ko/notice.do?mode=view&page=3&seqNo=21036",
+      "description": "2026년 하반기 WEST 어학연수비 대출신청 안내"
+    },
+    "kosaf_loan_guide": {
+      "agency": "한국장학재단",
+      "published_date": null,
+      "url": "https://www.kosaf.go.kr/ko/tuition.do?pg=PTHDWestAply_01M&ttab1=2",
+      "description": "WEST 어학연수비 대출제도 안내"
+    }
+  },
+  "cross_agency_review_tasks": [
+    {
+      "id": "WEST-H2-CROSS-01",
+      "topic": "support_bracket_application",
+      "source_ids": [
+        "niied_notice",
+        "kosaf_notice"
+      ],
+      "observed_official_guidance": "WEST 지원구간 확인을 위한 한국장학재단 어학연수비 대출신청이 요구되며, 실제 대출 실행은 추후 합격자 대상으로 안내됨.",
+      "review_question": "지원구간 확인 신청과 실제 대출 실행이 서로 다른 절차로 보존되어 있는가?",
+      "review_status": "manual_compare_pending"
+    },
+    {
+      "id": "WEST-H2-CROSS-02",
+      "topic": "loan_application_period",
+      "source_ids": [
+        "niied_notice",
+        "kosaf_notice"
+      ],
+      "observed_official_guidance": "한국장학재단 신청기간은 2026-07-06 09:00부터 2026-08-05 17:00까지. 서류 제출은 2026-08-05 18:00까지로 별도 안내됨.",
+      "review_question": "WEST 일반 지원기간과 재단 신청기간, 서류 제출 마감시각을 구분했는가?",
+      "review_status": "manual_compare_pending"
+    },
+    {
+      "id": "WEST-H2-CROSS-03",
+      "topic": "academic_status",
+      "source_ids": [
+        "niied_notice",
+        "kosaf_notice",
+        "kosaf_loan_guide"
+      ],
+      "observed_official_guidance": "재단은 지원구간 산정 가능 대상으로 재학생, 휴학생, 초과학기자, 수료자를 안내하며 졸업생은 재단 신청에서 제외함.",
+      "review_question": "지원구간 신청 가능 유형과 실제 대출 실행 가능 유형을 혼동하지 않았는가?",
+      "review_status": "manual_compare_pending"
+    },
+    {
+      "id": "WEST-H2-CROSS-04",
+      "topic": "graduate_evidence",
+      "source_ids": [
+        "niied_notice",
+        "kosaf_notice"
+      ],
+      "observed_official_guidance": "졸업생은 기존 학자금 지원구간 산정내역이 있으면 지원구간 통지서를 발급해 국립국제교육원에 별도로 제출하도록 안내됨.",
+      "review_question": "기존 산정내역이 없는 졸업생의 증빙 분기는 국립국제교육원 공고와 일치하는가?",
+      "review_status": "manual_compare_pending"
+    },
+    {
+      "id": "WEST-H2-CROSS-05",
+      "topic": "family_information_consent",
+      "source_ids": [
+        "kosaf_notice"
+      ],
+      "observed_official_guidance": "지원구간 산정을 위해 가구원 정보제공 동의가 필요하며, 신청자 상황별 제출 절차가 안내됨.",
+      "review_question": "정보제공 동의 누락·서류 미제출의 영향을 지원구간 심사와 대출 실행으로 구분했는가?",
+      "review_status": "manual_compare_pending"
+    },
+    {
+      "id": "WEST-H2-CROSS-06",
+      "topic": "overseas_income_reporting",
+      "source_ids": [
+        "niied_notice",
+        "kosaf_notice"
+      ],
+      "observed_official_guidance": "재외국민전형 입학자의 국외 소득·재산 신고는 일반 지원구간 산정 절차와 다를 수 있음.",
+      "review_question": "특별전형 관련 예외를 모든 해외 거주자에게 일률적으로 적용하지 않는가?",
+      "review_status": "manual_compare_pending"
+    },
+    {
+      "id": "WEST-H2-CROSS-07",
+      "topic": "support_bracket_finalization",
+      "source_ids": [
+        "niied_notice",
+        "kosaf_notice"
+      ],
+      "observed_official_guidance": "한국장학재단은 WEST 사업 특성상 지원구간 최신화 신청기간에 제약이 있을 수 있고 합격자 발표 전 확정된 구간으로 지원한다고 안내함.",
+      "review_question": "지원구간 확정 시점과 개별 지원액 산정의 차이를 보존했는가?",
+      "review_status": "manual_compare_pending"
+    }
+  ],
+  "task_count": 7,
+  "external_pages_downloaded_by_script": false,
+  "external_page_hashes_verified": false,
+  "manual_cross_agency_review_completed": false,
+  "individual_loan_eligibility_determined": false,
+  "current_policy_verified": false,
+  "issues_automatically_resolved": 0,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

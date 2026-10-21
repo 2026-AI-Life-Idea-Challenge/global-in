@@ -1,0 +1,1552 @@
+{
+  "dataset_type": "west_kosaf_evidence_candidates",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "historical_notice": true,
+  "manifest_sha256": "001e251516619a4d60cc6dd2569e165bb4b445c3244228862ad8cf4ef32f2600",
+  "cross_agency_comparison_sha256": "8ed7ff07eb016e8277d90a203f80b935c1fe201ea00c429d7571cea444c7b1f6",
+  "sources": {
+    "kosaf_2026_h2_notice": {
+      "filename": "kosaf_2026_h2_notice.html",
+      "source_url": "https://www.kosaf.go.kr/ko/notice.do?mode=view&page=3&seqNo=21036",
+      "raw_sha256": "04cb641e65dad90db4e559f5d2f3d68870b38cb7d1f27e8f4f23df4d9e512d59",
+      "raw_size_bytes": 1195389,
+      "decoded_encoding": "utf-8",
+      "extracted_text_sha256": "2c0ae9f84bb40f663e01cf3f6947597d9ceae6748fa018b7a4d88f90466b82a9",
+      "extracted_text_length": 63435,
+      "page_scope_isolated": false
+    },
+    "kosaf_west_loan_guide": {
+      "filename": "kosaf_west_loan_guide.html",
+      "source_url": "https://www.kosaf.go.kr/ko/tuition.do?pg=PTHDWestAply_01M&ttab1=2",
+      "raw_sha256": "26571e32abaefacab49537568ca054e94c3ea02173cb71c88f65a75c845ddace",
+      "raw_size_bytes": 1464378,
+      "decoded_encoding": "utf-8",
+      "extracted_text_sha256": "0a0258011a47845c62618f11a47e96a091db5458f536182f62a9b0e57628ac49",
+      "extracted_text_length": 74942,
+      "page_scope_isolated": false
+    }
+  },
+  "candidate_count": 14,
+  "candidates": [
+    {
+      "task_id": "WEST-H2-CROSS-01",
+      "source_id": "kosaf_2026_h2_notice",
+      "search_group_count": 3,
+      "matched_search_groups": 3,
+      "search_status": "all_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "지원구간",
+            "학자금 지원구간"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1027,
+              "text_end_offset": 1031,
+              "excerpt": "전체메뉴 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1058,
+              "text_end_offset": 1062,
+              "excerpt": "장학금 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1094,
+              "text_end_offset": 1098,
+              "excerpt": "장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1150,
+              "text_end_offset": 1154,
+              "excerpt": "장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1183,
+              "text_end_offset": 1187,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구"
+            }
+          ]
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "대출신청",
+            "대출 신청"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "대출신청",
+              "text_start_offset": 31,
+              "text_end_offset": 35,
+              "excerpt": "2026년 하반기 한·미대학생연수(WEST) 어학연수비 대출신청 안내 | 공지사항 상세보기 | 알림 | 재단소개 | 한국장학재단"
+            },
+            {
+              "matched_variant": "대출신청",
+              "text_start_offset": 3992,
+              "text_end_offset": 3997,
+              "excerpt": "자금대출안내 \n \n \n \n \n \n \n \n \n 학자금대출 상환안내 \n \n \n \n \n \n \n \n \n 학자금대출 신용회복관리 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황"
+            },
+            {
+              "matched_variant": "대출신청",
+              "text_start_offset": 4023,
+              "text_end_offset": 4028,
+              "excerpt": "상환안내 \n \n \n \n \n \n \n \n \n 학자금대출 신용회복관리 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행"
+            },
+            {
+              "matched_variant": "대출신청",
+              "text_start_offset": 4052,
+              "text_end_offset": 4057,
+              "excerpt": "신용회복관리 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행"
+            },
+            {
+              "matched_variant": "대출신청",
+              "text_start_offset": 4079,
+              "text_end_offset": 4084,
+              "excerpt": "종합조회 \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n 학자금대출실행(신청현황)"
+            }
+          ]
+        },
+        {
+          "group_number": 3,
+          "searched_variants": [
+            "대출실행",
+            "대출 실행"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "대출실행",
+              "text_start_offset": 4183,
+              "text_end_offset": 4188,
+              "excerpt": "학자금대출 신청 \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n 학자금대출실행(신청현황) \n \n \n \n \n \n \n \n \n 학점은행제 학습자 학자금대출 실행(신청현황) \n \n \n \n \n \n \n \n \n 농촌학자금대출 실행"
+            },
+            {
+              "matched_variant": "대출실행",
+              "text_start_offset": 4214,
+              "text_end_offset": 4219,
+              "excerpt": "학자금대출 신청 \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n 학자금대출실행(신청현황) \n \n \n \n \n \n \n \n \n 학점은행제 학습자 학자금대출 실행(신청현황) \n \n \n \n \n \n \n \n \n 농촌학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n \n 학자금"
+            },
+            {
+              "matched_variant": "대출실행",
+              "text_start_offset": 4243,
+              "text_end_offset": 4247,
+              "excerpt": "학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n 학자금대출실행(신청현황) \n \n \n \n \n \n \n \n \n 학점은행제 학습자 학자금대출 실행(신청현황) \n \n \n \n \n \n \n \n \n 농촌학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n 학자금대출"
+            },
+            {
+              "matched_variant": "대출실행",
+              "text_start_offset": 4285,
+              "text_end_offset": 4290,
+              "excerpt": "사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n 학자금대출실행(신청현황) \n \n \n \n \n \n \n \n \n 학점은행제 학습자 학자금대출 실행(신청현황) \n \n \n \n \n \n \n \n \n 농촌학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n 학자금대출상환 \n \n \n \n \n \n \n \n \n 학자금대출 상환지원"
+            },
+            {
+              "matched_variant": "대출실행",
+              "text_start_offset": 4320,
+              "text_end_offset": 4325,
+              "excerpt": "학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n 학자금대출실행(신청현황) \n \n \n \n \n \n \n \n \n 학점은행제 학습자 학자금대출 실행(신청현황) \n \n \n \n \n \n \n \n \n 농촌학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n 학자금대출상환 \n \n \n \n \n \n \n \n \n 학자금대출 상환지원 \n \n \n \n \n \n \n \n \n 학자금대출 사후관리"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    },
+    {
+      "task_id": "WEST-H2-CROSS-01",
+      "source_id": "kosaf_west_loan_guide",
+      "search_group_count": 3,
+      "matched_search_groups": 3,
+      "search_status": "all_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "지원구간",
+            "학자금 지원구간"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1043,
+              "text_end_offset": 1047,
+              "excerpt": "전체메뉴 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1074,
+              "text_end_offset": 1078,
+              "excerpt": "장학금 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1110,
+              "text_end_offset": 1114,
+              "excerpt": "장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1166,
+              "text_end_offset": 1170,
+              "excerpt": "장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1199,
+              "text_end_offset": 1203,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구"
+            }
+          ]
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "대출신청",
+            "대출 신청"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "대출신청",
+              "text_start_offset": 4008,
+              "text_end_offset": 4013,
+              "excerpt": "자금대출안내 \n \n \n \n \n \n \n \n \n 학자금대출 상환안내 \n \n \n \n \n \n \n \n \n 학자금대출 신용회복관리 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황"
+            },
+            {
+              "matched_variant": "대출신청",
+              "text_start_offset": 4039,
+              "text_end_offset": 4044,
+              "excerpt": "상환안내 \n \n \n \n \n \n \n \n \n 학자금대출 신용회복관리 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행"
+            },
+            {
+              "matched_variant": "대출신청",
+              "text_start_offset": 4068,
+              "text_end_offset": 4073,
+              "excerpt": "신용회복관리 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행"
+            },
+            {
+              "matched_variant": "대출신청",
+              "text_start_offset": 4095,
+              "text_end_offset": 4100,
+              "excerpt": "종합조회 \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n 학자금대출실행(신청현황)"
+            },
+            {
+              "matched_variant": "대출신청",
+              "text_start_offset": 15192,
+              "text_end_offset": 15197,
+              "excerpt": "학자금대출안내 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 상환안내 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신용회복관리 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대"
+            }
+          ]
+        },
+        {
+          "group_number": 3,
+          "searched_variants": [
+            "대출실행",
+            "대출 실행"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "대출실행",
+              "text_start_offset": 4199,
+              "text_end_offset": 4204,
+              "excerpt": "학자금대출 신청 \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n 학자금대출실행(신청현황) \n \n \n \n \n \n \n \n \n 학점은행제 학습자 학자금대출 실행(신청현황) \n \n \n \n \n \n \n \n \n 농촌학자금대출 실행"
+            },
+            {
+              "matched_variant": "대출실행",
+              "text_start_offset": 4230,
+              "text_end_offset": 4235,
+              "excerpt": "학자금대출 신청 \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n 학자금대출실행(신청현황) \n \n \n \n \n \n \n \n \n 학점은행제 학습자 학자금대출 실행(신청현황) \n \n \n \n \n \n \n \n \n 농촌학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n \n 학자금"
+            },
+            {
+              "matched_variant": "대출실행",
+              "text_start_offset": 4259,
+              "text_end_offset": 4263,
+              "excerpt": "학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n 학자금대출실행(신청현황) \n \n \n \n \n \n \n \n \n 학점은행제 학습자 학자금대출 실행(신청현황) \n \n \n \n \n \n \n \n \n 농촌학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n 학자금대출"
+            },
+            {
+              "matched_variant": "대출실행",
+              "text_start_offset": 4301,
+              "text_end_offset": 4306,
+              "excerpt": "사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n 학자금대출실행(신청현황) \n \n \n \n \n \n \n \n \n 학점은행제 학습자 학자금대출 실행(신청현황) \n \n \n \n \n \n \n \n \n 농촌학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n 학자금대출상환 \n \n \n \n \n \n \n \n \n 학자금대출 상환지원"
+            },
+            {
+              "matched_variant": "대출실행",
+              "text_start_offset": 4336,
+              "text_end_offset": 4341,
+              "excerpt": "학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n 학자금대출실행(신청현황) \n \n \n \n \n \n \n \n \n 학점은행제 학습자 학자금대출 실행(신청현황) \n \n \n \n \n \n \n \n \n 농촌학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n \n 학자금뱅킹 \n \n \n \n \n \n \n \n \n \n 학자금대출상환 \n \n \n \n \n \n \n \n \n 학자금대출 상환지원 \n \n \n \n \n \n \n \n \n 학자금대출 사후관리"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    },
+    {
+      "task_id": "WEST-H2-CROSS-02",
+      "source_id": "kosaf_2026_h2_notice",
+      "search_group_count": 4,
+      "matched_search_groups": 4,
+      "search_status": "all_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "7월 6일",
+            "7.6.",
+            "07.06"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "7.6.",
+              "text_start_offset": 22987,
+              "text_end_offset": 22992,
+              "excerpt": "WEST 어학연수비대출\" 신청 및 서류제출, 가구원 정보제공 동의를 모두 완료해 주시기 바랍니다.\n \n \n\n※ 어학연수비대출은 학자금 지원구간 정보 확인을 위해 필수로 신청하셔야 하며 어학연수비대출 실행은 추후 합격자 대상으로 안내 예정입니다.\n \n \n\n \n \n \n\n◆ WEST 어학연수비 대출신청기간\n \n \n\n2026. 7. 6.(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※"
+            }
+          ]
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "8월 5일",
+            "8.5.",
+            "08.05"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "8.5.",
+              "text_start_offset": 23004,
+              "text_end_offset": 23009,
+              "excerpt": "및 서류제출, 가구원 정보제공 동의를 모두 완료해 주시기 바랍니다.\n \n \n\n※ 어학연수비대출은 학자금 지원구간 정보 확인을 위해 필수로 신청하셔야 하며 어학연수비대출 실행은 추후 합격자 대상으로 안내 예정입니다.\n \n \n\n \n \n \n\n◆ WEST 어학연수비 대출신청기간\n \n \n\n2026. 7. 6.(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비"
+            },
+            {
+              "matched_variant": "8.5.",
+              "text_start_offset": 23064,
+              "text_end_offset": 23069,
+              "excerpt": "구간 정보 확인을 위해 필수로 신청하셔야 하며 어학연수비대출 실행은 추후 합격자 대상으로 안내 예정입니다.\n \n \n\n \n \n \n\n◆ WEST 어학연수비 대출신청기간\n \n \n\n2026. 7. 6.(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우"
+            },
+            {
+              "matched_variant": "8.5.",
+              "text_start_offset": 23597,
+              "text_end_offset": 23602,
+              "excerpt": "앱 접속 후 로그인> WEST어학연수비 대출(스크롤을 하단으로 내려야 확인가능)\n \n \n\n \n \n \n\n◆ 서류제출 방법\n \n \n\n한국장학재단 홈페이지 로그인 > 학자금대출 > 학자금대출신청 > 서류제출현황 > 이미지업로드\n \n \n\n- 신청완료일 다음 영업일에 홈페이지 방문하여 서류제출 여부 확인\n \n \n\n→ 마지막 날인 8. 5.(수) 신청완료자는 서류생략자도 8. 5.(수) 18시까지 서류(필수 및 선택) 제출 완료 필수\n \n \n\n- 8. 5.(수) 18시까지 제출된 서류만 인정되며, 서류미비 및 오제출 경우 신청 미완료로 간주\n \n \n\n- 선택서류(기초/차상위) 미제출 시, 필수서류 기준으로 학자금 지원구간 심사 진행"
+            },
+            {
+              "matched_variant": "8.5.",
+              "text_start_offset": 23620,
+              "text_end_offset": 23625,
+              "excerpt": "출(스크롤을 하단으로 내려야 확인가능)\n \n \n\n \n \n \n\n◆ 서류제출 방법\n \n \n\n한국장학재단 홈페이지 로그인 > 학자금대출 > 학자금대출신청 > 서류제출현황 > 이미지업로드\n \n \n\n- 신청완료일 다음 영업일에 홈페이지 방문하여 서류제출 여부 확인\n \n \n\n→ 마지막 날인 8. 5.(수) 신청완료자는 서류생략자도 8. 5.(수) 18시까지 서류(필수 및 선택) 제출 완료 필수\n \n \n\n- 8. 5.(수) 18시까지 제출된 서류만 인정되며, 서류미비 및 오제출 경우 신청 미완료로 간주\n \n \n\n- 선택서류(기초/차상위) 미제출 시, 필수서류 기준으로 학자금 지원구간 심사 진행\n \n \n\n \n \n \n\n \n \n \n\n \n \n \n\n◆ 가구원 정보제공"
+            },
+            {
+              "matched_variant": "8.5.",
+              "text_start_offset": 23663,
+              "text_end_offset": 23668,
+              "excerpt": "한국장학재단 홈페이지 로그인 > 학자금대출 > 학자금대출신청 > 서류제출현황 > 이미지업로드\n \n \n\n- 신청완료일 다음 영업일에 홈페이지 방문하여 서류제출 여부 확인\n \n \n\n→ 마지막 날인 8. 5.(수) 신청완료자는 서류생략자도 8. 5.(수) 18시까지 서류(필수 및 선택) 제출 완료 필수\n \n \n\n- 8. 5.(수) 18시까지 제출된 서류만 인정되며, 서류미비 및 오제출 경우 신청 미완료로 간주\n \n \n\n- 선택서류(기초/차상위) 미제출 시, 필수서류 기준으로 학자금 지원구간 심사 진행\n \n \n\n \n \n \n\n \n \n \n\n \n \n \n\n◆ 가구원 정보제공 동의(필수)\n \n \n\n‘사회보장정보시스템’을 통한 학자금 지원구간 산정을 위"
+            }
+          ]
+        },
+        {
+          "group_number": 3,
+          "searched_variants": [
+            "17시",
+            "17:00"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "17:00",
+              "text_start_offset": 23013,
+              "text_end_offset": 23018,
+              "excerpt": "구원 정보제공 동의를 모두 완료해 주시기 바랍니다.\n \n \n\n※ 어학연수비대출은 학자금 지원구간 정보 확인을 위해 필수로 신청하셔야 하며 어학연수비대출 실행은 추후 합격자 대상으로 안내 예정입니다.\n \n \n\n \n \n \n\n◆ WEST 어학연수비 대출신청기간\n \n \n\n2026. 7. 6.(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외"
+            },
+            {
+              "matched_variant": "17:00",
+              "text_start_offset": 23074,
+              "text_end_offset": 23079,
+              "excerpt": "위해 필수로 신청하셔야 하며 어학연수비대출 실행은 추후 합격자 대상으로 안내 예정입니다.\n \n \n\n \n \n \n\n◆ WEST 어학연수비 대출신청기간\n \n \n\n2026. 7. 6.(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우 ‘학자금 지원구간"
+            }
+          ]
+        },
+        {
+          "group_number": 4,
+          "searched_variants": [
+            "18시",
+            "18:00"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "18시",
+              "text_start_offset": 23629,
+              "text_end_offset": 23632,
+              "excerpt": "으로 내려야 확인가능)\n \n \n\n \n \n \n\n◆ 서류제출 방법\n \n \n\n한국장학재단 홈페이지 로그인 > 학자금대출 > 학자금대출신청 > 서류제출현황 > 이미지업로드\n \n \n\n- 신청완료일 다음 영업일에 홈페이지 방문하여 서류제출 여부 확인\n \n \n\n→ 마지막 날인 8. 5.(수) 신청완료자는 서류생략자도 8. 5.(수) 18시까지 서류(필수 및 선택) 제출 완료 필수\n \n \n\n- 8. 5.(수) 18시까지 제출된 서류만 인정되며, 서류미비 및 오제출 경우 신청 미완료로 간주\n \n \n\n- 선택서류(기초/차상위) 미제출 시, 필수서류 기준으로 학자금 지원구간 심사 진행\n \n \n\n \n \n \n\n \n \n \n\n \n \n \n\n◆ 가구원 정보제공 동의(필수)"
+            },
+            {
+              "matched_variant": "18시",
+              "text_start_offset": 23672,
+              "text_end_offset": 23675,
+              "excerpt": "학재단 홈페이지 로그인 > 학자금대출 > 학자금대출신청 > 서류제출현황 > 이미지업로드\n \n \n\n- 신청완료일 다음 영업일에 홈페이지 방문하여 서류제출 여부 확인\n \n \n\n→ 마지막 날인 8. 5.(수) 신청완료자는 서류생략자도 8. 5.(수) 18시까지 서류(필수 및 선택) 제출 완료 필수\n \n \n\n- 8. 5.(수) 18시까지 제출된 서류만 인정되며, 서류미비 및 오제출 경우 신청 미완료로 간주\n \n \n\n- 선택서류(기초/차상위) 미제출 시, 필수서류 기준으로 학자금 지원구간 심사 진행\n \n \n\n \n \n \n\n \n \n \n\n \n \n \n\n◆ 가구원 정보제공 동의(필수)\n \n \n\n‘사회보장정보시스템’을 통한 학자금 지원구간 산정을 위하여 반드시"
+            },
+            {
+              "matched_variant": "18시",
+              "text_start_offset": 26528,
+              "text_end_offset": 26531,
+              "excerpt": "이사장: 박창달\n \n 사업자번호: 104-82-10922\n \n 주소: (41200) 대구광역시 동구 신암로 125(신암동 819-1) 한국장학재단 \n \n \n \n \n 콜센터 1599-2000 (유료, ARS : 365일 24시간 운영, 상담원 연결 : 평일 09시 ~ 18시) \n \n \n \n \n \n \n \n \n \n 찾아오시는길 \n \n \n \n \n 조직도 및 부서안내 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 개인정보처리방침 \n \n \n \n \n 이용약관 \n \n \n \n \n 이메일집단수집거부"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    },
+    {
+      "task_id": "WEST-H2-CROSS-02",
+      "source_id": "kosaf_west_loan_guide",
+      "search_group_count": 4,
+      "matched_search_groups": 3,
+      "search_status": "partial_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "7월 6일",
+            "7.6.",
+            "07.06"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "7.6.",
+              "text_start_offset": 32837,
+              "text_end_offset": 32842,
+              "excerpt": "그램 어학연수비대출 \n \n \n \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n국립국제교육원의 \"한·미 대학생 연수(WEST)프로그램\" 참가자들에게 제공하는 어학연수비 대출제도\n \n \n \n \n \n \n \n \n \n \n 일정 \n \n \n \n \n \n \n단기 WEST 16기(6개월) \n \n \n신청기간 : 2026. 7. 6.(월) ~ 2026. 8. 5.(수)\n \n \n \n \n \n중기 WEST 16기(12개월) \n \n \n신청기간 : 2026. 7. 6.(월) ~ 2026. 8. 5.(수)\n \n \n \n \n \n모든 일정은 국립국제교육원의 일정에 따라 변동가능\n \n \n \n※ WEST 프로그램 참가예정자 중 졸업생은 한국장학재단 신청 제외대상(국립국"
+            },
+            {
+              "matched_variant": "7.6.",
+              "text_start_offset": 32909,
+              "text_end_offset": 32914,
+              "excerpt": "수(WEST)프로그램\" 참가자들에게 제공하는 어학연수비 대출제도\n \n \n \n \n \n \n \n \n \n \n 일정 \n \n \n \n \n \n \n단기 WEST 16기(6개월) \n \n \n신청기간 : 2026. 7. 6.(월) ~ 2026. 8. 5.(수)\n \n \n \n \n \n중기 WEST 16기(12개월) \n \n \n신청기간 : 2026. 7. 6.(월) ~ 2026. 8. 5.(수)\n \n \n \n \n \n모든 일정은 국립국제교육원의 일정에 따라 변동가능\n \n \n \n※ WEST 프로그램 참가예정자 중 졸업생은 한국장학재단 신청 제외대상(국립국제교육원 공고 참조)이며, 기존 학자금 지원구간 산정내역이 있는 경우 학자금 지원 구간 통지서*를 발급하여 국립국제교육원에 제출"
+            }
+          ]
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "8월 5일",
+            "8.5.",
+            "08.05"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "8.5.",
+              "text_start_offset": 32854,
+              "text_end_offset": 32859,
+              "excerpt": "국립국제교육원의 \"한·미 대학생 연수(WEST)프로그램\" 참가자들에게 제공하는 어학연수비 대출제도\n \n \n \n \n \n \n \n \n \n \n 일정 \n \n \n \n \n \n \n단기 WEST 16기(6개월) \n \n \n신청기간 : 2026. 7. 6.(월) ~ 2026. 8. 5.(수)\n \n \n \n \n \n중기 WEST 16기(12개월) \n \n \n신청기간 : 2026. 7. 6.(월) ~ 2026. 8. 5.(수)\n \n \n \n \n \n모든 일정은 국립국제교육원의 일정에 따라 변동가능\n \n \n \n※ WEST 프로그램 참가예정자 중 졸업생은 한국장학재단 신청 제외대상(국립국제교육원 공고 참조)이며, 기존"
+            },
+            {
+              "matched_variant": "8.5.",
+              "text_start_offset": 32926,
+              "text_end_offset": 32931,
+              "excerpt": "에게 제공하는 어학연수비 대출제도\n \n \n \n \n \n \n \n \n \n \n 일정 \n \n \n \n \n \n \n단기 WEST 16기(6개월) \n \n \n신청기간 : 2026. 7. 6.(월) ~ 2026. 8. 5.(수)\n \n \n \n \n \n중기 WEST 16기(12개월) \n \n \n신청기간 : 2026. 7. 6.(월) ~ 2026. 8. 5.(수)\n \n \n \n \n \n모든 일정은 국립국제교육원의 일정에 따라 변동가능\n \n \n \n※ WEST 프로그램 참가예정자 중 졸업생은 한국장학재단 신청 제외대상(국립국제교육원 공고 참조)이며, 기존 학자금 지원구간 산정내역이 있는 경우 학자금 지원 구간 통지서*를 발급하여 국립국제교육원에 제출 필요\n \n \n* 장학금 > 증명"
+            }
+          ]
+        },
+        {
+          "group_number": 3,
+          "searched_variants": [
+            "17시",
+            "17:00"
+          ],
+          "matched": false,
+          "matches": []
+        },
+        {
+          "group_number": 4,
+          "searched_variants": [
+            "18시",
+            "18:00"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "18시",
+              "text_start_offset": 38029,
+              "text_end_offset": 38032,
+              "excerpt": "이사장: 박창달\n \n 사업자번호: 104-82-10922\n \n 주소: (41200) 대구광역시 동구 신암로 125(신암동 819-1) 한국장학재단 \n \n \n \n \n 콜센터 1599-2000 (유료, ARS : 365일 24시간 운영, 상담원 연결 : 평일 09시 ~ 18시) \n \n \n \n \n \n \n \n \n \n 찾아오시는길 \n \n \n \n \n 조직도 및 부서안내 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 개인정보처리방침 \n \n \n \n \n 이용약관 \n \n \n \n \n 이메일집단수집거부"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    },
+    {
+      "task_id": "WEST-H2-CROSS-03",
+      "source_id": "kosaf_2026_h2_notice",
+      "search_group_count": 5,
+      "matched_search_groups": 5,
+      "search_status": "all_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "재학생"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "재학생",
+              "text_start_offset": 11885,
+              "text_end_offset": 11888,
+              "excerpt": "전체메뉴 닫기 \n \n \n \n \n \n \n \n \n \n \n 교육급여바우처 \n \n \n \n \n 기부 \n \n \n \n \n 고졸만JOB \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 검색 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n재학생 \n \n \n \n \n원클릭 신청\n \n \n학자금 지원구간정보조회\n \n \n증명서발급(학자금대출)\n \n \n출근부 관리(국가근로장학금)\n \n \n부실채무현황\n \n \n금융교육\n \n \n이자계산기\n \n \n \n \n \n \n \n \n \n졸업생 \n \n \n \n \n기부하기\n \n \n대출내역\n \n \n증명서 발급(학자금대출)\n \n \n취업 후 상환 학자금대"
+            },
+            {
+              "matched_variant": "재학생",
+              "text_start_offset": 23143,
+              "text_end_offset": 23146,
+              "excerpt": "어학연수비 대출신청기간\n \n \n\n2026. 7. 6.(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우 ‘학자금 지원구간 통지서’를 발급하여 국립국제교육원에 별도 제출하셔야 합니다.\n \n \n\n \n \n \n\n◆ 신청경로\n \n \n\n(PC)"
+            },
+            {
+              "matched_variant": "재학생",
+              "text_start_offset": 26930,
+              "text_end_offset": 26933,
+              "excerpt": "COPYRIGHT ⓒ KOREA STUDENT AID FOUNDATION. ALL RIGHT RESERVED. \n \n \n \n \n \n \n \n \n 교육부이 누리집은 교육부 산하기관 누리집입니다. \n \n \n \n \n \n \n\n \n \n \n \n \n \n\n \n \n \n \n QUICK\nMENU \n \n \n \n \n 신입생/재학생 \n \n \n \n \n \n 원클릭 신청 \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n 증명서발급(학자금대출) \n \n \n \n \n 출근부 관리(국가근로장학금) \n \n \n \n \n 부실채무현황 \n \n \n \n \n 금융교육 \n \n \n \n \n 이자계산기 \n \n \n \n \n \n ICL상환금 계산 \n \n \n \n \n \n 약관 및"
+            }
+          ]
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "휴학생"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "휴학생",
+              "text_start_offset": 23148,
+              "text_end_offset": 23151,
+              "excerpt": "대출신청기간\n \n \n\n2026. 7. 6.(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우 ‘학자금 지원구간 통지서’를 발급하여 국립국제교육원에 별도 제출하셔야 합니다.\n \n \n\n \n \n \n\n◆ 신청경로\n \n \n\n(PC)\n \n \n\n- 한국"
+            }
+          ]
+        },
+        {
+          "group_number": 3,
+          "searched_variants": [
+            "초과학기",
+            "초과 학기"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "초과학기",
+              "text_start_offset": 23153,
+              "text_end_offset": 23157,
+              "excerpt": "기간\n \n \n\n2026. 7. 6.(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우 ‘학자금 지원구간 통지서’를 발급하여 국립국제교육원에 별도 제출하셔야 합니다.\n \n \n\n \n \n \n\n◆ 신청경로\n \n \n\n(PC)\n \n \n\n- 한국장학재단 홈"
+            }
+          ]
+        },
+        {
+          "group_number": 4,
+          "searched_variants": [
+            "수료자"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "수료자",
+              "text_start_offset": 23160,
+              "text_end_offset": 23163,
+              "excerpt": "2026. 7. 6.(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우 ‘학자금 지원구간 통지서’를 발급하여 국립국제교육원에 별도 제출하셔야 합니다.\n \n \n\n \n \n \n\n◆ 신청경로\n \n \n\n(PC)\n \n \n\n- 한국장학재단 홈페이지 로그"
+            }
+          ]
+        },
+        {
+          "group_number": 5,
+          "searched_variants": [
+            "졸업생"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "졸업생",
+              "text_start_offset": 12007,
+              "text_end_offset": 12010,
+              "excerpt": "검색 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n재학생 \n \n \n \n \n원클릭 신청\n \n \n학자금 지원구간정보조회\n \n \n증명서발급(학자금대출)\n \n \n출근부 관리(국가근로장학금)\n \n \n부실채무현황\n \n \n금융교육\n \n \n이자계산기\n \n \n \n \n \n \n \n \n \n졸업생 \n \n \n \n \n기부하기\n \n \n대출내역\n \n \n증명서 발급(학자금대출)\n \n \n취업 후 상환 학자금대출 이체약정 등록\n \n \n부실채무현황\n \n \n \n \n \n \n \n \n \n학부모 \n \n \n \n \n기부하기\n \n \n가구원 정보제공 동의 하기\n \n \n학부모 알리미\n \n \n \n \n \n \n \n \n \n기업/기관 \n \n \n \n \n기"
+            },
+            {
+              "matched_variant": "졸업생",
+              "text_start_offset": 23172,
+              "text_end_offset": 23175,
+              "excerpt": "(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우 ‘학자금 지원구간 통지서’를 발급하여 국립국제교육원에 별도 제출하셔야 합니다.\n \n \n\n \n \n \n\n◆ 신청경로\n \n \n\n(PC)\n \n \n\n- 한국장학재단 홈페이지 로그인 > 학자금대출 >"
+            },
+            {
+              "matched_variant": "졸업생",
+              "text_start_offset": 27142,
+              "text_end_offset": 27145,
+              "excerpt": "학자금 지원구간 정보 조회 \n \n \n \n \n 증명서발급(학자금대출) \n \n \n \n \n 출근부 관리(국가근로장학금) \n \n \n \n \n 부실채무현황 \n \n \n \n \n 금융교육 \n \n \n \n \n 이자계산기 \n \n \n \n \n \n ICL상환금 계산 \n \n \n \n \n \n 약관 및 동의서 등 \n \n \n \n \n \n \n \n \n \n \n 졸업생 \n \n \n \n \n \n 기부하기 \n \n \n \n \n 대출내역 \n \n \n \n \n 증명서발급(학자금대출) \n \n \n \n \n 취업후 상환 학자금대출 이체약정 등록 \n \n \n \n \n 부실채무현황 \n \n \n \n \n \n \n \n \n \n 학부모 \n \n \n \n \n기부하기\n \n \n \n \n가구원 동의 하기\n \n \n \n \n \n만 14세미만 법정"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    },
+    {
+      "task_id": "WEST-H2-CROSS-03",
+      "source_id": "kosaf_west_loan_guide",
+      "search_group_count": 5,
+      "matched_search_groups": 2,
+      "search_status": "partial_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "재학생"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "재학생",
+              "text_start_offset": 11771,
+              "text_end_offset": 11774,
+              "excerpt": "전체메뉴 닫기 \n \n \n \n \n \n \n \n \n \n \n 교육급여바우처 \n \n \n \n \n 기부 \n \n \n \n \n 고졸만JOB \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 검색 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n재학생 \n \n \n \n \n원클릭 신청\n \n \n학자금 지원구간정보조회\n \n \n증명서발급(학자금대출)\n \n \n출근부 관리(국가근로장학금)\n \n \n부실채무현황\n \n \n금융교육\n \n \n이자계산기\n \n \n \n \n \n \n \n \n \n졸업생 \n \n \n \n \n기부하기\n \n \n대출내역\n \n \n증명서 발급(학자금대출)\n \n \n취업 후 상환 학자금대"
+            },
+            {
+              "matched_variant": "재학생",
+              "text_start_offset": 38437,
+              "text_end_offset": 38440,
+              "excerpt": "COPYRIGHT ⓒ KOREA STUDENT AID FOUNDATION. ALL RIGHT RESERVED. \n \n \n \n \n \n \n \n \n 교육부이 누리집은 교육부 산하기관 누리집입니다. \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n \n \n\n \n \n \n \n QUICK\nMENU \n \n \n \n \n 신입생/재학생 \n \n \n \n \n \n 원클릭 신청 \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n 증명서발급(학자금대출) \n \n \n \n \n 출근부 관리(국가근로장학금) \n \n \n \n \n 부실채무현황 \n \n \n \n \n 금융교육 \n \n \n \n \n 이자계산기 \n \n \n \n \n \n ICL상환금 계산 \n \n \n \n \n \n 약관 및"
+            }
+          ]
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "휴학생"
+          ],
+          "matched": false,
+          "matches": []
+        },
+        {
+          "group_number": 3,
+          "searched_variants": [
+            "초과학기",
+            "초과 학기"
+          ],
+          "matched": false,
+          "matches": []
+        },
+        {
+          "group_number": 4,
+          "searched_variants": [
+            "수료자"
+          ],
+          "matched": false,
+          "matches": []
+        },
+        {
+          "group_number": 5,
+          "searched_variants": [
+            "졸업생"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "졸업생",
+              "text_start_offset": 11893,
+              "text_end_offset": 11896,
+              "excerpt": "검색 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n재학생 \n \n \n \n \n원클릭 신청\n \n \n학자금 지원구간정보조회\n \n \n증명서발급(학자금대출)\n \n \n출근부 관리(국가근로장학금)\n \n \n부실채무현황\n \n \n금융교육\n \n \n이자계산기\n \n \n \n \n \n \n \n \n \n졸업생 \n \n \n \n \n기부하기\n \n \n대출내역\n \n \n증명서 발급(학자금대출)\n \n \n취업 후 상환 학자금대출 이체약정 등록\n \n \n부실채무현황\n \n \n \n \n \n \n \n \n \n학부모 \n \n \n \n \n기부하기\n \n \n가구원 정보제공 동의 하기\n \n \n학부모 알리미\n \n \n \n \n \n \n \n \n \n기업/기관 \n \n \n \n \n기"
+            },
+            {
+              "matched_variant": "졸업생",
+              "text_start_offset": 32999,
+              "text_end_offset": 33002,
+              "excerpt": "신청기간 : 2026. 7. 6.(월) ~ 2026. 8. 5.(수)\n \n \n \n \n \n중기 WEST 16기(12개월) \n \n \n신청기간 : 2026. 7. 6.(월) ~ 2026. 8. 5.(수)\n \n \n \n \n \n모든 일정은 국립국제교육원의 일정에 따라 변동가능\n \n \n \n※ WEST 프로그램 참가예정자 중 졸업생은 한국장학재단 신청 제외대상(국립국제교육원 공고 참조)이며, 기존 학자금 지원구간 산정내역이 있는 경우 학자금 지원 구간 통지서*를 발급하여 국립국제교육원에 제출 필요\n \n \n* 장학금 > 증명서발급 > 학자금 지원구간 통지서 발급\n \n \n \n \n \n※ 각 항목을 클릭하시면 해당 학자금에 대한 자세한 내용을 보실 수 있"
+            },
+            {
+              "matched_variant": "졸업생",
+              "text_start_offset": 38649,
+              "text_end_offset": 38652,
+              "excerpt": "학자금 지원구간 정보 조회 \n \n \n \n \n 증명서발급(학자금대출) \n \n \n \n \n 출근부 관리(국가근로장학금) \n \n \n \n \n 부실채무현황 \n \n \n \n \n 금융교육 \n \n \n \n \n 이자계산기 \n \n \n \n \n \n ICL상환금 계산 \n \n \n \n \n \n 약관 및 동의서 등 \n \n \n \n \n \n \n \n \n \n \n 졸업생 \n \n \n \n \n \n 기부하기 \n \n \n \n \n 대출내역 \n \n \n \n \n 증명서발급(학자금대출) \n \n \n \n \n 취업후 상환 학자금대출 이체약정 등록 \n \n \n \n \n 부실채무현황 \n \n \n \n \n \n \n \n \n \n 학부모 \n \n \n \n \n기부하기\n \n \n \n \n가구원 동의 하기\n \n \n \n \n \n만 14세미만 법정"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    },
+    {
+      "task_id": "WEST-H2-CROSS-04",
+      "source_id": "kosaf_2026_h2_notice",
+      "search_group_count": 3,
+      "matched_search_groups": 3,
+      "search_status": "all_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "졸업생"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "졸업생",
+              "text_start_offset": 12007,
+              "text_end_offset": 12010,
+              "excerpt": "검색 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n재학생 \n \n \n \n \n원클릭 신청\n \n \n학자금 지원구간정보조회\n \n \n증명서발급(학자금대출)\n \n \n출근부 관리(국가근로장학금)\n \n \n부실채무현황\n \n \n금융교육\n \n \n이자계산기\n \n \n \n \n \n \n \n \n \n졸업생 \n \n \n \n \n기부하기\n \n \n대출내역\n \n \n증명서 발급(학자금대출)\n \n \n취업 후 상환 학자금대출 이체약정 등록\n \n \n부실채무현황\n \n \n \n \n \n \n \n \n \n학부모 \n \n \n \n \n기부하기\n \n \n가구원 정보제공 동의 하기\n \n \n학부모 알리미\n \n \n \n \n \n \n \n \n \n기업/기관 \n \n \n \n \n기"
+            },
+            {
+              "matched_variant": "졸업생",
+              "text_start_offset": 23172,
+              "text_end_offset": 23175,
+              "excerpt": "(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우 ‘학자금 지원구간 통지서’를 발급하여 국립국제교육원에 별도 제출하셔야 합니다.\n \n \n\n \n \n \n\n◆ 신청경로\n \n \n\n(PC)\n \n \n\n- 한국장학재단 홈페이지 로그인 > 학자금대출 >"
+            },
+            {
+              "matched_variant": "졸업생",
+              "text_start_offset": 27142,
+              "text_end_offset": 27145,
+              "excerpt": "학자금 지원구간 정보 조회 \n \n \n \n \n 증명서발급(학자금대출) \n \n \n \n \n 출근부 관리(국가근로장학금) \n \n \n \n \n 부실채무현황 \n \n \n \n \n 금융교육 \n \n \n \n \n 이자계산기 \n \n \n \n \n \n ICL상환금 계산 \n \n \n \n \n \n 약관 및 동의서 등 \n \n \n \n \n \n \n \n \n \n \n 졸업생 \n \n \n \n \n \n 기부하기 \n \n \n \n \n 대출내역 \n \n \n \n \n 증명서발급(학자금대출) \n \n \n \n \n 취업후 상환 학자금대출 이체약정 등록 \n \n \n \n \n 부실채무현황 \n \n \n \n \n \n \n \n \n \n 학부모 \n \n \n \n \n기부하기\n \n \n \n \n가구원 동의 하기\n \n \n \n \n \n만 14세미만 법정"
+            }
+          ]
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "지원구간 통지서",
+            "학자금 지원구간 통지서"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "학자금 지원구간 통지서",
+              "text_start_offset": 3389,
+              "text_end_offset": 3401,
+              "excerpt": "계좌정보수정 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n 신청증명서발급 \n \n \n \n \n \n \n \n \n 장학증서발급 \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n 학자금 지원구간 통지서 발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n 중복지원방지 제도 안내 \n \n \n \n \n \n \n \n \n 중복지원현황 조회 \n \n \n \n \n \n \n \n \n 분할상환약정신청"
+            },
+            {
+              "matched_variant": "지원구간 통지서",
+              "text_start_offset": 3393,
+              "text_end_offset": 3401,
+              "excerpt": "정보수정 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n 신청증명서발급 \n \n \n \n \n \n \n \n \n 장학증서발급 \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n 학자금 지원구간 통지서 발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n 중복지원방지 제도 안내 \n \n \n \n \n \n \n \n \n 중복지원현황 조회 \n \n \n \n \n \n \n \n \n 분할상환약정신청"
+            },
+            {
+              "matched_variant": "지원구간 통지서",
+              "text_start_offset": 14778,
+              "text_end_offset": 14786,
+              "excerpt": "계좌정보수정 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n \n \n 신청증명서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n 장학증서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 통지서 발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n \n \n 중복지원방지 제도 안내 \n \n \n \n \n \n \n \n \n \n \n \n \n 중복지원현황 조회 \n \n \n \n \n \n \n \n \n \n \n \n \n 분할상환약정신청"
+            },
+            {
+              "matched_variant": "지원구간 통지서",
+              "text_start_offset": 23254,
+              "text_end_offset": 23262,
+              "excerpt": "17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우 ‘학자금 지원구간 통지서’를 발급하여 국립국제교육원에 별도 제출하셔야 합니다.\n \n \n\n \n \n \n\n◆ 신청경로\n \n \n\n(PC)\n \n \n\n- 한국장학재단 홈페이지 로그인 > 학자금대출 > 학자금대출 신청 > 한·미대학생연수(WEST) 프로그램 신청\n \n \n\n(모바일)\n \n \n\n- 한국장학재단 모바일앱 접속 후 로그인> WEST어학연수비 대출("
+            },
+            {
+              "matched_variant": "지원구간 통지서",
+              "text_start_offset": 41570,
+              "text_end_offset": 41578,
+              "excerpt": "증명서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n 신청증명서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학증서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 통지서 발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n \n \n \n \n 중복지원방지 제도 안내 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 중복지원현황 조회 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 분할상환약정신청"
+            }
+          ]
+        },
+        {
+          "group_number": 3,
+          "searched_variants": [
+            "증빙",
+            "제출"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "제출",
+              "text_start_offset": 2470,
+              "text_end_offset": 2472,
+              "excerpt": "주거안정장학금 \n \n \n \n \n \n \n \n \n \n \n 주거안정장학금 \n \n \n \n \n \n \n \n \n \n 소개 \n \n \n \n \n \n \n \n \n 신청하기 \n \n \n \n \n \n \n \n \n 신청현황 \n \n \n \n \n \n \n \n \n 교육이수 및 장학생서약서 제출 \n \n \n \n \n \n \n \n \n 지급요청서 작성 \n \n \n \n \n \n \n \n \n 지급요청서 승인현황 \n \n \n \n \n \n \n \n \n 포기(반환)서약서 제출 \n \n \n \n \n \n \n \n \n 수혜내역 \n \n \n \n \n \n \n \n \n 공지사항 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 복권기금"
+            },
+            {
+              "matched_variant": "제출",
+              "text_start_offset": 2557,
+              "text_end_offset": 2559,
+              "excerpt": "소개 \n \n \n \n \n \n \n \n \n 신청하기 \n \n \n \n \n \n \n \n \n 신청현황 \n \n \n \n \n \n \n \n \n 교육이수 및 장학생서약서 제출 \n \n \n \n \n \n \n \n \n 지급요청서 작성 \n \n \n \n \n \n \n \n \n 지급요청서 승인현황 \n \n \n \n \n \n \n \n \n 포기(반환)서약서 제출 \n \n \n \n \n \n \n \n \n 수혜내역 \n \n \n \n \n \n \n \n \n 공지사항 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 복권기금 꿈사다리 우수 장학사업 \n \n \n \n \n \n \n \n \n \n \n 복권기금 꿈사다리 우수 장학사업 \n \n \n \n \n \n \n \n \n \n 복권기금 꿈사다리 우수"
+            },
+            {
+              "matched_variant": "제출",
+              "text_start_offset": 3188,
+              "text_end_offset": 3190,
+              "excerpt": "신청가이드 \n \n \n \n \n \n \n \n \n 신청서작성 \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n 신청현황 \n \n \n \n \n \n \n \n \n 국가장학금 진행현황 \n \n \n \n \n \n \n \n \n 선정결과 \n \n \n \n \n \n \n \n \n 수혜내역 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n 계좌정보수정 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n 신청증명서발급 \n \n \n \n \n \n \n \n \n 장학증서발급 \n \n \n \n \n \n \n \n \n 증명서발급"
+            },
+            {
+              "matched_variant": "제출",
+              "text_start_offset": 4133,
+              "text_end_offset": 4135,
+              "excerpt": "학자금대출 신청 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n \n 학자금대출 신청 \n \n \n \n \n \n \n \n \n 학자금대출 신청가이드 \n \n \n \n \n \n \n \n \n 사전신청현황 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n \n 학자금대출 실행 \n \n \n \n \n \n \n \n \n \n 학자금대출실행(신청현황) \n \n \n \n \n \n \n \n \n 학점은행제 학습자 학자금대출 실행(신청현황)"
+            },
+            {
+              "matched_variant": "제출",
+              "text_start_offset": 13835,
+              "text_end_offset": 13837,
+              "excerpt": "재장학금 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 주거안정장학금 \n \n \n \n \n \n \n \n \n \n \n \n 소개 \n \n \n \n \n \n \n \n \n \n \n \n \n 신청하기 \n \n \n \n \n \n \n \n \n \n \n \n \n 신청현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 교육이수 및 장학생서약서 제출 \n \n \n \n \n \n \n \n \n \n \n \n \n 지급요청서 작성 \n \n \n \n \n \n \n \n \n \n \n \n \n 지급요청서 승인현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 포기(반환)서약서 제출 \n \n \n \n \n \n \n \n \n \n \n \n \n 수혜내역 \n \n \n \n \n \n \n \n \n \n \n \n \n 공지사항"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    },
+    {
+      "task_id": "WEST-H2-CROSS-04",
+      "source_id": "kosaf_west_loan_guide",
+      "search_group_count": 3,
+      "matched_search_groups": 3,
+      "search_status": "all_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "졸업생"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "졸업생",
+              "text_start_offset": 11893,
+              "text_end_offset": 11896,
+              "excerpt": "검색 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n재학생 \n \n \n \n \n원클릭 신청\n \n \n학자금 지원구간정보조회\n \n \n증명서발급(학자금대출)\n \n \n출근부 관리(국가근로장학금)\n \n \n부실채무현황\n \n \n금융교육\n \n \n이자계산기\n \n \n \n \n \n \n \n \n \n졸업생 \n \n \n \n \n기부하기\n \n \n대출내역\n \n \n증명서 발급(학자금대출)\n \n \n취업 후 상환 학자금대출 이체약정 등록\n \n \n부실채무현황\n \n \n \n \n \n \n \n \n \n학부모 \n \n \n \n \n기부하기\n \n \n가구원 정보제공 동의 하기\n \n \n학부모 알리미\n \n \n \n \n \n \n \n \n \n기업/기관 \n \n \n \n \n기"
+            },
+            {
+              "matched_variant": "졸업생",
+              "text_start_offset": 32999,
+              "text_end_offset": 33002,
+              "excerpt": "신청기간 : 2026. 7. 6.(월) ~ 2026. 8. 5.(수)\n \n \n \n \n \n중기 WEST 16기(12개월) \n \n \n신청기간 : 2026. 7. 6.(월) ~ 2026. 8. 5.(수)\n \n \n \n \n \n모든 일정은 국립국제교육원의 일정에 따라 변동가능\n \n \n \n※ WEST 프로그램 참가예정자 중 졸업생은 한국장학재단 신청 제외대상(국립국제교육원 공고 참조)이며, 기존 학자금 지원구간 산정내역이 있는 경우 학자금 지원 구간 통지서*를 발급하여 국립국제교육원에 제출 필요\n \n \n* 장학금 > 증명서발급 > 학자금 지원구간 통지서 발급\n \n \n \n \n \n※ 각 항목을 클릭하시면 해당 학자금에 대한 자세한 내용을 보실 수 있"
+            },
+            {
+              "matched_variant": "졸업생",
+              "text_start_offset": 38649,
+              "text_end_offset": 38652,
+              "excerpt": "학자금 지원구간 정보 조회 \n \n \n \n \n 증명서발급(학자금대출) \n \n \n \n \n 출근부 관리(국가근로장학금) \n \n \n \n \n 부실채무현황 \n \n \n \n \n 금융교육 \n \n \n \n \n 이자계산기 \n \n \n \n \n \n ICL상환금 계산 \n \n \n \n \n \n 약관 및 동의서 등 \n \n \n \n \n \n \n \n \n \n \n 졸업생 \n \n \n \n \n \n 기부하기 \n \n \n \n \n 대출내역 \n \n \n \n \n 증명서발급(학자금대출) \n \n \n \n \n 취업후 상환 학자금대출 이체약정 등록 \n \n \n \n \n 부실채무현황 \n \n \n \n \n \n \n \n \n \n 학부모 \n \n \n \n \n기부하기\n \n \n \n \n가구원 동의 하기\n \n \n \n \n \n만 14세미만 법정"
+            }
+          ]
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "지원구간 통지서",
+            "학자금 지원구간 통지서"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "지원구간 통지서",
+              "text_start_offset": 3409,
+              "text_end_offset": 3417,
+              "excerpt": "정보수정 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n 신청증명서발급 \n \n \n \n \n \n \n \n \n 장학증서발급 \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n 학자금 지원구간 통지서 발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n 중복지원방지 제도 안내 \n \n \n \n \n \n \n \n \n 중복지원현황 조회 \n \n \n \n \n \n \n \n \n 분할상환약정신청"
+            },
+            {
+              "matched_variant": "지원구간 통지서",
+              "text_start_offset": 14664,
+              "text_end_offset": 14672,
+              "excerpt": "계좌정보수정 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n \n \n 신청증명서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n 장학증서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 통지서 발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n \n \n 중복지원방지 제도 안내 \n \n \n \n \n \n \n \n \n \n \n \n \n 중복지원현황 조회 \n \n \n \n \n \n \n \n \n \n \n \n \n 분할상환약정신청"
+            },
+            {
+              "matched_variant": "지원구간 통지서",
+              "text_start_offset": 33065,
+              "text_end_offset": 33074,
+              "excerpt": "12개월) \n \n \n신청기간 : 2026. 7. 6.(월) ~ 2026. 8. 5.(수)\n \n \n \n \n \n모든 일정은 국립국제교육원의 일정에 따라 변동가능\n \n \n \n※ WEST 프로그램 참가예정자 중 졸업생은 한국장학재단 신청 제외대상(국립국제교육원 공고 참조)이며, 기존 학자금 지원구간 산정내역이 있는 경우 학자금 지원 구간 통지서*를 발급하여 국립국제교육원에 제출 필요\n \n \n* 장학금 > 증명서발급 > 학자금 지원구간 통지서 발급\n \n \n \n \n \n※ 각 항목을 클릭하시면 해당 학자금에 대한 자세한 내용을 보실 수 있습니다.\n \n \n \n \n \n \n \n \n \n 소개 \n \n \n \n \n 신청대상(지원자격) \n \n \n \n \n 대출절차"
+            },
+            {
+              "matched_variant": "지원구간 통지서",
+              "text_start_offset": 33121,
+              "text_end_offset": 33129,
+              "excerpt": "모든 일정은 국립국제교육원의 일정에 따라 변동가능\n \n \n \n※ WEST 프로그램 참가예정자 중 졸업생은 한국장학재단 신청 제외대상(국립국제교육원 공고 참조)이며, 기존 학자금 지원구간 산정내역이 있는 경우 학자금 지원 구간 통지서*를 발급하여 국립국제교육원에 제출 필요\n \n \n* 장학금 > 증명서발급 > 학자금 지원구간 통지서 발급\n \n \n \n \n \n※ 각 항목을 클릭하시면 해당 학자금에 대한 자세한 내용을 보실 수 있습니다.\n \n \n \n \n \n \n \n \n \n 소개 \n \n \n \n \n 신청대상(지원자격) \n \n \n \n \n 대출절차 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 대출절차"
+            },
+            {
+              "matched_variant": "지원구간 통지서",
+              "text_start_offset": 53077,
+              "text_end_offset": 53085,
+              "excerpt": "증명서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n 신청증명서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학증서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 통지서 발급 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n \n \n \n \n 중복지원방지 제도 안내 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 중복지원현황 조회 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 분할상환약정신청"
+            }
+          ]
+        },
+        {
+          "group_number": 3,
+          "searched_variants": [
+            "증빙",
+            "제출"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "제출",
+              "text_start_offset": 2486,
+              "text_end_offset": 2488,
+              "excerpt": "주거안정장학금 \n \n \n \n \n \n \n \n \n \n \n 주거안정장학금 \n \n \n \n \n \n \n \n \n \n 소개 \n \n \n \n \n \n \n \n \n 신청하기 \n \n \n \n \n \n \n \n \n 신청현황 \n \n \n \n \n \n \n \n \n 교육이수 및 장학생서약서 제출 \n \n \n \n \n \n \n \n \n 지급요청서 작성 \n \n \n \n \n \n \n \n \n 지급요청서 승인현황 \n \n \n \n \n \n \n \n \n 포기(반환)서약서 제출 \n \n \n \n \n \n \n \n \n 수혜내역 \n \n \n \n \n \n \n \n \n 공지사항 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 복권기금"
+            },
+            {
+              "matched_variant": "제출",
+              "text_start_offset": 2573,
+              "text_end_offset": 2575,
+              "excerpt": "소개 \n \n \n \n \n \n \n \n \n 신청하기 \n \n \n \n \n \n \n \n \n 신청현황 \n \n \n \n \n \n \n \n \n 교육이수 및 장학생서약서 제출 \n \n \n \n \n \n \n \n \n 지급요청서 작성 \n \n \n \n \n \n \n \n \n 지급요청서 승인현황 \n \n \n \n \n \n \n \n \n 포기(반환)서약서 제출 \n \n \n \n \n \n \n \n \n 수혜내역 \n \n \n \n \n \n \n \n \n 공지사항 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 복권기금 꿈사다리 우수 장학사업 \n \n \n \n \n \n \n \n \n \n \n 복권기금 꿈사다리 우수 장학사업 \n \n \n \n \n \n \n \n \n \n 복권기금 꿈사다리 우수"
+            },
+            {
+              "matched_variant": "제출",
+              "text_start_offset": 3204,
+              "text_end_offset": 3206,
+              "excerpt": "신청가이드 \n \n \n \n \n \n \n \n \n 신청서작성 \n \n \n \n \n \n \n \n \n 종합조회 \n \n \n \n \n \n \n \n \n 신청현황 \n \n \n \n \n \n \n \n \n 국가장학금 진행현황 \n \n \n \n \n \n \n \n \n 선정결과 \n \n \n \n \n \n \n \n \n 수혜내역 \n \n \n \n \n \n \n \n \n 서류제출현황 \n \n \n \n \n \n \n \n \n 계좌정보수정 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n \n 증명서발급 \n \n \n \n \n \n \n \n \n \n 신청증명서발급 \n \n \n \n \n \n \n \n \n 장학증서발급 \n \n \n \n \n \n \n \n \n 증명서발급"
+            },
+            {
+              "matched_variant": "증빙",
+              "text_start_offset": 33466,
+              "text_end_offset": 33468,
+              "excerpt": "대출절차 \n \n \n \n \n \n \n \n \n1.대출준비 \n \n학자금대출 신청을 위해 본인 명의의 전자서명수단 발급\n \n \n 전자서명 안내 \n \n \n \n \n2.어학연수비대출 신청 \n \n학자금대출 신청하기-한·미 대학생 연수(WEST) 프로그램 어학연수비대출에서 각 단계에 따라 신청 진행\n \n \n 신청하기 \n \n \n \n \n3.증빙서류 제출 및 가구원 동의 \n \n학자금 지원구간 파악을 위한 증빙서류 및 가구원 동의 완료\n \n \n 가구원 정보제공동의 \n \n \n \n \n4.합격자 발표 \n \n월드잡플러스 홈페이지에서 한·미 대학생 연수(WEST)프로그램 합격자 확인\n \n \n 월드잡플러스 바로가기 \n \n \n \n \n5.심사결과확인 \n \n학자금대출신청현황 조회"
+            },
+            {
+              "matched_variant": "증빙",
+              "text_start_offset": 33502,
+              "text_end_offset": 33504,
+              "excerpt": "대출 신청을 위해 본인 명의의 전자서명수단 발급\n \n \n 전자서명 안내 \n \n \n \n \n2.어학연수비대출 신청 \n \n학자금대출 신청하기-한·미 대학생 연수(WEST) 프로그램 어학연수비대출에서 각 단계에 따라 신청 진행\n \n \n 신청하기 \n \n \n \n \n3.증빙서류 제출 및 가구원 동의 \n \n학자금 지원구간 파악을 위한 증빙서류 및 가구원 동의 완료\n \n \n 가구원 정보제공동의 \n \n \n \n \n4.합격자 발표 \n \n월드잡플러스 홈페이지에서 한·미 대학생 연수(WEST)프로그램 합격자 확인\n \n \n 월드잡플러스 바로가기 \n \n \n \n \n5.심사결과확인 \n \n학자금대출신청현황 조회에서 대출승인 결과 확인\n \n \n 현황보기 \n \n \n \n \n6.약"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    },
+    {
+      "task_id": "WEST-H2-CROSS-05",
+      "source_id": "kosaf_2026_h2_notice",
+      "search_group_count": 2,
+      "matched_search_groups": 2,
+      "search_status": "all_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "가구원"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "가구원",
+              "text_start_offset": 1214,
+              "text_end_offset": 1217,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황"
+            },
+            {
+              "matched_variant": "가구원",
+              "text_start_offset": 1219,
+              "text_end_offset": 1222,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황"
+            },
+            {
+              "matched_variant": "가구원",
+              "text_start_offset": 1263,
+              "text_end_offset": 1266,
+              "excerpt": "한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금"
+            },
+            {
+              "matched_variant": "가구원",
+              "text_start_offset": 1365,
+              "text_end_offset": 1368,
+              "excerpt": "구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n 국가장학금 알리미 \n \n \n \n \n \n \n \n \n 국가장학금 I유형(학생직접지원형)"
+            },
+            {
+              "matched_variant": "가구원",
+              "text_start_offset": 4821,
+              "text_end_offset": 4824,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원"
+            }
+          ]
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "정보제공 동의",
+            "정보 제공 동의"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "정보제공 동의",
+              "text_start_offset": 1223,
+              "text_end_offset": 1230,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황"
+            },
+            {
+              "matched_variant": "정보제공 동의",
+              "text_start_offset": 1267,
+              "text_end_offset": 1274,
+              "excerpt": "보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금"
+            },
+            {
+              "matched_variant": "정보제공 동의",
+              "text_start_offset": 4830,
+              "text_end_offset": 4837,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지"
+            },
+            {
+              "matched_variant": "정보제공 동의",
+              "text_start_offset": 4874,
+              "text_end_offset": 4881,
+              "excerpt": "지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n 중"
+            },
+            {
+              "matched_variant": "정보제공 동의",
+              "text_start_offset": 12133,
+              "text_end_offset": 12140,
+              "excerpt": "로장학금)\n \n \n부실채무현황\n \n \n금융교육\n \n \n이자계산기\n \n \n \n \n \n \n \n \n \n졸업생 \n \n \n \n \n기부하기\n \n \n대출내역\n \n \n증명서 발급(학자금대출)\n \n \n취업 후 상환 학자금대출 이체약정 등록\n \n \n부실채무현황\n \n \n \n \n \n \n \n \n \n학부모 \n \n \n \n \n기부하기\n \n \n가구원 정보제공 동의 하기\n \n \n학부모 알리미\n \n \n \n \n \n \n \n \n \n기업/기관 \n \n \n \n \n기부하기\n \n \n고졸만JOB\n \n \n기업/기관 로그인\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n장학금 \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    },
+    {
+      "task_id": "WEST-H2-CROSS-05",
+      "source_id": "kosaf_west_loan_guide",
+      "search_group_count": 2,
+      "matched_search_groups": 2,
+      "search_status": "all_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "가구원"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "가구원",
+              "text_start_offset": 1230,
+              "text_end_offset": 1233,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황"
+            },
+            {
+              "matched_variant": "가구원",
+              "text_start_offset": 1235,
+              "text_end_offset": 1238,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황"
+            },
+            {
+              "matched_variant": "가구원",
+              "text_start_offset": 1279,
+              "text_end_offset": 1282,
+              "excerpt": "한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금"
+            },
+            {
+              "matched_variant": "가구원",
+              "text_start_offset": 1381,
+              "text_end_offset": 1384,
+              "excerpt": "구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n 국가장학금 알리미 \n \n \n \n \n \n \n \n \n 국가장학금 I유형(학생직접지원형)"
+            },
+            {
+              "matched_variant": "가구원",
+              "text_start_offset": 4837,
+              "text_end_offset": 4840,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원"
+            }
+          ]
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "정보제공 동의",
+            "정보 제공 동의"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "정보제공 동의",
+              "text_start_offset": 1239,
+              "text_end_offset": 1246,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황"
+            },
+            {
+              "matched_variant": "정보제공 동의",
+              "text_start_offset": 1283,
+              "text_end_offset": 1290,
+              "excerpt": "보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금"
+            },
+            {
+              "matched_variant": "정보제공 동의",
+              "text_start_offset": 4846,
+              "text_end_offset": 4853,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지"
+            },
+            {
+              "matched_variant": "정보제공 동의",
+              "text_start_offset": 4890,
+              "text_end_offset": 4897,
+              "excerpt": "지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n 중"
+            },
+            {
+              "matched_variant": "정보제공 동의",
+              "text_start_offset": 12019,
+              "text_end_offset": 12026,
+              "excerpt": "로장학금)\n \n \n부실채무현황\n \n \n금융교육\n \n \n이자계산기\n \n \n \n \n \n \n \n \n \n졸업생 \n \n \n \n \n기부하기\n \n \n대출내역\n \n \n증명서 발급(학자금대출)\n \n \n취업 후 상환 학자금대출 이체약정 등록\n \n \n부실채무현황\n \n \n \n \n \n \n \n \n \n학부모 \n \n \n \n \n기부하기\n \n \n가구원 정보제공 동의 하기\n \n \n학부모 알리미\n \n \n \n \n \n \n \n \n \n기업/기관 \n \n \n \n \n기부하기\n \n \n고졸만JOB\n \n \n기업/기관 로그인\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n장학금 \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    },
+    {
+      "task_id": "WEST-H2-CROSS-06",
+      "source_id": "kosaf_2026_h2_notice",
+      "search_group_count": 3,
+      "matched_search_groups": 3,
+      "search_status": "all_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "재외국민"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "재외국민",
+              "text_start_offset": 24460,
+              "text_end_offset": 24464,
+              "excerpt": "f.go.kr) → 로그인 → 장학금/학자금대출 → 학자금 지원구간 → 가구원 정보제공 동의현황\n \n \n \n \n \n \n \n \n문의\n \n \n \n \n한국장학재단 상담센터(1599-2000), 한국장학재단 홈페이지(www.kosaf.go.kr) > 고객센터> 질문있어요\n \n \n \n \n \n \n \n\n※ 국외 소득·재산 신고대상자(재외국민전형 입학자)일 경우, 상기 학자금 지원구간 산정 절차와 상이하므로 장학금 → 학자금 지원구간 → 한눈에 보는 학자금 지원구간 → “국외 소득·재산 신고제 안내” 메뉴를 참고해주시기 바랍니다.\n \n \n\n※ WEST 프로그램의 경우 사업 기간의 특성상 재단의 타 상품과 달리 학자금 지원구간 최신화 신청기간에 제약이 있을 수"
+            }
+          ]
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "국외 소득",
+            "국외소득"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "국외 소득",
+              "text_start_offset": 1295,
+              "text_end_offset": 1300,
+              "excerpt": "소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금"
+            },
+            {
+              "matched_variant": "국외 소득",
+              "text_start_offset": 1328,
+              "text_end_offset": 1333,
+              "excerpt": "금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n 국가장학금 알리미"
+            },
+            {
+              "matched_variant": "국외 소득",
+              "text_start_offset": 4902,
+              "text_end_offset": 4907,
+              "excerpt": "보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n 중복지원방지 제도 안내"
+            },
+            {
+              "matched_variant": "국외 소득",
+              "text_start_offset": 12617,
+              "text_end_offset": 12622,
+              "excerpt": "자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n \n 국가장학금"
+            },
+            {
+              "matched_variant": "국외 소득",
+              "text_start_offset": 12658,
+              "text_end_offset": 12663,
+              "excerpt": "자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n \n 국가장학금 알리미 \n \n \n \n \n \n \n \n \n \n \n \n \n 국가장학금 I유형(학"
+            }
+          ]
+        },
+        {
+          "group_number": 3,
+          "searched_variants": [
+            "재산",
+            "신고"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "재산",
+              "text_start_offset": 1301,
+              "text_end_offset": 1303,
+              "excerpt": "액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금"
+            },
+            {
+              "matched_variant": "재산",
+              "text_start_offset": 1334,
+              "text_end_offset": 1336,
+              "excerpt": "정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n 국가장학금 알리미"
+            },
+            {
+              "matched_variant": "재산",
+              "text_start_offset": 4908,
+              "text_end_offset": 4910,
+              "excerpt": "금 지원구간 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n 중복지원방지 제도 안내"
+            },
+            {
+              "matched_variant": "재산",
+              "text_start_offset": 12623,
+              "text_end_offset": 12625,
+              "excerpt": "간 정보 조회 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n \n 국가장학금 알리미"
+            },
+            {
+              "matched_variant": "재산",
+              "text_start_offset": 12664,
+              "text_end_offset": 12666,
+              "excerpt": "간 최신화 신청 \n \n \n \n \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n \n 국가장학금 알리미 \n \n \n \n \n \n \n \n \n \n \n \n \n 국가장학금 I유형(학생직접"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    },
+    {
+      "task_id": "WEST-H2-CROSS-06",
+      "source_id": "kosaf_west_loan_guide",
+      "search_group_count": 3,
+      "matched_search_groups": 2,
+      "search_status": "partial_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "재외국민"
+          ],
+          "matched": false,
+          "matches": []
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "국외 소득",
+            "국외소득"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "국외 소득",
+              "text_start_offset": 1311,
+              "text_end_offset": 1316,
+              "excerpt": "소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금"
+            },
+            {
+              "matched_variant": "국외 소득",
+              "text_start_offset": 1344,
+              "text_end_offset": 1349,
+              "excerpt": "금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n 국가장학금 알리미"
+            },
+            {
+              "matched_variant": "국외 소득",
+              "text_start_offset": 4918,
+              "text_end_offset": 4923,
+              "excerpt": "보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n 중복지원방지 제도 안내"
+            },
+            {
+              "matched_variant": "국외 소득",
+              "text_start_offset": 12503,
+              "text_end_offset": 12508,
+              "excerpt": "자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n \n 국가장학금"
+            },
+            {
+              "matched_variant": "국외 소득",
+              "text_start_offset": 12544,
+              "text_end_offset": 12549,
+              "excerpt": "자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n \n 국가장학금 알리미 \n \n \n \n \n \n \n \n \n \n \n \n \n 국가장학금 I유형(학"
+            }
+          ]
+        },
+        {
+          "group_number": 3,
+          "searched_variants": [
+            "재산",
+            "신고"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "재산",
+              "text_start_offset": 1317,
+              "text_end_offset": 1319,
+              "excerpt": "액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금"
+            },
+            {
+              "matched_variant": "재산",
+              "text_start_offset": 1350,
+              "text_end_offset": 1352,
+              "excerpt": "정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n 국가장학금 알리미"
+            },
+            {
+              "matched_variant": "재산",
+              "text_start_offset": 4924,
+              "text_end_offset": 4926,
+              "excerpt": "금 지원구간 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n \n 학자금 중복지원방지 \n \n \n \n \n \n \n \n \n \n 중복지원방지 제도 안내"
+            },
+            {
+              "matched_variant": "재산",
+              "text_start_offset": 12509,
+              "text_end_offset": 12511,
+              "excerpt": "간 정보 조회 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n \n 국가장학금 알리미"
+            },
+            {
+              "matched_variant": "재산",
+              "text_start_offset": 12550,
+              "text_end_offset": 12552,
+              "excerpt": "간 최신화 신청 \n \n \n \n \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 소득연계형 국가장학금 \n \n \n \n \n \n \n \n \n \n \n \n 국가장학금 알리미 \n \n \n \n \n \n \n \n \n \n \n \n \n 국가장학금 I유형(학생직접"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    },
+    {
+      "task_id": "WEST-H2-CROSS-07",
+      "source_id": "kosaf_2026_h2_notice",
+      "search_group_count": 3,
+      "matched_search_groups": 3,
+      "search_status": "all_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "합격자 발표",
+            "최종합격"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "합격자 발표",
+              "text_start_offset": 24650,
+              "text_end_offset": 24656,
+              "excerpt": ")일 경우, 상기 학자금 지원구간 산정 절차와 상이하므로 장학금 → 학자금 지원구간 → 한눈에 보는 학자금 지원구간 → “국외 소득·재산 신고제 안내” 메뉴를 참고해주시기 바랍니다.\n \n \n\n※ WEST 프로그램의 경우 사업 기간의 특성상 재단의 타 상품과 달리 학자금 지원구간 최신화 신청기간에 제약이 있을 수 있으며, 합격자 발표 이전까지 확정된 학자금 지원구간으로 지원이 이루어집니다. 이 점을 인지하시어 신청완료 및 서류제출, 학자금 지원구간(소득분위) 파악을 위한 가구원 동의를 신속히 완료해주시기 바랍니다.\n \n \n\n※ SMS 및 E-mail 수신 미동의 시 가구원 동의 안내, 합격자 안내 등을 받지 못할 수 있으며, 수신 미동의로 인한 불이"
+            }
+          ]
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "지원구간",
+            "지원 구간"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1027,
+              "text_end_offset": 1031,
+              "excerpt": "전체메뉴 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1058,
+              "text_end_offset": 1062,
+              "excerpt": "장학금 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1094,
+              "text_end_offset": 1098,
+              "excerpt": "장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1150,
+              "text_end_offset": 1154,
+              "excerpt": "장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1183,
+              "text_end_offset": 1187,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구"
+            }
+          ]
+        },
+        {
+          "group_number": 3,
+          "searched_variants": [
+            "최신화",
+            "확정"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "최신화",
+              "text_start_offset": 1188,
+              "text_end_offset": 1191,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자"
+            },
+            {
+              "matched_variant": "최신화",
+              "text_start_offset": 4795,
+              "text_end_offset": 4798,
+              "excerpt": "력 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황"
+            },
+            {
+              "matched_variant": "최신화",
+              "text_start_offset": 12486,
+              "text_end_offset": 12489,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고"
+            },
+            {
+              "matched_variant": "최신화",
+              "text_start_offset": 16044,
+              "text_end_offset": 16047,
+              "excerpt": "증명서발급 이력 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구"
+            },
+            {
+              "matched_variant": "최신화",
+              "text_start_offset": 24626,
+              "text_end_offset": 24629,
+              "excerpt": "외 소득·재산 신고대상자(재외국민전형 입학자)일 경우, 상기 학자금 지원구간 산정 절차와 상이하므로 장학금 → 학자금 지원구간 → 한눈에 보는 학자금 지원구간 → “국외 소득·재산 신고제 안내” 메뉴를 참고해주시기 바랍니다.\n \n \n\n※ WEST 프로그램의 경우 사업 기간의 특성상 재단의 타 상품과 달리 학자금 지원구간 최신화 신청기간에 제약이 있을 수 있으며, 합격자 발표 이전까지 확정된 학자금 지원구간으로 지원이 이루어집니다. 이 점을 인지하시어 신청완료 및 서류제출, 학자금 지원구간(소득분위) 파악을 위한 가구원 동의를 신속히 완료해주시기 바랍니다.\n \n \n\n※ SMS 및 E-mail 수신 미동의 시 가구원 동의 안내, 합격자 안내 등을"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    },
+    {
+      "task_id": "WEST-H2-CROSS-07",
+      "source_id": "kosaf_west_loan_guide",
+      "search_group_count": 3,
+      "matched_search_groups": 3,
+      "search_status": "all_search_groups_found",
+      "evidence_groups": [
+        {
+          "group_number": 1,
+          "searched_variants": [
+            "합격자 발표",
+            "최종합격"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "합격자 발표",
+              "text_start_offset": 33546,
+              "text_end_offset": 33552,
+              "excerpt": "2.어학연수비대출 신청 \n \n학자금대출 신청하기-한·미 대학생 연수(WEST) 프로그램 어학연수비대출에서 각 단계에 따라 신청 진행\n \n \n 신청하기 \n \n \n \n \n3.증빙서류 제출 및 가구원 동의 \n \n학자금 지원구간 파악을 위한 증빙서류 및 가구원 동의 완료\n \n \n 가구원 정보제공동의 \n \n \n \n \n4.합격자 발표 \n \n월드잡플러스 홈페이지에서 한·미 대학생 연수(WEST)프로그램 합격자 확인\n \n \n 월드잡플러스 바로가기 \n \n \n \n \n5.심사결과확인 \n \n학자금대출신청현황 조회에서 대출승인 결과 확인\n \n \n 현황보기 \n \n \n \n \n6.약정체결 및 대출실행 \n \n학자금대출 신청현황 조회에서 대출금 지급 신청\n \n \n 현황보"
+            }
+          ]
+        },
+        {
+          "group_number": 2,
+          "searched_variants": [
+            "지원구간",
+            "지원 구간"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1043,
+              "text_end_offset": 1047,
+              "excerpt": "전체메뉴 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1074,
+              "text_end_offset": 1078,
+              "excerpt": "장학금 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1110,
+              "text_end_offset": 1114,
+              "excerpt": "장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n 장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1166,
+              "text_end_offset": 1170,
+              "excerpt": "장학금 한눈에 보기 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·"
+            },
+            {
+              "matched_variant": "지원구간",
+              "text_start_offset": 1199,
+              "text_end_offset": 1203,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구"
+            }
+          ]
+        },
+        {
+          "group_number": 3,
+          "searched_variants": [
+            "최신화",
+            "확정"
+          ],
+          "matched": true,
+          "matches": [
+            {
+              "matched_variant": "최신화",
+              "text_start_offset": 1204,
+              "text_end_offset": 1207,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고결과 모니터링 \n \n \n \n \n \n \n \n \n 가구원 학자"
+            },
+            {
+              "matched_variant": "최신화",
+              "text_start_offset": 4811,
+              "text_end_offset": 4814,
+              "excerpt": "력 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구간 산정 현황"
+            },
+            {
+              "matched_variant": "최신화",
+              "text_start_offset": 12372,
+              "text_end_offset": 12375,
+              "excerpt": "학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고"
+            },
+            {
+              "matched_variant": "최신화",
+              "text_start_offset": 15930,
+              "text_end_offset": 15933,
+              "excerpt": "증명서발급 이력 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n \n 한눈에 보는 학자금 지원구간 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회 \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 최신화 신청 \n \n \n \n \n \n \n \n \n \n \n \n \n (가구원용)가구원 정보제공 동의현황 및 동의하기 \n \n \n \n \n \n \n \n \n \n \n \n \n (학생용)가구원 정보제공 동의현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고 현황 \n \n \n \n \n \n \n \n \n \n \n \n \n 가구원 학자금 지원구"
+            },
+            {
+              "matched_variant": "최신화",
+              "text_start_offset": 31671,
+              "text_end_offset": 31674,
+              "excerpt": "원구간 정보 조회 \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 경곗값 확인 \n \n \n \n \n \n \n \n \n \n \n \n 가구원 정보제공 동의 \n \n \n \n \n \n \n \n \n \n \n \n 소득인정액 산정방식 \n \n \n \n \n \n \n \n \n \n \n \n 계속 사용신청 안내 \n \n \n \n \n \n \n \n \n \n \n \n 최신화 신청 안내 \n \n \n \n \n \n \n \n \n \n \n \n 국외 소득·재산 신고제 안내 \n \n \n \n \n \n \n \n \n \n \n \n 소득인정액 모의계산 \n \n \n \n \n \n \n \n \n \n \n \n FAQ \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 학자금 지원구간 정보 조회"
+            }
+          ]
+        }
+      ],
+      "policy_claim_verified": false,
+      "review_status": "evidence_candidate",
+      "manual_context_review_required": true
+    }
+  ],
+  "search_status_counts": {
+    "all_search_groups_found": 11,
+    "partial_search_groups_found": 3
+  },
+  "source_pages_section_isolated": false,
+  "policy_claims_independently_verified": false,
+  "external_source_snapshots_sha256_verified": true,
+  "semantic_review_completed": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

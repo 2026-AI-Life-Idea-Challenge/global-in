@@ -1,0 +1,74 @@
+{
+  "dataset_type": "usa_policy_cleaning_report",
+  "country": "US",
+  "source_triage_sha256": "9bf2724b46d43f7bacdc2752dd11c26e22382ab20584c11509e9b49f9ad66ce8",
+  "source_policy_review_sha256": "d755e3f6d7f6506b999ccbd31f20cc2a89c787eaf7b5a617ecbf9c8d8be464b4",
+  "total_chunks": 103,
+  "ui_flagged_chunks": 5,
+  "cleaning_status_counts": {
+    "manual_review_required": 2,
+    "safe_suffix_removed": 3,
+    "unchanged": 98
+  },
+  "ui_review_records": [
+    {
+      "chunk_id": "US-EM-02-SECTION-011-C001",
+      "program_id": "US-EM-02",
+      "cleaning_status": "safe_suffix_removed",
+      "cleaning_patterns": [
+        "bridgeusa_common_footer"
+      ],
+      "removed_text": " Program Resources Common Questions SEVIS Information end tab 2 tab 3"
+    },
+    {
+      "chunk_id": "US-EM-03-SECTION-011-C001",
+      "program_id": "US-EM-03",
+      "cleaning_status": "safe_suffix_removed",
+      "cleaning_patterns": [
+        "bridgeusa_common_footer"
+      ],
+      "removed_text": " Program Resources Common Questions SEVIS Information end tab 2 tab 3"
+    },
+    {
+      "chunk_id": "US-EM-03-SECTION-013-C001",
+      "program_id": "US-EM-03",
+      "cleaning_status": "manual_review_required",
+      "cleaning_patterns": [],
+      "removed_text": ""
+    },
+    {
+      "chunk_id": "US-ST-03-SECTION-009-C001",
+      "program_id": "US-ST-03",
+      "cleaning_status": "safe_suffix_removed",
+      "cleaning_patterns": [
+        "bridgeusa_common_footer"
+      ],
+      "removed_text": " Program Resources Common Questions SEVIS Information end tab 2 tab 3"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-019-C001",
+      "program_id": "US-WH-01",
+      "cleaning_status": "manual_review_required",
+      "cleaning_patterns": [],
+      "removed_text": ""
+    }
+  ],
+  "duplicate_candidate_chunks": 6,
+  "duplicate_candidate_ids": [
+    "US-WH-01-SECTION-009-C001",
+    "US-WH-01-SECTION-009-C002",
+    "US-WH-01-SECTION-009-C003",
+    "US-WH-01-SECTION-016-C001",
+    "US-WH-01-SECTION-016-C002",
+    "US-WH-01-SECTION-016-C003"
+  ],
+  "policy_text_deleted": false,
+  "source_files_modified": false,
+  "human_review_completed": false,
+  "approved_for_embedding": false,
+  "approved_for_user_answers": false,
+  "automatic_eligibility_rules_enabled": false,
+  "validation_status": "needs_review",
+  "note": "Only exact trailing UI strings may be removed from cleaned candidates. Source originals are preserved. No semantic or legal approval.",
+  "cleaned_jsonl_sha256": "28e48ffd4ec0a292514801a5a3c3f474c7a699f85aad3f39d50de75d2aad534d"
+}

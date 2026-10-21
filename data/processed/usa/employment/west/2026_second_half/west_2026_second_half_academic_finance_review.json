@@ -1,0 +1,394 @@
+{
+  "dataset_type": "west_academic_finance_semantic_review",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "historical_notice": true,
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "previous_review_sha256": "9e796baff8fe1df5a3b2056d7b6cad94603624c18024dd836921c3dce3034678",
+  "faq_original_text": {
+    "3": {
+      "question_number": 3,
+      "question": "지원 자격(대상) 중, 최근 1년 이내의 졸업생 기준은 어떻게 되나요?",
+      "answer": "본 프로그램의 어학연수 시작일이 기준이 됩니다. 현지중개기관 및 어학연수 기관별로 어학\n\n  연수 시작일이 다르므로 지원 프로그램의 어학연수 시작일을 확인한 후 지원해주시기 바랍니다.\n\n  어학연수 시작일은 월드잡플러스(www.worldjob.or.kr) 공지사항에 게시 예정입니다.\n\n   (예시) 2026년 상반기 선발은 어학연수 시작일(’27년 1월)을 기준으로, ‘26년 2월, 8월 졸업자가\n\n     지원 가능합니다.",
+      "question_sha256": "8c4c52d93e3c3e64c422cc61d8a515303c151f2ee69c70e73b67a6558cff7c61",
+      "answer_sha256": "9fd49aa44a19f3e1d624d9b72a0fe6ce7acca93f9b7ec07a7991124ee8a1c00c",
+      "evidence": {
+        "printed_page": 11,
+        "physical_pdf_page": 6,
+        "candidate_id": "WEST-2026H2-LP11",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      "extraction_status": "source_text_extracted",
+      "semantic_review_completed": false
+    },
+    "15": {
+      "question_number": 15,
+      "question": "재외국민전형 입학 여부를 잘못 선택하였을 경우 불이익이 있나요?",
+      "answer": "2017년부터 지원구간 조회에 국외소득‧재산이 반영됨에 따라 학생이 신청하신 재외국민\n\n  전형 입학 여부와 소속대학의 정보가 상이할 경우 합격 후 재정지원에 불이익이 발생할\n\n  수 있으므로 신중하게 선택하여 주시기 바랍니다. 온라인지원서 작성 시 해당 사실을 누락한\n\n  경우 실제 지원구간과 상관없이 10구간에 준하여 정부지원금이 지급됩니다.\n\n  만약 한국장학재단의 WEST 프로그램 신청 단계에서 재외국민 특별전형 입학여부(Y/N)를\n\n  잘못 선택하였을 경우, 학생의 국내 소득 재산조사가 개시되기 전 그리고 WEST 프로그램\n\n  신청기간 내에 학생 본인이 한국장학재단 누리집을 통해 입학전형 변경이 가능합니다. 국\n\n  내 소득조사가 개시된 후에는 한국장학재단 콜센터(1599-2000)로 확인한 후 「입학전형사\n\n   실확인서」를 제출하여 입학 정보 수정을 신청하여야 합니다. 「입학전형사실확인서」 양\n\n  식은 한국장학재단 누리집>고객센터>자료실>학자금 지원구간에 게시되어 있습니다.",
+      "question_sha256": "c414b2b60255a64fcd8f17a8f9d0e8d533dfef3bdda201c4e9b86d5f69e0b023",
+      "answer_sha256": "7f9ecd98f2a25bd5ced20fe1c9244ca9ae7a525c7f092731aebe9888226aee72",
+      "evidence": {
+        "printed_page": 13,
+        "physical_pdf_page": 7,
+        "candidate_id": "WEST-2026H2-LP13",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      "extraction_status": "source_text_extracted",
+      "semantic_review_completed": false
+    },
+    "20": {
+      "question_number": 20,
+      "question": "지원구간(학자금 지원구간) 확인 신청(어학연수비 대출)은 어떻게 하나요?",
+      "answer": "한국장학재단 누리집(www.kosaf.go.kr) 재단소개 > 알림 > 공지사항 탭의 ‘2026년 하반기\n\n   한·미대학생연수(WEST) 프로그램 어학연수비 대출 신청 안내’를 참고하여 신청해주시고,\n\n   관련 문의사항은 한국장학재단 콜센터(1599-2000)로 해주시기 바랍니다.\n\n   ※ 장학재단 누리집 지원구간 확인 신청  : 재학생, 휴학생, 초과 학기자, 수료자, 졸업유예자\n\n   ※ 졸업생은 한국장학재단 사이트 신청 불필요(학교에 별도 서류 제출)",
+      "question_sha256": "4004a93095078969630daf0561e67ffb8bc0c664087621feb2fe32b6060f06d9",
+      "answer_sha256": "be351a97bb5133fc834a3817b70d9be15628293a5a5dc3310fb89cdf024f5797",
+      "evidence": {
+        "printed_page": 14,
+        "physical_pdf_page": 7,
+        "candidate_id": "WEST-2026H2-LP14",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      "extraction_status": "source_text_extracted",
+      "semantic_review_completed": false
+    },
+    "21": {
+      "question_number": 21,
+      "question": "대출이 필요 없는데도 한국장학재단 누리집에 신청을 해야 하나요?",
+      "answer": "한국장학재단 누리집 신청은 지원서 접수를 위한 필수적인 절차로, 실제 대출과는 무관합\n\n    니다. 재학생(휴학생, 초과 학기자, 수료자, 졸업유예자)의 정부재정지원금은 한국장학재단의\n\n   지원구간 확인 결과에 따라 결정되며, 미신청 시 서류심사 대상에서 제외되니 반드시 신청\n\n   해주시기 바랍니다. ※ 졸업생은 한국장학재단 사이트 신청 불필요(학교에 별도 서류 제출)\n\n  재학/졸업             (모집 기간내) 한국장학재단          (최종 합격 후)\n         구분\n   구분            어학연수비 대출 신청       어학연수비 대출 실행\n\n         재학생        필요               가능\n\n         휴학생        필요               가능\n\n  재학생   초과학기자       필요               가능\n\n         수료자        필요       조건에 따라 다름(한국장학재단 홈페이지 참고)\n\n        졸업유예자       필요              불가능\n\n  졸업생    졸업생       불필요              불가능\n\n    ※ 재학생 중 최종 합격 후 학적이 졸업/졸업 유예로 변경되는 경우 대출 실행이 불가합니다.",
+      "question_sha256": "a56362d43006e684984e219070f8c629dfe17692b744f6a0d673e4582d8e67b0",
+      "answer_sha256": "bb657cca34e4dd79a0d860cbaf288f21911ba371e49d04b01b9504c41f9eb1bc",
+      "evidence": {
+        "printed_page": 14,
+        "physical_pdf_page": 7,
+        "candidate_id": "WEST-2026H2-LP14",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      "extraction_status": "source_text_extracted",
+      "semantic_review_completed": false
+    },
+    "24": {
+      "question_number": 24,
+      "question": "졸업생은 한국장학재단으로 학자금 지원구간 확인 신청을 하지 않는데 지원구간은 어떻게\n\n   산정되며, 어떤 자료를 제출해야 하나요?",
+      "answer": "학자금 지원구간 통지서를 제출하면 가장 최근 학기 학자금 지원구간을 반영합니다. 기초\n\n  생활수급자증명서나 차상위계층증명서를 제출하는 경우, 해당 증명서 기준으로 정부지원\n\n  금을 산정합니다. 재학 중 국가장학금 신청 이력이 없는 경우, 해당 내용 증명을 위해 학\n\n   자금대출‧장학금 신청증명서([붙임4] 참조)를 제출해주시면 됩니다.\n\n   ※ 학자금 지원구간 통지서는 국가장학금 또는 학자금 대출 신청 이력이 있는 경우, 학자금‧\n\n    대출장학금 신청증명서는 국가장학금 또는 학자금 대출 신청 이력이 없는 경우 발급 가능\n\n\n                                    - 14 -",
+      "question_sha256": "03242281b1eff751162fe83c5f691d83be91c838ed3fd231c9f17646b0b1d970",
+      "answer_sha256": "86dbe8a66e16c6e34c5670a60b8a2a776d227adac95cb12b7705de6d936fe393",
+      "evidence": {
+        "printed_page": 14,
+        "physical_pdf_page": 7,
+        "candidate_id": "WEST-2026H2-LP14",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      "extraction_status": "source_text_extracted",
+      "semantic_review_completed": false
+    },
+    "25": {
+      "question_number": 25,
+      "question": "초과 학기자, 수료자, 졸업유예자의 차이는 무엇인가요?",
+      "answer": "초과학기자, 수료자, 졸업유예자 모두 재학생/졸업생 구분에서는 재학생에 해당하기 때문에\n\n   한국장학재단 사이트에 지원구간 확인신청을 해주셔야 하며, 구분은 다음과 같습니다.\n\n      1. 초과 학기자: 정규학기를 초과한 학생 중 졸업기준학점을 미충족한 학생\n\n      2. 수료자: 졸업기준학점을 충족하였으나, 졸업요건을 미충족한 학생\n\n      3. 졸업유예자: 졸업기준학점을 충족하고, 졸업요건도 충족한 학생",
+      "question_sha256": "bab56e0e0df57693f8f4940a0d5379e93fec6e9ce3881c8e01c343de3ddb7155",
+      "answer_sha256": "900be351af8143e72167246ffdd6395e6f7a118dcb83358b50b537b0820fd4dd",
+      "evidence": {
+        "printed_page": 15,
+        "physical_pdf_page": 8,
+        "candidate_id": "WEST-2026H2-LP15",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      "extraction_status": "source_text_extracted",
+      "semantic_review_completed": false
+    },
+    "26": {
+      "question_number": 26,
+      "question": "어학연수, 인턴기간 동안 지원구간이 변경되면 지원금 규모도 바뀌나요?",
+      "answer": "합격자 발표일 기준 지원구간으로 활동 종료 시까지 지원합니다.",
+      "question_sha256": "3ce62e5d23b7cee7b26a05e52ca05831620a4bab5810b6d44ba3c00545f4a94d",
+      "answer_sha256": "06fc43b4540d9830e2323d23c8737e6ea9c51fbf5e3662cfd43a19749a179ee7",
+      "evidence": {
+        "printed_page": 15,
+        "physical_pdf_page": 8,
+        "candidate_id": "WEST-2026H2-LP15",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      "extraction_status": "source_text_extracted",
+      "semantic_review_completed": false
+    }
+  },
+  "review_items": {
+    "enrollment_status": {
+      "source_meaning": "공고는 재학생·휴학생뿐 아니라 초과학기자·수료자·졸업유예자를 지원 절차상 구분하여 안내함.",
+      "evidence": [
+        {
+          "printed_page": 2,
+          "physical_pdf_page": 1,
+          "candidate_id": "WEST-2026H2-LP02",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 3,
+          "physical_pdf_page": 2,
+          "candidate_id": "WEST-2026H2-LP03",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 15,
+          "physical_pdf_page": 8,
+          "candidate_id": "WEST-2026H2-LP15",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "risk": "학적 유형이 같아 보이더라도 지원구간 신청과 실제 대출 실행의 조건은 서로 다를 수 있음.",
+      "validation_status": "needs_review"
+    },
+    "recent_graduate": {
+      "source_meaning": "졸업생의 지원 자격은 실제 어학연수 시작일 기준 최근 1년 이내.",
+      "evidence": [
+        {
+          "printed_page": 2,
+          "physical_pdf_page": 1,
+          "candidate_id": "WEST-2026H2-LP02",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 11,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP11",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "risk": "지원서 제출일을 기준으로 졸업생 자격을 판정하지 않음. 기관별 어학연수 시작일 확인 필요.",
+      "validation_status": "needs_review"
+    },
+    "support_bracket_application": {
+      "source_meaning": "재학생 계열은 한국장학재단 WEST 지원구간 확인 신청이 필요하며 졸업생은 대학에 별도 증빙을 제출.",
+      "evidence": [
+        {
+          "printed_page": 5,
+          "physical_pdf_page": 3,
+          "candidate_id": "WEST-2026H2-LP05",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 14,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP14",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "risk": "지원구간 확인을 위한 신청을 실제 대출 실행과 혼동하지 않음.",
+      "validation_status": "needs_review"
+    },
+    "loan_execution": {
+      "source_meaning": "재학생·휴학생·초과학기자는 공고상 대출 실행 가능 유형이며, 수료자는 조건부, 졸업유예자·졸업생은 불가.",
+      "evidence": [
+        {
+          "printed_page": 5,
+          "physical_pdf_page": 3,
+          "candidate_id": "WEST-2026H2-LP05",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 7,
+          "physical_pdf_page": 4,
+          "candidate_id": "WEST-2026H2-LP07",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 14,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP14",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "risk": "실제 대출 승인 여부는 한국장학재단 심사 및 개별 학적에 따름.",
+      "validation_status": "needs_review"
+    },
+    "graduate_support_evidence": {
+      "source_meaning": "졸업생은 기초·차상위 증명서, 지원구간 통지서, 신청증명서 등을 발급 조건에 맞게 제출.",
+      "evidence": [
+        {
+          "printed_page": 5,
+          "physical_pdf_page": 3,
+          "candidate_id": "WEST-2026H2-LP05",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 9,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP09",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 14,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP14",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 19,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP19",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "risk": "모든 증빙서류가 동시에 필요한 것으로 안내하지 않음. 해당 유형의 증빙 분기를 추가 확인해야 함.",
+      "validation_status": "needs_review"
+    },
+    "overseas_admission_special_case": {
+      "source_meaning": "재외국민 특별전형 입학 여부 누락이 정부지원금 산정에 영향을 줄 수 있음.",
+      "evidence": [
+        {
+          "printed_page": 4,
+          "physical_pdf_page": 2,
+          "candidate_id": "WEST-2026H2-LP04",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 5,
+          "physical_pdf_page": 3,
+          "candidate_id": "WEST-2026H2-LP05",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 13,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP13",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "risk": "지원구간과 관련된 예외를 모든 해외거주자에게 일괄 적용하지 않음.",
+      "validation_status": "needs_review"
+    },
+    "support_bracket_after_acceptance": {
+      "source_meaning": "공고 FAQ Q26은 합격자 발표일 기준 지원구간으로 활동 종료 시까지 지원한다고 안내함.",
+      "evidence": [
+        {
+          "printed_page": 15,
+          "physical_pdf_page": 8,
+          "candidate_id": "WEST-2026H2-LP15",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "risk": "개인별 지원액을 임의로 확정하지 않음.",
+      "validation_status": "needs_review"
+    }
+  },
+  "manual_review_issues": [
+    {
+      "issue": "FAQ Q3의 선발 회차 예시 불일치",
+      "status": "needs_review",
+      "details": "하반기 공고의 FAQ 예시 문구에 상반기 선발 표현이 있어 확인 필요.",
+      "evidence": [
+        {
+          "printed_page": 11,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP11",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    {
+      "issue": "기관별 졸업생 기준일",
+      "status": "needs_review",
+      "details": "기관별 실제 어학연수 시작일을 확인하기 전에는 개별 자격 판정 보류.",
+      "evidence": [
+        {
+          "printed_page": 2,
+          "physical_pdf_page": 1,
+          "candidate_id": "WEST-2026H2-LP02",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 11,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP11",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    {
+      "issue": "수료자 실제 대출 실행 조건",
+      "status": "needs_review",
+      "details": "2026년 2학기 등록 여부 등 한국장학재단의 개별 심사 조건 확인.",
+      "evidence": [
+        {
+          "printed_page": 5,
+          "physical_pdf_page": 3,
+          "candidate_id": "WEST-2026H2-LP05",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 7,
+          "physical_pdf_page": 4,
+          "candidate_id": "WEST-2026H2-LP07",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 14,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP14",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    {
+      "issue": "졸업생 지원구간 증빙 분기",
+      "status": "needs_review",
+      "details": "발급 가능 서류·국가장학금 이력에 따른 증빙 구분 및 정부지원금 적용 확인.",
+      "evidence": [
+        {
+          "printed_page": 9,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP09",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 14,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP14",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 19,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP19",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    {
+      "issue": "재외국민 특별전형 관련 지원금",
+      "status": "needs_review",
+      "details": "입학 여부 기재 누락과 지원금 산정 간의 관계 추가 확인.",
+      "evidence": [
+        {
+          "printed_page": 4,
+          "physical_pdf_page": 2,
+          "candidate_id": "WEST-2026H2-LP04",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 5,
+          "physical_pdf_page": 3,
+          "candidate_id": "WEST-2026H2-LP05",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 13,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP13",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    }
+  ],
+  "faq_extracted_count": 7,
+  "review_item_count": 7,
+  "issues_automatically_resolved": 0,
+  "individual_eligibility_determined": false,
+  "individual_loan_eligibility_determined": false,
+  "semantic_review_completed": false,
+  "current_policy_verified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

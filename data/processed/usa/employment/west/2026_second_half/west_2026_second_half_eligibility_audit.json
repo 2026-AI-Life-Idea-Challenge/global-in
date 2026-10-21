@@ -1,0 +1,22 @@
+{
+  "dataset_type": "west_eligibility_extraction_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "searched_pages": 22,
+  "policy_fields": 5,
+  "language_subfields": 5,
+  "total_candidate_matches": 311,
+  "fields_without_candidates": [],
+  "fields_with_truncated_candidates": [
+    "academic_status_eligibility",
+    "graduation_date_conditions",
+    "language_score_requirements"
+  ],
+  "policy_values_confirmed": 0,
+  "input_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "review_file_sha256": "7b33b3a374ee77734d64d63a10b6b5ed78ca7098d97711fb1e21ad0a1169e0b7"
+}

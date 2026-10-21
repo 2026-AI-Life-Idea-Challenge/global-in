@@ -1,0 +1,892 @@
+{
+  "dataset_type": "west_selection_loan_faq_review",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "historical_notice": true,
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "financial_source_sha256": "8d381edebe88569b087050cedcd8046f5adae0dd30c4b0e19ea30372f657ca3a",
+  "selection_schedule": {
+    "document_submission_deadline": {
+      "value": "2026-08-05T17:00:00",
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review"
+    },
+    "university_recommendation": {
+      "value": {
+        "start": "2026-08-06",
+        "end": "2026-08-10"
+      },
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review"
+    },
+    "scholarship_bracket_review": {
+      "value": {
+        "start": "2026-08-10",
+        "end": "2026-10-05"
+      },
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review"
+    },
+    "document_screening_result": {
+      "value": "2026-09-02T16:00:00",
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review"
+    },
+    "first_interview": {
+      "value": {
+        "short_term": "2026-09-12",
+        "medium_term": "2026-09-13"
+      },
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review"
+    },
+    "first_interview_result": {
+      "value": "2026-09-17T16:00:00",
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review"
+    },
+    "second_english_interview": {
+      "value": {
+        "start": "2026-09-18",
+        "end": "2026-10-06"
+      },
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review"
+    },
+    "final_result": {
+      "value": "2026-10-15T16:00:00",
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review"
+    },
+    "participation_fee_payment": {
+      "value": {
+        "start": "2026-10-16",
+        "end": "2026-10-22"
+      },
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review"
+    },
+    "additional_acceptance_and_payment": {
+      "value": {
+        "start": "2026-10-23",
+        "end": "2026-10-27"
+      },
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review"
+    },
+    "predeparture_orientation": {
+      "value": "2026-11-14",
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review"
+    },
+    "visa_interview": {
+      "value": "2026년 11월 말 예정",
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review"
+    },
+    "departure": {
+      "value": "2026년 12월부터 예정",
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review"
+    },
+    "language_training_start": {
+      "value": "2027년 1월부터 예정",
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "source_comparison_status": "verified_against_pdf",
+      "validation_status": "needs_review",
+      "note": "현지중개기관·어학연수기관별 실제 시작일 상이"
+    }
+  },
+  "scholarship_loan_by_academic_status": {
+    "application_for_support_bracket": {
+      "재학생": "required",
+      "휴학생": "required",
+      "초과학기자": "required",
+      "수료자": "required",
+      "졸업유예자": "required",
+      "졸업생": "not_required_separate_documents"
+    },
+    "actual_loan_execution": {
+      "재학생": "possible_subject_to_foundation_review",
+      "휴학생": "possible_subject_to_foundation_review",
+      "초과학기자": "possible_subject_to_foundation_review",
+      "수료자": "conditional_2026_second_semester_registration",
+      "졸업유예자": "not_allowed",
+      "졸업생": "not_allowed"
+    },
+    "supporting_pages": [
+      {
+        "printed_page": 5,
+        "physical_pdf_page": 3,
+        "candidate_id": "WEST-2026H2-LP05",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      {
+        "printed_page": 7,
+        "physical_pdf_page": 4,
+        "candidate_id": "WEST-2026H2-LP07",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      {
+        "printed_page": 14,
+        "physical_pdf_page": 7,
+        "candidate_id": "WEST-2026H2-LP14",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      }
+    ],
+    "individual_loan_eligibility_verified": false,
+    "validation_status": "needs_review"
+  },
+  "faq_index": [
+    {
+      "question_number": 1,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 2,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 3,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 4,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 5,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 6,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 7,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 8,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 9,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 10,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 11,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 12,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 13,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 14,
+      "physical_pdf_page": 6,
+      "printed_page_candidates": [
+        11,
+        12
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 15,
+      "physical_pdf_page": 7,
+      "printed_page_candidates": [
+        13,
+        14
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 16,
+      "physical_pdf_page": 7,
+      "printed_page_candidates": [
+        13,
+        14
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 17,
+      "physical_pdf_page": 7,
+      "printed_page_candidates": [
+        13,
+        14
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 18,
+      "physical_pdf_page": 7,
+      "printed_page_candidates": [
+        13,
+        14
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 19,
+      "physical_pdf_page": 7,
+      "printed_page_candidates": [
+        13,
+        14
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 20,
+      "physical_pdf_page": 7,
+      "printed_page_candidates": [
+        13,
+        14
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 21,
+      "physical_pdf_page": 7,
+      "printed_page_candidates": [
+        13,
+        14
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 22,
+      "physical_pdf_page": 7,
+      "printed_page_candidates": [
+        13,
+        14
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 23,
+      "physical_pdf_page": 7,
+      "printed_page_candidates": [
+        13,
+        14
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 24,
+      "physical_pdf_page": 7,
+      "printed_page_candidates": [
+        13,
+        14
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 25,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 26,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 27,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 28,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 29,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 30,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 31,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 32,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 33,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 34,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 35,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 36,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 37,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 38,
+      "physical_pdf_page": 8,
+      "printed_page_candidates": [
+        15,
+        16
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 39,
+      "physical_pdf_page": 9,
+      "printed_page_candidates": [
+        17,
+        18
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 40,
+      "physical_pdf_page": 9,
+      "printed_page_candidates": [
+        17,
+        18
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 41,
+      "physical_pdf_page": 9,
+      "printed_page_candidates": [
+        17,
+        18
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 42,
+      "physical_pdf_page": 9,
+      "printed_page_candidates": [
+        17,
+        18
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 43,
+      "physical_pdf_page": 9,
+      "printed_page_candidates": [
+        17,
+        18
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 44,
+      "physical_pdf_page": 9,
+      "printed_page_candidates": [
+        17,
+        18
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 45,
+      "physical_pdf_page": 9,
+      "printed_page_candidates": [
+        17,
+        18
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 46,
+      "physical_pdf_page": 9,
+      "printed_page_candidates": [
+        17,
+        18
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 47,
+      "physical_pdf_page": 9,
+      "printed_page_candidates": [
+        17,
+        18
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 48,
+      "physical_pdf_page": 9,
+      "printed_page_candidates": [
+        17,
+        18
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "question_number": 49,
+      "physical_pdf_page": 9,
+      "printed_page_candidates": [
+        17,
+        18
+      ],
+      "content_semantics_verified": false,
+      "validation_status": "needs_review"
+    }
+  ],
+  "faq_questions_verified": 49,
+  "faq_answers_verified": 49,
+  "faq_semantics_verified": false,
+  "manual_review_issues": [
+    {
+      "issue": "선발 일정의 변경 가능성",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "printed_page": 10,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    {
+      "issue": "학적 변경 시 대출 실행 제한",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "printed_page": 5,
+          "physical_pdf_page": 3,
+          "candidate_id": "WEST-2026H2-LP05",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 14,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP14",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    {
+      "issue": "수료자의 2026년 2학기 등록 조건",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "printed_page": 5,
+          "physical_pdf_page": 3,
+          "candidate_id": "WEST-2026H2-LP05",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 7,
+          "physical_pdf_page": 4,
+          "candidate_id": "WEST-2026H2-LP07",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 14,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP14",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    {
+      "issue": "FAQ Q3 선발 시기 표기 불일치",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "printed_page": 11,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP11",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    {
+      "issue": "FAQ Q43·Q48의 J-1 본국거주의무",
+      "note": "공고 내용만으로 모든 J-1 참가자에게 일률 적용하는 자동 법률 판단 금지. 개별 비자 및 현행 법률 검증 별도 필요.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "printed_page": 17,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP17",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 18,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP18",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    {
+      "issue": "FAQ 49개 답변의 개별 의미 검수",
+      "note": "질문·답변 번호의 완전성만 확인. 49개 답변 전체를 정책 승인한 것은 아님.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "printed_page": 11,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP11",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 12,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP12",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 13,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP13",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 14,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP14",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 15,
+          "physical_pdf_page": 8,
+          "candidate_id": "WEST-2026H2-LP15",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 16,
+          "physical_pdf_page": 8,
+          "candidate_id": "WEST-2026H2-LP16",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 17,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP17",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 18,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP18",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    }
+  ],
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

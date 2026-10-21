@@ -1,0 +1,129 @@
+
+{
+  "dataset_type": "h1b_policy_review_draft",
+  "country": "US",
+  "program_name": "H-1B Specialty Occupations",
+  "internal_program_id": "US-EM-01",
+  "team_reference_program_id": "US-WK-01",
+  "route_id": "US-WK",
+  "source_dataset": "official_evidence_v2.json",
+  "source_agency": "USCIS",
+  "official_sources": [
+    {
+      "source_index": 1,
+      "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "source_sha256_verified": true
+    },
+    {
+      "source_index": 2,
+      "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "source_sha256_verified": true
+    }
+  ],
+  "policy_records": [
+    {
+      "topic": "specialty_occupation_education",
+      "summary": "The specialty occupation generally requires a bachelor's or higher degree in a directly related specific specialty, or its equivalent.",
+      "source_index": 1,
+      "evidence_block_index": 18,
+      "verification_status": "source_text_checked",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "labor_condition_application",
+      "summary": "The petitioner must submit evidence of a DOL-certified Labor Condition Application with Form I-129.",
+      "source_index": 1,
+      "evidence_block_index": 29,
+      "verification_status": "source_text_checked",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "general_stay_duration",
+      "initial_max_years": 3,
+      "general_additional_max_years": 3,
+      "general_total_max_years": 6,
+      "controlling_interest_note": "Initial and first extension petition approvals are each limited to up to 18 months for specified controlling-interest beneficiaries.",
+      "source_index": 1,
+      "evidence_block_index": 57,
+      "verification_status": "source_text_checked",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "annual_cap",
+      "regular_cap": 65000,
+      "us_advanced_degree_exemption": 20000,
+      "note": "H-1B1 set-asides and cap-exempt employers require separate treatment.",
+      "source_index": 1,
+      "evidence_block_index": 71,
+      "verification_status": "source_text_checked",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "fy2027_weighted_selection",
+      "fiscal_year": 2027,
+      "wage_level_weights": {
+        "I": 1,
+        "II": 2,
+        "III": 3,
+        "IV": 4
+      },
+      "note": "Selection weights do not guarantee selection or petition approval.",
+      "source_index": 2,
+      "evidence_block_indices": [6, 7],
+      "verification_status": "source_text_checked",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "special_payment_100000",
+      "amount_usd": 100000,
+      "historical_policy_start_date": "2025-09-21",
+      "district_court_order_date": "2026-06-08",
+      "appeals_court_stay_denial_date": "2026-07-24",
+      "source_index": 1,
+      "evidence_block_indices": [3, 5, 6, 7, 8],
+      "status_at_captured_uscis_notice": "agency_implementation_guidance_vacated",
+      "current_collection_status": "requires_current_legal_verification",
+      "verification_status": "source_text_checked",
+      "review_status": "needs_review",
+      "approved_for_fee_calculation": false
+    },
+    {
+    "topic": "fy2027_registration_fee",
+    "fiscal_year": 2027,
+    "amount_usd": 215,
+    "fee_type": "electronic_registration",
+    "source_index": 2,
+    "evidence_block_index": 45,
+    "verification_status": "source_text_checked",
+    "review_status": "needs_review"
+    },
+    {
+    "topic": "fy2027_registration_window",
+    "fiscal_year": 2027,
+    "start_date": "2026-03-04",
+    "end_date": "2026-03-19",
+    "time_zone": "America/New_York",
+    "exact_closing_time_verified": false,
+    "official_announcement_url": "https://content.govdelivery.com/accounts/USDHSCIS/bulletins/406da02",
+    "verification_status": "official_announcement_checked",
+    "review_status": "needs_review"
+    }
+  ],
+  "pending_review_topics": [
+    "current_legal_status_of_100000_payment",
+    "fy2027_registration_closing_time",
+    "petition_filing_fees",
+    "cap_exemption_details",
+    "eligibility_exceptions",
+    "complete_policy_semantic_review"
+  ],
+  "source_identity_verified": false,
+  "semantic_review_completed": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false,
+  "original_evidence_modified": false,
+  "retrieval_chunks_modified": false
+}

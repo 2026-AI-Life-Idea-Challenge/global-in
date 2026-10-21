@@ -1,0 +1,22 @@
+{
+  "dataset_type": "west_manual_review_register_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "original_issue_counts": {
+    "eligibility": 3,
+    "application": 3,
+    "financial": 4,
+    "selection": 6
+  },
+  "original_issue_count": 16,
+  "same_title_duplicate_group_count": 0,
+  "issues_deleted_or_merged": 0,
+  "additional_field_tasks": 7,
+  "human_semantic_review_completed": false,
+  "input_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "register_sha256": "49cd19ae12b204dea33db02767025552c2d717199ce038182dd6223b0582ca0b"
+}

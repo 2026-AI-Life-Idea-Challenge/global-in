@@ -1,0 +1,358 @@
+{
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "notice_type": "historical_cohort_announcement",
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "input_review_sha256": "7b33b3a374ee77734d64d63a10b6b5ed78ca7098d97711fb1e21ad0a1169e0b7",
+  "programs": {
+    "short_term": {
+      "duration_max_months": {
+        "value": 6,
+        "source_comparison_status": "verified_against_uploaded_pdf",
+        "validation_status": "source_verified_policy_review_pending",
+        "evidence": [
+          {
+            "pdf_physical_page": 1,
+            "printed_logical_page": 2,
+            "logical_page_candidate_id": "WEST-2026H2-LP02",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      },
+      "capacity_approx_persons": {
+        "value": 71,
+        "source_comparison_status": "verified_against_uploaded_pdf",
+        "validation_status": "source_verified_policy_review_pending",
+        "evidence": [
+          {
+            "pdf_physical_page": 1,
+            "printed_logical_page": 2,
+            "logical_page_candidate_id": "WEST-2026H2-LP02",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ],
+        "notes": "71명 내외. 확정 인원 아님."
+      },
+      "english_general_any_of": {
+        "value": {
+          "TOEIC_min": 800,
+          "GTELP_Level2_min": 76
+        },
+        "source_comparison_status": "verified_against_uploaded_pdf",
+        "validation_status": "source_verified_policy_review_pending",
+        "evidence": [
+          {
+            "pdf_physical_page": 1,
+            "printed_logical_page": 2,
+            "logical_page_candidate_id": "WEST-2026H2-LP02",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      },
+      "english_speaking_any_of": {
+        "value": {
+          "OPIc_min": "IM2",
+          "TOEIC_Speaking_ACTFL_min": "IM2",
+          "GTELP_Speaking_level_min_qualification": "Level 6 이상"
+        },
+        "source_comparison_status": "verified_against_uploaded_pdf",
+        "validation_status": "source_verified_policy_review_pending",
+        "evidence": [
+          {
+            "pdf_physical_page": 1,
+            "printed_logical_page": 2,
+            "logical_page_candidate_id": "WEST-2026H2-LP02",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      }
+    },
+    "medium_term": {
+      "duration_max_months": {
+        "value": 12,
+        "source_comparison_status": "verified_against_uploaded_pdf",
+        "validation_status": "source_verified_policy_review_pending",
+        "evidence": [
+          {
+            "pdf_physical_page": 1,
+            "printed_logical_page": 2,
+            "logical_page_candidate_id": "WEST-2026H2-LP02",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      },
+      "capacity_approx_persons": {
+        "value": 31,
+        "source_comparison_status": "verified_against_uploaded_pdf",
+        "validation_status": "source_verified_policy_review_pending",
+        "evidence": [
+          {
+            "pdf_physical_page": 1,
+            "printed_logical_page": 2,
+            "logical_page_candidate_id": "WEST-2026H2-LP02",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ],
+        "notes": "31명 내외. 확정 인원 아님."
+      },
+      "english_general_any_of": {
+        "value": {
+          "TOEIC_min": 750,
+          "GTELP_Level2_min": 70
+        },
+        "source_comparison_status": "verified_against_uploaded_pdf",
+        "validation_status": "source_verified_policy_review_pending",
+        "evidence": [
+          {
+            "pdf_physical_page": 1,
+            "printed_logical_page": 2,
+            "logical_page_candidate_id": "WEST-2026H2-LP02",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      },
+      "english_speaking_any_of": {
+        "value": {
+          "OPIc_min": "IM1",
+          "TOEIC_Speaking_ACTFL_min": "IM1",
+          "GTELP_Speaking_level_min_qualification": "Level 7 이상"
+        },
+        "source_comparison_status": "verified_against_uploaded_pdf",
+        "validation_status": "source_verified_policy_review_pending",
+        "evidence": [
+          {
+            "pdf_physical_page": 1,
+            "printed_logical_page": 2,
+            "logical_page_candidate_id": "WEST-2026H2-LP02",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      }
+    }
+  },
+  "common_requirements": {
+    "nationality_and_visa": {
+      "value": "대한민국 국적이며 미국 비자 발급 결격사유가 없을 것",
+      "source_comparison_status": "verified_against_uploaded_pdf",
+      "validation_status": "source_verified_policy_review_pending",
+      "evidence": [
+        {
+          "pdf_physical_page": 1,
+          "printed_logical_page": 2,
+          "logical_page_candidate_id": "WEST-2026H2-LP02",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    "enrollment_minimum": {
+      "value": {
+        "four_year_university_semesters_completed_min": 4,
+        "junior_college_semesters_completed_min": 2,
+        "enrollment_types": [
+          "재학생",
+          "휴학생"
+        ]
+      },
+      "source_comparison_status": "verified_against_uploaded_pdf",
+      "validation_status": "source_verified_policy_review_pending",
+      "evidence": [
+        {
+          "pdf_physical_page": 1,
+          "printed_logical_page": 2,
+          "logical_page_candidate_id": "WEST-2026H2-LP02",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    "recent_graduate": {
+      "value": "어학연수 실제 시작일 기준 최근 1년 이내 졸업생",
+      "source_comparison_status": "verified_against_uploaded_pdf",
+      "validation_status": "source_verified_policy_review_pending",
+      "evidence": [
+        {
+          "pdf_physical_page": 1,
+          "printed_logical_page": 2,
+          "logical_page_candidate_id": "WEST-2026H2-LP02",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "pdf_physical_page": 6,
+          "printed_logical_page": 11,
+          "logical_page_candidate_id": "WEST-2026H2-LP11",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "notes": "공고 예시는 2026년 2월·8월 졸업자. 현지중개기관·어학기관별 시작일 확인 필요."
+    },
+    "english_score_combination": {
+      "value": "일반영어 ① 중 한 종목 AND 말하기 ② 중 한 종목",
+      "source_comparison_status": "verified_against_uploaded_pdf",
+      "validation_status": "source_verified_policy_review_pending",
+      "evidence": [
+        {
+          "pdf_physical_page": 1,
+          "printed_logical_page": 2,
+          "logical_page_candidate_id": "WEST-2026H2-LP02",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    "english_test_validity": {
+      "value": "2026-08-05 접수 마감일 기준 2년 이내 국내 정기시험 성적. 대학연합 OPIc 성적 인정.",
+      "source_comparison_status": "verified_against_uploaded_pdf",
+      "validation_status": "source_verified_policy_review_pending",
+      "evidence": [
+        {
+          "pdf_physical_page": 1,
+          "printed_logical_page": 2,
+          "logical_page_candidate_id": "WEST-2026H2-LP02",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "pdf_physical_page": 2,
+          "printed_logical_page": 4,
+          "logical_page_candidate_id": "WEST-2026H2-LP04",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    "university_recommendation": {
+      "value": "소속 대학의 지원자 추천 공문 필요",
+      "source_comparison_status": "verified_against_uploaded_pdf",
+      "validation_status": "source_verified_policy_review_pending",
+      "evidence": [
+        {
+          "pdf_physical_page": 1,
+          "printed_logical_page": 2,
+          "logical_page_candidate_id": "WEST-2026H2-LP02",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "pdf_physical_page": 2,
+          "printed_logical_page": 3,
+          "logical_page_candidate_id": "WEST-2026H2-LP03",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    "mutually_exclusive_tracks": {
+      "value": "단기·중기 중복 지원 불가",
+      "source_comparison_status": "verified_against_uploaded_pdf",
+      "validation_status": "source_verified_policy_review_pending",
+      "evidence": [
+        {
+          "pdf_physical_page": 1,
+          "printed_logical_page": 2,
+          "logical_page_candidate_id": "WEST-2026H2-LP02",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    "application_deadline": {
+      "value": "2026-08-05 17:00",
+      "source_comparison_status": "verified_against_uploaded_pdf",
+      "validation_status": "source_verified_policy_review_pending",
+      "evidence": [
+        {
+          "pdf_physical_page": 2,
+          "printed_logical_page": 3,
+          "logical_page_candidate_id": "WEST-2026H2-LP03",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "pdf_physical_page": 5,
+          "printed_logical_page": 10,
+          "logical_page_candidate_id": "WEST-2026H2-LP10",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "notes": "2026년 하반기 모집 당시 마감일"
+    },
+    "no_published_gpa_minimum": {
+      "value": "학점 제한은 없으나 서류심사 평가에 학점 반영",
+      "source_comparison_status": "verified_against_uploaded_pdf",
+      "validation_status": "source_verified_policy_review_pending",
+      "evidence": [
+        {
+          "pdf_physical_page": 6,
+          "printed_logical_page": 11,
+          "logical_page_candidate_id": "WEST-2026H2-LP11",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    }
+  },
+  "exclusions": {
+    "value": [
+      "복수 국적자",
+      "외국 소재 대학(교) 학생",
+      "WEST 프로그램 기 참가자",
+      "WEST 프로그램 기 지원자 중 참가비 납부 마감 이후 포기자"
+    ],
+    "source_comparison_status": "verified_against_uploaded_pdf",
+    "validation_status": "source_verified_policy_review_pending",
+    "evidence": [
+      {
+        "pdf_physical_page": 1,
+        "printed_logical_page": 2,
+        "logical_page_candidate_id": "WEST-2026H2-LP02",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      {
+        "pdf_physical_page": 6,
+        "printed_logical_page": 11,
+        "logical_page_candidate_id": "WEST-2026H2-LP11",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      }
+    ]
+  },
+  "manual_review_issues": [
+    {
+      "issue": "FAQ Q3의 선발 시기 표기 불일치",
+      "details": "2026년 하반기 공고의 Q3 예시에 2026년 상반기 선발이라고 표기됨.",
+      "evidence": [
+        {
+          "pdf_physical_page": 1,
+          "printed_logical_page": 1,
+          "logical_page_candidate_id": "WEST-2026H2-LP01",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "pdf_physical_page": 6,
+          "printed_logical_page": 11,
+          "logical_page_candidate_id": "WEST-2026H2-LP11",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "issue": "졸업생 실제 어학연수 시작일",
+      "details": "기관별 실제 시작일이 달라 개인별 졸업일 판정 보류.",
+      "evidence": [
+        {
+          "pdf_physical_page": 1,
+          "printed_logical_page": 2,
+          "logical_page_candidate_id": "WEST-2026H2-LP02",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "pdf_physical_page": 6,
+          "printed_logical_page": 11,
+          "logical_page_candidate_id": "WEST-2026H2-LP11",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "issue": "원문 범위와 현행 법규 구분",
+      "details": "2026년 하반기 모집 공고의 내용과 현재 적용되는 정책은 별도 확인 필요.",
+      "status": "needs_review"
+    }
+  ],
+  "validation_status": "source_verified_policy_review_pending",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

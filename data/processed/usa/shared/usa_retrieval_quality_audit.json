@@ -1,0 +1,2194 @@
+{
+  "dataset_type": "usa_retrieval_quality_audit",
+  "country": "US",
+  "retrieval_index_sha256": "a5b801fd23d914861f04b51916e035f82e9c854fe3ad1353542bb80933d01c7a",
+  "program_count": 7,
+  "total_chunks": 334,
+  "unique_chunk_ids": 334,
+  "total_flagged_chunks": 201,
+  "exact_duplicate_text_groups": 7,
+  "reason_counts": {
+    "pdf_table_layout_manual_review": 7,
+    "potential_eligibility_or_legal_claim": 109,
+    "short_chunk": 94
+  },
+  "flagged_program_counts": {
+    "US-EM-01": 107,
+    "US-EM-02": 8,
+    "US-EM-03": 9,
+    "US-ST-01": 36,
+    "US-ST-03": 5,
+    "US-WEST-01": 18,
+    "US-WH-01": 18
+  },
+  "programs": [
+    {
+      "program_id": "US-WH-01",
+      "chunk_count": 27,
+      "unit_count": 19,
+      "source_sha256_verified": true,
+      "unit_reconstruction": "pass"
+    },
+    {
+      "program_id": "US-ST-01",
+      "chunk_count": 45,
+      "unit_count": 45,
+      "source_sha256_verified": true,
+      "unit_reconstruction": "pass"
+    },
+    {
+      "program_id": "US-ST-03",
+      "chunk_count": 11,
+      "unit_count": 10,
+      "source_sha256_verified": true,
+      "unit_reconstruction": "pass"
+    },
+    {
+      "program_id": "US-EM-01",
+      "chunk_count": 192,
+      "unit_count": 191,
+      "source_sha256_verified": true,
+      "unit_reconstruction": "pass"
+    },
+    {
+      "program_id": "US-EM-02",
+      "chunk_count": 15,
+      "unit_count": 13,
+      "source_sha256_verified": true,
+      "unit_reconstruction": "pass"
+    },
+    {
+      "program_id": "US-EM-03",
+      "chunk_count": 15,
+      "unit_count": 13,
+      "source_sha256_verified": true,
+      "unit_reconstruction": "pass"
+    },
+    {
+      "program_id": "US-WEST-01",
+      "chunk_count": 29,
+      "unit_count": 22,
+      "source_sha256_verified": true,
+      "unit_reconstruction": "pass"
+    }
+  ],
+  "flags": [
+    {
+      "chunk_id": "US-WH-01-SECTION-002-C001",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 12,
+      "text_preview": "Participants"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-003-C001",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 513,
+      "text_preview": "Summer Work Travel Students must be: Sufficiently proficient in English to successfully interact in an English speaking environment; Post-secondary school students enrolled in and "
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-005-C001",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 16,
+      "text_preview": "More information"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-008-C001",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 307,
+      "text_preview": "Readmittance, Program Length, and Returning Home Readmittance: Participants can be admitted to the program more than once; Program Length: The maximum length of the program is four"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-009-C001",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "Program Exclusions Sponsors must not place participants: In positions that could bring notoriety or disrepute to the Exchange Visitor Program; In sales positions that require parti"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-009-C002",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "on-based and thus do not guarantee that participants will be paid minimum wage in accordance with federal and state standards; In positions involved in gaming and gambling that inc"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-009-C003",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "s After November 1, 2012, in positions in the North American Industry Classification System’s (NAICS) Goods-Producing Industries occupational categories industry sectors 11, 21, 23"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-010-C001",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 43,
+      "text_preview": "Report Abuse or Exploitation 1-866-283-9090"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-012-C001",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 16,
+      "text_preview": "Program Sponsors"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-013-C001",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "Sponsors are required to: Provide pre-arranged and fully-vetted employment to all participants who are not from a visa waiver country. Provide all participants, prior to entry: A c"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-013-C002",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 840,
+      "text_preview": "ho are entering the United States without prearranged employment. Sponsors must undertake reasonable efforts to secure suitable employment for participants unable to find jobs on t"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-014-C001",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 16,
+      "text_preview": "More information"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-015-C001",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 53,
+      "text_preview": "2024 Program Date Chart 2024 Program Date Chart (PDF)"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-016-C001",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "Program Exclusions Sponsors must not place participants: In positions that could bring notoriety or disrepute to the Exchange Visitor Program; In sales positions that require parti"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-016-C002",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "on-based and thus do not guarantee that participants will be paid minimum wage in accordance with federal and state standards; In positions involved in gaming and gambling that inc"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-016-C003",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "s After November 1, 2012, in positions in the North American Industry Classification System’s (NAICS) Goods-Producing Industries occupational categories industry sectors 11, 21, 23"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-018-C001",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 9,
+      "text_preview": "Employers"
+    },
+    {
+      "chunk_id": "US-WH-01-SECTION-019-C001",
+      "program_id": "US-WH-01",
+      "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "Host employers are required to: Provide participants the number of hours of paid employment per week as identified on the job offer and agreed to when the sponsor vetted the jobs; "
+    },
+    {
+      "chunk_id": "US-ST-01-S01-B0001-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/school-search",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 383,
+      "text_preview": "Use the School Search Map to find Student and Exchange Visitor Program (SEVP)-certified schools and programs eligible to enroll F-1 and M-1 students in the United States. Search by"
+    },
+    {
+      "chunk_id": "US-ST-01-S01-B0003-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/school-search",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 30,
+      "text_preview": "Download Certified School List"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0001-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 26,
+      "text_preview": "Students and the Form I-20"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0003-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 528,
+      "text_preview": "You must also obtain a Form I-20 for any eligible dependents you plan to bring to the United States with you. However, please note that the name (i.e., Academic and Language studen"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0005-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 308,
+      "text_preview": "Before you pay the I-901 Student and Exchange Visitor Information System (SEVIS) Fee, you must receive the Form I-20 from a DSO at the school you plan to attend. You will need info"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0007-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 47,
+      "text_preview": "Name, address, date of birth and email address."
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0008-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 44,
+      "text_preview": "Country of birth and country of citizenship."
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0010-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 55,
+      "text_preview": "SEVIS Identification Number as listed on the Form I-20."
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0011-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 526,
+      "text_preview": "The Form I-20 lists your program start date, 30 days before which you are allowed to enter the United States. F-1 and M-1 student visas can be issued up to 365 days in advance of y"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0014-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 311,
+      "text_preview": "Your Form I-20 proves that you are legally enrolled in a program of study in the United States. Therefore, it may be needed when you apply for the benefits available to F and M stu"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0016-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 59,
+      "text_preview": "If the physical copy of the form is destroyed or misplaced."
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0017-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 71,
+      "text_preview": "When the student’s SEVIS status changes (e.g., from Initial to Active)."
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0019-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 433,
+      "text_preview": "As of July 1, 2016, the redesigned Form I-20 is required for all F and M nonimmigrant visa applications, entry into the United States, travel and applications for nonimmigrant bene"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0020-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 28,
+      "text_preview": "Student Resources Navigation"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0021-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 32,
+      "text_preview": "International Student Life Cycle"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0022-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 37,
+      "text_preview": "What is a Commission-Based Recruiter?"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0023-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 40,
+      "text_preview": "Bringing Dependents to the United States"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0024-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 33,
+      "text_preview": "Kindergarten to Grade 12 Students"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0025-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 25,
+      "text_preview": "English Language Training"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0026-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 26,
+      "text_preview": "Paying the I-901 SEVIS Fee"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0027-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 29,
+      "text_preview": "I-901 SEVIS Fee Payment Video"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0028-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 28,
+      "text_preview": "Getting to the United States"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0029-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 50,
+      "text_preview": "Applying for a Visa to Travel to the United States"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0030-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 29,
+      "text_preview": "What is Secondary Inspection?"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0031-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 30,
+      "text_preview": "Transferring to Another School"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0032-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 65,
+      "text_preview": "Instructions for Transferring to Another School as an F-1 Student"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0033-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 65,
+      "text_preview": "Instructions for Transferring to Another School as an M-1 Student"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0034-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 43,
+      "text_preview": "Maintain F and M Status in Emergency Events"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0035-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 30,
+      "text_preview": "Traveling as an F or M Student"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0036-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 28,
+      "text_preview": "Driving in the United States"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0037-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 28,
+      "text_preview": "Working in the United States"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0038-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 34,
+      "text_preview": "Obtaining a Social Security Number"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0039-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 43,
+      "text_preview": "Training Opportunities in the United States"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0040-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 31,
+      "text_preview": "Applying for Practical Training"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0041-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 48,
+      "text_preview": "Individual Taxpayer Identification Number (ITIN)"
+    },
+    {
+      "chunk_id": "US-ST-01-S02-B0042-C001",
+      "program_id": "US-ST-01",
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 37,
+      "text_preview": "H-1B Status and the Cap Gap Extension"
+    },
+    {
+      "chunk_id": "US-ST-03-SECTION-002-C001",
+      "program_id": "US-ST-03",
+      "source_url": "https://j1visa.state.gov/programs/college-and-university-student/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 12,
+      "text_preview": "Participants"
+    },
+    {
+      "chunk_id": "US-ST-03-SECTION-003-C001",
+      "program_id": "US-ST-03",
+      "source_url": "https://j1visa.state.gov/programs/college-and-university-student/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 984,
+      "text_preview": "College/University Students must: Be financed directly or indirectly by the U.S. government, the government of their home country, an international organization of which the United"
+    },
+    {
+      "chunk_id": "US-ST-03-SECTION-007-C001",
+      "program_id": "US-ST-03",
+      "source_url": "https://j1visa.state.gov/programs/college-and-university-student/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 16,
+      "text_preview": "Program Sponsors"
+    },
+    {
+      "chunk_id": "US-ST-03-SECTION-008-C001",
+      "program_id": "US-ST-03",
+      "source_url": "https://j1visa.state.gov/programs/college-and-university-student/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 324,
+      "text_preview": "Sponsors are required to: Secure sufficient background information on the students to ensure that they have the academic credentials required for enrollment; or Ensure that the for"
+    },
+    {
+      "chunk_id": "US-ST-03-SECTION-009-C001",
+      "program_id": "US-ST-03",
+      "source_url": "https://j1visa.state.gov/programs/college-and-university-student/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 242,
+      "text_preview": "Sponsors must ensure the following for participants: Ensure that they pursue a full course of study at a post-secondary accredited academic institution in the United States. Progra"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0002-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 209,
+      "text_preview": "Form I-129 petitions postmarked or electronically submitted on or after Sept. 9, 2026, must include the fees as required under the final rule. For additional information on fees, s"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0005-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 370,
+      "text_preview": "On Sept. 19, 2025, the President issued a Proclamation, Restriction on Entry of Certain Nonimmigrant Workers , an important initial step to reform the H-1B nonimmigrant visa progra"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0006-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 39,
+      "text_preview": "Who is subject to the $100,000 payment:"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0008-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 513,
+      "text_preview": "In addition, if a petition filed at or after 12:01 a.m. Eastern on Sept. 21, 2025, requests a change of status or amendment or extension of stay and USCIS determines that the alien"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0011-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 32,
+      "text_preview": "How to pay the $100,000 payment:"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0012-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 153,
+      "text_preview": "Petitioners should submit the required $100,000 payment using pay.gov, following the instructions on pay.gov at H-1B Visa Payment to Remove Restriction ."
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0013-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 33,
+      "text_preview": "When to pay the $100,000 payment:"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0014-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 471,
+      "text_preview": "Payment must be made before filing a petition with USCIS, as petitioners must submit proof that the payment has been scheduled from pay.gov or evidence of an exception from the $10"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0015-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 57,
+      "text_preview": "Exceptions granted by the Secretary of Homeland Security:"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0019-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 95,
+      "text_preview": "The position must also meet one of the following criteria to qualify as a specialty occupation:"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0021-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 237,
+      "text_preview": "A U.S. bachelor’s or higher degree in a directly related specific specialty, or its equivalent, is normally required to perform job duties in parallel positions among similar organ"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0023-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 269,
+      "text_preview": "The specific duties of the offered position are so specialized, complex, or unique that the knowledge required to perform them is normally associated with the attainment of a U.S. "
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0024-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 109,
+      "text_preview": "For you to qualify to perform services in a specialty occupation you must meet one of the following criteria:"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0025-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 118,
+      "text_preview": "Hold a U.S. bachelor’s or higher degree required by the specialty occupation from an accredited college or university;"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0026-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 161,
+      "text_preview": "Hold a foreign degree that is the equivalent to a U.S. bachelor’s or higher degree required by the specialty occupation from an accredited college or university;"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0029-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 276,
+      "text_preview": "Yes. The prospective petitioner must include evidence that a Form ETA-9035/9035E, Labor Condition Application (LCA) has been certified by the Department of Labor (DOL), with Form I"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0030-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 74,
+      "text_preview": "For more information see the Information for Employers and Employees page."
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0031-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 45,
+      "text_preview": "DOD Researcher and Development Project Worker"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0032-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 130,
+      "text_preview": "The job must require a bachelor’s or higher degree, or its equivalent, to perform the duties. The petition must be accompanied by:"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0033-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 326,
+      "text_preview": "A verification letter from the DOD project manager for the particular project stating that the beneficiary will be working on a cooperative research and development project or a co"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0036-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 236,
+      "text_preview": "To be eligible for this classification you must have a bachelor's or higher degree or its equivalent in the occupational field in which you will be performing services. This requir"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0037-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 104,
+      "text_preview": "Hold a U.S. bachelor’s or higher degree required by the duties from an accredited college or university;"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0041-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim",
+        "short_chunk"
+      ],
+      "text_length": 68,
+      "text_preview": "The position or services must require a fashion model of prominence."
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0042-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 101,
+      "text_preview": "To be eligible for this visa category you must be a fashion model of distinguished merit and ability."
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0044-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 232,
+      "text_preview": "For purposes of the specialty occupation definition and criteria, “directly related” means that there is a logical connection between the required degree, or its equivalent, and th"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0045-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 53,
+      "text_preview": "**For more information see 8 CFR 214.2(h)(4)(iii)(C)."
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0047-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 447,
+      "text_preview": "If an occupation in the state of intended employment requires such a license, an H-1B beneficiary seeking classification in that occupation generally must have that license before "
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0049-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 345,
+      "text_preview": "Step 1: (only required for specialty occupation and fashion model petitions): Employer or Agent Submits LCA to DOL for Certification. The employer or agent must apply for and recei"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0050-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 736,
+      "text_preview": "Step 2: Employer or Agent Submits Completed Form I-129 to USCIS. The employer or agent should file Form I-129, Petition for a Nonimmigrant Worker, at the correct location or online"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0051-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 490,
+      "text_preview": "Step 3: Prospective Workers Outside the United States Apply for Visa or Admission. If the Form I-129 petition is approved, the prospective H-1B worker who is outside the United Sta"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0052-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 438,
+      "text_preview": "Prospective specialty occupation and distinguished fashion model employers or agents must obtain a certification of an LCA from the DOL. This application includes certain attestati"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0058-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 738,
+      "text_preview": "However, you may be eligible for an H-1B extension beyond the sixth year under 8 CFR 214.2(h)(13)(iii)(E) if you are the beneficiary of an approved immigrant visa petition under th"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0059-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 331,
+      "text_preview": "Alternatively, under 8 CFR 214.2(h)(13)(iii)(D) , you may be eligible for an H-1B extension beyond the sixth year if at least 365 days have passed since a labor certification was f"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0060-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 910,
+      "text_preview": "You are ineligible for this extension beyond the sixth year if you fail to file an adjustment of status application or apply for an immigrant visa within 1 year of an immigrant vis"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0061-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 41,
+      "text_preview": "Whether there was a change of employment;"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0062-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 47,
+      "text_preview": "Whether the change of employment was voluntary;"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0063-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 65,
+      "text_preview": "When and why the employment with the original employer ended; and"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0067-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 71,
+      "text_preview": "Deny the immigrant visa petition, or, if approved, revoke the approval;"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0071-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 624,
+      "text_preview": "The H-1B classification has an annual numerical limit (cap) of 65,000 new statuses or visas each fiscal year (with certain deductions and additions based on H-1B1 set asides and us"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0072-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 79,
+      "text_preview": "For further information about the numerical cap, see our H-1B Cap Season page ."
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0073-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 71,
+      "text_preview": "When can I begin working for a new H-1B employer if I change employers?"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0075-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 269,
+      "text_preview": "To be eligible for portability, you must not have been employed without authorization from the time of your last admission into the United States, and your new employer must proper"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0076-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 65,
+      "text_preview": "Will I still have employment authorization if I change employers?"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0077-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 122,
+      "text_preview": "If you are eligible for H-1B portability, your employment is authorized until USCIS has made a decision on the Form I-129."
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0081-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim",
+        "short_chunk"
+      ],
+      "text_length": 53,
+      "text_preview": "Can I move from cap-exempt to cap-subject employment?"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0082-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 274,
+      "text_preview": "If you are moving from cap-exempt to cap-subject employment, your new employer’s H-1B petition will be subject to the H-1B cap . If subject to the cap, your new employer must first"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0083-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 441,
+      "text_preview": "All registrants of selected beneficiaries will be notified of selection and selection notices will be uploaded to their account informing them that they may file a petition for the"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0084-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 623,
+      "text_preview": "If you are currently employed in a cap-exempt position, you may engage in concurrent employment in a cap-subject position as long as you will continue to be employed in the cap-exe"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0085-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 48,
+      "text_preview": "Changing Employment Terms with the Same Employer"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0090-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 58,
+      "text_preview": "Employment Authorization for Certain H-4 Dependent Spouses"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0091-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 68,
+      "text_preview": "Fee Increase for Certain H-1B and L-1 Petitions (Public Law 114-113)"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0092-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 50,
+      "text_preview": "Combating Fraud and Abuse in the H-1B Visa Program"
+    },
+    {
+      "chunk_id": "US-EM-01-S01-B0093-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 36,
+      "text_preview": "H-1B Electronic Registration Process"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0002-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 585,
+      "text_preview": "Congress set the current annual regular cap for the H-1B category at 65,000 (commonly known as the “regular cap”). Up to 6,800 visas are set aside from the 65,000 each fiscal year "
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0003-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 519,
+      "text_preview": "Not all H-1B nonimmigrant visas (or status grants) are subject to this annual cap (for example, petitions filed by U.S. institutions of higher education are cap exempt). H-1B worke"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0004-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 151,
+      "text_preview": "Prospective petitioners who are subject to the annual cap must first go through the electronic registration process (unless registration is suspended)."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0005-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 350,
+      "text_preview": "Prospective petitioners seeking to file H-1B cap-subject petitions must first complete an electronic registration for each prospective beneficiary. USCIS then runs the H-1B selecti"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0006-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 750,
+      "text_preview": "Starting in fiscal year (FY) 2027, USCIS has implemented a weighted selection process which favors the allocation of H-1B visas to higher skilled and higher paid aliens, while main"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0010-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 248,
+      "text_preview": "H-1B cap-subject petitions, including those eligible for the advanced degree exemption, may not be filed unless based on a valid and selected registration for the beneficiary named"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0012-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 356,
+      "text_preview": "Petitioners also have the option of filing a paper Form I-129 H-1B petition and any associated Form I-907 if they prefer. However, users will not be able to link paper-filed Forms "
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0013-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 308,
+      "text_preview": "Complete all required sections of Form I-129, Petition for a Nonimmigrant Worker , including the H Classification Supplement and the H-1B Data Collection and Filing Fee Exemption S"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0014-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 191,
+      "text_preview": "You must indicate a start date of Oct. 1 or later (of the applicable FY, and 6 months or less from the receipt date of the petition) on your petition, or we will reject or deny you"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0015-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 291,
+      "text_preview": "You must provide a copy of the H-1B Registration Selection Notice for the registration filed by your organization for the beneficiary with the petition. Ensure that you also entere"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0016-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 160,
+      "text_preview": "You must submit evidence of the basis of the wage level selected on the registration as of the date that the registration underlying the petition was submitted."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0017-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 679,
+      "text_preview": "You must submit evidence of the beneficiary’s passport or travel document used at the time of registration to identify the beneficiary. If the passport or travel document expires b"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0018-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "Ensure that any information provided during the electronic registration process matches the information provided on the petition. An H-1B petition filed for a beneficiary must cont"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0019-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1150,
+      "text_preview": "Ensure that any information provided during the electronic registration process matches the information provided on the petition. An H-1B petition filed for a beneficiary must cont"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0023-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 84,
+      "text_preview": "Pay all required fees. See the required fees section below for detailed information."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0024-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 111,
+      "text_preview": "Submit all required documentation and evidence with the petition when you file it, to ensure timely processing."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0025-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 74,
+      "text_preview": "Ensure that the LCA properly corresponds to the position in your petition."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0026-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 134,
+      "text_preview": "For paper-filed forms, you must file the petition at the correct location. See the section below on Where to Mail Your H-1B Petition ."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0029-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 33,
+      "text_preview": "Labor Condition Application (LCA)"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0030-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 639,
+      "text_preview": "When filing your H-1B petition with USCIS, you must include evidence that an LCA (ETA 9035) has been certified by the U.S. Department of Labor. This may include a copy of the signe"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0032-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 48,
+      "text_preview": "Evidence of Beneficiary’s Educational Background"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0033-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 302,
+      "text_preview": "You must submit evidence of the beneficiary’s education credentials (with English translations when applicable) at the time you file your petition. If the beneficiary has met all o"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0034-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 48,
+      "text_preview": "A copy of the beneficiary’s final transcript; or"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0035-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 269,
+      "text_preview": "A letter from the registrar confirming that the beneficiary has met all of the degree requirements. If the educational institution does not have a registrar, then the letter must b"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0037-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 30,
+      "text_preview": "Evidence of Bona Fide Position"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0038-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 306,
+      "text_preview": "You must submit evidence that you have a bona fide position in a specialty occupation available for the beneficiary as of the start date of the validity period requested on the pet"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0041-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 507,
+      "text_preview": "Petitioners also have the option of filing a paper Form I-129 H-1B petition and any associated Form I-907 if they prefer. However, users will not be able to link paper-filed Forms "
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0045-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 38,
+      "text_preview": "The fee for each registration is $215."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0049-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 69,
+      "text_preview": "We will reject all petitions submitted with the incorrect filing fee."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0052-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 345,
+      "text_preview": "This rule is effective March 1, 2026. If you submit a request for premium processing postmarked on or after March 1, 2026, you must include the new fee for the specific benefit you"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0053-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 51,
+      "text_preview": "Preferred order of documents at time of submission:"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0054-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 70,
+      "text_preview": "Form G-28 (if represented by an attorney or accredited representative)"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0056-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 46,
+      "text_preview": "Form I-129, Petition for a Nonimmigrant Worker"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0058-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 66,
+      "text_preview": "H-1B and H-1B1 Data Collection and Filing Fee Exemption Supplement"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0060-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 79,
+      "text_preview": "Arrival-Departure Record (Form I-94) if the beneficiary is in the United States"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0062-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 71,
+      "text_preview": "SEVIS Form DS-2019 if the beneficiary is a current or former J-1 or J-2"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0063-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 62,
+      "text_preview": "Form I-566 if the beneficiary is a current A or G nonimmigrant"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0064-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 48,
+      "text_preview": "Department of Labor certified LCA, Form ETA 9035"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0065-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 42,
+      "text_preview": "Employer/attorney/representative letter(s)"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0066-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 30,
+      "text_preview": "Other supporting documentation"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0068-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 39,
+      "text_preview": "How to mail multiple petitions together"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0070-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 71,
+      "text_preview": "Form G-28 , Notice of Entry of Appearance as Attorney or Representative"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0072-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 47,
+      "text_preview": "Form I-129 , Petition for a Nonimmigrant Worker"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0073-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 115,
+      "text_preview": "Complete all required sections of the form accurately and in accordance with the regulations and form instructions."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0074-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 507,
+      "text_preview": "H-1B cap petitions and advanced degree exemption petitions for the FY 2027 cap must include an employment start date of no earlier than Oct. 1, 2026. You must indicate a start date"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0076-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 44,
+      "text_preview": "Ensure that the petition is properly signed."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0078-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 344,
+      "text_preview": "You must include the beneficiary’s passport or travel document number, country of issuance, and expiration date on the Form I-129. The passport or travel document information helps"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0081-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 312,
+      "text_preview": "If the beneficiary is seeking an extension of stay, amendment of stay, or change of status, the petition must include evidence (such as a Form I-94 or Form I-797 approval notice) t"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0082-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 70,
+      "text_preview": "Include a copy of the beneficiary’s valid passport or travel document."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0083-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 41,
+      "text_preview": "H Classification Supplement to Form I-129"
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0085-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 126,
+      "text_preview": "Please complete all required sections of the form accurately and in accordance with the regulations and the form instructions."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0087-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "potential_eligibility_or_legal_claim",
+        "short_chunk"
+      ],
+      "text_length": 59,
+      "text_preview": "The petitioner must sign the form, preferably in black ink."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0089-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 52,
+      "text_preview": "Please complete all sections of the form accurately."
+    },
+    {
+      "chunk_id": "US-EM-01-S02-B0093-C001",
+      "program_id": "US-EM-01",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 64,
+      "text_preview": "A request to withdraw the first petition filed for the H-1B cap."
+    },
+    {
+      "chunk_id": "US-EM-02-SECTION-002-C001",
+      "program_id": "US-EM-02",
+      "source_url": "https://j1visa.state.gov/programs/intern/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 12,
+      "text_preview": "Participants"
+    },
+    {
+      "chunk_id": "US-EM-02-SECTION-003-C001",
+      "program_id": "US-EM-02",
+      "source_url": "https://j1visa.state.gov/programs/intern/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 315,
+      "text_preview": "Interns must be foreign nationals: Who are currently enrolled in and pursuing studies at a foreign degree- or certificate-granting post-secondary academic institution outside the U"
+    },
+    {
+      "chunk_id": "US-EM-02-SECTION-005-C001",
+      "program_id": "US-EM-02",
+      "source_url": "https://j1visa.state.gov/programs/intern/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 16,
+      "text_preview": "More information"
+    },
+    {
+      "chunk_id": "US-EM-02-SECTION-009-C001",
+      "program_id": "US-EM-02",
+      "source_url": "https://j1visa.state.gov/programs/intern/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 16,
+      "text_preview": "Program Sponsors"
+    },
+    {
+      "chunk_id": "US-EM-02-SECTION-010-C001",
+      "program_id": "US-EM-02",
+      "source_url": "https://j1visa.state.gov/programs/intern/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 447,
+      "text_preview": "Sponsors are required to: Conduct site visits of host organizations that: Have not previously participated successfully in the sponsor’s program; Have fewer than 25 employees; and "
+    },
+    {
+      "chunk_id": "US-EM-02-SECTION-011-C001",
+      "program_id": "US-EM-02",
+      "source_url": "https://j1visa.state.gov/programs/intern/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 536,
+      "text_preview": "Sponsors must ensure the following: Participants in programs that exceed six months must be evaluated at midpoint and at the conclusion of the program; and For programs with durati"
+    },
+    {
+      "chunk_id": "US-EM-02-SECTION-012-C001",
+      "program_id": "US-EM-02",
+      "source_url": "https://j1visa.state.gov/programs/intern/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 9,
+      "text_preview": "Employers"
+    },
+    {
+      "chunk_id": "US-EM-02-SECTION-013-C001",
+      "program_id": "US-EM-02",
+      "source_url": "https://j1visa.state.gov/programs/intern/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "Hosts are required to: Sign a completed Form DS–7002 – Training/Internship Placement Plan (T/IPP) to verify that all placements are appropriate and consistent with the objectives o"
+    },
+    {
+      "chunk_id": "US-EM-03-SECTION-002-C001",
+      "program_id": "US-EM-03",
+      "source_url": "https://j1visa.state.gov/programs/trainee/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 12,
+      "text_preview": "Participants"
+    },
+    {
+      "chunk_id": "US-EM-03-SECTION-003-C001",
+      "program_id": "US-EM-03",
+      "source_url": "https://j1visa.state.gov/programs/trainee/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 372,
+      "text_preview": "A trainee must be a foreign national who: Has a degree or professional certificate from a foreign post-secondary academic institution and at least one year of prior related work ex"
+    },
+    {
+      "chunk_id": "US-EM-03-SECTION-005-C001",
+      "program_id": "US-EM-03",
+      "source_url": "https://j1visa.state.gov/programs/trainee/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 16,
+      "text_preview": "More information"
+    },
+    {
+      "chunk_id": "US-EM-03-SECTION-006-C001",
+      "program_id": "US-EM-03",
+      "source_url": "https://j1visa.state.gov/programs/trainee/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 666,
+      "text_preview": "Limitations or Exceptions Trainees cannot work in unskilled or casual labor positions, in positions that require or involve childcare or elder care, or in any kind of position that"
+    },
+    {
+      "chunk_id": "US-EM-03-SECTION-009-C001",
+      "program_id": "US-EM-03",
+      "source_url": "https://j1visa.state.gov/programs/trainee/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 16,
+      "text_preview": "Program Sponsors"
+    },
+    {
+      "chunk_id": "US-EM-03-SECTION-010-C001",
+      "program_id": "US-EM-03",
+      "source_url": "https://j1visa.state.gov/programs/trainee/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 456,
+      "text_preview": "Sponsors are required to: Conduct site visits of host organizations that: Have not previously participated successfully in the sponsor’s program; Have fewer than 25 employees; Have"
+    },
+    {
+      "chunk_id": "US-EM-03-SECTION-011-C001",
+      "program_id": "US-EM-03",
+      "source_url": "https://j1visa.state.gov/programs/trainee/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 799,
+      "text_preview": "Sponsors must ensure the following for participants: Participants in programs that exceed six months must be evaluated at mid-point and at the conclusion of the program; For progra"
+    },
+    {
+      "chunk_id": "US-EM-03-SECTION-012-C001",
+      "program_id": "US-EM-03",
+      "source_url": "https://j1visa.state.gov/programs/trainee/",
+      "reasons": [
+        "short_chunk"
+      ],
+      "text_length": 5,
+      "text_preview": "Hosts"
+    },
+    {
+      "chunk_id": "US-EM-03-SECTION-013-C001",
+      "program_id": "US-EM-03",
+      "source_url": "https://j1visa.state.gov/programs/trainee/",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "Host Organizations are required to: Sign a completed Form DS–7002 to verify that all placements are appropriate and consistent with the objectives of the trainees or interns as out"
+    },
+    {
+      "chunk_id": "US-WEST-01-P01-L-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 863,
+      "text_preview": "국립국제교육원공고제2026–15호\n\n2026년 상반기 한․미 대학생 연수(WEST) 참가자 모집 공고\n\n- 중기(12개월) 제15기 / 단기(6개월) 제15기 -\n\n국립국제교육원은 글로벌 감각을 갖춘 핵심인재를 양성하고자 어학연수와 다양한\n\n미국 인턴십 기회를 제공하는『한‧미 대학생 연수(WEST)』에 참가할 지원자를 아"
+    },
+    {
+      "chunk_id": "US-WEST-01-P01-R-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "pdf_table_layout_manual_review",
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 879,
+      "text_preview": "1\n선발 개요\n\n가. 모집 프로그램\n\n구  분 \n구    성\n선발인원\n\n중기 WEST\n어학연수 3개월+ 인턴 6∼8개월+ 여행 1개월*\n35명 내외\n\n단기 WEST\n어학연수 2개월+ 인턴 3∼4개월+ 여행 1개월*\n71명 내외\n\n* 인턴근무종료후, 출국유예기간(30일) 내에개별적으로자유여행가능\n\n※ 단기·중기프로그램중복지"
+    },
+    {
+      "chunk_id": "US-WEST-01-P02-R-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "pdf_table_layout_manual_review",
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "① 온라인 지원 : 월드잡플러스 누리집(www.worldjob.or.kr)에서 온라인지원서등 작성․제출\n\n※ 지원서류: WEST 온라인지원서및자기소개서(양식은온라인지원시확인가능),\n\n개인정보동의서(공지·문의> 공지사항> 해외인턴(WEST)공지사항> 모집공고문> (왼쪽\n상단) 첨부파일양식다운로드> 출력후자필서명> 스캔본파일"
+    },
+    {
+      "chunk_id": "US-WEST-01-P02-R-C002",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "pdf_table_layout_manual_review"
+      ],
+      "text_length": 467,
+      "text_preview": "다.\n\n3. 취업취약계층 ([붙임 1] 참조) 증빙자료가 누락된 경우 우대 적용을 받을 수 없습니다.\n\n4. 졸업생의 학자금지원구간 증빙 자료는 해당 서류를 확인하여 제출합니다. ([붙임 1] 참조)\n\n5. 편입생의 경우, 편입 전/후 성적을 WEST 프로그램 학점계산법에 의하여 산출합니다.\n\n구 분\n취득평점(GPA) \n"
+    },
+    {
+      "chunk_id": "US-WEST-01-P03-L-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "③ 학자금지원구간 확인 신청\n  ③-1. 재학생: 한국장학재단 포털사이트에서 신청\n\n※ 휴학생, 초과학기자, 수료자, 졸업유예자포함\n\n◦WEST 프로그램 참가자들은 학자금지원구간에 따라 정부재정지원금을 수령하므로, \n프로그램 지원 시(졸업생 제외) 지원구간 확인 절차(한국장학재단의 WEST 어학\n연수비 대출 신청)가 반드"
+    },
+    {
+      "chunk_id": "US-WEST-01-P03-R-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "pdf_table_layout_manual_review",
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1012,
+      "text_preview": "4\n참가비 및 정부재정지원\n\n가. 참가비* : (단기) USD 7,045 (중기) USD 8,912\n\n* 전형료, 어학연수비, 인턴십배치비, 현지중개기관비, 보험료, 학생교환방문정보시스템(SEVIS) 등록비\n\n※ 참가비는최종합격자발표직후참가비납부기간(은행영업일5일간) 내에미화달러로\n\n일시납하게되므로미리준비해두시기바랍니다."
+    },
+    {
+      "chunk_id": "US-WEST-01-P04-L-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "pdf_table_layout_manual_review",
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 834,
+      "text_preview": "◦중기 WEST(12개월) 지원구간별 지원 금액\n\n(1$=1,472원)\n\n참가비\n($8,912)\n항공료\n(2,000,000원)\n\n어학연수생활비(최장 12주)\n\n및 인턴생활비(최장 24주)\n지원총액\n\n구 분\n\n(최대)\n정부지원금\n본인부담금\n$350~$1,400/4주\n\n기초·차상위\n\n$12,600\n($1,400*9개월)\n33"
+    },
+    {
+      "chunk_id": "US-WEST-01-P05-L-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "pdf_table_layout_manual_review",
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1158,
+      "text_preview": "붙임 1\n 취업취약계층 제출 서류 / 졸업생 지원구간 제출 서류\n\n※ 제출증빙자료는모집공고일(’26.2.11.) 이후발급서류여야함\n\n1. 취업취약계층의 범주\n\n가. 저소득층: 기초생활수급자 및 차상위계층\n\n나. 기타 취업취약계층: 장애인, 북향민 등\n\n※ 「직접일자리사업중앙부처-자치단체합동지침」에따른취업취약계층범주준용\n\n"
+    },
+    {
+      "chunk_id": "US-WEST-01-P05-R-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "pdf_table_layout_manual_review",
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 617,
+      "text_preview": "붙임 2\n 2026년 상반기 선발 일정\n\n일 정\n추진 내용\n\n’26. 2.11.(수)∼3.18.(수) 17시▪ 참가신청서 접수(온라인/ 월드잡플러스홈페이지)\n\n3.19.(목)∼3.23.(월)\n▪ 대학 추천 공문 접수\n\n3.19.(목)∼5.14.(목)\n▪ 학자금 지원구간 확인\n\n4.9.(목), 16:00\n▪ 서류 합격자 발"
+    },
+    {
+      "chunk_id": "US-WEST-01-P06-L-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1244,
+      "text_preview": "붙임 3\n 2026년 WEST 프로그램 관련 FAQ\n\n1. 지원 단계\n\nQ1. 공인 어학성적 점수가 조금 부족합니다. 지원서 마감 후 제출 가능한가요? 토플, 아이엘츠 등\n\n다른 성적도 인정 가능한가요?\n\nA1. 지원 자격 요건보다 어학성적이 미달될 경우 지원이 불가하며, 어학성적 결과도 접수 마감일\n\n내에 유효한 성적을"
+    },
+    {
+      "chunk_id": "US-WEST-01-P06-R-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1371,
+      "text_preview": "Q6. 워크넷에서 일자리 사업 참여 이력을 확인했는데, WEST 프로그램 지원이 가능한가요?\n\nA6. 네, 지원 가능합니다. 일자리 사업 기 참가자에 대한 지원 제한은 없습니다.\n\nQ7. 취업성공패키지에 참여 중인데 WEST 지원이 가능하나요?\n\nA7. 취업성공패키지 참여자의 경우 WEST 지원이 가능하지만, WEST 수"
+    },
+    {
+      "chunk_id": "US-WEST-01-P07-L-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "Q15. 재외국민전형 입학 여부를 잘못 선택하였을 경우 불이익이 있나요?\n\nA15. 2017년부터 지원구간 조회에 국외소득‧재산이 반영됨에 따라 학생이 신청하신 재외국민\n\n전형 입학 여부와 소속대학의 정보가 상이할 경우 합격 후 재정지원에 불이익이 발생할\n\n수 있으므로 신중하게 선택하여 주시기 바랍니다. 온라인지원서 작성"
+    },
+    {
+      "chunk_id": "US-WEST-01-P07-R-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "4. 학자금 지원구간 확인\n\nQ20. 지원구간(학자금 지원구간) 확인 신청(어학연수비 대출)은 어떻게 하나요?\n\nA20. 한국장학재단 누리집(www.kosaf.go.kr) 재단소개 > 알림 > 공지사항 탭의 ‘2026년 상반기\n\n한·미대학생연수(WEST) 프로그램 어학연수비 대출 신청 안내’를 참고하여 신청해주시고,\n\n관"
+    },
+    {
+      "chunk_id": "US-WEST-01-P08-L-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "Q25. 초과 학기자, 수료자, 졸업유예자의 차이는 무엇인가요?\n\nA25. 초과학기자, 수료자, 졸업유예자 모두 재학생/졸업생 구분에서는 재학생에 해당하기 때문에\n\n한국장학재단 사이트에 지원구간 확인신청을 해주셔야 하며, 구분은 다음과 같습니다.\n\n1. 초과 학기자: 정규학기를 초과한 학생 중 졸업기준학점을 미충족한 학생"
+    },
+    {
+      "chunk_id": "US-WEST-01-P08-R-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "6. 어학연수 & 인턴십\n\nQ32. 합격 후 출국은 언제부터 가능한가요?\n\nA32. 비자 발급 완료 후 어학연수 시작일 30일 전부터 개별적으로 출국이 가능합니다.\n\nQ33. 어학연수기관(지역)을 선택할 수 있나요?\nA33. 어학연수기관은 현지중개기관에서 면접 결과 등을 반영하여 결정합니다. 배정된 어학연수\n\n기관은 최종"
+    },
+    {
+      "chunk_id": "US-WEST-01-P09-L-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "Q39. 인턴십이 허용되지 않는 분야도 있나요?\n\nA39. 간호학/의학 전공자의 경우 환자 등과 직접 접촉(medical patient care or contact) 하는\n\n인턴십은 J-1 규정에 의거하여 금지되어 있습니다.\n\nQ40. 자신의 전공과 무관한 분야에서의 인턴십도 가능한가요?\n\nA40. 인턴십은 본인의 전공 "
+    },
+    {
+      "chunk_id": "US-WEST-01-P09-R-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 1400,
+      "text_preview": "Q46. 비자 유효기간(Expiration Date) 내에 여행을 하면 되나요?\n\nA46. 프로그램을 성공적으로 이행하는 참가자는 인턴십 종료 이후 주어지는 출국유예기간(30일) 내\n\n에 미국 여행이 가능합니다. 단, 만료된 비자로 출국유예기간 동안 미국을 출국한 경우, 동일\n\n비자로 재입국이 불가합니다. 또한, 미국 여"
+    },
+    {
+      "chunk_id": "US-WEST-01-P10-L-C001",
+      "program_id": "US-WEST-01",
+      "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+      "reasons": [
+        "potential_eligibility_or_legal_claim"
+      ],
+      "text_length": 155,
+      "text_preview": "붙임4\n 학자금대출·장학금 신청증명서 (졸업생)\n\n<재학 중 국가장학금 신청 이력이 없는 졸업생>\n\n“학자금 지원구간 통지서” 발급이 불가능하므로 “학자금대출·장학금 신청증명서”로 지원구간 증빙 서류 대체\n\n※ 해당 서류 제출 시 10구간에 준하는 정부지원금 지급\n\n- 19 -"
+    }
+  ],
+  "duplicate_groups": [
+    {
+      "text_sha256": "0e27279b3302db0448a2acf5d923ffb09b75270c2e957bfb93f54815d2146aa4",
+      "chunk_ids": [
+        "US-WH-01-SECTION-002-C001",
+        "US-ST-03-SECTION-002-C001",
+        "US-EM-02-SECTION-002-C001",
+        "US-EM-03-SECTION-002-C001"
+      ],
+      "program_ids": [
+        "US-EM-02",
+        "US-EM-03",
+        "US-ST-03",
+        "US-WH-01"
+      ]
+    },
+    {
+      "text_sha256": "09f6242266631e82c102edab9144655559134558b5074cf1892dc92c2d474f56",
+      "chunk_ids": [
+        "US-WH-01-SECTION-005-C001",
+        "US-WH-01-SECTION-014-C001",
+        "US-EM-02-SECTION-005-C001",
+        "US-EM-03-SECTION-005-C001"
+      ],
+      "program_ids": [
+        "US-EM-02",
+        "US-EM-03",
+        "US-WH-01"
+      ]
+    },
+    {
+      "text_sha256": "8b9cdfa08fa5d73c5898891694e28ef5d2db6533c51ecac76d7e6f255dbe1b3e",
+      "chunk_ids": [
+        "US-WH-01-SECTION-009-C001",
+        "US-WH-01-SECTION-016-C001"
+      ],
+      "program_ids": [
+        "US-WH-01"
+      ]
+    },
+    {
+      "text_sha256": "6618a4a1f16a3f9cb3b88e256702681292bb48f1f7936a3abf4959da3f777855",
+      "chunk_ids": [
+        "US-WH-01-SECTION-009-C002",
+        "US-WH-01-SECTION-016-C002"
+      ],
+      "program_ids": [
+        "US-WH-01"
+      ]
+    },
+    {
+      "text_sha256": "d846b3f0115a9c7da6767e04a4d66c490af9aeea41743688a39fca1ef171d677",
+      "chunk_ids": [
+        "US-WH-01-SECTION-009-C003",
+        "US-WH-01-SECTION-016-C003"
+      ],
+      "program_ids": [
+        "US-WH-01"
+      ]
+    },
+    {
+      "text_sha256": "8faad3008bceb503ba12dd1d3bf480756d86daf0b72d5c9ef19226df52eed9ea",
+      "chunk_ids": [
+        "US-WH-01-SECTION-012-C001",
+        "US-ST-03-SECTION-007-C001",
+        "US-EM-02-SECTION-009-C001",
+        "US-EM-03-SECTION-009-C001"
+      ],
+      "program_ids": [
+        "US-EM-02",
+        "US-EM-03",
+        "US-ST-03",
+        "US-WH-01"
+      ]
+    },
+    {
+      "text_sha256": "e3651de74022e8e90bf0616f11d0689b2dc3dcbaaef910989bb0ba527551938f",
+      "chunk_ids": [
+        "US-WH-01-SECTION-018-C001",
+        "US-EM-02-SECTION-012-C001"
+      ],
+      "program_ids": [
+        "US-EM-02",
+        "US-WH-01"
+      ]
+    }
+  ],
+  "validation": {
+    "sha256": "pass",
+    "chunk_ids": "pass",
+    "unit_reconstruction": "pass",
+    "quality_review": "needs_review"
+  },
+  "flag_semantics": "Flags indicate candidates for manual review, not confirmed errors.",
+  "eligibility_claims_approved": false,
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false,
+  "database_loaded": false
+}

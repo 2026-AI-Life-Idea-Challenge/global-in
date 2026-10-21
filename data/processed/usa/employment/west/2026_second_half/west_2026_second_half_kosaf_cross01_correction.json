@@ -1,0 +1,39 @@
+{
+  "dataset_type": "west_kosaf_cross01_correction",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "historical_notice": true,
+  "source_id": "kosaf_2026_h2_notice",
+  "source_raw_sha256": "04cb641e65dad90db4e559f5d2f3d68870b38cb7d1f27e8f4f23df4d9e512d59",
+  "source_text_sha256": "2c0ae9f84bb40f663e01cf3f6947597d9ceae6748fa018b7a4d88f90466b82a9",
+  "previous_review_sha256": "2c51793be4586e96319950f5921f52c76350d3461ea5cef3382f098e89454e80",
+  "text_encoding": "utf-8",
+  "task_id": "WEST-H2-CROSS-01",
+  "previous_status": "no_body_phrases_found",
+  "correction_reason": "STEP 64-73의 본문 시작 지점 이전에 CROSS-01의 근거 문구가 존재함",
+  "old_anchor": "◆ WEST 어학연수비 대출신청기간",
+  "old_anchor_start_offset": 22956,
+  "matches": [
+    {
+      "phrase": "학자금 지원구간 정보 확인",
+      "start": 22878,
+      "end": 22892
+    },
+    {
+      "phrase": "어학연수비대출 실행은 추후 합격자 대상으로",
+      "start": 22910,
+      "end": 22933
+    }
+  ],
+  "source_context_start_offset": 22628,
+  "source_context_end_offset": 23183,
+  "source_context": "출신청 안내 \n \n \n \n \n \n \n \n \n \n [ 작성자 : 임연진 | 작성일 : 2026.06.30 | 조회수 : 6,272 ] \n \n \n \n \n \n2026년 하반기 한·미대학생연수(WEST) 프로그램(중기 16기/단기 16기) 참여를 위한 어학연수비 대출신청을 안내드리오니 지원을 희망하는 참가자분들께선 기간 내 \"WEST 어학연수비대출\" 신청 및 서류제출, 가구원 정보제공 동의를 모두 완료해 주시기 바랍니다.\n \n \n\n※ 어학연수비대출은 학자금 지원구간 정보 확인을 위해 필수로 신청하셔야 하며 어학연수비대출 실행은 추후 합격자 대상으로 안내 예정입니다.\n \n \n\n \n \n \n\n◆ WEST 어학연수비 대출신청기간\n \n \n\n2026. 7. 6.(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단",
+  "both_phrases_in_same_local_context": true,
+  "body_search_corrected": true,
+  "policy_claim_fully_verified": false,
+  "manual_semantic_review_completed": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

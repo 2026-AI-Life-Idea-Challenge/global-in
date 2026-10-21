@@ -1,0 +1,20 @@
+{
+  "dataset_type": "west_cross_agency_review_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "input_sha256": {
+    "registry": "4bb986ba36156642c52d8aaa6a5b14a752fe4db6349977a09c070d9449c83fee",
+    "pdf_findings": "76aff3a860078f75bc5cf5ac26865f481fdcf69a6f20183c71648994a9b41601",
+    "academic_finance": "c3cb750badb91b75e25746c6bf1ccb18e39a8302a3d5ccfed3b5a03577d48925"
+  },
+  "official_source_count": 3,
+  "cross_agency_task_count": 7,
+  "cross_agency_tasks_completed": 0,
+  "external_source_content_archived": false,
+  "original_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "401086bfec485efb0beb788eade8489f6fa5c382210a8056bc329d26b95aa6e6"
+}

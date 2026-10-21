@@ -1,0 +1,24 @@
+{
+  "dataset_type": "west_visa_internship_review_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "input_review_register_sha256": "49cd19ae12b204dea33db02767025552c2d717199ce038182dd6223b0582ca0b",
+  "faq_numbers_extracted": [
+    39,
+    40,
+    43,
+    48
+  ],
+  "faq_count": 4,
+  "review_item_count": 4,
+  "related_original_issue_candidates": 1,
+  "issues_automatically_resolved": 0,
+  "legal_decisions_automatically_made": 0,
+  "original_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "9e796baff8fe1df5a3b2056d7b6cad94603624c18024dd836921c3dce3034678"
+}

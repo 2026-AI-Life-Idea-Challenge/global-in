@@ -1,0 +1,42 @@
+{
+  "dataset_type": "west_pdf_extraction_report",
+  "country": "US",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "source_pdf_path": "data/raw/usa/employment/west/2026_second_half/west_2026_second_half_notice.pdf",
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "pdf_verification_manifest_sha256": "c708aeb7c04263262b32b650b5b4127fd856c5cc95db47aadc4cb952031014c3",
+  "physical_pdf_pages": 11,
+  "extracted_text_blocks": 578,
+  "extracted_characters": 22391,
+  "empty_pages": [],
+  "table_candidate_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "faq_candidate_pages": [
+    4,
+    6,
+    7,
+    8,
+    9
+  ],
+  "pages_sha256": "d968946d527bb670effe4af0d7d2e4baac782d261d22783fc193425cb5b69a7d",
+  "blocks_sha256": "e5b8c5a1f222f5204b2cb6252ff5f57c884b635ef5691e901658319672a5cc5b",
+  "logical_page_mapping_verified": false,
+  "reading_order_verified": false,
+  "table_cell_alignment_verified": false,
+  "semantic_review_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "note": "Extraction preserves physical-page text and block coordinates. Detected table/FAQ hints do not verify semantic structure."
+}

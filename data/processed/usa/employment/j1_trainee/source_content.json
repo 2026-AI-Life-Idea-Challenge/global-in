@@ -1,0 +1,103 @@
+{
+  "dataset_type": "official_source_content",
+  "country": "US",
+  "program_id": "US-EM-03",
+  "route_id": "US-EM",
+  "official_program_name": "Trainee",
+  "visa_classification": "J-1",
+  "source": {
+    "source_url": "https://j1visa.state.gov/programs/trainee/",
+    "snapshot_path": "data/raw/usa/source_snapshots/af6deb9f0a705f2f.html",
+    "snapshot_sha256": "8a7b1f64d83e63854aebe0f5033cefa39856d83102c01ae054e7e8565c213349",
+    "html_title": "BridgeUSAPrograms | BridgeUSA"
+  },
+  "expected_page_heading": "Trainee",
+  "sections": [
+    {
+      "heading": "Trainee",
+      "heading_tag": "h1",
+      "raw_text": "Trainee Training programs are designed to allow foreign professionals to come to the United States to gain exposure to U.S. culture and to receive training in U.S. business practices in their chosen occupational field. Tweet get_facebook_share()? tab 1",
+      "text_length": 252
+    },
+    {
+      "heading": "Participants",
+      "heading_tag": "h2",
+      "raw_text": "Participants",
+      "text_length": 12
+    },
+    {
+      "heading": "A trainee must be a foreign national who:",
+      "heading_tag": "h3",
+      "raw_text": "A trainee must be a foreign national who: Has a degree or professional certificate from a foreign post-secondary academic institution and at least one year of prior related work experience in his or her occupational field outside the United States; or Has five years of work experience outside the United States in the occupational field in which they are seeking training",
+      "text_length": 372
+    },
+    {
+      "heading": "Benefits",
+      "heading_tag": "h3",
+      "raw_text": "Benefits Practical Experience: Enhance the skills and expertise of exchange visitors in their academic or occupational fields through participation in a structure and guided training-based program.",
+      "text_length": 197
+    },
+    {
+      "heading": "More information",
+      "heading_tag": "h3",
+      "raw_text": "More information",
+      "text_length": 16
+    },
+    {
+      "heading": "Limitations or Exceptions",
+      "heading_tag": "h4",
+      "raw_text": "Limitations or Exceptions Trainees cannot work in unskilled or casual labor positions, in positions that require or involve childcare or elder care, or in any kind of position that involves patient care or contact. Further, sponsors must not place trainees in positions that require more than 20 percent clerical or office support work. Use of the Exchange Visitor Program for ordinary employment or work purposes is strictly prohibited. Sponsors are not to place trainee participants in positions, which are filled or would be filled by full-time or part-time employees. Also, the training cannot duplicate a trainee participant’s prior work experience or training.",
+      "text_length": 666
+    },
+    {
+      "heading": "Allowed Occupational Categories",
+      "heading_tag": "h4",
+      "raw_text": "Allowed Occupational Categories Agriculture, Forestry, and Fishing; Arts and Culture; Construction and Building Trades; Education, Social Sciences, Library Science, Counseling and Social Services; Health Related Occupations; Hospitality and Tourism; Information Media and Communications; Management, Business, Commerce and Finance; Public Administration and Law; and The Sciences, Engineering, Architecture, Mathematics and Industrial Occupations.",
+      "text_length": 447
+    },
+    {
+      "heading": "Early Career STEM Research Initiative",
+      "heading_tag": "h3",
+      "raw_text": "Early Career STEM Research Initiative This research initiative seeks to support an increase in science, technology, engineering, and mathematics (STEM) students, professionals, and exchange visitors on educational and cultural exchange programs in the United States. READ MORE . featured experience component Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?wdt_column_filter[1]=Trainee&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions “It really is a wonderful experience that you will remember for the rest of your life.” Anna Karlsson, Trainee end featured experience component end tab 1 tab 2",
+      "text_length": 739
+    },
+    {
+      "heading": "Program Sponsors",
+      "heading_tag": "h2",
+      "raw_text": "Program Sponsors",
+      "text_length": 16
+    },
+    {
+      "heading": "Sponsors are required to:",
+      "heading_tag": "h3",
+      "raw_text": "Sponsors are required to: Conduct site visits of host organizations that: Have not previously participated successfully in the sponsor’s program; Have fewer than 25 employees; Have less than $3 million in annual revenue. Collect the following information from all host organizations: Employer Identification Number (EIN) Verification of telephone number, address, brochures, website, etc.; and Proof of worker’s compensation insurance policy or equivalent.",
+      "text_length": 456
+    },
+    {
+      "heading": "Sponsors must ensure the following for participants:",
+      "heading_tag": "h3",
+      "raw_text": "Sponsors must ensure the following for participants: Participants in programs that exceed six months must be evaluated at mid-point and at the conclusion of the program; For programs with durations of less than six months, the participant must be evaluated at the conclusion of the program. All evaluations must be received by the sponsoring organization prior to the end of the participant’s exchange program and must be signed by both the participant and his or her immediate supervisor; Ensure that trainees are appropriately selected, oriented, supervised and evaluated; Be available to trainees to assist as facilitators and information resources; and Ensure that the training program is full-time (at least 32 hours a week). Program Resources Common Questions SEVIS Information end tab 2 tab 3",
+      "text_length": 799
+    },
+    {
+      "heading": "Hosts",
+      "heading_tag": "h3",
+      "raw_text": "Hosts",
+      "text_length": 5
+    },
+    {
+      "heading": "Host Organizations are required to:",
+      "heading_tag": "h3",
+      "raw_text": "Host Organizations are required to: Sign a completed Form DS–7002 to verify that all placements are appropriate and consistent with the objectives of the trainees or interns as outlined in their program applications and as set forth in their T/IPPs; Notify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs; Contact sponsors immediately in the event of any emergency involving trainees or interns; Abide by all federal, state and local occupational health and safety laws; Abide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations; Have sufficient resources, plant, equipment and trained personnel available; Provide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and Ensure that trainees obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances. Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?program=Trainee&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions end tab 3 Visa Basics Facts & Figures About J-2 Visa Other U.S. Student Visas Common Questions Participants How to Apply Current Participants Participant Experiences Common Questions for Participants TODO: fix link Videos Program Sponsors Become a Sponsor Current Sponsors How to Administer a Program Common Questions for Program Sponsors TODO: fix link Host Families/Employers For Host Families For Employers For Schools Common Questions for Host Families/Employers TODO: fix link Programs Resources RO-ARO Virtual Training SEVIS login <li><a href=\"/wp-content/uploads/2016/10/Temp_User_6.29.pdf\" target=\"_blank\" title=\"Download the SEVIS Manual\">SEVIS Manual (PDF)</a></li> SEVIS Manuals SEVIS Training Videos DS-2019 Regulations and Compliance Administration Contacts About Us Get Adobe Reader U.S. Department of State <li><a href=\"http://exchanges.state.gov/\" title=\"View the Homepage for the Bureau of Educational & Cultural Affairs\">Bureau of Educational &amp; Cultural Affairs</a></li> Bureau of Educational and Cultural Affairs FOIA Privacy Notice Copyright Information Facebook Twitter Instagram Flickr <script src=\"/wp-content/themes/j1visa/js/libs/jquery-1.6.1.min.js\"></script> [if lt IE 7 ]> <script src='/wp-content/themes/j1visa/js/libs/DD_belatedPNG_0.0.8a-min.js'></script> <script> DD_belatedPNG.fix('img, #container, .arrow, .button span '); </script> <![endif]",
+      "text_length": 2788
+    }
+  ],
+  "extracted_text": "Trainee Trainee Training programs are designed to allow foreign professionals to come to the United States to gain exposure to U.S. culture and to receive training in U.S. business practices in their chosen occupational field. Tweet get_facebook_share()? tab 1 Participants Participants A trainee must be a foreign national who: A trainee must be a foreign national who: Has a degree or professional certificate from a foreign post-secondary academic institution and at least one year of prior related work experience in his or her occupational field outside the United States; or Has five years of work experience outside the United States in the occupational field in which they are seeking training Benefits Benefits Practical Experience: Enhance the skills and expertise of exchange visitors in their academic or occupational fields through participation in a structure and guided training-based program. More information More information Limitations or Exceptions Limitations or Exceptions Trainees cannot work in unskilled or casual labor positions, in positions that require or involve childcare or elder care, or in any kind of position that involves patient care or contact. Further, sponsors must not place trainees in positions that require more than 20 percent clerical or office support work. Use of the Exchange Visitor Program for ordinary employment or work purposes is strictly prohibited. Sponsors are not to place trainee participants in positions, which are filled or would be filled by full-time or part-time employees. Also, the training cannot duplicate a trainee participant’s prior work experience or training. Allowed Occupational Categories Allowed Occupational Categories Agriculture, Forestry, and Fishing; Arts and Culture; Construction and Building Trades; Education, Social Sciences, Library Science, Counseling and Social Services; Health Related Occupations; Hospitality and Tourism; Information Media and Communications; Management, Business, Commerce and Finance; Public Administration and Law; and The Sciences, Engineering, Architecture, Mathematics and Industrial Occupations. Early Career STEM Research Initiative Early Career STEM Research Initiative This research initiative seeks to support an increase in science, technology, engineering, and mathematics (STEM) students, professionals, and exchange visitors on educational and cultural exchange programs in the United States. READ MORE . featured experience component Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?wdt_column_filter[1]=Trainee&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions “It really is a wonderful experience that you will remember for the rest of your life.” Anna Karlsson, Trainee end featured experience component end tab 1 tab 2 Program Sponsors Program Sponsors Sponsors are required to: Sponsors are required to: Conduct site visits of host organizations that: Have not previously participated successfully in the sponsor’s program; Have fewer than 25 employees; Have less than $3 million in annual revenue. Collect the following information from all host organizations: Employer Identification Number (EIN) Verification of telephone number, address, brochures, website, etc.; and Proof of worker’s compensation insurance policy or equivalent. Sponsors must ensure the following for participants: Sponsors must ensure the following for participants: Participants in programs that exceed six months must be evaluated at mid-point and at the conclusion of the program; For programs with durations of less than six months, the participant must be evaluated at the conclusion of the program. All evaluations must be received by the sponsoring organization prior to the end of the participant’s exchange program and must be signed by both the participant and his or her immediate supervisor; Ensure that trainees are appropriately selected, oriented, supervised and evaluated; Be available to trainees to assist as facilitators and information resources; and Ensure that the training program is full-time (at least 32 hours a week). Program Resources Common Questions SEVIS Information end tab 2 tab 3 Hosts Hosts Host Organizations are required to: Host Organizations are required to: Sign a completed Form DS–7002 to verify that all placements are appropriate and consistent with the objectives of the trainees or interns as outlined in their program applications and as set forth in their T/IPPs; Notify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs; Contact sponsors immediately in the event of any emergency involving trainees or interns; Abide by all federal, state and local occupational health and safety laws; Abide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations; Have sufficient resources, plant, equipment and trained personnel available; Provide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and Ensure that trainees obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances. Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?program=Trainee&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions end tab 3 Visa Basics Facts & Figures About J-2 Visa Other U.S. Student Visas Common Questions Participants How to Apply Current Participants Participant Experiences Common Questions for Participants TODO: fix link Videos Program Sponsors Become a Sponsor Current Sponsors How to Administer a Program Common Questions for Program Sponsors TODO: fix link Host Families/Employers For Host Families For Employers For Schools Common Questions for Host Families/Employers TODO: fix link Programs Resources RO-ARO Virtual Training SEVIS login <li><a href=\"/wp-content/uploads/2016/10/Temp_User_6.29.pdf\" target=\"_blank\" title=\"Download the SEVIS Manual\">SEVIS Manual (PDF)</a></li> SEVIS Manuals SEVIS Training Videos DS-2019 Regulations and Compliance Administration Contacts About Us Get Adobe Reader U.S. Department of State <li><a href=\"http://exchanges.state.gov/\" title=\"View the Homepage for the Bureau of Educational & Cultural Affairs\">Bureau of Educational &amp; Cultural Affairs</a></li> Bureau of Educational and Cultural Affairs FOIA Privacy Notice Copyright Information Facebook Twitter Instagram Flickr <script src=\"/wp-content/themes/j1visa/js/libs/jquery-1.6.1.min.js\"></script> [if lt IE 7 ]> <script src='/wp-content/themes/j1visa/js/libs/DD_belatedPNG_0.0.8a-min.js'></script> <script> DD_belatedPNG.fix('img, #container, .arrow, .button span '); </script> <![endif]",
+  "attachment_candidates": [],
+  "attachment_downloaded": false,
+  "extraction_method": "html_heading_and_text_nodes",
+  "content_scope": "extracted_sections_require_review",
+  "validation_status": "needs_review",
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false
+}

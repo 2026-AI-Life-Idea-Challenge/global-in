@@ -1,0 +1,116 @@
+{
+  "dataset_type": "west_pdf_source_findings",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "historical_notice": true,
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "input_registry_sha256": "4bb986ba36156642c52d8aaa6a5b14a752fe4db6349977a09c070d9449c83fee",
+  "findings": [
+    {
+      "finding_id": "WEST-H2-FIND-Q3",
+      "issue_ids": [
+        "WEST-H2-ACADEMIC-01",
+        "WEST-H2-ELIGIBILITY-01",
+        "WEST-H2-SELECTION-04"
+      ],
+      "printed_pages": [
+        11
+      ],
+      "source_finding": "2026년 하반기 공고 FAQ Q3의 예시에서 '2026년 상반기 선발'로 표기됨.",
+      "source_text_conflict_confirmed": true,
+      "official_erratum_confirmed": false,
+      "manual_followup": "국립국제교육원 또는 운영기관에 오기 여부 확인",
+      "review_status": "source_discrepancy_verified"
+    },
+    {
+      "finding_id": "WEST-H2-FIND-GRADUATE",
+      "issue_ids": [
+        "WEST-H2-ACADEMIC-04",
+        "WEST-H2-APPLICATION-03",
+        "WEST-H2-DOCUMENTS-02"
+      ],
+      "printed_pages": [
+        9,
+        14,
+        19
+      ],
+      "source_finding": "졸업생은 기초·차상위 증명서, 학자금 지원구간 통지서 또는 학자금대출·장학금 신청증명서 중 해당 조건에 맞는 증빙을 제출함.",
+      "special_cases": {
+        "near_poverty_certificate": "졸업생 지원구간 확인용 차상위계층 증명서 제출 시 1구간 금액 지원",
+        "no_prior_scholarship_or_loan_application": "신청증명서로 증빙을 대체하고 10구간에 준하는 정부지원금 지급"
+      },
+      "individual_document_decision_approved": false,
+      "review_status": "source_branching_verified"
+    },
+    {
+      "finding_id": "WEST-H2-FIND-SPEAKING",
+      "issue_ids": [
+        "WEST-H2-DOCUMENTS-04"
+      ],
+      "printed_pages": [
+        20
+      ],
+      "source_finding": "TOEIC Speaking 점수의 ACTFL 등급 환산표 및 숫자 점수 입력 안내 확인.",
+      "score_rows_visually_reviewed": [
+        {
+          "actfl": "AH",
+          "scores": [
+            200
+          ]
+        },
+        {
+          "actfl": "AM",
+          "scores": [
+            180,
+            190
+          ]
+        },
+        {
+          "actfl": "AL",
+          "scores": [
+            160,
+            170
+          ]
+        },
+        {
+          "actfl": "IH",
+          "scores": [
+            140,
+            150
+          ]
+        },
+        {
+          "actfl": "IM3",
+          "scores": [
+            130
+          ]
+        },
+        {
+          "actfl": "IM2",
+          "scores": [
+            120
+          ]
+        },
+        {
+          "actfl": "IM1",
+          "scores": [
+            110
+          ]
+        }
+      ],
+      "table_cells_verified_independently_by_code": false,
+      "current_test_provider_rules_verified": false,
+      "automatic_score_conversion_enabled": false,
+      "review_status": "historical_table_visually_reviewed"
+    }
+  ],
+  "findings_count": 3,
+  "issues_resolved": 0,
+  "issues_automatically_merged": 0,
+  "semantic_review_completed": false,
+  "current_policy_verified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

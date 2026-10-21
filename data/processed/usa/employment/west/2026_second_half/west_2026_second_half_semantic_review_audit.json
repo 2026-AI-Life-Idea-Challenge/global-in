@@ -1,0 +1,24 @@
+{
+  "dataset_type": "west_semantic_review_registry_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "issue_records": 25,
+  "original_issue_records": 16,
+  "new_issue_records": 9,
+  "visa_internship_review_tasks": 4,
+  "additional_field_tasks": 7,
+  "same_title_candidate_groups": 0,
+  "priority_counts": {
+    "P2": 10,
+    "P1": 14,
+    "P0": 1
+  },
+  "issues_deleted": 0,
+  "issues_automatically_resolved": 0,
+  "input_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "4bb986ba36156642c52d8aaa6a5b14a752fe4db6349977a09c070d9449c83fee"
+}

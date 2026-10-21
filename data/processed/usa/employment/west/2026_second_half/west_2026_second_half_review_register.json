@@ -1,0 +1,721 @@
+{
+  "dataset_type": "west_manual_review_register",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "input_sha256": {
+    "eligibility": "b54407e89beebcd1218415d29e5a6c20263fecd41105b7c779ea8c98ca42b5ba",
+    "application": "d2bbc9e8d254f70441de6ac1c2fdf0ed70a405ddd72ad378b3013fb9e258ee31",
+    "financial": "8d381edebe88569b087050cedcd8046f5adae0dd30c4b0e19ea30372f657ca3a",
+    "selection": "a2b8e320f65228e1650439f4663a23c0f6608db2c9edae52aee2f61dbce5c505",
+    "remaining_fields": "8c13b18c8618a943d77ea4a25c1f07f997005effd42d2966414b35924a72aa50",
+    "integrated_audit": "a1e29f60f5e73af7946d72f85418af5e0cdb5cb5ec8a03f0fee6977869893ec7"
+  },
+  "original_policy_field_count": 27,
+  "fields_with_related_review_data": 27,
+  "original_issue_count": 16,
+  "original_issues": [
+    {
+      "record_id": "WEST-H2-ELIGIBILITY-01",
+      "origin_step": "eligibility",
+      "origin_issue_index": 1,
+      "title": "FAQ Q3의 선발 시기 표기 불일치",
+      "detail": "2026년 하반기 공고의 Q3 예시에 2026년 상반기 선발이라고 표기됨.",
+      "source_issue": {
+        "issue": "FAQ Q3의 선발 시기 표기 불일치",
+        "details": "2026년 하반기 공고의 Q3 예시에 2026년 상반기 선발이라고 표기됨.",
+        "evidence": [
+          {
+            "pdf_physical_page": 1,
+            "printed_logical_page": 1,
+            "logical_page_candidate_id": "WEST-2026H2-LP01",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "pdf_physical_page": 6,
+            "printed_logical_page": 11,
+            "logical_page_candidate_id": "WEST-2026H2-LP11",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ],
+        "status": "needs_review"
+      },
+      "suggested_topics": [
+        "faq_semantics"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-ELIGIBILITY-02",
+      "origin_step": "eligibility",
+      "origin_issue_index": 2,
+      "title": "졸업생 실제 어학연수 시작일",
+      "detail": "기관별 실제 시작일이 달라 개인별 졸업일 판정 보류.",
+      "source_issue": {
+        "issue": "졸업생 실제 어학연수 시작일",
+        "details": "기관별 실제 시작일이 달라 개인별 졸업일 판정 보류.",
+        "evidence": [
+          {
+            "pdf_physical_page": 1,
+            "printed_logical_page": 2,
+            "logical_page_candidate_id": "WEST-2026H2-LP02",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "pdf_physical_page": 6,
+            "printed_logical_page": 11,
+            "logical_page_candidate_id": "WEST-2026H2-LP11",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ],
+        "status": "needs_review"
+      },
+      "suggested_topics": [
+        "academic_and_graduation"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-ELIGIBILITY-03",
+      "origin_step": "eligibility",
+      "origin_issue_index": 3,
+      "title": "원문 범위와 현행 법규 구분",
+      "detail": "2026년 하반기 모집 공고의 내용과 현재 적용되는 정책은 별도 확인 필요.",
+      "source_issue": {
+        "issue": "원문 범위와 현행 법규 구분",
+        "details": "2026년 하반기 모집 공고의 내용과 현재 적용되는 정책은 별도 확인 필요.",
+        "status": "needs_review"
+      },
+      "suggested_topics": [
+        "other"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-APPLICATION-01",
+      "origin_step": "application",
+      "origin_issue_index": 1,
+      "title": "대학별 자체 서류 마감일",
+      "detail": "모집 공고에 대학별 마감일은 명시되지 않음",
+      "source_issue": {
+        "issue": "대학별 자체 서류 마감일",
+        "status": "needs_review",
+        "note": "모집 공고에 대학별 마감일은 명시되지 않음",
+        "evidence": [
+          {
+            "printed_page": 3,
+            "physical_pdf_page": 2,
+            "candidate_id": "WEST-2026H2-LP03",
+            "pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 4,
+            "physical_pdf_page": 2,
+            "candidate_id": "WEST-2026H2-LP04",
+            "pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      },
+      "suggested_topics": [
+        "documents_and_procedures"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-APPLICATION-02",
+      "origin_step": "application",
+      "origin_issue_index": 2,
+      "title": "학적별 실제 대출 실행 가능 여부",
+      "detail": "재학생·휴학생·수료자·졸업유예자 등 세부 조건 분리 검증 필요",
+      "source_issue": {
+        "issue": "학적별 실제 대출 실행 가능 여부",
+        "status": "needs_review",
+        "note": "재학생·휴학생·수료자·졸업유예자 등 세부 조건 분리 검증 필요",
+        "evidence": [
+          {
+            "printed_page": 5,
+            "physical_pdf_page": 3,
+            "candidate_id": "WEST-2026H2-LP05",
+            "pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 7,
+            "physical_pdf_page": 4,
+            "candidate_id": "WEST-2026H2-LP07",
+            "pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 14,
+            "physical_pdf_page": 7,
+            "candidate_id": "WEST-2026H2-LP14",
+            "pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      },
+      "suggested_topics": [
+        "academic_and_graduation",
+        "finance_and_loans"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-APPLICATION-03",
+      "origin_step": "application",
+      "origin_issue_index": 3,
+      "title": "졸업생 지원구간 증빙서류 세부 분기",
+      "detail": "기초·차상위 여부와 한국장학재단 신청 이력에 따른 서류 분기 추가 검수 필요",
+      "source_issue": {
+        "issue": "졸업생 지원구간 증빙서류 세부 분기",
+        "status": "needs_review",
+        "note": "기초·차상위 여부와 한국장학재단 신청 이력에 따른 서류 분기 추가 검수 필요",
+        "evidence": [
+          {
+            "printed_page": 5,
+            "physical_pdf_page": 3,
+            "candidate_id": "WEST-2026H2-LP05",
+            "pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 9,
+            "physical_pdf_page": 5,
+            "candidate_id": "WEST-2026H2-LP09",
+            "pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 14,
+            "physical_pdf_page": 7,
+            "candidate_id": "WEST-2026H2-LP14",
+            "pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 19,
+            "physical_pdf_page": 10,
+            "candidate_id": "WEST-2026H2-LP19",
+            "pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      },
+      "suggested_topics": [
+        "academic_and_graduation",
+        "finance_and_loans",
+        "documents_and_procedures"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-FINANCIAL-01",
+      "origin_step": "financial",
+      "origin_issue_index": 1,
+      "title": "실제 지급 환율",
+      "detail": "공고 표는 2026년 기준환율 1,472원을 사용. 실제 생활비 지급에는 연도별 기준환율이 적용됨.",
+      "source_issue": {
+        "issue": "실제 지급 환율",
+        "status": "needs_review",
+        "note": "공고 표는 2026년 기준환율 1,472원을 사용. 실제 생활비 지급에는 연도별 기준환율이 적용됨.",
+        "evidence": {
+          "printed_page": 6,
+          "physical_pdf_page": 3,
+          "candidate_id": "WEST-2026H2-LP06",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      },
+      "suggested_topics": [
+        "finance_and_loans"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-FINANCIAL-02",
+      "origin_step": "financial",
+      "origin_issue_index": 2,
+      "title": "개인별 학자금 지원구간 확정",
+      "detail": "공고의 지원구간별 금액을 개인에게 직접 적용할 수 없음. 졸업생 및 재외국민 특별전형 관련 예외 확인 필요.",
+      "source_issue": {
+        "issue": "개인별 학자금 지원구간 확정",
+        "status": "needs_review",
+        "note": "공고의 지원구간별 금액을 개인에게 직접 적용할 수 없음. 졸업생 및 재외국민 특별전형 관련 예외 확인 필요.",
+        "evidence": {
+          "printed_page": 5,
+          "physical_pdf_page": 3,
+          "candidate_id": "WEST-2026H2-LP05",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      },
+      "suggested_topics": [
+        "academic_and_graduation",
+        "finance_and_loans"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-FINANCIAL-03",
+      "origin_step": "financial",
+      "origin_issue_index": 3,
+      "title": "최대 지원금과 실제 지급금 차이",
+      "detail": "표는 최대 지원총액이며 실제 지급 대상 기간, 지원구간, 지급 환율 등을 별도로 확인해야 함.",
+      "source_issue": {
+        "issue": "최대 지원금과 실제 지급금 차이",
+        "status": "needs_review",
+        "note": "표는 최대 지원총액이며 실제 지급 대상 기간, 지원구간, 지급 환율 등을 별도로 확인해야 함.",
+        "evidence": {
+          "printed_page": 6,
+          "physical_pdf_page": 3,
+          "candidate_id": "WEST-2026H2-LP06",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      },
+      "suggested_topics": [
+        "finance_and_loans"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-FINANCIAL-04",
+      "origin_step": "financial",
+      "origin_issue_index": 4,
+      "title": "지원금 반환 및 대출 자격",
+      "detail": "프로그램 중단에 따른 환수와 학적별 어학연수비 대출 실행 제한은 별도 검토.",
+      "source_issue": {
+        "issue": "지원금 반환 및 대출 자격",
+        "status": "needs_review",
+        "note": "프로그램 중단에 따른 환수와 학적별 어학연수비 대출 실행 제한은 별도 검토.",
+        "evidence": {
+          "printed_page": 7,
+          "physical_pdf_page": 4,
+          "candidate_id": "WEST-2026H2-LP07",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      },
+      "suggested_topics": [
+        "academic_and_graduation",
+        "finance_and_loans"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-SELECTION-01",
+      "origin_step": "selection",
+      "origin_issue_index": 1,
+      "title": "선발 일정의 변경 가능성",
+      "detail": "",
+      "source_issue": {
+        "issue": "선발 일정의 변경 가능성",
+        "status": "needs_review",
+        "evidence": [
+          {
+            "printed_page": 10,
+            "physical_pdf_page": 5,
+            "candidate_id": "WEST-2026H2-LP10",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      },
+      "suggested_topics": [
+        "documents_and_procedures"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-SELECTION-02",
+      "origin_step": "selection",
+      "origin_issue_index": 2,
+      "title": "학적 변경 시 대출 실행 제한",
+      "detail": "",
+      "source_issue": {
+        "issue": "학적 변경 시 대출 실행 제한",
+        "status": "needs_review",
+        "evidence": [
+          {
+            "printed_page": 5,
+            "physical_pdf_page": 3,
+            "candidate_id": "WEST-2026H2-LP05",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 14,
+            "physical_pdf_page": 7,
+            "candidate_id": "WEST-2026H2-LP14",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      },
+      "suggested_topics": [
+        "academic_and_graduation",
+        "finance_and_loans"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-SELECTION-03",
+      "origin_step": "selection",
+      "origin_issue_index": 3,
+      "title": "수료자의 2026년 2학기 등록 조건",
+      "detail": "",
+      "source_issue": {
+        "issue": "수료자의 2026년 2학기 등록 조건",
+        "status": "needs_review",
+        "evidence": [
+          {
+            "printed_page": 5,
+            "physical_pdf_page": 3,
+            "candidate_id": "WEST-2026H2-LP05",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 7,
+            "physical_pdf_page": 4,
+            "candidate_id": "WEST-2026H2-LP07",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 14,
+            "physical_pdf_page": 7,
+            "candidate_id": "WEST-2026H2-LP14",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      },
+      "suggested_topics": [
+        "academic_and_graduation"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-SELECTION-04",
+      "origin_step": "selection",
+      "origin_issue_index": 4,
+      "title": "FAQ Q3 선발 시기 표기 불일치",
+      "detail": "",
+      "source_issue": {
+        "issue": "FAQ Q3 선발 시기 표기 불일치",
+        "status": "needs_review",
+        "evidence": [
+          {
+            "printed_page": 11,
+            "physical_pdf_page": 6,
+            "candidate_id": "WEST-2026H2-LP11",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      },
+      "suggested_topics": [
+        "faq_semantics"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-SELECTION-05",
+      "origin_step": "selection",
+      "origin_issue_index": 5,
+      "title": "FAQ Q43·Q48의 J-1 본국거주의무",
+      "detail": "공고 내용만으로 모든 J-1 참가자에게 일률 적용하는 자동 법률 판단 금지. 개별 비자 및 현행 법률 검증 별도 필요.",
+      "source_issue": {
+        "issue": "FAQ Q43·Q48의 J-1 본국거주의무",
+        "note": "공고 내용만으로 모든 J-1 참가자에게 일률 적용하는 자동 법률 판단 금지. 개별 비자 및 현행 법률 검증 별도 필요.",
+        "status": "needs_review",
+        "evidence": [
+          {
+            "printed_page": 17,
+            "physical_pdf_page": 9,
+            "candidate_id": "WEST-2026H2-LP17",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 18,
+            "physical_pdf_page": 9,
+            "candidate_id": "WEST-2026H2-LP18",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      },
+      "suggested_topics": [
+        "visa_and_internship",
+        "faq_semantics"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    },
+    {
+      "record_id": "WEST-H2-SELECTION-06",
+      "origin_step": "selection",
+      "origin_issue_index": 6,
+      "title": "FAQ 49개 답변의 개별 의미 검수",
+      "detail": "질문·답변 번호의 완전성만 확인. 49개 답변 전체를 정책 승인한 것은 아님.",
+      "source_issue": {
+        "issue": "FAQ 49개 답변의 개별 의미 검수",
+        "note": "질문·답변 번호의 완전성만 확인. 49개 답변 전체를 정책 승인한 것은 아님.",
+        "status": "needs_review",
+        "evidence": [
+          {
+            "printed_page": 11,
+            "physical_pdf_page": 6,
+            "candidate_id": "WEST-2026H2-LP11",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 12,
+            "physical_pdf_page": 6,
+            "candidate_id": "WEST-2026H2-LP12",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 13,
+            "physical_pdf_page": 7,
+            "candidate_id": "WEST-2026H2-LP13",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 14,
+            "physical_pdf_page": 7,
+            "candidate_id": "WEST-2026H2-LP14",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 15,
+            "physical_pdf_page": 8,
+            "candidate_id": "WEST-2026H2-LP15",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 16,
+            "physical_pdf_page": 8,
+            "candidate_id": "WEST-2026H2-LP16",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 17,
+            "physical_pdf_page": 9,
+            "candidate_id": "WEST-2026H2-LP17",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          {
+            "printed_page": 18,
+            "physical_pdf_page": 9,
+            "candidate_id": "WEST-2026H2-LP18",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          }
+        ]
+      },
+      "suggested_topics": [
+        "faq_semantics"
+      ],
+      "review_status": "needs_review",
+      "resolved": false,
+      "human_duplicate_decision": null,
+      "approved_for_user_answers": false
+    }
+  ],
+  "same_title_duplicate_candidates": [],
+  "duplicate_candidates_automatically_merged": 0,
+  "topic_counts_nonexclusive": {
+    "faq_semantics": 4,
+    "academic_and_graduation": 7,
+    "other": 1,
+    "documents_and_procedures": 3,
+    "finance_and_loans": 7,
+    "visa_and_internship": 1
+  },
+  "additional_field_review_tasks": [
+    {
+      "task_id": "WEST-H2-FIELD-eligibility_exceptions",
+      "field": "eligibility_exceptions",
+      "description": "FAQ Q3의 선발 회차 예시 불일치와 개인별 자격 적용은 별도 검토",
+      "source_summary": "지원 제한 및 FAQ 자격 관련 문구 확인",
+      "evidence": [
+        {
+          "printed_page": 2,
+          "physical_pdf_page": 1,
+          "candidate_id": "WEST-2026H2-LP02",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 11,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP11",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "review_status": "needs_review",
+      "source_presence_verified": true,
+      "semantic_review_completed": false
+    },
+    {
+      "task_id": "WEST-H2-FIELD-graduation_evidence_examples",
+      "field": "graduation_evidence_examples",
+      "description": "졸업생의 실제 발급 가능 서류와 지원구간 적용 조건은 별도 검토",
+      "source_summary": "학자금 지원구간 통지서 발급이 불가능한 졸업생의 증빙 예시 확인",
+      "evidence": [
+        {
+          "printed_page": 19,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP19",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "review_status": "needs_review",
+      "source_presence_verified": true,
+      "semantic_review_completed": false
+    },
+    {
+      "task_id": "WEST-H2-FIELD-internship_restrictions",
+      "field": "internship_restrictions",
+      "description": "모든 의료 관련 인턴십을 일괄 금지하는 규칙으로 변환하지 않음",
+      "source_summary": "의료 분야의 환자 직접 접촉 인턴십 제한 설명 확인",
+      "evidence": [
+        {
+          "printed_page": 17,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP17",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "review_status": "needs_review",
+      "source_presence_verified": true,
+      "semantic_review_completed": false
+    },
+    {
+      "task_id": "WEST-H2-FIELD-j1_visa_conditions",
+      "field": "j1_visa_conditions",
+      "description": "현행 미국 법률, 비자 유형 및 개인별 적용 범위 별도 법률 검증 필요",
+      "source_summary": "J-1 비자 및 본국거주의무 관련 공고 설명 확인",
+      "evidence": [
+        {
+          "printed_page": 17,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP17",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 18,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP18",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "review_status": "needs_review",
+      "source_presence_verified": true,
+      "semantic_review_completed": false
+    },
+    {
+      "task_id": "WEST-H2-FIELD-score_report_identifiers",
+      "field": "score_report_identifiers",
+      "description": "시험별 입력 형식은 확인 가능하나 개별 성적표의 진위 검증은 별도",
+      "source_summary": "TOEIC·OPIc·G-TELP 등 시험별 등록번호 식별 안내 확인",
+      "evidence": [
+        {
+          "printed_page": 12,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP12",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 20,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP20",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 21,
+          "physical_pdf_page": 11,
+          "candidate_id": "WEST-2026H2-LP21",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 22,
+          "physical_pdf_page": 11,
+          "candidate_id": "WEST-2026H2-LP22",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "review_status": "needs_review",
+      "source_presence_verified": true,
+      "semantic_review_completed": false
+    },
+    {
+      "task_id": "WEST-H2-FIELD-toeic_speaking_conversion_reference",
+      "field": "toeic_speaking_conversion_reference",
+      "description": "이미지 기반 환산표의 전체 점수-등급 대응은 독립 검증 전까지 사용 금지",
+      "source_summary": "TOEIC Speaking ACTFL 등급 환산표 및 숫자 점수 입력 안내 확인",
+      "evidence": [
+        {
+          "printed_page": 20,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP20",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "review_status": "needs_review",
+      "source_presence_verified": true,
+      "semantic_review_completed": false
+    },
+    {
+      "task_id": "WEST-H2-FIELD-vulnerable_group_evidence",
+      "field": "vulnerable_group_evidence",
+      "description": "지원자 유형별 세부 증빙 분기와 서류 유효성은 개별 검토 필요",
+      "source_summary": "취업취약계층 범주 및 증빙서류 유형 확인",
+      "evidence": [
+        {
+          "printed_page": 9,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP09",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "review_status": "needs_review",
+      "source_presence_verified": true,
+      "semantic_review_completed": false
+    }
+  ],
+  "additional_field_task_count": 7,
+  "all_issues_resolved": false,
+  "semantic_review_completed": false,
+  "current_policy_verified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

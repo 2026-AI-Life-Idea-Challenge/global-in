@@ -1,0 +1,260 @@
+{
+  "dataset_type": "west_integrated_policy_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "input_hashes": {
+    "pdf": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+    "draft": "977cd6b2d0fc2ac9f88b3c75027ac0ce665b1a38a37cb92339b4b8870fffbe9e",
+    "eligibility_candidates": "7b33b3a374ee77734d64d63a10b6b5ed78ca7098d97711fb1e21ad0a1169e0b7",
+    "eligibility": "b54407e89beebcd1218415d29e5a6c20263fecd41105b7c779ea8c98ca42b5ba",
+    "application": "d2bbc9e8d254f70441de6ac1c2fdf0ed70a405ddd72ad378b3013fb9e258ee31",
+    "financial": "8d381edebe88569b087050cedcd8046f5adae0dd30c4b0e19ea30372f657ca3a",
+    "selection": "a2b8e320f65228e1650439f4663a23c0f6608db2c9edae52aee2f61dbce5c505"
+  },
+  "original_policy_field_count": 27,
+  "field_tracking": [
+    {
+      "section": "program_overview",
+      "field": "academic_status_eligibility",
+      "review_output": "eligibility",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "program_overview",
+      "field": "graduation_date_conditions",
+      "review_output": "eligibility",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "program_overview",
+      "field": "language_score_requirements",
+      "review_output": "eligibility",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "program_overview",
+      "field": "medium_term_capacity",
+      "review_output": "eligibility",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "program_overview",
+      "field": "short_term_capacity",
+      "review_output": "eligibility",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "application",
+      "field": "application_deadline",
+      "review_output": "application",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "application",
+      "field": "application_start",
+      "review_output": "application",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "application",
+      "field": "graduate_application_procedure",
+      "review_output": "application",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "application",
+      "field": "student_application_procedure",
+      "review_output": "application",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "application",
+      "field": "university_recommendation",
+      "review_output": "application",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "financial_support",
+      "field": "airfare_support_krw",
+      "review_output": "financial",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "financial_support",
+      "field": "living_cost_support_krw",
+      "review_output": "financial",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "financial_support",
+      "field": "loan_eligibility_by_academic_status",
+      "review_output": "selection",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "financial_support",
+      "field": "medium_term_participation_fee_usd",
+      "review_output": "financial",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "financial_support",
+      "field": "short_term_participation_fee_usd",
+      "review_output": "financial",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "financial_support",
+      "field": "support_by_income_bracket",
+      "review_output": "financial",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "selection_and_documents",
+      "field": "required_documents_by_applicant_type",
+      "review_output": "application",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "selection_and_documents",
+      "field": "selection_schedule",
+      "review_output": "selection",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "selection_and_documents",
+      "field": "vulnerable_group_evidence",
+      "review_output": null,
+      "source_data_exists": false,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "faq",
+      "field": "eligibility_exceptions",
+      "review_output": null,
+      "source_data_exists": false,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "faq",
+      "field": "faq_question_answer_boundaries",
+      "review_output": "selection",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "faq",
+      "field": "internship_restrictions",
+      "review_output": null,
+      "source_data_exists": false,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "faq",
+      "field": "j1_visa_conditions",
+      "review_output": null,
+      "source_data_exists": false,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "faq",
+      "field": "payment_rules",
+      "review_output": "financial",
+      "source_data_exists": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "appendices",
+      "field": "graduation_evidence_examples",
+      "review_output": null,
+      "source_data_exists": false,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "appendices",
+      "field": "score_report_identifiers",
+      "review_output": null,
+      "source_data_exists": false,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "section": "appendices",
+      "field": "toeic_speaking_conversion_reference",
+      "review_output": null,
+      "source_data_exists": false,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    }
+  ],
+  "fields_with_followup_review_data": 20,
+  "fields_without_separate_review_data": [
+    "vulnerable_group_evidence",
+    "eligibility_exceptions",
+    "internship_restrictions",
+    "j1_visa_conditions",
+    "graduation_evidence_examples",
+    "score_report_identifiers",
+    "toeic_speaking_conversion_reference"
+  ],
+  "manual_issue_counts_by_step": {
+    "eligibility": 3,
+    "application": 3,
+    "financial": 4,
+    "selection": 6
+  },
+  "manual_issues_not_deduplicated": true,
+  "cross_file_consistency_passed": true,
+  "semantic_review_completed": false,
+  "current_policy_verified": false,
+  "financial_table_alignment_verified_by_code": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "original_files_modified": false
+}

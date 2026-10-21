@@ -1,0 +1,31 @@
+{
+  "dataset_type": "usa_retrieval_review_queue",
+  "country": "US",
+  "program_count": 7,
+  "total_original_chunks": 334,
+  "flagged_review_count": 201,
+  "unflagged_candidate_count": 133,
+  "duplicate_group_count": 7,
+  "priority_counts": {
+    "P0_table_layout": 7,
+    "P1_policy_or_legal": 103,
+    "P2_short_text": 91
+  },
+  "source_index_sha256": "a5b801fd23d914861f04b51916e035f82e9c854fe3ad1353542bb80933d01c7a",
+  "source_quality_audit_sha256": "967800dc1d0a8bf24c67f761b4f212525b59d7f25381a636ffad80a899c7f0c0",
+  "review_queue": {
+    "path": "data/processed/usa/shared/usa_review_queue.jsonl",
+    "sha256": "b2fbb611dd05363060ac099355e7f1c11fdcbee602dd0d2130fcb964961b1241"
+  },
+  "unflagged_candidates": {
+    "path": "data/processed/usa/shared/usa_unflagged_candidates.jsonl",
+    "sha256": "e31432ef97e85cef9479641e0727b2399283ee8c71d5ecf535852c0be4bff4f4"
+  },
+  "note": "Unflagged does not mean verified or approved. Duplicate groups are annotated, not removed.",
+  "validation_status": "needs_review",
+  "human_review_completed": false,
+  "approved_for_embedding": false,
+  "approved_for_user_answers": false,
+  "automatic_eligibility_rules_enabled": false,
+  "database_loaded": false
+}

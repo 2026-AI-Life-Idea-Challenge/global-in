@@ -1,0 +1,18 @@
+{
+  "dataset_type": "west_academic_finance_review_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "input_previous_sha256": "9e796baff8fe1df5a3b2056d7b6cad94603624c18024dd836921c3dce3034678",
+  "faq_extracted_count": 7,
+  "review_item_count": 7,
+  "manual_review_issues": 5,
+  "original_files_modified": false,
+  "semantic_review_completed": false,
+  "current_policy_verified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "c3cb750badb91b75e25746c6bf1ccb18e39a8302a3d5ccfed3b5a03577d48925"
+}

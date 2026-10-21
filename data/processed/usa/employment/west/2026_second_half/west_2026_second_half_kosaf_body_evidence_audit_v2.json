@@ -1,0 +1,17 @@
+{
+  "dataset_type": "west_kosaf_body_evidence_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "input_sha256": "df0cfab9aebf2b8564b1da2e4994ba214e65ccdcd5bfe24ab5436dc662ef5030",
+  "source_count": 2,
+  "cross_agency_tasks": 7,
+  "total_phrase_checks": 14,
+  "body_phrases_found": 14,
+  "human_semantic_reviews_completed": 0,
+  "original_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "cd16ef6380a4e654c538db5e666e31b2f14fb5e750735a63ccadc6d765466f98"
+}

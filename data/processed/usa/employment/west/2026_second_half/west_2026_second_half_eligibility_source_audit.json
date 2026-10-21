@@ -1,0 +1,13 @@
+{
+  "input_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "input_review_sha256": "7b33b3a374ee77734d64d63a10b6b5ed78ca7098d97711fb1e21ad0a1169e0b7",
+  "source_text_checks": "passed",
+  "manual_review_issues": 3,
+  "fields_approved_for_production": 0,
+  "original_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "b54407e89beebcd1218415d29e5a6c20263fecd41105b7c779ea8c98ca42b5ba"
+}

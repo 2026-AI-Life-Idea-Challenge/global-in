@@ -1,0 +1,28 @@
+{
+  "dataset_type": "west_structure_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "input_sha256": "bf9dc2eda84f002e862fd3019569fa60c5f82f4e24992eeff4dd4bff8d6b1aa2",
+  "section_count": 6,
+  "section_page_counts": {
+    "program_overview": 2,
+    "application": 3,
+    "financial_support": 2,
+    "selection_and_documents": 3,
+    "faq": 8,
+    "appendices": 4
+  },
+  "total_logical_pages": 22,
+  "total_blocks": 578,
+  "missing_pages": [],
+  "duplicate_pages": 0,
+  "semantic_fields_pending_review": 27,
+  "semantic_values_auto_filled": 0,
+  "original_files_modified": false,
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "validation_status": "needs_review",
+  "structured_file_sha256": "977cd6b2d0fc2ac9f88b3c75027ac0ce665b1a38a37cb92339b4b8870fffbe9e"
+}

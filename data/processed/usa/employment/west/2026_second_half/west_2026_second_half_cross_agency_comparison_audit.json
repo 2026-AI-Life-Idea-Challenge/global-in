@@ -1,0 +1,15 @@
+{
+  "dataset_type": "west_cross_agency_comparison_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "input_sha256": "401086bfec485efb0beb788eade8489f6fa5c382210a8056bc329d26b95aa6e6",
+  "comparison_result_count": 7,
+  "automatically_resolved_issues": 0,
+  "independent_source_hashes_verified": false,
+  "original_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "8ed7ff07eb016e8277d90a203f80b935c1fe201ea00c429d7571cea444c7b1f6"
+}

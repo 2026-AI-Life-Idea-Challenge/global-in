@@ -1,0 +1,233 @@
+{
+  "dataset_type": "west_full_reviewed_information",
+  "country": "US",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_first_half",
+  "historical_notice": true,
+  "original_reviewed_data_path": "data/processed/usa/employment/west/west_2026_first_half_reviewed_data.json",
+  "original_reviewed_data_sha256": "c26e6d1b8295709062fd2b1df142764375569ad5d9784145d3f12bf9b126c67d",
+  "source_pdf_path": "data/raw/usa/employment/west/west_2026_first_half_notice.pdf",
+  "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31",
+  "mid_term_financial_support": {
+    "participation_fee_usd": 8912,
+    "airfare_support_krw": 2000000,
+    "notice_exchange_rate_krw_per_usd": 1472,
+    "brackets": [
+      {
+        "label": "기초·차상위~5구간",
+        "fee_government_usd": 8912,
+        "fee_self_usd": 0,
+        "living_support_usd": 12600,
+        "maximum_total_support_1000krw": 33665
+      },
+      {
+        "label": "6~7구간",
+        "fee_government_usd": 4456,
+        "fee_self_usd": 4456,
+        "living_support_usd": 6300,
+        "maximum_total_support_1000krw": 17833
+      },
+      {
+        "label": "8~9구간",
+        "fee_government_usd": 3119,
+        "fee_self_usd": 5793,
+        "living_support_usd": 6300,
+        "maximum_total_support_1000krw": 15865
+      },
+      {
+        "label": "소득 10분위",
+        "fee_government_usd": 2228,
+        "fee_self_usd": 6684,
+        "living_support_usd": 3150,
+        "maximum_total_support_1000krw": 9916
+      }
+    ],
+    "source": {
+      "physical_pdf_page": 4,
+      "printed_page": 7,
+      "side": "left",
+      "category": "mid_term_financial_support",
+      "verification_anchors": [
+        "8,912",
+        "4,456",
+        "3,119",
+        "2,228",
+        "33,665",
+        "17,833",
+        "15,865",
+        "9,916"
+      ],
+      "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31"
+    },
+    "current_amounts_verified": false
+  },
+  "selection_schedule": {
+    "application_open": "2026-02-11",
+    "application_deadline": "2026-03-18T17:00:00",
+    "university_recommendation": {
+      "start": "2026-03-19",
+      "end": "2026-03-23"
+    },
+    "financial_bracket_review": {
+      "start": "2026-03-19",
+      "end": "2026-05-14"
+    },
+    "document_result": "2026-04-09T16:00:00",
+    "first_interview": {
+      "short_term": "2026-04-18",
+      "mid_term": "2026-04-19"
+    },
+    "first_interview_result": "2026-04-23T16:00:00",
+    "second_interview": {
+      "start": "2026-04-24",
+      "end": "2026-05-12"
+    },
+    "final_result": "2026-05-21T16:00:00",
+    "participation_fee_payment": {
+      "start": "2026-05-22",
+      "end": "2026-05-29"
+    },
+    "additional_selection": {
+      "start": "2026-06-01",
+      "end": "2026-06-04"
+    },
+    "pre_departure_orientation": "2026-06-25",
+    "visa_interviews": {
+      "start": "2026-07-06",
+      "end": "2026-07-07"
+    },
+    "departure_period": "2026-07",
+    "language_study_start_period": "2026-08",
+    "dates_subject_to_change": true,
+    "application_currently_open": false,
+    "source": {
+      "physical_pdf_page": 5,
+      "printed_page": 10,
+      "side": "right",
+      "category": "selection_schedule",
+      "verification_anchors": [
+        "4.9.",
+        "4.18.",
+        "4.24.",
+        "5.21.",
+        "5.22.",
+        "7.6."
+      ],
+      "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31"
+    }
+  },
+  "supplementary_facts": [
+    {
+      "fact_id": "student_financial_bracket_application",
+      "description": "재학생·휴학생·초과학기자·수료자·졸업유예자는 한국장학재단 지원구간 확인 신청 대상. 실제 대출 실행과는 별개.",
+      "source": {
+        "physical_pdf_page": 7,
+        "printed_page": 14,
+        "side": "right",
+        "category": "financial_bracket",
+        "verification_anchors": [
+          "Q21.",
+          "A21."
+        ],
+        "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31"
+      },
+      "eligibility_rule_enabled": false
+    },
+    {
+      "fact_id": "graduate_financial_bracket_documents",
+      "description": "졸업생은 한국장학재단의 WEST 지원구간 확인 신청 대신 소속 대학에 해당 증빙서류 제출.",
+      "source": {
+        "physical_pdf_page": 7,
+        "printed_page": 14,
+        "side": "right",
+        "category": "conditional_documents",
+        "verification_anchors": [
+          "졸업생",
+          "Q24."
+        ],
+        "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31"
+      },
+      "eligibility_rule_enabled": false
+    },
+    {
+      "fact_id": "minimum_completion_period",
+      "description": "단기: 어학연수 8주·인턴십 12주 이상. 중기: 어학연수 12주·인턴십 24주 이상.",
+      "source": {
+        "physical_pdf_page": 8,
+        "printed_page": 16,
+        "side": "right",
+        "category": "program_completion",
+        "verification_anchors": [
+          "Q34.",
+          "Q35."
+        ],
+        "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31"
+      },
+      "eligibility_rule_enabled": false
+    },
+    {
+      "fact_id": "internship_placement",
+      "description": "공고의 FAQ에 따르면 참가자의 독자적인 구직활동이 아닌 지정 스폰서의 인턴십 배치 절차를 따름.",
+      "source": {
+        "physical_pdf_page": 8,
+        "printed_page": 16,
+        "side": "right",
+        "category": "internship_placement",
+        "verification_anchors": [
+          "Q37."
+        ],
+        "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31"
+      },
+      "eligibility_rule_enabled": false
+    },
+    {
+      "fact_id": "patient_contact_restriction",
+      "description": "공고 FAQ는 간호·의학 전공자의 환자 직접 접촉 인턴십이 금지된다고 안내함.",
+      "source": {
+        "physical_pdf_page": 9,
+        "printed_page": 17,
+        "side": "left",
+        "category": "internship_restrictions",
+        "verification_anchors": [
+          "Q39."
+        ],
+        "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31"
+      },
+      "eligibility_rule_enabled": false
+    },
+    {
+      "fact_id": "two_year_home_residency_notice",
+      "description": "공고 FAQ에서 J-1의 2년 본국 거주의무와 면제 절차를 안내함. 개인별 실제 적용 여부는 미국 공식 비자 기준으로 별도 확인 필요.",
+      "source": {
+        "physical_pdf_page": 9,
+        "printed_page": 18,
+        "side": "right",
+        "category": "visa_legal_notice",
+        "verification_anchors": [
+          "Q48."
+        ],
+        "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31"
+      },
+      "eligibility_rule_enabled": false,
+      "independent_legal_verification_required": true
+    }
+  ],
+  "reviewed_printed_pages": [
+    2,
+    4,
+    6,
+    7,
+    10,
+    14,
+    16,
+    17,
+    18
+  ],
+  "review_scope": "selected_values_and_faq_items_verified",
+  "all_pdf_statements_individually_verified": false,
+  "current_rules_verified": false,
+  "validation_status": "partially_reviewed",
+  "automatic_eligibility_rules_enabled": false,
+  "recommendation_rules_enabled": false,
+  "embedding_generated": false
+}

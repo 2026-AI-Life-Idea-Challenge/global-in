@@ -1,0 +1,385 @@
+{
+  "dataset_type": "west_documents_scores_review",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "historical_notice": true,
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "previous_review_sha256": "c3cb750badb91b75e25746c6bf1ccb18e39a8302a3d5ccfed3b5a03577d48925",
+  "faq_original_text": {
+    "1": {
+      "number": 1,
+      "question": "공인 어학성적 점수가 조금 부족합니다. 지원서 마감 후 제출 가능한가요? 토플, 아이엘츠 등\n\n  다른 성적도 인정 가능한가요?",
+      "answer": "지원 자격 요건보다 어학성적이 미달될 경우 지원이 불가하며, 어학성적 결과도 접수 마감일\n\n  내에 유효한 성적을 제출해야 합니다(온라인 지원 및 소속대학에 동일한 성적표 제출 필수).\n\n  따라서 마감일 이후의 어학성적은 인정 및 제출이 불가합니다. 또한 모집공고문에 명시된\n\n  시험성적만 인정합니다.",
+      "question_sha256": "2abd8baa90f835022432868d0097977ac34c194cd5ca4d4af746654c24cd6d4a",
+      "answer_sha256": "52bfe37dbe3b427d7bbdc89c80c591dfa6cb7f195168c69e217963028a9a0e59",
+      "evidence": {
+        "printed_page": 11,
+        "physical_pdf_page": 6,
+        "candidate_id": "WEST-2026H2-LP11",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      "semantic_review_completed": false
+    },
+    "12": {
+      "number": 12,
+      "question": "어학점수 기재 시 등록번호는 무엇인가요?",
+      "answer": "성적표의 Registration Number(토익 및 토익스피킹, 6자리), Test ID(오픽, 12자리), 혹은\n\n    수험번호(G-TELP 11자리, G-TELP 스피킹 8자리)를 의미합니다. 어학시험별 등록번호 확인\n\n  방법은 FAQ 하단의 [붙임5]를 참고하시기 바랍니다.",
+      "question_sha256": "9da663a129a38e95f9efebb25a5c6ff34e07b946eeca56a58523d2078a53a8c6",
+      "answer_sha256": "d6f6c36d9fbc42a36620384e961860d3dd8f088c8338953b39bf43841eca71d3",
+      "evidence": {
+        "printed_page": 12,
+        "physical_pdf_page": 6,
+        "candidate_id": "WEST-2026H2-LP12",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      "semantic_review_completed": false
+    },
+    "15": {
+      "number": 15,
+      "question": "재외국민전형 입학 여부를 잘못 선택하였을 경우 불이익이 있나요?",
+      "answer": "2017년부터 지원구간 조회에 국외소득‧재산이 반영됨에 따라 학생이 신청하신 재외국민\n\n  전형 입학 여부와 소속대학의 정보가 상이할 경우 합격 후 재정지원에 불이익이 발생할\n\n  수 있으므로 신중하게 선택하여 주시기 바랍니다. 온라인지원서 작성 시 해당 사실을 누락한\n\n  경우 실제 지원구간과 상관없이 10구간에 준하여 정부지원금이 지급됩니다.\n\n  만약 한국장학재단의 WEST 프로그램 신청 단계에서 재외국민 특별전형 입학여부(Y/N)를\n\n  잘못 선택하였을 경우, 학생의 국내 소득 재산조사가 개시되기 전 그리고 WEST 프로그램\n\n  신청기간 내에 학생 본인이 한국장학재단 누리집을 통해 입학전형 변경이 가능합니다. 국\n\n  내 소득조사가 개시된 후에는 한국장학재단 콜센터(1599-2000)로 확인한 후 「입학전형사\n\n   실확인서」를 제출하여 입학 정보 수정을 신청하여야 합니다. 「입학전형사실확인서」 양\n\n  식은 한국장학재단 누리집>고객센터>자료실>학자금 지원구간에 게시되어 있습니다.",
+      "question_sha256": "c414b2b60255a64fcd8f17a8f9d0e8d533dfef3bdda201c4e9b86d5f69e0b023",
+      "answer_sha256": "7f9ecd98f2a25bd5ced20fe1c9244ca9ae7a525c7f092731aebe9888226aee72",
+      "evidence": {
+        "printed_page": 13,
+        "physical_pdf_page": 7,
+        "candidate_id": "WEST-2026H2-LP13",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      "semantic_review_completed": false
+    },
+    "19": {
+      "number": 19,
+      "question": "학교에는 어떤 서류를 제출해야 하나요?",
+      "answer": "WEST 온라인지원서 출력물(자기소개서 포함), 재학(졸업/휴학)증명서, 전 학년 성적증명서,\n\n  공인영어성적 증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking, G-TELP Speaking), 취업취약\n\n  계층 증빙자료(해당자에 한하며, 선발공고문 [붙임1] 확인 요망), 지원구간 증빙자료(졸\n\n  업생에 한하며, 선발공고문 [붙임1] 확인 요망)이며 공인영어성적 증명서는 반드시 공고\n\n  문의 기준요건을 확인하여 유효한 성적을 제출해야 합니다.\n\n\n\n                                    - 13 -",
+      "question_sha256": "58992c376b337e7fd1ac7e338eb82f3ba20fbcd5f815ba37dee930cd26d225e5",
+      "answer_sha256": "091cceafb009a1e26700a7ed6e23944dca533691436b6684ff838df5424df0e7",
+      "evidence": {
+        "printed_page": 13,
+        "physical_pdf_page": 7,
+        "candidate_id": "WEST-2026H2-LP13",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      "semantic_review_completed": false
+    },
+    "24": {
+      "number": 24,
+      "question": "졸업생은 한국장학재단으로 학자금 지원구간 확인 신청을 하지 않는데 지원구간은 어떻게\n\n   산정되며, 어떤 자료를 제출해야 하나요?",
+      "answer": "학자금 지원구간 통지서를 제출하면 가장 최근 학기 학자금 지원구간을 반영합니다. 기초\n\n  생활수급자증명서나 차상위계층증명서를 제출하는 경우, 해당 증명서 기준으로 정부지원\n\n  금을 산정합니다. 재학 중 국가장학금 신청 이력이 없는 경우, 해당 내용 증명을 위해 학\n\n   자금대출‧장학금 신청증명서([붙임4] 참조)를 제출해주시면 됩니다.\n\n   ※ 학자금 지원구간 통지서는 국가장학금 또는 학자금 대출 신청 이력이 있는 경우, 학자금‧\n\n    대출장학금 신청증명서는 국가장학금 또는 학자금 대출 신청 이력이 없는 경우 발급 가능\n\n\n                                    - 14 -",
+      "question_sha256": "03242281b1eff751162fe83c5f691d83be91c838ed3fd231c9f17646b0b1d970",
+      "answer_sha256": "86dbe8a66e16c6e34c5670a60b8a2a776d227adac95cb12b7705de6d936fe393",
+      "evidence": {
+        "printed_page": 14,
+        "physical_pdf_page": 7,
+        "candidate_id": "WEST-2026H2-LP14",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      },
+      "semantic_review_completed": false
+    }
+  },
+  "review_items": {
+    "vulnerable_group_documents": {
+      "source_summary": "취업취약계층 유형별 증빙서류가 구분됨",
+      "evidence": [
+        {
+          "printed_page": 9,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP09",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "caution": "각 자격 유형의 모든 세부 서류·발급처는 표 행·열별 최종 검수 필요",
+      "source_presence_verified": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    "graduate_support_bracket_documents": {
+      "source_summary": "졸업생은 해당 조건에 따라 지원구간 통지서 또는 대체 증빙 등을 제출",
+      "evidence": [
+        {
+          "printed_page": 9,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP09",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 14,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP14",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 19,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP19",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "caution": "모든 졸업생이 동일한 서류를 제출하거나 동일 지원구간에 해당한다고 판단하지 않음",
+      "source_presence_verified": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    "language_score_submission": {
+      "source_summary": "마감일에 유효한 공고 지정 어학시험 성적만 인정하며 대학에도 증빙 제출",
+      "evidence": [
+        {
+          "printed_page": 4,
+          "physical_pdf_page": 2,
+          "candidate_id": "WEST-2026H2-LP04",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 11,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP11",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 13,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP13",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "caution": "미기재 시험의 점수를 대체 인정하지 않음",
+      "source_presence_verified": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    "score_report_identifiers": {
+      "source_summary": "시험별 등록번호 종류 및 자릿수 안내",
+      "evidence": [
+        {
+          "printed_page": 12,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP12",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 20,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP20",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 21,
+          "physical_pdf_page": 11,
+          "candidate_id": "WEST-2026H2-LP21",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 22,
+          "physical_pdf_page": 11,
+          "candidate_id": "WEST-2026H2-LP22",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "caution": "문자열 형식 검사와 성적표 진위 확인은 서로 다른 절차",
+      "source_presence_verified": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    },
+    "toeic_speaking_conversion": {
+      "source_summary": "TOEIC Speaking ACTFL 등급표와 200점 만점 숫자 입력 안내",
+      "evidence": [
+        {
+          "printed_page": 20,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP20",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "caution": "환산표 이미지의 전체 점수·등급 대응을 자동 전사하거나 자동 환산하지 않음",
+      "source_presence_verified": true,
+      "semantic_review_completed": false,
+      "validation_status": "needs_review"
+    }
+  },
+  "score_report_identifiers": {
+    "TOEIC": {
+      "name": "Registration Number",
+      "length": 6,
+      "format_note": "숫자 6자리",
+      "evidence": [
+        {
+          "printed_page": 12,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP12",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 20,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP20",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    "TOEIC_Speaking": {
+      "name": "Registration Number",
+      "length": 6,
+      "format_note": "숫자 6자리",
+      "evidence": [
+        {
+          "printed_page": 12,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP12",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 20,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP20",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    "OPIc": {
+      "name": "Test ID",
+      "length": 12,
+      "format_note": "숫자 1자리 + 영문 대문자 1자리 + 숫자 10자리",
+      "evidence": [
+        {
+          "printed_page": 12,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP12",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 21,
+          "physical_pdf_page": 11,
+          "candidate_id": "WEST-2026H2-LP21",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    "G_TELP": {
+      "name": "수험번호",
+      "length": 11,
+      "format_note": "숫자 11자리",
+      "evidence": [
+        {
+          "printed_page": 12,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP12",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 22,
+          "physical_pdf_page": 11,
+          "candidate_id": "WEST-2026H2-LP22",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    "G_TELP_Speaking": {
+      "name": "수험번호",
+      "length": 8,
+      "format_note": "알파벳 s + 숫자 7자리",
+      "evidence": [
+        {
+          "printed_page": 12,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP12",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 22,
+          "physical_pdf_page": 11,
+          "candidate_id": "WEST-2026H2-LP22",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    }
+  },
+  "manual_review_issues": [
+    {
+      "issue": "취업취약계층 증빙서류 표 상세 검수",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "printed_page": 9,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP09",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    {
+      "issue": "졸업생 지원구간 증빙 분기 검수",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "printed_page": 9,
+          "physical_pdf_page": 5,
+          "candidate_id": "WEST-2026H2-LP09",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 14,
+          "physical_pdf_page": 7,
+          "candidate_id": "WEST-2026H2-LP14",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 19,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP19",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    {
+      "issue": "성적표 식별번호 형식과 진위 검증 구분",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "printed_page": 12,
+          "physical_pdf_page": 6,
+          "candidate_id": "WEST-2026H2-LP12",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 20,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP20",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 21,
+          "physical_pdf_page": 11,
+          "candidate_id": "WEST-2026H2-LP21",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 22,
+          "physical_pdf_page": 11,
+          "candidate_id": "WEST-2026H2-LP22",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    },
+    {
+      "issue": "TOEIC Speaking 환산표 전체 값 검수",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "printed_page": 20,
+          "physical_pdf_page": 10,
+          "candidate_id": "WEST-2026H2-LP20",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ]
+    }
+  ],
+  "toeic_speaking_conversion_table": null,
+  "score_authenticity_verified": false,
+  "document_eligibility_verified": false,
+  "semantic_review_completed": false,
+  "current_policy_verified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

@@ -1,0 +1,242 @@
+{
+  "dataset_type": "west_financial_source_review",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "historical_notice": true,
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "application_source_sha256": "d2bbc9e8d254f70441de6ac1c2fdf0ed70a405ddd72ad378b3013fb9e258ee31",
+  "published_exchange_rate_krw_per_usd": 1472,
+  "programs": {
+    "short_term": {
+      "duration_months_max": 6,
+      "participation_fee_usd": 7045,
+      "airfare_support_krw": 2000000,
+      "living_support_months_max": 6,
+      "support_brackets": [
+        {
+          "bracket_id": "basic_near_poverty_to_5",
+          "bracket_label": "기초·차상위~5구간",
+          "participation_fee_support_usd": 7045,
+          "participation_fee_self_payment_usd": 0,
+          "airfare_support_krw": 2000000,
+          "living_support_max_usd": 8400,
+          "living_support_months_max": 6,
+          "published_max_total_1000_krw": 24735,
+          "source_evidence": {
+            "printed_page": 6,
+            "physical_pdf_page": 3,
+            "candidate_id": "WEST-2026H2-LP06",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          "source_transcription_status": "visually_transcribed_pending_final_review",
+          "validation_status": "needs_review"
+        },
+        {
+          "bracket_id": "6_to_7",
+          "bracket_label": "6~7구간",
+          "participation_fee_support_usd": 3523,
+          "participation_fee_self_payment_usd": 3522,
+          "airfare_support_krw": 2000000,
+          "living_support_max_usd": 4200,
+          "living_support_months_max": 6,
+          "published_max_total_1000_krw": 13368,
+          "source_evidence": {
+            "printed_page": 6,
+            "physical_pdf_page": 3,
+            "candidate_id": "WEST-2026H2-LP06",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          "source_transcription_status": "visually_transcribed_pending_final_review",
+          "validation_status": "needs_review"
+        },
+        {
+          "bracket_id": "8_to_9",
+          "bracket_label": "8~9구간",
+          "participation_fee_support_usd": 2466,
+          "participation_fee_self_payment_usd": 4579,
+          "airfare_support_krw": 2000000,
+          "living_support_max_usd": 4200,
+          "living_support_months_max": 6,
+          "published_max_total_1000_krw": 11812,
+          "source_evidence": {
+            "printed_page": 6,
+            "physical_pdf_page": 3,
+            "candidate_id": "WEST-2026H2-LP06",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          "source_transcription_status": "visually_transcribed_pending_final_review",
+          "validation_status": "needs_review"
+        },
+        {
+          "bracket_id": "10",
+          "bracket_label": "10구간",
+          "participation_fee_support_usd": 1761,
+          "participation_fee_self_payment_usd": 5284,
+          "airfare_support_krw": 2000000,
+          "living_support_max_usd": 2100,
+          "living_support_months_max": 6,
+          "published_max_total_1000_krw": 7684,
+          "source_evidence": {
+            "printed_page": 6,
+            "physical_pdf_page": 3,
+            "candidate_id": "WEST-2026H2-LP06",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          "source_transcription_status": "visually_transcribed_pending_final_review",
+          "validation_status": "needs_review"
+        }
+      ],
+      "source_evidence": {
+        "printed_page": 6,
+        "physical_pdf_page": 3,
+        "candidate_id": "WEST-2026H2-LP06",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      }
+    },
+    "medium_term": {
+      "duration_months_max": 12,
+      "participation_fee_usd": 8912,
+      "airfare_support_krw": 2000000,
+      "living_support_months_max": 9,
+      "support_brackets": [
+        {
+          "bracket_id": "basic_near_poverty_to_5",
+          "bracket_label": "기초·차상위~5구간",
+          "participation_fee_support_usd": 8912,
+          "participation_fee_self_payment_usd": 0,
+          "airfare_support_krw": 2000000,
+          "living_support_max_usd": 12600,
+          "living_support_months_max": 9,
+          "published_max_total_1000_krw": 33665,
+          "source_evidence": {
+            "printed_page": 7,
+            "physical_pdf_page": 4,
+            "candidate_id": "WEST-2026H2-LP07",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          "source_transcription_status": "visually_transcribed_pending_final_review",
+          "validation_status": "needs_review"
+        },
+        {
+          "bracket_id": "6_to_7",
+          "bracket_label": "6~7구간",
+          "participation_fee_support_usd": 4456,
+          "participation_fee_self_payment_usd": 4456,
+          "airfare_support_krw": 2000000,
+          "living_support_max_usd": 6300,
+          "living_support_months_max": 9,
+          "published_max_total_1000_krw": 17833,
+          "source_evidence": {
+            "printed_page": 7,
+            "physical_pdf_page": 4,
+            "candidate_id": "WEST-2026H2-LP07",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          "source_transcription_status": "visually_transcribed_pending_final_review",
+          "validation_status": "needs_review"
+        },
+        {
+          "bracket_id": "8_to_9",
+          "bracket_label": "8~9구간",
+          "participation_fee_support_usd": 3119,
+          "participation_fee_self_payment_usd": 5793,
+          "airfare_support_krw": 2000000,
+          "living_support_max_usd": 6300,
+          "living_support_months_max": 9,
+          "published_max_total_1000_krw": 15865,
+          "source_evidence": {
+            "printed_page": 7,
+            "physical_pdf_page": 4,
+            "candidate_id": "WEST-2026H2-LP07",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          "source_transcription_status": "visually_transcribed_pending_final_review",
+          "validation_status": "needs_review"
+        },
+        {
+          "bracket_id": "10",
+          "bracket_label": "10구간",
+          "participation_fee_support_usd": 2228,
+          "participation_fee_self_payment_usd": 6684,
+          "airfare_support_krw": 2000000,
+          "living_support_max_usd": 3150,
+          "living_support_months_max": 9,
+          "published_max_total_1000_krw": 9916,
+          "source_evidence": {
+            "printed_page": 7,
+            "physical_pdf_page": 4,
+            "candidate_id": "WEST-2026H2-LP07",
+            "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+          },
+          "source_transcription_status": "visually_transcribed_pending_final_review",
+          "validation_status": "needs_review"
+        }
+      ],
+      "source_evidence": {
+        "printed_page": 7,
+        "physical_pdf_page": 4,
+        "candidate_id": "WEST-2026H2-LP07",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      }
+    }
+  },
+  "payment_notes": {
+    "participation_fee_currency": "USD",
+    "participation_fee_payment": "일시납",
+    "airfare_and_living_support_currency": "KRW",
+    "airfare_is_included_in_published_max_total": true,
+    "published_max_total_is_guaranteed": false,
+    "exchange_rate_is_guaranteed": false
+  },
+  "manual_review_issues": [
+    {
+      "issue": "실제 지급 환율",
+      "status": "needs_review",
+      "note": "공고 표는 2026년 기준환율 1,472원을 사용. 실제 생활비 지급에는 연도별 기준환율이 적용됨.",
+      "evidence": {
+        "printed_page": 6,
+        "physical_pdf_page": 3,
+        "candidate_id": "WEST-2026H2-LP06",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      }
+    },
+    {
+      "issue": "개인별 학자금 지원구간 확정",
+      "status": "needs_review",
+      "note": "공고의 지원구간별 금액을 개인에게 직접 적용할 수 없음. 졸업생 및 재외국민 특별전형 관련 예외 확인 필요.",
+      "evidence": {
+        "printed_page": 5,
+        "physical_pdf_page": 3,
+        "candidate_id": "WEST-2026H2-LP05",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      }
+    },
+    {
+      "issue": "최대 지원금과 실제 지급금 차이",
+      "status": "needs_review",
+      "note": "표는 최대 지원총액이며 실제 지급 대상 기간, 지원구간, 지급 환율 등을 별도로 확인해야 함.",
+      "evidence": {
+        "printed_page": 6,
+        "physical_pdf_page": 3,
+        "candidate_id": "WEST-2026H2-LP06",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      }
+    },
+    {
+      "issue": "지원금 반환 및 대출 자격",
+      "status": "needs_review",
+      "note": "프로그램 중단에 따른 환수와 학적별 어학연수비 대출 실행 제한은 별도 검토.",
+      "evidence": {
+        "printed_page": 7,
+        "physical_pdf_page": 4,
+        "candidate_id": "WEST-2026H2-LP07",
+        "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+      }
+    }
+  ],
+  "table_cell_alignment_verified_by_code": false,
+  "validation_status": "source_transcribed_policy_review_pending",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

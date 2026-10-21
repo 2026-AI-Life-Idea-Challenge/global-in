@@ -1,0 +1,12 @@
+﻿task_id,category,field,related_faq,evidence_pages,review_required,reviewer_notes,final_status
+WEST-H2-VISA-internship_patient_care,visa_internship,internship_patient_care,39,17,예,,needs_review
+WEST-H2-VISA-internship_field_matching,visa_internship,internship_field_matching,40,17,예,,needs_review
+WEST-H2-VISA-j1_two_year_home_residency,visa_internship,j1_two_year_home_residency,"43, 48","17, 18",예,,needs_review
+WEST-H2-VISA-j1_waiver,visa_internship,j1_waiver,48,18,예,,needs_review
+WEST-H2-FIELD-eligibility_exceptions,remaining_policy_field,eligibility_exceptions,,"2, 11",예,,needs_review
+WEST-H2-FIELD-graduation_evidence_examples,remaining_policy_field,graduation_evidence_examples,,19,예,,needs_review
+WEST-H2-FIELD-internship_restrictions,remaining_policy_field,internship_restrictions,,17,예,,needs_review
+WEST-H2-FIELD-j1_visa_conditions,remaining_policy_field,j1_visa_conditions,,"17, 18",예,,needs_review
+WEST-H2-FIELD-score_report_identifiers,remaining_policy_field,score_report_identifiers,,"12, 20, 21, 22",예,,needs_review
+WEST-H2-FIELD-toeic_speaking_conversion_reference,remaining_policy_field,toeic_speaking_conversion_reference,,20,예,,needs_review
+WEST-H2-FIELD-vulnerable_group_evidence,remaining_policy_field,vulnerable_group_evidence,,9,예,,needs_review

@@ -1,0 +1,135 @@
+
+{
+  "dataset_type": "west_remaining_policy_fields_review_draft",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "source_notice": "NIIED Notice No. 2026-94",
+  "review_scope": [
+    "eligibility_exceptions",
+    "internship_restrictions",
+    "j1_visa_conditions"
+  ],
+  "review_items": [
+    {
+      "field": "eligibility_exceptions",
+      "source_printed_pages": [2, 11],
+      "source_observations": [
+        "복수국적자 및 외국 소재 대학 학생 지원 제한",
+        "WEST 프로그램 기존 참가자 지원 제한",
+        "기존 지원자 중 참가비 납부 마감 이후 포기자 지원 제한",
+        "FAQ Q3에 2026년 하반기 공고와 일치하지 않는 상반기 선발 표기가 존재"
+      ],
+      "identified_issues": [
+        {
+          "issue_id": "WEST-H2-FAQ-Q3-PERIOD",
+          "issue_type": "source_text_inconsistency",
+          "description": "FAQ Q3의 모집 회차 표기와 하반기 공고 제목이 불일치",
+          "resolution": "원문 보존 및 발행기관 확인 필요",
+          "status": "needs_review"
+        }
+      ],
+      "not_verified": [
+        "FAQ Q3의 발행기관 공식 정정 여부",
+        "개별 신청인의 지원 자격",
+        "공고 이후 변경된 모집 규정"
+      ],
+      "source_presence_verified": true,
+      "semantic_review_completed": false,
+      "review_status": "needs_review"
+    },
+    {
+      "field": "internship_restrictions",
+      "source_printed_pages": [2, 16, 17],
+      "source_faq": ["Q37", "Q38", "Q39", "Q40"],
+      "source_observations": [
+        "환자 직접 접촉을 포함하는 간호학·의학 인턴십 제한",
+        "개별적인 구직활동 및 임의 인턴십 배치 제한",
+        "전공 관련 분야 배치를 원칙으로 하되 복수전공·경험 등을 고려할 수 있음"
+      ],
+      "external_official_references": [
+        {
+          "agency": "U.S. Department of State",
+          "title": "BridgeUSA Intern Program",
+          "url": "https://j1visa.state.gov/programs/intern/",
+          "observation": "Intern 프로그램에서 의료 환자 진료 또는 접촉 관련 업무 제한을 확인"
+        }
+      ],
+      "interpretation_safeguards": [
+        "모든 의료 관련 인턴십을 일괄 금지하지 않음",
+        "개별 직무의 허용 여부를 자동 판정하지 않음",
+        "WEST 참가자의 정확한 J-1 프로그램 분류 및 스폰서별 배치 기준은 별도 확인"
+      ],
+      "not_verified": [
+        "개별 인턴십 직무의 적법성",
+        "스폰서의 실제 배치 승인",
+        "개별 신청인의 전공 관련성"
+      ],
+      "source_presence_verified": true,
+      "external_guidance_reviewed": true,
+      "semantic_review_completed": false,
+      "review_status": "needs_review"
+    },
+    {
+      "field": "j1_visa_conditions",
+      "source_printed_pages": [17, 18],
+      "source_faq": ["Q43", "Q48"],
+      "source_observations": [
+        "WEST 공고는 프로그램 종료 후 귀국 의무를 안내",
+        "FAQ는 J-1 비자의 2년 본국거주의무를 설명",
+        "FAQ는 본국거주의무 면제 신청 절차를 언급"
+      ],
+      "external_official_references": [
+        {
+          "agency": "U.S. Department of State",
+          "title": "Eligibility for Two-Year Home-Country Physical Presence Requirement Waiver",
+          "url": "https://travel.state.gov/content/travel/en/us-visas/study/exchange/waiver-of-the-exchange-visitor/eligibility.html",
+          "observation": "정부 재정지원·Skills List·대학원 의학교육 관련 적용 사유 확인"
+        },
+        {
+          "agency": "U.S. Department of State",
+          "title": "Exchange Visitor Skills List Update",
+          "url": "https://travel.state.gov/content/travel/en/News/visas-news/exchange-visitor-skills-list-update-in-federal-register.html",
+          "observation": "2024년 Skills List 개정과 정부 재정지원 사유의 독립성 확인"
+        },
+        {
+          "agency": "U.S. Department of State",
+          "title": "Advisory Opinions",
+          "url": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/advisory-opinions.html",
+          "observation": "개인별 212(e) 적용 여부에 관한 공식 의견 요청 절차 확인"
+        }
+      ],
+      "interpretation_safeguards": [
+        "모든 J-1 비자 소지자에게 212(e)가 적용된다고 일반화하지 않음",
+        "2024년 Skills List 개정이 정부 재정지원 관련 요건을 자동 면제한다고 해석하지 않음",
+        "2년 본국거주의무를 모든 미국 입국의 전면 금지로 해석하지 않음",
+        "면제 신청과 실제 면제 승인을 동일하게 취급하지 않음",
+        "WEST 공고의 프로그램 수료 조건과 미국 이민법의 212(e) 요건을 구분"
+      ],
+      "not_verified": [
+        "개별 참가자의 정부 재정지원에 따른 212(e) 적용 여부",
+        "개인별 DS-2019 및 비자 정보",
+        "개별 면제 신청 가능성과 실제 승인 여부",
+        "WEST 스폰서별 비자 조건"
+      ],
+      "source_presence_verified": true,
+      "external_guidance_reviewed": true,
+      "individual_legal_determination_completed": false,
+      "semantic_review_completed": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "review_summary": {
+    "reviewed_field_count": 3,
+    "source_presence_confirmed_count": 3,
+    "semantic_review_completed_count": 0,
+    "individual_eligibility_determined": false,
+    "individual_visa_status_determined": false,
+    "source_pdf_modified": false,
+    "existing_policy_records_modified": false
+  },
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

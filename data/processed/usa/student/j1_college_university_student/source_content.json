@@ -1,0 +1,85 @@
+{
+  "dataset_type": "official_source_content",
+  "country": "US",
+  "program_id": "US-ST-03",
+  "route_id": "US-ST",
+  "official_program_name": "College and University Student",
+  "visa_classification": "J-1",
+  "source": {
+    "source_url": "https://j1visa.state.gov/programs/college-and-university-student/",
+    "snapshot_path": "data/raw/usa/source_snapshots/4e4b7eef38543e3e.html",
+    "snapshot_sha256": "5af565c7af41166e935fa0eae77729e18d2d915a4fe420ba60e0e0b4ba89a976",
+    "html_title": "BridgeUSAPrograms | BridgeUSA"
+  },
+  "expected_page_heading": "College and University Student",
+  "sections": [
+    {
+      "heading": "College and University Student",
+      "heading_tag": "h1",
+      "raw_text": "College and University Student Foreign students have the opportunity to study at American degree-granting post-secondary accredited academic institutions, or participate in a student internship program that will fulfill the educational objectives of the student’s degree program in his or her home country. Tweet get_facebook_share()? tab 1",
+      "text_length": 340
+    },
+    {
+      "heading": "Participants",
+      "heading_tag": "h2",
+      "raw_text": "Participants",
+      "text_length": 12
+    },
+    {
+      "heading": "College/University Students must:",
+      "heading_tag": "h3",
+      "raw_text": "College/University Students must: Be financed directly or indirectly by the U.S. government, the government of their home country, an international organization of which the United States is a member by treaty or statute, or supported substantially by funding from any source other than personal or family funds; Be carried out according to an agreement between the U.S. government and a foreign government, or according to a written agreement between American and foreign educational institutions, an American educational institution and a foreign government or a state or local government in the United States and a foreign government; or Student is participating in a student internship program that will fulfill the educational objectives for the student’s degree program in his or her home country; or Pursue a non-degree program must be enrolled full-time in a prescribed course of study. The maximum duration of a non-degree program is 24 months inclusive of academic training.",
+      "text_length": 984
+    },
+    {
+      "heading": "Benefits",
+      "heading_tag": "h3",
+      "raw_text": "Benefits School Credit: University/college students may engage in degree-granting programs until completion or non-degree granting programs for no more than 24 months. Employment: Students may engage in part-time employment under certain conditions, including good academic standing at their host institution. Academic training: Students may participate in academic training with or without wages or other remuneration during their studies with the approval of the academic dean or adviser and the responsible officer at their sponsor organization .",
+      "text_length": 549
+    },
+    {
+      "heading": "Opportunity for Academic Training Extensions in STEM Fields",
+      "heading_tag": "h3",
+      "raw_text": "Opportunity for Academic Training Extensions in STEM Fields The Directorate of Private Sector Exchange (Private Sector) is pleased to announce an initiative for College and University Student-category exchange visitors participating in academic training in the fields of science, technology, engineering, and mathematics (STEM). We introduce this opportunity in response to the recent Joint Statement of Principles in Support of International Education . READ MORE .",
+      "text_length": 466
+    },
+    {
+      "heading": "Early Career STEM Research Initiative",
+      "heading_tag": "h3",
+      "raw_text": "Early Career STEM Research Initiative This research initiative seeks to support an increase in science, technology, engineering, and mathematics (STEM) students, professionals, and exchange visitors on educational and cultural exchange programs in the United States. READ MORE . featured experience component Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?wdt_column_filter[1]=College%20and%20University%20Student&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions end featured experience component end tab 1 tab 2",
+      "text_length": 657
+    },
+    {
+      "heading": "Program Sponsors",
+      "heading_tag": "h2",
+      "raw_text": "Program Sponsors",
+      "text_length": 16
+    },
+    {
+      "heading": "Sponsors are required to:",
+      "heading_tag": "h3",
+      "raw_text": "Sponsors are required to: Secure sufficient background information on the students to ensure that they have the academic credentials required for enrollment; or Ensure that the foreign national has been admitted to, or accepted for a student internship program offered by, the post-secondary accredited academic institution.",
+      "text_length": 324
+    },
+    {
+      "heading": "Sponsors must ensure the following for participants:",
+      "heading_tag": "h3",
+      "raw_text": "Sponsors must ensure the following for participants: Ensure that they pursue a full course of study at a post-secondary accredited academic institution in the United States. Program Resources Common Questions SEVIS Information end tab 2 tab 3",
+      "text_length": 242
+    },
+    {
+      "heading": "Hosts",
+      "heading_tag": "h3",
+      "raw_text": "Hosts Host institutions in the case of college/university students are typically the academic institution where they applied for enrollment, or the academic institution providing the student internship program. Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?program=College%20and%20University%20Student&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions end tab 3 Visa Basics Facts & Figures About J-2 Visa Other U.S. Student Visas Common Questions Participants How to Apply Current Participants Participant Experiences Common Questions for Participants TODO: fix link Videos Program Sponsors Become a Sponsor Current Sponsors How to Administer a Program Common Questions for Program Sponsors TODO: fix link Host Families/Employers For Host Families For Employers For Schools Common Questions for Host Families/Employers TODO: fix link Programs Resources RO-ARO Virtual Training SEVIS login <li><a href=\"/wp-content/uploads/2016/10/Temp_User_6.29.pdf\" target=\"_blank\" title=\"Download the SEVIS Manual\">SEVIS Manual (PDF)</a></li> SEVIS Manuals SEVIS Training Videos DS-2019 Regulations and Compliance Administration Contacts About Us Get Adobe Reader U.S. Department of State <li><a href=\"http://exchanges.state.gov/\" title=\"View the Homepage for the Bureau of Educational & Cultural Affairs\">Bureau of Educational &amp; Cultural Affairs</a></li> Bureau of Educational and Cultural Affairs FOIA Privacy Notice Copyright Information Facebook Twitter Instagram Flickr <script src=\"/wp-content/themes/j1visa/js/libs/jquery-1.6.1.min.js\"></script> [if lt IE 7 ]> <script src='/wp-content/themes/j1visa/js/libs/DD_belatedPNG_0.0.8a-min.js'></script> <script> DD_belatedPNG.fix('img, #container, .arrow, .button span '); </script> <![endif]",
+      "text_length": 1877
+    }
+  ],
+  "extracted_text": "College and University Student College and University Student Foreign students have the opportunity to study at American degree-granting post-secondary accredited academic institutions, or participate in a student internship program that will fulfill the educational objectives of the student’s degree program in his or her home country. Tweet get_facebook_share()? tab 1 Participants Participants College/University Students must: College/University Students must: Be financed directly or indirectly by the U.S. government, the government of their home country, an international organization of which the United States is a member by treaty or statute, or supported substantially by funding from any source other than personal or family funds; Be carried out according to an agreement between the U.S. government and a foreign government, or according to a written agreement between American and foreign educational institutions, an American educational institution and a foreign government or a state or local government in the United States and a foreign government; or Student is participating in a student internship program that will fulfill the educational objectives for the student’s degree program in his or her home country; or Pursue a non-degree program must be enrolled full-time in a prescribed course of study. The maximum duration of a non-degree program is 24 months inclusive of academic training. Benefits Benefits School Credit: University/college students may engage in degree-granting programs until completion or non-degree granting programs for no more than 24 months. Employment: Students may engage in part-time employment under certain conditions, including good academic standing at their host institution. Academic training: Students may participate in academic training with or without wages or other remuneration during their studies with the approval of the academic dean or adviser and the responsible officer at their sponsor organization . Opportunity for Academic Training Extensions in STEM Fields Opportunity for Academic Training Extensions in STEM Fields The Directorate of Private Sector Exchange (Private Sector) is pleased to announce an initiative for College and University Student-category exchange visitors participating in academic training in the fields of science, technology, engineering, and mathematics (STEM). We introduce this opportunity in response to the recent Joint Statement of Principles in Support of International Education . READ MORE . Early Career STEM Research Initiative Early Career STEM Research Initiative This research initiative seeks to support an increase in science, technology, engineering, and mathematics (STEM) students, professionals, and exchange visitors on educational and cultural exchange programs in the United States. READ MORE . featured experience component Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?wdt_column_filter[1]=College%20and%20University%20Student&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions end featured experience component end tab 1 tab 2 Program Sponsors Program Sponsors Sponsors are required to: Sponsors are required to: Secure sufficient background information on the students to ensure that they have the academic credentials required for enrollment; or Ensure that the foreign national has been admitted to, or accepted for a student internship program offered by, the post-secondary accredited academic institution. Sponsors must ensure the following for participants: Sponsors must ensure the following for participants: Ensure that they pursue a full course of study at a post-secondary accredited academic institution in the United States. Program Resources Common Questions SEVIS Information end tab 2 tab 3 Hosts Hosts Host institutions in the case of college/university students are typically the academic institution where they applied for enrollment, or the academic institution providing the student internship program. Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?program=College%20and%20University%20Student&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions end tab 3 Visa Basics Facts & Figures About J-2 Visa Other U.S. Student Visas Common Questions Participants How to Apply Current Participants Participant Experiences Common Questions for Participants TODO: fix link Videos Program Sponsors Become a Sponsor Current Sponsors How to Administer a Program Common Questions for Program Sponsors TODO: fix link Host Families/Employers For Host Families For Employers For Schools Common Questions for Host Families/Employers TODO: fix link Programs Resources RO-ARO Virtual Training SEVIS login <li><a href=\"/wp-content/uploads/2016/10/Temp_User_6.29.pdf\" target=\"_blank\" title=\"Download the SEVIS Manual\">SEVIS Manual (PDF)</a></li> SEVIS Manuals SEVIS Training Videos DS-2019 Regulations and Compliance Administration Contacts About Us Get Adobe Reader U.S. Department of State <li><a href=\"http://exchanges.state.gov/\" title=\"View the Homepage for the Bureau of Educational & Cultural Affairs\">Bureau of Educational &amp; Cultural Affairs</a></li> Bureau of Educational and Cultural Affairs FOIA Privacy Notice Copyright Information Facebook Twitter Instagram Flickr <script src=\"/wp-content/themes/j1visa/js/libs/jquery-1.6.1.min.js\"></script> [if lt IE 7 ]> <script src='/wp-content/themes/j1visa/js/libs/DD_belatedPNG_0.0.8a-min.js'></script> <script> DD_belatedPNG.fix('img, #container, .arrow, .button span '); </script> <![endif]",
+  "attachment_candidates": [],
+  "attachment_downloaded": false,
+  "extraction_method": "html_heading_and_text_nodes",
+  "content_scope": "extracted_sections_require_review",
+  "validation_status": "needs_review",
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false
+}

@@ -1,0 +1,67 @@
+{
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "input_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "input_application_sha256": "d2bbc9e8d254f70441de6ac1c2fdf0ed70a405ddd72ad378b3013fb9e258ee31",
+  "program_count": 2,
+  "support_brackets_verified_arithmetically": 8,
+  "arithmetic_checks": [
+    {
+      "program": "short_term",
+      "bracket": "basic_near_poverty_to_5",
+      "fee_reconciliation": true,
+      "total_rounded_consistently": true
+    },
+    {
+      "program": "short_term",
+      "bracket": "6_to_7",
+      "fee_reconciliation": true,
+      "total_rounded_consistently": true
+    },
+    {
+      "program": "short_term",
+      "bracket": "8_to_9",
+      "fee_reconciliation": true,
+      "total_rounded_consistently": true
+    },
+    {
+      "program": "short_term",
+      "bracket": "10",
+      "fee_reconciliation": true,
+      "total_rounded_consistently": true
+    },
+    {
+      "program": "medium_term",
+      "bracket": "basic_near_poverty_to_5",
+      "fee_reconciliation": true,
+      "total_rounded_consistently": true
+    },
+    {
+      "program": "medium_term",
+      "bracket": "6_to_7",
+      "fee_reconciliation": true,
+      "total_rounded_consistently": true
+    },
+    {
+      "program": "medium_term",
+      "bracket": "8_to_9",
+      "fee_reconciliation": true,
+      "total_rounded_consistently": true
+    },
+    {
+      "program": "medium_term",
+      "bracket": "10",
+      "fee_reconciliation": true,
+      "total_rounded_consistently": true
+    }
+  ],
+  "manual_review_issues": 4,
+  "source_numbers_checked_in_pdf": true,
+  "table_cell_alignment_verified_by_code": false,
+  "original_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "8d381edebe88569b087050cedcd8046f5adae0dd30c4b0e19ea30372f657ca3a"
+}

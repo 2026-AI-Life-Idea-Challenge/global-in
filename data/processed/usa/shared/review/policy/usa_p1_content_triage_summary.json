@@ -1,0 +1,38 @@
+{
+  "dataset_type": "usa_policy_triage_summary",
+  "country": "US",
+  "source_file": "data/processed/usa/shared/usa_policy_review_queue.jsonl",
+  "source_sha256": "d755e3f6d7f6506b999ccbd31f20cc2a89c787eaf7b5a617ecbf9c8d8be464b4",
+  "total_chunks": 103,
+  "program_counts": {
+    "US-EM-01": 63,
+    "US-EM-02": 4,
+    "US-EM-03": 5,
+    "US-ST-01": 6,
+    "US-ST-03": 3,
+    "US-WEST-01": 11,
+    "US-WH-01": 11
+  },
+  "classification_candidate_counts": {
+    "f1_school_or_i20_guidance": 6,
+    "h1b_policy_or_procedure": 63,
+    "historical_west_notice": 11,
+    "participant_eligibility_candidate": 4,
+    "program_policy_or_procedure": 4,
+    "sponsor_or_host_obligations": 15
+  },
+  "issue_counts": {
+    "duplicate_candidate": 6,
+    "historical_2026_first_half": 11,
+    "obligation_or_eligibility_language": 97,
+    "possible_site_ui_contamination": 5,
+    "short_text": 3,
+    "time_sensitive_policy": 13
+  },
+  "triage_method": "automated_first_pass",
+  "note": "This is an automated classification, not final human semantic or legal approval.",
+  "human_review_completed": false,
+  "approved_for_embedding": false,
+  "approved_for_user_answers": false,
+  "automatic_eligibility_rules_enabled": false
+}

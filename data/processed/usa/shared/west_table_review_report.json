@@ -1,0 +1,231 @@
+{
+  "dataset_type": "west_table_review_report",
+  "country": "US",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_first_half",
+  "historical_notice": true,
+  "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31",
+  "review_queue_sha256": "b2fbb611dd05363060ac099355e7f1c11fdcbee602dd0d2130fcb964961b1241",
+  "reviewed_data_sha256": "c26e6d1b8295709062fd2b1df142764375569ad5d9784145d3f12bf9b126c67d",
+  "full_review_data_sha256": "b3e781e89880996cc88a93a3618cc164794fdba9914ade9499111390bc108bc2",
+  "retrieval_chunks_sha256": "9b500df68439376d3d67d3a9245025b03881e34f69932962f8b5e6c18a8ab06c",
+  "p0_chunk_count": 7,
+  "p0_printed_pages": [
+    2,
+    4,
+    6,
+    7,
+    9,
+    10
+  ],
+  "p0_chunks": [
+    {
+      "chunk_id": "US-WEST-01-P01-R-C001",
+      "program_id": "US-WEST-01",
+      "printed_page": 2,
+      "physical_pdf_page": 1,
+      "side": "right",
+      "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31",
+      "chunk_text_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+      "chunk_preview": "1\n선발 개요\n\n가. 모집 프로그램\n\n구  분 \n구    성\n선발인원\n\n중기 WEST\n어학연수 3개월+ 인턴 6∼8개월+ 여행 1개월*\n35명 내외\n\n단기 WEST\n어학연수 2개월+ 인턴 3∼4개월+ 여행 1개월*\n71명 내외\n\n* 인턴근무종료후, 출국유예기간(30일) 내에개별적으로자유여행가능\n\n※ 단기·중기프로그램중복지원불가\n\n2\n지원 자격\n\n가. (공통) 대한민국 국적 소지자로서 미국 비",
+      "pdf_side_text_sha256": "7abb3e780367c88dc9e5ec89c60e65a10b6daeb92c006d6cdcd4cd096b2465cf",
+      "chunk_provenance_verified": true,
+      "pdf_page_exists": true,
+      "table_cell_alignment_verified_by_code": false,
+      "human_semantic_review": "pending",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "chunk_id": "US-WEST-01-P02-R-C001",
+      "program_id": "US-WEST-01",
+      "printed_page": 4,
+      "physical_pdf_page": 2,
+      "side": "right",
+      "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31",
+      "chunk_text_sha256": "e66cebacafaad69980e08f5f772f47f6d95c62d0c036bf7e6cdcf9cf24bc9d1e",
+      "chunk_preview": "① 온라인 지원 : 월드잡플러스 누리집(www.worldjob.or.kr)에서 온라인지원서등 작성․제출\n\n※ 지원서류: WEST 온라인지원서및자기소개서(양식은온라인지원시확인가능),\n\n개인정보동의서(공지·문의> 공지사항> 해외인턴(WEST)공지사항> 모집공고문> (왼쪽\n상단) 첨부파일양식다운로드> 출력후자필서명> 스캔본파일업로드)\n\n< 유의사항 >\n\n1. 온라인 지원 시, 개인 정보, 학점, ",
+      "pdf_side_text_sha256": "14dade1a870abb3a34a7593e80103535512095094d58d7bcb76b2ce8d7479146",
+      "chunk_provenance_verified": true,
+      "pdf_page_exists": true,
+      "table_cell_alignment_verified_by_code": false,
+      "human_semantic_review": "pending",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "chunk_id": "US-WEST-01-P02-R-C002",
+      "program_id": "US-WEST-01",
+      "printed_page": 4,
+      "physical_pdf_page": 2,
+      "side": "right",
+      "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31",
+      "chunk_text_sha256": "3dd27e4e19048a13a42515d1eaf79c9b41c8f2026b81eaf5288ca0c43f1541cd",
+      "chunk_preview": "다.\n\n3. 취업취약계층 ([붙임 1] 참조) 증빙자료가 누락된 경우 우대 적용을 받을 수 없습니다.\n\n4. 졸업생의 학자금지원구간 증빙 자료는 해당 서류를 확인하여 제출합니다. ([붙임 1] 참조)\n\n5. 편입생의 경우, 편입 전/후 성적을 WEST 프로그램 학점계산법에 의하여 산출합니다.\n\n구 분\n취득평점(GPA) \n총 이수학점 \n평점 만점 \n 전적 대학\n A\nB\n C\n 현 소속 대학\n ",
+      "pdf_side_text_sha256": "14dade1a870abb3a34a7593e80103535512095094d58d7bcb76b2ce8d7479146",
+      "chunk_provenance_verified": true,
+      "pdf_page_exists": true,
+      "table_cell_alignment_verified_by_code": false,
+      "human_semantic_review": "pending",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "chunk_id": "US-WEST-01-P03-R-C001",
+      "program_id": "US-WEST-01",
+      "printed_page": 6,
+      "physical_pdf_page": 3,
+      "side": "right",
+      "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31",
+      "chunk_text_sha256": "66f6d5b4a2721ffc0b294dd1b1da10726d2448ecc3ce3701e93ec6ef549cbab7",
+      "chunk_preview": "4\n참가비 및 정부재정지원\n\n가. 참가비* : (단기) USD 7,045 (중기) USD 8,912\n\n* 전형료, 어학연수비, 인턴십배치비, 현지중개기관비, 보험료, 학생교환방문정보시스템(SEVIS) 등록비\n\n※ 참가비는최종합격자발표직후참가비납부기간(은행영업일5일간) 내에미화달러로\n\n일시납하게되므로미리준비해두시기바랍니다.\n\n나. 정부재정지원내역\n\n< 유의사항 >\n\n1. 본인의 귀책사유로 프로",
+      "pdf_side_text_sha256": "719404ed52ed124038d7a38ebf3dead85a30d6db57a1e9f0597d608f7160b879",
+      "chunk_provenance_verified": true,
+      "pdf_page_exists": true,
+      "table_cell_alignment_verified_by_code": false,
+      "human_semantic_review": "pending",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "chunk_id": "US-WEST-01-P04-L-C001",
+      "program_id": "US-WEST-01",
+      "printed_page": 7,
+      "physical_pdf_page": 4,
+      "side": "left",
+      "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31",
+      "chunk_text_sha256": "e8832363b8c6da95e6b677eb29c7253df5f430e26c7faca43026720ef995bcc8",
+      "chunk_preview": "◦중기 WEST(12개월) 지원구간별 지원 금액\n\n(1$=1,472원)\n\n참가비\n($8,912)\n항공료\n(2,000,000원)\n\n어학연수생활비(최장 12주)\n\n및 인턴생활비(최장 24주)\n지원총액\n\n구 분\n\n(최대)\n정부지원금\n본인부담금\n$350~$1,400/4주\n\n기초·차상위\n\n$12,600\n($1,400*9개월)\n33,665천원\n\n~5구간\n$8,912\n$0\n\n6∼7구간\n$4,456\n$4,",
+      "pdf_side_text_sha256": "c5dffd72d683e132604498edacca1a05baceea31dbe95a8ec53e5c6cad722afb",
+      "chunk_provenance_verified": true,
+      "pdf_page_exists": true,
+      "table_cell_alignment_verified_by_code": false,
+      "human_semantic_review": "pending",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "chunk_id": "US-WEST-01-P05-L-C001",
+      "program_id": "US-WEST-01",
+      "printed_page": 9,
+      "physical_pdf_page": 5,
+      "side": "left",
+      "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31",
+      "chunk_text_sha256": "ce3082caede4953790dab735201bd29c96666a0aacf924a6bf626d9658f1eda8",
+      "chunk_preview": "붙임 1\n 취업취약계층 제출 서류 / 졸업생 지원구간 제출 서류\n\n※ 제출증빙자료는모집공고일(’26.2.11.) 이후발급서류여야함\n\n1. 취업취약계층의 범주\n\n가. 저소득층: 기초생활수급자 및 차상위계층\n\n나. 기타 취업취약계층: 장애인, 북향민 등\n\n※ 「직접일자리사업중앙부처-자치단체합동지침」에따른취업취약계층범주준용\n\n2. 취업취약계층 제출 서류\n\n가. 저소득층 (본인 명의로 발급)\n\n구분",
+      "pdf_side_text_sha256": "16aeccf02266c466665f99e8818c83b7eab7db53daad6d61d39ece34cb045f6d",
+      "chunk_provenance_verified": true,
+      "pdf_page_exists": true,
+      "table_cell_alignment_verified_by_code": false,
+      "human_semantic_review": "pending",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "chunk_id": "US-WEST-01-P05-R-C001",
+      "program_id": "US-WEST-01",
+      "printed_page": 10,
+      "physical_pdf_page": 5,
+      "side": "right",
+      "source_pdf_sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31",
+      "chunk_text_sha256": "d98dfdc5530c40d673e2e0be6b10a60c5b7556c339e8185454358601eed63fe5",
+      "chunk_preview": "붙임 2\n 2026년 상반기 선발 일정\n\n일 정\n추진 내용\n\n’26. 2.11.(수)∼3.18.(수) 17시▪ 참가신청서 접수(온라인/ 월드잡플러스홈페이지)\n\n3.19.(목)∼3.23.(월)\n▪ 대학 추천 공문 접수\n\n3.19.(목)∼5.14.(목)\n▪ 학자금 지원구간 확인\n\n4.9.(목), 16:00\n▪ 서류 합격자 발표\n\n4.18.(토) / 4.19.(일)\n▪ 1차 면접 <국립국제교육원 ",
+      "pdf_side_text_sha256": "8cacdecf3fef5c22b69a59b5d044e25fb4acb979e656e67d5c9234a77226110e",
+      "chunk_provenance_verified": true,
+      "pdf_page_exists": true,
+      "table_cell_alignment_verified_by_code": false,
+      "human_semantic_review": "pending",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    }
+  ],
+  "financial_support": {
+    "short_term": {
+      "printed_page": 6,
+      "participation_fee_usd": 7045,
+      "brackets": [
+        {
+          "label": "기초·차상위~5구간",
+          "fee_government_usd": 7045,
+          "fee_self_usd": 0,
+          "living_support_usd": 8400,
+          "maximum_total_support_1000krw": 24735
+        },
+        {
+          "label": "6~7구간",
+          "fee_government_usd": 3523,
+          "fee_self_usd": 3522,
+          "living_support_usd": 4200,
+          "maximum_total_support_1000krw": 13368
+        },
+        {
+          "label": "8~9구간",
+          "fee_government_usd": 2466,
+          "fee_self_usd": 4579,
+          "living_support_usd": 4200,
+          "maximum_total_support_1000krw": 11812
+        },
+        {
+          "label": "소득 10분위",
+          "fee_government_usd": 1761,
+          "fee_self_usd": 5284,
+          "living_support_usd": 2100,
+          "maximum_total_support_1000krw": 7684
+        }
+      ],
+      "fee_split_arithmetic": "pass",
+      "source_document": "data/raw/usa/employment/west/west_2026_first_half_notice.pdf",
+      "source_reviewed_json": "data/processed/usa/employment/west/west_2026_first_half_reviewed_data.json",
+      "current_amounts_verified": false,
+      "automatic_eligibility_rules_enabled": false
+    },
+    "mid_term": {
+      "printed_page": 7,
+      "participation_fee_usd": 8912,
+      "brackets": [
+        {
+          "label": "기초·차상위~5구간",
+          "fee_government_usd": 8912,
+          "fee_self_usd": 0,
+          "living_support_usd": 12600,
+          "maximum_total_support_1000krw": 33665
+        },
+        {
+          "label": "6~7구간",
+          "fee_government_usd": 4456,
+          "fee_self_usd": 4456,
+          "living_support_usd": 6300,
+          "maximum_total_support_1000krw": 17833
+        },
+        {
+          "label": "8~9구간",
+          "fee_government_usd": 3119,
+          "fee_self_usd": 5793,
+          "living_support_usd": 6300,
+          "maximum_total_support_1000krw": 15865
+        },
+        {
+          "label": "소득 10분위",
+          "fee_government_usd": 2228,
+          "fee_self_usd": 6684,
+          "living_support_usd": 3150,
+          "maximum_total_support_1000krw": 9916
+        }
+      ],
+      "fee_split_arithmetic": "pass",
+      "source_document": "data/raw/usa/employment/west/west_2026_first_half_notice.pdf",
+      "source_reviewed_json": "data/processed/usa/employment/west/west_2026_first_half_full_review_data.json",
+      "current_amounts_verified": false,
+      "automatic_eligibility_rules_enabled": false
+    }
+  },
+  "scope": "P0 provenance and PDF page verification; previously reviewed financial table values are linked without approving raw PDF chunks.",
+  "table_cell_alignment_verified_by_code": false,
+  "all_policy_claims_verified": false,
+  "validation_status": "needs_review",
+  "human_semantic_review_completed": false,
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "database_loaded": false
+}

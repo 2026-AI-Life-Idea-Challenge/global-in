@@ -1,0 +1,208 @@
+{
+  "dataset_type": "west_kosaf_body_evidence_review",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "historical_notice": true,
+  "input_candidate_sha256": "df0cfab9aebf2b8564b1da2e4994ba214e65ccdcd5bfe24ab5436dc662ef5030",
+  "sources": {
+    "kosaf_2026_h2_notice": {
+      "raw_sha256": "04cb641e65dad90db4e559f5d2f3d68870b38cb7d1f27e8f4f23df4d9e512d59",
+      "extracted_text_sha256": "2c0ae9f84bb40f663e01cf3f6947597d9ceae6748fa018b7a4d88f90466b82a9",
+      "encoding": "utf-8",
+      "body_start_offset": 22956,
+      "body_end_offset": 26956,
+      "anchor": "◆ WEST 어학연수비 대출신청기간",
+      "section_boundary_manually_verified": false
+    },
+    "kosaf_west_loan_guide": {
+      "raw_sha256": "26571e32abaefacab49537568ca054e94c3ea02173cb71c88f65a75c845ddace",
+      "extracted_text_sha256": "0a0258011a47845c62618f11a47e96a091db5458f536182f62a9b0e57628ac49",
+      "encoding": "utf-8",
+      "body_start_offset": 32802,
+      "body_end_offset": 37302,
+      "anchor": "단기 WEST 16기(6개월)",
+      "section_boundary_manually_verified": false
+    }
+  },
+  "notice_evidence_results": [
+    {
+      "task_id": "WEST-H2-CROSS-01",
+      "source_id": "kosaf_2026_h2_notice",
+      "expected_phrase_count": 2,
+      "found_phrase_count": 0,
+      "body_search_status": "no_body_phrases_found",
+      "evidence": [
+        {
+          "searched_phrase": "학자금 지원구간 정보 확인",
+          "found_in_notice_body": false,
+          "excerpt": null,
+          "source_text_offset": null
+        },
+        {
+          "searched_phrase": "어학연수비대출 실행은 추후 합격자 대상으로",
+          "found_in_notice_body": false,
+          "excerpt": null,
+          "source_text_offset": null
+        }
+      ],
+      "section_isolation_reviewed_by_human": false,
+      "policy_semantics_approved": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "task_id": "WEST-H2-CROSS-02",
+      "source_id": "kosaf_2026_h2_notice",
+      "expected_phrase_count": 3,
+      "found_phrase_count": 3,
+      "body_search_status": "all_body_phrases_found",
+      "evidence": [
+        {
+          "searched_phrase": "2026. 7. 6.(월) 09:00",
+          "found_in_notice_body": true,
+          "excerpt": "◆ WEST 어학연수비 대출신청기간\n \n \n\n2026. 7. 6.(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을",
+          "source_text_offset": 22981
+        },
+        {
+          "searched_phrase": "8. 5.(수) 17:00",
+          "found_in_notice_body": true,
+          "excerpt": "◆ WEST 어학연수비 대출신청기간\n \n \n\n2026. 7. 6.(월) 09:00 ~ 8. 5.(수) 17:00까지\n \n \n\n※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산",
+          "source_text_offset": 23004
+        },
+        {
+          "searched_phrase": "8. 5.(수) 18시",
+          "found_in_notice_body": true,
+          "excerpt": "로그인 > 학자금대출 > 학자금대출신청 > 서류제출현황 > 이미지업로드\n \n \n\n- 신청완료일 다음 영업일에 홈페이지 방문하여 서류제출 여부 확인\n \n \n\n→ 마지막 날인 8. 5.(수) 신청완료자는 서류생략자도 8. 5.(수) 18시까지 서류(필수 및 선택) 제출 완료 필수\n \n \n\n- 8. 5.(수) 18시까지 제출된 서류만 인정되며, 서류미비 및 오제출 경우 신청 미완료로 간주\n \n \n\n- 선택서류(기초/차상위) 미제출 시, 필수서류 기준으로 학자금 지원구간 심사 진행\n \n \n\n \n \n \n\n \n \n \n\n \n \n \n\n◆ 가구원 정보제공 동의(필수)\n \n \n\n‘사회보장정보시스템’을 통한 학자금 지원구간 산정을 위하여 반",
+          "source_text_offset": 23620
+        }
+      ],
+      "section_isolation_reviewed_by_human": false,
+      "policy_semantics_approved": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "task_id": "WEST-H2-CROSS-03",
+      "source_id": "kosaf_2026_h2_notice",
+      "expected_phrase_count": 2,
+      "found_phrase_count": 2,
+      "body_search_status": "all_body_phrases_found",
+      "evidence": [
+        {
+          "searched_phrase": "재학생, 휴학생, 초과학기자, 수료자",
+          "found_in_notice_body": true,
+          "excerpt": "※ 주말 및 공휴일에도 9시~24시까지 신청 가능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우 ‘학자금 지원구간 통지서’를 발급하여 국립국제교육원에 별도 제출하셔야 합니다.\n \n \n\n \n \n \n\n◆ 신청경로\n \n \n\n(PC)\n \n \n\n- 한국장학재단 홈페이지 로그인 > 학자금대출 > 학자금대출 신청 > 한·미대학생연수(WEST) 프로",
+          "source_text_offset": 23143
+        },
+        {
+          "searched_phrase": "졸업생은 한국장학재단 어학연수비 대출신청 제외",
+          "found_in_notice_body": true,
+          "excerpt": "능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우 ‘학자금 지원구간 통지서’를 발급하여 국립국제교육원에 별도 제출하셔야 합니다.\n \n \n\n \n \n \n\n◆ 신청경로\n \n \n\n(PC)\n \n \n\n- 한국장학재단 홈페이지 로그인 > 학자금대출 > 학자금대출 신청 > 한·미대학생연수(WEST) 프로그램 신청\n \n \n\n(모바일)\n \n \n\n- 한국장학재단 모바일",
+          "source_text_offset": 23172
+        }
+      ],
+      "section_isolation_reviewed_by_human": false,
+      "policy_semantics_approved": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "task_id": "WEST-H2-CROSS-04",
+      "source_id": "kosaf_2026_h2_notice",
+      "expected_phrase_count": 3,
+      "found_phrase_count": 3,
+      "body_search_status": "all_body_phrases_found",
+      "evidence": [
+        {
+          "searched_phrase": "졸업생",
+          "found_in_notice_body": true,
+          "excerpt": "능하나, 마지막 날인 8. 5.(수)은 17:00 신청마감\n \n \n\n \n \n \n\n◆ 신청대상\n \n \n\nWEST프로그램 지원자 중 학자금 지원구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우 ‘학자금 지원구간 통지서’를 발급하여 국립국제교육원에 별도 제출하셔야 합니다.\n \n \n\n \n \n \n\n◆ 신청경로\n \n \n\n(PC)\n \n \n\n- 한국장학재단 홈페이지 로그인 > 학자금대출 > 학자금대출 신청 > 한·미대학생연수(WEST) 프로그램 신청\n \n \n\n(",
+          "source_text_offset": 23172
+        },
+        {
+          "searched_phrase": "학자금 지원구간 통지서",
+          "found_in_notice_body": true,
+          "excerpt": "구간 산정 가능 대상자(재학생, 휴학생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우 ‘학자금 지원구간 통지서’를 발급하여 국립국제교육원에 별도 제출하셔야 합니다.\n \n \n\n \n \n \n\n◆ 신청경로\n \n \n\n(PC)\n \n \n\n- 한국장학재단 홈페이지 로그인 > 학자금대출 > 학자금대출 신청 > 한·미대학생연수(WEST) 프로그램 신청\n \n \n\n(모바일)\n \n \n\n- 한국장학재단 모바일앱 접속 후 로그인> WEST어학연수비 대출(스크롤을 하단으로 내려야 확인가능)\n \n \n\n \n \n \n\n◆ 서류제출 방",
+          "source_text_offset": 23250
+        },
+        {
+          "searched_phrase": "국립국제교육원에 별도 제출",
+          "found_in_notice_body": true,
+          "excerpt": "생, 초과학기자, 수료자)\n \n \n\n※ 졸업생은 한국장학재단 어학연수비 대출신청 제외 대상이며(국립국제교육원 공고 참고) 재단을 통한 기존 학자금 지원구간 산정내역이 있는 경우 ‘학자금 지원구간 통지서’를 발급하여 국립국제교육원에 별도 제출하셔야 합니다.\n \n \n\n \n \n \n\n◆ 신청경로\n \n \n\n(PC)\n \n \n\n- 한국장학재단 홈페이지 로그인 > 학자금대출 > 학자금대출 신청 > 한·미대학생연수(WEST) 프로그램 신청\n \n \n\n(모바일)\n \n \n\n- 한국장학재단 모바일앱 접속 후 로그인> WEST어학연수비 대출(스크롤을 하단으로 내려야 확인가능)\n \n \n\n \n \n \n\n◆ 서류제출 방법\n \n \n\n한국장학재단 홈페이지 로그인",
+          "source_text_offset": 23270
+        }
+      ],
+      "section_isolation_reviewed_by_human": false,
+      "policy_semantics_approved": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "task_id": "WEST-H2-CROSS-05",
+      "source_id": "kosaf_2026_h2_notice",
+      "expected_phrase_count": 1,
+      "found_phrase_count": 1,
+      "body_search_status": "all_body_phrases_found",
+      "evidence": [
+        {
+          "searched_phrase": "가구원 정보제공 동의(필수)",
+          "found_in_notice_body": true,
+          "excerpt": "제출된 서류만 인정되며, 서류미비 및 오제출 경우 신청 미완료로 간주\n \n \n\n- 선택서류(기초/차상위) 미제출 시, 필수서류 기준으로 학자금 지원구간 심사 진행\n \n \n\n \n \n \n\n \n \n \n\n \n \n \n\n◆ 가구원 정보제공 동의(필수)\n \n \n\n‘사회보장정보시스템’을 통한 학자금 지원구간 산정을 위하여 반드시 부모 또는 배우자의 정보 제공 동의 필요\n \n \n\n \n \n \n \n \n \n \n구분\n \n \n \n \n내용\n \n \n \n \n \n \n \n \n법적근거\n \n \n \n \n한국장학재단 설립 등에 관한 법률 제50조 등\n \n \n \n \n \n \n \n \n동의대상\n \n \n \n \n미혼: 부모 (부모님 모두), 기혼: 배우자",
+          "source_text_offset": 23797
+        }
+      ],
+      "section_isolation_reviewed_by_human": false,
+      "policy_semantics_approved": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "task_id": "WEST-H2-CROSS-06",
+      "source_id": "kosaf_2026_h2_notice",
+      "expected_phrase_count": 2,
+      "found_phrase_count": 2,
+      "body_search_status": "all_body_phrases_found",
+      "evidence": [
+        {
+          "searched_phrase": "재외국민전형 입학자",
+          "found_in_notice_body": true,
+          "excerpt": "문의\n \n \n \n \n한국장학재단 상담센터(1599-2000), 한국장학재단 홈페이지(www.kosaf.go.kr) > 고객센터> 질문있어요\n \n \n \n \n \n \n \n\n※ 국외 소득·재산 신고대상자(재외국민전형 입학자)일 경우, 상기 학자금 지원구간 산정 절차와 상이하므로 장학금 → 학자금 지원구간 → 한눈에 보는 학자금 지원구간 → “국외 소득·재산 신고제 안내” 메뉴를 참고해주시기 바랍니다.\n \n \n\n※ WEST 프로그램의 경우 사업 기간의 특성상 재단의 타 상품과 달리 학자금 지원구간 최신화 신청기간에 제약이 있을 수 있으며, 합격자 발표 이전까지 확정된 학자금 지원구간으로 지원이 이루어집니다. 이",
+          "source_text_offset": 24460
+        },
+        {
+          "searched_phrase": "국외 소득·재산 신고",
+          "found_in_notice_body": true,
+          "excerpt": "보제공 동의현황\n \n \n \n \n \n \n \n \n문의\n \n \n \n \n한국장학재단 상담센터(1599-2000), 한국장학재단 홈페이지(www.kosaf.go.kr) > 고객센터> 질문있어요\n \n \n \n \n \n \n \n\n※ 국외 소득·재산 신고대상자(재외국민전형 입학자)일 경우, 상기 학자금 지원구간 산정 절차와 상이하므로 장학금 → 학자금 지원구간 → 한눈에 보는 학자금 지원구간 → “국외 소득·재산 신고제 안내” 메뉴를 참고해주시기 바랍니다.\n \n \n\n※ WEST 프로그램의 경우 사업 기간의 특성상 재단의 타 상품과 달리 학자금 지원구간 최신화 신청기간에 제약이 있을 수 있으며, 합격자 발표 이전까지 확정된 학자금 지원구간으로",
+          "source_text_offset": 24445
+        }
+      ],
+      "section_isolation_reviewed_by_human": false,
+      "policy_semantics_approved": false,
+      "validation_status": "needs_review"
+    },
+    {
+      "task_id": "WEST-H2-CROSS-07",
+      "source_id": "kosaf_2026_h2_notice",
+      "expected_phrase_count": 1,
+      "found_phrase_count": 1,
+      "body_search_status": "all_body_phrases_found",
+      "evidence": [
+        {
+          "searched_phrase": "합격자 발표 이전까지 확정된 학자금 지원구간",
+          "found_in_notice_body": true,
+          "excerpt": "지원구간 → “국외 소득·재산 신고제 안내” 메뉴를 참고해주시기 바랍니다.\n \n \n\n※ WEST 프로그램의 경우 사업 기간의 특성상 재단의 타 상품과 달리 학자금 지원구간 최신화 신청기간에 제약이 있을 수 있으며, 합격자 발표 이전까지 확정된 학자금 지원구간으로 지원이 이루어집니다. 이 점을 인지하시어 신청완료 및 서류제출, 학자금 지원구간(소득분위) 파악을 위한 가구원 동의를 신속히 완료해주시기 바랍니다.\n \n \n\n※ SMS 및 E-mail 수신 미동의 시 가구원 동의 안내, 합격자 안내 등을 받지 못할 수 있으며, 수신 미동의로 인한 불이익은 신청자 본인에게 있습니다.\n \n \n\n※ \"WEST 어학연수비대출\"에 대한 자세한 내용은 한국장학재단",
+          "source_text_offset": 24650
+        }
+      ],
+      "section_isolation_reviewed_by_human": false,
+      "policy_semantics_approved": false,
+      "validation_status": "needs_review"
+    }
+  ],
+  "notice_task_count": 7,
+  "website_navigation_matches_excluded_by_body_window": true,
+  "body_window_end_is_heuristic": true,
+  "guide_policy_body_preserved_for_future_comparison": true,
+  "source_context_review_completed": false,
+  "policy_semantics_approved": false,
+  "current_policy_verified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

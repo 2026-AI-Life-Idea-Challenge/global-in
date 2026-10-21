@@ -1,0 +1,1600 @@
+{
+  "dataset_type": "program_information_draft",
+  "country": "US",
+  "program_id": "US-WEST-01",
+  "route_id": "US-EM",
+  "program_name": "WEST (Work, English Study, Travel)",
+  "notice_id": "NIIED-2026-15",
+  "notice_period": "2026_first_half",
+  "historical_notice": true,
+  "source_inventory_sha256": "0312dffcc92914630f8b597b70efdb7fbbffc3b2cc222ed7d312ebff01343cdd",
+  "source_review_package_sha256": "cc0de9999cef6ee38ec106612f84274dbca0ceb203776911cd1df40d87b5d0ca",
+  "source_pdf_path": "data/raw/usa/employment/west/west_2026_first_half_notice.pdf",
+  "fields": {
+    "program_overview": {
+      "program_name": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 2,
+        "evidence": [
+          {
+            "search_keyword": "WEST(Work",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 1,
+            "side": "left",
+            "source_excerpt": "중기(12개월) 제15기 / 단기(6개월) 제15기 -\n\n국립국제교육원은 글로벌 감각을 갖춘 핵심인재를 양성하고자 어학연수와 다양한\n\n미국 인턴십 기회를 제공하는『한‧미 대학생 연수(WEST)』에 참가할 지원자를 아래와\n\n같이 모집합니다.\n\n2026년  2월  11일\n\n국립국제교육원장\n\n< WEST 프로그램의특징>\n\n◦WEST(Work, English Study, Travel) 프로그램은 ’08년 8월 한․미 정상회담에서\n\n합의된 어학연수와 인턴근무를 연계한 프로그램으로 교육부 글로벌현장학습\n\n프로그램의 일환으로 추진되고 있습니다.\n\n◦ 현지 적응과 실무영어 습득을 겸한 어학연수와 다양한 분야의 미국 내 기업에서\n\n인턴십 경험이 가능합니다.\n\n◦미국 국무부가 추천한 현지중개기관(SPONSOR)이 참가자의 어학연수 및 인턴십을\n\n주선하고, 미국 현지 정착과 생활을 지원합니다.\n\n※ J-1 비자규정상인턴십비허용분야(간호학/의학)가있으며, 참가자의전공분야인턴십배치가어려운경우\n\n부(복수)전공또는관련경험등을고려하여배치(공공기관, 비영리기관, 연구소, 교육기관, 기업체등)\n\n◦ 정부 추천과 재정보증으로 비자(J-1) 발급 구비서류가 간소합니다.\n\n◦ 한․미 양국 정부의 적극적인 지원",
+            "source_page_sha256": "5c0789e5045d95e91e3a3c57e8853bb2c9eeb8016b2a492e42de2b37dd2b2a51",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "한․미 대학생 연수",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 1,
+            "side": "left",
+            "source_excerpt": "국립국제교육원공고제2026–15호\n\n2026년 상반기 한․미 대학생 연수(WEST) 참가자 모집 공고\n\n- 중기(12개월) 제15기 / 단기(6개월) 제15기 -\n\n국립국제교육원은 글로벌 감각을 갖춘 핵심인재를 양성하고자 어학연수와 다양한\n\n미국 인턴십 기회를 제공하는『한‧미 대학생 연수(WEST)』에 참가할 지원자를 아래와\n\n같이 모집합니다.\n\n2026년  2월  11일\n\n국립국제교육원장\n\n< WEST 프로그램의특징>\n\n◦WEST(Work, English Study, Travel) 프로그램은 ’08년 8월 한․미 정상회담에서\n\n합의된 어학연수와 인턴근무를 연계한 프로그램으로 교육부 글로벌현장학습\n\n프로그램의 일환으로 추진되고 있습니다.\n\n◦ 현지 적응과 실무영어 습득을 겸한 어학연수와 다양한 분야의 미국 내 기업에서\n\n인턴십 경험이 가능합니다.\n\n◦미국 국무부가 추천한 현지중개기관(SPONSOR)이 참가자의 어",
+            "source_page_sha256": "5c0789e5045d95e91e3a3c57e8853bb2c9eeb8016b2a492e42de2b37dd2b2a51",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      },
+      "program_types": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 4,
+        "evidence": [
+          {
+            "search_keyword": "단기 WEST",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "1\n선발 개요\n\n가. 모집 프로그램\n\n구  분 \n구    성\n선발인원\n\n중기 WEST\n어학연수 3개월+ 인턴 6∼8개월+ 여행 1개월*\n35명 내외\n\n단기 WEST\n어학연수 2개월+ 인턴 3∼4개월+ 여행 1개월*\n71명 내외\n\n* 인턴근무종료후, 출국유예기간(30일) 내에개별적으로자유여행가능\n\n※ 단기·중기프로그램중복지원불가\n\n2\n지원 자격\n\n가. (공통) 대한민국 국적 소지자로서 미국 비자 발급에 결격사유가 없고, 지원\n\n시점 기준 아래의 조건을 충족하는 자\n\n구분\n단기WEST (최장6개월)\n중기WEST (최장12개월)\n\n지원\n대상\n\nㆍ지원시점기준4년제대학4학기(전문대2학기) 이상이수한재·휴학생\nㆍ어학연수시작일기준* 최근1년이내졸업생(’25.8월/’26.2월졸업자)\n\n①TOEIC 800점이상또는\n\n①TOEIC 750점이상또는\n\nG-TELP Level2 76점이상\n\nG-TELP Level2 70점이상\n\n어학\n성적\n\n②OPIc IM2 이상또는\n\n②OPIc IM1 이상또는\n\nTOEIC Speaking I",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "중기 WEST",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "1\n선발 개요\n\n가. 모집 프로그램\n\n구  분 \n구    성\n선발인원\n\n중기 WEST\n어학연수 3개월+ 인턴 6∼8개월+ 여행 1개월*\n35명 내외\n\n단기 WEST\n어학연수 2개월+ 인턴 3∼4개월+ 여행 1개월*\n71명 내외\n\n* 인턴근무종료후, 출국유예기간(30일) 내에개별적으로자유여행가능\n\n※ 단기·중기프로그램중복지원불가\n\n2\n지원 자격\n\n가. (공통) 대한민국 국적 소지자로서 미국 비자 발급에 결격사유가 없고, 지원\n\n시점 기준 아래의 조건을 충족하는 자\n\n구분\n단기WEST (최장6개월)\n중기WEST (최장12개월)\n\n지원\n대상\n\nㆍ지원시점기준4년제대학4학기(전문대2학기) 이상이수한재·휴학생\nㆍ어학연수시작일기준* 최근1년이내졸업생(’25.8월/’26.2월졸업자)\n\n①TOEIC 800점이상또는\n\n①TOEIC 750점이상또는\n\nG-TELP Level2 76점이상\n\nG-TELP Level2 70점이상\n\n어학\n성적\n\n②OPI",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "단기 WEST",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 6,
+            "side": "right",
+            "source_excerpt": "료 및 생활비는 원화로 지급됩니다.\n\n※ 학자금지원구간별 지원 금액 외의 비용은 본인 부담임\n\n※ 정부지원금은 합격자 발표일의 학자금지원구간을 기준으로 활동 종료 시까지 지원합니다.\n\n※ 생활비는 원화로 지급되므로, 연도별 기준환율 변동에 따라 실제 수령액이 달라질 수 있으니\n\n재정계획 수립 시 참고하시기 바랍니다.\n\n◦단기 WEST(6개월) 지원구간별 지원 금액\n($1=1,472원)\n\n참가비\n($7,045)\n항공료\n(2,000,000원)\n\n어학연수생활비(최장 8주)\n및 인턴생활비(최장 16주)\n지원총액\n\n구 분\n\n(최대)\n정부지원금\n본인부담금\n$350~$1,400/4주\n\n기초·차상위\n\n$8,400\n($1,400*6개월)\n24,735천원\n\n~5구간\n$7,045\n$0\n\n6∼7구간\n$3,523\n$3,522\n$4,200\n($700*6개월)\n13,368천원\n\n2,000,000원\n\n(1,000,000원×2\n\n8∼9구간\n$2,466\n$4,579\n$4,200\n($700*6개월)\n11,812천원\n\n회/ 출국, 귀국)\n\n소득\n10분위\n$1,761\n$5,284\n$2,100\n($350*6개월)\n7,684천원\n\n※ 단, 생활비는 원화로 지급되므로, 연도별 기준환율 변동*에 따라 실제 수령액이",
+            "source_page_sha256": "66f6d5b4a2721ffc0b294dd1b1da10726d2448ecc3ce3701e93ec6ef549cbab7",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "중기 WEST",
+            "physical_pdf_page": 4,
+            "logical_page_candidate": 7,
+            "side": "left",
+            "source_excerpt": "◦중기 WEST(12개월) 지원구간별 지원 금액\n\n(1$=1,472원)\n\n참가비\n($8,912)\n항공료\n(2,000,000원)\n\n어학연수생활비(최장 12주)\n\n및 인턴생활비(최장 24주)\n지원총액\n\n구 분\n\n(최대)\n정부지원금\n본인부담금\n$350~$1,400/4주\n\n기초·차상위\n\n$12,600\n($1,400*9개월)\n33,665천원\n\n~5구간\n$8,912\n$0\n\n6∼7구간\n$4,456\n$4,456\n$6,300\n($700*9개월)\n17,833천원\n\n2,000,000원\n\n(1,000,000원×2\n\n회/ 출국, 귀국)\n\n8∼9구간\n$3,119\n$5,793\n$6,300\n($700*9개월)\n15,865천원\n\n소득\n10분위\n$2,228\n$6,684\n$3,150\n($350*9개월)\n9,916천원\n\n※ 단, 생활비는 원화로 지급되므로, 연도별 기준환율 변동*에 따라 실제",
+            "source_page_sha256": "e8832363b8c6da95e6b677eb29c7253df5f430e26c7faca43026720ef995bcc8",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      },
+      "program_composition": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 27,
+        "evidence": [
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 1,
+            "side": "left",
+            "source_excerpt": "국립국제교육원공고제2026–15호\n\n2026년 상반기 한․미 대학생 연수(WEST) 참가자 모집 공고\n\n- 중기(12개월) 제15기 / 단기(6개월) 제15기 -\n\n국립국제교육원은 글로벌 감각을 갖춘 핵심인재를 양성하고자 어학연수와 다양한\n\n미국 인턴십 기회를 제공하는『한‧미 대학생 연수(WEST)』에 참가할 지원자를 아래와\n\n같이 모집합니다.\n\n2026년  2월  11일\n\n국립국제교육원장\n\n< WEST 프로그램의특징>\n\n◦WEST(Work, English Study, Travel) 프로그램은 ’08년 8월 한․미 정상회담에서\n\n합의된 어학연수와 인턴근무를 연계한 프로그램으로 교육부 글로벌현장학습\n\n프로그램의 일환으로 추진되고 있습니다.\n\n◦ 현지 적응과 실무영어 습득을 겸한 어학연수와 다양한 분야의 미국 내 기업에서\n\n인턴십 경험이 가능합니다.\n\n◦미국 국무부가 추천한 현지중개기관(SPONSOR)이 참가자의 어학연수 및 인턴십을\n\n주선하고, 미국 현지 정착과 생활을 지원합니다.\n\n※ J-1 비자규정상인턴십비허용분야(간호학/의학)가있으며, 참가자의전공분야인턴십배치가어",
+            "source_page_sha256": "5c0789e5045d95e91e3a3c57e8853bb2c9eeb8016b2a492e42de2b37dd2b2a51",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "인턴",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 1,
+            "side": "left",
+            "source_excerpt": "국립국제교육원공고제2026–15호\n\n2026년 상반기 한․미 대학생 연수(WEST) 참가자 모집 공고\n\n- 중기(12개월) 제15기 / 단기(6개월) 제15기 -\n\n국립국제교육원은 글로벌 감각을 갖춘 핵심인재를 양성하고자 어학연수와 다양한\n\n미국 인턴십 기회를 제공하는『한‧미 대학생 연수(WEST)』에 참가할 지원자를 아래와\n\n같이 모집합니다.\n\n2026년  2월  11일\n\n국립국제교육원장\n\n< WEST 프로그램의특징>\n\n◦WEST(Work, English Study, Travel) 프로그램은 ’08년 8월 한․미 정상회담에서\n\n합의된 어학연수와 인턴근무를 연계한 프로그램으로 교육부 글로벌현장학습\n\n프로그램의 일환으로 추진되고 있습니다.\n\n◦ 현지 적응과 실무영어 습득을 겸한 어학연수와 다양한 분야의 미국 내 기업에서\n\n인턴십 경험이 가능합니다.\n\n◦미국 국무부가 추천한 현지중개기관(SPONSOR)이 참가자의 어학연수 및 인턴십을\n\n주선하고, 미국 현지 정착과 생활을 지원합니다.\n\n※ J-1 비자규정상인턴십비허용분야(간호학/의학)가있으며, 참가자의전공분야인턴십배치가어려운경우\n\n부(복수)전",
+            "source_page_sha256": "5c0789e5045d95e91e3a3c57e8853bb2c9eeb8016b2a492e42de2b37dd2b2a51",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "1\n선발 개요\n\n가. 모집 프로그램\n\n구  분 \n구    성\n선발인원\n\n중기 WEST\n어학연수 3개월+ 인턴 6∼8개월+ 여행 1개월*\n35명 내외\n\n단기 WEST\n어학연수 2개월+ 인턴 3∼4개월+ 여행 1개월*\n71명 내외\n\n* 인턴근무종료후, 출국유예기간(30일) 내에개별적으로자유여행가능\n\n※ 단기·중기프로그램중복지원불가\n\n2\n지원 자격\n\n가. (공통) 대한민국 국적 소지자로서 미국 비자 발급에 결격사유가 없고, 지원\n\n시점 기준 아래의 조건을 충족하는 자\n\n구분\n단기WEST (최장6개월)\n중기WEST (최장12개월)\n\n지원\n대상\n\nㆍ지원시점기준4년제대학4학기(전문대2학기) 이상이수한재·휴학생\nㆍ어학연수시작일기준* 최근1년이내졸업생(’25.8월/’26.2월졸업자)\n\n①TOEIC 800점이상또는\n\n①TOEIC 750점이상또는\n\nG-TELP Level2 76점이상\n\nG-TELP Level2 70점이상\n\n어학\n성적\n\n②OPIc IM2",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "인턴",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "1\n선발 개요\n\n가. 모집 프로그램\n\n구  분 \n구    성\n선발인원\n\n중기 WEST\n어학연수 3개월+ 인턴 6∼8개월+ 여행 1개월*\n35명 내외\n\n단기 WEST\n어학연수 2개월+ 인턴 3∼4개월+ 여행 1개월*\n71명 내외\n\n* 인턴근무종료후, 출국유예기간(30일) 내에개별적으로자유여행가능\n\n※ 단기·중기프로그램중복지원불가\n\n2\n지원 자격\n\n가. (공통) 대한민국 국적 소지자로서 미국 비자 발급에 결격사유가 없고, 지원\n\n시점 기준 아래의 조건을 충족하는 자\n\n구분\n단기WEST (최장6개월)\n중기WEST (최장12개월)\n\n지원\n대상\n\nㆍ지원시점기준4년제대학4학기(전문대2학기) 이상이수한재·휴학생\nㆍ어학연수시작일기준* 최근1년이내졸업생(’25.8월/’26.2월졸업자)\n\n①TOEIC 800점이상또는\n\n①TOEIC 750점이상또는\n\nG-TELP Level2 76점이상\n\nG-TELP Level2 70점이상\n\n어학\n성적\n\n②OPIc IM2 이상또는\n\n②",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "인턴",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "① 온라인 지원 : 월드잡플러스 누리집(www.worldjob.or.kr)에서 온라인지원서등 작성․제출\n\n※ 지원서류: WEST 온라인지원서및자기소개서(양식은온라인지원시확인가능),\n\n개인정보동의서(공지·문의> 공지사항> 해외인턴(WEST)공지사항> 모집공고문> (왼쪽\n상단) 첨부파일양식다운로드> 출력후자필서명> 스캔본파일업로드)\n\n< 유의사항 >\n\n1. 온라인 지원 시, 개인 정보, 학점, 공인영어성적 점수, 시험일자 등에 오류가 있는 경우, 서류 \n부적격자로 분류될 수 있으므로 본인 기재사항은 대학제출 증빙서류와 일치하도록 확인 후 \n기재하여 주시기 바랍니다. (기재 오류에 의한 모든 책임은 참가자 본인에게 있음)\n\n2. 영문이름은 여권과 동일하게(대문자/성, 이름 순) 기재하고, 지원서에 기재된 이메일, 전화 \n등의 연락처로 WEST 프로그램 관련사항이 공지됩니다. 선발 기간 중 변경이 어려우니 \n향후에도 사용할 연락처를 기재하시기 바랍니다.\n\n※ 현지중개기관 면접 등 해외에서 이메일 발송 시 누락의 우려가 있으므로, 본인 이름\n\n이니셜이 포함된 Gmail 계정",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 5,
+            "side": "left",
+            "source_excerpt": "③ 학자금지원구간 확인 신청\n  ③-1. 재학생: 한국장학재단 포털사이트에서 신청\n\n※ 휴학생, 초과학기자, 수료자, 졸업유예자포함\n\n◦WEST 프로그램 참가자들은 학자금지원구간에 따라 정부재정지원금을 수령하므로, \n프로그램 지원 시(졸업생 제외) 지원구간 확인 절차(한국장학재단의 WEST 어학\n연수비 대출 신청)가 반드시 완료되어야 합니다.\n\n※ 기존(재단 내 타사업)의 신청 여부와 관계없이, WEST 지원자의 지원구간 확인을 위해 ‘어학\n\n연수비대출’을 신규 신청하여야 합니다. (실제 대출 신청이 아님)\n\n※ 한국장학재단 어학연수비 대출 실행 여부는 최종합격 발표 후 선택 가능합니다.\n\n(대출 실행은 재학생‧휴학생·초과학기자·수료자에 한하며, 졸업유예자는 불가, 수료자는 26년 1학기\n\n등록 여부에 따라 대출이 불가한 경우가 있으므로 장학재단 누리집에서 지원대상 확인)\n\n※ 위 재학생 중 최종 합격 후 학적이 졸업/졸업 유예로 변경되는 경우 어학연수비 대출 실행이 불가합니다.\n\n◦신청 방법 안내\n\n1. 한국장학재단 사이트(www.kosaf.go.kr)에 접속\n\n2. 전자서명으로 로그인 (지원자 본인 명의)\n\n3. 학자금대출 > 학자금",
+            "source_page_sha256": "705f4184a278d8d5628ba97197df846c5f7db38f2ae3cd36d9d58d145cc73f9f",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 6,
+            "side": "right",
+            "source_excerpt": "4\n참가비 및 정부재정지원\n\n가. 참가비* : (단기) USD 7,045 (중기) USD 8,912\n\n* 전형료, 어학연수비, 인턴십배치비, 현지중개기관비, 보험료, 학생교환방문정보시스템(SEVIS) 등록비\n\n※ 참가비는최종합격자발표직후참가비납부기간(은행영업일5일간) 내에미화달러로\n\n일시납하게되므로미리준비해두시기바랍니다.\n\n나. 정부재정지원내역\n\n< 유의사항 >\n\n1. 본인의 귀책사유로 프로그램 중단(포기) 시, 지원받은 정부재정지원금은 프로그램 규정에\n\n따라 환수됩니다.\n\n2. 정부지원금 중 참가비는 외화(참가비에서 본인부담금만 납부)로, 항공료 및 생활비는 원화로 지급됩니다.\n\n※ 학자금지원구간별 지원 금액 외의 비용은 본인 부담임\n\n※ 정부지원금은 합격자 발표일의 학자금지원구간을 기준으로 활동 종료 시까지 지원합니다.\n\n※ 생활비는 원화로 지급되므로, 연도별 기준환율 변동에 따라 실제 수령액이 달라질 수 있으니\n\n재정계획 수립 시 참고하시기 바랍니다.\n\n◦",
+            "source_page_sha256": "66f6d5b4a2721ffc0b294dd1b1da10726d2448ecc3ce3701e93ec6ef549cbab7",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "인턴",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 6,
+            "side": "right",
+            "source_excerpt": "4\n참가비 및 정부재정지원\n\n가. 참가비* : (단기) USD 7,045 (중기) USD 8,912\n\n* 전형료, 어학연수비, 인턴십배치비, 현지중개기관비, 보험료, 학생교환방문정보시스템(SEVIS) 등록비\n\n※ 참가비는최종합격자발표직후참가비납부기간(은행영업일5일간) 내에미화달러로\n\n일시납하게되므로미리준비해두시기바랍니다.\n\n나. 정부재정지원내역\n\n< 유의사항 >\n\n1. 본인의 귀책사유로 프로그램 중단(포기) 시, 지원받은 정부재정지원금은 프로그램 규정에\n\n따라 환수됩니다.\n\n2. 정부지원금 중 참가비는 외화(참가비에서 본인부담금만 납부)로, 항공료 및 생활비는 원화로 지급됩니다.\n\n※ 학자금지원구간별 지원 금액 외의 비용은 본인 부담임\n\n※ 정부지원금은 합격자 발표일의 학자금지원구간을 기준으로 활동 종료 시까지 지원합니다.\n\n※ 생활비는 원화로 지급되므로, 연도별 기준환율 변동에 따라 실제 수령액이 달라질 수 있으니\n\n재정계획 수립 시 참고하시기 바랍니다.\n\n◦단기 WE",
+            "source_page_sha256": "66f6d5b4a2721ffc0b294dd1b1da10726d2448ecc3ce3701e93ec6ef549cbab7",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 4,
+            "logical_page_candidate": 7,
+            "side": "left",
+            "source_excerpt": "◦중기 WEST(12개월) 지원구간별 지원 금액\n\n(1$=1,472원)\n\n참가비\n($8,912)\n항공료\n(2,000,000원)\n\n어학연수생활비(최장 12주)\n\n및 인턴생활비(최장 24주)\n지원총액\n\n구 분\n\n(최대)\n정부지원금\n본인부담금\n$350~$1,400/4주\n\n기초·차상위\n\n$12,600\n($1,400*9개월)\n33,665천원\n\n~5구간\n$8,912\n$0\n\n6∼7구간\n$4,456\n$4,456\n$6,300\n($700*9개월)\n17,833천원\n\n2,000,000원\n\n(1,000,000원×2\n\n회/ 출국, 귀국)\n\n8∼9구간\n$3,119\n$5,793\n$6,300\n($700*9개월)\n15,865천원\n\n소득\n10분위\n$2,228\n$6,684\n$3,150\n($350*9개월)\n9,916천원\n\n※ 단, 생활비는 원화로 지급되므로, 연도별 기준환율 변동*에 따라 실제 수령액이 달라질 수 있으니\n\n재정계획 수립 시 참고 요망\n\n* 최근 3년간 기준환율($1): (’24) 1,300원 →",
+            "source_page_sha256": "e8832363b8c6da95e6b677eb29c7253df5f430e26c7faca43026720ef995bcc8",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "인턴",
+            "physical_pdf_page": 4,
+            "logical_page_candidate": 7,
+            "side": "left",
+            "source_excerpt": "◦중기 WEST(12개월) 지원구간별 지원 금액\n\n(1$=1,472원)\n\n참가비\n($8,912)\n항공료\n(2,000,000원)\n\n어학연수생활비(최장 12주)\n\n및 인턴생활비(최장 24주)\n지원총액\n\n구 분\n\n(최대)\n정부지원금\n본인부담금\n$350~$1,400/4주\n\n기초·차상위\n\n$12,600\n($1,400*9개월)\n33,665천원\n\n~5구간\n$8,912\n$0\n\n6∼7구간\n$4,456\n$4,456\n$6,300\n($700*9개월)\n17,833천원\n\n2,000,000원\n\n(1,000,000원×2\n\n회/ 출국, 귀국)\n\n8∼9구간\n$3,119\n$5,793\n$6,300\n($700*9개월)\n15,865천원\n\n소득\n10분위\n$2,228\n$6,684\n$3,150\n($350*9개월)\n9,916천원\n\n※ 단, 생활비는 원화로 지급되므로, 연도별 기준환율 변동*에 따라 실제 수령액이 달라질 수 있으니\n\n재정계획 수립 시 참고 요망\n\n* 최근 3년간 기준환율($1): (’24) 1,300원 → (’25) 1,380원 → (’",
+            "source_page_sha256": "e8832363b8c6da95e6b677eb29c7253df5f430e26c7faca43026720ef995bcc8",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 4,
+            "logical_page_candidate": 8,
+            "side": "right",
+            "source_excerpt": "tas.org\n\n(CV)\n\nwww.koreawest.org\n\nCouncil on Int’l Educational Exchange\n\n단기\n\n(CIEE)\nwww.ciee.org\n\nInstitute of Global Exchange\n\n(IGE)\nigeworld.org\n\n※ 현지중개기관별수용인원, 면접결과에따라희망한현지중개기관과어학연수\n\n기관에배치되지않을수있음\n\n※ 현지중개기관배치결과는1차면접합격자발표시, 어학연수기관배치결과는\n\n최종합격자발표시확정\n\n◦각 전형별 합격 여부는 월드잡플러스 누리집-마이페이지에서확인바랍니다.\n\n6\n관련 문의\n\n◦월드잡플러스 누리집: www.worldjob.or.kr\n\n※ 추후안내사항은월드잡플러스누리집에공지예정이오니, 수시로확인바랍니다.\n\n※ 지원기간동안은전화연결이어려울수있으니<[붙임3] FAQ>를확인하시고,\n\n추가문의사항이있을경우가급적월드잡플러스누리집공지·문의>문의하기\n\n(Q&A)>해외인턴문의를이용해주시기바랍니다.\n\n◦국립국제교육원 국내인재지원팀\n\n이메일: koreawest@korea.kr/전화번호 : 02-3668-1461~4, 1466, 1448\n\n- 8 -",
+            "source_page_sha256": "d5ae95e61133e0e413201d7c778aa87c8ca5b156c22b4751a4ed467331e24aa5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "인턴",
+            "physical_pdf_page": 4,
+            "logical_page_candidate": 8,
+            "side": "right",
+            "source_excerpt": "페이지에서확인바랍니다.\n\n6\n관련 문의\n\n◦월드잡플러스 누리집: www.worldjob.or.kr\n\n※ 추후안내사항은월드잡플러스누리집에공지예정이오니, 수시로확인바랍니다.\n\n※ 지원기간동안은전화연결이어려울수있으니<[붙임3] FAQ>를확인하시고,\n\n추가문의사항이있을경우가급적월드잡플러스누리집공지·문의>문의하기\n\n(Q&A)>해외인턴문의를이용해주시기바랍니다.\n\n◦국립국제교육원 국내인재지원팀\n\n이메일: koreawest@korea.kr/전화번호 : 02-3668-1461~4, 1466, 1448\n\n- 8 -",
+            "source_page_sha256": "d5ae95e61133e0e413201d7c778aa87c8ca5b156c22b4751a4ed467331e24aa5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 5,
+            "logical_page_candidate": 10,
+            "side": "right",
+            "source_excerpt": ")∼5.29.(금)\n▪ 참가비 납부\n\n6.1.(월)∼6.4.(목)\n▪ 추가합격자 발표 및 참가비 납부\n\n6.25.(목)\n▪ 출국전 참가자 사전연수\n\n7.6.(월)~7.7.(화)\n▪ 비자 인터뷰(주한미국대사관)\n\n※ 비자 인터뷰 신청 시 비자 발급비($185) 개별 납부\n\n7월～\n▪ 미국 출국(개별)\n\n8월～\n▪ 프로그램(어학연수) 시작\n   ※ 현지중개기관(어학연수기관)별 시작 시기 상이\n\n※ 상기일정은업무추진상황에따라변동가능\n\n- 10 -",
+            "source_page_sha256": "d98dfdc5530c40d673e2e0be6b10a60c5b7556c339e8185454358601eed63fe5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 11,
+            "side": "left",
+            "source_excerpt": "서는 프로그램에 대한 이해도 및 목표의식, 내용의 충실성 등을 중점으\n\n로 평가하며, 내용이 극히 불성실한 경우 선발에서 제외될 수 있습니다.\n\n그 외 우대비율 및 심사 반영 비율은 공개하기 어려운 점 양해 바랍니다.\n\nQ3. 지원 자격(대상) 중, 최근 1년 이내의 졸업생 기준은 어떻게 되나요?\n\nA3. 본 프로그램의 어학연수 시작일이 기준이 됩니다. 현지중개기관 및 어학연수 기관별로 어학\n\n연수 시작일이 다르므로 지원 프로그램의 어학연수 시작일을 확인한 후 지원해주시기 바랍니다.\n\n어학연수 시작일은 월드잡플러스(www.worldjob.or.kr) 공지사항에 게시 예정입니다.\n\n(예시) 2026년 상반기 선발은 어학연수 시작일(’26년 8월)을 기준으로, ‘25년 8월, ’26년 2월\n\n졸업자가 지원 가능합니다.\n\nQ4. WEST 참가 시 소속 학교에서 학점 인정은 얼마나 받을 수 있나요?\n\nA4. 학점 인정 여부 및 방법은 개별 학교의 학칙에 따라 상이하므로, 소속(출신)대학 관계자\n\n(국제교류처, 취업지원처, 경력개발센터 등)에게 문의하여 주시기 바랍니다. 제도상으로는\n\n학점 인정 여부와 상관없이 WEST에 지원이 가능합니다.\n\nQ5. 이전에 다른 정부재정지원",
+            "source_page_sha256": "0ecfc49dd72930de2508722d6473835cabed3147f8bd6296dd51f19d344dc1cc",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "인턴",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 11,
+            "side": "left",
+            "source_excerpt": "수 있나요?\n\nA4. 학점 인정 여부 및 방법은 개별 학교의 학칙에 따라 상이하므로, 소속(출신)대학 관계자\n\n(국제교류처, 취업지원처, 경력개발센터 등)에게 문의하여 주시기 바랍니다. 제도상으로는\n\n학점 인정 여부와 상관없이 WEST에 지원이 가능합니다.\n\nQ5. 이전에 다른 정부재정지원을 받는 프로그램이나 “정부해외인턴사업”에 참여한 경우에도\n\nWEST 프로그램 지원이 가능한가요?\n\nA5. “정부재정지원 직접 일자리 사업” 및 타 “정부해외인턴사업” 참여자에 대한 지원 제한이 없기\n\n때문에 WEST 프로그램을 제외한 기타 프로그램의 참여자는 지원 가능합니다.\n\n※  WEST 기참가자 및 참가비 납부 마감 이후 포기자는 지원이 불가합니다.\n\n- 11 -",
+            "source_page_sha256": "0ecfc49dd72930de2508722d6473835cabed3147f8bd6296dd51f19d344dc1cc",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 12,
+            "side": "right",
+            "source_excerpt": "록번호 확인\n\n방법은 FAQ 하단의 [붙임5]를 참고하시기 바랍니다.\n\nQ13. 미국 현지중개기관(SPONSOR)이 무엇인가요?\n\nA13. 미국 국무부에서 지정한 미국 소재의 현지중개기관(SPONSOR)은 참가자들의 J-1 비자*\n\n발급을 지원하고, 비자 상태를 관리하는 기관입니다. 또한 참가자들에게 프로그램 기간 중\n\n어학연수기관과의 연계를 통해 어학연수를 제공하고, 인턴십 배치를 담당합니다.\n\n* 미국을 문화교류 목적으로 방문하는 교환 방문자용 비자로, WEST 참가자는 해당 비자 발급\n\nQ14. 미국 현지중개기관 선택은 어떻게 해야 하나요? 선택한 곳으로 배정되나요?\n\nA14. 월드잡플러스 누리집 해외인턴(WEST) 공지사항에 게시된 ‘현지중개기관별 정보‘ 중 인턴십\n\n분야와 본인의 전공 등을 고려하여 희망하는 현지중개기관을 선택해주시기 바랍니다. 다만,\n\n현지중개기관의 배정인원 및 면접 결과에 따라 선택한 곳으로 배정되지 않을 수도 있습니다.\n\n- 12 -",
+            "source_page_sha256": "3dde2f122a8bc344072b3447160e1e994e8b790bcbbe0a38143b1d10749db309",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "인턴",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 12,
+            "side": "right",
+            "source_excerpt": "고하시기 바랍니다.\n\nQ13. 미국 현지중개기관(SPONSOR)이 무엇인가요?\n\nA13. 미국 국무부에서 지정한 미국 소재의 현지중개기관(SPONSOR)은 참가자들의 J-1 비자*\n\n발급을 지원하고, 비자 상태를 관리하는 기관입니다. 또한 참가자들에게 프로그램 기간 중\n\n어학연수기관과의 연계를 통해 어학연수를 제공하고, 인턴십 배치를 담당합니다.\n\n* 미국을 문화교류 목적으로 방문하는 교환 방문자용 비자로, WEST 참가자는 해당 비자 발급\n\nQ14. 미국 현지중개기관 선택은 어떻게 해야 하나요? 선택한 곳으로 배정되나요?\n\nA14. 월드잡플러스 누리집 해외인턴(WEST) 공지사항에 게시된 ‘현지중개기관별 정보‘ 중 인턴십\n\n분야와 본인의 전공 등을 고려하여 희망하는 현지중개기관을 선택해주시기 바랍니다. 다만,\n\n현지중개기관의 배정인원 및 면접 결과에 따라 선택한 곳으로 배정되지 않을 수도 있습니다.\n\n- 12 -",
+            "source_page_sha256": "3dde2f122a8bc344072b3447160e1e994e8b790bcbbe0a38143b1d10749db309",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "인턴",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "시되어 있습니다.\n\nQ16. 월드잡플러스 온라인 지원서 작성 도중 임시저장 대신 최종제출 버튼을 눌렀는데 수정\n\n가능한가요?\n\nA16. 온라인 지원서는 접수 마감일 이내에 수정이 가능합니다. 그러나 마감일 이후에는 수정이\n\n불가능하므로, 공지사항을 상세하게 살펴보신 후 제출하시기 바랍니다.\n\n※ [월드잡플러스-마이페이지-인턴지원현황]에서 ‘취소’ 버튼을 눌러 수정 및 저장 후, 제출\n\n버튼을 누르고, ‘지원일자’가 나오는지 확인하시기 바랍니다.\n\n3. 서류 제출 단계\n\nQ17. 온라인 지원 시 온라인 지원서(자기소개서 포함), 개인정보동의서 외에도 취득한 자격증\n\n서류를 제출해야 되나요?\n\nA17. 월드잡 사이트에서 온라인 지원서(자기소개서 포함)와 개인정보동의서만 제출하시면 됩니다.\n\n자격증 관련 서류는 제출할 필요가 없습니다.\n\nQ18. 학교 추천을 어떻게 받나요?\n\nA18. 소속(출신) 대학 관련 부서에 어학증명서 등의 제반서류를 제출하시면 담당 부서에서 이를\n\n검토 후 국립국제교육원에 공문으로 추천 명단을 송부합니다. 서류 제출 방법 및 제출 마감일은\n\n소속대학에 문의하시기 바랍니다. (대학별 추천 인원의 제한은 없음)\n\nQ19. 학교에는 어떤 서류를 제",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 14,
+            "side": "right",
+            "source_excerpt": "4. 학자금 지원구간 확인\n\nQ20. 지원구간(학자금 지원구간) 확인 신청(어학연수비 대출)은 어떻게 하나요?\n\nA20. 한국장학재단 누리집(www.kosaf.go.kr) 재단소개 > 알림 > 공지사항 탭의 ‘2026년 상반기\n\n한·미대학생연수(WEST) 프로그램 어학연수비 대출 신청 안내’를 참고하여 신청해주시고,\n\n관련 문의사항은 한국장학재단 콜센터(1599-2000)로 해주시기 바랍니다.\n\n※ 장학재단 누리집 지원구간 확인 신청 : 재학생, 휴학생, 초과 학기자, 수료자, 졸업유예자\n\n※ 졸업생은 한국장학재단 사이트 신청 불필요(학교에 별도 서류 제출)\n\nQ21. 대출이 필요 없는데도 한국장학재단 누리집에 신청을 해야 하나요?\n\nA21. 한국장학재단 누리집 신청은 지원서 접수를 위한 필수적인 절차로, 실제 대출과는 무관합\n\n니다. 재학생(휴학생, 초과 학기자, 수료자, 졸업유예자)의 정부재정지원금은 한국장학재단의\n\n지",
+            "source_page_sha256": "80d7bc39fefbf2015925466822f2b34e393560dd0ac24f4970bf10787bcc27f0",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 8,
+            "logical_page_candidate": 15,
+            "side": "left",
+            "source_excerpt": "하기 때문에\n\n한국장학재단 사이트에 지원구간 확인신청을 해주셔야 하며, 구분은 다음과 같습니다.\n\n1. 초과 학기자: 정규학기를 초과한 학생 중 졸업기준학점을 미충족한 학생\n\n2. 수료자: 졸업기준학점을 충족하였으나, 졸업요건을 미충족한 학생\n\n3. 졸업유예자: 졸업기준학점을 충족하고, 졸업요건도 충족한 학생\n\nQ26. 어학연수, 인턴기간 동안 지원구간이 변경되면 지원금 규모도 바뀌나요?\n\nA26. 합격자 발표일 기준 지원구간으로 활동 종료 시까지 지원합니다.\n\nQ27. 정부 재정지원금 외에 추가적으로 재정 지원을 받을 수 있나요?\n\nA27. WEST 프로그램 참가자 대상으로 WEST 프로그램 공모전, WEST 서포터즈 등을 운영하고\n\n있습니다.\n\nQ28. 국외 소득·재산 조사 신고대상자는 어떻게 선정되나요?\n\nA28. 국외 소득·재산 신고 대상은 학부생(입학예정 포함) 중 ①재외국민 특별전형 입학자(학생\n\n및 가구원 전부) 또는 ②주민등록상 재외국민으로 확인된 학생 및 가구원입니다.\n\n국외 소득·재산 신고 대상자 확인 절차는 다음과 같습니다. 먼저 재외국민 특별전형 입학자의\n\n경우 학자금지원 신청 당시 특별전형 입학 여부를 선택하게 됩니다. 주민등록상 재외국민의",
+            "source_page_sha256": "030c6ecc87086720048e3f7703005b829d8e23ca914fd20d158bee4321dc01e5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "인턴",
+            "physical_pdf_page": 8,
+            "logical_page_candidate": 15,
+            "side": "left",
+            "source_excerpt": "한국장학재단 사이트에 지원구간 확인신청을 해주셔야 하며, 구분은 다음과 같습니다.\n\n1. 초과 학기자: 정규학기를 초과한 학생 중 졸업기준학점을 미충족한 학생\n\n2. 수료자: 졸업기준학점을 충족하였으나, 졸업요건을 미충족한 학생\n\n3. 졸업유예자: 졸업기준학점을 충족하고, 졸업요건도 충족한 학생\n\nQ26. 어학연수, 인턴기간 동안 지원구간이 변경되면 지원금 규모도 바뀌나요?\n\nA26. 합격자 발표일 기준 지원구간으로 활동 종료 시까지 지원합니다.\n\nQ27. 정부 재정지원금 외에 추가적으로 재정 지원을 받을 수 있나요?\n\nA27. WEST 프로그램 참가자 대상으로 WEST 프로그램 공모전, WEST 서포터즈 등을 운영하고\n\n있습니다.\n\nQ28. 국외 소득·재산 조사 신고대상자는 어떻게 선정되나요?\n\nA28. 국외 소득·재산 신고 대상은 학부생(입학예정 포함) 중 ①재외국민 특별전형 입학자(학생\n\n및 가구원 전부) 또는 ②주민등록상 재외국민으로 확인된 학생 및 가구원입니다.\n\n국외 소득·재산 신고 대상자 확인 절차는 다음과 같습니다. 먼저 재외국민 특별전형 입학자의\n\n경우 학자금지원 신청 당시 특별전형 입학 여부를 선택하게 됩니다. 주민등록상 재외국민의\n\n경우",
+            "source_page_sha256": "030c6ecc87086720048e3f7703005b829d8e23ca914fd20d158bee4321dc01e5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 8,
+            "logical_page_candidate": 16,
+            "side": "right",
+            "source_excerpt": "6. 어학연수 & 인턴십\n\nQ32. 합격 후 출국은 언제부터 가능한가요?\n\nA32. 비자 발급 완료 후 어학연수 시작일 30일 전부터 개별적으로 출국이 가능합니다.\n\nQ33. 어학연수기관(지역)을 선택할 수 있나요?\nA33. 어학연수기관은 현지중개기관에서 면접 결과 등을 반영하여 결정합니다. 배정된 어학연수\n\n기관은 최종합격자 발표 시 함께 안내하며 변경은 불가합니다.\n\nQ34. 어학연수 기간이나 인턴 기간 조정은 가능한가요?\n\nA34. 어학연수는 기간 조정이 불가합니다(단기 8주, 중기 12주). 인턴십은 최소 수료기준(단기 12주,\n\n중기 24주)만 충족하면 수료 가능하며, 최대기간(단기 16주, 중기 32주)까지 인턴십을 희망할 경우,\n\n현지중개기관과 사전에 협의 및 조정해주시기 바랍니다.\n\nQ35. 프로그램 전 기간 동안(단기 6개월, 중기 12개",
+            "source_page_sha256": "c605c35019114933340a0674d198ab68fc530fc346dcf9ddbc1ee8631260a163",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "인턴",
+            "physical_pdf_page": 8,
+            "logical_page_candidate": 16,
+            "side": "right",
+            "source_excerpt": "6. 어학연수 & 인턴십\n\nQ32. 합격 후 출국은 언제부터 가능한가요?\n\nA32. 비자 발급 완료 후 어학연수 시작일 30일 전부터 개별적으로 출국이 가능합니다.\n\nQ33. 어학연수기관(지역)을 선택할 수 있나요?\nA33. 어학연수기관은 현지중개기관에서 면접 결과 등을 반영하여 결정합니다. 배정된 어학연수\n\n기관은 최종합격자 발표 시 함께 안내하며 변경은 불가합니다.\n\nQ34. 어학연수 기간이나 인턴 기간 조정은 가능한가요?\n\nA34. 어학연수는 기간 조정이 불가합니다(단기 8주, 중기 12주). 인턴십은 최소 수료기준(단기 12주,\n\n중기 24주)만 충족하면 수료 가능하며, 최대기간(단기 16주, 중기 32주)까지 인턴십을 희망할 경우,\n\n현지중개기관과 사전에 협의 및 조정해주시기 바랍니다.\n\nQ35. 프로그램 전 기간 동안(단기 6개월, 중기 12개월) 미국",
+            "source_page_sha256": "c605c35019114933340a0674d198ab68fc530fc346dcf9ddbc1ee8631260a163",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 9,
+            "logical_page_candidate": 17,
+            "side": "left",
+            "source_excerpt": "실무 경험 기회를 제공한다는 의미가 크고, 인턴기관의 재량에 따라 교통비 등을 보조하\n\n거나 인턴십 중에 유급으로 전환되는 경우도 있으나 참가자별 상황은 모두 다릅니다.\n\nQ43. 미국 현지에서 인턴십 중 취업이 되면 돌아오지 않아도 되나요?\n\nA43. WEST 프로그램은 문화교류를 목적으로 하는 J-1 비자를 통해 어학연수와 인턴십을 하게\n\n되며, 참가자는 미국 국무부 규정에 의거 현지 프로그램 종료 후 2년간 본국(=한국)에서\n\n거주해야하는 의무가 있으므로, 반드시 귀국한 후 프로그램을 수료하여야 합니다. 현지에서\n\n취업 결정 시에도 반드시 귀국하여 취업 관련 비자를 발급 받아 출국해야 합니다.\n\nQ44. 항공료와 어학연수 및 인턴생활비는 원화로 지급되나요?\n\nA44. 네, 항공료 및 생활비는 모두 원화로 지급됩니다. 항공료는 2,000,000원이 정액 지원되며,\n\n생활비는 지원구간에 따라 상이합니다. 특히 생활비는 지급 년도의 기준환율이 적용되어\n\n지급됨을 양지하시기 바랍니다. 자세한 내용은 모집 공고문의 ‘참가비 및 정부재정지원’을\n\n확인하시기 바랍니다.\n\nQ45. 정부 지원금 외에 개인 경비는 얼마나 필요할까요?\n\nA45. 프로그램별 기간, 거주 지역",
+            "source_page_sha256": "4fe9786e9c07743d42bea5a9bd130e74fba4c34a798c17ec7f6ee225a995ed9a",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "인턴",
+            "physical_pdf_page": 9,
+            "logical_page_candidate": 17,
+            "side": "left",
+            "source_excerpt": "Q39. 인턴십이 허용되지 않는 분야도 있나요?\n\nA39. 간호학/의학 전공자의 경우 환자 등과 직접 접촉(medical patient care or contact) 하는\n\n인턴십은 J-1 규정에 의거하여 금지되어 있습니다.\n\nQ40. 자신의 전공과 무관한 분야에서의 인턴십도 가능한가요?\n\nA40. 인턴십은 본인의 전공 관련 분야에서 하도록 되어 있으며, 복수전공 또는 다른 경험이\n\n있는 경우 인턴십 배치 시 고려될 수 있습니다. 인턴십 배치 분야는 본인이 결정하는 것이\n\n아니라 현지중개기관과의 상담을 통한 배치과정에서 결정됩니다.\n\nQ41. 코로나19의 영향으로 현지에서 비대면 인턴십으로 할 경우가 있을까요?\n\nA41. J-1 비자 규정에 따라 참가자는 주 32시간 이상의 근무를 해야 합니다. 다만 배치된 인턴\n\n기관의 상황에 따라 근무기간 중 일부를",
+            "source_page_sha256": "4fe9786e9c07743d42bea5a9bd130e74fba4c34a798c17ec7f6ee225a995ed9a",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "어학연수",
+            "physical_pdf_page": 9,
+            "logical_page_candidate": 18,
+            "side": "right",
+            "source_excerpt": "현지중개기관에서 안내 받은\n\n기한 내에 미국에서 출국해야 하며, 프로그램 수료증 발급 불가 및 소속학교에 미수료자\n\n통보, WEST 프로그램 규정에 따른 정부지원금 환수* 등의 절차가 진행됩니다.\n\n* 환수금액은 프로그램 중단 사유에 대한 참가자의 고의성 유무에 따라 다르게 결정됩니다. 고의성\n\n있는 사유(규정 위반, 어학연수 출석률 미달, 무리한 요구·불성실한 태도로 인한 인턴배치 실패\n\n혹은 인턴십 해고 등)는 정부지원금 전액(출국항공료, 참가비, 어학연수/인턴 생활비)을 반납해야\n\n하며, 고의성 없는 사유(참가자 본인 및 가족의 건강, 경제적 사정, 기타 불가피한 사유)는 과지급된\n\n어학연수/인턴 생활비를 일할 계산하여 산정된 금액을 반납해야 합니다.\n\n7. 프로그램 수료 후\n\nQ48. WEST 종료 후, 바로 미국으로 취업할 수 있나요?\n\nA48. 프로그램을 수료 후 개별상황에 따라 미국으로 취업하는 것은 가능하나 비자 발급 절차는\n\n개인적으로 준비하여야 하며, 별도로 지원해 드리지 않습니다. 미국 국무부의 문화교류\n\n비자에 속하는 J-1비자 중 정부의 재정지원을 받은 경우, 본국(한국)에서 2년간 체류해야\n\n하는 의무가 발생합니다. 2년 본국거주의무(tw",
+            "source_page_sha256": "6f42317a89183ee03148c46fdd3654418542a06af3d62c0a03ca8923ec8f6a22",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "인턴",
+            "physical_pdf_page": 9,
+            "logical_page_candidate": 18,
+            "side": "right",
+            "source_excerpt": "Q46. 비자 유효기간(Expiration Date) 내에 여행을 하면 되나요?\n\nA46. 프로그램을 성공적으로 이행하는 참가자는 인턴십 종료 이후 주어지는 출국유예기간(30일) 내\n\n에 미국 여행이 가능합니다. 단, 만료된 비자로 출국유예기간 동안 미국을 출국한 경우, 동일\n\n비자로 재입국이 불가합니다. 또한, 미국 여행 종료 후 30일 이내에 귀국하여 수료하셔야 합니다.\n\nQ47. 미국 출국 후 프로그램을 중단할 경우 어떻게 되나요?\n\nA47. 프로그램 중단은 불가피한 개인사유에 의한 자의적 중단과 규정 위반, 부적절한 행동으로\n\n인한 강제 중단으로 나뉩니다. 프로그램을 중단할 시, 해당 현지중개기관에서 안내 받은\n\n기한 내에 미국에서 출국해야 하며, 프로그램 수료증 발급 불가 및 소속학교에 미수료자\n\n통보, WEST 프로그램 규정에 따른 정부지원금 환수* 등의 절차가 진행됩니다.\n\n* 환수금액은 프로그램 중단 사유에 대한 참가자의 고의성 유무에 따라 다르게 결정됩니다.",
+            "source_page_sha256": "6f42317a89183ee03148c46fdd3654418542a06af3d62c0a03ca8923ec8f6a22",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      }
+    },
+    "eligibility": {
+      "nationality": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 1,
+        "evidence": [
+          {
+            "search_keyword": "대한민국 국적",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "분 \n구    성\n선발인원\n\n중기 WEST\n어학연수 3개월+ 인턴 6∼8개월+ 여행 1개월*\n35명 내외\n\n단기 WEST\n어학연수 2개월+ 인턴 3∼4개월+ 여행 1개월*\n71명 내외\n\n* 인턴근무종료후, 출국유예기간(30일) 내에개별적으로자유여행가능\n\n※ 단기·중기프로그램중복지원불가\n\n2\n지원 자격\n\n가. (공통) 대한민국 국적 소지자로서 미국 비자 발급에 결격사유가 없고, 지원\n\n시점 기준 아래의 조건을 충족하는 자\n\n구분\n단기WEST (최장6개월)\n중기WEST (최장12개월)\n\n지원\n대상\n\nㆍ지원시점기준4년제대학4학기(전문대2학기) 이상이수한재·휴학생\nㆍ어학연수시작일기준* 최근1년이내졸업생(’25.8월/’26.2월졸업자)\n\n①TOEIC 800점이상또는\n\n①TOEIC 750점이상또는\n\nG-TELP Level2 76점이상\n\nG-TELP Level2 70점이상\n\n어학\n성적\n\n②OPIc IM2 이상또는\n\n②OPIc IM1 이상또는\n\nTOEIC Speaking IM2 이상또는\n\nTOEIC Speaking IM1 이상또는\n\nG-TELP Speaking Level6 이상\n\nG-TELP Speaking Level7 이상\n\n대학\n추천소속대학의지원자추천공문\n\n* J-1 비자규정상",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      },
+      "student_status": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 12,
+        "evidence": [
+          {
+            "search_keyword": "재·휴학생",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "개별적으로자유여행가능\n\n※ 단기·중기프로그램중복지원불가\n\n2\n지원 자격\n\n가. (공통) 대한민국 국적 소지자로서 미국 비자 발급에 결격사유가 없고, 지원\n\n시점 기준 아래의 조건을 충족하는 자\n\n구분\n단기WEST (최장6개월)\n중기WEST (최장12개월)\n\n지원\n대상\n\nㆍ지원시점기준4년제대학4학기(전문대2학기) 이상이수한재·휴학생\nㆍ어학연수시작일기준* 최근1년이내졸업생(’25.8월/’26.2월졸업자)\n\n①TOEIC 800점이상또는\n\n①TOEIC 750점이상또는\n\nG-TELP Level2 76점이상\n\nG-TELP Level2 70점이상\n\n어학\n성적\n\n②OPIc IM2 이상또는\n\n②OPIc IM1 이상또는\n\nTOEIC Speaking IM2 이상또는\n\nTOEIC Speaking IM1 이상또는\n\nG-TELP Speaking Level6 이상\n\nG-TELP Speaking Level7 이상\n\n대학\n추천소속대학의지원자추천공문\n\n* J-1 비자규정상어학연수시작일기준1년이내졸업생이며, 어학연수시작일은\n현지중개기관별‧어학기관별상이(월드잡플러스공지사항현지중개기관정보확인)\n※ 어학성적은①, ②를모두충족하여야하며, 접수마감일기준유효기간(2년) 이내\n\n국내정기시험성적만인정/ OPIc 시",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "졸업생",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "중복지원불가\n\n2\n지원 자격\n\n가. (공통) 대한민국 국적 소지자로서 미국 비자 발급에 결격사유가 없고, 지원\n\n시점 기준 아래의 조건을 충족하는 자\n\n구분\n단기WEST (최장6개월)\n중기WEST (최장12개월)\n\n지원\n대상\n\nㆍ지원시점기준4년제대학4학기(전문대2학기) 이상이수한재·휴학생\nㆍ어학연수시작일기준* 최근1년이내졸업생(’25.8월/’26.2월졸업자)\n\n①TOEIC 800점이상또는\n\n①TOEIC 750점이상또는\n\nG-TELP Level2 76점이상\n\nG-TELP Level2 70점이상\n\n어학\n성적\n\n②OPIc IM2 이상또는\n\n②OPIc IM1 이상또는\n\nTOEIC Speaking IM2 이상또는\n\nTOEIC Speaking IM1 이상또는\n\nG-TELP Speaking Level6 이상\n\nG-TELP Speaking Level7 이상\n\n대학\n추천소속대학의지원자추천공문\n\n* J-1 비자규정상어학연수시작일기준1년이내졸업생이며, 어학연수시작일은\n현지중개기관별‧어학기관별상이(월드잡플러스공지사항현지중개기관정보확인)\n※ 어학성적은①, ②를모두충족하여야하며, 접수마감일기준유효기간(2년) 이내\n\n국내정기시험성적만인정/ OPIc 시험의경우대학연합OPIc 시험점수도인정",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "졸업생",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 3,
+            "side": "left",
+            "source_excerpt": "지원 신청 절차\n\n가. 공 고일 : ’26. 2. 11.(수)\n나. 신청 기간 : ’26. 2. 11.(수) ~ 3. 18.(수) 17:00\n※ 이후에는제출불가\n다. 신청 절차 <유의> 아래 과정을 모두 충족하여야 지원 신청이 완료됨\n\n❏ 지원자 신청 절차\n\n※ 휴학생, 초과학기자, 수료자, 졸업유예자 포함\n\n재학생\n\n졸업생\n\n❏ 소속 대학 참가자 추천 (공통)\n\n▪참가자 추천\n - 추천 공문 발송 기간: ‘26.3.19.(목)~3.23.(월) ※ 추천 마감일은 대학에서 결정\n - 서류심사: 학년, 영어성적 등 자격 요건 확인\n   ※ 확인 필: 재외국민 특별전형 여부, 취업취약계층 증빙자료 제출여부,\n               졸업생 지원구간 증빙자료 제출여부\n\n소속\n대학\n\n- 공문발송: 자격 요건을 충족한 학생을 지원대상자로 추천\n   ※ 첨부 필: 취업취약계층 증빙자료, 졸업생 지원구간 증빙자료, 편입생 전·현적대 성적증명서\n\n- 3 -",
+            "source_page_sha256": "731dc9a92316644330756f9928351a65219f580cf670425012918191176a5d4b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "졸업생",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "취업 관련 부서)에 직접 제출\n\n※ 대학별신청마감일확인필요\n※ 제출서류: (공통) WEST 온라인지원서및자기소개서출력물, 재학(휴학/졸업)증명서,\n\n전학년성적증명서, 공인영어성적증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking,\nG-TELP Speaking), 취업취약계층증빙자료[붙임1] 참조)/ (졸업생) 지원구간증빙자료\n추가제출(③-2 및[붙임1]과[붙임4] 참조)\n\n< 유의사항 >\n\n1. 공인영어성적증명서 이외 모든 서류는 모집공고(2026.2.11.) 이후 발급분에 한하여 유효합니다.\n\n2. 어학점수는 접수마감일(2026.3.18.) 기준 2년 이내의 국내 정기시험 성적만 인정됩니다.\n\n3. 취업취약계층 ([붙임 1] 참조) 증빙자료가 누락된 경우 우대 적용을 받을 수 없습니다.\n\n4. 졸업생의 학자금지원구간 증빙 자료는 해당 서류를 확인하여 제출합니다. ([붙임 1] 참조)\n\n5. 편입생의 경우, 편입 전/후 성적을 WEST 프로그램 학점계산법에 의하여 산출합니다.\n\n구 분\n취득평점(GPA) \n총 이수학점 \n평점 만점 \n 전적 대학\n A\nB\n C\n 현 소속 대학\n D\nE\n F\n\n※ 편입학점 계산법 : 학점(X) = [ (A×B×F/C",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "졸업생",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 5,
+            "side": "left",
+            "source_excerpt": "③ 학자금지원구간 확인 신청\n  ③-1. 재학생: 한국장학재단 포털사이트에서 신청\n\n※ 휴학생, 초과학기자, 수료자, 졸업유예자포함\n\n◦WEST 프로그램 참가자들은 학자금지원구간에 따라 정부재정지원금을 수령하므로, \n프로그램 지원 시(졸업생 제외) 지원구간 확인 절차(한국장학재단의 WEST 어학\n연수비 대출 신청)가 반드시 완료되어야 합니다.\n\n※ 기존(재단 내 타사업)의 신청 여부와 관계없이, WEST 지원자의 지원구간 확인을 위해 ‘어학\n\n연수비대출’을 신규 신청하여야 합니다. (실제 대출 신청이 아님)\n\n※ 한국장학재단 어학연수비 대출 실행 여부는 최종합격 발표 후 선택 가능합니다.\n\n(대출 실행은 재학생‧휴학생·초과학기자·수료자에 한하며, 졸업유예자는 불가, 수료자는 26년 1학기\n\n등록 여부에 따라 대출이 불가한 경우가 있으므로 장학재단 누리집에서 지원대상 확인)\n\n※ 위 재학생 중 최종 합격 후 학적이 졸업/졸업 유예로 변경되는 경우 어학연수비 대출 실행이 불가합니다.\n\n◦신청 방법 안내\n\n1. 한국장학재단 사이트(www.kosaf.go.kr)에 접속\n\n2. 전자서명",
+            "source_page_sha256": "705f4184a278d8d5628ba97197df846c5f7db38f2ae3cd36d9d58d145cc73f9f",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "졸업생",
+            "physical_pdf_page": 4,
+            "logical_page_candidate": 7,
+            "side": "left",
+            "source_excerpt": "* 최근 3년간 기준환율($1): (’24) 1,300원 → (’25) 1,380원 → (’26) 1,472원\n\n다. 어학연수비 대출\n\n◦한국장학재단에서 소정의 심사를 거쳐 WEST 프로그램 참가자에게 어학연수비를\n\n대출해 주고 있습니다.(참가비 납부 기간에만 대출 가능)\n\n※ 재학생·휴학생·초과학기자·수료자에한하며, 졸업생및졸업유예자는불가\n\n※ 단, 수료자는대학기준에따라’26년1학기를등록한경우에한하여대출가능\n\n◦정부로부터 참가비의 일부를 지원 받은 경우에는 어학연수비에서 정부지원금을\n\n제외한 차액에 대해서만 대출이 가능하며, 일부 편입생의 경우 대학구조개혁평가\n\n결과에 따라 대출이 제한될 수 있습니다. (※ 상세 내용은 한국장학재단 문의 요망)\n\n- 7 -",
+            "source_page_sha256": "e8832363b8c6da95e6b677eb29c7253df5f430e26c7faca43026720ef995bcc8",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "졸업생",
+            "physical_pdf_page": 5,
+            "logical_page_candidate": 9,
+            "side": "left",
+            "source_excerpt": "붙임 1\n 취업취약계층 제출 서류 / 졸업생 지원구간 제출 서류\n\n※ 제출증빙자료는모집공고일(’26.2.11.) 이후발급서류여야함\n\n1. 취업취약계층의 범주\n\n가. 저소득층: 기초생활수급자 및 차상위계층\n\n나. 기타 취업취약계층: 장애인, 북향민 등\n\n※ 「직접일자리사업중앙부처-자치단체합동지침」에따른취업취약계층범주준용\n\n2. 취업취약계층 제출 서류\n\n가. 저소득층 (본인 명의로 발급)\n\n구분\n자격명\n제출 서류\n발급처\n\n기초생계급여수급자\n국민기초생활수급자증명서\n\n기초생활\n\n(생계/의료)\n* 보장시설수급자증명서포함\n행정복지센터 및\n정부24(www.gov.kr)\n\n수급자\n\n기초의료급여수급자\n\n기초주거급여수급자\n국민기초생활수급자증명서\n\n(주거/교육)\n기초교육급여수급자\n한부모가족보호대상자\n한부모가족 증명서\n차상위장애연금대상자\n장애인연금수급자 확인서\n\n차상위\n\n행정복지센터\n차상위장애수당 /\n장애",
+            "source_page_sha256": "ce3082caede4953790dab735201bd29c96666a0aacf924a6bf626d9658f1eda8",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "졸업생",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 11,
+            "side": "left",
+            "source_excerpt": "학점 제한은 없지만 서류심사 시\n\n반영). 자기소개서에서는 프로그램에 대한 이해도 및 목표의식, 내용의 충실성 등을 중점으\n\n로 평가하며, 내용이 극히 불성실한 경우 선발에서 제외될 수 있습니다.\n\n그 외 우대비율 및 심사 반영 비율은 공개하기 어려운 점 양해 바랍니다.\n\nQ3. 지원 자격(대상) 중, 최근 1년 이내의 졸업생 기준은 어떻게 되나요?\n\nA3. 본 프로그램의 어학연수 시작일이 기준이 됩니다. 현지중개기관 및 어학연수 기관별로 어학\n\n연수 시작일이 다르므로 지원 프로그램의 어학연수 시작일을 확인한 후 지원해주시기 바랍니다.\n\n어학연수 시작일은 월드잡플러스(www.worldjob.or.kr) 공지사항에 게시 예정입니다.\n\n(예시) 2026년 상반기 선발은 어학연수 시작일(’26년 8월)을 기준으로, ‘25년 8월, ’26년 2월\n\n졸업자가 지원 가능합니다.\n\nQ4. WEST 참가 시 소속 학교에서 학점 인정은 얼마나 받을 수 있나요?\n\nA4. 학점 인정 여부 및 방법은 개별 학교의 학칙에 따라 상이하므로, 소속(출신)대학 관계자\n\n(국제교류처, 취업지원처, 경력개발센터 등)에게 문의하여 주시기 바랍니다. 제도상으로는\n\n학점 인정 여부와 상관없이 WEST",
+            "source_page_sha256": "0ecfc49dd72930de2508722d6473835cabed3147f8bd6296dd51f19d344dc1cc",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "졸업생",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "A19. WEST 온라인지원서 출력물(자기소개서 포함), 재학(졸업/휴학)증명서, 전 학년 성적증명서,\n\n공인영어성적 증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking, G-TELP Speaking), 취업취약\n\n계층 증빙자료(해당자에 한하며, 선발공고문 [붙임1] 확인 요망), 지원구간 증빙자료(졸\n\n업생에 한하며, 선발공고문 [붙임1] 확인 요망)이며 공인영어성적 증명서는 반드시 공고\n\n문의 기준요건을 확인하여 유효한 성적을 제출해야 합니다.\n\n- 13 -",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "졸업생",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 14,
+            "side": "right",
+            "source_excerpt": "개 > 알림 > 공지사항 탭의 ‘2026년 상반기\n\n한·미대학생연수(WEST) 프로그램 어학연수비 대출 신청 안내’를 참고하여 신청해주시고,\n\n관련 문의사항은 한국장학재단 콜센터(1599-2000)로 해주시기 바랍니다.\n\n※ 장학재단 누리집 지원구간 확인 신청 : 재학생, 휴학생, 초과 학기자, 수료자, 졸업유예자\n\n※ 졸업생은 한국장학재단 사이트 신청 불필요(학교에 별도 서류 제출)\n\nQ21. 대출이 필요 없는데도 한국장학재단 누리집에 신청을 해야 하나요?\n\nA21. 한국장학재단 누리집 신청은 지원서 접수를 위한 필수적인 절차로, 실제 대출과는 무관합\n\n니다. 재학생(휴학생, 초과 학기자, 수료자, 졸업유예자)의 정부재정지원금은 한국장학재단의\n\n지원구간 확인 결과에 따라 결정되며, 미신청 시 서류심사 대상에서 제외되니 반드시 신청\n\n해주시기 바랍니다. ※ 졸업생은 한국장학재단 사이트 신청 불필요(학교에 별도 서류 제출)\n\n재학/졸업\n\n구분\n구분\n(모집 기간내) 한국장학재단\n\n(최종 합격 후) \n어학연수비 대출 실행\n\n어학연수비 대출 신청\n\n재학생\n필요\n가능\n\n휴학생\n필요\n가능\n\n재학생\n\n초과학기자\n필요\n가능\n\n수료자\n필요\n조건에 따라 다름(한국장학재단 홈페이지",
+            "source_page_sha256": "80d7bc39fefbf2015925466822f2b34e393560dd0ac24f4970bf10787bcc27f0",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "졸업생",
+            "physical_pdf_page": 8,
+            "logical_page_candidate": 15,
+            "side": "left",
+            "source_excerpt": "Q25. 초과 학기자, 수료자, 졸업유예자의 차이는 무엇인가요?\n\nA25. 초과학기자, 수료자, 졸업유예자 모두 재학생/졸업생 구분에서는 재학생에 해당하기 때문에\n\n한국장학재단 사이트에 지원구간 확인신청을 해주셔야 하며, 구분은 다음과 같습니다.\n\n1. 초과 학기자: 정규학기를 초과한 학생 중 졸업기준학점을 미충족한 학생\n\n2. 수료자: 졸업기준학점을 충족하였으나, 졸업요건을 미충족한 학생\n\n3. 졸업유예자: 졸업기준학점을 충족하고, 졸업요건도 충족한 학생\n\nQ26. 어학연수, 인턴기간 동안 지원구간이 변경되면 지원금 규모도 바뀌나요?\n\nA26. 합격자 발표일 기준 지원구간으로 활동 종료 시까지 지원합니다.\n\nQ27. 정부 재정지원금 외에 추가적으로 재정 지원을 받을 수 있나요?\n\nA27. WEST 프로그램 참가자 대상으로 WEST 프로그램 공모전, WEST 서포터즈 등을 운영하고\n\n있습니다.\n\nQ28. 국외 소득·재산 조사 신고대상자는 어떻게 선정되나요?\n\nA28",
+            "source_page_sha256": "030c6ecc87086720048e3f7703005b829d8e23ca914fd20d158bee4321dc01e5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "졸업생",
+            "physical_pdf_page": 10,
+            "logical_page_candidate": 19,
+            "side": "left",
+            "source_excerpt": "붙임4\n 학자금대출·장학금 신청증명서 (졸업생)\n\n<재학 중 국가장학금 신청 이력이 없는 졸업생>\n\n“학자금 지원구간 통지서” 발급이 불가능하므로 “학자금대출·장학금 신청증명서”로 지원구간 증빙 서류 대체\n\n※ 해당 서류 제출 시 10구간에 준하는 정부지원금 지급\n\n- 19 -",
+            "source_page_sha256": "7bcef16f9584b817a1bf89a03aea0dc4dd2de2ed42e34876a73e58a6a3177bfd",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      },
+      "english_scores": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 13,
+        "evidence": [
+          {
+            "search_keyword": "TOEIC",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "대한민국 국적 소지자로서 미국 비자 발급에 결격사유가 없고, 지원\n\n시점 기준 아래의 조건을 충족하는 자\n\n구분\n단기WEST (최장6개월)\n중기WEST (최장12개월)\n\n지원\n대상\n\nㆍ지원시점기준4년제대학4학기(전문대2학기) 이상이수한재·휴학생\nㆍ어학연수시작일기준* 최근1년이내졸업생(’25.8월/’26.2월졸업자)\n\n①TOEIC 800점이상또는\n\n①TOEIC 750점이상또는\n\nG-TELP Level2 76점이상\n\nG-TELP Level2 70점이상\n\n어학\n성적\n\n②OPIc IM2 이상또는\n\n②OPIc IM1 이상또는\n\nTOEIC Speaking IM2 이상또는\n\nTOEIC Speaking IM1 이상또는\n\nG-TELP Speaking Level6 이상\n\nG-TELP Speaking Level7 이상\n\n대학\n추천소속대학의지원자추천공문\n\n* J-1 비자규정상어학연수시작일기준1년이내졸업생이며, 어학연수시작일은\n현지중개기관별‧어학기관별상이(월드잡플러스공지사항현지중개기관정보확인)\n※ 어학성적은①, ②를모두충족하여야하며, 접수마감일기준유효기간(2년) 이내\n\n국내정기시험성적만인정/ OPIc 시험의경우대학연합OPIc 시험점수도인정\n\n나. 지원 제한\n\n◦ 복수 국적자 및 외국 소재",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "OPIc",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "ST (최장12개월)\n\n지원\n대상\n\nㆍ지원시점기준4년제대학4학기(전문대2학기) 이상이수한재·휴학생\nㆍ어학연수시작일기준* 최근1년이내졸업생(’25.8월/’26.2월졸업자)\n\n①TOEIC 800점이상또는\n\n①TOEIC 750점이상또는\n\nG-TELP Level2 76점이상\n\nG-TELP Level2 70점이상\n\n어학\n성적\n\n②OPIc IM2 이상또는\n\n②OPIc IM1 이상또는\n\nTOEIC Speaking IM2 이상또는\n\nTOEIC Speaking IM1 이상또는\n\nG-TELP Speaking Level6 이상\n\nG-TELP Speaking Level7 이상\n\n대학\n추천소속대학의지원자추천공문\n\n* J-1 비자규정상어학연수시작일기준1년이내졸업생이며, 어학연수시작일은\n현지중개기관별‧어학기관별상이(월드잡플러스공지사항현지중개기관정보확인)\n※ 어학성적은①, ②를모두충족하여야하며, 접수마감일기준유효기간(2년) 이내\n\n국내정기시험성적만인정/ OPIc 시험의경우대학연합OPIc 시험점수도인정\n\n나. 지원 제한\n\n◦ 복수 국적자 및 외국 소재 대학(교) 학생\n\n◦ WEST 프로그램 기 참가자\n\n◦ WEST 프로그램 기 지원자 중 참가비 납부 마감 이후 포기자\n\n- 2 -",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "G-TELP",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": ", 지원\n\n시점 기준 아래의 조건을 충족하는 자\n\n구분\n단기WEST (최장6개월)\n중기WEST (최장12개월)\n\n지원\n대상\n\nㆍ지원시점기준4년제대학4학기(전문대2학기) 이상이수한재·휴학생\nㆍ어학연수시작일기준* 최근1년이내졸업생(’25.8월/’26.2월졸업자)\n\n①TOEIC 800점이상또는\n\n①TOEIC 750점이상또는\n\nG-TELP Level2 76점이상\n\nG-TELP Level2 70점이상\n\n어학\n성적\n\n②OPIc IM2 이상또는\n\n②OPIc IM1 이상또는\n\nTOEIC Speaking IM2 이상또는\n\nTOEIC Speaking IM1 이상또는\n\nG-TELP Speaking Level6 이상\n\nG-TELP Speaking Level7 이상\n\n대학\n추천소속대학의지원자추천공문\n\n* J-1 비자규정상어학연수시작일기준1년이내졸업생이며, 어학연수시작일은\n현지중개기관별‧어학기관별상이(월드잡플러스공지사항현지중개기관정보확인)\n※ 어학성적은①, ②를모두충족하여야하며, 접수마감일기준유효기간(2년) 이내\n\n국내정기시험성적만인정/ OPIc 시험의경우대학연합OPIc 시험점수도인정\n\n나. 지원 제한\n\n◦ 복수 국적자 및 외국 소재 대학(교) 학생\n\n◦ WEST 프로그램 기 참가자\n\n◦ WE",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "TOEIC",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "하기⌟ 버튼을 누르고, 마이페이지에서 지원내역을 확인해 \n주시기 바랍니다.\n\n② 서류 제출\n\n◦구비서류(원본)를 소속 대학(국제교류 또는 취업 관련 부서)에 직접 제출\n\n※ 대학별신청마감일확인필요\n※ 제출서류: (공통) WEST 온라인지원서및자기소개서출력물, 재학(휴학/졸업)증명서,\n\n전학년성적증명서, 공인영어성적증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking,\nG-TELP Speaking), 취업취약계층증빙자료[붙임1] 참조)/ (졸업생) 지원구간증빙자료\n추가제출(③-2 및[붙임1]과[붙임4] 참조)\n\n< 유의사항 >\n\n1. 공인영어성적증명서 이외 모든 서류는 모집공고(2026.2.11.) 이후 발급분에 한하여 유효합니다.\n\n2. 어학점수는 접수마감일(2026.3.18.) 기준 2년 이내의 국내 정기시험 성적만 인정됩니다.\n\n3. 취업취약계층 ([붙임 1] 참조) 증빙자료가 누락된 경우 우대 적용을 받을 수 없습니다.\n\n4. 졸업생의 학자금지원구간 증빙 자료는 해당 서류를 확인하여 제출합니다. ([붙임 1] 참조)\n\n5. 편입생의 경우, 편입 전/후 성적을 WEST 프로그램 학점계산법에 의하여 산출합니다.\n\n구 분\n취득평점(GPA) \n총 이수",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "OPIc",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "누르고, 마이페이지에서 지원내역을 확인해 \n주시기 바랍니다.\n\n② 서류 제출\n\n◦구비서류(원본)를 소속 대학(국제교류 또는 취업 관련 부서)에 직접 제출\n\n※ 대학별신청마감일확인필요\n※ 제출서류: (공통) WEST 온라인지원서및자기소개서출력물, 재학(휴학/졸업)증명서,\n\n전학년성적증명서, 공인영어성적증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking,\nG-TELP Speaking), 취업취약계층증빙자료[붙임1] 참조)/ (졸업생) 지원구간증빙자료\n추가제출(③-2 및[붙임1]과[붙임4] 참조)\n\n< 유의사항 >\n\n1. 공인영어성적증명서 이외 모든 서류는 모집공고(2026.2.11.) 이후 발급분에 한하여 유효합니다.\n\n2. 어학점수는 접수마감일(2026.3.18.) 기준 2년 이내의 국내 정기시험 성적만 인정됩니다.\n\n3. 취업취약계층 ([붙임 1] 참조) 증빙자료가 누락된 경우 우대 적용을 받을 수 없습니다.\n\n4. 졸업생의 학자금지원구간 증빙 자료는 해당 서류를 확인하여 제출합니다. ([붙임 1] 참조)\n\n5. 편입생의 경우, 편입 전/후 성적을 WEST 프로그램 학점계산법에 의하여 산출합니다.\n\n구 분\n취득평점(GPA) \n총 이수학점 \n평점",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "G-TELP",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "마이페이지에서 지원내역을 확인해 \n주시기 바랍니다.\n\n② 서류 제출\n\n◦구비서류(원본)를 소속 대학(국제교류 또는 취업 관련 부서)에 직접 제출\n\n※ 대학별신청마감일확인필요\n※ 제출서류: (공통) WEST 온라인지원서및자기소개서출력물, 재학(휴학/졸업)증명서,\n\n전학년성적증명서, 공인영어성적증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking,\nG-TELP Speaking), 취업취약계층증빙자료[붙임1] 참조)/ (졸업생) 지원구간증빙자료\n추가제출(③-2 및[붙임1]과[붙임4] 참조)\n\n< 유의사항 >\n\n1. 공인영어성적증명서 이외 모든 서류는 모집공고(2026.2.11.) 이후 발급분에 한하여 유효합니다.\n\n2. 어학점수는 접수마감일(2026.3.18.) 기준 2년 이내의 국내 정기시험 성적만 인정됩니다.\n\n3. 취업취약계층 ([붙임 1] 참조) 증빙자료가 누락된 경우 우대 적용을 받을 수 없습니다.\n\n4. 졸업생의 학자금지원구간 증빙 자료는 해당 서류를 확인하여 제출합니다. ([붙임 1] 참조)\n\n5. 편입생의 경우, 편입 전/후 성적을 WEST 프로그램 학점계산법에 의하여 산출합니다.\n\n구 분\n취득평점(GPA) \n총 이수학점 \n평점 만점 \n 전적",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "G-TELP",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 12,
+            "side": "right",
+            "source_excerpt": "재학생으로 분류되는 경우 학년을 어떻게 입력하면 되나요?\n\nA11. 실제 학년을 입력하시면 됩니다. (ex. 3학년, 6학년 등)\n\nQ12. 어학점수 기재 시 등록번호는 무엇인가요?\n\nA12. 성적표의 Registration Number(토익 및 토익스피킹, 6자리), Test ID(오픽, 12자리), 혹은\n\n수험번호(G-TELP 11자리, G-TELP 스피킹 8자리)를 의미합니다. 어학시험별 등록번호 확인\n\n방법은 FAQ 하단의 [붙임5]를 참고하시기 바랍니다.\n\nQ13. 미국 현지중개기관(SPONSOR)이 무엇인가요?\n\nA13. 미국 국무부에서 지정한 미국 소재의 현지중개기관(SPONSOR)은 참가자들의 J-1 비자*\n\n발급을 지원하고, 비자 상태를 관리하는 기관입니다. 또한 참가자들에게 프로그램 기간 중\n\n어학연수기관과의 연계를 통해 어학연수를 제공하고, 인턴십 배치를 담당합니다.\n\n* 미국을 문화교류 목적으로 방문하는 교환 방문자용 비자로, WEST 참가자는 해당 비자 발급\n\nQ14. 미국 현지중개기관 선택은 어떻게 해야 하나요? 선택한 곳으로 배정되나요?\n\nA14. 월드잡플러스 누리집 해외인턴(WEST) 공지사항에 게시된 ‘현지중개기관별 정보‘ 중 인턴십",
+            "source_page_sha256": "3dde2f122a8bc344072b3447160e1e994e8b790bcbbe0a38143b1d10749db309",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "TOEIC",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "육원에 공문으로 추천 명단을 송부합니다. 서류 제출 방법 및 제출 마감일은\n\n소속대학에 문의하시기 바랍니다. (대학별 추천 인원의 제한은 없음)\n\nQ19. 학교에는 어떤 서류를 제출해야 하나요?\n\nA19. WEST 온라인지원서 출력물(자기소개서 포함), 재학(졸업/휴학)증명서, 전 학년 성적증명서,\n\n공인영어성적 증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking, G-TELP Speaking), 취업취약\n\n계층 증빙자료(해당자에 한하며, 선발공고문 [붙임1] 확인 요망), 지원구간 증빙자료(졸\n\n업생에 한하며, 선발공고문 [붙임1] 확인 요망)이며 공인영어성적 증명서는 반드시 공고\n\n문의 기준요건을 확인하여 유효한 성적을 제출해야 합니다.\n\n- 13 -",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "OPIc",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "로 추천 명단을 송부합니다. 서류 제출 방법 및 제출 마감일은\n\n소속대학에 문의하시기 바랍니다. (대학별 추천 인원의 제한은 없음)\n\nQ19. 학교에는 어떤 서류를 제출해야 하나요?\n\nA19. WEST 온라인지원서 출력물(자기소개서 포함), 재학(졸업/휴학)증명서, 전 학년 성적증명서,\n\n공인영어성적 증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking, G-TELP Speaking), 취업취약\n\n계층 증빙자료(해당자에 한하며, 선발공고문 [붙임1] 확인 요망), 지원구간 증빙자료(졸\n\n업생에 한하며, 선발공고문 [붙임1] 확인 요망)이며 공인영어성적 증명서는 반드시 공고\n\n문의 기준요건을 확인하여 유효한 성적을 제출해야 합니다.\n\n- 13 -",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "G-TELP",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "단을 송부합니다. 서류 제출 방법 및 제출 마감일은\n\n소속대학에 문의하시기 바랍니다. (대학별 추천 인원의 제한은 없음)\n\nQ19. 학교에는 어떤 서류를 제출해야 하나요?\n\nA19. WEST 온라인지원서 출력물(자기소개서 포함), 재학(졸업/휴학)증명서, 전 학년 성적증명서,\n\n공인영어성적 증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking, G-TELP Speaking), 취업취약\n\n계층 증빙자료(해당자에 한하며, 선발공고문 [붙임1] 확인 요망), 지원구간 증빙자료(졸\n\n업생에 한하며, 선발공고문 [붙임1] 확인 요망)이며 공인영어성적 증명서는 반드시 공고\n\n문의 기준요건을 확인하여 유효한 성적을 제출해야 합니다.\n\n- 13 -",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "TOEIC",
+            "physical_pdf_page": 10,
+            "logical_page_candidate": 20,
+            "side": "right",
+            "source_excerpt": "붙임5\n 어학시험별 등록번호 식별 안내\n\n< TOEIC & TOEIC Speaking >\n\n등록 번호는 성적표 내 숫자 6자리로 구성된 ‘Registration Number’를 의미하며, 아래 이미지\n\n내 분홍색 상자 표시를 참고\n\n<참고> TOEIC Speaking 점수 ACTFL 등급 환산표\n\n<TOEIC Speaking ACTFL 등급 표기 관련>\n\n-월드잡플러스 온라인 지원 시 TOEIC Speaking\n\n점수는 파란색 상자에 표시된 200점 만점의\n\n정확한 숫자 점수로 입력\n\n- 20 -",
+            "source_page_sha256": "a66bd1a57826404b00ea5d87f05cc3c2b92a15ce221e0f9ca0809aa327189f31",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "OPIc",
+            "physical_pdf_page": 11,
+            "logical_page_candidate": 21,
+            "side": "left",
+            "source_excerpt": "< OPIc >\n\n등록번호는 성적표 내 12자리(숫자 1자리, 알파벳 대문자 1자리와 숫자 10자리 순서로 구성)의\n\n‘Test ID’를 의미하며, 아래 이미지 내 분홍색 상자 표시를 참고\n\n- 21 -",
+            "source_page_sha256": "c062e3724f75b74dfcfb3050da542398a6870283de1a4a3b5af050139fe887f4",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "G-TELP",
+            "physical_pdf_page": 11,
+            "logical_page_candidate": 22,
+            "side": "right",
+            "source_excerpt": "< G-TELP >\n\n< G-TELP Speaking>\n\n등록번호는 성적표 내 국문 성함 아래에 기재된 총 11자리의\n\n등록번호는 ‘수험번호’를 의미\n\n숫자(앞 4자리+뒷 7자리)로 구성된 ‘수험번호’를 의미하며, 아래\n\n하며, 성적표에 별도 기재되어\n\n이미지 내 분홍색 상자 표시를 참고\n\n있지 않기 때문에 G-TELP　누\n\n리집 내 해당 시험 접수 정보\n\n에서 확인 가능.\n\n수험번호는 총 8자리(알파벳\n\ns+숫자 7개)로 구성\n\n- 22 -",
+            "source_page_sha256": "e9ef153d7f7df312506cf33907d2e9fbfcd351c24f31be439dac3950f3230bc4",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      },
+      "restrictions": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 4,
+        "evidence": [
+          {
+            "search_keyword": "지원 제한",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "천소속대학의지원자추천공문\n\n* J-1 비자규정상어학연수시작일기준1년이내졸업생이며, 어학연수시작일은\n현지중개기관별‧어학기관별상이(월드잡플러스공지사항현지중개기관정보확인)\n※ 어학성적은①, ②를모두충족하여야하며, 접수마감일기준유효기간(2년) 이내\n\n국내정기시험성적만인정/ OPIc 시험의경우대학연합OPIc 시험점수도인정\n\n나. 지원 제한\n\n◦ 복수 국적자 및 외국 소재 대학(교) 학생\n\n◦ WEST 프로그램 기 참가자\n\n◦ WEST 프로그램 기 지원자 중 참가비 납부 마감 이후 포기자\n\n- 2 -",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "복수 국적자",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "추천공문\n\n* J-1 비자규정상어학연수시작일기준1년이내졸업생이며, 어학연수시작일은\n현지중개기관별‧어학기관별상이(월드잡플러스공지사항현지중개기관정보확인)\n※ 어학성적은①, ②를모두충족하여야하며, 접수마감일기준유효기간(2년) 이내\n\n국내정기시험성적만인정/ OPIc 시험의경우대학연합OPIc 시험점수도인정\n\n나. 지원 제한\n\n◦ 복수 국적자 및 외국 소재 대학(교) 학생\n\n◦ WEST 프로그램 기 참가자\n\n◦ WEST 프로그램 기 지원자 중 참가비 납부 마감 이후 포기자\n\n- 2 -",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원 제한",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 11,
+            "side": "left",
+            "source_excerpt": "등)에게 문의하여 주시기 바랍니다. 제도상으로는\n\n학점 인정 여부와 상관없이 WEST에 지원이 가능합니다.\n\nQ5. 이전에 다른 정부재정지원을 받는 프로그램이나 “정부해외인턴사업”에 참여한 경우에도\n\nWEST 프로그램 지원이 가능한가요?\n\nA5. “정부재정지원 직접 일자리 사업” 및 타 “정부해외인턴사업” 참여자에 대한 지원 제한이 없기\n\n때문에 WEST 프로그램을 제외한 기타 프로그램의 참여자는 지원 가능합니다.\n\n※  WEST 기참가자 및 참가비 납부 마감 이후 포기자는 지원이 불가합니다.\n\n- 11 -",
+            "source_page_sha256": "0ecfc49dd72930de2508722d6473835cabed3147f8bd6296dd51f19d344dc1cc",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원 제한",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 12,
+            "side": "right",
+            "source_excerpt": "Q6. 워크넷에서 일자리 사업 참여 이력을 확인했는데, WEST 프로그램 지원이 가능한가요?\n\nA6. 네, 지원 가능합니다. 일자리 사업 기 참가자에 대한 지원 제한은 없습니다.\n\nQ7. 취업성공패키지에 참여 중인데 WEST 지원이 가능하나요?\n\nA7. 취업성공패키지 참여자의 경우 WEST 지원이 가능하지만, WEST 수료 후 취업성공패키지\n\n재참여가 불가능할 수 있습니다. 단계별로 조건이 다를 수 있으니 자세한 사항은 반드시\n\n취업성공패키지 담당자와 상의하시기 바랍니다.\n\n2. 온라인 지원서 작성 단계\n\nQ8. 영문이름 작성 시 유의사항이 있나요?\n\nA8. 성(Surname)-이름(Given name) 순서로, 반드시 영문철자, 띄어쓰기 칸 수와 영문 이름 내 하이픈(-) 여부\n\n등 모든 내용을 여권과 동일하게 맞추어 모두 대문자로 작성해 주시기 바랍니다(예. HONG GILDONG).\n\n※ 합격 후 비자 인터뷰에 필요한 서류 발급 시 지원서 상의 이름으로 발급\n\nQ9. 학교 성적은 어느 기간의 성적을",
+            "source_page_sha256": "3dde2f122a8bc344072b3447160e1e994e8b790bcbbe0a38143b1d10749db309",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      }
+    },
+    "documents": {
+      "application_documents": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 10,
+        "evidence": [
+          {
+            "search_keyword": "성적증명서",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 3,
+            "side": "left",
+            "source_excerpt": "적 등 자격 요건 확인\n   ※ 확인 필: 재외국민 특별전형 여부, 취업취약계층 증빙자료 제출여부,\n               졸업생 지원구간 증빙자료 제출여부\n\n소속\n대학\n\n- 공문발송: 자격 요건을 충족한 학생을 지원대상자로 추천\n   ※ 첨부 필: 취업취약계층 증빙자료, 졸업생 지원구간 증빙자료, 편입생 전·현적대 성적증명서\n\n- 3 -",
+            "source_page_sha256": "731dc9a92316644330756f9928351a65219f580cf670425012918191176a5d4b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "자기소개서",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "① 온라인 지원 : 월드잡플러스 누리집(www.worldjob.or.kr)에서 온라인지원서등 작성․제출\n\n※ 지원서류: WEST 온라인지원서및자기소개서(양식은온라인지원시확인가능),\n\n개인정보동의서(공지·문의> 공지사항> 해외인턴(WEST)공지사항> 모집공고문> (왼쪽\n상단) 첨부파일양식다운로드> 출력후자필서명> 스캔본파일업로드)\n\n< 유의사항 >\n\n1. 온라인 지원 시, 개인 정보, 학점, 공인영어성적 점수, 시험일자 등에 오류가 있는 경우, 서류 \n부적격자로 분류될 수 있으므로 본인 기재사항은 대학제출 증빙서류와 일치하도록 확인 후 \n기재하여 주시기 바랍니다. (기재 오류에 의한 모든 책임은 참가자 본인에게 있음)\n\n2. 영문이름은 여권과 동일하게(대문자/성, 이름 순) 기재하고, 지원서에 기재된 이메일, 전화 \n등의 연락처로 WEST 프로그램 관련사항이 공지됩니다. 선발 기간 중 변경이 어려우니 \n향후에도 사용할 연락처를 기재하시기 바랍니다.\n\n※ 현지중개기관 면접 등 해외에서 이메일",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "개인정보동의서",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "① 온라인 지원 : 월드잡플러스 누리집(www.worldjob.or.kr)에서 온라인지원서등 작성․제출\n\n※ 지원서류: WEST 온라인지원서및자기소개서(양식은온라인지원시확인가능),\n\n개인정보동의서(공지·문의> 공지사항> 해외인턴(WEST)공지사항> 모집공고문> (왼쪽\n상단) 첨부파일양식다운로드> 출력후자필서명> 스캔본파일업로드)\n\n< 유의사항 >\n\n1. 온라인 지원 시, 개인 정보, 학점, 공인영어성적 점수, 시험일자 등에 오류가 있는 경우, 서류 \n부적격자로 분류될 수 있으므로 본인 기재사항은 대학제출 증빙서류와 일치하도록 확인 후 \n기재하여 주시기 바랍니다. (기재 오류에 의한 모든 책임은 참가자 본인에게 있음)\n\n2. 영문이름은 여권과 동일하게(대문자/성, 이름 순) 기재하고, 지원서에 기재된 이메일, 전화 \n등의 연락처로 WEST 프로그램 관련사항이 공지됩니다. 선발 기간 중 변경이 어려우니 \n향후에도 사용할 연락처를 기재하시기 바랍니다.\n\n※ 현지중개기관 면접 등 해외에서 이메일 발송 시 누락의 우려가 있으므로, 본인 이름",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "성적증명서",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "온라인 지원서 작성 후 ⌜지원하기⌟ 버튼을 누르고, 마이페이지에서 지원내역을 확인해 \n주시기 바랍니다.\n\n② 서류 제출\n\n◦구비서류(원본)를 소속 대학(국제교류 또는 취업 관련 부서)에 직접 제출\n\n※ 대학별신청마감일확인필요\n※ 제출서류: (공통) WEST 온라인지원서및자기소개서출력물, 재학(휴학/졸업)증명서,\n\n전학년성적증명서, 공인영어성적증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking,\nG-TELP Speaking), 취업취약계층증빙자료[붙임1] 참조)/ (졸업생) 지원구간증빙자료\n추가제출(③-2 및[붙임1]과[붙임4] 참조)\n\n< 유의사항 >\n\n1. 공인영어성적증명서 이외 모든 서류는 모집공고(2026.2.11.) 이후 발급분에 한하여 유효합니다.\n\n2. 어학점수는 접수마감일(2026.3.18.) 기준 2년 이내의 국내 정기시험 성적만 인정됩니다.\n\n3. 취업취약계층 ([붙임 1] 참조) 증빙자료가 누락된 경우 우대 적용을 받을 수 없습니다.\n\n4. 졸업생의 학자금지원구간 증빙 자료는 해당 서류를 확인하여 제출합니다. ([붙임 1] 참조)\n\n5. 편입생의 경우, 편입 전/후 성적을 WEST 프로그램 학점계산법에 의하여 산출합니다.\n\n구",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "공인영어성적",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": ")에서 온라인지원서등 작성․제출\n\n※ 지원서류: WEST 온라인지원서및자기소개서(양식은온라인지원시확인가능),\n\n개인정보동의서(공지·문의> 공지사항> 해외인턴(WEST)공지사항> 모집공고문> (왼쪽\n상단) 첨부파일양식다운로드> 출력후자필서명> 스캔본파일업로드)\n\n< 유의사항 >\n\n1. 온라인 지원 시, 개인 정보, 학점, 공인영어성적 점수, 시험일자 등에 오류가 있는 경우, 서류 \n부적격자로 분류될 수 있으므로 본인 기재사항은 대학제출 증빙서류와 일치하도록 확인 후 \n기재하여 주시기 바랍니다. (기재 오류에 의한 모든 책임은 참가자 본인에게 있음)\n\n2. 영문이름은 여권과 동일하게(대문자/성, 이름 순) 기재하고, 지원서에 기재된 이메일, 전화 \n등의 연락처로 WEST 프로그램 관련사항이 공지됩니다. 선발 기간 중 변경이 어려우니 \n향후에도 사용할 연락처를 기재하시기 바랍니다.\n\n※ 현지중개기관 면접 등 해외에서 이메일 발송 시 누락의 우려가 있으므로, 본인 이름\n\n이니셜이 포함된 Gmail 계정을 사용하실 것을 권장합니다.\n\n3. 온라인 지원 당시 받은 지원자 접수번호는 지속적으로 사용하게 됩니다.\n\n4. ‘재외국민 특별전형’으로 대학에 입학한 자는 반드시 해당 여부에",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "자기소개서",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 11,
+            "side": "left",
+            "source_excerpt": "인 지원 및 소속대학에 동일한 성적표 제출 필수).\n\n따라서 마감일 이후의 어학성적은 인정 및 제출이 불가합니다. 또한 모집공고문에 명시된\n\n시험성적만 인정합니다.\n\nQ2. 서류전형 심사 과정이 어떻게 되나요?\n\nA2. WEST 참여 이력 조회, 어학성적 일치 여부 등 참가제한(결격사유) 해당 여부를 확인하며,\n\n지원서(자기소개서), 영어성적, 학점을 종합적으로 평가합니다(학점 제한은 없지만 서류심사 시\n\n반영). 자기소개서에서는 프로그램에 대한 이해도 및 목표의식, 내용의 충실성 등을 중점으\n\n로 평가하며, 내용이 극히 불성실한 경우 선발에서 제외될 수 있습니다.\n\n그 외 우대비율 및 심사 반영 비율은 공개하기 어려운 점 양해 바랍니다.\n\nQ3. 지원 자격(대상) 중, 최근 1년 이내의 졸업생 기준은 어떻게 되나요?\n\nA3. 본 프로그램의 어학연수 시작일이 기준이 됩니다. 현지중개기관 및 어학연수 기관별로 어학\n\n연수 시작일이 다르므로 지원 프로그램의 어학연수 시작일을 확인한 후 지원해주시기 바랍니다.\n\n어학연수 시작일은 월드잡플러스(www.worldjob.or.kr) 공지사항에 게시 예정입니다.\n\n(예시) 2026년 상반기 선발은 어학연수 시작일(’26년 8월)을",
+            "source_page_sha256": "0ecfc49dd72930de2508722d6473835cabed3147f8bd6296dd51f19d344dc1cc",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "자기소개서",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "그러나 마감일 이후에는 수정이\n\n불가능하므로, 공지사항을 상세하게 살펴보신 후 제출하시기 바랍니다.\n\n※ [월드잡플러스-마이페이지-인턴지원현황]에서 ‘취소’ 버튼을 눌러 수정 및 저장 후, 제출\n\n버튼을 누르고, ‘지원일자’가 나오는지 확인하시기 바랍니다.\n\n3. 서류 제출 단계\n\nQ17. 온라인 지원 시 온라인 지원서(자기소개서 포함), 개인정보동의서 외에도 취득한 자격증\n\n서류를 제출해야 되나요?\n\nA17. 월드잡 사이트에서 온라인 지원서(자기소개서 포함)와 개인정보동의서만 제출하시면 됩니다.\n\n자격증 관련 서류는 제출할 필요가 없습니다.\n\nQ18. 학교 추천을 어떻게 받나요?\n\nA18. 소속(출신) 대학 관련 부서에 어학증명서 등의 제반서류를 제출하시면 담당 부서에서 이를\n\n검토 후 국립국제교육원에 공문으로 추천 명단을 송부합니다. 서류 제출 방법 및 제출 마감일은\n\n소속대학에 문의하시기 바랍니다. (대학별 추천 인원의 제한은 없음)\n\nQ19. 학교에는 어떤 서류를 제출해야 하나요?\n\nA19. WEST 온라인지원서 출력물(자기소개서 포함), 재학(졸업/휴학)증명서, 전 학년 성적증명서,\n\n공인영어성적 증명서(TOEIC, OPIc, G-TELP, TOEIC Spe",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "개인정보동의서",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "는 수정이\n\n불가능하므로, 공지사항을 상세하게 살펴보신 후 제출하시기 바랍니다.\n\n※ [월드잡플러스-마이페이지-인턴지원현황]에서 ‘취소’ 버튼을 눌러 수정 및 저장 후, 제출\n\n버튼을 누르고, ‘지원일자’가 나오는지 확인하시기 바랍니다.\n\n3. 서류 제출 단계\n\nQ17. 온라인 지원 시 온라인 지원서(자기소개서 포함), 개인정보동의서 외에도 취득한 자격증\n\n서류를 제출해야 되나요?\n\nA17. 월드잡 사이트에서 온라인 지원서(자기소개서 포함)와 개인정보동의서만 제출하시면 됩니다.\n\n자격증 관련 서류는 제출할 필요가 없습니다.\n\nQ18. 학교 추천을 어떻게 받나요?\n\nA18. 소속(출신) 대학 관련 부서에 어학증명서 등의 제반서류를 제출하시면 담당 부서에서 이를\n\n검토 후 국립국제교육원에 공문으로 추천 명단을 송부합니다. 서류 제출 방법 및 제출 마감일은\n\n소속대학에 문의하시기 바랍니다. (대학별 추천 인원의 제한은 없음)\n\nQ19. 학교에는 어떤 서류를 제출해야 하나요?\n\nA19. WEST 온라인지원서 출력물(자기소개서 포함), 재학(졸업/휴학)증명서, 전 학년 성적증명서,\n\n공인영어성적 증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking, G-TELP",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "성적증명서",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "부서에서 이를\n\n검토 후 국립국제교육원에 공문으로 추천 명단을 송부합니다. 서류 제출 방법 및 제출 마감일은\n\n소속대학에 문의하시기 바랍니다. (대학별 추천 인원의 제한은 없음)\n\nQ19. 학교에는 어떤 서류를 제출해야 하나요?\n\nA19. WEST 온라인지원서 출력물(자기소개서 포함), 재학(졸업/휴학)증명서, 전 학년 성적증명서,\n\n공인영어성적 증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking, G-TELP Speaking), 취업취약\n\n계층 증빙자료(해당자에 한하며, 선발공고문 [붙임1] 확인 요망), 지원구간 증빙자료(졸\n\n업생에 한하며, 선발공고문 [붙임1] 확인 요망)이며 공인영어성적 증명서는 반드시 공고\n\n문의 기준요건을 확인하여 유효한 성적을 제출해야 합니다.\n\n- 13 -",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "공인영어성적",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "검토 후 국립국제교육원에 공문으로 추천 명단을 송부합니다. 서류 제출 방법 및 제출 마감일은\n\n소속대학에 문의하시기 바랍니다. (대학별 추천 인원의 제한은 없음)\n\nQ19. 학교에는 어떤 서류를 제출해야 하나요?\n\nA19. WEST 온라인지원서 출력물(자기소개서 포함), 재학(졸업/휴학)증명서, 전 학년 성적증명서,\n\n공인영어성적 증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking, G-TELP Speaking), 취업취약\n\n계층 증빙자료(해당자에 한하며, 선발공고문 [붙임1] 확인 요망), 지원구간 증빙자료(졸\n\n업생에 한하며, 선발공고문 [붙임1] 확인 요망)이며 공인영어성적 증명서는 반드시 공고\n\n문의 기준요건을 확인하여 유효한 성적을 제출해야 합니다.\n\n- 13 -",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      },
+      "university_recommendation": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 9,
+        "evidence": [
+          {
+            "search_keyword": "추천 공문",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "상\n\nG-TELP Level2 70점이상\n\n어학\n성적\n\n②OPIc IM2 이상또는\n\n②OPIc IM1 이상또는\n\nTOEIC Speaking IM2 이상또는\n\nTOEIC Speaking IM1 이상또는\n\nG-TELP Speaking Level6 이상\n\nG-TELP Speaking Level7 이상\n\n대학\n추천소속대학의지원자추천공문\n\n* J-1 비자규정상어학연수시작일기준1년이내졸업생이며, 어학연수시작일은\n현지중개기관별‧어학기관별상이(월드잡플러스공지사항현지중개기관정보확인)\n※ 어학성적은①, ②를모두충족하여야하며, 접수마감일기준유효기간(2년) 이내\n\n국내정기시험성적만인정/ OPIc 시험의경우대학연합OPIc 시험점수도인정\n\n나. 지원 제한\n\n◦ 복수 국적자 및 외국 소재 대학(교) 학생\n\n◦ WEST 프로그램 기 참가자\n\n◦ WEST 프로그램 기 지원자 중 참가비 납부 마감 이후 포기자\n\n- 2 -",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "소속 대학",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "el2 76점이상\n\nG-TELP Level2 70점이상\n\n어학\n성적\n\n②OPIc IM2 이상또는\n\n②OPIc IM1 이상또는\n\nTOEIC Speaking IM2 이상또는\n\nTOEIC Speaking IM1 이상또는\n\nG-TELP Speaking Level6 이상\n\nG-TELP Speaking Level7 이상\n\n대학\n추천소속대학의지원자추천공문\n\n* J-1 비자규정상어학연수시작일기준1년이내졸업생이며, 어학연수시작일은\n현지중개기관별‧어학기관별상이(월드잡플러스공지사항현지중개기관정보확인)\n※ 어학성적은①, ②를모두충족하여야하며, 접수마감일기준유효기간(2년) 이내\n\n국내정기시험성적만인정/ OPIc 시험의경우대학연합OPIc 시험점수도인정\n\n나. 지원 제한\n\n◦ 복수 국적자 및 외국 소재 대학(교) 학생\n\n◦ WEST 프로그램 기 참가자\n\n◦ WEST 프로그램 기 지원자 중 참가비 납부 마감 이후 포기자\n\n- 2 -",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "추천 공문",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 3,
+            "side": "left",
+            "source_excerpt": ". 신청 기간 : ’26. 2. 11.(수) ~ 3. 18.(수) 17:00\n※ 이후에는제출불가\n다. 신청 절차 <유의> 아래 과정을 모두 충족하여야 지원 신청이 완료됨\n\n❏ 지원자 신청 절차\n\n※ 휴학생, 초과학기자, 수료자, 졸업유예자 포함\n\n재학생\n\n졸업생\n\n❏ 소속 대학 참가자 추천 (공통)\n\n▪참가자 추천\n - 추천 공문 발송 기간: ‘26.3.19.(목)~3.23.(월) ※ 추천 마감일은 대학에서 결정\n - 서류심사: 학년, 영어성적 등 자격 요건 확인\n   ※ 확인 필: 재외국민 특별전형 여부, 취업취약계층 증빙자료 제출여부,\n               졸업생 지원구간 증빙자료 제출여부\n\n소속\n대학\n\n- 공문발송: 자격 요건을 충족한 학생을 지원대상자로 추천\n   ※ 첨부 필: 취업취약계층 증빙자료, 졸업생 지원구간 증빙자료, 편입생 전·현적대 성적증명서\n\n- 3 -",
+            "source_page_sha256": "731dc9a92316644330756f9928351a65219f580cf670425012918191176a5d4b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "소속 대학",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 3,
+            "side": "left",
+            "source_excerpt": "절차\n\n가. 공 고일 : ’26. 2. 11.(수)\n나. 신청 기간 : ’26. 2. 11.(수) ~ 3. 18.(수) 17:00\n※ 이후에는제출불가\n다. 신청 절차 <유의> 아래 과정을 모두 충족하여야 지원 신청이 완료됨\n\n❏ 지원자 신청 절차\n\n※ 휴학생, 초과학기자, 수료자, 졸업유예자 포함\n\n재학생\n\n졸업생\n\n❏ 소속 대학 참가자 추천 (공통)\n\n▪참가자 추천\n - 추천 공문 발송 기간: ‘26.3.19.(목)~3.23.(월) ※ 추천 마감일은 대학에서 결정\n - 서류심사: 학년, 영어성적 등 자격 요건 확인\n   ※ 확인 필: 재외국민 특별전형 여부, 취업취약계층 증빙자료 제출여부,\n               졸업생 지원구간 증빙자료 제출여부\n\n소속\n대학\n\n- 공문발송: 자격 요건을 충족한 학생을 지원대상자로 추천\n   ※ 첨부 필: 취업취약계층 증빙자료, 졸업생 지원구간 증빙자료, 편입생 전·현적대 성적증명서\n\n- 3 -",
+            "source_page_sha256": "731dc9a92316644330756f9928351a65219f580cf670425012918191176a5d4b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "소속 대학",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "약계층’의 경우 해당여부(기초/차상위/장애인/다문화가족/북향민)를 반드시 체크해 주시\n기 바랍니다. 취업취약계층은 서류전형에서 우대되며, 누락 시 우대 대상에서 제외됩니다.\n\n6. 온라인 지원서 작성 후 ⌜지원하기⌟ 버튼을 누르고, 마이페이지에서 지원내역을 확인해 \n주시기 바랍니다.\n\n② 서류 제출\n\n◦구비서류(원본)를 소속 대학(국제교류 또는 취업 관련 부서)에 직접 제출\n\n※ 대학별신청마감일확인필요\n※ 제출서류: (공통) WEST 온라인지원서및자기소개서출력물, 재학(휴학/졸업)증명서,\n\n전학년성적증명서, 공인영어성적증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking,\nG-TELP Speaking), 취업취약계층증빙자료[붙임1] 참조)/ (졸업생) 지원구간증빙자료\n추가제출(③-2 및[붙임1]과[붙임4] 참조)\n\n< 유의사항 >\n\n1. 공인영어성적증명서 이외 모든 서류는 모집공고(2026.2.11.) 이후 발급분에 한하여 유효합니다.\n\n2. 어학점수는 접수마감일(2026.3.18.) 기준 2년 이내의 국내 정기시험 성적만 인정됩니다.\n\n3. 취업취약계층 ([붙임 1] 참조) 증빙자료가 누락된 경우 우대 적용을 받을 수 없습니다.\n\n4. 졸업생의 학",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "소속 대학",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 5,
+            "side": "left",
+            "source_excerpt": "제출 서류 생략)\n\n3. ‘재외국민 특별전형’으로 대학에 입학한 자는 반드시 해당 여부에 체크하여 주시기 바랍니다. \n누락 시 학자금 지원구간과 상관없이 10구간에 준하여 정부지원금이 지급됩니다.\n\n4. 자세한 신청방법 및 구비서류는 한국장학재단 누리집을 참고하시기 바랍니다.\n\n③-2. 졸업생: 학자금지원구간 확인 서류 소속 대학에 제출 ([붙임1] 참조)\n\n㉮ 기초생활수급자 및 차상위계층: 수급자 증명서 또는 확인서 (본인 명의로 발급)\n\n㉯ 그 외 졸업생: 학자금 지원구간 통지서\n\n㉰ ㉮, ㉯ 모두 발급이 불가한 경우*: 학자금대출‧장학금 신청증명서(신청 내역 없음 확인용)\n\n* 재학 중 국가장학금 신청 이력이 없어 학자금 지원구간 통지서 발급이 불가한 경우 ([붙임4] 참조)\n\n※ 한국장학재단 누리집 > 장학금 > 증명서 발급 > 신청증명서 발급 (제출처: 국립국제교육원/ 발급 용도: WEST 프로그램 지원)\n\n- 5 -",
+            "source_page_sha256": "705f4184a278d8d5628ba97197df846c5f7db38f2ae3cd36d9d58d145cc73f9f",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "추천 공문",
+            "physical_pdf_page": 5,
+            "logical_page_candidate": 10,
+            "side": "right",
+            "source_excerpt": "붙임 2\n 2026년 상반기 선발 일정\n\n일 정\n추진 내용\n\n’26. 2.11.(수)∼3.18.(수) 17시▪ 참가신청서 접수(온라인/ 월드잡플러스홈페이지)\n\n3.19.(목)∼3.23.(월)\n▪ 대학 추천 공문 접수\n\n3.19.(목)∼5.14.(목)\n▪ 학자금 지원구간 확인\n\n4.9.(목), 16:00\n▪ 서류 합격자 발표\n\n4.18.(토) / 4.19.(일)\n▪ 1차 면접 <국립국제교육원 인성 면접>\n   - 4.18.(토): 단기, 4.19.(일): 중기\n\n4.23.(목), 16:00\n▪ 1차 면접 합격자 발표\n\n4.24.(금)∼5.12.(화)\n▪ 2차 면접 <현지중개기관 영어 면접>\n\n5.21.(목), 16:00\n▪ 최종합격자 발표\n\n5.22.(금)∼5.29.(금)\n▪ 참가비 납부\n\n6.1.(월)∼6.4.(목)\n▪ 추가합격자 발표 및 참가비 납부\n\n6.25.(목)\n▪ 출국전 참가자 사전연수\n\n7.6.(월)~7.7.(화)\n▪ 비자 인터뷰(주한미국대사관)\n\n※ 비자 인터뷰 신청 시 비자 발급비($185) 개별 납부\n\n7월～\n▪ 미국 출국(개별)",
+            "source_page_sha256": "d98dfdc5530c40d673e2e0be6b10a60c5b7556c339e8185454358601eed63fe5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "소속 대학",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 11,
+            "side": "left",
+            "source_excerpt": "그램 관련 FAQ\n\n1. 지원 단계\n\nQ1. 공인 어학성적 점수가 조금 부족합니다. 지원서 마감 후 제출 가능한가요? 토플, 아이엘츠 등\n\n다른 성적도 인정 가능한가요?\n\nA1. 지원 자격 요건보다 어학성적이 미달될 경우 지원이 불가하며, 어학성적 결과도 접수 마감일\n\n내에 유효한 성적을 제출해야 합니다(온라인 지원 및 소속대학에 동일한 성적표 제출 필수).\n\n따라서 마감일 이후의 어학성적은 인정 및 제출이 불가합니다. 또한 모집공고문에 명시된\n\n시험성적만 인정합니다.\n\nQ2. 서류전형 심사 과정이 어떻게 되나요?\n\nA2. WEST 참여 이력 조회, 어학성적 일치 여부 등 참가제한(결격사유) 해당 여부를 확인하며,\n\n지원서(자기소개서), 영어성적, 학점을 종합적으로 평가합니다(학점 제한은 없지만 서류심사 시\n\n반영). 자기소개서에서는 프로그램에 대한 이해도 및 목표의식, 내용의 충실성 등을 중점으\n\n로 평가하며, 내용이 극히 불성실한 경우 선발에서 제외될 수 있습니다.\n\n그 외 우대비율 및 심사 반영 비율은 공개하기 어려운 점 양해 바랍니다.\n\nQ3. 지원 자격(대상) 중, 최근 1년 이내의 졸업생 기준은 어떻게 되나요?\n\nA3. 본 프로그램의 어학연수 시작일이 기",
+            "source_page_sha256": "0ecfc49dd72930de2508722d6473835cabed3147f8bd6296dd51f19d344dc1cc",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "소속 대학",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "Q15. 재외국민전형 입학 여부를 잘못 선택하였을 경우 불이익이 있나요?\n\nA15. 2017년부터 지원구간 조회에 국외소득‧재산이 반영됨에 따라 학생이 신청하신 재외국민\n\n전형 입학 여부와 소속대학의 정보가 상이할 경우 합격 후 재정지원에 불이익이 발생할\n\n수 있으므로 신중하게 선택하여 주시기 바랍니다. 온라인지원서 작성 시 해당 사실을 누락한\n\n경우 실제 지원구간과 상관없이 10구간에 준하여 정부지원금이 지급됩니다.\n\n만약 한국장학재단의 WEST 프로그램 신청 단계에서 재외국민 특별전형 입학여부(Y/N)를\n\n잘못 선택하였을 경우, 학생의 국내 소득 재산조사가 개시되기 전 그리고 WEST 프로그램\n\n신청기간 내에 학생 본인이 한국장학재단 누리집을 통해 입학전형 변경이 가능합니다. 국\n\n내 소득조사가 개시된 후에는 한국장학재단 콜센터(1599-2000)로 확인한 후 「입학전형사\n\n실확인서」를 제출하여 입학 정보 수정을 신청하여야 합니다. 「입학전형사실확인서」 양\n\n식은 한국장학재단 누리집>고객센터>자료실>학자금 지원구간에 게시되어 있습니",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      }
+    },
+    "application": {
+      "recruitment_dates": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 10,
+        "evidence": [
+          {
+            "search_keyword": "신청 기간",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 3,
+            "side": "left",
+            "source_excerpt": "3\n지원 신청 절차\n\n가. 공 고일 : ’26. 2. 11.(수)\n나. 신청 기간 : ’26. 2. 11.(수) ~ 3. 18.(수) 17:00\n※ 이후에는제출불가\n다. 신청 절차 <유의> 아래 과정을 모두 충족하여야 지원 신청이 완료됨\n\n❏ 지원자 신청 절차\n\n※ 휴학생, 초과학기자, 수료자, 졸업유예자 포함\n\n재학생\n\n졸업생\n\n❏ 소속 대학 참가자 추천 (공통)\n\n▪참가자 추천\n - 추천 공문 발송 기간: ‘26.3.19.(목)~3.23.(월) ※ 추천 마감일은 대학에서 결정\n - 서류심사: 학년, 영어성적 등 자격 요건 확인\n   ※ 확인 필: 재외국민 특별전형 여부, 취업취약계층 증빙자료 제출여부,\n               졸업생 지원구간 증빙자료 제출여부\n\n소속\n대학\n\n- 공문발송: 자격 요건을 충족한 학생을 지원대상자로 추천\n   ※ 첨부 필: 취업취약계층 증빙자료, 졸업생 지원구간 증빙자료, 편입생 전·현적",
+            "source_page_sha256": "731dc9a92316644330756f9928351a65219f580cf670425012918191176a5d4b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "2. 11.",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 3,
+            "side": "left",
+            "source_excerpt": "3\n지원 신청 절차\n\n가. 공 고일 : ’26. 2. 11.(수)\n나. 신청 기간 : ’26. 2. 11.(수) ~ 3. 18.(수) 17:00\n※ 이후에는제출불가\n다. 신청 절차 <유의> 아래 과정을 모두 충족하여야 지원 신청이 완료됨\n\n❏ 지원자 신청 절차\n\n※ 휴학생, 초과학기자, 수료자, 졸업유예자 포함\n\n재학생\n\n졸업생\n\n❏ 소속 대학 참가자 추천 (공통)\n\n▪참가자 추천\n - 추천 공문 발송 기간: ‘26.3.19.(목)~3.23.(월) ※ 추천 마감일은 대학에서 결정\n - 서류심사: 학년, 영어성적 등 자격 요건 확인\n   ※ 확인 필: 재외국민 특별전형 여부, 취업취약계층 증빙자료 제출여부,\n               졸업생 지원구간 증빙자료 제출여부\n\n소속\n대학\n\n- 공문발송: 자격 요건을 충족한 학생을 지원대상자로 추천\n   ※ 첨부 필: 취업취약계층 증빙자료, 졸업생 지원구간 증빙",
+            "source_page_sha256": "731dc9a92316644330756f9928351a65219f580cf670425012918191176a5d4b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "3. 18.",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 3,
+            "side": "left",
+            "source_excerpt": "3\n지원 신청 절차\n\n가. 공 고일 : ’26. 2. 11.(수)\n나. 신청 기간 : ’26. 2. 11.(수) ~ 3. 18.(수) 17:00\n※ 이후에는제출불가\n다. 신청 절차 <유의> 아래 과정을 모두 충족하여야 지원 신청이 완료됨\n\n❏ 지원자 신청 절차\n\n※ 휴학생, 초과학기자, 수료자, 졸업유예자 포함\n\n재학생\n\n졸업생\n\n❏ 소속 대학 참가자 추천 (공통)\n\n▪참가자 추천\n - 추천 공문 발송 기간: ‘26.3.19.(목)~3.23.(월) ※ 추천 마감일은 대학에서 결정\n - 서류심사: 학년, 영어성적 등 자격 요건 확인\n   ※ 확인 필: 재외국민 특별전형 여부, 취업취약계층 증빙자료 제출여부,\n               졸업생 지원구간 증빙자료 제출여부\n\n소속\n대학\n\n- 공문발송: 자격 요건을 충족한 학생을 지원대상자로 추천\n   ※ 첨부 필: 취업취약계층 증빙자료, 졸업생 지원구간 증빙자료, 편입생 전·현적대 성적증명서\n\n- 3 -",
+            "source_page_sha256": "731dc9a92316644330756f9928351a65219f580cf670425012918191176a5d4b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "2. 11.",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "학년성적증명서, 공인영어성적증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking,\nG-TELP Speaking), 취업취약계층증빙자료[붙임1] 참조)/ (졸업생) 지원구간증빙자료\n추가제출(③-2 및[붙임1]과[붙임4] 참조)\n\n< 유의사항 >\n\n1. 공인영어성적증명서 이외 모든 서류는 모집공고(2026.2.11.) 이후 발급분에 한하여 유효합니다.\n\n2. 어학점수는 접수마감일(2026.3.18.) 기준 2년 이내의 국내 정기시험 성적만 인정됩니다.\n\n3. 취업취약계층 ([붙임 1] 참조) 증빙자료가 누락된 경우 우대 적용을 받을 수 없습니다.\n\n4. 졸업생의 학자금지원구간 증빙 자료는 해당 서류를 확인하여 제출합니다. ([붙임 1] 참조)\n\n5. 편입생의 경우, 편입 전/후 성적을 WEST 프로그램 학점계산법에 의하여 산출합니다.\n\n구 분\n취득평점(GPA) \n총 이수학점 \n평점 만점 \n 전적 대학\n A\nB\n C\n 현 소속 대학\n D\nE\n F\n\n※ 편입학점 계산법 : 학점(X) = [ (A×B×F/C) + (D×E) ] / (B+E)\n   예) OO편입생의 전적 대학 평점이 4.14/4.3,  이수학점이 80점이며, 현 소속 대학 평점이 3.99/4.",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "3. 18.",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "peaking,\nG-TELP Speaking), 취업취약계층증빙자료[붙임1] 참조)/ (졸업생) 지원구간증빙자료\n추가제출(③-2 및[붙임1]과[붙임4] 참조)\n\n< 유의사항 >\n\n1. 공인영어성적증명서 이외 모든 서류는 모집공고(2026.2.11.) 이후 발급분에 한하여 유효합니다.\n\n2. 어학점수는 접수마감일(2026.3.18.) 기준 2년 이내의 국내 정기시험 성적만 인정됩니다.\n\n3. 취업취약계층 ([붙임 1] 참조) 증빙자료가 누락된 경우 우대 적용을 받을 수 없습니다.\n\n4. 졸업생의 학자금지원구간 증빙 자료는 해당 서류를 확인하여 제출합니다. ([붙임 1] 참조)\n\n5. 편입생의 경우, 편입 전/후 성적을 WEST 프로그램 학점계산법에 의하여 산출합니다.\n\n구 분\n취득평점(GPA) \n총 이수학점 \n평점 만점 \n 전적 대학\n A\nB\n C\n 현 소속 대학\n D\nE\n F\n\n※ 편입학점 계산법 : 학점(X) = [ (A×B×F/C) + (D×E) ] / (B+E)\n   예) OO편입생의 전적 대학 평점이 4.14/4.3,  이수학점이 80점이며, 현 소속 대학 평점이 3.99/4.5,\n\n이수학점 142학점인 경우, OO편입생의 학점은 [(4.14×80×4.5/4.",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "신청 기간",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 5,
+            "side": "left",
+            "source_excerpt": "학자금 지원구간 심사 진행\n\n⑷ 지원기간 마지막 날 신청 완료한 학생은 (3.⑵) 확인이 기한 내 불가하므로, 서류제출 완료\n\n여부(추가 서류제출 필요 여부)를 사전에 확인하고 필수/선택서류 모두 제출 요망\n\n< 유의사항 >\n\n1. 2015년부터 지원구간 파악을 위해 부모 또는 배우자의 정보제공 동의가 필요함에 따라 \n신청기간 내 대상 가구원 모두가 소득 재산 조사에 대한 동의가 완료되어야 합니다.\n\n(기존의 신청여부와 관계없이 신규 신청)\n\n2. 부모 또는 배우자와 동일 세대 구성이 아닐 경우 가족관계증명서 제출(동일 세대 구성 시 제출 서류 생략)\n\n3. ‘재외국민 특별전형’으로 대학에 입학한 자는 반드시 해당 여부에 체크하여 주시기 바랍니다. \n누락 시 학자금 지원구간과 상관없이 10구간에 준하여 정부지원금이 지급됩니다.\n\n4. 자세한 신청방법 및 구비서류는 한국장학재단 누리집을 참고하시기 바랍니다.\n\n③-2. 졸업생: 학자금지원구간 확인 서류 소속 대학에 제출 ([붙임1] 참조)\n\n㉮ 기초생활수급자 및 차상위계층: 수급자 증명서 또는 확인서 (본인 명의로 발급)\n\n㉯ 그 외 졸업생: 학자금 지원구간 통지서\n\n㉰ ㉮, ㉯ 모두 발급이 불가한 경우*: 학자금대",
+            "source_page_sha256": "705f4184a278d8d5628ba97197df846c5f7db38f2ae3cd36d9d58d145cc73f9f",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "2. 11.",
+            "physical_pdf_page": 5,
+            "logical_page_candidate": 9,
+            "side": "left",
+            "source_excerpt": "붙임 1\n 취업취약계층 제출 서류 / 졸업생 지원구간 제출 서류\n\n※ 제출증빙자료는모집공고일(’26.2.11.) 이후발급서류여야함\n\n1. 취업취약계층의 범주\n\n가. 저소득층: 기초생활수급자 및 차상위계층\n\n나. 기타 취업취약계층: 장애인, 북향민 등\n\n※ 「직접일자리사업중앙부처-자치단체합동지침」에따른취업취약계층범주준용\n\n2. 취업취약계층 제출 서류\n\n가. 저소득층 (본인 명의로 발급)\n\n구분\n자격명\n제출 서류\n발급처\n\n기초생계급여수급자\n국민기초생활수급자증명서\n\n기초생활\n\n(생계/의료)\n* 보장시설수급자증명서포함\n행정복지센터 및\n정부24(www.gov.kr)\n\n수급자\n\n기초의료급여수급자\n\n기초주거급여수급자\n국민기초생활수급자증명서\n\n(주거/교육)\n기초교육급여수급자\n한부모가족보호대상자\n한부모가족 증명서\n차상위장애연금대상자\n장애인연금수급자 확인서\n\n차상위\n\n행정복지센터\n차상위장애수당 /\n장애아동수당대상자\n\n(경증) 장애수당, 장애아동수당\n\n계층\n\n수급자 확",
+            "source_page_sha256": "ce3082caede4953790dab735201bd29c96666a0aacf924a6bf626d9658f1eda8",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "2. 11.",
+            "physical_pdf_page": 5,
+            "logical_page_candidate": 10,
+            "side": "right",
+            "source_excerpt": "붙임 2\n 2026년 상반기 선발 일정\n\n일 정\n추진 내용\n\n’26. 2.11.(수)∼3.18.(수) 17시▪ 참가신청서 접수(온라인/ 월드잡플러스홈페이지)\n\n3.19.(목)∼3.23.(월)\n▪ 대학 추천 공문 접수\n\n3.19.(목)∼5.14.(목)\n▪ 학자금 지원구간 확인\n\n4.9.(목), 16:00\n▪ 서류 합격자 발표\n\n4.18.(토) / 4.19.(일)\n▪ 1차 면접 <국립국제교육원 인성 면접>\n   - 4.18.(토): 단기, 4.19.(일): 중기\n\n4.23.(목), 16:00\n▪ 1차 면접 합격자 발표\n\n4.24.(금)∼5.12.(화)\n▪ 2차 면접 <현지중개기관 영어 면접>\n\n5.21.(목), 16:00\n▪ 최종합격자 발표\n\n5.22.(금)∼5.29.(금)\n▪ 참가비 납부\n\n6.1.(월)∼6.4.(목)\n▪ 추가합격자 발표 및 참가비 납부\n\n6.25.(목)\n▪ 출국전 참가자 사전연수\n\n7.6.(월)~7.7.",
+            "source_page_sha256": "d98dfdc5530c40d673e2e0be6b10a60c5b7556c339e8185454358601eed63fe5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "3. 18.",
+            "physical_pdf_page": 5,
+            "logical_page_candidate": 10,
+            "side": "right",
+            "source_excerpt": "붙임 2\n 2026년 상반기 선발 일정\n\n일 정\n추진 내용\n\n’26. 2.11.(수)∼3.18.(수) 17시▪ 참가신청서 접수(온라인/ 월드잡플러스홈페이지)\n\n3.19.(목)∼3.23.(월)\n▪ 대학 추천 공문 접수\n\n3.19.(목)∼5.14.(목)\n▪ 학자금 지원구간 확인\n\n4.9.(목), 16:00\n▪ 서류 합격자 발표\n\n4.18.(토) / 4.19.(일)\n▪ 1차 면접 <국립국제교육원 인성 면접>\n   - 4.18.(토): 단기, 4.19.(일): 중기\n\n4.23.(목), 16:00\n▪ 1차 면접 합격자 발표\n\n4.24.(금)∼5.12.(화)\n▪ 2차 면접 <현지중개기관 영어 면접>\n\n5.21.(목), 16:00\n▪ 최종합격자 발표\n\n5.22.(금)∼5.29.(금)\n▪ 참가비 납부\n\n6.1.(월)∼6.4.(목)\n▪ 추가합격자 발표 및 참가비 납부\n\n6.25.(목)\n▪ 출국전 참가자 사전연수\n\n7.6.(월)~7.7.(화)\n▪ 비자",
+            "source_page_sha256": "d98dfdc5530c40d673e2e0be6b10a60c5b7556c339e8185454358601eed63fe5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "신청 기간",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "여 주시기 바랍니다. 온라인지원서 작성 시 해당 사실을 누락한\n\n경우 실제 지원구간과 상관없이 10구간에 준하여 정부지원금이 지급됩니다.\n\n만약 한국장학재단의 WEST 프로그램 신청 단계에서 재외국민 특별전형 입학여부(Y/N)를\n\n잘못 선택하였을 경우, 학생의 국내 소득 재산조사가 개시되기 전 그리고 WEST 프로그램\n\n신청기간 내에 학생 본인이 한국장학재단 누리집을 통해 입학전형 변경이 가능합니다. 국\n\n내 소득조사가 개시된 후에는 한국장학재단 콜센터(1599-2000)로 확인한 후 「입학전형사\n\n실확인서」를 제출하여 입학 정보 수정을 신청하여야 합니다. 「입학전형사실확인서」 양\n\n식은 한국장학재단 누리집>고객센터>자료실>학자금 지원구간에 게시되어 있습니다.\n\nQ16. 월드잡플러스 온라인 지원서 작성 도중 임시저장 대신 최종제출 버튼을 눌렀는데 수정\n\n가능한가요?\n\nA16. 온라인 지원서는 접수 마감일 이내에 수정이 가능합니다. 그러나 마감일 이후에는 수정이\n\n불가능하므로, 공지사항을 상세하게 살펴보신 후 제출하시기 바랍니다.\n\n※ [월드잡플러스-마이페이지-인턴지원현황]에서 ‘취소’ 버튼을 눌러 수정 및 저장 후, 제출\n\n버튼을 누르고, ‘지원일자’가 나오는지 확",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      },
+      "online_application": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 13,
+        "evidence": [
+          {
+            "search_keyword": "월드잡플러스",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "TOEIC Speaking IM2 이상또는\n\nTOEIC Speaking IM1 이상또는\n\nG-TELP Speaking Level6 이상\n\nG-TELP Speaking Level7 이상\n\n대학\n추천소속대학의지원자추천공문\n\n* J-1 비자규정상어학연수시작일기준1년이내졸업생이며, 어학연수시작일은\n현지중개기관별‧어학기관별상이(월드잡플러스공지사항현지중개기관정보확인)\n※ 어학성적은①, ②를모두충족하여야하며, 접수마감일기준유효기간(2년) 이내\n\n국내정기시험성적만인정/ OPIc 시험의경우대학연합OPIc 시험점수도인정\n\n나. 지원 제한\n\n◦ 복수 국적자 및 외국 소재 대학(교) 학생\n\n◦ WEST 프로그램 기 참가자\n\n◦ WEST 프로그램 기 지원자 중 참가비 납부 마감 이후 포기자\n\n- 2 -",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "월드잡플러스",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "① 온라인 지원 : 월드잡플러스 누리집(www.worldjob.or.kr)에서 온라인지원서등 작성․제출\n\n※ 지원서류: WEST 온라인지원서및자기소개서(양식은온라인지원시확인가능),\n\n개인정보동의서(공지·문의> 공지사항> 해외인턴(WEST)공지사항> 모집공고문> (왼쪽\n상단) 첨부파일양식다운로드> 출력후자필서명> 스캔본파일업로드)\n\n< 유의사항 >\n\n1. 온라인 지원 시, 개인 정보, 학점, 공인영어성적 점수, 시험일자 등에 오류가 있는 경우, 서류 \n부적격자로 분류될 수 있으므로 본인 기재사항은 대학제출 증빙서류와 일치하도록 확인 후 \n기재하여 주시기 바랍니다. (기재 오류에 의한 모든 책임은 참가자 본인에게 있음)\n\n2. 영문이름은 여권과 동일하게(대문자/성, 이름 순) 기재하고, 지원서에 기재된 이메일, 전화 \n등의 연락처로 WEST 프로그램 관련사항이 공지됩니다. 선",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "온라인 지원",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "① 온라인 지원 : 월드잡플러스 누리집(www.worldjob.or.kr)에서 온라인지원서등 작성․제출\n\n※ 지원서류: WEST 온라인지원서및자기소개서(양식은온라인지원시확인가능),\n\n개인정보동의서(공지·문의> 공지사항> 해외인턴(WEST)공지사항> 모집공고문> (왼쪽\n상단) 첨부파일양식다운로드> 출력후자필서명> 스캔본파일업로드)\n\n< 유의사항 >\n\n1. 온라인 지원 시, 개인 정보, 학점, 공인영어성적 점수, 시험일자 등에 오류가 있는 경우, 서류 \n부적격자로 분류될 수 있으므로 본인 기재사항은 대학제출 증빙서류와 일치하도록 확인 후 \n기재하여 주시기 바랍니다. (기재 오류에 의한 모든 책임은 참가자 본인에게 있음)\n\n2. 영문이름은 여권과 동일하게(대문자/성, 이름 순) 기재하고, 지원서에 기재된 이메일, 전화 \n등의 연락처로 WEST 프로그램 관련사항이",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "월드잡플러스",
+            "physical_pdf_page": 4,
+            "logical_page_candidate": 8,
+            "side": "right",
+            "source_excerpt": "5\n참고 및 유의 사항\n\n◦취업취약계층, 지방대생(캠퍼스 기준), 이공계생, 전문대생지원자는 우대\n\n선발(서류 전형 시) 합니다.\n\n◦WEST 프로그램 설명회를 통해 프로그램 관련 내용을 확인할 수 있습니다.\n\n※ 설명회일정은월드잡플러스(worldjob.or.kr) 및SNS 인스타그램(koreawest_official)으로안내예정\n\n◦현지중개기관에 관한 세부 정보는 월드잡플러스 공지사항에서 확인 바랍니다.\n\n프로그램\n현지중개기관명\n누리집\n\n중기\nInstitute for International Education & Exchange\n\nwww.gaccca.com\n\n(IIEEX)\n\nwww.iieex.kr\n\nCultural Vistas\n\nwww.culturalvistas.org\n\n(CV)\n\nwww.koreawest.org\n\nCouncil on Int’l Educational Exchange\n\n단기\n\n(CIEE)\nwww.ciee.org\n\nInstitute of Global Exchange\n\n(IGE)\nigeworld.org\n\n※ 현지중개기관별수용인원, 면접결과에따라희망한현지중개기관과",
+            "source_page_sha256": "d5ae95e61133e0e413201d7c778aa87c8ca5b156c22b4751a4ed467331e24aa5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "월드잡플러스",
+            "physical_pdf_page": 5,
+            "logical_page_candidate": 10,
+            "side": "right",
+            "source_excerpt": "붙임 2\n 2026년 상반기 선발 일정\n\n일 정\n추진 내용\n\n’26. 2.11.(수)∼3.18.(수) 17시▪ 참가신청서 접수(온라인/ 월드잡플러스홈페이지)\n\n3.19.(목)∼3.23.(월)\n▪ 대학 추천 공문 접수\n\n3.19.(목)∼5.14.(목)\n▪ 학자금 지원구간 확인\n\n4.9.(목), 16:00\n▪ 서류 합격자 발표\n\n4.18.(토) / 4.19.(일)\n▪ 1차 면접 <국립국제교육원 인성 면접>\n   - 4.18.(토): 단기, 4.19.(일): 중기\n\n4.23.(목), 16:00\n▪ 1차 면접 합격자 발표\n\n4.24.(금)∼5.12.(화)\n▪ 2차 면접 <현지중개기관 영어 면접>\n\n5.21.(목), 16:00\n▪ 최종합격자 발표\n\n5.22.(금)∼5.29.(금)\n▪ 참가비 납부\n\n6.1.(월)∼6.4.(목)\n▪ 추가합격자 발표 및 참가비 납부\n\n6.25.(목)\n▪ 출국전 참가자 사전연수\n\n7.6.(월)~7.7.(화)\n▪ 비자 인터뷰(주한미국대사관)\n\n※ 비자 인터뷰 신청 시 비",
+            "source_page_sha256": "d98dfdc5530c40d673e2e0be6b10a60c5b7556c339e8185454358601eed63fe5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "월드잡플러스",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 11,
+            "side": "left",
+            "source_excerpt": "하기 어려운 점 양해 바랍니다.\n\nQ3. 지원 자격(대상) 중, 최근 1년 이내의 졸업생 기준은 어떻게 되나요?\n\nA3. 본 프로그램의 어학연수 시작일이 기준이 됩니다. 현지중개기관 및 어학연수 기관별로 어학\n\n연수 시작일이 다르므로 지원 프로그램의 어학연수 시작일을 확인한 후 지원해주시기 바랍니다.\n\n어학연수 시작일은 월드잡플러스(www.worldjob.or.kr) 공지사항에 게시 예정입니다.\n\n(예시) 2026년 상반기 선발은 어학연수 시작일(’26년 8월)을 기준으로, ‘25년 8월, ’26년 2월\n\n졸업자가 지원 가능합니다.\n\nQ4. WEST 참가 시 소속 학교에서 학점 인정은 얼마나 받을 수 있나요?\n\nA4. 학점 인정 여부 및 방법은 개별 학교의 학칙에 따라 상이하므로, 소속(출신)대학 관계자\n\n(국제교류처, 취업지원처, 경력개발센터 등)에게 문의하여 주시기 바랍니다. 제도상으로는\n\n학점 인정 여부와 상관없이 WEST에 지원이 가능합니다.\n\nQ5. 이전에 다른 정부재정지원을 받는 프로그램이나 “정부해외인턴사업”에 참여한 경우에도\n\nWEST 프로그램 지원이 가능한가요?\n\nA5. “정부재정지원 직접 일자리 사업” 및 타 “정부해외인턴사업” 참여자에 대한 지원 제",
+            "source_page_sha256": "0ecfc49dd72930de2508722d6473835cabed3147f8bd6296dd51f19d344dc1cc",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "온라인 지원",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 11,
+            "side": "left",
+            "source_excerpt": "년 WEST 프로그램 관련 FAQ\n\n1. 지원 단계\n\nQ1. 공인 어학성적 점수가 조금 부족합니다. 지원서 마감 후 제출 가능한가요? 토플, 아이엘츠 등\n\n다른 성적도 인정 가능한가요?\n\nA1. 지원 자격 요건보다 어학성적이 미달될 경우 지원이 불가하며, 어학성적 결과도 접수 마감일\n\n내에 유효한 성적을 제출해야 합니다(온라인 지원 및 소속대학에 동일한 성적표 제출 필수).\n\n따라서 마감일 이후의 어학성적은 인정 및 제출이 불가합니다. 또한 모집공고문에 명시된\n\n시험성적만 인정합니다.\n\nQ2. 서류전형 심사 과정이 어떻게 되나요?\n\nA2. WEST 참여 이력 조회, 어학성적 일치 여부 등 참가제한(결격사유) 해당 여부를 확인하며,\n\n지원서(자기소개서), 영어성적, 학점을 종합적으로 평가합니다(학점 제한은 없지만 서류심사 시\n\n반영). 자기소개서에서는 프로그램에 대한 이해도 및 목표의식, 내용의 충실성 등을 중점으\n\n로 평가하며, 내용이 극히 불성실한 경우 선발에서 제외될 수 있습니다.\n\n그 외 우대비율 및 심사 반영 비율은 공개하기 어려운 점 양해 바랍니다.\n\nQ3. 지원 자격(대상) 중, 최근 1년 이내의 졸업생 기준은 어떻게 되나요?\n\nA3. 본 프로그램의 어학연수",
+            "source_page_sha256": "0ecfc49dd72930de2508722d6473835cabed3147f8bd6296dd51f19d344dc1cc",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "월드잡플러스",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 12,
+            "side": "right",
+            "source_excerpt": "는 기관입니다. 또한 참가자들에게 프로그램 기간 중\n\n어학연수기관과의 연계를 통해 어학연수를 제공하고, 인턴십 배치를 담당합니다.\n\n* 미국을 문화교류 목적으로 방문하는 교환 방문자용 비자로, WEST 참가자는 해당 비자 발급\n\nQ14. 미국 현지중개기관 선택은 어떻게 해야 하나요? 선택한 곳으로 배정되나요?\n\nA14. 월드잡플러스 누리집 해외인턴(WEST) 공지사항에 게시된 ‘현지중개기관별 정보‘ 중 인턴십\n\n분야와 본인의 전공 등을 고려하여 희망하는 현지중개기관을 선택해주시기 바랍니다. 다만,\n\n현지중개기관의 배정인원 및 면접 결과에 따라 선택한 곳으로 배정되지 않을 수도 있습니다.\n\n- 12 -",
+            "source_page_sha256": "3dde2f122a8bc344072b3447160e1e994e8b790bcbbe0a38143b1d10749db309",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "온라인 지원",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 12,
+            "side": "right",
+            "source_excerpt": "한은 없습니다.\n\nQ7. 취업성공패키지에 참여 중인데 WEST 지원이 가능하나요?\n\nA7. 취업성공패키지 참여자의 경우 WEST 지원이 가능하지만, WEST 수료 후 취업성공패키지\n\n재참여가 불가능할 수 있습니다. 단계별로 조건이 다를 수 있으니 자세한 사항은 반드시\n\n취업성공패키지 담당자와 상의하시기 바랍니다.\n\n2. 온라인 지원서 작성 단계\n\nQ8. 영문이름 작성 시 유의사항이 있나요?\n\nA8. 성(Surname)-이름(Given name) 순서로, 반드시 영문철자, 띄어쓰기 칸 수와 영문 이름 내 하이픈(-) 여부\n\n등 모든 내용을 여권과 동일하게 맞추어 모두 대문자로 작성해 주시기 바랍니다(예. HONG GILDONG).\n\n※ 합격 후 비자 인터뷰에 필요한 서류 발급 시 지원서 상의 이름으로 발급\n\nQ9. 학교 성적은 어느 기간의 성적을 기입하는 건가요?\n\nA9. 입학 후 현재까지 취득한 전체학점의 평점을 말합니다.\n\nQ10. 학적은 언제를 기준으로 기입해야 하나요?\n\nA10. 온라인지원서 마감일 기준의 학적상태를 입력해 주시기 바랍니다. (예시) 재학, 졸업유예 등\n\nQ11. 졸업유예를 해서 재학생으로 분류되는 경우 학년을 어떻게 입력하면 되나요?\n\nA11.",
+            "source_page_sha256": "3dde2f122a8bc344072b3447160e1e994e8b790bcbbe0a38143b1d10749db309",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "월드잡플러스",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "단 누리집을 통해 입학전형 변경이 가능합니다. 국\n\n내 소득조사가 개시된 후에는 한국장학재단 콜센터(1599-2000)로 확인한 후 「입학전형사\n\n실확인서」를 제출하여 입학 정보 수정을 신청하여야 합니다. 「입학전형사실확인서」 양\n\n식은 한국장학재단 누리집>고객센터>자료실>학자금 지원구간에 게시되어 있습니다.\n\nQ16. 월드잡플러스 온라인 지원서 작성 도중 임시저장 대신 최종제출 버튼을 눌렀는데 수정\n\n가능한가요?\n\nA16. 온라인 지원서는 접수 마감일 이내에 수정이 가능합니다. 그러나 마감일 이후에는 수정이\n\n불가능하므로, 공지사항을 상세하게 살펴보신 후 제출하시기 바랍니다.\n\n※ [월드잡플러스-마이페이지-인턴지원현황]에서 ‘취소’ 버튼을 눌러 수정 및 저장 후, 제출\n\n버튼을 누르고, ‘지원일자’가 나오는지 확인하시기 바랍니다.\n\n3. 서류 제출 단계\n\nQ17. 온라인 지원 시 온라인 지원서(자기소개서 포함), 개인정보동의서 외에도 취득한 자격증\n\n서류를 제출해야 되나요?\n\nA17. 월드잡 사이트에서 온라인 지원서(자기소개서 포함)와 개인정보동의서만 제출하시면 됩니다.\n\n자격증 관련 서류는 제출할 필요가 없습니다.\n\nQ18. 학교 추천을 어떻게 받나요?\n\nA18.",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "온라인 지원",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "Q15. 재외국민전형 입학 여부를 잘못 선택하였을 경우 불이익이 있나요?\n\nA15. 2017년부터 지원구간 조회에 국외소득‧재산이 반영됨에 따라 학생이 신청하신 재외국민\n\n전형 입학 여부와 소속대학의 정보가 상이할 경우 합격 후 재정지원에 불이익이 발생할\n\n수 있으므로 신중하게 선택하여 주시기 바랍니다. 온라인지원서 작성 시 해당 사실을 누락한\n\n경우 실제 지원구간과 상관없이 10구간에 준하여 정부지원금이 지급됩니다.\n\n만약 한국장학재단의 WEST 프로그램 신청 단계에서 재외국민 특별전형 입학여부(Y/N)를\n\n잘못 선택하였을 경우, 학생의 국내 소득 재산조사가 개시되기 전 그리고 WEST 프로그램\n\n신청기간 내에 학생 본인이 한국장학재단 누리집을 통해 입학전형 변경이 가능합니다. 국\n\n내 소득조사가 개시된 후에는 한국장학재단 콜센터(1599-2000)로 확인한 후 「입학전형사\n\n실확인서」를 제출하여 입학 정보 수정을 신청하여야 합니다. 「입학전형사실확인서」 양\n\n식은 한국장학재단 누리집>고객센터>자료실>학자금 지원구간에 게시되어 있습니다.\n\nQ16. 월드잡플러스 온라인 지원서 작성 도중 임시저장 대신 최종제출 버튼을 눌렀는데 수정\n\n가능한가요?\n\nA1",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "월드잡플러스",
+            "physical_pdf_page": 10,
+            "logical_page_candidate": 20,
+            "side": "right",
+            "source_excerpt": "< TOEIC & TOEIC Speaking >\n\n등록 번호는 성적표 내 숫자 6자리로 구성된 ‘Registration Number’를 의미하며, 아래 이미지\n\n내 분홍색 상자 표시를 참고\n\n<참고> TOEIC Speaking 점수 ACTFL 등급 환산표\n\n<TOEIC Speaking ACTFL 등급 표기 관련>\n\n-월드잡플러스 온라인 지원 시 TOEIC Speaking\n\n점수는 파란색 상자에 표시된 200점 만점의\n\n정확한 숫자 점수로 입력\n\n- 20 -",
+            "source_page_sha256": "a66bd1a57826404b00ea5d87f05cc3c2b92a15ce221e0f9ca0809aa327189f31",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "온라인 지원",
+            "physical_pdf_page": 10,
+            "logical_page_candidate": 20,
+            "side": "right",
+            "source_excerpt": "IC & TOEIC Speaking >\n\n등록 번호는 성적표 내 숫자 6자리로 구성된 ‘Registration Number’를 의미하며, 아래 이미지\n\n내 분홍색 상자 표시를 참고\n\n<참고> TOEIC Speaking 점수 ACTFL 등급 환산표\n\n<TOEIC Speaking ACTFL 등급 표기 관련>\n\n-월드잡플러스 온라인 지원 시 TOEIC Speaking\n\n점수는 파란색 상자에 표시된 200점 만점의\n\n정확한 숫자 점수로 입력\n\n- 20 -",
+            "source_page_sha256": "a66bd1a57826404b00ea5d87f05cc3c2b92a15ce221e0f9ca0809aa327189f31",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      },
+      "submission_procedure": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 6,
+        "evidence": [
+          {
+            "search_keyword": "서류 제출",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "금이 지급됩니다.\n\n5. ‘취업취약계층’의 경우 해당여부(기초/차상위/장애인/다문화가족/북향민)를 반드시 체크해 주시\n기 바랍니다. 취업취약계층은 서류전형에서 우대되며, 누락 시 우대 대상에서 제외됩니다.\n\n6. 온라인 지원서 작성 후 ⌜지원하기⌟ 버튼을 누르고, 마이페이지에서 지원내역을 확인해 \n주시기 바랍니다.\n\n② 서류 제출\n\n◦구비서류(원본)를 소속 대학(국제교류 또는 취업 관련 부서)에 직접 제출\n\n※ 대학별신청마감일확인필요\n※ 제출서류: (공통) WEST 온라인지원서및자기소개서출력물, 재학(휴학/졸업)증명서,\n\n전학년성적증명서, 공인영어성적증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking,\nG-TELP Speaking), 취업취약계층증빙자료[붙임1] 참조)/ (졸업생) 지원구간증빙자료\n추가제출(③-2 및[붙임1]과[붙임4] 참조)\n\n< 유의사항 >\n\n1. 공인영어성적증명서 이외 모든 서류는 모집공고(2026.2.11.) 이후 발급분에 한하여 유효합니다.\n\n2. 어학점수는 접수마감일(2026.3.18.) 기준 2년 이내의 국내 정기시험 성적만 인정됩니다.\n\n3. 취업취약계층 ([붙임 1] 참조) 증빙자료가 누락된 경우 우대 적용을 받을",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "서류 제출",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 5,
+            "side": "left",
+            "source_excerpt": "대출 실행이 불가합니다.\n\n◦신청 방법 안내\n\n1. 한국장학재단 사이트(www.kosaf.go.kr)에 접속\n\n2. 전자서명으로 로그인 (지원자 본인 명의)\n\n3. 학자금대출 > 학자금대출안내 > 한미대학생연수(WEST) 프로그램 어학연수비 대출 >신청하기를\n\n클릭하고 신청\n\n※ 제출 서류 (지원기간 내 반드시 제출, 서류제출 완료까지 되어야 함)\n\n⑴ 한국장학재단 누리집>학자금대출>학자금대출신청>서류제출현황 :필요서류 목록 확인 후 이미지 업로드\n\n⑵ 신청완료일 1~3일(휴일 제외) 후 누리집에서 서류제출 필요 여부(서류제출 완료여부) 확인\n\n⑶ 선택서류(기초/차상위) 미제출 시 필수서류 기준으로 학자금 지원구간 심사 진행\n\n⑷ 지원기간 마지막 날 신청 완료한 학생은 (3.⑵) 확인이 기한 내 불가하므로, 서류제출 완료\n\n여부(추가 서류제출 필요 여부)를 사전에 확인하고 필수/선택서류 모두 제출 요망\n\n< 유의사항 >\n\n1. 2015년부터 지원구간 파악을 위해 부모 또는 배우자의 정보제공 동의가 필요함에 따라 \n신청기간 내 대상 가구원 모두가 소득 재산 조사에 대한 동의가 완료되어야 합니다.\n\n(기존의 신청여부와 관계없이 신규 신청)\n\n2. 부모 또는 배우자와",
+            "source_page_sha256": "705f4184a278d8d5628ba97197df846c5f7db38f2ae3cd36d9d58d145cc73f9f",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "서류 제출",
+            "physical_pdf_page": 5,
+            "logical_page_candidate": 9,
+            "side": "left",
+            "source_excerpt": "명의로 발급)\n\n구분\n제출 증빙자료\n발급처\n\n장애인\n장애인증명서, 복지카드, 상이군경회원증, 장애진단서(전문의) 확인\n\n다문화가족이란 결혼이민자(한국인과 결혼한 외국인)와 귀화자가 \n포함된 가족(다문화가족 지원법 제2조(정의))\n부모의 외국인등록증 사본과 혼인관계증명서, 가족관계증명서 \n등 다문화가족에 해당함을 증명하는 서류제출\n\n정부24\n(www.gov.kr)\n다문화가족\n\n북향민(자녀)\n북향민 등록확인서, 가족관계증명서 등 북향민 또는 \n북향민 가족에 해당함을 증명하는 서류제출\n\n3. 졸업생 지원구간 제출 서류\n\n가. 기초생활수급자 및 차상위계층 : 2. 제출 서류(가)로 갈음\n\n※ 졸업생지원구간확인용으로차상위계층에해당하는증명서를제출한경우, 1구간금액으로지원함\n\n나. 그 외 졸업생: 학자금 지원구간 통지서 혹은 학자금 대출·장학금 신청 증명서(한국장학재단)\n\nㅇ한국장학재단에서장학금신청및학자금대출등으로학자금지원구간확인내역이있는\n\n경우, 한국장학재단사이트(www.kosaf.go.kr)에서발급가능\n\nㅇ학자금지원구간통지서발급이불가한경우학자금대출‧장학금신청증명서제출([붙임4] 참조)\n\n- 9 -",
+            "source_page_sha256": "ce3082caede4953790dab735201bd29c96666a0aacf924a6bf626d9658f1eda8",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "서류 제출",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "온라인 지원서는 접수 마감일 이내에 수정이 가능합니다. 그러나 마감일 이후에는 수정이\n\n불가능하므로, 공지사항을 상세하게 살펴보신 후 제출하시기 바랍니다.\n\n※ [월드잡플러스-마이페이지-인턴지원현황]에서 ‘취소’ 버튼을 눌러 수정 및 저장 후, 제출\n\n버튼을 누르고, ‘지원일자’가 나오는지 확인하시기 바랍니다.\n\n3. 서류 제출 단계\n\nQ17. 온라인 지원 시 온라인 지원서(자기소개서 포함), 개인정보동의서 외에도 취득한 자격증\n\n서류를 제출해야 되나요?\n\nA17. 월드잡 사이트에서 온라인 지원서(자기소개서 포함)와 개인정보동의서만 제출하시면 됩니다.\n\n자격증 관련 서류는 제출할 필요가 없습니다.\n\nQ18. 학교 추천을 어떻게 받나요?\n\nA18. 소속(출신) 대학 관련 부서에 어학증명서 등의 제반서류를 제출하시면 담당 부서에서 이를\n\n검토 후 국립국제교육원에 공문으로 추천 명단을 송부합니다. 서류 제출 방법 및 제출 마감일은\n\n소속대학에 문의하시기 바랍니다. (대학별 추천 인원의 제한은 없음)\n\nQ19. 학교에는 어떤 서류를 제출해야 하나요?\n\nA19. WEST 온라인지원서 출력물(자기소개서 포함), 재학(졸업/휴학)증명서, 전 학년 성적증명서,\n\n공인영어성적 증명",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "서류 제출",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 14,
+            "side": "right",
+            "source_excerpt": "·미대학생연수(WEST) 프로그램 어학연수비 대출 신청 안내’를 참고하여 신청해주시고,\n\n관련 문의사항은 한국장학재단 콜센터(1599-2000)로 해주시기 바랍니다.\n\n※ 장학재단 누리집 지원구간 확인 신청 : 재학생, 휴학생, 초과 학기자, 수료자, 졸업유예자\n\n※ 졸업생은 한국장학재단 사이트 신청 불필요(학교에 별도 서류 제출)\n\nQ21. 대출이 필요 없는데도 한국장학재단 누리집에 신청을 해야 하나요?\n\nA21. 한국장학재단 누리집 신청은 지원서 접수를 위한 필수적인 절차로, 실제 대출과는 무관합\n\n니다. 재학생(휴학생, 초과 학기자, 수료자, 졸업유예자)의 정부재정지원금은 한국장학재단의\n\n지원구간 확인 결과에 따라 결정되며, 미신청 시 서류심사 대상에서 제외되니 반드시 신청\n\n해주시기 바랍니다. ※ 졸업생은 한국장학재단 사이트 신청 불필요(학교에 별도 서류 제출)\n\n재학/졸업\n\n구분\n구분\n(모집 기간내) 한국장학재단\n\n(최종 합격 후) \n어학연수비 대출 실행\n\n어학연수비 대출 신청\n\n재학생\n필요\n가능\n\n휴학생\n필요\n가능\n\n재학생\n\n초과학기자\n필요\n가능\n\n수료자\n필요\n조건에 따라 다름(한국장학재단 홈페이지 참고)\n\n졸업유예자\n필요\n불가능\n\n졸업생\n졸업생\n불필요\n불",
+            "source_page_sha256": "80d7bc39fefbf2015925466822f2b34e393560dd0ac24f4970bf10787bcc27f0",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "서류 제출",
+            "physical_pdf_page": 10,
+            "logical_page_candidate": 19,
+            "side": "left",
+            "source_excerpt": "붙임4\n 학자금대출·장학금 신청증명서 (졸업생)\n\n<재학 중 국가장학금 신청 이력이 없는 졸업생>\n\n“학자금 지원구간 통지서” 발급이 불가능하므로 “학자금대출·장학금 신청증명서”로 지원구간 증빙 서류 대체\n\n※ 해당 서류 제출 시 10구간에 준하는 정부지원금 지급\n\n- 19 -",
+            "source_page_sha256": "7bcef16f9584b817a1bf89a03aea0dc4dd2de2ed42e34876a73e58a6a3177bfd",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      }
+    },
+    "cost_and_support": {
+      "participation_fees": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 9,
+        "evidence": [
+          {
+            "search_keyword": "참가비",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 1,
+            "side": "left",
+            "source_excerpt": "는관련경험등을고려하여배치(공공기관, 비영리기관, 연구소, 교육기관, 기업체등)\n\n◦ 정부 추천과 재정보증으로 비자(J-1) 발급 구비서류가 간소합니다.\n\n◦ 한․미 양국 정부의 적극적인 지원으로 인턴기관 확정 전에 미국 입국이 가능한\n\n비자(J-1) 발급이 신속하게 이루어집니다.\n\n◦모든 참가자에게왕복항공료를 지원하며, 참가비 및 생활비를 지원구간에 따라 정\n\n부재정지원금으로 차등 지원합니다.\n\n◦문제를 사전에 예방하고 효율적으로 대응하기 위해 미국 내 WEST 주재원 및\n\n재외공관을 통해 참가 학생을 지원하고 있습니다.\n\n- 1 -",
+            "source_page_sha256": "5c0789e5045d95e91e3a3c57e8853bb2c9eeb8016b2a492e42de2b37dd2b2a51",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "참가비",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 2,
+            "side": "right",
+            "source_excerpt": "잡플러스공지사항현지중개기관정보확인)\n※ 어학성적은①, ②를모두충족하여야하며, 접수마감일기준유효기간(2년) 이내\n\n국내정기시험성적만인정/ OPIc 시험의경우대학연합OPIc 시험점수도인정\n\n나. 지원 제한\n\n◦ 복수 국적자 및 외국 소재 대학(교) 학생\n\n◦ WEST 프로그램 기 참가자\n\n◦ WEST 프로그램 기 지원자 중 참가비 납부 마감 이후 포기자\n\n- 2 -",
+            "source_page_sha256": "909f367cef774a46909a2fa859d8f7f7a85230a213b7c737fccc310021063330",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "참가비",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 6,
+            "side": "right",
+            "source_excerpt": "4\n참가비 및 정부재정지원\n\n가. 참가비* : (단기) USD 7,045 (중기) USD 8,912\n\n* 전형료, 어학연수비, 인턴십배치비, 현지중개기관비, 보험료, 학생교환방문정보시스템(SEVIS) 등록비\n\n※ 참가비는최종합격자발표직후참가비납부기간(은행영업일5일간) 내에미화달러로\n\n일시납하게되므로미리준비해두시기바랍니다.\n\n나. 정부재정지원내역\n\n< 유의사항 >\n\n1. 본인의 귀책사유로 프로그램 중단(포기) 시, 지원받은 정부재정지원금은 프로그램 규정에\n\n따라 환수됩니다.\n\n2. 정부지원금 중 참가비는 외화(참가비에서 본인부담금만 납부)로, 항공료 및 생활비는 원화로 지급됩니다.\n\n※ 학자금지원구간별 지원 금액 외의 비용은 본인 부담임\n\n※ 정부지원금은 합격자 발표일의 학자금지원구간을 기준으로 활동 종료 시까지 지원합니다.\n\n※ 생활비는 원화로 지급되",
+            "source_page_sha256": "66f6d5b4a2721ffc0b294dd1b1da10726d2448ecc3ce3701e93ec6ef549cbab7",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "참가비",
+            "physical_pdf_page": 4,
+            "logical_page_candidate": 7,
+            "side": "left",
+            "source_excerpt": "◦중기 WEST(12개월) 지원구간별 지원 금액\n\n(1$=1,472원)\n\n참가비\n($8,912)\n항공료\n(2,000,000원)\n\n어학연수생활비(최장 12주)\n\n및 인턴생활비(최장 24주)\n지원총액\n\n구 분\n\n(최대)\n정부지원금\n본인부담금\n$350~$1,400/4주\n\n기초·차상위\n\n$12,600\n($1,400*9개월)\n33,665천원\n\n~5구간\n$8,912\n$0\n\n6∼7구간\n$4,456\n$4,456\n$6,300\n($700*9개월)\n17,833천원\n\n2,000,000원\n\n(1,000,000원×2\n\n회/ 출국, 귀국)\n\n8∼9구간\n$3,119\n$5,793\n$6,300\n($700*9개월)\n15,865천원\n\n소득\n10분위\n$2,228\n$6,684\n$3,150\n($350*9개월)\n9,916천원\n\n※ 단, 생활비는 원화로 지급되므로, 연도별 기준환율 변동*에 따라 실제 수령액이 달라질 수 있으니\n\n재정계획 수립 시 참고 요망\n\n*",
+            "source_page_sha256": "e8832363b8c6da95e6b677eb29c7253df5f430e26c7faca43026720ef995bcc8",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "참가비",
+            "physical_pdf_page": 5,
+            "logical_page_candidate": 10,
+            "side": "right",
+            "source_excerpt": "▪ 1차 면접 <국립국제교육원 인성 면접>\n   - 4.18.(토): 단기, 4.19.(일): 중기\n\n4.23.(목), 16:00\n▪ 1차 면접 합격자 발표\n\n4.24.(금)∼5.12.(화)\n▪ 2차 면접 <현지중개기관 영어 면접>\n\n5.21.(목), 16:00\n▪ 최종합격자 발표\n\n5.22.(금)∼5.29.(금)\n▪ 참가비 납부\n\n6.1.(월)∼6.4.(목)\n▪ 추가합격자 발표 및 참가비 납부\n\n6.25.(목)\n▪ 출국전 참가자 사전연수\n\n7.6.(월)~7.7.(화)\n▪ 비자 인터뷰(주한미국대사관)\n\n※ 비자 인터뷰 신청 시 비자 발급비($185) 개별 납부\n\n7월～\n▪ 미국 출국(개별)\n\n8월～\n▪ 프로그램(어학연수) 시작\n   ※ 현지중개기관(어학연수기관)별 시작 시기 상이\n\n※ 상기일정은업무추진상황에따라변동가능\n\n- 10 -",
+            "source_page_sha256": "d98dfdc5530c40d673e2e0be6b10a60c5b7556c339e8185454358601eed63fe5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "참가비",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 11,
+            "side": "left",
+            "source_excerpt": "른 정부재정지원을 받는 프로그램이나 “정부해외인턴사업”에 참여한 경우에도\n\nWEST 프로그램 지원이 가능한가요?\n\nA5. “정부재정지원 직접 일자리 사업” 및 타 “정부해외인턴사업” 참여자에 대한 지원 제한이 없기\n\n때문에 WEST 프로그램을 제외한 기타 프로그램의 참여자는 지원 가능합니다.\n\n※  WEST 기참가자 및 참가비 납부 마감 이후 포기자는 지원이 불가합니다.\n\n- 11 -",
+            "source_page_sha256": "0ecfc49dd72930de2508722d6473835cabed3147f8bd6296dd51f19d344dc1cc",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "참가비",
+            "physical_pdf_page": 8,
+            "logical_page_candidate": 15,
+            "side": "left",
+            "source_excerpt": "국외 소득·재산 신고 대상자 확인 절차는 다음과 같습니다. 먼저 재외국민 특별전형 입학자의\n\n경우 학자금지원 신청 당시 특별전형 입학 여부를 선택하게 됩니다. 주민등록상 재외국민의\n\n경우 학생 및 가구원 정보제공 동의 완료 후 주민등록 거주 상태 코드 확인을 통해 국외\n\n소득·재산 신고 대상자를 선정하게 됩니다.\n\n5. 참가비 납부\n\nQ29. 부모님 명의로 참가비를 납부해도 되나요?\n\nA29. 반드시 본인 명의로 납부하셔야 합니다.\n\nQ30. 참가비를 원화로 납부해도 되나요? 분할납부는 가능한가요?\n\nA30. 참가비는 외화(USD)로 납부해야 하며, 납부기간(은행영업일 5일 내) 내 일시 납부해야 합니다.\n\n기간 내 미납 시 참가 포기로 간주하니, 합격에 대비해 미리 준비하는 것을 권장합니다.\n\n※ 최종합격자 안내문에 기재된 참가자 부담금(=참가비-정부재정지원금)을 납부기간 내 납부\n\nQ31. 참가비 납부 마감 이후 포기하는 경우 불이익이 있나요?\n\nA31. 참가비 납부 마감 이후 포기 시, WEST 프로그램에 재지원하실 수 없습니다.\n\n또한 프로그램 시작 이후 본인의 귀책사유로 프로그램 중단 시, 지원받은 정부재정지원금은\n\n프로그램 규정에 따라 환수되니, 신중하",
+            "source_page_sha256": "030c6ecc87086720048e3f7703005b829d8e23ca914fd20d158bee4321dc01e5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "참가비",
+            "physical_pdf_page": 9,
+            "logical_page_candidate": 17,
+            "side": "left",
+            "source_excerpt": "Q44. 항공료와 어학연수 및 인턴생활비는 원화로 지급되나요?\n\nA44. 네, 항공료 및 생활비는 모두 원화로 지급됩니다. 항공료는 2,000,000원이 정액 지원되며,\n\n생활비는 지원구간에 따라 상이합니다. 특히 생활비는 지급 년도의 기준환율이 적용되어\n\n지급됨을 양지하시기 바랍니다. 자세한 내용은 모집 공고문의 ‘참가비 및 정부재정지원’을\n\n확인하시기 바랍니다.\n\nQ45. 정부 지원금 외에 개인 경비는 얼마나 필요할까요?\n\nA45. 프로그램별 기간, 거주 지역 등에 따라 필요한 자금은 상이합니다. 어학연수/인턴생활비 지급기간\n\n(8주 간격으로 지급), 물가 등 여러 요소를 고려해 필요한 경비를 미리 준비하시는 것이 좋습니다.\n\n※ 초기정착금과 현지 생활비 등은 거주지역과 개인의 소비 습관 및 생활 방식에 따라 매우\n\n상이하므로 정확한 금액을 알려드리기 어렵습니다.\n\n∙ 참가자 후기\n\n\"실제 생활비와 경비는 예상보다 많이 필요하였습니다. 미국은 지역에 따라 하우징 가격과 물가 차이가\n\n큰데, 인턴십 배정을 받을 당시 미국 내에서도 물가가 높은 지역으로 배정될 것을 예상하지 못했고,\n\n월 1,000불에 가까운 월세를 내야 했을 때 많이 막막했습니다. WEST",
+            "source_page_sha256": "4fe9786e9c07743d42bea5a9bd130e74fba4c34a798c17ec7f6ee225a995ed9a",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "참가비",
+            "physical_pdf_page": 9,
+            "logical_page_candidate": 18,
+            "side": "right",
+            "source_excerpt": "EST 프로그램 규정에 따른 정부지원금 환수* 등의 절차가 진행됩니다.\n\n* 환수금액은 프로그램 중단 사유에 대한 참가자의 고의성 유무에 따라 다르게 결정됩니다. 고의성\n\n있는 사유(규정 위반, 어학연수 출석률 미달, 무리한 요구·불성실한 태도로 인한 인턴배치 실패\n\n혹은 인턴십 해고 등)는 정부지원금 전액(출국항공료, 참가비, 어학연수/인턴 생활비)을 반납해야\n\n하며, 고의성 없는 사유(참가자 본인 및 가족의 건강, 경제적 사정, 기타 불가피한 사유)는 과지급된\n\n어학연수/인턴 생활비를 일할 계산하여 산정된 금액을 반납해야 합니다.\n\n7. 프로그램 수료 후\n\nQ48. WEST 종료 후, 바로 미국으로 취업할 수 있나요?\n\nA48. 프로그램을 수료 후 개별상황에 따라 미국으로 취업하는 것은 가능하나 비자 발급 절차는\n\n개인적으로 준비하여야 하며, 별도로 지원해 드리지 않습니다. 미국 국무부의 문화교류\n\n비자에 속하는 J-1비자 중 정부의 재정지원을 받은 경우, 본국(한국)에서 2년간 체류해야\n\n하는 의무가 발생합니다. 2년 본국거주의무(two year rule)를 다하지 않고, 미국에 취업(H),\n\n주재원으로 파견(L), 미국 시민권자와의 약혼/결혼(K)의 사유로",
+            "source_page_sha256": "6f42317a89183ee03148c46fdd3654418542a06af3d62c0a03ca8923ec8f6a22",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      },
+      "government_support": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 7,
+        "evidence": [
+          {
+            "search_keyword": "정부재정지원",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 1,
+            "side": "left",
+            "source_excerpt": "비영리기관, 연구소, 교육기관, 기업체등)\n\n◦ 정부 추천과 재정보증으로 비자(J-1) 발급 구비서류가 간소합니다.\n\n◦ 한․미 양국 정부의 적극적인 지원으로 인턴기관 확정 전에 미국 입국이 가능한\n\n비자(J-1) 발급이 신속하게 이루어집니다.\n\n◦모든 참가자에게왕복항공료를 지원하며, 참가비 및 생활비를 지원구간에 따라 정\n\n부재정지원금으로 차등 지원합니다.\n\n◦문제를 사전에 예방하고 효율적으로 대응하기 위해 미국 내 WEST 주재원 및\n\n재외공관을 통해 참가 학생을 지원하고 있습니다.\n\n- 1 -",
+            "source_page_sha256": "5c0789e5045d95e91e3a3c57e8853bb2c9eeb8016b2a492e42de2b37dd2b2a51",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "정부재정지원",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 5,
+            "side": "left",
+            "source_excerpt": "③ 학자금지원구간 확인 신청\n  ③-1. 재학생: 한국장학재단 포털사이트에서 신청\n\n※ 휴학생, 초과학기자, 수료자, 졸업유예자포함\n\n◦WEST 프로그램 참가자들은 학자금지원구간에 따라 정부재정지원금을 수령하므로, \n프로그램 지원 시(졸업생 제외) 지원구간 확인 절차(한국장학재단의 WEST 어학\n연수비 대출 신청)가 반드시 완료되어야 합니다.\n\n※ 기존(재단 내 타사업)의 신청 여부와 관계없이, WEST 지원자의 지원구간 확인을 위해 ‘어학\n\n연수비대출’을 신규 신청하여야 합니다. (실제 대출 신청이 아님)\n\n※ 한국장학재단 어학연수비 대출 실행 여부는 최종합격 발표 후 선택 가능합니다.\n\n(대출 실행은 재학생‧휴학생·초과학기자·수료자에 한하며, 졸업유예자는 불가, 수료자는 26년 1학기\n\n등록 여부에 따라 대출이 불가한 경우가 있으므로 장학재단 누리집에서 지원대상 확인)\n\n※ 위 재학생 중 최종 합격 후 학적이 졸업/졸업 유예로 변경되는 경우 어학연수비 대출 실행이 불가합니다.\n\n◦신청 방법 안내\n\n1. 한국장학재단 사이트(www.k",
+            "source_page_sha256": "705f4184a278d8d5628ba97197df846c5f7db38f2ae3cd36d9d58d145cc73f9f",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "정부재정지원",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 6,
+            "side": "right",
+            "source_excerpt": "4\n참가비 및 정부재정지원\n\n가. 참가비* : (단기) USD 7,045 (중기) USD 8,912\n\n* 전형료, 어학연수비, 인턴십배치비, 현지중개기관비, 보험료, 학생교환방문정보시스템(SEVIS) 등록비\n\n※ 참가비는최종합격자발표직후참가비납부기간(은행영업일5일간) 내에미화달러로\n\n일시납하게되므로미리준비해두시기바랍니다.\n\n나. 정부재정지원내역\n\n< 유의사항 >\n\n1. 본인의 귀책사유로 프로그램 중단(포기) 시, 지원받은 정부재정지원금은 프로그램 규정에\n\n따라 환수됩니다.\n\n2. 정부지원금 중 참가비는 외화(참가비에서 본인부담금만 납부)로, 항공료 및 생활비는 원화로 지급됩니다.\n\n※ 학자금지원구간별 지원 금액 외의 비용은 본인 부담임\n\n※ 정부지원금은 합격자 발표일의 학자금지원구간을 기준으로 활동 종료 시까지 지원합니다.\n\n※ 생활비는 원화로 지급되므로, 연도별 기",
+            "source_page_sha256": "66f6d5b4a2721ffc0b294dd1b1da10726d2448ecc3ce3701e93ec6ef549cbab7",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "정부재정지원",
+            "physical_pdf_page": 6,
+            "logical_page_candidate": 11,
+            "side": "left",
+            "source_excerpt": "시 소속 학교에서 학점 인정은 얼마나 받을 수 있나요?\n\nA4. 학점 인정 여부 및 방법은 개별 학교의 학칙에 따라 상이하므로, 소속(출신)대학 관계자\n\n(국제교류처, 취업지원처, 경력개발센터 등)에게 문의하여 주시기 바랍니다. 제도상으로는\n\n학점 인정 여부와 상관없이 WEST에 지원이 가능합니다.\n\nQ5. 이전에 다른 정부재정지원을 받는 프로그램이나 “정부해외인턴사업”에 참여한 경우에도\n\nWEST 프로그램 지원이 가능한가요?\n\nA5. “정부재정지원 직접 일자리 사업” 및 타 “정부해외인턴사업” 참여자에 대한 지원 제한이 없기\n\n때문에 WEST 프로그램을 제외한 기타 프로그램의 참여자는 지원 가능합니다.\n\n※  WEST 기참가자 및 참가비 납부 마감 이후 포기자는 지원이 불가합니다.\n\n- 11 -",
+            "source_page_sha256": "0ecfc49dd72930de2508722d6473835cabed3147f8bd6296dd51f19d344dc1cc",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "정부재정지원",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 14,
+            "side": "right",
+            "source_excerpt": "자, 졸업유예자\n\n※ 졸업생은 한국장학재단 사이트 신청 불필요(학교에 별도 서류 제출)\n\nQ21. 대출이 필요 없는데도 한국장학재단 누리집에 신청을 해야 하나요?\n\nA21. 한국장학재단 누리집 신청은 지원서 접수를 위한 필수적인 절차로, 실제 대출과는 무관합\n\n니다. 재학생(휴학생, 초과 학기자, 수료자, 졸업유예자)의 정부재정지원금은 한국장학재단의\n\n지원구간 확인 결과에 따라 결정되며, 미신청 시 서류심사 대상에서 제외되니 반드시 신청\n\n해주시기 바랍니다. ※ 졸업생은 한국장학재단 사이트 신청 불필요(학교에 별도 서류 제출)\n\n재학/졸업\n\n구분\n구분\n(모집 기간내) 한국장학재단\n\n(최종 합격 후) \n어학연수비 대출 실행\n\n어학연수비 대출 신청\n\n재학생\n필요\n가능\n\n휴학생\n필요\n가능\n\n재학생\n\n초과학기자\n필요\n가능\n\n수료자\n필요\n조건에 따라 다름(한국장학재단 홈페이지 참고)\n\n졸업유예자\n필요\n불가능\n\n졸업생\n졸업생\n불필요\n불가능\n\n※ 재학생 중 최종 합격 후 학적이 졸업/졸업 유예로 변경되는 경우 대출 실행이 불가합니다.\n\nQ22. 학자금 지원구간은 언제 나오나요?\n\nA22. 가구원 동의 후 약 6~8주 정도 시간이 소요되며, 자세한 사항은 장학재단 콜센터(1599-2",
+            "source_page_sha256": "80d7bc39fefbf2015925466822f2b34e393560dd0ac24f4970bf10787bcc27f0",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "정부재정지원",
+            "physical_pdf_page": 8,
+            "logical_page_candidate": 15,
+            "side": "left",
+            "source_excerpt": "점을 미충족한 학생\n\n2. 수료자: 졸업기준학점을 충족하였으나, 졸업요건을 미충족한 학생\n\n3. 졸업유예자: 졸업기준학점을 충족하고, 졸업요건도 충족한 학생\n\nQ26. 어학연수, 인턴기간 동안 지원구간이 변경되면 지원금 규모도 바뀌나요?\n\nA26. 합격자 발표일 기준 지원구간으로 활동 종료 시까지 지원합니다.\n\nQ27. 정부 재정지원금 외에 추가적으로 재정 지원을 받을 수 있나요?\n\nA27. WEST 프로그램 참가자 대상으로 WEST 프로그램 공모전, WEST 서포터즈 등을 운영하고\n\n있습니다.\n\nQ28. 국외 소득·재산 조사 신고대상자는 어떻게 선정되나요?\n\nA28. 국외 소득·재산 신고 대상은 학부생(입학예정 포함) 중 ①재외국민 특별전형 입학자(학생\n\n및 가구원 전부) 또는 ②주민등록상 재외국민으로 확인된 학생 및 가구원입니다.\n\n국외 소득·재산 신고 대상자 확인 절차는 다음과 같습니다. 먼저 재외국민 특별전형 입학자의\n\n경우 학자금지원 신청 당시 특별전형 입학 여부를 선택하게 됩니다. 주민등록상 재외국민의\n\n경우 학생 및 가구원 정보제공 동의 완료 후 주민등록 거주 상태 코드 확인을 통해 국외\n\n소득·재산 신고 대상자를 선정하게 됩니다.\n\n5. 참가비 납부\n\nQ2",
+            "source_page_sha256": "030c6ecc87086720048e3f7703005b829d8e23ca914fd20d158bee4321dc01e5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "정부재정지원",
+            "physical_pdf_page": 9,
+            "logical_page_candidate": 17,
+            "side": "left",
+            "source_excerpt": "항공료와 어학연수 및 인턴생활비는 원화로 지급되나요?\n\nA44. 네, 항공료 및 생활비는 모두 원화로 지급됩니다. 항공료는 2,000,000원이 정액 지원되며,\n\n생활비는 지원구간에 따라 상이합니다. 특히 생활비는 지급 년도의 기준환율이 적용되어\n\n지급됨을 양지하시기 바랍니다. 자세한 내용은 모집 공고문의 ‘참가비 및 정부재정지원’을\n\n확인하시기 바랍니다.\n\nQ45. 정부 지원금 외에 개인 경비는 얼마나 필요할까요?\n\nA45. 프로그램별 기간, 거주 지역 등에 따라 필요한 자금은 상이합니다. 어학연수/인턴생활비 지급기간\n\n(8주 간격으로 지급), 물가 등 여러 요소를 고려해 필요한 경비를 미리 준비하시는 것이 좋습니다.\n\n※ 초기정착금과 현지 생활비 등은 거주지역과 개인의 소비 습관 및 생활 방식에 따라 매우\n\n상이하므로 정확한 금액을 알려드리기 어렵습니다.\n\n∙ 참가자 후기\n\n\"실제 생활비와 경비는 예상보다 많이 필요하였습니다. 미국은 지역에 따라 하우징 가격과 물가 차이가\n\n큰데, 인턴십 배정을 받을 당시 미국 내에서도 물가가 높은 지역으로 배정될 것을 예상하지 못했고,\n\n월 1,000불에 가까운 월세를 내야 했을 때 많이 막막했습니다. WEST 프로그램을 지원할",
+            "source_page_sha256": "4fe9786e9c07743d42bea5a9bd130e74fba4c34a798c17ec7f6ee225a995ed9a",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      },
+      "living_expenses": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 5,
+        "evidence": [
+          {
+            "search_keyword": "생활비",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 1,
+            "side": "left",
+            "source_excerpt": "을고려하여배치(공공기관, 비영리기관, 연구소, 교육기관, 기업체등)\n\n◦ 정부 추천과 재정보증으로 비자(J-1) 발급 구비서류가 간소합니다.\n\n◦ 한․미 양국 정부의 적극적인 지원으로 인턴기관 확정 전에 미국 입국이 가능한\n\n비자(J-1) 발급이 신속하게 이루어집니다.\n\n◦모든 참가자에게왕복항공료를 지원하며, 참가비 및 생활비를 지원구간에 따라 정\n\n부재정지원금으로 차등 지원합니다.\n\n◦문제를 사전에 예방하고 효율적으로 대응하기 위해 미국 내 WEST 주재원 및\n\n재외공관을 통해 참가 학생을 지원하고 있습니다.\n\n- 1 -",
+            "source_page_sha256": "5c0789e5045d95e91e3a3c57e8853bb2c9eeb8016b2a492e42de2b37dd2b2a51",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "생활비",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 6,
+            "side": "right",
+            "source_excerpt": "참가비납부기간(은행영업일5일간) 내에미화달러로\n\n일시납하게되므로미리준비해두시기바랍니다.\n\n나. 정부재정지원내역\n\n< 유의사항 >\n\n1. 본인의 귀책사유로 프로그램 중단(포기) 시, 지원받은 정부재정지원금은 프로그램 규정에\n\n따라 환수됩니다.\n\n2. 정부지원금 중 참가비는 외화(참가비에서 본인부담금만 납부)로, 항공료 및 생활비는 원화로 지급됩니다.\n\n※ 학자금지원구간별 지원 금액 외의 비용은 본인 부담임\n\n※ 정부지원금은 합격자 발표일의 학자금지원구간을 기준으로 활동 종료 시까지 지원합니다.\n\n※ 생활비는 원화로 지급되므로, 연도별 기준환율 변동에 따라 실제 수령액이 달라질 수 있으니\n\n재정계획 수립 시 참고하시기 바랍니다.\n\n◦단기 WEST(6개월) 지원구간별 지원 금액\n($1=1,472원)\n\n참가비\n($7,045)\n항공료\n(2,000,000원)\n\n어학연수생활비(최장 8주)\n및 인턴생활비(최장 16주)\n지원총액\n\n구 분\n\n(최대)\n정부지원금\n본인부담금\n$350~$1,400/4주\n\n기초·차상위\n\n$8,400\n($1,400*6개월)\n24,735천원\n\n~5구간\n$7,045\n$0\n\n6∼7구간\n$3,523\n$3,522\n$4,200\n($700*6개월)\n13,368천원\n\n2",
+            "source_page_sha256": "66f6d5b4a2721ffc0b294dd1b1da10726d2448ecc3ce3701e93ec6ef549cbab7",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "생활비",
+            "physical_pdf_page": 4,
+            "logical_page_candidate": 7,
+            "side": "left",
+            "source_excerpt": "◦중기 WEST(12개월) 지원구간별 지원 금액\n\n(1$=1,472원)\n\n참가비\n($8,912)\n항공료\n(2,000,000원)\n\n어학연수생활비(최장 12주)\n\n및 인턴생활비(최장 24주)\n지원총액\n\n구 분\n\n(최대)\n정부지원금\n본인부담금\n$350~$1,400/4주\n\n기초·차상위\n\n$12,600\n($1,400*9개월)\n33,665천원\n\n~5구간\n$8,912\n$0\n\n6∼7구간\n$4,456\n$4,456\n$6,300\n($700*9개월)\n17,833천원\n\n2,000,000원\n\n(1,000,000원×2\n\n회/ 출국, 귀국)\n\n8∼9구간\n$3,119\n$5,793\n$6,300\n($700*9개월)\n15,865천원\n\n소득\n10분위\n$2,228\n$6,684\n$3,150\n($350*9개월)\n9,916천원\n\n※ 단, 생활비는 원화로 지급되므로, 연도별 기준환율 변동*에 따라 실제 수령액이 달라질 수 있으니\n\n재정계획 수립 시 참고 요망\n\n* 최근 3년간 기준환율($1): (’24) 1,300원 → (’2",
+            "source_page_sha256": "e8832363b8c6da95e6b677eb29c7253df5f430e26c7faca43026720ef995bcc8",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "생활비",
+            "physical_pdf_page": 9,
+            "logical_page_candidate": 17,
+            "side": "left",
+            "source_excerpt": "학연수와 인턴십을 하게\n\n되며, 참가자는 미국 국무부 규정에 의거 현지 프로그램 종료 후 2년간 본국(=한국)에서\n\n거주해야하는 의무가 있으므로, 반드시 귀국한 후 프로그램을 수료하여야 합니다. 현지에서\n\n취업 결정 시에도 반드시 귀국하여 취업 관련 비자를 발급 받아 출국해야 합니다.\n\nQ44. 항공료와 어학연수 및 인턴생활비는 원화로 지급되나요?\n\nA44. 네, 항공료 및 생활비는 모두 원화로 지급됩니다. 항공료는 2,000,000원이 정액 지원되며,\n\n생활비는 지원구간에 따라 상이합니다. 특히 생활비는 지급 년도의 기준환율이 적용되어\n\n지급됨을 양지하시기 바랍니다. 자세한 내용은 모집 공고문의 ‘참가비 및 정부재정지원’을\n\n확인하시기 바랍니다.\n\nQ45. 정부 지원금 외에 개인 경비는 얼마나 필요할까요?\n\nA45. 프로그램별 기간, 거주 지역 등에 따라 필요한 자금은 상이합니다. 어학연수/인턴생활비 지급기간\n\n(8주 간격으로 지급), 물가 등 여러 요소를 고려해 필요한 경비를 미리 준비하시는 것이 좋습니다.\n\n※ 초기정착금과 현지 생활비 등은 거주지역과 개인의 소비 습관 및 생활 방식에 따라 매우\n\n상이하므로 정확한 금액을 알려드리기 어렵습니다.\n\n∙ 참가자",
+            "source_page_sha256": "4fe9786e9c07743d42bea5a9bd130e74fba4c34a798c17ec7f6ee225a995ed9a",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "생활비",
+            "physical_pdf_page": 9,
+            "logical_page_candidate": 18,
+            "side": "right",
+            "source_excerpt": "따른 정부지원금 환수* 등의 절차가 진행됩니다.\n\n* 환수금액은 프로그램 중단 사유에 대한 참가자의 고의성 유무에 따라 다르게 결정됩니다. 고의성\n\n있는 사유(규정 위반, 어학연수 출석률 미달, 무리한 요구·불성실한 태도로 인한 인턴배치 실패\n\n혹은 인턴십 해고 등)는 정부지원금 전액(출국항공료, 참가비, 어학연수/인턴 생활비)을 반납해야\n\n하며, 고의성 없는 사유(참가자 본인 및 가족의 건강, 경제적 사정, 기타 불가피한 사유)는 과지급된\n\n어학연수/인턴 생활비를 일할 계산하여 산정된 금액을 반납해야 합니다.\n\n7. 프로그램 수료 후\n\nQ48. WEST 종료 후, 바로 미국으로 취업할 수 있나요?\n\nA48. 프로그램을 수료 후 개별상황에 따라 미국으로 취업하는 것은 가능하나 비자 발급 절차는\n\n개인적으로 준비하여야 하며, 별도로 지원해 드리지 않습니다. 미국 국무부의 문화교류\n\n비자에 속하는 J-1비자 중 정부의 재정지원을 받은 경우, 본국(한국)에서 2년간 체류해야\n\n하는 의무가 발생합니다. 2년 본국거주의무(two year rule)를 다하지 않고, 미국에 취업(H),\n\n주재원으로 파견(L), 미국 시민권자와의 약혼/결혼(K)의 사유로 미국에 재입국하기 위해",
+            "source_page_sha256": "6f42317a89183ee03148c46fdd3654418542a06af3d62c0a03ca8923ec8f6a22",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      },
+      "financial_support_brackets": {
+        "status": "evidence_found_needs_review",
+        "extracted_value": null,
+        "evidence_count": 13,
+        "evidence": [
+          {
+            "search_keyword": "지원구간",
+            "physical_pdf_page": 1,
+            "logical_page_candidate": 1,
+            "side": "left",
+            "source_excerpt": "배치(공공기관, 비영리기관, 연구소, 교육기관, 기업체등)\n\n◦ 정부 추천과 재정보증으로 비자(J-1) 발급 구비서류가 간소합니다.\n\n◦ 한․미 양국 정부의 적극적인 지원으로 인턴기관 확정 전에 미국 입국이 가능한\n\n비자(J-1) 발급이 신속하게 이루어집니다.\n\n◦모든 참가자에게왕복항공료를 지원하며, 참가비 및 생활비를 지원구간에 따라 정\n\n부재정지원금으로 차등 지원합니다.\n\n◦문제를 사전에 예방하고 효율적으로 대응하기 위해 미국 내 WEST 주재원 및\n\n재외공관을 통해 참가 학생을 지원하고 있습니다.\n\n- 1 -",
+            "source_page_sha256": "5c0789e5045d95e91e3a3c57e8853bb2c9eeb8016b2a492e42de2b37dd2b2a51",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원구간",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 3,
+            "side": "left",
+            "source_excerpt": "업생\n\n❏ 소속 대학 참가자 추천 (공통)\n\n▪참가자 추천\n - 추천 공문 발송 기간: ‘26.3.19.(목)~3.23.(월) ※ 추천 마감일은 대학에서 결정\n - 서류심사: 학년, 영어성적 등 자격 요건 확인\n   ※ 확인 필: 재외국민 특별전형 여부, 취업취약계층 증빙자료 제출여부,\n               졸업생 지원구간 증빙자료 제출여부\n\n소속\n대학\n\n- 공문발송: 자격 요건을 충족한 학생을 지원대상자로 추천\n   ※ 첨부 필: 취업취약계층 증빙자료, 졸업생 지원구간 증빙자료, 편입생 전·현적대 성적증명서\n\n- 3 -",
+            "source_page_sha256": "731dc9a92316644330756f9928351a65219f580cf670425012918191176a5d4b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원구간",
+            "physical_pdf_page": 2,
+            "logical_page_candidate": 4,
+            "side": "right",
+            "source_excerpt": "관 면접 등 해외에서 이메일 발송 시 누락의 우려가 있으므로, 본인 이름\n\n이니셜이 포함된 Gmail 계정을 사용하실 것을 권장합니다.\n\n3. 온라인 지원 당시 받은 지원자 접수번호는 지속적으로 사용하게 됩니다.\n\n4. ‘재외국민 특별전형’으로 대학에 입학한 자는 반드시 해당 여부에 체크하여 주시기 바랍니다. \n누락 시 지원구간과 상관없이 10구간에 준하여 정부 지원금이 지급됩니다.\n\n5. ‘취업취약계층’의 경우 해당여부(기초/차상위/장애인/다문화가족/북향민)를 반드시 체크해 주시\n기 바랍니다. 취업취약계층은 서류전형에서 우대되며, 누락 시 우대 대상에서 제외됩니다.\n\n6. 온라인 지원서 작성 후 ⌜지원하기⌟ 버튼을 누르고, 마이페이지에서 지원내역을 확인해 \n주시기 바랍니다.\n\n② 서류 제출\n\n◦구비서류(원본)를 소속 대학(국제교류 또는 취업 관련 부서)에 직접 제출\n\n※ 대학별신청마감일확인필요\n※ 제출서류: (공통) WEST 온라인지원서및자기소개서출력물, 재학(휴학/졸업)증명서,\n\n전학년성적증명서, 공인영어성적증명서(TOEIC, OPIc, G-TELP, TOEIC Speaking,\nG-TELP Speaking), 취업취약계층증빙자료[붙임1] 참조)/ (졸업생) 지",
+            "source_page_sha256": "1777e33a6906f8068549e9fbfcd22f77b5010a44b2f41a18375fc5cec0c2f195",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원구간",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 5,
+            "side": "left",
+            "source_excerpt": "③ 학자금지원구간 확인 신청\n  ③-1. 재학생: 한국장학재단 포털사이트에서 신청\n\n※ 휴학생, 초과학기자, 수료자, 졸업유예자포함\n\n◦WEST 프로그램 참가자들은 학자금지원구간에 따라 정부재정지원금을 수령하므로, \n프로그램 지원 시(졸업생 제외) 지원구간 확인 절차(한국장학재단의 WEST 어학\n연수비 대출 신청)가 반드시 완료되어야 합니다.\n\n※ 기존(재단 내 타사업)의 신청 여부와 관계없이, WEST 지원자의 지원구간 확인을 위해 ‘어학\n\n연수비대출’을 신규 신청하여야 합니다. (실제 대출 신청이 아님)\n\n※ 한국장학재단 어학연수비 대출 실행 여부는 최종합격 발표 후 선택 가능합니다.\n\n(대출 실행은 재학생‧휴학생·초과학기자·수료자에 한하며, 졸업유예자는 불가, 수료자는 26년 1학기\n\n등록 여부에 따라 대출이 불가한 경우가 있으므로 장학재단 누리집에서",
+            "source_page_sha256": "705f4184a278d8d5628ba97197df846c5f7db38f2ae3cd36d9d58d145cc73f9f",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원구간",
+            "physical_pdf_page": 3,
+            "logical_page_candidate": 6,
+            "side": "right",
+            "source_excerpt": "달러로\n\n일시납하게되므로미리준비해두시기바랍니다.\n\n나. 정부재정지원내역\n\n< 유의사항 >\n\n1. 본인의 귀책사유로 프로그램 중단(포기) 시, 지원받은 정부재정지원금은 프로그램 규정에\n\n따라 환수됩니다.\n\n2. 정부지원금 중 참가비는 외화(참가비에서 본인부담금만 납부)로, 항공료 및 생활비는 원화로 지급됩니다.\n\n※ 학자금지원구간별 지원 금액 외의 비용은 본인 부담임\n\n※ 정부지원금은 합격자 발표일의 학자금지원구간을 기준으로 활동 종료 시까지 지원합니다.\n\n※ 생활비는 원화로 지급되므로, 연도별 기준환율 변동에 따라 실제 수령액이 달라질 수 있으니\n\n재정계획 수립 시 참고하시기 바랍니다.\n\n◦단기 WEST(6개월) 지원구간별 지원 금액\n($1=1,472원)\n\n참가비\n($7,045)\n항공료\n(2,000,000원)\n\n어학연수생활비(최장 8주)\n및 인턴생활비(최장 16주)\n지원총액\n\n구 분\n\n(최대)\n정부지원금\n본인부담금\n$350~$1,400/4주\n\n기초·차상위\n\n$8,400\n($1,400*6개월)\n24,735천원\n\n~5구간\n$7,045\n$0\n\n6∼7구간\n$3,523\n$3,522\n$4,200\n($700*6개월)\n13,368천원\n\n2,000,000원\n\n(1,000,000원×",
+            "source_page_sha256": "66f6d5b4a2721ffc0b294dd1b1da10726d2448ecc3ce3701e93ec6ef549cbab7",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원구간",
+            "physical_pdf_page": 4,
+            "logical_page_candidate": 7,
+            "side": "left",
+            "source_excerpt": "◦중기 WEST(12개월) 지원구간별 지원 금액\n\n(1$=1,472원)\n\n참가비\n($8,912)\n항공료\n(2,000,000원)\n\n어학연수생활비(최장 12주)\n\n및 인턴생활비(최장 24주)\n지원총액\n\n구 분\n\n(최대)\n정부지원금\n본인부담금\n$350~$1,400/4주\n\n기초·차상위\n\n$12,600\n($1,400*9개월)\n33,665천원\n\n~5구간\n$8,912\n$0\n\n6∼7구간\n$4,456\n$4,456\n$6,300\n($700*9개월)\n17,833천원\n\n2,000,000원\n\n(1,000,000원×2\n\n회/ 출국, 귀국)\n\n8∼9구간\n$3,119\n$5,793\n$6,300\n($700*9개월)\n15,865천원\n\n소득\n10분위\n$2,228\n$6,684\n$3,150\n($350*9개월)\n9,916천원\n\n※ 단, 생활비는 원화로 지급되므로, 연도별 기준환율 변동*에 따라 실제 수령액이 달라질 수",
+            "source_page_sha256": "e8832363b8c6da95e6b677eb29c7253df5f430e26c7faca43026720ef995bcc8",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원구간",
+            "physical_pdf_page": 5,
+            "logical_page_candidate": 9,
+            "side": "left",
+            "source_excerpt": "붙임 1\n 취업취약계층 제출 서류 / 졸업생 지원구간 제출 서류\n\n※ 제출증빙자료는모집공고일(’26.2.11.) 이후발급서류여야함\n\n1. 취업취약계층의 범주\n\n가. 저소득층: 기초생활수급자 및 차상위계층\n\n나. 기타 취업취약계층: 장애인, 북향민 등\n\n※ 「직접일자리사업중앙부처-자치단체합동지침」에따른취업취약계층범주준용\n\n2. 취업취약계층 제출 서류\n\n가. 저소득층 (본인 명의로 발급)\n\n구분\n자격명\n제출 서류\n발급처\n\n기초생계급여수급자\n국민기초생활수급자증명서\n\n기초생활\n\n(생계/의료)\n* 보장시설수급자증명서포함\n행정복지센터 및\n정부24(www.gov.kr)\n\n수급자\n\n기초의료급여수급자\n\n기초주거급여수급자\n국민기초생활수급자증명서\n\n(주거/교육)\n기초교육급여수급자\n한부모가족보호대상자\n한부모가족 증명서\n차상위장애연금대상자\n장애인연금수급자 확인서\n\n차상위\n\n행정복지센터\n차상위장애수당 /\n장애아동수당대",
+            "source_page_sha256": "ce3082caede4953790dab735201bd29c96666a0aacf924a6bf626d9658f1eda8",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원구간",
+            "physical_pdf_page": 5,
+            "logical_page_candidate": 10,
+            "side": "right",
+            "source_excerpt": "붙임 2\n 2026년 상반기 선발 일정\n\n일 정\n추진 내용\n\n’26. 2.11.(수)∼3.18.(수) 17시▪ 참가신청서 접수(온라인/ 월드잡플러스홈페이지)\n\n3.19.(목)∼3.23.(월)\n▪ 대학 추천 공문 접수\n\n3.19.(목)∼5.14.(목)\n▪ 학자금 지원구간 확인\n\n4.9.(목), 16:00\n▪ 서류 합격자 발표\n\n4.18.(토) / 4.19.(일)\n▪ 1차 면접 <국립국제교육원 인성 면접>\n   - 4.18.(토): 단기, 4.19.(일): 중기\n\n4.23.(목), 16:00\n▪ 1차 면접 합격자 발표\n\n4.24.(금)∼5.12.(화)\n▪ 2차 면접 <현지중개기관 영어 면접>\n\n5.21.(목), 16:00\n▪ 최종합격자 발표\n\n5.22.(금)∼5.29.(금)\n▪ 참가비 납부\n\n6.1.(월)∼6.4.(목)\n▪ 추가합격자 발표 및 참가비 납부\n\n6.25.(목)\n▪ 출국전 참가자 사전연수\n\n7.6.(월)~7.7.(화)\n▪ 비자 인터뷰(주한미국대사관)\n\n※ 비자 인터뷰 신청 시 비자 발급비($185) 개별 납부\n\n7월～\n▪ 미국 출국(개별)\n\n8월～\n▪ 프로그램(어학연수) 시작\n   ※ 현지중개기관(",
+            "source_page_sha256": "d98dfdc5530c40d673e2e0be6b10a60c5b7556c339e8185454358601eed63fe5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원구간",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 13,
+            "side": "left",
+            "source_excerpt": "Q15. 재외국민전형 입학 여부를 잘못 선택하였을 경우 불이익이 있나요?\n\nA15. 2017년부터 지원구간 조회에 국외소득‧재산이 반영됨에 따라 학생이 신청하신 재외국민\n\n전형 입학 여부와 소속대학의 정보가 상이할 경우 합격 후 재정지원에 불이익이 발생할\n\n수 있으므로 신중하게 선택하여 주시기 바랍니다. 온라인지원서 작성 시 해당 사실을 누락한\n\n경우 실제 지원구간과 상관없이 10구간에 준하여 정부지원금이 지급됩니다.\n\n만약 한국장학재단의 WEST 프로그램 신청 단계에서 재외국민 특별전형 입학여부(Y/N)를\n\n잘못 선택하였을 경우, 학생의 국내 소득 재산조사가 개시되기 전 그리고 WEST 프로그램\n\n신청기간 내에 학생 본인이 한국장학재단 누리집을 통해 입학전형 변경이 가능합니다. 국\n\n내 소득조사가 개시된 후에는 한국장학재단 콜센터(1599-2000)로 확인한 후 「입학전형사\n\n실확인서」를 제출하여 입학 정보 수정을 신청하여야 합니다. 「입학전형",
+            "source_page_sha256": "4fadc5ff6154f636de42ae29a510278c6a688c88f7cef225398411dc856bc59b",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원구간",
+            "physical_pdf_page": 7,
+            "logical_page_candidate": 14,
+            "side": "right",
+            "source_excerpt": "4. 학자금 지원구간 확인\n\nQ20. 지원구간(학자금 지원구간) 확인 신청(어학연수비 대출)은 어떻게 하나요?\n\nA20. 한국장학재단 누리집(www.kosaf.go.kr) 재단소개 > 알림 > 공지사항 탭의 ‘2026년 상반기\n\n한·미대학생연수(WEST) 프로그램 어학연수비 대출 신청 안내’를 참고하여 신청해주시고,\n\n관련 문의사항은 한국장학재단 콜센터(1599-2000)로 해주시기 바랍니다.\n\n※ 장학재단 누리집 지원구간 확인 신청 : 재학생, 휴학생, 초과 학기자, 수료자, 졸업유예자\n\n※ 졸업생은 한국장학재단 사이트 신청 불필요(학교에 별도 서류 제출)\n\nQ21. 대출이 필요 없는데도 한국장학재단 누리집에 신청을 해야 하나요?\n\nA21. 한국장학재단 누리집 신청은 지원서 접수를 위한 필수적인 절차로, 실제 대출과는 무관합\n\n니다. 재학생(휴학생, 초과 학기",
+            "source_page_sha256": "80d7bc39fefbf2015925466822f2b34e393560dd0ac24f4970bf10787bcc27f0",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원구간",
+            "physical_pdf_page": 8,
+            "logical_page_candidate": 15,
+            "side": "left",
+            "source_excerpt": "Q25. 초과 학기자, 수료자, 졸업유예자의 차이는 무엇인가요?\n\nA25. 초과학기자, 수료자, 졸업유예자 모두 재학생/졸업생 구분에서는 재학생에 해당하기 때문에\n\n한국장학재단 사이트에 지원구간 확인신청을 해주셔야 하며, 구분은 다음과 같습니다.\n\n1. 초과 학기자: 정규학기를 초과한 학생 중 졸업기준학점을 미충족한 학생\n\n2. 수료자: 졸업기준학점을 충족하였으나, 졸업요건을 미충족한 학생\n\n3. 졸업유예자: 졸업기준학점을 충족하고, 졸업요건도 충족한 학생\n\nQ26. 어학연수, 인턴기간 동안 지원구간이 변경되면 지원금 규모도 바뀌나요?\n\nA26. 합격자 발표일 기준 지원구간으로 활동 종료 시까지 지원합니다.\n\nQ27. 정부 재정지원금 외에 추가적으로 재정 지원을 받을 수 있나요?\n\nA27. WEST 프로그램 참가자 대상으로 WEST 프로그램 공모전, WEST 서포터즈 등을 운영하고\n\n있습니다.\n\nQ28. 국외 소득·재산 조사 신고대상자는 어떻게 선정되나요?\n\nA28. 국외 소득·재산 신고 대상은 학부생(입학예정 포함) 중 ①재외국민",
+            "source_page_sha256": "030c6ecc87086720048e3f7703005b829d8e23ca914fd20d158bee4321dc01e5",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원구간",
+            "physical_pdf_page": 9,
+            "logical_page_candidate": 17,
+            "side": "left",
+            "source_excerpt": "반드시 귀국한 후 프로그램을 수료하여야 합니다. 현지에서\n\n취업 결정 시에도 반드시 귀국하여 취업 관련 비자를 발급 받아 출국해야 합니다.\n\nQ44. 항공료와 어학연수 및 인턴생활비는 원화로 지급되나요?\n\nA44. 네, 항공료 및 생활비는 모두 원화로 지급됩니다. 항공료는 2,000,000원이 정액 지원되며,\n\n생활비는 지원구간에 따라 상이합니다. 특히 생활비는 지급 년도의 기준환율이 적용되어\n\n지급됨을 양지하시기 바랍니다. 자세한 내용은 모집 공고문의 ‘참가비 및 정부재정지원’을\n\n확인하시기 바랍니다.\n\nQ45. 정부 지원금 외에 개인 경비는 얼마나 필요할까요?\n\nA45. 프로그램별 기간, 거주 지역 등에 따라 필요한 자금은 상이합니다. 어학연수/인턴생활비 지급기간\n\n(8주 간격으로 지급), 물가 등 여러 요소를 고려해 필요한 경비를 미리 준비하시는 것이 좋습니다.\n\n※ 초기정착금과 현지 생활비 등은 거주지역과 개인의 소비 습관 및 생활 방식에 따라 매우\n\n상이하므로 정확한 금액을 알려드리기 어렵습니다.\n\n∙ 참가자 후기\n\n\"실제 생활비와 경비는 예상보다 많이 필요하였습니다. 미국은 지역에 따라 하우징 가격과 물가 차이가\n\n큰데, 인턴십 배정을 받을 당시 미국 내",
+            "source_page_sha256": "4fe9786e9c07743d42bea5a9bd130e74fba4c34a798c17ec7f6ee225a995ed9a",
+            "value_verified": false,
+            "table_relationship_verified": false
+          },
+          {
+            "search_keyword": "지원구간",
+            "physical_pdf_page": 10,
+            "logical_page_candidate": 19,
+            "side": "left",
+            "source_excerpt": "붙임4\n 학자금대출·장학금 신청증명서 (졸업생)\n\n<재학 중 국가장학금 신청 이력이 없는 졸업생>\n\n“학자금 지원구간 통지서” 발급이 불가능하므로 “학자금대출·장학금 신청증명서”로 지원구간 증빙 서류 대체\n\n※ 해당 서류 제출 시 10구간에 준하는 정부지원금 지급\n\n- 19 -",
+            "source_page_sha256": "7bcef16f9584b817a1bf89a03aea0dc4dd2de2ed42e34876a73e58a6a3177bfd",
+            "value_verified": false,
+            "table_relationship_verified": false
+          }
+        ]
+      }
+    }
+  },
+  "missing_evidence_fields": [],
+  "table_review_priorities": [
+    "short_vs_mid_term_english_scores",
+    "short_vs_mid_term_program_duration",
+    "financial_support_bracket_amounts",
+    "required_vs_conditional_documents"
+  ],
+  "current_application_status": "not_verified",
+  "manual_review_required": true,
+  "validation_status": "needs_review",
+  "automatic_eligibility_rules_enabled": false,
+  "recommendation_rules_enabled": false,
+  "embedding_generated": false
+}

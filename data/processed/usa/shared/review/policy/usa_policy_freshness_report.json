@@ -1,0 +1,21 @@
+{
+  "dataset_type": "usa_policy_freshness_review",
+  "country": "US",
+  "total_policy_chunks": 103,
+  "priority_freshness_chunks": 13,
+  "remaining_policy_chunks": 90,
+  "priority_program_counts": {
+    "US-EM-01": 10,
+    "US-WEST-01": 3
+  },
+  "source_cleaned_sha256": "1cf77cfa6b0c14e6da3c08eb5501bc751c50d6dbd9b19b79a37f674da0817275",
+  "official_comparison_status": "not_started",
+  "note": "These records are review queues only. No current legal claim is automatically approved.",
+  "currentness_verified": false,
+  "application_scope_verified": false,
+  "approved_for_embedding": false,
+  "approved_for_user_answers": false,
+  "automatic_eligibility_rules_enabled": false,
+  "register_sha256": "e6a61b17202ead0a955e818c2461c02d496fa693e9baa62f07d3a204d29b7dc9",
+  "priority_sha256": "00c45a9eb12a3b110b227a32530cb0fd03a50e12391c6996544e4dc13c151d25"
+}

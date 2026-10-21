@@ -1,0 +1,91 @@
+{
+  "dataset_type": "usa_seven_programs_audit",
+  "country": "US",
+  "program_count": 7,
+  "source_mapping_sha256": "3f62fad51e20449940bb02cd0f6b0ebd84e83944586973f00600a35cbae34e4d",
+  "programs": [
+    {
+      "program_id": "US-WH-01",
+      "raw_dir": "data/raw/usa/working_holiday/summer_work_travel",
+      "processed_dir": "data/processed/usa/working_holiday/summer_work_travel",
+      "evidence_file": "data/processed/usa/working_holiday/summer_work_travel/official_evidence.json",
+      "evidence_sha256": "7f509a5e67dfde3afa3a247fb4c533520b69c1c165ba9eb1d19e1a3524d39171",
+      "file_integrity": "pass",
+      "semantic_validation": "needs_review",
+      "section_count": 19
+    },
+    {
+      "program_id": "US-ST-01",
+      "raw_dir": "data/raw/usa/student/f1_academic_student",
+      "processed_dir": "data/processed/usa/student/f1_academic_student",
+      "evidence_file": "data/processed/usa/student/f1_academic_student/official_evidence.json",
+      "evidence_sha256": "4e2cbbb4b99d17a378e4bac1701bd57b1d1a340d536fd9e92c1d9899f2f26fa4",
+      "file_integrity": "pass",
+      "semantic_validation": "needs_review",
+      "source_count": 2,
+      "evidence_block_count": 45
+    },
+    {
+      "program_id": "US-ST-03",
+      "raw_dir": "data/raw/usa/student/j1_college_university_student",
+      "processed_dir": "data/processed/usa/student/j1_college_university_student",
+      "evidence_file": "data/processed/usa/student/j1_college_university_student/official_evidence.json",
+      "evidence_sha256": "c2881ea19ce10dce1d4450758f803193614aadac0fc9b724c1be52f40a82b01e",
+      "file_integrity": "pass",
+      "semantic_validation": "needs_review",
+      "section_count": 10
+    },
+    {
+      "program_id": "US-EM-01",
+      "raw_dir": "data/raw/usa/employment/h1b_specialty_occupations",
+      "processed_dir": "data/processed/usa/employment/h1b_specialty_occupations",
+      "evidence_file": "data/processed/usa/employment/h1b_specialty_occupations/official_evidence.json",
+      "evidence_sha256": "5055c6fafb9907b8fa621e50cf9ff5a2943b3587924eab38b86016b1e08e87d2",
+      "file_integrity": "pass",
+      "semantic_validation": "needs_review",
+      "source_count": 2,
+      "evidence_block_count": 191
+    },
+    {
+      "program_id": "US-EM-02",
+      "raw_dir": "data/raw/usa/employment/j1_intern",
+      "processed_dir": "data/processed/usa/employment/j1_intern",
+      "evidence_file": "data/processed/usa/employment/j1_intern/official_evidence.json",
+      "evidence_sha256": "6133401913510314b9847f4ba315bff1da32d03943b565bb1c50a898c7419124",
+      "file_integrity": "pass",
+      "semantic_validation": "needs_review",
+      "section_count": 13
+    },
+    {
+      "program_id": "US-EM-03",
+      "raw_dir": "data/raw/usa/employment/j1_trainee",
+      "processed_dir": "data/processed/usa/employment/j1_trainee",
+      "evidence_file": "data/processed/usa/employment/j1_trainee/official_evidence.json",
+      "evidence_sha256": "d34f1b698bc2a7e50cd0387967166df4cc86bf89dff5f91d30b797cc1b8ccf95",
+      "file_integrity": "pass",
+      "semantic_validation": "needs_review",
+      "section_count": 13
+    },
+    {
+      "program_id": "US-WEST-01",
+      "raw_dir": "data/raw/usa/employment/west",
+      "processed_dir": "data/processed/usa/employment/west",
+      "evidence_file": "data/processed/usa/employment/west/west_2026_first_half_full_review_data.json",
+      "evidence_sha256": "b3e781e89880996cc88a93a3618cc164794fdba9914ade9499111390bc108bc2",
+      "file_integrity": "pass",
+      "semantic_validation": "needs_review",
+      "review_status": "partially_reviewed"
+    }
+  ],
+  "h1b_source_type_correction": {
+    "old_file_sha256": "5055c6fafb9907b8fa621e50cf9ff5a2943b3587924eab38b86016b1e08e87d2",
+    "new_file_path": "data/processed/usa/employment/h1b_specialty_occupations/official_evidence_v2.json",
+    "new_file_sha256": "7fbba6a99d31234e18eb1a76828910128c04f52658db038781e0fc9a83071ab5",
+    "corrected_count": 1
+  },
+  "structural_validation": "pass",
+  "semantic_validation": "needs_review",
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false,
+  "database_loaded": false
+}

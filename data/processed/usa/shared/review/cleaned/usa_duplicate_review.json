@@ -1,0 +1,352 @@
+{
+  "dataset_type": "usa_duplicate_review",
+  "country": "US",
+  "total_original_chunks": 334,
+  "p1_total_chunks": 103,
+  "p1_duplicate_candidate_chunks": 6,
+  "exact_text_duplicate_groups": 7,
+  "groups": [
+    {
+      "group_id": "DUP-001",
+      "text_sha256": "0e27279b3302db0448a2acf5d923ffb09b75270c2e957bfb93f54815d2146aa4",
+      "chunk_count": 4,
+      "chunk_ids": [
+        "US-WH-01-SECTION-002-C001",
+        "US-ST-03-SECTION-002-C001",
+        "US-EM-02-SECTION-002-C001",
+        "US-EM-03-SECTION-002-C001"
+      ],
+      "matched_p1_candidate_ids": [],
+      "program_ids": [
+        "US-EM-02",
+        "US-EM-03",
+        "US-ST-03",
+        "US-WH-01"
+      ],
+      "source_urls": [
+        "https://j1visa.state.gov/programs/college-and-university-student/",
+        "https://j1visa.state.gov/programs/intern/",
+        "https://j1visa.state.gov/programs/summer-work-travel/",
+        "https://j1visa.state.gov/programs/trainee/"
+      ],
+      "candidate_action": "preserve_cross_program_sources",
+      "members": [
+        {
+          "chunk_id": "US-WH-01-SECTION-002-C001",
+          "program_id": "US-WH-01",
+          "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+          "heading": "Participants",
+          "text_sha256": "0e27279b3302db0448a2acf5d923ffb09b75270c2e957bfb93f54815d2146aa4"
+        },
+        {
+          "chunk_id": "US-ST-03-SECTION-002-C001",
+          "program_id": "US-ST-03",
+          "source_url": "https://j1visa.state.gov/programs/college-and-university-student/",
+          "heading": "Participants",
+          "text_sha256": "0e27279b3302db0448a2acf5d923ffb09b75270c2e957bfb93f54815d2146aa4"
+        },
+        {
+          "chunk_id": "US-EM-02-SECTION-002-C001",
+          "program_id": "US-EM-02",
+          "source_url": "https://j1visa.state.gov/programs/intern/",
+          "heading": "Participants",
+          "text_sha256": "0e27279b3302db0448a2acf5d923ffb09b75270c2e957bfb93f54815d2146aa4"
+        },
+        {
+          "chunk_id": "US-EM-03-SECTION-002-C001",
+          "program_id": "US-EM-03",
+          "source_url": "https://j1visa.state.gov/programs/trainee/",
+          "heading": "Participants",
+          "text_sha256": "0e27279b3302db0448a2acf5d923ffb09b75270c2e957bfb93f54815d2146aa4"
+        }
+      ],
+      "duplicate_review_status": "needs_review",
+      "delete_original": false,
+      "approved_for_user_answers": false
+    },
+    {
+      "group_id": "DUP-002",
+      "text_sha256": "09f6242266631e82c102edab9144655559134558b5074cf1892dc92c2d474f56",
+      "chunk_count": 4,
+      "chunk_ids": [
+        "US-WH-01-SECTION-005-C001",
+        "US-WH-01-SECTION-014-C001",
+        "US-EM-02-SECTION-005-C001",
+        "US-EM-03-SECTION-005-C001"
+      ],
+      "matched_p1_candidate_ids": [],
+      "program_ids": [
+        "US-EM-02",
+        "US-EM-03",
+        "US-WH-01"
+      ],
+      "source_urls": [
+        "https://j1visa.state.gov/programs/intern/",
+        "https://j1visa.state.gov/programs/summer-work-travel/",
+        "https://j1visa.state.gov/programs/trainee/"
+      ],
+      "candidate_action": "preserve_cross_program_sources",
+      "members": [
+        {
+          "chunk_id": "US-WH-01-SECTION-005-C001",
+          "program_id": "US-WH-01",
+          "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+          "heading": "More information",
+          "text_sha256": "09f6242266631e82c102edab9144655559134558b5074cf1892dc92c2d474f56"
+        },
+        {
+          "chunk_id": "US-WH-01-SECTION-014-C001",
+          "program_id": "US-WH-01",
+          "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+          "heading": "More information",
+          "text_sha256": "09f6242266631e82c102edab9144655559134558b5074cf1892dc92c2d474f56"
+        },
+        {
+          "chunk_id": "US-EM-02-SECTION-005-C001",
+          "program_id": "US-EM-02",
+          "source_url": "https://j1visa.state.gov/programs/intern/",
+          "heading": "More information",
+          "text_sha256": "09f6242266631e82c102edab9144655559134558b5074cf1892dc92c2d474f56"
+        },
+        {
+          "chunk_id": "US-EM-03-SECTION-005-C001",
+          "program_id": "US-EM-03",
+          "source_url": "https://j1visa.state.gov/programs/trainee/",
+          "heading": "More information",
+          "text_sha256": "09f6242266631e82c102edab9144655559134558b5074cf1892dc92c2d474f56"
+        }
+      ],
+      "duplicate_review_status": "needs_review",
+      "delete_original": false,
+      "approved_for_user_answers": false
+    },
+    {
+      "group_id": "DUP-003",
+      "text_sha256": "8b9cdfa08fa5d73c5898891694e28ef5d2db6533c51ecac76d7e6f255dbe1b3e",
+      "chunk_count": 2,
+      "chunk_ids": [
+        "US-WH-01-SECTION-009-C001",
+        "US-WH-01-SECTION-016-C001"
+      ],
+      "matched_p1_candidate_ids": [
+        "US-WH-01-SECTION-009-C001",
+        "US-WH-01-SECTION-016-C001"
+      ],
+      "program_ids": [
+        "US-WH-01"
+      ],
+      "source_urls": [
+        "https://j1visa.state.gov/programs/summer-work-travel/"
+      ],
+      "candidate_action": "inspect_same_source_repetition",
+      "members": [
+        {
+          "chunk_id": "US-WH-01-SECTION-009-C001",
+          "program_id": "US-WH-01",
+          "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+          "heading": "Program Exclusions",
+          "text_sha256": "8b9cdfa08fa5d73c5898891694e28ef5d2db6533c51ecac76d7e6f255dbe1b3e"
+        },
+        {
+          "chunk_id": "US-WH-01-SECTION-016-C001",
+          "program_id": "US-WH-01",
+          "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+          "heading": "Program Exclusions",
+          "text_sha256": "8b9cdfa08fa5d73c5898891694e28ef5d2db6533c51ecac76d7e6f255dbe1b3e"
+        }
+      ],
+      "duplicate_review_status": "needs_review",
+      "delete_original": false,
+      "approved_for_user_answers": false
+    },
+    {
+      "group_id": "DUP-004",
+      "text_sha256": "6618a4a1f16a3f9cb3b88e256702681292bb48f1f7936a3abf4959da3f777855",
+      "chunk_count": 2,
+      "chunk_ids": [
+        "US-WH-01-SECTION-009-C002",
+        "US-WH-01-SECTION-016-C002"
+      ],
+      "matched_p1_candidate_ids": [
+        "US-WH-01-SECTION-009-C002",
+        "US-WH-01-SECTION-016-C002"
+      ],
+      "program_ids": [
+        "US-WH-01"
+      ],
+      "source_urls": [
+        "https://j1visa.state.gov/programs/summer-work-travel/"
+      ],
+      "candidate_action": "inspect_same_source_repetition",
+      "members": [
+        {
+          "chunk_id": "US-WH-01-SECTION-009-C002",
+          "program_id": "US-WH-01",
+          "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+          "heading": "Program Exclusions",
+          "text_sha256": "6618a4a1f16a3f9cb3b88e256702681292bb48f1f7936a3abf4959da3f777855"
+        },
+        {
+          "chunk_id": "US-WH-01-SECTION-016-C002",
+          "program_id": "US-WH-01",
+          "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+          "heading": "Program Exclusions",
+          "text_sha256": "6618a4a1f16a3f9cb3b88e256702681292bb48f1f7936a3abf4959da3f777855"
+        }
+      ],
+      "duplicate_review_status": "needs_review",
+      "delete_original": false,
+      "approved_for_user_answers": false
+    },
+    {
+      "group_id": "DUP-005",
+      "text_sha256": "d846b3f0115a9c7da6767e04a4d66c490af9aeea41743688a39fca1ef171d677",
+      "chunk_count": 2,
+      "chunk_ids": [
+        "US-WH-01-SECTION-009-C003",
+        "US-WH-01-SECTION-016-C003"
+      ],
+      "matched_p1_candidate_ids": [
+        "US-WH-01-SECTION-009-C003",
+        "US-WH-01-SECTION-016-C003"
+      ],
+      "program_ids": [
+        "US-WH-01"
+      ],
+      "source_urls": [
+        "https://j1visa.state.gov/programs/summer-work-travel/"
+      ],
+      "candidate_action": "inspect_same_source_repetition",
+      "members": [
+        {
+          "chunk_id": "US-WH-01-SECTION-009-C003",
+          "program_id": "US-WH-01",
+          "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+          "heading": "Program Exclusions",
+          "text_sha256": "d846b3f0115a9c7da6767e04a4d66c490af9aeea41743688a39fca1ef171d677"
+        },
+        {
+          "chunk_id": "US-WH-01-SECTION-016-C003",
+          "program_id": "US-WH-01",
+          "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+          "heading": "Program Exclusions",
+          "text_sha256": "d846b3f0115a9c7da6767e04a4d66c490af9aeea41743688a39fca1ef171d677"
+        }
+      ],
+      "duplicate_review_status": "needs_review",
+      "delete_original": false,
+      "approved_for_user_answers": false
+    },
+    {
+      "group_id": "DUP-006",
+      "text_sha256": "8faad3008bceb503ba12dd1d3bf480756d86daf0b72d5c9ef19226df52eed9ea",
+      "chunk_count": 4,
+      "chunk_ids": [
+        "US-WH-01-SECTION-012-C001",
+        "US-ST-03-SECTION-007-C001",
+        "US-EM-02-SECTION-009-C001",
+        "US-EM-03-SECTION-009-C001"
+      ],
+      "matched_p1_candidate_ids": [],
+      "program_ids": [
+        "US-EM-02",
+        "US-EM-03",
+        "US-ST-03",
+        "US-WH-01"
+      ],
+      "source_urls": [
+        "https://j1visa.state.gov/programs/college-and-university-student/",
+        "https://j1visa.state.gov/programs/intern/",
+        "https://j1visa.state.gov/programs/summer-work-travel/",
+        "https://j1visa.state.gov/programs/trainee/"
+      ],
+      "candidate_action": "preserve_cross_program_sources",
+      "members": [
+        {
+          "chunk_id": "US-WH-01-SECTION-012-C001",
+          "program_id": "US-WH-01",
+          "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+          "heading": "Program Sponsors",
+          "text_sha256": "8faad3008bceb503ba12dd1d3bf480756d86daf0b72d5c9ef19226df52eed9ea"
+        },
+        {
+          "chunk_id": "US-ST-03-SECTION-007-C001",
+          "program_id": "US-ST-03",
+          "source_url": "https://j1visa.state.gov/programs/college-and-university-student/",
+          "heading": "Program Sponsors",
+          "text_sha256": "8faad3008bceb503ba12dd1d3bf480756d86daf0b72d5c9ef19226df52eed9ea"
+        },
+        {
+          "chunk_id": "US-EM-02-SECTION-009-C001",
+          "program_id": "US-EM-02",
+          "source_url": "https://j1visa.state.gov/programs/intern/",
+          "heading": "Program Sponsors",
+          "text_sha256": "8faad3008bceb503ba12dd1d3bf480756d86daf0b72d5c9ef19226df52eed9ea"
+        },
+        {
+          "chunk_id": "US-EM-03-SECTION-009-C001",
+          "program_id": "US-EM-03",
+          "source_url": "https://j1visa.state.gov/programs/trainee/",
+          "heading": "Program Sponsors",
+          "text_sha256": "8faad3008bceb503ba12dd1d3bf480756d86daf0b72d5c9ef19226df52eed9ea"
+        }
+      ],
+      "duplicate_review_status": "needs_review",
+      "delete_original": false,
+      "approved_for_user_answers": false
+    },
+    {
+      "group_id": "DUP-007",
+      "text_sha256": "e3651de74022e8e90bf0616f11d0689b2dc3dcbaaef910989bb0ba527551938f",
+      "chunk_count": 2,
+      "chunk_ids": [
+        "US-WH-01-SECTION-018-C001",
+        "US-EM-02-SECTION-012-C001"
+      ],
+      "matched_p1_candidate_ids": [],
+      "program_ids": [
+        "US-EM-02",
+        "US-WH-01"
+      ],
+      "source_urls": [
+        "https://j1visa.state.gov/programs/intern/",
+        "https://j1visa.state.gov/programs/summer-work-travel/"
+      ],
+      "candidate_action": "preserve_cross_program_sources",
+      "members": [
+        {
+          "chunk_id": "US-WH-01-SECTION-018-C001",
+          "program_id": "US-WH-01",
+          "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+          "heading": "Employers",
+          "text_sha256": "e3651de74022e8e90bf0616f11d0689b2dc3dcbaaef910989bb0ba527551938f"
+        },
+        {
+          "chunk_id": "US-EM-02-SECTION-012-C001",
+          "program_id": "US-EM-02",
+          "source_url": "https://j1visa.state.gov/programs/intern/",
+          "heading": "Employers",
+          "text_sha256": "e3651de74022e8e90bf0616f11d0689b2dc3dcbaaef910989bb0ba527551938f"
+        }
+      ],
+      "duplicate_review_status": "needs_review",
+      "delete_original": false,
+      "approved_for_user_answers": false
+    }
+  ],
+  "decision_policy": {
+    "auto_delete_duplicates": false,
+    "cross_program_sources": "preserve",
+    "distinct_official_sources": "preserve",
+    "same_source_repetition": "manual_review",
+    "source_metadata_preserved": true
+  },
+  "source_ui_cleaned_sha256": "1cf77cfa6b0c14e6da3c08eb5501bc751c50d6dbd9b19b79a37f674da0817275",
+  "source_quality_audit_sha256": "967800dc1d0a8bf24c67f761b4f212525b59d7f25381a636ffad80a899c7f0c0",
+  "review_status": "needs_review",
+  "human_semantic_review_completed": false,
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "database_loaded": false
+}

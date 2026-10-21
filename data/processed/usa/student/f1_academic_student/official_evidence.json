@@ -1,0 +1,429 @@
+{
+  "dataset_type": "usa_program_official_evidence",
+  "country": "US",
+  "program_id": "US-ST-01",
+  "visa_classification": "F-1",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_url": "https://studyinthestates.dhs.gov/school-search",
+      "source_file": "data/raw/usa/student/f1_academic_student/official_source_02.html",
+      "source_sha256": "bf8a4af81bb17127f6242675de9c2c93f29b09b37cbf0cdca1d88dd84f42ba21",
+      "page_title": "School Search | Study in the States",
+      "extraction_scope": "main",
+      "headings": [
+        "School Search"
+      ],
+      "body_text": "School Search Use the School Search Map to find Student and Exchange Visitor Program (SEVP)-certified schools and programs eligible to enroll F-1 and M-1 students in the United States. Search by school name, location, education or visa type. The green and blue icons displayed next to the search results indicate the category of international students (F-1 or M-1) a school is certified to enroll. Please note that SEVP-certified schools with multiple campuses are displayed under one card. To view all campuses under a particular school, click the arrow to expand your view. A star icon indicates a school’s main campus. Download Certified School List AVIATION INSTITUTE OF MAINTENANCE AVIATION INSTITUTE OF MAINTENANCE 10640 DAVIDSON PLACE, MANASSAS, VA 20109 F-1 M-1 Stella Maris Academy Stella Maris Academy - High School Campu 4321 ALLENDALE AVE, DULUTH, MN 55803 F-1 M-1 St. Dominic High School St. Dominic High School 31 SAINT DOMINIC DR, O FALLON, MO 63366 F-1 M-1 Mounds Public Schools Mounds High School 1603 RUSSELL AVE, MOUNDS, OK 74047 F-1 M-1 Community College of Denver Center for Health Sciences at Lowry 1070 ALTON WAY, DENVER, CO 80230 F-1 M-1 Community College of Denver Auraria Campus Downtown Auraria Campus, Denver, CO 80204 F-1 M-1 Community College of Denver Advanced Manufacturing Center 2570 31ST ST, DENVER, CO 80216 F-1 M-1 Trinity School Trinity School 139 West 91st Street, New York, NY 10024 F-1 M-1 Lingua Prime NY Lingua Prime NY 1535 MCDONALD AVE, BROOKLYN, NY 11230 F-1 M-1 Delton Kellogg School District Delton Kellogg High School 10425 PANTHER PRIDE, DELTON, MI 49046 F-1 M-1 The Hewitt School The Hewitt School - McKelvey 3 E 76TH ST, NEW YORK, NY 10021 F-1 M-1 The Hewitt School The Hewitt School 45 E 75TH ST, NEW YORK, NY 10021 F-1 M-1 Interactive College of Technology Interactive Learning Systems North Houst 16801 GREENSPOINT PARK DR STE 150, HOUSTON, TX 77060 F-1 M-1 Interactive College of Technology Interactive College of Technology - Sout 2950 S. Gessner, Houston, TX 77063 F-1 M-1 Interactive College of Technology Interactive College of Technology - Pasa 213 W SOUTHMORE AVE STE 100, PASADENA, TX 77502 F-1 M-1 English Language Academy English Language Academy 11951 INTERNATIONAL DR UNIT 2B3, ORLANDO, FL 32821 F-1 M-1 Elk County Catholic High School Elk County Catholic High School 600 MAURUS ST, SAINT MARYS, PA 15857 F-1 M-1 Blue Line Aviation LLC Winter Haven Campus 2073 US HIGHWAY 92, WINTER HAVEN, FL 33881 F-1 M-1 ABA Language Institute ABA Language Institute Wilkes-Barre 12 OLD BOSTON RD, PITTSTON, PA 18640 F-1 M-1 Wilmington Friends School Alapocas 101 School Road, Wilmington, DE 19803 F-1 M-1 Waldorf School of Orange County Waldorf School of Orange County 2350 Canyon Drive, Costa Mesa, CA 92627 F-1 M-1 Trinity Episcopal School Trinity Episcopal School 3850 Pittaway Drive, Richmond, VA 23235 F-1 M-1 Portsmouth Christian School Portsmouth Christian School 3214 ELLIOTT AVE, PORTSMOUTH, VA 23702 F-1 M-1 Newton Community School District Newton Senior High School 800 E 4TH ST S, NEWTON, IA 50208 F-1 M-1 Medisend College of Biomedical Engineering Technology Medisend College 9244 MARKVILLE DR, DALLAS, TX 75243 F-1 M-1 McMurry University Patty Hanks Shelton School of Nursing 2149 HICKORY ST, ABILENE, TX 79601 F-1 M-1 Lake Land College Effingham Technology Center 1201 ALTHOFF DR, EFFINGHAM, IL 62401 F-1 M-1 Goodwin University Magnet School System Connecticut River Academy 9 RIVERSIDE DR, EAST HARTFORD, CT 06118 F-1 M-1 Faith Christian Academy, Inc. Faith Christian Academy Secondary Campus 395 Blue and Gold Blvd, Martinsburg, WV 25404 F-1 M-1 Archdiocese of New York TRANSFIGURATION UPPER 37 SAINT JAMES PL, NEW YORK, NY 10038 F-1 M-1 Archdiocese of New York ST. CHARLES BORROMEO 214 W 142ND ST, NEW YORK, NY 10030 F-1 M-1 Archdiocese of New York ST. ATHANASIUS 830 SOUTHERN BLVD, BRONX, NY 10459 F-1 M-1 Archdiocese of New York OUR LADY QUEEN OF ANGELS 232 E 113TH ST, NEW YORK, NY 10029 F-1 M-1 Xceed Preparatory Academy Xceed Prep Palm Beach Gardens 2875 PGA BLVD STE 200, PALM BEACH GARDENS, FL 33410 F-1 M-1 Xceed Preparatory Academy Xceed Prep Fort Lauderdale 101 SE 3RD AVE, FORT LAUDERDALE, FL 33301 F-1 M-1 Xceed Preparatory Academy Xceed Prep Boca 6405 CONGRESS AVE STE 160, BOCA RATON, FL 33487 F-1 M-1 VI Montessori School & Peter Gruber Int'l Acad VIMSIA 6936 VESSUP LN, ST THOMAS, VI 00802 F-1 M-1 Technical Aviation Services Inc Technical Aviation Services Inc 8249 NW 36TH ST, DORAL, FL 33166 F-1 M-1 St. Bernard's High School St. Bernard's High School 45 HARVARD ST, FITCHBURG, MA 01420 F-1 M-1 St George Academy St George Academy 380 E 3090 S, WASHINGTON, UT 84780 F-1 M-1 Oregon Aero Academy Albany Municipal Airport 525 AVIATION WAY, ALBANY, OR 97322 F-1 M-1 LANGUAGE ON LANGUAGE ON BOSTON 98 N WASHINGTON ST, BOSTON, MA 02114 F-1 M-1 Kankakee Trinity Academy Main Campus 1580 Butterfield Trail, Kankakee, IL 60901 F-1 M-1 International Institute of education International Institute of education 1507 N STATE ROAD 7, MARGATE, FL 33063 F-1 M-1 Carolina Christian College Carolina Christian College 4209 INDIANA AVE, WINSTON SALEM, NC 27105 F-1 M-1 ASC English Quincy College Plymouth Campus 36 CORDAGE PARK CIR, PLYMOUTH, MA 02360 F-1 M-1 Sapolu Destined Academy Sapolu Destined Academy 1661 N RAYMOND AVE, ANAHEIM, CA 92801 F-1 M-1 Robert F. Munroe Day School Robert F. Munroe Day School 28424 BLUE STAR HWY, HAVANA, FL 32333 F-1 M-1 Cary Ballet Conservatory Cary Ballet Conservatory 920 HIGH HOUSE RD, CARY, NC 27513 F-1 M-1 Archbishop Curley High School Archbishop Curley High School 3701 SINCLAIR LN, BALTIMORE, MD 21213 F-1 M-1 Amazing Grace Institute (DBA Amazing Grace Christian School) San Diego Campus 10760 THORNMINT RD, SAN DIEGO, CA 92127 F-1 M-1 INTERNATIONAL AMERICAN UNIVERSITY Westminster Satellite Campus 9191 BOLSA AVE, WESTMINSTER, CA 92683 F-1 M-1 INTERNATIONAL AMERICAN UNIVERSITY LA International Airport Satellite Campu 8632 S SEPULVEDA BLVD, LOS ANGELES, CA 90045 F-1 M-1 Hancock High School Hancock High School 7084 STENNIS AIRPORT RD, KILN, MS 39556 F-1 M-1 ULA ORLANDO ULA ORLANDO II 8570 PALM PKWY, ORLANDO, FL 32836 F-1 M-1 ULA ORLANDO ULA ORLANDO 5950 LAKEHURST DR STE 168, ORLANDO, FL 32819 F-1 M-1 Link Academy Link Academy 1353 LAKE SHORE DR, BRANSON, MO 65616 F-1 M-1 Kings Christian School Kings Christian School 900 E D ST, LEMOORE, CA 93245 F-1 M-1 Inter American University of Puerto Rico Fajardo Campus - Inter - Tec II 164 Munoz Rivera Street, Fajardo, PR 00738 F-1 M-1 Inter American University of Puerto Rico Fajardo Campus - Inter - Tec I 205 Munoz Rivera Street, Bo. Pueblo, Fajardo, PR 00738 F-1 M-1 Load More",
+      "body_text_sha256": "23c314f77ffaced6c196b732e8f419c54e0a48d03a2c974c6f1d93b13104a46e",
+      "evidence_block_count": 3,
+      "evidence_blocks": [
+        {
+          "block_id": "US-ST-01-BLOCK-0001",
+          "tag": "p",
+          "source_text": "Use the School Search Map to find Student and Exchange Visitor Program (SEVP)-certified schools and programs eligible to enroll F-1 and M-1 students in the United States. Search by school name, location, education or visa type. The green and blue icons displayed next to the search results indicate the category of international students (F-1 or M-1) a school is certified to enroll.",
+          "source_text_sha256": "48e0b538a1466f594d7a311288e6ab542779e3578b1249c248186147f476b781",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0002",
+          "tag": "p",
+          "source_text": "Please note that SEVP-certified schools with multiple campuses are displayed under one card. To view all campuses under a particular school, click the arrow to expand your view. A star icon indicates a school’s main campus.",
+          "source_text_sha256": "39d335d6e7dd43a35c8afe44dec63d304149b5e3d7d30ae70fdfdd6eee12b185",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0003",
+          "tag": "p",
+          "source_text": "Download Certified School List",
+          "source_text_sha256": "08ac53eb2444ef7a09ac1f49e8a4d1948b9803ea9c9391a4f29928971341182b",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        }
+      ],
+      "content_validation_status": "needs_review",
+      "source_type": "sevp_school_search",
+      "identity_keywords_found": [
+        "school",
+        "sevp"
+      ],
+      "identity_review_status": "candidate_matched"
+    },
+    {
+      "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+      "source_file": "data/raw/usa/student/f1_academic_student/official_source_alt_1c9493a9ebc8.html",
+      "source_sha256": "becead6ca2f24032befa8dd000a6a060e873495b2c2c82239f42bd83c288893e",
+      "page_title": "Students and the Form I-20 | Study in the States",
+      "extraction_scope": "main",
+      "headings": [
+        "Breadcrumb",
+        "Students and the Form I-20",
+        "Form I-20 Uses",
+        "Paying the I-901 SEVIS Fee",
+        "Applying for a nonimmigrant visa",
+        "Entering the United States",
+        "Changing status to F or M while in the United States",
+        "Applying for benefits",
+        "When to Get a New Form I-20",
+        "Redesigned Form I-20"
+      ],
+      "body_text": "Breadcrumb Home Students Students and the Form I-20 Students and the Form I-20 Last updated: April 29, 2025 All F and M students that study in the United States need a Form I-20, “Certificate of Eligibility for Nonimmigrant Student Status.” Once accepted into a Student and Exchange Visitor Program (SEVP)-certified school , nonimmigrant students will receive a Form I-20 from their designated school official (DSO) . You must also obtain a Form I-20 for any eligible dependents you plan to bring to the United States with you. However, please note that the name (i.e., Academic and Language students vs. Vocational Students) on the Form I-20 an SEVP-certified school issues you will dictate the type of student visa you may obtain from the U.S. Department of State and the status you will need to maintain in the United States. You and your DSO must both sign the Form I-20. If you are under age 18, your parents must sign the Form I-20 for you. Form I-20 Uses The Form I-20 is an important document that you should keep safe, as you will need it throughout the F and M student life cycle. Paying the I-901 SEVIS Fee Before you pay the I-901 Student and Exchange Visitor Information System (SEVIS) Fee, you must receive the Form I-20 from a DSO at the school you plan to attend. You will need information from the Form I-20 to pay the fee. The I-901 SEVIS Fee is mandatory and must be paid before you enter the United States. In order to pay the I-901 SEVIS fee, all prospective F and M students will need to provide their: Name, address, date of birth and email address. Country of birth and country of citizenship. School Code as listed on the Form I-20 “Certificate of Eligibility for Nonimmigrant Student Status.” SEVIS Identification Number as listed on the Form I-20. Applying for a nonimmigrant visa The Form I-20 lists your program start date, 30 days before which you are allowed to enter the United States. F-1 and M-1 student visas can be issued up to 365 days in advance of your course of study start date. Your type of student visa must match the type of Form I-20 you have (e.g., F-1 or M-1). You are expected to have the original Form I-20 at your visa interview. The consular officer may accept a copy of the Form I-20 in limited circumstances that warrant visa issuance prior to you receiving the original Form I-20. Entering the United States You are expected to have the signed Form I-20 on hand as you enter the country. Do not pack it away in your suitcase. A U.S. Customs and Border Protection officer will instruct you to present your Form I-20 at the port of entry . You may arrive up to 30 days before the start date listed on your Form I-20; or Changing status to F or M while in the United States You need a Form I-20 if you are already in the United States as another type of nonimmigrant and you are applying to USCIS to change your status to F or M. Applying for benefits Your Form I-20 proves that you are legally enrolled in a program of study in the United States. Therefore, it may be needed when you apply for the benefits available to F and M students. If you are eligible to apply for a driver’s license or a social security number , remember to bring your Form I-20 with you. When to Get a New Form I-20 After receiving the initial Form I-20 upon program acceptance, students may receive a new Form I-20 from their DSO in the following circumstances: If the physical copy of the form is destroyed or misplaced. For travel endorsement. When the student’s SEVIS status changes (e.g., from Initial to Active). For any substantive change to student information, such as changes to a student’s personal information, program of study, optional practical training, etc. Redesigned Form I-20 As of July 1, 2016, the redesigned Form I-20 is required for all F and M nonimmigrant visa applications, entry into the United States, travel and applications for nonimmigrant benefits. The previous version of the Form I-20 (with a barcode) is now invalid. Students please note that your DSOs were responsible for providing an updated, hard copy of the Form I-20 with original signatures to all F-1 and M-1 students at their schools. Related Tags: Form I-20 Student Resources Navigation Get Started International Student Life Cycle Programs of Study What is a Commission-Based Recruiter? Bringing Dependents to the United States Kindergarten to Grade 12 Students Exchange Visitors English Language Training Prepare Financial Ability Student Forms Students and the Form I-20 Paying the I-901 SEVIS Fee I-901 SEVIS Fee Payment Video Travel Getting to the United States Applying for a Visa to Travel to the United States What is Secondary Inspection? Form I-515A Overview Study Maintaining Status Full Course of Study Transferring to Another School Instructions for Transferring to Another School as an F-1 Student Instructions for Transferring to Another School as an M-1 Student Maintain F and M Status in Emergency Events Traveling as an F or M Student Driving in the United States SAVE Case Check Special Student Relief Work Working in the United States Obtaining a Social Security Number Training Opportunities in the United States Applying for Practical Training Understanding E-Verify Individual Taxpayer Identification Number (ITIN) Complete M-1 Extensions of Stay Change of Status H-1B Status and the Cap Gap Extension",
+      "body_text_sha256": "eb8c8651fb357b2c8c1bd0c3121460d3ab1319a04b13f75edb10e4dd0a0873ee",
+      "evidence_block_count": 42,
+      "evidence_blocks": [
+        {
+          "block_id": "US-ST-01-BLOCK-0001",
+          "tag": "li",
+          "source_text": "Students and the Form I-20",
+          "source_text_sha256": "546163f433b4b59a0808aba4be0f7e9e96841aa948a2981a160110951d905911",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0002",
+          "tag": "p",
+          "source_text": "All F and M students that study in the United States need a Form I-20, “Certificate of Eligibility for Nonimmigrant Student Status.” Once accepted into a Student and Exchange Visitor Program (SEVP)-certified school , nonimmigrant students will receive a Form I-20 from their designated school official (DSO) .",
+          "source_text_sha256": "a7b44719abefce577ea1482b88028df0ac5b1ce7f851440bd5a3b5198a95e319",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0003",
+          "tag": "p",
+          "source_text": "You must also obtain a Form I-20 for any eligible dependents you plan to bring to the United States with you. However, please note that the name (i.e., Academic and Language students vs. Vocational Students) on the Form I-20 an SEVP-certified school issues you will dictate the type of student visa you may obtain from the U.S. Department of State and the status you will need to maintain in the United States. You and your DSO must both sign the Form I-20. If you are under age 18, your parents must sign the Form I-20 for you.",
+          "source_text_sha256": "8f8214387c02e08b487973e093afbdaeb696a409be3dc1b59fdf80b47adf30f7",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0004",
+          "tag": "p",
+          "source_text": "The Form I-20 is an important document that you should keep safe, as you will need it throughout the F and M student life cycle.",
+          "source_text_sha256": "821087ffc7ee9b2f41a9d30021e716afb598313b912be8ed3a630220d2397ae8",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0005",
+          "tag": "p",
+          "source_text": "Before you pay the I-901 Student and Exchange Visitor Information System (SEVIS) Fee, you must receive the Form I-20 from a DSO at the school you plan to attend. You will need information from the Form I-20 to pay the fee. The I-901 SEVIS Fee is mandatory and must be paid before you enter the United States.",
+          "source_text_sha256": "334e37911e0d99801a8efa093f438c9c423fa19daa0d4af670f7a6009ec06d79",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0006",
+          "tag": "p",
+          "source_text": "In order to pay the I-901 SEVIS fee, all prospective F and M students will need to provide their:",
+          "source_text_sha256": "4b5acd78e998da57ba88f215877f0ce6d11da01873114c5683f5f61b18533551",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0007",
+          "tag": "li",
+          "source_text": "Name, address, date of birth and email address.",
+          "source_text_sha256": "0f58f3673277b5d4edf629dd7f257936be8c45ecc89054ce3c058be4c94867c4",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0008",
+          "tag": "li",
+          "source_text": "Country of birth and country of citizenship.",
+          "source_text_sha256": "adfb2ea37b4e5701aa59028d4c5594d2827cf7606285275baa6ed6417b276507",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0009",
+          "tag": "li",
+          "source_text": "School Code as listed on the Form I-20 “Certificate of Eligibility for Nonimmigrant Student Status.”",
+          "source_text_sha256": "c2f730630c57edf65b9f226b53c8c1441ad217d475d173aff7fc9a90ac3ffc77",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0010",
+          "tag": "li",
+          "source_text": "SEVIS Identification Number as listed on the Form I-20.",
+          "source_text_sha256": "a9600bba2a167c18e06ccec16e7fa1b9aa996d9ba7e8bcdb604bb0ddf38fdd79",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0011",
+          "tag": "p",
+          "source_text": "The Form I-20 lists your program start date, 30 days before which you are allowed to enter the United States. F-1 and M-1 student visas can be issued up to 365 days in advance of your course of study start date. Your type of student visa must match the type of Form I-20 you have (e.g., F-1 or M-1). You are expected to have the original Form I-20 at your visa interview. The consular officer may accept a copy of the Form I-20 in limited circumstances that warrant visa issuance prior to you receiving the original Form I-20.",
+          "source_text_sha256": "dd9be928ae002997038d8f265216d92e7a552076b208a754fbf84d70a3bc02d6",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0012",
+          "tag": "p",
+          "source_text": "You are expected to have the signed Form I-20 on hand as you enter the country. Do not pack it away in your suitcase. A U.S. Customs and Border Protection officer will instruct you to present your Form I-20 at the port of entry . You may arrive up to 30 days before the start date listed on your Form I-20; or",
+          "source_text_sha256": "972c1e1a0ca624c29ce31d4847f605eb8c16c59d31e151f5f77aaf6a3156a9c3",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0013",
+          "tag": "p",
+          "source_text": "You need a Form I-20 if you are already in the United States as another type of nonimmigrant and you are applying to USCIS to change your status to F or M.",
+          "source_text_sha256": "caaa90296b222201a63b1e5c817f669b31c14ab31d0f6b795a3c88a24a4594cc",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0014",
+          "tag": "p",
+          "source_text": "Your Form I-20 proves that you are legally enrolled in a program of study in the United States. Therefore, it may be needed when you apply for the benefits available to F and M students. If you are eligible to apply for a driver’s license or a social security number , remember to bring your Form I-20 with you.",
+          "source_text_sha256": "55b48f15182a85b319ba7dd747b74e30f49784388c5720e1233cfed7fef54b5f",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0015",
+          "tag": "p",
+          "source_text": "After receiving the initial Form I-20 upon program acceptance, students may receive a new Form I-20 from their DSO in the following circumstances:",
+          "source_text_sha256": "ff522b2f73fb9830e58f1dadabfffefb8d6887eb743d82f4da9239dcf02ab91c",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0016",
+          "tag": "li",
+          "source_text": "If the physical copy of the form is destroyed or misplaced.",
+          "source_text_sha256": "98675e35b1fc08e5f6b6552f07485b2fc906e86fb35a341c5a73e5d259f812c4",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0017",
+          "tag": "li",
+          "source_text": "When the student’s SEVIS status changes (e.g., from Initial to Active).",
+          "source_text_sha256": "f9ed9d292cb8f467e64bb42cf06348f032b08ffadc8765eee73cd2a8b42ecab8",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0018",
+          "tag": "li",
+          "source_text": "For any substantive change to student information, such as changes to a student’s personal information, program of study, optional practical training, etc.",
+          "source_text_sha256": "f8ca36faed1ee8a87258112345ae0f39c773119193fdde0bac2b9bc887db9644",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0019",
+          "tag": "p",
+          "source_text": "As of July 1, 2016, the redesigned Form I-20 is required for all F and M nonimmigrant visa applications, entry into the United States, travel and applications for nonimmigrant benefits. The previous version of the Form I-20 (with a barcode) is now invalid. Students please note that your DSOs were responsible for providing an updated, hard copy of the Form I-20 with original signatures to all F-1 and M-1 students at their schools.",
+          "source_text_sha256": "4faac060c815862a92463847e24d05e9fc8d431b20b96477e66e9be579bb5401",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0020",
+          "tag": "p",
+          "source_text": "Student Resources Navigation",
+          "source_text_sha256": "95f3f0c83d2e958d94ebbc53383f449e51ad798086eefd8cec9fb57881478909",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0021",
+          "tag": "li",
+          "source_text": "International Student Life Cycle",
+          "source_text_sha256": "ca0b93599b809e9873cf783aea6a46e090778abfb81e4bb6524b92cae0f1f95e",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0022",
+          "tag": "li",
+          "source_text": "What is a Commission-Based Recruiter?",
+          "source_text_sha256": "f03b989a7f6503367d40eaf9bbf1c1c1989bb4312825964f035a5826ce826c1f",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0023",
+          "tag": "li",
+          "source_text": "Bringing Dependents to the United States",
+          "source_text_sha256": "0c4ed072fc8493ef530241d698e9d59d8d5afbaa66aca4485bc1855a745a8c22",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0024",
+          "tag": "li",
+          "source_text": "Kindergarten to Grade 12 Students",
+          "source_text_sha256": "4d7fa838e107a48017ee1e63e6e438040919bea888b0cecd8864f9df0cfe46eb",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0025",
+          "tag": "li",
+          "source_text": "English Language Training",
+          "source_text_sha256": "c082b8fe3f297c44db97cf45db6270e34b4d63da84adf9aad3b98d26c55fa3b6",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0026",
+          "tag": "li",
+          "source_text": "Paying the I-901 SEVIS Fee",
+          "source_text_sha256": "b859f8f77b76a264e4bf106775fb1c71cfe07224c5e1b835a4301718f33d838b",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0027",
+          "tag": "li",
+          "source_text": "I-901 SEVIS Fee Payment Video",
+          "source_text_sha256": "844e9e5679dc6e5d7b3ad08b0f62f94d1cd6c7833408abef53a070876027ae4c",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0028",
+          "tag": "li",
+          "source_text": "Getting to the United States",
+          "source_text_sha256": "930ad9a5b0dcead546b3a1719291b466e795b8d102134dd7b95e22dbcc4083ab",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0029",
+          "tag": "li",
+          "source_text": "Applying for a Visa to Travel to the United States",
+          "source_text_sha256": "70f829d248fa26c610ecd5814eb69218ce992f98e10e71f6a7e48a850d968a13",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0030",
+          "tag": "li",
+          "source_text": "What is Secondary Inspection?",
+          "source_text_sha256": "c3f8cdb5fa0987d3fd412bebef72395cbbcc177902c194a3e08d5ea21b236581",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0031",
+          "tag": "li",
+          "source_text": "Transferring to Another School",
+          "source_text_sha256": "e09660ee39c8c1ee9f38f53df200c55ea462ba7472e64fab009fc97eec3a76b0",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0032",
+          "tag": "li",
+          "source_text": "Instructions for Transferring to Another School as an F-1 Student",
+          "source_text_sha256": "95ad0eb472ec86acbbc1a9bf3ac77f5cea0c8e052c3d4444279cfaa1d2a1dcb1",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0033",
+          "tag": "li",
+          "source_text": "Instructions for Transferring to Another School as an M-1 Student",
+          "source_text_sha256": "5b304a6718f105dab0d19f16cf4914d1b282710b7e7fb6c28c4c5cb886ce800a",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0034",
+          "tag": "li",
+          "source_text": "Maintain F and M Status in Emergency Events",
+          "source_text_sha256": "043416d5152da5c0fc2dbe45e15fec3326d47d550ddd874dea8171280c4c4352",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0035",
+          "tag": "li",
+          "source_text": "Traveling as an F or M Student",
+          "source_text_sha256": "3b3bd96c26845542f7c476e87b8614e7910a0c06384ae2c49a47fb3d4160d4fe",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0036",
+          "tag": "li",
+          "source_text": "Driving in the United States",
+          "source_text_sha256": "c9ca87f1066836983bb1616adcaf3f4926cd31f7f6fa4f006ee3d8bdac39884f",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0037",
+          "tag": "li",
+          "source_text": "Working in the United States",
+          "source_text_sha256": "6c44fd655f08eb85f4ffd27d15ce706de235e54808ee3a097514d72ff35b8e7e",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0038",
+          "tag": "li",
+          "source_text": "Obtaining a Social Security Number",
+          "source_text_sha256": "182ed6a2161cbd5d6a849e1cc385aa0f12454c288fa145192e86f4e4b0702c55",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0039",
+          "tag": "li",
+          "source_text": "Training Opportunities in the United States",
+          "source_text_sha256": "b33476f0d58ada83686c1ef5eed0e3415a080c51307347c35c3724e250b84833",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0040",
+          "tag": "li",
+          "source_text": "Applying for Practical Training",
+          "source_text_sha256": "a5726902a0f5634e6c8955f922f456a476cf15cdf60d180acff142a862b38bf2",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0041",
+          "tag": "li",
+          "source_text": "Individual Taxpayer Identification Number (ITIN)",
+          "source_text_sha256": "7629346d92597acd0043a5661a2ffc3f97677d360426266ca08fae27097faabc",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-ST-01-BLOCK-0042",
+          "tag": "li",
+          "source_text": "H-1B Status and the Cap Gap Extension",
+          "source_text_sha256": "48674a0e31faa51a91cbd17387fa2b1d43f2989099f106d1ad21671fe5939655",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        }
+      ],
+      "content_validation_status": "needs_review",
+      "source_type": "form_i20_guidance",
+      "identity_keywords_found": [
+        "i-20",
+        "student"
+      ],
+      "identity_review_status": "candidate_matched"
+    }
+  ],
+  "extraction_method": "html_main_article_body",
+  "source_identity_verified": false,
+  "section_semantics_verified": false,
+  "eligibility_rules_verified": false,
+  "validation_status": "needs_review",
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false
+}

@@ -1,0 +1,645 @@
+{
+  "dataset_type": "bridgeusa_text_cleanup_review_draft",
+  "country": "US",
+  "programs": {
+    "j1_intern": {
+      "program_id": "US-EM-02",
+      "source_url": "https://j1visa.state.gov/programs/intern/",
+      "source_html_sha256": "a571960556b62516af3a0a356e115b98af1f4f31d9bc3879cb06a64e718b2ccd",
+      "source_content_sha256": "225bc8427ad550813a86eb63c6eca381e9d10ad9978f1b3bb3ba47827ee91976",
+      "section_count": 13,
+      "sections": [
+        {
+          "section_index": 1,
+          "evidence_id": "US-EM-02-SECTION-001",
+          "heading": "Intern",
+          "heading_tag": "h1",
+          "category_candidate": "program_description_or_other",
+          "source_text_sha256": "f5ca597ebedda2252ddcd75cde278e8828331c736ea399fca9a3fc4683691b3b",
+          "cleaned_text": "Intern Internship programs are designed to allow foreign college and university students or recent graduates to come to the United States to gain exposure to U.S. culture and to receive hands-on experience in U.S. business practices in their chosen occupational field.",
+          "removed_ui_patterns": [
+            {
+              "pattern": "Tweet get_facebook_share\\(\\)\\? ",
+              "count": 1
+            },
+            {
+              "pattern": "\\btab [123]\\b",
+              "count": 1
+            }
+          ],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 2,
+          "evidence_id": "US-EM-02-SECTION-002",
+          "heading": "Participants",
+          "heading_tag": "h2",
+          "category_candidate": "participants_and_eligibility",
+          "source_text_sha256": "0e27279b3302db0448a2acf5d923ffb09b75270c2e957bfb93f54815d2146aa4",
+          "cleaned_text": "Participants",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 3,
+          "evidence_id": "US-EM-02-SECTION-003",
+          "heading": "Interns must be foreign nationals:",
+          "heading_tag": "h3",
+          "category_candidate": "participants_and_eligibility",
+          "source_text_sha256": "08cc919b9a8f74c09d9077d521fd6cfdff113923abd3baf635de3cb2e7b73b71",
+          "cleaned_text": "Interns must be foreign nationals: Who are currently enrolled in and pursuing studies at a foreign degree- or certificate-granting post-secondary academic institution outside the United States; or Who have graduated from such an institution no more than 12 months prior to their exchange visitor program start date.",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 4,
+          "evidence_id": "US-EM-02-SECTION-004",
+          "heading": "Benefits",
+          "heading_tag": "h3",
+          "category_candidate": "benefits",
+          "source_text_sha256": "c9c6e335d77bee5dd87f2e7bf5f0f3f1483861a07e996cbb42e77cfa930c8169",
+          "cleaned_text": "Benefits Practical Experience: The program bridges the gap between formal education and practical work experience.",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 5,
+          "evidence_id": "US-EM-02-SECTION-005",
+          "heading": "More information",
+          "heading_tag": "h3",
+          "category_candidate": "related_information",
+          "source_text_sha256": "09f6242266631e82c102edab9144655559134558b5074cf1892dc92c2d474f56",
+          "cleaned_text": "More information",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 6,
+          "evidence_id": "US-EM-02-SECTION-006",
+          "heading": "Limitations/Exceptions for Intern work environment",
+          "heading_tag": "h4",
+          "category_candidate": "restrictions",
+          "source_text_sha256": "c59422f1a7a5f517a76e5e33195133c0903dc90cd48c87989d9bbbde8a240968",
+          "cleaned_text": "Limitations/Exceptions for Intern work environment Interns cannot work in unskilled or casual labor positions, in positions that require or involve childcare or elder care or in any kind of position that involves medical patient care or contact. Nor can interns work in positions that require more than 20 percent clerical or office support work.",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 7,
+          "evidence_id": "US-EM-02-SECTION-007",
+          "heading": "Internships are offered in the following occupational categories:",
+          "heading_tag": "h4",
+          "category_candidate": "occupational_categories",
+          "source_text_sha256": "c82c7458f34b9792811475f5bf1e7689007003f594e2c225f1ad761e504f9df0",
+          "cleaned_text": "Internships are offered in the following occupational categories: Agriculture, Forestry and Fishing; Arts and Culture; Construction and Building Trades; Education, Social Sciences, Library Science, Counseling and Social Services; Health Related Occupations; Hospitality and Tourism; Information Media and Communications; Management, Business, Commerce and Finance; Public Administration and Law; and The Sciences, Engineering, Architecture, Mathematics and Industrial Occupations.",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 8,
+          "evidence_id": "US-EM-02-SECTION-008",
+          "heading": "Early Career STEM Research Initiative",
+          "heading_tag": "h3",
+          "category_candidate": "related_information",
+          "source_text_sha256": "12e159752ff4a74b7aa0612e1c110933c5163bfc13da0fb09ef260638f13fb5d",
+          "cleaned_text": "Early Career STEM Research Initiative This research initiative seeks to support an increase in science, technology, engineering, and mathematics (STEM) students, professionals, and exchange visitors on educational and cultural exchange programs in the United States.",
+          "removed_ui_patterns": [
+            {
+              "pattern": "\\bend featured experience component\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bfeatured experience component\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bend tab [123]\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\btab [123]\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bProgram Resources\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bCommon Questions\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bREAD MORE\\b",
+              "count": 1
+            }
+          ],
+          "extracted_links": [
+            "/participants/how-to-apply/sponsor-search/?wdt_column_filter[1]=Intern&state=any"
+          ],
+          "html_tag_detected": true,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review",
+          "ui_tail_excluded": true,
+          "excluded_tail_sha256": "98f26a140c7ce5966c081de93664a698d368902895402a65e6bed08baadab295",
+          "excluded_tail_length": 48,
+          "review_boundary": "educational and cultural exchange programs in the United States."
+        },
+        {
+          "section_index": 9,
+          "evidence_id": "US-EM-02-SECTION-009",
+          "heading": "Program Sponsors",
+          "heading_tag": "h2",
+          "category_candidate": "program_sponsors",
+          "source_text_sha256": "8faad3008bceb503ba12dd1d3bf480756d86daf0b72d5c9ef19226df52eed9ea",
+          "cleaned_text": "Program Sponsors",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 10,
+          "evidence_id": "US-EM-02-SECTION-010",
+          "heading": "Sponsors are required to:",
+          "heading_tag": "h3",
+          "category_candidate": "program_sponsors",
+          "source_text_sha256": "7926f4e8c0113fc3b1b3d941a2666ead2cc081c26d0d3d5622bd7c6b609c4570",
+          "cleaned_text": "Sponsors are required to: Conduct site visits of host organizations that: Have not previously participated successfully in the sponsor’s program; Have fewer than 25 employees; and Have less than $3 million in annual revenue. Collect the following information from all host organizations: Employer Identification Number (EIN); Verification of telephone number, address, brochures, website, etc.; and Proof of Worker’s Compensation Insurance Policy.",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 11,
+          "evidence_id": "US-EM-02-SECTION-011",
+          "heading": "Sponsors must ensure the following:",
+          "heading_tag": "h3",
+          "category_candidate": "program_sponsors",
+          "source_text_sha256": "c51b3f411a326ee8fd4bef3313554ea642e2d2003828677a4fa9cb88b551377f",
+          "cleaned_text": "Sponsors must ensure the following: Participants in programs that exceed six months must be evaluated at midpoint and at the conclusion of the program; and For programs with durations of less than six months, an evaluation is required at the conclusion of the program. All evaluations must be received by the sponsoring organization prior to the end of the participant’s exchange program and must be signed by both the participant and his or her immediate supervisor.",
+          "removed_ui_patterns": [
+            {
+              "pattern": "\\bend tab [123]\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\btab [123]\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bProgram Resources\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bCommon Questions\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bSEVIS Information\\b",
+              "count": 1
+            }
+          ],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 12,
+          "evidence_id": "US-EM-02-SECTION-012",
+          "heading": "Employers",
+          "heading_tag": "h3",
+          "category_candidate": "hosts_and_employers",
+          "source_text_sha256": "e3651de74022e8e90bf0616f11d0689b2dc3dcbaaef910989bb0ba527551938f",
+          "cleaned_text": "Employers",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 13,
+          "evidence_id": "US-EM-02-SECTION-013",
+          "heading": "Hosts are required to:",
+          "heading_tag": "h3",
+          "category_candidate": "hosts_and_employers",
+          "source_text_sha256": "9add92a07a85d75a1b52430894aafb66afbfa6441dee182c099984a02d2a45cc",
+          "cleaned_text": "Hosts are required to: Sign a completed Form DS–7002 – Training/Internship Placement Plan (T/IPP) to verify that all placements are appropriate and consistent with the objectives of the interns as outlined in their program applications and as set forth in their T/IPPs. All parties involved in internship programs should recognize that interns are seeking entry-level training and experience. Accordingly, all placements must be tailored to the skills and experience level of the individual intern; Notify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs and contact sponsors immediately in the event of any emergency involving trainees or interns; Abide by all federal, state and local occupational health and safety laws; Abide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations; Have sufficient resources, plant, equipment and trained personnel available; Provide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and Ensure that interns obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances.",
+          "removed_ui_patterns": [
+            {
+              "pattern": "\\bend tab [123]\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bProgram Resources\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bCommon Questions\\b",
+              "count": 5
+            },
+            {
+              "pattern": "\\bVisa Basics\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bFacts & Figures\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bAbout J-2 Visa\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bOther U\\.S\\. Student Visas\\b",
+              "count": 1
+            }
+          ],
+          "extracted_links": [
+            "/participants/how-to-apply/sponsor-search/?program=Intern&state=any",
+            "/wp-content/uploads/2016/10/Temp_User_6.29.pdf",
+            "http://exchanges.state.gov/"
+          ],
+          "html_tag_detected": true,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review",
+          "ui_tail_excluded": true,
+          "excluded_tail_sha256": "c017188f2b41519d064d7706af4ea0e41469807b5cfa0458b4affd97266d36be",
+          "excluded_tail_length": 1054,
+          "review_boundary": "as appropriate in specific circumstances."
+        }
+      ],
+      "section_boundaries_verified": false,
+      "eligibility_rules_verified": false,
+      "validation_status": "needs_review"
+    },
+    "j1_trainee": {
+      "program_id": "US-EM-03",
+      "source_url": "https://j1visa.state.gov/programs/trainee/",
+      "source_html_sha256": "8a7b1f64d83e63854aebe0f5033cefa39856d83102c01ae054e7e8565c213349",
+      "source_content_sha256": "0fe21ab727dbc460a6bb484810cebc997edb227a969b68e2542728d925a71c48",
+      "section_count": 13,
+      "sections": [
+        {
+          "section_index": 1,
+          "evidence_id": "US-EM-03-SECTION-001",
+          "heading": "Trainee",
+          "heading_tag": "h1",
+          "category_candidate": "program_description_or_other",
+          "source_text_sha256": "571e89db654a7846b2e7e62fbf41c2f95c75065b38cee7a333404c62e15770b5",
+          "cleaned_text": "Trainee Training programs are designed to allow foreign professionals to come to the United States to gain exposure to U.S. culture and to receive training in U.S. business practices in their chosen occupational field.",
+          "removed_ui_patterns": [
+            {
+              "pattern": "Tweet get_facebook_share\\(\\)\\? ",
+              "count": 1
+            },
+            {
+              "pattern": "\\btab [123]\\b",
+              "count": 1
+            }
+          ],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 2,
+          "evidence_id": "US-EM-03-SECTION-002",
+          "heading": "Participants",
+          "heading_tag": "h2",
+          "category_candidate": "participants_and_eligibility",
+          "source_text_sha256": "0e27279b3302db0448a2acf5d923ffb09b75270c2e957bfb93f54815d2146aa4",
+          "cleaned_text": "Participants",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 3,
+          "evidence_id": "US-EM-03-SECTION-003",
+          "heading": "A trainee must be a foreign national who:",
+          "heading_tag": "h3",
+          "category_candidate": "participants_and_eligibility",
+          "source_text_sha256": "b253baa925ef9168c41074a5fb8cb1e42a6758b0f6cdb3630a823b8bbec2669c",
+          "cleaned_text": "A trainee must be a foreign national who: Has a degree or professional certificate from a foreign post-secondary academic institution and at least one year of prior related work experience in his or her occupational field outside the United States; or Has five years of work experience outside the United States in the occupational field in which they are seeking training",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 4,
+          "evidence_id": "US-EM-03-SECTION-004",
+          "heading": "Benefits",
+          "heading_tag": "h3",
+          "category_candidate": "benefits",
+          "source_text_sha256": "05b8959815e9869968ac623cd84696f64bd855b0ed346278bbc0d1896d2b9d19",
+          "cleaned_text": "Benefits Practical Experience: Enhance the skills and expertise of exchange visitors in their academic or occupational fields through participation in a structure and guided training-based program.",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 5,
+          "evidence_id": "US-EM-03-SECTION-005",
+          "heading": "More information",
+          "heading_tag": "h3",
+          "category_candidate": "related_information",
+          "source_text_sha256": "09f6242266631e82c102edab9144655559134558b5074cf1892dc92c2d474f56",
+          "cleaned_text": "More information",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 6,
+          "evidence_id": "US-EM-03-SECTION-006",
+          "heading": "Limitations or Exceptions",
+          "heading_tag": "h4",
+          "category_candidate": "restrictions",
+          "source_text_sha256": "08fda21f4243553a094558b3eab1e2b20b9d6fe506afd2c96a23994513b26757",
+          "cleaned_text": "Limitations or Exceptions Trainees cannot work in unskilled or casual labor positions, in positions that require or involve childcare or elder care, or in any kind of position that involves patient care or contact. Further, sponsors must not place trainees in positions that require more than 20 percent clerical or office support work. Use of the Exchange Visitor Program for ordinary employment or work purposes is strictly prohibited. Sponsors are not to place trainee participants in positions, which are filled or would be filled by full-time or part-time employees. Also, the training cannot duplicate a trainee participant’s prior work experience or training.",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 7,
+          "evidence_id": "US-EM-03-SECTION-007",
+          "heading": "Allowed Occupational Categories",
+          "heading_tag": "h4",
+          "category_candidate": "occupational_categories",
+          "source_text_sha256": "4d1ee7ae7da98b15d0a6ef2583634597d44f0f149a4ab5de9b137fccc4b85436",
+          "cleaned_text": "Allowed Occupational Categories Agriculture, Forestry, and Fishing; Arts and Culture; Construction and Building Trades; Education, Social Sciences, Library Science, Counseling and Social Services; Health Related Occupations; Hospitality and Tourism; Information Media and Communications; Management, Business, Commerce and Finance; Public Administration and Law; and The Sciences, Engineering, Architecture, Mathematics and Industrial Occupations.",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 8,
+          "evidence_id": "US-EM-03-SECTION-008",
+          "heading": "Early Career STEM Research Initiative",
+          "heading_tag": "h3",
+          "category_candidate": "related_information",
+          "source_text_sha256": "b08e878689b660ff8ae6013849ff42d50daf032ddcbdb7e3e9b2321f95e25fc5",
+          "cleaned_text": "Early Career STEM Research Initiative This research initiative seeks to support an increase in science, technology, engineering, and mathematics (STEM) students, professionals, and exchange visitors on educational and cultural exchange programs in the United States.",
+          "removed_ui_patterns": [
+            {
+              "pattern": "\\bend featured experience component\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bfeatured experience component\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bend tab [123]\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\btab [123]\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bProgram Resources\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bCommon Questions\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bREAD MORE\\b",
+              "count": 1
+            }
+          ],
+          "extracted_links": [
+            "/participants/how-to-apply/sponsor-search/?wdt_column_filter[1]=Trainee&state=any"
+          ],
+          "html_tag_detected": true,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review",
+          "ui_tail_excluded": true,
+          "excluded_tail_sha256": "ff8737c9ab891f4fbb1cc916d82a31a93c6178ff960e94b9d22e334b58ed1a81",
+          "excluded_tail_length": 159,
+          "review_boundary": "educational and cultural exchange programs in the United States."
+        },
+        {
+          "section_index": 9,
+          "evidence_id": "US-EM-03-SECTION-009",
+          "heading": "Program Sponsors",
+          "heading_tag": "h2",
+          "category_candidate": "program_sponsors",
+          "source_text_sha256": "8faad3008bceb503ba12dd1d3bf480756d86daf0b72d5c9ef19226df52eed9ea",
+          "cleaned_text": "Program Sponsors",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 10,
+          "evidence_id": "US-EM-03-SECTION-010",
+          "heading": "Sponsors are required to:",
+          "heading_tag": "h3",
+          "category_candidate": "program_sponsors",
+          "source_text_sha256": "40f609911959eb1b7853be4c6f0ec840305c53229dfc48e29c30d1dd4c77f568",
+          "cleaned_text": "Sponsors are required to: Conduct site visits of host organizations that: Have not previously participated successfully in the sponsor’s program; Have fewer than 25 employees; Have less than $3 million in annual revenue. Collect the following information from all host organizations: Employer Identification Number (EIN) Verification of telephone number, address, brochures, website, etc.; and Proof of worker’s compensation insurance policy or equivalent.",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 11,
+          "evidence_id": "US-EM-03-SECTION-011",
+          "heading": "Sponsors must ensure the following for participants:",
+          "heading_tag": "h3",
+          "category_candidate": "participants_and_eligibility",
+          "source_text_sha256": "c8b930e8e971dcbd1a407dbbf88b7280d9307bbb2e4bf846aedf3243c32aa073",
+          "cleaned_text": "Sponsors must ensure the following for participants: Participants in programs that exceed six months must be evaluated at mid-point and at the conclusion of the program; For programs with durations of less than six months, the participant must be evaluated at the conclusion of the program. All evaluations must be received by the sponsoring organization prior to the end of the participant’s exchange program and must be signed by both the participant and his or her immediate supervisor; Ensure that trainees are appropriately selected, oriented, supervised and evaluated; Be available to trainees to assist as facilitators and information resources; and Ensure that the training program is full-time (at least 32 hours a week).",
+          "removed_ui_patterns": [
+            {
+              "pattern": "\\bend tab [123]\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\btab [123]\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bProgram Resources\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bCommon Questions\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bSEVIS Information\\b",
+              "count": 1
+            }
+          ],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 12,
+          "evidence_id": "US-EM-03-SECTION-012",
+          "heading": "Hosts",
+          "heading_tag": "h3",
+          "category_candidate": "hosts_and_employers",
+          "source_text_sha256": "bba9af131107680acf903d287345603cbac493fa9d02277bb0a9274c60cda864",
+          "cleaned_text": "Hosts",
+          "removed_ui_patterns": [],
+          "extracted_links": [],
+          "html_tag_detected": false,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review"
+        },
+        {
+          "section_index": 13,
+          "evidence_id": "US-EM-03-SECTION-013",
+          "heading": "Host Organizations are required to:",
+          "heading_tag": "h3",
+          "category_candidate": "hosts_and_employers",
+          "source_text_sha256": "31ca8b49c46ae5ca81b74acf9fc76a7772a93d9b1e7ee5b8e881fea69bed5f17",
+          "cleaned_text": "Host Organizations are required to: Sign a completed Form DS–7002 to verify that all placements are appropriate and consistent with the objectives of the trainees or interns as outlined in their program applications and as set forth in their T/IPPs; Notify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs; Contact sponsors immediately in the event of any emergency involving trainees or interns; Abide by all federal, state and local occupational health and safety laws; Abide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations; Have sufficient resources, plant, equipment and trained personnel available; Provide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and Ensure that trainees obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances.",
+          "removed_ui_patterns": [
+            {
+              "pattern": "\\bend tab [123]\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bProgram Resources\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bCommon Questions\\b",
+              "count": 5
+            },
+            {
+              "pattern": "\\bVisa Basics\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bFacts & Figures\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bAbout J-2 Visa\\b",
+              "count": 1
+            },
+            {
+              "pattern": "\\bOther U\\.S\\. Student Visas\\b",
+              "count": 1
+            }
+          ],
+          "extracted_links": [
+            "/participants/how-to-apply/sponsor-search/?program=Trainee&state=any",
+            "/wp-content/uploads/2016/10/Temp_User_6.29.pdf",
+            "http://exchanges.state.gov/"
+          ],
+          "html_tag_detected": true,
+          "section_boundary_verified": false,
+          "semantic_review_status": "needs_review",
+          "ui_tail_excluded": true,
+          "excluded_tail_sha256": "939879135fb20897c4ee7cf1cd56c0b03f4698feee34fcaaaa2fe7ac278d25ba",
+          "excluded_tail_length": 849,
+          "review_boundary": "as appropriate in specific circumstances."
+        }
+      ],
+      "section_boundaries_verified": false,
+      "eligibility_rules_verified": false,
+      "validation_status": "needs_review"
+    }
+  },
+  "cleanup_method": "html_tag_removal_and_explicit_ui_pattern_filtering",
+  "source_texts_modified": false,
+  "existing_files_modified": false,
+  "section_boundaries_verified": false,
+  "semantic_review_completed": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false,
+  "revision": "v2",
+  "revision_method": "explicitly_reviewed_section_tail_boundaries",
+  "previous_draft_sha256": "03237cd55fae340986c7f47f28c2ec87755664b866c74942bd64b53bbf3828b8",
+  "excluded_tail_review": [
+    {
+      "program": "j1_intern",
+      "section_index": 8,
+      "kept_length": 266,
+      "excluded_length": 48,
+      "excluded_preview": ". Find a Program Sponsor Find a Program Sponsor",
+      "original_links_preserved": true
+    },
+    {
+      "program": "j1_intern",
+      "section_index": 13,
+      "kept_length": 1401,
+      "excluded_length": 1054,
+      "excluded_preview": "Find a Program Sponsor Find a Program Sponsor featured host experience component “They’re bright, they’re energetic and they’re highly motivated.” All",
+      "original_links_preserved": true
+    },
+    {
+      "program": "j1_trainee",
+      "section_index": 8,
+      "kept_length": 266,
+      "excluded_length": 159,
+      "excluded_preview": ". Find a Program Sponsor Find a Program Sponsor “It really is a wonderful experience that you will remember for the rest of your life.” Anna Karlsson,",
+      "original_links_preserved": true
+    },
+    {
+      "program": "j1_trainee",
+      "section_index": 13,
+      "kept_length": 1150,
+      "excluded_length": 849,
+      "excluded_preview": "Find a Program Sponsor Find a Program Sponsor Participants How to Apply Current Participants Participant Experiences for Participants TODO: fix link V",
+      "original_links_preserved": true
+    }
+  ]
+}

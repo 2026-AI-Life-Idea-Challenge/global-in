@@ -1,0 +1,88 @@
+
+{
+  "dataset_type": "west_issue_field_linkage_draft",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "source_review_register": "west_2026_second_half_review_register.json",
+  "reviewed_drafts": [
+    "west_2026_h2_evidence_fields_review_draft.json",
+    "west_2026_h2_remaining_fields_review_draft.json"
+  ],
+  "original_issue_count": 16,
+  "additional_field_count": 7,
+  "direct_issue_field_links": [
+    {
+      "field": "eligibility_exceptions",
+      "issue_ids": [
+        "WEST-H2-ELIGIBILITY-01",
+        "WEST-H2-SELECTION-04"
+      ],
+      "relationship": "FAQ Q3 모집 회차 표기 불일치",
+      "review_status": "needs_review"
+    },
+    {
+      "field": "graduation_evidence_examples",
+      "issue_ids": [
+        "WEST-H2-APPLICATION-03",
+        "WEST-H2-FINANCIAL-02"
+      ],
+      "relationship": "졸업생 증빙서류 분기와 지원구간 적용",
+      "review_status": "needs_review"
+    },
+    {
+      "field": "j1_visa_conditions",
+      "issue_ids": [
+        "WEST-H2-SELECTION-05"
+      ],
+      "relationship": "FAQ Q43·Q48의 J-1 본국거주의무",
+      "review_status": "needs_review"
+    }
+  ],
+  "fields_without_direct_issue": [
+    "vulnerable_group_evidence",
+    "internship_restrictions",
+    "score_report_identifiers",
+    "toeic_speaking_conversion_reference"
+  ],
+  "other_existing_issue_ids": [
+    "WEST-H2-ELIGIBILITY-02",
+    "WEST-H2-ELIGIBILITY-03",
+    "WEST-H2-APPLICATION-01",
+    "WEST-H2-APPLICATION-02",
+    "WEST-H2-FINANCIAL-01",
+    "WEST-H2-FINANCIAL-03",
+    "WEST-H2-FINANCIAL-04",
+    "WEST-H2-SELECTION-01",
+    "WEST-H2-SELECTION-02",
+    "WEST-H2-SELECTION-03",
+    "WEST-H2-SELECTION-06"
+  ],
+  "duplicate_candidates": [
+    {
+      "candidate_issue_ids": [
+        "WEST-H2-ELIGIBILITY-01",
+        "WEST-H2-SELECTION-04"
+      ],
+      "reason": "두 기록 모두 FAQ Q3의 모집 회차 표기 불일치를 지칭",
+      "human_duplicate_decision": null,
+      "automatically_merged": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "review_summary": {
+    "original_issue_count": 16,
+    "directly_linked_issue_count": 5,
+    "other_issue_count": 11,
+    "duplicate_candidate_pairs": 1,
+    "issues_automatically_resolved": 0,
+    "issues_automatically_merged": 0,
+    "all_issues_resolved": false,
+    "semantic_review_completed": false,
+    "existing_files_modified": false
+  },
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

@@ -1,0 +1,41 @@
+{
+  "dataset_type": "usa_policy_review_report",
+  "country": "US",
+  "review_scope": "P1_policy_or_legal",
+  "input_review_queue_sha256": "b2fbb611dd05363060ac099355e7f1c11fdcbee602dd0d2130fcb964961b1241",
+  "input_index_sha256": "a5b801fd23d914861f04b51916e035f82e9c854fe3ad1353542bb80933d01c7a",
+  "input_manifest_sha256": "e97d8ed6197caf245ac3b1a828db72323616d0a5a5f1fc18a4f7e14ca4e240d0",
+  "total_review_records": 103,
+  "program_counts": {
+    "US-EM-01": 63,
+    "US-EM-02": 4,
+    "US-EM-03": 5,
+    "US-ST-01": 6,
+    "US-ST-03": 3,
+    "US-WEST-01": 11,
+    "US-WH-01": 11
+  },
+  "candidate_type_counts": {
+    "official_html_policy_review": 92,
+    "pdf_policy_context_review": 11
+  },
+  "matched_policy_category_counts": {
+    "documents": 19,
+    "eligibility": 17,
+    "exception": 14,
+    "fees_or_support": 15,
+    "obligation": 91,
+    "prohibition": 14,
+    "visa_or_status": 24
+  },
+  "review_queue_path": "data/processed/usa/shared/usa_policy_review_queue.jsonl",
+  "review_queue_sha256": "d755e3f6d7f6506b999ccbd31f20cc2a89c787eaf7b5a617ecbf9c8d8be464b4",
+  "review_method": "keyword_candidate_classification_with_original_text_context",
+  "automated_semantic_approval": false,
+  "human_review_completed": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "database_loaded": false
+}

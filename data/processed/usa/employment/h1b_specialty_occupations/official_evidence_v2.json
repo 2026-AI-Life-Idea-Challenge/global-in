@@ -1,0 +1,1615 @@
+{
+  "dataset_type": "usa_program_official_evidence",
+  "country": "US",
+  "program_id": "US-EM-01",
+  "visa_classification": "H-1B",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "source_file": "data/raw/usa/employment/h1b_specialty_occupations/official_source_alt_3e06874fe97f.html",
+      "source_sha256": "1f7a710fe9b496719d6a56e1b3ca78c096ff46f16554a176da135180c8fb2f18",
+      "page_title": "H-1B Specialty Occupations | USCIS",
+      "extraction_scope": "main",
+      "headings": [
+        "H-1B Specialty Occupations",
+        "Presidential Proclamation on Restriction on Entry of Certain Nonimmigrant Workers",
+        "Eligibility Criteria",
+        "H-1B Licensing",
+        "H-1B Electronic Registration Process",
+        "Petition Filing Process",
+        "Labor Condition Application (LCA)",
+        "Period of Stay",
+        "H-1B Cap",
+        "Changing Employers or Employment Terms with the Same Employer (Portability)",
+        "Family of H-1B Nonimmigrants",
+        "More Information"
+      ],
+      "body_text": "H-1B Specialty Occupations Alert Type info ALERT: On Aug. 10, 2026, DHS issued a final rule to amend regulations concerning the statutory 9-11 Response and Biometric Entry-Exit Fee for H-1B and L-1 Visas (9-11 Biometric Fee). The regulatory changes require petitioners that are covered employers to submit the 9-11 Biometric Fee for all H-1B and L-1 petitions. However, the fee does not apply if the petitioner is filing an amended petition that does not seek to extend the alien’s currently authorized H-1B or L-1 status. A petitioner is a covered employer if it employs 50 or more individuals in the United States, and more than 50 percent of those employees are in H-1B or L-1A or L-1B nonimmigrant status. The final rule is effective Sept. 9, 2026. Form I-129 petitions postmarked or electronically submitted on or after Sept. 9, 2026, must include the fees as required under the final rule. For additional information on fees, see the G-1055, Fee Schedule . Alert Type info ALERT : On June 8, 2026, the U.S. District Court for the District of Massachusetts issued an order that vacated agency guidance implementing the $100,000 payment requirement for certain H-1B petitions. See State of California v. Mullin, 1:25-cv-13829 (D. Mass.). DHS strongly disagrees with the court’s order and filed a motion to stay pending appeal with the United States Court of Appeals for the First Circuit (First Circuit). The District Court order was administratively stayed while the government pursued its motion to stay pending appeal with the First Circuit. On July 24, 2026, the First Circuit denied the government’s motion. DHS strongly disagrees with the First Circuit’s order denying the stay request but will comply with the court’s order while DHS considers next steps. If this order is later lifted, DHS still plans to collect the payment. This nonimmigrant classification applies to people who wish to perform services in a specialty occupation, services of exceptional merit and ability relating to a Department of Defense (DOD) cooperative research and development project, or services as a fashion model of distinguished merit or ability. Presidential Proclamation on Restriction on Entry of Certain Nonimmigrant Workers On Sept. 19, 2025, the President issued a Proclamation, Restriction on Entry of Certain Nonimmigrant Workers , an important initial step to reform the H-1B nonimmigrant visa program. Under the Proclamation, certain H-1B petitions filed at or after 12:01 a.m. Eastern on Sept. 21, 2025, must be accompanied by an additional $100,000 payment as a condition of eligibility. Who is subject to the $100,000 payment: The Proclamation applies to certain H-1B petitions filed at or after 12:01 a.m. Eastern on Sept. 21, 2025, on behalf of beneficiaries who are outside the United States and do not have a valid H-1B visa. The Proclamation also applies if a petition filed at or after 12:01 a.m. Eastern on September 21, 2025, requests consular notification, port of entry notification, or pre-flight inspection for an alien in the United States. In addition, if a petition filed at or after 12:01 a.m. Eastern on Sept. 21, 2025, requests a change of status or amendment or extension of stay and USCIS determines that the alien is ineligible for a change of status or an amendment or extension of stay (for example, is not in a valid nonimmigrant visa status or if the alien departs the United States prior to adjudication of a change of status request), the Proclamation will apply and the payment must be paid according to the instructions provided by USCIS. The Proclamation does not apply to any previously issued and currently valid H-1B visas, or any petitions submitted prior to 12:01 a.m. Eastern on Sept. 21, 2025. In addition, the Proclamation does not prevent any holder of a current H-1B visa, or any alien beneficiary following petition approval, from traveling in and out of the United States. The Proclamation also does not apply to a petition filed at or after 12:01 a.m. Eastern on Sept. 21, 2025, that is requesting an amendment, change of status, or extension of stay for an alien inside the United States where the alien is granted such amendment, change, or extension. Further, an alien beneficiary of such petition will not be considered to be subject to the payment if he or she subsequently departs the United States and applies for a visa based on the approved petition and/or seeks to reenter the United States on a current H-1B visa. How to pay the $100,000 payment: Petitioners should submit the required $100,000 payment using pay.gov, following the instructions on pay.gov at H-1B Visa Payment to Remove Restriction . When to pay the $100,000 payment: Payment must be made before filing a petition with USCIS, as petitioners must submit proof that the payment has been scheduled from pay.gov or evidence of an exception from the $100,000 payment from the Secretary of Homeland Security at the time of filing the H-1B petition. Petitions subject to the $100,000 payment that are filed without a copy of the proof of the payment from pay.gov or evidence of an exception from the Secretary of Homeland Security will be denied. Exceptions granted by the Secretary of Homeland Security: Exceptions to the $100,000 payment are granted by the Secretary of Homeland Security in the extraordinarily rare circumstance where the Secretary has determined that a particular alien worker’s presence in the United States as an H-1B worker is in the national interest, that no American worker is available to fill the role, that the alien worker does not pose a threat to the security or welfare of the United States, and that requiring the petitioning employer to make the payment on the alien's behalf would significantly undermine the interests of the United States. Petitioning employers who believe their alien worker satisfies this high threshold may seek an exception by sending their request and all supporting evidence to H1BExceptions@hq.dhs.gov . Eligibility Criteria Classification General Requirements (among others) Labor Condition Application Required? H-1B Specialty Occupations The occupation requires: Theoretical and practical application of a body of highly specialized knowledge; and Attainment of a bachelor's or higher degree in a directly related* specific specialty (or its equivalent) as a minimum for entry into the occupation in the United States. The position must also meet one of the following criteria to qualify as a specialty occupation: A U.S. bachelor’s or higher degree in a directly related specific specialty, or its equivalent, is normally the minimum entry requirement for the particular occupation; A U.S. bachelor’s or higher degree in a directly related specific specialty, or its equivalent, is normally required to perform job duties in parallel positions among similar organizations in the employer’s industry in the United States; The employer, or third party if the beneficiary will be staffed to that third party, normally requires a U.S. bachelor’s or higher degree in a directly related specific specialty, or its equivalent, to perform the job duties of the position; or The specific duties of the offered position are so specialized, complex, or unique that the knowledge required to perform them is normally associated with the attainment of a U.S. bachelor’s or higher degree in a directly related specific specialty, or its equivalent.* For you to qualify to perform services in a specialty occupation you must meet one of the following criteria: Hold a U.S. bachelor’s or higher degree required by the specialty occupation from an accredited college or university; Hold a foreign degree that is the equivalent to a U.S. bachelor’s or higher degree required by the specialty occupation from an accredited college or university; Hold an unrestricted state license, registration, or certification that authorizes you to fully practice the specialty occupation and be immediately engaged in that specialty in the state of intended employment; or Have education, specialized training, and/or progressively responsible experience that is equivalent to the completion of a U.S. bachelor’s or higher degree in the specialty occupation, and have recognition of expertise in the specialty through progressively responsible positions directly related to the specialty.** Yes. The prospective petitioner must include evidence that a Form ETA-9035/9035E, Labor Condition Application (LCA) has been certified by the Department of Labor (DOL), with Form I-129, Petition for a Nonimmigrant Worker . See the DOL’s Office of Foreign Labor Certification . For more information see the Information for Employers and Employees page. H-1B2 DOD Researcher and Development Project Worker The job must require a bachelor’s or higher degree, or its equivalent, to perform the duties. The petition must be accompanied by: A verification letter from the DOD project manager for the particular project stating that the beneficiary will be working on a cooperative research and development project or a coproduction project under a reciprocal government-to-government agreement administered by DOD. Details about the specific project are not required. A general description of the beneficiary's duties on the particular project and the actual dates of the beneficiary's employment on the project. A statement indicating the names of aliens currently employed on the project in the United States and their dates of employment and the names of aliens whose employment on the project ended within the past year. To be eligible for this classification you must have a bachelor's or higher degree or its equivalent in the occupational field in which you will be performing services. This requirement can be met based on one of the following criteria: Hold a U.S. bachelor’s or higher degree required by the duties from an accredited college or university; Hold a foreign degree that is the equivalent to a U.S. bachelor’s or higher degree from an accredited college or university; Hold an unrestricted state license, registration, or certification that authorizes you to fully practice the duties of the job and be immediately engaged in that specialty in the state of intended employment; or Have education, specialized training, and/or progressively responsible experience in the specialty that is equivalent to the completion of a U.S. bachelor’s or higher degree and have recognition of expertise in the specialty through progressively responsible positions directly related to the specialty.** No. H-1B3 Fashion Model The position or services must require a fashion model of prominence. To be eligible for this visa category you must be a fashion model of distinguished merit and ability. Yes. The prospective petitioner must include evidence that a Form ETA-9035/9035E, Labor Condition Application (LCA) has been certified by the Department of Labor (DOL), with the Form I-129. See the links to the Department of Labor’s Office of Foreign Labor Certification . *For more information, see 8 CFR 214.2(h)(4)(iii)(A). For purposes of the specialty occupation criteria at paragraphs (h)(4)(iii)(A)(1) through (4), “normally” means conforming to a type, standard, or regular pattern, and is characterized by what is considered usual, typical, common, or routine. Normally does not mean always. For purposes of the specialty occupation definition and criteria, “directly related” means that there is a logical connection between the required degree, or its equivalent, and the duties of the position. See 8 CFR 214.2(h)(4)(ii). **For more information see 8 CFR 214.2(h)(4)(iii)(C). H-1B Licensing Some professions require an H-1B beneficiary to hold a state or local license authorizing the beneficiary to fully practice the specialty occupation. If an occupation in the state of intended employment requires such a license, an H-1B beneficiary seeking classification in that occupation generally must have that license before the petition is approved, rather than at the time of filing the petition. See 8 CFR 214.2(h)(4)(v)(A)–(B) . When a license is required, but there is no evidence of the beneficiary holding one, USCIS will generally issue a request for evidence of the required license. H-1B Electronic Registration Process In 2020, we implemented an electronic registration process for the H-1B cap. We will not consider a cap-subject H-1B petition to be properly filed unless it is based on a valid, selected registration for the same beneficiary and the appropriate fiscal year, unless the registration requirement is suspended. For more information about the H-1B registration process, visit our H-1B Electronic Registration Process webpage. Petition Filing Process Step 1: (only required for specialty occupation and fashion model petitions): Employer or Agent Submits LCA to DOL for Certification. The employer or agent must apply for and receive DOL certification of an LCA. For further information regarding LCA requirements and DOL's process, see the Department of Labor’s Foreign Labor Certification page. Step 2: Employer or Agent Submits Completed Form I-129 to USCIS. The employer or agent should file Form I-129, Petition for a Nonimmigrant Worker, at the correct location or online. Please see our I-129 Direct Filing Chart page. If subject to the Presidential Proclamation discussed above, the Form I-129 must be accompanied by either proof from pay.gov that the $100,000 payment has been scheduled for the specific beneficiary or by evidence of an exception from the $100,000 payment from the Secretary of Homeland Security. The DOL-certified LCA should also be submitted with the Form I-129 (only for specialty occupation and fashion models). See the instructions to the Form I-129 (PDF, 534.77 KB) for additional filing requirements. Step 3: Prospective Workers Outside the United States Apply for Visa or Admission. If the Form I-129 petition is approved, the prospective H-1B worker who is outside the United States may apply with the U.S. Department of State at a U.S. Embassy or Consulate abroad for an H-1B visa (if a visa is required). Regardless of whether a visa is required, the prospective H-1B worker must then apply to U.S. Customs and Border Protection for admission to the United States in H-1B classification. Labor Condition Application (LCA) Prospective specialty occupation and distinguished fashion model employers or agents must obtain a certification of an LCA from the DOL. This application includes certain attestations, a violation which can result in fines, bars on sponsoring nonimmigrant or immigrant petitions, and other sanctions to the employer/agent. The application requires the employer or agent to attest that it will comply with the following labor requirements: The employer or agent will pay the H-1B worker a wage that is no less than the wage paid to similarly qualified workers or, if greater, the prevailing wage for the position in the geographic area in which the H-1B worker will be working; The employer or agent will provide working conditions that will not adversely affect other similarly employed workers; At the time of the labor condition application, there is no strike or lockout at the place of employment; and Notice of the filing of the labor condition application with the DOL has been given to the union bargaining representative or has been posted at the place of employment. Period of Stay As an H-1B specialty occupation worker, you may generally be admitted for a period of up to 3 years. This initial period of admission may generally be extended for an additional period of up to 3 years, for a total period of admission of 6 years. If you possess a controlling interest in the petitioning organization or entity, meaning you own more than 50% of the petitioner or have majority voting rights in the petitioner, the approval of your initial petition and your first extension petition will each be limited to a validity period of up to 18 months. However, you may be eligible for an H-1B extension beyond the sixth year under 8 CFR 214.2(h)(13)(iii)(E) if you are the beneficiary of an approved immigrant visa petition under the EB-1, EB-2, or EB-3 classifications, and are eligible to be granted that immigrant status but for application of the per country or worldwide limitations on immigrant visas. Petitioners must demonstrate the visa is not available as of the date they file an H-1B petition with USCIS. We may grant extensions on this basis in up to 3-year increments until we make a final decision to revoke the approval of the immigrant visa petition or to approve or deny your application for an immigrant visa or application to adjust status to lawful permanent residence. Alternatively, under 8 CFR 214.2(h)(13)(iii)(D) , you may be eligible for an H-1B extension beyond the sixth year if at least 365 days have passed since a labor certification was filed with the Department of Labor on your behalf (if such certification is required) or an immigrant visa petition was filed with USCIS on your behalf. You are ineligible for this extension beyond the sixth year if you fail to file an adjustment of status application or apply for an immigrant visa within 1 year of an immigrant visa being available. If the accrual of such 1-year period is interrupted by the unavailability of an immigrant visa, you will have a new 1-year period after an immigrant visa again becomes immediately available, during which you generally must file an adjustment of status application or apply for an immigrant visa. We may, in our discretion, excuse a failure to file an adjustment of status application or apply for an immigrant visa within 1 year of an immigrant visa being available if your employer establishes that the failure to apply was due to circumstances beyond your control. When considering whether to excuse a failure to timely file within 1 year, we will look at the totality of the circumstances, which may include: Whether there was a change of employment; Whether the change of employment was voluntary; When and why the employment with the original employer ended; and What steps you and your new employer took after the change of employment to file an adjustment of status application or apply for an immigrant visa. We may excuse a failure to timely file in cases of both voluntary and involuntary change of employment when considering the totality of the circumstances. We may grant extensions under this provision in up to 1-year increments until the approved permanent labor certification expires or a final decision has been made to: Deny the application for permanent labor certification, or, if approved, to revoke or invalidate the approval; Deny the immigrant visa petition, or, if approved, revoke the approval; Deny or approve your application for an immigrant visa or application to adjust status to lawful permanent residence; or Administratively or otherwise close the application for permanent labor certification, immigrant visa petition, or application to adjust status. Your employer will be liable for the reasonable costs of your return transportation if they terminate your employment before the end of your period of authorized stay. Your employer is not responsible for the costs of your return transportation if you voluntarily resign from your position. For more information, please see Options for Nonimmigrant Workers Following Termination of Employment . H-1B Cap The H-1B classification has an annual numerical limit (cap) of 65,000 new statuses or visas each fiscal year (with certain deductions and additions based on H-1B1 set asides and usage). An additional 20,000 petitions filed on behalf of beneficiaries who have earned a master’s degree or higher from a U.S. institution of higher education are exempt from the cap. Additionally, H-1B workers who are petitioned for or employed at an institution of higher education or its affiliated or related nonprofit entities, a nonprofit research organization, or a government research organization, are not subject to this numerical cap. For further information about the numerical cap, see our H-1B Cap Season page . Changing Employers or Employment Terms with the Same Employer (Portability) Changing Employers When can I begin working for a new H-1B employer if I change employers? If you are changing H-1B employers, you may begin working for the new employer as soon as they properly file a non-frivolous Form I-129 petition on your behalf, or as of the requested start date on that petition, whichever is later. To be eligible for portability, you must not have been employed without authorization from the time of your last admission into the United States, and your new employer must properly file a new, non-frivolous petition before your H-1B period of authorized stay expires. Will I still have employment authorization if I change employers? If you are eligible for H-1B portability, your employment is authorized until USCIS has made a decision on the Form I-129. If the new I-129 petition is approved, you may continue working for the new employer for the period of time indicated on the new petition approval. If the new petition is denied, you may continue working for your previous employer if your prior period of authorized employment is still valid, but your authorization to work based on portability ceases upon denial of the petition. If you are laid off, fired, quit, or otherwise cease employment with your previous employer, you may have up to 60 consecutive days or until the end of your authorized validity period, whichever is shorter, to find new employment, change status, or depart the country. Can I move from cap-exempt to cap-subject employment? If you are moving from cap-exempt to cap-subject employment, your new employer’s H-1B petition will be subject to the H-1B cap . If subject to the cap, your new employer must first submit an electronic registration when registration period opens. This is typically in March. All registrants of selected beneficiaries will be notified of selection and selection notices will be uploaded to their account informing them that they may file a petition for the beneficiary named in the selection notice during the applicable filing period. H-1B cap petitions must have a start date of Oct. 1 (or later) of the applicable fiscal year and may not be filed more than 6 months before the requested start date on the petition. If you are currently employed in a cap-exempt position, you may engage in concurrent employment in a cap-subject position as long as you will continue to be employed in the cap-exempt position. You may begin working concurrently for the cap-subject employer as soon as they properly file a non-frivolous Form I-129 petition on your behalf, or as of the requested start date on that petition, whichever is later. As long as you continue your cap-exempt employment, were previously counted toward the cap, or otherwise remain cap exempt, you will not become subject to the H-1B cap again during the same H-1B validity period. Changing Employment Terms with the Same Employer What if I want to start new employment or change employment terms with my current employer? Form I-129 is also used to request new employment or a change of employment with the same employer. If your current H-1B employer properly files a non-frivolous Form I-129 requesting new employment or a change of employment on your behalf, you are authorized to work according to the terms of the new or changed employment once that petition is filed, or as of the requested start date on that petition, whichever is later. Family of H-1B Nonimmigrants Your spouse and unmarried children under 21 years of age may seek admission in the H-4 nonimmigrant classification. Certain H-4 dependent spouses of H-1B nonimmigrants can file Form I-765, Application for Employment Authorization, as long as the H-1B nonimmigrant has already started the process of seeking employment-based lawful permanent resident status. Please visit our Employment Authorization for Certain H-4 Dependent Spouses page to learn more. More Information H-1B Cap Season Employment Authorization for Certain H-4 Dependent Spouses Fee Increase for Certain H-1B and L-1 Petitions (Public Law 114-113) Combating Fraud and Abuse in the H-1B Visa Program H-1B Electronic Registration Process Questions about Same or Similar Occupational Classifications Under the American Competitiveness in the Twenty-first Century Act of 2000 (AC21) Frequently Asked Questions about Part 6 of Form I-129, Petition for a Nonimmigrant Worker Last Reviewed/Updated: 09/21/2026",
+      "body_text_sha256": "8edc3d0c563eb2499a3ab4b5b3218d6d2164a9de9dc6c58fac28e9e0d1ddd47b",
+      "evidence_block_count": 95,
+      "evidence_blocks": [
+        {
+          "block_id": "US-EM-01-BLOCK-0001",
+          "tag": "p",
+          "source_text": "ALERT: On Aug. 10, 2026, DHS issued a final rule to amend regulations concerning the statutory 9-11 Response and Biometric Entry-Exit Fee for H-1B and L-1 Visas (9-11 Biometric Fee). The regulatory changes require petitioners that are covered employers to submit the 9-11 Biometric Fee for all H-1B and L-1 petitions. However, the fee does not apply if the petitioner is filing an amended petition that does not seek to extend the alien’s currently authorized H-1B or L-1 status. A petitioner is a covered employer if it employs 50 or more individuals in the United States, and more than 50 percent of those employees are in H-1B or L-1A or L-1B nonimmigrant status. The final rule is effective Sept. 9, 2026.",
+          "source_text_sha256": "560f38af4eaf06ab945d48f8f3435a9e861c20b753f362224260eb2263029f32",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0002",
+          "tag": "p",
+          "source_text": "Form I-129 petitions postmarked or electronically submitted on or after Sept. 9, 2026, must include the fees as required under the final rule. For additional information on fees, see the G-1055, Fee Schedule .",
+          "source_text_sha256": "cc4f9f48d0c10b2a76c2afc47cf1efaeae0bc6be8e95709356ab05177f2a366c",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0003",
+          "tag": "p",
+          "source_text": "ALERT : On June 8, 2026, the U.S. District Court for the District of Massachusetts issued an order that vacated agency guidance implementing the $100,000 payment requirement for certain H-1B petitions. See State of California v. Mullin, 1:25-cv-13829 (D. Mass.). DHS strongly disagrees with the court’s order and filed a motion to stay pending appeal with the United States Court of Appeals for the First Circuit (First Circuit). The District Court order was administratively stayed while the government pursued its motion to stay pending appeal with the First Circuit. On July 24, 2026, the First Circuit denied the government’s motion. DHS strongly disagrees with the First Circuit’s order denying the stay request but will comply with the court’s order while DHS considers next steps. If this order is later lifted, DHS still plans to collect the payment.",
+          "source_text_sha256": "644d5b513986465ce88e2220a9cad380754402b66e0dfb921efecd0fccc78dc3",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0004",
+          "tag": "p",
+          "source_text": "This nonimmigrant classification applies to people who wish to perform services in a specialty occupation, services of exceptional merit and ability relating to a Department of Defense (DOD) cooperative research and development project, or services as a fashion model of distinguished merit or ability.",
+          "source_text_sha256": "c200e363dbb2652d0841c4f73e1bd6ca7c9e19a0eadad3a7a14d3390c6fd68a1",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0005",
+          "tag": "p",
+          "source_text": "On Sept. 19, 2025, the President issued a Proclamation, Restriction on Entry of Certain Nonimmigrant Workers , an important initial step to reform the H-1B nonimmigrant visa program. Under the Proclamation, certain H-1B petitions filed at or after 12:01 a.m. Eastern on Sept. 21, 2025, must be accompanied by an additional $100,000 payment as a condition of eligibility.",
+          "source_text_sha256": "9c861ed7c48d10117bfea979d3889bb9dd972e488231943b8bb3dcf5ebf37d7e",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0006",
+          "tag": "p",
+          "source_text": "Who is subject to the $100,000 payment:",
+          "source_text_sha256": "c6fc75824fee9d8d7bc30ef25fc86e2e22cf286a4055fbdb4485a9771d231e67",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0007",
+          "tag": "p",
+          "source_text": "The Proclamation applies to certain H-1B petitions filed at or after 12:01 a.m. Eastern on Sept. 21, 2025, on behalf of beneficiaries who are outside the United States and do not have a valid H-1B visa. The Proclamation also applies if a petition filed at or after 12:01 a.m. Eastern on September 21, 2025, requests consular notification, port of entry notification, or pre-flight inspection for an alien in the United States.",
+          "source_text_sha256": "784e6f9c532d9740a5c995ad4e0f40e5ab67dfd3751946767659094edf765940",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0008",
+          "tag": "p",
+          "source_text": "In addition, if a petition filed at or after 12:01 a.m. Eastern on Sept. 21, 2025, requests a change of status or amendment or extension of stay and USCIS determines that the alien is ineligible for a change of status or an amendment or extension of stay (for example, is not in a valid nonimmigrant visa status or if the alien departs the United States prior to adjudication of a change of status request), the Proclamation will apply and the payment must be paid according to the instructions provided by USCIS.",
+          "source_text_sha256": "1c8caa5a2c29bf537e74a6f9b5c35bd98e13ae6463e022be82431e68404b695e",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0009",
+          "tag": "p",
+          "source_text": "The Proclamation does not apply to any previously issued and currently valid H-1B visas, or any petitions submitted prior to 12:01 a.m. Eastern on Sept. 21, 2025. In addition, the Proclamation does not prevent any holder of a current H-1B visa, or any alien beneficiary following petition approval, from traveling in and out of the United States.",
+          "source_text_sha256": "40ae18bf8654134da5ad5a43cba248131c2d52a448a2f0feacb6641ba70574ee",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0010",
+          "tag": "p",
+          "source_text": "The Proclamation also does not apply to a petition filed at or after 12:01 a.m. Eastern on Sept. 21, 2025, that is requesting an amendment, change of status, or extension of stay for an alien inside the United States where the alien is granted such amendment, change, or extension. Further, an alien beneficiary of such petition will not be considered to be subject to the payment if he or she subsequently departs the United States and applies for a visa based on the approved petition and/or seeks to reenter the United States on a current H-1B visa.",
+          "source_text_sha256": "2ab2ccb710a8eff01aff62a77920dbc4c1c58915d729d0f56f286cbb0c9c7174",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0011",
+          "tag": "p",
+          "source_text": "How to pay the $100,000 payment:",
+          "source_text_sha256": "ecca93f2e00dcf21c1a8c8f681cc9ed784b3d38a8df238c5647c579d29d2006a",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0012",
+          "tag": "p",
+          "source_text": "Petitioners should submit the required $100,000 payment using pay.gov, following the instructions on pay.gov at H-1B Visa Payment to Remove Restriction .",
+          "source_text_sha256": "9f3c08b7cada35461299aaa2373baf5e208389075d06f954915c397762ee74cb",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0013",
+          "tag": "p",
+          "source_text": "When to pay the $100,000 payment:",
+          "source_text_sha256": "a3feef8d591f610950f5949a466cf245c4ba31e37639712007920f0c81864b49",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0014",
+          "tag": "p",
+          "source_text": "Payment must be made before filing a petition with USCIS, as petitioners must submit proof that the payment has been scheduled from pay.gov or evidence of an exception from the $100,000 payment from the Secretary of Homeland Security at the time of filing the H-1B petition. Petitions subject to the $100,000 payment that are filed without a copy of the proof of the payment from pay.gov or evidence of an exception from the Secretary of Homeland Security will be denied.",
+          "source_text_sha256": "9ca4ee137aded9e7388ef970eb350656785440f4b61fac8f0fcf591d6d0b8a65",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0015",
+          "tag": "p",
+          "source_text": "Exceptions granted by the Secretary of Homeland Security:",
+          "source_text_sha256": "fd7ee86bbd28d40bfd96d43fa1c4aa869d087caa496969c1b76972d5a7805490",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0016",
+          "tag": "p",
+          "source_text": "Exceptions to the $100,000 payment are granted by the Secretary of Homeland Security in the extraordinarily rare circumstance where the Secretary has determined that a particular alien worker’s presence in the United States as an H-1B worker is in the national interest, that no American worker is available to fill the role, that the alien worker does not pose a threat to the security or welfare of the United States, and that requiring the petitioning employer to make the payment on the alien's behalf would significantly undermine the interests of the United States. Petitioning employers who believe their alien worker satisfies this high threshold may seek an exception by sending their request and all supporting evidence to H1BExceptions@hq.dhs.gov .",
+          "source_text_sha256": "b2d38ba7edfe2fb8ef05f3e96e0e9de3b5429704d503a4010bcfb97b547e3d23",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0017",
+          "tag": "li",
+          "source_text": "Theoretical and practical application of a body of highly specialized knowledge; and",
+          "source_text_sha256": "03ce25e81e5013370d3af5bd5f7d38f3457249c9d670a3dab475b14de0599982",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0018",
+          "tag": "li",
+          "source_text": "Attainment of a bachelor's or higher degree in a directly related* specific specialty (or its equivalent) as a minimum for entry into the occupation in the United States.",
+          "source_text_sha256": "b82fe30837a19e311a4e646fb7918373cd362e19237b8af64d7ae87546616dd8",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0019",
+          "tag": "p",
+          "source_text": "The position must also meet one of the following criteria to qualify as a specialty occupation:",
+          "source_text_sha256": "8f87d545e9130f131bb9556af4ba64464ac44262134fde107e4561ca068263fc",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0020",
+          "tag": "li",
+          "source_text": "A U.S. bachelor’s or higher degree in a directly related specific specialty, or its equivalent, is normally the minimum entry requirement for the particular occupation;",
+          "source_text_sha256": "d9c9e774a3729c076769c22e0028f51a2233821b4c5fe6157b53fa4afce9cf9c",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0021",
+          "tag": "li",
+          "source_text": "A U.S. bachelor’s or higher degree in a directly related specific specialty, or its equivalent, is normally required to perform job duties in parallel positions among similar organizations in the employer’s industry in the United States;",
+          "source_text_sha256": "8a9e7a2516a8237babc6b954997a089779a1ba5f1420e4f8937190915fd15ec3",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0022",
+          "tag": "li",
+          "source_text": "The employer, or third party if the beneficiary will be staffed to that third party, normally requires a U.S. bachelor’s or higher degree in a directly related specific specialty, or its equivalent, to perform the job duties of the position; or",
+          "source_text_sha256": "2ef6d112d4eb9a332f853aa4c7fe3673017e0a97c54fc311a77ac4d9b879374a",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0023",
+          "tag": "li",
+          "source_text": "The specific duties of the offered position are so specialized, complex, or unique that the knowledge required to perform them is normally associated with the attainment of a U.S. bachelor’s or higher degree in a directly related specific specialty, or its equivalent.*",
+          "source_text_sha256": "4fce531b599592b78430f3195d40086225193ca3cc639890a6161e0d78671152",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0024",
+          "tag": "p",
+          "source_text": "For you to qualify to perform services in a specialty occupation you must meet one of the following criteria:",
+          "source_text_sha256": "1fe833ffc5fccaa1a2fed423043d3c6f3d42dfd8da41f14db2e501e9187aec22",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0025",
+          "tag": "li",
+          "source_text": "Hold a U.S. bachelor’s or higher degree required by the specialty occupation from an accredited college or university;",
+          "source_text_sha256": "13f1111d7c555e6d6e983d55e29631dcaf0ee191c81c9219fe3f49454315c00a",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0026",
+          "tag": "li",
+          "source_text": "Hold a foreign degree that is the equivalent to a U.S. bachelor’s or higher degree required by the specialty occupation from an accredited college or university;",
+          "source_text_sha256": "63e9c87ffca6ee2d99b4ecf8b49832779c1d3c40aab8e6f2200f391cc153f9ec",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0027",
+          "tag": "li",
+          "source_text": "Hold an unrestricted state license, registration, or certification that authorizes you to fully practice the specialty occupation and be immediately engaged in that specialty in the state of intended employment; or",
+          "source_text_sha256": "759edf5c3dfc13c433b2a7befc09584abdfea7f1bf52bf2c881f1454c9b84c42",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0028",
+          "tag": "li",
+          "source_text": "Have education, specialized training, and/or progressively responsible experience that is equivalent to the completion of a U.S. bachelor’s or higher degree in the specialty occupation, and have recognition of expertise in the specialty through progressively responsible positions directly related to the specialty.**",
+          "source_text_sha256": "7c935be6de8d6780ba5d88ef58459095674724375a36b2c6808297b7a2567dc5",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0029",
+          "tag": "p",
+          "source_text": "Yes. The prospective petitioner must include evidence that a Form ETA-9035/9035E, Labor Condition Application (LCA) has been certified by the Department of Labor (DOL), with Form I-129, Petition for a Nonimmigrant Worker . See the DOL’s Office of Foreign Labor Certification .",
+          "source_text_sha256": "d220e61a96f6d4d12e9fd41950380397840e60eefa6f32e3fddaff699f39a98c",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0030",
+          "tag": "p",
+          "source_text": "For more information see the Information for Employers and Employees page.",
+          "source_text_sha256": "6cfed3f633542709d8974874858975d98fc242c294a8a12f1b27fff2653c82eb",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0031",
+          "tag": "p",
+          "source_text": "DOD Researcher and Development Project Worker",
+          "source_text_sha256": "6d64458c080b565469d32203a3a1ddb8e7545273322d131a2d282702e633ef6a",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0032",
+          "tag": "p",
+          "source_text": "The job must require a bachelor’s or higher degree, or its equivalent, to perform the duties. The petition must be accompanied by:",
+          "source_text_sha256": "e1185117eee0bc48e8bcb9a9b02d1cbeed89cb4069307e8791616b372544e818",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0033",
+          "tag": "li",
+          "source_text": "A verification letter from the DOD project manager for the particular project stating that the beneficiary will be working on a cooperative research and development project or a coproduction project under a reciprocal government-to-government agreement administered by DOD. Details about the specific project are not required.",
+          "source_text_sha256": "0f4fd6b7572e0c3060369246c9e6e836164ab552e623a48812ab0625b8b84797",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0034",
+          "tag": "li",
+          "source_text": "A general description of the beneficiary's duties on the particular project and the actual dates of the beneficiary's employment on the project.",
+          "source_text_sha256": "6abff2093895ff3516cfa75418af356b6776971ae66bbfacf5553e2f2e4224ea",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0035",
+          "tag": "li",
+          "source_text": "A statement indicating the names of aliens currently employed on the project in the United States and their dates of employment and the names of aliens whose employment on the project ended within the past year.",
+          "source_text_sha256": "f69b635f4cd8658dfff859a692a17c78bf9206b289a1ae03373e10cdd44bf8de",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0036",
+          "tag": "p",
+          "source_text": "To be eligible for this classification you must have a bachelor's or higher degree or its equivalent in the occupational field in which you will be performing services. This requirement can be met based on one of the following criteria:",
+          "source_text_sha256": "28dbae4e0ad52a18944a5a3e99a7509637d64bc0a6b7d2338ae2d2b23d3e39a6",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0037",
+          "tag": "li",
+          "source_text": "Hold a U.S. bachelor’s or higher degree required by the duties from an accredited college or university;",
+          "source_text_sha256": "7e985c096da0f6f9b9b043a39c140b0231a4966771edea566699619bfce66ef6",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0038",
+          "tag": "li",
+          "source_text": "Hold a foreign degree that is the equivalent to a U.S. bachelor’s or higher degree from an accredited college or university;",
+          "source_text_sha256": "1cfa43a5aa9b99efee8c4eb7e0e5bf437a1dd5c0fd5b242a7446d98db534fb8a",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0039",
+          "tag": "li",
+          "source_text": "Hold an unrestricted state license, registration, or certification that authorizes you to fully practice the duties of the job and be immediately engaged in that specialty in the state of intended employment; or",
+          "source_text_sha256": "4e5702734e5f2f76c1b63ead6a5ea55e1052669a43c267c5580df71ae446931a",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0040",
+          "tag": "li",
+          "source_text": "Have education, specialized training, and/or progressively responsible experience in the specialty that is equivalent to the completion of a U.S. bachelor’s or higher degree and have recognition of expertise in the specialty through progressively responsible positions directly related to the specialty.**",
+          "source_text_sha256": "d1467e0c7f7dc381c8e11f01c5686db45c4cc9367d5abdadff8d92a97f694afb",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0041",
+          "tag": "p",
+          "source_text": "The position or services must require a fashion model of prominence.",
+          "source_text_sha256": "d0cfa1ec2f62f1f9a8a9d7f944e56452acd8ea24669e99bfbeea3e7c53d24832",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0042",
+          "tag": "p",
+          "source_text": "To be eligible for this visa category you must be a fashion model of distinguished merit and ability.",
+          "source_text_sha256": "d3607f21d91c6d5822b86d9040c62a2dfe6392664454a440e803e3072df5d1f5",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0043",
+          "tag": "p",
+          "source_text": "*For more information, see 8 CFR 214.2(h)(4)(iii)(A). For purposes of the specialty occupation criteria at paragraphs (h)(4)(iii)(A)(1) through (4), “normally” means conforming to a type, standard, or regular pattern, and is characterized by what is considered usual, typical, common, or routine. Normally does not mean always.",
+          "source_text_sha256": "3ff8ed827230f51f49becc67b3556747e8e404ec0a80270e71ddc38e933df707",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0044",
+          "tag": "p",
+          "source_text": "For purposes of the specialty occupation definition and criteria, “directly related” means that there is a logical connection between the required degree, or its equivalent, and the duties of the position. See 8 CFR 214.2(h)(4)(ii).",
+          "source_text_sha256": "e3a5583393087421528ab2a9d8e7065a02c0e08c8a2b01f72230b075bab918c7",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0045",
+          "tag": "p",
+          "source_text": "**For more information see 8 CFR 214.2(h)(4)(iii)(C).",
+          "source_text_sha256": "474dbbbf8cdfd272499604d494f208a9d88a51ec796d94e394584d79e1f62dee",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0046",
+          "tag": "p",
+          "source_text": "Some professions require an H-1B beneficiary to hold a state or local license authorizing the beneficiary to fully practice the specialty occupation.",
+          "source_text_sha256": "70a5e846ff0dc87a04a1003eaaf7bc0ff9b4045e431c328ee903db175d757919",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0047",
+          "tag": "p",
+          "source_text": "If an occupation in the state of intended employment requires such a license, an H-1B beneficiary seeking classification in that occupation generally must have that license before the petition is approved, rather than at the time of filing the petition. See 8 CFR 214.2(h)(4)(v)(A)–(B) . When a license is required, but there is no evidence of the beneficiary holding one, USCIS will generally issue a request for evidence of the required license.",
+          "source_text_sha256": "a6aca79accafb48cfb56bd392d01d969f8ff949a39c10d7c26962693c0cf8785",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0048",
+          "tag": "p",
+          "source_text": "In 2020, we implemented an electronic registration process for the H-1B cap. We will not consider a cap-subject H-1B petition to be properly filed unless it is based on a valid, selected registration for the same beneficiary and the appropriate fiscal year, unless the registration requirement is suspended. For more information about the H-1B registration process, visit our H-1B Electronic Registration Process webpage.",
+          "source_text_sha256": "34ce3a2bc52a3762232dfb161ed32f6e5f37ed39347a5820375b0bd38e3b6970",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0049",
+          "tag": "p",
+          "source_text": "Step 1: (only required for specialty occupation and fashion model petitions): Employer or Agent Submits LCA to DOL for Certification. The employer or agent must apply for and receive DOL certification of an LCA. For further information regarding LCA requirements and DOL's process, see the Department of Labor’s Foreign Labor Certification page.",
+          "source_text_sha256": "69a97c1e8eeae0f7df2d8cf40d88a4abb54a624ec7fde34d8b22d45035664e65",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0050",
+          "tag": "p",
+          "source_text": "Step 2: Employer or Agent Submits Completed Form I-129 to USCIS. The employer or agent should file Form I-129, Petition for a Nonimmigrant Worker, at the correct location or online. Please see our I-129 Direct Filing Chart page. If subject to the Presidential Proclamation discussed above, the Form I-129 must be accompanied by either proof from pay.gov that the $100,000 payment has been scheduled for the specific beneficiary or by evidence of an exception from the $100,000 payment from the Secretary of Homeland Security. The DOL-certified LCA should also be submitted with the Form I-129 (only for specialty occupation and fashion models). See the instructions to the Form I-129 (PDF, 534.77 KB) for additional filing requirements.",
+          "source_text_sha256": "963851be365416f8cd73e5034de93db9fc7d3d4134ca9da49b5b87ee6baca247",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0051",
+          "tag": "p",
+          "source_text": "Step 3: Prospective Workers Outside the United States Apply for Visa or Admission. If the Form I-129 petition is approved, the prospective H-1B worker who is outside the United States may apply with the U.S. Department of State at a U.S. Embassy or Consulate abroad for an H-1B visa (if a visa is required). Regardless of whether a visa is required, the prospective H-1B worker must then apply to U.S. Customs and Border Protection for admission to the United States in H-1B classification.",
+          "source_text_sha256": "36a2e4180676c36dd86c1907342583412ce134d28c0acc0e369c4a7942b6e2a1",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0052",
+          "tag": "p",
+          "source_text": "Prospective specialty occupation and distinguished fashion model employers or agents must obtain a certification of an LCA from the DOL. This application includes certain attestations, a violation which can result in fines, bars on sponsoring nonimmigrant or immigrant petitions, and other sanctions to the employer/agent. The application requires the employer or agent to attest that it will comply with the following labor requirements:",
+          "source_text_sha256": "cf6a702cd184391d932ab30ee5d9f17f20539c5deaff55abdb9a487683e4d325",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0053",
+          "tag": "li",
+          "source_text": "The employer or agent will pay the H-1B worker a wage that is no less than the wage paid to similarly qualified workers or, if greater, the prevailing wage for the position in the geographic area in which the H-1B worker will be working;",
+          "source_text_sha256": "21f4ecd4a46ae0bc08ea045a28c5f3782daccd6425ca68ef3ad7b3e82b974900",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0054",
+          "tag": "li",
+          "source_text": "The employer or agent will provide working conditions that will not adversely affect other similarly employed workers;",
+          "source_text_sha256": "944dbb7a9762523ae1c07d35cf2ca359ac7a45cb12c226055b5cf506a1742f8d",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0055",
+          "tag": "li",
+          "source_text": "At the time of the labor condition application, there is no strike or lockout at the place of employment; and",
+          "source_text_sha256": "717a43572514e73bdbc0561f58a979566670357dacb47c2b9668a68ee91cb154",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0056",
+          "tag": "li",
+          "source_text": "Notice of the filing of the labor condition application with the DOL has been given to the union bargaining representative or has been posted at the place of employment.",
+          "source_text_sha256": "f5cf3ab4923fa4f9f17631647d8e0f41fce304a6a1e8c9b0ee9e9bda9d049363",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0057",
+          "tag": "p",
+          "source_text": "As an H-1B specialty occupation worker, you may generally be admitted for a period of up to 3 years. This initial period of admission may generally be extended for an additional period of up to 3 years, for a total period of admission of 6 years. If you possess a controlling interest in the petitioning organization or entity, meaning you own more than 50% of the petitioner or have majority voting rights in the petitioner, the approval of your initial petition and your first extension petition will each be limited to a validity period of up to 18 months.",
+          "source_text_sha256": "dcd48626446f1c4b3a22d9531bb1e583d11a3a6aadfe263e041e41641bb9ff69",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0058",
+          "tag": "p",
+          "source_text": "However, you may be eligible for an H-1B extension beyond the sixth year under 8 CFR 214.2(h)(13)(iii)(E) if you are the beneficiary of an approved immigrant visa petition under the EB-1, EB-2, or EB-3 classifications, and are eligible to be granted that immigrant status but for application of the per country or worldwide limitations on immigrant visas. Petitioners must demonstrate the visa is not available as of the date they file an H-1B petition with USCIS. We may grant extensions on this basis in up to 3-year increments until we make a final decision to revoke the approval of the immigrant visa petition or to approve or deny your application for an immigrant visa or application to adjust status to lawful permanent residence.",
+          "source_text_sha256": "50021647111176e1e2759bdc0b011834a23ba77750a713f3e59caa64234de400",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0059",
+          "tag": "p",
+          "source_text": "Alternatively, under 8 CFR 214.2(h)(13)(iii)(D) , you may be eligible for an H-1B extension beyond the sixth year if at least 365 days have passed since a labor certification was filed with the Department of Labor on your behalf (if such certification is required) or an immigrant visa petition was filed with USCIS on your behalf.",
+          "source_text_sha256": "c8a602804a329788b345a29971056a9f13c968701b1a9171e87090cb10cbd2d3",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0060",
+          "tag": "p",
+          "source_text": "You are ineligible for this extension beyond the sixth year if you fail to file an adjustment of status application or apply for an immigrant visa within 1 year of an immigrant visa being available. If the accrual of such 1-year period is interrupted by the unavailability of an immigrant visa, you will have a new 1-year period after an immigrant visa again becomes immediately available, during which you generally must file an adjustment of status application or apply for an immigrant visa. We may, in our discretion, excuse a failure to file an adjustment of status application or apply for an immigrant visa within 1 year of an immigrant visa being available if your employer establishes that the failure to apply was due to circumstances beyond your control. When considering whether to excuse a failure to timely file within 1 year, we will look at the totality of the circumstances, which may include:",
+          "source_text_sha256": "12419516316a9a89d50606f06976729707590b729bdd913a5c4cb8c412b4f6cc",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0061",
+          "tag": "li",
+          "source_text": "Whether there was a change of employment;",
+          "source_text_sha256": "374a2c105ec370b28897fabe227ff4305e68164372de735cc33a1842d8bdc4a2",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0062",
+          "tag": "li",
+          "source_text": "Whether the change of employment was voluntary;",
+          "source_text_sha256": "d678b737a113383af72fc07ffc11436f74b45fd288d48b518c87450c5ae9c573",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0063",
+          "tag": "li",
+          "source_text": "When and why the employment with the original employer ended; and",
+          "source_text_sha256": "f5bb37e16041e6e8726266613b08f0615a5d491d46b5f582b1092427a1b4d600",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0064",
+          "tag": "li",
+          "source_text": "What steps you and your new employer took after the change of employment to file an adjustment of status application or apply for an immigrant visa.",
+          "source_text_sha256": "205e773aad027bc9cba8ec819d7781d589069d30a6d62d5acb8af5342909ab7d",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0065",
+          "tag": "p",
+          "source_text": "We may excuse a failure to timely file in cases of both voluntary and involuntary change of employment when considering the totality of the circumstances. We may grant extensions under this provision in up to 1-year increments until the approved permanent labor certification expires or a final decision has been made to:",
+          "source_text_sha256": "e8ae43b83fa2e54bb7d52ca8a52f0bf43e03f3188eabf00529e8b21a1e599965",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0066",
+          "tag": "li",
+          "source_text": "Deny the application for permanent labor certification, or, if approved, to revoke or invalidate the approval;",
+          "source_text_sha256": "e03db557ce5b03d822d18e20d5fc08f74bcc534d1753197f2a6d8ff6359174fd",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0067",
+          "tag": "li",
+          "source_text": "Deny the immigrant visa petition, or, if approved, revoke the approval;",
+          "source_text_sha256": "c2995bf205d476c69f647f89775da126b18d40f0eb97eaf9b35cf515afb666be",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0068",
+          "tag": "li",
+          "source_text": "Deny or approve your application for an immigrant visa or application to adjust status to lawful permanent residence; or",
+          "source_text_sha256": "292812b776a32b953e487ad2ed2c353755ea9041649b506d01bfe834ecd0e1b6",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0069",
+          "tag": "li",
+          "source_text": "Administratively or otherwise close the application for permanent labor certification, immigrant visa petition, or application to adjust status.",
+          "source_text_sha256": "635dc7976723c93a816e160d695a12c93c4624066b990cd4577b72bd210a2957",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0070",
+          "tag": "p",
+          "source_text": "Your employer will be liable for the reasonable costs of your return transportation if they terminate your employment before the end of your period of authorized stay. Your employer is not responsible for the costs of your return transportation if you voluntarily resign from your position. For more information, please see Options for Nonimmigrant Workers Following Termination of Employment .",
+          "source_text_sha256": "e587fe8560fd9027d73bf0b3145dbbf5ee5cf66ace21221881d97f35ac8ce5e8",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0071",
+          "tag": "p",
+          "source_text": "The H-1B classification has an annual numerical limit (cap) of 65,000 new statuses or visas each fiscal year (with certain deductions and additions based on H-1B1 set asides and usage). An additional 20,000 petitions filed on behalf of beneficiaries who have earned a master’s degree or higher from a U.S. institution of higher education are exempt from the cap. Additionally, H-1B workers who are petitioned for or employed at an institution of higher education or its affiliated or related nonprofit entities, a nonprofit research organization, or a government research organization, are not subject to this numerical cap.",
+          "source_text_sha256": "c14373ca7cb499fb4fd48fab7f01396d8029bc1eebf299de8d1d5e56049ddb0b",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0072",
+          "tag": "p",
+          "source_text": "For further information about the numerical cap, see our H-1B Cap Season page .",
+          "source_text_sha256": "e3e4526b8381c1091ba85a42ff487b39c4bbdb615b9e237ae3998bb9465d4fe8",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0073",
+          "tag": "p",
+          "source_text": "When can I begin working for a new H-1B employer if I change employers?",
+          "source_text_sha256": "7074e8df05af6b7e608cdd5b3b9e65395e3045c78c7a5bd0da6900a693d26eb6",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0074",
+          "tag": "li",
+          "source_text": "If you are changing H-1B employers, you may begin working for the new employer as soon as they properly file a non-frivolous Form I-129 petition on your behalf, or as of the requested start date on that petition, whichever is later.",
+          "source_text_sha256": "ab5be9170adbfbec3c53ad8e8ee76cd44fa34cbdc6cafaecf4f535e18fb2f8dc",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0075",
+          "tag": "li",
+          "source_text": "To be eligible for portability, you must not have been employed without authorization from the time of your last admission into the United States, and your new employer must properly file a new, non-frivolous petition before your H-1B period of authorized stay expires.",
+          "source_text_sha256": "13d1239c8f8d4fc589fb32dcbd49e09eef02dc83085f9cfd6ff9ebf88fea9a17",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0076",
+          "tag": "p",
+          "source_text": "Will I still have employment authorization if I change employers?",
+          "source_text_sha256": "73f192dc23a2f112c5bf4d9014870bb85bb02e8dfe02f9ff5c049727ae370a8d",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0077",
+          "tag": "li",
+          "source_text": "If you are eligible for H-1B portability, your employment is authorized until USCIS has made a decision on the Form I-129.",
+          "source_text_sha256": "eb25f17fe7bf2bf02ece80cd2ea0bc813774aaf161178bbd2f2ff6bfde59db21",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0078",
+          "tag": "li",
+          "source_text": "If the new I-129 petition is approved, you may continue working for the new employer for the period of time indicated on the new petition approval.",
+          "source_text_sha256": "ef7d6cef21bd2f46fd601c31f5a3f53eb7d305f451c6f7ac3fcf2011b6ccc218",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0079",
+          "tag": "li",
+          "source_text": "If the new petition is denied, you may continue working for your previous employer if your prior period of authorized employment is still valid, but your authorization to work based on portability ceases upon denial of the petition.",
+          "source_text_sha256": "c9459d243e8984e254d34195ae148eb2c485d1029de3c0f325eb8f27d941da74",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0080",
+          "tag": "li",
+          "source_text": "If you are laid off, fired, quit, or otherwise cease employment with your previous employer, you may have up to 60 consecutive days or until the end of your authorized validity period, whichever is shorter, to find new employment, change status, or depart the country.",
+          "source_text_sha256": "b85574b9ce496c649f95f8a978f15ab53f9dc697c199ee28f1e5281f5b078ed7",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0081",
+          "tag": "p",
+          "source_text": "Can I move from cap-exempt to cap-subject employment?",
+          "source_text_sha256": "0165cc075f679bb5232d7af76d3ec4d758ce2d79d364ea402e62af1610ded382",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0082",
+          "tag": "li",
+          "source_text": "If you are moving from cap-exempt to cap-subject employment, your new employer’s H-1B petition will be subject to the H-1B cap . If subject to the cap, your new employer must first submit an electronic registration when registration period opens. This is typically in March.",
+          "source_text_sha256": "2df9da03c8a21a10830164ba18eeb04ebb7a54499692bcb4f84dc617e5823b31",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0083",
+          "tag": "li",
+          "source_text": "All registrants of selected beneficiaries will be notified of selection and selection notices will be uploaded to their account informing them that they may file a petition for the beneficiary named in the selection notice during the applicable filing period. H-1B cap petitions must have a start date of Oct. 1 (or later) of the applicable fiscal year and may not be filed more than 6 months before the requested start date on the petition.",
+          "source_text_sha256": "1f8f9386059860e8c47448dbbd4087339d5d792eb75cb75d28fe6e3dc4245796",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0084",
+          "tag": "li",
+          "source_text": "If you are currently employed in a cap-exempt position, you may engage in concurrent employment in a cap-subject position as long as you will continue to be employed in the cap-exempt position. You may begin working concurrently for the cap-subject employer as soon as they properly file a non-frivolous Form I-129 petition on your behalf, or as of the requested start date on that petition, whichever is later. As long as you continue your cap-exempt employment, were previously counted toward the cap, or otherwise remain cap exempt, you will not become subject to the H-1B cap again during the same H-1B validity period.",
+          "source_text_sha256": "2b1c03ad26429fb43b7bf342da6a12c557db9db100dd09211cfea7c6fda75ca5",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0085",
+          "tag": "p",
+          "source_text": "Changing Employment Terms with the Same Employer",
+          "source_text_sha256": "a43661c21acc9b72d36b6eeac28ab0aadaf6db3e6be26921f24e218f08eafbd4",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0086",
+          "tag": "p",
+          "source_text": "What if I want to start new employment or change employment terms with my current employer?",
+          "source_text_sha256": "e40573a5130e798245ed09749aa7414d8ca7395911641de42f88599320b2adf6",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0087",
+          "tag": "li",
+          "source_text": "Form I-129 is also used to request new employment or a change of employment with the same employer.",
+          "source_text_sha256": "8ebcb1783a46a86040a9e2e297661418f510ab493cebfbb65d7687d0775e8f39",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0088",
+          "tag": "li",
+          "source_text": "If your current H-1B employer properly files a non-frivolous Form I-129 requesting new employment or a change of employment on your behalf, you are authorized to work according to the terms of the new or changed employment once that petition is filed, or as of the requested start date on that petition, whichever is later.",
+          "source_text_sha256": "9e98e328921c34ccaefca21ea0a7c96b06ca9b955c24b3558c8ace34a89cd088",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0089",
+          "tag": "p",
+          "source_text": "Your spouse and unmarried children under 21 years of age may seek admission in the H-4 nonimmigrant classification. Certain H-4 dependent spouses of H-1B nonimmigrants can file Form I-765, Application for Employment Authorization, as long as the H-1B nonimmigrant has already started the process of seeking employment-based lawful permanent resident status. Please visit our Employment Authorization for Certain H-4 Dependent Spouses page to learn more.",
+          "source_text_sha256": "4bb4c9f06785a347b43d7f9b5cac0208314bee239af55ddb0ea320e3a1ee54c4",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0090",
+          "tag": "li",
+          "source_text": "Employment Authorization for Certain H-4 Dependent Spouses",
+          "source_text_sha256": "288461be926f404c1a0e86cae9440e3e02c6df6110885fe0225155298bd2c5ae",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0091",
+          "tag": "li",
+          "source_text": "Fee Increase for Certain H-1B and L-1 Petitions (Public Law 114-113)",
+          "source_text_sha256": "1a3155ea55390da54e20a05403ebb9a4baa0723b252bb7351bf4252c3e8ca352",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0092",
+          "tag": "li",
+          "source_text": "Combating Fraud and Abuse in the H-1B Visa Program",
+          "source_text_sha256": "7752690646a82268c5b30741eb5bede7dd080340dbbfd225e59b620bde5016d2",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0093",
+          "tag": "li",
+          "source_text": "H-1B Electronic Registration Process",
+          "source_text_sha256": "6059bbfef065e18a1d32e40a31ed14d28997d7c8380a175064a95af68ecebc87",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0094",
+          "tag": "li",
+          "source_text": "Questions about Same or Similar Occupational Classifications Under the American Competitiveness in the Twenty-first Century Act of 2000 (AC21)",
+          "source_text_sha256": "8fd1cd26f99eaf0c74ab0de75d63246511c68789c440a2f3846cfd12cfb4696a",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0095",
+          "tag": "li",
+          "source_text": "Frequently Asked Questions about Part 6 of Form I-129, Petition for a Nonimmigrant Worker",
+          "source_text_sha256": "6002ec7ff3ccda2727990d13313c5384dcf67fb86e16bca8ac5954f689a5784b",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        }
+      ],
+      "content_validation_status": "needs_review",
+      "source_type": "h1b_specialty_occupations_guidance",
+      "identity_keywords_found": [
+        "h-1b",
+        "specialty"
+      ],
+      "identity_review_status": "candidate_matched"
+    },
+    {
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-cap-season",
+      "source_file": "data/raw/usa/employment/h1b_specialty_occupations/official_source_alt_7e894b88ad20.html",
+      "source_sha256": "23839a635e9e6f7c711ba6b27ebff83f8135bf38d1a33053d130093721911911",
+      "page_title": "H-1B Cap Season | USCIS",
+      "extraction_scope": "main",
+      "headings": [
+        "H-1B Cap Season",
+        "The H-1B Program",
+        "The H-1B Cap",
+        "H-1B Cap Selection Process",
+        "When to File an H-1B Cap-Subject Petition",
+        "How to Ensure You Properly File Your H-1B Cap-Subject Petition",
+        "Additional Documents Required with Your Petition",
+        "Multiple or Duplicative Filings",
+        "Where to Mail Your H-1B Petition",
+        "Required Fees",
+        "Premium Processing Service",
+        "Organizing Your H-1B Package",
+        "Filing Tips",
+        "Delivery Service Error Guidance"
+      ],
+      "body_text": "H-1B Cap Season The H-1B Program The H-1B program allows companies and other employers in the United States to temporarily employ foreign workers in occupations that require the theoretical and practical application of a body of highly specialized knowledge and a bachelor’s degree or higher in a directly related specific specialty (or its equivalent) as a minimum for entry into the occupation in the United States. H-1B specialty occupations may include fields such as architecture, engineering, mathematics, physical sciences, social sciences, medicine and health, education, business specialties, accounting, law, theology, and the arts. For more information about the H-1B program, visit our H-1B Specialty Occupations webpage. The H-1B Cap Congress set the current annual regular cap for the H-1B category at 65,000 (commonly known as the “regular cap”). Up to 6,800 visas are set aside from the 65,000 each fiscal year for the H-1B1 program under the terms of the legislation implementing the U.S.-Chile and U.S.-Singapore free trade agreements. Unused visas in this group become available for H-1B use for the next fiscal year’s regular H-1B cap. An additional 20,000 petitions filed on behalf of beneficiaries who have earned a master’s degree or higher from a U.S. institution of higher education are exempt from the cap. Not all H-1B nonimmigrant visas (or status grants) are subject to this annual cap (for example, petitions filed by U.S. institutions of higher education are cap exempt). H-1B workers performing labor or services in the Commonwealth of the Northern Mariana Islands (CNMI) and Guam may also be exempt from the H-1B cap (see the Consolidated Natural Resources Act of 2008 (CNRA), Public Law 110-229). H-1B workers in Guam and the CNMI are exempt from the H-1B cap if their employers file the petition before Dec. 31, 2029. Prospective petitioners who are subject to the annual cap must first go through the electronic registration process (unless registration is suspended). H-1B Cap Selection Process Prospective petitioners seeking to file H-1B cap-subject petitions must first complete an electronic registration for each prospective beneficiary. USCIS then runs the H-1B selection process to select unique beneficiaries based on properly submitted electronic registrations. See the H-1B Electronic Registration Process webpage for more information. Starting in fiscal year (FY) 2027, USCIS has implemented a weighted selection process which favors the allocation of H-1B visas to higher skilled and higher paid aliens, while maintaining the opportunity for employers to secure H-1B workers at all wage levels. When random selection is required because USCIS receives more registrations than projected to be needed to meet the numerical allocations, USCIS will conduct a weighted selection among the registrations for unique beneficiaries received generally based on the highest Occupational Employment and Wage Statistics (OEWS) wage level that the beneficiary's proffered wage equals or exceeds for the relevant Standard Occupational Classification (SOC) code in the area(s) of intended employment. Registrations for unique beneficiaries are assigned to the relevant OEWS wage level and entered into the selection pool as follows: registrations for unique beneficiaries or petitions assigned wage level IV are entered into the selection pool 4 times, those assigned wage level III are entered into the selection pool 3 times, those assigned wage level II are entered into the selection pool 2 times, and those assigned wage level I are entered into the selection pool 1 time. Each unique beneficiary will only be counted once toward the numerical allocation projections, regardless of how many registrations were submitted for that beneficiary or how many times the beneficiary is entered in the selection pool. For more information about selecting the corresponding OEWS wage level for purpose of registration, see the H-1B Electronic Registration Frequently Asked Questions . If the unique beneficiary is selected, each registrant who registered for that beneficiary receives a registration selection notice and may file an H-1B cap-subject petition for them. In the event of suspended registration, USCIS will weight and select petitions in the same manner as described above. When to File an H-1B Cap-Subject Petition H-1B cap-subject petitions, including those eligible for the advanced degree exemption, may not be filed unless based on a valid and selected registration for the beneficiary named in the petition (unless the registration requirement is suspended). You may file an H-1B petition no more than 6 months before the employment start date requested for the beneficiary. On April 1, USCIS will begin accepting online filing for H-1B cap petitions and associated Forms I-907 for petitioners whose registrations have been selected. Petitioners also have the option of filing a paper Form I-129 H-1B petition and any associated Form I-907 if they prefer. However, users will not be able to link paper-filed Forms I-129 and I-907 to their online accounts. For paper-filed forms, you must file the petition at the correct location. Please see our Direct Filing Addresses for Form I-129 page. How to Ensure You Properly File Your H-1B Cap-Subject Petition Complete all required sections of Form I-129, Petition for a Nonimmigrant Worker , including the H Classification Supplement and the H-1B Data Collection and Filing Fee Exemption Supplement, in accordance with the regulations and form instructions. Get the most current versions of forms at uscis.gov/forms . You must indicate a start date of Oct. 1 or later (of the applicable FY, and 6 months or less from the receipt date of the petition) on your petition, or we will reject or deny your petition. You must provide a copy of the H-1B Registration Selection Notice for the registration filed by your organization for the beneficiary with the petition. Ensure that you also entered the corresponding “Beneficiary Confirmation Number” on the H Classification Supplement (Page 13, Question 5). You must submit evidence of the basis of the wage level selected on the registration as of the date that the registration underlying the petition was submitted. You must submit evidence of the beneficiary’s passport or travel document used at the time of registration to identify the beneficiary. If the passport or travel document expires between when a registration is submitted and when the H-1B petition is filed, the petitioner should follow the form instructions about which passport information to enter on Page 3, Part 3 of Form I-129, Petition for Nonimmigrant Worker . The petitioner should support the H-1B petition with documentation for both passports or travel documents to establish that the passport or travel document was valid at the time of registration and also explain why there was a change in identifying information. Ensure that any information provided during the electronic registration process matches the information provided on the petition. An H-1B petition filed for a beneficiary must contain and be supported by the same identifying information and position information as provided in the selected registration. For instance, the petition must include the same Standard Occupational Classification (SOC code as provided in the selected registration and indicated on the labor condition application used to support the petition. It also must include a proffered wage that equals or exceeds the prevailing wage for the corresponding OEWS wage level in the registration for the SOC code in the area(s) of intended employment. If any information does not match, you should include an explanation with your petition and supporting documentation explaining why there was a change or why the information does not match. If information on the registration and petition does not match, we may reject or deny the petition. We encourage you to use a brightly colored coversheet to flag the issue. This will help ensure that we review this when we receive your petition. Note that certain occupations may have an 8-digit detailed O*NET-SOC code. If you are filing an H-1B petition based on a valid and selected registration, you may use the 6 digits of the SOC code on Form I-129, to align with the H-1B electronic registration, even if the Labor Condition Application (LCA) submitted with the petition has an 8-digit detailed O*NET-SOC code for an occupation. For example, if the LCA has an 8-digit detailed O*NET-SOC code of “17-2051.01 – Transportation Engineers,” you may enter the 6-digit SOC code of “17-2051 - Civil Engineers” on Form I-129 to align with the registration. Having a 6-digit SOC code on the Form I-129 and underlying registration, with an 8-digit detailed O*NET-SOC code on the LCA, does not by itself constitute an inconsistency or mismatch when we are evaluating whether the SOC group is consistent between the registration, petition, and LCA. Make sure each form is properly signed. Ensure all signatures comply with the requirements described in the form instructions and explained in the USCIS Policy Manual . Pay all required fees. See the required fees section below for detailed information. Submit all required documentation and evidence with the petition when you file it, to ensure timely processing. Ensure that the LCA properly corresponds to the position in your petition. For paper-filed forms, you must file the petition at the correct location. See the section below on Where to Mail Your H-1B Petition . Ensure that the petitioner’s name on the Form I-129 petition is the same as the petitioner’s name on Form G-28, Notice of Entry of Appearance as Attorney or Accredited Representative, if you are filing Form G-28. Note: It is your responsibility to ensure that Form I-129 is completed accurately and submitted properly. Additional Documents Required with Your Petition Labor Condition Application (LCA) When filing your H-1B petition with USCIS, you must include evidence that an LCA (ETA 9035) has been certified by the U.S. Department of Labor. This may include a copy of the signed, certified LCA. (Note: USCIS encourages petitioners to keep Department of Labor LCA processing times in mind when preparing the H-1B petition and to plan accordingly.) If the LCA was previously submitted in a petition that has been approved, you must submit a list including the name and USCIS case receipt number of any foreign worker who has previously used the LCA. You may not use an LCA for more workers than specified in Part B, Question 7 of the LCA. Please see the Department of Labor’s Office of Foreign Labor Certification website for more information on the LCA process. Evidence of Beneficiary’s Educational Background You must submit evidence of the beneficiary’s education credentials (with English translations when applicable) at the time you file your petition. If the beneficiary has met all of the requirements for a degree, but the degree has not yet been awarded, you may submit the following alternate evidence: A copy of the beneficiary’s final transcript; or A letter from the registrar confirming that the beneficiary has met all of the degree requirements. If the educational institution does not have a registrar, then the letter must be signed by the person in charge of educational records where the degree will be awarded. If you indicate that the beneficiary is qualified based on a combination of education and experience, please provide substantiating evidence at the time you file your petition. Evidence of Bona Fide Position You must submit evidence that you have a bona fide position in a specialty occupation available for the beneficiary as of the start date of the validity period requested on the petition. You are not required to establish specific day-to-day assignments for the entire time period requested in the petition. Multiple or Duplicative Filings Petitioners may not file multiple or duplicative H-1B petitions for the same beneficiary. To ensure fair and orderly distribution of available H-1B visas, we will deny or revoke multiple or duplicative petitions filed by an employer (including its related entities that filed without a legitimate business need) for the same H-1B worker and will not refund the filing fees. Multiple or duplicative petitions will be denied or revoked even if they are filed pursuant to a selected registration. For additional information, see 8 CFR 214.2(h)(2)(i)(G); PM-602-0159, Matter of S- Inc., Adopted Decision 2018-02 (AAO Mar. 23, 2018) . Where to Mail Your H-1B Petition We accept online filing for H-1B cap petitions and associated Forms I-907 for petitioners whose registrations have been selected. Petitioners also have the option of filing a paper Form I-129 H-1B petition and any associated Form I-907 if they prefer. However, users will not be able to link paper-filed Forms I-129 and I-907 to their online accounts. For paper-filed forms, you must file your petition at the correct location. We have specific mailing addresses for cases that are subject to the H-1B cap. To determine the correct mailing address see our Direct Filing Addresses for Form I-129, Petition for a Nonimmigrant Worker page . Please read the filing instructions carefully. If you file your petition at the wrong location, we may reject it. Rejected petitions will not retain a filing date. If your petition is rejected because it was filed at the wrong location, you may refile your rejected petition at the correct location (or online) as long as the petition is properly refiled during the designated 90-day filing window on your Registration Selection Notice. Required Fees There are different fees depending on the type of H-1B petition you are submitting. Please refer to the Fee Schedule and H and L Filing Fees for Form I-129, Petition for a Nonimmigrant Worker page for detailed instructions on H-1B fees. The Presidential Proclamation, Restriction on Entry of Certain Nonimmigrant Workers , requires certain H-1B petitions filed at or after 12:01 a.m. Eastern on Sept. 21, 2025, to be accompanied by an additional $100,000 payment as a condition of eligibility. See the Presidential Proclamation on Restriction on Entry of Certain Nonimmigrant Workers section on our H-1B Specialty Occupations page for additional details. The fee for each registration is $215. The U.S. Department of Treasury has approved an increase in the daily credit card transaction limit from $24,999.99 to $99,999.99 per day for H-1B registrations and petitions submitted online using one credit card for the FY 2027 H-1B cap season. This increase is in response to stakeholder feedback and the volume of previous H-1B registrations that exceeded the daily credit card limit. Transactions more than $99,999.99 may be made via Automated Clearing House (ACH). Use of ACH may require the payor to alert their bank in advance to remove any potential ACH block on their account. We will provide additional information before the start of the initial H-1B registration period. There is a daily transaction limit for credit cards of $24,999.99 per credit card per day for petitions that are sent by mail. See our Filing Fees webpages for additional information on how to pay USCIS filing fees. Incorrect Filing Fee We will reject all petitions submitted with the incorrect filing fee. Premium Processing Service Premium processing is currently available for all H-1B petitions. Additional information is available on our How Do I Request Premium Processing? page. On Jan. 9, 2026, DHS announced the Adjustment to Premium Processing Fees final rule that will increase USCIS fees for premium processing to reflect the amount of inflation from June 2023 through June 2025. This rule is effective March 1, 2026. If you submit a request for premium processing postmarked on or after March 1, 2026, you must include the new fee for the specific benefit you are requesting. If we receive a Form I-907 postmarked on or after March 1, 2026, with the incorrect filing fee, we will reject Form I-907 and return the filing fee. Organizing Your H-1B Package Preferred order of documents at time of submission: Form G-28 (if represented by an attorney or accredited representative) Copy of the Registration Selection Notice for the Beneficiary Named in the Petition Form I-129, Petition for a Nonimmigrant Worker Addendums/Attachments H Classification Supplement to Form I-129 and/or Trade Agreement Supplement to Form I-129 (for H-1B1 Chile-Singapore petitions) H-1B and H-1B1 Data Collection and Filing Fee Exemption Supplement All supporting documentation to establish eligibility. Provide a table of contents for supporting documentation and separate the items as listed in the table. Arrival-Departure Record (Form I-94) if the beneficiary is in the United States SEVIS Form I-20 if the beneficiary is a current or former F-1 student or F-2 dependent SEVIS Form DS-2019 if the beneficiary is a current or former J-1 or J-2 Form I-566 if the beneficiary is a current A or G nonimmigrant Department of Labor certified LCA, Form ETA 9035 Employer/attorney/representative letter(s) Other supporting documentation We request that petitioners no longer provide duplicate copies of their Form I-129 petition or supporting evidence, as this can result in misidentification of filings. Due to enhanced electronic scanning capabilities and data-sharing with the U.S. Department of State, duplicate copies are no longer needed to avoid delays in consular processing. How to mail multiple petitions together If you will include multiple petitions in the same package, place the individual petitions into separate envelopes within the package. Filing Tips Form G-28 , Notice of Entry of Appearance as Attorney or Representative If you will be represented by an attorney or other accredited representative, submit a properly completed Form G-28, Notice of Entry of Appearance as Attorney or Representative. For further information on Form G-28, please see our Filing Your Form G-28 page. Form I-129 , Petition for a Nonimmigrant Worker Complete all required sections of the form accurately and in accordance with the regulations and form instructions. H-1B cap petitions and advanced degree exemption petitions for the FY 2027 cap must include an employment start date of no earlier than Oct. 1, 2026. You must indicate a start date of Oct. 1, 2026, or later (and 6 months or less from the receipt date of the petition) on your petition or your petition will be rejected or denied. Do not file petitions earlier than 6 months before the requested employment start date. We will reject H-1B petitions requesting a start date of “As Soon As Possible” or “ASAP.” Ensure that you have entered the “Beneficiary Confirmation Number” on the H Classification Supplement. Ensure that the petition is properly signed. Petitioners should enter their own address in Part 1, question 3 of the Form I-129. This will ensure that the I-797 receipt and approval notices are sent to the petitioner. You must submit evidence of the basis of the wage level selected on the registration as of the date that the registration underlying the petition was submitted. You must include the beneficiary’s passport or travel document number, country of issuance, and expiration date on the Form I-129. The passport or travel document information helps USCIS to confirm that the beneficiary named in the registration notice is the same individual as the beneficiary named in the petition and avoid processing delays. Ensure that the beneficiary’s name is spelled properly and that their date of birth is displayed in the proper format (mm/dd/yyyy). Also, review the country of birth and citizenship and the I-94 number (if applicable) for accuracy. Ensure that any information provided during the electronic registration process matches the information provided on the petition. If information between the registration and petition does not match, the petition may be rejected or denied. If any information does not match, you should provide a written explanation and supporting documentation as to why there was a change or why the information does not match. If the beneficiary is seeking an extension of stay, amendment of stay, or change of status, the petition must include evidence (such as a Form I-94 or Form I-797 approval notice) to establish that the beneficiary will have maintained a valid nonimmigrant status through the employment start date being requested. Include a copy of the beneficiary’s valid passport or travel document. H Classification Supplement to Form I-129 You can find the H Classification Supplement beginning on page 13 of Form I-129. Please complete all required sections of the form accurately and in accordance with the regulations and the form instructions. In listing previous periods of stay in H or L nonimmigrant classification, please also include the actual nonimmigrant classification held (such as H-1B or L-1). The petitioner must sign the form, preferably in black ink. H-1B and H-1B1 Data Collection and Filing Fee Exemption Supplement You can find the H-1B and H-1B1 Data Collection and Filing Fee Exemption Supplement beginning on page 21 of Form I-129. Please complete all sections of the form accurately. Make sure you are filing a valid edition of Form I-129, as specified in the Edition Date section on the Form I-129 page. Delivery Service Error Guidance If you filed an H-1B cap petition in a timely manner, but received notification from the delivery service that suggests that there may be a delay or damage to the package or that the package was misrouted, you may file a second H-1B petition with a new fee payment during the designated 90-day filing window on your Registration Selection Notice and the following: An explanation as to why a second petition is being filed, with supporting evidence, such as the notice from the delivery service; and A request to withdraw the first petition filed for the H-1B cap. If you do not include these items, you will be considered to have submitted duplicate petitions. We may deny or revoke multiple or duplicative petitions filed by the same petitioner, for the same H-1B worker in the same fiscal year, and will not refund the filing fees. If you properly file a second H-1B petition and withdraw the first, we will withdraw the first petition and proceed with adjudication of the second petition. When we receive a timely and properly filed H-1B cap subject petition, the petitioner (and, if applicable, the petitioner’s legal representative) will receive a Form I-797, Notice of Action, communicating receipt of the petition. Due to increased filing volumes during H-1B cap filing periods, there are instances where a petition is timely and properly filed, but issuance of the Form I-797 is delayed. If a petitioner has confirmation from the delivery service that the petition was delivered, but they have not yet received a Form I-797 confirming receipt of the petition, the petitioner should not submit a second petition. If a petitioner has confirmation from the delivery service that the petition was delivered, and they submit a second petition, the petitioner will be considered to have submitted duplicate petitions. This will result in the denial or revocation of both petitions. Last Reviewed/Updated: 09/21/2026",
+      "body_text_sha256": "4ff9e4f0c28969ee27c4584c5991979037e52127424f7a57549e92395d5fb6d6",
+      "evidence_block_count": 96,
+      "evidence_blocks": [
+        {
+          "block_id": "US-EM-01-BLOCK-0001",
+          "tag": "p",
+          "source_text": "The H-1B program allows companies and other employers in the United States to temporarily employ foreign workers in occupations that require the theoretical and practical application of a body of highly specialized knowledge and a bachelor’s degree or higher in a directly related specific specialty (or its equivalent) as a minimum for entry into the occupation in the United States. H-1B specialty occupations may include fields such as architecture, engineering, mathematics, physical sciences, social sciences, medicine and health, education, business specialties, accounting, law, theology, and the arts. For more information about the H-1B program, visit our H-1B Specialty Occupations webpage.",
+          "source_text_sha256": "7179272e5a9aee5f4991a0b32d40c021b575505f3382156ac611177026ae835e",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0002",
+          "tag": "p",
+          "source_text": "Congress set the current annual regular cap for the H-1B category at 65,000 (commonly known as the “regular cap”). Up to 6,800 visas are set aside from the 65,000 each fiscal year for the H-1B1 program under the terms of the legislation implementing the U.S.-Chile and U.S.-Singapore free trade agreements. Unused visas in this group become available for H-1B use for the next fiscal year’s regular H-1B cap. An additional 20,000 petitions filed on behalf of beneficiaries who have earned a master’s degree or higher from a U.S. institution of higher education are exempt from the cap.",
+          "source_text_sha256": "7be306bc34d47010df446f604b19eb2c25492848cc0c5d1fec7cd00a502f4a57",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0003",
+          "tag": "p",
+          "source_text": "Not all H-1B nonimmigrant visas (or status grants) are subject to this annual cap (for example, petitions filed by U.S. institutions of higher education are cap exempt). H-1B workers performing labor or services in the Commonwealth of the Northern Mariana Islands (CNMI) and Guam may also be exempt from the H-1B cap (see the Consolidated Natural Resources Act of 2008 (CNRA), Public Law 110-229). H-1B workers in Guam and the CNMI are exempt from the H-1B cap if their employers file the petition before Dec. 31, 2029.",
+          "source_text_sha256": "e46c858f307324b7cd79afe070d68ff1ca57d23be7406c2e0b34be93e3b6d254",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0004",
+          "tag": "p",
+          "source_text": "Prospective petitioners who are subject to the annual cap must first go through the electronic registration process (unless registration is suspended).",
+          "source_text_sha256": "883f346d9e059defa9b1b9ab01b091aee71289ac47818e1facacc7b49e0589da",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0005",
+          "tag": "p",
+          "source_text": "Prospective petitioners seeking to file H-1B cap-subject petitions must first complete an electronic registration for each prospective beneficiary. USCIS then runs the H-1B selection process to select unique beneficiaries based on properly submitted electronic registrations. See the H-1B Electronic Registration Process webpage for more information.",
+          "source_text_sha256": "dde58bd3c737aafff5c94e60a251500112f25bc2d02ea7f3af631e368842218a",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0006",
+          "tag": "p",
+          "source_text": "Starting in fiscal year (FY) 2027, USCIS has implemented a weighted selection process which favors the allocation of H-1B visas to higher skilled and higher paid aliens, while maintaining the opportunity for employers to secure H-1B workers at all wage levels. When random selection is required because USCIS receives more registrations than projected to be needed to meet the numerical allocations, USCIS will conduct a weighted selection among the registrations for unique beneficiaries received generally based on the highest Occupational Employment and Wage Statistics (OEWS) wage level that the beneficiary's proffered wage equals or exceeds for the relevant Standard Occupational Classification (SOC) code in the area(s) of intended employment.",
+          "source_text_sha256": "81f98fae874af23e0814ac92bd348b348b47fda4582bc38ad689734f4872ef3c",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0007",
+          "tag": "p",
+          "source_text": "Registrations for unique beneficiaries are assigned to the relevant OEWS wage level and entered into the selection pool as follows: registrations for unique beneficiaries or petitions assigned wage level IV are entered into the selection pool 4 times, those assigned wage level III are entered into the selection pool 3 times, those assigned wage level II are entered into the selection pool 2 times, and those assigned wage level I are entered into the selection pool 1 time. Each unique beneficiary will only be counted once toward the numerical allocation projections, regardless of how many registrations were submitted for that beneficiary or how many times the beneficiary is entered in the selection pool. For more information about selecting the corresponding OEWS wage level for purpose of registration, see the H-1B Electronic Registration Frequently Asked Questions .",
+          "source_text_sha256": "b3fc04f2499f8a783d4c9bc3be138f3c2558c2af1457c0f394dae8622d8743f6",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0008",
+          "tag": "p",
+          "source_text": "If the unique beneficiary is selected, each registrant who registered for that beneficiary receives a registration selection notice and may file an H-1B cap-subject petition for them.",
+          "source_text_sha256": "ecaa7c03c3f581d18fe5aa1471481de4c7fc73bbcf16f63725b43b96fa1137cd",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0009",
+          "tag": "p",
+          "source_text": "In the event of suspended registration, USCIS will weight and select petitions in the same manner as described above.",
+          "source_text_sha256": "de923b483f56036c4969e610820104976f45a9c0be9df35ef27e0827db5b315d",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0010",
+          "tag": "p",
+          "source_text": "H-1B cap-subject petitions, including those eligible for the advanced degree exemption, may not be filed unless based on a valid and selected registration for the beneficiary named in the petition (unless the registration requirement is suspended).",
+          "source_text_sha256": "c27930fd1caaa50af772888db23178ce96127d47ef50178d204ed11db6868ffd",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0011",
+          "tag": "p",
+          "source_text": "You may file an H-1B petition no more than 6 months before the employment start date requested for the beneficiary. On April 1, USCIS will begin accepting online filing for H-1B cap petitions and associated Forms I-907 for petitioners whose registrations have been selected.",
+          "source_text_sha256": "3766309ad0d1f4180bab08655bdc2fed14f7f670e4abf4568906747ddf5b385b",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0012",
+          "tag": "p",
+          "source_text": "Petitioners also have the option of filing a paper Form I-129 H-1B petition and any associated Form I-907 if they prefer. However, users will not be able to link paper-filed Forms I-129 and I-907 to their online accounts. For paper-filed forms, you must file the petition at the correct location. Please see our Direct Filing Addresses for Form I-129 page.",
+          "source_text_sha256": "e3b1b1361177c12d7fef70f0a5c1620f19002f34dc50e4000ea0336e5312f6f0",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0013",
+          "tag": "li",
+          "source_text": "Complete all required sections of Form I-129, Petition for a Nonimmigrant Worker , including the H Classification Supplement and the H-1B Data Collection and Filing Fee Exemption Supplement, in accordance with the regulations and form instructions. Get the most current versions of forms at uscis.gov/forms .",
+          "source_text_sha256": "fade4e4fe95a9b634f72534cd6e81968e178d47c10e94ab49abeb99701dd2af6",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0014",
+          "tag": "li",
+          "source_text": "You must indicate a start date of Oct. 1 or later (of the applicable FY, and 6 months or less from the receipt date of the petition) on your petition, or we will reject or deny your petition.",
+          "source_text_sha256": "65949ba5e46e64031fbce2e94734f735bfe30051f65ace5fefb0c06794da8bd5",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0015",
+          "tag": "li",
+          "source_text": "You must provide a copy of the H-1B Registration Selection Notice for the registration filed by your organization for the beneficiary with the petition. Ensure that you also entered the corresponding “Beneficiary Confirmation Number” on the H Classification Supplement (Page 13, Question 5).",
+          "source_text_sha256": "72f28309c2847f123532b11a9dd8acca104865d19df34cb1e1ee77dd0fe14379",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0016",
+          "tag": "li",
+          "source_text": "You must submit evidence of the basis of the wage level selected on the registration as of the date that the registration underlying the petition was submitted.",
+          "source_text_sha256": "27186ca6e3f456487a2f0fa3e0c40bc292d4c97007212404985b91823b42fbd6",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0017",
+          "tag": "li",
+          "source_text": "You must submit evidence of the beneficiary’s passport or travel document used at the time of registration to identify the beneficiary. If the passport or travel document expires between when a registration is submitted and when the H-1B petition is filed, the petitioner should follow the form instructions about which passport information to enter on Page 3, Part 3 of Form I-129, Petition for Nonimmigrant Worker . The petitioner should support the H-1B petition with documentation for both passports or travel documents to establish that the passport or travel document was valid at the time of registration and also explain why there was a change in identifying information.",
+          "source_text_sha256": "cc020691568baf12f52fcbfd007efdda145d7b776492fc62e5fac707d053bcd3",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0018",
+          "tag": "li",
+          "source_text": "Ensure that any information provided during the electronic registration process matches the information provided on the petition. An H-1B petition filed for a beneficiary must contain and be supported by the same identifying information and position information as provided in the selected registration. For instance, the petition must include the same Standard Occupational Classification (SOC code as provided in the selected registration and indicated on the labor condition application used to support the petition. It also must include a proffered wage that equals or exceeds the prevailing wage for the corresponding OEWS wage level in the registration for the SOC code in the area(s) of intended employment. If any information does not match, you should include an explanation with your petition and supporting documentation explaining why there was a change or why the information does not match. If information on the registration and petition does not match, we may reject or deny the petition. We encourage you to use a brightly colored coversheet to flag the issue. This will help ensure that we review this when we receive your petition. Note that certain occupations may have an 8-digit detailed O*NET-SOC code. If you are filing an H-1B petition based on a valid and selected registration, you may use the 6 digits of the SOC code on Form I-129, to align with the H-1B electronic registration, even if the Labor Condition Application (LCA) submitted with the petition has an 8-digit detailed O*NET-SOC code for an occupation. For example, if the LCA has an 8-digit detailed O*NET-SOC code of “17-2051.01 – Transportation Engineers,” you may enter the 6-digit SOC code of “17-2051 - Civil Engineers” on Form I-129 to align with the registration. Having a 6-digit SOC code on the Form I-129 and underlying registration, with an 8-digit detailed O*NET-SOC code on the LCA, does not by itself constitute an inconsistency or mismatch when we are evaluating whether the SOC group is consistent between the registration, petition, and LCA.",
+          "source_text_sha256": "ea906dc1ea6279e6e92c820570e076eab8f42cdaeb95950b01b314e19004b8b1",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0019",
+          "tag": "p",
+          "source_text": "Ensure that any information provided during the electronic registration process matches the information provided on the petition. An H-1B petition filed for a beneficiary must contain and be supported by the same identifying information and position information as provided in the selected registration. For instance, the petition must include the same Standard Occupational Classification (SOC code as provided in the selected registration and indicated on the labor condition application used to support the petition. It also must include a proffered wage that equals or exceeds the prevailing wage for the corresponding OEWS wage level in the registration for the SOC code in the area(s) of intended employment. If any information does not match, you should include an explanation with your petition and supporting documentation explaining why there was a change or why the information does not match. If information on the registration and petition does not match, we may reject or deny the petition. We encourage you to use a brightly colored coversheet to flag the issue. This will help ensure that we review this when we receive your petition.",
+          "source_text_sha256": "7db4b084c0f606a517a7bc2802f4a7835fd2e897d25dae68d573f38c12423417",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0020",
+          "tag": "p",
+          "source_text": "Note that certain occupations may have an 8-digit detailed O*NET-SOC code. If you are filing an H-1B petition based on a valid and selected registration, you may use the 6 digits of the SOC code on Form I-129, to align with the H-1B electronic registration, even if the Labor Condition Application (LCA) submitted with the petition has an 8-digit detailed O*NET-SOC code for an occupation.",
+          "source_text_sha256": "debda8a448fbdcc275351f5c813781b8dc6e3492d3c8165341c6a74a74b08bd9",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0021",
+          "tag": "p",
+          "source_text": "For example, if the LCA has an 8-digit detailed O*NET-SOC code of “17-2051.01 – Transportation Engineers,” you may enter the 6-digit SOC code of “17-2051 - Civil Engineers” on Form I-129 to align with the registration. Having a 6-digit SOC code on the Form I-129 and underlying registration, with an 8-digit detailed O*NET-SOC code on the LCA, does not by itself constitute an inconsistency or mismatch when we are evaluating whether the SOC group is consistent between the registration, petition, and LCA.",
+          "source_text_sha256": "23eddb09aa64634ee476fb873e921ed3242bd22f6a95782bf8e20a888bcc4686",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0022",
+          "tag": "li",
+          "source_text": "Make sure each form is properly signed. Ensure all signatures comply with the requirements described in the form instructions and explained in the USCIS Policy Manual .",
+          "source_text_sha256": "b9a8bd8e126abcb8d74f1d84611920977a8fcb3b80beab27f95c6184b61c3b5d",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0023",
+          "tag": "li",
+          "source_text": "Pay all required fees. See the required fees section below for detailed information.",
+          "source_text_sha256": "159bded3ce4123c6c6c4d372e1ec65aa948c3ae004b0b57be52628391353f1b0",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0024",
+          "tag": "li",
+          "source_text": "Submit all required documentation and evidence with the petition when you file it, to ensure timely processing.",
+          "source_text_sha256": "4de50a4fc7b7c4ad5192de89ee714df27561fc68f978834514433a77c8127a54",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0025",
+          "tag": "li",
+          "source_text": "Ensure that the LCA properly corresponds to the position in your petition.",
+          "source_text_sha256": "a1493d44d320f6c39cb5942ae95da33e7c993550624b684cb5f6be9cf704e1c0",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0026",
+          "tag": "li",
+          "source_text": "For paper-filed forms, you must file the petition at the correct location. See the section below on Where to Mail Your H-1B Petition .",
+          "source_text_sha256": "155b520d330326e36de1fff9ab5d1bc734dfa34a1ab808f29354ad34a3d7d380",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0027",
+          "tag": "li",
+          "source_text": "Ensure that the petitioner’s name on the Form I-129 petition is the same as the petitioner’s name on Form G-28, Notice of Entry of Appearance as Attorney or Accredited Representative, if you are filing Form G-28.",
+          "source_text_sha256": "69965bd32b98cfe4e5188f414f240f8464b2ce20b691c2bdfebb103dad2a0493",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0028",
+          "tag": "p",
+          "source_text": "Note: It is your responsibility to ensure that Form I-129 is completed accurately and submitted properly.",
+          "source_text_sha256": "3a53a874e896b83213828cbed4622c035b7d5c4350c4f0d51a5425568b5d8c05",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0029",
+          "tag": "p",
+          "source_text": "Labor Condition Application (LCA)",
+          "source_text_sha256": "1515d559955050cf21043b1571fb6258b3ffb50070c564d17b03a00253622cf6",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0030",
+          "tag": "p",
+          "source_text": "When filing your H-1B petition with USCIS, you must include evidence that an LCA (ETA 9035) has been certified by the U.S. Department of Labor. This may include a copy of the signed, certified LCA. (Note: USCIS encourages petitioners to keep Department of Labor LCA processing times in mind when preparing the H-1B petition and to plan accordingly.) If the LCA was previously submitted in a petition that has been approved, you must submit a list including the name and USCIS case receipt number of any foreign worker who has previously used the LCA. You may not use an LCA for more workers than specified in Part B, Question 7 of the LCA.",
+          "source_text_sha256": "cca808ed812417d6278bbba23a276f4fea6715b999bfac4d64df4e784ed5086b",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0031",
+          "tag": "p",
+          "source_text": "Please see the Department of Labor’s Office of Foreign Labor Certification website for more information on the LCA process.",
+          "source_text_sha256": "33227993237f0362a35404a4a70e91cf372205009ceafdc789c2e3e3056f721d",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0032",
+          "tag": "p",
+          "source_text": "Evidence of Beneficiary’s Educational Background",
+          "source_text_sha256": "2c38c4ee88e4d7773dae54bb9db3e9436688658b3ddb382e462c17dfd6313832",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0033",
+          "tag": "p",
+          "source_text": "You must submit evidence of the beneficiary’s education credentials (with English translations when applicable) at the time you file your petition. If the beneficiary has met all of the requirements for a degree, but the degree has not yet been awarded, you may submit the following alternate evidence:",
+          "source_text_sha256": "f59cc0e8fcb3ec792d4f41c0a5982c9b81a68a7be18d1fb031420b98a399887b",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0034",
+          "tag": "li",
+          "source_text": "A copy of the beneficiary’s final transcript; or",
+          "source_text_sha256": "7fd317d17553667fa7ce4df73bc16ad73d250b6196d1cbd3d517c561c160e3fe",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0035",
+          "tag": "li",
+          "source_text": "A letter from the registrar confirming that the beneficiary has met all of the degree requirements. If the educational institution does not have a registrar, then the letter must be signed by the person in charge of educational records where the degree will be awarded.",
+          "source_text_sha256": "e4269edba5fce3b04a18849804cafec34d9783b5e35ba060b4d2f4df23a17c98",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0036",
+          "tag": "p",
+          "source_text": "If you indicate that the beneficiary is qualified based on a combination of education and experience, please provide substantiating evidence at the time you file your petition.",
+          "source_text_sha256": "ec195711f9224cbd251a6134b2a91b773d969bdbba35893307e126d2de2442d6",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0037",
+          "tag": "p",
+          "source_text": "Evidence of Bona Fide Position",
+          "source_text_sha256": "25d4712a046807e320cabf379497b247ca923cd2e9158c4bee37e053fe79b4a7",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0038",
+          "tag": "p",
+          "source_text": "You must submit evidence that you have a bona fide position in a specialty occupation available for the beneficiary as of the start date of the validity period requested on the petition. You are not required to establish specific day-to-day assignments for the entire time period requested in the petition.",
+          "source_text_sha256": "6ed35c6cdb539d37900103bbb31cd1906069ebded7ed67967d457602861888fd",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0039",
+          "tag": "p",
+          "source_text": "Petitioners may not file multiple or duplicative H-1B petitions for the same beneficiary. To ensure fair and orderly distribution of available H-1B visas, we will deny or revoke multiple or duplicative petitions filed by an employer (including its related entities that filed without a legitimate business need) for the same H-1B worker and will not refund the filing fees. Multiple or duplicative petitions will be denied or revoked even if they are filed pursuant to a selected registration. For additional information, see 8 CFR 214.2(h)(2)(i)(G); PM-602-0159, Matter of S- Inc., Adopted Decision 2018-02 (AAO Mar. 23, 2018) .",
+          "source_text_sha256": "6c46e89220b316566f836a61fa0f9fe614067adb77a205a4e355303722f0e7bd",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0040",
+          "tag": "p",
+          "source_text": "We accept online filing for H-1B cap petitions and associated Forms I-907 for petitioners whose registrations have been selected.",
+          "source_text_sha256": "9d9a8d66e01b2de5141a67b0ed8543ac302ca729594afc7f3bc4f7d4043b18bb",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0041",
+          "tag": "p",
+          "source_text": "Petitioners also have the option of filing a paper Form I-129 H-1B petition and any associated Form I-907 if they prefer. However, users will not be able to link paper-filed Forms I-129 and I-907 to their online accounts. For paper-filed forms, you must file your petition at the correct location. We have specific mailing addresses for cases that are subject to the H-1B cap. To determine the correct mailing address see our Direct Filing Addresses for Form I-129, Petition for a Nonimmigrant Worker page .",
+          "source_text_sha256": "c966eb657c2cc44de52622836fc67e5317eff9e19112502a010da7e13ec5e339",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0042",
+          "tag": "p",
+          "source_text": "Please read the filing instructions carefully. If you file your petition at the wrong location, we may reject it. Rejected petitions will not retain a filing date. If your petition is rejected because it was filed at the wrong location, you may refile your rejected petition at the correct location (or online) as long as the petition is properly refiled during the designated 90-day filing window on your Registration Selection Notice.",
+          "source_text_sha256": "338a78ee23c64ed5359ddae13b8fae544467a1641bb2814d4b6496b56a0bb74c",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0043",
+          "tag": "p",
+          "source_text": "There are different fees depending on the type of H-1B petition you are submitting. Please refer to the Fee Schedule and H and L Filing Fees for Form I-129, Petition for a Nonimmigrant Worker page for detailed instructions on H-1B fees.",
+          "source_text_sha256": "603213a467086779b2c5750695d169e3fb8f69fd25cc7ab0d189bbbef2c78902",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0044",
+          "tag": "p",
+          "source_text": "The Presidential Proclamation, Restriction on Entry of Certain Nonimmigrant Workers , requires certain H-1B petitions filed at or after 12:01 a.m. Eastern on Sept. 21, 2025, to be accompanied by an additional $100,000 payment as a condition of eligibility. See the Presidential Proclamation on Restriction on Entry of Certain Nonimmigrant Workers section on our H-1B Specialty Occupations page for additional details.",
+          "source_text_sha256": "41e4e387ebd876fcced8aca3538219a6c419c4150e8b82a5894feb9e0ed0e856",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0045",
+          "tag": "p",
+          "source_text": "The fee for each registration is $215.",
+          "source_text_sha256": "3cbe1f06d43caadd4385cd4b3cb218b44ea85402f56d92f724bbd1b869bfb8df",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0046",
+          "tag": "p",
+          "source_text": "The U.S. Department of Treasury has approved an increase in the daily credit card transaction limit from $24,999.99 to $99,999.99 per day for H-1B registrations and petitions submitted online using one credit card for the FY 2027 H-1B cap season. This increase is in response to stakeholder feedback and the volume of previous H-1B registrations that exceeded the daily credit card limit. Transactions more than $99,999.99 may be made via Automated Clearing House (ACH). Use of ACH may require the payor to alert their bank in advance to remove any potential ACH block on their account. We will provide additional information before the start of the initial H-1B registration period.",
+          "source_text_sha256": "74b543345072b69d735c2e01a65dcd6cdf7e24859d349a7501ea6fe5f8095927",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0047",
+          "tag": "p",
+          "source_text": "There is a daily transaction limit for credit cards of $24,999.99 per credit card per day for petitions that are sent by mail.",
+          "source_text_sha256": "95bc1e243415780721d60794ff168d6b944f1ee1a566761e85b6d372248f81da",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0048",
+          "tag": "p",
+          "source_text": "See our Filing Fees webpages for additional information on how to pay USCIS filing fees.",
+          "source_text_sha256": "d4a9b16c8c35b2d2a343846b227218adc45f4eea752c62cd07ddfc9d29a072ae",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0049",
+          "tag": "p",
+          "source_text": "We will reject all petitions submitted with the incorrect filing fee.",
+          "source_text_sha256": "80fd4dc598276cedc8cd21f445168a010f2fd7b96f693cf03cda3a34af9a51d1",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0050",
+          "tag": "p",
+          "source_text": "Premium processing is currently available for all H-1B petitions. Additional information is available on our How Do I Request Premium Processing? page.",
+          "source_text_sha256": "b822b16667a98b7411d8298c7126d39d522ec1e10c4ec5ca6d778872226af03e",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0051",
+          "tag": "p",
+          "source_text": "On Jan. 9, 2026, DHS announced the Adjustment to Premium Processing Fees final rule that will increase USCIS fees for premium processing to reflect the amount of inflation from June 2023 through June 2025.",
+          "source_text_sha256": "d8487ba3a4a7638f237b3ab1fc1434ec1b5f3c8e02c976ffbc1638c36e66968d",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0052",
+          "tag": "p",
+          "source_text": "This rule is effective March 1, 2026. If you submit a request for premium processing postmarked on or after March 1, 2026, you must include the new fee for the specific benefit you are requesting. If we receive a Form I-907 postmarked on or after March 1, 2026, with the incorrect filing fee, we will reject Form I-907 and return the filing fee.",
+          "source_text_sha256": "8e6a717e5f81645733171b0f613094df7e25cc05c9afb720320b71b6c6b6ebb3",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0053",
+          "tag": "p",
+          "source_text": "Preferred order of documents at time of submission:",
+          "source_text_sha256": "9804c54fe271ba59a70524dd9043167b5ab475f23e082a965b3ca92df9b5a8e3",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0054",
+          "tag": "li",
+          "source_text": "Form G-28 (if represented by an attorney or accredited representative)",
+          "source_text_sha256": "a44376177b5cb806d98e839cb4dc80428cfbfacf486ded56fd4ae328b9e27614",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0055",
+          "tag": "li",
+          "source_text": "Copy of the Registration Selection Notice for the Beneficiary Named in the Petition",
+          "source_text_sha256": "7fad2862ed2d402f2e641815b4946008ecc4fc45f756b669b4eef7502186488f",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0056",
+          "tag": "li",
+          "source_text": "Form I-129, Petition for a Nonimmigrant Worker",
+          "source_text_sha256": "c20a4ee07e1046547df0d2555508c8a9b4246e5b0b57f2bf014a4ff7d7885552",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0057",
+          "tag": "li",
+          "source_text": "H Classification Supplement to Form I-129 and/or Trade Agreement Supplement to Form I-129 (for H-1B1 Chile-Singapore petitions)",
+          "source_text_sha256": "c51236857e67d8f2586cc20713cea647234f59f8d9af602c8c290a1fda66fd53",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0058",
+          "tag": "li",
+          "source_text": "H-1B and H-1B1 Data Collection and Filing Fee Exemption Supplement",
+          "source_text_sha256": "39dba8340a30c5df2e36b18fd30e807525f453050332eb51140204ca615f9a24",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0059",
+          "tag": "li",
+          "source_text": "All supporting documentation to establish eligibility. Provide a table of contents for supporting documentation and separate the items as listed in the table.",
+          "source_text_sha256": "ee721c5283ad67efe722b338d4fea2b02ead823e3dde89b023ba2c6577de671f",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0060",
+          "tag": "li",
+          "source_text": "Arrival-Departure Record (Form I-94) if the beneficiary is in the United States",
+          "source_text_sha256": "3bd102627703825c01c83abfb47f1d631affeae286beb7d086108e55d09fff26",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0061",
+          "tag": "li",
+          "source_text": "SEVIS Form I-20 if the beneficiary is a current or former F-1 student or F-2 dependent",
+          "source_text_sha256": "7a81929e30ed63978cd064784dad92dc5e3c7a5aee5ed43cbc9df421343cba16",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0062",
+          "tag": "li",
+          "source_text": "SEVIS Form DS-2019 if the beneficiary is a current or former J-1 or J-2",
+          "source_text_sha256": "44228c5bdfa016dad861774adc22ac361a3afef9766698504afb548a091d1cb7",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0063",
+          "tag": "li",
+          "source_text": "Form I-566 if the beneficiary is a current A or G nonimmigrant",
+          "source_text_sha256": "840bdda9dfaacfa2fbb634c8a497ccf52d7b83bf30a5347a14a6d75dd4018b5e",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0064",
+          "tag": "li",
+          "source_text": "Department of Labor certified LCA, Form ETA 9035",
+          "source_text_sha256": "090367c82a26fa96db2b74a26dd53acf9b0ef325abd32c28749f80326550c11b",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0065",
+          "tag": "li",
+          "source_text": "Employer/attorney/representative letter(s)",
+          "source_text_sha256": "e1c53313ec4d550e46a67f8ceac1ba76e5a41c44e289421f754bb070449be6e9",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0066",
+          "tag": "li",
+          "source_text": "Other supporting documentation",
+          "source_text_sha256": "339b7daeaac36a4d35130c6f832a55d0463bb448e59ffd21841450742fa04109",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0067",
+          "tag": "p",
+          "source_text": "We request that petitioners no longer provide duplicate copies of their Form I-129 petition or supporting evidence, as this can result in misidentification of filings. Due to enhanced electronic scanning capabilities and data-sharing with the U.S. Department of State, duplicate copies are no longer needed to avoid delays in consular processing.",
+          "source_text_sha256": "a52af130c82a8071689375daa30f8422461b4a522967872084a52833f1b7fe94",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0068",
+          "tag": "p",
+          "source_text": "How to mail multiple petitions together",
+          "source_text_sha256": "ad6875806bfe98c7bcebf0886a74a0cb9faf20854a87f0d832418f5e4778c0ad",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0069",
+          "tag": "p",
+          "source_text": "If you will include multiple petitions in the same package, place the individual petitions into separate envelopes within the package.",
+          "source_text_sha256": "ce32647b56b321a0a5bcda72e744e6cf64fcc33e4dcff2b2d12536e6df1974bf",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0070",
+          "tag": "p",
+          "source_text": "Form G-28 , Notice of Entry of Appearance as Attorney or Representative",
+          "source_text_sha256": "b97f0f853f50bfa22e5094217fe4157f4d7e12d0342aa54cde1a9cb14d12a8d9",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0071",
+          "tag": "p",
+          "source_text": "If you will be represented by an attorney or other accredited representative, submit a properly completed Form G-28, Notice of Entry of Appearance as Attorney or Representative. For further information on Form G-28, please see our Filing Your Form G-28 page.",
+          "source_text_sha256": "e9b5f9d02c51600abbdd2a19c865b797bcbf25156588ac50f8ae2dbe96968130",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0072",
+          "tag": "p",
+          "source_text": "Form I-129 , Petition for a Nonimmigrant Worker",
+          "source_text_sha256": "97f8d2fa7ebb9eee4a818d84d112608b1a7150839d65e7c3a1f0d2e0e2f9b8a4",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0073",
+          "tag": "li",
+          "source_text": "Complete all required sections of the form accurately and in accordance with the regulations and form instructions.",
+          "source_text_sha256": "0ff99d8671cd2fd52c5396841414f89185d38ea9927445e3284550a9e816a831",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0074",
+          "tag": "li",
+          "source_text": "H-1B cap petitions and advanced degree exemption petitions for the FY 2027 cap must include an employment start date of no earlier than Oct. 1, 2026. You must indicate a start date of Oct. 1, 2026, or later (and 6 months or less from the receipt date of the petition) on your petition or your petition will be rejected or denied. Do not file petitions earlier than 6 months before the requested employment start date. We will reject H-1B petitions requesting a start date of “As Soon As Possible” or “ASAP.”",
+          "source_text_sha256": "40bcd7f6d2014776644d913d311befe49756af2d6a6b95bb435118bc4bc11c84",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0075",
+          "tag": "li",
+          "source_text": "Ensure that you have entered the “Beneficiary Confirmation Number” on the H Classification Supplement.",
+          "source_text_sha256": "10c9a55d0d7cdbc942b88f8fde9d7da973dc990a867127b0783db545cbfc8a17",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0076",
+          "tag": "li",
+          "source_text": "Ensure that the petition is properly signed.",
+          "source_text_sha256": "9e04486eb68c357a111b942a162d16e23a1d80d4c9976e79509d8702c5066a75",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0077",
+          "tag": "li",
+          "source_text": "Petitioners should enter their own address in Part 1, question 3 of the Form I-129. This will ensure that the I-797 receipt and approval notices are sent to the petitioner.",
+          "source_text_sha256": "f425b5ebd68c20cd616c2f14a02de96240962ee8d76d4865527dfc887d1e57af",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0078",
+          "tag": "li",
+          "source_text": "You must include the beneficiary’s passport or travel document number, country of issuance, and expiration date on the Form I-129. The passport or travel document information helps USCIS to confirm that the beneficiary named in the registration notice is the same individual as the beneficiary named in the petition and avoid processing delays.",
+          "source_text_sha256": "427fe54afd8b08099e48f39bcd727086180b4efd3b7f4b63f7f2052a290608b9",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0079",
+          "tag": "li",
+          "source_text": "Ensure that the beneficiary’s name is spelled properly and that their date of birth is displayed in the proper format (mm/dd/yyyy). Also, review the country of birth and citizenship and the I-94 number (if applicable) for accuracy.",
+          "source_text_sha256": "b1cd67154671f60de1c08009d5a0f2a6b5649abeda9661b9b22fd0c9b103220d",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0080",
+          "tag": "li",
+          "source_text": "Ensure that any information provided during the electronic registration process matches the information provided on the petition. If information between the registration and petition does not match, the petition may be rejected or denied. If any information does not match, you should provide a written explanation and supporting documentation as to why there was a change or why the information does not match.",
+          "source_text_sha256": "fe3a38bf60351859b721820f6e39b4fc3509410bbd543f808f503ba494615513",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0081",
+          "tag": "li",
+          "source_text": "If the beneficiary is seeking an extension of stay, amendment of stay, or change of status, the petition must include evidence (such as a Form I-94 or Form I-797 approval notice) to establish that the beneficiary will have maintained a valid nonimmigrant status through the employment start date being requested.",
+          "source_text_sha256": "e622fdd56d3ff2ffa730bf54e1b658258b29b96587b7287ca27ce605d0de65ba",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0082",
+          "tag": "li",
+          "source_text": "Include a copy of the beneficiary’s valid passport or travel document.",
+          "source_text_sha256": "5aa069af66e7062a1521c28b9422bf8ebb2fd10c082c805ea6ae772a39235266",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0083",
+          "tag": "p",
+          "source_text": "H Classification Supplement to Form I-129",
+          "source_text_sha256": "c6313d444ffddee845fdb427872ffac9ffa8a9b5655dfac4ca3a8605c94c1c40",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0084",
+          "tag": "li",
+          "source_text": "You can find the H Classification Supplement beginning on page 13 of Form I-129.",
+          "source_text_sha256": "fd1d93becbe6978dd71a42db50683c3dd9b5ac1e0fcef8f39325a0b2ca5d39ee",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0085",
+          "tag": "li",
+          "source_text": "Please complete all required sections of the form accurately and in accordance with the regulations and the form instructions.",
+          "source_text_sha256": "9fba9d411032f5ef0af9d5b86749cc2cb5433896de57081ae5edd9100df6b0ea",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0086",
+          "tag": "li",
+          "source_text": "In listing previous periods of stay in H or L nonimmigrant classification, please also include the actual nonimmigrant classification held (such as H-1B or L-1).",
+          "source_text_sha256": "6f4bc468b841499178ff82848f94a031d0d668cd8439129cc9958ddf88df1e81",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0087",
+          "tag": "li",
+          "source_text": "The petitioner must sign the form, preferably in black ink.",
+          "source_text_sha256": "d8669a7fdfa3a282df84188311e19c8341703604631e16d19cd5725d64bbffe7",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0088",
+          "tag": "li",
+          "source_text": "You can find the H-1B and H-1B1 Data Collection and Filing Fee Exemption Supplement beginning on page 21 of Form I-129.",
+          "source_text_sha256": "faf7a1dfc8974817f74f08579915b63dff8bf8b3b2a67d52517ba76cbcabd1f4",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0089",
+          "tag": "li",
+          "source_text": "Please complete all sections of the form accurately.",
+          "source_text_sha256": "bfad01f4616709b422d07696ff8eeefcf723c8ac3f8afc9a371825c55596d209",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0090",
+          "tag": "li",
+          "source_text": "Make sure you are filing a valid edition of Form I-129, as specified in the Edition Date section on the Form I-129 page.",
+          "source_text_sha256": "467cb8d8ccb1ca1a2a9f7f2c3239b297214d3bae1afb3f1128a40e9819d6e4ff",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0091",
+          "tag": "p",
+          "source_text": "If you filed an H-1B cap petition in a timely manner, but received notification from the delivery service that suggests that there may be a delay or damage to the package or that the package was misrouted, you may file a second H-1B petition with a new fee payment during the designated 90-day filing window on your Registration Selection Notice and the following:",
+          "source_text_sha256": "78e6a4b60ff30f79e9a651aa74b535bc5b64f7f7432ec25807b87b2dc4037c69",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0092",
+          "tag": "li",
+          "source_text": "An explanation as to why a second petition is being filed, with supporting evidence, such as the notice from the delivery service; and",
+          "source_text_sha256": "23b07c6dd4ea620f848d63e3938c847fc12daf9a92874f081a9e0ba03259c4fd",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0093",
+          "tag": "li",
+          "source_text": "A request to withdraw the first petition filed for the H-1B cap.",
+          "source_text_sha256": "fffa0614a7e20f9305d27cc18e2b91dd32836ba920a5bf7fc5424bec4479d3db",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0094",
+          "tag": "p",
+          "source_text": "If you do not include these items, you will be considered to have submitted duplicate petitions. We may deny or revoke multiple or duplicative petitions filed by the same petitioner, for the same H-1B worker in the same fiscal year, and will not refund the filing fees.",
+          "source_text_sha256": "b3c9721dd84a0ee16a31c6ac3013c9a90169e9b957acd9f3528eef4c93e49795",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0095",
+          "tag": "p",
+          "source_text": "If you properly file a second H-1B petition and withdraw the first, we will withdraw the first petition and proceed with adjudication of the second petition.",
+          "source_text_sha256": "3f7f6a2a2011e940afd053245c54b4c4846891dd5bfe44269e130bca0ee21803",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        },
+        {
+          "block_id": "US-EM-01-BLOCK-0096",
+          "tag": "p",
+          "source_text": "When we receive a timely and properly filed H-1B cap subject petition, the petitioner (and, if applicable, the petitioner’s legal representative) will receive a Form I-797, Notice of Action, communicating receipt of the petition. Due to increased filing volumes during H-1B cap filing periods, there are instances where a petition is timely and properly filed, but issuance of the Form I-797 is delayed. If a petitioner has confirmation from the delivery service that the petition was delivered, but they have not yet received a Form I-797 confirming receipt of the petition, the petitioner should not submit a second petition. If a petitioner has confirmation from the delivery service that the petition was delivered, and they submit a second petition, the petitioner will be considered to have submitted duplicate petitions. This will result in the denial or revocation of both petitions.",
+          "source_text_sha256": "490b85a8c147a4350699b85819067f84d58c4685a4d3b9bf9fc222f030c71622",
+          "semantic_review_status": "needs_review",
+          "eligibility_rule_verified": false
+        }
+      ],
+      "content_validation_status": "needs_review",
+      "source_type": "h1b_cap_season_guidance",
+      "identity_keywords_found": [
+        "h-1b",
+        "specialty"
+      ],
+      "identity_review_status": "candidate_matched"
+    }
+  ],
+  "extraction_method": "html_main_article_body",
+  "source_identity_verified": false,
+  "section_semantics_verified": false,
+  "eligibility_rules_verified": false,
+  "validation_status": "needs_review",
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false,
+  "dataset_version": 2,
+  "derived_from_sha256": "5055c6fafb9907b8fa621e50cf9ff5a2943b3587924eab38b86016b1e08e87d2",
+  "source_type_validation": "url_path_checked"
+}

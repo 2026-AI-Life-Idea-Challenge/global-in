@@ -1,0 +1,168 @@
+{
+  "dataset_type": "west_visa_internship_semantic_review",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "historical_notice": true,
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "review_register_sha256": "49cd19ae12b204dea33db02767025552c2d717199ce038182dd6223b0582ca0b",
+  "external_reference_checked_date": "2026-10-21",
+  "external_reference_scope": "미국 국무부의 일반적인 212(e) 안내. 개별 WEST 참가자 법률 판단은 미수행.",
+  "us_official_reference_urls": {
+    "dos_212e_eligibility": "https://travel.state.gov/content/travel/en/us-visas/study/exchange/waiver-of-the-exchange-visitor/eligibility.html",
+    "dos_2024_skills_list_update": "https://travel.state.gov/content/travel/en/News/visas-news/exchange-visitor-skills-list-update-in-federal-register.html",
+    "dos_advisory_opinion": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/advisory-opinions.html"
+  },
+  "faq_original_text": {
+    "39": {
+      "number": 39,
+      "question": "인턴십이 허용되지 않는 분야도 있나요?",
+      "answer": "간호학/의학 전공자의 경우 환자 등과 직접 접촉(medical patient care or contact) 하는 \n인턴십은 J-1 규정에 의거하여 금지되어 있습니다.",
+      "question_sha256": "82eae28fc4506523707e754c34106e403e019ac45b8510cebdb3191fb877bfca",
+      "answer_sha256": "98102723054227870ea4cd725d5f0c4d511e5f5c63b1902ad4efdb767a607f8e",
+      "physical_pdf_page": 9,
+      "printed_page": 17,
+      "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+      "extraction_status": "source_text_extracted",
+      "legal_meaning_approved": false
+    },
+    "40": {
+      "number": 40,
+      "question": "자신의 전공과 무관한 분야에서의 인턴십도 가능한가요?",
+      "answer": "인턴십은 본인의 전공 관련 분야에서 하도록 되어 있으며, 복수전공 또는 다른 경험이   \n있는 경우 인턴십 배치 시 고려될 수 있습니다. 인턴십 배치 분야는 본인이 결정하는 것이 \n아니라 현지중개기관과의 상담을 통한 배치과정에서 결정됩니다.",
+      "question_sha256": "d142fce780c2f88ed78d1bed0a1b0d1b497e2eb2e7f482526939f27d32c4af7b",
+      "answer_sha256": "bc966caa760958210f96e7fb2c1bc0cbed8404110cec50c6b0050024b71afa19",
+      "physical_pdf_page": 9,
+      "printed_page": 17,
+      "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+      "extraction_status": "source_text_extracted",
+      "legal_meaning_approved": false
+    },
+    "43": {
+      "number": 43,
+      "question": "미국 현지에서 인턴십 중 취업이 되면 돌아오지 않아도 되나요?",
+      "answer": "WEST 프로그램은 문화교류를 목적으로 하는 J-1 비자를 통해 어학연수와 인턴십을 하게  \n되며, 참가자는 미국 국무부 규정에 의거 현지 프로그램 종료 후 2년간 본국(=한국)에서 \n거주해야하는 의무가 있으므로, 반드시 귀국한 후 프로그램을 수료하여야 합니다. 현지에서 \n취업 결정 시에도 반드시 귀국하여 취업 관련 비자를 발급 받아 출국해야 합니다.",
+      "question_sha256": "9732241c9ea3cab684c71da35760a6e57c090c0a43fa9a08a74d22c1566de2e5",
+      "answer_sha256": "809d4aa18a10bbcdb124fb6067c9903ad1c5a9c80612ab1a762afe30cad389f1",
+      "physical_pdf_page": 9,
+      "printed_page": 17,
+      "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+      "extraction_status": "source_text_extracted",
+      "legal_meaning_approved": false
+    },
+    "48": {
+      "number": 48,
+      "question": "WEST 종료 후, 바로 미국으로 취업할 수 있나요?",
+      "answer": "프로그램을 수료 후 개별상황에 따라 미국으로 취업하는 것은 가능하나 비자 발급 절차는 \n개인적으로 준비하여야 하며, 별도로 지원해 드리지 않습니다. 미국 국무부의 문화교류 \n비자에 속하는 J-1비자 중 정부의 재정지원을 받은 경우, 본국(한국)에서 2년간 체류해야 \n하는 의무가 발생합니다. 2년 본국거주의무(two year rule)를 다하지 않고, 미국에 취업(H), \n주재원으로 파견(L), 미국 시민권자와의 약혼/결혼(K)의 사유로 미국에 재입국하기 위해서\n는 미국 국무부와 주미한국대사관(지역별 영사관)을 통해 2년 본국거주의무 면제 신청(웨\n이버 신청)을 반드시 해야 합니다. 국립국제교육원에서는 이 웨이버 신청 시 필요한 제출\n서류 중 하나인 ‘귀국의무면제 확인서’를 발급해 드립니다(WEST 수료자에 한함). 다른 국가 \n입국 시에는 2년 본국거주의무가 적용되지 않지만, 다른 국가에 거주 후에도 H,L,K 비자로 \n미국에 입국하기 위해서는 2년 본국거주의무를 완료해야 합니다.",
+      "question_sha256": "8f8303f0f4c81479db826627c25d9d669b34ae2e2e5c7d87f9fcbaea9657ecc3",
+      "answer_sha256": "c64462549024512de62fd3eda36013e3f521f98a96aceb932e6dbb4a3be308cc",
+      "physical_pdf_page": 9,
+      "printed_page": 18,
+      "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+      "extraction_status": "source_text_extracted",
+      "legal_meaning_approved": false
+    }
+  },
+  "review_items": {
+    "internship_patient_care": {
+      "related_faq": [
+        39
+      ],
+      "evidence": [
+        {
+          "printed_page": 17,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP17",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "notice_meaning": "공고는 간호학·의학 전공자의 환자 직접 접촉 인턴십을 제한한다고 설명함.",
+      "prohibited_inference": "의료계열 전공자 전체가 WEST에 지원할 수 없다고 단정하지 않음.",
+      "further_verification": "구체적인 인턴십 업무의 환자 접촉 여부와 적용되는 J-1 프로그램 규정 검토 필요.",
+      "validation_status": "needs_review"
+    },
+    "internship_field_matching": {
+      "related_faq": [
+        40
+      ],
+      "evidence": [
+        {
+          "printed_page": 17,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP17",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "notice_meaning": "전공 관련 분야 인턴십이 원칙이며, 복수전공·기타 경험이 고려될 수 있음.",
+      "prohibited_inference": "희망 기업이나 특정 인턴십 분야로 반드시 배정된다고 단정하지 않음.",
+      "further_verification": "실제 현지중개기관의 배치 기준 및 참가자 개별 경력 확인 필요.",
+      "validation_status": "needs_review"
+    },
+    "j1_two_year_home_residency": {
+      "related_faq": [
+        43,
+        48
+      ],
+      "evidence": [
+        {
+          "printed_page": 17,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP17",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        },
+        {
+          "printed_page": 18,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP18",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "notice_meaning": "공고는 WEST 참가자의 귀국 및 2년 본국거주의무를 설명하고 있음.",
+      "external_legal_context": "미국 국무부는 INA 212(e) 적용 근거로 정부재정지원, 해당 전문기술 목록, 대학원 수준 의학교육·훈련 등을 제시함.",
+      "prohibited_inference": "모든 J-1 비자 소지자가 무조건 212(e) 적용 대상이라고 판단하지 않음. WEST의 정부지원 사실만으로 개별 참가자의 법적 상태를 자동 확정하지 않음.",
+      "further_verification": "실제 프로그램 재원, DS-2019, 비자 관련 서류, 미국 국무부 안내 및 필요시 Advisory Opinion 확인.",
+      "official_reference_ids": [
+        "dos_212e_eligibility",
+        "dos_2024_skills_list_update",
+        "dos_advisory_opinion"
+      ],
+      "validation_status": "needs_legal_review"
+    },
+    "j1_waiver": {
+      "related_faq": [
+        48
+      ],
+      "evidence": [
+        {
+          "printed_page": 18,
+          "physical_pdf_page": 9,
+          "candidate_id": "WEST-2026H2-LP18",
+          "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2"
+        }
+      ],
+      "notice_meaning": "공고는 특정 미국 비자 취득과 관련해 2년 본국거주의무 면제 신청을 안내함.",
+      "prohibited_inference": "웨이버가 모든 신청자에게 허용되거나 신청만으로 승인된다고 판단하지 않음.",
+      "further_verification": "개인의 212(e) 적용 여부, 면제 사유·절차 및 미국 정부 결정 확인.",
+      "official_reference_ids": [
+        "dos_212e_eligibility",
+        "dos_advisory_opinion"
+      ],
+      "validation_status": "needs_legal_review"
+    }
+  },
+  "related_original_issue_candidates": [
+    {
+      "record_id": "WEST-H2-SELECTION-05",
+      "title": "FAQ Q43·Q48의 J-1 본국거주의무",
+      "review_status": "needs_review"
+    }
+  ],
+  "source_meaning_notes_recorded": true,
+  "individual_visa_applicability_determined": false,
+  "legal_review_completed": false,
+  "all_manual_issues_resolved": false,
+  "current_policy_fully_verified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

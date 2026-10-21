@@ -1,0 +1,18 @@
+{
+  "dataset_type": "west_manual_review_sheet_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "input_sha256": "4bb986ba36156642c52d8aaa6a5b14a752fe4db6349977a09c070d9449c83fee",
+  "issue_count": 25,
+  "similarity_candidate_count": 30,
+  "separate_task_count": 11,
+  "candidate_pairs_are_not_confirmed_duplicates": true,
+  "human_review_completed": false,
+  "issues_auto_resolved": 0,
+  "issues_auto_merged": 0,
+  "original_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

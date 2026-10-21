@@ -1,0 +1,20 @@
+{
+  "dataset_type": "west_remaining_fields_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "input_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "input_integrated_sha256": "a1e29f60f5e73af7946d72f85418af5e0cdb5cb5ec8a03f0fee6977869893ec7",
+  "remaining_fields_expected": 7,
+  "remaining_fields_with_evidence": 7,
+  "source_phrase_checks_passed": 31,
+  "fields_semantically_approved": 0,
+  "source_presence_verified": true,
+  "semantic_review_completed": false,
+  "current_policy_verified": false,
+  "original_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "8c13b18c8618a943d77ea4a25c1f07f997005effd42d2966414b35924a72aa50"
+}

@@ -1,0 +1,203 @@
+{
+  "dataset_type": "reviewed_program_information",
+  "country": "US",
+  "program_id": "US-WEST-01",
+  "program_name": "WEST (Work, English Study, Travel)",
+  "notice": {
+    "notice_number": "2026-15",
+    "period": "2026_first_half",
+    "historical_notice": true,
+    "current_application_status": "not_verified"
+  },
+  "programs": {
+    "short_term": {
+      "label": "단기 WEST",
+      "maximum_duration_months": 6,
+      "language_study_months": 2,
+      "internship_months": {
+        "min": 3,
+        "max": 4
+      },
+      "travel_months": 1,
+      "planned_selection_approx": 71,
+      "participation_fee_usd": 7045,
+      "evidence": {
+        "source_pdf": "data/raw/usa/employment/west/west_2026_first_half_notice.pdf",
+        "physical_pdf_page": 1,
+        "side": "right",
+        "printed_page": 2,
+        "subject": "programs_and_eligibility",
+        "review_basis": "user_supplied_official_page_image"
+      }
+    },
+    "mid_term": {
+      "label": "중기 WEST",
+      "maximum_duration_months": 12,
+      "language_study_months": 3,
+      "internship_months": {
+        "min": 6,
+        "max": 8
+      },
+      "travel_months": 1,
+      "planned_selection_approx": 35,
+      "participation_fee_usd": 8912,
+      "evidence": {
+        "source_pdf": "data/raw/usa/employment/west/west_2026_first_half_notice.pdf",
+        "physical_pdf_page": 1,
+        "side": "right",
+        "printed_page": 2,
+        "subject": "programs_and_eligibility",
+        "review_basis": "user_supplied_official_page_image"
+      }
+    },
+    "duplicate_application_prohibited": true
+  },
+  "eligibility": {
+    "nationality_text": "대한민국 국적 소지자",
+    "visa_condition_text": "미국 비자 발급에 결격사유가 없는 자",
+    "student_status_text": "지원 시점 기준 4년제 대학 4학기 이상 또는 전문대학 2학기 이상 이수한 재·휴학생",
+    "recent_graduate_text": "어학연수 시작일 기준 최근 1년 이내 졸업생 (본 회차 2025년 8월·2026년 2월 졸업자)",
+    "university_recommendation_text": "소속 대학의 지원자 추천 공문",
+    "english_scores": {
+      "group_relationship_in_notice": "① 그룹과 ② 그룹을 모두 충족. 그룹 안에서는 제시된 시험 중 하나 충족.",
+      "short_term": {
+        "group_1": {
+          "TOEIC_min": 800,
+          "GTELP_Level2_min": 76
+        },
+        "group_2": {
+          "OPIc_min": "IM2",
+          "TOEIC_Speaking_min": "IM2",
+          "GTELP_Speaking_min_level": 6
+        }
+      },
+      "mid_term": {
+        "group_1": {
+          "TOEIC_min": 750,
+          "GTELP_Level2_min": 70
+        },
+        "group_2": {
+          "OPIc_min": "IM1",
+          "TOEIC_Speaking_min": "IM1",
+          "GTELP_Speaking_min_level": 7
+        }
+      }
+    },
+    "restrictions_in_notice": [
+      "복수 국적자",
+      "외국 소재 대학(교) 학생",
+      "WEST 프로그램 기 참가자",
+      "WEST 기 지원자 중 참가비 납부 마감 이후 포기자"
+    ],
+    "evidence": {
+      "source_pdf": "data/raw/usa/employment/west/west_2026_first_half_notice.pdf",
+      "physical_pdf_page": 1,
+      "side": "right",
+      "printed_page": 2,
+      "subject": "programs_and_eligibility",
+      "review_basis": "user_supplied_official_page_image"
+    },
+    "rule_interpretation_status": "not_approved"
+  },
+  "application": {
+    "opening_date": "2026-02-11",
+    "deadline_local": "2026-03-18T17:00:00",
+    "online_portal": "www.worldjob.or.kr",
+    "university_submission_required_in_notice": true,
+    "evidence": {
+      "source_pdf": "data/raw/usa/employment/west/west_2026_first_half_notice.pdf",
+      "physical_pdf_page": 2,
+      "side": "right",
+      "printed_page": 4,
+      "subject": "application_and_documents",
+      "review_basis": "user_supplied_official_page_image"
+    }
+  },
+  "documents": {
+    "common_list_in_notice": [
+      "WEST 온라인 지원서 및 자기소개서 출력물",
+      "해당 학적 증명서",
+      "전 학년 성적증명서",
+      "공인영어성적증명서"
+    ],
+    "conditional_items": [
+      {
+        "item": "취업취약계층 증빙자료",
+        "condition": "해당자"
+      },
+      {
+        "item": "지원구간 증빙자료",
+        "condition": "졸업생"
+      }
+    ],
+    "other_submission_details_require_review": true,
+    "evidence": {
+      "source_pdf": "data/raw/usa/employment/west/west_2026_first_half_notice.pdf",
+      "physical_pdf_page": 2,
+      "side": "right",
+      "printed_page": 4,
+      "subject": "application_and_documents",
+      "review_basis": "user_supplied_official_page_image"
+    }
+  },
+  "short_term_financial_support": {
+    "base_participation_fee_usd": 7045,
+    "round_trip_airfare_support_krw": 2000000,
+    "notice_exchange_rate_krw_per_usd": 1472,
+    "brackets": [
+      {
+        "label": "기초·차상위~5구간",
+        "fee_government_usd": 7045,
+        "fee_self_usd": 0,
+        "living_support_usd": 8400,
+        "maximum_total_support_1000krw": 24735
+      },
+      {
+        "label": "6~7구간",
+        "fee_government_usd": 3523,
+        "fee_self_usd": 3522,
+        "living_support_usd": 4200,
+        "maximum_total_support_1000krw": 13368
+      },
+      {
+        "label": "8~9구간",
+        "fee_government_usd": 2466,
+        "fee_self_usd": 4579,
+        "living_support_usd": 4200,
+        "maximum_total_support_1000krw": 11812
+      },
+      {
+        "label": "소득 10분위",
+        "fee_government_usd": 1761,
+        "fee_self_usd": 5284,
+        "living_support_usd": 2100,
+        "maximum_total_support_1000krw": 7684
+      }
+    ],
+    "amounts_are_historical_notice_values": true,
+    "evidence": {
+      "source_pdf": "data/raw/usa/employment/west/west_2026_first_half_notice.pdf",
+      "physical_pdf_page": 3,
+      "side": "right",
+      "printed_page": 6,
+      "subject": "fees_and_financial_support",
+      "review_basis": "user_supplied_official_page_image"
+    }
+  },
+  "mid_term_financial_support": {
+    "participation_fee_usd": 8912,
+    "bracket_table_status": "not_reviewed",
+    "brackets": null
+  },
+  "reviewed_printed_pages": [
+    2,
+    4,
+    6
+  ],
+  "remaining_pages_require_review": true,
+  "table_review_status": "reviewed_for_listed_fields_only",
+  "validation_status": "partially_reviewed",
+  "automatic_eligibility_rules_enabled": false,
+  "recommendation_rules_enabled": false,
+  "embedding_generated": false
+}

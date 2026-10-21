@@ -1,0 +1,103 @@
+{
+  "dataset_type": "official_source_content",
+  "country": "US",
+  "program_id": "US-EM-02",
+  "route_id": "US-EM",
+  "official_program_name": "Intern",
+  "visa_classification": "J-1",
+  "source": {
+    "source_url": "https://j1visa.state.gov/programs/intern/",
+    "snapshot_path": "data/raw/usa/source_snapshots/aec3af4c6ee43783.html",
+    "snapshot_sha256": "a571960556b62516af3a0a356e115b98af1f4f31d9bc3879cb06a64e718b2ccd",
+    "html_title": "BridgeUSAPrograms | BridgeUSA"
+  },
+  "expected_page_heading": "Intern",
+  "sections": [
+    {
+      "heading": "Intern",
+      "heading_tag": "h1",
+      "raw_text": "Intern Internship programs are designed to allow foreign college and university students or recent graduates to come to the United States to gain exposure to U.S. culture and to receive hands-on experience in U.S. business practices in their chosen occupational field. Tweet get_facebook_share()? tab 1",
+      "text_length": 302
+    },
+    {
+      "heading": "Participants",
+      "heading_tag": "h2",
+      "raw_text": "Participants",
+      "text_length": 12
+    },
+    {
+      "heading": "Interns must be foreign nationals:",
+      "heading_tag": "h3",
+      "raw_text": "Interns must be foreign nationals: Who are currently enrolled in and pursuing studies at a foreign degree- or certificate-granting post-secondary academic institution outside the United States; or Who have graduated from such an institution no more than 12 months prior to their exchange visitor program start date.",
+      "text_length": 315
+    },
+    {
+      "heading": "Benefits",
+      "heading_tag": "h3",
+      "raw_text": "Benefits Practical Experience: The program bridges the gap between formal education and practical work experience.",
+      "text_length": 114
+    },
+    {
+      "heading": "More information",
+      "heading_tag": "h3",
+      "raw_text": "More information",
+      "text_length": 16
+    },
+    {
+      "heading": "Limitations/Exceptions for Intern work environment",
+      "heading_tag": "h4",
+      "raw_text": "Limitations/Exceptions for Intern work environment Interns cannot work in unskilled or casual labor positions, in positions that require or involve childcare or elder care or in any kind of position that involves medical patient care or contact. Nor can interns work in positions that require more than 20 percent clerical or office support work.",
+      "text_length": 346
+    },
+    {
+      "heading": "Internships are offered in the following occupational categories:",
+      "heading_tag": "h4",
+      "raw_text": "Internships are offered in the following occupational categories: Agriculture, Forestry and Fishing; Arts and Culture; Construction and Building Trades; Education, Social Sciences, Library Science, Counseling and Social Services; Health Related Occupations; Hospitality and Tourism; Information Media and Communications; Management, Business, Commerce and Finance; Public Administration and Law; and The Sciences, Engineering, Architecture, Mathematics and Industrial Occupations.",
+      "text_length": 480
+    },
+    {
+      "heading": "Early Career STEM Research Initiative",
+      "heading_tag": "h3",
+      "raw_text": "Early Career STEM Research Initiative This research initiative seeks to support an increase in science, technology, engineering, and mathematics (STEM) students, professionals, and exchange visitors on educational and cultural exchange programs in the United States. READ MORE . featured experience component Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?wdt_column_filter[1]=Intern&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions end featured experience component end tab 1 tab 2",
+      "text_length": 627
+    },
+    {
+      "heading": "Program Sponsors",
+      "heading_tag": "h2",
+      "raw_text": "Program Sponsors",
+      "text_length": 16
+    },
+    {
+      "heading": "Sponsors are required to:",
+      "heading_tag": "h3",
+      "raw_text": "Sponsors are required to: Conduct site visits of host organizations that: Have not previously participated successfully in the sponsor’s program; Have fewer than 25 employees; and Have less than $3 million in annual revenue. Collect the following information from all host organizations: Employer Identification Number (EIN); Verification of telephone number, address, brochures, website, etc.; and Proof of Worker’s Compensation Insurance Policy.",
+      "text_length": 447
+    },
+    {
+      "heading": "Sponsors must ensure the following:",
+      "heading_tag": "h3",
+      "raw_text": "Sponsors must ensure the following: Participants in programs that exceed six months must be evaluated at midpoint and at the conclusion of the program; and For programs with durations of less than six months, an evaluation is required at the conclusion of the program. All evaluations must be received by the sponsoring organization prior to the end of the participant’s exchange program and must be signed by both the participant and his or her immediate supervisor. Program Resources Common Questions SEVIS Information end tab 2 tab 3",
+      "text_length": 536
+    },
+    {
+      "heading": "Employers",
+      "heading_tag": "h3",
+      "raw_text": "Employers",
+      "text_length": 9
+    },
+    {
+      "heading": "Hosts are required to:",
+      "heading_tag": "h3",
+      "raw_text": "Hosts are required to: Sign a completed Form DS–7002 – Training/Internship Placement Plan (T/IPP) to verify that all placements are appropriate and consistent with the objectives of the interns as outlined in their program applications and as set forth in their T/IPPs. All parties involved in internship programs should recognize that interns are seeking entry-level training and experience. Accordingly, all placements must be tailored to the skills and experience level of the individual intern; Notify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs and contact sponsors immediately in the event of any emergency involving trainees or interns; Abide by all federal, state and local occupational health and safety laws; Abide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations; Have sufficient resources, plant, equipment and trained personnel available; Provide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and Ensure that interns obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances. Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?program=Intern&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions featured host experience component “They’re bright, they’re energetic and they’re highly motivated.” Alliance for International Educational and Cultural Exchange, Intern featured host experience component end tab 3 Visa Basics Facts & Figures About J-2 Visa Other U.S. Student Visas Common Questions Participants How to Apply Current Participants Participant Experiences Common Questions for Participants TODO: fix link Videos Program Sponsors Become a Sponsor Current Sponsors How to Administer a Program Common Questions for Program Sponsors TODO: fix link Host Families/Employers For Host Families For Employers For Schools Common Questions for Host Families/Employers TODO: fix link Programs Resources RO-ARO Virtual Training SEVIS login <li><a href=\"/wp-content/uploads/2016/10/Temp_User_6.29.pdf\" target=\"_blank\" title=\"Download the SEVIS Manual\">SEVIS Manual (PDF)</a></li> SEVIS Manuals SEVIS Training Videos DS-2019 Regulations and Compliance Administration Contacts About Us Get Adobe Reader U.S. Department of State <li><a href=\"http://exchanges.state.gov/\" title=\"View the Homepage for the Bureau of Educational & Cultural Affairs\">Bureau of Educational &amp; Cultural Affairs</a></li> Bureau of Educational and Cultural Affairs FOIA Privacy Notice Copyright Information Facebook Twitter Instagram Flickr <script src=\"/wp-content/themes/j1visa/js/libs/jquery-1.6.1.min.js\"></script> [if lt IE 7 ]> <script src='/wp-content/themes/j1visa/js/libs/DD_belatedPNG_0.0.8a-min.js'></script> <script> DD_belatedPNG.fix('img, #container, .arrow, .button span '); </script> <![endif]",
+      "text_length": 3243
+    }
+  ],
+  "extracted_text": "Intern Intern Internship programs are designed to allow foreign college and university students or recent graduates to come to the United States to gain exposure to U.S. culture and to receive hands-on experience in U.S. business practices in their chosen occupational field. Tweet get_facebook_share()? tab 1 Participants Participants Interns must be foreign nationals: Interns must be foreign nationals: Who are currently enrolled in and pursuing studies at a foreign degree- or certificate-granting post-secondary academic institution outside the United States; or Who have graduated from such an institution no more than 12 months prior to their exchange visitor program start date. Benefits Benefits Practical Experience: The program bridges the gap between formal education and practical work experience. More information More information Limitations/Exceptions for Intern work environment Limitations/Exceptions for Intern work environment Interns cannot work in unskilled or casual labor positions, in positions that require or involve childcare or elder care or in any kind of position that involves medical patient care or contact. Nor can interns work in positions that require more than 20 percent clerical or office support work. Internships are offered in the following occupational categories: Internships are offered in the following occupational categories: Agriculture, Forestry and Fishing; Arts and Culture; Construction and Building Trades; Education, Social Sciences, Library Science, Counseling and Social Services; Health Related Occupations; Hospitality and Tourism; Information Media and Communications; Management, Business, Commerce and Finance; Public Administration and Law; and The Sciences, Engineering, Architecture, Mathematics and Industrial Occupations. Early Career STEM Research Initiative Early Career STEM Research Initiative This research initiative seeks to support an increase in science, technology, engineering, and mathematics (STEM) students, professionals, and exchange visitors on educational and cultural exchange programs in the United States. READ MORE . featured experience component Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?wdt_column_filter[1]=Intern&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions end featured experience component end tab 1 tab 2 Program Sponsors Program Sponsors Sponsors are required to: Sponsors are required to: Conduct site visits of host organizations that: Have not previously participated successfully in the sponsor’s program; Have fewer than 25 employees; and Have less than $3 million in annual revenue. Collect the following information from all host organizations: Employer Identification Number (EIN); Verification of telephone number, address, brochures, website, etc.; and Proof of Worker’s Compensation Insurance Policy. Sponsors must ensure the following: Sponsors must ensure the following: Participants in programs that exceed six months must be evaluated at midpoint and at the conclusion of the program; and For programs with durations of less than six months, an evaluation is required at the conclusion of the program. All evaluations must be received by the sponsoring organization prior to the end of the participant’s exchange program and must be signed by both the participant and his or her immediate supervisor. Program Resources Common Questions SEVIS Information end tab 2 tab 3 Employers Employers Hosts are required to: Hosts are required to: Sign a completed Form DS–7002 – Training/Internship Placement Plan (T/IPP) to verify that all placements are appropriate and consistent with the objectives of the interns as outlined in their program applications and as set forth in their T/IPPs. All parties involved in internship programs should recognize that interns are seeking entry-level training and experience. Accordingly, all placements must be tailored to the skills and experience level of the individual intern; Notify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs and contact sponsors immediately in the event of any emergency involving trainees or interns; Abide by all federal, state and local occupational health and safety laws; Abide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations; Have sufficient resources, plant, equipment and trained personnel available; Provide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and Ensure that interns obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances. Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?program=Intern&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions featured host experience component “They’re bright, they’re energetic and they’re highly motivated.” Alliance for International Educational and Cultural Exchange, Intern featured host experience component end tab 3 Visa Basics Facts & Figures About J-2 Visa Other U.S. Student Visas Common Questions Participants How to Apply Current Participants Participant Experiences Common Questions for Participants TODO: fix link Videos Program Sponsors Become a Sponsor Current Sponsors How to Administer a Program Common Questions for Program Sponsors TODO: fix link Host Families/Employers For Host Families For Employers For Schools Common Questions for Host Families/Employers TODO: fix link Programs Resources RO-ARO Virtual Training SEVIS login <li><a href=\"/wp-content/uploads/2016/10/Temp_User_6.29.pdf\" target=\"_blank\" title=\"Download the SEVIS Manual\">SEVIS Manual (PDF)</a></li> SEVIS Manuals SEVIS Training Videos DS-2019 Regulations and Compliance Administration Contacts About Us Get Adobe Reader U.S. Department of State <li><a href=\"http://exchanges.state.gov/\" title=\"View the Homepage for the Bureau of Educational & Cultural Affairs\">Bureau of Educational &amp; Cultural Affairs</a></li> Bureau of Educational and Cultural Affairs FOIA Privacy Notice Copyright Information Facebook Twitter Instagram Flickr <script src=\"/wp-content/themes/j1visa/js/libs/jquery-1.6.1.min.js\"></script> [if lt IE 7 ]> <script src='/wp-content/themes/j1visa/js/libs/DD_belatedPNG_0.0.8a-min.js'></script> <script> DD_belatedPNG.fix('img, #container, .arrow, .button span '); </script> <![endif]",
+  "attachment_candidates": [],
+  "attachment_downloaded": false,
+  "extraction_method": "html_heading_and_text_nodes",
+  "content_scope": "extracted_sections_require_review",
+  "validation_status": "needs_review",
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false
+}

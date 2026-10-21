@@ -1,0 +1,22 @@
+{
+  "dataset_type": "west_kosaf_evidence_consolidated_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "input_sha256": {
+    "comparison": "8ed7ff07eb016e8277d90a203f80b935c1fe201ea00c429d7571cea444c7b1f6",
+    "body": "cd16ef6380a4e654c538db5e666e31b2f14fb5e750735a63ccadc6d765466f98",
+    "body_audit": "6c2ce0e34bbcc2257a02e3d0a99cb8135fbb5ee9f78aebd6f10f87df2c16e648"
+  },
+  "task_count": 7,
+  "tasks_with_all_phrases_located": 7,
+  "required_phrase_total": 14,
+  "located_phrase_total": 14,
+  "policy_claims_finally_approved": 0,
+  "issues_automatically_resolved": 0,
+  "input_files_modified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "493303f6d362924978d7fb2f3d17186f1a6056a098114b099244d4ac3faa4787"
+}

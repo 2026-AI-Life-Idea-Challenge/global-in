@@ -1,0 +1,17 @@
+{
+  "dataset_type": "west_kosaf_cross01_correction_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "input_previous_sha256": "2c51793be4586e96319950f5921f52c76350d3461ea5cef3382f098e89454e80",
+  "input_notice_sha256": "04cb641e65dad90db4e559f5d2f3d68870b38cb7d1f27e8f4f23df4d9e512d59",
+  "required_phrase_count": 2,
+  "phrases_found": 2,
+  "body_extraction_issue_confirmed": true,
+  "previous_files_modified": false,
+  "policy_claims_automatically_approved": 0,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "72f16ea75513e9138012c17a42de9f5a8d25201bcfc712f41fbf717bcbf70b85"
+}

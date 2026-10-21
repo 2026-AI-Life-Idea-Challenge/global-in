@@ -1,0 +1,22 @@
+{
+  "dataset_type": "west_pdf_source_findings_audit",
+  "program_id": "US-WEST-01",
+  "notice_period": "2026_second_half",
+  "input_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "input_registry_sha256": "4bb986ba36156642c52d8aaa6a5b14a752fe4db6349977a09c070d9449c83fee",
+  "printed_pages_checked": [
+    9,
+    11,
+    14,
+    19,
+    20
+  ],
+  "source_phrase_checks_passed": 18,
+  "findings_recorded": 3,
+  "manual_source_review_required": true,
+  "original_files_modified": false,
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "result_sha256": "76aff3a860078f75bc5cf5ac26865f481fdcf69a6f20183c71648994a9b41601"
+}

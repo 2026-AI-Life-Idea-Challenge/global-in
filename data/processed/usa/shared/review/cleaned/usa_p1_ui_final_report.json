@@ -1,0 +1,33 @@
+{
+  "dataset_type": "usa_p1_ui_cleaning_final",
+  "country": "US",
+  "total_chunks": 103,
+  "changed_candidate_count": 5,
+  "unchanged_count": 98,
+  "step_64_28_safe_suffix_count": 3,
+  "step_64_29_boundary_count": 2,
+  "status_counts": {
+    "reviewed_ui_boundary_candidate": 2,
+    "safe_suffix_removed": 3,
+    "unchanged": 98
+  },
+  "changed_chunk_ids": [
+    "US-EM-02-SECTION-011-C001",
+    "US-EM-03-SECTION-011-C001",
+    "US-EM-03-SECTION-013-C001",
+    "US-ST-03-SECTION-009-C001",
+    "US-WH-01-SECTION-019-C001"
+  ],
+  "original_cleaning_file_sha256": "28e48ffd4ec0a292514801a5a3c3f474c7a699f85aad3f39d50de75d2aad534d",
+  "previous_report_sha256": "b94d8819e2332f4ace306f8fb2a17217e867ea096fb408c556859cf153109ac4",
+  "output_sha256": "1cf77cfa6b0c14e6da3c08eb5501bc751c50d6dbd9b19b79a37f674da0817275",
+  "originals_preserved": true,
+  "removed_ui_text_preserved": true,
+  "policy_meaning_verified": false,
+  "current_policy_verified": false,
+  "human_review_completed": false,
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "validation_status": "needs_review"
+}

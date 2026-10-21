@@ -1,0 +1,107 @@
+
+{
+  "dataset_type": "h1b_fee_reference_draft",
+  "country": "US",
+  "internal_program_id": "US-EM-01",
+  "team_reference_program_id": "US-WK-01",
+  "route_id": "US-WK",
+  "official_source": {
+    "title": "Form G-1055 Fee Schedule",
+    "agency": "USCIS",
+    "edition_date": "2026-10-16",
+    "url": "https://www.uscis.gov/sites/default/files/document/forms/g-1055.pdf",
+    "local_path": "data/raw/usa/employment/h1b_specialty_occupations/g1055_fee_schedule_review.pdf",
+    "sha256": "98f1d64180e46a44f8734f9060d960d7aae3d40b654b99b063238c8fa07476c3",
+    "pdf_pages": 60,
+    "source_type": "official_fee_schedule",
+    "verified_from_local_pdf": true
+  },
+  "fee_records": [
+    {
+      "fee_code": "H1B_I129_BASE",
+      "description": "Form I-129 H-1B basic filing fee",
+      "currency": "USD",
+      "pdf_page": 36,
+      "amounts": {
+        "regular_paper": 780,
+        "regular_online": 730,
+        "small_employer_or_nonprofit_paper": 460,
+        "small_employer_or_nonprofit_online": 460
+      },
+      "additional_fees_may_apply": true,
+      "review_status": "needs_review"
+    },
+    {
+      "fee_code": "H1B_ASYLUM_PROGRAM",
+      "description": "Asylum Program Fee",
+      "currency": "USD",
+      "pdf_page": 37,
+      "amounts": {
+        "regular_petitioner": 600,
+        "small_employer": 300,
+        "nonprofit": 0
+      },
+      "review_status": "needs_review"
+    },
+    {
+      "fee_code": "H1B_FRAUD_PREVENTION",
+      "description": "Fraud Prevention and Detection Fee",
+      "currency": "USD",
+      "pdf_page": 37,
+      "amount_usd": 500,
+      "application_note": "Applies to specified initial approval and change-of-petitioner filings. H-1B1 exemption is separately stated.",
+      "review_status": "needs_review"
+    },
+    {
+      "fee_code": "H1B_PUB_L_114_113",
+      "description": "Additional fee for certain H-1B-dependent petitioners",
+      "currency": "USD",
+      "pdf_page": 37,
+      "amount_usd": 4000,
+      "conditions": {
+        "us_employee_count_at_least": 50,
+        "h1b_l1_employee_percent_greater_than": 50,
+        "petition_filed_on_or_before": "2027-09-30"
+      },
+      "exceptions_and_filing_type_require_review": true,
+      "review_status": "needs_review"
+    },
+    {
+        "fee_code": "H1B_ACWIA",
+        "description": "American Competitiveness and Workforce Improvement Act Fee",
+        "currency": "USD",
+        "pdf_page": 37,
+        "possible_amounts_usd": [750, 1500],
+        "employee_count_basis": "U.S. full-time equivalent employees, including affiliates and subsidiaries",
+        "amount_by_employee_count": {
+            "25_or_fewer": 750,
+            "26_or_more": 1500
+        },
+        "statutory_exemption_possible": true,
+        "application_note": "Employer size determines the ordinary fee tier. Statutory exemptions must be reviewed separately.",
+        "review_status": "needs_review"
+    },
+    {
+        "fee_code": "H1B_PROCLAMATION_PAYMENT",
+        "description": "Presidential Proclamation special payment",
+        "currency": "USD",
+        "pdf_page": 38,
+        "listed_amount_usd": 100000,
+        "source_conflict": "The fee remains listed in the 2026-10-16 G-1055, while captured USCIS guidance reports a court order vacating implementing guidance.",
+        "current_collection_status": "requires_current_legal_verification",
+        "approved_for_fee_calculation": false,
+        "review_status": "needs_review"
+    }
+
+  ],
+  "registration_fee_recorded_separately": true,
+  "registration_fee_reference": "h1b_policy_review_2026_draft.json",
+  "total_fee_calculation_verified": false,
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "automatic_fee_calculation_enabled": false,
+  "original_evidence_modified": false,
+  "retrieval_chunks_modified": false
+}

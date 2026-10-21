@@ -1,0 +1,20 @@
+{
+  "dataset_type": "west_2026_h2_logical_split_candidates",
+  "source_pdf_sha256": "d04abdc458ad0a4a1f18196c9fdcb05f4ba39821183e0d77aaa5fa5f129a80e2",
+  "source_layout_sha256": "ead02ad262ae41373019e0b3481782c780814ce28e4db0ce3ce2a6062a82411f",
+  "physical_pdf_pages": 11,
+  "logical_page_candidates": 22,
+  "original_text_blocks": 578,
+  "assigned_text_blocks": 578,
+  "center_crossing_block_ids": [],
+  "unassigned_block_ids": [],
+  "candidate_file_sha256": "bf9dc2eda84f002e862fd3019569fa60c5f82f4e24992eeff4dd4bff8d6b1aa2",
+  "logical_page_mapping_verified": false,
+  "reading_order_verified": false,
+  "table_cell_alignment_verified": false,
+  "human_visual_review_status": "pending",
+  "semantic_review_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false
+}

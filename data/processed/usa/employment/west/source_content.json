@@ -1,0 +1,60 @@
+{
+  "dataset_type": "official_source_content",
+  "country": "US",
+  "program_id": "US-WEST-01",
+  "route_id": "US-EM",
+  "official_program_name": "WEST (Work, English Study, Travel)",
+  "visa_classification": "J-1 (program-associated)",
+  "source": {
+    "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+    "snapshot_path": "data/raw/usa/source_snapshots/9ec35094c23a6475.html",
+    "snapshot_sha256": "6b54a77e5c55f1f10efb305bbe7567b94d55c6abffe649d085f3e43413611847",
+    "html_title": "소식 > 공지사항 상세 | 국립국제교육원"
+  },
+  "expected_page_heading": "2026년 상반기 WEST 참가자 모집 공고",
+  "sections": [
+    {
+      "heading": "2026년 상반기 WEST 참가자 모집 공고",
+      "heading_tag": "h3",
+      "raw_text": "2026년 상반기 WEST 참가자 모집 공고 작성자 사이트관리자 조회수 9790 작성일 2026-02-11 2026년 상반기 WEST 참가자 모집 공고문.pdf [1.6MB] 다운로드 미리보기 2026년 상반기 WEST 참가자 모집 포스터.jpg [2.3MB] 다운로드 [국립국제교육원 공고 제2026–15호] 국립국제교육원은 글로벌 감각을 갖춘 핵심인재를 양성하고자 어학연수와 다양한 미국 인턴십 기회를 제공하는『한‧미 대학생 연수(WEST)』에 참가할 지원자를 아래와 같이 모집합니다. 2026년 2월 11일 국립국제교육원장 ​ ​ 이전글 2026년 한국 중국어과 대학생 중국연수 대상자 선발 2차 면접전형 합격자 발표 및 서류 업로드 안내 다음글 2026-2027 중국 정부초청 장학생 추천자 명단 공고 목록 satisfaction page manager info satisfaction form -//contents //inner //container <script type=\"module\" src=\"https://niied.han.kr/chat/js/user_chaticon-last.js\" crossorigin=\"anonymous\"></script>",
+      "text_length": 593
+    }
+  ],
+  "extracted_text": "2026년 상반기 WEST 참가자 모집 공고 2026년 상반기 WEST 참가자 모집 공고 작성자 사이트관리자 조회수 9790 작성일 2026-02-11 2026년 상반기 WEST 참가자 모집 공고문.pdf [1.6MB] 다운로드 미리보기 2026년 상반기 WEST 참가자 모집 포스터.jpg [2.3MB] 다운로드 [국립국제교육원 공고 제2026–15호] 국립국제교육원은 글로벌 감각을 갖춘 핵심인재를 양성하고자 어학연수와 다양한 미국 인턴십 기회를 제공하는『한‧미 대학생 연수(WEST)』에 참가할 지원자를 아래와 같이 모집합니다. 2026년 2월 11일 국립국제교육원장 ​ ​ 이전글 2026년 한국 중국어과 대학생 중국연수 대상자 선발 2차 면접전형 합격자 발표 및 서류 업로드 안내 다음글 2026-2027 중국 정부초청 장학생 추천자 명단 공고 목록 satisfaction page manager info satisfaction form -//contents //inner //container <script type=\"module\" src=\"https://niied.han.kr/chat/js/user_chaticon-last.js\" crossorigin=\"anonymous\"></script>",
+  "attachment_candidates": [
+    {
+      "element": "button",
+      "label": "다운로드",
+      "attributes": {
+        "onclick": "location.href='/web/main/file/download/uu/d38331d7144c4042b8069bfbbb7855da'"
+      },
+      "resolved_url_candidate": null,
+      "download_verified": false
+    },
+    {
+      "element": "a",
+      "label": "미리보기",
+      "attributes": {
+        "href": "https://www.niied.go.kr/convert/convert.jsp?type=3&file_id=d38331d7144c4042b8069bfbbb7855da",
+        "title": "새창 열림"
+      },
+      "resolved_url_candidate": "https://www.niied.go.kr/convert/convert.jsp?type=3&file_id=d38331d7144c4042b8069bfbbb7855da",
+      "download_verified": false
+    },
+    {
+      "element": "button",
+      "label": "다운로드",
+      "attributes": {
+        "onclick": "location.href='/web/main/file/download/uu/acb9d3e28673446d9eb8d1fefe3c29c3'"
+      },
+      "resolved_url_candidate": null,
+      "download_verified": false
+    }
+  ],
+  "attachment_downloaded": false,
+  "extraction_method": "html_heading_and_text_nodes",
+  "content_scope": "extracted_sections_require_review",
+  "validation_status": "needs_review",
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false
+}
