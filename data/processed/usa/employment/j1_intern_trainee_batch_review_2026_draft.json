@@ -1,0 +1,337 @@
+{
+  "dataset_type": "j1_intern_trainee_policy_batch_draft",
+  "created_at_utc": "2026-10-22T18:12:43.278208+00:00",
+  "programs": {
+    "j1_intern": {
+      "program_id": "US-EM-02",
+      "official_program_name": "Intern",
+      "total_source_sections": 13,
+      "selected_policy_count": 6,
+      "policy_records": [
+        {
+          "policy_id": "US-EM-02-POL-001",
+          "topic": "applicant_eligibility",
+          "summary_ko": "해외의 학위 또는 수료증을 수여하는 고등교육기관에서 현재 학업 중이거나, 교환방문 프로그램 시작 전 12개월 이내 해당 기관을 졸업한 외국인이 대상이다.",
+          "evidence_id": "US-EM-02-SECTION-003",
+          "source_heading": "Interns must be foreign nationals:",
+          "review_status": "needs_review",
+          "semantic_support_verified": false,
+          "legal_effect_verified": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false
+        },
+        {
+          "policy_id": "US-EM-02-POL-002",
+          "topic": "work_restrictions",
+          "summary_ko": "비숙련·임시 노동, 보육·노인 돌봄, 의료 환자 진료 또는 접촉을 수반하는 직무가 제한된다. 사무·행정 지원 업무 비중이 20%를 초과하는 직무도 허용되지 않는다.",
+          "evidence_id": "US-EM-02-SECTION-006",
+          "source_heading": "Limitations/Exceptions for Intern work environment",
+          "review_status": "needs_review",
+          "semantic_support_verified": false,
+          "legal_effect_verified": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false
+        },
+        {
+          "policy_id": "US-EM-02-POL-003",
+          "topic": "allowed_occupations",
+          "summary_ko": "농업, 예술, 건설, 교육, 보건 관련 직종, 관광, 정보통신, 경영·금융, 공공행정, 과학·공학 등 공식적으로 열거된 직종 분야에서 인턴십을 운영할 수 있다.",
+          "evidence_id": "US-EM-02-SECTION-007",
+          "source_heading": "Internships are offered in the following occupational categories:",
+          "review_status": "needs_review",
+          "semantic_support_verified": false,
+          "legal_effect_verified": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false
+        },
+        {
+          "policy_id": "US-EM-02-POL-004",
+          "topic": "sponsor_site_visit",
+          "summary_ko": "스폰서는 규정에서 정한 호스트 기관에 대해 현장 실사를 수행하고, 모든 호스트 기관의 EIN, 연락처·주소 등 확인 자료 및 산재보험 관련 증빙을 수집해야 한다. 현장 실사 적용 조건의 결합 관계는 추가 법률 검토가 필요하다.",
+          "evidence_id": "US-EM-02-SECTION-010",
+          "source_heading": "Sponsors are required to:",
+          "review_status": "needs_review",
+          "semantic_support_verified": false,
+          "legal_effect_verified": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false
+        },
+        {
+          "policy_id": "US-EM-02-POL-005",
+          "topic": "participant_evaluation",
+          "summary_ko": "프로그램 기간이 6개월을 초과하면 중간 및 최종 평가가 필요하고, 6개월 미만이면 최종 평가가 필요하다. 평가서에는 참가자와 직속 감독자의 서명이 요구된다.",
+          "evidence_id": "US-EM-02-SECTION-011",
+          "source_heading": "Sponsors must ensure the following:",
+          "review_status": "needs_review",
+          "semantic_support_verified": false,
+          "legal_effect_verified": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false
+        },
+        {
+          "policy_id": "US-EM-02-POL-006",
+          "topic": "host_obligations",
+          "summary_ko": "호스트는 DS-7002 훈련·인턴십 계획에 서명하고, 스폰서에 대한 변경·문제 보고, 안전 규정 준수, 현장 감독·멘토링 및 구조화된 학습 활동 제공 의무를 부담한다.",
+          "evidence_id": "US-EM-02-SECTION-013",
+          "source_heading": "Hosts are required to:",
+          "review_status": "needs_review",
+          "semantic_support_verified": false,
+          "legal_effect_verified": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false
+        }
+      ],
+      "evidence_records": [
+        {
+          "policy_id": "US-EM-02-POL-001",
+          "evidence_id": "US-EM-02-SECTION-003",
+          "heading": "Interns must be foreign nationals:",
+          "source_url": "https://j1visa.state.gov/programs/intern/",
+          "source_html_sha256": "a571960556b62516af3a0a356e115b98af1f4f31d9bc3879cb06a64e718b2ccd",
+          "source_text": "Interns must be foreign nationals: Who are currently enrolled in and pursuing studies at a foreign degree- or certificate-granting post-secondary academic institution outside the United States; or Who have graduated from such an institution no more than 12 months prior to their exchange visitor program start date.",
+          "source_text_sha256": "08cc919b9a8f74c09d9077d521fd6cfdff113923abd3baf635de3cb2e7b73b71",
+          "section_boundaries_verified": false
+        },
+        {
+          "policy_id": "US-EM-02-POL-002",
+          "evidence_id": "US-EM-02-SECTION-006",
+          "heading": "Limitations/Exceptions for Intern work environment",
+          "source_url": "https://j1visa.state.gov/programs/intern/",
+          "source_html_sha256": "a571960556b62516af3a0a356e115b98af1f4f31d9bc3879cb06a64e718b2ccd",
+          "source_text": "Limitations/Exceptions for Intern work environment Interns cannot work in unskilled or casual labor positions, in positions that require or involve childcare or elder care or in any kind of position that involves medical patient care or contact. Nor can interns work in positions that require more than 20 percent clerical or office support work.",
+          "source_text_sha256": "c59422f1a7a5f517a76e5e33195133c0903dc90cd48c87989d9bbbde8a240968",
+          "section_boundaries_verified": false
+        },
+        {
+          "policy_id": "US-EM-02-POL-003",
+          "evidence_id": "US-EM-02-SECTION-007",
+          "heading": "Internships are offered in the following occupational categories:",
+          "source_url": "https://j1visa.state.gov/programs/intern/",
+          "source_html_sha256": "a571960556b62516af3a0a356e115b98af1f4f31d9bc3879cb06a64e718b2ccd",
+          "source_text": "Internships are offered in the following occupational categories: Agriculture, Forestry and Fishing; Arts and Culture; Construction and Building Trades; Education, Social Sciences, Library Science, Counseling and Social Services; Health Related Occupations; Hospitality and Tourism; Information Media and Communications; Management, Business, Commerce and Finance; Public Administration and Law; and The Sciences, Engineering, Architecture, Mathematics and Industrial Occupations.",
+          "source_text_sha256": "c82c7458f34b9792811475f5bf1e7689007003f594e2c225f1ad761e504f9df0",
+          "section_boundaries_verified": false
+        },
+        {
+          "policy_id": "US-EM-02-POL-004",
+          "evidence_id": "US-EM-02-SECTION-010",
+          "heading": "Sponsors are required to:",
+          "source_url": "https://j1visa.state.gov/programs/intern/",
+          "source_html_sha256": "a571960556b62516af3a0a356e115b98af1f4f31d9bc3879cb06a64e718b2ccd",
+          "source_text": "Sponsors are required to: Conduct site visits of host organizations that: Have not previously participated successfully in the sponsor’s program; Have fewer than 25 employees; and Have less than $3 million in annual revenue. Collect the following information from all host organizations: Employer Identification Number (EIN); Verification of telephone number, address, brochures, website, etc.; and Proof of Worker’s Compensation Insurance Policy.",
+          "source_text_sha256": "7926f4e8c0113fc3b1b3d941a2666ead2cc081c26d0d3d5622bd7c6b609c4570",
+          "section_boundaries_verified": false
+        },
+        {
+          "policy_id": "US-EM-02-POL-005",
+          "evidence_id": "US-EM-02-SECTION-011",
+          "heading": "Sponsors must ensure the following:",
+          "source_url": "https://j1visa.state.gov/programs/intern/",
+          "source_html_sha256": "a571960556b62516af3a0a356e115b98af1f4f31d9bc3879cb06a64e718b2ccd",
+          "source_text": "Sponsors must ensure the following: Participants in programs that exceed six months must be evaluated at midpoint and at the conclusion of the program; and For programs with durations of less than six months, an evaluation is required at the conclusion of the program. All evaluations must be received by the sponsoring organization prior to the end of the participant’s exchange program and must be signed by both the participant and his or her immediate supervisor. Program Resources Common Questions SEVIS Information end tab 2 tab 3",
+          "source_text_sha256": "c51b3f411a326ee8fd4bef3313554ea642e2d2003828677a4fa9cb88b551377f",
+          "section_boundaries_verified": false
+        },
+        {
+          "policy_id": "US-EM-02-POL-006",
+          "evidence_id": "US-EM-02-SECTION-013",
+          "heading": "Hosts are required to:",
+          "source_url": "https://j1visa.state.gov/programs/intern/",
+          "source_html_sha256": "a571960556b62516af3a0a356e115b98af1f4f31d9bc3879cb06a64e718b2ccd",
+          "source_text": "Hosts are required to: Sign a completed Form DS–7002 – Training/Internship Placement Plan (T/IPP) to verify that all placements are appropriate and consistent with the objectives of the interns as outlined in their program applications and as set forth in their T/IPPs. All parties involved in internship programs should recognize that interns are seeking entry-level training and experience. Accordingly, all placements must be tailored to the skills and experience level of the individual intern; Notify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs and contact sponsors immediately in the event of any emergency involving trainees or interns; Abide by all federal, state and local occupational health and safety laws; Abide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations; Have sufficient resources, plant, equipment and trained personnel available; Provide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and Ensure that interns obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances. Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?program=Intern&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions featured host experience component “They’re bright, they’re energetic and they’re highly motivated.” Alliance for International Educational and Cultural Exchange, Intern featured host experience component end tab 3 Visa Basics Facts & Figures About J-2 Visa Other U.S. Student Visas Common Questions Participants How to Apply Current Participants Participant Experiences Common Questions for Participants TODO: fix link Videos Program Sponsors Become a Sponsor Current Sponsors How to Administer a Program Common Questions for Program Sponsors TODO: fix link Host Families/Employers For Host Families For Employers For Schools Common Questions for Host Families/Employers TODO: fix link Programs Resources RO-ARO Virtual Training SEVIS login <li><a href=\"/wp-content/uploads/2016/10/Temp_User_6.29.pdf\" target=\"_blank\" title=\"Download the SEVIS Manual\">SEVIS Manual (PDF)</a></li> SEVIS Manuals SEVIS Training Videos DS-2019 Regulations and Compliance Administration Contacts About Us Get Adobe Reader U.S. Department of State <li><a href=\"http://exchanges.state.gov/\" title=\"View the Homepage for the Bureau of Educational & Cultural Affairs\">Bureau of Educational &amp; Cultural Affairs</a></li> Bureau of Educational and Cultural Affairs FOIA Privacy Notice Copyright Information Facebook Twitter Instagram Flickr <script src=\"/wp-content/themes/j1visa/js/libs/jquery-1.6.1.min.js\"></script> [if lt IE 7 ]> <script src='/wp-content/themes/j1visa/js/libs/DD_belatedPNG_0.0.8a-min.js'></script> <script> DD_belatedPNG.fix('img, #container, .arrow, .button span '); </script> <![endif]",
+          "source_text_sha256": "9add92a07a85d75a1b52430894aafb66afbfa6441dee182c099984a02d2a45cc",
+          "section_boundaries_verified": false
+        }
+      ],
+      "section_boundaries_verified": false,
+      "eligibility_rules_verified": false,
+      "review_status": "needs_review",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false,
+      "automatic_eligibility_rules_enabled": false,
+      "embedding_generated": false
+    },
+    "j1_trainee": {
+      "program_id": "US-EM-03",
+      "official_program_name": "Trainee",
+      "total_source_sections": 13,
+      "selected_policy_count": 6,
+      "policy_records": [
+        {
+          "policy_id": "US-EM-03-POL-001",
+          "topic": "applicant_eligibility",
+          "summary_ko": "해외 고등교육기관의 학위 또는 전문자격과 관련 분야의 미국 외 경력 1년 이상을 보유하거나, 훈련 대상 분야에서 미국 외 경력 5년 이상을 보유해야 한다.",
+          "evidence_id": "US-EM-03-SECTION-003",
+          "source_heading": "A trainee must be a foreign national who:",
+          "review_status": "needs_review",
+          "semantic_support_verified": false,
+          "legal_effect_verified": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false
+        },
+        {
+          "policy_id": "US-EM-03-POL-002",
+          "topic": "work_restrictions",
+          "summary_ko": "비숙련·임시 노동, 돌봄, 환자 진료·접촉 업무 및 사무보조 20% 초과 직무가 제한된다. 일반 고용이나 기존 직원의 업무를 대체해서는 안 되며, 이전 경력·훈련을 그대로 반복하는 훈련도 허용되지 않는다.",
+          "evidence_id": "US-EM-03-SECTION-006",
+          "source_heading": "Limitations or Exceptions",
+          "review_status": "needs_review",
+          "semantic_support_verified": false,
+          "legal_effect_verified": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false
+        },
+        {
+          "policy_id": "US-EM-03-POL-003",
+          "topic": "allowed_occupations",
+          "summary_ko": "농업, 예술, 건설, 교육, 보건 관련 직종, 관광, 정보통신, 경영·금융, 공공행정, 과학·공학 등 공식적으로 열거된 분야에서 훈련 프로그램을 운영할 수 있다.",
+          "evidence_id": "US-EM-03-SECTION-007",
+          "source_heading": "Allowed Occupational Categories",
+          "review_status": "needs_review",
+          "semantic_support_verified": false,
+          "legal_effect_verified": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false
+        },
+        {
+          "policy_id": "US-EM-03-POL-004",
+          "topic": "sponsor_site_visit",
+          "summary_ko": "스폰서는 규정에서 정한 호스트 기관에 대해 현장 실사를 수행하고, 모든 호스트 기관의 EIN, 연락처·주소 등 확인 자료와 산재보험 또는 동등한 보험 증빙을 수집해야 한다. 현장 실사 적용 조건은 추가 검토가 필요하다.",
+          "evidence_id": "US-EM-03-SECTION-010",
+          "source_heading": "Sponsors are required to:",
+          "review_status": "needs_review",
+          "semantic_support_verified": false,
+          "legal_effect_verified": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false
+        },
+        {
+          "policy_id": "US-EM-03-POL-005",
+          "topic": "participant_evaluation",
+          "summary_ko": "6개월 초과 프로그램에는 중간·최종 평가, 6개월 미만 프로그램에는 최종 평가가 필요하다. 스폰서는 참가자의 선발·오리엔테이션·감독을 관리하고 주 32시간 이상의 전일제 훈련을 보장해야 한다.",
+          "evidence_id": "US-EM-03-SECTION-011",
+          "source_heading": "Sponsors must ensure the following for participants:",
+          "review_status": "needs_review",
+          "semantic_support_verified": false,
+          "legal_effect_verified": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false
+        },
+        {
+          "policy_id": "US-EM-03-POL-006",
+          "topic": "host_obligations",
+          "summary_ko": "호스트 기관은 DS-7002 서명, 스폰서에 대한 변경·문제 보고, 안전 규정 준수, 지속적인 현장 감독·멘토링 및 구조화된 훈련 제공 의무를 부담한다.",
+          "evidence_id": "US-EM-03-SECTION-013",
+          "source_heading": "Host Organizations are required to:",
+          "review_status": "needs_review",
+          "semantic_support_verified": false,
+          "legal_effect_verified": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false
+        }
+      ],
+      "evidence_records": [
+        {
+          "policy_id": "US-EM-03-POL-001",
+          "evidence_id": "US-EM-03-SECTION-003",
+          "heading": "A trainee must be a foreign national who:",
+          "source_url": "https://j1visa.state.gov/programs/trainee/",
+          "source_html_sha256": "8a7b1f64d83e63854aebe0f5033cefa39856d83102c01ae054e7e8565c213349",
+          "source_text": "A trainee must be a foreign national who: Has a degree or professional certificate from a foreign post-secondary academic institution and at least one year of prior related work experience in his or her occupational field outside the United States; or Has five years of work experience outside the United States in the occupational field in which they are seeking training",
+          "source_text_sha256": "b253baa925ef9168c41074a5fb8cb1e42a6758b0f6cdb3630a823b8bbec2669c",
+          "section_boundaries_verified": false
+        },
+        {
+          "policy_id": "US-EM-03-POL-002",
+          "evidence_id": "US-EM-03-SECTION-006",
+          "heading": "Limitations or Exceptions",
+          "source_url": "https://j1visa.state.gov/programs/trainee/",
+          "source_html_sha256": "8a7b1f64d83e63854aebe0f5033cefa39856d83102c01ae054e7e8565c213349",
+          "source_text": "Limitations or Exceptions Trainees cannot work in unskilled or casual labor positions, in positions that require or involve childcare or elder care, or in any kind of position that involves patient care or contact. Further, sponsors must not place trainees in positions that require more than 20 percent clerical or office support work. Use of the Exchange Visitor Program for ordinary employment or work purposes is strictly prohibited. Sponsors are not to place trainee participants in positions, which are filled or would be filled by full-time or part-time employees. Also, the training cannot duplicate a trainee participant’s prior work experience or training.",
+          "source_text_sha256": "08fda21f4243553a094558b3eab1e2b20b9d6fe506afd2c96a23994513b26757",
+          "section_boundaries_verified": false
+        },
+        {
+          "policy_id": "US-EM-03-POL-003",
+          "evidence_id": "US-EM-03-SECTION-007",
+          "heading": "Allowed Occupational Categories",
+          "source_url": "https://j1visa.state.gov/programs/trainee/",
+          "source_html_sha256": "8a7b1f64d83e63854aebe0f5033cefa39856d83102c01ae054e7e8565c213349",
+          "source_text": "Allowed Occupational Categories Agriculture, Forestry, and Fishing; Arts and Culture; Construction and Building Trades; Education, Social Sciences, Library Science, Counseling and Social Services; Health Related Occupations; Hospitality and Tourism; Information Media and Communications; Management, Business, Commerce and Finance; Public Administration and Law; and The Sciences, Engineering, Architecture, Mathematics and Industrial Occupations.",
+          "source_text_sha256": "4d1ee7ae7da98b15d0a6ef2583634597d44f0f149a4ab5de9b137fccc4b85436",
+          "section_boundaries_verified": false
+        },
+        {
+          "policy_id": "US-EM-03-POL-004",
+          "evidence_id": "US-EM-03-SECTION-010",
+          "heading": "Sponsors are required to:",
+          "source_url": "https://j1visa.state.gov/programs/trainee/",
+          "source_html_sha256": "8a7b1f64d83e63854aebe0f5033cefa39856d83102c01ae054e7e8565c213349",
+          "source_text": "Sponsors are required to: Conduct site visits of host organizations that: Have not previously participated successfully in the sponsor’s program; Have fewer than 25 employees; Have less than $3 million in annual revenue. Collect the following information from all host organizations: Employer Identification Number (EIN) Verification of telephone number, address, brochures, website, etc.; and Proof of worker’s compensation insurance policy or equivalent.",
+          "source_text_sha256": "40f609911959eb1b7853be4c6f0ec840305c53229dfc48e29c30d1dd4c77f568",
+          "section_boundaries_verified": false
+        },
+        {
+          "policy_id": "US-EM-03-POL-005",
+          "evidence_id": "US-EM-03-SECTION-011",
+          "heading": "Sponsors must ensure the following for participants:",
+          "source_url": "https://j1visa.state.gov/programs/trainee/",
+          "source_html_sha256": "8a7b1f64d83e63854aebe0f5033cefa39856d83102c01ae054e7e8565c213349",
+          "source_text": "Sponsors must ensure the following for participants: Participants in programs that exceed six months must be evaluated at mid-point and at the conclusion of the program; For programs with durations of less than six months, the participant must be evaluated at the conclusion of the program. All evaluations must be received by the sponsoring organization prior to the end of the participant’s exchange program and must be signed by both the participant and his or her immediate supervisor; Ensure that trainees are appropriately selected, oriented, supervised and evaluated; Be available to trainees to assist as facilitators and information resources; and Ensure that the training program is full-time (at least 32 hours a week). Program Resources Common Questions SEVIS Information end tab 2 tab 3",
+          "source_text_sha256": "c8b930e8e971dcbd1a407dbbf88b7280d9307bbb2e4bf846aedf3243c32aa073",
+          "section_boundaries_verified": false
+        },
+        {
+          "policy_id": "US-EM-03-POL-006",
+          "evidence_id": "US-EM-03-SECTION-013",
+          "heading": "Host Organizations are required to:",
+          "source_url": "https://j1visa.state.gov/programs/trainee/",
+          "source_html_sha256": "8a7b1f64d83e63854aebe0f5033cefa39856d83102c01ae054e7e8565c213349",
+          "source_text": "Host Organizations are required to: Sign a completed Form DS–7002 to verify that all placements are appropriate and consistent with the objectives of the trainees or interns as outlined in their program applications and as set forth in their T/IPPs; Notify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs; Contact sponsors immediately in the event of any emergency involving trainees or interns; Abide by all federal, state and local occupational health and safety laws; Abide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations; Have sufficient resources, plant, equipment and trained personnel available; Provide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and Ensure that trainees obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances. Program Resources <a class=\"button button-find\" title=\"View a list of sponsors for this program\" href=\"/participants/how-to-apply/sponsor-search/?program=Trainee&amp;state=any\"><span>Find a Program Sponsor</span></a> Find a Program Sponsor Common Questions end tab 3 Visa Basics Facts & Figures About J-2 Visa Other U.S. Student Visas Common Questions Participants How to Apply Current Participants Participant Experiences Common Questions for Participants TODO: fix link Videos Program Sponsors Become a Sponsor Current Sponsors How to Administer a Program Common Questions for Program Sponsors TODO: fix link Host Families/Employers For Host Families For Employers For Schools Common Questions for Host Families/Employers TODO: fix link Programs Resources RO-ARO Virtual Training SEVIS login <li><a href=\"/wp-content/uploads/2016/10/Temp_User_6.29.pdf\" target=\"_blank\" title=\"Download the SEVIS Manual\">SEVIS Manual (PDF)</a></li> SEVIS Manuals SEVIS Training Videos DS-2019 Regulations and Compliance Administration Contacts About Us Get Adobe Reader U.S. Department of State <li><a href=\"http://exchanges.state.gov/\" title=\"View the Homepage for the Bureau of Educational & Cultural Affairs\">Bureau of Educational &amp; Cultural Affairs</a></li> Bureau of Educational and Cultural Affairs FOIA Privacy Notice Copyright Information Facebook Twitter Instagram Flickr <script src=\"/wp-content/themes/j1visa/js/libs/jquery-1.6.1.min.js\"></script> [if lt IE 7 ]> <script src='/wp-content/themes/j1visa/js/libs/DD_belatedPNG_0.0.8a-min.js'></script> <script> DD_belatedPNG.fix('img, #container, .arrow, .button span '); </script> <![endif]",
+          "source_text_sha256": "31ca8b49c46ae5ca81b74acf9fc76a7772a93d9b1e7ee5b8e881fea69bed5f17",
+          "section_boundaries_verified": false
+        }
+      ],
+      "section_boundaries_verified": false,
+      "eligibility_rules_verified": false,
+      "review_status": "needs_review",
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false,
+      "automatic_eligibility_rules_enabled": false,
+      "embedding_generated": false
+    }
+  },
+  "comparison": {
+    "shared_topics": [
+      "work_restrictions",
+      "allowed_occupations",
+      "sponsor_site_visit",
+      "participant_evaluation",
+      "host_obligations"
+    ],
+    "distinct_applicant_eligibility": true,
+    "trainee_minimum_training_hours": 32,
+    "intern_minimum_training_hours_verified": false
+  },
+  "pending_review_items": [
+    "Official source section boundaries and navigation text",
+    "Current regulatory applicability",
+    "Program duration and category-specific exceptions",
+    "Sponsor designation and DS-2019 issuance",
+    "DS-7002 filing and training plan requirements",
+    "SEVIS, visa fees, and insurance requirements",
+    "J-2 dependents and INA 212(e), where applicable",
+    "Complete semantic and legal review"
+  ],
+  "source_section_hashes_verified": true,
+  "section_boundaries_verified": false,
+  "semantic_support_verified": false,
+  "legal_effect_verified": false,
+  "completeness_verified": false,
+  "automatic_exclusion_performed": false,
+  "review_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false
+}
