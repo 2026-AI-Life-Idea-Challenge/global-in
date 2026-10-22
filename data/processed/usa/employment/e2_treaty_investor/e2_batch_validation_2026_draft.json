@@ -1,0 +1,55 @@
+{
+  "program_id": "US-WK-02",
+  "internal_program_id": "US-EM-04",
+  "internal_id_status": "provisional_not_registered",
+  "policy_count": 14,
+  "evidence_count": 14,
+  "official_source_count": 5,
+  "summaries_completed": 14,
+  "newly_completed_policy_ids": [
+    "E2-02",
+    "E2-11",
+    "E2-12"
+  ],
+  "applicant_type_counts": {
+    "investor": 6,
+    "investor_or_employee": 6,
+    "employee": 1,
+    "dependent_spouse": 1
+  },
+  "evidence_sha256_checked": true,
+  "policy_evidence_linkage_checked": true,
+  "existing_source_integrity_previously_checked": true,
+  "current_source_integrity_rechecked": false,
+  "section_semantics_verified": false,
+  "eligibility_rules_verified": false,
+  "completeness_verified": false,
+  "pending_review_topics": [
+    "Detailed substantial investment evaluation",
+    "Employee nationality and enterprise ownership exceptions",
+    "Visa application fee and reciprocity",
+    "Visa validity versus authorized period of stay",
+    "Current DS-156E filing requirements",
+    "Comparison with team master report US-WK-02",
+    "Section-level source evidence linkage",
+    "Final legal and semantic review"
+  ],
+  "pending_review_items": [
+    "seoul_embassy_e2_application_procedure",
+    "e2_annual_numerical_cap",
+    "current_policy_and_fee_reverification",
+    "final_semantic_and_legal_review"
+  ],
+  "review_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false,
+  "notes": [
+    "Three blank policy summaries populated from existing evidence.",
+    "Korean E-2 reciprocity validity is not U.S. admission duration.",
+    "MRV application fee and reciprocity issuance fee are distinct.",
+    "Legal and semantic review remain pending.",
+    "Team program ID is not proof of internal registry approval."
+  ]
+}

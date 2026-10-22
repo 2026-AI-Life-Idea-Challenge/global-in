@@ -1,0 +1,37 @@
+{
+  "team_reference_program_id": "US-WK-02",
+  "internal_program_id": "US-EM-04",
+  "internal_id_status": "provisional_not_registered",
+  "policy_count": 14,
+  "evidence_count": 14,
+  "official_source_count": 5,
+  "revised_policy_ids": [
+    "E2-03",
+    "E2-06",
+    "E2-07",
+    "E2-10"
+  ],
+  "summaries_complete": true,
+  "evidence_sha256_verified": true,
+  "evidence_source_hash_links_verified": true,
+  "section_semantics_verified": false,
+  "legal_effect_verified": false,
+  "completeness_verified": false,
+  "review_method": "targeted_excerpt_alignment_and_integrity_check",
+  "pending_review_items": [
+    "Current legal effect and policy completeness",
+    "Detailed substantial investment evaluation",
+    "Employee nationality and enterprise ownership exceptions",
+    "Seoul embassy application procedure",
+    "DS-156E procedure and documentary exceptions",
+    "Fee and reciprocity re-verification at application time",
+    "Team master report US-WK-02 comparison",
+    "Internal program ID registry confirmation",
+    "Section-level evidence and semantic sign-off"
+  ],
+  "review_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false
+}

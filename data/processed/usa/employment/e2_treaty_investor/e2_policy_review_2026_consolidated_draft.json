@@ -1,0 +1,260 @@
+{
+  "dataset_type": "e2_treaty_investor_policy_review_draft",
+  "country": "US",
+  "route_id": "US-WK",
+  "team_reference_program_id": "US-WK-02",
+  "internal_program_id": "US-EM-04",
+  "internal_id_status": "provisional_not_registered",
+  "program_name": "E-2 Treaty Investor",
+  "reference_period": "2026-10",
+  "official_sources": [
+    {
+      "source_id": "DOS-E-VISA",
+      "agency": "U.S. Department of State",
+      "title": "Treaty Trader & Treaty Investor and Australians in Specialty Occupations",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/employment/treaty-trader-investor-visa-e.html",
+      "local_path": "data/raw/usa/employment/e2_treaty_investor/state_department_e_visa.html",
+      "sha256": "05fa40f8d948aea9db868883dbdd84ad6d56045d1d798e30f2f12f633976f682"
+    },
+    {
+      "source_id": "USCIS-E2",
+      "agency": "USCIS",
+      "title": "E-2 Treaty Investors",
+      "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/e-2-treaty-investors",
+      "local_path": "data/raw/usa/employment/e2_treaty_investor/uscis_e2_treaty_investors.html",
+      "sha256": "c5f7eff33deaa649afbf3ba581abd94cd8475496551d651c8a4230a9f7eb9edd"
+    },
+    {
+      "source_id": "DOS-TREATY",
+      "agency": "U.S. Department of State",
+      "title": "Treaty Countries",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees/treaty.html",
+      "local_path": "data/raw/usa/employment/e2_treaty_investor/state_department_treaty_countries.html",
+      "sha256": "0d4bf607739b9564d4f6bde241ff6c5cbc41cdcccd1662d3d92e409a5c7f833b"
+    },
+    {
+      "source_id": "DOS-KR-RECIPROCITY",
+      "agency": "U.S. Department of State",
+      "title": "South Korea Visa Reciprocity Schedule",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/Visa-Reciprocity-and-Civil-Documents-by-Country/KoreaSouth.html",
+      "local_path": "data/raw/usa/employment/e2_treaty_investor/state_department_south_korea_reciprocity.html",
+      "sha256": "d8046c6c8f12c54a41e3d9ae49c7165a00da67521581e602e411e3a3bd0a8cb1"
+    },
+    {
+      "source_id": "DOS-DS160-FAQ",
+      "agency": "U.S. Department of State",
+      "title": "DS-160 Frequently Asked Questions",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/forms/ds-160-online-nonimmigrant-visa-application/ds-160-faqs.html",
+      "local_path": "data/raw/usa/employment/e2_treaty_investor/state_department_ds160_faq.html",
+      "sha256": "4426c3453920a0af9b77b7f4f5406ba144c21e34319c76863a5ba5bb18c0ea0d"
+    }
+  ],
+  "policy_records": [
+    {
+      "policy_id": "E2-01",
+      "topic": "treaty_nationality",
+      "applicant_type": "investor",
+      "summary_ko": "신청자는 미국과 적격 조약 또는 협정 관계에 있는 국가의 국민이어야 한다.",
+      "source_ids": [
+        "USCIS-E2"
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-02",
+      "topic": "south_korea_treaty_status",
+      "applicant_type": "investor_or_employee",
+      "country": "Korea (South)",
+      "visa_classification": "E-2",
+      "treaty_effective_date": "1957-11-07",
+      "source_ids": [
+        "DOS-TREATY"
+      ],
+      "review_status": "needs_review",
+      "summary_ko": "대한민국은 미국의 E-2 조약 투자자 비자 대상 국가이다. 미국 국무부 조약국 목록에 따르면 대한민국의 E-2 조약 발효일은 1957년 11월 7일이다. 다만 조약국 국적만으로 비자 자격이 자동 충족되지는 않는다."
+    },
+    {
+      "policy_id": "E2-03",
+      "topic": "substantial_investment",
+      "applicant_type": "investor",
+      "summary_ko": "미국 내 적격 사업체에 상당한 규모의 자본을 투자했거나 적극적으로 투자하는 과정에 있어야 한다.",
+      "fixed_minimum_investment_usd": null,
+      "source_ids": [
+        "USCIS-E2",
+        "DOS-E-VISA"
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-04",
+      "topic": "investment_at_risk",
+      "applicant_type": "investor",
+      "summary_ko": "투자금은 실제 사업상 위험에 노출되어야 하며 사업 실패 시 일부 또는 전액 손실될 수 있어야 한다.",
+      "source_ids": [
+        "USCIS-E2"
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-05",
+      "topic": "ownership_or_operational_control",
+      "applicant_type": "investor",
+      "summary_ko": "사업체 지분 50% 이상 또는 경영직 등 기업 구조를 통한 실질적인 운영 통제권을 입증해야 한다.",
+      "minimum_ownership_percent_alternative": 50,
+      "operational_control_alternative": true,
+      "source_ids": [
+        "USCIS-E2"
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-06",
+      "topic": "bona_fide_enterprise",
+      "applicant_type": "investor",
+      "summary_ko": "사업체는 실제 운영되는 영리 목적의 사업이어야 하며 관련 법적 요건을 충족해야 한다.",
+      "source_ids": [
+        "USCIS-E2"
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-07",
+      "topic": "non_marginal_enterprise",
+      "applicant_type": "investor",
+      "summary_ko": "사업체는 투자자와 가족의 최소 생계유지만 가능한 한계적 사업에 그쳐서는 안 된다. 신규 사업의 미래 수익 가능성도 고려될 수 있다.",
+      "source_ids": [
+        "USCIS-E2"
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-08",
+      "topic": "employee_qualification",
+      "applicant_type": "employee",
+      "summary_ko": "E-2 직원은 고용주와 관련된 조약국 국적 요건을 충족하고 임원·관리 업무 또는 특별 자격 요건을 충족해야 한다.",
+      "source_ids": [
+        "USCIS-E2",
+        "DOS-E-VISA"
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-09",
+      "topic": "visa_application_documents",
+      "applicant_type": "investor_or_employee",
+      "summary_ko": "미국 국무부의 일반 안내에 따르면 E-2 투자자 본인은 DS-160만 작성하며, E-2 임원·관리자·필수기술 직원은 DS-160과 DS-156E를 작성해야 한다. 현지 공관의 추가 제출서류는 별도 확인이 필요하다.",
+      "application_form_rules": {
+        "e2_principal_investor": {
+          "ds160_required": true,
+          "ds156e_required_under_general_dos_faq": false
+        },
+        "e2_executive_manager_essential_employee": {
+          "ds160_required": true,
+          "ds156e_required": true
+        }
+      },
+      "embassy_specific_requirements_verified": false,
+      "source_ids": [
+        "DOS-E-VISA",
+        "DOS-DS160-FAQ"
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-10",
+      "topic": "period_of_stay",
+      "applicant_type": "investor_or_employee",
+      "summary_ko": "적격 E-2 투자자 및 직원의 최초 미국 내 체류 허가기간은 최대 2년이며 연장은 최대 2년 단위로 가능하다.",
+      "maximum_initial_stay_years": 2,
+      "extension_increment_years": 2,
+      "visa_validity_same_as_stay": false,
+      "source_ids": [
+        "USCIS-E2"
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-11",
+      "topic": "south_korea_e2_visa_reciprocity",
+      "applicant_type": "investor_or_employee",
+      "nationality": "Korea (South)",
+      "visa_classification": "E-2",
+      "reciprocity_issuance_fee_usd": 0,
+      "number_of_entries": "multiple",
+      "visa_validity_months": 60,
+      "footnote_number": "2",
+      "footnote_meaning_verified": true,
+      "footnote_summary_ko": "E-1/E-2 주신청자는 조약국 국적자여야 한다. 동반가족이 비조약국 국적자이면 주신청자의 국적 국가 비자표를, 동반가족도 조약국 국적자이면 동반가족 본인 국적 국가의 비자표를 적용한다.",
+      "visa_validity_is_period_of_stay": false,
+      "mrvisa_application_fee_included": false,
+      "source_ids": [
+        "DOS-KR-RECIPROCITY"
+      ],
+      "review_status": "needs_review",
+      "summary_ko": "미국 국무부의 대한민국 국적자 상호주의 일정에 따르면 E-2 비자의 발급 수수료(reciprocity/issuance fee)는 없으며, 복수 입국이 가능하고 비자 유효기간은 60개월이다. 이는 미국 내 허가 체류기간과는 다르며, 별도의 비자 신청 수수료가 적용될 수 있다."
+    },
+    {
+      "policy_id": "E2-12",
+      "topic": "e_visa_application_fee",
+      "applicant_type": "investor_or_employee",
+      "currency": "USD",
+      "mrvisa_application_fee_usd": 315,
+      "reciprocity_issuance_fee_separate": true,
+      "fee_scope": "Department of State E visa application processing fee",
+      "total_application_cost_verified": false,
+      "fee_currentness_requires_recheck": true,
+      "source_ids": [
+        "DOS-E-VISA"
+      ],
+      "review_status": "needs_review",
+      "summary_ko": "미국 국무부가 안내하는 E 계열 비이민비자의 일반 비자 신청 수수료는 미화 315달러이며, 원칙적으로 환불되지 않는다. 비자 발급 수수료는 국적별 상호주의 일정에 따라 별도로 확인해야 하며, 실제 신청 시점의 수수료와 해당 공관의 납부 절차를 재확인해야 한다."
+    },
+    {
+      "policy_id": "E2-13",
+      "topic": "extension_of_stay",
+      "applicant_type": "investor_or_employee",
+      "summary_ko": "E-2 신분의 체류기간 연장은 최대 2년 단위로 가능하며 연장 횟수에 명시적 제한은 없다. 다만 E-2 자격을 계속 유지하고 신분 종료 시 출국할 의사가 있어야 한다.",
+      "extension_increment_years": 2,
+      "extension_count_limit": null,
+      "extension_count_unlimited": true,
+      "automatic_approval": false,
+      "intent_to_depart_required": true,
+      "source_ids": [
+        "USCIS-E2"
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-14",
+      "topic": "e2_spouse_employment_authorization",
+      "applicant_type": "dependent_spouse",
+      "summary_ko": "유효한 E-2 또는 E-2S 신분의 배우자는 원칙적으로 신분 자체에 따라 취업이 허용된다. 다만 CNMI 장기 투자자 배우자 등 예외가 존재하며 취업허가 증빙 요건을 별도로 확인해야 한다.",
+      "employment_authorized_incident_to_status": true,
+      "separate_ead_generally_required": false,
+      "cnmi_long_term_investor_exception": true,
+      "form_i9_evidence_review_required": true,
+      "source_ids": [
+        "USCIS-E2"
+      ],
+      "review_status": "needs_review"
+    }
+  ],
+  "pending_review_topics": [
+    "Detailed substantial investment evaluation",
+    "Employee nationality and enterprise ownership exceptions",
+    "Visa application fee and reciprocity",
+    "Visa validity versus authorized period of stay",
+    "Current DS-156E filing requirements",
+    "Comparison with team master report US-WK-02",
+    "Section-level source evidence linkage",
+    "Final legal and semantic review"
+  ],
+  "validation_status": "needs_review",
+  "source_sha256_verified": true,
+  "section_semantics_verified": false,
+  "eligibility_rules_verified": false,
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false
+}
