@@ -1,0 +1,130 @@
+{
+  "program_id": "US-WK-01",
+  "artifact_type": "legal_effect_review_addendum",
+  "review_as_of": "2026-10-22",
+  "based_on": "h1b_structured_policies_2026_reviewed_draft.json",
+  "reviewed_policy_count": 8,
+  "important_distinctions_ko": [
+    "2026-06-08 연방법원 명령은 2025년 포고령의 10만 달러 납부 관련 시행지침을 무효화한 것으로 보고되며 포고령 문구 전체를 자동 폐지한 것과 동일시할 수 없음",
+    "2026-09-18 포고령 11069는 입국 제한 문구를 2027-09-21까지 연장; 법원 명령과의 실효성 관계 별도 검토 필요",
+    "2026-08-25 발표된 103265달러 추가 H-1B 수수료안은 proposed rule이므로 확정 요금으로 취급 금지",
+    "2025-12-29 가중 추첨 최종 규정 효력일은 2026-02-27; 2026-08-10 biometric fee 최종 규정 효력일은 2026-09-09"
+  ],
+  "external_reference_urls": [
+    "https://www.govinfo.gov/content/pkg/FR-2026-08-25/pdf/2026-17324.pdf",
+    "https://www.govinfo.gov/content/pkg/FR-2026-09-23/html/2026-19554.htm",
+    "https://www.govinfo.gov/content/pkg/FR-2025-12-29/html/2025-23853.htm",
+    "https://www.govinfo.gov/content/pkg/FR-2026-08-10/html/2026-16231.htm"
+  ],
+  "records": [
+    {
+      "policy_id": "US-WK-01-POL-0007",
+      "source_id": "DOS-H1B-2025-RESTRICTION",
+      "source_url": "https://travel.state.gov/en/newsroom/visas/2025/restriction-on-entry-of-certain-nonimmigrant-workers.html",
+      "source_candidate_id": "H1B-CAND-V2-00171",
+      "excerpt_sha256": "1d95c91617ed8577139c53e1ba4faf31e3aec539c0aeb60d3807e4ee6fc47904",
+      "review_category": "2025_policy_notice",
+      "assessment_ko": "2025년 DOS 안내는 당시 포고령의 적용 설명이다. 2026년 법원 명령과 후속 포고령을 반영한 현재 납부 의무로 단정 불가.",
+      "legal_effect_verified": false,
+      "human_legal_review_required": true,
+      "allowed_for_user_answers": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "US-WK-01-POL-0008",
+      "source_id": "USCIS-H1B-2025-MEMO",
+      "source_url": "https://www.uscis.gov/sites/default/files/document/memos/H1B_Proc_Memo_FINAL.pdf",
+      "source_candidate_id": "H1B-CAND-V2-00175",
+      "excerpt_sha256": "87cf1921e3a919655deb9decd2401044b38f0e904be1ed38d2f7062708c59030",
+      "review_category": "2025_uscis_guidance",
+      "assessment_ko": "2025년 USCIS 시행 메모는 2026-06-08 법원 명령에 따른 무효화 대상 지침과 관계되므로 현행 효력 미확인.",
+      "legal_effect_verified": false,
+      "human_legal_review_required": true,
+      "allowed_for_user_answers": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "US-WK-01-POL-0022",
+      "source_id": "H1B-PROCLAMATION-2026",
+      "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-09-23/html/2026-19554.htm",
+      "source_candidate_id": "H1B-CAND-V2-01462",
+      "excerpt_sha256": "09f9a76d95e8462ec43b6e1d13c081dc79d21c5ac9bd758840ca375557568f20",
+      "review_category": "2026_proclamation_text",
+      "assessment_ko": "2026년 포고령 본문에 10만 달러 지급 예외 및 국가이익 예외 명시. 지침 무효화와 별도로 포고령 문언은 존재하나 집행 가능성은 보류.",
+      "legal_effect_verified": false,
+      "human_legal_review_required": true,
+      "allowed_for_user_answers": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "US-WK-01-POL-0053",
+      "source_id": "H1B-PROCLAMATION-2026",
+      "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-09-23/html/2026-19554.htm",
+      "source_candidate_id": "H1B-CAND-V2-01465",
+      "excerpt_sha256": "3dfa5bda9700974149c095639ec5d8fe5ac5b7452148c8be971cd5ca45add2f6",
+      "review_category": "2026_scope_text",
+      "assessment_ko": "2026년 포고령 제3조의 입국 적용범위 문구. 현행 집행 효과를 독립 확정하지 않음.",
+      "legal_effect_verified": false,
+      "human_legal_review_required": true,
+      "allowed_for_user_answers": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "US-WK-01-POL-0057",
+      "source_id": "H1B-PROCLAMATION-2026",
+      "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-09-23/html/2026-19554.htm",
+      "source_candidate_id": "H1B-CAND-V2-01463",
+      "excerpt_sha256": "0de6e4a0b0f5c1d362bb66129d14aaa5b29d7d755229b6d5f40bec524145a746",
+      "review_category": "2026_compliance_text",
+      "assessment_ko": "2026년 포고령 제2조의 고용주 증빙 의무 문구. 법원 명령 아래 실제 집행 가능 여부 보류.",
+      "legal_effect_verified": false,
+      "human_legal_review_required": true,
+      "allowed_for_user_answers": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "US-WK-01-POL-0072",
+      "source_id": "USCIS-H1B-OVERVIEW",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "source_candidate_id": "H1B-CAND-V2-00005",
+      "excerpt_sha256": "9c861ed7c48d10117bfea979d3889bb9dd972e488231943b8bb3dcf5ebf37d7e",
+      "review_category": "uscis_web_notice",
+      "assessment_ko": "USCIS 웹 안내의 10만 달러 납부 설명은 2026 법원 명령과 상충할 수 있으므로 단독 현행 요건으로 사용 금지.",
+      "legal_effect_verified": false,
+      "human_legal_review_required": true,
+      "allowed_for_user_answers": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "US-WK-01-POL-0100",
+      "source_id": "USCIS-H1B-2025-MEMO",
+      "source_url": "https://www.uscis.gov/sites/default/files/document/memos/H1B_Proc_Memo_FINAL.pdf",
+      "source_candidate_id": "H1B-CAND-V2-00176",
+      "excerpt_sha256": "e59ed04ea45b1fa20d9c74e5ac916cbbb371eaf413754ea0bfda0d9f34332485",
+      "review_category": "2025_guidance_exception",
+      "assessment_ko": "과거 USCIS 메모의 적용 제외 설명. 당시 범위만 기술하며 새 포고령의 예외와 일치한다고 가정하지 않음.",
+      "legal_effect_verified": false,
+      "human_legal_review_required": true,
+      "allowed_for_user_answers": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "US-WK-01-POL-0103",
+      "source_id": "USCIS-H1B-OVERVIEW",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "source_candidate_id": "H1B-CAND-V2-00010",
+      "excerpt_sha256": "9f3c08b7cada35461299aaa2373baf5e208389075d06f954915c397762ee74cb",
+      "review_category": "uscis_payment_instruction",
+      "assessment_ko": "USCIS pay.gov 납부 지시는 현재 효력 검토가 필요한 행정 안내이므로 사용자 납부 행동을 유도하지 않음.",
+      "legal_effect_verified": false,
+      "human_legal_review_required": true,
+      "allowed_for_user_answers": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "legal_effect_verified": false,
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "review_status": "needs_review"
+}
