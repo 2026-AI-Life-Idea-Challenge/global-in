@@ -1,0 +1,212 @@
+{
+  "country": "USA",
+  "team_reference_program_id": "US-WK-04",
+  "program_name": "O-1A/O-1B/O-2/O-3 Extraordinary Ability or Achievement",
+  "report_date": "2026-10-22",
+  "validation_status": "structural_pass_semantic_review_pending",
+  "structural_validation_passed": true,
+  "semantic_validation_approved": false,
+  "legal_validation_approved": false,
+  "summary": {
+    "official_source_count": 11,
+    "policy_count": 77,
+    "evidence_count": 77,
+    "covered_policy_count": 77,
+    "missing_search_count": 0,
+    "total_checks": 16,
+    "passed_checks": 16,
+    "failed_checks": [],
+    "meaning_of_structural_pass": "Checks data integrity, literal excerpts, source hashes and review flags only. Does not verify whether the excerpt semantically supports the legal claim."
+  },
+  "checks": [
+    {
+      "check": "program_id_consistency",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "policy_count_and_ids",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "source_count_and_unique_ids",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "evidence_count_and_unique_ids",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "complete_policy_coverage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "no_missing_searches",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "declared_counts_consistent",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "policy_source_references",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "evidence_source_references",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "official_source_sha256_and_readability",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "evidence_excerpt_sha256",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "evidence_excerpts_exist_in_original_sources",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "search_phrases_exist_in_excerpts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "evidence_source_metadata_consistency",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all_policy_and_evidence_records_unreviewed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "approvals_embedding_and_auto_eligibility_disabled",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "source_hash_results": [
+    {
+      "source_id": "USCIS-O1-OVERVIEW",
+      "source_path": "data\\raw\\usa\\employment\\o1_extraordinary_ability\\uscis_o1_extraordinary_ability.html",
+      "exists": true,
+      "hash_matches": true,
+      "expected_sha256": "dea2b282a9e8e75c8afb271d48364b2451ffad39783fac34b18ff934cac67b9a",
+      "actual_sha256": "dea2b282a9e8e75c8afb271d48364b2451ffad39783fac34b18ff934cac67b9a"
+    },
+    {
+      "source_id": "USCIS-O-CH4",
+      "source_path": "data\\raw\\usa\\employment\\o1_extraordinary_ability\\uscis_policy_manual_o1_beneficiaries.html",
+      "exists": true,
+      "hash_matches": true,
+      "expected_sha256": "5b93b2dd1a1008a789a9adbe13d3ca1513b8ec75460ea0a12d5fcebd441a73fd",
+      "actual_sha256": "5b93b2dd1a1008a789a9adbe13d3ca1513b8ec75460ea0a12d5fcebd441a73fd"
+    },
+    {
+      "source_id": "USCIS-O-CH5",
+      "source_path": "data\\raw\\usa\\employment\\o1_extraordinary_ability\\uscis_policy_manual_o2_beneficiaries.html",
+      "exists": true,
+      "hash_matches": true,
+      "expected_sha256": "6a1bf01b642f98e55fbf41d20227def99580fa17b7e711cf4dbb065c695a26db",
+      "actual_sha256": "6a1bf01b642f98e55fbf41d20227def99580fa17b7e711cf4dbb065c695a26db"
+    },
+    {
+      "source_id": "USCIS-O-CH6",
+      "source_path": "data\\raw\\usa\\employment\\o1_extraordinary_ability\\uscis_policy_manual_o3_family_members.html",
+      "exists": true,
+      "hash_matches": true,
+      "expected_sha256": "f2e2b1f23da416da10cd1033df566549377b3128e6876700237e17ab02190fe4",
+      "actual_sha256": "f2e2b1f23da416da10cd1033df566549377b3128e6876700237e17ab02190fe4"
+    },
+    {
+      "source_id": "USCIS-O-CH7",
+      "source_path": "data\\raw\\usa\\employment\\o1_extraordinary_ability\\uscis_policy_manual_o_documentation_evidence.html",
+      "exists": true,
+      "hash_matches": true,
+      "expected_sha256": "d849f4c4a0f8b5375e24262ddf8ed85273c44d37fc5d5d157924611192d81d7d",
+      "actual_sha256": "d849f4c4a0f8b5375e24262ddf8ed85273c44d37fc5d5d157924611192d81d7d"
+    },
+    {
+      "source_id": "USCIS-O-CH3",
+      "source_path": "data\\raw\\usa\\employment\\o1_extraordinary_ability\\uscis_policy_manual_o_petitioners.html",
+      "exists": true,
+      "hash_matches": true,
+      "expected_sha256": "3d72c45a51072073dc3ce08ddb6b5d53899b1d0fc4abb8aa800ccbf87cb94373",
+      "actual_sha256": "3d72c45a51072073dc3ce08ddb6b5d53899b1d0fc4abb8aa800ccbf87cb94373"
+    },
+    {
+      "source_id": "USCIS-O-CH9",
+      "source_path": "data\\raw\\usa\\employment\\o1_extraordinary_ability\\uscis_policy_manual_o1_period_of_stay.html",
+      "exists": true,
+      "hash_matches": true,
+      "expected_sha256": "5ebaee5c2736aa42d68743e024aa844f975bd770d300d518d28a9e63c317d641",
+      "actual_sha256": "5ebaee5c2736aa42d68743e024aa844f975bd770d300d518d28a9e63c317d641"
+    },
+    {
+      "source_id": "DOS-KR-RECIPROCITY",
+      "source_path": "data\\raw\\usa\\employment\\e2_treaty_investor\\state_department_south_korea_reciprocity.html",
+      "exists": true,
+      "hash_matches": true,
+      "expected_sha256": "d8046c6c8f12c54a41e3d9ae49c7165a00da67521581e602e411e3a3bd0a8cb1",
+      "actual_sha256": "d8046c6c8f12c54a41e3d9ae49c7165a00da67521581e602e411e3a3bd0a8cb1"
+    },
+    {
+      "source_id": "DOS-DS160-INSTRUCTIONS",
+      "source_path": "data\\raw\\usa\\employment\\l1_intracompany_transferee\\dos_ds160_application_instructions.html",
+      "exists": true,
+      "hash_matches": true,
+      "expected_sha256": "4b9089bad13f638553575da98ec846f57552747988b2e8e179a7783f0bd29695",
+      "actual_sha256": "4b9089bad13f638553575da98ec846f57552747988b2e8e179a7783f0bd29695"
+    },
+    {
+      "source_id": "DOS-TEMP-WORKER",
+      "source_path": "data\\raw\\usa\\employment\\l1_intracompany_transferee\\state_department_temporary_worker_visas.html",
+      "exists": true,
+      "hash_matches": true,
+      "expected_sha256": "31158f0aec746f02b5e4b78d19fcb4bf467a4aeef827f152466999ccbfff6d24",
+      "actual_sha256": "31158f0aec746f02b5e4b78d19fcb4bf467a4aeef827f152466999ccbfff6d24"
+    },
+    {
+      "source_id": "USCIS-G1055-20261016",
+      "source_path": "data\\raw\\usa\\employment\\l1_intracompany_transferee\\uscis_g1055_fee_schedule.pdf",
+      "exists": true,
+      "hash_matches": true,
+      "expected_sha256": "98f1d64180e46a44f8734f9060d960d7aae3d40b654b99b063238c8fa07476c3",
+      "actual_sha256": "98f1d64180e46a44f8734f9060d960d7aae3d40b654b99b063238c8fa07476c3"
+    }
+  ],
+  "mismatch_details": [],
+  "pending_review_items": [
+    "o1a_criteria_and_final_merits_semantic_review",
+    "o1b_arts_and_mptv_evidence_distinctions",
+    "o2_mptv_alternative_eligibility_paths",
+    "o3_study_permission_source_review",
+    "o3_i539_change_extension_procedure",
+    "o1_professional_athlete_transfer_exception",
+    "o_consultation_requirements_and_waivers",
+    "o_agent_authorization_and_multiple_employers",
+    "o_filing_fees_currentness_and_online_availability",
+    "o_mrv_fee_applicability_to_o3",
+    "o_south_korea_reciprocity_validity_limits",
+    "korea_consular_booking_procedure_not_independently_verified"
+  ],
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false
+}

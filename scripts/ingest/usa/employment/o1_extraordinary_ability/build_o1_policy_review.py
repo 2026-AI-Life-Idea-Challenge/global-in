@@ -1,0 +1,1841 @@
+
+import hashlib
+import json
+from pathlib import Path
+
+OUTPUT_PATH = Path(
+    "data/processed/usa/employment/o1_extraordinary_ability/"
+    "o1_policy_review_2026_draft.json"
+)
+
+PROGRAM_ID = "US-WK-04"
+PROGRAM_NAME = "O-1A/O-1B/O-2/O-3 Extraordinary Ability or Achievement"
+
+OFFICIAL_SOURCES = [
+    {
+        "source_id": "USCIS-O1-OVERVIEW",
+        "agency": "U.S. Citizenship and Immigration Services",
+        "title": "O-1 Visa: Individuals with Extraordinary Ability or Achievement",
+        "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/o-1-visa-individuals-with-extraordinary-ability-or-achievement",
+        "local_path": "data/raw/usa/employment/o1_extraordinary_ability/uscis_o1_extraordinary_ability.html",
+        "sha256": "dea2b282a9e8e75c8afb271d48364b2451ffad39783fac34b18ff934cac67b9a",
+    },
+    {
+        "source_id": "USCIS-O-CH4",
+        "agency": "U.S. Citizenship and Immigration Services",
+        "title": "Policy Manual, Volume 2, Part M, Chapter 4 - O-1 Beneficiaries",
+        "url": "https://www.uscis.gov/policy-manual/volume-2-part-m-chapter-4",
+        "local_path": "data/raw/usa/employment/o1_extraordinary_ability/uscis_policy_manual_o1_beneficiaries.html",
+        "sha256": "5b93b2dd1a1008a789a9adbe13d3ca1513b8ec75460ea0a12d5fcebd441a73fd",
+    },
+    {
+        "source_id": "USCIS-O-CH5",
+        "agency": "U.S. Citizenship and Immigration Services",
+        "title": "Policy Manual, Volume 2, Part M, Chapter 5 - O-2 Beneficiaries",
+        "url": "https://www.uscis.gov/policy-manual/volume-2-part-m-chapter-5",
+        "local_path": "data/raw/usa/employment/o1_extraordinary_ability/uscis_policy_manual_o2_beneficiaries.html",
+        "sha256": "6a1bf01b642f98e55fbf41d20227def99580fa17b7e711cf4dbb065c695a26db",
+    },
+    {
+        "source_id": "USCIS-O-CH6",
+        "agency": "U.S. Citizenship and Immigration Services",
+        "title": "Policy Manual, Volume 2, Part M, Chapter 6 - Family Members",
+        "url": "https://www.uscis.gov/policy-manual/volume-2-part-m-chapter-6",
+        "local_path": "data/raw/usa/employment/o1_extraordinary_ability/uscis_policy_manual_o3_family_members.html",
+        "sha256": "f2e2b1f23da416da10cd1033df566549377b3128e6876700237e17ab02190fe4",
+    },
+    {
+        "source_id": "USCIS-O-CH7",
+        "agency": "U.S. Citizenship and Immigration Services",
+        "title": "Policy Manual, Volume 2, Part M, Chapter 7 - Documentation and Evidence",
+        "url": "https://www.uscis.gov/policy-manual/volume-2-part-m-chapter-7",
+        "local_path": "data/raw/usa/employment/o1_extraordinary_ability/uscis_policy_manual_o_documentation_evidence.html",
+        "sha256": "d849f4c4a0f8b5375e24262ddf8ed85273c44d37fc5d5d157924611192d81d7d",
+    },
+    {
+        "source_id": "USCIS-O-CH3",
+        "agency": "U.S. Citizenship and Immigration Services",
+        "title": "Policy Manual, Volume 2, Part M, Chapter 3 - Petitioners",
+        "url": "https://www.uscis.gov/policy-manual/volume-2-part-m-chapter-3",
+        "local_path": "data/raw/usa/employment/o1_extraordinary_ability/uscis_policy_manual_o_petitioners.html",
+        "sha256": "3d72c45a51072073dc3ce08ddb6b5d53899b1d0fc4abb8aa800ccbf87cb94373",
+    },
+    {
+        "source_id": "USCIS-O-CH9",
+        "agency": "U.S. Citizenship and Immigration Services",
+        "title": "Policy Manual, Volume 2, Part M, Chapter 9 - Admission, Extension, Change of Status and Employer",
+        "url": "https://www.uscis.gov/policy-manual/volume-2-part-m-chapter-9",
+        "local_path": "data/raw/usa/employment/o1_extraordinary_ability/uscis_policy_manual_o1_period_of_stay.html",
+        "sha256": "5ebaee5c2736aa42d68743e024aa844f975bd770d300d518d28a9e63c317d641",
+    },
+    {
+        "source_id": "DOS-KR-RECIPROCITY",
+        "agency": "U.S. Department of State",
+        "title": "South Korea Reciprocity Schedule",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/Visa-Reciprocity-and-Civil-Documents-by-Country/KoreaSouth.html",
+        "local_path": "data/raw/usa/employment/e2_treaty_investor/state_department_south_korea_reciprocity.html",
+        "sha256": "d8046c6c8f12c54a41e3d9ae49c7165a00da67521581e602e411e3a3bd0a8cb1",
+    },
+    {
+        "source_id": "DOS-DS160-INSTRUCTIONS",
+        "agency": "U.S. Department of State",
+        "title": "DS-160: Online Nonimmigrant Visa Application",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/forms/ds-160-online-nonimmigrant-visa-application.html",
+        "local_path": "data/raw/usa/employment/l1_intracompany_transferee/dos_ds160_application_instructions.html",
+        "sha256": "4b9089bad13f638553575da98ec846f57552747988b2e8e179a7783f0bd29695",
+    },
+    {
+        "source_id": "DOS-TEMP-WORKER",
+        "agency": "U.S. Department of State",
+        "title": "Temporary Worker Visas",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/employment/temporary-worker-visas.html",
+        "local_path": "data/raw/usa/employment/l1_intracompany_transferee/state_department_temporary_worker_visas.html",
+        "sha256": "31158f0aec746f02b5e4b78d19fcb4bf467a4aeef827f152466999ccbfff6d24",
+    },
+    {
+        "source_id": "USCIS-G1055-20261016",
+        "agency": "U.S. Citizenship and Immigration Services",
+        "title": "Form G-1055 Fee Schedule, Edition 10/16/26",
+        "url": "https://www.uscis.gov/g-1055",
+        "local_path": "data/raw/usa/employment/l1_intracompany_transferee/uscis_g1055_fee_schedule.pdf",
+        "sha256": "98f1d64180e46a44f8734f9060d960d7aae3d40b654b99b063238c8fa07476c3",
+    },
+]
+
+
+def verify_sources():
+    assert len(OFFICIAL_SOURCES) == 11
+
+    ids = [source["source_id"] for source in OFFICIAL_SOURCES]
+    assert len(ids) == len(set(ids)), "Duplicate source IDs"
+
+    for source in OFFICIAL_SOURCES:
+        path = Path(source["local_path"])
+        assert path.is_file(), f"Missing: {path}"
+
+        actual = hashlib.sha256(path.read_bytes()).hexdigest()
+        assert actual == source["sha256"], (
+            f"SHA-256 mismatch: {source['source_id']}"
+        )
+
+    return True
+
+
+# O-1/O-2/O-3 정책 레코드
+# 모든 레코드는 법적·의미적 검토 전 초안 상태를 유지합니다.
+
+POLICY_RECORDS = [
+    {
+        "policy_id": "O1-01",
+        "topic": "o1a_extraordinary_ability_definition",
+        "visa_classifications": ["O-1A"],
+        "eligible_fields": [
+            "sciences",
+            "education",
+            "business",
+            "athletics",
+        ],
+        "summary_ko": (
+            "O-1A는 과학, 교육, 사업 또는 체육 분야에서 "
+            "지속적인 국내적 또는 국제적 인정을 통해 "
+            "해당 분야의 최상위에 속하는 소수 중 한 명임을 "
+            "입증하는 탁월한 능력의 개인을 대상으로 한다."
+        ),
+        "source_ids": [
+            "USCIS-O1-OVERVIEW",
+            "USCIS-O-CH4",
+        ],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-02",
+        "topic": "o1b_arts_distinction_definition",
+        "visa_classifications": ["O-1B Arts"],
+        "applicable_field": "arts",
+        "summary_ko": (
+            "O-1B 예술 분야는 해당 예술 분야에서 "
+            "통상적으로 접하는 수준을 상당히 뛰어넘는 "
+            "기술과 인정을 갖추고, 저명하고 선도적이거나 "
+            "잘 알려진 사람으로 인정받는 수준의 "
+            "탁월한 능력(distinction)을 요구한다."
+        ),
+        "source_ids": [
+            "USCIS-O1-OVERVIEW",
+            "USCIS-O-CH4",
+        ],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-03",
+        "topic": "o1b_mptv_extraordinary_achievement_definition",
+        "visa_classifications": ["O-1B MPTV"],
+        "applicable_field": "motion_picture_or_television",
+        "summary_ko": (
+            "O-1B 영화·방송 분야는 영화 또는 TV 산업에서 "
+            "일반적으로 접하는 수준을 상당히 뛰어넘는 "
+            "기술과 인정을 갖추어 뛰어나거나 선도적이거나 "
+            "잘 알려진 사람으로 인정되는 "
+            "탁월한 성취(extraordinary achievement)를 요구한다."
+        ),
+        "source_ids": [
+            "USCIS-O1-OVERVIEW",
+            "USCIS-O-CH4",
+        ],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-04",
+        "topic": "o1a_alternative_evidence_paths",
+        "visa_classifications": ["O-1A"],
+        "major_award_alternative": True,
+        "minimum_criteria_count": 3,
+        "total_criteria_count": 8,
+        "criteria_operator": "OR",
+        "summary_ko": (
+            "O-1A 청원은 해당 분야의 국제적으로 인정받는 "
+            "주요 수상 실적을 제출하거나, 규정된 8개 "
+            "증빙 기준 중 최소 3개를 충족하는 자료를 "
+            "제출하는 경로를 사용할 수 있다. "
+            "이러한 증빙의 제출만으로 승인되는 것은 아니며 "
+            "전체 증거에 대한 종합적인 판단이 필요하다."
+        ),
+        "source_ids": [
+            "USCIS-O-CH4",
+        ],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-05",
+        "topic": "o1b_arts_alternative_evidence_paths",
+        "visa_classifications": ["O-1B Arts"],
+        "major_award_or_nomination_alternative": True,
+        "minimum_criteria_count": 3,
+        "total_criteria_count": 6,
+        "criteria_operator": "OR",
+        "summary_ko": (
+            "O-1B 예술 분야는 해당 분야에서 인정받는 "
+            "중요한 국내적 또는 국제적 상의 수상·후보 지명 "
+            "실적을 제출하거나, 규정된 6개 증빙 기준 중 "
+            "최소 3개를 충족하는 자료를 제출할 수 있다. "
+            "USCIS는 제출된 증거를 종합적으로 평가한다."
+        ),
+        "source_ids": [
+            "USCIS-O-CH4",
+        ],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-06",
+        "topic": "o1b_mptv_alternative_evidence_paths",
+        "visa_classifications": ["O-1B MPTV"],
+        "major_award_or_nomination_alternative": True,
+        "minimum_criteria_count": 3,
+        "total_criteria_count": 6,
+        "criteria_operator": "OR",
+        "summary_ko": (
+            "O-1B 영화·방송 분야는 해당 산업에서 인정받는 "
+            "중요한 국내적 또는 국제적 상의 수상·후보 지명 "
+            "실적을 제출하거나, 규정된 6개 증빙 기준 중 "
+            "최소 3개를 충족하는 자료를 제출할 수 있다. "
+            "증빙 기준 충족 이후에도 전체 증거에 대한 "
+            "종합적 심사가 필요하다."
+        ),
+        "source_ids": [
+            "USCIS-O-CH4",
+        ],
+        "review_status": "needs_review",
+    },
+]
+
+
+# O-1A 세부 증빙 기준: O1-07 ~ O1-15
+POLICY_RECORDS.extend([
+    {
+        "policy_id": "O1-07",
+        "topic": "o1a_awards_for_excellence",
+        "visa_classifications": ["O-1A"],
+        "evidence_criterion": "awards",
+        "summary_ko": (
+            "해당 분야에서 우수성을 인정받아 국내적 또는 국제적으로 "
+            "인정되는 상이나 포상을 수상했다는 증빙. "
+            "반드시 O-1A의 주요 국제 수상 경로에 해당하는 "
+            "최고 수준의 상일 필요는 없다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-08",
+        "topic": "o1a_membership_outstanding_achievements",
+        "visa_classifications": ["O-1A"],
+        "evidence_criterion": "membership",
+        "summary_ko": (
+            "해당 분야의 협회 회원 자격으로서, 가입을 위해 "
+            "국내적 또는 국제적으로 인정받는 전문가의 심사를 통해 "
+            "판단되는 뛰어난 성취가 요구된다는 증빙. "
+            "단순 회비 납부나 일반적인 가입 사실만으로 "
+            "기준 충족을 단정할 수 없다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-09",
+        "topic": "o1a_published_material_about_beneficiary",
+        "visa_classifications": ["O-1A"],
+        "evidence_criterion": "published_material",
+        "summary_ko": (
+            "전문 간행물, 주요 업계 간행물 또는 주요 언론 매체에 "
+            "신청자 및 신청자의 해당 분야 활동에 관해 "
+            "발표된 자료를 제출하는 기준. "
+            "자료의 제목, 날짜, 저자 등 관련 정보와 "
+            "필요한 번역을 검토해야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-10",
+        "topic": "o1a_judging_work_of_others",
+        "visa_classifications": ["O-1A"],
+        "evidence_criterion": "judging",
+        "summary_ko": (
+            "신청자가 해당 전문 분야 또는 관련 전문 분야에서 "
+            "타인의 작업을 개인적으로 또는 심사위원단의 "
+            "구성원으로서 심사한 사실을 입증하는 기준."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-11",
+        "topic": "o1a_original_contributions_major_significance",
+        "visa_classifications": ["O-1A"],
+        "evidence_criterion": "original_contributions",
+        "summary_ko": (
+            "과학, 학문, 사업 또는 체육 관련 분야에서 "
+            "신청자가 독창적으로 기여한 내용이 해당 분야에 "
+            "중대한 의미(major significance)를 가진다는 증빙. "
+            "단순한 독창성뿐 아니라 기여의 중요성을 검토해야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-12",
+        "topic": "o1a_authorship_scholarly_articles",
+        "visa_classifications": ["O-1A"],
+        "evidence_criterion": "scholarly_articles",
+        "summary_ko": (
+            "해당 분야의 전문 학술지, 주요 업계 간행물 또는 "
+            "기타 주요 매체에 게재된 학술 논문의 "
+            "저자라는 사실을 입증하는 기준."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-13",
+        "topic": "o1a_critical_or_essential_capacity",
+        "visa_classifications": ["O-1A"],
+        "evidence_criterion": "critical_role",
+        "summary_ko": (
+            "신청자가 저명한 명성을 가진 조직이나 기관에서 "
+            "핵심적 또는 필수적인 역할을 수행했다는 증빙. "
+            "직함만이 아니라 실제 역할과 조직의 명성을 "
+            "함께 검토해야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-14",
+        "topic": "o1a_high_salary_or_remuneration",
+        "visa_classifications": ["O-1A"],
+        "evidence_criterion": "high_remuneration",
+        "summary_ko": (
+            "신청자가 해당 분야의 다른 종사자에 비해 "
+            "높은 급여 또는 기타 서비스 대가를 받았거나 "
+            "받을 예정임을 계약서 또는 그 밖의 신뢰할 수 있는 "
+            "증거로 입증하는 기준."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-15",
+        "topic": "o1a_comparable_evidence",
+        "visa_classifications": ["O-1A"],
+        "comparable_evidence_allowed": True,
+        "applicability_condition": (
+            "A listed criterion is not readily applicable "
+            "to the beneficiary's occupation."
+        ),
+        "summary_ko": (
+            "O-1A의 열거된 증빙 기준이 해당 직업에 쉽게 "
+            "적용되지 않는 경우, 그 기준에 상응하는 "
+            "비교 가능한 증빙을 제출할 수 있다. "
+            "이는 단순히 기존 기준을 충족하기 어렵다는 이유만으로 "
+            "모든 대체 자료를 허용하는 규정은 아니다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+])
+
+
+# O-1B Arts / Motion Picture or Television
+# 세부 증빙 기준: O1-16 ~ O1-23
+
+POLICY_RECORDS.extend([
+    {
+        "policy_id": "O1-16",
+        "topic": "o1b_lead_or_starring_role_in_productions",
+        "visa_classifications": ["O-1B Arts", "O-1B MPTV"],
+        "evidence_criterion": "lead_or_starring_role",
+        "summary_ko": (
+            "신청자가 저명한 명성을 가진 제작물 또는 행사에서 "
+            "주연이나 주요 참여자로 활동했거나 앞으로 활동할 "
+            "예정임을 입증하는 기준. 비평, 광고, 홍보 자료, "
+            "공개 발표, 계약서 또는 추천서 등으로 "
+            "제작물·행사의 명성과 신청자의 역할을 뒷받침한다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-17",
+        "topic": "o1b_national_or_international_recognition",
+        "visa_classifications": ["O-1B Arts", "O-1B MPTV"],
+        "evidence_criterion": "national_or_international_recognition",
+        "summary_ko": (
+            "주요 신문, 업계 간행물, 잡지 또는 다른 매체에 "
+            "신청자에 관해 발표된 비평이나 자료를 통해 "
+            "신청자의 성취가 국내적 또는 국제적으로 "
+            "인정받았다는 사실을 입증하는 기준."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-18",
+        "topic": "o1b_lead_starring_or_critical_role",
+        "visa_classifications": ["O-1B Arts", "O-1B MPTV"],
+        "evidence_criterion": "critical_role",
+        "summary_ko": (
+            "신청자가 저명한 명성을 가진 조직 또는 기관에서 "
+            "주연, 주요 참여자 또는 핵심적인 역할을 "
+            "수행했거나 수행할 예정임을 입증하는 기준. "
+            "해당 조직의 명성과 신청자의 역할을 "
+            "구체적인 자료로 뒷받침해야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-19",
+        "topic": "o1b_commercial_or_critical_success",
+        "visa_classifications": ["O-1B Arts", "O-1B MPTV"],
+        "evidence_criterion": "commercial_or_critical_success",
+        "summary_ko": (
+            "신청자가 주요한 상업적 성공 또는 비평적 "
+            "성공의 기록을 보유하고 있음을 입증하는 기준. "
+            "흥행 수입, 시청률, 판매 실적, 차트 순위, "
+            "언론 보도 또는 업계 간행물 등 관련 자료를 "
+            "활용할 수 있다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-20",
+        "topic": "o1b_significant_recognition_from_experts",
+        "visa_classifications": ["O-1B Arts", "O-1B MPTV"],
+        "evidence_criterion": "significant_recognition",
+        "summary_ko": (
+            "신청자가 기관, 비평가, 정부 기관 또는 해당 "
+            "분야에서 인정받는 전문가로부터 상당한 "
+            "인정을 받았음을 입증하는 기준. "
+            "관련 진술에는 작성자의 전문성과 "
+            "신청자의 성취를 아는 근거가 "
+            "명시되어야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-21",
+        "topic": "o1b_high_salary_or_remuneration",
+        "visa_classifications": ["O-1B Arts", "O-1B MPTV"],
+        "evidence_criterion": "high_remuneration",
+        "summary_ko": (
+            "신청자가 해당 분야의 다른 종사자와 "
+            "비교하여 높은 급여 또는 상당한 "
+            "서비스 대가를 받았거나 받을 예정임을 "
+            "계약서 또는 신뢰할 수 있는 자료로 "
+            "입증하는 기준."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-22",
+        "topic": "o1b_arts_comparable_evidence",
+        "visa_classifications": ["O-1B Arts"],
+        "comparable_evidence_allowed": True,
+        "applicability_condition": (
+            "The listed criteria are not readily applicable "
+            "to the beneficiary's occupation."
+        ),
+        "summary_ko": (
+            "O-1B 예술 분야에서는 규정된 증빙 기준이 "
+            "신청자의 직업에 쉽게 적용되지 않는 경우 "
+            "비교 가능한 증빙을 제출할 수 있다. "
+            "기준에 해당하는 자료가 부족하다는 이유만으로 "
+            "모든 대체 자료가 허용되는 것은 아니다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-23",
+        "topic": "o1b_mptv_comparable_evidence_restriction",
+        "visa_classifications": ["O-1B MPTV"],
+        "comparable_evidence_allowed_as_substitute": False,
+        "other_relevant_evidence_may_be_considered_in_totality": True,
+        "summary_ko": (
+            "O-1B 영화·방송 분야에서는 비교 가능한 증빙을 "
+            "규정된 증빙 기준의 대체물로 사용할 수 없다. "
+            "다만 USCIS가 전체 증거를 종합적으로 평가할 때 "
+            "기타 관련 자료를 고려하는 문제와는 구분된다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+])
+
+# O-1 최종 종합 심사: O1-24 ~ O1-26
+
+POLICY_RECORDS.extend([
+    {
+        "policy_id": "O1-24",
+        "topic": "o1a_final_merits_determination",
+        "visa_classifications": ["O-1A"],
+        "final_merits_review_required": True,
+        "criteria_count_alone_guarantees_approval": False,
+        "summary_ko": (
+            "O-1A에서 주요 국제 수상 실적이나 규정된 증빙 "
+            "기준 중 최소 3개에 관한 자료를 제출했다는 "
+            "사실만으로 승인 여부가 자동 결정되지는 않는다. "
+            "USCIS는 제출된 증거를 전체적으로 평가하여 "
+            "신청자가 해당 분야의 최상위에 속하는 소수 중 "
+            "한 명이며 지속적인 국내적 또는 국제적 "
+            "인정을 받았는지 판단한다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-25",
+        "topic": "o1b_arts_totality_of_evidence",
+        "visa_classifications": ["O-1B Arts"],
+        "totality_of_evidence_review_required": True,
+        "criteria_count_alone_guarantees_approval": False,
+        "summary_ko": (
+            "O-1B 예술 분야에서 주요 수상·후보 지명 "
+            "실적 또는 규정된 증빙 기준에 관한 자료를 "
+            "제출했다는 사실만으로 자격이 자동 확정되지는 "
+            "않는다. USCIS는 전체 증거를 평가하여 "
+            "신청자가 예술 분야에서 통상적인 수준을 "
+            "상당히 뛰어넘는 기술과 인정을 갖춘 "
+            "distinction 수준에 도달했는지 판단한다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-26",
+        "topic": "o1b_mptv_totality_of_evidence",
+        "visa_classifications": ["O-1B MPTV"],
+        "totality_of_evidence_review_required": True,
+        "criteria_count_alone_guarantees_approval": False,
+        "summary_ko": (
+            "O-1B 영화·방송 분야에서 주요 수상·후보 지명 "
+            "실적 또는 규정된 증빙 기준에 관한 자료를 "
+            "제출했다는 사실만으로 자격이 자동 확정되지는 "
+            "않는다. USCIS는 제출된 증거 전체를 평가하여 "
+            "신청자가 영화·방송 산업에서 요구되는 "
+            "extraordinary achievement 수준에 "
+            "도달했는지 판단한다. 이 과정에서 다른 관련 "
+            "증거를 고려하는 것과 열거된 증빙 기준을 "
+            "대체하는 것은 구분된다."
+        ),
+        "source_ids": ["USCIS-O-CH4"],
+        "review_status": "needs_review",
+    },
+])
+
+# O-1/O-2 청원인 및 에이전트: O1-27 ~ O1-35
+
+POLICY_RECORDS.extend([
+    {
+        "policy_id": "O1-27",
+        "topic": "o_petition_by_us_employer",
+        "visa_classifications": ["O-1A", "O-1B Arts", "O-1B MPTV", "O-2"],
+        "petition_form": "I-129",
+        "eligible_petitioner_types": ["us_employer"],
+        "summary_ko": (
+            "적격 미국 고용주는 O-1 또는 O-2 수혜자를 위해 "
+            "Form I-129 청원을 제출할 수 있다. "
+            "수혜자의 비자 자격과 청원 관련 증빙 요건을 "
+            "별도로 충족해야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH3", "USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-28",
+        "topic": "o_us_agent_petitioner_roles",
+        "visa_classifications": ["O-1A", "O-1B Arts", "O-1B MPTV", "O-2"],
+        "eligible_petitioner_types": ["us_agent"],
+        "permitted_agent_roles": [
+            "actual_employer",
+            "representative_of_employer_and_beneficiary",
+            "authorized_representative_of_employer",
+        ],
+        "summary_ko": (
+            "미국 에이전트는 수혜자의 실제 고용주이거나, "
+            "고용주와 수혜자 양측의 대리인이거나, "
+            "고용주를 대신하도록 권한을 부여받은 "
+            "개인 또는 법인인 경우 관련 조건에 따라 "
+            "O-1/O-2 청원을 제출할 수 있다."
+        ),
+        "source_ids": ["USCIS-O-CH3"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-29",
+        "topic": "o_foreign_employer_through_us_agent",
+        "visa_classifications": ["O-1A", "O-1B Arts", "O-1B MPTV", "O-2"],
+        "foreign_employer_us_agent_required": True,
+        "summary_ko": (
+            "해외 고용주가 O-1 또는 O-2 수혜자를 위해 "
+            "청원하는 경우, 해외 고용주가 자신의 "
+            "대리인으로 활동하도록 권한을 부여한 "
+            "미국 에이전트를 통해 청원할 수 있다."
+        ),
+        "source_ids": ["USCIS-O-CH3"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-30",
+        "topic": "o_agent_petition_for_multiple_employers",
+        "visa_classifications": ["O-1A", "O-1B Arts", "O-1B MPTV", "O-2"],
+        "multiple_employer_petition_allowed": True,
+        "required_evidence_categories": [
+            "complete_itinerary",
+            "dates_of_each_service_or_engagement",
+            "actual_employer_names_and_addresses",
+            "worksite_names_and_addresses",
+            "contracts_between_employers_and_beneficiary",
+            "employment_terms_and_conditions",
+        ],
+        "summary_ko": (
+            "미국 에이전트가 여러 고용주를 위한 청원을 "
+            "제출하는 경우, 전체 활동 일정과 업무별 날짜, "
+            "실제 고용주의 이름·주소, 업무 수행 장소의 "
+            "이름·주소, 고용주와 수혜자 사이의 계약 및 "
+            "고용 조건 등을 뒷받침하는 자료를 "
+            "제출해야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH3"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-31",
+        "topic": "o_agent_authorization_for_multiple_employers",
+        "visa_classifications": ["O-1A", "O-1B Arts", "O-1B MPTV", "O-2"],
+        "agent_authorization_required": True,
+        "regular_agent_business_history_always_required": False,
+        "summary_ko": (
+            "여러 고용주를 대신하여 청원하는 에이전트는 "
+            "해당 고용주들을 대리할 정당한 권한이 있음을 "
+            "입증해야 한다. 다른 고용주가 서명한 위임 "
+            "문서, 대리 계약, 관련 진술 등이 증빙이 "
+            "될 수 있다. 청원과 무관한 평소 업무에서도 "
+            "상시 대리업을 수행했다는 사실이 반드시 "
+            "요구되는 것은 아니다."
+        ),
+        "source_ids": ["USCIS-O-CH3"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-32",
+        "topic": "o_beneficiary_self_petition_prohibition",
+        "visa_classifications": ["O-1A", "O-1B Arts", "O-1B MPTV", "O-2"],
+        "self_petition_allowed": False,
+        "summary_ko": (
+            "O-1 또는 O-2 비자 수혜자는 자신의 "
+            "수혜자 자격을 근거로 본인을 위한 "
+            "Form I-129 청원을 직접 제출할 수 없다."
+        ),
+        "source_ids": ["USCIS-O-CH3"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-33",
+        "topic": "o_beneficiary_owned_separate_entity_petition",
+        "visa_classifications": ["O-1A", "O-1B Arts", "O-1B MPTV", "O-2"],
+        "beneficiary_owned_separate_entity_may_petition": True,
+        "entity_must_be_legally_separate": True,
+        "summary_ko": (
+            "O-1 또는 O-2 수혜자가 소유한 회사라도 "
+            "수혜자 개인과 법적으로 구분되는 별도 "
+            "법인(예: corporation 또는 LLC)은 "
+            "관련 청원 요건을 충족하는 경우 "
+            "수혜자를 위해 청원할 수 있다. "
+            "이는 수혜자 개인의 직접 자기 청원과 "
+            "구분된다."
+        ),
+        "source_ids": ["USCIS-O-CH3"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-34",
+        "topic": "o_petitioner_employment_changes_notification",
+        "visa_classifications": ["O-1A", "O-1B Arts", "O-1B MPTV", "O-2"],
+        "uscis_notification_required_for_eligibility_affecting_changes": True,
+        "amended_petition_may_be_required": True,
+        "summary_ko": (
+            "청원인은 O 비자 자격에 영향을 미칠 수 있는 "
+            "고용 조건의 변경이 발생하면 즉시 USCIS에 "
+            "알려야 한다. 청원인이 계속 고용하는 경우 "
+            "수정 청원 제출을 검토해야 하며, "
+            "더 이상 고용하지 않는 경우에는 "
+            "기존 청원을 승인한 USCIS 사무소에 "
+            "변경 사항을 설명하는 서신을 제출해야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH3"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-35",
+        "topic": "o_involuntary_termination_return_transportation",
+        "visa_classifications": ["O-1A", "O-1B Arts", "O-1B MPTV", "O-2"],
+        "applies_when": "employment_terminates_other_than_voluntary_resignation",
+        "return_transportation_cost_conditionally_required": True,
+        "employer_and_petitioner_jointly_and_severally_liable": True,
+        "summary_ko": (
+            "O-1 또는 O-2 수혜자의 고용이 자발적 "
+            "사직 이외의 사유로 종료되는 경우, "
+            "비이민 신분의 근거가 된 고용 제안을 한 "
+            "고용주와 청원인(서로 다른 경우)은 "
+            "수혜자가 미국 입국 전에 마지막으로 "
+            "거주한 장소까지의 합리적인 귀국 교통비에 "
+            "대해 공동으로 책임을 질 수 있다."
+        ),
+        "source_ids": ["USCIS-O-CH3"],
+        "review_status": "needs_review",
+    },
+])
+
+# O-1/O-2 청원 서류 및 활동 일정: O1-36 ~ O1-42
+
+POLICY_RECORDS.extend([
+    {
+        "policy_id": "O1-36",
+        "topic": "o_form_i129_petition_requirement",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "petition_form": "I-129",
+        "petition_agency": "USCIS",
+        "summary_ko": (
+            "O-1 또는 O-2 비이민 분류를 요청하려면 "
+            "적격 고용주 또는 에이전트가 USCIS에 "
+            "Form I-129 청원서와 해당 분류에 필요한 "
+            "증빙 및 적용 수수료를 제출해야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-37",
+        "topic": "o_petition_earliest_filing_date",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "maximum_advance_filing_years": 1,
+        "summary_ko": (
+            "O-1 또는 O-2 청원은 수혜자의 서비스가 "
+            "실제로 필요한 날보다 1년을 초과하여 "
+            "미리 제출할 수 없다. 이 기준은 "
+            "청원 가능한 가장 이른 제출 시점을 "
+            "제한하는 규정이다."
+        ),
+        "source_ids": ["USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-38",
+        "topic": "o_written_contract_evidence",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "written_contract_required_if_exists": True,
+        "oral_agreement_alternative_available": True,
+        "summary_ko": (
+            "청원인과 수혜자 사이에 서면 계약이 "
+            "존재하는 경우 해당 계약의 사본을 "
+            "청원 증빙으로 제출해야 한다. "
+            "서면 계약이 없는 경우에는 구두 계약 "
+            "조건의 요약을 제출할 수 있다."
+        ),
+        "source_ids": ["USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-39",
+        "topic": "o_oral_agreement_summary",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "applies_when": "no_written_contract_exists",
+        "required_agreement_terms": [
+            "terms_offered_by_petitioner",
+            "terms_accepted_by_beneficiary",
+        ],
+        "both_parties_signatures_always_required": False,
+        "summary_ko": (
+            "서면 계약이 없는 경우 구두 계약의 "
+            "조건을 요약한 자료를 제출할 수 있다. "
+            "요약에는 청원인이 제안한 조건과 "
+            "수혜자가 수락한 조건이 포함되어야 한다. "
+            "구두 계약의 성립을 입증하기 위해 "
+            "양측의 서명이 반드시 필요한 것은 아니며, "
+            "이메일 등 관련 증빙도 활용할 수 있다."
+        ),
+        "source_ids": ["USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-40",
+        "topic": "o_event_activity_description_and_dates",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "required_information": [
+            "nature_of_events_or_activities",
+            "beginning_dates",
+            "ending_dates",
+            "applicable_itinerary",
+        ],
+        "summary_ko": (
+            "O-1/O-2 청원에는 미국에서 수행할 "
+            "행사 또는 활동의 성격과 시작일·종료일에 "
+            "대한 설명 및 해당 활동의 일정표를 "
+            "포함해야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-41",
+        "topic": "o_multiple_worksites_itinerary",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "applies_when": "work_at_more_than_one_location",
+        "itinerary_required": True,
+        "minimum_itinerary_information": [
+            "type_of_work",
+            "work_dates",
+            "work_locations",
+        ],
+        "summary_ko": (
+            "청원 대상자가 둘 이상의 장소에서 "
+            "일하는 경우 근무 날짜와 장소를 "
+            "명시한 일정표를 포함해야 한다. "
+            "USCIS는 업계 관행을 고려하여 "
+            "일정표의 상세 수준에 유연성을 둘 수 "
+            "있지만, 최소한 업무 종류와 언제 "
+            "어디서 수행되는지는 표시되어야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-42",
+        "topic": "o_petition_beneficiary_count_limits",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "o1_maximum_beneficiaries_per_petition": 1,
+        "o2_maximum_beneficiaries_per_petition": 25,
+        "o2_multiple_beneficiary_conditions": [
+            "same_o1_beneficiary_supported",
+            "same_events_or_performances",
+            "same_period",
+            "same_location",
+        ],
+        "o1_and_o2_on_same_petition_allowed": False,
+        "summary_ko": (
+            "O-1 청원서에는 수혜자를 1명만 포함할 "
+            "수 있다. O-2 청원서에는 동일한 "
+            "O-1 수혜자의 동일한 행사 또는 공연을 "
+            "동일한 기간과 장소에서 지원하는 "
+            "조건으로 최대 25명의 O-2 수혜자를 "
+            "포함할 수 있다. O-2 수혜자는 "
+            "O-1 수혜자의 청원서에 함께 "
+            "포함할 수 없다."
+        ),
+        "source_ids": [
+            "USCIS-O-CH5",
+            "USCIS-O-CH7",
+            "USCIS-G1055-20261016",
+        ],
+        "review_status": "needs_review",
+    },
+])
+
+# O-1/O-2 Consultation 의무 및 예외: O1-43 ~ O1-49
+
+POLICY_RECORDS.extend([
+    {
+        "policy_id": "O1-43",
+        "topic": "o1a_o1b_arts_consultation_requirement",
+        "visa_classifications": ["O-1A", "O-1B Arts"],
+        "consultation_required": True,
+        "consultation_sources": [
+            "us_peer_group_in_field",
+            "qualified_expert_or_experts_in_field",
+        ],
+        "consultation_sources_operator": "OR",
+        "peer_group_may_include_labor_organization": True,
+        "summary_ko": (
+            "O-1A 및 O-1B 예술 분야 청원은 원칙적으로 "
+            "신청자의 전문 분야에 해당하는 미국 내 "
+            "전문가 집단(peer group, 노동조합 포함 가능) "
+            "또는 해당 분야의 전문성을 갖춘 개인이나 "
+            "복수 전문가의 자문 의견서를 제출해야 한다. "
+            "의견서의 내용은 신청자의 성취와 "
+            "수행 업무 등을 다룰 수 있다."
+        ),
+        "source_ids": ["USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-44",
+        "topic": "o1b_mptv_dual_consultation_requirement",
+        "visa_classifications": ["O-1B MPTV"],
+        "consultation_required": True,
+        "consultation_sources": [
+            "labor_union_representing_occupational_peers",
+            "management_organization_in_field",
+        ],
+        "consultation_sources_operator": "AND",
+        "summary_ko": (
+            "O-1B 영화·방송 분야 청원은 원칙적으로 "
+            "신청자와 같은 직종을 대표하는 노동조합과 "
+            "해당 분야의 경영자 단체 양쪽에서 "
+            "자문 의견서를 받아 제출해야 한다. "
+            "두 기관 중 하나의 의견서만으로 "
+            "일반적인 제출 의무가 충족되는 것은 아니다."
+        ),
+        "source_ids": ["USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-45",
+        "topic": "o2_arts_athletics_labor_consultation",
+        "visa_classifications": ["O-2"],
+        "applies_when": "support_for_arts_or_athletic_performance",
+        "consultation_required": True,
+        "consultation_sources": [
+            "labor_organization_with_expertise_in_skill_area",
+        ],
+        "summary_ko": (
+            "영화·방송 분야에 해당하지 않는 O-2 "
+            "예술·체육 지원 인력 청원은 원칙적으로 "
+            "해당 기술 분야에 전문성을 가진 "
+            "노동조합의 자문 의견서를 제출해야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-46",
+        "topic": "o2_mptv_dual_consultation_requirement",
+        "visa_classifications": ["O-2"],
+        "applies_when": "employment_in_motion_picture_or_television",
+        "consultation_required": True,
+        "consultation_sources": [
+            "labor_union",
+            "management_organization",
+        ],
+        "consultation_sources_operator": "AND",
+        "summary_ko": (
+            "영화·방송 산업에서 일하려는 O-2 지원 "
+            "인력의 청원에는 원칙적으로 노동조합과 "
+            "경영자 단체 양쪽의 자문 의견서가 "
+            "필요하다. 이는 영화·방송 외 O-2 "
+            "지원 인력에 적용되는 자문 요건과 구분된다."
+        ),
+        "source_ids": ["USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-47",
+        "topic": "o_consultation_no_appropriate_group",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "applies_when": "appropriate_consulting_group_does_not_exist",
+        "absence_of_appropriate_group_must_be_established": True,
+        "uscis_may_decide_on_evidence_of_record": True,
+        "automatic_waiver": False,
+        "summary_ko": (
+            "청원인이 해당 분류에서 적절한 자문 "
+            "기관이나 전문가 집단이 존재하지 "
+            "않는다는 사실을 입증하면, USCIS는 "
+            "제출된 증거를 바탕으로 청원을 심사할 "
+            "수 있다. 이는 모든 O 비자 청원에서 "
+            "자문 의견서가 임의적으로 생략될 수 "
+            "있다는 의미가 아니다."
+        ),
+        "source_ids": ["USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-48",
+        "topic": "o1b_arts_prior_consultation_waiver",
+        "visa_classifications": ["O-1B Arts"],
+        "applies_when": (
+            "readmission_for_similar_services_within_two_years_"
+            "of_previous_advisory_opinion"
+        ),
+        "prior_consultation_window_years": 2,
+        "uscis_discretionary_waiver": True,
+        "prior_consultation_copy_should_be_submitted": True,
+        "automatic_waiver": False,
+        "summary_ko": (
+            "예술 분야에서 탁월한 능력을 가진 "
+            "O-1B 수혜자가 이전 자문 의견서 "
+            "발급일로부터 2년 이내에 유사한 "
+            "서비스를 수행하기 위해 미국에 "
+            "재입국하려는 경우, USCIS는 자문 "
+            "요건을 면제할 수 있다. "
+            "면제를 요청하는 청원인은 이전 "
+            "자문 의견서 사본을 제출해야 하며, "
+            "면제가 자동으로 적용되지는 않는다."
+        ),
+        "source_ids": ["USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-49",
+        "topic": "o_negative_consultation_not_binding",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "consultation_advisory_only": True,
+        "negative_opinion_automatically_requires_denial": False,
+        "totality_of_evidence_considered": True,
+        "summary_ko": (
+            "O 비자 청원에서 자문 의견서는 "
+            "자문적 성격이며 USCIS를 구속하지 "
+            "않는다. 부정적인 의견서가 "
+            "제출되더라도 자동으로 청원이 "
+            "거절되는 것은 아니며, USCIS는 "
+            "청원인이 제출한 반박 자료 등을 "
+            "포함한 전체 증거를 고려할 수 있다."
+        ),
+        "source_ids": ["USCIS-O-CH7"],
+        "review_status": "needs_review",
+    },
+])
+
+# O-2 지원 인력 자격 및 업무 제한: O1-50 ~ O1-55
+
+POLICY_RECORDS.extend([
+    {
+        "policy_id": "O1-50",
+        "topic": "o2_supported_o1_fields",
+        "visa_classifications": ["O-2"],
+        "supported_o1_categories": [
+            "O-1A athletics",
+            "O-1B Arts",
+            "O-1B MPTV",
+        ],
+        "unsupported_o1a_fields": [
+            "sciences",
+            "education",
+            "business",
+        ],
+        "summary_ko": (
+            "O-2는 O-1 수혜자의 예술 또는 체육 활동에 "
+            "필수적인 지원을 제공하는 인력을 위한 "
+            "비이민 분류다. 영화·방송 분야의 O-1 "
+            "수혜자를 지원하는 경우에도 적용될 수 있다. "
+            "다만 과학, 교육 또는 사업 분야의 "
+            "O-1A 수혜자를 지원하는 목적으로는 "
+            "O-2 분류를 승인할 수 없다."
+        ),
+        "source_ids": ["USCIS-O-CH5"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-51",
+        "topic": "o2_arts_athletics_integral_critical_skills",
+        "visa_classifications": ["O-2"],
+        "applies_when": "support_for_o1a_athlete_or_o1b_artist",
+        "integral_part_of_performance_required": True,
+        "critical_skills_and_experience_required": True,
+        "skills_not_of_general_nature_required": True,
+        "skills_not_possessed_by_us_workers_required": True,
+        "summary_ko": (
+            "O-1A 체육인 또는 O-1B 예술인을 지원하는 "
+            "O-2 수혜자는 실제 공연이나 경기에서 "
+            "필수적인 역할을 해야 한다. 또한 O-1 "
+            "수혜자와 관련된 핵심 기술 및 경험을 "
+            "보유해야 하며, 그 기술은 일반적인 "
+            "성격이 아니고 미국 근로자가 보유하지 "
+            "않은 것이어야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH5"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-52",
+        "topic": "o2_mptv_essential_skills_experience_path",
+        "visa_classifications": ["O-2"],
+        "applies_when": "support_for_o1b_mptv",
+        "mptv_eligibility_path": "essential_skills_and_experience",
+        "current_essentiality_required": True,
+        "critical_skills_and_experience_required": True,
+        "substantial_prior_experience_required": True,
+        "alternative_to_policy_id": "O1-53",
+        "alternative_paths_operator": "OR",
+        "summary_ko": (
+            "영화·방송 분야의 O-2 지원 인력은 "
+            "O-1 수혜자에게 현재 필수적인 핵심 "
+            "기술과 경험을 갖추고 있으며, 해당 "
+            "핵심 기술 및 필수 지원 서비스를 "
+            "수행한 상당한 경험이 있다는 "
+            "증거를 제출하는 경로를 사용할 수 있다."
+        ),
+        "source_ids": ["USCIS-O-CH5"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-53",
+        "topic": "o2_mptv_international_production_path",
+        "visa_classifications": ["O-2"],
+        "applies_when": "specific_motion_picture_or_television_production",
+        "mptv_eligibility_path": "international_production_continuity",
+        "significant_production_outside_us_required": True,
+        "production_inside_us_required": True,
+        "continuing_participation_essential_required": True,
+        "alternative_to_policy_id": "O1-52",
+        "alternative_paths_operator": "OR",
+        "summary_ko": (
+            "특정 영화·방송 제작물의 경우, "
+            "미국 밖에서 상당한 제작 작업이 "
+            "진행되었고 미국 안에서도 제작이 "
+            "이루어지며, 해당 O-2 지원 인력이 "
+            "계속 참여하는 것이 제작의 성공적인 "
+            "완료에 필수적이라는 증거를 제출하는 "
+            "경로를 사용할 수 있다."
+        ),
+        "source_ids": ["USCIS-O-CH5"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-54",
+        "topic": "o2_independent_employment_prohibition",
+        "visa_classifications": ["O-2"],
+        "independent_employment_allowed": False,
+        "must_work_in_support_of_o1": True,
+        "summary_ko": (
+            "O-2 수혜자는 자신이 지원하는 O-1 "
+            "수혜자와 분리되거나 무관한 업무를 "
+            "독립적으로 수행할 수 없다. "
+            "O-2 신분의 업무는 해당 O-1 "
+            "수혜자를 지원하는 활동과 연결되어야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH5"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-55",
+        "topic": "o2_employer_change_linked_to_o1",
+        "visa_classifications": ["O-2"],
+        "independent_employer_change_allowed": False,
+        "employer_change_must_accompany_o1_change": True,
+        "summary_ko": (
+            "O-2 수혜자는 자신이 지원하는 O-1 "
+            "수혜자의 고용주 변경과 함께 이루어지는 "
+            "경우에만 고용주를 변경할 수 있다. "
+            "이는 O-2 수혜자에게 별도의 청원이나 "
+            "관련 절차가 필요 없다는 뜻은 아니다."
+        ),
+        "source_ids": [
+            "USCIS-O-CH5",
+            "USCIS-O-CH9",
+        ],
+        "review_status": "needs_review",
+    },
+])
+
+# O-3 동반 가족 자격 및 체류·취업: O1-56 ~ O1-59
+
+POLICY_RECORDS.extend([
+    {
+        "policy_id": "O1-56",
+        "topic": "o3_eligible_family_members",
+        "visa_classifications": ["O-3"],
+        "principal_classifications": [
+            "O-1A",
+            "O-1B Arts",
+            "O-1B MPTV",
+            "O-2",
+        ],
+        "eligible_relationships": [
+            "spouse",
+            "unmarried_child_under_21",
+        ],
+        "child_maximum_age_exclusive": 21,
+        "child_must_be_unmarried": True,
+        "summary_ko": (
+            "O-1 또는 O-2 주신청자의 배우자와 "
+            "21세 미만의 미혼 자녀는 해당 요건을 "
+            "충족하는 경우 O-3 동반 가족 신분을 "
+            "취득할 수 있다. 부모나 형제자매까지 "
+            "자동으로 포함되는 것은 아니다."
+        ),
+        "source_ids": ["USCIS-O-CH6"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-57",
+        "topic": "o3_accompanying_or_following_to_join",
+        "visa_classifications": ["O-3"],
+        "accompanying_principal_allowed": True,
+        "following_to_join_allowed": True,
+        "summary_ko": (
+            "O-3 자격을 갖춘 배우자 또는 미혼 자녀는 "
+            "O-1/O-2 주신청자와 함께 미국에 "
+            "입국하거나, 주신청자가 먼저 입국한 "
+            "이후 미국에서 합류하기 위해 "
+            "O-3 신분을 신청할 수 있다."
+        ),
+        "source_ids": ["USCIS-O-CH6"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-58",
+        "topic": "o3_stay_duration_linked_to_principal",
+        "visa_classifications": ["O-3"],
+        "dependent_stay_same_as_principal": True,
+        "dependent_conditions_linked_to_principal": True,
+        "summary_ko": (
+            "O-3 배우자와 21세 미만 미혼 자녀는 "
+            "O-1 또는 O-2 주신청자와 동일한 "
+            "기간 및 조건에 따라 비이민 체류 "
+            "신분을 부여받는다. 이는 한국 "
+            "상호주의표에 표시된 비자 유효기간과 "
+            "별개로 구분해야 한다."
+        ),
+        "source_ids": ["USCIS-O-CH6"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-59",
+        "topic": "o3_employment_not_authorized_by_status",
+        "visa_classifications": ["O-3"],
+        "employment_authorized_incident_to_status": False,
+        "independent_employment_authorization_required": True,
+        "summary_ko": (
+            "O-3 동반 가족은 O-3 신분 자체만으로 "
+            "미국에서 취업할 수 없다. "
+            "O-1/O-2 주신청자의 업무 수행 권한이 "
+            "배우자나 자녀에게 자동으로 "
+            "부여되는 것은 아니다. 취업하려면 "
+            "별도의 적법한 취업 권한이 필요하다."
+        ),
+        "source_ids": ["USCIS-O-CH6"],
+        "review_status": "needs_review",
+    },
+])
+
+# O-1/O-2 체류기간, 연장 및 고용주 변경: O1-60 ~ O1-66
+
+POLICY_RECORDS.extend([
+    {
+        "policy_id": "O1-60",
+        "topic": "o_initial_period_of_stay",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "maximum_initial_stay_years": 3,
+        "stay_duration_based_on_activity": True,
+        "summary_ko": (
+            "O-1 및 O-2의 최초 승인 체류기간은 "
+            "해당 행사 또는 활동을 완료하는 데 필요한 "
+            "기간을 기준으로 하며 최대 3년이다. "
+            "모든 신청자에게 반드시 3년이 "
+            "부여되는 것은 아니다."
+        ),
+        "source_ids": ["USCIS-O-CH9"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-61",
+        "topic": "o_extension_same_event_or_activity",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "applies_when": "continuation_of_same_event_or_activity",
+        "maximum_extension_increment_years": 1,
+        "summary_ko": (
+            "기존에 승인된 동일한 행사 또는 활동을 "
+            "계속하거나 완료하기 위한 O-1/O-2 "
+            "체류 연장은 필요한 기간을 기준으로 "
+            "최대 1년 단위로 승인될 수 있다."
+        ),
+        "source_ids": ["USCIS-O-CH9"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-62",
+        "topic": "o_new_event_or_activity_period",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "applies_when": "new_event_or_activity",
+        "maximum_new_activity_approval_years": 3,
+        "same_employer_may_qualify": True,
+        "summary_ko": (
+            "O-1/O-2 수혜자가 새로운 행사 또는 "
+            "활동을 수행하는 경우, 동일한 고용주가 "
+            "관련된 상황을 포함하여 해당 활동에 "
+            "필요한 기간을 최대 3년까지 "
+            "승인받을 수 있다. 이는 기존 활동을 "
+            "단순히 계속하는 경우의 1년 단위 "
+            "연장 규칙과 구분된다."
+        ),
+        "source_ids": ["USCIS-O-CH9"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-63",
+        "topic": "o_number_of_extensions",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "fixed_maximum_number_of_extensions": False,
+        "each_extension_requires_eligibility": True,
+        "summary_ko": (
+            "O-1/O-2 비이민 분류에는 연장할 수 있는 "
+            "횟수에 대해 정해진 최대 상한이 없다. "
+            "다만 개별 연장 신청마다 해당 활동과 "
+            "비자 분류의 요건을 충족해야 하며, "
+            "연장이 자동으로 승인되는 것은 아니다."
+        ),
+        "source_ids": ["USCIS-O-CH9"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-64",
+        "topic": "o_discretionary_grace_period_after_employment_ends",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "applies_when": "employment_ends_before_authorized_validity_expires",
+        "maximum_grace_period_days": 60,
+        "limited_by_authorized_validity_end": True,
+        "uscis_discretionary": True,
+        "employment_automatically_authorized_during_grace": False,
+        "summary_ko": (
+            "O-1/O-2 수혜자의 고용이 종료된 경우 "
+            "상황에 따라 최대 60일 또는 허가된 "
+            "유효기간 종료일 중 더 이른 시점까지 "
+            "재량적 유예기간이 인정될 수 있다. "
+            "이 기간이 항상 보장되거나 별도의 "
+            "취업 권한 없이 일을 계속할 수 "
+            "있다는 의미는 아니다."
+        ),
+        "source_ids": ["USCIS-O-CH9"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-65",
+        "topic": "o_ten_day_period_before_after_petition_validity",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "maximum_days_before_validity": 10,
+        "maximum_days_after_validity": 10,
+        "employment_authorized_during_extra_days": False,
+        "summary_ko": (
+            "O-1/O-2 수혜자는 적용되는 입국·체류 "
+            "규정에 따라 승인 유효기간 시작 전 "
+            "최대 10일 및 종료 후 최대 10일의 "
+            "추가 기간을 허용받을 수 있다. "
+            "이 추가 기간은 승인된 업무를 "
+            "수행할 수 있는 기간과 구분되며, "
+            "해당 추가 기간 자체로 취업이 "
+            "허용되는 것은 아니다."
+        ),
+        "source_ids": ["USCIS-O-CH9"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-66",
+        "topic": "o1_change_of_employer_petition_requirement",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV"
+        ],
+        "new_employer_petition_generally_required": True,
+        "agent_filed_amended_petition_may_apply": True,
+        "employment_change_requires_proper_filing": True,
+        "summary_ko": (
+            "O-1 수혜자가 고용주를 변경하려면 "
+            "원칙적으로 새로운 고용주가 Form I-129 "
+            "청원을 제출해야 한다. 기존 청원이 "
+            "에이전트에 의해 제출된 경우에는 "
+            "해당 에이전트의 수정 청원이 필요한 "
+            "상황이 있을 수 있다. 고용주 변경이 "
+            "언제나 기존 승인만으로 자동 허용되는 "
+            "것은 아니다. O-2의 고용주 변경 "
+            "제한은 O1-55에서 별도로 관리한다."
+        ),
+        "source_ids": [
+            "USCIS-O-CH9",
+            "USCIS-O-CH3",
+        ],
+        "review_status": "needs_review",
+    },
+])
+
+# O-1/O-2 수수료 정책: O1-67 ~ O1-70
+# USCIS Form G-1055, Edition 10/16/26
+# 수수료는 변경 가능하므로 사용 시 최신 금액 재확인 필요
+
+POLICY_RECORDS.extend([
+    {
+        "policy_id": "O1-67",
+        "topic": "o_form_i129_filing_fees",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "petition_form": "I-129",
+        "fee_schedule_edition": "10/16/26",
+        "regular_petitioner_paper_fee_usd": 1055,
+        "regular_petitioner_online_fee_usd": 1005,
+        "small_employer_or_nonprofit_paper_fee_usd": 530,
+        "small_employer_or_nonprofit_online_fee_usd": 530,
+        "additional_fees_may_apply": True,
+        "online_filing_availability_requires_recheck": True,
+        "fee_currentness_requires_recheck": True,
+        "summary_ko": (
+            "USCIS Form G-1055(10/16/26판)에 따르면 "
+            "O-1/O-2 Form I-129 청원의 기본 수수료는 "
+            "일반 청원인의 경우 종이 접수 1,055달러, "
+            "온라인 접수 1,005달러이다. "
+            "소규모 고용주 또는 비영리기관의 경우 "
+            "종이·온라인 접수 모두 530달러이다. "
+            "추가 수수료는 별도이며 실제 온라인 "
+            "접수 가능 여부와 최신 금액을 확인해야 한다."
+        ),
+        "source_ids": ["USCIS-G1055-20261016"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-68",
+        "topic": "o_asylum_program_fee",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "fee_schedule_edition": "10/16/26",
+        "asylum_program_fee_regular_usd": 600,
+        "asylum_program_fee_small_employer_usd": 300,
+        "asylum_program_fee_nonprofit_usd": 0,
+        "separate_from_i129_base_fee": True,
+        "fee_currentness_requires_recheck": True,
+        "summary_ko": (
+            "O 분류 Form I-129 청원에는 기본 청원 "
+            "수수료와 별도로 Asylum Program Fee가 "
+            "적용된다. USCIS G-1055(10/16/26판) "
+            "기준 일반 청원인은 600달러, "
+            "소규모 고용주는 300달러, "
+            "비영리기관은 0달러이다. "
+            "청원인 유형에 따른 적용 요건과 "
+            "최신 수수료를 확인해야 한다."
+        ),
+        "source_ids": ["USCIS-G1055-20261016"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-69",
+        "topic": "o_consular_mrv_application_fee",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2", "O-3"
+        ],
+        "mrv_application_fee_usd": 205,
+        "mrv_fee_nonrefundable": True,
+        "visa_issuance_fee_separate": True,
+        "uscis_petition_fee_separate": True,
+        "fee_currentness_requires_recheck": True,
+        "summary_ko": (
+            "O 비자 영사 신청 시 청원 기반 비이민 "
+            "취업비자 분류에 적용되는 비자 신청 "
+            "수수료(MRV)는 확인된 DOS 안내 기준 "
+            "205달러이다. 이 신청 수수료는 "
+            "환불되지 않으며 USCIS의 I-129 "
+            "청원 수수료와 별개다. 국적별 비자 "
+            "발급 수수료 및 최신 금액은 "
+            "별도로 확인해야 한다."
+        ),
+        "source_ids": ["DOS-TEMP-WORKER"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-70",
+        "topic": "o_premium_processing_fee",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV", "O-2"
+        ],
+        "premium_processing_form": "I-907",
+        "premium_processing_fee_usd": 2965,
+        "premium_processing_optional": True,
+        "premium_processing_fee_separate": True,
+        "fee_schedule_edition": "10/16/26",
+        "fee_currentness_requires_recheck": True,
+        "summary_ko": (
+            "USCIS Form G-1055(10/16/26판)에 따르면 "
+            "O 분류에 적용되는 Premium Processing "
+            "Service 수수료는 2,965달러이다. "
+            "이는 Form I-907을 이용하는 선택적인 "
+            "급행 심사 서비스로, 기본 청원 수수료 "
+            "및 적용되는 추가 수수료와 별도로 "
+            "납부한다. 실제 이용 가능 여부와 "
+            "최신 금액을 확인해야 한다."
+        ),
+        "source_ids": ["USCIS-G1055-20261016"],
+        "review_status": "needs_review",
+    },
+])
+
+# DOS 영사 신청 및 한국 상호주의: O1-71 ~ O1-74
+
+POLICY_RECORDS.extend([
+    {
+        "policy_id": "O1-71",
+        "topic": "o_consular_ds160_application",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV",
+            "O-2", "O-3"
+        ],
+        "visa_application_form": "DS-160",
+        "ds160_confirmation_page_required_for_interview": True,
+        "summary_ko": (
+            "미국 대사관 또는 영사관에서 O 비자를 "
+            "신청하는 경우 온라인 비이민비자 신청서 "
+            "Form DS-160을 작성·제출하고, "
+            "인터뷰에 필요한 확인 페이지를 준비해야 한다. "
+            "DS-160은 USCIS에 제출하는 Form I-129 "
+            "청원서와 구분되는 영사 비자 신청서다."
+        ),
+        "source_ids": [
+            "DOS-DS160-INSTRUCTIONS",
+            "DOS-TEMP-WORKER",
+        ],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-72",
+        "topic": "o_consular_petition_approval_and_interview",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV",
+            "O-2"
+        ],
+        "petition_approval_generally_required_before_visa_application": True,
+        "petition_form": "I-129",
+        "approval_notice_form": "I-797",
+        "petition_receipt_number_used_for_interview_scheduling": True,
+        "interview_generally_required_with_exceptions": True,
+        "summary_ko": (
+            "청원 기반 O-1/O-2 비자의 영사 신청은 "
+            "원칙적으로 USCIS의 Form I-129 청원 승인 "
+            "이후 진행한다. 승인 시 발급되는 Form I-797 "
+            "등에 기재된 청원 접수번호를 인터뷰 예약에 "
+            "사용할 수 있다. 비자 인터뷰는 일반적으로 "
+            "요구되지만 적용 가능한 예외가 있으며, "
+            "청원 승인이 비자 발급을 보장하지는 않는다."
+        ),
+        "source_ids": ["DOS-TEMP-WORKER"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-73",
+        "topic": "o_south_korea_visa_reciprocity",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV",
+            "O-2", "O-3"
+        ],
+        "nationality": "South Korea",
+        "reciprocity_categories": ["O-1", "O-2", "O-3"],
+        "reciprocity_issuance_fee_usd": 0,
+        "number_of_entries": "Multiple",
+        "listed_visa_validity_months": 60,
+        "mrv_application_fee_separate": True,
+        "visa_validity_subject_to_additional_limits": True,
+        "summary_ko": (
+            "미국 국무부의 한국 국적자 상호주의표에는 "
+            "O-1, O-2, O-3 비자의 추가 발급 수수료가 "
+            "없고(None), 복수 입국(Multiple) 및 "
+            "60개월의 비자 유효기간이 표시되어 있다. "
+            "이는 상호주의표의 기준으로서 실제 발급되는 "
+            "비자의 유효기간은 별도 제한을 받을 수 있다. "
+            "추가 발급 수수료가 없다는 것은 "
+            "MRV 신청 수수료 면제를 의미하지 않는다."
+        ),
+        "source_ids": ["DOS-KR-RECIPROCITY"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-74",
+        "topic": "o_visa_validity_limitations",
+        "visa_classifications": [
+            "O-1A", "O-1B Arts", "O-1B MPTV",
+            "O-2", "O-3"
+        ],
+        "o1_o2_validity_cannot_exceed_approved_petition": True,
+        "o1_o2_validity_cannot_exceed_reciprocity_limit": True,
+        "o3_validity_cannot_exceed_principal_visa_validity": True,
+        "visa_validity_is_period_of_stay": False,
+        "summary_ko": (
+            "한국 상호주의표에 O 비자 유효기간이 "
+            "60개월로 표시되어 있어도, O-1/O-2 비자는 "
+            "승인된 청원 유효기간과 상호주의표의 기간 중 "
+            "더 짧은 기간을 초과할 수 없다. "
+            "O-3 동반 가족 비자의 유효기간은 "
+            "주신청자에게 발급된 비자의 유효기간을 "
+            "초과할 수 없다. 비자 유효기간은 "
+            "미국 내 실제 허가 체류기간과 구분된다."
+        ),
+        "source_ids": ["DOS-KR-RECIPROCITY"],
+        "review_status": "needs_review",
+    },
+])
+
+# 최종 누락 정책 보완: O1-75 ~ O1-77
+
+POLICY_RECORDS.extend([
+    {
+        "policy_id": "O1-75",
+        "topic": "o3_study_permitted",
+        "visa_classifications": ["O-3"],
+        "full_time_study_allowed": True,
+        "part_time_study_allowed": True,
+        "employment_authorized_by_study": False,
+        "summary_ko": (
+            "O-3 신분의 배우자와 미혼 자녀는 미국에서 "
+            "전일제 또는 시간제 학업을 할 수 있다. "
+            "학업 허용은 취업 허가와 별개이며, "
+            "O-3 신분만으로 취업할 수는 없다."
+        ),
+        "source_ids": ["USCIS-O1-OVERVIEW"],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-76",
+        "topic": "o3_change_or_extension_of_status",
+        "visa_classifications": ["O-3"],
+        "change_or_extension_form": "I-539",
+        "principal_petition_form": "I-129",
+        "separate_application_from_principal": True,
+        "summary_ko": (
+            "미국 내에서 O-3 동반 가족의 신분 변경 "
+            "또는 체류 연장을 신청하는 경우에는 "
+            "일반적으로 Form I-539를 사용한다. "
+            "이는 O-1/O-2 주신청자를 위한 Form I-129 "
+            "청원과 구분되는 절차이며, 해당 신청의 "
+            "요건과 제출 서류를 별도로 확인해야 한다."
+        ),
+        "source_ids": [
+            "USCIS-O-CH9",
+            "USCIS-O-CH6",
+        ],
+        "review_status": "needs_review",
+    },
+    {
+        "policy_id": "O1-77",
+        "topic": "o1_professional_athlete_team_transfer",
+        "visa_classifications": ["O-1A"],
+        "applies_when": (
+            "qualifying_professional_athlete_traded_"
+            "between_eligible_sports_teams"
+        ),
+        "conditional_employment_authorization_days": 30,
+        "new_petition_required": True,
+        "general_employer_change_rule": False,
+        "summary_ko": (
+            "특정 요건을 충족하는 O-1 프로 운동선수가 "
+            "적격 스포츠 구단 간 이적하는 경우에는 "
+            "일반적인 고용주 변경 규칙과 다른 "
+            "30일간의 조건부 취업 관련 특례가 "
+            "적용될 수 있다. 새 구단의 청원 제출 "
+            "요건과 해당 특례의 적용 범위를 "
+            "별도로 확인해야 한다. "
+            "모든 O-1A 직종에 적용되는 규칙은 아니다."
+        ),
+        "source_ids": ["USCIS-O-CH9"],
+        "review_status": "needs_review",
+    },
+])
+
+
+# O-1/O-2/O-3 Policy Review JSON 생성
+# 모든 정책은 검토 전 초안 상태로 저장합니다.
+
+PENDING_REVIEW_ITEMS = [
+    "o1a_criteria_and_final_merits_semantic_review",
+    "o1b_arts_and_mptv_evidence_distinctions",
+    "o2_mptv_alternative_eligibility_paths",
+    "o3_study_permission_source_review",
+    "o3_i539_change_extension_procedure",
+    "o1_professional_athlete_transfer_exception",
+    "o_consultation_requirements_and_waivers",
+    "o_agent_authorization_and_multiple_employers",
+    "o_filing_fees_currentness_and_online_availability",
+    "o_mrv_fee_applicability_to_o3",
+    "o_south_korea_reciprocity_validity_limits",
+    "korea_consular_booking_procedure_not_independently_verified",
+]
+
+
+def main():
+    # 1. 공식 원본 11개의 존재 및 SHA-256 검증
+    verify_sources()
+
+    # 2. 정책 ID 및 중복 검증
+    expected_ids = [
+        f"O1-{i:02d}"
+        for i in range(1, 78)
+    ]
+
+    actual_ids = [
+        record["policy_id"]
+        for record in POLICY_RECORDS
+    ]
+
+    assert actual_ids == expected_ids, (
+        "Policy IDs are missing, duplicated, or unordered"
+    )
+
+    topics = [
+        record["topic"]
+        for record in POLICY_RECORDS
+    ]
+
+    assert len(topics) == len(set(topics)), (
+        "Duplicate policy topics"
+    )
+
+    # 3. 정책별 필수 필드 검증
+    required_fields = {
+        "policy_id",
+        "topic",
+        "visa_classifications",
+        "summary_ko",
+        "source_ids",
+        "review_status",
+    }
+
+    source_ids = {
+        source["source_id"]
+        for source in OFFICIAL_SOURCES
+    }
+
+    for record in POLICY_RECORDS:
+        assert required_fields.issubset(record), (
+            f"Missing fields: {record['policy_id']}"
+        )
+
+        assert record["visa_classifications"], (
+            f"Missing classifications: {record['policy_id']}"
+        )
+
+        assert record["summary_ko"].strip(), (
+            f"Empty summary: {record['policy_id']}"
+        )
+
+        assert record["source_ids"], (
+            f"Missing source references: {record['policy_id']}"
+        )
+
+        assert set(record["source_ids"]).issubset(source_ids), (
+            f"Unknown source: {record['policy_id']}"
+        )
+
+        assert record["review_status"] == "needs_review", (
+            f"Unexpected approval: {record['policy_id']}"
+        )
+
+    # 4. L-1과 호환되는 정책 JSON 구조
+    output = {
+        "country": "USA",
+        "route_id": "usa/employment/o1_extraordinary_ability",
+        "team_reference_program_id": PROGRAM_ID,
+        "program_name": PROGRAM_NAME,
+        "internal_program_id": None,
+        "internal_id_status": "needs_review",
+        "validation_status": "needs_review",
+        "official_sources": OFFICIAL_SOURCES,
+        "policy_records": POLICY_RECORDS,
+        "pending_review_items": PENDING_REVIEW_ITEMS,
+        "approved_for_user_answers": False,
+        "approved_for_embedding": False,
+        "automatic_eligibility_rules_enabled": False,
+        "embedding_generated": False,
+    }
+
+    # 5. 기존 결과 파일 덮어쓰기 방지
+    assert not OUTPUT_PATH.exists(), (
+        f"Output already exists: {OUTPUT_PATH}"
+    )
+
+    OUTPUT_PATH.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    OUTPUT_PATH.write_text(
+        json.dumps(
+            output,
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    print("=== O VISA POLICY REVIEW GENERATION ===")
+    print("Program:", PROGRAM_ID)
+    print("Official sources:", len(OFFICIAL_SOURCES))
+    print("Policies:", len(POLICY_RECORDS))
+    print("Pending review items:", len(PENDING_REVIEW_ITEMS))
+    print("Validation status:", output["validation_status"])
+    print("User answers approved:", output["approved_for_user_answers"])
+    print("Embedding approved:", output["approved_for_embedding"])
+    print("Automatic eligibility enabled:",
+          output["automatic_eligibility_rules_enabled"])
+    print("Embedding generated:", output["embedding_generated"])
+    print("Saved:", OUTPUT_PATH)
+    print("[PASS] O visa policy review draft generated")
+    print("[INFO] Semantic and legal review still required")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,56 @@
+{
+  "program_id": "US-WK-04",
+  "refinement_target_count": 28,
+  "updated_evidence_count": 27,
+  "updated_evidence_policy_ids": [
+    "O1-01",
+    "O1-03",
+    "O1-04",
+    "O1-05",
+    "O1-11",
+    "O1-15",
+    "O1-17",
+    "O1-21",
+    "O1-22",
+    "O1-23",
+    "O1-25",
+    "O1-26",
+    "O1-35",
+    "O1-39",
+    "O1-42",
+    "O1-44",
+    "O1-45",
+    "O1-47",
+    "O1-48",
+    "O1-50",
+    "O1-64",
+    "O1-68",
+    "O1-69",
+    "O1-70",
+    "O1-72",
+    "O1-76",
+    "O1-77"
+  ],
+  "unmatched_count": 1,
+  "unmatched_targets": [
+    {
+      "policy_id": "O1-71",
+      "source_id": "DOS-DS160-INSTRUCTIONS",
+      "patterns": [
+        "DS-160 confirmation page",
+        "print.*?confirmation page",
+        "Complete the Online Visa Application"
+      ],
+      "reason": "target_phrase_not_found"
+    }
+  ],
+  "policy_content_changed_ids": [
+    "O1-11",
+    "O1-35",
+    "O1-64"
+  ],
+  "semantic_validation_approved": false,
+  "legal_validation_approved": false,
+  "remaining_semantic_review_required": true,
+  "notes": "Matching phrases and expanding excerpts do not constitute semantic or legal verification. PDF table row and column alignment requires review."
+}
