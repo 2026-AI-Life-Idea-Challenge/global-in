@@ -1,0 +1,62 @@
+{
+  "country": "USA",
+  "team_reference_program_id": "US-WK-03",
+  "program_name": "L-1A/L-1B Intracompany Transferee",
+  "report_date": "2026-10-22",
+  "validation_status": "needs_review",
+  "structural_validation_passed": true,
+  "semantic_validation_approved": false,
+  "legal_validation_approved": false,
+  "summary": {
+    "official_sources": 8,
+    "policy_records": 26,
+    "evidence_records": 30,
+    "covered_policies": 26,
+    "source_mismatches": 0
+  },
+  "checks": {
+    "source_count": true,
+    "policy_count": true,
+    "evidence_count": true,
+    "program_identity": true,
+    "official_source_hashes": true,
+    "policy_source_links": true,
+    "unique_evidence_ids": true,
+    "evidence_policy_links": true,
+    "excerpt_sha256": true,
+    "evidence_source_matches": true,
+    "pdf_page_references": true,
+    "all_policies_covered": true,
+    "review_flags": true,
+    "approval_and_embedding_disabled": true
+  },
+  "source_hash_results": {
+    "USCIS-L1A": true,
+    "USCIS-L1B": true,
+    "DOS-TEMP-WORKER": true,
+    "DOS-KR-RECIPROCITY": true,
+    "USCIS-G1055-20261016": true,
+    "USCIS-L1-POLICY-MANUAL": true,
+    "DOS-NIV-INTERVIEW-LOCATION-20260715": true,
+    "DOS-DS160-INSTRUCTIONS": true
+  },
+  "mismatch_details": [],
+  "pending_review_items": [
+    "l1b_third_party_worksite_requirements",
+    "new_office_petition_supporting_documents",
+    "l2_family_and_spouse_employment",
+    "petition_forms_and_filing_fees",
+    "visa_application_fees_and_reciprocity",
+    "blanket_l_petition_requirements",
+    "current_policy_and_legal_review",
+    "final_semantic_and_legal_review",
+    "current_uscis_and_dos_fee_reverification",
+    "l1_blanket_petition_eligibility_review",
+    "south_korea_consular_procedure_review",
+    "l1_source_currentness_review"
+  ],
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false
+}

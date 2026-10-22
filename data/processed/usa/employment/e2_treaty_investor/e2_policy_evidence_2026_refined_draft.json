@@ -1,0 +1,218 @@
+{
+  "dataset_type": "e2_policy_evidence_draft",
+  "team_reference_program_id": "US-WK-02",
+  "internal_program_id": "US-EM-04",
+  "internal_id_status": "provisional_not_registered",
+  "evidence_count": 14,
+  "extraction_method": "html_parser_visible_text_anchor",
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "embedding_generated": false,
+  "evidence_records": [
+    {
+      "policy_id": "E2-01",
+      "source_id": "USCIS-E2",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/e-2-treaty-investors",
+      "source_sha256": "c5f7eff33deaa649afbf3ba581abd94cd8475496551d651c8a4230a9f7eb9edd",
+      "anchor_text": "Be a national of a country",
+      "match_start": 7418,
+      "match_end": 7444,
+      "excerpt_text": "Be a national of a country with which the United States maintains a treaty of commerce and navigation; Have invested, or be actively in the process of investing, a substantial amount of capital in a bona fide enterprise in the United States; and Be seeking to enter the United States solely to develop and direct the investment enterprise.",
+      "excerpt_sha256": "8e37a442539698ec348e4b8a1238c5fc017f88185fbfb91b82e1f9d52f8cec8a",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-02",
+      "source_id": "DOS-TREATY",
+      "source_url": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees/treaty.html",
+      "source_sha256": "0d4bf607739b9564d4f6bde241ff6c5cbc41cdcccd1662d3d92e409a5c7f833b",
+      "anchor_text": "Korea (South) E-2 November 7, 1957",
+      "match_start": 7927,
+      "match_end": 7961,
+      "excerpt_text": "Korea (South) E-2 November 7, 1957",
+      "excerpt_sha256": "2e840f55101e9af5a4c34dfb920eb8ac8cfa79a4ee16b5209c62abe564aababd",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-03",
+      "source_id": "USCIS-E2",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/e-2-treaty-investors",
+      "source_sha256": "c5f7eff33deaa649afbf3ba581abd94cd8475496551d651c8a4230a9f7eb9edd",
+      "anchor_text": "Have invested, or be actively",
+      "match_start": 7521,
+      "match_end": 7550,
+      "excerpt_text": "A substantial amount of capital is: Substantial in relationship to the total cost of either purchasing an established enterprise or establishing a new one Sufficient to ensure the treaty investor’s financial commitment to the successful operation of the enterprise Of a magnitude to support the likelihood that the treaty investor will successfully develop and direct the enterprise. The lower the cost of the enterprise, the higher, proportionately, the investment must be to be considered substantial.",
+      "excerpt_sha256": "29c3ba37b82fa61cabf02ed4e2bb6fe9bccb116682ee5e03ecaa951d0116d490",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-04",
+      "source_id": "USCIS-E2",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/e-2-treaty-investors",
+      "source_sha256": "c5f7eff33deaa649afbf3ba581abd94cd8475496551d651c8a4230a9f7eb9edd",
+      "anchor_text": "at risk in the commercial sense",
+      "match_start": 8017,
+      "match_end": 8048,
+      "excerpt_text": "investment is the treaty investor’s placing of capital, including funds and/or other assets, at risk in the commercial sense with the objective of generating a profit. The capital must be subject to partial or total loss if the investment fails.",
+      "excerpt_sha256": "7a7f6f5aeaf254e1767adeb9c53562e81c023808653d3f226fef731a129bdf02",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-05",
+      "source_id": "USCIS-E2",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/e-2-treaty-investors",
+      "source_sha256": "c5f7eff33deaa649afbf3ba581abd94cd8475496551d651c8a4230a9f7eb9edd",
+      "anchor_text": "at least 50% ownership",
+      "match_start": 7789,
+      "match_end": 7811,
+      "excerpt_text": "This is established by showing at least 50% ownership of the enterprise or possession of operational control through a managerial position or other corporate device.",
+      "excerpt_sha256": "d30a303b547bd2a87affb472a418c8d946cb5c669f6bc05674f4fd39ed24a489",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-06",
+      "source_id": "USCIS-E2",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/e-2-treaty-investors",
+      "source_sha256": "c5f7eff33deaa649afbf3ba581abd94cd8475496551d651c8a4230a9f7eb9edd",
+      "anchor_text": "A bona fide enterprise refers",
+      "match_start": 8836,
+      "match_end": 8865,
+      "excerpt_text": "A bona fide enterprise refers to a real, active, and operating commercial or entrepreneurial undertaking which produces services or goods for profit.",
+      "excerpt_sha256": "ddffd0e2d7ef08f0d4a9d650640ddaaf9508c96be0c1a63e437e36eaad924063",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-07",
+      "source_id": "USCIS-E2",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/e-2-treaty-investors",
+      "source_sha256": "c5f7eff33deaa649afbf3ba581abd94cd8475496551d651c8a4230a9f7eb9edd",
+      "anchor_text": "A marginal enterprise is one",
+      "match_start": 9141,
+      "match_end": 9169,
+      "excerpt_text": "A marginal enterprise is one that does not have the present or future capacity to generate more than enough income to provide a minimal living for the treaty investor and his or her family.",
+      "excerpt_sha256": "43291af30ceec2517c53fd90a3e63081ddfa6baf34cf112cc0fc0d3ed1507a67",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-08",
+      "source_id": "USCIS-E2",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/e-2-treaty-investors",
+      "source_sha256": "c5f7eff33deaa649afbf3ba581abd94cd8475496551d651c8a4230a9f7eb9edd",
+      "anchor_text": "executive or supervisory character",
+      "match_start": 10005,
+      "match_end": 10039,
+      "excerpt_text": "Be the same nationality of the principal alien employer (who must have the nationality of the treaty country); Meet the definition of “employee” under relevant law; and Either be engaging in duties of an executive or supervisory character, or if employed in a lesser capacity, have special qualifications.",
+      "excerpt_sha256": "2f8804d0684dda4ece3ccfb019cf8dfbad254c60d53f7a420f1bbf6ec8d26a08",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-09",
+      "source_id": "DOS-DS160-FAQ",
+      "source_url": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/forms/ds-160-online-nonimmigrant-visa-application/ds-160-faqs.html",
+      "source_sha256": "4426c3453920a0af9b77b7f4f5406ba144c21e34319c76863a5ba5bb18c0ea0d",
+      "anchor_text": "If you are a Treaty Investor (E-2) applicant",
+      "match_start": 25844,
+      "match_end": 25888,
+      "excerpt_text": "If you are a Treaty Investor (E-2) applicant, you need only complete the DS-160. If you are a Treaty Trader (E-1) or an Executive/Manager/Essential Employee (E-1 or E-2), you must complete the DS-160, and you or your employer must complete the paper DS-156E form.",
+      "excerpt_sha256": "6ca3479196f8a5ba80ff36066f680ebb8d5506c8f0c954c51de72480b1fa5d39",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-10",
+      "source_id": "USCIS-E2",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/e-2-treaty-investors",
+      "source_sha256": "c5f7eff33deaa649afbf3ba581abd94cd8475496551d651c8a4230a9f7eb9edd",
+      "anchor_text": "maximum initial stay of two years",
+      "match_start": 11748,
+      "match_end": 11781,
+      "excerpt_text": "Period of Stay Qualified treaty investors and employees will be allowed a maximum initial stay of two years.",
+      "excerpt_sha256": "40afc3043f52bdc32761ca50afafcb0542b877fecd26af6b0bf0ef0fe42578db",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-11",
+      "source_id": "DOS-KR-RECIPROCITY",
+      "source_url": "https://travel.state.gov/content/travel/en/us-visas/Visa-Reciprocity-and-Civil-Documents-by-Country/KoreaSouth.html",
+      "source_sha256": "d8046c6c8f12c54a41e3d9ae49c7165a00da67521581e602e411e3a3bd0a8cb1",
+      "anchor_text": "E-2 2 None Multiple 60 Months",
+      "match_start": 2780,
+      "match_end": 2809,
+      "excerpt_text": "E-2 2 None Multiple 60 Months",
+      "excerpt_sha256": "6afa9d67f3e73f52796afda45f9f23e07838df39bc92c2b4615e69d5c56d05fe",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review",
+      
+      "reciprocity_table_interpretation": {
+        "visa_classification": "E-2",
+        "footnote_number": "2",
+        "reciprocity_issuance_fee_usd": 0,
+        "number_of_entries": "multiple",
+        "visa_validity_months": 60,
+        "visa_validity_is_period_of_stay": false
+      },
+      "additional_evidence_anchors": [
+        {
+          "topic": "reciprocity_fee_definition",
+          "source_id": "DOS-KR-RECIPROCITY",
+          "anchor_text": "Fee: The reciprocity fee, also known as the visa issuance fee, you must pay."
+        },
+        {
+          "topic": "treaty_nationality_footnote",
+          "source_id": "DOS-KR-RECIPROCITY",
+          "anchor_text": "An E-1 and E-2 visa may be issued only to a principal alien who is a national of a country having a treaty, or its equivalent, with the United States."
+        }
+      ]
+
+    },
+    {
+      "policy_id": "E2-12",
+      "source_id": "DOS-E-VISA",
+      "source_url": "https://travel.state.gov/content/travel/en/us-visas/employment/treaty-trader-investor-visa-e.html",
+      "source_sha256": "05fa40f8d948aea9db868883dbdd84ad6d56045d1d798e30f2f12f633976f682",
+      "anchor_text": "$315",
+      "match_start": 7709,
+      "match_end": 7713,
+      "excerpt_text": "Fees - Pay the non-refundable visa application fee , if you are required to pay it before your interview. When your visa is approved, you may also pay a visa issuance fee, if applicable to your nationality. Fee information is provided below: $315",
+      "excerpt_sha256": "0e407d174e5f1700f4ac7d77cc552ce2aa3feb7cf01fdc376d2828f6a94d9c8a",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-13",
+      "source_id": "USCIS-E2",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/e-2-treaty-investors",
+      "source_sha256": "c5f7eff33deaa649afbf3ba581abd94cd8475496551d651c8a4230a9f7eb9edd",
+      "anchor_text": "There is no limit to the number of extensions",
+      "match_start": 11916,
+      "match_end": 11961,
+      "excerpt_text": "Requests for extension of stay in, or changes of status to, E-2 classification may be granted in increments of up to two years each. There is no limit to the number of extensions an E-2 nonimmigrant may be granted. All E-2 nonimmigrants, however, must maintain an intention to depart the United States when their status expires or is terminated.",
+      "excerpt_sha256": "53d2941a96146333bebc72616878d77bd39427ba73ba70a12a04f8f0d416c05b",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review"
+    },
+    {
+      "policy_id": "E2-14",
+      "source_id": "USCIS-E2",
+      "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/e-2-treaty-investors",
+      "source_sha256": "c5f7eff33deaa649afbf3ba581abd94cd8475496551d651c8a4230a9f7eb9edd",
+      "anchor_text": "employment authorized incident to status",
+      "match_start": 15351,
+      "match_end": 15391,
+      "excerpt_text": "Spouses of E-2 workers in valid E-2 or E-2S status are considered employment authorized incident to status, except for spouses of long-term investors in the Commonwealth of the Northern Mariana Islands (E-2 CNMI Investors) who are required to apply for employment authorization per 8 CFR 274a.12(c)(12).",
+      "excerpt_sha256": "20401e72bce6291718e96303e1bfd4ab6890c59849162252874a3882d7f16097",
+      "evidence_status": "candidate_text_matched",
+      "semantic_review_status": "needs_review"
+    }
+  ]
+}

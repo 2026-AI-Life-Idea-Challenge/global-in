@@ -1,0 +1,22 @@
+{
+  "team_reference_program_id": "US-WK-02",
+  "internal_program_id": "US-EM-04",
+  "internal_id_status": "provisional_not_registered",
+  "official_source_count": 5,
+  "policy_record_count": 14,
+  "evidence_record_count": 14,
+  "source_integrity_checked": true,
+  "policy_evidence_linkage_checked": true,
+  "evidence_excerpt_hashes_checked": true,
+  "pending_review_items": [
+    "seoul_embassy_e2_application_procedure",
+    "e2_annual_numerical_cap",
+    "current_policy_and_fee_reverification",
+    "final_semantic_and_legal_review"
+  ],
+  "validation_status": "needs_review",
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false
+}

@@ -1,0 +1,457 @@
+
+{
+  "country": "USA",
+  "route_id": "US-WK",
+  "team_reference_program_id": "US-WK-03",
+  "program_name": "L-1A/L-1B Intracompany Transferee",
+  "internal_program_id": null,
+  "internal_id_status": "pending_assignment_and_collision_check",
+  "validation_status": "needs_review",
+  "official_sources": [
+    {
+      "source_id": "USCIS-L1A",
+      "agency": "U.S. Citizenship and Immigration Services",
+      "title": "L-1A Intracompany Transferee Executive or Manager",
+      "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/l-1a-intracompany-transferee-executive-or-manager",
+      "local_path": "data/raw/usa/employment/l1_intracompany_transferee/uscis_l1a_executive_manager.html",
+      "sha256": "947d16cf535a51d870b3ec95bfc8d507f561b94039c28704d7f13e920efe6115"
+    },
+    {
+      "source_id": "USCIS-L1B",
+      "agency": "U.S. Citizenship and Immigration Services",
+      "title": "L-1B Intracompany Transferee Specialized Knowledge",
+      "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/l-1b-intracompany-transferee-specialized-knowledge",
+      "local_path": "data/raw/usa/employment/l1_intracompany_transferee/uscis_l1b_specialized_knowledge.html",
+      "sha256": "ee60ef78d070612c9e32027d3e3727d319cdb84461f790d086f2f8032813c628"
+    }, 
+    {
+        "source_id": "DOS-TEMP-WORKER",
+        "agency": "U.S. Department of State",
+        "title": "Temporary Worker Visas",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/employment/temporary-worker-visas.html",
+        "local_path": "data/raw/usa/employment/l1_intracompany_transferee/state_department_temporary_worker_visas.html",
+        "sha256": "31158f0aec746f02b5e4b78d19fcb4bf467a4aeef827f152466999ccbfff6d24"
+    },
+    {
+        "source_id": "DOS-KR-RECIPROCITY",
+        "agency": "U.S. Department of State",
+        "title": "South Korea Visa Reciprocity Schedule",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/Visa-Reciprocity-and-Civil-Documents-by-Country/KoreaSouth.html",
+        "local_path": "data/raw/usa/employment/e2_treaty_investor/state_department_south_korea_reciprocity.html",
+        "sha256": "d8046c6c8f12c54a41e3d9ae49c7165a00da67521581e602e411e3a3bd0a8cb1"
+    },
+    {
+        "source_id": "USCIS-G1055-20261016",
+        "agency": "U.S. Citizenship and Immigration Services",
+        "title": "Form G-1055 Fee Schedule, Edition 10/16/26",
+        "url": "https://www.uscis.gov/sites/default/files/document/forms/g-1055.pdf",
+        "local_path": "data/raw/usa/employment/l1_intracompany_transferee/uscis_g1055_fee_schedule.pdf",
+        "sha256": "98f1d64180e46a44f8734f9060d960d7aae3d40b654b99b063238c8fa07476c3"
+    },
+    {
+        "source_id": "USCIS-L1-POLICY-MANUAL",
+        "agency": "U.S. Citizenship and Immigration Services",
+        "title": "USCIS Policy Manual, Volume 2, Part L, Chapter 8 - Documentation and Evidence",
+        "url": "https://www.uscis.gov/policy-manual/volume-2-part-l-chapter-8",
+        "local_path": "data/raw/usa/employment/l1_intracompany_transferee/uscis_policy_manual_l1_documentation_evidence.html",
+        "sha256": "e09d98fa45d948979c4759792c476d3e2199ee8e0f5bfccce24b1207ce0e14ff"
+    }, 
+    {
+        "source_id": "DOS-NIV-INTERVIEW-LOCATION-20260715",
+        "agency": "U.S. Department of State",
+        "title": "Adjudicating Nonimmigrant Visa (NIV) Applicants in Their Country of Residence",
+        "url": "https://travel.state.gov/content/travel/en/News/visas-news/adjudicating-niv-applicants-in-their-country-of-residence.html",
+        "local_path": "data/raw/usa/employment/l1_intracompany_transferee/dos_niv_country_of_residence_2026.html",
+        "sha256": "e8e8092dedca4a4b4eafab6fae9f5b78d4cb100c1c667505df2c11670640f24d"
+    },
+    {
+        "source_id": "DOS-DS160-INSTRUCTIONS",
+        "agency": "U.S. Department of State",
+        "title": "DS-160: Online Nonimmigrant Visa Application",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/forms/ds-160-online-nonimmigrant-visa-application.html",
+        "local_path": "data/raw/usa/employment/l1_intracompany_transferee/dos_ds160_application_instructions.html",
+        "sha256": "4b9089bad13f638553575da98ec846f57552747988b2e8e179a7783f0bd29695"
+    }
+  ],
+  "policy_records": [
+    {
+      "policy_id": "L1-01",
+      "topic": "qualifying_corporate_relationship",
+      "visa_classifications": ["L-1A", "L-1B"],
+      "qualifying_relationship_types": [
+        "parent",
+        "branch",
+        "subsidiary",
+        "affiliate"
+      ],
+      "summary_ko": "미국 고용주와 해외 기업 간에 모회사, 지점, 자회사 또는 계열사 등의 적격 관계가 있어야 한다.",
+      "source_ids": ["USCIS-L1A", "USCIS-L1B"],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "L1-02",
+      "topic": "business_operations",
+      "visa_classifications": ["L-1A", "L-1B"],
+      "summary_ko": "적격 기업은 미국과 미국 외 최소 한 국가에서 고용주로서 사업을 운영하고 있거나 운영할 예정이어야 한다.",
+      "source_ids": ["USCIS-L1A", "USCIS-L1B"],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "L1-03",
+      "topic": "prior_foreign_employment",
+      "visa_classifications": ["L-1A", "L-1B"],
+      "foreign_employment_continuous_years": 1,
+      "lookback_period_years": 3,
+      "general_rule_with_possible_exceptions": true,
+      "summary_ko": "일반적으로 미국 입국 직전 3년 중 해외 적격 기업에서 연속 1년 근무한 경력이 필요하다. 예외 적용 가능성은 별도 검수한다.",
+      "source_ids": ["USCIS-L1A", "USCIS-L1B"],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "L1-04",
+      "topic": "l1a_executive_capacity",
+      "visa_classifications": ["L-1A"],
+      "summary_ko": "임원 직무는 일반적으로 많은 감독 없이 폭넓은 재량으로 의사결정을 내릴 수 있는 역할을 의미한다.",
+      "source_ids": ["USCIS-L1A"],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "L1-05",
+      "topic": "l1a_managerial_capacity",
+      "visa_classifications": ["L-1A"],
+      "summary_ko": "관리자 직무에는 전문직 직원 및 조직·부서·기능 관리가 포함된다. 중요한 조직 기능을 높은 수준에서 관리하는 경우도 포함될 수 있다.",
+      "source_ids": ["USCIS-L1A"],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "L1-06",
+      "topic": "l1b_specialized_knowledge",
+      "visa_classifications": ["L-1B"],
+      "knowledge_categories": [
+        "special_knowledge",
+        "advanced_knowledge"
+      ],
+      "categories_are_alternatives": true,
+      "summary_ko": "신청 기업의 제품·서비스·연구·장비·기술 등에 관한 특수지식 또는 조직의 프로세스·절차에 관한 고급 지식이나 전문성이 요구된다.",
+      "source_ids": ["USCIS-L1B"],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "L1-07",
+      "topic": "initial_stay_new_office",
+      "visa_classifications": ["L-1A", "L-1B"],
+      "maximum_initial_stay_years": 1,
+      "summary_ko": "미국 신규 사무소를 설립하기 위해 입국하는 적격 직원의 최초 체류기간은 최대 1년이다.",
+      "source_ids": ["USCIS-L1A", "USCIS-L1B"],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "L1-08",
+      "topic": "initial_stay_other",
+      "visa_classifications": ["L-1A", "L-1B"],
+      "maximum_initial_stay_years": 3,
+      "summary_ko": "신규 사무소 설립에 해당하지 않는 적격 직원의 최초 체류기간은 최대 3년이다.",
+      "source_ids": ["USCIS-L1A", "USCIS-L1B"],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "L1-09",
+      "topic": "l1a_extension_and_maximum_stay",
+      "visa_classifications": ["L-1A"],
+      "maximum_extension_increment_years": 2,
+      "maximum_stay_years": 7,
+      "summary_ko": "L-1A 체류기간 연장은 최대 2년 단위로 허가될 수 있으며 일반적인 최대 체류기간은 7년이다.",
+      "source_ids": ["USCIS-L1A"],
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "L1-10",
+      "topic": "l1b_extension_and_maximum_stay",
+      "visa_classifications": ["L-1B"],
+      "maximum_extension_increment_years": 2,
+      "maximum_stay_years": 5,
+      "summary_ko": "L-1B 체류기간 연장은 최대 2년 단위로 허가될 수 있으며 일반적인 최대 체류기간은 5년이다.",
+      "source_ids": ["USCIS-L1B"],
+      "review_status": "needs_review"
+    },
+    {
+        "policy_id": "L1-11",
+        "topic": "l1a_new_office_requirements",
+        "visa_classifications": ["L-1A"],
+        "applicant_type": "executive_or_manager",
+        "sufficient_physical_premises_required": true,
+        "prior_executive_or_manager_employment_years": 1,
+        "prior_employment_lookback_years": 3,
+        "us_office_support_position_within_years": 1,
+        "summary_ko": "L-1A 신규 사무소 설립을 위해서는 충분한 물리적 사무 공간을 확보하고, 직원이 청원 제출 전 3년 중 해외에서 임원 또는 관리자로 연속 1년 근무했으며, 청원 승인 후 1년 이내 미국 사무소가 임원 또는 관리자 직위를 뒷받침할 수 있어야 한다.",
+        "source_ids": ["USCIS-L1A"],
+        "review_status": "needs_review"
+    },
+    {
+        "policy_id": "L1-12",
+        "topic": "l1b_new_office_requirements",
+        "visa_classifications": ["L-1B"],
+        "applicant_type": "specialized_knowledge_employee",
+        "sufficient_physical_premises_required": true,
+        "financial_ability_to_compensate_employee_required": true,
+        "financial_ability_to_begin_business_required": true,
+        "summary_ko": "L-1B 신규 사무소 설립 시 충분한 물리적 사무 공간과 직원에게 급여를 지급하고 미국에서 사업을 시작할 수 있는 재정적 능력을 입증해야 한다.",
+        "source_ids": ["USCIS-L1B"],
+        "review_status": "needs_review"
+    },
+    {
+        "policy_id": "L1-13",
+        "topic": "l1b_third_party_worksite_restrictions",
+        "visa_classifications": ["L-1B"],
+        "applicant_type": "specialized_knowledge_employee",
+        "applies_when": "principally_stationed_at_unaffiliated_employer_worksite",
+        "principally_controlled_by_unaffiliated_employer_allowed": false,
+        "labor_for_hire_to_unaffiliated_employer_allowed": false,
+        "both_restrictions_must_be_satisfied": true,
+        "third_party_worksite_automatically_disqualifies": false,
+        "summary_ko": "L-1B 직원이 청원 고용주 또는 그 적격 관계사가 아닌 기업의 사업장에서 주로 근무하는 경우, 비계열 기업이 해당 직원을 주로 감독·통제해서는 안 되며 업무가 해당 기업에 대한 단순 인력 공급이어서는 안 된다. 두 조건을 모두 충족해야 한다.",
+        "source_ids": ["USCIS-L1B"],
+        "review_status": "needs_review"
+    },
+    {
+        "policy_id": "L1-14",
+        "topic": "l2_family_dependents",
+        "visa_classifications": ["L-1A", "L-1B"],
+        "dependent_classification": "L-2",
+        "eligible_relationships": [
+            "spouse",
+            "unmarried_child_under_21"
+        ],
+        "child_maximum_age_exclusive": 21,
+        "dependent_stay_generally_same_as_principal": true,
+        "form_i539_for_change_or_extension": true,
+        "summary_ko": "L-1A 또는 L-1B 주신청자의 배우자와 21세 미만 미혼 자녀는 L-2 신분을 신청할 수 있으며, 승인 시 일반적으로 주신청자와 동일한 체류기간을 부여받는다. 미국 내 신분 변경 또는 체류기간 연장은 Form I-539를 통해 신청할 수 있다.",
+        "source_ids": ["USCIS-L1A", "USCIS-L1B"],
+        "review_status": "needs_review"
+    },
+    {
+        "policy_id": "L1-15",
+        "topic": "l2_spouse_employment_authorization",
+        "visa_classifications": ["L-1A", "L-1B"],
+        "applicant_type": "dependent_spouse",
+        "dependent_classification": "L-2S",
+        "employment_authorized_incident_to_status": true,
+        "separate_ead_generally_required": false,
+        "unexpired_l2s_i94_accepted_as_i9_list_c_evidence": true,
+        "historical_l2_i94_notice_exception_exists": true,
+        "employment_authorization_not_automatically_extended_to_children": true,
+        "summary_ko": "유효한 L-2S 신분의 배우자는 신분 자체에 따라 취업이 허용된다. 유효한 L-2S 표기 I-94는 Form I-9의 List C 증빙으로 사용할 수 있다. 과거 L-2 표기 I-94와 USCIS 통지서를 함께 사용하는 경우도 있으며, 이 규정을 자녀에게 자동 적용해서는 안 된다.",
+        "source_ids": ["USCIS-L1A", "USCIS-L1B"],
+        "review_status": "needs_review"
+    }, 
+    {
+        "policy_id": "L1-16",
+        "topic": "l1_uscis_petition",
+        "visa_classifications": ["L-1A", "L-1B"],
+        "petition_form": "I-129",
+        "petition_agency": "USCIS",
+        "petition_approval_generally_required_before_visa_application": true,
+        "uscis_filing_fee_verified": false,
+        "summary_ko": "일반 L-1 신청에서는 미국 고용주의 USCIS Form I-129 청원 및 승인 절차가 필요하다. Blanket L에 적용되는 세부 절차는 별도로 구분한다.",
+        "source_ids": ["DOS-TEMP-WORKER", "USCIS-L1A", "USCIS-L1B"],
+        "review_status": "needs_review"
+    },
+    {
+        "policy_id": "L1-17",
+        "topic": "l1_visa_application_and_mrv_fee",
+        "visa_classifications": ["L-1A", "L-1B"],
+        "visa_application_form": "DS-160",
+        "ds160_confirmation_page_required_for_interview": true,
+        "mrv_application_fee_usd": 205,
+        "mrv_fee_nonrefundable": true,
+        "visa_issuance_fee_separate": true,
+        "total_application_cost_verified": false,
+        "fee_currentness_requires_recheck": true,
+        "summary_ko": "해외 L-1 비자 신청자는 DS-160 온라인 신청서를 작성하고 인터뷰에 확인 페이지를 지참한다. 국무부 일반 안내에 표시된 비자 신청 수수료는 USD 205이며, 비자 발급 수수료와 USCIS 청원 수수료 등은 별도 항목이다.",
+        "source_ids": ["DOS-TEMP-WORKER", "DOS-DS160-INSTRUCTIONS"],
+        "review_status": "needs_review"
+    },
+    {
+        "policy_id": "L1-18",
+        "topic": "blanket_l_visa_application",
+        "visa_classifications": ["L-1A", "L-1B"],
+        "applies_when": "included_in_approved_blanket_l_petition",
+        "form_i129s_required_at_interview": true,
+        "fraud_prevention_and_detection_fee_required": true,
+        "border_security_act_fee_conditionally_applicable": true,
+        "fraud_prevention_fee_amount_verified": false,
+        "border_security_act_fee_amount_verified": false,
+        "summary_ko": "Blanket L 청원에 포함된 비자 신청자는 인터뷰 시 Form I-129S를 지참해야 하며, Fraud Prevention and Detection 수수료가 추가로 적용된다. Border Security Act 수수료는 해당 조건을 충족하는 경우 적용될 수 있다.",
+        "source_ids": ["DOS-TEMP-WORKER"],
+        "review_status": "needs_review"
+    },
+    {
+        "policy_id": "L1-19",
+        "topic": "south_korea_l1_l2_visa_reciprocity",
+        "visa_classifications": ["L-1", "L-2"],
+        "nationality": "Korea (South)",
+        "l1_reciprocity_issuance_fee_usd": 0,
+        "l1_number_of_entries": "multiple",
+        "l1_visa_validity_months": 60,
+        "l2_reciprocity_issuance_fee_usd": 0,
+        "l2_number_of_entries": "multiple",
+        "l2_visa_validity_months": 60,
+        "visa_validity_is_period_of_stay": false,
+        "mrv_application_fee_separate": true,
+        "summary_ko": "한국 국적자의 일반 L-1 및 L-2 비자 상호주의 발급 수수료는 없으며, 복수 입국과 60개월의 비자 유효기간이 표시되어 있다. 상호주의 발급 수수료는 비자 신청 수수료와 별개이며 비자 유효기간은 미국 내 체류기간을 의미하지 않는다.",
+        "source_ids": ["DOS-KR-RECIPROCITY"],
+        "review_status": "needs_review"
+    },
+    {
+        "policy_id": "L1-20",
+        "topic": "l1_i129_petition_base_and_asylum_fees",
+        "visa_classifications": ["L-1A", "L-1B"],
+        "fee_schedule_edition": "2026-10-16",
+        "petition_form": "I-129-L",
+        "regular_petitioner_paper_fee_usd": 1385,
+        "regular_petitioner_online_fee_usd": 1335,
+        "small_employer_or_nonprofit_paper_fee_usd": 695,
+        "small_employer_or_nonprofit_online_fee_usd": 695,
+        "asylum_program_fee_regular_usd": 600,
+        "asylum_program_fee_small_employer_usd": 300,
+        "asylum_program_fee_nonprofit_usd": 0,
+        "additional_fees_may_apply": true,
+        "fee_currentness_requires_recheck": true,
+        "summary_ko": "2026년 10월 16일 개정 USCIS 수수료표 기준, L 청원의 기본 제출 수수료는 일반 기업 종이 제출 USD 1,385, 온라인 제출 USD 1,335이며 소규모 기업과 비영리기관은 USD 695이다. Asylum Program Fee는 일반 기업 USD 600, 소규모 기업 USD 300, 비영리기관 USD 0으로 구분된다. 기타 추가 수수료는 별도 확인해야 한다.",
+        "source_ids": ["USCIS-G1055-20261016"],
+        "review_status": "needs_review"
+    },
+    {
+        "policy_id": "L1-21",
+        "topic": "l1_fraud_prevention_and_detection_fee",
+        "visa_classifications": ["L-1A", "L-1B"],
+        "fee_schedule_edition": "2026-10-16",
+        "fee_usd": 500,
+        "applicable_situations": [
+            "initial_approval_of_l_nonimmigrant_status",
+            "employment_of_l_nonimmigrant_working_for_another_petitioner",
+            "blanket_petition_continuation_with_different_entity_from_previous_petitioner"
+        ],
+        "universally_applies_to_all_l1_petitions": false,
+        "summary_ko": "USCIS L 청원에서 최초 L 비이민 신분 승인, 다른 청원 고용주를 위해 근무 중인 L 직원의 고용 승인, 또는 이전 청원자와 다른 법인에서 근무를 계속하기 위한 Blanket 청원 승인 등 명시된 상황에 USD 500의 Fraud Prevention and Detection Fee가 적용된다.",
+        "source_ids": ["USCIS-G1055-20261016"],
+        "review_status": "needs_review"
+    },
+    {
+        "policy_id": "L1-22",
+        "topic": "l1_public_law_114_113_additional_fee",
+        "visa_classifications": ["L-1A", "L-1B"],
+        "fee_schedule_edition": "2026-10-16",
+        "fee_usd": 4500,
+        "minimum_us_employees": 50,
+        "h1b_l1_workforce_share_strictly_greater_than": 0.5,
+        "petition_filing_deadline_inclusive": "2027-09-30",
+        "all_conditions_required": true,
+        "amended_petition_without_extension_exception": true,
+        "fee_waivable": false,
+        "fee_refundable": false,
+        "universally_applies_to_all_l1_petitions": false,
+        "summary_ko": "미국 내 직원이 50명 이상이고 그중 50% 초과가 H-1B, L-1A 또는 L-1B 신분이며 청원 제출일이 2027년 9월 30일 이내인 경우, Pub. L. 114-113에 따른 USD 4,500 추가 수수료가 적용될 수 있다. 현재 허가된 L-1 체류기간 연장을 요청하지 않는 수정 청원에는 예외가 명시되어 있다. 해당 수수료는 면제 및 환불이 불가능하다.",
+        "source_ids": ["USCIS-G1055-20261016"],
+        "review_status": "needs_review"
+    },
+    {
+        "policy_id": "L1-23",
+        "topic": "blanket_l_petition_organizational_eligibility",
+        "visa_classifications": ["L-1A", "L-1B"],
+        "petition_type": "blanket_l",
+        "purpose": "preapproval_of_qualifying_related_entities",
+        "us_office_minimum_business_years": 1,
+        "minimum_domestic_and_foreign_related_entities": 3,
+        "commercial_trade_or_services_required": true,
+        "each_entity_doing_business_required": true,
+        "ownership_and_control_evidence_required": true,
+        "alternative_scale_requirements": {
+            "previous_12_months_approved_l_petitions_minimum": 10,
+            "combined_us_annual_sales_usd_minimum": 25000000,
+            "us_workforce_minimum": 1000
+        },
+        "scale_requirements_operator": "OR",
+        "baseline_requirements_operator": "AND",
+        "summary_ko": "Blanket L 청원은 적격 관계회사들의 사전 승인을 위한 절차이다. 미국 사무소의 1년 이상 사업 운영, 국내외 지점·자회사·계열사 3개 이상, 각 기업의 사업 활동 및 소유·지배 관계 등에 관한 기본 요건을 충족해야 한다. 추가로 최근 12개월 L 청원 승인 10건 이상, 미국 관계사의 합산 연매출 USD 2,500만 이상, 미국 내 직원 1,000명 이상 중 하나 이상의 요건을 충족해야 한다.",
+        "source_ids": ["USCIS-L1-POLICY-MANUAL"],
+        "review_status": "needs_review"
+    },
+    {
+        "policy_id": "L1-24",
+        "topic": "l1a_new_office_supporting_evidence",
+        "visa_classifications": ["L-1A"],
+        "petition_type": "new_office",
+        "supporting_evidence_categories": [
+            "proposed_business_scope_and_organizational_structure",
+            "financial_goals",
+            "us_investment_amount",
+            "foreign_entity_financial_ability_to_remunerate",
+            "foreign_entity_organizational_structure",
+            "sufficient_physical_premises"
+        ],
+        "executive_or_managerial_foreign_experience_required": true,
+        "specialized_knowledge_experience_alone_sufficient": false,
+        "us_office_support_executive_or_managerial_role_within_years": 1,
+        "summary_ko": "L-1A 신규 사무소 청원자는 사업 범위·조직구조·재무 목표, 미국 투자 규모, 해외 기업의 급여 지급 능력 및 조직구조, 충분한 물리적 사무 공간 등을 입증해야 한다. 해당 직원의 해외 적격 경력은 임원 또는 관리자 직무여야 하며, 특수지식 경력만으로는 L-1A 신규 사무소 자격을 충족할 수 없다.",
+        "source_ids": ["USCIS-L1-POLICY-MANUAL"],
+        "review_status": "needs_review"
+        },
+        {
+        "policy_id": "L1-25",
+        "topic": "l1_new_office_first_extension_evidence",
+        "visa_classifications": ["L-1A", "L-1B"],
+        "petition_type": "new_office_first_extension",
+        "initial_approval_maximum_years": 1,
+        "first_extension_maximum_years": 2,
+        "required_evidence_categories": [
+            "continued_qualifying_corporate_relationship",
+            "us_entity_doing_business",
+            "beneficiary_previous_and_proposed_duties",
+            "staffing_structure_and_positions",
+            "wage_evidence_when_managerial_or_executive",
+            "us_operation_financial_status"
+        ],
+        "subsequent_extensions_follow_regular_individual_l_rules": true,
+        "summary_ko": "신규 사무소 개별 L 청원 최초 승인기간은 최대 1년이며, 이후 첫 연장은 최대 2년까지 허가될 수 있다. 이때 적격 기업 관계 유지, 미국 법인의 실제 사업 운영, 직원의 기존·예정 업무, 인력 구성 및 해당되는 경우 임금 지급 증빙, 미국 사업체의 재무 상태 등을 제출해야 한다. 첫 연장 승인 이후에는 일반 개별 L 연장 규정이 적용된다.",
+        "source_ids": ["USCIS-L1-POLICY-MANUAL"],
+        "review_status": "needs_review"
+    }, 
+    {
+        "policy_id": "L1-26",
+        "topic": "nonimmigrant_visa_interview_country_of_nationality_or_residence",
+        "visa_classifications": ["L-1A", "L-1B"],
+        "guidance_publication_date": "2026-07-15",
+        "recommended_application_locations": [
+            "country_of_nationality",
+            "country_of_residence"
+        ],
+        "residence_evidence_required_when_applying_based_on_residence": true,
+        "third_country_application_automatically_prohibited": false,
+        "third_country_application_may_be_more_difficult": true,
+        "third_country_appointment_wait_may_be_longer": true,
+        "application_fees_nonrefundable_and_nontransferable": true,
+        "existing_appointments_generally_remain_valid": true,
+        "rare_exceptions_may_apply": true,
+        "south_korea_specific_booking_procedure_verified": false,
+        "summary_ko": "2026년 7월 15일 발표된 미국 국무부 비이민 비자 인터뷰 지침에 따르면, L-1 신청자는 원칙적으로 국적국 또는 거주국의 미국 대사관·영사관에서 인터뷰를 예약해야 한다. 거주국을 기준으로 신청하면 거주 사실을 입증할 수 있어야 한다. 국적국·거주국 또는 지정 공관 외 지역에서 신청할 경우 심사와 예약에 불이익이 있을 수 있으며, 예외가 인정되는 상황도 존재한다. 한국 내 구체적인 예약·결제 절차는 별도 확인이 필요하다.",
+        "source_ids": [
+            "DOS-NIV-INTERVIEW-LOCATION-20260715"
+        ],
+        "review_status": "needs_review"
+    }
+  ],
+  "pending_review_items": [
+    "l1b_third_party_worksite_requirements",
+    "new_office_petition_supporting_documents",
+    "l2_family_and_spouse_employment",
+    "petition_forms_and_filing_fees",
+    "visa_application_fees_and_reciprocity",
+    "blanket_l_petition_requirements",
+    "current_policy_and_legal_review"
+  ],
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false,
+  "automatic_eligibility_rules_enabled": false,
+  "embedding_generated": false
+}
