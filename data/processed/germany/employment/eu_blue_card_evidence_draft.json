@@ -1,0 +1,414 @@
+{
+  "country": "Germany",
+  "program": "eu_blue_card",
+  "visa_or_residence_title": "EU Blue Card",
+  "legal_basis": "AufenthG Section 18g",
+  "pathway_type": "employment",
+  "official_source": {
+    "authority": "German Federal Government - Make it in Germany",
+    "source_url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+    "source_language": "en",
+    "source_file": "data/raw/germany/employment/eu_blue_card_make_it_in_germany_en.txt",
+    "source_sha256": "b2786cf1a5ee0ee198cb44fae32fe8bae19bce0c347a63f20c7269493d1bbc95",
+    "char_count": 8482,
+    "line_count": 130
+  },
+  "evidence_sections": [
+    {
+      "section_id": "DE_BLUE_CARD_SEC_01",
+      "topic": "overview",
+      "heading": "What is the EU Blue Card?",
+      "source_sha256": "b2786cf1a5ee0ee198cb44fae32fe8bae19bce0c347a63f20c7269493d1bbc95",
+      "start_line": 26,
+      "end_line": 28,
+      "original_text": "What is the EU Blue Card?\nThe EU Blue Card (Section 18g of the Residence Act [AufenthG](External link) ) is a special residence title for foreign academics and people with comparable qualifications who want to take up qualified employment in Germany. To find out if you need a visa to enter Germany, see the “How do I apply for a visa?” section.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_BLUE_CARD_SEC_02",
+      "topic": "requirements",
+      "heading": "Overview of the requirements for the EU Blue Card",
+      "source_sha256": "b2786cf1a5ee0ee198cb44fae32fe8bae19bce0c347a63f20c7269493d1bbc95",
+      "start_line": 29,
+      "end_line": 48,
+      "original_text": "Overview of the requirements for the EU Blue Card\nYou have a German academic qualification or a foreign academic qualification that is comparable to a German academic qualification. If you do not have a traditional academic degree, you must demonstrate that you have a tertiary-level qualification that took at least three years to complete in order to obtain an EU Blue Card. In Germany, this qualification must correspond to at least level 6 of the International Standard Classification of Education (ISCED 2011)(External link)  or level 6 of the European Qualifications Framework. Examples of such training qualifications include “Master craftsman training / Master craftswoman training” as well as non-academic vocational qualifications in educator professions. Information on the equivalence and recognition of foreign academic qualifications can be found in the “Recognition” section\nYou already have a specific job offer from a company in Germany. The job offer must meet the following conditions:\nThe period of employment must be at least six months.\nThe job must match your qualification (academic degree). If a licence to practise (regulated professions) is required, this must be in place or in prospect at the time of the visa application.\nYour job in Germany must enable you to earn a gross annual salary of at least €50,700 (as of 2026).\nIf you are employed in a shortage occupation, you can also obtain an EU Blue Card with a lower gross annual salary of at least €45,934.20 (as of 2026) if the Federal Employment Agency (BA) has approved your employment. The salary thresholds are published annually by the Federal Ministry of the Interior and Community. The following professions are considered to be shortage occupations in Germany:\nManufacturing, mining, construction and distribution managers\nInformation and communications technology service managers\nProfessional services managers, such as childcare services, health services and education managers\nAcademic STEM professionals\nAcademic professionals in architecture, spatial planning and transport planning\nMedical doctors\nVeterinarians\nDentists\nPharmacists\nAcademic and comparable nursing and midwifery professionals\nSchool and out-of-school teachers and educators\nThe detailed list of shortage occupations for the EU Blue Card can be found here.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_BLUE_CARD_SEC_03",
+      "topic": "young_professionals",
+      "heading": "EU Blue Card for young professionals",
+      "source_sha256": "b2786cf1a5ee0ee198cb44fae32fe8bae19bce0c347a63f20c7269493d1bbc95",
+      "start_line": 49,
+      "end_line": 62,
+      "original_text": "EU Blue Card for young professionals\nThe following applies to new entrants to the labour market: If you obtained your last degree or equivalent qualification less than three years ago, you can also obtain an EU Blue Card if your job offer includes a gross annual salary of at least €45,934.20 (as of 2026). This applies to entry-level jobs in all professions. The approval of the Federal Employment Agency is also required for the visa procedure.\n\nHere you find an overview of how to secure your livelihood according to the purpose of stay.\n\n\nIn this video: How do I get the EU Blue Card?\nEven if you do not meet the above-mentioned requirements for an EU Blue Card, there may be other options open to you. You can apply for a work visa for professionals with an academic qualification under Section 18b of the Residence Act (AufenthG)(External link) .\n\n\nAt a glance: EU Blue Card\nDiese Grafik erklärt Ihnen, unter welchen Bedingungen Sie die Blaue Karte EU erhalten und wie Sie schrittweise den Einreiseprozess nach Deutschland vorbereiten.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_BLUE_CARD_SEC_04",
+      "topic": "residence_and_settlement",
+      "heading": "How to live and work with the EU Blue Card",
+      "source_sha256": "b2786cf1a5ee0ee198cb44fae32fe8bae19bce0c347a63f20c7269493d1bbc95",
+      "start_line": 63,
+      "end_line": 69,
+      "original_text": "How to live and work with the EU Blue Card\nThe EU Blue Card is issued for the duration of your employment contract, plus an additional six months, and is valid for a maximum of four years. It is possible to extend the validity of this residence title in Germany if certain conditions are met. \n\nAfter 27 months, EU Blue Card holders can obtain a settlement permit if they can prove that they have German language skills at level A1 according to the Common European Framework of Reference for Languages (CEFR). If language level B1 can be demonstrated, the settlement permit can be issued after only 21 months.\n\nDo you want to live in Germany with your family? As an EU Blue Card holder, this is possible. To find out what you need to consider and what the requirements are, please see the “Family reunification” section.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_BLUE_CARD_SEC_05",
+      "topic": "change_of_employment",
+      "heading": "What to consider when changing jobs with the EU Blue Card",
+      "source_sha256": "b2786cf1a5ee0ee198cb44fae32fe8bae19bce0c347a63f20c7269493d1bbc95",
+      "start_line": 70,
+      "end_line": 72,
+      "original_text": "What to consider when changing jobs with the EU Blue Card\nAre you an EU Blue Card holder looking to change your employer in Germany? This is no problem. You will be able to start your new job with a valid EU Blue Card. However, if you change jobs within the first year of employment, you must notify your local foreigners authority of your new job. The foreigners authority will check whether you still meet the conditions for the EU Blue Card in your new job. If this is not the case, you may be granted another type of residence permit, such as a work and residence permit for qualified professionals.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_BLUE_CARD_SEC_06",
+      "topic": "it_without_degree",
+      "heading": "EU Blue Card without a degree: opportunities for IT specialists",
+      "source_sha256": "b2786cf1a5ee0ee198cb44fae32fe8bae19bce0c347a63f20c7269493d1bbc95",
+      "start_line": 73,
+      "end_line": 82,
+      "original_text": "EU Blue Card without a degree: opportunities for IT specialists\nDo you want to work in Germany as an IT professional or manager without a formal qualification? Under certain conditions, you may be able to obtain an EU Blue Card. \n\nYou must be able to demonstrate that you have a specific job offer as an IT professional in Germany. The period of employment must be at least six months.\nYour job in Germany must enable you to earn a gross annual salary of at least €45,934.20 (as of 2026).\nYou must have worked in IT for at least three of the past seven years. Your professional experience must have been at university level and a prerequisite for employment in Germany.\nDo you meet the above-mentioned requirements? Then you are entitled to an EU Blue Card under Section 18g of the Residence Act [AufenthG](External link) . Find out about the entry and visa process. \n\nIf you are an IT professional without a formal qualification, in addition to the EU Blue Card, you may be able to enter Germany under the special regulations for individuals with practical knowledge.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_BLUE_CARD_SEC_07",
+      "topic": "online_application",
+      "heading": "Apply for the EU Blue Card online",
+      "source_sha256": "b2786cf1a5ee0ee198cb44fae32fe8bae19bce0c347a63f20c7269493d1bbc95",
+      "start_line": 83,
+      "end_line": 99,
+      "original_text": "Apply for the EU Blue Card online\nDo you meet the necessary requirements? Then you can apply for the EU Blue Card online here: Consular Services Portal of the Federal Foreign Office(External link) .\n \n\n\nVideo: Experience with the EU Blue Card",
+      "review_status": "needs_review"
+    }
+  ],
+  "eligibility_pathways": [
+    {
+      "pathway_id": "general",
+      "name": "General EU Blue Card",
+      "salary_threshold": {
+        "year": 2026,
+        "currency": "EUR",
+        "gross_annual_eur": 50700,
+        "review_status": "needs_review"
+      },
+      "source_evidence_id": "DE_BLUE_CARD_EVD_01",
+      "policy_candidate_id": "DE_BLUE_CARD_POL_01",
+      "review_points": [
+        "german_or_comparable_foreign_degree",
+        "qualifying_tertiary_level_nonacademic_qualification",
+        "qualification_level_iscED_or_EQF_6",
+        "job_offer_at_least_six_months",
+        "qualification_matching_job",
+        "regulated_profession_licence",
+        "gross_annual_salary_threshold"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "pathway_id": "shortage_occupation",
+      "name": "EU Blue Card - Shortage Occupations",
+      "salary_threshold": {
+        "year": 2026,
+        "currency": "EUR",
+        "gross_annual_eur": 45934.2,
+        "review_status": "needs_review"
+      },
+      "source_evidence_id": "DE_BLUE_CARD_EVD_02",
+      "policy_candidate_id": "DE_BLUE_CARD_POL_02",
+      "review_points": [
+        "qualifying_degree_or_equivalent_qualification",
+        "specific_shortage_occupation",
+        "official_detailed_shortage_occupation_list",
+        "six_month_employment_requirement",
+        "gross_annual_salary_threshold",
+        "federal_employment_agency_approval"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "pathway_id": "young_professional",
+      "name": "EU Blue Card - New Labour Market Entrants",
+      "salary_threshold": {
+        "year": 2026,
+        "currency": "EUR",
+        "gross_annual_eur": 45934.2,
+        "review_status": "needs_review"
+      },
+      "source_evidence_id": "DE_BLUE_CARD_EVD_03",
+      "policy_candidate_id": "DE_BLUE_CARD_POL_03",
+      "review_points": [
+        "last_degree_or_equivalent_qualification",
+        "qualification_obtained_less_than_three_years_ago",
+        "entry_level_jobs_all_professions",
+        "six_month_employment_requirement",
+        "gross_annual_salary_threshold",
+        "federal_employment_agency_approval"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "pathway_id": "it_without_degree",
+      "name": "EU Blue Card - IT Without Formal Qualification",
+      "salary_threshold": {
+        "year": 2026,
+        "currency": "EUR",
+        "gross_annual_eur": 45934.2,
+        "review_status": "needs_review"
+      },
+      "source_evidence_id": "DE_BLUE_CARD_EVD_04",
+      "policy_candidate_id": "DE_BLUE_CARD_POL_04",
+      "review_points": [
+        "it_professional_or_manager_job_offer",
+        "six_month_employment_requirement",
+        "gross_annual_salary_threshold",
+        "three_years_it_experience_within_seven_years",
+        "university_level_professional_experience",
+        "professional_experience_required_for_employment",
+        "agency_approval_applicability_to_verify"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "DE_BLUE_CARD_EVD_01",
+      "pathway": "general",
+      "source_section_id": "DE_BLUE_CARD_SEC_02",
+      "start_line": 30,
+      "end_line": 34,
+      "exact_quote": "You have a German academic qualification or a foreign academic qualification that is comparable to a German academic qualification. If you do not have a traditional academic degree, you must demonstrate that you have a tertiary-level qualification that took at least three years to complete in order to obtain an EU Blue Card. In Germany, this qualification must correspond to at least level 6 of the International Standard Classification of Education (ISCED 2011)(External link)  or level 6 of the European Qualifications Framework. Examples of such training qualifications include “Master craftsman training / Master craftswoman training” as well as non-academic vocational qualifications in educator professions. Information on the equivalence and recognition of foreign academic qualifications can be found in the “Recognition” section\nYou already have a specific job offer from a company in Germany. The job offer must meet the following conditions:\nThe period of employment must be at least six months.\nThe job must match your qualification (academic degree). If a licence to practise (regulated professions) is required, this must be in place or in prospect at the time of the visa application.\nYour job in Germany must enable you to earn a gross annual salary of at least €50,700 (as of 2026).",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_BLUE_CARD_EVD_02",
+      "pathway": "shortage_occupation",
+      "source_section_id": "DE_BLUE_CARD_SEC_02",
+      "start_line": 35,
+      "end_line": 48,
+      "exact_quote": "If you are employed in a shortage occupation, you can also obtain an EU Blue Card with a lower gross annual salary of at least €45,934.20 (as of 2026) if the Federal Employment Agency (BA) has approved your employment. The salary thresholds are published annually by the Federal Ministry of the Interior and Community. The following professions are considered to be shortage occupations in Germany:\nManufacturing, mining, construction and distribution managers\nInformation and communications technology service managers\nProfessional services managers, such as childcare services, health services and education managers\nAcademic STEM professionals\nAcademic professionals in architecture, spatial planning and transport planning\nMedical doctors\nVeterinarians\nDentists\nPharmacists\nAcademic and comparable nursing and midwifery professionals\nSchool and out-of-school teachers and educators\nThe detailed list of shortage occupations for the EU Blue Card can be found here.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_BLUE_CARD_EVD_03",
+      "pathway": "young_professional",
+      "source_section_id": "DE_BLUE_CARD_SEC_03",
+      "start_line": 50,
+      "end_line": 62,
+      "exact_quote": "The following applies to new entrants to the labour market: If you obtained your last degree or equivalent qualification less than three years ago, you can also obtain an EU Blue Card if your job offer includes a gross annual salary of at least €45,934.20 (as of 2026). This applies to entry-level jobs in all professions. The approval of the Federal Employment Agency is also required for the visa procedure.\n\nHere you find an overview of how to secure your livelihood according to the purpose of stay.\n\n\nIn this video: How do I get the EU Blue Card?\nEven if you do not meet the above-mentioned requirements for an EU Blue Card, there may be other options open to you. You can apply for a work visa for professionals with an academic qualification under Section 18b of the Residence Act (AufenthG)(External link) .\n\n\nAt a glance: EU Blue Card\nDiese Grafik erklärt Ihnen, unter welchen Bedingungen Sie die Blaue Karte EU erhalten und wie Sie schrittweise den Einreiseprozess nach Deutschland vorbereiten.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_BLUE_CARD_EVD_04",
+      "pathway": "it_without_degree",
+      "source_section_id": "DE_BLUE_CARD_SEC_06",
+      "start_line": 76,
+      "end_line": 78,
+      "exact_quote": "You must be able to demonstrate that you have a specific job offer as an IT professional in Germany. The period of employment must be at least six months.\nYour job in Germany must enable you to earn a gross annual salary of at least €45,934.20 (as of 2026).\nYou must have worked in IT for at least three of the past seven years. Your professional experience must have been at university level and a prerequisite for employment in Germany.",
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "DE_BLUE_CARD_POL_01",
+      "pathway": "general",
+      "source_evidence_id": "DE_BLUE_CARD_EVD_01",
+      "source_text": "You have a German academic qualification or a foreign academic qualification that is comparable to a German academic qualification. If you do not have a traditional academic degree, you must demonstrate that you have a tertiary-level qualification that took at least three years to complete in order to obtain an EU Blue Card. In Germany, this qualification must correspond to at least level 6 of the International Standard Classification of Education (ISCED 2011)(External link)  or level 6 of the European Qualifications Framework. Examples of such training qualifications include “Master craftsman training / Master craftswoman training” as well as non-academic vocational qualifications in educator professions. Information on the equivalence and recognition of foreign academic qualifications can be found in the “Recognition” section\nYou already have a specific job offer from a company in Germany. The job offer must meet the following conditions:\nThe period of employment must be at least six months.\nThe job must match your qualification (academic degree). If a licence to practise (regulated professions) is required, this must be in place or in prospect at the time of the visa application.\nYour job in Germany must enable you to earn a gross annual salary of at least €50,700 (as of 2026).",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "DE_BLUE_CARD_POL_02",
+      "pathway": "shortage_occupation",
+      "source_evidence_id": "DE_BLUE_CARD_EVD_02",
+      "source_text": "If you are employed in a shortage occupation, you can also obtain an EU Blue Card with a lower gross annual salary of at least €45,934.20 (as of 2026) if the Federal Employment Agency (BA) has approved your employment. The salary thresholds are published annually by the Federal Ministry of the Interior and Community. The following professions are considered to be shortage occupations in Germany:\nManufacturing, mining, construction and distribution managers\nInformation and communications technology service managers\nProfessional services managers, such as childcare services, health services and education managers\nAcademic STEM professionals\nAcademic professionals in architecture, spatial planning and transport planning\nMedical doctors\nVeterinarians\nDentists\nPharmacists\nAcademic and comparable nursing and midwifery professionals\nSchool and out-of-school teachers and educators\nThe detailed list of shortage occupations for the EU Blue Card can be found here.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "DE_BLUE_CARD_POL_03",
+      "pathway": "young_professional",
+      "source_evidence_id": "DE_BLUE_CARD_EVD_03",
+      "source_text": "The following applies to new entrants to the labour market: If you obtained your last degree or equivalent qualification less than three years ago, you can also obtain an EU Blue Card if your job offer includes a gross annual salary of at least €45,934.20 (as of 2026). This applies to entry-level jobs in all professions. The approval of the Federal Employment Agency is also required for the visa procedure.\n\nHere you find an overview of how to secure your livelihood according to the purpose of stay.\n\n\nIn this video: How do I get the EU Blue Card?\nEven if you do not meet the above-mentioned requirements for an EU Blue Card, there may be other options open to you. You can apply for a work visa for professionals with an academic qualification under Section 18b of the Residence Act (AufenthG)(External link) .\n\n\nAt a glance: EU Blue Card\nDiese Grafik erklärt Ihnen, unter welchen Bedingungen Sie die Blaue Karte EU erhalten und wie Sie schrittweise den Einreiseprozess nach Deutschland vorbereiten.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "DE_BLUE_CARD_POL_04",
+      "pathway": "it_without_degree",
+      "source_evidence_id": "DE_BLUE_CARD_EVD_04",
+      "source_text": "You must be able to demonstrate that you have a specific job offer as an IT professional in Germany. The period of employment must be at least six months.\nYour job in Germany must enable you to earn a gross annual salary of at least €45,934.20 (as of 2026).\nYou must have worked in IT for at least three of the past seven years. Your professional experience must have been at university level and a prerequisite for employment in Germany.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "source_requirement_checks": {
+    "contract_six_months": true,
+    "qualification": true,
+    "shortage_ba_approval": true,
+    "new_entrant": true,
+    "it_experience": true,
+    "residence_max_four_years": true,
+    "settlement_27_months": true,
+    "settlement_21_months": true,
+    "employer_change": true,
+    "online_application": true
+  },
+  "conditional_requirements": {
+    "qualification_recognition": {
+      "review_points": [
+        "academic_degree_comparability",
+        "tertiary_level_qualification",
+        "ISCED_or_EQF_level_6",
+        "regulated_profession_licence"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "employment_contract": {
+      "review_points": [
+        "specific_job_offer",
+        "minimum_six_month_employment",
+        "qualification_job_match",
+        "salary_contract_evidence"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "salary_and_special_pathways": {
+      "review_points": [
+        "2026_general_salary_threshold",
+        "2026_reduced_salary_threshold",
+        "shortage_occupation_list",
+        "new_entrant_qualification_date",
+        "IT_professional_experience",
+        "BA_approval_scope"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "residence_and_settlement": {
+      "review_points": [
+        "contract_duration_plus_six_months",
+        "maximum_four_year_validity",
+        "A1_and_27_months_settlement",
+        "B1_and_21_months_settlement",
+        "family_reunification"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "employment_change": {
+      "review_points": [
+        "change_within_first_year",
+        "notification_to_foreigners_authority",
+        "new_job_eligibility_check"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "application_and_legal_review": {
+      "review_points": [
+        "consular_services_portal",
+        "visa_vs_residence_permit",
+        "annual_salary_threshold_updates",
+        "official_law_and_BA_guidance"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "salary_reference_year": 2026,
+  "review_status": "needs_review",
+  "eligibility_rule": null,
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false,
+  "embassy_source": {
+    "authority": "German Embassy in Seoul",
+    "source_url": "https://seoul.diplo.de/kr-ko/service/visa-einreise/2100784-2100784",
+    "source_language": "ko",
+    "source_file": "data/raw/germany/employment/eu_blue_card_seoul_embassy_faq_ko.txt",
+    "source_sha256": "10c000cb4b294f8eea4c9bb3e7c11e56cb7d35fd5eb406c9c363fcf6e47368bb",
+    "char_count": 1073,
+    "line_count": 60,
+    "review_status": "needs_review"
+  },
+  "embassy_evidence": [
+    {
+      "evidence_id": "DE_BLUE_CARD_EMBASSY_EVD_01",
+      "topic": "general_employment_original_documents",
+      "source_file": "data/raw/germany/employment/eu_blue_card_seoul_embassy_faq_ko.txt",
+      "source_sha256": "10c000cb4b294f8eea4c9bb3e7c11e56cb7d35fd5eb406c9c363fcf6e47368bb",
+      "start_line": 22,
+      "end_line": 23,
+      "exact_quote": "취업 비자 신청 시 고용증명서 원본을 제출해야 하는가, 사본으로 충분한가?\n모든 서류는 원본으로 제출해야 한다.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_BLUE_CARD_EMBASSY_EVD_02",
+      "topic": "blue_card_application_and_documents",
+      "source_file": "data/raw/germany/employment/eu_blue_card_seoul_embassy_faq_ko.txt",
+      "source_sha256": "10c000cb4b294f8eea4c9bb3e7c11e56cb7d35fd5eb406c9c363fcf6e47368bb",
+      "start_line": 28,
+      "end_line": 34,
+      "exact_quote": "대사관에서 블루카드(Blue Card) 신청이 가능한가? 자격요건 및 구비서류는?\n신청 가능하다. 자격요건은 아래와 같다.\n\n독일 인가 외국 대학 졸업 또는 독일 대학 졸업에 준하는 외국 대학졸업(ANABIN)\n최소 봉급액, 특별한 직업군, 기타 정보는 연방이민난민청 홈페이지 참조\n고용계약서 또는 본인의 능력에 맞는 고용을 하겠다는 구체적인 취업 제안서\n본인이 소지한 외국 대학졸업장이 독일에서 인정받는지, 독일의 졸업장에 준하는지 여부를 확인하기 위해서는 데이터베이스 ANABIN을 이용하면 된다. 대학졸업장 및 학위 비교 결과 출력물을 함께 제출해야 한다.",
+      "review_status": "needs_review"
+    }
+  ],
+  "embassy_document_review": {
+    "source_evidence_ids": [
+      "DE_BLUE_CARD_EMBASSY_EVD_01",
+      "DE_BLUE_CARD_EMBASSY_EVD_02"
+    ],
+    "documents_to_review": [
+      "employment_contract_or_specific_job_offer",
+      "degree_recognition_via_anabin_if_applicable",
+      "degree_comparison_printout_if_applicable",
+      "original_document_submission_requirements"
+    ],
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "embassy_scope_notes": [
+    {
+      "topic": "academic_qualification",
+      "finding": "Embassy FAQ primarily describes degree-based Blue Card applications. Do not apply this requirement to the IT-without-degree pathway.",
+      "source_evidence_id": "DE_BLUE_CARD_EMBASSY_EVD_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "salary",
+      "finding": "Embassy FAQ does not state the 2026 salary amounts. Preserve the federal source values.",
+      "source_evidence_id": "DE_BLUE_CARD_EMBASSY_EVD_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "document_submission",
+      "finding": "Original-document guidance is general employment visa guidance. Verify its applicability to the current online application process.",
+      "source_evidence_id": "DE_BLUE_CARD_EMBASSY_EVD_01",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  ]
+}

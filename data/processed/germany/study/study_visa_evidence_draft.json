@@ -1,0 +1,272 @@
+{
+  "country": "Germany",
+  "program": "study_visa",
+  "pathway_type": "study",
+  "legal_basis": "Residence Act (AufenthG) Section 16b",
+  "official_source": {
+    "authority": "German Federal Government - Make it in Germany",
+    "source_url": "https://www.make-it-in-germany.com/en/visa-residence/types/studying",
+    "source_language": "en",
+    "source_file": "data/raw/germany/study/study_visa_make_it_in_germany_en.txt",
+    "source_sha256": "22b7520151e6df937b36bf15c96b71feeb4f7d6842c315eacc1909ff6d88254f",
+    "char_count": 8692,
+    "line_count": 121,
+    "amount_reference_year": 2026
+  },
+  "evidence": [
+    {
+      "evidence_id": "DE_STUDY_VISA_EVD_01",
+      "topic": "study_requirements",
+      "heading": "Requirements for the visa for studying in Germany",
+      "source_file": "data/raw/germany/study/study_visa_make_it_in_germany_en.txt",
+      "source_sha256": "22b7520151e6df937b36bf15c96b71feeb4f7d6842c315eacc1909ff6d88254f",
+      "start_line": 30,
+      "end_line": 35,
+      "exact_quote": "Requirements for the visa for studying in Germany\nYou have been admitted to a state-recognised higher education institution in Germany. To find out how to apply for a place on a study programme in Germany, see the “Studies in Germany” section.\nYou are able to cover your living costs for the duration of your study programme. You can prove that you have sufficient funds through a blocked bank account (at least €11,904 in 2026), a scholarship or a declaration of commitment.\nSome programmes require a certain level of language proficiency, usually level B2 of the Common European Framework of Reference for Languages (CEFR). You must prove your language skills to the German embassy or consulate.\nDo you meet the above requirements? Then find out about how the entry and visa process works.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_STUDY_VISA_EVD_02",
+      "topic": "study_prospects",
+      "heading": "Your prospects with the visa for studying",
+      "source_file": "data/raw/germany/study/study_visa_make_it_in_germany_en.txt",
+      "source_sha256": "22b7520151e6df937b36bf15c96b71feeb4f7d6842c315eacc1909ff6d88254f",
+      "start_line": 36,
+      "end_line": 40,
+      "exact_quote": "Your prospects with the visa for studying\nResidence permits for study purposes are usually issued for an initial period of two years. If you have not obtained your degree within this period, you can request to have your residence permit renewed for a further two years.\n\nDuring your time at university, you can work up to 140 full days or 280 half days per year, or up to 20 hours per week. You can take part-time student jobs for an unlimited period.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_STUDY_VISA_EVD_03",
+      "topic": "study_after_graduation",
+      "heading": "Successfully graduated - this is how you can stay in Germany",
+      "source_file": "data/raw/germany/study/study_visa_make_it_in_germany_en.txt",
+      "source_sha256": "22b7520151e6df937b36bf15c96b71feeb4f7d6842c315eacc1909ff6d88254f",
+      "start_line": 41,
+      "end_line": 43,
+      "exact_quote": "Successfully graduated - this is how you can stay in Germany\nAfter successfully completing your degree, you can extend your stay in Germany by applying for a residence permit for jobseekers under Section 20 (1) No. 1 of the Residence Act (AufenthG)(External link) . The residence permit is issued for up to 18 months as a means of finding skilled employment in Germany. You can work in any occupation while looking for skilled employment. As soon as you have found a qualified employment position, you can apply to convert your residence permit for study purposes into a residence permit for skilled workers or an EU Blue Card. You can find out more about the opportunities available to you while you study in Germany and after you graduate in the “Prospects after graduation” section.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_STUDY_VISA_EVD_04",
+      "topic": "study_settlement",
+      "heading": "Settlement permit after graduating from a German university",
+      "source_file": "data/raw/germany/study/study_visa_make_it_in_germany_en.txt",
+      "source_sha256": "22b7520151e6df937b36bf15c96b71feeb4f7d6842c315eacc1909ff6d88254f",
+      "start_line": 44,
+      "end_line": 46,
+      "exact_quote": "Settlement permit after graduating from a German university\nGraduates of German higher education institutions can apply for a settlement permit (Section 18c (1) sentence 2 of the Residence Act(External link)  [AufenthG]) after working in Germany for more than two years.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_STUDY_VISA_EVD_05",
+      "topic": "study_eu_mobility",
+      "heading": "Explaining mobility in the EU for students from third countries",
+      "source_file": "data/raw/germany/study/study_visa_make_it_in_germany_en.txt",
+      "source_sha256": "22b7520151e6df937b36bf15c96b71feeb4f7d6842c315eacc1909ff6d88254f",
+      "start_line": 47,
+      "end_line": 54,
+      "exact_quote": "Explaining mobility in the EU for students from third countries\nDo you have a student visa from another EU country and would like to study in Germany for a while? If your stay in Germany does not exceed 360 days, you do not need a residence title for Germany. However, the host educational institution in Germany must inform the Federal Office for Migration and Refugees (BAMF) and the competent authority in the other EU Member State about your intended study period in Germany. There are a number of documents that need to be submitted to the authorities when they are notified of your plans to study abroad.\n\n\nAt a glance: Visa for studying\nThis guide provides orientation on the requirements and procedural steps involved in obtaining a visa to study in Germany.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_STUDY_VISA_EVD_06",
+      "topic": "online_application",
+      "heading": "Apply for the visa for studying online",
+      "source_file": "data/raw/germany/study/study_visa_make_it_in_germany_en.txt",
+      "source_sha256": "22b7520151e6df937b36bf15c96b71feeb4f7d6842c315eacc1909ff6d88254f",
+      "start_line": 82,
+      "end_line": 90,
+      "exact_quote": "Apply for the visa for studying online\nDo you meet the necessary requirements? Then you can apply for your visa for studying or for seeking a place in higher education online here: Consular Services Portal of the Federal Foreign Office(External link) .",
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "DE_STUDY_VISA_POL_01",
+      "topic": "study_requirements",
+      "source_line": 31,
+      "source_text": "You have been admitted to a state-recognised higher education institution in Germany. To find out how to apply for a place on a study programme in Germany, see the “Studies in Germany” section.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "DE_STUDY_VISA_POL_02",
+      "topic": "study_requirements",
+      "source_line": 32,
+      "source_text": "You are able to cover your living costs for the duration of your study programme. You can prove that you have sufficient funds through a blocked bank account (at least €11,904 in 2026), a scholarship or a declaration of commitment.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "DE_STUDY_VISA_POL_03",
+      "topic": "study_requirements",
+      "source_line": 33,
+      "source_text": "Some programmes require a certain level of language proficiency, usually level B2 of the Common European Framework of Reference for Languages (CEFR). You must prove your language skills to the German embassy or consulate.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "conditional_requirements": {
+    "admission_and_preparatory_measures": {
+      "review_points": [
+        "university_admission",
+        "state_recognition",
+        "preparatory_studies"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "financial_requirements": {
+      "review_points": [
+        "2026_blocked_account_amount",
+        "scholarship",
+        "declaration_of_commitment"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "language_requirements": {
+      "review_points": [
+        "course_specific_language_level",
+        "language_proof"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "residence_and_work": {
+      "review_points": [
+        "initial_residence_duration",
+        "renewal",
+        "working_days_or_hours",
+        "student_jobs"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "after_graduation_and_mobility": {
+      "review_points": [
+        "18_month_jobseeker_residence",
+        "conversion_to_work_residence",
+        "settlement",
+        "eu_student_mobility"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "review_status": "needs_review",
+  "eligibility_rule": null,
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false,
+  "embassy_source": {
+    "authority": "German Embassy in Seoul",
+    "source_url": "https://seoul.diplo.de/kr-ko/service/visa-einreise/1887970-1887970",
+    "source_language": "ko",
+    "source_file": "data/raw/germany/study/study_visa_seoul_embassy_ko.txt",
+    "source_sha256": "8176e4152fcecaa0ad8ed617c23b0375cd05a1d77f8c73ea8a3d30f8c1629149",
+    "char_count": 1731,
+    "line_count": 87,
+    "page_publication_date": "2018-10-16",
+    "review_status": "needs_review"
+  },
+  "embassy_evidence": [
+    {
+      "evidence_id": "DE_STUDY_EMBASSY_EVD_01",
+      "topic": "application_channels",
+      "source_file": "data/raw/germany/study/study_visa_seoul_embassy_ko.txt",
+      "source_sha256": "8176e4152fcecaa0ad8ed617c23b0375cd05a1d77f8c73ea8a3d30f8c1629149",
+      "start_line": 23,
+      "end_line": 27,
+      "exact_quote": "16.10.2018 - 게시글 \n 유학생 비자(유학을 위한 어학 강좌 포함) 신청자는 연방외무부  해외포털(Auslandsportal)을 통해 온라인으로 비자를 접수할 수 있습니다.  자세한 내용은 여기에서 확인할 수 있습니다.\n \n\n 물론, 여전히 주한 독일 대사관 영사과에서 비자 신청서를 제출할 수 있습니다. 단, 이와 관련한 이용가능한 예약은 매우 제한적입니다. 대사관에서 신청할 때는 다음 서류를 제출해 주시기바랍니다:",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_STUDY_EMBASSY_EVD_02",
+      "topic": "required_documents",
+      "source_file": "data/raw/germany/study/study_visa_seoul_embassy_ko.txt",
+      "source_sha256": "8176e4152fcecaa0ad8ed617c23b0375cd05a1d77f8c73ea8a3d30f8c1629149",
+      "start_line": 30,
+      "end_line": 45,
+      "exact_quote": "아래의 서류를 본인이 직접 독일대사관 영사과에 제출하도록 한다.\n\n완벽하게 기재 및 서명이 된 비자신청서 online\n유효한 여권 (인적사항이 기재된 페이지 사본 첨부)\n외국인은 외국인등록증과 사본  (앞 뒷면 모두)\n최신 여권사진 1 매 (3,5 x 4,5 cm, 밝은 배경으로, 6 개월 이내촬영)\n \n독일대학의 입학허가서 (원본 1부)\n \n영문 대학졸업증명서 및 최종학력 증명서 (또는 영문 재학증명서)\n영어 또는 독일어 공인 인증점수 확인서 (TOEIC, TOEFL, IELTS...)\n강의 언어 확인서  (강의계획서에 영어 또는 독일어 수업이라는 페이지)\n보험 계약서 영문  (독일 현지 보험, 온라인으로 가입 가능)\nMotivation letter\n독일에서 지원되는 공식정인 재정증명서, 장학금 수혜서 또는 슈페어콘토 ( 슈페어콘토 안내문 참조) \n     * 경우에 따라서 다른 서류의 제출도 요구할 수 있다.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_STUDY_EMBASSY_EVD_03",
+      "topic": "visa_conditions_and_fees",
+      "source_file": "data/raw/germany/study/study_visa_seoul_embassy_ko.txt",
+      "source_sha256": "8176e4152fcecaa0ad8ed617c23b0375cd05a1d77f8c73ea8a3d30f8c1629149",
+      "start_line": 47,
+      "end_line": 58,
+      "exact_quote": "주의사항\n\n- 유학생 비자가 있을 시 1 년에 120 일(전일) 또는 240 일(반일) 일하는 것이 가능하다. 또한, 대학교나 다른 학술기관에서의 대학생 아르바이트는 무제한으로 할 수 있다.\n\n- 남편이나 아내 또는 16 세 이하 자녀가 동반하는 것은 허용된다. 비자신청 관련 제출서류에 관한 정보는 ‘가족 동반 비자’ 안내문에서 찾아볼 수 있다.\n\n- 제출한 서류가 완전하게 갖추어졌을 시 수속기간은 약 4 주 소요된다. 하지만 경우에 따라서는 이보다 더 오래 소요될 수도 있다. 이를 참고하여 비자 신청을 미리 하도록 한다.\n\n- 유학생 비자의 유효기간은 일반적으로 3 개월이다. 입국 후 비자가 만료되기 전에 관할 외국인청에서 비자기간을 연장 하도록 한다.\n\n- 비자신청 수수료는 75 유로이며, 신청 시 이를 원화로 지불해야 한다. 비자 발급이 거부당하거나 신청자가 신청을 취소하는 경우에도 수수료는 환급되지 않는다.\n- 서류를 빠짐없이 제출했다고 해서 비자가 반드시 발급된다는 보장은 없다. 주한독일대사관 영사과에서 독일의 관할기관과 함께 이를 검토하고 발급여부를 결정한다.",
+      "review_status": "needs_review"
+    }
+  ],
+  "embassy_document_review": {
+    "source_evidence_id": "DE_STUDY_EMBASSY_EVD_02",
+    "documents_to_review": [
+      "completed_and_signed_visa_application",
+      "valid_passport_and_biographical_page_copy",
+      "foreign_registration_card_if_applicable",
+      "recent_passport_photo",
+      "university_admission_letter",
+      "academic_qualification_evidence",
+      "language_test_certificate",
+      "instruction_language_confirmation",
+      "health_insurance_contract",
+      "motivation_letter",
+      "accepted_financial_evidence"
+    ],
+    "additional_documents_may_be_requested": true,
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "source_differences_to_review": [
+    {
+      "topic": "student_work_allowance",
+      "make_it_in_germany": "140 full days / 280 half days per year, or up to 20 hours per week",
+      "seoul_embassy": "120 full days / 240 half days per year",
+      "embassy_source_lines": [
+        47,
+        49
+      ],
+      "interpretation": "Different published guidance; verify current legal applicability.",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "entry_visa_vs_residence_permit",
+      "make_it_in_germany": "Study residence permit initially usually issued for two years",
+      "seoul_embassy": "Entry visa generally valid for three months",
+      "embassy_source_lines": [
+        55,
+        55
+      ],
+      "interpretation": "Different immigration document stages; do not treat as conflicting duration limits.",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  ],
+  "embassy_application_review": {
+    "online_application": true,
+    "in_person_submission_option": true,
+    "embassy_fee_eur": 75,
+    "fee_refundable": false,
+    "processing_time_guidance": "approximately 4 weeks",
+    "source_evidence_ids": [
+      "DE_STUDY_EMBASSY_EVD_01",
+      "DE_STUDY_EMBASSY_EVD_03"
+    ],
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  }
+}

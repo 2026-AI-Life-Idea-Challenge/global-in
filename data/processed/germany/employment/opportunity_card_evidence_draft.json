@@ -1,0 +1,430 @@
+{
+  "country": "Germany",
+  "program": "opportunity_card",
+  "legal_basis": "AufenthG Section 20a",
+  "official_source": {
+    "authority": "German Federal Government - Make it in Germany",
+    "source_url": "https://www.make-it-in-germany.com/en/visa-recognition/opportunity-card/job-search",
+    "source_file": "data/raw/germany/employment/opportunity_card_make_it_in_germany_en.txt",
+    "source_sha256": "74c4e17b3030465760f724e9177a41826a3d40e39c37901266ffee7c55251135",
+    "source_language": "en",
+    "char_count": 12736,
+    "line_count": 155
+  },
+  "evidence_sections": [
+    {
+      "section_id": "DE_OPP_SEC_01",
+      "topic": "requirements",
+      "heading": "Requirements for the opportunity card: what you should know",
+      "start_line": 32,
+      "end_line": 50,
+      "exact_quote": "Requirements for the opportunity card: what you should know\nAre you from a country outside the EU or the EFTA and would like to apply for an opportunity card under Section 20a of the Residence Act [AufenthG]? There are two options for applying for the opportunity card, each subject to different requirements:\n\nyou have a non-academic vocational qualification or academic degree which is recognised in Germany, or\nyou obtain at least six points in the points system.\nBasic requirement: you must have sufficient financial resources to fund your job search in Germany. During the visa process, you can demonstrate this ability with a blocked bank account (containing a minimum of €1,091 net per month, amount applicable in 2026) or a declaration of commitment.\n\nOption 1: Opportunity card with a qualification recognised in Germany (“skilled worker”)\nThe following applies to this option: \n\nYou have a foreign vocational or academic qualification that is fully recognised in Germany.\nAlternatively, you have obtain a non-academic vocational qualification or academic degree in Germany.\nIf one of these applies to you, you are considered a skilled worker and do not have to go through the points system.\n\nPlease note: For option 1, you do not need to prove your language skills – however, German language skills are recommended to improve your chances of finding a job in Germany.\n\nJob search immediately after completing your studies or vocational training in Germany\nIf you obtained your academic or non-academic vocational qualification in Germany, you can immediately apply for a residence permit for jobseekers under Section 20 of the Residence Act [AufenthG]. This gives you more time to look for a job (18 months instead of one year) and you can work part-time without restrictions during this time. For more information, see the “Prospects after graduation” section and the “Prospects after your vocational training” section.",
+      "source_sha256": "74c4e17b3030465760f724e9177a41826a3d40e39c37901266ffee7c55251135",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_OPP_SEC_02",
+      "topic": "points_system",
+      "heading": "Option 2: Opportunity card via the points system",
+      "start_line": 51,
+      "end_line": 76,
+      "exact_quote": "Option 2: Opportunity card via the points system\nIf you do not have a German qualification or a qualification recognised in Germany, the following requirements apply in order to obtain the opportunity card:\n\nYou have successfully completed vocational or academic training. It is important that the qualification is recognised by the country in which you obtained it. In addition, your non-academic vocational qualification must have required at least two years of vocational training. To support your visa application, you need a positive result from the anabin information portal or a Statement of Comparability (Zeugnisbewertung) if you have a foreign university degree. If you have a vocational qualification, you need a positive “Digital Statement on Professional Qualification” (Digitale Auskunft zur Berufsqualifikation).\nAHK certificates: Have you completed training at a German Chamber of Commerce Abroad (AHK)? Your certificate (category A) may be suitable if the legal requirements for vocational training are met. The chamber where you obtained your qualification can tell you whether this applies to your qualification. General information on this can be found at the website(External link)  of the Federal Institute for Vocational Education and Training (BIBB).\nProof of language proficiency: You either have German language skills of at least level A1 as defined by the Common European Framework of Reference for Languages (CEFR) or English language skills of at least level B2 (CEFR). Even if you apply for the opportunity card without a certificate of German language proficiency, knowledge of German will improve your chances of finding a job in Germany.\n6 points achieved: You score at least 6 points in the points system. You can find out how to score points in the next section.\nThe points system for the opportunity card simply explained\nThe points system is only relevant for you in Option 2. This means if you cannot demostrate a German educational qualification or full recognition of your foreign qualification. To apply for an opportunity card visa, you must provide evidence of a formal qualification and the required language skills (in addition to the points). \n\nYou must score a total of at least 6 points in the points system to receive an opportunity card.\nYou can collect points for the following criteria:\n\nEquivalence of qualification: If you have already applied for recognition of your foreign qualification and it has been found to be partially equivalent, you will receive four points. You will still receive the four points if, in the case of a regulated profession, you are required to participate in compensatory measures before obtaining a licence to practise your profession.\nQualification in a shortage occupation: If your formal qualification is in a shortage occupation, you will get one point. To find out which occupations are considered as shortage occupations, consult the List of shortage occupations.\nProfessional experience: You will also be awarded points for your previous professional experience in relation to your formal qualification that you gained after graduating. Two points will be awarded if you can demonstrate that you have at least two years’professional experience within the last five years. If you have at least five years’ professional experience within the last seven years, you will get three points.\nLanguage skills: You will also earn points if your German language skills are above level A1 (CEFR).\nOne point is awarded at level A2,\ntwo points at level B1 and three points at level B2 or above.\nAn additional point will be awarded if you have English at level C1 or above, or if you are a native speaker.\nAge: You also receive points if you are a certain age at the time of your visa application. People who are no older than 35 get two points until the day they turn 35. All those aged between 35 and 40 are awarded one point.\nPrevious stays in Germany: Have you already lived in Germany? If you can prove that you have resided legally in Germany for a continuous period of at least six months in the last five years, you will receive one point. Examples of such stays include study, language and work stays. Stays for the purpose of tourism or visiting people do not count. Copies of old passports and the visas and entry stamps they contain can be submitted as evidence.\nSkilled worker potential of spouses or life partners: Are you married or in a partnership and would like to come to Germany with your partner on an opportunity card? If your partner already meets the requirements for an opportunity card, you will be awarded one point in the points system. With this in mind, he or she can also do the self-check: opportunity card. \nPlease note that all information you provide in the above categories must be supported by appropriate evidence or certificates for the visa application.\n\nSelf-Check",
+      "source_sha256": "74c4e17b3030465760f724e9177a41826a3d40e39c37901266ffee7c55251135",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_OPP_SEC_03",
+      "topic": "self_check",
+      "heading": "Self-Check \"opportunity card\": do you meet the requirements?",
+      "start_line": 77,
+      "end_line": 84,
+      "exact_quote": "Self-Check \"opportunity card\": do you meet the requirements?\nAnswer a few questions and get an initial assessment of whether the opportunity card is an option for you. Start by selecting your nationality.\n\nPlease select country\nDid you get a positive result in the self-check? Congratulations! You can now apply for an opportunity card online. If you are already living in Germany with a valid residence title, please contact your local foreigners authority(External link) .\n\nDo you have any further questions about applying for the oportunity card? The “Questions and answers regarding the opportunity card” section addresses common concerns, for example, how to demonstrate that you meet the individual requirements.",
+      "source_sha256": "74c4e17b3030465760f724e9177a41826a3d40e39c37901266ffee7c55251135",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_OPP_SEC_04",
+      "topic": "prospects",
+      "heading": "Prospects with the opportunity card after entry",
+      "start_line": 85,
+      "end_line": 102,
+      "exact_quote": "Prospects with the opportunity card after entry\nJobsearch in Germany\nOpportunity cards are issued initially as job search opportunity cards for a maximum of one year. The card allows you to look for gainful employment in Germany, i.e. you can seek employment or become self-employed.\n\nFinding a job successfully in Germany\nTo get the most out of your job search stay, you should start preparing for your job search as early as possible: How should your application be structured to convince a German employer? Which contact points can help you? For more information, please refer to the “Job Search and Application” section.\n\nPart-time jobs and trial work: this is permitted\nWhile you are looking for gainful employment, you are allowed to have one or more part-time jobs (secondary employment) totalling 20 hours a week. You can also do job trials for a maximum of two weeks per employer as part of your job search. The aim of the job trial must be either to obtain qualified employment, an apprenticeship or a qualification programme.\n\n\nGuide to the opportunity card: First steps in Germany with the job search opportunity card\nExplore this brochure on the job search opportunity card for practical guidance on job searching, accommodation and residence in Germany.\n\n\nOnce you have found a job\nIf you have found a specific job or apprenticeship, or if you want to become self-employed, you can apply to your local foreigners authority for one of the existing residence permits for qualified employment, for vocational training, for the recognition of your qualifications or for self-employment. If your job meets the requirements for qualified employment but you are not eligible for any other residence title, your opportunity card will be extended for up to two years (opportunity card extension).",
+      "source_sha256": "74c4e17b3030465760f724e9177a41826a3d40e39c37901266ffee7c55251135",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_OPP_SEC_05",
+      "topic": "online_application",
+      "heading": "Apply for the opportunity card online",
+      "start_line": 103,
+      "end_line": 124,
+      "exact_quote": "Apply for the opportunity card online\nDo you meet the necessary requirements? Then you can apply for the opportunity card online here: Consular Services Portal of the Federal Foreign Office(External link) .\n \n\n\nComing to Germany with the Opportunity Card\n\nAt a glance: Job search opportunity card from third countries\nThis graphic outlines the step‑by‑step process of entering Germany with the job search opportunity card to look for employment.",
+      "source_sha256": "74c4e17b3030465760f724e9177a41826a3d40e39c37901266ffee7c55251135",
+      "review_status": "needs_review"
+    }
+  ],
+  "eligibility_pathways": [
+    {
+      "pathway_id": "recognised_skilled_worker",
+      "name": "Opportunity Card - Recognised Qualification",
+      "points_system_required": false,
+      "language_certificate_required_by_this_pathway": false,
+      "qualification_review": "German qualification or fully recognised foreign vocational or academic qualification",
+      "policy_candidate_id": "DE_OPP_POL_01",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "pathway_id": "points_system",
+      "name": "Opportunity Card - Points System",
+      "points_system_required": true,
+      "minimum_points_reference": 6,
+      "qualification_review": "Recognised in country of qualification, with additional evidence and training-duration checks",
+      "language_review": "German A1 or English B2",
+      "policy_candidate_id": "DE_OPP_POL_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "DE_OPP_POL_01",
+      "pathway_id": "recognised_skilled_worker",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "DE_OPP_POL_02",
+      "pathway_id": "points_system",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "points_criteria": [
+    {
+      "criterion_id": "DE_OPP_POINTS_01",
+      "criterion": "partial_equivalence",
+      "score_options_for_review": {
+        "partial_recognition": 4
+      },
+      "start_line": 64,
+      "end_line": 64,
+      "exact_quote": "Equivalence of qualification: If you have already applied for recognition of your foreign qualification and it has been found to be partially equivalent, you will receive four points. You will still receive the four points if, in the case of a regulated profession, you are required to participate in compensatory measures before obtaining a licence to practise your profession.",
+      "source_sha256": "74c4e17b3030465760f724e9177a41826a3d40e39c37901266ffee7c55251135",
+      "stacking_rule_approved": false,
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "criterion_id": "DE_OPP_POINTS_02",
+      "criterion": "shortage_occupation",
+      "score_options_for_review": {
+        "shortage_occupation": 1
+      },
+      "start_line": 65,
+      "end_line": 65,
+      "exact_quote": "Qualification in a shortage occupation: If your formal qualification is in a shortage occupation, you will get one point. To find out which occupations are considered as shortage occupations, consult the List of shortage occupations.",
+      "source_sha256": "74c4e17b3030465760f724e9177a41826a3d40e39c37901266ffee7c55251135",
+      "stacking_rule_approved": false,
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "criterion_id": "DE_OPP_POINTS_03",
+      "criterion": "professional_experience",
+      "score_options_for_review": {
+        "two_years_within_five": 2,
+        "five_years_within_seven": 3
+      },
+      "start_line": 66,
+      "end_line": 66,
+      "exact_quote": "Professional experience: You will also be awarded points for your previous professional experience in relation to your formal qualification that you gained after graduating. Two points will be awarded if you can demonstrate that you have at least two years’professional experience within the last five years. If you have at least five years’ professional experience within the last seven years, you will get three points.",
+      "source_sha256": "74c4e17b3030465760f724e9177a41826a3d40e39c37901266ffee7c55251135",
+      "stacking_rule_approved": false,
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "criterion_id": "DE_OPP_POINTS_04",
+      "criterion": "language_skills",
+      "score_options_for_review": {
+        "german_a2": 1,
+        "german_b1": 2,
+        "german_b2_or_higher": 3,
+        "english_c1_or_native_bonus": 1
+      },
+      "start_line": 67,
+      "end_line": 70,
+      "exact_quote": "Language skills: You will also earn points if your German language skills are above level A1 (CEFR).\nOne point is awarded at level A2,\ntwo points at level B1 and three points at level B2 or above.\nAn additional point will be awarded if you have English at level C1 or above, or if you are a native speaker.",
+      "source_sha256": "74c4e17b3030465760f724e9177a41826a3d40e39c37901266ffee7c55251135",
+      "stacking_rule_approved": false,
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "criterion_id": "DE_OPP_POINTS_05",
+      "criterion": "age",
+      "score_options_for_review": {
+        "younger_age_band": 2,
+        "next_age_band": 1
+      },
+      "start_line": 71,
+      "end_line": 71,
+      "exact_quote": "Age: You also receive points if you are a certain age at the time of your visa application. People who are no older than 35 get two points until the day they turn 35. All those aged between 35 and 40 are awarded one point.",
+      "source_sha256": "74c4e17b3030465760f724e9177a41826a3d40e39c37901266ffee7c55251135",
+      "stacking_rule_approved": false,
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "criterion_id": "DE_OPP_POINTS_06",
+      "criterion": "previous_stay",
+      "score_options_for_review": {
+        "qualifying_previous_stay": 1
+      },
+      "start_line": 72,
+      "end_line": 72,
+      "exact_quote": "Previous stays in Germany: Have you already lived in Germany? If you can prove that you have resided legally in Germany for a continuous period of at least six months in the last five years, you will receive one point. Examples of such stays include study, language and work stays. Stays for the purpose of tourism or visiting people do not count. Copies of old passports and the visas and entry stamps they contain can be submitted as evidence.",
+      "source_sha256": "74c4e17b3030465760f724e9177a41826a3d40e39c37901266ffee7c55251135",
+      "stacking_rule_approved": false,
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "criterion_id": "DE_OPP_POINTS_07",
+      "criterion": "partner",
+      "score_options_for_review": {
+        "eligible_partner": 1
+      },
+      "start_line": 73,
+      "end_line": 73,
+      "exact_quote": "Skilled worker potential of spouses or life partners: Are you married or in a partnership and would like to come to Germany with your partner on an opportunity card? If your partner already meets the requirements for an opportunity card, you will be awarded one point in the points system. With this in mind, he or she can also do the self-check: opportunity card.",
+      "source_sha256": "74c4e17b3030465760f724e9177a41826a3d40e39c37901266ffee7c55251135",
+      "stacking_rule_approved": false,
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "source_requirement_checks": {
+    "legal_basis": true,
+    "two_options": true,
+    "recognised_qualification": true,
+    "six_points": true,
+    "financial_proof": true,
+    "vocational_training": true,
+    "german_a1": true,
+    "english_b2": true,
+    "partial_recognition": true,
+    "shortage_occupation": true,
+    "professional_experience": true,
+    "german_language_points": true,
+    "english_bonus": true,
+    "age_points": true,
+    "previous_residence": true,
+    "partner_points": true,
+    "maximum_one_year": true,
+    "weekly_20_hours": true,
+    "trial_work": true,
+    "extension": true,
+    "online_portal": true
+  },
+  "conditional_requirements": {
+    "qualification_and_recognition": {
+      "review_points": [
+        "German qualification",
+        "full foreign qualification recognition",
+        "foreign qualification evidence for points pathway",
+        "vocational training duration",
+        "anabin or comparability documents"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "language_requirements": {
+      "review_points": [
+        "points pathway baseline German A1 or English B2",
+        "higher German language points",
+        "English C1 or native speaker bonus"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "points_calculation": {
+      "review_points": [
+        "minimum six points",
+        "mutual exclusivity of experience tiers",
+        "mutual exclusivity of German language tiers",
+        "age band boundaries",
+        "evidence for each claimed point"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "financial_resources": {
+      "review_points": [
+        "2026 monthly reference EUR 1091",
+        "blocked account",
+        "declaration of commitment",
+        "duration of funding"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "permitted_activities": {
+      "review_points": [
+        "initial maximum one year",
+        "part-time employment total twenty hours weekly",
+        "trial work up to two weeks per employer"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "residence_transition": {
+      "review_points": [
+        "subsequent employment residence permit",
+        "conditional opportunity card extension",
+        "separate Section 20 post-graduation pathway"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "application_procedure": {
+      "review_points": [
+        "Consular Services Portal",
+        "German Embassy in Seoul document requirements"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "financial_reference": {
+    "year": 2026,
+    "currency": "EUR",
+    "net_monthly_eur": 1091,
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "related_but_separate_program": {
+    "legal_basis": "AufenthG Section 20",
+    "description": "Job search after German studies or training",
+    "review_status": "needs_review"
+  },
+  "review_status": "needs_review",
+  "eligibility_rule": null,
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false,
+  "embassy_source": {
+    "authority": "German Embassy in Seoul",
+    "source_url": "https://seoul.diplo.de/kr-ko/service/visa-einreise/1890394-1890394",
+    "source_language": "ko",
+    "source_file": "data/raw/germany/employment/skilled_worker_seoul_embassy_ko.txt",
+    "source_sha256": "c37d672d3a29c0c9a7b6f2411f285767796f33654c6e4b761097e81df663a6c2",
+    "char_count": 10208,
+    "line_count": 356,
+    "relevant_start_line": 113,
+    "relevant_end_line": 140,
+    "review_status": "needs_review"
+  },
+  "embassy_evidence": [
+    {
+      "evidence_id": "DE_OPP_EMBASSY_EVD_01",
+      "topic": "application_channels",
+      "source_file": "data/raw/germany/employment/skilled_worker_seoul_embassy_ko.txt",
+      "source_sha256": "c37d672d3a29c0c9a7b6f2411f285767796f33654c6e4b761097e81df663a6c2",
+      "start_line": 113,
+      "end_line": 118,
+      "exact_quote": "기회 카드 (Chancenkarte)\n기회카드 신청이 2024년 7월부터 연방외무부 해외 포털(Auslandsportal)을 통해 온라인으로도 가능해졌습니다. 기회카드는 해외에서 국가가 인정하는 최소 2년 이상의 직업훈련을 마친 자 또는 대학졸업자가 구직을 위해 신청할 수 있는 비자입니다. 기회카드를 이용하여 독일에서 해외 직업자격을 인정받는 방안도 모색할 수 있습니다. 자세한 내용은 여기에서 확인하실 수 있습니다.\n\n→ Self-Check를 통해 본인이 자격요건을 충족하는지 여부를 직접 확인하시기 바랍니다.\n\n물론, 예전처럼 주한독일대사관 영사과에 직접 신청서를 제출할 수도 있습니다. 단, 이와 관련한 이용가능한 예약은 매우 제한적입니다.  이 경우, 아래 서류 원본을 제출하시기 바랍니다.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_OPP_EMBASSY_EVD_02",
+      "topic": "application_documents",
+      "source_file": "data/raw/germany/employment/skilled_worker_seoul_embassy_ko.txt",
+      "source_sha256": "c37d672d3a29c0c9a7b6f2411f285767796f33654c6e4b761097e81df663a6c2",
+      "start_line": 120,
+      "end_line": 133,
+      "exact_quote": "• 완벽하게 기재 및 서명이 된 신청서\n• 유효한 여권 (인적사항이 기재여기에서된 페이지 사본 첨부)\n• 최신 여권사진 (3,5 x 4,5 cm, 밝은 배경으로, 6개월 이내촬영)\n• 경우에 따라 유효한 한국 외국인등록증\n• 자격 증명서(대학졸업, 직업훈련, 계속교육 등). 자세한 내용은 여기(링크 2)에서 확인하실 수 있습니다.\n• 일자리를 구하기 위한 계획(업무분야, 지역, 예정 거주지/숙소 등)에 관한 정보가 포함된 자세한 지원동기서(Motivation Letter)\n• 이력서\n• 재정증명서 (예를 들면,)\n-    본인 명의의 재정증명서 (예: 슈페어콘토)\n-    파트타임직(부업) 근로계약서 또는 주당 근무 시간과 월급을 명시한 구속력 있는 취업 제의\n-    독일 거주자의 재정보증서\n• 독일 incoming 보험 증명서\n\n경우에 따라서 다른 서류의 제출도 요구할 수 있습니다.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_OPP_EMBASSY_EVD_03",
+      "topic": "processing_fee_and_validity",
+      "source_file": "data/raw/germany/employment/skilled_worker_seoul_embassy_ko.txt",
+      "source_sha256": "c37d672d3a29c0c9a7b6f2411f285767796f33654c6e4b761097e81df663a6c2",
+      "start_line": 135,
+      "end_line": 140,
+      "exact_quote": "주의사항\n 비자 수속은 일반적으로 4 주 정도 소요되지만 개별적인 경우에 따라 더 짧거나 길 수도 있습니다. 이를 참고하여 서류신청을 미리 하시기 바랍니다.\n 비자신청 수수료는 75유로이며, 신청 시 이를 원화(당일 환율) 또는 신용카드(비자/마스터)로 결제해야 합니다. (신용카드 결제시 유로화로 결제됨.) 비자 발급이 거부당하거나 신청자가 신청을 취소하는 경우에도 수수료는 환급되지 않습니다.\n긍정적인 검토가 이루어진 경우, 대사관은 최대 12개월 비자를 발급해 줍니다. 비자기간 연장은 독일에 있는 외국인청을 통해야 기회 카드 (Chancenkarte)합니다.\n\n취업비자 발급에 대한 청구권은 주어지지 않습니다.",
+      "review_status": "needs_review"
+    }
+  ],
+  "embassy_document_review": {
+    "source_evidence_id": "DE_OPP_EMBASSY_EVD_02",
+    "documents_to_review": [
+      "completed_and_signed_application",
+      "valid_passport_and_biographical_page_copy",
+      "recent_passport_photo",
+      "korean_foreign_registration_card_if_applicable",
+      "qualification_certificate",
+      "motivation_letter_and_job_search_plan",
+      "curriculum_vitae",
+      "financial_proof",
+      "incoming_health_insurance",
+      "additional_documents_if_requested"
+    ],
+    "financial_proof_examples": [
+      "blocked_account",
+      "binding_part_time_employment_offer",
+      "declaration_of_commitment"
+    ],
+    "application_method_specific_requirements": true,
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "embassy_application_review": {
+    "source_evidence_ids": [
+      "DE_OPP_EMBASSY_EVD_01",
+      "DE_OPP_EMBASSY_EVD_03"
+    ],
+    "online_application_available": true,
+    "in_person_application_option": true,
+    "processing_time_guidance": "approximately 4 weeks",
+    "embassy_fee_eur": 75,
+    "fee_refundable": false,
+    "initial_visa_max_months": 12,
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "embassy_scope_notes": [
+    {
+      "topic": "two_eligibility_pathways",
+      "finding": "The embassy page provides a shared application checklist. The federal source defines two distinct eligibility pathways.",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "financial_proof",
+      "finding": "Embassy financial proof examples must be reviewed against the applicable 2026 federal amount and the applicant's funding arrangements.",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "source_text_quality",
+      "finding": "The embassy text at source line 138 contains an apparent copy or page-rendering artefact. Verify the wording before legal approval.",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "points_system",
+      "finding": "The embassy application checklist does not replace the federal rules for the six-point pathway.",
+      "review_status": "needs_review"
+    }
+  ]
+}

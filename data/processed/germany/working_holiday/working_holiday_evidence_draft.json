@@ -1,0 +1,297 @@
+{
+  "country": "Germany",
+  "program": "working_holiday",
+  "program_type": "visa",
+  "source": {
+    "authority": "German Embassy in Seoul",
+    "source_url": "https://seoul.diplo.de/kr-ko/service/1694216-1694216",
+    "source_language": "ko",
+    "source_file": "data/raw/germany/working_holiday/working_holiday_seoul_embassy_ko.txt",
+    "source_sha256": "7fc75b47e2fd79d28086936624303ad09f09eba3f38a18b4a25611cb726c5b38",
+    "char_count": 1847,
+    "line_count": 83
+  },
+  "evidence_sections": [
+    {
+      "section_id": "DE_WH_ELIG_01",
+      "topic": "overview",
+      "heading": "개요",
+      "source_file": "data/raw/germany/working_holiday/working_holiday_seoul_embassy_ko.txt",
+      "source_sha256": "7fc75b47e2fd79d28086936624303ad09f09eba3f38a18b4a25611cb726c5b38",
+      "start_line": 23,
+      "end_line": 27,
+      "original_text": "개요\n \n독일연방공화국과 대한민국 간의 워킹홀리데이 비자(관광취업을 위한 사증)협약이 체결되어 2009 년 4 월 19 일자로 발효되었다. 본 협약의 취지는 한국의 젊은이들이 독일의 문화와 일상생활을 체험할 수 있도록 하는데 있다. 워킹홀리데이 비자의 유효기간은 최대 12 개월이다. 독일에서의 체류 비용을 부담하기 위한 단기 취업을 할 수 있다.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_WH_ELIG_02",
+      "topic": "eligibility",
+      "heading": "신청자격",
+      "source_file": "data/raw/germany/working_holiday/working_holiday_seoul_embassy_ko.txt",
+      "source_sha256": "7fc75b47e2fd79d28086936624303ad09f09eba3f38a18b4a25611cb726c5b38",
+      "start_line": 28,
+      "end_line": 34,
+      "original_text": "신청자격\n \n만 18 세 이상 34 세 이하(비자 신청 시점 기준)\n대한민국 국적\n자녀 동반 불가\n신청자격이 되지 않는 배우자 동반 불가\n양호한 건강상태 (건강검진증명서 불필요)",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_WH_ELIG_03",
+      "topic": "required_documents",
+      "heading": "구비서류",
+      "source_file": "data/raw/germany/working_holiday/working_holiday_seoul_embassy_ko.txt",
+      "source_sha256": "7fc75b47e2fd79d28086936624303ad09f09eba3f38a18b4a25611cb726c5b38",
+      "start_line": 35,
+      "end_line": 50,
+      "original_text": "구비서류\n \n완벽하게 기재 및 서명한 비자신청서 online  작성후 출력\n여권 원본 , 사본 (독일 체류기간 동안 유효한 여권 (필히 지참), 인적사항이 기재된 페이지 사본)\n백색 배경의 여권 사진 (3.5 x 4.5cm), 6 개월 이내 촬영 (여권 사진 규격 안내)\n재정증명서: 최소 3,500 유로 ( 귀국 항공권 또는 첫 3개월 동안의 숙소 확정(3개월 납부영수증)을 제시할 경우, 이 금액은 1,000유로씩 감액됩니다.) 이상이 입금된 본인 명의의 잔고증명(영문, 일주일 이내 발급분) 원본 1부\n보험계약서(영문): 해외에서 책임, 질병, 사고보험이 각 30,000 유로 이상 보장 되어야 한다. 원본 1부\n보험의 목적은 Working Holiday or Overseas Travel 로 명시되어 있어야 한다.        \n독일에서 유효한 책임보험 (보장금액: 최소 30,000 유로)\n독일에서 유효한 의료보험 (병원비 및 한국으로의 이송을 포함해야 한다. 보장금액: 최소 30,000 유로)\n독일에서 사고보험 (보장금액 : 최소 30,000 유로)\n              – 보험은 독일 체류 기간 내내 유효해야 한다.\n \n\n              – 보험사는 본인이 선택하면 된다.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_WH_ELIG_04",
+      "topic": "fee",
+      "heading": "수수료",
+      "source_file": "data/raw/germany/working_holiday/working_holiday_seoul_embassy_ko.txt",
+      "source_sha256": "7fc75b47e2fd79d28086936624303ad09f09eba3f38a18b4a25611cb726c5b38",
+      "start_line": 51,
+      "end_line": 55,
+      "original_text": "수수료\n \n비자신청 업무처리 수수료는 75 유로이며, 비자신청시 당일 환율로 환산하여 원화로 지불되어야 한다. 비자발급이 거부되거나 신청자가 비자신청을 취소하더라도 수수료는 환불되지 않는다.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_WH_ELIG_05",
+      "topic": "additional_notes",
+      "heading": "기타 유의사항",
+      "source_file": "data/raw/germany/working_holiday/working_holiday_seoul_embassy_ko.txt",
+      "source_sha256": "7fc75b47e2fd79d28086936624303ad09f09eba3f38a18b4a25611cb726c5b38",
+      "start_line": 56,
+      "end_line": 70,
+      "original_text": "기타 유의사항\n \n경우에 따라 추가 서류의 제출이 요구될 수 있다. (취업증명서 불필요)\n비자 신청은 본인이 직접 주한독일대사관 영사과에서 해야 한다.\n처리기간은 접수일로부터 약 3-5일 소요된다.\n구비 서류를 모두 제출할 시에도 비자발급에 대한 법적 요구는 성립되지 않는다. 독일에서의 워킹 홀리데이 체류는 1 회에 한해서만 가능하다. 독일 워킹홀리데이 비자를 발급받은 자는 신규 발급 신청할 수 없다.\n전자 신청 양식인 Videx로 비자 신청을 하실 수 있습니다. 이곳에서 양식을 작성하신 후 비자 접수 하실 때 가지고 오시기 바랍니다. 양식에 바코드가 정확히 출력되었는지 확인 하시기 바랍니다.  \n신청서 양식을 PDF로 다운로드 후 작성하실 수도 있습니다.\n \n워킹홀리데이 공동성명, 한국어 \n사진 규격 안내(영문)\n영사과 방문 예약",
+      "review_status": "needs_review"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "DE_WH_EVD_01",
+      "source_section_id": "DE_WH_ELIG_01",
+      "exact_quote": "개요\n \n독일연방공화국과 대한민국 간의 워킹홀리데이 비자(관광취업을 위한 사증)협약이 체결되어 2009 년 4 월 19 일자로 발효되었다. 본 협약의 취지는 한국의 젊은이들이 독일의 문화와 일상생활을 체험할 수 있도록 하는데 있다. 워킹홀리데이 비자의 유효기간은 최대 12 개월이다. 독일에서의 체류 비용을 부담하기 위한 단기 취업을 할 수 있다.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_WH_EVD_02",
+      "source_section_id": "DE_WH_ELIG_02",
+      "exact_quote": "신청자격\n \n만 18 세 이상 34 세 이하(비자 신청 시점 기준)\n대한민국 국적\n자녀 동반 불가\n신청자격이 되지 않는 배우자 동반 불가\n양호한 건강상태 (건강검진증명서 불필요)",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_WH_EVD_03",
+      "source_section_id": "DE_WH_ELIG_03",
+      "exact_quote": "구비서류\n \n완벽하게 기재 및 서명한 비자신청서 online  작성후 출력\n여권 원본 , 사본 (독일 체류기간 동안 유효한 여권 (필히 지참), 인적사항이 기재된 페이지 사본)\n백색 배경의 여권 사진 (3.5 x 4.5cm), 6 개월 이내 촬영 (여권 사진 규격 안내)\n재정증명서: 최소 3,500 유로 ( 귀국 항공권 또는 첫 3개월 동안의 숙소 확정(3개월 납부영수증)을 제시할 경우, 이 금액은 1,000유로씩 감액됩니다.) 이상이 입금된 본인 명의의 잔고증명(영문, 일주일 이내 발급분) 원본 1부\n보험계약서(영문): 해외에서 책임, 질병, 사고보험이 각 30,000 유로 이상 보장 되어야 한다. 원본 1부\n보험의 목적은 Working Holiday or Overseas Travel 로 명시되어 있어야 한다.        \n독일에서 유효한 책임보험 (보장금액: 최소 30,000 유로)\n독일에서 유효한 의료보험 (병원비 및 한국으로의 이송을 포함해야 한다. 보장금액: 최소 30,000 유로)\n독일에서 사고보험 (보장금액 : 최소 30,000 유로)\n              – 보험은 독일 체류 기간 내내 유효해야 한다.\n \n\n              – 보험사는 본인이 선택하면 된다.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_WH_EVD_04",
+      "source_section_id": "DE_WH_ELIG_04",
+      "exact_quote": "수수료\n \n비자신청 업무처리 수수료는 75 유로이며, 비자신청시 당일 환율로 환산하여 원화로 지불되어야 한다. 비자발급이 거부되거나 신청자가 비자신청을 취소하더라도 수수료는 환불되지 않는다.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_WH_EVD_05",
+      "source_section_id": "DE_WH_ELIG_05",
+      "exact_quote": "기타 유의사항\n \n경우에 따라 추가 서류의 제출이 요구될 수 있다. (취업증명서 불필요)\n비자 신청은 본인이 직접 주한독일대사관 영사과에서 해야 한다.\n처리기간은 접수일로부터 약 3-5일 소요된다.\n구비 서류를 모두 제출할 시에도 비자발급에 대한 법적 요구는 성립되지 않는다. 독일에서의 워킹 홀리데이 체류는 1 회에 한해서만 가능하다. 독일 워킹홀리데이 비자를 발급받은 자는 신규 발급 신청할 수 없다.\n전자 신청 양식인 Videx로 비자 신청을 하실 수 있습니다. 이곳에서 양식을 작성하신 후 비자 접수 하실 때 가지고 오시기 바랍니다. 양식에 바코드가 정확히 출력되었는지 확인 하시기 바랍니다.  \n신청서 양식을 PDF로 다운로드 후 작성하실 수도 있습니다.\n \n워킹홀리데이 공동성명, 한국어 \n사진 규격 안내(영문)\n영사과 방문 예약",
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "DE_WH_POL_01",
+      "source_section_id": "DE_WH_ELIG_01",
+      "topic": "overview",
+      "source_text": "개요\n \n독일연방공화국과 대한민국 간의 워킹홀리데이 비자(관광취업을 위한 사증)협약이 체결되어 2009 년 4 월 19 일자로 발효되었다. 본 협약의 취지는 한국의 젊은이들이 독일의 문화와 일상생활을 체험할 수 있도록 하는데 있다. 워킹홀리데이 비자의 유효기간은 최대 12 개월이다. 독일에서의 체류 비용을 부담하기 위한 단기 취업을 할 수 있다.",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "DE_WH_POL_02",
+      "source_section_id": "DE_WH_ELIG_02",
+      "topic": "eligibility",
+      "source_text": "신청자격\n \n만 18 세 이상 34 세 이하(비자 신청 시점 기준)\n대한민국 국적\n자녀 동반 불가\n신청자격이 되지 않는 배우자 동반 불가\n양호한 건강상태 (건강검진증명서 불필요)",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "DE_WH_POL_03",
+      "source_section_id": "DE_WH_ELIG_03",
+      "topic": "required_documents",
+      "source_text": "구비서류\n \n완벽하게 기재 및 서명한 비자신청서 online  작성후 출력\n여권 원본 , 사본 (독일 체류기간 동안 유효한 여권 (필히 지참), 인적사항이 기재된 페이지 사본)\n백색 배경의 여권 사진 (3.5 x 4.5cm), 6 개월 이내 촬영 (여권 사진 규격 안내)\n재정증명서: 최소 3,500 유로 ( 귀국 항공권 또는 첫 3개월 동안의 숙소 확정(3개월 납부영수증)을 제시할 경우, 이 금액은 1,000유로씩 감액됩니다.) 이상이 입금된 본인 명의의 잔고증명(영문, 일주일 이내 발급분) 원본 1부\n보험계약서(영문): 해외에서 책임, 질병, 사고보험이 각 30,000 유로 이상 보장 되어야 한다. 원본 1부\n보험의 목적은 Working Holiday or Overseas Travel 로 명시되어 있어야 한다.        \n독일에서 유효한 책임보험 (보장금액: 최소 30,000 유로)\n독일에서 유효한 의료보험 (병원비 및 한국으로의 이송을 포함해야 한다. 보장금액: 최소 30,000 유로)\n독일에서 사고보험 (보장금액 : 최소 30,000 유로)\n              – 보험은 독일 체류 기간 내내 유효해야 한다.\n \n\n              – 보험사는 본인이 선택하면 된다.",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "DE_WH_POL_04",
+      "source_section_id": "DE_WH_ELIG_04",
+      "topic": "fee",
+      "source_text": "수수료\n \n비자신청 업무처리 수수료는 75 유로이며, 비자신청시 당일 환율로 환산하여 원화로 지불되어야 한다. 비자발급이 거부되거나 신청자가 비자신청을 취소하더라도 수수료는 환불되지 않는다.",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "DE_WH_POL_05",
+      "source_section_id": "DE_WH_ELIG_05",
+      "topic": "additional_notes",
+      "source_text": "기타 유의사항\n \n경우에 따라 추가 서류의 제출이 요구될 수 있다. (취업증명서 불필요)\n비자 신청은 본인이 직접 주한독일대사관 영사과에서 해야 한다.\n처리기간은 접수일로부터 약 3-5일 소요된다.\n구비 서류를 모두 제출할 시에도 비자발급에 대한 법적 요구는 성립되지 않는다. 독일에서의 워킹 홀리데이 체류는 1 회에 한해서만 가능하다. 독일 워킹홀리데이 비자를 발급받은 자는 신규 발급 신청할 수 없다.\n전자 신청 양식인 Videx로 비자 신청을 하실 수 있습니다. 이곳에서 양식을 작성하신 후 비자 접수 하실 때 가지고 오시기 바랍니다. 양식에 바코드가 정확히 출력되었는지 확인 하시기 바랍니다.  \n신청서 양식을 PDF로 다운로드 후 작성하실 수도 있습니다.\n \n워킹홀리데이 공동성명, 한국어 \n사진 규격 안내(영문)\n영사과 방문 예약",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "source_requirement_checks": {
+    "korean_nationality": true,
+    "minimum_age": true,
+    "maximum_age": true,
+    "maximum_stay": true,
+    "funds": true,
+    "reduction": true,
+    "liability_insurance": true,
+    "medical_insurance": true,
+    "accident_insurance": true,
+    "insurance_amount": true,
+    "application_fee": true,
+    "personal_application": true,
+    "one_time_only": true
+  },
+  "conditional_requirements": {
+    "nationality_and_age": {
+      "source_section_ids": [
+        "DE_WH_ELIG_02"
+      ],
+      "review_points": [
+        "south_korean_nationality",
+        "age_18_to_34_at_application"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "family_and_health": {
+      "source_section_ids": [
+        "DE_WH_ELIG_02"
+      ],
+      "review_points": [
+        "children_not_accompanying",
+        "ineligible_spouse_not_accompanying",
+        "good_health",
+        "medical_certificate_not_required"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "financial_evidence": {
+      "source_section_ids": [
+        "DE_WH_ELIG_03"
+      ],
+      "review_points": [
+        "minimum_3500_eur",
+        "return_ticket_reduction",
+        "first_three_months_accommodation_reduction",
+        "reduction_combination_requires_review",
+        "bank_statement_in_applicant_name",
+        "english_statement_issued_within_one_week"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "insurance": {
+      "source_section_ids": [
+        "DE_WH_ELIG_03"
+      ],
+      "review_points": [
+        "liability_insurance_30000_eur",
+        "medical_insurance_30000_eur",
+        "accident_insurance_30000_eur",
+        "hospital_and_repatriation_coverage",
+        "coverage_for_entire_stay",
+        "working_holiday_or_overseas_travel_purpose"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "application_documents": {
+      "source_section_ids": [
+        "DE_WH_ELIG_03"
+      ],
+      "review_points": [
+        "completed_and_signed_application",
+        "valid_passport_and_copy",
+        "recent_passport_photo",
+        "insurance_contract_original",
+        "additional_documents_possible"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "application_process_and_history": {
+      "source_section_ids": [
+        "DE_WH_ELIG_04",
+        "DE_WH_ELIG_05"
+      ],
+      "review_points": [
+        "fee_75_eur_paid_in_krw",
+        "fee_nonrefundable",
+        "in_person_embassy_application",
+        "processing_time_guidance",
+        "working_holiday_one_time_only",
+        "previous_visa_issuance"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "related_sources_to_review": [
+    "워킹홀리데이 공동성명, 한국어",
+    "영사과 방문 예약",
+    "비자신청서 및 Videx 안내"
+  ],
+  "review_status": "needs_review",
+  "eligibility_rule": null,
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false,
+  "supplementary_agreement": {
+    "source_file": "data/raw/germany/working_holiday/working_holiday_joint_declaration_ko.pdf",
+    "source_url": "https://seoul.diplo.de/resource/blob/2705340/6dfbff4733aaf4417172ddb2aac415c4/working-holiday-absprache-kor-data.pdf",
+    "source_sha256": "c84464538fd30d512bd733a55522ec1db5048508eaf1a68ba04e44122143a2de",
+    "source_language": "ko",
+    "original_agreement_date": "2009-04-19",
+    "amendment_correspondence_date": "2024-12-30",
+    "amendment_effective_date": "2025-01-01",
+    "age_requirement_history": {
+      "original": {
+        "minimum_age": 18,
+        "maximum_age": 30,
+        "source_page": 1
+      },
+      "amended": {
+        "minimum_age": 18,
+        "maximum_age": 34,
+        "source_pages": [
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    "amendment_scope": "Article 1(a) age requirement",
+    "extraction_method": "visual_source_review",
+    "machine_readable_pdf_text": false,
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  }
+}

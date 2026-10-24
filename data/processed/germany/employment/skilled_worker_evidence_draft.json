@@ -1,0 +1,400 @@
+{
+  "country": "Germany",
+  "program": "skilled_worker",
+  "pathway_type": "employment",
+  "legal_bases": [
+    "AufenthG Section 18a",
+    "AufenthG Section 18b"
+  ],
+  "official_source": {
+    "authority": "German Federal Government - Make it in Germany",
+    "source_url": "https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals",
+    "source_language": "en",
+    "source_file": "data/raw/germany/employment/skilled_worker_make_it_in_germany_en.txt",
+    "source_sha256": "7aca67fc6f0b88d9195967041e3901799b774a0935b71d73c7f5cd0cc4b2fdd1",
+    "char_count": 5399,
+    "line_count": 100
+  },
+  "evidence_sections": [
+    {
+      "section_id": "DE_SKILLED_SEC_01",
+      "topic": "overview",
+      "heading": "Who is the work visa for qualified professionals intended for?",
+      "start_line": 23,
+      "end_line": 25,
+      "source_sha256": "7aca67fc6f0b88d9195967041e3901799b774a0935b71d73c7f5cd0cc4b2fdd1",
+      "original_text": "Who is the work visa for qualified professionals intended for?\nHave you completed academic studies or qualified vocational training in Germany or abroad? You may then, under certain conditions, be eligible for a residence permit in accordance with Section 18a or Section 18b of the Residence Act [AufenthG] to take up qualified employment as a skilled worker in Germany.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_SKILLED_SEC_02",
+      "topic": "requirements",
+      "heading": "Requirements for the work visa for qualified professionals at a glance",
+      "start_line": 26,
+      "end_line": 37,
+      "source_sha256": "7aca67fc6f0b88d9195967041e3901799b774a0935b71d73c7f5cd0cc4b2fdd1",
+      "original_text": "Requirements for the work visa for qualified professionals at a glance\nYour qualification must be recognised in Germany or comparable to a German academic qualification. If you want to work in a regulated profession, such as a healthcare profession, you will need a licence to practise. For more information on the recognition procedure, see the “Recognition” section.\nYou have a specific job offer from an employer in Germany. It is important that the job you are offered is a qualified position. This means that you will usually need an academic qualification or qualified vocational training to do the job. Auxiliary tasks will not be sufficient for this purpose.\nYour job does not have to be related to your qualification. However, you will need a licence to practise if you want to work in a regulated profession.\nAre you over the age of 45 and coming to work in Germany for the first time? In this case, the job you intend to take in Germany must enable you to earn a gross annual salary of at least €55,770 (as of 2026) or you must be able to prove that you have adequate pension provision.\nDo you meet the above requirements? Then find out about the entry and visa process.\n\nEU Blue Card: opportunities for graduates\nDo you have a recognised academic qualification? If so, check to see whether you meet the criteria for obtaining an EU Blue Card. This type of residence title offers particularly attractive opportunities to qualified professionals.\n\nHere you find an overview of how to secure your livelihood according to the purpose of stay.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_SKILLED_SEC_03",
+      "topic": "ba_approval",
+      "heading": "Approval from the Federal Employment Agency required",
+      "start_line": 38,
+      "end_line": 40,
+      "source_sha256": "7aca67fc6f0b88d9195967041e3901799b774a0935b71d73c7f5cd0cc4b2fdd1",
+      "original_text": "Approval from the Federal Employment Agency required\nAs a rule, the Federal Employment Agency (BA) must first approve your employment. As part of this process, the Federal Employment Agency will assess whether your conditions of employment (salary, working hours, etc.) correspond to those of domestic employees.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_SKILLED_SEC_04",
+      "topic": "residence_prospects",
+      "heading": "Your opportunities with the work visa for qualified professionals",
+      "start_line": 41,
+      "end_line": 47,
+      "source_sha256": "7aca67fc6f0b88d9195967041e3901799b774a0935b71d73c7f5cd0cc4b2fdd1",
+      "original_text": "Your opportunities with the work visa for qualified professionals\nResidence permits for qualified employment are issued for a maximum of four years. If your employment contract is for a shorter period, you will be issued with a residence permit for the duration of the contract, plus an additional six months.\n\nIf you have held a residence permit for the purpose of employment for at least three years, you may, under certain circumstances, be eligible for a settlement permit. This is essentially a permanent residence title. For more information, see the “Living permanently in Germany” section.\n\nDo you want to live in Germany with your family? This residence permit enables you to do so. To find out what you need to consider and what the requirements are, please see the “Family reunification” section.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "DE_SKILLED_SEC_05",
+      "topic": "online_application",
+      "heading": "Apply for the work visa for qualified professionals online",
+      "start_line": 48,
+      "end_line": 69,
+      "source_sha256": "7aca67fc6f0b88d9195967041e3901799b774a0935b71d73c7f5cd0cc4b2fdd1",
+      "original_text": "Apply for the work visa for qualified professionals online\nDo you meet the necessary requirements? Then you can apply for your visa for employment online via the Consular Services Portal of the Federal Foreign Office:\n\nFor qualified professionals with a university degree(External link) \nFor qualified professionals with vocational training(External link) \n\nAt a glance: Work visa for qualified professionals",
+      "review_status": "needs_review"
+    }
+  ],
+  "shared_requirement_evidence": [
+    {
+      "source_line": 27,
+      "exact_quote": "Your qualification must be recognised in Germany or comparable to a German academic qualification. If you want to work in a regulated profession, such as a healthcare profession, you will need a licence to practise. For more information on the recognition procedure, see the “Recognition” section."
+    },
+    {
+      "source_line": 28,
+      "exact_quote": "You have a specific job offer from an employer in Germany. It is important that the job you are offered is a qualified position. This means that you will usually need an academic qualification or qualified vocational training to do the job. Auxiliary tasks will not be sufficient for this purpose."
+    },
+    {
+      "source_line": 29,
+      "exact_quote": "Your job does not have to be related to your qualification. However, you will need a licence to practise if you want to work in a regulated profession."
+    },
+    {
+      "source_line": 30,
+      "exact_quote": "Are you over the age of 45 and coming to work in Germany for the first time? In this case, the job you intend to take in Germany must enable you to earn a gross annual salary of at least €55,770 (as of 2026) or you must be able to prove that you have adequate pension provision."
+    }
+  ],
+  "eligibility_pathways": [
+    {
+      "pathway_id": "vocational_training",
+      "name": "Skilled Worker with Vocational Training",
+      "legal_basis": "AufenthG Section 18a",
+      "qualification_to_review": "Recognised qualified vocational training",
+      "application_link_label": "For qualified professionals with vocational training",
+      "source_evidence_id": "DE_SKILLED_EVD_01",
+      "policy_candidate_id": "DE_SKILLED_POL_01",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "pathway_id": "academic_qualification",
+      "name": "Skilled Worker with Academic Qualification",
+      "legal_basis": "AufenthG Section 18b",
+      "qualification_to_review": "German or comparable foreign academic qualification",
+      "application_link_label": "For qualified professionals with a university degree",
+      "source_evidence_id": "DE_SKILLED_EVD_02",
+      "policy_candidate_id": "DE_SKILLED_POL_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "DE_SKILLED_EVD_01",
+      "pathway_id": "vocational_training",
+      "source_quotes": [
+        {
+          "source_section_id": "DE_SKILLED_SEC_01",
+          "exact_quote": "Who is the work visa for qualified professionals intended for?\nHave you completed academic studies or qualified vocational training in Germany or abroad? You may then, under certain conditions, be eligible for a residence permit in accordance with Section 18a or Section 18b of the Residence Act [AufenthG] to take up qualified employment as a skilled worker in Germany."
+        },
+        {
+          "source_section_id": "DE_SKILLED_SEC_02",
+          "exact_quote": "Requirements for the work visa for qualified professionals at a glance\nYour qualification must be recognised in Germany or comparable to a German academic qualification. If you want to work in a regulated profession, such as a healthcare profession, you will need a licence to practise. For more information on the recognition procedure, see the “Recognition” section.\nYou have a specific job offer from an employer in Germany. It is important that the job you are offered is a qualified position. This means that you will usually need an academic qualification or qualified vocational training to do the job. Auxiliary tasks will not be sufficient for this purpose.\nYour job does not have to be related to your qualification. However, you will need a licence to practise if you want to work in a regulated profession.\nAre you over the age of 45 and coming to work in Germany for the first time? In this case, the job you intend to take in Germany must enable you to earn a gross annual salary of at least €55,770 (as of 2026) or you must be able to prove that you have adequate pension provision.\nDo you meet the above requirements? Then find out about the entry and visa process.\n\nEU Blue Card: opportunities for graduates\nDo you have a recognised academic qualification? If so, check to see whether you meet the criteria for obtaining an EU Blue Card. This type of residence title offers particularly attractive opportunities to qualified professionals.\n\nHere you find an overview of how to secure your livelihood according to the purpose of stay."
+        },
+        {
+          "source_section_id": "DE_SKILLED_SEC_03",
+          "exact_quote": "Approval from the Federal Employment Agency required\nAs a rule, the Federal Employment Agency (BA) must first approve your employment. As part of this process, the Federal Employment Agency will assess whether your conditions of employment (salary, working hours, etc.) correspond to those of domestic employees."
+        }
+      ],
+      "requirement_lines": [
+        {
+          "source_line": 27,
+          "exact_quote": "Your qualification must be recognised in Germany or comparable to a German academic qualification. If you want to work in a regulated profession, such as a healthcare profession, you will need a licence to practise. For more information on the recognition procedure, see the “Recognition” section."
+        },
+        {
+          "source_line": 28,
+          "exact_quote": "You have a specific job offer from an employer in Germany. It is important that the job you are offered is a qualified position. This means that you will usually need an academic qualification or qualified vocational training to do the job. Auxiliary tasks will not be sufficient for this purpose."
+        },
+        {
+          "source_line": 29,
+          "exact_quote": "Your job does not have to be related to your qualification. However, you will need a licence to practise if you want to work in a regulated profession."
+        },
+        {
+          "source_line": 30,
+          "exact_quote": "Are you over the age of 45 and coming to work in Germany for the first time? In this case, the job you intend to take in Germany must enable you to earn a gross annual salary of at least €55,770 (as of 2026) or you must be able to prove that you have adequate pension provision."
+        }
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_SKILLED_EVD_02",
+      "pathway_id": "academic_qualification",
+      "source_quotes": [
+        {
+          "source_section_id": "DE_SKILLED_SEC_01",
+          "exact_quote": "Who is the work visa for qualified professionals intended for?\nHave you completed academic studies or qualified vocational training in Germany or abroad? You may then, under certain conditions, be eligible for a residence permit in accordance with Section 18a or Section 18b of the Residence Act [AufenthG] to take up qualified employment as a skilled worker in Germany."
+        },
+        {
+          "source_section_id": "DE_SKILLED_SEC_02",
+          "exact_quote": "Requirements for the work visa for qualified professionals at a glance\nYour qualification must be recognised in Germany or comparable to a German academic qualification. If you want to work in a regulated profession, such as a healthcare profession, you will need a licence to practise. For more information on the recognition procedure, see the “Recognition” section.\nYou have a specific job offer from an employer in Germany. It is important that the job you are offered is a qualified position. This means that you will usually need an academic qualification or qualified vocational training to do the job. Auxiliary tasks will not be sufficient for this purpose.\nYour job does not have to be related to your qualification. However, you will need a licence to practise if you want to work in a regulated profession.\nAre you over the age of 45 and coming to work in Germany for the first time? In this case, the job you intend to take in Germany must enable you to earn a gross annual salary of at least €55,770 (as of 2026) or you must be able to prove that you have adequate pension provision.\nDo you meet the above requirements? Then find out about the entry and visa process.\n\nEU Blue Card: opportunities for graduates\nDo you have a recognised academic qualification? If so, check to see whether you meet the criteria for obtaining an EU Blue Card. This type of residence title offers particularly attractive opportunities to qualified professionals.\n\nHere you find an overview of how to secure your livelihood according to the purpose of stay."
+        },
+        {
+          "source_section_id": "DE_SKILLED_SEC_03",
+          "exact_quote": "Approval from the Federal Employment Agency required\nAs a rule, the Federal Employment Agency (BA) must first approve your employment. As part of this process, the Federal Employment Agency will assess whether your conditions of employment (salary, working hours, etc.) correspond to those of domestic employees."
+        }
+      ],
+      "requirement_lines": [
+        {
+          "source_line": 27,
+          "exact_quote": "Your qualification must be recognised in Germany or comparable to a German academic qualification. If you want to work in a regulated profession, such as a healthcare profession, you will need a licence to practise. For more information on the recognition procedure, see the “Recognition” section."
+        },
+        {
+          "source_line": 28,
+          "exact_quote": "You have a specific job offer from an employer in Germany. It is important that the job you are offered is a qualified position. This means that you will usually need an academic qualification or qualified vocational training to do the job. Auxiliary tasks will not be sufficient for this purpose."
+        },
+        {
+          "source_line": 29,
+          "exact_quote": "Your job does not have to be related to your qualification. However, you will need a licence to practise if you want to work in a regulated profession."
+        },
+        {
+          "source_line": 30,
+          "exact_quote": "Are you over the age of 45 and coming to work in Germany for the first time? In this case, the job you intend to take in Germany must enable you to earn a gross annual salary of at least €55,770 (as of 2026) or you must be able to prove that you have adequate pension provision."
+        }
+      ],
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "DE_SKILLED_POL_01",
+      "pathway_id": "vocational_training",
+      "source_evidence_id": "DE_SKILLED_EVD_01",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "DE_SKILLED_POL_02",
+      "pathway_id": "academic_qualification",
+      "source_evidence_id": "DE_SKILLED_EVD_02",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "source_requirement_checks": {
+    "section_18a": true,
+    "section_18b": true,
+    "recognition": true,
+    "job_offer": true,
+    "qualified_employment": true,
+    "unrelated_job": true,
+    "regulated_licence": true,
+    "over_45": true,
+    "salary_2026": true,
+    "pension_alternative": true,
+    "ba_approval": true,
+    "four_years": true,
+    "contract_extension": true,
+    "settlement": true,
+    "online_application": true
+  },
+  "conditional_requirements": {
+    "qualification_recognition": {
+      "review_points": [
+        "recognised_vocational_qualification_18a",
+        "german_or_comparable_academic_degree_18b",
+        "qualification_recognition_evidence"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "qualified_employment": {
+      "review_points": [
+        "specific_job_offer",
+        "qualified_position",
+        "auxiliary_work_exclusion",
+        "qualification_job_match_not_generally_required"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "regulated_professions": {
+      "review_points": [
+        "professional_practice_licence",
+        "regulated_occupation_status"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "age_and_financial_security": {
+      "review_points": [
+        "over_45_first_employment",
+        "2026_gross_salary_55770_eur",
+        "adequate_pension_provision_alternative"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "federal_employment_agency": {
+      "review_points": [
+        "BA_approval_general_requirement",
+        "employment_conditions_review",
+        "applicable_exceptions"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "residence_and_settlement": {
+      "review_points": [
+        "maximum_four_year_residence",
+        "employment_contract_plus_six_months",
+        "settlement_permit_after_three_years",
+        "family_reunification"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "application_process": {
+      "review_points": [
+        "consular_services_portal",
+        "degree_based_application",
+        "vocational_training_application",
+        "current_embassy_document_requirements"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "salary_reference": {
+    "year": 2026,
+    "currency": "EUR",
+    "gross_annual_eur": 55770,
+    "scope": "First-time employment in Germany for applicants over 45; adequate pension provision may be an alternative",
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "related_program_to_review": "eu_blue_card",
+  "review_status": "needs_review",
+  "eligibility_rule": null,
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false,
+  "embassy_source": {
+    "authority": "German Embassy in Seoul",
+    "source_url": "https://seoul.diplo.de/kr-ko/service/visa-einreise/1890394-1890394",
+    "source_language": "ko",
+    "source_file": "data/raw/germany/employment/skilled_worker_seoul_embassy_ko.txt",
+    "source_sha256": "c37d672d3a29c0c9a7b6f2411f285767796f33654c6e4b761097e81df663a6c2",
+    "char_count": 10208,
+    "line_count": 356,
+    "applicability": "General employment visa guidance; includes EU Blue Card and skilled workers.",
+    "review_status": "needs_review"
+  },
+  "embassy_evidence": [
+    {
+      "evidence_id": "DE_SKILLED_EMBASSY_EVD_01",
+      "topic": "application_channels",
+      "source_file": "data/raw/germany/employment/skilled_worker_seoul_embassy_ko.txt",
+      "source_sha256": "c37d672d3a29c0c9a7b6f2411f285767796f33654c6e4b761097e81df663a6c2",
+      "start_line": 73,
+      "end_line": 80,
+      "exact_quote": "취업 비자 \n블루 카드(EU) 비자, 공인된 학위 소지자의 취업비자, 전문 직업교육을 받은 직종의 비자 신청자는 연방외무부  해외포털(Auslandsportal)을 통해 온라인으로 비자를 접수할 수 있습니다.  자세한 내용은 여기에서 확인할 수 있습니다.\n \n\n 물론, 여전히 주한 독일 대사관 영사과에서 비자 신청서를 제출할 수 있습니다. 단, 위의 비자와 관련한 이용가능한 예약은 매우 제한적입니다. 대사관에서 신청할 때는 다음 서류를 제출해 주시기바랍니다:\n \n\n아래의 서류를 본인이 직접 독일대사관 영사과에 제출하도록 한다.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_SKILLED_EMBASSY_EVD_02",
+      "topic": "required_documents",
+      "source_file": "data/raw/germany/employment/skilled_worker_seoul_embassy_ko.txt",
+      "source_sha256": "c37d672d3a29c0c9a7b6f2411f285767796f33654c6e4b761097e81df663a6c2",
+      "start_line": 83,
+      "end_line": 92,
+      "exact_quote": "완벽하게 기재 및 서명이 된 비자신청서  online\n유효한 여권 (인적사항이 기재된 페이지 사본 첨부)\n최신 여권사진 2매 (3,5 x 4,5 cm, 밝은 배경으로, 6개월 이내촬영)\n경우에 따라 유효한 한국 외국인등록증\n독일 고용주의 근로계약서 사본  (계약서가 있는 경우)\n고용주가 작성한 \"Erklärung zum Beschäftigungsverhältnis\" (고용관계에 관한 확인서) 원본 및 사본  (회사 직인이 찍혀있어야 함); 해외파견인 경우, 해당 서류는 독일 연방노동청 웹사이트에서 확인할 수 있습니다.\n학력/경력 증명서 (대학졸업, 연수, 경력 등)\n이력서\n독일 고용인측의 초청장 원본1부, 사본 1부  (회사 주소 및 담당자 기재)\n* 경우에 따라서 다른 서류의 제출도 요구할 수 있다.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "DE_SKILLED_EMBASSY_EVD_03",
+      "topic": "processing_fees_and_decision",
+      "source_file": "data/raw/germany/employment/skilled_worker_seoul_embassy_ko.txt",
+      "source_sha256": "c37d672d3a29c0c9a7b6f2411f285767796f33654c6e4b761097e81df663a6c2",
+      "start_line": 95,
+      "end_line": 111,
+      "exact_quote": "주의사항\n \n\n- 비자 수속은 일반적으로 4-6 주 정도 소요되지만 개별적인 경우에 따라 더 짧거나 길 수도 있습니다. 이를 참고하여 서류신청을 미리 하도록 한다.\n \n\n- 비자신청 수수료는 75유로이며, 신청 시 이를 원화(당일 환율)로 지불해야 한다. (비자, 마스터 - 신용카드 결제시 유로화로 결제됨)\n \n\n비자 발급이 거부당하거나 신청자가 신청을 취소하는 경우에도 수수료는 환급되지 않는다.\n \n\n- 비자 발급은 주한독일대사관 영사과에서 독일의 관할 외국인청, 독일연방노동청과 함께 이를 검토한 후 발급 여부를 결정한다. 긍정적인 검토가 이루어진 경우, 대사관은 3개월 비자를 발급해주며, 입국 후 비자가 만료되기 전에 관할 외국인청에서 비자기간을 연장 하도록 한다.\n \n\n\n취업비자 발급에 대한 청구권은 주어지지 않는다.",
+      "review_status": "needs_review"
+    }
+  ],
+  "embassy_document_review": {
+    "source_evidence_id": "DE_SKILLED_EMBASSY_EVD_02",
+    "documents_to_review": [
+      "completed_and_signed_application",
+      "valid_passport_and_biographical_page_copy",
+      "recent_passport_photos",
+      "korean_foreign_registration_card_if_applicable",
+      "employment_contract_if_available",
+      "employer_declaration_of_employment",
+      "academic_or_vocational_qualification_evidence",
+      "professional_experience_evidence",
+      "curriculum_vitae",
+      "employer_invitation_letter",
+      "additional_documents_if_requested"
+    ],
+    "application_method_specific_requirements": true,
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "embassy_application_review": {
+    "source_evidence_ids": [
+      "DE_SKILLED_EMBASSY_EVD_01",
+      "DE_SKILLED_EMBASSY_EVD_03"
+    ],
+    "online_application_available": true,
+    "in_person_application_option": true,
+    "embassy_fee_eur": 75,
+    "fee_refundable": false,
+    "processing_time_guidance": "4 to 6 weeks",
+    "entry_visa_vs_residence_permit": "Embassy guidance mentions a three-month entry visa after a positive decision. Distinguish from residence permit validity.",
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "embassy_scope_notes": [
+    {
+      "topic": "shared_employment_guidance",
+      "finding": "Embassy section covers EU Blue Card, academic skilled workers and vocational skilled workers. Confirm pathway-specific documents before treating them as mandatory.",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "application_method",
+      "finding": "Online portal and in-person submission may require different submission steps.",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "visa_and_residence_duration",
+      "finding": "Three-month entry visa guidance is distinct from the federal four-year maximum residence permit guidance.",
+      "review_status": "needs_review"
+    }
+  ]
+}
