@@ -1,0 +1,2121 @@
+{
+  "country": "Canada",
+  "program": "employer_specific_work_permit",
+  "program_category": "employment",
+  "official_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/employer-specific.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/employment/employer_specific_eligibility_ircc_en.txt",
+    "source_sha256": "3b391bfbabbb2d7be04bd015806e64326788c5091e6662c206008778e3421008",
+    "source_last_modified": "2026-03-31",
+    "char_count": 3979,
+    "line_count": 122
+  },
+  "evidence": [
+    {
+      "evidence_id": "CA_ESWP_EVD_01",
+      "topic": "permit_types_and_employer_preconditions",
+      "source_file": "data/raw/canada/employment/employer_specific_eligibility_ircc_en.txt",
+      "source_sha256": "3b391bfbabbb2d7be04bd015806e64326788c5091e6662c206008778e3421008",
+      "start_line": 11,
+      "end_line": 14,
+      "exact_quote": "Employer-specific work permits\nThere are 2 types of work permits: employer-specific work permits and open work permits.\n\nTo be eligible for an employer-specific work permit, you need to meet certain requirements. Also, your Canadian employer needs to take steps before you can apply.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_EVD_02",
+      "topic": "permit_conditions_and_restrictions",
+      "source_file": "data/raw/canada/employment/employer_specific_eligibility_ircc_en.txt",
+      "source_sha256": "3b391bfbabbb2d7be04bd015806e64326788c5091e6662c206008778e3421008",
+      "start_line": 22,
+      "end_line": 30,
+      "exact_quote": "What is an employer-specific work permit\nAn employer-specific work permit lets you work in Canada under the conditions of the permit until the expiry date. The details are listed on your permit under the following sections:\n\nAdditional Information – includes the employer, location and occupation\nConditions – consists of a numbered list of requirements you need to meet\nRemarks – may contain additional clarifications or conditions that you may need to meet\nSee an example of a work permit.\n\nYou must comply with all the information listed on your work permit.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_EVD_03",
+      "topic": "job_offer_and_general_requirements",
+      "source_file": "data/raw/canada/employment/employer_specific_eligibility_ircc_en.txt",
+      "source_sha256": "3b391bfbabbb2d7be04bd015806e64326788c5091e6662c206008778e3421008",
+      "start_line": 37,
+      "end_line": 47,
+      "exact_quote": "What you need to apply\nTo apply for an employer-specific work permit, you need\n\nto have a job offer from an employer who’s not on the list of non-compliant employers\nto meet the general requirements for all work permit applicants\nSome people don’t need a work permit to work in Canada. If you need a work permit and don’t yet have one, you can’t\n\nlegally work in Canada or\nwrite on a job application that you’re legally allowed to work in Canada\nDon’t have a job offer?\nSearch jobs for temporary foreign workers on the Job Bank.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_EVD_04",
+      "topic": "lmia_and_employer_preparation",
+      "source_file": "data/raw/canada/employment/employer_specific_eligibility_ircc_en.txt",
+      "source_sha256": "3b391bfbabbb2d7be04bd015806e64326788c5091e6662c206008778e3421008",
+      "start_line": 49,
+      "end_line": 58,
+      "exact_quote": "Ask your employer about a labour market impact assessment\nA labour market impact assessment (LMIA) is a document that proves there’s a need to hire a foreign worker to fill the job. Most jobs need an LMIA.\n\nBefore you apply for a work permit, your employer needs to\n\nfind out if they need an LMIA for your job or if it’s LMIA-exempt\napply for an LMIA (if needed)\ngive you documents, like an LMIA letter and Annex A from their positive LMIA, which you’ll need to include in your application\nAre you an employer?\nFind out if you need an LMIA to hire a temporary foreign worker.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_EVD_05",
+      "topic": "application_locations_and_extension",
+      "source_file": "data/raw/canada/employment/employer_specific_eligibility_ircc_en.txt",
+      "source_sha256": "3b391bfbabbb2d7be04bd015806e64326788c5091e6662c206008778e3421008",
+      "start_line": 60,
+      "end_line": 78,
+      "exact_quote": "Is this the right work permit for you\nAnswer a few questions to find out\n\nif an employer-specific work permit is right for you\nif you need to follow special instructions to apply\n\nApply for an employer-specific work permit\nThe instructions to apply for a work permit vary depending on where you’re applying.\n\nApply from outside Canada\n\n \nApply in Canada\n\n \nApply at a port of entry\n\n \nExtend your work permit",
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "CA_ESWP_POL_01",
+      "topic": "job_offer_and_employer_compliance",
+      "conditions_to_review": [
+        "genuine_job_offer",
+        "employer_not_on_non_compliant_list",
+        "employer_identity",
+        "employment_contract"
+      ],
+      "source_evidence_ids": [
+        "CA_ESWP_EVD_03"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "CA_ESWP_POL_02",
+      "topic": "general_work_permit_eligibility",
+      "conditions_to_review": [
+        "general_work_permit_requirements",
+        "admissibility",
+        "applicant_documents",
+        "work_permit_required_or_exempt"
+      ],
+      "source_evidence_ids": [
+        "CA_ESWP_EVD_03"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "CA_ESWP_POL_03",
+      "topic": "lmia_required_path",
+      "conditions_to_review": [
+        "lmia_requirement_classification",
+        "positive_lmia",
+        "lmia_letter",
+        "annex_a",
+        "employer_pre_application_steps"
+      ],
+      "source_evidence_ids": [
+        "CA_ESWP_EVD_04"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "CA_ESWP_POL_04",
+      "topic": "lmia_exempt_path",
+      "conditions_to_review": [
+        "lmia_exemption_category",
+        "official_exemption_code",
+        "employer_portal_submission_if_applicable",
+        "offer_of_employment_number_if_applicable",
+        "employer_compliance_fee_if_applicable"
+      ],
+      "source_evidence_ids": [
+        "CA_ESWP_EVD_04"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "CA_ESWP_POL_05",
+      "topic": "permit_conditions_and_application_route",
+      "conditions_to_review": [
+        "named_employer",
+        "occupation",
+        "work_location",
+        "permit_conditions",
+        "application_location",
+        "extension_or_change_of_conditions"
+      ],
+      "source_evidence_ids": [
+        "CA_ESWP_EVD_02",
+        "CA_ESWP_EVD_05"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "lmia_path_review": {
+    "lmia_required": {
+      "source_evidence_id": "CA_ESWP_LMIA_EVD_03",
+      "positive_lmia_and_annex_a": "conditional_source_requirement",
+      "detailed_rules_verified": false,
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review",
+      "program": "Temporary Foreign Worker Program",
+      "positive_lmia_decision_letter_required": true,
+      "annex_a_employment_details_required": true,
+      "worker_document_source_collected": true,
+      "job_offer_letter_required": true,
+      "employment_contract_required": true,
+      "quebec_caq_conditions_need_review": true
+    },
+    "lmia_exempt": {
+      "source_evidence_id": "CA_ESWP_LMIA_EVD_04",
+      "exemption_code": null,
+      "employer_portal_requirement_verified": false,
+      "employer_compliance_fee_verified": true,
+      "detailed_rules_verified": false,
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review",
+      "program": "International Mobility Program",
+      "employer_portal_rules_verified": true,
+      "general_employer_compliance_fee_cad": 230,
+      "offer_number_digits": 7,
+      "employer_portal_exemptions_need_review": true,
+      "compliance_fee_exemptions_need_review": true,
+      "individual_lmia_exemption_codes_need_review": true,
+      "automatic_employer_preparation_approval": false,
+      "imp_source_evidence_ids": [
+        "CA_ESWP_IMP_EVD_01",
+        "CA_ESWP_IMP_EVD_02",
+        "CA_ESWP_IMP_EVD_03",
+        "CA_ESWP_IMP_EVD_04",
+        "CA_ESWP_IMP_EVD_05",
+        "CA_ESWP_IMP_EVD_06",
+        "CA_ESWP_IMP_EVD_07"
+      ],
+      "individual_fee_exemption_approved": false,
+      "individual_portal_exemption_approved": false,
+      "worker_document_source_collected": true,
+      "employment_contract_required": true,
+      "offer_number_required_subject_to_exceptions": true,
+      "offer_number_prefix_from_saved_txt_verified": false
+    }
+  },
+  "permit_condition_review": {
+    "permit_fields": [
+      "employer",
+      "location",
+      "occupation",
+      "conditions",
+      "remarks"
+    ],
+    "source_evidence_id": "CA_ESWP_EVD_02",
+    "automatic_work_authorization": false,
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review",
+    "post_issuance_source_collected": true,
+    "passport_and_biometrics_expiry_limits_collected": true,
+    "medical_conditions_review_required": true,
+    "individual_permit_conditions_verified": false,
+    "after_permit_source_evidence_ids": [
+      "CA_ESWP_POST_EVD_01",
+      "CA_ESWP_POST_EVD_02",
+      "CA_ESWP_POST_EVD_03",
+      "CA_ESWP_POST_EVD_04",
+      "CA_ESWP_POST_EVD_05"
+    ]
+  },
+  "application_route_review": {
+    "routes": [
+      "outside_canada",
+      "inside_canada",
+      "port_of_entry",
+      "extension"
+    ],
+    "route_specific_rules_verified": false,
+    "source_evidence_id": "CA_ESWP_EVD_05",
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review",
+    "inside_canada_poe_restrictions_collected": true,
+    "outside_canada_poe_eligibility_needs_review": true,
+    "maintained_status_reentry_warning_collected": true,
+    "automatic_route_eligibility_decision": false,
+    "outside_canada_general_requirements_collected": true,
+    "outside_canada_source_evidence_ids": [
+      "CA_ESWP_OUT_EVD_01",
+      "CA_ESWP_OUT_EVD_02",
+      "CA_ESWP_OUT_EVD_03",
+      "CA_ESWP_OUT_EVD_04",
+      "CA_ESWP_OUT_EVD_05"
+    ],
+    "outside_canada_individual_eligibility_approved": false,
+    "outside_canada_submission_process_collected": true,
+    "outside_canada_fee_schedule_collected": true,
+    "biometrics_process_collected": true,
+    "priority_processing_conditions_collected": true,
+    "outside_application_source_evidence_ids": [
+      "CA_ESWP_APP_EVD_01",
+      "CA_ESWP_APP_EVD_02",
+      "CA_ESWP_APP_EVD_03",
+      "CA_ESWP_APP_EVD_04",
+      "CA_ESWP_APP_EVD_05",
+      "CA_ESWP_APP_EVD_06",
+      "CA_ESWP_APP_EVD_07"
+    ],
+    "outside_canada_decision_process_collected": true,
+    "loi_and_work_permit_issuance_separated": true,
+    "border_entry_decision_separate": true,
+    "outside_decision_source_evidence_ids": [
+      "CA_ESWP_DEC_EVD_01",
+      "CA_ESWP_DEC_EVD_02",
+      "CA_ESWP_DEC_EVD_03",
+      "CA_ESWP_DEC_EVD_04",
+      "CA_ESWP_DEC_EVD_05"
+    ],
+    "outside_canada_arrival_process_collected": true,
+    "border_entry_and_permit_issuance_separate": true,
+    "individual_entry_permission_approved": false,
+    "individual_work_permit_issued": false,
+    "outside_arrival_source_evidence_ids": [
+      "CA_ESWP_ARR_EVD_01",
+      "CA_ESWP_ARR_EVD_02",
+      "CA_ESWP_ARR_EVD_03",
+      "CA_ESWP_ARR_EVD_04",
+      "CA_ESWP_ARR_EVD_05"
+    ]
+  },
+  "application_availability": {
+    "status": "not_verified",
+    "last_checked": null,
+    "review_status": "needs_review",
+    "stream_availability_requires_separate_check": true,
+    "source_evidence_id": "CA_ESWP_DEC_EVD_04"
+  },
+  "follow_up_sources_required": [
+    "general_work_permit_eligibility",
+    "lmia_required_employer_steps",
+    "lmia_exempt_employer_steps",
+    "application_documents",
+    "application_inside_outside_canada",
+    "port_of_entry_eligibility",
+    "permit_fees_and_biometrics",
+    "extension_and_employer_change"
+  ],
+  "review_status": "needs_review",
+  "eligibility_rule": null,
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false,
+  "lmia_requirement_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/hire-temporary-foreign/find-need-labour-market-impact-assessment.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/employment/employer_specific_lmia_requirement_ircc_en.txt",
+    "source_sha256": "dbe695ad8c6ed568a8529295fd34f55dbb46448cc6390a83bb4b484ed976e9c0",
+    "source_last_modified": "2026-04-23",
+    "char_count": 3660,
+    "line_count": 119,
+    "review_status": "needs_review"
+  },
+  "lmia_evidence": [
+    {
+      "evidence_id": "CA_ESWP_LMIA_EVD_01",
+      "topic": "lmia_meaning_and_open_permit",
+      "source_file": "data/raw/canada/employment/employer_specific_lmia_requirement_ircc_en.txt",
+      "source_sha256": "dbe695ad8c6ed568a8529295fd34f55dbb46448cc6390a83bb4b484ed976e9c0",
+      "start_line": 13,
+      "end_line": 23,
+      "exact_quote": "Find out if you need a labour market impact assessment\nA labour market impact assessment (LMIA) determines if the hiring of a temporary foreign worker will have a positive or negative effect on Canada’s labour market.\n\nA positive LMIA confirms that\n\nno Canadians or permanent residents are available to do the job\nthere is a need for a temporary foreign worker\nMost employers need an LMIA before they can hire a temporary foreign worker.\n\n If the worker already has an open work permit\nYou do not need an LMIA if the worker has an open work permit.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_LMIA_EVD_02",
+      "topic": "lmia_and_work_permit_exemption_checks",
+      "source_file": "data/raw/canada/employment/employer_specific_lmia_requirement_ircc_en.txt",
+      "source_sha256": "dbe695ad8c6ed568a8529295fd34f55dbb46448cc6390a83bb4b484ed976e9c0",
+      "start_line": 31,
+      "end_line": 44,
+      "exact_quote": "Determine if you need an LMIA\nBefore you hire the worker, you must determine if\n\nyou need an LMIA\nthe worker needs a work permit\nFollow these steps:\n\nReview the\nLMIA exemption codes to determine if you need an LMIA\nwork permit exemptions to determine if the worker needs a work permit\nSelect the LMIA exemption code or work permit exemption that seems most relevant to your situation.\nRead the detailed descriptions to determine if the exemption applies to you.\nIf an exemption applies to your situation\nIf an exemption does not apply to your situation",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_LMIA_EVD_03",
+      "topic": "tfwp_positive_lmia_and_annex_a",
+      "source_file": "data/raw/canada/employment/employer_specific_lmia_requirement_ircc_en.txt",
+      "source_sha256": "dbe695ad8c6ed568a8529295fd34f55dbb46448cc6390a83bb4b484ed976e9c0",
+      "start_line": 45,
+      "end_line": 59,
+      "exact_quote": "How to hire if you need an LMIA\nIf you determine that you need an LMIA, you’ll need to hire through the Temporary Foreign Worker Program.\n\nEmployment and Social Development Canada\n\nmanages the program\nprocesses LMIA applications\nissues the decision letter\nIf you receive a positive LMIA decision letter, you need to take both of these steps:\n\nProvide each worker with\na copy of the decision letter\nthe letter’s Annex A – Employment details\nTell them to apply for a work permit.\nLearn more about hiring with an LMIA.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_LMIA_EVD_04",
+      "topic": "imp_lmia_exempt_hiring",
+      "source_file": "data/raw/canada/employment/employer_specific_lmia_requirement_ircc_en.txt",
+      "source_sha256": "dbe695ad8c6ed568a8529295fd34f55dbb46448cc6390a83bb4b484ed976e9c0",
+      "start_line": 61,
+      "end_line": 64,
+      "exact_quote": "How to hire if you don’t need an LMIA\nYou can hire without an LMIA through the International Mobility Program.\n\nLearn more about hiring without an LMIA.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_LMIA_EVD_05",
+      "topic": "quebec_and_global_skills_strategy",
+      "source_file": "data/raw/canada/employment/employer_specific_lmia_requirement_ircc_en.txt",
+      "source_sha256": "dbe695ad8c6ed568a8529295fd34f55dbb46448cc6390a83bb4b484ed976e9c0",
+      "start_line": 66,
+      "end_line": 76,
+      "exact_quote": "Hiring in Quebec\nYou’ll need to meet different requirements depending on whether you’re hiring with or without an LMIA.\n\nIf you’re hiring with an LMIA\nIf you’re hiring without an LMIA\nHiring top talent with faster processing\nThe Global Skills Strategy (GSS) allows you to hire highly skilled workers and get the application processed faster.\n\nDepending on the job, you can hire through the GSS with or without an LMIA.\n\nFind out how to hire through the GSS.",
+      "review_status": "needs_review"
+    }
+  ],
+  "lmia_requirements_review": {
+    "lmia_meaning": {
+      "positive_lmia_context_verified": true,
+      "existing_open_work_permit_lmia_exemption": true,
+      "source_evidence_id": "CA_ESWP_LMIA_EVD_01",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "requirement_classification": {
+      "lmia_requirement_status": "additional_review",
+      "work_permit_requirement_status": "additional_review",
+      "employer_preparation_status": "additional_review",
+      "lmia_and_work_permit_exemptions_separate": true,
+      "official_exemption_codes_required": true,
+      "source_evidence_id": "CA_ESWP_LMIA_EVD_02",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "lmia_required_tfwp": {
+      "program": "Temporary Foreign Worker Program",
+      "lmia_authority": "Employment and Social Development Canada",
+      "positive_lmia_decision_letter_required": true,
+      "annex_a_employment_details_required": true,
+      "employer_provides_documents_to_worker": true,
+      "worker_work_permit_application_required": true,
+      "source_evidence_id": "CA_ESWP_LMIA_EVD_03",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "lmia_exempt_imp": {
+      "program": "International Mobility Program",
+      "lmia_exemption_code": null,
+      "employer_portal_rules_verified": false,
+      "employer_compliance_fee_verified": false,
+      "work_permit_exemption_assumed": false,
+      "source_evidence_id": "CA_ESWP_LMIA_EVD_04",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "special_routes": {
+      "quebec_separate_requirements": true,
+      "gss_lmia_or_exempt_route_possible": true,
+      "detailed_route_rules_verified": false,
+      "source_evidence_id": "CA_ESWP_LMIA_EVD_05",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  },
+  "lmia_requirement_legal_review": {
+    "lmia_requirement_rule_approved": false,
+    "work_permit_exemption_rule_approved": false,
+    "tfwp_employer_process_complete": false,
+    "imp_employer_process_complete": false,
+    "quebec_rules_verified": false,
+    "source_evidence_ids": [
+      "CA_ESWP_LMIA_EVD_01",
+      "CA_ESWP_LMIA_EVD_02",
+      "CA_ESWP_LMIA_EVD_03",
+      "CA_ESWP_LMIA_EVD_04",
+      "CA_ESWP_LMIA_EVD_05"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  },
+  "imp_employer_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/hire-temporary-foreign/international-mobility-program/how-to-hire.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/employment/employer_specific_imp_how_to_hire_ircc_en.txt",
+    "source_sha256": "a65640e7c8dab10aa0097f7551699d78a46639fbd9d8ae17e9b7578ef18f46d0",
+    "source_last_modified": "2026-04-23",
+    "char_count": 6965,
+    "line_count": 155,
+    "review_status": "needs_review"
+  },
+  "imp_evidence": [
+    {
+      "evidence_id": "CA_ESWP_IMP_EVD_01",
+      "topic": "employer_portal_and_compliance_fee",
+      "source_file": "data/raw/canada/employment/employer_specific_imp_how_to_hire_ircc_en.txt",
+      "source_sha256": "a65640e7c8dab10aa0097f7551699d78a46639fbd9d8ae17e9b7578ef18f46d0",
+      "start_line": 25,
+      "end_line": 41,
+      "exact_quote": "Submit an offer of employment\nWork permit extension for workers in Quebec\n\nStarting March 13, 2026, your worker may be eligible for a labour market impact assessment (LMIA) exemption.\n\nFind out more about this exemption.\n\nIn most cases, to hire a temporary worker through the International Mobility Program, you must\n\npay the employer compliance fee of $230 and\ncreate and submit an offer of employment form through the Employer Portal.\nYour offer of employment must include information about\n\nyour business\nthe foreign worker you’d like to hire\nthe job details\nwage and benefits",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_IMP_EVD_02",
+      "topic": "special_lmia_exempt_hiring",
+      "source_file": "data/raw/canada/employment/employer_specific_imp_how_to_hire_ircc_en.txt",
+      "source_sha256": "a65640e7c8dab10aa0097f7551699d78a46639fbd9d8ae17e9b7578ef18f46d0",
+      "start_line": 42,
+      "end_line": 61,
+      "exact_quote": "Special requirements for hiring certain types of foreign workers\nDepending on the type of worker you plan to hire, there may be special requirements you need to meet.\n\nHiring French-speaking or bilingual worker outside Quebec\nYou can hire a French-speaking or bilingual worker outside Quebec without an LMIA if the worker\n\ncan communicate with a moderate proficiency for speaking and listening in French\nwill live and work outside the province of Quebec\nLearn more about hiring a French-speaking or bilingual worker outside Quebec.\n\nHiring an overnight camp counsellor\nYou can hire an overnight camp counsellor through the International Mobility Program. If your worker fits the description, you don’t need to get a labour market impact assessment (LMIA). You may also be exempt from paying the employer compliance fee, depending on the worker’s situation.\n\nLearn more about hiring an overnight camp counsellor.\n\nHiring a worker under the Innovation Stream\nYou can hire a foreign worker without an LMIA if you’re an employer participating in the Global Hypergrowth Project (GHP) and the job you’re offering meets all of the following requirements:\n\nThe job is in National Occupational Classification (NOC) Training, Education, Experience and Responsibilities (TEER) categories 0, 1, 2 or 3 (high-skilled).\nYou meet the wage assessment for the job you’re offering.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_IMP_EVD_03",
+      "topic": "open_permit_and_employer_exemptions",
+      "source_file": "data/raw/canada/employment/employer_specific_imp_how_to_hire_ircc_en.txt",
+      "source_sha256": "a65640e7c8dab10aa0097f7551699d78a46639fbd9d8ae17e9b7578ef18f46d0",
+      "start_line": 62,
+      "end_line": 71,
+      "exact_quote": "Exemptions\nOpen work permits\nIf you hire a temporary worker who has an open work permit, you don’t need to submit an offer of employment form or pay the employer compliance fee.\n\nAn open work permit allows the permit holder to work for any Canadian employer.\n\nEmployer compliance exemptions\nSome employers don’t need to use the Employer Portal or are exempt from the employer compliance fee.\n\nFind out if you’re exempt.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_IMP_EVD_04",
+      "topic": "offer_number_and_worker_application",
+      "source_file": "data/raw/canada/employment/employer_specific_imp_how_to_hire_ircc_en.txt",
+      "source_sha256": "a65640e7c8dab10aa0097f7551699d78a46639fbd9d8ae17e9b7578ef18f46d0",
+      "start_line": 75,
+      "end_line": 78,
+      "exact_quote": "After you submit an offer of employment\nAfter you submit an offer of employment through the Employer Portal, you’ll get an offer of employment number. You must give this 7-digit number to the temporary worker you plan to hire or employ.\n\nOnce the worker has this number, they can complete and submit the work permit application.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_IMP_EVD_05",
+      "topic": "inside_outside_canada_decisions",
+      "source_file": "data/raw/canada/employment/employer_specific_imp_how_to_hire_ircc_en.txt",
+      "source_sha256": "a65640e7c8dab10aa0097f7551699d78a46639fbd9d8ae17e9b7578ef18f46d0",
+      "start_line": 80,
+      "end_line": 87,
+      "exact_quote": "Applying for a work permit\nApplicants who apply online outside Canada\nWe’ll review the worker’s application to see if they’re eligible to work in Canada. If approved, the temporary worker will get\n\na port of entry letter of introduction from Immigration, Refugees and Citizenship Canada\na work permit from a border services officer, if they are still eligible, when they arrive in Canada\nApplicants who are eligible to apply for or extend their work permit in Canada\nIf their application is approved, we’ll mail them a work permit. They won’t receive a port of entry letter.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_IMP_EVD_06",
+      "topic": "port_of_entry_and_maintained_status",
+      "source_file": "data/raw/canada/employment/employer_specific_imp_how_to_hire_ircc_en.txt",
+      "source_sha256": "a65640e7c8dab10aa0097f7551699d78a46639fbd9d8ae17e9b7578ef18f46d0",
+      "start_line": 89,
+      "end_line": 104,
+      "exact_quote": "Applicants who are eligible to apply at a port of entry\nIn Canada work permit applicants: new rules about applying at a port of entry\n\nMost foreign nationals already in Canada can no longer apply for a work permit at a port of entry. You must apply online for\n\nyour initial work permit\nyour work permit extension\nIf you’re outside of Canada, you may still be eligible to apply for a work permit when you arrive at a port of entry.\n\nIf you’re in Canada and leave as a worker on maintained status, you’ll lose your ability to work when you return. This means you can’t work until your application is approved.\n\nSome applicants are eligible to apply at a port of entry. At the port of entry, the border services officer will assess if the worker both\n\nmeets the requirements of the work permit category they’re applying for\nis admissible to Canada\nIf the border services officer is satisfied that all requirements are met, they’ll issue a work permit.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_IMP_EVD_07",
+      "topic": "entry_documents_medical_and_rights",
+      "source_file": "data/raw/canada/employment/employer_specific_imp_how_to_hire_ircc_en.txt",
+      "source_sha256": "a65640e7c8dab10aa0097f7551699d78a46639fbd9d8ae17e9b7578ef18f46d0",
+      "start_line": 106,
+      "end_line": 111,
+      "exact_quote": "Other things to tell your temporary worker\nMake sure your temporary worker has the right entry document. They will either need a visitor visa or an electronic travel authorization (eTA) to enter Canada. These documents are issued with the work permit if you are coming to Canada from another country.\nDepending on the type of work they’ll do in Canada and where they lived the previous year, temporary workers may have to undergo a medical examination during the application process.\nSome countries have requirements that citizens must meet before leaving the country. They may need an exit visa or other documents related to their Canadian employment. Temporary workers should check with their government authorities to find out what the requirements are before they attempt to leave.\nMake sure you hire someone with a valid work permit who follows the conditions listed on their work permit.\nGive the temporary worker information on their rights as a worker in Canada.",
+      "review_status": "needs_review"
+    }
+  ],
+  "imp_employer_review": {
+    "employer_portal_and_fee": {
+      "usual_employer_portal_submission": true,
+      "usual_employer_compliance_fee_cad": 230,
+      "offer_information": [
+        "business_information",
+        "foreign_worker_information",
+        "job_details",
+        "wage_and_benefits"
+      ],
+      "all_employers_required": false,
+      "exemption_details_verified": false,
+      "source_evidence_id": "CA_ESWP_IMP_EVD_01",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "special_hiring_categories": {
+      "quebec_extension_exception_date": "2026-03-13",
+      "french_speaking_outside_quebec": "conditional_lmia_exemption",
+      "overnight_camp_counsellor": "conditional_lmia_exemption",
+      "innovation_stream": {
+        "ghp_participating_employer": true,
+        "eligible_teer_categories": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "wage_assessment_required": true
+      },
+      "individual_exemption_eligibility_verified": false,
+      "source_evidence_id": "CA_ESWP_IMP_EVD_02",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "exemptions": {
+      "open_work_permit_holder": {
+        "offer_submission_required": false,
+        "employer_compliance_fee_required": false
+      },
+      "other_employer_portal_exemptions": "additional_review",
+      "other_compliance_fee_exemptions": "additional_review",
+      "portal_and_fee_exemptions_independent": true,
+      "source_evidence_id": "CA_ESWP_IMP_EVD_03",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review",
+      "portal_exemption_categories_collected": true,
+      "fee_exemption_categories_collected": true,
+      "individual_portal_exemption_approved": false,
+      "individual_fee_exemption_approved": false,
+      "compliance_source_evidence_ids": [
+        "CA_ESWP_COMP_EVD_01",
+        "CA_ESWP_COMP_EVD_02",
+        "CA_ESWP_COMP_EVD_03",
+        "CA_ESWP_COMP_EVD_04",
+        "CA_ESWP_COMP_EVD_05",
+        "CA_ESWP_COMP_EVD_06"
+      ]
+    },
+    "offer_number": {
+      "issued_after_portal_submission": true,
+      "number_digits_stated_in_source": 7,
+      "prefix_required": null,
+      "employer_provides_to_worker": true,
+      "worker_applies_after_receipt": true,
+      "source_evidence_id": "CA_ESWP_IMP_EVD_04",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "application_decisions": {
+      "outside_canada_online": "letter_of_introduction_then_border_assessment",
+      "inside_canada_approved": "work_permit_sent_by_mail",
+      "entry_approval_automatic": false,
+      "source_evidence_id": "CA_ESWP_IMP_EVD_05",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "port_of_entry_and_maintained_status": {
+      "most_inside_canada_poe_applications_unavailable": true,
+      "some_outside_canada_poe_applications_possible": true,
+      "poe_requires_category_eligibility": true,
+      "poe_requires_admissibility": true,
+      "leaving_on_maintained_status_can_end_work_ability": true,
+      "automatic_poe_application_eligibility": false,
+      "source_evidence_id": "CA_ESWP_IMP_EVD_06",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "travel_medical_and_worker_rights": {
+      "entry_documents_may_include": [
+        "visitor_visa",
+        "electronic_travel_authorization"
+      ],
+      "medical_exam_conditional": true,
+      "valid_work_permit_and_conditions_required": true,
+      "worker_rights_information_required": true,
+      "source_evidence_id": "CA_ESWP_IMP_EVD_07",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  },
+  "imp_employer_legal_review": {
+    "general_employer_steps_collected": true,
+    "individual_lmia_exemption_rules_approved": false,
+    "employer_portal_exceptions_approved": false,
+    "compliance_fee_exceptions_approved": false,
+    "offer_number_prefix_not_confirmed": true,
+    "automatic_work_authorization": false,
+    "source_evidence_ids": [
+      "CA_ESWP_IMP_EVD_01",
+      "CA_ESWP_IMP_EVD_02",
+      "CA_ESWP_IMP_EVD_03",
+      "CA_ESWP_IMP_EVD_04",
+      "CA_ESWP_IMP_EVD_05",
+      "CA_ESWP_IMP_EVD_06",
+      "CA_ESWP_IMP_EVD_07"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  },
+  "compliance_exemptions_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/hire-temporary-foreign/find-need-labour-market-impact-assessment/employer-compliance-exemptions.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/employment/employer_specific_compliance_exemptions_ircc_en.txt",
+    "source_sha256": "4a2dec9cdbff7003828832137f4a3af68f63957f9a46047bd7832ee72c0eeaa7",
+    "source_last_modified": "2026-04-23",
+    "char_count": 5161,
+    "line_count": 114,
+    "review_status": "needs_review"
+  },
+  "compliance_exemptions_evidence": [
+    {
+      "evidence_id": "CA_ESWP_COMP_EVD_01",
+      "topic": "employer_portal_exemptions",
+      "source_file": "data/raw/canada/employment/employer_specific_compliance_exemptions_ircc_en.txt",
+      "source_sha256": "4a2dec9cdbff7003828832137f4a3af68f63957f9a46047bd7832ee72c0eeaa7",
+      "start_line": 11,
+      "end_line": 20,
+      "exact_quote": "Employer compliance exemptions\nSome employers don’t need to use the Employer Portal or are exempt from the employer compliance fee.\n\nEmployers that don’t need to use the Employer Portal\ninternational missions or consular posts\nan international organization recognized under the Foreign Missions and International Organizations Act\nexamples of this type of organization\na foreign government\nan owner or operator of an international bridge or tunnel\nExamples of work that falls under the categories outlined above.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_COMP_EVD_02",
+      "topic": "fee_exemption_claim_and_proof",
+      "source_file": "data/raw/canada/employment/employer_specific_compliance_exemptions_ircc_en.txt",
+      "source_sha256": "4a2dec9cdbff7003828832137f4a3af68f63957f9a46047bd7832ee72c0eeaa7",
+      "start_line": 22,
+      "end_line": 27,
+      "exact_quote": "Employer compliance fee exemptions\nIf you’re part of any of the programs, agreements or labour market impact assessment (LMIA) exemption categories listed below, the temporary worker is fee exempt and you don’t need to pay the employer compliance fee when you hire them.\n\nIn the Employer Portal, when asked if you’re paying fees, select “No, I am exempt from paying fees for this Offer of Employment.”\n\nYou need to give proof that you’re part of these programs or agreements when you submit an offer of employment. Proof can be a letter explaining how you’re part of the program, agreement or LMIA exemption category. Upload the letter of explanation in the Proof of fee exemption field when you submit your offer.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_COMP_EVD_03",
+      "topic": "quebec_extension_fee_exemption",
+      "source_file": "data/raw/canada/employment/employer_specific_compliance_exemptions_ircc_en.txt",
+      "source_sha256": "4a2dec9cdbff7003828832137f4a3af68f63957f9a46047bd7832ee72c0eeaa7",
+      "start_line": 29,
+      "end_line": 40,
+      "exact_quote": "Programs, public policies and agreements exempt from the employer compliance fee\nWork permit extension for workers in Quebec\nStarting March 13, 2026, your worker may be eligible for a labour market impact assessment exemption if they\n\nwill work in Quebec\nmeet certain requirements, such as\nthey’re extending their employer-specific work permit\nthey’re already working for you\nthey applied for a Demande de sélection permanente (permanent selection application) under the Programme de sélection des travailleurs qualifiés (skilled worker selection program)\nIf your worker is eligible for this public policy, you do not have to pay the employer compliance fee.\n\nFind out more about this exemption.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_COMP_EVD_04",
+      "topic": "international_and_reciprocal_agreements",
+      "source_file": "data/raw/canada/employment/employer_specific_compliance_exemptions_ircc_en.txt",
+      "source_sha256": "4a2dec9cdbff7003828832137f4a3af68f63957f9a46047bd7832ee72c0eeaa7",
+      "start_line": 42,
+      "end_line": 52,
+      "exact_quote": "Non-trade international agreements\nThese programs or agreements fall under the LMIA exemption category R204(a) and include\n\nFulbright Program (Canada-U.S.)—worker is fee-exempt as per R299(h)\nRoosevelt Campobello International Park—worker is fee-exempt as per R299(h)\nU.S. government personnel (must be working in Canada on official U.S. government business)—worker is fee-exempt as per R299(g) or (k)\nReciprocal employment\nThese programs or agreements fall under the LMIA exemption category R205(b) and include\n\ncultural agreements—worker is fee-exempt as per R299(h)\nCanada-China cultural exchange—worker is fee-exempt as per R299(h)",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_COMP_EVD_05",
+      "topic": "research_program_fee_exemptions",
+      "source_file": "data/raw/canada/employment/employer_specific_compliance_exemptions_ircc_en.txt",
+      "source_sha256": "4a2dec9cdbff7003828832137f4a3af68f63957f9a46047bd7832ee72c0eeaa7",
+      "start_line": 53,
+      "end_line": 64,
+      "exact_quote": "Work related to a research program\nThese programs or agreements fall under the LMIA exemption category R205(c)(i) and include workers who are fee-exempt as per R299(e):\n\nscientists or post-doctoral fellows sponsored by Atomic Energy of Canada Ltd.\nscientists or scholars sponsored by:\nNational Research Council of Canada\nNational Resources Canada and its associated departments\nNatural Sciences and Engineering Research Council of Canada\nresearch chair positions:\nCanada Research Chair\nCanada Excellence Research Chair\nsimilar research chair positions",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_COMP_EVD_06",
+      "topic": "unremunerated_charitable_religious_work",
+      "source_file": "data/raw/canada/employment/employer_specific_compliance_exemptions_ircc_en.txt",
+      "source_sha256": "4a2dec9cdbff7003828832137f4a3af68f63957f9a46047bd7832ee72c0eeaa7",
+      "start_line": 65,
+      "end_line": 70,
+      "exact_quote": "Unremunerated charitable or religious work\nThese programs or agreements fall under the LMIA exemption category R205(d) and include workers who do not receive remuneration:\n\nTemporary workers who are exempt from the work permit processing fee as per R299(f).\nThe temporary worker cannot receive payment for their work. They may receive a living expense stipend, which should be below the prevailing minimum wage. Otherwise, they should receive only non-monetary benefits (for example, housing and health care).\nThe proof of fee exemption document that you provide when you submit an offer of employment should detail how the worker is or is not remunerated for this exemption to apply. Simply indicating that the employer is a charitable or religious organization is not sufficient.",
+      "review_status": "needs_review"
+    }
+  ],
+  "compliance_exemptions_review": {
+    "employer_portal_exemptions": {
+      "exemption_categories": [
+        "international_missions_or_consular_posts",
+        "recognized_international_organizations",
+        "foreign_governments",
+        "international_bridge_or_tunnel_operators"
+      ],
+      "individual_entity_qualification_verified": false,
+      "automatic_portal_exemption": false,
+      "source_evidence_id": "CA_ESWP_COMP_EVD_01",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "fee_exemption_claim_and_proof": {
+      "portal_fee_exemption_option": "No, I am exempt from paying fees for this Offer of Employment.",
+      "proof_of_exemption_required": true,
+      "proof_may_include_explanation_letter": true,
+      "portal_exemption_and_fee_exemption_separate": true,
+      "automatic_fee_exemption": false,
+      "source_evidence_id": "CA_ESWP_COMP_EVD_02",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "quebec_extension": {
+      "special_policy_date": "2026-03-13",
+      "work_in_quebec": true,
+      "current_employer_relationship": "conditional_requirement",
+      "employer_specific_extension": "conditional_requirement",
+      "permanent_selection_application": "conditional_requirement",
+      "all_policy_conditions_verified": false,
+      "automatic_fee_exemption": false,
+      "source_evidence_id": "CA_ESWP_COMP_EVD_03",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "international_and_reciprocal_agreements": {
+      "non_trade_lmia_reference": "R204(a)",
+      "reciprocal_employment_lmia_reference": "R205(b)",
+      "fee_exemption_references": [
+        "R299(h)",
+        "R299(g)",
+        "R299(k)"
+      ],
+      "examples": [
+        "Fulbright_Program_Canada_US",
+        "Roosevelt_Campobello_International_Park",
+        "US_government_personnel",
+        "cultural_agreements",
+        "Canada_China_cultural_exchange"
+      ],
+      "individual_agreement_eligibility_verified": false,
+      "automatic_fee_exemption": false,
+      "source_evidence_id": "CA_ESWP_COMP_EVD_04",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "research_programs": {
+      "lmia_reference": "R205(c)(i)",
+      "fee_exemption_reference": "R299(e)",
+      "examples": [
+        "Atomic_Energy_of_Canada_sponsored_researchers",
+        "National_Research_Council_sponsored_scholars",
+        "Natural_Resources_Canada_sponsored_scholars",
+        "NSERC_sponsored_scholars",
+        "Canada_Research_Chair",
+        "Canada_Excellence_Research_Chair"
+      ],
+      "sponsorship_requirements_need_review": true,
+      "automatic_fee_exemption": false,
+      "source_evidence_id": "CA_ESWP_COMP_EVD_05",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "charitable_and_religious_work": {
+      "lmia_reference": "R205(d)",
+      "fee_reference": "R299(f)",
+      "unremunerated_work_required": true,
+      "living_expense_stipend_may_be_allowed": true,
+      "stipend_below_prevailing_minimum_wage": true,
+      "non_monetary_benefits_examples": [
+        "housing",
+        "health_care"
+      ],
+      "proof_must_describe_remuneration": true,
+      "organization_type_alone_sufficient": false,
+      "automatic_fee_exemption": false,
+      "source_evidence_id": "CA_ESWP_COMP_EVD_06",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  },
+  "compliance_exemptions_legal_review": {
+    "portal_exemption_categories_collected": true,
+    "fee_exemption_categories_collected": true,
+    "portal_and_fee_exemptions_independent": true,
+    "individual_lmia_exemption_approved": false,
+    "individual_portal_exemption_approved": false,
+    "individual_fee_exemption_approved": false,
+    "automatic_exemption_decision": false,
+    "source_evidence_ids": [
+      "CA_ESWP_COMP_EVD_01",
+      "CA_ESWP_COMP_EVD_02",
+      "CA_ESWP_COMP_EVD_03",
+      "CA_ESWP_COMP_EVD_04",
+      "CA_ESWP_COMP_EVD_05",
+      "CA_ESWP_COMP_EVD_06"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  },
+  "outside_canada_eligibility_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit-outside/eligibility.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/employment/employer_specific_general_eligibility_outside_ircc_en.txt",
+    "source_sha256": "8dbdbd7f0b7373bcd2442bc893026f87295ee3cf440dc6da8044337b30f8cc98",
+    "source_last_modified": "2026-05-25",
+    "char_count": 3754,
+    "line_count": 114,
+    "review_status": "needs_review"
+  },
+  "outside_canada_eligibility_evidence": [
+    {
+      "evidence_id": "CA_ESWP_OUT_EVD_01",
+      "topic": "general_eligibility_scope",
+      "source_file": "data/raw/canada/employment/employer_specific_general_eligibility_outside_ircc_en.txt",
+      "source_sha256": "8dbdbd7f0b7373bcd2442bc893026f87295ee3cf440dc6da8044337b30f8cc98",
+      "start_line": 18,
+      "end_line": 28,
+      "exact_quote": "Check if you can apply\nNot outside Canada?\n\nCheck if you can apply from inside Canada or at a port of entry (POE).\n\nYou may be eligible to apply for a work permit from outside Canada if you meet the general requirements and any additional requirements for the specific type of work permit you’re applying for.\n\nOn this page\nRequirements to apply from outside Canada\nAdditional requirements for your situation\nRequirements based on types of work permits",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_OUT_EVD_02",
+      "topic": "financial_documents_and_departure",
+      "source_file": "data/raw/canada/employment/employer_specific_general_eligibility_outside_ircc_en.txt",
+      "source_sha256": "8dbdbd7f0b7373bcd2442bc893026f87295ee3cf440dc6da8044337b30f8cc98",
+      "start_line": 29,
+      "end_line": 43,
+      "exact_quote": "Requirements to apply from outside Canada\nTo apply for a work permit from outside Canada, you must:\n\nshow that you have enough money to take care of yourself and your family members during your stay in Canada and to return home\nThe amount of money you need can depend on:\nyour family size,\nthe community you plan to settle in and\nthe work permit program you apply for\nTo help you estimate the minimum amount you should bring, check the low income cut-offs.\nThese amounts are provided as general reference only (2023 data).\ninclude all the required documents in your application\ngo to list of forms and documents\ngive any other documents that we ask for to prove you can enter the country\nshow that you will leave Canada before your work permit expires\nReasons your application may be refused",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_OUT_EVD_03",
+      "topic": "additional_program_requirements",
+      "source_file": "data/raw/canada/employment/employer_specific_general_eligibility_outside_ircc_en.txt",
+      "source_sha256": "8dbdbd7f0b7373bcd2442bc893026f87295ee3cf440dc6da8044337b30f8cc98",
+      "start_line": 44,
+      "end_line": 49,
+      "exact_quote": "Additional requirements for your situation\nDepending on the work permit program you apply for, there could be:\n\nadditional requirements for you to get a work permit\nspecial instructions you need to follow to apply",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_OUT_EVD_04",
+      "topic": "work_permit_type_and_job_offer",
+      "source_file": "data/raw/canada/employment/employer_specific_general_eligibility_outside_ircc_en.txt",
+      "source_sha256": "8dbdbd7f0b7373bcd2442bc893026f87295ee3cf440dc6da8044337b30f8cc98",
+      "start_line": 50,
+      "end_line": 61,
+      "exact_quote": "Requirements based on types of work permits\nThere are 2 types of work permits:\n\nemployer-specific (closed) work permits\nopen work permits\nEach work permit type has different eligibility requirements. You can’t choose which type of work permit you need.\n\nEmployer-specific work permit Most common\nMost people are eligible to apply for this. A job offer is required\n\nOpen work permit For special circumstances\nYou can only apply for an open work permit if you’re eligible. No job offer is required",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_OUT_EVD_05",
+      "topic": "family_members_and_separate_permissions",
+      "source_file": "data/raw/canada/employment/employer_specific_general_eligibility_outside_ircc_en.txt",
+      "source_sha256": "8dbdbd7f0b7373bcd2442bc893026f87295ee3cf440dc6da8044337b30f8cc98",
+      "start_line": 63,
+      "end_line": 70,
+      "exact_quote": "Including family on your application\nYour spouse, common-law partner and dependent children may be able to visit, study or work in Canada with you.\n\nCheck if your family member:\n\nneeds a visa or eTA to visit Canada\nneeds a study permit to study in Canada\ncan apply for an open work permit (OWP)",
+      "review_status": "needs_review"
+    }
+  ],
+  "outside_canada_eligibility_review": {
+    "application_scope": {
+      "application_location": "outside_canada",
+      "general_requirements_apply": true,
+      "permit_type_requirements_also_apply": true,
+      "inside_canada_rules_verified": false,
+      "port_of_entry_rules_fully_verified": false,
+      "source_evidence_id": "CA_ESWP_OUT_EVD_01",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "financial_documents_and_departure": {
+      "funds_for_applicant_and_family": true,
+      "funds_for_return_home": true,
+      "funds_depend_on": [
+        "family_size",
+        "settlement_community",
+        "work_permit_program"
+      ],
+      "low_income_cutoffs_reference_year": 2023,
+      "fixed_2026_minimum_funds_verified": false,
+      "required_documents": true,
+      "additional_ircc_documents_may_be_requested": true,
+      "intention_to_leave_before_expiry": true,
+      "refusal_reasons_listed_in_source": false,
+      "source_evidence_id": "CA_ESWP_OUT_EVD_02",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review",
+      "general_document_categories_collected": true,
+      "individual_document_checklist_verified": false
+    },
+    "program_specific_requirements": {
+      "additional_requirements_may_apply": true,
+      "special_application_instructions_may_apply": true,
+      "specific_requirements_fully_verified": false,
+      "source_evidence_id": "CA_ESWP_OUT_EVD_03",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "work_permit_type": {
+      "work_permit_types": [
+        "employer_specific",
+        "open"
+      ],
+      "employer_specific_job_offer_required": true,
+      "permit_type_freely_chosen_by_applicant": false,
+      "individual_job_offer_eligibility_verified": false,
+      "source_evidence_id": "CA_ESWP_OUT_EVD_04",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "family_members": {
+      "family_member_categories": [
+        "spouse",
+        "common_law_partner",
+        "dependent_child"
+      ],
+      "separate_permissions_to_review": [
+        "entry_visa_or_eta",
+        "study_permit",
+        "open_work_permit"
+      ],
+      "automatic_family_permission": false,
+      "source_evidence_id": "CA_ESWP_OUT_EVD_05",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  },
+  "outside_canada_legal_review": {
+    "general_outside_canada_requirements_collected": true,
+    "criminal_history_details_verified_here": false,
+    "ineligible_employer_details_verified_here": false,
+    "2026_fixed_funds_threshold_approved": false,
+    "inside_canada_rules_approved": false,
+    "port_of_entry_rules_approved": false,
+    "automatic_eligibility_decision": false,
+    "source_evidence_ids": [
+      "CA_ESWP_OUT_EVD_01",
+      "CA_ESWP_OUT_EVD_02",
+      "CA_ESWP_OUT_EVD_03",
+      "CA_ESWP_OUT_EVD_04",
+      "CA_ESWP_OUT_EVD_05"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  },
+  "outside_documents_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit-outside/forms-documents.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/employment/employer_specific_outside_documents_ircc_en.txt",
+    "source_sha256": "6f31adcbfd8d878f4b7467f9866f247bd04f902efd15013dc945bbdc1b32d433",
+    "source_last_modified": "2026-07-17",
+    "char_count": 5167,
+    "line_count": 132,
+    "review_status": "needs_review"
+  },
+  "outside_documents_evidence": [
+    {
+      "evidence_id": "CA_ESWP_DOC_EVD_01",
+      "topic": "common_application_documents",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_documents_ircc_en.txt",
+      "source_sha256": "6f31adcbfd8d878f4b7467f9866f247bd04f902efd15013dc945bbdc1b32d433",
+      "start_line": 25,
+      "end_line": 39,
+      "exact_quote": "On this page\nForms and documents that all applicants must provide\nDocuments required by your local visa office\nSupporting documents you might need\nDocuments for employer-specific work permits\nForms and documents that all applicants must provide\nAll applicants need to include:\n\nApplication For Work Permit Made Outside of Canada (IMM 1295)\nIf you need help filling out the application form, read the instruction guide.\na photocopy of your valid (not expired) passport or travel document\n1 photo meeting the visa photo specifications\nWhen you apply online, you’ll get a personalized document checklist in the portal. Make sure you provide all of the documents listed on the checklist.\n\nOptional: You can also print the generalized document checklist to keep track of the documents as you gather them.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_DOC_EVD_02",
+      "topic": "local_visa_office_documents",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_documents_ircc_en.txt",
+      "source_sha256": "6f31adcbfd8d878f4b7467f9866f247bd04f902efd15013dc945bbdc1b32d433",
+      "start_line": 41,
+      "end_line": 45,
+      "exact_quote": "Documents required by your local visa office\nTell us where you're applying from to get the visa office requirements for your country or territory. In some cases, your visa office may not require more documents.\n\nWhere are you applying from? (required)\nSelect country or territory",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_DOC_EVD_03",
+      "topic": "conditional_supporting_documents",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_documents_ircc_en.txt",
+      "source_sha256": "6f31adcbfd8d878f4b7467f9866f247bd04f902efd15013dc945bbdc1b32d433",
+      "start_line": 46,
+      "end_line": 57,
+      "exact_quote": "Supporting documents you might need\nYour document checklist may include supporting documents such as:\n\nproof of a medical exam (check if you need an upfront medical exam)\na marriage certificate\ncertified translations (if your documents aren’t in English or French)\nFamily Information Form - Visitors, Students and Workers (IMM 5707)\nStatutory Declaration of Common-law Union (IMM 5409)\nemployment documents (if you’re applying for an employer-specific work permit)\nUse of a Representative (IMM 5476) form (if using an authorized representative)\nAuthority to Release Personal Information to a Designated Individual (IMM 5475) form (if authorizing information from your case file to be released to someone other than yourself)\nIf you’re not a citizen of the country or territory where you’re applying, you must send proof of your present immigration status in that country or territory.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_DOC_EVD_04",
+      "topic": "employer_specific_qualification_documents",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_documents_ircc_en.txt",
+      "source_sha256": "6f31adcbfd8d878f4b7467f9866f247bd04f902efd15013dc945bbdc1b32d433",
+      "start_line": 58,
+      "end_line": 69,
+      "exact_quote": "Documents for employer-specific work permits\nIf you're applying for an employer-specific work permit, you have to include some additional documents with your application. Your prospective employer needs to give you some of these documents.\n\nYou’ll always be asked to include the following documents:\n\na letter from your current employer\na reference letter from past employers\nproof of past work experience (for example, pay stubs)\nproof that you meet the requirements of the job (for example, the license or certification if your job is regulated)\nUpload a blank sheet of paper with “Not applicable” written on it if your job doesn’t require a license or certification\na résumé\nThese additional documents listed below will depend on whether or not your job requires a Labour Market Impact Assessment (LMIA).",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_DOC_EVD_05",
+      "topic": "lmia_required_documents",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_documents_ircc_en.txt",
+      "source_sha256": "6f31adcbfd8d878f4b7467f9866f247bd04f902efd15013dc945bbdc1b32d433",
+      "start_line": 71,
+      "end_line": 79,
+      "exact_quote": "LMIA-required work permits\nIf your job requires an LMIA, your employer must give you:\n\na copy of the positive LMIA and LMIA file number\nan employment contract\na job offer letter\na Quebec Acceptance Certificate (CAQ) (if you plan to work a paid job in Quebec for more than 30 days)\nPositive LMIA\nJob offer letter",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_DOC_EVD_06",
+      "topic": "lmia_exempt_documents",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_documents_ircc_en.txt",
+      "source_sha256": "6f31adcbfd8d878f4b7467f9866f247bd04f902efd15013dc945bbdc1b32d433",
+      "start_line": 80,
+      "end_line": 85,
+      "exact_quote": "LMIA-exempt work permits\nIf your job is LMIA-exempt, your employer must give you:\n\nan employment contract\nan offer of employment number\nOffer of employment number",
+      "review_status": "needs_review"
+    }
+  ],
+  "outside_documents_review": {
+    "common_documents": {
+      "application_location": "outside_canada",
+      "forms": [
+        "IMM 1295"
+      ],
+      "valid_passport_or_travel_document_copy": true,
+      "visa_specification_photo_count": 1,
+      "online_personalized_checklist_required": true,
+      "source_evidence_id": "CA_ESWP_DOC_EVD_01",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "local_visa_office": {
+      "requirements_depend_on_application_country": true,
+      "additional_documents_always_required": false,
+      "individual_visa_office_requirements_verified": false,
+      "source_evidence_id": "CA_ESWP_DOC_EVD_02",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "conditional_supporting_documents": {
+      "possible_documents": [
+        "medical_exam_proof",
+        "marriage_certificate",
+        "certified_translations",
+        "IMM_5707",
+        "IMM_5409",
+        "employment_documents",
+        "IMM_5476_if_represented",
+        "IMM_5475_if_information_release_authorized",
+        "immigration_status_in_application_country"
+      ],
+      "all_documents_unconditionally_required": false,
+      "source_evidence_id": "CA_ESWP_DOC_EVD_03",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "employer_specific_qualifications": {
+      "document_categories": [
+        "current_employer_letter",
+        "previous_employer_reference_letter",
+        "past_work_experience_proof",
+        "job_qualification_proof",
+        "resume"
+      ],
+      "regulated_job_license_if_applicable": true,
+      "not_applicable_upload_for_unneeded_license": true,
+      "individual_applicant_documents_verified": false,
+      "source_evidence_id": "CA_ESWP_DOC_EVD_04",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "lmia_required": {
+      "positive_lmia_copy": true,
+      "lmia_file_number": true,
+      "employment_contract": true,
+      "job_offer_letter": true,
+      "quebec_caq_source_condition": "paid_job_in_quebec_more_than_30_days",
+      "quebec_caq_exceptions_verified": false,
+      "source_evidence_id": "CA_ESWP_DOC_EVD_05",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "lmia_exempt": {
+      "employment_contract": true,
+      "offer_of_employment_number": "normally_required_subject_to_exceptions",
+      "number_prefix_confirmed_in_saved_txt": false,
+      "employer_portal_exceptions_need_review": true,
+      "individual_lmia_exemption_verified": false,
+      "source_evidence_id": "CA_ESWP_DOC_EVD_06",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  },
+  "outside_documents_legal_review": {
+    "outside_canada_document_categories_collected": true,
+    "individual_checklist_approved": false,
+    "local_visa_office_documents_approved": false,
+    "quebec_caq_exceptions_approved": false,
+    "offer_number_format_from_txt_verified": false,
+    "automatic_document_sufficiency_decision": false,
+    "source_evidence_ids": [
+      "CA_ESWP_DOC_EVD_01",
+      "CA_ESWP_DOC_EVD_02",
+      "CA_ESWP_DOC_EVD_03",
+      "CA_ESWP_DOC_EVD_04",
+      "CA_ESWP_DOC_EVD_05",
+      "CA_ESWP_DOC_EVD_06"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  },
+  "outside_application_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit-outside/apply.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/employment/employer_specific_outside_application_ircc_en.txt",
+    "source_sha256": "52d7ff1d0a5e408f1cb27aac737697ac82fb8b805eea778f5d02373eed854484",
+    "source_last_modified": "2026-08-28",
+    "char_count": 8539,
+    "line_count": 216,
+    "review_status": "needs_review"
+  },
+  "outside_application_evidence": [
+    {
+      "evidence_id": "CA_ESWP_APP_EVD_01",
+      "topic": "application_steps_and_special_instructions",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_application_ircc_en.txt",
+      "source_sha256": "52d7ff1d0a5e408f1cb27aac737697ac82fb8b805eea778f5d02373eed854484",
+      "start_line": 25,
+      "end_line": 37,
+      "exact_quote": "On this page\nCheck if you need special instructions\nSign in to your account\nUpload forms and documents\nPay the fees\nSubmit a complete application\nGive your biometrics after you apply\nStep 1: Check if you need special instructions\nYou might need special instructions for:\n\nhow to answer the questionnaire to get your document checklist\nhow to fill out the application form\nCheck if you need special instructions to apply",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_APP_EVD_02",
+      "topic": "priority_processing_and_noc",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_application_ircc_en.txt",
+      "source_sha256": "52d7ff1d0a5e408f1cb27aac737697ac82fb8b805eea778f5d02373eed854484",
+      "start_line": 39,
+      "end_line": 118,
+      "exact_quote": "Priority processing for work permit applicants\nWe’re prioritizing certain work permit applications.\n\nProvincial nominees in certain specialized health care occupations\nYou may be eligible for faster processing for an employer-specific work permit if you\n\nhave a full-time and non-seasonal job offer in one of the three eligible NOCs\nNOC 31100 – Specialist in clinical laboratory medicine\nNOC 31101 – Specialists in surgery\nNOC 31102 – General practitioners and family physicians\nhave a support letter from a Canadian province or territory\nThe letter nominates you as a permanent residence applicant through the Provincial Nominee Program.\nmeet the general eligibility requirements (opens in a new tab) to apply for a work permit, depending on where you apply from\nGet faster processing\n\nOther eligible occupations that perform or support essential services\nWe’re prioritizing the applications of people who perform or support essential services.\n\nWhen you fill out the work permit application form\n\nTo get priority processing, follow these steps:\n\nGet the National Occupational Classification (NOC) number your employer entered on the\noffer of employment or\nlabour market impact assessment (LMIA)\nEnter that number in the Job title box.\nThis is box 4 in the Details of intended work in Canada section.\nYou must enter only the number.\nNOC 2021\nOn November 16, 2022, we switched to the 2021 version of the NOC system.\n\nIf you apply for a work permit on or after November 16, 2022, make sure you use the NOC 2021 codes.\n\nAgriculture and agri-food occupations\nNOC 2021 codes\n\nButchers – retail and wholesale (NOC 63201)\nMeat cutters and fishmongers – retail and wholesale (NOC 65202)\nAgricultural service contractors and farm supervisors (NOC 82030)\nLivestock labourers (NOC 85100)\nSpecialized livestock workers and farm machinery operators (NOC 84120)\nHarvesting labourers (NOC 85101)\nNursery and greenhouse labourers (NOC 85103)\nFish and seafood plant workers (NOC 94142)\nLabourers in food and beverage processing (NOC 95106)\nLabourers in fish and seafood processing (NOC 95107)\nIndustrial butchers and meat cutters, poultry preparers and related workers (NOC 94141)\nHealth-care occupations\nNOC 2021 codes\n\nNursing coordinators and supervisors (NOC 31300)\nRegistered nurses and registered psychiatric nurses (NOC 31301)\nSpecialists in clinical and laboratory medicine (NOC 31100)\nSpecialists in surgery (NOC 31101)\nPolice investigators and other investigative occupations (NOC 41310)\nGeneral practitioners and family physicians (NOC 31102)\nNurse practitioners (NOC 31302)\nPhysician assistants, midwives and allied health professionals (NOC 31303)\nRespiratory therapists, clinical perfusionists and cardiopulmonary technologists (NOC 32103)\nOther professional occupations in health diagnosing and treating (NOC 31209)\nPharmacists (NOC 31120)\nMedical laboratory technologists (NOC 32120)\nMedical laboratory assistants and related technical occupations (NOC 33101)\nMedical radiation technologists (NOC 32121)\nCardiology technologists and electrophysiological diagnostic technologists (NOC 32123)\nLicensed practical nurses (NOC 32101)\nParamedical occupations (NOC 32102)\nNurse aides, orderlies and patient service associates (NOC 33102)\nHome child care providers (LMIA-required in-Canada applicants) (NOC 44100)\nHome support workers, caregivers and related occupations (LMIA-required in-Canada applicants) (NOC 44101)\nYou may be eligible for even faster processing if you\n\nhave a full-time and non-seasonal job offer in one of the three eligible NOCs\nNOC 31100 – Specialist in clinical laboratory medicine\nNOC 31101 – Specialists in surgery\nNOC 31102 – General practitioners and family physicians\nhave a support letter from a Canadian province or territory\nThe letter nominates you as a permanent residence applicant through the Provincial Nominee Program.\nmeet the general eligibility requirements  to apply for a work permit, depending on where you apply from\nGet faster processing",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_APP_EVD_03",
+      "topic": "secure_account_and_document_upload",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_application_ircc_en.txt",
+      "source_sha256": "52d7ff1d0a5e408f1cb27aac737697ac82fb8b805eea778f5d02373eed854484",
+      "start_line": 127,
+      "end_line": 137,
+      "exact_quote": "Step 2: Sign in to your account\nSign in or create an IRCC secure account to start your application.\n\n\nIf you can’t apply online and need accommodations\nStep 3: Upload forms and documents\nAfter you answer the questionnaire, you’ll get a personalized document checklist. You’ll need a scanner or camera to create electronic copies of your documents.\n\nIf you want to know what documents you might need, check the list of all forms and documents.\n\nGet help with uploading or downloading files",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_APP_EVD_04",
+      "topic": "application_and_biometrics_fees",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_application_ircc_en.txt",
+      "source_sha256": "52d7ff1d0a5e408f1cb27aac737697ac82fb8b805eea778f5d02373eed854484",
+      "start_line": 139,
+      "end_line": 151,
+      "exact_quote": "Step 4: Pay the fees\nWe’ll ask you to pay your fees at the end of your application. You’ll need a valid credit or debit card.\n\nIn most cases, your fees will include processing fees for you and anyone you include on your application.\n\nSome applicants may be exempt from paying some or all work permit application fees.\n\nTotal fees\nType of fee\tAmount\tWho needs to pay this fee\nWork permit processing\t$155\tAll applicants\nOpen work permit fee\t$100\tOpen work permit applicants\nBiometrics fee\tIndividual: $85\nFamily: up to $170 (if you’re eligible)\tCheck if you need to give biometrics",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_APP_EVD_05",
+      "topic": "complete_application_and_temporary_notice",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_application_ircc_en.txt",
+      "source_sha256": "52d7ff1d0a5e408f1cb27aac737697ac82fb8b805eea778f5d02373eed854484",
+      "start_line": 152,
+      "end_line": 159,
+      "exact_quote": "Step 5: Submit a complete application\nMake sure you submit a complete application in your IRCC secure account. Your application may be refused if you’re missing documents or other required information.\n\nEbola disease: Temporary measures extended until November 27, 2026\n\nThe temporary measures put in place in response to Ebola have been extended until November 27, 2026.\n\nFind out more about these measures",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_APP_EVD_06",
+      "topic": "biometrics_after_application",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_application_ircc_en.txt",
+      "source_sha256": "52d7ff1d0a5e408f1cb27aac737697ac82fb8b805eea778f5d02373eed854484",
+      "start_line": 161,
+      "end_line": 172,
+      "exact_quote": "Step 6: Give your biometrics after you apply If applicable\nWait for your biometrics instruction letter (BIL), and then book your biometrics collection appointment as soon as you can to avoid processing delays.\n\nGive your biometrics\n\nReasons why you might need to give biometrics again\nThere are some reasons why you might have to give your biometrics again even if they’re still valid:\n\nyour biometrics will expire soon\nWe can’t issue you a work permit that’s valid for longer than your biometrics.\nyou applied for permanent residence and your application was refused\nyou only gave partial biometrics with your application (fingerprints or photo)",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_APP_EVD_07",
+      "topic": "source_date_and_navigation",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_application_ircc_en.txt",
+      "source_sha256": "52d7ff1d0a5e408f1cb27aac737697ac82fb8b805eea778f5d02373eed854484",
+      "start_line": 173,
+      "end_line": 179,
+      "exact_quote": "Document navigation\nNext:Wait for a decision\nPage details\nGive feedback about this page\nDid you find what you were looking for?\n \nDate modified: 2026-08-28",
+      "review_status": "needs_review"
+    }
+  ],
+  "outside_application_review": {
+    "application_steps": {
+      "application_location": "outside_canada",
+      "special_instructions_check_required": true,
+      "questionnaire_guidance_may_apply": true,
+      "application_form_guidance_may_apply": true,
+      "source_evidence_id": "CA_ESWP_APP_EVD_01",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "priority_processing": {
+      "special_healthcare_noc_codes": [
+        "31100",
+        "31101",
+        "31102"
+      ],
+      "healthcare_priority_conditions": [
+        "full_time_non_seasonal_job_offer",
+        "provincial_or_territorial_support_letter",
+        "provincial_nominee_context",
+        "general_work_permit_eligibility"
+      ],
+      "other_priority_noc_codes_from_source": [
+        "31100",
+        "31101",
+        "31102",
+        "31120",
+        "31209",
+        "31300",
+        "31301",
+        "31302",
+        "31303",
+        "32101",
+        "32102",
+        "32103",
+        "32120",
+        "32121",
+        "32123",
+        "33101",
+        "33102",
+        "41310",
+        "44100",
+        "44101",
+        "63201",
+        "65202",
+        "82030",
+        "84120",
+        "85100",
+        "85101",
+        "85103",
+        "94141",
+        "94142",
+        "95106",
+        "95107"
+      ],
+      "noc_version": "NOC_2021",
+      "noc_2021_application_date_from": "2022-11-16",
+      "source_noc_codes_manually_validated": false,
+      "automatic_priority_processing_decision": false,
+      "priority_processing_guaranteed": false,
+      "source_evidence_id": "CA_ESWP_APP_EVD_02",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "account_and_upload": {
+      "ircc_secure_account": true,
+      "personalized_document_checklist": true,
+      "electronic_document_copies": true,
+      "online_accommodation_exceptions_need_review": true,
+      "source_evidence_id": "CA_ESWP_APP_EVD_03",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "application_fees": {
+      "currency": "CAD",
+      "work_permit_processing_fee": 155,
+      "open_work_permit_additional_fee": 100,
+      "biometrics_individual_fee": 85,
+      "biometrics_family_maximum_fee": 170,
+      "open_work_permit_fee_applies_to_eswp": false,
+      "imp_employer_compliance_fee_separate": true,
+      "fee_exemptions_need_review": true,
+      "biometrics_applicability_needs_review": true,
+      "source_evidence_id": "CA_ESWP_APP_EVD_04",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "complete_application": {
+      "complete_application_required": true,
+      "missing_documents_may_cause_refusal": true,
+      "ebola_temporary_measure_date": "2026-11-27",
+      "ebola_notice_not_general_eligibility_rule": true,
+      "source_evidence_id": "CA_ESWP_APP_EVD_05",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "biometrics_after_application": {
+      "biometrics_instruction_letter_if_applicable": true,
+      "appointment_after_instruction_letter": true,
+      "repeat_biometrics_may_be_required": true,
+      "repeat_reasons": [
+        "biometrics_expiring_soon",
+        "previous_permanent_residence_refusal",
+        "only_partial_biometrics_collected"
+      ],
+      "permit_validity_may_depend_on_biometrics": true,
+      "automatic_biometrics_exemption_decision": false,
+      "source_evidence_id": "CA_ESWP_APP_EVD_06",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "source_metadata": {
+      "source_last_modified": "2026-08-28",
+      "application_process_scope": "outside_canada",
+      "inside_canada_process_approved": false,
+      "port_of_entry_process_approved": false,
+      "source_evidence_id": "CA_ESWP_APP_EVD_07",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  },
+  "outside_application_legal_review": {
+    "general_outside_process_collected": true,
+    "individual_fee_exemptions_approved": false,
+    "biometrics_exemptions_approved": false,
+    "priority_processing_eligibility_approved": false,
+    "individual_document_sufficiency_approved": false,
+    "automatic_work_permit_approval": false,
+    "source_evidence_ids": [
+      "CA_ESWP_APP_EVD_01",
+      "CA_ESWP_APP_EVD_02",
+      "CA_ESWP_APP_EVD_03",
+      "CA_ESWP_APP_EVD_04",
+      "CA_ESWP_APP_EVD_05",
+      "CA_ESWP_APP_EVD_06",
+      "CA_ESWP_APP_EVD_07"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  },
+  "outside_decision_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit-outside/after-apply.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/employment/employer_specific_outside_decision_ircc_en.txt",
+    "source_sha256": "be3182730682bd7fdb97fab11b7822181c0fd223f9bde4cca2bc278e730e62cc",
+    "source_last_modified": "2026-10-19",
+    "char_count": 4287,
+    "line_count": 121,
+    "review_status": "needs_review"
+  },
+  "outside_decision_evidence": [
+    {
+      "evidence_id": "CA_ESWP_DEC_EVD_01",
+      "topic": "application_status_and_temporary_notice",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_decision_ircc_en.txt",
+      "source_sha256": "be3182730682bd7fdb97fab11b7822181c0fd223f9bde4cca2bc278e730e62cc",
+      "start_line": 25,
+      "end_line": 36,
+      "exact_quote": "On this page\nCheck the status of your application\nHow we process your application\nIf we approve your application\nEbola disease: Temporary measures extended until November 27, 2026\n\nThe temporary measures put in place in response to Ebola have been extended until November 27, 2026.\n\nFind out more about these measures\n\nCheck the status of your application\nLearn how to check your application status",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_DEC_EVD_02",
+      "topic": "application_processing_and_employer_checks",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_decision_ircc_en.txt",
+      "source_sha256": "be3182730682bd7fdb97fab11b7822181c0fd223f9bde4cca2bc278e730e62cc",
+      "start_line": 38,
+      "end_line": 51,
+      "exact_quote": "How we process your application\nWe’ll check your application to make sure you have all the necessary documents, including biometrics. If it’s incomplete, we’ll refuse your application without processing it.\n\nAn officer will also check:\n\nthe list of employers who failed to comply with the conditions to make sure that the employer can hire you, and\nthat you qualify for a work permit\nWe may also ask you to:\n\ngo to an interview with our officials\nget a medical exam depending on\n the type of work you'll be doing and\n your country of residence\nsend more information or documents",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_DEC_EVD_03",
+      "topic": "approval_loi_and_border_decision",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_decision_ircc_en.txt",
+      "source_sha256": "be3182730682bd7fdb97fab11b7822181c0fd223f9bde4cca2bc278e730e62cc",
+      "start_line": 53,
+      "end_line": 62,
+      "exact_quote": "If we approve your application\nIf your application is approved, you’ll get\n\na port of entry (POE) letter of introduction (LOI).\nThis letter confirms that your application is approved.\nBring this letter with you when you travel to Canada and present it at the POE.\nYour LOI is not your work permit\na visitor visa or electronic travel authorization (eTA) that allows you to enter Canada, unless you’re exempt\nThis document will be automatically issued when we approve your work permit application.\nBorder services officers make the final decision to issue you a work permit and allow you to enter Canada.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_DEC_EVD_04",
+      "topic": "application_refusal_reasons",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_decision_ircc_en.txt",
+      "source_sha256": "be3182730682bd7fdb97fab11b7822181c0fd223f9bde4cca2bc278e730e62cc",
+      "start_line": 64,
+      "end_line": 75,
+      "exact_quote": "If we refuse your application\nYour work permit application could have been refused for reasons such as:\n\nyou didn’t meet the eligibility requirements for the type of work permit you applied for\nyou had weak ties to your home country and the officer wasn’t satisfied you’d return there at the end of your stay\nyou or your family members are inadmissible to Canada\nyour application was incomplete\nyou had insufficient funds to support yourself and your accompanying family members (if applicable)\nyour job offer was not genuine\nyou didn’t include enough proof that you have the right skills or education for the job you applied for\nthe work permit stream you applied for is no longer offered or the temporary public policy was revoked\nyou answered untruthfully to any of the statutory questions in the application",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_DEC_EVD_05",
+      "topic": "reapplication_after_refusal",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_decision_ircc_en.txt",
+      "source_sha256": "be3182730682bd7fdb97fab11b7822181c0fd223f9bde4cca2bc278e730e62cc",
+      "start_line": 75,
+      "end_line": 76,
+      "exact_quote": "you answered untruthfully to any of the statutory questions in the application\nYou can apply again, unless your decision letter says you can’t. You should only apply again if you can include information that you didn’t include before.",
+      "review_status": "needs_review"
+    }
+  ],
+  "outside_decision_review": {
+    "application_status_and_temporary_notice": {
+      "application_status_check_available": true,
+      "ebola_temporary_measure_date": "2026-11-27",
+      "ebola_notice_not_general_eligibility_rule": true,
+      "source_evidence_id": "CA_ESWP_DEC_EVD_01",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "application_processing": {
+      "document_completeness_checked": true,
+      "biometrics_completeness_checked": true,
+      "incomplete_application_may_be_refused": true,
+      "employer_non_compliance_list_checked": true,
+      "individual_work_permit_eligibility_checked": true,
+      "additional_interview_possible": true,
+      "medical_exam_conditional_on": [
+        "type_of_work",
+        "country_of_residence"
+      ],
+      "additional_documents_may_be_requested": true,
+      "automatic_processing_approval": false,
+      "source_evidence_id": "CA_ESWP_DEC_EVD_02",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "approval_and_entry": {
+      "application_approved": "not_verified",
+      "letter_of_introduction_issued": "not_verified",
+      "work_permit_issued": "not_verified",
+      "entry_authorized": "not_verified",
+      "loi_is_work_permit": false,
+      "visitor_visa_or_eta_issued_if_applicable": true,
+      "border_officer_decides_permit_and_entry": true,
+      "application_approval_guarantees_entry": false,
+      "source_evidence_id": "CA_ESWP_DEC_EVD_03",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review",
+      "arrival_source_collected": true,
+      "border_admissibility_individual_status": "not_verified",
+      "actual_permit_issuance_individual_status": "not_verified"
+    },
+    "refusal_reasons": {
+      "official_refusal_reasons": [
+        {
+          "reason": "permit_type_eligibility",
+          "source_line": 67
+        },
+        {
+          "reason": "temporary_resident_intent",
+          "source_line": 68
+        },
+        {
+          "reason": "admissibility",
+          "source_line": 69
+        },
+        {
+          "reason": "application_completeness",
+          "source_line": 70
+        },
+        {
+          "reason": "financial_sufficiency",
+          "source_line": 71
+        },
+        {
+          "reason": "job_offer_genuineness",
+          "source_line": 72
+        },
+        {
+          "reason": "job_qualification_evidence",
+          "source_line": 73
+        },
+        {
+          "reason": "program_availability",
+          "source_line": 74
+        },
+        {
+          "reason": "truthfulness_and_misrepresentation",
+          "source_line": 75
+        }
+      ],
+      "reasons_are_non_exhaustive_examples": true,
+      "automatic_refusal_decision": false,
+      "source_evidence_id": "CA_ESWP_DEC_EVD_04",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "reapplication": {
+      "decision_letter_may_restrict_reapplication": true,
+      "additional_information_recommended": true,
+      "reapplication_automatically_allowed": false,
+      "reapplication_approval_guaranteed": false,
+      "source_evidence_id": "CA_ESWP_DEC_EVD_05",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  },
+  "outside_decision_legal_review": {
+    "general_decision_process_collected": true,
+    "refusal_reasons_collected": true,
+    "application_approval_not_work_authorization": true,
+    "loi_not_work_permit": true,
+    "individual_refusal_reason_verified": false,
+    "individual_reapplication_permission_verified": false,
+    "border_entry_permission_approved": false,
+    "automatic_decision_or_work_authorization": false,
+    "source_evidence_ids": [
+      "CA_ESWP_DEC_EVD_01",
+      "CA_ESWP_DEC_EVD_02",
+      "CA_ESWP_DEC_EVD_03",
+      "CA_ESWP_DEC_EVD_04",
+      "CA_ESWP_DEC_EVD_05"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  },
+  "outside_arrival_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit-outside/arrival.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/employment/employer_specific_outside_arrival_ircc_en.txt",
+    "source_sha256": "04005b4fe331e9b92056077441872640ea18472b6ba4f176530bedb6b4e97b46",
+    "source_last_modified": "2026-08-28",
+    "char_count": 4876,
+    "line_count": 127,
+    "review_status": "needs_review"
+  },
+  "outside_arrival_evidence": [
+    {
+      "evidence_id": "CA_ESWP_ARR_EVD_01",
+      "topic": "required_border_documents",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_arrival_ircc_en.txt",
+      "source_sha256": "04005b4fe331e9b92056077441872640ea18472b6ba4f176530bedb6b4e97b46",
+      "start_line": 35,
+      "end_line": 51,
+      "exact_quote": "Documents you need at the border\nRequired documents\nIf we approve your application, you must bring these documents when you arrive in Canada:\n\nyour passport\nYour passport must be valid for longer than the time you plan to be in Canada.\nyour visitor visa (if you need a visitor visa to travel)\nvalid immigration medical exam (IME) results (if you needed a medical exam)\nYour results must be valid the day you enter Canada.\nPort of entry (POE) letter of introduction (LOI)\nYou must show proof that your work permit application was approved.\nOne way to do this is to show the border services officer your port of entry letter of introduction. You’ll get this letter if you:\n\napplied online, or\ngave us an email address in the work permit application form for communicating with you \nYou can print this letter or bring an electronic version with you.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_ARR_EVD_02",
+      "topic": "supporting_border_documents",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_arrival_ircc_en.txt",
+      "source_sha256": "04005b4fe331e9b92056077441872640ea18472b6ba4f176530bedb6b4e97b46",
+      "start_line": 52,
+      "end_line": 58,
+      "exact_quote": "Supporting documents\nYou should also bring supporting documents, such as:\n\nproof that you meet the requirements of the job, such as proof of work experience and education\na copy of your employer’s positive labour market impact assessment (LMIA), if required\nYou’ll also need a copy of your attestation of issuance of your Quebec Acceptance Certificate (CAQ) if you’ll work in Quebec.\nthe offer of employment number your employer received when they submitted the offer of employment through the Employer Portal (if you’re LMIA-exempt)",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_ARR_EVD_03",
+      "topic": "border_identity_checks",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_arrival_ircc_en.txt",
+      "source_sha256": "04005b4fe331e9b92056077441872640ea18472b6ba4f176530bedb6b4e97b46",
+      "start_line": 59,
+      "end_line": 68,
+      "exact_quote": "Identity check at the border\nWe’ll check your identity to make sure that you’re the same person who was approved to work in Canada.\n\nIf you enter Canada at certain Canadian airports:\n\nYour fingerprints will be checked automatically at a primary inspection kiosk.\nThe system will compare your fingerprints to the information you gave in your application.\nIf you enter Canada at a smaller airport or land port of entry (POE):\n\nIf you’re sent to secondary inspection, a border services officer may collect and check your fingerprints to verify your identity.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_ARR_EVD_04",
+      "topic": "cbsa_admissibility_and_final_decision",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_arrival_ircc_en.txt",
+      "source_sha256": "04005b4fe331e9b92056077441872640ea18472b6ba4f176530bedb6b4e97b46",
+      "start_line": 69,
+      "end_line": 80,
+      "exact_quote": "Meet the border officer\nWhen you arrive in Canada, you’ll meet an officer from the Canada Border Services Agency (CBSA).\n\nTell the border services officer that you have come here to work and show the documents you brought with you.\n\nYou must satisfy the officer that:\n\nyou meet Canada’s entry requirements and\nyou’ll leave Canada at the end of your approved stay\nYou must provide accurate and complete information to the border services officer. Providing false or incomplete information may lead to refusal of entry or removal from Canada.\n\nThe border services officer makes the final decision to issue you a work permit and allow you to enter Canada.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_ARR_EVD_05",
+      "topic": "actual_permit_issuance_and_verification",
+      "source_file": "data/raw/canada/employment/employer_specific_outside_arrival_ircc_en.txt",
+      "source_sha256": "04005b4fe331e9b92056077441872640ea18472b6ba4f176530bedb6b4e97b46",
+      "start_line": 82,
+      "end_line": 90,
+      "exact_quote": "We’ll print your work permit\nIf the border services officer is satisfied that you’re admissible to Canada as a worker, they’ll print the actual work permit for you and you can enter Canada.\n\nIf you have questions or there’s a mistake on your work permit, ask the officer before you leave.\n\nDocument navigation\nNext:After you apply\nPage details\nDate modified: 2026-08-28",
+      "review_status": "needs_review"
+    }
+  ],
+  "outside_arrival_review": {
+    "required_border_documents": {
+      "passport_required": true,
+      "passport_valid_for_planned_stay": true,
+      "visitor_visa_if_required": true,
+      "valid_ime_if_required": true,
+      "ime_valid_on_entry_date": true,
+      "application_approval_proof_required": true,
+      "loi_accepted_as_approval_proof": true,
+      "printed_or_electronic_loi_accepted": true,
+      "individual_documents_verified": false,
+      "source_evidence_id": "CA_ESWP_ARR_EVD_01",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "supporting_border_documents": {
+      "job_qualification_proof": true,
+      "positive_lmia_copy_if_required": true,
+      "quebec_caq_attestation_condition": "if_working_in_quebec",
+      "offer_number_for_lmia_exempt_portal_route": true,
+      "all_supporting_documents_unconditional": false,
+      "quebec_caq_exceptions_fully_verified": false,
+      "source_evidence_id": "CA_ESWP_ARR_EVD_02",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "border_identity_check": {
+      "identity_check_required": true,
+      "some_airports_use_primary_kiosk": true,
+      "fingerprints_compared_with_application": true,
+      "secondary_inspection_may_check_fingerprints": true,
+      "individual_identity_verified": false,
+      "source_evidence_id": "CA_ESWP_ARR_EVD_03",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "cbsa_border_decision": {
+      "border_authority": "Canada Border Services Agency",
+      "entry_requirements_checked": true,
+      "departure_at_end_of_approved_stay_checked": true,
+      "accurate_and_complete_information_required": true,
+      "false_or_incomplete_information_risk": [
+        "refusal_of_entry",
+        "removal_from_canada"
+      ],
+      "border_officer_final_permit_decision": true,
+      "border_officer_final_entry_decision": true,
+      "automatic_entry_approval": false,
+      "source_evidence_id": "CA_ESWP_ARR_EVD_04",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "actual_permit_issuance": {
+      "work_permit_printed_at_border_if_approved": true,
+      "permit_errors_should_be_raised_before_leaving": true,
+      "loi_is_actual_work_permit": false,
+      "individual_status": {
+        "letter_of_introduction_issued": "not_verified",
+        "entry_document_valid": "not_verified",
+        "identity_check_completed": "not_verified",
+        "border_admissibility_verified": "not_verified",
+        "work_permit_issued": "not_verified",
+        "work_permit_conditions_verified": "not_verified"
+      },
+      "automatic_work_authorization": false,
+      "source_evidence_id": "CA_ESWP_ARR_EVD_05",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  },
+  "outside_arrival_legal_review": {
+    "official_arrival_process_collected": true,
+    "individual_document_sufficiency_verified": false,
+    "individual_border_admissibility_approved": false,
+    "individual_permit_issuance_verified": false,
+    "quebec_special_requirements_approved": false,
+    "loi_not_actual_work_permit": true,
+    "automatic_entry_or_work_authorization": false,
+    "source_evidence_ids": [
+      "CA_ESWP_ARR_EVD_01",
+      "CA_ESWP_ARR_EVD_02",
+      "CA_ESWP_ARR_EVD_03",
+      "CA_ESWP_ARR_EVD_04",
+      "CA_ESWP_ARR_EVD_05"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  },
+  "after_permit_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit-outside/after-apply.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/employment/employer_specific_after_permit_ircc_en.txt",
+    "source_sha256": "11f00232f08527cc7b89ba1ae23a356897dbc1796c31ff009e100776d882f785",
+    "source_last_modified": "2026-05-07",
+    "char_count": 3523,
+    "line_count": 113,
+    "review_status": "needs_review"
+  },
+  "after_permit_evidence": [
+    {
+      "evidence_id": "CA_ESWP_POST_EVD_01",
+      "topic": "permit_conditions",
+      "source_file": "data/raw/canada/employment/employer_specific_after_permit_ircc_en.txt",
+      "source_sha256": "11f00232f08527cc7b89ba1ae23a356897dbc1796c31ff009e100776d882f785",
+      "start_line": 29,
+      "end_line": 38,
+      "exact_quote": "Conditions of your work permit\nThe work permit will outline:\n\nthe type of work you can do\nthe employer you can work for\nwhere you can work\nhow long the work permit is valid for\nhow long you’re allowed to stay in Canada\nEmployment location condition\nYou may be able to work at a different location even if there is an employment location listed on your work permit. Learn more about employment location conditions.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_POST_EVD_02",
+      "topic": "medical_conditions_and_removal",
+      "source_file": "data/raw/canada/employment/employer_specific_after_permit_ircc_en.txt",
+      "source_sha256": "11f00232f08527cc7b89ba1ae23a356897dbc1796c31ff009e100776d882f785",
+      "start_line": 40,
+      "end_line": 45,
+      "exact_quote": "Medical conditions\nIf you haven’t left your country of residence yet, you can get an upfront medical exam before you leave. If you bring the proof when you arrive at the Canadian border, your work permit won’t include medical conditions.\n\nIf you already have your work permit, you may still be able to remove the conditions.\n\nLearn how to remove medical conditions from your work permit.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_POST_EVD_03",
+      "topic": "permit_validity_limits",
+      "source_file": "data/raw/canada/employment/employer_specific_after_permit_ircc_en.txt",
+      "source_sha256": "11f00232f08527cc7b89ba1ae23a356897dbc1796c31ff009e100776d882f785",
+      "start_line": 47,
+      "end_line": 48,
+      "exact_quote": "Validity of your work permit\nMost work permits are valid for 1 to 2 years, but it can vary. Your work permit won’t be valid longer than your passport or biometrics’ expiry date.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_POST_EVD_04",
+      "topic": "sin_and_health_insurance",
+      "source_file": "data/raw/canada/employment/employer_specific_after_permit_ircc_en.txt",
+      "source_sha256": "11f00232f08527cc7b89ba1ae23a356897dbc1796c31ff009e100776d882f785",
+      "start_line": 50,
+      "end_line": 63,
+      "exact_quote": "Steps to take after you get your work permit\nThere are some steps you should take once you get your work permit like getting a social insurance number and health insurance.\n\nSocial insurance number (SIN)\nYou’ll need to get a SIN as soon as you arrive in Canada.\n\nApply for a SIN\n\nHealth insurance\nMake sure that you and any dependants coming with you to Canada either have:\n\nprovincial or territorial health insurance, or\nenough money in case you need medical attention\nHealth insurance by province or territory",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_POST_EVD_05",
+      "topic": "extension_study_and_permanent_residence",
+      "source_file": "data/raw/canada/employment/employer_specific_after_permit_ircc_en.txt",
+      "source_sha256": "11f00232f08527cc7b89ba1ae23a356897dbc1796c31ff009e100776d882f785",
+      "start_line": 64,
+      "end_line": 69,
+      "exact_quote": "Extensions, studying and permanent residence (PR)\nYou may be able to:\n\nextend or change your work permit\nstudy while you work\napply for permanent residence",
+      "review_status": "needs_review"
+    }
+  ],
+  "after_permit_review": {
+    "permit_conditions": {
+      "permit_fields": [
+        "occupation",
+        "employer",
+        "work_location",
+        "permit_validity",
+        "authorized_stay_duration"
+      ],
+      "different_work_location_may_be_possible": true,
+      "individual_location_exception_verified": false,
+      "individual_permit_conditions_verified": false,
+      "source_evidence_id": "CA_ESWP_POST_EVD_01",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "medical_conditions": {
+      "upfront_medical_exam_may_apply": true,
+      "medical_restrictions_may_be_removable": true,
+      "individual_medical_requirements_verified": false,
+      "automatic_medical_condition_removal": false,
+      "source_evidence_id": "CA_ESWP_POST_EVD_02",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "permit_validity": {
+      "general_duration_description": "often_1_to_2_years",
+      "fixed_eswp_duration": null,
+      "limited_by_passport_expiry": true,
+      "limited_by_biometrics_expiry": true,
+      "individual_expiry_date_verified": false,
+      "automatic_duration_calculation": false,
+      "source_evidence_id": "CA_ESWP_POST_EVD_03",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "post_arrival_steps": {
+      "sin_application_needed": true,
+      "provincial_or_territorial_health_insurance": "one_possible_coverage_option",
+      "medical_cost_funds": "alternative_mentioned_in_source",
+      "dependants_included_in_health_coverage_review": true,
+      "individual_health_coverage_verified": false,
+      "source_evidence_id": "CA_ESWP_POST_EVD_04",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "extension_and_other_pathways": {
+      "extension_or_change_may_be_possible": true,
+      "study_while_working_may_be_possible": true,
+      "permanent_residence_separate_pathway": true,
+      "employer_change_conditions_verified": false,
+      "extension_eligibility_verified": false,
+      "automatic_extension_approval": false,
+      "automatic_new_employer_work_authorization": false,
+      "source_evidence_id": "CA_ESWP_POST_EVD_05",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review",
+      "employer_change_official_source_collected": true,
+      "new_permit_required_for_employer_change": true,
+      "interim_work_authorization_separate": true,
+      "interim_authorization_received": "not_verified",
+      "general_extension_rules_fully_verified": false,
+      "maintained_status_rules_fully_verified": false
+    }
+  },
+  "after_permit_legal_review": {
+    "official_post_issuance_guidance_collected": true,
+    "employer_change_rules_verified": false,
+    "extension_rules_verified": false,
+    "individual_permit_validity_verified": false,
+    "automatic_permit_conditions_approval": false,
+    "automatic_work_authorization": false,
+    "source_evidence_ids": [
+      "CA_ESWP_POST_EVD_01",
+      "CA_ESWP_POST_EVD_02",
+      "CA_ESWP_POST_EVD_03",
+      "CA_ESWP_POST_EVD_04",
+      "CA_ESWP_POST_EVD_05"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  },
+  "employer_change_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/extend/change-jobs-employers.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/employment/employer_specific_change_employer_ircc_en.txt",
+    "source_sha256": "59a0e901d1dd571a9f02cfd1b99c6622ae4ea1fd6d1c7c4eeba64d74eac78525",
+    "source_last_modified": "2026-10-08",
+    "char_count": 6105,
+    "line_count": 130,
+    "review_status": "needs_review"
+  },
+  "employer_change_evidence": [
+    {
+      "evidence_id": "CA_ESWP_CHANGE_EVD_01",
+      "topic": "new_employer_new_permit_requirement",
+      "source_file": "data/raw/canada/employment/employer_specific_change_employer_ircc_en.txt",
+      "source_sha256": "59a0e901d1dd571a9f02cfd1b99c6622ae4ea1fd6d1c7c4eeba64d74eac78525",
+      "start_line": 20,
+      "end_line": 25,
+      "exact_quote": "Changing jobs or employers\nIf you have an employer-specific work permit and you want to change jobs or employers in Canada, you must apply for a new work permit, if you’re eligible.\n\nYou may be able to start your new job or work for a new employer before your work permit application is approved. You can request authorization to work while we process your application.\n\nOpen work permit holders can change employers at any time while their work permit is valid.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_CHANGE_EVD_02",
+      "topic": "interim_authorization_eligibility",
+      "source_file": "data/raw/canada/employment/employer_specific_change_employer_ircc_en.txt",
+      "source_sha256": "59a0e901d1dd571a9f02cfd1b99c6622ae4ea1fd6d1c7c4eeba64d74eac78525",
+      "start_line": 27,
+      "end_line": 36,
+      "exact_quote": "Who’s eligible\nTo be eligible, you must meet the following conditions:\n\nYou applied for a new employer-specific work permit in Canada.\nYou currently\nhave an employer-specific work permit, or\nare a worker who can work without a work permit (not including business visitors or short-term workers under the Global Skills Strategy)\nIf you lose your job\nHow to request authorization to work while we process your application\nInternational Experience Canada (IEC) participants must first check that they can change employers with an IEC work permit .",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_CHANGE_EVD_03",
+      "topic": "webform_and_priority_code",
+      "source_file": "data/raw/canada/employment/employer_specific_change_employer_ircc_en.txt",
+      "source_sha256": "59a0e901d1dd571a9f02cfd1b99c6622ae4ea1fd6d1c7c4eeba64d74eac78525",
+      "start_line": 38,
+      "end_line": 54,
+      "exact_quote": "To change jobs or employers, follow these steps after you apply for your new employer-specific work permit:\n\nStep 1: Let us know you want to change jobs or employers\nUse the IRCC web form to let us know you need to change jobs or employers.\n\nSelect See details under the Other category and then Continue to form, when prompted.\nUnder the Your enquiry section of the IRCC web form, copy the text below that applies to your situation. Make sure you fill out the sections in square brackets, which include the\n\ndates\nname(s) of employer(s)\ntitle of your job\nIf you applied on paper and don’t know your application number, include your courier tracking number. This will allow us to find your application.\n\nIf you have other questions, you need to fill out an IRCC web form.\n\nAvoid delays\nYou must include the code PPCHANGEWORK2020 when you copy and paste the text below. We can’t prioritize your request without this code.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_CHANGE_EVD_04",
+      "topic": "temporary_public_policy_request",
+      "source_file": "data/raw/canada/employment/employer_specific_change_employer_ircc_en.txt",
+      "source_sha256": "59a0e901d1dd571a9f02cfd1b99c6622ae4ea1fd6d1c7c4eeba64d74eac78525",
+      "start_line": 56,
+      "end_line": 76,
+      "exact_quote": "Message that work permit holders changing jobs or employers need to paste into the web form:\nPriority Code PPCHANGEWORK2020: I am requesting consideration under the Temporary public policy to exempt foreign nationals in Canada from certain requirements when changing employment and ask that the applicable exemptions be granted until a decision is made on my work permit application or it is withdrawn.\n\nI attest that I hold/held a work permit valid until [DATE] for employer [name] / in occupation [NOC code] and I have received a new job offer for [new employer name] / [new occupation NOC code].\n\nI have submitted my application for a work permit online or I submitted my paper application and the postal/courier tracking number is [number].\n\nI intend to work for the [new employer name] / [new occupation NOC code] as specified in the aforementioned work permit.\n\nI understand that providing false, misleading or incorrect information is a violation of the Immigration and Refugee Protection Act and may result in enforcement measures against me.\n\nMessage that workers who have been exempt from holding a work permit need to paste into the web form:\nPriority Code PPCHANGEWORK2020: I am requesting consideration under the Temporary public policy to exempt foreign nationals in Canada from certain requirements when changing employment, and ask that the applicable exemptions be granted until the decision is made on my work permit application or it is withdrawn.\n\nI attest that I am/was authorized to work without a work permit for employer [name] / in occupation [NOC code] until [DATE] and I have received a new job offer for [new employer name] / [new occupation NOC code].\n\nI have submitted my application for a work permit online or I submitted my paper application and the postal/courier tracking number is [number].\n\nI intend to work for the [new employer name] / [new occupation NOC code] as specified in the aforementioned work permit.\n\nI understand that providing false, misleading or incorrect information is a violation of the Immigration and Refugee Protection Act and may result in enforcement measures against me.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_ESWP_CHANGE_EVD_05",
+      "topic": "authorization_email_and_response",
+      "source_file": "data/raw/canada/employment/employer_specific_change_employer_ircc_en.txt",
+      "source_sha256": "59a0e901d1dd571a9f02cfd1b99c6622ae4ea1fd6d1c7c4eeba64d74eac78525",
+      "start_line": 78,
+      "end_line": 85,
+      "exact_quote": "Step 2: Wait for our email authorizing you to work while we process your application\nAfter you submit the web form, wait for us to email you.\n\nWe should respond in about 10 to 15 days. If you applied on paper, it will take longer to get the email.\n\nThe email will let you know if you’re authorized to work while we process your application. This email is not your work permit.\n\nCheck the processing time for work permit applications processed inside Canada.",
+      "review_status": "needs_review"
+    }
+  ],
+  "employer_change_review": {
+    "new_employer_new_permit": {
+      "new_employer_specific_permit_application": true,
+      "open_permit_holder_can_change_employer": true,
+      "new_employer_work_automatically_allowed": false,
+      "individual_new_permit_eligibility_verified": false,
+      "source_evidence_id": "CA_ESWP_CHANGE_EVD_01",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "interim_authorization_eligibility": {
+      "inside_canada_application_required": true,
+      "existing_employer_specific_permit_route": true,
+      "some_work_permit_exempt_workers_eligible": true,
+      "business_visitor_excluded": true,
+      "gss_short_term_worker_excluded": true,
+      "iec_separate_change_rules_required": true,
+      "individual_interim_eligibility_verified": false,
+      "source_evidence_id": "CA_ESWP_CHANGE_EVD_02",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "webform_request": {
+      "ircc_webform_required_for_request": true,
+      "priority_code": "PPCHANGEWORK2020",
+      "application_identifiers_required": true,
+      "employer_and_job_information_required": true,
+      "paper_application_tracking_number_if_needed": true,
+      "priority_processing_guaranteed": false,
+      "source_evidence_id": "CA_ESWP_CHANGE_EVD_03",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "temporary_public_policy": {
+      "public_policy_request_collected": true,
+      "distinct_templates_for": [
+        "employer_specific_permit_holders",
+        "work_permit_exempt_workers"
+      ],
+      "previous_and_new_employment_details_required": true,
+      "new_work_permit_application_information_required": true,
+      "individual_public_policy_exemption_approved": false,
+      "source_evidence_id": "CA_ESWP_CHANGE_EVD_04",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    "authorization_email": {
+      "wait_for_ircc_authorization_email": true,
+      "stated_response_days_approximate": [
+        10,
+        15
+      ],
+      "paper_application_may_take_longer": true,
+      "email_is_work_permit": false,
+      "authorization_email_received": "not_verified",
+      "new_employer_work_authorized": "not_verified",
+      "automatic_interim_work_authorization": false,
+      "source_evidence_id": "CA_ESWP_CHANGE_EVD_05",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  },
+  "employer_change_legal_review": {
+    "employer_change_process_collected": true,
+    "individual_interim_authorization_verified": false,
+    "actual_new_work_permit_issued": "not_verified",
+    "general_extension_rules_fully_verified": false,
+    "maintained_status_rules_fully_verified": false,
+    "job_loss_details_in_saved_txt_verified": false,
+    "automatic_new_employer_work_authorization": false,
+    "source_evidence_ids": [
+      "CA_ESWP_CHANGE_EVD_01",
+      "CA_ESWP_CHANGE_EVD_02",
+      "CA_ESWP_CHANGE_EVD_03",
+      "CA_ESWP_CHANGE_EVD_04",
+      "CA_ESWP_CHANGE_EVD_05"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  }
+}

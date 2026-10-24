@@ -1,0 +1,1532 @@
+{
+  "country": "Canada",
+  "program": "study_permit",
+  "program_category": "study",
+  "official_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/study/study_permit_eligibility_ircc_en.txt",
+    "source_sha256": "000e265dab7e6090d5dd94425a8c77054b343e57da2ee44bb3f689189cc8b2d2",
+    "char_count": 3128,
+    "line_count": 99,
+    "source_last_modified": "2026-01-26"
+  },
+  "evidence": [
+    {
+      "evidence_id": "CA_STUDY_EVD_01",
+      "topic": "eligibility_requirements",
+      "start_line": 26,
+      "end_line": 36,
+      "exact_quote": "Eligibility requirements\nYou can come to Canada to study if you\n\nare enrolled at a DLI\nprove you have enough money to pay for\nyour tuition fees\nliving expenses for yourself and any family members who come with you to Canada and\nreturn transportation for yourself and any family members who come with you to Canada\nobey the law, have no criminal record and get a police certificate (if required)\nare in good health and get a medical exam (if required) and\nprove to an officer that you will leave Canada when your study permit expires",
+      "source_sha256": "000e265dab7e6090d5dd94425a8c77054b343e57da2ee44bb3f689189cc8b2d2",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_EVD_02",
+      "topic": "student_responsibilities",
+      "start_line": 37,
+      "end_line": 49,
+      "exact_quote": "Your responsibilities as a student\nWhile studying in Canada you must\n\nmake progress towards completing your program\nrespect any conditions listed on your study permit\nstop studying if you no longer meet the requirements\nDepending on your case, there may be conditions on your study permit such as\n\nif you’re allowed to work in Canada\nthe specific date you must leave Canada\nwhere you can study (a specific DLI listed on your permit)\nYou need to follow our instructions if you want to change schools at the post-secondary level.\nwhether you need an immigration medical examination",
+      "source_sha256": "000e265dab7e6090d5dd94425a8c77054b343e57da2ee44bb3f689189cc8b2d2",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_EVD_03",
+      "topic": "pgwp_related_guidance",
+      "start_line": 50,
+      "end_line": 55,
+      "exact_quote": "Post-graduation work permit\nYou may be able to stay and work in Canada after you graduate by getting a post-graduation work permit (PGWP). PGWP eligibility depends on several requirements, including when you submit your study permit application. If you’re interested, check the requirements before you submit your study permit application.\n\nCheck if the DLI you choose offers PGWP-eligible programs.\n\nPGWP eligibility requirements",
+      "source_sha256": "000e265dab7e6090d5dd94425a8c77054b343e57da2ee44bb3f689189cc8b2d2",
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "CA_STUDY_POL_01",
+      "topic": "dli_and_enrollment",
+      "source_evidence_ids": [
+        "CA_STUDY_EVD_01"
+      ],
+      "conditions_to_review": [
+        "enrolled_at_designated_learning_institution",
+        "letter_of_acceptance_documentation",
+        "institution_and_program_validation"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "CA_STUDY_POL_02",
+      "topic": "financial_capacity",
+      "source_evidence_ids": [
+        "CA_STUDY_EVD_01"
+      ],
+      "conditions_to_review": [
+        "tuition_fees",
+        "living_expenses_for_applicant",
+        "living_expenses_for_accompanying_family",
+        "return_transportation",
+        "applicable_funding_amount_and_date"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "CA_STUDY_POL_03",
+      "topic": "admissibility_and_temporary_stay",
+      "source_evidence_ids": [
+        "CA_STUDY_EVD_01"
+      ],
+      "conditions_to_review": [
+        "criminal_record_and_admissibility",
+        "police_certificate_if_required",
+        "medical_exam_if_required",
+        "departure_at_end_of_authorized_stay"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "CA_STUDY_POL_04",
+      "topic": "student_responsibilities",
+      "source_evidence_ids": [
+        "CA_STUDY_EVD_02"
+      ],
+      "conditions_to_review": [
+        "progress_towards_program_completion",
+        "study_permit_conditions",
+        "work_authorization_if_applicable",
+        "post_secondary_dli_change_requirements",
+        "stop_studying_if_requirements_not_met"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "source_requirement_checks": {
+    "dli_enrollment": true,
+    "tuition": true,
+    "living_expenses": true,
+    "return_transportation": true,
+    "criminal_record": true,
+    "police_certificate": true,
+    "health": true,
+    "medical_exam": true,
+    "leave_canada": true,
+    "academic_progress": true,
+    "permit_conditions": true,
+    "school_change": true,
+    "pgwp": true
+  },
+  "conditional_requirements": {
+    "institution_and_admission": {
+      "review_points": [
+        "DLI enrollment",
+        "LOA documentation",
+        "institution and program status"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "financial_capacity": {
+      "review_points": [
+        "tuition",
+        "living expenses",
+        "return transportation",
+        "family members",
+        "applicable amount and reference date"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "admissibility": {
+      "review_points": [
+        "criminal history",
+        "police certificate if required",
+        "medical exam if required",
+        "temporary stay conditions"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "application_documents": {
+      "review_points": [
+        "LOA",
+        "PAL or TAL and exemptions",
+        "Quebec CAQ if applicable",
+        "personalized application documents"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "conditions_during_study": {
+      "review_points": [
+        "academic progress",
+        "work authorization",
+        "school changes",
+        "permit conditions"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "post_graduation_pathway": {
+      "review_points": [
+        "PGWP is not automatically granted",
+        "PGWP-eligible institution and program",
+        "study permit application date relevance",
+        "separate PGWP eligibility review"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "financial_requirements_review": {
+    "tuition": "separate_from_living_cost_amount",
+    "living_expenses": "date_and_family_count_dependent",
+    "return_transportation": "separate_from_living_cost_amount",
+    "specific_amount": null,
+    "applicable_reference_date": null,
+    "eligibility_rule": null,
+    "review_status": "needs_review",
+    "living_cost_table_ids": [
+      "CA_STUDY_LIVING_COST_2026_09",
+      "CA_STUDY_LIVING_COST_2025_01"
+    ]
+  },
+  "document_requirements_to_verify": [
+    "letter_of_acceptance",
+    "pal_tal_or_exemption",
+    "quebec_caq_if_applicable",
+    "proof_of_funds",
+    "police_certificate_if_required",
+    "medical_exam_if_required"
+  ],
+  "related_but_separate_program": {
+    "program": "post_graduation_work_permit",
+    "abbreviation": "PGWP",
+    "source_evidence_id": "CA_STUDY_EVD_03",
+    "eligibility_not_automatic": true,
+    "review_status": "needs_review"
+  },
+  "review_status": "needs_review",
+  "eligibility_rule": null,
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false,
+  "document_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/study/study_permit_documents_ircc_en.txt",
+    "source_sha256": "16c154cc970e024a9c5feae4d6a408e03ad5cd10e6b04325e5feaed18e868637",
+    "char_count": 4993,
+    "line_count": 137,
+    "source_last_modified": "2026-10-06",
+    "review_status": "needs_review"
+  },
+  "document_evidence": [
+    {
+      "evidence_id": "CA_STUDY_DOC_EVD_01",
+      "topic": "letter_of_acceptance",
+      "source_file": "data/raw/canada/study/study_permit_documents_ircc_en.txt",
+      "source_sha256": "16c154cc970e024a9c5feae4d6a408e03ad5cd10e6b04325e5feaed18e868637",
+      "start_line": 29,
+      "end_line": 37,
+      "exact_quote": "Get the right documents\nTo apply for a study permit, there are some documents you need to include. In some cases, you may not need all of them. Make sure you know what applies to your situation.\n\n1\nGet your letter of acceptance Always required\nYour school will give you a letter of acceptance. Upload this to your online application.\n\nPost-secondary students\nExceptions",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_DOC_EVD_02",
+      "topic": "pal_tal_and_quebec_caq",
+      "source_file": "data/raw/canada/study/study_permit_documents_ircc_en.txt",
+      "source_sha256": "16c154cc970e024a9c5feae4d6a408e03ad5cd10e6b04325e5feaed18e868637",
+      "start_line": 38,
+      "end_line": 42,
+      "exact_quote": "2\nApply for a provincial or territorial attestation letter Needed in most cases\nGet a provincial or territorial attestation letter (PAL/TAL) from your school. In most cases, you need to accept your offer and pay your tuition fees, either in part or in full, to get your PAL/TAL.\n\nIf you’re studying in Quebec, you need a Quebec Acceptance Certificate (Certificat d’acceptation du Québec [CAQ]).",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_DOC_EVD_03",
+      "topic": "identity_and_financial_proof",
+      "source_file": "data/raw/canada/study/study_permit_documents_ircc_en.txt",
+      "source_sha256": "16c154cc970e024a9c5feae4d6a408e03ad5cd10e6b04325e5feaed18e868637",
+      "start_line": 44,
+      "end_line": 56,
+      "exact_quote": "3\nShow proof of identity Always required\nTo show proof of identity, you (and each family member who comes with you) must have\n\na copy of a valid passport or travel document\nUpload a copy of the information page of your passport when you apply online.\nIf you’re approved, you must send us your original passport.\n2 recent passport size photos\nThe name and date of birth of the person must be written on the back of each photo.\nFor citizens or lawful permanent residents of the United States (U.S.)\n4\nShow proof of funds Always required\nTo support yourself and any family members coming with you, you must show proof of funds.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_DOC_EVD_04",
+      "topic": "explanation_medical_police_and_minors",
+      "source_file": "data/raw/canada/study/study_permit_documents_ircc_en.txt",
+      "source_sha256": "16c154cc970e024a9c5feae4d6a408e03ad5cd10e6b04325e5feaed18e868637",
+      "start_line": 58,
+      "end_line": 79,
+      "exact_quote": "5\nWrite a letter of explanation Recommended\nYou must explain why you want to study in Canada, and that you understand your responsibilities as an international student in Canada.\n\n6\nGet a medical exam Check if needed\nYou may need a medical exam if any of these situations apply to you:\n\nYou plan to stay in Canada for more than 6 months.\nYou recently spent time in certain countries.\nYou plan to work in certain jobs where public health must be protected.\nCheck if you need a medical exam.\n\n7\nGet a police certificate Check if needed\nIn some cases, we may ask you for a police certificate. If you think you might need one, you should apply for one as early as possible.\n\n8\nProof of care (for minor children in Canada) Check if needed\nChildren under the age of 17 who are not coming to Canada with a parent or legal guardian must have an appointed custodian.\n\nFind out what you need to submit for children under the age of 17.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_DOC_EVD_05",
+      "topic": "local_visa_office_requirements",
+      "source_file": "data/raw/canada/study/study_permit_documents_ircc_en.txt",
+      "source_sha256": "16c154cc970e024a9c5feae4d6a408e03ad5cd10e6b04325e5feaed18e868637",
+      "start_line": 81,
+      "end_line": 91,
+      "exact_quote": "9\nCheck for other documents you might need based on what country you’re applying from Check if needed\nThere may be other documents to submit that are specific to your local visa office. To get your local visa office instructions:\n\nGo to the How to apply page\nSelect “Outside Canada”\nSelect “Apply online”\nSelect your country or territory from the list.\nIf you aren’t currently in your home country, you may have to prove your immigration status in the country you apply from.\n\nIf the government that issued your passport or travel document needs you to have a re-entry permit, you must get one before you apply for a Canadian visa. You may also need other documents.",
+      "review_status": "needs_review"
+    }
+  ],
+  "document_requirements_review": {
+    "letter_of_acceptance": {
+      "source_evidence_id": "CA_STUDY_DOC_EVD_01",
+      "source_classification": "always_required",
+      "exceptions_need_review": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "pal_tal": {
+      "source_evidence_id": "CA_STUDY_DOC_EVD_02",
+      "source_classification": "needed_in_most_cases",
+      "exemptions_need_review": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "quebec_caq": {
+      "source_evidence_id": "CA_STUDY_DOC_EVD_02",
+      "scope": "study_in_quebec",
+      "detailed_conditions_need_review": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "identity": {
+      "source_evidence_id": "CA_STUDY_DOC_EVD_03",
+      "source_classification": "always_required",
+      "documents_to_review": [
+        "valid_passport_or_travel_document_copy",
+        "passport_information_page",
+        "passport_photos",
+        "family_member_identity_if_applicable"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "financial_support": {
+      "source_evidence_id": "CA_STUDY_DOC_EVD_03",
+      "source_classification": "always_required",
+      "specific_amount": null,
+      "separate_financial_source_required": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "other_documents": {
+      "source_evidence_ids": [
+        "CA_STUDY_DOC_EVD_04",
+        "CA_STUDY_DOC_EVD_05"
+      ],
+      "recommended": [
+        "letter_of_explanation"
+      ],
+      "conditional": [
+        "immigration_medical_exam",
+        "police_certificate",
+        "custodian_documents_for_applicable_minors",
+        "local_visa_office_documents",
+        "proof_of_status_in_application_country"
+      ],
+      "medical_exam_not_universal": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "document_scope_notes": [
+    {
+      "topic": "loa_exceptions",
+      "finding": "The source mentions LOA exceptions but the copied page does not expand their details.",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "pal_tal_exemptions",
+      "finding": "PAL/TAL is needed in most cases. Confirm exemptions with the dedicated IRCC page.",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "quebec_caq",
+      "finding": "Quebec-specific CAQ requirements need separate review.",
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "financial_amounts",
+      "finding": "The document overview does not provide the applicable financial support amount.",
+      "review_status": "needs_review"
+    }
+  ],
+  "pal_tal_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/provincial-attestation-letter.html",
+    "source_file": "data/raw/canada/study/study_permit_pal_tal_ircc_en.txt",
+    "source_sha256": "467b748fd9a6c71f388837d6e235ae96ec4f5fee58aa3ac1425efec2a60f00a7",
+    "source_last_modified": "2026-09-02",
+    "char_count": 3403,
+    "line_count": 107,
+    "interactive_details_captured": false,
+    "review_status": "needs_review"
+  },
+  "pal_tal_detailed_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/provincial-attestation-letter.html",
+    "source_file": "data/raw/canada/study/study_permit_pal_tal_official.html",
+    "source_sha256": "6450a7f2d466f16945787f372bcfe04df0aa078320812e8d00f68b8da09946c3",
+    "source_last_modified": "2026-09-02",
+    "review_status": "needs_review"
+  },
+  "pal_tal_detailed_evidence": [
+    {
+      "evidence_id": "CA_STUDY_PAL_DETAIL_01",
+      "topic": "pal_tal_exemptions",
+      "source_file": "data/raw/canada/study/study_permit_pal_tal_official.html",
+      "source_sha256": "6450a7f2d466f16945787f372bcfe04df0aa078320812e8d00f68b8da09946c3",
+      "text_start_offset": 5095,
+      "text_end_offset": 5936,
+      "exact_quote": "L Based on the answers you provided, you need a PAL/TAL to apply for a study permit. Find out how to get a PAL/TAL. Check the full list of exemptions You don’t need a PAL or TAL when applying for a study permit if any of the following applies to you. You’re applying to study at a preschool primary school (including kindergarten) secondary school (up to grade 12) degree-granting graduate program at the master’s or doctoral level at a public DLI starting January 1, 2026 school participating in the Francophone Minority Communities Student Pilot (FMCSP) and you have a letter of acceptance from this school identifying you as an applicant under the FMCSP federally designated military college or school in Quebec in a vocational training program that leads to one of the following: a diploma of vocational studies (DVS) an attestation of v",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_PAL_DETAIL_02",
+      "topic": "graduate_program_exemption",
+      "source_file": "data/raw/canada/study/study_permit_pal_tal_official.html",
+      "source_sha256": "6450a7f2d466f16945787f372bcfe04df0aa078320812e8d00f68b8da09946c3",
+      "text_start_offset": 5310,
+      "text_end_offset": 6192,
+      "exact_quote": "ny of the following applies to you. You’re applying to study at a preschool primary school (including kindergarten) secondary school (up to grade 12) degree-granting graduate program at the master’s or doctoral level at a public DLI starting January 1, 2026 school participating in the Francophone Minority Communities Student Pilot (FMCSP) and you have a letter of acceptance from this school identifying you as an applicant under the FMCSP federally designated military college or school in Quebec in a vocational training program that leads to one of the following: a diploma of vocational studies (DVS) an attestation of vocational specialization (AVS) a skills training certificate (STC) You’re an exchange student studying under an exchange arrangement between your home institution and a DLI in Canada, and you don’t pay tuition fees to the DLI. You’ve received a scholarship",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_PAL_DETAIL_03",
+      "topic": "pal_tal_validity_2026",
+      "source_file": "data/raw/canada/study/study_permit_pal_tal_official.html",
+      "source_sha256": "6450a7f2d466f16945787f372bcfe04df0aa078320812e8d00f68b8da09946c3",
+      "text_start_offset": 10671,
+      "text_end_offset": 11494,
+      "exact_quote": "until December 31, 2025 , for the 2025 study permit cap year This means that your PAL/TAL was issued between January 22, 2025, and December 31, 2025. until December 31, 2026 , for the 2026 study permit cap year This means that your PAL/TAL was issued between January 1, 2026, and December 31, 2026. You can’t apply with a PAL/TAL that was issued during a previous study permit cap year. Your PAL/TAL needs to be valid when you apply for your study permit. It does not need to be valid when you start your studies. What should I do if my PAL/TAL is expired? You can’t apply for a study permit with a PAL/TAL that has expired or is no longer valid. You must get a new PAL/TAL before you reapply. When can I reapply for a study permit with the same PAL/TAL? You can reapply with the same PAL/TAL if your PAL/TAL is still valid",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_PAL_DETAIL_04",
+      "topic": "school_change_and_new_pal_tal",
+      "source_file": "data/raw/canada/study/study_permit_pal_tal_official.html",
+      "source_sha256": "6450a7f2d466f16945787f372bcfe04df0aa078320812e8d00f68b8da09946c3",
+      "text_start_offset": 12234,
+      "text_end_offset": 13084,
+      "exact_quote": "s study permit application was approved or refused. You must get a new PAL/TAL before submitting your study permit application. I’m changing schools. As of January 22, 2025, you must get a new PAL/TAL before you submit your study permit application when changing schools . I’m changing my level of study. In most cases, you must get a new PAL/TAL when changing your level of study. This means that you’re moving from the secondary level to the post-secondary level, or the graduate level to the post-secondary level I’m attending a degree-granting graduate program at a public DLI. You don’t need a new PAL/TAL when moving from the post-secondary level to a degree-granting graduate program at a public DLI. I’m extending my study permit. If you’re applying for a study permit extension at the same DLI and same level of study as your current study p",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_PAL_DETAIL_05",
+      "topic": "extension_and_status_restoration",
+      "source_file": "data/raw/canada/study/study_permit_pal_tal_official.html",
+      "source_sha256": "6450a7f2d466f16945787f372bcfe04df0aa078320812e8d00f68b8da09946c3",
+      "text_start_offset": 12823,
+      "text_end_offset": 13686,
+      "exact_quote": "’t need a new PAL/TAL when moving from the post-secondary level to a degree-granting graduate program at a public DLI. I’m extending my study permit. If you’re applying for a study permit extension at the same DLI and same level of study as your current study permit, you don’t need a new PAL/TAL. If you’re applying to extend your study permit at a different DLI or at a different level of study, you need to get a new PAL/TAL, unless you’re moving from the post-secondary level to a degree-granting graduate program at a public DLI. I’m restoring my status. You need a new PAL/TAL when applying to restore your status as a student, even if you plan to keep studying at the same DLI and at the same level of study. I’m reapplying to study in Quebec. If you’re reapplying to study in Quebec, find out if you need to renew your authorizations . I’m studying in Que",
+      "review_status": "needs_review"
+    }
+  ],
+  "pal_tal_evidence": [
+    {
+      "evidence_id": "CA_STUDY_PAL_EVD_01",
+      "topic": "definition_and_general_requirement",
+      "source_file": "data/raw/canada/study/study_permit_pal_tal_ircc_en.txt",
+      "source_sha256": "467b748fd9a6c71f388837d6e235ae96ec4f5fee58aa3ac1425efec2a60f00a7",
+      "start_line": 22,
+      "end_line": 27,
+      "exact_quote": "Provincial attestation letter or territorial attestation letter\nThe provincial attestation letter or territorial attestation letter (PAL/TAL) is\n\na letter from the province or territory where you plan to study that confirms there’s space for you\nprovided by the designated learning institution (DLI) you plan to attend\nusually required to apply for a study permit",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_PAL_EVD_02",
+      "topic": "individualized_requirement_check",
+      "source_file": "data/raw/canada/study/study_permit_pal_tal_ircc_en.txt",
+      "source_sha256": "467b748fd9a6c71f388837d6e235ae96ec4f5fee58aa3ac1425efec2a60f00a7",
+      "start_line": 28,
+      "end_line": 38,
+      "exact_quote": "On this page\nFind out if you need a PAL/TAL\nAbout your PAL/TAL\nGetting and submitting your PAL/TAL\nHow long your PAL/TAL is valid for\nWhen to get a new PAL/TAL\nFind out if you need a PAL/TAL\nAnswer a few questions to find out if you need a PAL/TAL when you apply for your study permit.\n\nAre you applying to study at a Quebec DLI? (required)\nMake your selection...",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_PAL_EVD_03",
+      "topic": "issuance_submission_and_validity",
+      "source_file": "data/raw/canada/study/study_permit_pal_tal_ircc_en.txt",
+      "source_sha256": "467b748fd9a6c71f388837d6e235ae96ec4f5fee58aa3ac1425efec2a60f00a7",
+      "start_line": 39,
+      "end_line": 51,
+      "exact_quote": "About your PAL/TAL\nGetting and submitting your PAL/TAL\nFind out how to get your PAL/TAL and when you should submit it.\n\nWho issues my PAL/TAL?\nHow do I apply for a PAL/TAL?\nWhen do I submit my PAL/TAL?\nHow long your PAL/TAL is valid for\nYour PAL/TAL is linked to the school you’re applying to. In most cases, it must be used during the year it was issued.\n\nHow long is my PAL/TAL valid for?\nWhat should I do if my PAL/TAL is expired?\nWhen can I reapply for a study permit with the same PAL/TAL?",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_PAL_EVD_04",
+      "topic": "renewal_scenarios_listed",
+      "source_file": "data/raw/canada/study/study_permit_pal_tal_ircc_en.txt",
+      "source_sha256": "467b748fd9a6c71f388837d6e235ae96ec4f5fee58aa3ac1425efec2a60f00a7",
+      "start_line": 52,
+      "end_line": 63,
+      "exact_quote": "When to get a new PAL/TAL\nIn some cases, you may need to get a new, valid PAL/TAL before you can reapply for a study permit. The scenarios below will help you find out what to do based on your situation.\n\nMy PAL/TAL has expired or is no longer valid.\nMy previous study permit application was approved or refused.\nI’m changing schools.\nI’m changing my level of study.\nI’m attending a degree-granting graduate program at a public DLI.\nI’m extending my study permit.\nI’m restoring my status.\nI’m reapplying to study in Quebec.\nI’m studying in Quebec. Can I reuse my CAQ?",
+      "review_status": "needs_review"
+    }
+  ],
+  "pal_tal_detailed_rules_review": {
+    "exemptions": {
+      "rule": null,
+      "source_details_missing": true,
+      "review_status": "needs_review"
+    },
+    "validity_2026": {
+      "expiry_date": null,
+      "source_details_missing": true,
+      "review_status": "needs_review"
+    },
+    "school_change": {
+      "rule": null,
+      "source_details_missing": true,
+      "review_status": "needs_review"
+    },
+    "study_level_change": {
+      "rule": null,
+      "source_details_missing": true,
+      "review_status": "needs_review"
+    },
+    "study_permit_extension": {
+      "rule": null,
+      "source_details_missing": true,
+      "review_status": "needs_review"
+    },
+    "quebec_caq_reuse": {
+      "rule": null,
+      "source_details_missing": true,
+      "review_status": "needs_review"
+    }
+  },
+  "financial_support_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
+    "source_file": "data/raw/canada/study/study_permit_financial_support_ircc_en.txt",
+    "source_sha256": "38b622eff425778c724e8af44ed1e9e03a73a24d9a6e4ac0d1090a75a18c17b6",
+    "source_last_modified": "2026-08-28",
+    "char_count": 6634,
+    "line_count": 156,
+    "review_status": "needs_review"
+  },
+  "financial_support_evidence": [
+    {
+      "evidence_id": "CA_STUDY_FIN_EVD_01",
+      "topic": "financial_capacity_general",
+      "source_file": "data/raw/canada/study/study_permit_financial_support_ircc_en.txt",
+      "source_sha256": "38b622eff425778c724e8af44ed1e9e03a73a24d9a6e4ac0d1090a75a18c17b6",
+      "start_line": 21,
+      "end_line": 33,
+      "exact_quote": "Proof of financial support\nYou must prove that you have enough money, without working in Canada, to pay for all the following:\n\ntuition fees for the course or program of studies\nliving expenses for yourself and the family members who come with you while you’re in Canada\ntransportation to and from Canada for yourself and your accompanying family members\nHow to show you meet the financial capacity requirements\nYou must provide us with documents that prove you have the required funds available for all the costs listed above. This means that\n\nyou must show you have enough financial resources for the first year of your studies\nfor programs more than a year long, you must also tell us how you plan to pay for the full duration of your studies\nFor example, you can show proof that your scholarship is more than a year long, proof that your parents are employed, etc.\nWe’ll assess the amount of funds you have and their source, and confirm that you have funds available to you throughout the full duration of your studies.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_FIN_EVD_02",
+      "topic": "accepted_proof_examples",
+      "source_file": "data/raw/canada/study/study_permit_financial_support_ircc_en.txt",
+      "source_sha256": "38b622eff425778c724e8af44ed1e9e03a73a24d9a6e4ac0d1090a75a18c17b6",
+      "start_line": 35,
+      "end_line": 70,
+      "exact_quote": "Common documents that can be used to show proof of funds\nThe documents below are examples of documents you can use as proof of funds.\n\nThis is not a complete list. There may be other types of documents you can provide as proof instead.\nYou don’t need to provide all of these documents, but you do need to give enough proof to show that you meet all the financial capacity requirements.\nTuition and study costs\nFor example, you can use\n\nproof you paid for the first year of your tuition and housing fees, such as a receipt from your designated learning institution\nThis must be accompanied by other documents proving you have sufficient funds to cover living expenses and transportation costs.\nproof of a student or education loan from a bank\nproof of a scholarship or that you’re in a Government of Canada–funded educational program\nIf your scholarship only covers tuition, you must provide other documents proving you have sufficient funds to cover living expenses and transportation costs.\nEmployment and other financial support\nFor example, you can use\n\npay stubs from recent employment\na letter from the person or institution giving you money that includes\ntheir employment or occupation (a letter from the employer, pay stubs, etc.)\ntheir relationship to you\nthe number of their dependants, if they have any\nthe amount of their support\nproof of the relationship to the person or institution giving you money and evidence of the financial support they will provide\nThis must include a copy of their identification photo or proof of their business registration.\nBanking and other income\nFor example, you can use\n\nproof of a Canadian bank account in your name if you’ve transferred money to Canada\na guaranteed investment certificate from a Canadian financial institution\nyour bank statements (for your Canadian or foreign bank account) for the past 6 months, including the month you submitted your application or the month prior\nThis must include documentation to show the source of the income (employment income, savings transfers, etc.) in the bank statements.\nfinancial documents related to a pension plan\nproof of income from rental properties\nOther documents may also be required. Check the visa office instructions for your country or region for local requirements.\n\nIf your country uses foreign exchange controls, you must prove that you’ll be allowed to export funds for all of your expenses.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_FIN_EVD_03",
+      "topic": "living_costs_from_2026_09_01",
+      "source_file": "data/raw/canada/study/study_permit_financial_support_ircc_en.txt",
+      "source_sha256": "38b622eff425778c724e8af44ed1e9e03a73a24d9a6e4ac0d1090a75a18c17b6",
+      "start_line": 72,
+      "end_line": 92,
+      "exact_quote": "How much money you need for living expenses\nThis chart tells you how much money you will need to support yourself and your family members in Canada for the first year of your program of studies. These amounts are updated each year.\n\nThese amounts do not include tuition and transportation costs.\n\nIf you apply on or after September 1, 2026\nAll provinces and territories except Quebec\n\nNumber of family members\n(including the applicant)\tAmount required per year\n(excluding tuition and transportation costs)\n(in CAN$)\n1\t$23,448\n2\t$29,192\n3\t$35,888\n4\t$43,572\n5\t$49,419\n6\t$55,736\n7\t$62,054\nIf more than 7 people, each additional family member\t$6,318\nExample: If you and 2 family members want to come to a province or territory (other than Quebec) for a year, you’ll need $35,888 for living expenses.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_FIN_EVD_04",
+      "topic": "living_costs_2025_to_2026_08_31",
+      "source_file": "data/raw/canada/study/study_permit_financial_support_ircc_en.txt",
+      "source_sha256": "38b622eff425778c724e8af44ed1e9e03a73a24d9a6e4ac0d1090a75a18c17b6",
+      "start_line": 94,
+      "end_line": 108,
+      "exact_quote": "If you apply between January 1, 2025, and August 31, 2026 (inclusively)\nAll provinces and territories except Quebec\nNumber of family members\n(including the applicant)\tAmount required per year\n(excluding tuition and transportation costs)\n(in CAN$)\n1\t$22,895\n2\t$28,502\n3\t$35,040\n4\t$42,543\n5\t$48,252\n6\t$54,420\n7\t$60,589\nIf more than 7 people, each additional family member\t$6,170\nExample: If you and 2 family members want to come to a province or territory (other than Quebec) for a year, you’ll need $35,040 for living expenses.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_FIN_EVD_05",
+      "topic": "quebec_separate_requirements",
+      "source_file": "data/raw/canada/study/study_permit_financial_support_ircc_en.txt",
+      "source_sha256": "38b622eff425778c724e8af44ed1e9e03a73a24d9a6e4ac0d1090a75a18c17b6",
+      "start_line": 110,
+      "end_line": 111,
+      "exact_quote": "Quebec\nTo obtain a Quebec Acceptance Certificate (Certificat d’acceptation du Québec [CAQ]) and study in Quebec, applicants must show they can financially cover the costs outlined by the Ministère de l’Immigration, de la Francisation et de l’Intégration.",
+      "review_status": "needs_review"
+    }
+  ],
+  "financial_living_cost_tables": [
+    {
+      "table_id": "CA_STUDY_LIVING_COST_2026_09",
+      "applies_from": "2026-09-01",
+      "applies_through": null,
+      "geographic_scope": "canada_except_quebec",
+      "currency": "CAD",
+      "period": "first_year",
+      "includes_tuition": false,
+      "includes_transportation": false,
+      "source_evidence_id": "CA_STUDY_FIN_EVD_03",
+      "amounts_by_total_family_members": {
+        "1": 23448,
+        "2": 29192,
+        "3": 35888,
+        "4": 43572,
+        "5": 49419,
+        "6": 55736,
+        "7": 62054
+      },
+      "additional_amount_per_person_above_seven": 6318,
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "table_id": "CA_STUDY_LIVING_COST_2025_01",
+      "applies_from": "2025-01-01",
+      "applies_through": "2026-08-31",
+      "geographic_scope": "canada_except_quebec",
+      "currency": "CAD",
+      "period": "first_year",
+      "includes_tuition": false,
+      "includes_transportation": false,
+      "source_evidence_id": "CA_STUDY_FIN_EVD_04",
+      "amounts_by_total_family_members": {
+        "1": 22895,
+        "2": 28502,
+        "3": 35040,
+        "4": 42543,
+        "5": 48252,
+        "6": 54420,
+        "7": 60589
+      },
+      "additional_amount_per_person_above_seven": 6170,
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "financial_support_conditions_review": {
+    "general_financial_capacity": {
+      "source_evidence_id": "CA_STUDY_FIN_EVD_01",
+      "components": [
+        "tuition_fees",
+        "living_expenses",
+        "transportation_to_and_from_canada"
+      ],
+      "employment_income_in_canada_not_assumed": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "multi_year_studies": {
+      "source_evidence_id": "CA_STUDY_FIN_EVD_01",
+      "first_year_funds_evidence": true,
+      "full_duration_funding_plan_if_over_one_year": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "proof_of_funds": {
+      "source_evidence_id": "CA_STUDY_FIN_EVD_02",
+      "example_documents": [
+        "tuition_or_housing_payment_receipt",
+        "student_or_education_loan",
+        "scholarship_or_funded_program",
+        "employment_income_documents",
+        "financial_supporter_documents",
+        "canadian_bank_account",
+        "guaranteed_investment_certificate",
+        "six_month_bank_statements_with_source",
+        "pension_or_rental_income_documents"
+      ],
+      "all_examples_mandatory": false,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "quebec": {
+      "source_evidence_id": "CA_STUDY_FIN_EVD_05",
+      "use_federal_non_quebec_amounts": false,
+      "quebec_amounts": null,
+      "separate_provincial_source_required": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "application_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/apply.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/study/study_permit_application_ircc_en.txt",
+    "source_sha256": "cd4002ef1b7fec01c1b38a5085c924b273caec37d41afe3b5d2e0895a6224928",
+    "source_last_modified": "2026-09-02",
+    "char_count": 3557,
+    "line_count": 104,
+    "review_status": "needs_review"
+  },
+  "application_evidence": [
+    {
+      "evidence_id": "CA_STUDY_APP_EVD_01",
+      "topic": "application_location",
+      "source_file": "data/raw/canada/study/study_permit_application_ircc_en.txt",
+      "source_sha256": "cd4002ef1b7fec01c1b38a5085c924b273caec37d41afe3b5d2e0895a6224928",
+      "start_line": 20,
+      "end_line": 21,
+      "exact_quote": "How to apply\nGenerally, you must apply for a study permit before you come to Canada. Some people can apply for a study permit from within Canada. In some cases, you can apply when you arrive in Canada at the port of entry. Make sure you understand which option is available to you.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_APP_EVD_02",
+      "topic": "document_preparation",
+      "source_file": "data/raw/canada/study/study_permit_application_ircc_en.txt",
+      "source_sha256": "cd4002ef1b7fec01c1b38a5085c924b273caec37d41afe3b5d2e0895a6224928",
+      "start_line": 29,
+      "end_line": 37,
+      "exact_quote": "Get your documents ready\nWhen you apply, you should submit\n\nthe letter of acceptance from the designated learning institution (DLI) you’ll be attending\na provincial attestation letter (PAL) or territorial attestation letter (TAL)\nYou can upload your PAL/TAL into the Provincial attestation letter (required) field in your application. If this option is missing, you must upload your PAL/TAL to the Client information field. If you meet an exception, you must provide any evidence in the Client information field.\nas many of the documents needed for a complete application as possible\nWe won’t be able to finalize your study permit until you’ve submitted a complete application.\nWaiting to submit documents will cause delays in processing.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_APP_EVD_03",
+      "topic": "online_application_and_paper_exceptions",
+      "source_file": "data/raw/canada/study/study_permit_application_ircc_en.txt",
+      "source_sha256": "cd4002ef1b7fec01c1b38a5085c924b273caec37d41afe3b5d2e0895a6224928",
+      "start_line": 38,
+      "end_line": 44,
+      "exact_quote": "Apply online\nIf you’re applying for a study permit, you must apply online, whether you’re outside of Canada or already in Canada.\n\nYou’re only eligible to apply on paper if you\n\nhave a disability that prevents you from applying online\nhold an identity or travel document for non-national residents, refugees or stateless persons",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_APP_EVD_04",
+      "topic": "doctoral_processing_and_application_routes",
+      "source_file": "data/raw/canada/study/study_permit_application_ircc_en.txt",
+      "source_sha256": "cd4002ef1b7fec01c1b38a5085c924b273caec37d41afe3b5d2e0895a6224928",
+      "start_line": 45,
+      "end_line": 60,
+      "exact_quote": "Get faster processing as a doctoral student New\nIf you’re a doctoral (PhD) student, you and your accompanying family members may be able to get faster processing on your applications.\n\nCheck if you’re eligible and learn how to get your applications processed faster.\n\nGet specific instructions on how to apply\nVenezuelan passport holders\n\nYou may need to complete extra steps when you fill out your application.\n\nAnswer a few questions to get the next steps for your situation.\n\nWhere are you applying from? (required)\nOutside Canada\nWithin Canada\nAt a port of entry",
+      "review_status": "needs_review"
+    }
+  ],
+  "application_process_review": {
+    "application_location": {
+      "source_evidence_id": "CA_STUDY_APP_EVD_01",
+      "general_route": "before_entering_canada",
+      "other_routes_to_verify": [
+        "within_canada",
+        "at_port_of_entry"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "document_submission": {
+      "source_evidence_id": "CA_STUDY_APP_EVD_02",
+      "documents_to_review": [
+        "letter_of_acceptance",
+        "pal_tal_or_exemption_evidence",
+        "other_required_documents"
+      ],
+      "pal_tal_exemption_proof_required_if_applicable": true,
+      "incomplete_application_may_delay_processing": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "application_method": {
+      "source_evidence_id": "CA_STUDY_APP_EVD_03",
+      "general_method": "online",
+      "paper_application_exceptions_to_verify": [
+        "disability_preventing_online_application",
+        "specified_non_national_refugee_or_stateless_documents"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "doctoral_processing": {
+      "source_evidence_id": "CA_STUDY_APP_EVD_04",
+      "faster_processing_may_be_available": true,
+      "eligible_family_members_may_be_included": true,
+      "specific_eligibility_not_verified": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "fees_and_biometrics": {
+      "application_fee_cad": 150.0,
+      "biometrics_fee_cad": 85,
+      "biometrics_deadline_days": 30,
+      "separate_official_source_required": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "biometrics_family_fee_cap_cad": 170,
+      "source_evidence_id": "CA_STUDY_BIO_EVD_01",
+      "deadline_trigger": "bil_received",
+      "fee_source_evidence_id": "CA_STUDY_FEE_EVD_01",
+      "fee_details_separate_source_required": false,
+      "biometrics_reuse_validity_years": 10,
+      "biometrics_may_not_be_required_again": true,
+      "biometrics_reuse_source_evidence_id": "CA_STUDY_BIO_REUSE_02"
+    }
+  },
+  "after_apply_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/after-apply.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/study/study_permit_after_apply_ircc_en.txt",
+    "source_sha256": "c203220204da2417a889535fe67c419811fda0a720ffcb3e9c9365b4456ad3da",
+    "source_last_modified": "2026-08-28",
+    "char_count": 5830,
+    "line_count": 140,
+    "review_status": "needs_review"
+  },
+  "after_apply_evidence": [
+    {
+      "evidence_id": "CA_STUDY_AFTER_EVD_01",
+      "topic": "biometrics",
+      "source_file": "data/raw/canada/study/study_permit_after_apply_ircc_en.txt",
+      "source_sha256": "c203220204da2417a889535fe67c419811fda0a720ffcb3e9c9365b4456ad3da",
+      "start_line": 27,
+      "end_line": 28,
+      "exact_quote": "1. Your fingerprints and photo (biometrics)\nBook your biometrics collection appointment as soon as you can to avoid processing delays. Find out how to give biometrics.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_AFTER_EVD_02",
+      "topic": "processing_and_missing_documents",
+      "source_file": "data/raw/canada/study/study_permit_after_apply_ircc_en.txt",
+      "source_sha256": "c203220204da2417a889535fe67c419811fda0a720ffcb3e9c9365b4456ad3da",
+      "start_line": 30,
+      "end_line": 45,
+      "exact_quote": "2. We process your study permit application\nWe’ll check your application to make sure you have all the necessary documents. If it’s incomplete, we may return your application without processing it or request the missing documents.\n\nWe may also ask you to\n\ngo to an interview with our officials in your country or\nsend us more information\nYou may also need to get a\n\nmedical exam (if required) or\npolice certificate (if required)\nIf you want to defer your enrolment while we process your application\nMissing documents\nIf you weren’t able to submit all the required documents with your application, you can submit the missing documents through your online account or our web form.\n\nWe won’t process your study permit until you’ve submitted a complete application. Waiting to submit documents will cause delays in processing.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_AFTER_EVD_03",
+      "topic": "application_updates_and_status",
+      "source_file": "data/raw/canada/study/study_permit_after_apply_ircc_en.txt",
+      "source_sha256": "c203220204da2417a889535fe67c419811fda0a720ffcb3e9c9365b4456ad3da",
+      "start_line": 47,
+      "end_line": 54,
+      "exact_quote": "Updating your application\nIf you move or change your address, telephone number or any other contact information after you apply, you must update your application.\n\nThere’s a new way to check your application status\nUse the application status tracker(opens in a new tab)  to get updates about your application. To create an account you need your\n\nunique client identifier (UCI)\napplication number",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_AFTER_EVD_04",
+      "topic": "approval_and_study_permit_issuance",
+      "source_file": "data/raw/canada/study/study_permit_after_apply_ircc_en.txt",
+      "source_sha256": "c203220204da2417a889535fe67c419811fda0a720ffcb3e9c9365b4456ad3da",
+      "start_line": 55,
+      "end_line": 80,
+      "exact_quote": "3. If we approve your application\nYou’ll get your study permit\n\nat the port of entry when you arrive in Canada or\nmailed to you, if you’re already in Canada\nIf you applied for your study permit from outside Canada\nWe’ll send you a port of entry letter of introduction that says you’re allowed to study in Canada. This letter is not your study permit.\n\nYou need to bring this letter with you and show it to a border services officer when you arrive in Canada. We’ll also send you an electronic travel authorization (eTA) or a visitor visa (temporary resident visa) to enter Canada, if you need one.\n\nIf you’re from a country where you need an eTA, the letter of introduction will include information about your eTA. Your eTA will be linked to your passport and is valid for 5 years or until your passport expires, whichever comes first. It’s important that you travel with the passport you used when you applied for your study permit.\n\nIf you’re from a country where you need a visitor visa, the visa will be in your passport. It’ll show if you can enter Canada once or multiple times. You must enter Canada before your visa expires.\n\nIf you’re a lawful permanent resident of the United States, travel with a valid green card (or equivalent official proof of status in the US) and a valid passport from your country of nationality (or an equivalent document).\n\nIf you applied for your study permit from within Canada\nIf you were eligible to apply from within Canada, you filled out a form called “Application to change conditions, extend my stay or remain in Canada as a student” (IMM 5709).\n\nIn this case, we’ll mail the study permit to the Canadian address you gave us.\n\nIf your mailing address changes before we send you our decision, you must give us your new address.\n\nStudying while you wait for your study permit to arrive\n\nWe’ll send you a letter of approval in your online account to let you know your study permit has been approved. You can start studying as soon as you get this letter. You don’t have to wait until you get your study permit in the mail to start studying.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_AFTER_EVD_05",
+      "topic": "refusal_and_reasons",
+      "source_file": "data/raw/canada/study/study_permit_after_apply_ircc_en.txt",
+      "source_sha256": "c203220204da2417a889535fe67c419811fda0a720ffcb3e9c9365b4456ad3da",
+      "start_line": 82,
+      "end_line": 92,
+      "exact_quote": "If we refuse your application\nWe’ll send you a letter explaining why.\n\nWe may refuse your application if you don’t\n\nhave a valid letter of acceptance\nshow proof that you have enough money to support yourself while studying in Canada\npass your medical exam, if you needed to get one\nconvince the visa officer that your main purpose in Canada is to study or\nconvince the visa officer that you’ll leave Canada at the end of your study period\nIf you have questions about why you were refused, contact the visa office that sent you the refusal letter.",
+      "review_status": "needs_review"
+    }
+  ],
+  "after_apply_process_review": {
+    "biometrics": {
+      "source_evidence_id": "CA_STUDY_AFTER_EVD_01",
+      "appointment_recommended_promptly": true,
+      "biometrics_required_for_every_applicant": null,
+      "biometrics_deadline_days": 30,
+      "separate_deadline_source_required": false,
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "individual_fee_cad": 85,
+      "fee_source_evidence_id": "CA_STUDY_BIO_EVD_01",
+      "deadline_trigger": "bil_received"
+    },
+    "application_processing": {
+      "source_evidence_id": "CA_STUDY_AFTER_EVD_02",
+      "checks_document_completeness": true,
+      "possible_additional_steps": [
+        "interview",
+        "additional_information",
+        "medical_exam_if_required",
+        "police_certificate_if_required"
+      ],
+      "missing_documents_may_delay_processing": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "application_updates": {
+      "source_evidence_id": "CA_STUDY_AFTER_EVD_03",
+      "contact_information_changes_must_be_reported": true,
+      "status_tracking_identifiers": [
+        "unique_client_identifier",
+        "application_number"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "approval_outside_canada": {
+      "source_evidence_id": "CA_STUDY_AFTER_EVD_04",
+      "letter_of_introduction": "issued_if_approved",
+      "letter_is_study_permit": false,
+      "actual_permit_issued_at_port_of_entry": true,
+      "entry_document_if_required": [
+        "electronic_travel_authorization",
+        "temporary_resident_visa"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "approval_inside_canada": {
+      "source_evidence_id": "CA_STUDY_AFTER_EVD_04",
+      "study_permit_sent_by_mail": true,
+      "approval_letter_in_online_account": true,
+      "study_start_after_approval_letter": "subject_to_applicable_conditions",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "refusal": {
+      "source_evidence_id": "CA_STUDY_AFTER_EVD_05",
+      "reason_letter_provided": true,
+      "illustrative_reasons": [
+        "invalid_letter_of_acceptance",
+        "insufficient_financial_support",
+        "required_medical_exam_not_passed",
+        "study_purpose_not_established",
+        "departure_intention_not_established"
+      ],
+      "reasons_are_not_exhaustive": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "arrival_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare-arrival.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/study/study_permit_arrival_ircc_en.txt",
+    "source_sha256": "ddebb1b38f91888115b7f99e0a452f0cf65a1ab31f6bac629673539282afdcb7",
+    "source_last_modified": "2026-08-28",
+    "char_count": 5021,
+    "line_count": 114,
+    "review_status": "needs_review"
+  },
+  "arrival_evidence": [
+    {
+      "evidence_id": "CA_STUDY_ARR_EVD_01",
+      "topic": "early_arrival_and_work_restrictions",
+      "source_file": "data/raw/canada/study/study_permit_arrival_ircc_en.txt",
+      "source_sha256": "ddebb1b38f91888115b7f99e0a452f0cf65a1ab31f6bac629673539282afdcb7",
+      "start_line": 32,
+      "end_line": 35,
+      "exact_quote": "How early can you arrive in Canada before you start studying\nThere is no set time frame for you to arrive in Canada before you begin your studies. You should just give yourself a reasonable amount of time to prepare before you start studying.\n\nYou are not allowed to work on or off campus until you begin your studies in Canada.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_ARR_EVD_02",
+      "topic": "dli_change_after_approval",
+      "source_file": "data/raw/canada/study/study_permit_arrival_ircc_en.txt",
+      "source_sha256": "ddebb1b38f91888115b7f99e0a452f0cf65a1ab31f6bac629673539282afdcb7",
+      "start_line": 37,
+      "end_line": 38,
+      "exact_quote": "Changing your designated learning institution if you’re outside Canada\nIf your application for a study permit has been approved and you change your designated learning institution (DLI), you must submit a new study permit application with a new letter of acceptance. You must also pay all the fees for the new application.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_ARR_EVD_03",
+      "topic": "arrival_documents_and_financial_capacity",
+      "source_file": "data/raw/canada/study/study_permit_arrival_ircc_en.txt",
+      "source_sha256": "ddebb1b38f91888115b7f99e0a452f0cf65a1ab31f6bac629673539282afdcb7",
+      "start_line": 41,
+      "end_line": 56,
+      "exact_quote": "When you arrive in Canada\nWhen you arrive in Canada, you’ll meet a border services officer who will make sure you meet some basic requirements. To enter Canada, you must\n\nhave a valid travel document, such as a passport\nhave the port of entry letter of introduction the visa office sent you when they approved your study permit\nThis letter has your permit reference number, which we use to issue your study permit.\nhave a copy of a valid letter of acceptance from your school\nhave letters of reference or any other documents the visa office told you to bring\nhave a valid electronic travel authorization (eTA), a valid visitor visa (temporary resident visa), a valid green card (or equivalent official proof of U.S. status) or another valid travel document\nIf you have a valid eTA, it’ll be linked to the passport you used to apply for your study permit.\nhave enough money for your stay (the amount you will need can vary—it depends on things such as how long you will stay, and whether you will stay in a hotel, or with friends or relatives)\nbe in good health\nhave no criminal or immigration-related convictions\nconvince an immigration officer that\nyou have ties—such as a job, home, financial assets or family—that will take you back to your home country\nyou will leave Canada at the end of your visit",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_ARR_EVD_04",
+      "topic": "medical_exam_validity",
+      "source_file": "data/raw/canada/study/study_permit_arrival_ircc_en.txt",
+      "source_sha256": "ddebb1b38f91888115b7f99e0a452f0cf65a1ab31f6bac629673539282afdcb7",
+      "start_line": 57,
+      "end_line": 62,
+      "exact_quote": "have valid immigration medical exam results (if you needed one)\nYour exam is valid for 12 months from the day you get it.\nIt must be valid the day you enter Canada.\nIf your exam will expire before you enter Canada, you need to get another medical exam.\nThis applies even if your letter of introduction is still valid.\nprove that you’ll leave Canada at the end of your stay",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_ARR_EVD_05",
+      "topic": "entry_proof_and_inadmissibility",
+      "source_file": "data/raw/canada/study/study_permit_arrival_ircc_en.txt",
+      "source_sha256": "ddebb1b38f91888115b7f99e0a452f0cf65a1ab31f6bac629673539282afdcb7",
+      "start_line": 63,
+      "end_line": 69,
+      "exact_quote": "If you need proof you entered Canada\nYour school or training facility may need you to prove you entered Canada. If you need proof of entry, make sure a border services officer stamps your passport before you leave Canadian customs. You may also be able to use a Primary Inspection Kiosk to stamp your passport.\n\nInadmissibility\nSome people are inadmissible—they’re not allowed to come to Canada. Several things can make you inadmissible, including involvement in criminal activity, in human rights violations or in organized crime.\n\nYou can also be inadmissible for security, health or financial reasons. Find out more about inadmissibility.",
+      "review_status": "needs_review"
+    }
+  ],
+  "arrival_process_review": {
+    "arrival_timing": {
+      "source_evidence_id": "CA_STUDY_ARR_EVD_01",
+      "fixed_earliest_arrival_days": null,
+      "reasonable_preparation_time_advised": true,
+      "on_or_off_campus_work_before_studies": false,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "dli_change_after_outside_canada_approval": {
+      "source_evidence_id": "CA_STUDY_ARR_EVD_02",
+      "new_study_permit_application_required": true,
+      "new_letter_of_acceptance_required": true,
+      "new_application_fees_required": true,
+      "scope": "approved_application_from_outside_canada",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "entry_documents": {
+      "source_evidence_id": "CA_STUDY_ARR_EVD_03",
+      "documents_to_review": [
+        "valid_passport_or_travel_document",
+        "port_of_entry_letter_of_introduction",
+        "valid_letter_of_acceptance_copy",
+        "visa_office_requested_documents",
+        "applicable_entry_authorization",
+        "proof_of_sufficient_funds"
+      ],
+      "possible_entry_authorizations": [
+        "eta",
+        "temporary_resident_visa",
+        "other_applicable_status_or_travel_document"
+      ],
+      "all_authorizations_required_together": false,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "medical_exam_at_entry": {
+      "source_evidence_id": "CA_STUDY_ARR_EVD_04",
+      "conditional_on_medical_exam_requirement": true,
+      "exam_validity_months": 12,
+      "must_be_valid_on_entry_date": true,
+      "new_exam_if_expired_before_entry": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "entry_inspection": {
+      "source_evidence_ids": [
+        "CA_STUDY_ARR_EVD_03",
+        "CA_STUDY_ARR_EVD_05"
+      ],
+      "border_officer_checks_requirements": true,
+      "admissibility_review_required": true,
+      "entry_stamp_if_proof_requested": "review_available_options",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "enrolment_deferral": {
+      "source_evidence_id": null,
+      "details_in_captured_text": false,
+      "separate_source_required": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "arrival_legal_review": {
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  },
+  "biometrics_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/how-to-give.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/study/study_permit_biometrics_ircc_en.txt",
+    "source_sha256": "e441a1c9f60d11ea7fba0a68684eea7ccfe0164d6684747f57fd6bb10e641145",
+    "source_last_modified": "2026-03-30",
+    "char_count": 5805,
+    "line_count": 150,
+    "review_status": "needs_review"
+  },
+  "biometrics_evidence": [
+    {
+      "evidence_id": "CA_STUDY_BIO_EVD_01",
+      "topic": "biometrics_fees",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_ircc_en.txt",
+      "source_sha256": "e441a1c9f60d11ea7fba0a68684eea7ccfe0164d6684747f57fd6bb10e641145",
+      "start_line": 25,
+      "end_line": 38,
+      "exact_quote": "Step 1: Pay the biometrics fee\nYou must pay the biometrics fee when you apply, or you may experience delays.\n\nBiometrics fees\nThe fee you pay depends on your situation:\n\nIndividual applicant: CAN$85\nFamilies applying at the same time (2 or more members of a family): maximum total fee of CAN$170\nFamily members eligible for this fee include\nyour spouse and common-law partner\nyour dependent children or their dependent children\nCheck if your child is a dependant.\nGroups of 3 or more performing artists and their staff applying for work permits at the same time: maximum total fee of CAN$255\nTransit visa applications: There is no fee to give biometrics for a transit visa.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_BIO_EVD_02",
+      "topic": "late_fee_payment",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_ircc_en.txt",
+      "source_sha256": "e441a1c9f60d11ea7fba0a68684eea7ccfe0164d6684747f57fd6bb10e641145",
+      "start_line": 40,
+      "end_line": 50,
+      "exact_quote": "How to pay the biometrics fee after you’ve applied\nTo pay for your biometrics fee after you already applied:\n\nIf you applied online, you should\n\npay online\nupload your receipt in your IRCC secure account or by using our web form\nIf you applied on paper, you should\n\npay online\nupload your receipt using our web form",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_BIO_EVD_03",
+      "topic": "bil_and_identity_documents",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_ircc_en.txt",
+      "source_sha256": "e441a1c9f60d11ea7fba0a68684eea7ccfe0164d6684747f57fd6bb10e641145",
+      "start_line": 51,
+      "end_line": 73,
+      "exact_quote": "Step 2: Get the biometric instruction letter\nAfter you pay the biometric fee, you’ll get a biometric instruction letter (BIL) that\n\nconfirms that you need to give your biometrics\ntells you how to book a biometrics appointment\nWhen you go to your biometrics appointment, you must bring both of the following documents:\n\nyour BIL\nyour valid passport\nAsylum claimants and protected persons with no passport\nIf you’ve been issued a biometric instruction letter but you don’t have a passport, you must bring one of the following documents to your appointment:\n\nyour refugee protection identity document (or refugee protection claimant document) (valid or expired) with your photo attached\na certified copy of your passport\nThis exception applies to you if you’re\n\nan asylum claimant, and your claim\nis in process\nhas been found ineligible\nhas been rejected by the Immigration and Refugee Board of Canada (IRB)\na protected person, including people\nwhose asylum claims have been accepted by the IRB\nwho have been successful in a Pre-Removal Risk Assessment application",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_BIO_EVD_04",
+      "topic": "current_bil_requirement",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_ircc_en.txt",
+      "source_sha256": "e441a1c9f60d11ea7fba0a68684eea7ccfe0164d6684747f57fd6bb10e641145",
+      "start_line": 74,
+      "end_line": 78,
+      "exact_quote": "Use the BIL you received as part of your current application\nIf you try to give your biometrics with a BIL from a previous application\n\nthere may be delays in the processing of your current application or\nyour current application may be refused",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_BIO_EVD_05",
+      "topic": "collection_and_booking",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_ircc_en.txt",
+      "source_sha256": "e441a1c9f60d11ea7fba0a68684eea7ccfe0164d6684747f57fd6bb10e641145",
+      "start_line": 79,
+      "end_line": 108,
+      "exact_quote": "Step 3: Go to an official biometric collection site\nThere are 4 things you need to know before you give your biometrics:\n\nYou must give your biometrics in person.\nYou need to make an appointment to give your biometrics.\nIf you’re visiting a visa application centre, booking ahead is best. However, some walk-in or emergency appointments may be accommodated.\nFor biometric collection at a designated Service Canada office or a U.S. application support centre, an appointment is required.\nBooking an appointment is free.\nBook your appointment as soon as you get your BIL.\nTo avoid fraud, use our official website to find your local visa application centre, Service Canada (Canada only) or a United States (U.S.) Application Support Center (U.S. only) location.\n\nTips to get the best photos and fingerprints during your biometrics appointment\n What can be included\nglasses\nYour eyes must be clearly visible.\nThere must be no glare on the lenses.\nhair down or up\nYour hair must be off your face so that the edges of your face are visible.\nhats and head coverings worn daily for religious beliefs or medical reasons\nYour full face must be clearly visible.\nThe head covering must not create shadows on your face.\na wheelchair, if you place a white blanket behind your head\nYour facial features and the edges of your face must both be clearly visible.\n What can’t be included\nsunglasses or tinted eye glasses\nThis includes prescription lenses, even when your eyes are clearly visible.\nhats and head coverings not worn daily for religious beliefs or medical reasons\nhands must be henna-free\nTemporary hand injuries such as cuts, cracks on your fingers must be healed before giving your biometrics.\nNote: If we can’t get high-quality fingerprints during your appointment, you may need to give your biometrics again at a later date.",
+      "review_status": "needs_review"
+    }
+  ],
+  "biometrics_fees": {
+    "currency": "CAD",
+    "individual_applicant": 85,
+    "eligible_family_maximum_total": 170,
+    "family_scope": "eligible_family_members_applying_at_same_time",
+    "appointment_booking_fee": 0,
+    "source_evidence_ids": [
+      "CA_STUDY_BIO_EVD_01",
+      "CA_STUDY_BIO_EVD_05"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  },
+  "biometrics_process_review": {
+    "payment": {
+      "source_evidence_ids": [
+        "CA_STUDY_BIO_EVD_01",
+        "CA_STUDY_BIO_EVD_02"
+      ],
+      "payment_with_application_advised": true,
+      "late_payment_may_delay_processing": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "instruction_letter": {
+      "source_evidence_ids": [
+        "CA_STUDY_BIO_EVD_03",
+        "CA_STUDY_BIO_EVD_04"
+      ],
+      "current_application_bil_required": true,
+      "standard_appointment_documents": [
+        "current_biometric_instruction_letter",
+        "valid_passport"
+      ],
+      "identity_document_exceptions_need_review": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "collection": {
+      "source_evidence_id": "CA_STUDY_BIO_EVD_05",
+      "in_person_collection": true,
+      "official_collection_location_required": true,
+      "appointment_should_be_booked_promptly": true,
+      "booking_is_free": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "deadline_and_exemptions": {
+      "source_evidence_id": null,
+      "biometrics_deadline_days": 30,
+      "who_must_submit_biometrics": "conditional_on_exemption_and_reuse_review",
+      "previous_biometrics_reuse_conditions": "valid_temporary_resident_biometrics_within_10_years",
+      "separate_official_sources_required": false,
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "source_evidence_ids": [
+        "CA_STUDY_BIO_DEAD_01",
+        "CA_STUDY_BIO_DEAD_02"
+      ],
+      "deadline_trigger": "bil_received",
+      "extension_request_channel": "ircc_web_form",
+      "reuse_source_evidence_id": "CA_STUDY_BIO_REUSE_02",
+      "exemption_source_evidence_id": "CA_STUDY_BIO_EXEMPT_04"
+    },
+    "quality_and_recollection": {
+      "source_evidence_id": "CA_STUDY_BIO_EVD_05",
+      "recollection_may_be_required": true,
+      "reason": "insufficient_fingerprint_quality",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "biometrics_deadline_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/where-to-give.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/study/study_permit_biometrics_deadline_ircc_en.txt",
+    "source_sha256": "9bb59dc021a3a0f4b549ab6783d057b73e51426b3ead8a8cab9c7c15ff0c763a",
+    "source_last_modified": "2026-08-24",
+    "char_count": 2297,
+    "line_count": 79,
+    "review_status": "needs_review"
+  },
+  "biometrics_deadline_evidence": [
+    {
+      "evidence_id": "CA_STUDY_BIO_DEAD_01",
+      "topic": "bil_deadline_and_booking",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_deadline_ircc_en.txt",
+      "source_sha256": "9bb59dc021a3a0f4b549ab6783d057b73e51426b3ead8a8cab9c7c15ff0c763a",
+      "start_line": 18,
+      "end_line": 24,
+      "exact_quote": "Where to give your fingerprints and photo\nYou need to make an appointment to give your biometrics.\n\nAppointments are free to book.\nBook your appointment as soon as you receive your biometric instruction letter (BIL) to avoid delays.\nYou have 30 days from the time you get your BIL to give your biometrics.\nRead the Important information section of your BIL for more information.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_BIO_DEAD_02",
+      "topic": "deadline_extension_request",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_deadline_ircc_en.txt",
+      "source_sha256": "9bb59dc021a3a0f4b549ab6783d057b73e51426b3ead8a8cab9c7c15ff0c763a",
+      "start_line": 25,
+      "end_line": 38,
+      "exact_quote": "If you can’t give your biometrics within 30 days of receiving your BIL\nIf you can’t given your biometrics before your BIL expires, use the web form to tell us why you need more time.\n\nMake sure you provide details about your situation.\n\nFor example, if you weren’t able to get an appointment by the deadline in your BIL,\n\ntell us the date of your appointment\nupload a screenshot of the appointment confirmation\nTell us where you plan to give your biometrics (required)\noutside Canada, except the US\nin the US\nin Canada\nat a border crossing when you want to enter Canada",
+      "review_status": "needs_review"
+    }
+  ],
+  "biometrics_deadline_requirements": {
+    "deadline_days": 30,
+    "deadline_trigger": "bil_received",
+    "applies_if_biometrics_required": true,
+    "individual_bil_instructions_must_be_checked": true,
+    "extension_request_channel": "ircc_web_form",
+    "extension_request_requires_reason": true,
+    "appointment_confirmation_may_be_provided": true,
+    "extension_automatically_approved": false,
+    "extension_approval_status": "not_determined",
+    "source_evidence_ids": [
+      "CA_STUDY_BIO_DEAD_01",
+      "CA_STUDY_BIO_DEAD_02"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  },
+  "study_permit_fee_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://ircc.canada.ca/english/information/fees/fees.asp",
+    "source_language": "en",
+    "source_file": "data/raw/canada/study/study_permit_fees_ircc_en.txt",
+    "source_sha256": "74d61c9b49aaea31caa3d4144028cbd54543ef42188aa41caa4d97bdb0114790",
+    "source_last_modified": "2026-09-21",
+    "line_count": 498,
+    "char_count": 16438,
+    "review_status": "needs_review"
+  },
+  "study_permit_fee_evidence": [
+    {
+      "evidence_id": "CA_STUDY_FEE_EVD_01",
+      "topic": "study_permit_application_and_extension",
+      "source_file": "data/raw/canada/study/study_permit_fees_ircc_en.txt",
+      "source_sha256": "74d61c9b49aaea31caa3d4144028cbd54543ef42188aa41caa4d97bdb0114790",
+      "start_line": 35,
+      "end_line": 37,
+      "exact_quote": "Study Permits (including extensions)\nFees\t$CAN\nStudy permit (including extensions) – per person\t150.00",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_FEE_EVD_02",
+      "topic": "student_status_restoration",
+      "source_file": "data/raw/canada/study/study_permit_fees_ircc_en.txt",
+      "source_sha256": "74d61c9b49aaea31caa3d4144028cbd54543ef42188aa41caa4d97bdb0114790",
+      "start_line": 38,
+      "end_line": 42,
+      "exact_quote": "Restore your status as a student\n\nRestore your status ($246.25) and a get a new study permit ($150)\n\n396.25",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_FEE_EVD_03",
+      "topic": "biometrics_individual_and_family",
+      "source_file": "data/raw/canada/study/study_permit_fees_ircc_en.txt",
+      "source_sha256": "74d61c9b49aaea31caa3d4144028cbd54543ef42188aa41caa4d97bdb0114790",
+      "start_line": 405,
+      "end_line": 425,
+      "exact_quote": "Other applications and services\nBiometrics\nIf you are a citizen of certain countries or territories, you have to give your biometrics (fingerprints and photograph) when you apply for a:\n\nvisitor visa\nstudy permit or\nwork permit.\nFind out if you need to give biometrics.\n\nFees\t$CAN\nBiometrics – per individual\t85.00\nBiometrics – per family of 2 or more eligible people\n\nMaximum fee for a family of 2 or more people applying at the same time\n\nFamily members eligible for this fee are\n\nyour spouse or common-law partner\nyour dependent children and their dependent children\nCheck if your child is a dependant.\n170.00",
+      "review_status": "needs_review"
+    }
+  ],
+  "study_permit_fees": {
+    "currency": "CAD",
+    "application_or_extension_per_person": 150.0,
+    "student_status_restoration_component": 246.25,
+    "new_permit_component_for_restoration": 150.0,
+    "restoration_and_new_permit_total": 396.25,
+    "restoration_total_includes_new_permit_fee": true,
+    "individual_biometrics_fee": 85,
+    "biometrics_added_only_if_required": true,
+    "individual_standard_total_if_biometrics_required": 235.0,
+    "fee_exemptions_verified": false,
+    "fee_exemptions": null,
+    "source_evidence_ids": [
+      "CA_STUDY_FEE_EVD_01",
+      "CA_STUDY_FEE_EVD_02",
+      "CA_STUDY_FEE_EVD_03"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  },
+  "biometrics_reuse_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/when-to-give-temporary-residence.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/study/study_permit_biometrics_reuse_ircc_en.txt",
+    "source_sha256": "a2254b906bb323bfa664b53cdb2f38eabf4642ea910353b2f29227c329dc16c9",
+    "source_last_modified": "2026-03-30",
+    "char_count": 4169,
+    "line_count": 109,
+    "review_status": "needs_review"
+  },
+  "biometrics_reuse_evidence": [
+    {
+      "evidence_id": "CA_STUDY_BIO_REUSE_01",
+      "topic": "first_time_submission",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_reuse_ircc_en.txt",
+      "source_sha256": "a2254b906bb323bfa664b53cdb2f38eabf4642ea910353b2f29227c329dc16c9",
+      "start_line": 25,
+      "end_line": 28,
+      "exact_quote": "If you haven’t given your biometrics before\nYou must give your biometrics when you apply for your visitor visa, study or work permit, unless you’re exempt.\n\nFind out how to give your biometrics.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_BIO_REUSE_02",
+      "topic": "ten_year_validity_and_automatic_reuse",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_reuse_ircc_en.txt",
+      "source_sha256": "a2254b906bb323bfa664b53cdb2f38eabf4642ea910353b2f29227c329dc16c9",
+      "start_line": 30,
+      "end_line": 38,
+      "exact_quote": "If you’ve given your biometrics before\nYour biometrics are valid for 10 years. If you gave your biometrics within the last 10 years\n\nthey’ll be automatically attached to your new visitor visa, work or study permit, or extension\nyou don’t need to give them every time you apply for temporary residence\nHowever, we can’t issue your visa or permit beyond the expiry date of your biometrics. If you want a visa or permit for a longer period of time, you can extend the validity of your biometrics by giving them again when you apply, even if they’re still valid.\n\nCheck the status of your biometrics\nFind out if your biometrics are still valid and when they expire using the Check status tool.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_BIO_REUSE_03",
+      "topic": "voluntary_resubmission",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_reuse_ircc_en.txt",
+      "source_sha256": "a2254b906bb323bfa664b53cdb2f38eabf4642ea910353b2f29227c329dc16c9",
+      "start_line": 40,
+      "end_line": 48,
+      "exact_quote": "How to extend the validity of your biometrics\nEven if your biometrics are still valid, you can choose to give them again so your visa or permit is valid for a longer period of time.\n\nFollow these steps when you apply for your visa or permit:\n\nPay the biometrics fee when you apply, unless you’re exempt.\nWait for your biometric instruction letter (BIL). You must use the BIL that was issued for this application.\nFollow the instructions on your new BIL to book an appointment to give your biometrics again.\nYou must give your biometrics at an official biometric collection location either inside or outside Canada.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_BIO_REUSE_04",
+      "topic": "permit_already_issued",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_reuse_ircc_en.txt",
+      "source_sha256": "a2254b906bb323bfa664b53cdb2f38eabf4642ea910353b2f29227c329dc16c9",
+      "start_line": 49,
+      "end_line": 58,
+      "exact_quote": "If your visa or permit has been issued for a shorter period of time because of your biometrics validity\nWe can’t issue a visa or permit more than 10 years from the last time you gave your biometrics.\n\nOnce your visa or permit has been issued, you can’t give your biometrics again to extend the validity of your document.\n\nIf you want to have a visa or permit with a longer validity, you must\n\napply for a new visa or apply to extend your stay as a visitor, worker or student\npay the associated fees (including the biometrics fee)\ngive your biometrics again",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_BIO_REUSE_05",
+      "topic": "refusal_and_new_bil",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_reuse_ircc_en.txt",
+      "source_sha256": "a2254b906bb323bfa664b53cdb2f38eabf4642ea910353b2f29227c329dc16c9",
+      "start_line": 59,
+      "end_line": 67,
+      "exact_quote": "If your application was refused because you didn’t give biometrics\nIf your application has been refused, don’t try to give your biometrics.\n\nGive your biometrics only if you\n\nreapply\npay the associated fees, including the biometrics fee\nreceive a new BIL\nIf you use your old BIL, there may be delays in your application processing, or your application may be refused.",
+      "review_status": "needs_review"
+    }
+  ],
+  "biometrics_reuse_requirements": {
+    "validity_years": 10,
+    "scope": "temporary_residence_applications",
+    "valid_previous_biometrics_auto_linked": true,
+    "covered_application_types": [
+      "visitor_visa",
+      "study_permit",
+      "work_permit",
+      "applicable_extensions"
+    ],
+    "permit_cannot_exceed_biometrics_expiry": true,
+    "voluntary_resubmission_when_applying": true,
+    "new_bil_for_resubmission": true,
+    "resubmission_alone_extends_issued_permit": false,
+    "detailed_exemption_rules_verified": true,
+    "age_exemptions": {
+      "under_age": 14,
+      "over_age": 79,
+      "assessed_at": "application_submission_date",
+      "asylum_claimant_exception": true
+    },
+    "other_status_exemptions": "see_biometrics_exemption_requirements",
+    "source_evidence_ids": [
+      "CA_STUDY_BIO_REUSE_01",
+      "CA_STUDY_BIO_REUSE_02",
+      "CA_STUDY_BIO_REUSE_03",
+      "CA_STUDY_BIO_REUSE_04",
+      "CA_STUDY_BIO_REUSE_05"
+    ],
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review",
+    "exemption_source_evidence_id": "CA_STUDY_BIO_EXEMPT_04"
+  },
+  "biometrics_exemption_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/who-needs-to-give.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/study/study_permit_biometrics_exemptions_ircc_en.txt",
+    "source_sha256": "101cd3c84a3dad6cee74cccd338603127ed28f26da8883b12db46a8429335b40",
+    "source_last_modified": "2026-07-09",
+    "char_count": 4504,
+    "line_count": 113,
+    "review_status": "needs_review"
+  },
+  "biometrics_exemption_evidence": [
+    {
+      "evidence_id": "CA_STUDY_BIO_EXEMPT_01",
+      "topic": "general_submission_and_us_national_scope",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_exemptions_ircc_en.txt",
+      "source_sha256": "101cd3c84a3dad6cee74cccd338603127ed28f26da8883b12db46a8429335b40",
+      "start_line": 23,
+      "end_line": 32,
+      "exact_quote": "Who needs to give their fingerprints and photo (biometrics)\nUnless you’re exempt, you need to give biometrics when you apply for\n\na visitor visa\nan initial work or study permit or extension (excluding US nationals)\nan extension of your stay in Canada (visitor record) unless you’re from a visa-exempt country\nIf you’re visiting from visa-exempt country, you’re exempt from giving biometrics when you apply to extend your stay.\npermanent residence\na new PR card, for applicants who were previously exempt because of their age (i.e. they were 13 years of age or younger when they applied for PR)\nrefugee or asylum status",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_BIO_EXEMPT_02",
+      "topic": "previous_biometrics_and_validity",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_exemptions_ircc_en.txt",
+      "source_sha256": "101cd3c84a3dad6cee74cccd338603127ed28f26da8883b12db46a8429335b40",
+      "start_line": 33,
+      "end_line": 40,
+      "exact_quote": "Temporary resident applicants\nIf you’ve given your biometrics before\n\nyou may not need to give your biometrics when you apply\nwe can’t issue you a visa or permit for longer than 10 years from the last date you gave your biometrics.\nIf you’d like a visa or permit for longer than your current biometrics are valid for, you can choose to give your biometrics again, even if they’re still valid.\n\nLearn how to give your biometrics voluntarily.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_BIO_EXEMPT_03",
+      "topic": "special_travel_documents",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_exemptions_ircc_en.txt",
+      "source_sha256": "101cd3c84a3dad6cee74cccd338603127ed28f26da8883b12db46a8429335b40",
+      "start_line": 42,
+      "end_line": 48,
+      "exact_quote": "Foreign nationals applying with a travel document that’s not a passport\nYou need to give your biometrics, regardless of the country of issue, if you’re applying with one of the following:\n\na refugee travel document\na certificate of identity or\na valid US Refugee Travel Document (alien’s passport) and official proof of your lawful permanent resident status\nfor lawful permanent residents of the US only",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_BIO_EXEMPT_04",
+      "topic": "enumerated_exemptions",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_exemptions_ircc_en.txt",
+      "source_sha256": "101cd3c84a3dad6cee74cccd338603127ed28f26da8883b12db46a8429335b40",
+      "start_line": 49,
+      "end_line": 63,
+      "exact_quote": "Who’s exempt from giving their biometrics\nYou don’t need to give your biometrics if you’re\n\na Canadian citizen or citizenship applicant (including passport applicants)\nan existing permanent resident, unless you’re in both of the following situations:\nYou’re applying to renew or replace your permanent resident card.\nYou were exempt from giving biometrics because of your age when you applied for permanent residence.\na visa-exempt national coming to Canada to visit only\na head of state or head of government\nan applicant who qualifies for or holds a diplomatic or official visa\nUS visa holder transiting through Canada\nan applicant applying for a visitor visa, a study permit or a work permit who has already provided biometrics for a permanent resident application that’s still being processed\na child under the age of 14\nan applicant over the age of 79\nThere is no upper age exemption for asylum claimants.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_STUDY_BIO_EXEMPT_05",
+      "topic": "application_date_age_assessment",
+      "source_file": "data/raw/canada/study/study_permit_biometrics_exemptions_ircc_en.txt",
+      "source_sha256": "101cd3c84a3dad6cee74cccd338603127ed28f26da8883b12db46a8429335b40",
+      "start_line": 64,
+      "end_line": 65,
+      "exact_quote": "How we assess the age of the applicant\nWe use the age you were when you submitted your application. If your child was 13 or under when you submitted the application, the child doesn’t need to give biometrics. If you were 79 or younger on the date you submitted your application, and you are now 80, you must give your biometrics.",
+      "review_status": "needs_review"
+    }
+  ],
+  "biometrics_exemption_requirements": {
+    "general_scope": {
+      "source_evidence_id": "CA_STUDY_BIO_EXEMPT_01",
+      "application_types_to_review": [
+        "initial_study_permit",
+        "study_permit_extension"
+      ],
+      "us_national_general_exception": true,
+      "special_travel_document_override_needs_review": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "previous_biometrics": {
+      "source_evidence_id": "CA_STUDY_BIO_EXEMPT_02",
+      "reuse_and_exemption_are_distinct": true,
+      "validity_years": 10,
+      "reuse_conditions_source": "biometrics_reuse_requirements",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "special_travel_documents": {
+      "source_evidence_id": "CA_STUDY_BIO_EXEMPT_03",
+      "documents_to_review": [
+        "refugee_travel_document",
+        "certificate_of_identity",
+        "us_refugee_travel_document_with_required_status"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "age_based_exemptions": {
+      "source_evidence_ids": [
+        "CA_STUDY_BIO_EXEMPT_04",
+        "CA_STUDY_BIO_EXEMPT_05"
+      ],
+      "age_reference": "application_submission_date",
+      "under_age": 14,
+      "over_age": 79,
+      "asylum_claimant_upper_age_exception": true,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "status_based_exemptions": {
+      "source_evidence_id": "CA_STUDY_BIO_EXEMPT_04",
+      "categories_to_review": [
+        "canadian_citizen_or_citizenship_applicant",
+        "existing_permanent_resident_with_exceptions",
+        "visa_exempt_visitor_only",
+        "head_of_state_or_government",
+        "diplomatic_or_official_visa",
+        "us_visa_holder_transiting",
+        "pending_pr_application_with_biometrics_submitted"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "biometrics_exemption_legal_review": {
+    "eligibility_rule": null,
+    "legal_validation_approved": false,
+    "approved_for_eligibility_decision": false,
+    "review_status": "needs_review"
+  }
+}

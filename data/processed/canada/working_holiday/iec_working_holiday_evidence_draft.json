@@ -1,0 +1,660 @@
+{
+  "country": "Canada",
+  "program": "iec_working_holiday",
+  "program_category": "working_holiday",
+  "target_citizenship": "Republic of Korea",
+  "official_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/eligibility.html?selection=kr-wh",
+    "source_language": "en",
+    "source_file": "data/raw/canada/working_holiday/iec_working_holiday_ircc_en.txt",
+    "source_sha256": "0da39ba0977a3dc0ea869e72f0ded0c2feba5ec15e8504225f33f0986b0f810e",
+    "char_count": 4497,
+    "line_count": 107,
+    "source_last_modified": "2026-08-07"
+  },
+  "evidence": [
+    {
+      "evidence_id": "CA_IEC_WH_EVD_01",
+      "topic": "youth_mobility_agreement",
+      "start_line": 23,
+      "end_line": 30,
+      "exact_quote": "Who can participate\nTo participate in International Experience Canada (IEC), your country or territory of citizenship must have a youth mobility agreement (YMA) with Canada.\n\nSome countries only allow you to participate once. Others allow you to participate twice, but in different categories. Because each country is different, you should check your country’s eligibility requirements.\n\nYoung Professionals employment eligibility requirements\nYou can’t participate with a refugee travel document\nYou’re not eligible to participate in IEC if you hold a refugee travel document from any country.",
+      "source_sha256": "0da39ba0977a3dc0ea869e72f0ded0c2feba5ec15e8504225f33f0986b0f810e",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_EVD_02",
+      "topic": "korea_agreement_and_participation",
+      "start_line": 35,
+      "end_line": 42,
+      "exact_quote": "Republic of Korea – Working Holiday\nCanada–Republic of Korea youth mobility agreement changes\nKorean citizens can now participate in IEC twice for up to 24 months per participation. Under the previous agreement, Korean citizens could only participate in IEC once for up to 12 months.\n\nIf you already participated once under the previous agreement\nDescription: The Working Holiday category is designed for citizens of the Republic of Korea who intend to travel in Canada and who wish to find temporary paid employment to help pay for their trip (up to 24 months per participation).\n\nNote: As a Korean citizen, you may participate in IEC twice. You can choose the Working Holiday or Young Professionals category twice. However, you may only participate in the International Co-op category once.",
+      "source_sha256": "0da39ba0977a3dc0ea869e72f0ded0c2feba5ec15e8504225f33f0986b0f810e",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_EVD_03",
+      "topic": "nationality_passport_and_age",
+      "start_line": 44,
+      "end_line": 49,
+      "exact_quote": "To be eligible for the Working Holiday category, you must\n\nbe a citizen of the Republic of Korea\nhave a valid Korean passport for the duration of your stay in Canada\nYour work permit in Canada can’t be valid longer than your passport.\nbe between the ages of 18 and 35 (inclusive)",
+      "source_sha256": "0da39ba0977a3dc0ea869e72f0ded0c2feba5ec15e8504225f33f0986b0f810e",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_EVD_04",
+      "topic": "financial_and_insurance_requirements",
+      "start_line": 50,
+      "end_line": 52,
+      "exact_quote": "have a minimum of CAN$2,500 to help cover your expenses in Canada\nhave health insurance for the duration of your stay\nYou may have to present evidence of this insurance when you enter Canada.",
+      "source_sha256": "0da39ba0977a3dc0ea869e72f0ded0c2feba5ec15e8504225f33f0986b0f810e",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_EVD_05",
+      "topic": "admissibility_travel_dependants_and_fees",
+      "start_line": 53,
+      "end_line": 57,
+      "exact_quote": "not be inadmissible to Canada\nbefore departure, have a round-trip ticket or demonstrate that you’ll have the financial resources to purchase a departure ticket at the end of your authorized stay in Canada\nnot be accompanied by dependants\npay the fees\nNote: The cost of living varies depending on where you decide to settle in Canada. Prepare financially by finding out how much it costs to live in the city and province or territory where you plan to stay.",
+      "source_sha256": "0da39ba0977a3dc0ea869e72f0ded0c2feba5ec15e8504225f33f0986b0f810e",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_EVD_06",
+      "topic": "application_navigation_and_source_date",
+      "start_line": 59,
+      "end_line": 70,
+      "exact_quote": "Learn how to complete your IEC profile online.\n\nGet more support with recognized organizations\nLooking for more support before or during your participation? A recognized organization (RO) might be able to help you work and travel through IEC. Learn more about working and travelling in Canada using an RO.\n\nCanadians ages 18-35\nFind out how to participate in International Experience Canada to work and travel abroad.\n\nDocument navigation\nNext:Create your IEC profile and get your invitation to apply \nPage details\nDate modified: 2026-08-07",
+      "source_sha256": "0da39ba0977a3dc0ea869e72f0ded0c2feba5ec15e8504225f33f0986b0f810e",
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "CA_IEC_WH_POL_01",
+      "topic": "citizenship_and_age",
+      "source_evidence_ids": [
+        "CA_IEC_WH_EVD_03"
+      ],
+      "conditions_to_review": [
+        "citizenship_republic_of_korea",
+        "age_18_to_35_inclusive",
+        "age_calculation_at_relevant_application_stage"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "CA_IEC_WH_POL_02",
+      "topic": "passport_and_participation",
+      "source_evidence_ids": [
+        "CA_IEC_WH_EVD_02",
+        "CA_IEC_WH_EVD_03"
+      ],
+      "conditions_to_review": [
+        "passport_valid_for_intended_stay",
+        "permit_not_longer_than_passport",
+        "maximum_two_iec_participations",
+        "maximum_24_months_per_participation",
+        "prior_participation_under_old_agreement",
+        "category_specific_participation_limits"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "CA_IEC_WH_POL_03",
+      "topic": "financial_and_travel_proof",
+      "source_evidence_ids": [
+        "CA_IEC_WH_EVD_04",
+        "CA_IEC_WH_EVD_05"
+      ],
+      "conditions_to_review": [
+        "minimum_cad_2500",
+        "round_trip_ticket_or_departure_funds",
+        "local_cost_of_living",
+        "proof_at_applicable_application_or_entry_stage"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "CA_IEC_WH_POL_04",
+      "topic": "insurance_and_admissibility",
+      "source_evidence_ids": [
+        "CA_IEC_WH_EVD_04",
+        "CA_IEC_WH_EVD_05"
+      ],
+      "conditions_to_review": [
+        "insurance_for_entire_stay",
+        "insurance_evidence_at_entry",
+        "not_inadmissible_to_canada"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "CA_IEC_WH_POL_05",
+      "topic": "dependants_fees_and_application",
+      "source_evidence_ids": [
+        "CA_IEC_WH_EVD_05",
+        "CA_IEC_WH_EVD_06"
+      ],
+      "conditions_to_review": [
+        "not_accompanied_by_dependants",
+        "applicable_fees",
+        "iec_profile",
+        "invitation_to_apply",
+        "work_permit_application"
+      ],
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "source_requirement_checks": {
+    "korean_citizenship": true,
+    "passport": true,
+    "passport_validity": true,
+    "age": true,
+    "funds": true,
+    "insurance": true,
+    "admissibility": true,
+    "return_ticket": true,
+    "dependants": true,
+    "fees": true,
+    "twice": true,
+    "duration": true,
+    "young_professionals": true,
+    "international_coop": true,
+    "profile_and_ita": true
+  },
+  "conditional_requirements": {
+    "citizenship_and_age": {
+      "review_points": [
+        "Korean citizenship",
+        "age 18 to 35 inclusive",
+        "age assessment timing"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "passport_and_validity": {
+      "review_points": [
+        "passport valid for stay",
+        "permit validity limited by passport"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "participation_history": {
+      "review_points": [
+        "maximum two IEC participations",
+        "previous agreement participation",
+        "Working Holiday and Young Professionals category choices",
+        "International Co-op participation limitation"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "financial_and_travel": {
+      "review_points": [
+        "CAD 2500 minimum",
+        "departure ticket or sufficient funds",
+        "financial proof timing"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "insurance_and_admissibility": {
+      "review_points": [
+        "health insurance for full stay",
+        "insurance evidence at border",
+        "admissibility"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "dependants_and_fees": {
+      "review_points": [
+        "not accompanied by dependants",
+        "fees and applicable amounts"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "application_process": {
+      "review_points": [
+        "profile creation",
+        "invitation to apply",
+        "work permit application",
+        "availability and invitation not confirmed by eligibility"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "reference_values": {
+    "age_min": 18,
+    "age_max_inclusive": 35,
+    "maximum_iec_participations": 2,
+    "maximum_months_per_participation": 24,
+    "minimum_initial_funds_cad": 2500,
+    "source_evidence_id": "CA_IEC_WH_EVD_02",
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "agreement_change_review": {
+    "previous_participation_limit": 1,
+    "previous_maximum_months": 12,
+    "current_participation_limit": 2,
+    "current_maximum_months": 24,
+    "prior_participation_transition": "needs_review",
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "related_programs_to_review": [
+    "iec_young_professionals",
+    "iec_international_coop"
+  ],
+  "application_process_review": {
+    "profile_is_not_work_permit_application": true,
+    "invitation_required_before_work_permit_application": true,
+    "one_iec_profile_at_a_time": true,
+    "multiple_eligible_category_pools_possible": true,
+    "invitation_not_guaranteed": true,
+    "one_iec_permit_per_season": true,
+    "previous_participations_reviewed_by_officer": true,
+    "individual_invitation_status": "unknown",
+    "source_evidence_ids": [
+      "CA_IEC_WH_PROCESS_EVD_04",
+      "CA_IEC_WH_PROCESS_EVD_05"
+    ],
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "review_status": "needs_review",
+  "eligibility_rule": null,
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false,
+  "application_process_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/become-candidate.html",
+    "source_file": "data/raw/canada/working_holiday/iec_profile_invitation_ircc_en.txt",
+    "source_sha256": "44e57e696156bdf76b9bbaa371fa702a84f7147b58888f2f14447e3b8b57c6ce",
+    "source_language": "en",
+    "char_count": 7938,
+    "line_count": 173,
+    "source_last_modified": "2026-10-19",
+    "review_status": "needs_review"
+  },
+  "application_process_evidence": [
+    {
+      "evidence_id": "CA_IEC_WH_PROCESS_EVD_01",
+      "topic": "profile_and_season_status",
+      "source_file": "data/raw/canada/working_holiday/iec_profile_invitation_ircc_en.txt",
+      "source_sha256": "44e57e696156bdf76b9bbaa371fa702a84f7147b58888f2f14447e3b8b57c6ce",
+      "start_line": 22,
+      "end_line": 30,
+      "exact_quote": "Create your IEC profile and get your invitation to apply\nTo participate in IEC, your first step is to create and submit your profile in one or more IEC pools. After you submit your profile, you must wait for an Invitation to Apply (ITA) to apply for a work permit.\n\nWe regularly invite eligible applicants from IEC pools to apply for a work permit.\n\n If you want to start working in Canada in the next 12 months, you should create and submit your profile as soon as possible.\n\n2026 IEC season is closed\nThe pools for the 2026 season are closed.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_PROCESS_EVD_02",
+      "topic": "eligibility_questionnaire",
+      "source_file": "data/raw/canada/working_holiday/iec_profile_invitation_ircc_en.txt",
+      "source_sha256": "44e57e696156bdf76b9bbaa371fa702a84f7147b58888f2f14447e3b8b57c6ce",
+      "start_line": 42,
+      "end_line": 53,
+      "exact_quote": "Step 1: Use the IRCC secure account to check your eligibility\nCreate or sign in to your account and select “International Experience Canada” to start the questionnaire and check your eligibility. Your answers will be saved automatically to help complete your profile.\n\nThe questionnaire takes 10 minutes to complete. You’ll be asked about your\n\ncountry of citizenship\ncountry of permanent residence (where you live permanently)\nThis is the country where you have a permanent address. For example, if you’re a Mexican student in Canada, your country of permanent residence is Mexico.\ncountry of residence (where you live now)\nstudent status (if this applies to you)\njob offer (if this applies to you)\nconfirmation letter from an IEC recognized organization (if this applies to you)",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_PROCESS_EVD_03",
+      "topic": "profile_completion",
+      "source_file": "data/raw/canada/working_holiday/iec_profile_invitation_ircc_en.txt",
+      "source_sha256": "44e57e696156bdf76b9bbaa371fa702a84f7147b58888f2f14447e3b8b57c6ce",
+      "start_line": 56,
+      "end_line": 77,
+      "exact_quote": "Step 2: Complete your IEC profile\nWhen you’re done with the questionnaire (and if you’re eligible), you can complete and submit your IEC profile online.\n\nWe use your answers to start your profile. To complete your profile, you need your passport. You also need to tell us about your:\n\nidentity (full names, date of birth, place of birth etc.)\ncontact information\nIf you’re invited to apply, you’ll use your IRCC secure account to:\n\nsubmit your work permit application\npay your fees\ncheck the status of your application\nYou must use your IRCC secure account to apply for an IEC work permit.\n\nWhen you fill out the online forms\nLeave out any commas that separate your first or last names (if you have more than one first or last name). For example, use “Julie Louise Marie” if your first name is “Julie, Louise, Marie”.\nUse English and French letters only.\nIf your passport uses other special letters or characters, use the letter without the accent. For example, use “z” instead of “ź.”\nLower case letters you can use\nUpper case letters you can use\nIf you want to complete your profile later\nYou can exit the profile at any time. Your information will be saved. You have 60 days to complete and submit your IEC profile. If you take more than 60 days, you won’t be able to submit it and you’ll have to start over.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_PROCESS_EVD_04",
+      "topic": "submission_and_invitation_pool",
+      "source_file": "data/raw/canada/working_holiday/iec_profile_invitation_ircc_en.txt",
+      "source_sha256": "44e57e696156bdf76b9bbaa371fa702a84f7147b58888f2f14447e3b8b57c6ce",
+      "start_line": 79,
+      "end_line": 109,
+      "exact_quote": "Step 3: Submit your profile\nYou can submit an IEC profile at any time during the IEC season. As long as you submit your profile before the final round of invitations for your country, you could get an Invitation to Apply (ITA).\n\nBefore you submit your profile, make sure you understand which category is right for you.\n\nYou can only have 1 IEC profile at a time. When you complete your profile, we’ll determine your eligibility based on your answers. You may be eligible for one or more of the available IEC categories:\n\nInternational Co-op (Internship)\nWorking Holiday\nYoung Professionals\nThere is one pool of eligible candidates per country and per category. You can submit your profile to one or more of these pools. For example, you may be eligible to submit your profile to the Working Holiday and Young Professionals pools for your country.\n\nHow we issue Invitations to Apply (ITA)\nImportant: Submitting an IEC profile doesn’t mean you applied for a work permit. You can only start a work permit application when you get your ITA.\n\nStep 4: Wait for an ITA\nWe regularly invite eligible candidates from the IEC pools to apply for a work permit. These are called rounds of invitations.\n\nYour profile will stay in the pool until\n\nyou get an ITA for a work permit\nwe remove all of the profiles from the pools at the end of the season or\nyou’re no longer eligible for IEC\nEven if you’re invited to apply, you can’t participate more times than your country allows. When we get your application, an officer will assess your eligibility, including your past participations. You can only get one IEC permit per season. Confirm you meet all the requirements before you submit an application.\n\nCheck the rounds of invitations to find out:\n\nwhen the rounds of invitations for each country and category start and end\nthe number of candidates in the pools\nyour chances of getting an invitation this season\nIf you’re invited to apply, you’ll get a message in your IRCC secure account and an email notification.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_PROCESS_EVD_05",
+      "topic": "invitation_response_and_application",
+      "source_file": "data/raw/canada/working_holiday/iec_profile_invitation_ircc_en.txt",
+      "source_sha256": "44e57e696156bdf76b9bbaa371fa702a84f7147b58888f2f14447e3b8b57c6ce",
+      "start_line": 112,
+      "end_line": 127,
+      "exact_quote": "Step 5: Respond to your ITA\nIf you get an ITA, your invitation will list your IEC category and the next steps to apply.\n\nYou have 10 days to accept the invitation before it expires. Your deadline is listed in your invitation.\n\nIf you don’t respond by the deadline listed in the invitation, the invitation will expire. If it expires, you have to submit a new IEC profile and wait for a new ITA.\n\nFrom the day and time you accept the invitation, you have 20 days to apply online for your work permit.\n\nTo accept your invitation\n\nLog in to your IRCC secure account\nGo to the section called “Continue my profile / application, not yet submitted” in your account\nFind the application called “Work permit”\nClick “Start application”\nOnce you accept your invitation, you need to apply for a work permit. You’ll have to show proof of the information you gave us in your IEC profile. You’ll also have to give more information about your background and the type of work you intend to do in Canada.",
+      "review_status": "needs_review"
+    }
+  ],
+  "application_process_steps": [
+    {
+      "step": "eligibility_questionnaire",
+      "source_evidence_id": "CA_IEC_WH_PROCESS_EVD_02"
+    },
+    {
+      "step": "complete_profile",
+      "source_evidence_id": "CA_IEC_WH_PROCESS_EVD_03"
+    },
+    {
+      "step": "submit_profile",
+      "source_evidence_id": "CA_IEC_WH_PROCESS_EVD_04"
+    },
+    {
+      "step": "wait_for_invitation",
+      "source_evidence_id": "CA_IEC_WH_PROCESS_EVD_04"
+    },
+    {
+      "step": "respond_to_invitation",
+      "source_evidence_id": "CA_IEC_WH_PROCESS_EVD_05"
+    },
+    {
+      "step": "submit_work_permit_application",
+      "source_evidence_id": "CA_IEC_WH_PROCESS_EVD_05"
+    }
+  ],
+  "application_deadline_review": {
+    "profile_completion_days": 60,
+    "ita_acceptance_days": 10,
+    "work_permit_application_days_after_acceptance": 20,
+    "ita_deadline_source": "deadline stated in individual invitation",
+    "work_permit_deadline_start": "day and time the applicant accepts the ITA",
+    "source_evidence_ids": [
+      "CA_IEC_WH_PROCESS_EVD_03",
+      "CA_IEC_WH_PROCESS_EVD_05"
+    ],
+    "automatic_deadline_calculation_approved": false,
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "application_availability": {
+    "season_year": 2026,
+    "source_status": "closed",
+    "source_statement": "The pools for the 2026 season are closed.",
+    "source_evidence_id": "CA_IEC_WH_PROCESS_EVD_01",
+    "source_last_modified": "2026-10-19",
+    "current_or_future_season_status": "additional_confirmation",
+    "automatic_availability_decision_approved": false,
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "work_permit_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/apply-work-permit.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/working_holiday/iec_work_permit_application_ircc_en.txt",
+    "source_sha256": "9337115320cd1b4bffa54e0275d52bd56e33c59820ec59fa7759f7f036ac3952",
+    "char_count": 8028,
+    "line_count": 190,
+    "source_last_modified": "2026-05-28",
+    "review_status": "needs_review"
+  },
+  "work_permit_evidence": [
+    {
+      "evidence_id": "CA_IEC_WH_PERMIT_EVD_01",
+      "topic": "application_deadline_utc",
+      "source_file": "data/raw/canada/working_holiday/iec_work_permit_application_ircc_en.txt",
+      "source_sha256": "9337115320cd1b4bffa54e0275d52bd56e33c59820ec59fa7759f7f036ac3952",
+      "start_line": 32,
+      "end_line": 38,
+      "exact_quote": "Step 1: Make sure you know the date and time of your deadline\nAfter you accept your ITA, you’ll get a message in your account with your deadline.\n\nYou have exactly 20 days from the time you accept your ITA to submit your work permit application.\nThe date and time of your deadline are in Coordinated Universal Time (UTC). This may be different than your local time.\nFor example, if you accept your invitation at 7:25 a.m. UTC, you must submit your IEC work permit application before 7:25 a.m. UTC 20 days later.\nDon’t wait until the last day to submit your application. The difference between your local time and the UTC could make you miss the deadline.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_PERMIT_EVD_02",
+      "topic": "online_application_form",
+      "source_file": "data/raw/canada/working_holiday/iec_work_permit_application_ircc_en.txt",
+      "source_sha256": "9337115320cd1b4bffa54e0275d52bd56e33c59820ec59fa7759f7f036ac3952",
+      "start_line": 40,
+      "end_line": 61,
+      "exact_quote": "Step 2: Complete the online forms\nComplete the online form in your IRCC secure account.\n\n\nYou can save the information in the online form and go back to it as often as you need to until you are ready to submit it.\n\nMake sure you\n\nanswer all questions truthfully and completely\nIf you give us false information or leave out important details, we’ll refuse your application. You could also become ineligible for entry to Canada in the future.\nfill out all the mandatory fields in the form\nYou can’t submit your application until these fields are completed.\ndon’t leave any gaps in time in the work history and education history sections\nInclude all absences, periods of unemployment, travel dates, etc.\ninclude all paid and unpaid work in the work history section\nclick “validate” at the end of each form so there are no errors or blank fields in your application\ncheck our advice if you’re having technical problems with your application\nIf we ask you about your offer of employment\nFollow the steps that apply to your situation:\n\nYoung Professionals or International Co-op applicants\nWorking Holiday applicants",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_PERMIT_EVD_03",
+      "topic": "personalised_document_checklist",
+      "source_file": "data/raw/canada/working_holiday/iec_work_permit_application_ircc_en.txt",
+      "source_sha256": "9337115320cd1b4bffa54e0275d52bd56e33c59820ec59fa7759f7f036ac3952",
+      "start_line": 62,
+      "end_line": 93,
+      "exact_quote": "Step 3: Get all the documents you need\nWhen you complete the application, the system will generate a personalized document checklist for you. It shows all the supporting documents you need to upload. Use this checklist to gather all your documents.\n\nYou must be able to make electronic copies of your supporting documents using a scanner or camera.\n\nOnce you have your documents ready, upload them on the Document Checklist page in your account.\n\nIf you have technical problems submitting documents, send them through our web form.\n\nIf we need more documents\nWe may ask you for more documents after you submit your application. After you upload a document, make sure you complete all the steps. You must provide an electronic signature and confirm the information you gave. If you don’t, your application won’t be processed.\n\nLearn more about how to submit additional documents.\n\nIf you haven’t applied yet and you’re missing a document\nFind out what to do if you don’t have a document you need to submit.\n\nDocuments you may need for your application\nPolice certificates\nMedical exams\nCV/résumé\nPassport\nDigital photo\nFamily information\nElectronic travel authorization or visitor visa application\nProof of residency\nInternational Co-op (Internship)\nYoung Professionals\nApplicants using recognized organizations\nDocuments you need before coming to Canada\nProof of financial support\nHealth insurance",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_PERMIT_EVD_04",
+      "topic": "application_fees",
+      "source_file": "data/raw/canada/working_holiday/iec_work_permit_application_ircc_en.txt",
+      "source_sha256": "9337115320cd1b4bffa54e0275d52bd56e33c59820ec59fa7759f7f036ac3952",
+      "start_line": 94,
+      "end_line": 108,
+      "exact_quote": "Step 4: Pay your fees\nThe fees you pay depend on the IEC category you’re applying to.\n\nYou can use the pay your fees tool to find out how much it costs to apply to IEC and how to pay your fees.\n\na) All participants\nYou must pay the IEC fee. For the 2026 season, the IEC fee is CAN$184.75.\n\nIf you need to give biometrics, you’ll need to pay the biometric fee when you pay your IEC fee.\n\nb) Working Holiday participants\nYou must also pay an open work permit holder fee of CAN$100.\n\nc) Young Professionals and International Co-op (Internship) participants\nYou don’t have to pay any additional fees, but your employer must pay a CAN$230 employer compliance fee and submit your offer of employment to Immigration, Refugees and Citizenship Canada (IRCC). Your employer must complete this step before you submit your work permit application.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_PERMIT_EVD_05",
+      "topic": "submission_and_biometrics",
+      "source_file": "data/raw/canada/working_holiday/iec_work_permit_application_ircc_en.txt",
+      "source_sha256": "9337115320cd1b4bffa54e0275d52bd56e33c59820ec59fa7759f7f036ac3952",
+      "start_line": 111,
+      "end_line": 146,
+      "exact_quote": "Step 5: Submit your complete application\nMake sure you\n\nfill out all mandatory form fields\npay your fees\ninclude readable colour scans of all the supporting documents\nThe system won’t let you submit the application unless you include all the required documents. Use the document checklist to make sure you don’t forget anything. If you can’t get a police certificate or medical exam before the deadline to submit your work application, you can submit proof that you\n\nrequested a police certificate or\nmade an appointment for a medical exam\nThis won’t affect the decision an officer will make when processing your application, but your application may take longer than the advertised processing service standard to process.\n\nOnce you submit your application, we’ll verify that\n\nall the information you gave us is true\nyou’re eligible to work in Canada\nyou’re admissible to Canada\nIf you’re eligible, we’ll send you a message in your account and tell you what to do next.\n\nStep 6: Give your biometrics\nYou may need to give your fingerprints and photo (biometrics) after you apply.\n\nIf you haven’t given biometrics in a previous application, we’ll send you a biometric instruction letter (BIL) to explain how to give your biometrics. After you pay all your fees and submit your application, you’ll get your BIL in your account message box within 24 hours.\n\nYou have up to 30 days to give your biometrics.\nYou must give your biometrics in person.\nYou must bring your letter to 1 of the official collection service locations.\nWe recommend that you book an appointment as soon as you receive your letter, so you don’t have any problems.\nIf you haven’t paid the biometrics fee, we’ll send you a letter asking you to pay first. You’ll get the BIL after you pay the biometrics fee.\n\nFind out where to give your biometrics.\n\nIf you’ve already given your biometrics\nIf you’re outside Canada\nIf you’re already in Canada\nIf you need more time to give biometrics",
+      "review_status": "needs_review"
+    }
+  ],
+  "work_permit_application_steps": [
+    "confirm_deadline_in_utc",
+    "complete_online_forms",
+    "prepare_personalised_document_checklist",
+    "pay_applicable_fees",
+    "submit_complete_application",
+    "provide_biometrics_if_required"
+  ],
+  "work_permit_document_review": {
+    "source_evidence_id": "CA_IEC_WH_PERMIT_EVD_03",
+    "documents_to_review": [
+      "passport",
+      "digital_photo",
+      "curriculum_vitae",
+      "police_certificates_if_required",
+      "medical_exam_if_required",
+      "family_information_if_required",
+      "proof_of_residency_if_required",
+      "other_personalised_documents"
+    ],
+    "personalised_checklist_required": true,
+    "all_listed_documents_universally_required": false,
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "work_permit_fee_review": {
+    "reference_year": 2026,
+    "currency": "CAD",
+    "iec_participation_fee": 184.75,
+    "working_holiday_open_work_permit_fee": 100.0,
+    "working_holiday_base_total": 284.75,
+    "biometrics_fee": "additional_if_applicable",
+    "employer_compliance_fee_scope": "Young Professionals and International Co-op; not included in Working Holiday base total",
+    "source_evidence_id": "CA_IEC_WH_PERMIT_EVD_04",
+    "current_fee_confirmation_required": true,
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "work_permit_deadline_review": {
+    "days_after_ita_acceptance": 20,
+    "deadline_timezone": "UTC",
+    "deadline_source": "individual_IRCC_account_message",
+    "biometrics_days_if_required": 30,
+    "biometrics_trigger": "biometric_instruction_letter",
+    "automatic_deadline_calculation_approved": false,
+    "source_evidence_ids": [
+      "CA_IEC_WH_PERMIT_EVD_01",
+      "CA_IEC_WH_PERMIT_EVD_05"
+    ],
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "work_permit_exceptions_review": {
+    "missing_police_certificate": "proof_of_request_may_be_submitted",
+    "missing_medical_exam": "proof_of_appointment_may_be_submitted",
+    "processing_delay_possible": true,
+    "application_approval_not_guaranteed": true,
+    "source_evidence_id": "CA_IEC_WH_PERMIT_EVD_05",
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "arrival_source": {
+    "authority": "Immigration, Refugees and Citizenship Canada",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/prepare-arrival.html",
+    "source_language": "en",
+    "source_file": "data/raw/canada/working_holiday/iec_prepare_arrival_ircc_en.txt",
+    "source_sha256": "f4a59dbbbbd1c7ccda86856b2b6181e5a30c6d534a3453cc27e2b85ef4c67044",
+    "char_count": 4830,
+    "line_count": 130,
+    "source_last_modified": "2025-11-17",
+    "review_status": "needs_review"
+  },
+  "arrival_evidence": [
+    {
+      "evidence_id": "CA_IEC_WH_ARRIVAL_EVD_01",
+      "topic": "port_of_entry_documents",
+      "source_file": "data/raw/canada/working_holiday/iec_prepare_arrival_ircc_en.txt",
+      "source_sha256": "f4a59dbbbbd1c7ccda86856b2b6181e5a30c6d534a3453cc27e2b85ef4c67044",
+      "start_line": 26,
+      "end_line": 39,
+      "exact_quote": "Arriving in Canada\nWhen you arrive in Canada, you’ll be greeted by a border services officer. Tell them that you have come here to work.\n\nBe prepared to show the following documents:\n\nyour passport\nyour port-of-entry (POE) letter of introduction (LOI)\nproof of health insurance\nproof of funds\na ticket for your departure from Canada or sufficient funds to purchase such a ticket\ncopies of the documents you provided in your work permit application\nYou’ll get a work permit if the border services officer is satisfied that you are admissible to Canada.\n\nIf the officer isn’t satisfied, you may be asked to return to your country on the next flight at your own expense.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_ARRIVAL_EVD_02",
+      "topic": "health_insurance_requirements",
+      "source_file": "data/raw/canada/working_holiday/iec_prepare_arrival_ircc_en.txt",
+      "source_sha256": "f4a59dbbbbd1c7ccda86856b2b6181e5a30c6d534a3453cc27e2b85ef4c67044",
+      "start_line": 41,
+      "end_line": 55,
+      "exact_quote": "Proof of health insurance\nThe border services officer may ask you for proof of health insurance.\n\nYou may be refused entry if you don’t have insurance.\n\nYour insurance must cover:\n\nmedical care,\nhospitalization\nrepatriation (returning you to your country in the event of severe illness, injury or death)\nWhen you arrive at the port of entry, you must have health insurance valid for your entire stay in Canada. Having a valid provincial health card is not enough. Repatriation isn’t covered by provincial health insurance.\n\nIf your insurance policy is valid for less than your expected stay, we’ll issue you a work permit that expires at the same time as your insurance.\n\nIf this happens, you won’t be able to apply to extend your work permit at a later date.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_ARRIVAL_EVD_03",
+      "topic": "financial_proof",
+      "source_file": "data/raw/canada/working_holiday/iec_prepare_arrival_ircc_en.txt",
+      "source_sha256": "f4a59dbbbbd1c7ccda86856b2b6181e5a30c6d534a3453cc27e2b85ef4c67044",
+      "start_line": 57,
+      "end_line": 62,
+      "exact_quote": "Proof of funds\nThe border services officer may also ask for proof of funds.\n\nYou must present a statement of your bank account issued no more than 1 week before your departure for Canada. It must clearly show that you have enough money to support yourself for the first 3 months of your stay in Canada (the equivalent of CAN$2,500).\n\nIf you’re an unpaid International Co-op (Internship) participant, you may need to show proof of additional financial resources to cover expenses for your entire stay.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_ARRIVAL_EVD_04",
+      "topic": "currency_declaration",
+      "source_file": "data/raw/canada/working_holiday/iec_prepare_arrival_ircc_en.txt",
+      "source_sha256": "f4a59dbbbbd1c7ccda86856b2b6181e5a30c6d534a3453cc27e2b85ef4c67044",
+      "start_line": 64,
+      "end_line": 68,
+      "exact_quote": "If you arrive in Canada with the equivalent of CAN$10,000 or more, you must tell the border services officer. If you don’t, you could be fined or put in prison. These funds could be in the form of:\n\ncash\nsecurities in bearer form (for example, stocks, bonds, debentures, treasury bills)\nbankers’ drafts, cheques, travellers’ cheques or money orders",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "CA_IEC_WH_ARRIVAL_EVD_05",
+      "topic": "work_permit_review_and_validity",
+      "source_file": "data/raw/canada/working_holiday/iec_prepare_arrival_ircc_en.txt",
+      "source_sha256": "f4a59dbbbbd1c7ccda86856b2b6181e5a30c6d534a3453cc27e2b85ef4c67044",
+      "start_line": 69,
+      "end_line": 89,
+      "exact_quote": "Review your work permit\nCheck your work permit carefully before leaving the port of entry. Make sure you understand all the information on the permit.\n\nIf you think there’s a mistake on your work permit, tell the border services officer right away.\n\nWhat to look for on your work permit\nMake sure your name is spelled correctly.\n\nCheck the expiry date shown under the “Valid until” box.\n\nYour work permit won’t be valid past:\n\nthe amount of time indicated in the agreement between Canada and your country\nthe expiry date of your passport\nthe expiry date of your biometrics\nthe expiry date of your health insurance\nthe end date of your work contract (Young Professionals and International Co-op (Internship) participants)\nCheck for medical restrictions. If you passed an immigration medical exam, you shouldn’t have medical restrictions on your work permit.\n\nWorking Holiday participants\nYoung Professionals or International Co-op (Internship) participants",
+      "review_status": "needs_review"
+    }
+  ],
+  "arrival_document_review": {
+    "source_evidence_id": "CA_IEC_WH_ARRIVAL_EVD_01",
+    "documents_to_review": [
+      "valid_passport",
+      "poe_letter_of_introduction",
+      "health_insurance_proof",
+      "proof_of_funds",
+      "departure_ticket_or_sufficient_funds",
+      "copies_of_work_permit_application_documents"
+    ],
+    "poe_letter_is_not_work_permit": true,
+    "final_work_permit_issuance_at_border": true,
+    "border_officer_admissibility_review_required": true,
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "arrival_insurance_review": {
+    "source_evidence_id": "CA_IEC_WH_ARRIVAL_EVD_02",
+    "required_coverage_to_review": [
+      "medical_care",
+      "hospitalization",
+      "repatriation"
+    ],
+    "insurance_valid_for_entire_stay": true,
+    "provincial_health_card_alone_insufficient": true,
+    "short_insurance_may_shorten_permit": true,
+    "extension_after_insurance_based_shortening": "not_permitted_under_source_guidance",
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "arrival_financial_review": {
+    "source_evidence_id": "CA_IEC_WH_ARRIVAL_EVD_03",
+    "currency": "CAD",
+    "minimum_initial_funds": 2500,
+    "covered_period_months": 3,
+    "bank_statement_max_age_before_departure_days": 7,
+    "departure_ticket_funds_review": true,
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "arrival_currency_declaration_review": {
+    "source_evidence_id": "CA_IEC_WH_ARRIVAL_EVD_04",
+    "currency": "CAD",
+    "declaration_threshold": 10000,
+    "scope": "Currency and monetary instruments carried into Canada, not ordinary bank account balance",
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "arrival_work_permit_review": {
+    "source_evidence_id": "CA_IEC_WH_ARRIVAL_EVD_05",
+    "validity_limiters_to_review": [
+      "youth_mobility_agreement_duration",
+      "passport_expiry",
+      "biometrics_expiry",
+      "health_insurance_expiry"
+    ],
+    "other_categories_only": [
+      "employment_contract_end_date_for_young_professionals",
+      "employment_contract_end_date_for_international_coop"
+    ],
+    "checks_at_port_of_entry": [
+      "name_spelling",
+      "permit_expiry",
+      "medical_work_restrictions",
+      "other_permit_conditions_if_applicable"
+    ],
+    "report_errors_before_leaving_port_of_entry": true,
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  }
+}
