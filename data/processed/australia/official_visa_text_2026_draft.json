@@ -1,0 +1,681 @@
+{
+  "dataset_type": "australia_official_visa_text_draft",
+  "country": "australia",
+  "generated_at_utc": "2026-10-22T19:29:29.565354+00:00",
+  "source_count_expected": 20,
+  "source_count_extracted": 20,
+  "source_count_failed": 0,
+  "category_counts": {
+    "employment": 13,
+    "student": 4,
+    "working_holiday": 3
+  },
+  "duplicate_main_text_hash_count": 1,
+  "pages_with_extraction_issues": 16,
+  "records": [
+    {
+      "country": "australia",
+      "category": "employment",
+      "subclass": "186",
+      "source_file": "data/raw/australia/employment/subclass_186_direct_entry.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "",
+      "source_sha256": "712ff001b4eb63bcaa9851f7ba0d2e3aec42179f1f31033f8a51dee511adb862",
+      "source_bytes": 1381716,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "missing_page_title",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "employment",
+      "subclass": "186",
+      "source_file": "data/raw/australia/employment/subclass_186_labour_agreement.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/labour-agreement-stream?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "",
+      "source_sha256": "ca109213b06bd36b0ba2deb8444d70b7bffe1b936e85fa4d138274c56f62bd13",
+      "source_bytes": 1364771,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "missing_page_title",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "employment",
+      "subclass": "186",
+      "source_file": "data/raw/australia/employment/subclass_186_official.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "Employer Nomination Scheme (subclass 186) visa",
+      "source_sha256": "4617dde2276ca82cda7a2ec824a970a01f3811b67eb807c8055841bdf2c10e12",
+      "source_bytes": 1294626,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "employment",
+      "subclass": "186",
+      "source_file": "data/raw/australia/employment/subclass_186_temporary_residence_transition.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "",
+      "source_sha256": "16abab8008e558debf9bdf59c5c4181427a0cefffc65b8df9e3ed3768899e26b",
+      "source_bytes": 1383871,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "missing_page_title",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "employment",
+      "subclass": "189",
+      "source_file": "data/raw/australia/employment/subclass_189_official.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/skilled-independent-189?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "Skilled Independent visa (subclass 189)",
+      "source_sha256": "440861aae6f74ec57a325a150bc655a0690edad69608d72707c20abe5a1c7f23",
+      "source_bytes": 1294751,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "employment",
+      "subclass": "189",
+      "source_file": "data/raw/australia/employment/subclass_189_points_tested.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "",
+      "source_sha256": "2822b19b69d162291ea1652478b00fa5b9890655ac8124e7d851dcd1b6dc50d0",
+      "source_bytes": 1378174,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "missing_page_title",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "employment",
+      "subclass": "190",
+      "source_file": "data/raw/australia/employment/subclass_190_official.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/skilled-nominated-190?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "",
+      "source_sha256": "81ed598986b1af02b553fb52baecd39cbc5f6e1d785504ab8522f96ac6bfd6b9",
+      "source_bytes": 1378986,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "missing_page_title",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "employment",
+      "subclass": "407",
+      "source_file": "data/raw/australia/employment/subclass_407_occupational_training_types.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/training-407/occupational-training-types?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "Occupational training types for Training visa (subclass 407)",
+      "source_sha256": "4a8e9243088f33157c994c74bc8f962764050bd0140eb6d3c1a97b883e47b171",
+      "source_bytes": 1300837,
+      "main_text": "Occupational training types for Training visa (subclass 407)\nPage Content\n​​​\nNomination requirements for subclass 407 are different depending on the purpose or type of training you take part in.​\nThere are 3 types of occupational training covered by this visa:",
+      "main_text_sha256": "32e9fcb3239ee9a916319939080ad689db46b482db8772bfe85d98bd320160cb",
+      "main_text_length": 261,
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Occupational training types for Training visa (subclass 407)"
+        }
+      ],
+      "extraction_issues": [
+        "main_text_too_short"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "employment",
+      "subclass": "407",
+      "source_file": "data/raw/australia/employment/subclass_407_official.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/training-407?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "",
+      "source_sha256": "fe512c8de1c156cfed2cf090e7cb9f71b989d4feb111b4122c378992a8688e9f",
+      "source_bytes": 1398895,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "missing_page_title",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "employment",
+      "subclass": "482",
+      "source_file": "data/raw/australia/employment/subclass_482_core_skills.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "",
+      "source_sha256": "9d3451960d8b9bdf309932234b142f8ac3f916ab18c40c734f79da0d9cbb9029",
+      "source_bytes": 1417867,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "missing_page_title",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "employment",
+      "subclass": "482",
+      "source_file": "data/raw/australia/employment/subclass_482_labour_agreement.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "",
+      "source_sha256": "53f6670237a815a2a0b696648d52af728f26502da86a19296e61cc0d4eff6423",
+      "source_bytes": 1370674,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "missing_page_title",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "employment",
+      "subclass": "482",
+      "source_file": "data/raw/australia/employment/subclass_482_official.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "Skills in Demand visa (subclass 482)",
+      "source_sha256": "7fc26ca17e0fb340d5119f00df8f0d6dd657cb72bf398d87ee67e31939cc1d83",
+      "source_bytes": 1294884,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "employment",
+      "subclass": "482",
+      "source_file": "data/raw/australia/employment/subclass_482_specialist_skills.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "",
+      "source_sha256": "f5729b456a0f73af5d2e0b1b5ce9875d4627fbbd17b09a81fd6f3cd11e17656e",
+      "source_bytes": 1421509,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "missing_page_title",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "student",
+      "subclass": "500",
+      "source_file": "data/raw/australia/student/subclass_500_application_rule_changes.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/changes-to-student-visa-application-rules-500-590",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "Changes to Student visa application rules (subclasses 500 & 590)",
+      "source_sha256": "8fec6b5244e1215a42b02c4faa40b2e0e8776d6d41a4f3dffc76b0d88df5db4f",
+      "source_bytes": 1296702,
+      "main_text": "Published\nChanges to Student visa application rules (subclasses 500 & 590)\nPage Content\n​​​​​​​​Make sure you know how the new rules affect you before making visa, study, travel or relocation plans.\nFrom 2 October 2026, there are new rules for Student visa (subclass 500) and Student Guardian (subclass 590) visas. The rules change who can apply for and be granted a visa while in Australia, and whether family members can be included\n.\nAustralia continues to welcome international students. You can still apply for a Student visa if you meet the visa requirements.\nThe changes may affect you if you are:\napplying for a Student visa while in Australia\na Student visa holder applying for another Student visa\nthinking about including family members in your Student visa application\nconsidering whether family members can join you later.​\nMake sure you know how the new rules affect you before making visa, study, travel or relocation plans. For more information visit\nSubclass 500 Student visa\n.\nFact sheets and i​nfographic:\nChanges to Student visa application rules (subclasses 500 & 590) - Fact sheet​\nApplying for a Student visa (subclass 500) - Infographic​\nStudent visa decision tree – Can I include family\nStudent visa decision tree – Can I apply in Australia\n.​\n​​​",
+      "main_text_sha256": "1d186e6618dd10a9940d567998e902a7c61a385c57e19173090cc231a5fc732b",
+      "main_text_length": 1272,
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Changes to Student visa application rules (subclasses 500 & 590)"
+        }
+      ],
+      "extraction_issues": [],
+      "extraction_status": "candidate_review_pending",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "student",
+      "subclass": "500",
+      "source_file": "data/raw/australia/student/subclass_500_document_checklist_disclaimer.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/student-500/disclaimer-for-document-checklist?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "Disclaimer for Document Checklist Tool",
+      "source_sha256": "95c9a882d054a2907095f91fecac765124339b08e359432b1a83381d6811c96b",
+      "source_bytes": 1297736,
+      "main_text": "Published\nDisclaimer for Document Checklist Tool\nPage Content\n​​​This checklist provides an indication of the evidence you will need to submit with your application.\nWe might ask you for additional evidence.\nWhen you submit your application in ImmiAccount, you will also be provided with a list of documents you should attach. If evidence of English capacity and financial capacity are included on the list at this stage, they MUST be attached before you submit your application, or your application may be refused.\nIf you intend to do a package of courses, you must select the education provider offering the principal (final) course.\nIf you haven't decided on your education provider, you can leave the field blank or select 'My provider is not listed'.\nA full list of education providers is set out in the Commonwealth Register of Institutions and Courses for Overseas Students (CRICOS). If your education provider is registered but not yet showing on the checklist, select the ‘my education provider is not listed’ option. It could take up to a month for an education provider to appear in the checklist from the date of that provider’s registration with CRICOS.\nIn addition to the documents we need, your education provider might have their own enrolment requirements.",
+      "main_text_sha256": "e416aeb3f075a86b13b3a68cf83c31d2bbcbe6b6b6e5c27014c5936468cecff6",
+      "main_text_length": 1273,
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Disclaimer for Document Checklist Tool"
+        }
+      ],
+      "extraction_issues": [],
+      "extraction_status": "candidate_review_pending",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "student",
+      "subclass": "500",
+      "source_file": "data/raw/australia/student/subclass_500_length_of_stay.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/student-500/length-of-stay",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "Length of stay for Student visas",
+      "source_sha256": "e9fb8b2dd5a09f41bf20306eb85e4ebddec54a229d50b84fe5390b610fcfd713",
+      "source_bytes": 1299992,
+      "main_text": "Length of stay for Student visas\nPage Content\n​​​The length of stay is based on the course you intend to study. Additional time may be granted at the end of the course depending on its length. The 'expiry date' of your Overseas Student Health Cover (OSHC) (and any welfare arrangements, where relevant) will also be taken into account. At minimum OSHC must cover the course length.\nTo be granted a student visa to cover the additional time students must have OSHC in place for the same period. For example, if your course is a year in length ending 30 August, you will be eligible for a student visa to 30 October, provided you have OSHC to that date.\nYou should consider this when deciding how much OSHC to purchase, as your visa end date cannot be changed once granted.\nSubject to the ‘expiry date’ of your OSHC and any welfare arrangements (where relevant), your length of stay will generally be as follows:\nLength of course\nLength of stay\n10 months or longer, finishing at the end of the Australian academic year (November to December)\nWe will usually grant a visa stay period to 15 March of the following year\n10 months or longer, finishing from January until October\nWe will usually grant a visa stay period of 2 months longer than the course\nLess than 10 months\nWe will usually grant a visa stay period 1 month longer than the course\nThe maximum length of stay for a Student visa will generally not exceed 6 years.\n​\nTertiary packaged students​\nThe length of stay for tertiary students will generally not exceed five years. However, if a tertiary student is packaging two or more courses together and demonstrates reasonable, logical and clear course progression, the visa may be granted to the end of the last course up to six years.\nPostgraduate research students\nThe length of stay for Postgraduate Research students is generally 6 months longer than the usual relevant period set out in the table above. This additional time allows these students to remain in Australia during the interactive marking of their thesis.\nFor example, for Postgraduate Research students who are undertaking a course of more than 10 months duration finishing in November-December, we will generally grant a visa that ceases 15 September (an additional 6 months from 15 March) of the year following course completion.\nIn exceptional circumstances, postgraduate research students can apply for a further Student visa. The student must apply with a letter of support from their education provider to remain in Australia for a further 6 months, for the marking of their thesis where their education provider requires them to remain in Australia.\n​\nPrimary school-aged students\nThe maximum period for a student visa for primary school aged students is generally 3 years. This acts as an important safeguard for younger and more vulnerable students.\nPrimary school aged students can apply for another student visa to continue studying.\nIn circumstances where a student packages primary and high school study, a visa can still be granted for up to six years, provided the primary school component of the package does not exceed three years. For example, a student who wants to enrol in Year 4, 5 and 6 could be granted a Student visa until the end of Year 8.\nHigh school-aged students\nHigh school students enrolled in years 7-12 may be granted a visa for a maximum period of 6 years.\n​",
+      "main_text_sha256": "d05895fabdb95a64cfd87868097b386e4d6a66e9bfdebcaa867ed9b7ea0a6472",
+      "main_text_length": 3367,
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Length of stay for Student visas"
+        },
+        {
+          "level": "h2",
+          "text": "Tertiary packaged students​"
+        },
+        {
+          "level": "h2",
+          "text": "Postgraduate research students"
+        },
+        {
+          "level": "h2",
+          "text": "Primary school-aged students"
+        },
+        {
+          "level": "h2",
+          "text": "High school-aged students"
+        }
+      ],
+      "extraction_issues": [],
+      "extraction_status": "candidate_review_pending",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "student",
+      "subclass": "500",
+      "source_file": "data/raw/australia/student/subclass_500_official.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/student-500?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "",
+      "source_sha256": "5bcc0ba3e75df6e7a3709c88bf28b461d05fa2a851e406a893716ed091fee725",
+      "source_bytes": 1453905,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "missing_page_title",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "working_holiday",
+      "subclass": "417",
+      "source_file": "data/raw/australia/working_holiday/subclass_417_official.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "",
+      "source_sha256": "813e7d5876c2ba9a8d1b9768edfbcbc45890b83f5178153ce1d425a59afa242d",
+      "source_bytes": 1351704,
+      "main_text": "",
+      "main_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "main_text_length": 0,
+      "headings": [],
+      "extraction_issues": [
+        "main_text_too_short",
+        "missing_page_title",
+        "no_main_headings",
+        "duplicate_main_text"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "working_holiday",
+      "subclass": "417",
+      "source_file": "data/raw/australia/working_holiday/subclass_417_six_month_work_limitation.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/work-holiday-417/6-month-work-limitation?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "6 month work limitation",
+      "source_sha256": "fa2ac5ec6c41cd99ec2160cba3f8659ef01683129284a9aa2167a2367a4d77ff",
+      "source_bytes": 1320045,
+      "main_text": "Page Image\nWorking Holiday Maker (WHM) program\n6 month work limitation\nPublished\nPage Content\n​​​​​​​​​​​​​​​​Visa condition 8547 applies to anyone in Australia who holds any kind of WHM visa, regardless of when they arrive. It also applies to anyone who holds a Bridging visa with condition 8547 imposed. It applies if you engage in any type of work (full time, part time, casual, shift or voluntary) unless you fall within one of the exemptions below.\nSee Exemptions to condition 8547, Requesting permission and Bridging visa holders below.\nExemptions to condition 8547\nFrom 1 January 2024, you can work for the same employer in Australia for more than 6 months without asking permission if you work in any of the following:\ndifferent locations for the same employer, as long as work in any one location does not exceed 6 months\nplant and animal cultivation anywhere in Australia\nnatural disaster recovery work anywhere in Australia\ncritical sectors, including agriculture, food processing, health, aged and disability care and childcare, tourism and hospitality, anywhere in Australia\ncertain industries, including, fishing and pearling, tree farming and felling, construction and mining, in Northern Australia only (see\nWork in certain industries in Northern Australia only​\nbelow).\nThis applies until the Government makes further decisions.\n​​Work in different locations\nYou do not need to ask our permission to work with the same employer for more than 6 months if you work in different locations, including working from home. Work in any one location must not exceed six months.\nFor example, you can work for:\ntwo hotels in the same chain at different premises\nindependently-owned franchises in different workplaces\nState and Territory schools and health care facilities at different addresses\nthe same business with the one ABN (Australian Business Number) at two different orchards\na subsidiary company (owned by the same parent company) but the ABN on your payslip is different\ndifferent businesses (separate legal entities with different ABNs) owned by the same employer\nyourself (self-employed) and provide services to the same business for more than six months as long as that business is not the only business you provide services to during that time\nindependently-owned franchises, even though they operate under the same business name\na business from home or work remotely. A change to or from working remotely or at home counts as a change in location.​\nWork in plant and animal cultivation\nYou do not need to ask our permission to work with the same employer for more than 6 months if you work in plant and animal cultivation anywhere in Australia.\nFor example:\nharvesting and/or packing of fruit and vegetable crops\npruning and trimming vines and trees, as part of commercial horticultural activities\nmaintaining crops\ncultivating or propagating plants, fungi or their products or parts\nprocessing of plant products\nmaintaining animals for the purpose of selling them or their bodily produce, including natural increase\nprocessing of animal products including shearing, butchery, packing and tanning\nmanufacturing dairy produce from raw material.\n​Work in natural disaster recovery\nYou do not need to ask our permission to work with the same employer for more than 6 months if your work relates to natural disaster recovery work anywhere in Australia.\nThis includes:\nconstruction, farming, or any other work related to recovery or restitution of land, property, farm animals or wildlife\nproviding support services or assistance to people living, working or volunteering in the affected areas\nclean-up, construction or any other work in association with restitution or restoration of services, land, waterways, property or infrastructure\ncoordination support, including services for insurance companies and local, state and federal government organisations and community and evacuation centres\nWork in a critical sector\nYou do not need to ask our permission to work with the same employer for more than 6 months if you work in one of the five critical sectors below anywhere in Australia:\nAgriculture\nThis includes:\nall activities involved in farming\nfood processing, which involves processing of plant and animal products for human or animal consumption.\nHealth\nThis includes:\nall work carried out in hospitals and any duties or occupations related to providing or supporting health services, such as\ndoctors\nnurses\ndentists and dental support staff (including administrative roles)​\nmedical support staff (including administrative roles)\nmedical imaging\n​mental health\nradiology services\ninstallation and maintenance of complex medical machinery and\ncleaning services.\nAged care and disability services\nThis includes:\ndisabilities services\naged care services\naged or disabled carers.\nChildcare\nThis includes:\nnursery/crèche worker/aide/attendants\nfamily day care workers\nnanny/au pair\nout of school hours/vacation care workers.\nchild protective/welfare specialists/workers.\nTourism and Hospitality\nTourism and hospitality work includes a range of services in three main areas anywhere in Australia.\nAccommodation, including working in:\nhotels, motels, bed and breakfasts, and backpacker hostels\ncaravan parks and camping grounds\ncommercial housekeeping services\nboarding houses, guesthouses and reception centres.\nThe food and beverage sector, including working in:\ncafes and restaurants\ntakeaway food services/businesses\ncatering services\npubs, taverns and bars\nhospitality clubs.\nAll work carried out in the tourism and hospitality industry that directly provides a service to tourists. It also includes any duties or occupations related to providing or supporting such services, including:\ntourist guides and operators\noutdoor adventure or activity instructors, such as dive instructors\ntourist transport service workers, such as tour bus drivers\ngallery or museum managers, curators or guides\ntravel agency and tourist information workers\nevent and entertainment venue workers.\nWork in certain industries in Northern Australia only\nYou do not need to ask our permission to work longer than 6 months with the same employer in Northern Australia if you work in any of the following four industries:\nfishing and pearling\ntree farming and felling\nconstruction\nmining.\nFishing and pearling\nconducting operations relating directly to taking or catching fish and other aquatic species\nconducting operations relating directly to taking or culturing pearls or pearl shell.\nTree farming and felling\nplanting or tending trees in a plantation or forest that are intended to be felled\nfelling trees in a plantation or forest\ntransporting trees or parts of trees that were felled in a plantation or forest to the place where they are first to be milled or processed or from which they are to be transported to the place where they are to be milled or processed.\nConstruction\nresidential building construction\nnon-residential building construction\nheavy and civil engineering construction\nland development and site preparation services\nbuilding structure services\nbuilding installation services\nbuilding completion services\nother construction services.\nMining\ncoal mining\noil and gas extraction\nmetal ore mining\nconstruction material mining\nnon-metallic mineral mining and quarrying exploration\nmining support services.\nFor the purposes of the 6 months work limitation, Northern Australia is defined in the following table.\n​ ​\nEligible areas of Northern Australia\nState/Territory\n​ Postcodes\nQueensland\n4472, 4478, 4481, 4482, 4680, 4694, 4695, 4697, 4699 to 4707, 4709 to 4714, 4717, 4720 to 4728, 4730 to 4733, 4735 to 4746, 4750, 4751, 4753, 4754, 4756, 4757, 4798 to 4812, 4814 to 4825, 4828 to 4830, 4849, 4850, 4852, 4854 to 4856, 4858 to 4861, 4865, 4868 to 4888, 4890 to 4892, 4895\nWestern Australia\n0872, 6537, 6642, 6646, 6701, 6705, 6707, 6710 to 6714, 6716, 6718, 6720 to 6722, 6725, 6726, 6728, 6740, 6743, 6751, 6753, 6754, 6758, 6760, 6762, 6765, 6770\nNorthern Territory\nAll postcodes in Northern Territory are eligible\n​\nIf your work does not fall within one of the exemptions above, you can only work for the same employer for a maximum of 6 months while holding your WHM visa.\nIn some limited circumstances, you may be able to obtain permission to work longer than 6 months for the same employer. For more information, see\nRequesting permission\nbelow.\nRequesting permission\nGrounds for approving requests\nIf you submit a request for permission to work longer than 6 months for the same employer, we may give you permission if you:\nhave applied for a visa allowing ongoing full time work and are awaiting the outcome of your application or\nundertake work that is critical to your employer and have attached a supporting letter from your employer to your request.\nHow to seek permission\nIf you meet one of the above criteria, you can apply by submitting the online form\nPermission to work longer than 6 months\n.\nPeriod covered by the exemption or permission to work longer than 6 months\nThe permission will cover the remaining period of stay on your WHM visa if:\nyou are exempt from this condition or\nwe give you permission to work for more than 6 months with the same employer.\nThe 6 months start again with the grant of a new WHM visa, or when a Bridging visa with condition 8547 attached to it comes into effect.\nIf you have already submitted a request for permission to work longer than 6 months\nIf you have already submitted a request for permission to work for longer than 6 months for the same employer, you can continue working until you get a written decision. Due to the high volume of requests, we can't provide individual confirmation that we have received your request.\nIf you are still waiting to receive a written decision and your employer has queries, you can refer them to this webpage. This will give them confirmation that you can continue working for them until we make a decision.\nIf you submit your request for permission to work for more than six months with the same employer after the six months ended, you must stop working for the same employer. You must then wait for a decision before continuing work.\nMeaning of ‘same employer’\nThe 'employer' is the business or organisation for which you are directly working for.\nIf any agency or labour supplier refers you to a business, you can work for six months for that business. The same agency or labour supplier can refer you to another business where you can work for another six months.\nYou cannot stay in the same position in the same location with the same employer for more than six months by using different:\nemployment agencies\nbusiness affiliates or\nsub-contracting arrangements.\nWe consider workplace-based training as work. You are able to take workplace-based training with the same employer for up to six months.\nSelf-employment\nIf you are self-employed, your employer for the purposes of condition 8547 is the end user. You must not provide services to the same end user (considered your sole employer) for longer than 6 months. This applies unless your work falls within one of the exemptions, or you have obtained written approval from us.\nIf the end user is not your only employer, you can work for them and others for more than 6 months without breaching condition 8547. For example in-home services with multiple clients, or a growers who supply several retailers.\nCalculating the 6 months\nThe 6 months starts from the day you start work.\n​full-time\npart-time\ncasual\nshift\nvoluntary work.\nIt is based on the number of months that have passed since you started working, not how many hours or days you have worked.\nThe condition applies to each visa separately, including bridging visas. This means that the 6 months work limit starts again when we grant you a new WHM visa or when your bridging visa starts, while you wait for a WHM visa decision.\nBridging visa holders\nIf you hold a Bridging visa with condition 8547 attached to it, and you wish to work longer than 6 months for the same employer while your Bridging visa is in effect. You will need to apply for a new Bridging visa A to remove the condition.\nIf you show a compelling need to work, we may remove condition 8547 from your new Bridging visa A.\n​​\n​",
+      "main_text_sha256": "5459320b1beb254b796b65b5c865a7fa8eeb8c65a47b5badbb8c7e55f03801be",
+      "main_text_length": 12232,
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Working Holiday Maker (WHM) program 6 month work limitation"
+        },
+        {
+          "level": "h2",
+          "text": "Exemptions to condition 8547"
+        },
+        {
+          "level": "h3",
+          "text": "​​Work in different locations"
+        },
+        {
+          "level": "h3",
+          "text": "Work in plant and animal cultivation"
+        },
+        {
+          "level": "h3",
+          "text": "​Work in natural disaster recovery"
+        },
+        {
+          "level": "h3",
+          "text": "Work in a critical sector"
+        },
+        {
+          "level": "h4",
+          "text": "Agriculture"
+        },
+        {
+          "level": "h4",
+          "text": "Health"
+        },
+        {
+          "level": "h4",
+          "text": "Aged care and disability services"
+        },
+        {
+          "level": "h4",
+          "text": "Childcare"
+        },
+        {
+          "level": "h4",
+          "text": "Tourism and Hospitality"
+        },
+        {
+          "level": "h3",
+          "text": "Work in certain industries in Northern Australia only"
+        },
+        {
+          "level": "h4",
+          "text": "Fishing and pearling"
+        },
+        {
+          "level": "h4",
+          "text": "Tree farming and felling"
+        },
+        {
+          "level": "h4",
+          "text": "Construction"
+        },
+        {
+          "level": "h4",
+          "text": "Mining"
+        },
+        {
+          "level": "h2",
+          "text": "Requesting permission"
+        },
+        {
+          "level": "h3",
+          "text": "Grounds for approving requests"
+        },
+        {
+          "level": "h3",
+          "text": "How to seek permission"
+        },
+        {
+          "level": "h3",
+          "text": "Period covered by the exemption or permission to work longer than 6 months"
+        },
+        {
+          "level": "h3",
+          "text": "If you have already submitted a request for permission to work longer than 6 months"
+        },
+        {
+          "level": "h3",
+          "text": "Meaning of ‘same employer’"
+        },
+        {
+          "level": "h3",
+          "text": "Self-employment"
+        },
+        {
+          "level": "h4",
+          "text": "Calculating the 6 months"
+        },
+        {
+          "level": "h3",
+          "text": "Bridging visa holders"
+        }
+      ],
+      "extraction_issues": [],
+      "extraction_status": "candidate_review_pending",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    },
+    {
+      "country": "australia",
+      "category": "working_holiday",
+      "subclass": "417",
+      "source_file": "data/raw/australia/working_holiday/subclass_417_specified_work.html",
+      "source_url": "https://immi.homeaffairs.gov.au:443/visas/getting-a-visa/visa-listing/work-holiday-417/specified-work?utm_source=chatgpt.com",
+      "source_url_status": "canonical_or_og_verified",
+      "page_title": "Specified work for Working Holiday visa (subclass 417)",
+      "source_sha256": "95275f88eee2042879afc1a819e7893856a6a84ab751599378dfd6fc4d55475a",
+      "source_bytes": 1365114,
+      "main_text": "Page Image\nWorking Holiday Maker (WHM) program\nSpecified work for Working Holiday visa (subclass 417)\nPublished\nPage Content\n​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Specified subclass 417 work​",
+      "main_text_sha256": "a03df4758088ca2ca28f7a94b3be98057dd1f682484879c543dd03bd45e67993",
+      "main_text_length": 231,
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Working Holiday Maker (WHM) program Specified work for Working Holiday visa (subclass 417)"
+        },
+        {
+          "level": "h2",
+          "text": "​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Specified subclass 417 work​"
+        }
+      ],
+      "extraction_issues": [
+        "main_text_too_short"
+      ],
+      "extraction_status": "needs_review",
+      "section_boundaries_verified": false,
+      "semantic_validation_approved": false,
+      "legal_validation_approved": false,
+      "approved_for_user_answers": false,
+      "approved_for_embedding": false
+    }
+  ],
+  "failures": [],
+  "validation_status": "needs_review",
+  "section_boundaries_verified": false,
+  "semantic_validation_approved": false,
+  "legal_validation_approved": false,
+  "approved_for_user_answers": false,
+  "approved_for_embedding": false
+}

@@ -1,0 +1,616 @@
+{
+  "program": "subclass_417_first",
+  "visa_subclass": "417",
+  "stream": "first_working_holiday",
+  "pathway_type": "working_holiday",
+  "official_sources": {
+    "about_this_visa": {
+      "source_file": "data/raw/australia/working_holiday/subclass_417_first_about_this_visa.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417",
+      "source_sha256": "1d353af3a7418f30e946efe86030cc7565ae411a812e4413a0b47b2b3ed5b37e",
+      "char_count": 7775,
+      "review_status": "needs_review"
+    },
+    "eligibility": {
+      "source_file": "data/raw/australia/working_holiday/subclass_417_first_eligibility.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417",
+      "source_sha256": "892adf418dbe8e0144a65bd457f19177e874d2bebc2b2a1a6ea062700533a412",
+      "char_count": 5841,
+      "review_status": "needs_review"
+    },
+    "step_by_step": {
+      "source_file": "data/raw/australia/working_holiday/subclass_417_first_step_by_step.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417",
+      "source_sha256": "0302faaf973b3b8526a0ce82845c514c4aaa1654b87d69f14162793bd944b368",
+      "char_count": 8980,
+      "review_status": "needs_review"
+    },
+    "when_you_have_this_visa": {
+      "source_file": "data/raw/australia/working_holiday/subclass_417_first_when_you_have_this_visa.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417",
+      "source_sha256": "ca7b28980a0dfaf29afd41e55e584a97fe6c59b0bc0d89755988d0fd5618373a",
+      "char_count": 8318,
+      "review_status": "needs_review"
+    }
+  },
+  "eligibility_sections": [
+    {
+      "section_id": "AU_417_FIRST_ELIG_01",
+      "topic": "passport",
+      "heading": "Hold this passport",
+      "source_tab": "eligibility",
+      "source_sha256": "892adf418dbe8e0144a65bd457f19177e874d2bebc2b2a1a6ea062700533a412",
+      "start_line": 37,
+      "end_line": 58,
+      "original_text": "Hold this passport\nYou must be a citizen of and hold a valid passport from one of these countries/jurisdictions:\n\nBelgium\nCanada\nRepublic of Cyprus\nDenmark\nEstonia\nFinland\nFrance\nGermany\nHong Kong Special Administrative Region of the People's Republic of China\nRepublic of Ireland\nItaly\nJapan\nRepublic of Korea\nMalta\nNetherlands\nNorway\nSweden\nTaiwan (other than an official or diplomatic passport)\nThe United Kingdom of Great Britain and Northern Ireland (including British National Overseas passport holders)",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_417_FIRST_ELIG_02",
+      "topic": "age",
+      "heading": "Be this age",
+      "source_tab": "eligibility",
+      "source_sha256": "892adf418dbe8e0144a65bd457f19177e874d2bebc2b2a1a6ea062700533a412",
+      "start_line": 59,
+      "end_line": 88,
+      "original_text": "Be this age\nAt the time of application, you must be within the eligible age limit for your passport country:\n\nBelgium – 18 to 30 years\nCanada – 18 to 35 years\nRepublic of Cyprus - 18 to 35 years\nDenmark - 18 to 35 years\nEstonia - 18 to 30 years\nFinland - 18 to 35 years\nFrance - 18 to 35 years\nGermany - 18 to 35 years\nHong Kong Special Administrative Region of the People's Republic of China - 18 to 30 years\nRepublic of Ireland - 18 to 35 years\nItaly - 18 to 35 years\nJapan - 18 to 30 years\nRepublic of Korea - 18 to 35 years\nMalta - 18 to 30 years\nNetherlands - 18 to 30 years\nNorway - 18 to 30 years\nSweden - 18 to 30 years\nTaiwan (other than an official or diplomatic passport) - 18 to 30 years\nThe United Kingdom of Great Britain and Northern Ireland (including British National Overseas passport holders) - 18 to 35 years\n** You must apply for your visa before you turn 31 (or 36) years old in Australian Eastern Standard Time (AEST)/Australian Eastern Daylight Savings Time (AEDST). The deadline to lodge an application is midnight AEST/AEDST the day before your 31st or 36th birthday. This time applies even if you are applying from outside Australia.\n\nNote that AEST/AEDST will be different to when your birthday ends in your country due to time differences between countries.\n\n*** Avoid submitting your application on your birthday, if possible.\n\nWe can still grant you the visa if you apply for it at 30 (or 35) but turn 31 (or 36) years old before we make a decision. You must still meet all other requirements.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_417_FIRST_ELIG_03",
+      "topic": "previous_visas",
+      "heading": "Previous visas",
+      "source_tab": "eligibility",
+      "source_sha256": "892adf418dbe8e0144a65bd457f19177e874d2bebc2b2a1a6ea062700533a412",
+      "start_line": 89,
+      "end_line": 93,
+      "original_text": "Previous visas\nYou must not have previously entered Australia on a:\n\nWorking Holiday visa (subclass 417)\nWork and Holiday visa (subclass 462)",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_417_FIRST_ELIG_04",
+      "topic": "financial_capacity",
+      "heading": "Have enough money",
+      "source_tab": "eligibility",
+      "source_sha256": "892adf418dbe8e0144a65bd457f19177e874d2bebc2b2a1a6ea062700533a412",
+      "start_line": 94,
+      "end_line": 100,
+      "original_text": "Have enough money\nYou must have enough money to:\n\nsupport yourself while you are in Australia\nleave Australia at the end of your stay\nThis is usually about AUD5,000 for your initial stay, plus the fare to where you are going after leaving Australia.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_417_FIRST_ELIG_05",
+      "topic": "health",
+      "heading": "Meet the health requirement",
+      "source_tab": "eligibility",
+      "source_sha256": "892adf418dbe8e0144a65bd457f19177e874d2bebc2b2a1a6ea062700533a412",
+      "start_line": 101,
+      "end_line": 103,
+      "original_text": "Meet the health requirement\nYou must meet our health requirement.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_417_FIRST_ELIG_06",
+      "topic": "character",
+      "heading": "Meet the character requirement",
+      "source_tab": "eligibility",
+      "source_sha256": "892adf418dbe8e0144a65bd457f19177e874d2bebc2b2a1a6ea062700533a412",
+      "start_line": 104,
+      "end_line": 106,
+      "original_text": "Meet the character requirement\nYou must meet our character requirement.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_417_FIRST_ELIG_07",
+      "topic": "government_debt",
+      "heading": "Pay your debts to the Australian Government",
+      "source_tab": "eligibility",
+      "source_sha256": "892adf418dbe8e0144a65bd457f19177e874d2bebc2b2a1a6ea062700533a412",
+      "start_line": 107,
+      "end_line": 109,
+      "original_text": "Pay your debts to the Australian Government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_417_FIRST_ELIG_08",
+      "topic": "immigration_history",
+      "heading": "Not had a visa cancelled or an application refused",
+      "source_tab": "eligibility",
+      "source_sha256": "892adf418dbe8e0144a65bd457f19177e874d2bebc2b2a1a6ea062700533a412",
+      "start_line": 110,
+      "end_line": 124,
+      "original_text": "Not had a visa cancelled or an application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\n \n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\n \n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\n \n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_417_FIRST_ELIG_09",
+      "topic": "australian_values",
+      "heading": "Sign the Australian values statement",
+      "source_tab": "eligibility",
+      "source_sha256": "892adf418dbe8e0144a65bd457f19177e874d2bebc2b2a1a6ea062700533a412",
+      "start_line": 125,
+      "end_line": 127,
+      "original_text": "Sign the Australian values statement\nYou must acknowledge the Australian Values Statement that confirms you will respect the Australian way of life and obey Australian laws when you apply for the visa.​",
+      "review_status": "needs_review"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "AU_417_FIRST_EVD_01",
+      "source_section_id": "AU_417_FIRST_ELIG_01",
+      "source_tab": "eligibility",
+      "start_line": 37,
+      "end_line": 58,
+      "exact_quote": "Hold this passport\nYou must be a citizen of and hold a valid passport from one of these countries/jurisdictions:\n\nBelgium\nCanada\nRepublic of Cyprus\nDenmark\nEstonia\nFinland\nFrance\nGermany\nHong Kong Special Administrative Region of the People's Republic of China\nRepublic of Ireland\nItaly\nJapan\nRepublic of Korea\nMalta\nNetherlands\nNorway\nSweden\nTaiwan (other than an official or diplomatic passport)\nThe United Kingdom of Great Britain and Northern Ireland (including British National Overseas passport holders)",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_417_FIRST_EVD_02",
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "source_tab": "eligibility",
+      "start_line": 59,
+      "end_line": 88,
+      "exact_quote": "Be this age\nAt the time of application, you must be within the eligible age limit for your passport country:\n\nBelgium – 18 to 30 years\nCanada – 18 to 35 years\nRepublic of Cyprus - 18 to 35 years\nDenmark - 18 to 35 years\nEstonia - 18 to 30 years\nFinland - 18 to 35 years\nFrance - 18 to 35 years\nGermany - 18 to 35 years\nHong Kong Special Administrative Region of the People's Republic of China - 18 to 30 years\nRepublic of Ireland - 18 to 35 years\nItaly - 18 to 35 years\nJapan - 18 to 30 years\nRepublic of Korea - 18 to 35 years\nMalta - 18 to 30 years\nNetherlands - 18 to 30 years\nNorway - 18 to 30 years\nSweden - 18 to 30 years\nTaiwan (other than an official or diplomatic passport) - 18 to 30 years\nThe United Kingdom of Great Britain and Northern Ireland (including British National Overseas passport holders) - 18 to 35 years\n** You must apply for your visa before you turn 31 (or 36) years old in Australian Eastern Standard Time (AEST)/Australian Eastern Daylight Savings Time (AEDST). The deadline to lodge an application is midnight AEST/AEDST the day before your 31st or 36th birthday. This time applies even if you are applying from outside Australia.\n\nNote that AEST/AEDST will be different to when your birthday ends in your country due to time differences between countries.\n\n*** Avoid submitting your application on your birthday, if possible.\n\nWe can still grant you the visa if you apply for it at 30 (or 35) but turn 31 (or 36) years old before we make a decision. You must still meet all other requirements.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_417_FIRST_EVD_03",
+      "source_section_id": "AU_417_FIRST_ELIG_03",
+      "source_tab": "eligibility",
+      "start_line": 89,
+      "end_line": 93,
+      "exact_quote": "Previous visas\nYou must not have previously entered Australia on a:\n\nWorking Holiday visa (subclass 417)\nWork and Holiday visa (subclass 462)",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_417_FIRST_EVD_04",
+      "source_section_id": "AU_417_FIRST_ELIG_04",
+      "source_tab": "eligibility",
+      "start_line": 94,
+      "end_line": 100,
+      "exact_quote": "Have enough money\nYou must have enough money to:\n\nsupport yourself while you are in Australia\nleave Australia at the end of your stay\nThis is usually about AUD5,000 for your initial stay, plus the fare to where you are going after leaving Australia.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_417_FIRST_EVD_05",
+      "source_section_id": "AU_417_FIRST_ELIG_05",
+      "source_tab": "eligibility",
+      "start_line": 101,
+      "end_line": 103,
+      "exact_quote": "Meet the health requirement\nYou must meet our health requirement.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_417_FIRST_EVD_06",
+      "source_section_id": "AU_417_FIRST_ELIG_06",
+      "source_tab": "eligibility",
+      "start_line": 104,
+      "end_line": 106,
+      "exact_quote": "Meet the character requirement\nYou must meet our character requirement.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_417_FIRST_EVD_07",
+      "source_section_id": "AU_417_FIRST_ELIG_07",
+      "source_tab": "eligibility",
+      "start_line": 107,
+      "end_line": 109,
+      "exact_quote": "Pay your debts to the Australian Government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_417_FIRST_EVD_08",
+      "source_section_id": "AU_417_FIRST_ELIG_08",
+      "source_tab": "eligibility",
+      "start_line": 110,
+      "end_line": 124,
+      "exact_quote": "Not had a visa cancelled or an application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\n \n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\n \n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\n \n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_417_FIRST_EVD_09",
+      "source_section_id": "AU_417_FIRST_ELIG_09",
+      "source_tab": "eligibility",
+      "start_line": 125,
+      "end_line": 127,
+      "exact_quote": "Sign the Australian values statement\nYou must acknowledge the Australian Values Statement that confirms you will respect the Australian way of life and obey Australian laws when you apply for the visa.​",
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "AU_417_FIRST_POL_01",
+      "program": "subclass_417_first",
+      "topic": "passport",
+      "source_section_id": "AU_417_FIRST_ELIG_01",
+      "source_text": "Hold this passport\nYou must be a citizen of and hold a valid passport from one of these countries/jurisdictions:\n\nBelgium\nCanada\nRepublic of Cyprus\nDenmark\nEstonia\nFinland\nFrance\nGermany\nHong Kong Special Administrative Region of the People's Republic of China\nRepublic of Ireland\nItaly\nJapan\nRepublic of Korea\nMalta\nNetherlands\nNorway\nSweden\nTaiwan (other than an official or diplomatic passport)\nThe United Kingdom of Great Britain and Northern Ireland (including British National Overseas passport holders)",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_02",
+      "program": "subclass_417_first",
+      "topic": "age",
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "source_text": "Be this age\nAt the time of application, you must be within the eligible age limit for your passport country:\n\nBelgium – 18 to 30 years\nCanada – 18 to 35 years\nRepublic of Cyprus - 18 to 35 years\nDenmark - 18 to 35 years\nEstonia - 18 to 30 years\nFinland - 18 to 35 years\nFrance - 18 to 35 years\nGermany - 18 to 35 years\nHong Kong Special Administrative Region of the People's Republic of China - 18 to 30 years\nRepublic of Ireland - 18 to 35 years\nItaly - 18 to 35 years\nJapan - 18 to 30 years\nRepublic of Korea - 18 to 35 years\nMalta - 18 to 30 years\nNetherlands - 18 to 30 years\nNorway - 18 to 30 years\nSweden - 18 to 30 years\nTaiwan (other than an official or diplomatic passport) - 18 to 30 years\nThe United Kingdom of Great Britain and Northern Ireland (including British National Overseas passport holders) - 18 to 35 years\n** You must apply for your visa before you turn 31 (or 36) years old in Australian Eastern Standard Time (AEST)/Australian Eastern Daylight Savings Time (AEDST). The deadline to lodge an application is midnight AEST/AEDST the day before your 31st or 36th birthday. This time applies even if you are applying from outside Australia.\n\nNote that AEST/AEDST will be different to when your birthday ends in your country due to time differences between countries.\n\n*** Avoid submitting your application on your birthday, if possible.\n\nWe can still grant you the visa if you apply for it at 30 (or 35) but turn 31 (or 36) years old before we make a decision. You must still meet all other requirements.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_03",
+      "program": "subclass_417_first",
+      "topic": "previous_visas",
+      "source_section_id": "AU_417_FIRST_ELIG_03",
+      "source_text": "Previous visas\nYou must not have previously entered Australia on a:\n\nWorking Holiday visa (subclass 417)\nWork and Holiday visa (subclass 462)",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_04",
+      "program": "subclass_417_first",
+      "topic": "financial_capacity",
+      "source_section_id": "AU_417_FIRST_ELIG_04",
+      "source_text": "Have enough money\nYou must have enough money to:\n\nsupport yourself while you are in Australia\nleave Australia at the end of your stay\nThis is usually about AUD5,000 for your initial stay, plus the fare to where you are going after leaving Australia.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_05",
+      "program": "subclass_417_first",
+      "topic": "health",
+      "source_section_id": "AU_417_FIRST_ELIG_05",
+      "source_text": "Meet the health requirement\nYou must meet our health requirement.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_06",
+      "program": "subclass_417_first",
+      "topic": "character",
+      "source_section_id": "AU_417_FIRST_ELIG_06",
+      "source_text": "Meet the character requirement\nYou must meet our character requirement.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_07",
+      "program": "subclass_417_first",
+      "topic": "government_debt",
+      "source_section_id": "AU_417_FIRST_ELIG_07",
+      "source_text": "Pay your debts to the Australian Government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_08",
+      "program": "subclass_417_first",
+      "topic": "immigration_history",
+      "source_section_id": "AU_417_FIRST_ELIG_08",
+      "source_text": "Not had a visa cancelled or an application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\n \n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\n \n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\n \n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_09",
+      "program": "subclass_417_first",
+      "topic": "australian_values",
+      "source_section_id": "AU_417_FIRST_ELIG_09",
+      "source_text": "Sign the Australian values statement\nYou must acknowledge the Australian Values Statement that confirms you will respect the Australian way of life and obey Australian laws when you apply for the visa.​",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "application_steps": [
+    {
+      "step_number": 1,
+      "source_tab": "step_by_step",
+      "start_line": 37,
+      "end_line": 54,
+      "original_text": "Step 1\n\nBefore you apply\nYou can organise health exams or appoint someone to help you with your application.\n\nOrganise health exams\nYou might need to have health examinations. You can complete them before you apply or you can wait until we tell you to have them.\n\nFind out the examinations you need and how to arrange them if you want to have them before you apply.\n\nGet help with your application\nOnly some people can help you with your application. If you appoint someone to give you immigration assistance they must be:\n\na registered migration agent\na legal practitioner, or\nan exempt person.\nYou can appoint anyone to receive documents on your behalf relating to your visa matter.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 2,
+      "source_tab": "step_by_step",
+      "start_line": 55,
+      "end_line": 122,
+      "original_text": "Step 2\n\nGather your documents\nProvide accurate information. See what happens if you can't prove your identity or don't provide true information.\n\nIdentity documents\nProvide the pages of your current passport showing your photo, personal details, and passport issue and expiry dates.\nAlso provide a copy of your birth certificate showing both your parents’ names. If you don’t have a birth certificate and you can’t get one, provide a copy of the identification pages of one of these:\n\na family book showing both your parents’ names\ngovernment-issued identification\na court-issued document that verifies your identity\nIf you have changed your name, provide proof such as:\n\na marriage or divorce certificate\nchange of name documents from an Australian Registry of Births, Deaths and Marriages, or the relevant overseas authority\ndocuments that show other names you have been known by\nEnough money for your stay and to leave\nProvide evidence you have enough money for your stay in Australia. This is usually AUD5,000.\n\nYou must also show us you have enough money to buy a ticket to leave Australia at the end of your stay, or that you already have the ticket.\n\nIf you don’t attach evidence to your application, processing may be delayed if we need to contact you to request further information.\n\nCharacter documents\nWe might ask you to provide:\n\nan Australian police certificate if you have spent a total of 12 months or more in Australia in the last 10 years since you turned 16. We only accept complete disclosure National Police Certificates issued by the Australian Federal Police. We do not accept standard disclosure certificates or national police certificates issued by Australian state or territory police\nan overseas police certificate from every country, including your home country, where you spent a total of 12 months or more in the last 10 years since you turned 16\nmilitary service records or discharge papers if you served in the armed forces of any country\nWe will let you know if you need to give us these documents.\n\nTell us you are getting help\nTo nominate someone to:\n\nreceive your correspondence, use Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration assistance, use Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nPrepare your documents\nTranslate\nHave all non-English documents translated into English.\n\nProvide original and translated documents in your application. \n\nTranslators in Australia must be accredited by the National Accreditation Authority for Translators and Interpreters.\n\nTranslators outside Australia do not have to be accredited. But on each translation, they must include their:\n\nfull name\naddress and telephone number\nqualifications and experience in the language they are translating\nThese details must be in English.\n\nNote: You do not need to have any documents certified.\n\nScan or photograph\nScan or photograph all documents (English and non-English) in colour.\n\nThe scans and photos must be clear.\n\nIf a document is more than one page, save it all as one file.\n\nAttach\nAttach a document only once, even if you are using it to show more than one thing.\n\nLearn more about attaching documents.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 3,
+      "source_tab": "step_by_step",
+      "start_line": 123,
+      "end_line": 139,
+      "original_text": "Step 3\n\nApply for the visa\nProvide accurate information\nProvide accurate information. See what happens if you can't prove your identity or don't provide true information.\n\nApply online\nLog in or create an ImmiAccount.\nAttach documents.\n​Pay the application fee. We will not process your application until you pay the fee.\nNote the transaction reference number.\nApplicants with dependent children\n\nYou can’t apply online if you are the parent of a child under the age of 18.\n\nWorking Holiday visa holders cannot be accompanied by dependent children at any time during their stay in Australia. While it is possible to obtain a Working Holiday visa if you have a child, your child cannot join you in Australia at any time while you are on your Working Holiday visa – not even for one day.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 4,
+      "source_tab": "step_by_step",
+      "start_line": 140,
+      "end_line": 183,
+      "original_text": "Step 4\n\nAfter you apply\nSee what you can and must do after you apply.\n\nWe will let you know when we have received your application.\n\nTravel\nDo not arrange to travel to Australia until we let you know, in writing, that we have granted you the visa\n\nBiometrics\nWe might ask for biometrics. We will let you know if you need to provide them.\n\nHealth exams\nIf you didn't have health examinations before you applied, we will let you know if you need them.\n\nAttach more information\nIf you didn't attach all documents when you applied, attach them via ImmiAccount as soon as you can.\n\nWe might also ask you to provide more information.\n\nMistakes on your application\nLet us know as soon as you can if you made a mistake on your application.\n\nComplete Form 1023 Notification of incorrect answers (168KB PDF) and attach it in ImmiAccount.\n\nHelp with your application\nLet us know if you no longer want someone to:\n\nreceive your correspondence - complete Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration advice - complete Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nFor more information, see Who can help you with your application.\n\nTell us if things change\nTell us if things change after you lodge your application but before we have made a decision.\n\nThings you need to let us know about include:\n\nyou want to withdraw your application\nchanges to your passport\nchanges to your relationship status\nthe birth of a child",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 5,
+      "source_tab": "step_by_step",
+      "start_line": 184,
+      "end_line": 199,
+      "original_text": "Step 5\n\nVisa outcome\nWe will let you know our decision in writing.\n\nIf we grant your visa, we will tell you:\n\nyour visa grant number\nthe date your visa starts\nyour visa conditions\nKeep a copy of the decision notification with you when in Australia.\n\nIf we refuse your visa, we will tell you:\n\nwhy we refused the visa\nif you have a right to a review of the decision",
+      "review_status": "needs_review"
+    }
+  ],
+  "conditional_requirements": {
+    "passport_and_nationality": {
+      "source_section_ids": [
+        "AU_417_FIRST_ELIG_01"
+      ],
+      "review_points": [
+        "eligible_passport_countries",
+        "citizenship_and_valid_passport",
+        "special_passport_conditions"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "age_by_nationality": {
+      "source_section_ids": [
+        "AU_417_FIRST_ELIG_02"
+      ],
+      "review_points": [
+        "country_specific_age_limit",
+        "18_to_30_or_18_to_35",
+        "application_deadline_in_australian_time",
+        "age_at_application_vs_decision"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "previous_visa_history": {
+      "source_section_ids": [
+        "AU_417_FIRST_ELIG_03",
+        "AU_417_FIRST_ELIG_08"
+      ],
+      "review_points": [
+        "previous_entry_on_417",
+        "previous_entry_on_462",
+        "prior_visa_refusal",
+        "prior_visa_cancellation"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "financial_capacity": {
+      "source_section_ids": [
+        "AU_417_FIRST_ELIG_04"
+      ],
+      "review_points": [
+        "initial_support_funds",
+        "usual_aud_5000_guidance",
+        "onward_travel_fare",
+        "acceptable_financial_evidence"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "health_character_and_values": {
+      "source_section_ids": [
+        "AU_417_FIRST_ELIG_05",
+        "AU_417_FIRST_ELIG_06",
+        "AU_417_FIRST_ELIG_07",
+        "AU_417_FIRST_ELIG_09"
+      ],
+      "review_points": [
+        "health_requirement",
+        "character_requirement",
+        "australian_government_debt",
+        "australian_values_statement"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "country_age_guidance": [
+    {
+      "passport_country": "Belgium",
+      "minimum_age": 18,
+      "maximum_age": 30,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Canada",
+      "minimum_age": 18,
+      "maximum_age": 35,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Republic of Cyprus",
+      "minimum_age": 18,
+      "maximum_age": 35,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Denmark",
+      "minimum_age": 18,
+      "maximum_age": 35,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Estonia",
+      "minimum_age": 18,
+      "maximum_age": 30,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Finland",
+      "minimum_age": 18,
+      "maximum_age": 35,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "France",
+      "minimum_age": 18,
+      "maximum_age": 35,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Germany",
+      "minimum_age": 18,
+      "maximum_age": 35,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Hong Kong Special Administrative Region of the People's Republic of China",
+      "minimum_age": 18,
+      "maximum_age": 30,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Republic of Ireland",
+      "minimum_age": 18,
+      "maximum_age": 35,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Italy",
+      "minimum_age": 18,
+      "maximum_age": 35,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Japan",
+      "minimum_age": 18,
+      "maximum_age": 30,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Republic of Korea",
+      "minimum_age": 18,
+      "maximum_age": 35,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Malta",
+      "minimum_age": 18,
+      "maximum_age": 30,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Netherlands",
+      "minimum_age": 18,
+      "maximum_age": 30,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Norway",
+      "minimum_age": 18,
+      "maximum_age": 30,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Sweden",
+      "minimum_age": 18,
+      "maximum_age": 30,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "Taiwan (other than an official or diplomatic passport)",
+      "minimum_age": 18,
+      "maximum_age": 30,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "passport_country": "The United Kingdom of Great Britain and Northern Ireland (including British National Overseas passport holders)",
+      "minimum_age": 18,
+      "maximum_age": 35,
+      "source_section_id": "AU_417_FIRST_ELIG_02",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  ],
+  "financial_guidance": {
+    "usual_initial_funds_aud": 5000,
+    "onward_travel_fare": "additional",
+    "source_section_id": "AU_417_FIRST_ELIG_04",
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "previous_entry_restrictions": {
+    "visa_subclasses": [
+      "417",
+      "462"
+    ],
+    "restriction": "previous_entry",
+    "source_section_id": "AU_417_FIRST_ELIG_03",
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "review_status": "needs_review",
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false
+}

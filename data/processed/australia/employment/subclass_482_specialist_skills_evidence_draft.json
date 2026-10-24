@@ -1,0 +1,550 @@
+{
+  "program": "subclass_482_specialist_skills",
+  "source_tabs": {
+    "about_this_visa": {
+      "source_file": "data/raw/australia/employment/subclass_482_specialist_skills_about_this_visa.txt",
+      "source_sha256": "4eae83e52c3dd176fb946b79f7181c9653044fe7792a08f8beafe055088eb7ba",
+      "char_count": 9947,
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "review_status": "needs_review"
+    },
+    "eligibility": {
+      "source_file": "data/raw/australia/employment/subclass_482_specialist_skills_eligibility.txt",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "char_count": 11088,
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "review_status": "needs_review"
+    },
+    "step_by_step": {
+      "source_file": "data/raw/australia/employment/subclass_482_specialist_skills_step_by_step.txt",
+      "source_sha256": "b140bd7d064ed4277b08abdf04cc2a36387a5e09251487114a1705037eedf4fd",
+      "char_count": 18287,
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "review_status": "needs_review"
+    },
+    "when_you_have_this_visa": {
+      "source_file": "data/raw/australia/employment/subclass_482_specialist_skills_when_you_have_this_visa.txt",
+      "source_sha256": "4d9077128efcd4bcf3fc88db189a7f2e05be8a5edb54dc2995b5cf6f7718821b",
+      "char_count": 6361,
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "review_status": "needs_review"
+    }
+  },
+  "shared_official_sources": {
+    "AU_482_ENGLISH_OFFICIAL": {
+      "source_file": "data/raw/australia/employment/subclass_482_english_proficiency.txt",
+      "source_sha256": "4a19e6d92e2b6c58bcb73c615ecbac93189007ee68aa19bcb840e44ae6ec7c81",
+      "review_status": "needs_review"
+    },
+    "AU_482_SALARY_OFFICIAL": {
+      "source_file": "data/raw/australia/employment/subclass_482_salary_requirements.txt",
+      "source_sha256": "f083744789c5faaa9c18471c22d54b8e6ac3ac1b88cd162c661f47d3e99d1988",
+      "review_status": "needs_review"
+    },
+    "AU_482_IMMI_18_039": {
+      "source_file": "data/raw/australia/employment/subclass_482_mandatory_skills_assessment_immi_18_039.txt",
+      "source_sha256": "4304a65aae5038cb770466feaf28771855448bb2abcc90b687986bdec35dc480",
+      "review_status": "needs_review"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_01",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_01",
+      "exact_quote": "Be this age",
+      "line_number": 39,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_02",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_02",
+      "exact_quote": "Be the holder of an appropriate visa",
+      "line_number": 42,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_03",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_03",
+      "exact_quote": "Have complied with previous visa conditions",
+      "line_number": 47,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_04",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_04",
+      "exact_quote": "Be nominated by an approved sponsor",
+      "line_number": 50,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_05",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_05",
+      "exact_quote": "Work for your nominating employer",
+      "line_number": 55,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_06",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_06",
+      "exact_quote": "Have relevant skills, qualifications and employment background to perform occupation",
+      "line_number": 68,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_07",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_07",
+      "exact_quote": "Have worked in your nominated occupation or a related field for at least 1 year",
+      "line_number": 78,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_08",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_08",
+      "exact_quote": "Have a positive skills assessment",
+      "line_number": 95,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_09",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_09",
+      "exact_quote": "Have health insurance",
+      "line_number": 111,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_10",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_10",
+      "exact_quote": "Meet our health requirement",
+      "line_number": 123,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_11",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_11",
+      "exact_quote": "Meet our character requirement",
+      "line_number": 128,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_12",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_12",
+      "exact_quote": "Have not contravened ‘paying for visa sponsorship’ legislative provisions",
+      "line_number": 133,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_13",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_13",
+      "exact_quote": "Not have had a visa cancelled or a previous application refused",
+      "line_number": 139,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_14",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_14",
+      "exact_quote": "Have no debt to the Australian government",
+      "line_number": 148,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_SPECIALIST_EVD_15",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_15",
+      "exact_quote": "Sign the Australian values statement",
+      "line_number": 151,
+      "source_tab": "eligibility",
+      "review_status": "needs_review"
+    }
+  ],
+  "eligibility_sections": [
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_01",
+      "heading": "Be this age",
+      "start_line": 39,
+      "end_line": 41,
+      "original_text": "Be this age\nThere is no age requirement for this visa.",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_02",
+      "heading": "Be the holder of an appropriate visa",
+      "start_line": 42,
+      "end_line": 46,
+      "original_text": "Be the holder of an appropriate visa\nIf you are applying in Australia, you must hold:\n\na substantive visa, or\na Bridging visa A, Bridging visa B or Bridging visa C",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_03",
+      "heading": "Have complied with previous visa conditions",
+      "start_line": 47,
+      "end_line": 49,
+      "original_text": "Have complied with previous visa conditions\nIf you are in Australia at the time of decision, you must have substantially complied with any conditions that apply or applied to your last substantive visa or bridging visa held.",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_04",
+      "heading": "Be nominated by an approved sponsor",
+      "start_line": 50,
+      "end_line": 54,
+      "original_text": "Be nominated by an approved sponsor\nBefore you can apply for a Skills in Demand (SID) visa, your proposed employer will need to lodge a nomination application for you. They will only be able to do this if they are an approved sponsor or have at least lodged an application to become a Standard business sponsor.\n\nYour employer must have nominated you to fill an Australian and New Zealand Standard Classification of Occupations (ANZSCO) listed occupation, excluding occupations listed in Major Groups 3, 7 or 8, where the nominated salary for the position meets the Specialist Skills Income Threshold.",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_05",
+      "heading": "Work for your nominating employer",
+      "start_line": 55,
+      "end_line": 67,
+      "original_text": "Work for your nominating employer\nAustralian business sponsor\nYou must be employed:\n\nin your nominated occupation and\nin that business or an associated entity\nOverseas business sponsor\nYou must be employed:\n\nin your nominated occupation and\nin that business only (not an associated entity) \nYou might be exempt from this criterion if you have a certain occupation.",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_06",
+      "heading": "Have relevant skills, qualifications and employment background to perform occupation",
+      "start_line": 68,
+      "end_line": 77,
+      "original_text": "Have relevant skills, qualifications and employment background to perform occupation\nIf you are the primary visa applicant, you must demonstrate that you have the skills and experience necessary to perform the nominated occupation. \n\nSome applicants must undertake a skills assessment to demonstrate this – see Have a positive skills assessment below.\n\nIf it is not mandatory for you to undertake a skills assessment, you are still required to provide other evidence to demonstrate that you meet these requirement. See Skills and occupation documents under the Step by Step tab.\n\nMedical Practitioners\nIf the nominated occupation is a medical practitioner, you must have your qualifications recognised by the relevant authority in Australia for the registration of medical practitioners as entitling you to practise as a medical practitioner.",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_07",
+      "heading": "Have worked in your nominated occupation or a related field for at least 1 year",
+      "start_line": 78,
+      "end_line": 94,
+      "original_text": "Have worked in your nominated occupation or a related field for at least 1 year\nYou must have at least 1 year relevant work experience in the nominated occupation or a related field.\n\nWork experience must be completed while working in the nominated occupation or performing tasks at the same skill level in a related field.\n\nWork experience gained in a related field would involve tasks which are the same or closely related to those of the nominated position you intend to work as outlined in the Australian and New Zealand Standard Classification of Occupations (ANZSCO).\n\nYou should have gained your experience on a full-time, part-time or casual basis within the last 5 years. Work carried out on a part-time or casual basis must be equivalent to at last 12 months full-time work. The period of work does not need to be continuous.\n\nOther ways you may be able to demonstrate your work experience could include where you have gained your experience:\n\nas part of a Masters and/or PhD - for relevant occupations, such as medical and research occupations\nwhile studying through a formal arrangement such as a clinical or industry placement, internship or apprenticeship\nIf the formal arrangement as specified above was:\n\npart of a CRICOS registered course, the study must have been relevant to the nominated occupation. For example, medical practitioners could count experience gained through internships or their final year of medical training, including periods of clinical placements.\nnot part of a CRICOS registered course, the study must have been undertaken at the skill level of the relevant occupation",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_08",
+      "heading": "Have a positive skills assessment",
+      "start_line": 95,
+      "end_line": 110,
+      "original_text": "Have a positive skills assessment\nSome primary SID visa applicants must undergo a mandatory skills assessment as part of the visa application process. Applicants who fit into this category and the type of assessment required are outlined in the IMMI 18/039: Mandatory Skills Assessment—Subclass 482 Visa. Depending on your nominated occupation, this will be a skills assessment by Trades Recognition Australia or VETASSESS.\n\nImportant: where a mandatory skills assessment is required, it must be commenced before submitting your visa application or your application will not be valid and will not be processed. As a result, you will be asked to provide a relevant skills assessment reference number when completing your application form.\n\nThe mandatory skills assessment must have been undertaken or commenced within the 3-year period ending immediately before the day the SID visa application is made.\n\nYou are encouraged to complete the skills assessment process before submitting your visa application to reduce processing delays.\n\nNote:\n\nwe can request a skills assessment as part of the visa application process even where it is not mandatory. We will request it in writing where this is the case\na relevant skills assessment is different to being registered with an appropriate regulatory body\nExemption to a mandatory skills assessment\nYou might be eligible to claim an exemption. Relevant exemptions are recorded under Part 2, section 7 of the IMMI 18/039: Mandatory Skills Assessment—Subclass 482 Visa.",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_09",
+      "heading": "Have health insurance",
+      "start_line": 111,
+      "end_line": 122,
+      "original_text": "Have health insurance\nPrimary and secondary visa applicants are personally liable for healthcare costs while in Australia. Health insurance helps limit your financial liability.\n\nYou must maintain adequate health cover for the whole of your intended period of stay if you are granted this visa. Your insurance should cover you for medically necessary treatment, including transport. It will be a condition of the visa that you maintain adequate health insurance while you remain in Australia. \n\nSee a guide to what we consider adequate health insurance.\n\nLearn more about health insurance for overseas visitors.\n\nReciprocal healthcare agreements\nSome countries have a reciprocal healthcare agreement with Australia. Find out more from Services Australia about reciprocal healthcare agreements.",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_10",
+      "heading": "Meet our health requirement",
+      "start_line": 123,
+      "end_line": 127,
+      "original_text": "Meet our health requirement\nYou and any secondary applicants who apply for a SID visa must meet the health requirement. The results of health examinations are generally valid for 12 months.\n\nImportant: You should organise your health examinations upfront before lodging a visa application to reduce processing times.",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_11",
+      "heading": "Meet our character requirement",
+      "start_line": 128,
+      "end_line": 132,
+      "original_text": "Meet our character requirement\nYou and family members aged 16 years and over who apply for the visa with you must meet our character requirement. \n\nImportant: if you are sponsored by an accredited sponsor, you are not required to obtain police certificates from countries other than Australia provided you attach a reference from your accredited sponsor confirming that you are of good character and that you have not been convicted of any criminal offences. You must still, however, provide any required Australian police clearances where applicable or when requested to do so.",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_12",
+      "heading": "Have not contravened ‘paying for visa sponsorship’ legislative provisions",
+      "start_line": 133,
+      "end_line": 138,
+      "original_text": "Have not contravened ‘paying for visa sponsorship’ legislative provisions\nPaying for visa sponsorship refers to asking for, offering, receiving or providing a benefit in return for a sponsorship related event, whether the event occurs or not. You or any secondary applicants must not have, in the past 3 years, engaged in any such conduct. You may still satisfy this criterion if you have engaged in such conduct, and the Minister considers it reasonable to disregard it.\n\nHave this level of English language\nPrimary visa applicants must meet certain minimum standards of English language proficiency, unless exemptions apply.",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_13",
+      "heading": "Not have had a visa cancelled or a previous application refused",
+      "start_line": 139,
+      "end_line": 147,
+      "original_text": "Not have had a visa cancelled or a previous application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia (129KB PDF).\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_14",
+      "heading": "Have no debt to the Australian government",
+      "start_line": 148,
+      "end_line": 150,
+      "original_text": "Have no debt to the Australian government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_SPECIALIST_ELIG_15",
+      "heading": "Sign the Australian values statement",
+      "start_line": 151,
+      "end_line": 155,
+      "original_text": "Sign the Australian values statement\nIf you and any secondary applicants are 18 years of age or older, you must confirm that you will respect the Australian way of life and obey Australian laws when you agree to or sign an Australian Values Statement.\n\nMeet all these criteria? Check how to apply in our step by step guide.",
+      "source_sha256": "24da6807d5ca2cb770624128be54a2115c1b402c089a8e9e2e41145701a5daac",
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_01",
+      "program": "subclass_482_specialist_skills",
+      "topic": "age",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_01",
+      "source_text": "Be this age\nThere is no age requirement for this visa.",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_02",
+      "program": "subclass_482_specialist_skills",
+      "topic": "visa_status_at_application",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_02",
+      "source_text": "Be the holder of an appropriate visa\nIf you are applying in Australia, you must hold:\n\na substantive visa, or\na Bridging visa A, Bridging visa B or Bridging visa C",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_03",
+      "program": "subclass_482_specialist_skills",
+      "topic": "previous_visa_compliance",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_03",
+      "source_text": "Have complied with previous visa conditions\nIf you are in Australia at the time of decision, you must have substantially complied with any conditions that apply or applied to your last substantive visa or bridging visa held.",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_04",
+      "program": "subclass_482_specialist_skills",
+      "topic": "employer_sponsorship",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_04",
+      "source_text": "Be nominated by an approved sponsor\nBefore you can apply for a Skills in Demand (SID) visa, your proposed employer will need to lodge a nomination application for you. They will only be able to do this if they are an approved sponsor or have at least lodged an application to become a Standard business sponsor.\n\nYour employer must have nominated you to fill an Australian and New Zealand Standard Classification of Occupations (ANZSCO) listed occupation, excluding occupations listed in Major Groups 3, 7 or 8, where the nominated salary for the position meets the Specialist Skills Income Threshold.",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_05",
+      "program": "subclass_482_specialist_skills",
+      "topic": "nominated_employment",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_05",
+      "source_text": "Work for your nominating employer\nAustralian business sponsor\nYou must be employed:\n\nin your nominated occupation and\nin that business or an associated entity\nOverseas business sponsor\nYou must be employed:\n\nin your nominated occupation and\nin that business only (not an associated entity) \nYou might be exempt from this criterion if you have a certain occupation.",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_06",
+      "program": "subclass_482_specialist_skills",
+      "topic": "relevant_skills_and_qualifications",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_06",
+      "source_text": "Have relevant skills, qualifications and employment background to perform occupation\nIf you are the primary visa applicant, you must demonstrate that you have the skills and experience necessary to perform the nominated occupation. \n\nSome applicants must undertake a skills assessment to demonstrate this – see Have a positive skills assessment below.\n\nIf it is not mandatory for you to undertake a skills assessment, you are still required to provide other evidence to demonstrate that you meet these requirement. See Skills and occupation documents under the Step by Step tab.\n\nMedical Practitioners\nIf the nominated occupation is a medical practitioner, you must have your qualifications recognised by the relevant authority in Australia for the registration of medical practitioners as entitling you to practise as a medical practitioner.",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_07",
+      "program": "subclass_482_specialist_skills",
+      "topic": "relevant_work_experience",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_07",
+      "source_text": "Have worked in your nominated occupation or a related field for at least 1 year\nYou must have at least 1 year relevant work experience in the nominated occupation or a related field.\n\nWork experience must be completed while working in the nominated occupation or performing tasks at the same skill level in a related field.\n\nWork experience gained in a related field would involve tasks which are the same or closely related to those of the nominated position you intend to work as outlined in the Australian and New Zealand Standard Classification of Occupations (ANZSCO).\n\nYou should have gained your experience on a full-time, part-time or casual basis within the last 5 years. Work carried out on a part-time or casual basis must be equivalent to at last 12 months full-time work. The period of work does not need to be continuous.\n\nOther ways you may be able to demonstrate your work experience could include where you have gained your experience:\n\nas part of a Masters and/or PhD - for relevant occupations, such as medical and research occupations\nwhile studying through a formal arrangement such as a clinical or industry placement, internship or apprenticeship\nIf the formal arrangement as specified above was:\n\npart of a CRICOS registered course, the study must have been relevant to the nominated occupation. For example, medical practitioners could count experience gained through internships or their final year of medical training, including periods of clinical placements.\nnot part of a CRICOS registered course, the study must have been undertaken at the skill level of the relevant occupation",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_08",
+      "program": "subclass_482_specialist_skills",
+      "topic": "skills_assessment",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_08",
+      "source_text": "Have a positive skills assessment\nSome primary SID visa applicants must undergo a mandatory skills assessment as part of the visa application process. Applicants who fit into this category and the type of assessment required are outlined in the IMMI 18/039: Mandatory Skills Assessment—Subclass 482 Visa. Depending on your nominated occupation, this will be a skills assessment by Trades Recognition Australia or VETASSESS.\n\nImportant: where a mandatory skills assessment is required, it must be commenced before submitting your visa application or your application will not be valid and will not be processed. As a result, you will be asked to provide a relevant skills assessment reference number when completing your application form.\n\nThe mandatory skills assessment must have been undertaken or commenced within the 3-year period ending immediately before the day the SID visa application is made.\n\nYou are encouraged to complete the skills assessment process before submitting your visa application to reduce processing delays.\n\nNote:\n\nwe can request a skills assessment as part of the visa application process even where it is not mandatory. We will request it in writing where this is the case\na relevant skills assessment is different to being registered with an appropriate regulatory body\nExemption to a mandatory skills assessment\nYou might be eligible to claim an exemption. Relevant exemptions are recorded under Part 2, section 7 of the IMMI 18/039: Mandatory Skills Assessment—Subclass 482 Visa.",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_09",
+      "program": "subclass_482_specialist_skills",
+      "topic": "health_insurance",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_09",
+      "source_text": "Have health insurance\nPrimary and secondary visa applicants are personally liable for healthcare costs while in Australia. Health insurance helps limit your financial liability.\n\nYou must maintain adequate health cover for the whole of your intended period of stay if you are granted this visa. Your insurance should cover you for medically necessary treatment, including transport. It will be a condition of the visa that you maintain adequate health insurance while you remain in Australia. \n\nSee a guide to what we consider adequate health insurance.\n\nLearn more about health insurance for overseas visitors.\n\nReciprocal healthcare agreements\nSome countries have a reciprocal healthcare agreement with Australia. Find out more from Services Australia about reciprocal healthcare agreements.",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_10",
+      "program": "subclass_482_specialist_skills",
+      "topic": "health_requirement",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_10",
+      "source_text": "Meet our health requirement\nYou and any secondary applicants who apply for a SID visa must meet the health requirement. The results of health examinations are generally valid for 12 months.\n\nImportant: You should organise your health examinations upfront before lodging a visa application to reduce processing times.",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_11",
+      "program": "subclass_482_specialist_skills",
+      "topic": "character_requirement",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_11",
+      "source_text": "Meet our character requirement\nYou and family members aged 16 years and over who apply for the visa with you must meet our character requirement. \n\nImportant: if you are sponsored by an accredited sponsor, you are not required to obtain police certificates from countries other than Australia provided you attach a reference from your accredited sponsor confirming that you are of good character and that you have not been convicted of any criminal offences. You must still, however, provide any required Australian police clearances where applicable or when requested to do so.",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_12",
+      "program": "subclass_482_specialist_skills",
+      "topic": "prohibited_sponsorship_payments",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_12",
+      "source_text": "Have not contravened ‘paying for visa sponsorship’ legislative provisions\nPaying for visa sponsorship refers to asking for, offering, receiving or providing a benefit in return for a sponsorship related event, whether the event occurs or not. You or any secondary applicants must not have, in the past 3 years, engaged in any such conduct. You may still satisfy this criterion if you have engaged in such conduct, and the Minister considers it reasonable to disregard it.\n\nHave this level of English language\nPrimary visa applicants must meet certain minimum standards of English language proficiency, unless exemptions apply.",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_13",
+      "program": "subclass_482_specialist_skills",
+      "topic": "immigration_history",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_13",
+      "source_text": "Not have had a visa cancelled or a previous application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia (129KB PDF).\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_14",
+      "program": "subclass_482_specialist_skills",
+      "topic": "government_debt",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_14",
+      "source_text": "Have no debt to the Australian government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_15",
+      "program": "subclass_482_specialist_skills",
+      "topic": "australian_values_statement",
+      "source_section_id": "AU_482_SPECIALIST_ELIG_15",
+      "source_text": "Sign the Australian values statement\nIf you and any secondary applicants are 18 years of age or older, you must confirm that you will respect the Australian way of life and obey Australian laws when you agree to or sign an Australian Values Statement.\n\nMeet all these criteria? Check how to apply in our step by step guide.",
+      "requirement_type": "needs_review",
+      "applicability": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    }
+  ],
+  "supplemental_policy_candidates": [
+    {
+      "topic": "specialist_skills_income_threshold",
+      "source_id": "AU_482_SALARY_OFFICIAL",
+      "amount_aud_draft": 146576,
+      "nomination_lodgement_from": "2026-07-01",
+      "nomination_lodgement_to": "2027-06-30",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "specialist_occupation_requirements",
+      "source_tab": "eligibility",
+      "occupation_rules_structured": false,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "topic": "english_language",
+      "source_id": "AU_482_ENGLISH_OFFICIAL",
+      "exemptions_structured": false,
+      "test_scores_structured": false,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  ],
+  "review_status": "needs_review",
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false
+}

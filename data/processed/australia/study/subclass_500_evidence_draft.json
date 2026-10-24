@@ -1,0 +1,850 @@
+{
+  "program": "subclass_500",
+  "visa_subclass": "500",
+  "stream": "student",
+  "pathway_type": "temporary_study",
+  "official_sources": {
+    "about_this_visa": {
+      "source_file": "data/raw/australia/study/subclass_500_about_this_visa.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "source_sha256": "87ccc64422ea5f15c66277ced34002bed546bde9269d756f18672b76caf4609e",
+      "char_count": 12878,
+      "review_status": "needs_review"
+    },
+    "eligibility": {
+      "source_file": "data/raw/australia/study/subclass_500_eligibility.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "char_count": 28217,
+      "review_status": "needs_review"
+    },
+    "step_by_step": {
+      "source_file": "data/raw/australia/study/subclass_500_step_by_step.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "source_sha256": "947e27e4e66db507ba3991875ccc04630a4ad48cb8a4b6aff0fe2f0a34441cb7",
+      "char_count": 40520,
+      "review_status": "needs_review"
+    },
+    "when_you_have_this_visa": {
+      "source_file": "data/raw/australia/study/subclass_500_when_you_have_this_visa.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "source_sha256": "c3ff0ee014de0eea8f6812a309ab830faa9c26655f1f442892276b5a43dc7394",
+      "char_count": 8482,
+      "review_status": "needs_review"
+    }
+  },
+  "eligibility_sections": [
+    {
+      "section_id": "AU_500_ELIG_01",
+      "topic": "school_student_age",
+      "heading": "Be a certain age (school student)",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 40,
+      "end_line": 48,
+      "original_text": "Be a certain age (school student)\nIf you are a school student (but not participating in a secondary school student exchange program), you must be aged 6 or older to apply for this visa.\n\nYou must also be:\n\nless than 17 years old when you begin Year 9\nless than 18 years old when you begin Year 10\nless than 19 years old when you begin Year 11 \nless than 20 years old when you begin Year 12",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_02",
+      "topic": "course_enrolment",
+      "heading": "Be enrolled in a course of study and provide evidence",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 49,
+      "end_line": 81,
+      "original_text": "Be enrolled in a course of study and provide evidence\nYou must include the right evidence of enrolment in study with your Student visa application, or your application will not be valid and can't be processed.\n\nProviding a Confirmation of Enrolment (CoE)\nYou must be enrolled in a full time course registered on the Commonwealth Register of Institutions and courses for Overseas Students (CRICOS).\n\nYou must provide a Confirmation of Enrolment (CoE) for all intended courses when you apply.\n\nIf you do not provide a CoE at time of lodgement, the student visa application will be invalid.\n\nYour CoE must be valid when we decide your application. A CoE is no longer valid if it is cancelled or the course is complete. If you finish your course, but still require a student visa, you will need to attach a new CoE to your ImmiAccount. You must maintain enrolment in a course of study to be eligible for a student visa.\n\nPackaged courses and CoEs\nIf you are applying for more than one (1) course in your Student visa application, you must include all CoE codes in the application form, as your visa period may only consider the duration of the course according to the CoE provided.\n\nYou can apply to include two (2) or more courses on your Student visa where one course clearly leads to the next.  Course gaps must be less than two calendar months, unless the first course finishes at the end of the standard academic year and the next course commences at the beginning of the standard academic year.\n\nIf you want your Student visa to cover more than one (1) course you must include all CoE codes in your visa application form, or your visa may only cover the CoE provided.\n\nIf you are a student visa holder and you meet an exemption to lodge a further Student visa in Australia, you cannot package courses together unless you are applying for:\n\nprimary or secondary school studies, or\na PHD degree, or\na further visa because your education provider defaulted.\nIn all other scenarios, you can only apply in Australia for one further course.\n\nOther evidence of enrolment \nYou do not need to provide a Confirmation of Enrolment (CoE) if you are: \n\nenrolled in a full-time course of study or training under a scholarship scheme approved by the Australian Minister for Foreign Affairs and Trade: provide a letter of support\nsponsored by the Australian Department of Defence: provide a letter of support\na secondary exchange student: provide an Acceptance Advice of Secondary Exchange Student (AASES) form\na postgraduate research student who needs to stay in Australia while your thesis is marked: provide a letter from your education provider",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_03",
+      "topic": "under_18_welfare",
+      "heading": "Make Welfare arrangements if you are under 18 years",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 82,
+      "end_line": 88,
+      "original_text": "Make Welfare arrangements if you are under 18 years\nIf you are applying for a Student visa and you are under 18 years of age, you must have adequate welfare arrangements in place while you are in Australia.\n\nIf you will be 18 years of age when you arrive in Australia, you must tell us as you might not need to provide some of this information.\n\nTo learn more, see Welfare arrangements for students under 18.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_04",
+      "topic": "english",
+      "heading": "Meet English language requirements",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 89,
+      "end_line": 144,
+      "original_text": "Meet English language requirements\nYou might need to provide evidence of your English language skills when you submit your visa application. If you need to provide evidence of your English language skills, you must prove that you:\n\nhave obtained a certain test score in an English language test that the Department has approved, or\nfall into an exemption category listed below.\nFor more information on the minimum overall band scores you must achieve to meet the Student visa English language requirements, go to Gather Documents in the 'Step by Step' tab.\n\nTo find out if you need to provide evidence of your English language skills when you apply, use the Document Checklist tool.\n\nEnglish language tests\nYou must have completed the English language test:\n\nwithin the 2 years before you lodged your visa application, if you are Regular Evidence level; or\nwithin the 2 years before a decision is made on your visa application, if you are Streamlined Evidence level and the Department has requested evidence.\nAt-home or online English language tests\nThe Department of Home Affairs does not accept evidence from English language tests where an entire test is delivered online (also known as “remote-proctored” or “at-home”).\n\nExamples of online tests that are not approved for Australian visa purposes, include:\n\nIELTS Online\nLANGUAGECERT Academic Online\nOET@Home\nCELPIP Online\nMET Digital (taken at-home)\nTOEFL iBT – Home Edition.\nTOEFL iBT\nFrom 21 January 2026, applicants must select 'Taking TOEFL for Australia’ during registration to ensure the test is valid for Australian visa purposes.\n\nWe will not accept TOEFL iBT tests completed between 26 July 2023, and 4 May 2024 for Australian visa and migration purposes. During this period, the TOEFL iBT test being offered was not an approved test.\n\nCambridge C1 Advanced test (previously known as Cambridge English: Advanced CAE)\nFrom 12 February 2024 to 6 August 2025, the department will only accept results from the Cambridge C1 Advanced paper-based test.\n\nThe department will still accept tests taken before 12 February 2024 and within specified validity periods, for C1 Advanced paper-based and computer-based tests.\n\nLANGUAGECERT Academic\nIf you sit a LANGUAGECERT test, you will receive a ‘certificate’ and a ‘report’. If you use your LANGUAGECERT Academic results to show you meet the English language requirement, you must include both documents with your visa application. If you do not provide the certificate and the report, visa processing may be delayed.\n\nEnglish language evidence exemptions\nYou do not need to give us evidence of an English test score with your visa application if one of the following applies:\n\nyou are a citizen and hold a passport from UK, USA, Canada, NZ or Republic of Ireland \nyou are an applicant who is a Foreign Affairs or Defence sponsored student, or a Secondary Exchange student (AASES)\nyou are enrolled in a principal course of study that is a registered school course\nyou are enrolled in a principal course of study that is a standalone English Language Intensive Course for Overseas Students (ELICOS)\nyou are enrolled in a principal course of study registered and delivered in a language other than English\nyou are enrolled in a registered post-graduate research course\nyou have completed at least 5 years’ study in English in Australia, UK, USA, Canada, New Zealand, South Africa, or the Republic of Ireland\nin the 2 years before applying for the Student visa you completed the Senior Secondary Certificate of Education in Australia in English while you held a Student visa\nin the 2 years before applying for the Student visa you completed a substantial component of a course that would qualify you under the Australian Qualifications Framework at the Certificate IV or higher level, while you held a Student visa.\nNote: We may need you to give us evidence of an English test score with your visa application if you hold a British National Overseas (BNO) passport.\n\nIf you are required to provide evidence of English language proficiency but you fall into an exemption category, make sure you provide the appropriate evidence that demonstrates that you satisfy one of the exemptions.\n\nFor more information on English Language Tests and Evidence Exemptions refer to the Migration (English Language Tests and Evidence Exemptions for Subclass 500 (Student) Visas) Instrument 2025 - Federal Register of Legislation.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_05",
+      "topic": "health_insurance",
+      "heading": "Have adequate health insurance",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 145,
+      "end_line": 187,
+      "original_text": "Have adequate health insurance\nYou and your family members must have and maintain adequate health insurance for the whole of your stay in Australia. To find out the length of coverage you will require, see Student visa grant periods.\n\nYou and your family members must be covered by Overseas Student Health Cover (OSHC) from an approved Australian health insurance provider, unless an 'Exception' applies.\n\nApplicants outside Australia\nYour cover must start from the day you and your family arrive in Australia, not the day your course starts.\n\nIf you have been granted a visa and want to travel to Australia before your course begins, the OSHC start date must be the same as the date you arrive, not the date your course starts. Generally this is a minimum of 1 week to 1 month before your course starts. \n\nYou must: \n\nensure you don't enter Australia before your OSHC begins, and\nmaintain your OSHC until you leave Australia.\nYou may be refused entry to Australia if you cannot prove you have health insurance in place when you arrive.\n\nApplicants in Australia\nApplicants must have OSHC. If your previous visa required you to have health insurance, cover must be continuous with  no gap between your previous health cover and your OSHC.\n\nExceptions\nYou do not need to have OSHC if you are:\n\na Norwegian student covered by the Norwegian National Insurance Scheme\na Swedish student covered by Kammarkollegiet\na Belgian student covered under the Reciprocal Health Care Agreement with Australia\nHow to get Overseas Student Health Cover\nTo get OSHC:\n\nfind an approved provider\npay for your policy\nYour education provider or agent might arrange OSHC for you. \n\nIf your education provider arranges your OSHC coverage, you will need to know the name of your health insurance provider, the date that your policy starts and finishes and should be aware of the terms and conditions of your policy. Your education provider will also need to include your health insurance information on your Certificate of Enrolment (CoE).\n\nIf you arrange OSHC coverage yourself, you will need to know the policy number to include in the visa application.\n\nWe will refuse your visa application if you don't give us this information when you apply for your Student visa. \n\nInsurance for family members\nIf you have a single OSHC policy and you have family members, including children born in Australia after your arrival, consider getting a family policy. Every member of your family must have health insurance. \n\nAny family member who joins you after you arrive in Australia must show us they have OSHC for the duration of their stay in Australia.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_06",
+      "topic": "application_location",
+      "heading": "Apply from the right location",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 188,
+      "end_line": 211,
+      "original_text": "Apply from the right location\nFrom 2 October 2026, new rules mean that most Student visa applications must be lodged outside Australia.\n\nYou can only apply in Australia if you hold an eligible visa and meet an exemption category.\n\nEligible visas\nIf you hold a visa as a primary or secondary holder on the list below you cannot apply for a student visa in Australia. There are no exemptions to this rule.\n\nSubclass 400 – Temporary Work (all streams)\nSubclass 403 – (Domestic Worker – Diplomatic/Consular stream)\nSubclass 407 – Training (all streams)\nSubclass 408 – Temporary Activity (all streams)\nSubclass 417 – Working Holiday (all streams)\nSubclass 457 – Temporary Work (all streams)\nSubclass 462 – Work and Holiday (all streams)\nSubclass 482 – Skills in Demand / Temporary Skill Shortage (all streams)\nSubclass 485 – Temporary Graduate\nSubclass 600 – Visitor\nSubclass 601 – ETA\nSubclass 602 – Medical Treatment\nSubclass 651 – eVisitor\nSubclass 771 – Transit\nSubclass 988 – Maritime Crew\nSubclass 995 – Diplomatic (Temporary) (primary only. A family member of a Diplomatic (Temporary) visa (subclass 995) can apply for a Student visa in Australia)",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_07",
+      "topic": "further_student_visa",
+      "heading": "Meet an exemption to apply for a further student visa in Australia",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 212,
+      "end_line": 289,
+      "original_text": "Meet an exemption to apply for a further student visa in Australia\nIf you are student visa holder you may be able to apply for another Student visa while in Australia.\n\nDependent or secondary student visa holders cannot apply for a student visa as the primary applicant while in Australia.\n\nIf you hold a student visa as the primary applicant, you may be able to apply in Australia if you meet one of the six exemptions below.\n\nIf you do not meet an exemption, you should not apply in Australia. We will not accept your application if you are not eligible and this may have consequences if you are in Australia. An invalid application outcome could affect your visa status and you may not be eligible to apply for a further visa if your visa has already expired. Invalid decisions cannot be merits reviewed at the ART.\n\nExemption 1 – you need up to 12 additional months to complete your studies (course completion).\nTo apply under this exemption:\n\nyou need up to 12 additional months from the original end date of your main course to finish your course, and\nthe course you are completing must be the main course in your package of courses (if you are studying packaged courses), and\nthe course must be with the same education provider that your current Student visa was granted for (you can have changed courses but the course you changed to must be at the same AQF level or higher). \nFor example, students who have started a Bachelor’s Degree can apply for a student visa in Australia if they need up to 12 extra months to finish the same degree or a different Bachelor degree at the same education provider.\n\nIf you do not meet this exemption criteria you will need to lodge your next application from outside Australia.\n\nTo help minimise your time outside Australia and any interruptions to your studies, make sure you prepare your application and supporting documents before leaving Australia. For more information about applying from outside Australia, see the Student visa changes.\n\nUnderstanding AQF levels and VET courses    \n\nThe Australian qualifications are ranked from level 1 to level 10 by the Australian Qualifications Framework (AQF) . Check the AQF level of your current and proposed course to see whether you meet the course completion exemption.          \n\nExemption 2 – you are sponsored by the Department of Foreign Affairs and Trade (DFAT) or Defence\nTo apply under this exemption, you must be sponsored by the Department of Foreign Affairs and Trade or the Department of Defence.\n\nExemption 3 – you are applying to undertake a PhD Degree\nTo apply under this exemption, you must be applying to study a Doctoral Degree (PhD). You cannot apply under this exemption if you are applying to study a Master’s by Research course.\n\nExemption 4 – you are applying to undertake primary or secondary school studies\nTo apply under this exemption, you must be applying to study primary or secondary school studies.\n\nExemption 5 – you have completed your main course and are applying in Australia to undertake another course (course progression)\nTo apply under this exemption:\n\nyou must have completed your main course for which your visa was granted for or you have completed a course which was the same or higher AQF level as the original course your student visa was granted for, and\nyou are progressing to a course at a higher AQF level, and\nif your completed course was a higher education course, the course you are progressing to must also be a higher education course delivered by a higher education provider.\nYou can also apply for this exemption:\n\nif the main course you completed did not have an AQF level, and you are progressing to a course with an AQF level or\nyou have completed your school studies and are progressing to a course that does not have an AQF level.\nFor example:\n\nStudents who have completed an English Language Intensive Courses for Overseas Students (ELICOS) course can apply for a student visa in Australia if they are progressing to a Bachelor’s Degree.\nStudents who have completed an ELICOS course cannot apply for a student visa in Australia if they want to study another ELICOS course.\nStudents who have completed their secondary school studies can apply for a student visa in Australia if they want to study a foundational course after they finish school.\nStudents who have completed a Bachelor’s Degree at a higher education provider cannot apply for a student visa in Australia if they want to study a Graduate Diploma course at a VET provider.\nPackaged courses\n\nIf you are applying under the course progression exemption you:\n\ncannot package courses\nmust be enrolled in only one future course of study when you apply.\nIf you are enrolled in more than one future course, you may not meet the requirements for a valid application.\n\nYou are expected to begin your next course in the first available intake after completing your current course. The gap between courses should be minimal and, in most cases, no longer than two calendar months during the teaching year or four calendar months between standard academic years.\n\nFor example if you:\n\nare a Year 12 student relying on the course progression exemption, you cannot apply in Australia for a package that includes a Foundation course followed by a Bachelor degree. You will need to apply outside Australia\nhave finished a Bachelor Degree and you are applying to undertake a Graduate Certificate and a Master’s Degree, you will need to apply outside Australia.\nIf you meet the course progression exemption, when you submit your visa application, you must provide evidence that you have completed your course.\n\nYou must attach documents such as: \n\nyour academic transcripts \na course completion certificate \na letter from your education provider confirming you have completed your course. \nUnderstanding AQF levels and VET courses\n\nThe Australian qualifications are ranked from level 1 to level 10 by the Australian Qualifications Framework (AQF). Check the AQF level of your current and proposed course to see whether you meet the course progression exemption.\n\nExemption 6 – you cannot continue your course because your education provider has defaulted\nTo apply under this exemption, you must be unable to continue your course because your education provider has defaulted. For more information, see Education provider default.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_08",
+      "topic": "family_inclusion",
+      "heading": "Meet an exemption if you want to include family members",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 290,
+      "end_line": 371,
+      "original_text": "Meet an exemption if you want to include family members\nIf you meet one of the exemptions below, your family members must apply at the same time and from the same location as you. If your family members are applying with you in Australia, they must hold an eligible visa to apply.\n\nIf you do not meet an exemption to include family, you should not lodge an application for your family members. We will not accept your family member’s application if they are not eligible and this may have consequences if they are in Australia. An invalid application outcome could affect their visa status and they may not be eligible to apply for a further visa if their visa has already expired. Invalid decisions cannot be merits reviewed at the ART.\n\nExemption 1 – you are a Doctoral (PhD) student\nTo include family under this exemption, you must be applying to study a Doctoral Degree (PhD).\n\nYou cannot apply under this exemption if you are applying to study a Master’s by Research course.\n\nYou can include family members when you lodge your visa application inside or outside Australia. If your family members are applying in Australia, they must hold an eligible visa or a student visa.\n\nExemption 2 – you are a Department of Defence or Department of Foreign Affairs and Trade sponsored student\nTo include family under this exemption, you must be sponsored by the Department of Foreign Affairs and Trade or the Department of Defence.\n\nYou can include family members when you lodge your visa application inside or outside Australia. If your family members are applying in Australia, they must hold an eligible visa or a student visa.\n\nExemption 3 – you are a foreign government scholarship recipient\nTo include family under this exemption, you must be receiving a foreign government scholarship that fully funds your studies in Australia.\n\nIf you are outside Australia, you can include family members when you lodge your application.\n\nIf you are inside Australia, you can only include family members when you lodge your application if you:\n\nneed up to 12 additional months to complete the main course covered by your current Student visa, or\nhave completed your main course and are applying in Australia to undertake another course at a higher Australian Qualifications Framework (AQF) level. if your completed course was a higher education course, the course you are progressing to must also be a higher education course delivered by a higher education provider, or\nneed to lodge a further Student visa application because your education provider defaulted.\nExemption 4 – Eligible national from Pacific Island or ASEAN countries\nTo include family under this exemption, you must be a national from a Pacific Island:\n\nFederated States of Micronesia\nFiji\nKiribati\nNauru\nPalau\nPapua New Guinea\nRepublic of the Marshall Islands\nSamoa\nSolomon Islands\nTonga\nTuvalu\nVanuatu\nOr an ASEAN country:\n\nBrunei Darussalam\nCambodia\nIndonesia\nLao Peoples Dem Republic\nMalaysia\nMyanmar\nPhilippines\nSingapore\nThailand\nTimor-Leste\nVietnam\nIf you are outside Australia, you can include family members when you lodge your application.\n\nIf you are inside Australia, you can only include family members when you lodge your application if you:\n\nneed up to 12 additional months to complete the main course covered by your current Student visa, or\nhave completed your main course and are applying in Australia to undertake another course at a higher Australian Qualifications Framework (AQF) level. If your completed course was a higher education course, the course you are progressing to must also be a higher education course delivered by a higher education provider, or\nneed to lodge a further Student visa application because your education provider defaulted.\nExemption 5 – Other exemptions\nCurrent Student visa holders applying inside or outside Australia\n\nIf you currently hold a Student visa and you are inside or outside Australia, you can include family members who are currently on your Student visa when you lodge your application, if:\n\nyou need up to 12 additional months to complete your main course covered by your current Student visa, or\nyou need to lodge a further Student visa application because your education provider defaulted.\nCurrent student visa holders applying inside Australia\n\nIf you currently hold a student visa and you are inside Australia, you can include family members who are currently on your student visa when you lodge your application, if:\n\nyou have completed your main course for which your student visa was granted for or you have completed a course which was the same or higher AQF level as the original course your student visa was granted for, and\nyou are progressing to a course at a higher AQF level, and\nif your completed course was a higher education course, the course you are progressing to must also be a higher education course delivered by a higher education provider.\nYou can also apply for this exemption:\n\nif the main course you completed did not have an AQF level, and you are progressing to a course with an AQF level or\nyou have completed your school studies and are progressing to a course that does not have an AQF level.\nYou must have held or applied for a Student visa before 2 October 2026.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_09",
+      "topic": "financial_capacity",
+      "heading": "Have enough money for your stay",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 372,
+      "end_line": 381,
+      "original_text": "Have enough money for your stay\nYou must have enough money to pay for your stay in Australia. To see the minimum amount of money you need for your visa application go to 'Gather Documents' under Step by Step.\n\nThe living costs we ask you to declare and provide with your visa application is the minimum amount of money you need for the visa. Actual living costs vary throughout Australia. They may be much higher than what you need for the visa. We recommend you research the area you intend to live including the cost of living in that area.\n\nYou should not rely on work to support yourself or your family while in Australia. The Australian Government Study Australia website provides useful information on accommodation options. It features a cost of living calculator to help you consider other possible costs in addition to the amount required for your visa application.\n\n\nFor more information visit Study Australia.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_10",
+      "topic": "genuine_student",
+      "heading": "Be a genuine student",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 382,
+      "end_line": 388,
+      "original_text": "Be a genuine student\nYou must:\n\nbe a genuine student for entry\nbe able to show an understanding that studying in Australia is the primary reason of your Student visa.\nFor more information, see Genuine Student requirement.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_11",
+      "topic": "character",
+      "heading": "Meet our character requirement",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 389,
+      "end_line": 391,
+      "original_text": "Meet our character requirement\nYou and family members aged 16 years and over who apply for the visa must meet our character requirement.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_12",
+      "topic": "health",
+      "heading": "Meet our health requirement",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 392,
+      "end_line": 394,
+      "original_text": "Meet our health requirement\nYou and any family members who apply for the visa must meet our health requirement.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_13",
+      "topic": "australian_values_statement",
+      "heading": "Sign the Australian values statement",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 395,
+      "end_line": 399,
+      "original_text": "Sign the Australian values statement\nIf you are 18 years of age or older, you must:\n\nhave read, or had explained to you, the Life in Australia booklet and\nsign an Australian Values Statement that confirms you will respect the Australian way of life and obey Australian laws",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_14",
+      "topic": "government_debt",
+      "heading": "Have paid back your debt to the Australian Government",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 400,
+      "end_line": 402,
+      "original_text": "Have paid back your debt to the Australian Government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_15",
+      "topic": "immigration_history",
+      "heading": "Not had a visa cancelled or an application refused",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 403,
+      "end_line": 409,
+      "original_text": "Not had a visa cancelled or an application refused\nWe will consider your immigration history when we decide on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_500_ELIG_16",
+      "topic": "best_interests_of_child",
+      "heading": "Best interests of the child",
+      "source_tab": "eligibility",
+      "source_sha256": "f3b01d33a16be808070297acf7c824a1c68b4b0d5e037cc56c78ea8239ebaa2d",
+      "start_line": 410,
+      "end_line": 412,
+      "original_text": "Best interests of the child\nWe might not grant this visa if it is not in the best interests of an applicant under 18.",
+      "review_status": "needs_review"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "AU_500_EVD_01",
+      "source_section_id": "AU_500_ELIG_01",
+      "source_tab": "eligibility",
+      "exact_quote": "Be a certain age (school student)\nIf you are a school student (but not participating in a secondary school student exchange program), you must be aged 6 or older to apply for this visa.\n\nYou must also be:\n\nless than 17 years old when you begin Year 9\nless than 18 years old when you begin Year 10\nless than 19 years old when you begin Year 11 \nless than 20 years old when you begin Year 12",
+      "start_line": 40,
+      "end_line": 48,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_02",
+      "source_section_id": "AU_500_ELIG_02",
+      "source_tab": "eligibility",
+      "exact_quote": "Be enrolled in a course of study and provide evidence\nYou must include the right evidence of enrolment in study with your Student visa application, or your application will not be valid and can't be processed.\n\nProviding a Confirmation of Enrolment (CoE)\nYou must be enrolled in a full time course registered on the Commonwealth Register of Institutions and courses for Overseas Students (CRICOS).\n\nYou must provide a Confirmation of Enrolment (CoE) for all intended courses when you apply.\n\nIf you do not provide a CoE at time of lodgement, the student visa application will be invalid.\n\nYour CoE must be valid when we decide your application. A CoE is no longer valid if it is cancelled or the course is complete. If you finish your course, but still require a student visa, you will need to attach a new CoE to your ImmiAccount. You must maintain enrolment in a course of study to be eligible for a student visa.\n\nPackaged courses and CoEs\nIf you are applying for more than one (1) course in your Student visa application, you must include all CoE codes in the application form, as your visa period may only consider the duration of the course according to the CoE provided.\n\nYou can apply to include two (2) or more courses on your Student visa where one course clearly leads to the next.  Course gaps must be less than two calendar months, unless the first course finishes at the end of the standard academic year and the next course commences at the beginning of the standard academic year.\n\nIf you want your Student visa to cover more than one (1) course you must include all CoE codes in your visa application form, or your visa may only cover the CoE provided.\n\nIf you are a student visa holder and you meet an exemption to lodge a further Student visa in Australia, you cannot package courses together unless you are applying for:\n\nprimary or secondary school studies, or\na PHD degree, or\na further visa because your education provider defaulted.\nIn all other scenarios, you can only apply in Australia for one further course.\n\nOther evidence of enrolment \nYou do not need to provide a Confirmation of Enrolment (CoE) if you are: \n\nenrolled in a full-time course of study or training under a scholarship scheme approved by the Australian Minister for Foreign Affairs and Trade: provide a letter of support\nsponsored by the Australian Department of Defence: provide a letter of support\na secondary exchange student: provide an Acceptance Advice of Secondary Exchange Student (AASES) form\na postgraduate research student who needs to stay in Australia while your thesis is marked: provide a letter from your education provider",
+      "start_line": 49,
+      "end_line": 81,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_03",
+      "source_section_id": "AU_500_ELIG_03",
+      "source_tab": "eligibility",
+      "exact_quote": "Make Welfare arrangements if you are under 18 years\nIf you are applying for a Student visa and you are under 18 years of age, you must have adequate welfare arrangements in place while you are in Australia.\n\nIf you will be 18 years of age when you arrive in Australia, you must tell us as you might not need to provide some of this information.\n\nTo learn more, see Welfare arrangements for students under 18.",
+      "start_line": 82,
+      "end_line": 88,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_04",
+      "source_section_id": "AU_500_ELIG_04",
+      "source_tab": "eligibility",
+      "exact_quote": "Meet English language requirements\nYou might need to provide evidence of your English language skills when you submit your visa application. If you need to provide evidence of your English language skills, you must prove that you:\n\nhave obtained a certain test score in an English language test that the Department has approved, or\nfall into an exemption category listed below.\nFor more information on the minimum overall band scores you must achieve to meet the Student visa English language requirements, go to Gather Documents in the 'Step by Step' tab.\n\nTo find out if you need to provide evidence of your English language skills when you apply, use the Document Checklist tool.\n\nEnglish language tests\nYou must have completed the English language test:\n\nwithin the 2 years before you lodged your visa application, if you are Regular Evidence level; or\nwithin the 2 years before a decision is made on your visa application, if you are Streamlined Evidence level and the Department has requested evidence.\nAt-home or online English language tests\nThe Department of Home Affairs does not accept evidence from English language tests where an entire test is delivered online (also known as “remote-proctored” or “at-home”).\n\nExamples of online tests that are not approved for Australian visa purposes, include:\n\nIELTS Online\nLANGUAGECERT Academic Online\nOET@Home\nCELPIP Online\nMET Digital (taken at-home)\nTOEFL iBT – Home Edition.\nTOEFL iBT\nFrom 21 January 2026, applicants must select 'Taking TOEFL for Australia’ during registration to ensure the test is valid for Australian visa purposes.\n\nWe will not accept TOEFL iBT tests completed between 26 July 2023, and 4 May 2024 for Australian visa and migration purposes. During this period, the TOEFL iBT test being offered was not an approved test.\n\nCambridge C1 Advanced test (previously known as Cambridge English: Advanced CAE)\nFrom 12 February 2024 to 6 August 2025, the department will only accept results from the Cambridge C1 Advanced paper-based test.\n\nThe department will still accept tests taken before 12 February 2024 and within specified validity periods, for C1 Advanced paper-based and computer-based tests.\n\nLANGUAGECERT Academic\nIf you sit a LANGUAGECERT test, you will receive a ‘certificate’ and a ‘report’. If you use your LANGUAGECERT Academic results to show you meet the English language requirement, you must include both documents with your visa application. If you do not provide the certificate and the report, visa processing may be delayed.\n\nEnglish language evidence exemptions\nYou do not need to give us evidence of an English test score with your visa application if one of the following applies:\n\nyou are a citizen and hold a passport from UK, USA, Canada, NZ or Republic of Ireland \nyou are an applicant who is a Foreign Affairs or Defence sponsored student, or a Secondary Exchange student (AASES)\nyou are enrolled in a principal course of study that is a registered school course\nyou are enrolled in a principal course of study that is a standalone English Language Intensive Course for Overseas Students (ELICOS)\nyou are enrolled in a principal course of study registered and delivered in a language other than English\nyou are enrolled in a registered post-graduate research course\nyou have completed at least 5 years’ study in English in Australia, UK, USA, Canada, New Zealand, South Africa, or the Republic of Ireland\nin the 2 years before applying for the Student visa you completed the Senior Secondary Certificate of Education in Australia in English while you held a Student visa\nin the 2 years before applying for the Student visa you completed a substantial component of a course that would qualify you under the Australian Qualifications Framework at the Certificate IV or higher level, while you held a Student visa.\nNote: We may need you to give us evidence of an English test score with your visa application if you hold a British National Overseas (BNO) passport.\n\nIf you are required to provide evidence of English language proficiency but you fall into an exemption category, make sure you provide the appropriate evidence that demonstrates that you satisfy one of the exemptions.\n\nFor more information on English Language Tests and Evidence Exemptions refer to the Migration (English Language Tests and Evidence Exemptions for Subclass 500 (Student) Visas) Instrument 2025 - Federal Register of Legislation.",
+      "start_line": 89,
+      "end_line": 144,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_05",
+      "source_section_id": "AU_500_ELIG_05",
+      "source_tab": "eligibility",
+      "exact_quote": "Have adequate health insurance\nYou and your family members must have and maintain adequate health insurance for the whole of your stay in Australia. To find out the length of coverage you will require, see Student visa grant periods.\n\nYou and your family members must be covered by Overseas Student Health Cover (OSHC) from an approved Australian health insurance provider, unless an 'Exception' applies.\n\nApplicants outside Australia\nYour cover must start from the day you and your family arrive in Australia, not the day your course starts.\n\nIf you have been granted a visa and want to travel to Australia before your course begins, the OSHC start date must be the same as the date you arrive, not the date your course starts. Generally this is a minimum of 1 week to 1 month before your course starts. \n\nYou must: \n\nensure you don't enter Australia before your OSHC begins, and\nmaintain your OSHC until you leave Australia.\nYou may be refused entry to Australia if you cannot prove you have health insurance in place when you arrive.\n\nApplicants in Australia\nApplicants must have OSHC. If your previous visa required you to have health insurance, cover must be continuous with  no gap between your previous health cover and your OSHC.\n\nExceptions\nYou do not need to have OSHC if you are:\n\na Norwegian student covered by the Norwegian National Insurance Scheme\na Swedish student covered by Kammarkollegiet\na Belgian student covered under the Reciprocal Health Care Agreement with Australia\nHow to get Overseas Student Health Cover\nTo get OSHC:\n\nfind an approved provider\npay for your policy\nYour education provider or agent might arrange OSHC for you. \n\nIf your education provider arranges your OSHC coverage, you will need to know the name of your health insurance provider, the date that your policy starts and finishes and should be aware of the terms and conditions of your policy. Your education provider will also need to include your health insurance information on your Certificate of Enrolment (CoE).\n\nIf you arrange OSHC coverage yourself, you will need to know the policy number to include in the visa application.\n\nWe will refuse your visa application if you don't give us this information when you apply for your Student visa. \n\nInsurance for family members\nIf you have a single OSHC policy and you have family members, including children born in Australia after your arrival, consider getting a family policy. Every member of your family must have health insurance. \n\nAny family member who joins you after you arrive in Australia must show us they have OSHC for the duration of their stay in Australia.",
+      "start_line": 145,
+      "end_line": 187,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_06",
+      "source_section_id": "AU_500_ELIG_06",
+      "source_tab": "eligibility",
+      "exact_quote": "Apply from the right location\nFrom 2 October 2026, new rules mean that most Student visa applications must be lodged outside Australia.\n\nYou can only apply in Australia if you hold an eligible visa and meet an exemption category.\n\nEligible visas\nIf you hold a visa as a primary or secondary holder on the list below you cannot apply for a student visa in Australia. There are no exemptions to this rule.\n\nSubclass 400 – Temporary Work (all streams)\nSubclass 403 – (Domestic Worker – Diplomatic/Consular stream)\nSubclass 407 – Training (all streams)\nSubclass 408 – Temporary Activity (all streams)\nSubclass 417 – Working Holiday (all streams)\nSubclass 457 – Temporary Work (all streams)\nSubclass 462 – Work and Holiday (all streams)\nSubclass 482 – Skills in Demand / Temporary Skill Shortage (all streams)\nSubclass 485 – Temporary Graduate\nSubclass 600 – Visitor\nSubclass 601 – ETA\nSubclass 602 – Medical Treatment\nSubclass 651 – eVisitor\nSubclass 771 – Transit\nSubclass 988 – Maritime Crew\nSubclass 995 – Diplomatic (Temporary) (primary only. A family member of a Diplomatic (Temporary) visa (subclass 995) can apply for a Student visa in Australia)",
+      "start_line": 188,
+      "end_line": 211,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_07",
+      "source_section_id": "AU_500_ELIG_07",
+      "source_tab": "eligibility",
+      "exact_quote": "Meet an exemption to apply for a further student visa in Australia\nIf you are student visa holder you may be able to apply for another Student visa while in Australia.\n\nDependent or secondary student visa holders cannot apply for a student visa as the primary applicant while in Australia.\n\nIf you hold a student visa as the primary applicant, you may be able to apply in Australia if you meet one of the six exemptions below.\n\nIf you do not meet an exemption, you should not apply in Australia. We will not accept your application if you are not eligible and this may have consequences if you are in Australia. An invalid application outcome could affect your visa status and you may not be eligible to apply for a further visa if your visa has already expired. Invalid decisions cannot be merits reviewed at the ART.\n\nExemption 1 – you need up to 12 additional months to complete your studies (course completion).\nTo apply under this exemption:\n\nyou need up to 12 additional months from the original end date of your main course to finish your course, and\nthe course you are completing must be the main course in your package of courses (if you are studying packaged courses), and\nthe course must be with the same education provider that your current Student visa was granted for (you can have changed courses but the course you changed to must be at the same AQF level or higher). \nFor example, students who have started a Bachelor’s Degree can apply for a student visa in Australia if they need up to 12 extra months to finish the same degree or a different Bachelor degree at the same education provider.\n\nIf you do not meet this exemption criteria you will need to lodge your next application from outside Australia.\n\nTo help minimise your time outside Australia and any interruptions to your studies, make sure you prepare your application and supporting documents before leaving Australia. For more information about applying from outside Australia, see the Student visa changes.\n\nUnderstanding AQF levels and VET courses    \n\nThe Australian qualifications are ranked from level 1 to level 10 by the Australian Qualifications Framework (AQF) . Check the AQF level of your current and proposed course to see whether you meet the course completion exemption.          \n\nExemption 2 – you are sponsored by the Department of Foreign Affairs and Trade (DFAT) or Defence\nTo apply under this exemption, you must be sponsored by the Department of Foreign Affairs and Trade or the Department of Defence.\n\nExemption 3 – you are applying to undertake a PhD Degree\nTo apply under this exemption, you must be applying to study a Doctoral Degree (PhD). You cannot apply under this exemption if you are applying to study a Master’s by Research course.\n\nExemption 4 – you are applying to undertake primary or secondary school studies\nTo apply under this exemption, you must be applying to study primary or secondary school studies.\n\nExemption 5 – you have completed your main course and are applying in Australia to undertake another course (course progression)\nTo apply under this exemption:\n\nyou must have completed your main course for which your visa was granted for or you have completed a course which was the same or higher AQF level as the original course your student visa was granted for, and\nyou are progressing to a course at a higher AQF level, and\nif your completed course was a higher education course, the course you are progressing to must also be a higher education course delivered by a higher education provider.\nYou can also apply for this exemption:\n\nif the main course you completed did not have an AQF level, and you are progressing to a course with an AQF level or\nyou have completed your school studies and are progressing to a course that does not have an AQF level.\nFor example:\n\nStudents who have completed an English Language Intensive Courses for Overseas Students (ELICOS) course can apply for a student visa in Australia if they are progressing to a Bachelor’s Degree.\nStudents who have completed an ELICOS course cannot apply for a student visa in Australia if they want to study another ELICOS course.\nStudents who have completed their secondary school studies can apply for a student visa in Australia if they want to study a foundational course after they finish school.\nStudents who have completed a Bachelor’s Degree at a higher education provider cannot apply for a student visa in Australia if they want to study a Graduate Diploma course at a VET provider.\nPackaged courses\n\nIf you are applying under the course progression exemption you:\n\ncannot package courses\nmust be enrolled in only one future course of study when you apply.\nIf you are enrolled in more than one future course, you may not meet the requirements for a valid application.\n\nYou are expected to begin your next course in the first available intake after completing your current course. The gap between courses should be minimal and, in most cases, no longer than two calendar months during the teaching year or four calendar months between standard academic years.\n\nFor example if you:\n\nare a Year 12 student relying on the course progression exemption, you cannot apply in Australia for a package that includes a Foundation course followed by a Bachelor degree. You will need to apply outside Australia\nhave finished a Bachelor Degree and you are applying to undertake a Graduate Certificate and a Master’s Degree, you will need to apply outside Australia.\nIf you meet the course progression exemption, when you submit your visa application, you must provide evidence that you have completed your course.\n\nYou must attach documents such as: \n\nyour academic transcripts \na course completion certificate \na letter from your education provider confirming you have completed your course. \nUnderstanding AQF levels and VET courses\n\nThe Australian qualifications are ranked from level 1 to level 10 by the Australian Qualifications Framework (AQF). Check the AQF level of your current and proposed course to see whether you meet the course progression exemption.\n\nExemption 6 – you cannot continue your course because your education provider has defaulted\nTo apply under this exemption, you must be unable to continue your course because your education provider has defaulted. For more information, see Education provider default.",
+      "start_line": 212,
+      "end_line": 289,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_08",
+      "source_section_id": "AU_500_ELIG_08",
+      "source_tab": "eligibility",
+      "exact_quote": "Meet an exemption if you want to include family members\nIf you meet one of the exemptions below, your family members must apply at the same time and from the same location as you. If your family members are applying with you in Australia, they must hold an eligible visa to apply.\n\nIf you do not meet an exemption to include family, you should not lodge an application for your family members. We will not accept your family member’s application if they are not eligible and this may have consequences if they are in Australia. An invalid application outcome could affect their visa status and they may not be eligible to apply for a further visa if their visa has already expired. Invalid decisions cannot be merits reviewed at the ART.\n\nExemption 1 – you are a Doctoral (PhD) student\nTo include family under this exemption, you must be applying to study a Doctoral Degree (PhD).\n\nYou cannot apply under this exemption if you are applying to study a Master’s by Research course.\n\nYou can include family members when you lodge your visa application inside or outside Australia. If your family members are applying in Australia, they must hold an eligible visa or a student visa.\n\nExemption 2 – you are a Department of Defence or Department of Foreign Affairs and Trade sponsored student\nTo include family under this exemption, you must be sponsored by the Department of Foreign Affairs and Trade or the Department of Defence.\n\nYou can include family members when you lodge your visa application inside or outside Australia. If your family members are applying in Australia, they must hold an eligible visa or a student visa.\n\nExemption 3 – you are a foreign government scholarship recipient\nTo include family under this exemption, you must be receiving a foreign government scholarship that fully funds your studies in Australia.\n\nIf you are outside Australia, you can include family members when you lodge your application.\n\nIf you are inside Australia, you can only include family members when you lodge your application if you:\n\nneed up to 12 additional months to complete the main course covered by your current Student visa, or\nhave completed your main course and are applying in Australia to undertake another course at a higher Australian Qualifications Framework (AQF) level. if your completed course was a higher education course, the course you are progressing to must also be a higher education course delivered by a higher education provider, or\nneed to lodge a further Student visa application because your education provider defaulted.\nExemption 4 – Eligible national from Pacific Island or ASEAN countries\nTo include family under this exemption, you must be a national from a Pacific Island:\n\nFederated States of Micronesia\nFiji\nKiribati\nNauru\nPalau\nPapua New Guinea\nRepublic of the Marshall Islands\nSamoa\nSolomon Islands\nTonga\nTuvalu\nVanuatu\nOr an ASEAN country:\n\nBrunei Darussalam\nCambodia\nIndonesia\nLao Peoples Dem Republic\nMalaysia\nMyanmar\nPhilippines\nSingapore\nThailand\nTimor-Leste\nVietnam\nIf you are outside Australia, you can include family members when you lodge your application.\n\nIf you are inside Australia, you can only include family members when you lodge your application if you:\n\nneed up to 12 additional months to complete the main course covered by your current Student visa, or\nhave completed your main course and are applying in Australia to undertake another course at a higher Australian Qualifications Framework (AQF) level. If your completed course was a higher education course, the course you are progressing to must also be a higher education course delivered by a higher education provider, or\nneed to lodge a further Student visa application because your education provider defaulted.\nExemption 5 – Other exemptions\nCurrent Student visa holders applying inside or outside Australia\n\nIf you currently hold a Student visa and you are inside or outside Australia, you can include family members who are currently on your Student visa when you lodge your application, if:\n\nyou need up to 12 additional months to complete your main course covered by your current Student visa, or\nyou need to lodge a further Student visa application because your education provider defaulted.\nCurrent student visa holders applying inside Australia\n\nIf you currently hold a student visa and you are inside Australia, you can include family members who are currently on your student visa when you lodge your application, if:\n\nyou have completed your main course for which your student visa was granted for or you have completed a course which was the same or higher AQF level as the original course your student visa was granted for, and\nyou are progressing to a course at a higher AQF level, and\nif your completed course was a higher education course, the course you are progressing to must also be a higher education course delivered by a higher education provider.\nYou can also apply for this exemption:\n\nif the main course you completed did not have an AQF level, and you are progressing to a course with an AQF level or\nyou have completed your school studies and are progressing to a course that does not have an AQF level.\nYou must have held or applied for a Student visa before 2 October 2026.",
+      "start_line": 290,
+      "end_line": 371,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_09",
+      "source_section_id": "AU_500_ELIG_09",
+      "source_tab": "eligibility",
+      "exact_quote": "Have enough money for your stay\nYou must have enough money to pay for your stay in Australia. To see the minimum amount of money you need for your visa application go to 'Gather Documents' under Step by Step.\n\nThe living costs we ask you to declare and provide with your visa application is the minimum amount of money you need for the visa. Actual living costs vary throughout Australia. They may be much higher than what you need for the visa. We recommend you research the area you intend to live including the cost of living in that area.\n\nYou should not rely on work to support yourself or your family while in Australia. The Australian Government Study Australia website provides useful information on accommodation options. It features a cost of living calculator to help you consider other possible costs in addition to the amount required for your visa application.\n\n\nFor more information visit Study Australia.",
+      "start_line": 372,
+      "end_line": 381,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_10",
+      "source_section_id": "AU_500_ELIG_10",
+      "source_tab": "eligibility",
+      "exact_quote": "Be a genuine student\nYou must:\n\nbe a genuine student for entry\nbe able to show an understanding that studying in Australia is the primary reason of your Student visa.\nFor more information, see Genuine Student requirement.",
+      "start_line": 382,
+      "end_line": 388,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_11",
+      "source_section_id": "AU_500_ELIG_11",
+      "source_tab": "eligibility",
+      "exact_quote": "Meet our character requirement\nYou and family members aged 16 years and over who apply for the visa must meet our character requirement.",
+      "start_line": 389,
+      "end_line": 391,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_12",
+      "source_section_id": "AU_500_ELIG_12",
+      "source_tab": "eligibility",
+      "exact_quote": "Meet our health requirement\nYou and any family members who apply for the visa must meet our health requirement.",
+      "start_line": 392,
+      "end_line": 394,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_13",
+      "source_section_id": "AU_500_ELIG_13",
+      "source_tab": "eligibility",
+      "exact_quote": "Sign the Australian values statement\nIf you are 18 years of age or older, you must:\n\nhave read, or had explained to you, the Life in Australia booklet and\nsign an Australian Values Statement that confirms you will respect the Australian way of life and obey Australian laws",
+      "start_line": 395,
+      "end_line": 399,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_14",
+      "source_section_id": "AU_500_ELIG_14",
+      "source_tab": "eligibility",
+      "exact_quote": "Have paid back your debt to the Australian Government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "start_line": 400,
+      "end_line": 402,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_15",
+      "source_section_id": "AU_500_ELIG_15",
+      "source_tab": "eligibility",
+      "exact_quote": "Not had a visa cancelled or an application refused\nWe will consider your immigration history when we decide on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "start_line": 403,
+      "end_line": 409,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_500_EVD_16",
+      "source_section_id": "AU_500_ELIG_16",
+      "source_tab": "eligibility",
+      "exact_quote": "Best interests of the child\nWe might not grant this visa if it is not in the best interests of an applicant under 18.",
+      "start_line": 410,
+      "end_line": 412,
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "AU_500_POL_01",
+      "program": "subclass_500",
+      "topic": "school_student_age",
+      "source_section_id": "AU_500_ELIG_01",
+      "source_text": "Be a certain age (school student)\nIf you are a school student (but not participating in a secondary school student exchange program), you must be aged 6 or older to apply for this visa.\n\nYou must also be:\n\nless than 17 years old when you begin Year 9\nless than 18 years old when you begin Year 10\nless than 19 years old when you begin Year 11 \nless than 20 years old when you begin Year 12",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_02",
+      "program": "subclass_500",
+      "topic": "course_enrolment",
+      "source_section_id": "AU_500_ELIG_02",
+      "source_text": "Be enrolled in a course of study and provide evidence\nYou must include the right evidence of enrolment in study with your Student visa application, or your application will not be valid and can't be processed.\n\nProviding a Confirmation of Enrolment (CoE)\nYou must be enrolled in a full time course registered on the Commonwealth Register of Institutions and courses for Overseas Students (CRICOS).\n\nYou must provide a Confirmation of Enrolment (CoE) for all intended courses when you apply.\n\nIf you do not provide a CoE at time of lodgement, the student visa application will be invalid.\n\nYour CoE must be valid when we decide your application. A CoE is no longer valid if it is cancelled or the course is complete. If you finish your course, but still require a student visa, you will need to attach a new CoE to your ImmiAccount. You must maintain enrolment in a course of study to be eligible for a student visa.\n\nPackaged courses and CoEs\nIf you are applying for more than one (1) course in your Student visa application, you must include all CoE codes in the application form, as your visa period may only consider the duration of the course according to the CoE provided.\n\nYou can apply to include two (2) or more courses on your Student visa where one course clearly leads to the next.  Course gaps must be less than two calendar months, unless the first course finishes at the end of the standard academic year and the next course commences at the beginning of the standard academic year.\n\nIf you want your Student visa to cover more than one (1) course you must include all CoE codes in your visa application form, or your visa may only cover the CoE provided.\n\nIf you are a student visa holder and you meet an exemption to lodge a further Student visa in Australia, you cannot package courses together unless you are applying for:\n\nprimary or secondary school studies, or\na PHD degree, or\na further visa because your education provider defaulted.\nIn all other scenarios, you can only apply in Australia for one further course.\n\nOther evidence of enrolment \nYou do not need to provide a Confirmation of Enrolment (CoE) if you are: \n\nenrolled in a full-time course of study or training under a scholarship scheme approved by the Australian Minister for Foreign Affairs and Trade: provide a letter of support\nsponsored by the Australian Department of Defence: provide a letter of support\na secondary exchange student: provide an Acceptance Advice of Secondary Exchange Student (AASES) form\na postgraduate research student who needs to stay in Australia while your thesis is marked: provide a letter from your education provider",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_03",
+      "program": "subclass_500",
+      "topic": "under_18_welfare",
+      "source_section_id": "AU_500_ELIG_03",
+      "source_text": "Make Welfare arrangements if you are under 18 years\nIf you are applying for a Student visa and you are under 18 years of age, you must have adequate welfare arrangements in place while you are in Australia.\n\nIf you will be 18 years of age when you arrive in Australia, you must tell us as you might not need to provide some of this information.\n\nTo learn more, see Welfare arrangements for students under 18.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_04",
+      "program": "subclass_500",
+      "topic": "english",
+      "source_section_id": "AU_500_ELIG_04",
+      "source_text": "Meet English language requirements\nYou might need to provide evidence of your English language skills when you submit your visa application. If you need to provide evidence of your English language skills, you must prove that you:\n\nhave obtained a certain test score in an English language test that the Department has approved, or\nfall into an exemption category listed below.\nFor more information on the minimum overall band scores you must achieve to meet the Student visa English language requirements, go to Gather Documents in the 'Step by Step' tab.\n\nTo find out if you need to provide evidence of your English language skills when you apply, use the Document Checklist tool.\n\nEnglish language tests\nYou must have completed the English language test:\n\nwithin the 2 years before you lodged your visa application, if you are Regular Evidence level; or\nwithin the 2 years before a decision is made on your visa application, if you are Streamlined Evidence level and the Department has requested evidence.\nAt-home or online English language tests\nThe Department of Home Affairs does not accept evidence from English language tests where an entire test is delivered online (also known as “remote-proctored” or “at-home”).\n\nExamples of online tests that are not approved for Australian visa purposes, include:\n\nIELTS Online\nLANGUAGECERT Academic Online\nOET@Home\nCELPIP Online\nMET Digital (taken at-home)\nTOEFL iBT – Home Edition.\nTOEFL iBT\nFrom 21 January 2026, applicants must select 'Taking TOEFL for Australia’ during registration to ensure the test is valid for Australian visa purposes.\n\nWe will not accept TOEFL iBT tests completed between 26 July 2023, and 4 May 2024 for Australian visa and migration purposes. During this period, the TOEFL iBT test being offered was not an approved test.\n\nCambridge C1 Advanced test (previously known as Cambridge English: Advanced CAE)\nFrom 12 February 2024 to 6 August 2025, the department will only accept results from the Cambridge C1 Advanced paper-based test.\n\nThe department will still accept tests taken before 12 February 2024 and within specified validity periods, for C1 Advanced paper-based and computer-based tests.\n\nLANGUAGECERT Academic\nIf you sit a LANGUAGECERT test, you will receive a ‘certificate’ and a ‘report’. If you use your LANGUAGECERT Academic results to show you meet the English language requirement, you must include both documents with your visa application. If you do not provide the certificate and the report, visa processing may be delayed.\n\nEnglish language evidence exemptions\nYou do not need to give us evidence of an English test score with your visa application if one of the following applies:\n\nyou are a citizen and hold a passport from UK, USA, Canada, NZ or Republic of Ireland \nyou are an applicant who is a Foreign Affairs or Defence sponsored student, or a Secondary Exchange student (AASES)\nyou are enrolled in a principal course of study that is a registered school course\nyou are enrolled in a principal course of study that is a standalone English Language Intensive Course for Overseas Students (ELICOS)\nyou are enrolled in a principal course of study registered and delivered in a language other than English\nyou are enrolled in a registered post-graduate research course\nyou have completed at least 5 years’ study in English in Australia, UK, USA, Canada, New Zealand, South Africa, or the Republic of Ireland\nin the 2 years before applying for the Student visa you completed the Senior Secondary Certificate of Education in Australia in English while you held a Student visa\nin the 2 years before applying for the Student visa you completed a substantial component of a course that would qualify you under the Australian Qualifications Framework at the Certificate IV or higher level, while you held a Student visa.\nNote: We may need you to give us evidence of an English test score with your visa application if you hold a British National Overseas (BNO) passport.\n\nIf you are required to provide evidence of English language proficiency but you fall into an exemption category, make sure you provide the appropriate evidence that demonstrates that you satisfy one of the exemptions.\n\nFor more information on English Language Tests and Evidence Exemptions refer to the Migration (English Language Tests and Evidence Exemptions for Subclass 500 (Student) Visas) Instrument 2025 - Federal Register of Legislation.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_05",
+      "program": "subclass_500",
+      "topic": "health_insurance",
+      "source_section_id": "AU_500_ELIG_05",
+      "source_text": "Have adequate health insurance\nYou and your family members must have and maintain adequate health insurance for the whole of your stay in Australia. To find out the length of coverage you will require, see Student visa grant periods.\n\nYou and your family members must be covered by Overseas Student Health Cover (OSHC) from an approved Australian health insurance provider, unless an 'Exception' applies.\n\nApplicants outside Australia\nYour cover must start from the day you and your family arrive in Australia, not the day your course starts.\n\nIf you have been granted a visa and want to travel to Australia before your course begins, the OSHC start date must be the same as the date you arrive, not the date your course starts. Generally this is a minimum of 1 week to 1 month before your course starts. \n\nYou must: \n\nensure you don't enter Australia before your OSHC begins, and\nmaintain your OSHC until you leave Australia.\nYou may be refused entry to Australia if you cannot prove you have health insurance in place when you arrive.\n\nApplicants in Australia\nApplicants must have OSHC. If your previous visa required you to have health insurance, cover must be continuous with  no gap between your previous health cover and your OSHC.\n\nExceptions\nYou do not need to have OSHC if you are:\n\na Norwegian student covered by the Norwegian National Insurance Scheme\na Swedish student covered by Kammarkollegiet\na Belgian student covered under the Reciprocal Health Care Agreement with Australia\nHow to get Overseas Student Health Cover\nTo get OSHC:\n\nfind an approved provider\npay for your policy\nYour education provider or agent might arrange OSHC for you. \n\nIf your education provider arranges your OSHC coverage, you will need to know the name of your health insurance provider, the date that your policy starts and finishes and should be aware of the terms and conditions of your policy. Your education provider will also need to include your health insurance information on your Certificate of Enrolment (CoE).\n\nIf you arrange OSHC coverage yourself, you will need to know the policy number to include in the visa application.\n\nWe will refuse your visa application if you don't give us this information when you apply for your Student visa. \n\nInsurance for family members\nIf you have a single OSHC policy and you have family members, including children born in Australia after your arrival, consider getting a family policy. Every member of your family must have health insurance. \n\nAny family member who joins you after you arrive in Australia must show us they have OSHC for the duration of their stay in Australia.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_06",
+      "program": "subclass_500",
+      "topic": "application_location",
+      "source_section_id": "AU_500_ELIG_06",
+      "source_text": "Apply from the right location\nFrom 2 October 2026, new rules mean that most Student visa applications must be lodged outside Australia.\n\nYou can only apply in Australia if you hold an eligible visa and meet an exemption category.\n\nEligible visas\nIf you hold a visa as a primary or secondary holder on the list below you cannot apply for a student visa in Australia. There are no exemptions to this rule.\n\nSubclass 400 – Temporary Work (all streams)\nSubclass 403 – (Domestic Worker – Diplomatic/Consular stream)\nSubclass 407 – Training (all streams)\nSubclass 408 – Temporary Activity (all streams)\nSubclass 417 – Working Holiday (all streams)\nSubclass 457 – Temporary Work (all streams)\nSubclass 462 – Work and Holiday (all streams)\nSubclass 482 – Skills in Demand / Temporary Skill Shortage (all streams)\nSubclass 485 – Temporary Graduate\nSubclass 600 – Visitor\nSubclass 601 – ETA\nSubclass 602 – Medical Treatment\nSubclass 651 – eVisitor\nSubclass 771 – Transit\nSubclass 988 – Maritime Crew\nSubclass 995 – Diplomatic (Temporary) (primary only. A family member of a Diplomatic (Temporary) visa (subclass 995) can apply for a Student visa in Australia)",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_07",
+      "program": "subclass_500",
+      "topic": "further_student_visa",
+      "source_section_id": "AU_500_ELIG_07",
+      "source_text": "Meet an exemption to apply for a further student visa in Australia\nIf you are student visa holder you may be able to apply for another Student visa while in Australia.\n\nDependent or secondary student visa holders cannot apply for a student visa as the primary applicant while in Australia.\n\nIf you hold a student visa as the primary applicant, you may be able to apply in Australia if you meet one of the six exemptions below.\n\nIf you do not meet an exemption, you should not apply in Australia. We will not accept your application if you are not eligible and this may have consequences if you are in Australia. An invalid application outcome could affect your visa status and you may not be eligible to apply for a further visa if your visa has already expired. Invalid decisions cannot be merits reviewed at the ART.\n\nExemption 1 – you need up to 12 additional months to complete your studies (course completion).\nTo apply under this exemption:\n\nyou need up to 12 additional months from the original end date of your main course to finish your course, and\nthe course you are completing must be the main course in your package of courses (if you are studying packaged courses), and\nthe course must be with the same education provider that your current Student visa was granted for (you can have changed courses but the course you changed to must be at the same AQF level or higher). \nFor example, students who have started a Bachelor’s Degree can apply for a student visa in Australia if they need up to 12 extra months to finish the same degree or a different Bachelor degree at the same education provider.\n\nIf you do not meet this exemption criteria you will need to lodge your next application from outside Australia.\n\nTo help minimise your time outside Australia and any interruptions to your studies, make sure you prepare your application and supporting documents before leaving Australia. For more information about applying from outside Australia, see the Student visa changes.\n\nUnderstanding AQF levels and VET courses    \n\nThe Australian qualifications are ranked from level 1 to level 10 by the Australian Qualifications Framework (AQF) . Check the AQF level of your current and proposed course to see whether you meet the course completion exemption.          \n\nExemption 2 – you are sponsored by the Department of Foreign Affairs and Trade (DFAT) or Defence\nTo apply under this exemption, you must be sponsored by the Department of Foreign Affairs and Trade or the Department of Defence.\n\nExemption 3 – you are applying to undertake a PhD Degree\nTo apply under this exemption, you must be applying to study a Doctoral Degree (PhD). You cannot apply under this exemption if you are applying to study a Master’s by Research course.\n\nExemption 4 – you are applying to undertake primary or secondary school studies\nTo apply under this exemption, you must be applying to study primary or secondary school studies.\n\nExemption 5 – you have completed your main course and are applying in Australia to undertake another course (course progression)\nTo apply under this exemption:\n\nyou must have completed your main course for which your visa was granted for or you have completed a course which was the same or higher AQF level as the original course your student visa was granted for, and\nyou are progressing to a course at a higher AQF level, and\nif your completed course was a higher education course, the course you are progressing to must also be a higher education course delivered by a higher education provider.\nYou can also apply for this exemption:\n\nif the main course you completed did not have an AQF level, and you are progressing to a course with an AQF level or\nyou have completed your school studies and are progressing to a course that does not have an AQF level.\nFor example:\n\nStudents who have completed an English Language Intensive Courses for Overseas Students (ELICOS) course can apply for a student visa in Australia if they are progressing to a Bachelor’s Degree.\nStudents who have completed an ELICOS course cannot apply for a student visa in Australia if they want to study another ELICOS course.\nStudents who have completed their secondary school studies can apply for a student visa in Australia if they want to study a foundational course after they finish school.\nStudents who have completed a Bachelor’s Degree at a higher education provider cannot apply for a student visa in Australia if they want to study a Graduate Diploma course at a VET provider.\nPackaged courses\n\nIf you are applying under the course progression exemption you:\n\ncannot package courses\nmust be enrolled in only one future course of study when you apply.\nIf you are enrolled in more than one future course, you may not meet the requirements for a valid application.\n\nYou are expected to begin your next course in the first available intake after completing your current course. The gap between courses should be minimal and, in most cases, no longer than two calendar months during the teaching year or four calendar months between standard academic years.\n\nFor example if you:\n\nare a Year 12 student relying on the course progression exemption, you cannot apply in Australia for a package that includes a Foundation course followed by a Bachelor degree. You will need to apply outside Australia\nhave finished a Bachelor Degree and you are applying to undertake a Graduate Certificate and a Master’s Degree, you will need to apply outside Australia.\nIf you meet the course progression exemption, when you submit your visa application, you must provide evidence that you have completed your course.\n\nYou must attach documents such as: \n\nyour academic transcripts \na course completion certificate \na letter from your education provider confirming you have completed your course. \nUnderstanding AQF levels and VET courses\n\nThe Australian qualifications are ranked from level 1 to level 10 by the Australian Qualifications Framework (AQF). Check the AQF level of your current and proposed course to see whether you meet the course progression exemption.\n\nExemption 6 – you cannot continue your course because your education provider has defaulted\nTo apply under this exemption, you must be unable to continue your course because your education provider has defaulted. For more information, see Education provider default.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_08",
+      "program": "subclass_500",
+      "topic": "family_inclusion",
+      "source_section_id": "AU_500_ELIG_08",
+      "source_text": "Meet an exemption if you want to include family members\nIf you meet one of the exemptions below, your family members must apply at the same time and from the same location as you. If your family members are applying with you in Australia, they must hold an eligible visa to apply.\n\nIf you do not meet an exemption to include family, you should not lodge an application for your family members. We will not accept your family member’s application if they are not eligible and this may have consequences if they are in Australia. An invalid application outcome could affect their visa status and they may not be eligible to apply for a further visa if their visa has already expired. Invalid decisions cannot be merits reviewed at the ART.\n\nExemption 1 – you are a Doctoral (PhD) student\nTo include family under this exemption, you must be applying to study a Doctoral Degree (PhD).\n\nYou cannot apply under this exemption if you are applying to study a Master’s by Research course.\n\nYou can include family members when you lodge your visa application inside or outside Australia. If your family members are applying in Australia, they must hold an eligible visa or a student visa.\n\nExemption 2 – you are a Department of Defence or Department of Foreign Affairs and Trade sponsored student\nTo include family under this exemption, you must be sponsored by the Department of Foreign Affairs and Trade or the Department of Defence.\n\nYou can include family members when you lodge your visa application inside or outside Australia. If your family members are applying in Australia, they must hold an eligible visa or a student visa.\n\nExemption 3 – you are a foreign government scholarship recipient\nTo include family under this exemption, you must be receiving a foreign government scholarship that fully funds your studies in Australia.\n\nIf you are outside Australia, you can include family members when you lodge your application.\n\nIf you are inside Australia, you can only include family members when you lodge your application if you:\n\nneed up to 12 additional months to complete the main course covered by your current Student visa, or\nhave completed your main course and are applying in Australia to undertake another course at a higher Australian Qualifications Framework (AQF) level. if your completed course was a higher education course, the course you are progressing to must also be a higher education course delivered by a higher education provider, or\nneed to lodge a further Student visa application because your education provider defaulted.\nExemption 4 – Eligible national from Pacific Island or ASEAN countries\nTo include family under this exemption, you must be a national from a Pacific Island:\n\nFederated States of Micronesia\nFiji\nKiribati\nNauru\nPalau\nPapua New Guinea\nRepublic of the Marshall Islands\nSamoa\nSolomon Islands\nTonga\nTuvalu\nVanuatu\nOr an ASEAN country:\n\nBrunei Darussalam\nCambodia\nIndonesia\nLao Peoples Dem Republic\nMalaysia\nMyanmar\nPhilippines\nSingapore\nThailand\nTimor-Leste\nVietnam\nIf you are outside Australia, you can include family members when you lodge your application.\n\nIf you are inside Australia, you can only include family members when you lodge your application if you:\n\nneed up to 12 additional months to complete the main course covered by your current Student visa, or\nhave completed your main course and are applying in Australia to undertake another course at a higher Australian Qualifications Framework (AQF) level. If your completed course was a higher education course, the course you are progressing to must also be a higher education course delivered by a higher education provider, or\nneed to lodge a further Student visa application because your education provider defaulted.\nExemption 5 – Other exemptions\nCurrent Student visa holders applying inside or outside Australia\n\nIf you currently hold a Student visa and you are inside or outside Australia, you can include family members who are currently on your Student visa when you lodge your application, if:\n\nyou need up to 12 additional months to complete your main course covered by your current Student visa, or\nyou need to lodge a further Student visa application because your education provider defaulted.\nCurrent student visa holders applying inside Australia\n\nIf you currently hold a student visa and you are inside Australia, you can include family members who are currently on your student visa when you lodge your application, if:\n\nyou have completed your main course for which your student visa was granted for or you have completed a course which was the same or higher AQF level as the original course your student visa was granted for, and\nyou are progressing to a course at a higher AQF level, and\nif your completed course was a higher education course, the course you are progressing to must also be a higher education course delivered by a higher education provider.\nYou can also apply for this exemption:\n\nif the main course you completed did not have an AQF level, and you are progressing to a course with an AQF level or\nyou have completed your school studies and are progressing to a course that does not have an AQF level.\nYou must have held or applied for a Student visa before 2 October 2026.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_09",
+      "program": "subclass_500",
+      "topic": "financial_capacity",
+      "source_section_id": "AU_500_ELIG_09",
+      "source_text": "Have enough money for your stay\nYou must have enough money to pay for your stay in Australia. To see the minimum amount of money you need for your visa application go to 'Gather Documents' under Step by Step.\n\nThe living costs we ask you to declare and provide with your visa application is the minimum amount of money you need for the visa. Actual living costs vary throughout Australia. They may be much higher than what you need for the visa. We recommend you research the area you intend to live including the cost of living in that area.\n\nYou should not rely on work to support yourself or your family while in Australia. The Australian Government Study Australia website provides useful information on accommodation options. It features a cost of living calculator to help you consider other possible costs in addition to the amount required for your visa application.\n\n\nFor more information visit Study Australia.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_10",
+      "program": "subclass_500",
+      "topic": "genuine_student",
+      "source_section_id": "AU_500_ELIG_10",
+      "source_text": "Be a genuine student\nYou must:\n\nbe a genuine student for entry\nbe able to show an understanding that studying in Australia is the primary reason of your Student visa.\nFor more information, see Genuine Student requirement.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_11",
+      "program": "subclass_500",
+      "topic": "character",
+      "source_section_id": "AU_500_ELIG_11",
+      "source_text": "Meet our character requirement\nYou and family members aged 16 years and over who apply for the visa must meet our character requirement.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_12",
+      "program": "subclass_500",
+      "topic": "health",
+      "source_section_id": "AU_500_ELIG_12",
+      "source_text": "Meet our health requirement\nYou and any family members who apply for the visa must meet our health requirement.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_13",
+      "program": "subclass_500",
+      "topic": "australian_values_statement",
+      "source_section_id": "AU_500_ELIG_13",
+      "source_text": "Sign the Australian values statement\nIf you are 18 years of age or older, you must:\n\nhave read, or had explained to you, the Life in Australia booklet and\nsign an Australian Values Statement that confirms you will respect the Australian way of life and obey Australian laws",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_14",
+      "program": "subclass_500",
+      "topic": "government_debt",
+      "source_section_id": "AU_500_ELIG_14",
+      "source_text": "Have paid back your debt to the Australian Government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_15",
+      "program": "subclass_500",
+      "topic": "immigration_history",
+      "source_section_id": "AU_500_ELIG_15",
+      "source_text": "Not had a visa cancelled or an application refused\nWe will consider your immigration history when we decide on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_500_POL_16",
+      "program": "subclass_500",
+      "topic": "best_interests_of_child",
+      "source_section_id": "AU_500_ELIG_16",
+      "source_text": "Best interests of the child\nWe might not grant this visa if it is not in the best interests of an applicant under 18.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "application_steps": [
+    {
+      "step_number": 1,
+      "source_tab": "step_by_step",
+      "start_line": 40,
+      "end_line": 64,
+      "original_text": "Step 1\n\nBefore you apply\nOutside Australia: Apply for your visa with enough time before your course starts. For an indication of processing times for this visa, use the visa processing time guide tool. This will show the processing times for recently decided applications. It is a guide only and not specific to your application.\n\nIn Australia: If you are eligible to apply in Australia, allow plenty of time to apply for your next visa. Applying early helps avoid problems if unexpected issues arise before your current substantive visa expires.\n\nOrganise health exams\nYou might need to have health examinations. You can complete them before you apply. \n\nFind out the examinations you need and how to arrange them if you want to have them before you apply.\n\nGet help with your application\nOnly some people can help you with your application. If you appoint someone to give you immigration assistance they must be:\n\na registered migration agent\na legal practitioner, or\nan exempt person.\nYou can appoint anyone to receive documents on your behalf relating to your visa matter.\n\nHave a valid passport\nYou and your family members must hold a valid passport in order to lodge a Student visa application.\n\nIf you are in Australia and your current passport expires, you will need to renew it before you apply for your Student visa.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 2,
+      "source_tab": "step_by_step",
+      "start_line": 65,
+      "end_line": 531,
+      "original_text": "Step 2\n\nGather your documents\nTo see what you need to give us, use the Document Checklist Tool. Before you use this tool please read the disclaimer. \n\nEnter your country of passport and education provider to get an accurate document checklist. Choose the option 'I have not decided on a provider yet' in the tool if you have not yet chosen a provider.\n\nThe tool will tell you what evidence you need to provide. If the tool says you need to give us evidence of a certain thing (e.g. English capability), select 'Show steps' to see what kind of evidence we might accept.\n\nRe-check the document checklist based on the country of passport and education provider just before you submit your application to be sure you have used the most current list, and to ensure that you have provided all documents that we need to assess your application.\n\nThe Document Checklist Tool is routinely updated twice a year on 31 March and 30 September but can also be updated at any time.\n\nProvide accurate information\nProvide accurate information. See what happens if you can't prove your identity or don't provide true information. \n\nIdentity documents\nWe need proof of your identity. If you cannot prove your identity:\n\nwe will refuse your visa application\nwe might not grant you another visa for 10 years\nwe might not grant any family members you listed on your application a visa for 10 years\nProvide the pages of your current passport showing your photo, personal details, and passport issue and expiry dates.\n\nAlso provide:\n\na national identity card, if you have one\nproof of change of name\nDocuments that prove a change of name include:\n\na marriage or divorce certificate\nchange of name documents from an Australian Registry of Births, Deaths and Marriages, or the relevant overseas authority\ndocuments that show other names you have been known by\nConfirmation of enrolment, letters of support and acceptance forms\nAttach the required documents according to your situation. \n\nConfirmation of Enrolment\n\nProvide a Confirmation of Enrolment (CoE) in a full time course registered on the Commonwealth Register of Institutions and courses for Overseas Students (CRICOS) for all intended courses.\n\nYour CoE must be valid at time of lodgement and when we decide your visa application. A CoE is no longer valid if it is cancelled or the course is complete. A new CoE will need to be attached to ImmiAccount to remain eligible for a student visa.\n\nAustralian Department of Foreign Affairs and Trade or Australian Department of Defence sponsored\n\nProvide a letter of support\n\nIf your letter of support does not say it will meet the living costs and expenses of each secondary applicant, then evidence of sufficient funds is also required.\n\nSecondary exchange student\n\nProvide an Acceptance Advice of Secondary Exchange Student form\n\nPostgraduate research student required to remain in Australia for marking of your thesis\n\nProvide a letter from your education provider.\n\nIf you meet an exemption to apply for a Student visa in Australia\nIf you meet the course progression exemption, see Meet an exemption to apply for a further student visa in Australia in the Eligibility tab, you must provide evidence you have completed your course.\n\nWhen you submit your application, you must provide documents such as:\n\nevidence of course completion via academic transcripts, or\na letter from your provider confirming you have completed your course, or\na course completion certificate from your provider.\nGenuine Student documents\nWe will ask you to provide a response, in English, to a set of questions in your online application.  Each question has a 150 word limit addressing the genuine student criteria. There is an additional question if you:\n\nhave previously held a Student visa or\nare lodging an application in Australia from a non-student visa.\nYou will also need to attach supporting documents to your application in your ImmiAccount.\n\nSee how to provide evidence to address the Genuine Student criteria.\n\nStudent visa English language requirements\nIf required, provide evidence that you have either:\n\nobtained a minimum test score in an English language test approved by us, or\nmet the requirements of an exemption category.\nThe table below shows the English language test providers and test scores taken on or before 6 August 2025. It includes information on English Language Intensive Courses for Overseas Students (ELICOS). It also states the minimum overall band scores you must achieve to meet the Student visa English language requirement.\n\n \n\nEnglish language test scores (Test taken on or before 6 August 2025)\n \n\n​\nTest Name\tMinimum test score\tMinimum test score if principal course is accompanied with either at least 10 weeks of ELICOS or a Foundation (Standard/Extended) program or an eligible Pathway program*\tMinimum test score if principal course is accompanied by at least 20 weeks of ELICOS  \nInternational English Language Testing System (IELTS)\t6.0\t5.5\t5.0\nTest of English as a Foreign Language internet-based test (TOEFL iBT)\t64\t46\t35\nCambridge English: Advanced (CAE) test/ Certificate in Advanced English\t169\t162\t154\nPearson Test of English Academic (PTE)\t50\t42\t36\nOccupational English Test (OET)\tB for each test component\tB for each test component\tB for each test component\n*For a list of eligible Pathway programs, see Migration (English Language Tests and Evidence Exemptions for Subclass 500 (Student) Visas) Instrument 2025 - Federal Register of Legislation.\n\nNote: For packaged courses i.e. ELICOS and a Bachelor course, 10 weeks and 20 weeks of ELICOS is a ‘minimum’ requirement to meet the IELTS threshold. For example, an applicant who has enrolled in at least 10 weeks of ELICOS packaged with a principal course must have achieved the required IELTS (or equivalent) test score of 5.5. If enrolled in at least 20 weeks of ELICOS packaged with a principal course, the applicant must have achieved IELTS (or equivalent) test score of 5.0.\n\nThe table below shows the English language test providers and test scores taken on or after 7 August 2025. It includes information on English Language Intensive Courses for Overseas Students (ELICOS). It also states the minimum overall band scores you must achieve to meet the Student visa English language requirement.\n\n \n\nEnglish language test scores (Test taken on or after 7 August 2025)\n​\nTest Name\tMinimum test score\tMinimum test score if principal course is accompanied with either at least 10 weeks of ELICOS or a Foundation (Standard/Extended) program or an eligible Pathway program^\tMinimum test score if principal course is accompanied by at least 20 weeks of ELICOS  \nC1 Advanced\n\n161\n\nExcluded*\n\nExcluded*\n\nCELPIP General\n\n7\n\n6\n\n5\n\nIELTS Academic\n\n6.0\n\n5.5\n\n5.0\n\nIELTS General Training\n\n6.0\n\n5.5\n\n5.0\n\nLANGUAGECERT Academic\n\n61\n\n54\n\n46\n\nMET\n\n53\n\n49\n\n44\n\nOET\n\n1210\n\n1090\n\n1020\n\nPTE Academic\n\n47\n\n39\n\n31\n\nTOEFL iBT**\n\n67\n\n51\n\n37\n\n* C1 Advanced test does not accept any test scores below IELTS 6.\n\n** From 21 January 2026, applicants must select 'Taking TOEFL for Australia’ during registration to ensure the test is valid for Australian visa purposes.\n\n^For a list of eligible Pathway programs, see Migration (English Language Tests and Evidence Exemptions for Subclass 500 (Student) Visas) Instrument 2025 - Federal Register of Legislation.\n\nNote: For packaged courses i.e. ELICOS and a Bachelor course, 10 weeks and 20 weeks of ELICOS is a ‘minimum’ requirement to meet the IELTS threshold. For example, an applicant who has enrolled in at least 10 weeks of ELICOS packaged with a principal course must have achieved the required IELTS (or equivalent) test score of 5.5. If enrolled in at least 20 weeks of ELICOS packaged with a principal course, the applicant must have achieved IELTS (or equivalent) test score of 5.0.\n\nYou can find more information on Exemption categories and the English Language tests at Eligibility, Meet English language requirements.\n\nEvidence you have enough money for your stay\nIf the document checklist requires you to give evidence of your financial capacity, you must attach evidence with your visa application.\n\nIf you are required to attach evidence of your financial capacity to your ImmiAccount when you submit your application, you must do so. If you don’t give this evidence, we may refuse your application without asking you for more information.\n\nThe document checklist may not indicate that you require evidence of your financial capacity, and you may not need to attach it when you submit your application. We may however still ask for this evidence while processing your application.\n\nAll subsequent entrants (family members who apply after we have granted you a visa) must attach evidence of financial capacity with their visa application. The document checklist is not relevant for subsequent entrants.\n\nThe living costs and expenses we ask you to declare for your visa application is the minimum amount of money you need for visa. Actual living costs vary across Australia. They may be much higher than what you need for the visa. We recommend you research the area you intend to live in, including the cost of living there.\n\nFor more information on evidence of financial capacity that satisfies the requirements specified in the Legislative Instrument, see the Federal Register of Legislation - Migration (LIN 19/198: Evidence of financial capacity—Subclass 500 Visa and Subclass 590 Visa) Instrument 2019.\n\nEvidence that you have enough money for your stay can include:\n\ndeposits of money from a financial institution\na government loan or loans from a financial institution\nscholarships or similar financial support.\nAnnual income\nAlternatively, you can give evidence that your parents or your partner had a personal annual income of at least AUD87,856 in the 12 months before you apply. If you bring family members, your parents’ or partner’s income must be at least AUD102,500 in the 12 months before you apply.\n\nIf both your parents are working, we can consider their combined income. Give evidence of your parents’ or partner’s income in the form of official government documents such as tax assessments less than 12 months old. We won’t accept bank statements or direct evidence from an employer.\n\n \n\nWork out how much money you need for the visa\nAt a minimum, you must have enough money to pay for:\n\nyour travel\n12 months of your course fees (or pro rata fees, if your course is less than 12 months)\n12 months of living costs for you and any family members who come with you to Australia (or pro rata fees, if you are staying less than 12 months)\nschool fees for any school-age children who accompany you (or pro rata fees, if the child will be at school for less than 12 months).\nUse the following information to work out how much money you need for the visa. To calculate pro rata costs, divide the annual cost by 365. Then multiply the result by the number of days you intend to stay in Australia.\n\n \n\nLiving costs\n12-month living costs are for:\n\nstudents - AUD29,710\npartners coming with you - AUD10,394\na child coming with you - AUD4,449.\nCourse fees\nUse the first 12 months of your course fees. If your course is 12 months or less, use the total cost. Deduct any costs you have already paid –you must provide evidence you have paid them, such as a receipt or Confirmation of Enrolment.\n\nIf you are in Australia and your course has already started, calculate the course fee for 12 months starting on the date you lodge your application.\n\nExample 1: your course fee is AUD50,000 for 3 years. The fee for 12 months is the total course cost divided by the number of years you will be studying. AUD50,000 divided by 3 years = AUD16,666, less any amount you have already paid if relevant.\nExample 2: your course fee is AUD15,000 for 10 months and you have already paid AUD5,000. Deduct the amount you have already paid from the total amount. AUD15,000 - AUD5,000 = AUD10,000.\nExample 3: your course fee is AUD20,000 for 18 months. The fee for 12 months is the total divided by the total number of months, then multiplied by 12. (AUD20,000/18) x 12 = AUD13,333. Deduct any costs you have already paid.\nSchooling costs\nIf you are including any school-age children in your application, add schooling costs of at least AUD13,502 per year for each child. Costs vary between states, territories and schools in Australia. You are responsible for finding out how much the child’s schooling will cost.\n\nYou don’t have to give evidence of schooling costs if you:\n\nare a PhD student and have enrolled your child in an Australian government school where the fees have been waived, or\nhave received an Australian Commonwealth Government scholarship, including Foreign Affairs and Defence sponsored students, and have enrolled your child in an Australian government school where the fees have been waived.\nYou must give evidence the child is enrolled.\n \n\nTravel costs\nAs a guide, when you calculate how much money you need, include:\n\nAUD2,500 for travel costs if you are applying from East or Southern Africa\nAUD3,000 for travel costs if you are applying from West Africa\nAUD2,000 for travel costs if you are applying from anywhere else outside Australia \nAUD1,000 for travel costs if you are applying in Australia. If you will be returning to Africa include AUD1,500.\n \nFor combined applications\nInclude the costs and expenses of the primary applicant. For family members also applying for the visa, include:\n\n12 months living costs (or pro rata)\nany school fees\ntravel expenses.\nOther options\nSecondary exchange students can prove they have enough money for their stay by providing a completed Acceptance Advice of Secondary Exchange Students (AASES) form.\n\nDepartment of Foreign Affairs and Trade (DFAT) students can prove they have enough money for their stay by providing a letter of support from DFAT. They must also provide proof of the financial capacity of any family members travelling with them.\n\nDepartment of Defence students can prove they have enough money for their stay by providing a letter of support from the Department of Defence. They must also provide proof of the financial capacity of any family members travelling with them.\n\n \n\nEvidence you have genuine access to the money\nIf we ask you to give evidence of financial capacity, you must also prove you have access to it. \n\nIf someone else is providing you funds, give us:\n\nevidence of your relationship with them\ntheir identity documents\nevidence of any financial support they have given you or another Student visa holder in the past.\nIf you receive financial support through a business, show us proof the business is operating.\n\nIf you give evidence of deposits of money, explain their source to show how the funds were accumulated.\n\nThis could include supporting financial evidence, for example:\n\nrecent bank transaction statements showing the history of funds\nany regular payments or growth patterns, such as from salary income.\nProviding a bank balance certificate across a single day does not show us how you increased your funds.\n\nAny education loan to cover your tuition or living costs should be paid out according to the agreement between you, the bank and the education provider. If you receive any payments before we make a decision on your application, give us evidence including the terms of the loan and the full amount you will be paid.\n\nIf you are relying on another kind of loan, provide:\n\nevidence of the security you used\nthe terms of the loan\nevidence you can cover ongoing costs.\nThe best evidence you can provide of genuine access to funds if you are relying on a loan is evidence of disbursement.\n\nLet your provider know of any conditions on your education loan. Some loans offer deferred repayment against your future earnings. These loans can be conditional on you studying only a specified course with a certain provider.\n\nEvidence you are exempt from paying a visa application charge (VAC):\nThe following Student visa applicants are not required to pay a visa application charge (VAC):\n\nStudents awarded a scholarship funded by the Commonwealth Government of Australia\nStudents and family members supported by the Department of Foreign Affairs and Trade\nStudent and family members supported by the Department of Defence\nSecondary exchange students\nStudents affected by education provider default and lodge a new Student visa application within 12 months of the provider default day\nFamily members of students enrolled in a postgraduate research course\nStudents affected by COVID-19.\nIf you are not sure, you should not claim exemption. We will not accept your application if you are not eligible and this may have consequences if you are in Australia. An invalid application outcome could affect your visa status and you may not be eligible if your visa has already expired to apply for a further visa.\n\nNote:\n\nYou are not Commonwealth sponsored if you are sponsored by the government in your home country or your government has provided you with a loan. Most Commonwealth sponsored students are enrolled in post graduate research courses.\nIf your education provider is still operating but was unable to deliver the course you were enrolled in, then you are not affected by education provider default.  \nOverseas Student Health Cover\nYou must include proof of paid adequate health insurance for the proposed duration of your visa see Student visa grant periods.\n\nHealth insurance must be Overseas Student Health Cover (OSHC) covering everyone included in your application.\n\nIf you don’t provide your OSHC in your application form, we will refuse your visa application. \n\nIf you or your agent have organised OSHC, and included this information on your CoE, you will need to include the name of your health insurance provider, the dates your policy starts and finishes and the policy number in your application form.\n\nIf your education provider arranged your OSHC, you will need to include the name of your health insurance provider and the dates your policy starts and finishes in your application. You do not need to include the policy number in your application. \n\nMake sure there is no gap in your coverage if you are studying with more than one education provider and both providers arrange OSHC for you. The second policy must begin as soon as the first expires.\n\nNote: If you are from Norway, Sweden or Belgium, you might not have to obtain OSHC. See information on exceptions in the 'Have adequate health insurance' section on the Eligibility page.\n\nPolio vaccination certificate\nIf you are applying from outside Australia and you are travelling from, or spent time in, a country considered at risk of polio, you need to give us a polio vaccination certificate.\n\nSee Threats to public health for the current countries of risk.\n\nWelfare arrangements and consent to grant a visa for students under 18\nIf you are applying for a Student visa and you are under 18 years old, you must have appropriate welfare arrangements in place. This must cover your period of stay or until you turn 18 years, whichever is first. You must also have consent from your parent(s) or guardian(s) to travel to and reside in Australia as an under 18 student.\n\nIf your nominated guardian is applying for a Subclass 590 Student Guardian visa, both applications should be made at the same time.\n\n \n\n \n\nConsent to grant a visa for a student under the age of 18 years\nEvery applicant under the age of 18 must provide a completed and signed consent Form 1229 (276KB PDF) or a statutory declaration from each parent or legal guardian with their consent. If you cannot provide consent form both parents or guardians, you will need to provide evidence that one party has sole custody. \n\nYou also need to provide: \n\nbirth certificate of the under 18 student. The birth certificate must include the names of the parents. A ceremonial or notarial certificate is not sufficient for this purpose.\nidentity document(s) that show the signature and photo of the person(s) who completed the form or declaration, such as a passport or driver's licence\nif applicable, evidence of sole custody such as a valid court order, death certificate or a divorce certificate/legal separation agreement. \nWelfare arrangements\nTo show your welfare arrangements you must either: \n\narrange a Confirmation of Appropriate Accommodation and Welfare (CAAW)\nprovide your Acceptance Advice of Secondary Exchange Student (AASES) form if you are a secondary exchange student\norganise approval of your welfare arrangements from the relevant Minister, if you are a Foreign Affairs or Defence student or\nnominate a guardian\nTo nominate a guardian and for your Student visa to be valid, you must attach a completed Form 157N Student Guardianship Arrangements to your applications. If your nominated guardian is applying for a Student guardian (subclass TU-590) visa, both applications should be made at the same time. \n\nA nominated guardian must be: \n\nthe parent of the Student visa holder or \na person who has custody of the student or\na relative of the student, aged 21 years or older, nominated in writing by a parent or person who has custody of the student.\nA nominated guardian can have: \n\nAustralian citizenship\na permanent visa\ns substantive temporary visa for duration of the students stay or until they turn 18 or \napplied for or hold a subclass 590 visa. \nFor this visa, a relative is a: \n\nparent or step-parent\ngrandparent or step-grandparent\nsibling or step-sibling or\naunt, uncle, step-aunt or step-uncle. \nYou must include in your application: \n\nproof of relationship to the student, for example the birth certificate of the student, parent(s) and nominated guardian\na police certificate for every country the guardian has lived in for more than 12 months in the last 10 years since turning 16 years, if not a parent/legal custodian \na copy of the guardian's passport including biodata and signature page and\nevidence of residency in Australia if already a holder of a substantive visa\na Form 157N Student Guardianship Arrangements (291KB PDF). \nFor more information see Welfare arrangements for students under 18. \n\nPartner documents\nIf you are eligible to include your partner in your application, provide your partner's:\n\nidentity documents\ncharacter documents\ndocuments about other family members, if applicable\nIf you are married, provide your marriage certificate or other evidence that your marriage is valid in Australia.\n\nIf you are a de facto partner, provide documents that show you are in a de facto relationship.\n\nAdditional proof of a de facto relationship\n\nIn addition to documents proving your relationship provide evidence that:\n\nyou have been in your de facto relationship for at least 12 months before you applied for this visa, or\nif applicable, provide evidence that your relationship is registered by a participating Australian state or territory\nDependants under 18\nIf you are eligible to include dependents in your application, for every dependant child under the age of 18 years who is applying with you, provide:\n\ncopies of birth certificates or the family book showing the names of both parents of all your dependent children\ncopies of the adoption paper, if applicable. \nIf somebody other than your biological parents has legal guardianship over you (for example, adoptive parents or a court-appointed guardian), you must provide proof of their legal guardianship. This can be adoption papers or parental court orders, if applicable.\n\nParental responsibility documents\nYou must get consent for any applicant under 18 years of age to migrate to Australia from anyone who:\n\nhas a legal right to decide where the child lives and\nis not coming to Australia with the child\nThey must complete either:\n\nForm 1229 Consent form to grant an Australian visa to a child under the age of 18 years (276KB PDF)\na statutory declaration giving their consent for the child to visit Australia on this visa\nAlternatively, you can show us:\n\nan Australian court order that allows your child to migrate to Australia, or\nthat the laws of your home country allow them to migrate\nInclude:\n\nan identity document that shows the signature and photo of the person who completed the form or declaration, such as a passport or driver’s licence\nadoption papers or other court documents if applicable\nEvidence of school enrolment\nYou must give us evidence of education for any dependant child who has turned 5 but has not turned 18 years.\n\nThis can be a letter from the school (public or private) or from the State/Territory education department where you will be studying and include enrolment details and fees paid.\n\nChildren 18 years and over\nOnly unmarried children under the age of 18 can be included as a dependant in your application.\n\nIf you have a child 18 or over, or a child who will turn 18 years before your Student visa is granted they will need to apply for their own visa.\n\nTell us you are getting help\nTo nominate someone to:\n\nreceive your correspondence, use Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration assistance, use Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nPrepare your documents\nTranslate\nHave all non-English documents translated into English.\n\nTranslators in Australia must be accredited by the National Accreditation Authority for Translators and Interpreters.\n\nTranslators outside Australia do not have to be accredited. But on each translation, they must include their:\n\nfull name\naddress and telephone number\nqualifications and experience in the language they are translating\nThese details must be in English.\n\nNote: You do not need to have any documents certified.\n\nScan or photograph\nScan or photograph all documents (English and non-English) in colour.\n\nThe scans and photos must be legible.\n\nIf a document is more than 1 page, save it all as 1 file.\n\nKeep\nKeep a copy of your completed application.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 3,
+      "source_tab": "step_by_step",
+      "start_line": 532,
+      "end_line": 601,
+      "original_text": "Step 3\n\nApply for the visa\nYou must apply for this visa online. Most applicants must apply from outside Australia. You can only apply in Australia if you hold an eligible visa and meet an exemption category.\n\nYou should submit a complete and decision-ready application. Applications that are lodged without relevant documentation may be refused or delayed. The application form in ImmiAccount tells you what documents to attach.\n\nIf you are in Australia\nYou can’t apply for a student visa in Australia if you hold a:\n\nSubclass 400 – Temporary Work (all streams)\nSubclass 403 – (Domestic Worker – Diplomatic/Consular stream)\nSubclass 407 – Training (all streams)\nSubclass 408 – Temporary Activity (all streams)\nSubclass 417 – Working Holiday (all streams)\nSubclass 457 – Temporary Work (all streams)\nSubclass 462 – Work and Holiday (all streams)\nSubclass 482 – Skills in Demand / Temporary Skill Shortage (all streams)\nSubclass 485 – Temporary Graduate\nSubclass 600 – Visitor\nSubclass 601 – ETA\nSubclass 602 – Medical Treatment\nSubclass 651 – eVisitor\nSubclass 771 – Transit\nSubclass 988 – Maritime Crew\nSubclass 995 – Diplomatic (Temporary) (Primary only. A family member of a Diplomatic (Temporary) visa (subclass 995) can apply for a Student visa in Australia).\nIf you hold one of the visas on this list there are no exemptions to these rules.\n\nYou may be able to apply for another Student visa while in Australia if you are a student visa holder.\n\nDependent student visa holders are unable to apply for a student visa as the primary applicant while in Australia.\n\nFor more information, see Meet an exemption to apply for a further student visa in Australia in the Eligibility tab.\n\nIf you don’t hold a substantive visa you may apply for a student visa within 28 days of holding a special purpose visa or a dependent Diplomatic (temporary) visa.\n\nYou may also apply for a student visa in Australia within 28 days of being notified of an Administrative Review Tribunal (ART) decision if:\n\nyour last substantive visa was a student visa\nyour Student visa was cancelled\nthe Student visa had already ceased by the time the ART set aside the cancellation decision\nyou meet one of the exemptions to lodge a student visa application in Australia.\nYou cannot make a valid application for a Student visa if you:\n\ndo not hold a substantive visa, and\nyou have previously been granted a visa based on an application made when you did not hold a substantive visa.\nDo not provide false and misleading information\nProvide accurate information. See what happens if you can't prove your identity or don't provide true information.\n\nApply online\nCreate or log in to ImmiAccount\nAttach documents\nPay the visa application charge\nPaying the application charge \n\nWhen you submit your application you must:\n\npay for you and your family members or your application will not be valid\nor\nprovide proof of exemption as shown in 'Step by step', Gather your documents.\nIf your visa cancellation was set aside by the Tribunal you can’t apply online.  Instead submit a ImmiAccount technical support form.\n\nNote: a valid application must be made within the eligibility timeframe as late applications will not be accepted.\n\nSee how to resolve error messages when submitting online.\n\nNote:\n\nIf you are eligible to include dependents in your application, we cannot grant a Student visa to your child if they are 18 years or over at the time your visa is finished. Instead, they should apply for their own visa.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 4,
+      "source_tab": "step_by_step",
+      "start_line": 602,
+      "end_line": 712,
+      "original_text": "Step 4\n\nAfter you apply\nSee what you can and must do after you apply.\n\nYou should respond to any requests for information promptly. You do not need to wait until the deadline to respond to a Departmental request for further information.  You should also regularly log into your ImmiAccounts to check for messages from the Department and respond promptly.\n\nYou should avoid booking travel before your visa has been finalised. \n\nStatus updates\nDo not contact the department if your application is within standard processing times. We can't give any further updates on the application's progress. You can see if we have asked for more information in your ImmiAccount. You can also review Student visa processing priorities.\n\nMaintain Enrolment\nIf you provided a Confirmation of Enrolment (CoE) with your application as evidence of enrolment in study, you must hold a valid CoE when we decide your student visa application.\n\nA CoE is no longer valid if it is cancelled or the course is complete. To remain eligible for a student visa a new CoE will need to be attached to ImmiAccount.\n\nBiometrics\nWe might ask for biometrics. Most applicants will be advised immediately after submitting an application if you need to provide biometrics. You will receive a letter and will also be able to see this request in your ImmiAccount. You will be given 14 days to provide biometrics so it is important to arrange an appointment quickly using the instructions in the request letter.\n\nYou must provide biometrics before travelling to Australia. \n\nHealth exams\nIf you did not have health examinations before you applied, check ImmiAccount to find out if you need them.\n\nSee the medical referral letter with your Health Assessment Portal (HAP) ID and further directions in ImmiAccount. \n\nStay lawful in Australia\nMake sure you stay lawful by holding a valid visa while we process your application.\n\nIf you were in Australia when you applied for this visa, you were granted a Bridging visa A (BVA). If your current visa expires before we decide on your application, the BVA will start. You can stay in Australia on the BVA while we process your new visa application. You cannot travel on the BVA - there is no right of return on this visa; it cancels on departure.\n\nDo not cancel your current visa. If you do, you will:\n\nbe staying in Australia unlawfully\nnot be eligible for a Bridging visa A\nLearn more about visa expiry.\n\nTravel after you apply\nYou applied outside Australia, because you were not eligible to lodge your application in Australia\n\nIf you lodged your application from outside Australia, because you were not eligible to lodge your application in Australia, you may travel to Australia on another valid visa while your Student visa application is being processed. You must comply with that visa’s conditions.\n\nIf you applied from outside Australia, because you were not eligible to lodge your application in Australia, you must be outside Australia when the Student visa is granted. If you are in Australia when your visa is ready to be granted, we may ask you to leave Australia so processing can continue.\n\nYou will not receive a Bridging visa linked to an application lodged outside Australia.\n\nYou applied outside Australia, but you are eligible to lodge inside Australia\n\nIf you lodged your application from outside Australia, but you are eligible under an exemption to lodge your application inside Australia, you can be granted your student visa while you are in Australia. For more information, see Exemptions – for student visa holders.\n\nTo see if you can meet requirements to be granted a Bridging Visa A, go to: Subclass 010 Bridging visa A (BVA).\n\nYou applied inside Australia, because you meet an exemption to lodge inside Australia\n\nIf you lodged your application in Australia, you do not have to tell us if you want to travel outside Australia while we process your application. This is because you can be outside Australia when we make a decision.\n\nBut if you leave Australia, make sure your visa allows you to return. If you have a Bridging visa A, it will cease if you leave Australia.\n\nIf you have a BVA and have substantial reasons for travel, then a Bridging visa B (BVB) enables return to Australia while your application is being processed.\n\nTo see if you can return on your current visa, check VEVO.\n\nLearn about visa expiry.\n\nProviding more information\nLodging a complete application will ensure your visa is not delayed. If you did not attach all your documents when you applied, attach them as soon as you can in ImmiAccount. The Department may finalise your application based on the information you provided when you first lodged your visa, so it is recommended that you lodge a complete application. You can attach a maximum of 60 documents. We might also ask you to provide more information.\n\nNewborn children\nFind out what to do if your child is born after you apply.\n\nMistakes on your application\nLet us know as soon as you can. \n\nComplete Form 1023 Notification of incorrect answers (168KB PDF) \n\nOr \n\nIf you currently have a visa application in ImmiAccount that is not yet finalised, sign into ImmiAccount and select 'Update Details' from the Menu option. \n\nChoose 'Notification of incorrect answers' from the list and provide the correct information. \n\nHelp with your application\nLet us know if you no longer want someone to:\n\nreceive your correspondence - complete Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration advice - complete Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nFor more information see Who can help you with your application.\n\nTell us if things change\nThings you need to let us know about include:\n\nyou want to withdraw your application\nchanges to your phone number, address or passport\nchanges to your relationship status\nthe birth of a child\nchanges to your welfare arrangements.\nSee how to tell us if your situation changes.\n \n\nEducation provider default\nEducation provider default occurs when a registered education provider in Australia:\n\ncloses, or\ncan't deliver your course because they have been sanctioned\nIf after lodging your Student visa application your provider has defaulted, you will need to provide a new CoE for a new education provider. \n\nSee more about education provider defaults.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 5,
+      "source_tab": "step_by_step",
+      "start_line": 713,
+      "end_line": 726,
+      "original_text": "Step 5\n\nVisa outcome\nWe will let you know in writing our decision about your visa application. We will tell you:\n\nyour visa grant number\nthe date your visa expires\nyour visa conditions\nKeep a copy of the decision with you when in Australia.\n\nIf we refuse your visa we will let you know in writing. We will tell you why we refused and whether you have a right to a review of the decision.\n\nWe will not refund the application charge if we refuse your application.",
+      "review_status": "needs_review"
+    }
+  ],
+  "conditional_requirements": {
+    "enrolment_and_coe": {
+      "source_section_ids": [
+        "AU_500_ELIG_02"
+      ],
+      "review_points": [
+        "cricos_course_registration",
+        "confirmation_of_enrolment",
+        "coe_validity_at_decision",
+        "packaged_courses",
+        "course_gap_rules",
+        "alternative_enrolment_evidence"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "english_requirements": {
+      "source_section_ids": [
+        "AU_500_ELIG_04"
+      ],
+      "review_points": [
+        "approved_english_tests",
+        "test_score_requirements",
+        "test_validity_period",
+        "regular_vs_streamlined_evidence",
+        "at_home_tests_not_accepted",
+        "english_evidence_exemptions"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "overseas_student_health_cover": {
+      "source_section_ids": [
+        "AU_500_ELIG_05"
+      ],
+      "review_points": [
+        "oshc_required_period",
+        "oshc_start_date",
+        "continuous_cover_for_onshore_applicants",
+        "oshc_country_exemptions",
+        "family_member_cover"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "onshore_application_restrictions": {
+      "source_section_ids": [
+        "AU_500_ELIG_06",
+        "AU_500_ELIG_07"
+      ],
+      "review_points": [
+        "changes_effective_2026_10_02",
+        "location_at_lodgement",
+        "ineligible_prior_visa_subclasses",
+        "primary_vs_secondary_student_visa",
+        "six_further_student_visa_exemptions",
+        "course_completion_exception",
+        "course_progression_exception",
+        "education_provider_default"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "family_inclusion": {
+      "source_section_ids": [
+        "AU_500_ELIG_08"
+      ],
+      "review_points": [
+        "changes_effective_2026_10_02",
+        "five_family_inclusion_exemptions",
+        "phd_student",
+        "dfat_or_defence_sponsorship",
+        "foreign_government_scholarship",
+        "pacific_or_asean_nationality",
+        "existing_student_family_members",
+        "same_time_and_location",
+        "eligible_visa_for_onshore_family"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "financial_capacity": {
+      "source_section_ids": [
+        "AU_500_ELIG_09"
+      ],
+      "review_points": [
+        "current_minimum_funds",
+        "tuition_and_living_costs",
+        "family_costs",
+        "accepted_funding_evidence"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "genuine_student": {
+      "source_section_ids": [
+        "AU_500_ELIG_10"
+      ],
+      "review_points": [
+        "genuine_student_requirement",
+        "primary_purpose_of_study",
+        "supporting_evidence"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "minor_applicants": {
+      "source_section_ids": [
+        "AU_500_ELIG_01",
+        "AU_500_ELIG_03",
+        "AU_500_ELIG_16"
+      ],
+      "review_points": [
+        "minimum_school_student_age",
+        "year_level_age_limits",
+        "under_18_welfare_arrangements",
+        "best_interests_of_child"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "exemption_groups": {
+    "further_student_visa": {
+      "source_section_id": "AU_500_ELIG_07",
+      "exemptions": [
+        {
+          "number": 1,
+          "heading": "you need up to 12 additional months to complete your studies (course completion).",
+          "specific_conditions": "see_source_section",
+          "eligibility_rule": null,
+          "review_status": "needs_review"
+        },
+        {
+          "number": 2,
+          "heading": "you are sponsored by the Department of Foreign Affairs and Trade (DFAT) or Defence",
+          "specific_conditions": "see_source_section",
+          "eligibility_rule": null,
+          "review_status": "needs_review"
+        },
+        {
+          "number": 3,
+          "heading": "you are applying to undertake a PhD Degree",
+          "specific_conditions": "see_source_section",
+          "eligibility_rule": null,
+          "review_status": "needs_review"
+        },
+        {
+          "number": 4,
+          "heading": "you are applying to undertake primary or secondary school studies",
+          "specific_conditions": "see_source_section",
+          "eligibility_rule": null,
+          "review_status": "needs_review"
+        },
+        {
+          "number": 5,
+          "heading": "you have completed your main course and are applying in Australia to undertake another course (course progression)",
+          "specific_conditions": "see_source_section",
+          "eligibility_rule": null,
+          "review_status": "needs_review"
+        },
+        {
+          "number": 6,
+          "heading": "you cannot continue your course because your education provider has defaulted",
+          "specific_conditions": "see_source_section",
+          "eligibility_rule": null,
+          "review_status": "needs_review"
+        }
+      ],
+      "review_status": "needs_review"
+    },
+    "family_inclusion": {
+      "source_section_id": "AU_500_ELIG_08",
+      "exemptions": [
+        {
+          "number": 1,
+          "heading": "you are a Doctoral (PhD) student",
+          "specific_conditions": "see_source_section",
+          "eligibility_rule": null,
+          "review_status": "needs_review"
+        },
+        {
+          "number": 2,
+          "heading": "you are a Department of Defence or Department of Foreign Affairs and Trade sponsored student",
+          "specific_conditions": "see_source_section",
+          "eligibility_rule": null,
+          "review_status": "needs_review"
+        },
+        {
+          "number": 3,
+          "heading": "you are a foreign government scholarship recipient",
+          "specific_conditions": "see_source_section",
+          "eligibility_rule": null,
+          "review_status": "needs_review"
+        },
+        {
+          "number": 4,
+          "heading": "Eligible national from Pacific Island or ASEAN countries",
+          "specific_conditions": "see_source_section",
+          "eligibility_rule": null,
+          "review_status": "needs_review"
+        },
+        {
+          "number": 5,
+          "heading": "Other exemptions",
+          "specific_conditions": "see_source_section",
+          "eligibility_rule": null,
+          "review_status": "needs_review"
+        }
+      ],
+      "review_status": "needs_review"
+    }
+  },
+  "regulatory_changes": {
+    "effective_date": "2026-10-02",
+    "source_tab": "eligibility",
+    "affected_topics": [
+      "application_location",
+      "further_student_visa",
+      "family_inclusion",
+      "course_enrolment"
+    ],
+    "review_status": "needs_review"
+  },
+  "financial_threshold": {
+    "amount": null,
+    "currency": "AUD",
+    "source_topic": "financial_capacity",
+    "review_status": "needs_review"
+  },
+  "english_score_requirements": {
+    "source_topic": "english",
+    "specific_scores": null,
+    "review_status": "needs_review"
+  },
+  "review_status": "needs_review",
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false
+}

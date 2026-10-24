@@ -1,0 +1,622 @@
+{
+  "program": "subclass_407",
+  "visa_subclass": "407",
+  "stream": "training",
+  "pathway_type": "temporary_occupational_training",
+  "official_sources": {
+    "about_this_visa": {
+      "source_file": "data/raw/australia/employment/subclass_407_about_this_visa.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "source_sha256": "d9f8cbc8607d0a5b51d69dfa96cac16170f6ad55d19f45f1b8bde39c3cf9ce97",
+      "char_count": 9527,
+      "review_status": "needs_review"
+    },
+    "eligibility": {
+      "source_file": "data/raw/australia/employment/subclass_407_eligibility.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "char_count": 6617,
+      "review_status": "needs_review"
+    },
+    "step_by_step": {
+      "source_file": "data/raw/australia/employment/subclass_407_step_by_step.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "source_sha256": "e271a755bd4dc94fece651128cf15cfbdcdd54cb7ca42ce8c5d0b1dfc8d4e720",
+      "char_count": 16542,
+      "review_status": "needs_review"
+    },
+    "when_you_have_this_visa": {
+      "source_file": "data/raw/australia/employment/subclass_407_when_you_have_this_visa.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "source_sha256": "64bc221fe6dde53364b69cee2436a83f9ac7b2dce200e4420ae69472cd436e87",
+      "char_count": 7318,
+      "review_status": "needs_review"
+    }
+  },
+  "eligibility_sections": [
+    {
+      "section_id": "AU_407_ELIG_01",
+      "topic": "approved_sponsor",
+      "heading": "Have an approved sponsor",
+      "source_tab": "eligibility",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "start_line": 42,
+      "end_line": 44,
+      "original_text": "Have an approved sponsor\nYour sponsor must be approved as a temporary activities sponsor.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_407_ELIG_02",
+      "topic": "approved_nomination",
+      "heading": "Have an approved nomination",
+      "source_tab": "eligibility",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "start_line": 45,
+      "end_line": 56,
+      "original_text": "Have an approved nomination\nYour sponsor must have nominated you for a program of occupational training unless they are an Australian Commonwealth Government agency. \n\nWe must approve your nomination before you apply for this visa.\n\nNomination requirements are different depending on the purpose or type of training.\n\nThere are 3 types of occupational training covered by this visa:\n\nOccupational training required for registration\nOccupational training to improve skills in an eligible occupation\nOccupational training for capacity building overseas. This includes overseas qualification, government support or professional development.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_407_ELIG_03",
+      "topic": "age",
+      "heading": "Be this age",
+      "source_tab": "eligibility",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "start_line": 57,
+      "end_line": 59,
+      "original_text": "Be this age\nUsually, you must be 18 years old or older at the time we decide your visa application.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_407_ELIG_04",
+      "topic": "qualifying_visa",
+      "heading": "Have this visa",
+      "source_tab": "eligibility",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "start_line": 60,
+      "end_line": 69,
+      "original_text": "Have this visa\nIf you are applying in Australia, you must currently hold a valid temporary substantive visa that is not a:\n\na Subclass 403 (Temporary Work (International Relations) visa in the Domestic Worker (Diplomatic or Consular stream) or\na Subclass 771 (Transit) visa or \na Special Purpose visa\nIf you are in Australia and do not hold a substantive visa, your last substantive visa must not have been one of the above visas and your application must be made within 28 days: \n\nafter the last substantive visa you held ceased to be in effect or\nafter the day you were notified of the Administrative Appeal Tribnual's decision to set aside and substitute the decision to cancel your substantive visa, or the Minister's decision not to revoke the cancellation of your substantive visa.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_407_ELIG_05",
+      "topic": "health",
+      "heading": "Meet our health requirement",
+      "source_tab": "eligibility",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "start_line": 70,
+      "end_line": 72,
+      "original_text": "Meet our health requirement\nYou and any family members who apply for the visa with you must meet our health requirement.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_407_ELIG_06",
+      "topic": "character",
+      "heading": "Meet our character requirement",
+      "source_tab": "eligibility",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "start_line": 73,
+      "end_line": 77,
+      "original_text": "Meet our character requirement\nYou and family members aged 16 years and over who apply for the visa with you must meet our character requirement.\n\nWe might also ask that other family members meet the requirement.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_407_ELIG_07",
+      "topic": "health_insurance",
+      "heading": "Have adequate health insurance",
+      "source_tab": "eligibility",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "start_line": 78,
+      "end_line": 87,
+      "original_text": "Have adequate health insurance\nYou are personally liable for all your healthcare costs while you are in Australia. Medical insurance helps limit your financial liability. You must maintain adequate health cover for the whole of your stay if you are granted this visa. Your insurance should cover you for medically necessary treatment, including transport.\n\nSee a guide to what we consider adequate health insurance.\n\nSee more about health insurance for overseas visitors.\n\nReciprocal healthcare agreements\nSome countries have a reciprocal healthcare agreement with Australia. Find out more from Services Australia about reciprocal healthcare agreements.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_407_ELIG_08",
+      "topic": "genuine_temporary_entrant",
+      "heading": "Be a genuine temporary entrant",
+      "source_tab": "eligibility",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "start_line": 88,
+      "end_line": 94,
+      "original_text": "Be a genuine temporary entrant\nYou must only intend to:\n\nstay temporarily in Australia\ndo the things you are allowed to do on this visa\nYou must have substantially complied with the conditions of the last substantive or subsequent bridging visa that you held.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_407_ELIG_09",
+      "topic": "english",
+      "heading": "Have this level of English language",
+      "source_tab": "eligibility",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "start_line": 95,
+      "end_line": 97,
+      "original_text": "Have this level of English language\nYou must have functional English.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_407_ELIG_10",
+      "topic": "australian_values_statement",
+      "heading": "Sign the Australian values statement",
+      "source_tab": "eligibility",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "start_line": 98,
+      "end_line": 102,
+      "original_text": "Sign the Australian values statement\nIf you are 18 years of age or older, you must:\n\nhave read, or had explained to you, the Life in Australia booklet and\nsign an Australian Values Statement that confirms you will respect the Australian way of life and obey Australian laws",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_407_ELIG_11",
+      "topic": "government_debt",
+      "heading": "Have paid back your debt to the Australian Government",
+      "source_tab": "eligibility",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "start_line": 103,
+      "end_line": 105,
+      "original_text": "Have paid back your debt to the Australian Government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_407_ELIG_12",
+      "topic": "immigration_history",
+      "heading": "Not had a visa cancelled or an application refused",
+      "source_tab": "eligibility",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "start_line": 106,
+      "end_line": 114,
+      "original_text": "Not had a visa cancelled or an application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_407_ELIG_13",
+      "topic": "best_interests_of_child",
+      "heading": "Best interests of the child",
+      "source_tab": "eligibility",
+      "source_sha256": "63147f4b909887b068bff9fa53699c6606c2dbfa00f1fa8770b11f1c888e9d17",
+      "start_line": 115,
+      "end_line": 117,
+      "original_text": "Best interests of the child\nWe might not grant this visa if it is not in the best interests of an applicant under 18.",
+      "review_status": "needs_review"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "AU_407_EVD_01",
+      "source_section_id": "AU_407_ELIG_01",
+      "source_tab": "eligibility",
+      "exact_quote": "Have an approved sponsor\nYour sponsor must be approved as a temporary activities sponsor.",
+      "start_line": 42,
+      "end_line": 44,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_407_EVD_02",
+      "source_section_id": "AU_407_ELIG_02",
+      "source_tab": "eligibility",
+      "exact_quote": "Have an approved nomination\nYour sponsor must have nominated you for a program of occupational training unless they are an Australian Commonwealth Government agency. \n\nWe must approve your nomination before you apply for this visa.\n\nNomination requirements are different depending on the purpose or type of training.\n\nThere are 3 types of occupational training covered by this visa:\n\nOccupational training required for registration\nOccupational training to improve skills in an eligible occupation\nOccupational training for capacity building overseas. This includes overseas qualification, government support or professional development.",
+      "start_line": 45,
+      "end_line": 56,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_407_EVD_03",
+      "source_section_id": "AU_407_ELIG_03",
+      "source_tab": "eligibility",
+      "exact_quote": "Be this age\nUsually, you must be 18 years old or older at the time we decide your visa application.",
+      "start_line": 57,
+      "end_line": 59,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_407_EVD_04",
+      "source_section_id": "AU_407_ELIG_04",
+      "source_tab": "eligibility",
+      "exact_quote": "Have this visa\nIf you are applying in Australia, you must currently hold a valid temporary substantive visa that is not a:\n\na Subclass 403 (Temporary Work (International Relations) visa in the Domestic Worker (Diplomatic or Consular stream) or\na Subclass 771 (Transit) visa or \na Special Purpose visa\nIf you are in Australia and do not hold a substantive visa, your last substantive visa must not have been one of the above visas and your application must be made within 28 days: \n\nafter the last substantive visa you held ceased to be in effect or\nafter the day you were notified of the Administrative Appeal Tribnual's decision to set aside and substitute the decision to cancel your substantive visa, or the Minister's decision not to revoke the cancellation of your substantive visa.",
+      "start_line": 60,
+      "end_line": 69,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_407_EVD_05",
+      "source_section_id": "AU_407_ELIG_05",
+      "source_tab": "eligibility",
+      "exact_quote": "Meet our health requirement\nYou and any family members who apply for the visa with you must meet our health requirement.",
+      "start_line": 70,
+      "end_line": 72,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_407_EVD_06",
+      "source_section_id": "AU_407_ELIG_06",
+      "source_tab": "eligibility",
+      "exact_quote": "Meet our character requirement\nYou and family members aged 16 years and over who apply for the visa with you must meet our character requirement.\n\nWe might also ask that other family members meet the requirement.",
+      "start_line": 73,
+      "end_line": 77,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_407_EVD_07",
+      "source_section_id": "AU_407_ELIG_07",
+      "source_tab": "eligibility",
+      "exact_quote": "Have adequate health insurance\nYou are personally liable for all your healthcare costs while you are in Australia. Medical insurance helps limit your financial liability. You must maintain adequate health cover for the whole of your stay if you are granted this visa. Your insurance should cover you for medically necessary treatment, including transport.\n\nSee a guide to what we consider adequate health insurance.\n\nSee more about health insurance for overseas visitors.\n\nReciprocal healthcare agreements\nSome countries have a reciprocal healthcare agreement with Australia. Find out more from Services Australia about reciprocal healthcare agreements.",
+      "start_line": 78,
+      "end_line": 87,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_407_EVD_08",
+      "source_section_id": "AU_407_ELIG_08",
+      "source_tab": "eligibility",
+      "exact_quote": "Be a genuine temporary entrant\nYou must only intend to:\n\nstay temporarily in Australia\ndo the things you are allowed to do on this visa\nYou must have substantially complied with the conditions of the last substantive or subsequent bridging visa that you held.",
+      "start_line": 88,
+      "end_line": 94,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_407_EVD_09",
+      "source_section_id": "AU_407_ELIG_09",
+      "source_tab": "eligibility",
+      "exact_quote": "Have this level of English language\nYou must have functional English.",
+      "start_line": 95,
+      "end_line": 97,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_407_EVD_10",
+      "source_section_id": "AU_407_ELIG_10",
+      "source_tab": "eligibility",
+      "exact_quote": "Sign the Australian values statement\nIf you are 18 years of age or older, you must:\n\nhave read, or had explained to you, the Life in Australia booklet and\nsign an Australian Values Statement that confirms you will respect the Australian way of life and obey Australian laws",
+      "start_line": 98,
+      "end_line": 102,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_407_EVD_11",
+      "source_section_id": "AU_407_ELIG_11",
+      "source_tab": "eligibility",
+      "exact_quote": "Have paid back your debt to the Australian Government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "start_line": 103,
+      "end_line": 105,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_407_EVD_12",
+      "source_section_id": "AU_407_ELIG_12",
+      "source_tab": "eligibility",
+      "exact_quote": "Not had a visa cancelled or an application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "start_line": 106,
+      "end_line": 114,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_407_EVD_13",
+      "source_section_id": "AU_407_ELIG_13",
+      "source_tab": "eligibility",
+      "exact_quote": "Best interests of the child\nWe might not grant this visa if it is not in the best interests of an applicant under 18.",
+      "start_line": 115,
+      "end_line": 117,
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "AU_407_POL_01",
+      "program": "subclass_407",
+      "topic": "approved_sponsor",
+      "source_section_id": "AU_407_ELIG_01",
+      "source_text": "Have an approved sponsor\nYour sponsor must be approved as a temporary activities sponsor.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_407_POL_02",
+      "program": "subclass_407",
+      "topic": "approved_nomination",
+      "source_section_id": "AU_407_ELIG_02",
+      "source_text": "Have an approved nomination\nYour sponsor must have nominated you for a program of occupational training unless they are an Australian Commonwealth Government agency. \n\nWe must approve your nomination before you apply for this visa.\n\nNomination requirements are different depending on the purpose or type of training.\n\nThere are 3 types of occupational training covered by this visa:\n\nOccupational training required for registration\nOccupational training to improve skills in an eligible occupation\nOccupational training for capacity building overseas. This includes overseas qualification, government support or professional development.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_407_POL_03",
+      "program": "subclass_407",
+      "topic": "age",
+      "source_section_id": "AU_407_ELIG_03",
+      "source_text": "Be this age\nUsually, you must be 18 years old or older at the time we decide your visa application.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_407_POL_04",
+      "program": "subclass_407",
+      "topic": "qualifying_visa",
+      "source_section_id": "AU_407_ELIG_04",
+      "source_text": "Have this visa\nIf you are applying in Australia, you must currently hold a valid temporary substantive visa that is not a:\n\na Subclass 403 (Temporary Work (International Relations) visa in the Domestic Worker (Diplomatic or Consular stream) or\na Subclass 771 (Transit) visa or \na Special Purpose visa\nIf you are in Australia and do not hold a substantive visa, your last substantive visa must not have been one of the above visas and your application must be made within 28 days: \n\nafter the last substantive visa you held ceased to be in effect or\nafter the day you were notified of the Administrative Appeal Tribnual's decision to set aside and substitute the decision to cancel your substantive visa, or the Minister's decision not to revoke the cancellation of your substantive visa.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_407_POL_05",
+      "program": "subclass_407",
+      "topic": "health",
+      "source_section_id": "AU_407_ELIG_05",
+      "source_text": "Meet our health requirement\nYou and any family members who apply for the visa with you must meet our health requirement.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_407_POL_06",
+      "program": "subclass_407",
+      "topic": "character",
+      "source_section_id": "AU_407_ELIG_06",
+      "source_text": "Meet our character requirement\nYou and family members aged 16 years and over who apply for the visa with you must meet our character requirement.\n\nWe might also ask that other family members meet the requirement.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_407_POL_07",
+      "program": "subclass_407",
+      "topic": "health_insurance",
+      "source_section_id": "AU_407_ELIG_07",
+      "source_text": "Have adequate health insurance\nYou are personally liable for all your healthcare costs while you are in Australia. Medical insurance helps limit your financial liability. You must maintain adequate health cover for the whole of your stay if you are granted this visa. Your insurance should cover you for medically necessary treatment, including transport.\n\nSee a guide to what we consider adequate health insurance.\n\nSee more about health insurance for overseas visitors.\n\nReciprocal healthcare agreements\nSome countries have a reciprocal healthcare agreement with Australia. Find out more from Services Australia about reciprocal healthcare agreements.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_407_POL_08",
+      "program": "subclass_407",
+      "topic": "genuine_temporary_entrant",
+      "source_section_id": "AU_407_ELIG_08",
+      "source_text": "Be a genuine temporary entrant\nYou must only intend to:\n\nstay temporarily in Australia\ndo the things you are allowed to do on this visa\nYou must have substantially complied with the conditions of the last substantive or subsequent bridging visa that you held.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_407_POL_09",
+      "program": "subclass_407",
+      "topic": "english",
+      "source_section_id": "AU_407_ELIG_09",
+      "source_text": "Have this level of English language\nYou must have functional English.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_407_POL_10",
+      "program": "subclass_407",
+      "topic": "australian_values_statement",
+      "source_section_id": "AU_407_ELIG_10",
+      "source_text": "Sign the Australian values statement\nIf you are 18 years of age or older, you must:\n\nhave read, or had explained to you, the Life in Australia booklet and\nsign an Australian Values Statement that confirms you will respect the Australian way of life and obey Australian laws",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_407_POL_11",
+      "program": "subclass_407",
+      "topic": "government_debt",
+      "source_section_id": "AU_407_ELIG_11",
+      "source_text": "Have paid back your debt to the Australian Government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_407_POL_12",
+      "program": "subclass_407",
+      "topic": "immigration_history",
+      "source_section_id": "AU_407_ELIG_12",
+      "source_text": "Not had a visa cancelled or an application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_407_POL_13",
+      "program": "subclass_407",
+      "topic": "best_interests_of_child",
+      "source_section_id": "AU_407_ELIG_13",
+      "source_text": "Best interests of the child\nWe might not grant this visa if it is not in the best interests of an applicant under 18.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "application_steps": [
+    {
+      "step_number": 1,
+      "source_tab": "step_by_step",
+      "start_line": 42,
+      "end_line": 62,
+      "original_text": "Step 1\n\nBefore you apply\nBefore you apply, make sure we have approved your sponsoring organisation as a temporary activities sponsor.\n\nYour sponsoring organisation must also submit a nomination application and we must approve it before you apply. Australian Commonwealth Government agencies don't have to nominate.\n\nThe Training visa is not intended to be used to fill workforce shortages. All work undertaken in Australia must be paid. You can find information on required minimum wages at the Fair Work Ombudsman website.\n\nDon't arrange travel until we tell you in writing you have the visa.\n\nIf you plan to get a new passport, do it before applying for this visa. If you get a new passport after you have submitted your application, you must tell us in writing. You can do this in ImmiAccount. See Applying online in ImmiAccount.\n\nGet help with your application\nOnly some people can help you with your application. If you appoint someone to give you immigration assistance they must be:\n\na registered migration agent\na legal practitioner, or\nan exempt person.\nYou can appoint anyone to receive documents on your behalf relating to your visa matter.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 2,
+      "source_tab": "step_by_step",
+      "start_line": 63,
+      "end_line": 240,
+      "original_text": "Step 2\n\nGather your documents\nGather documents to prove your identity and show you have:\n\na sponsor\nnomination or government invitation\nfinancial support\nhealth insurance.\nYou will need to prepare them to submit online.\n\nProvide accurate information\nProvide accurate information. See what happens if you can't prove your identity or don't provide true information. \n\nIdentity documents\nWe need proof of your identity. If you can't prove your identity:\n\nwe will refuse your visa application\nwe might not grant you another visa for 10 years\nwe might not grant any family members you listed on your application a visa for 10 years\nProvide the pages of your current passport showing your photo, personal details, and passport issue and expiry dates.\n\nAlso provide:\n\na national identity card, if you have one\nproof of change of name, if applicable\nDocuments that prove a change of name include:\n\na marriage or divorce certificate\nchange of name documents from an Australian Registry of Births, Deaths and Marriages, or the relevant overseas authority\ndocuments that show other names you have been known by\nSponsor documents\nYou need to include:\n\na sponsor approval letter\nyour sponsor’s nomination approval letter, if your sponsor is not an Australian Commonwealth Government agency\na written statement from the sponsor that they will meet the sponsorship obligations for you and all dependent family members included in your application. This includes providing the training that they have agreed to. \nIf an Australian Commonwealth Government agency is sponsoring you, include a copy of the invitation to participate in the training.\n\nFinancial support documents\nYou will need to show evidence of your financial capacity to support yourself and your family while you are in Australia, such as:\n\nbank statements\na letter from your financial institution stating your financial position\nemployment contracts\ndocuments showing allowances, accommodation and stipends from your sponsor while you are in Australia\nif you are currently or were previously an AusAID or Foreign Affairs supported student provide a copy of the letter of support from the Department of Foreign Affairs and Trade\nHealth insurance\nYou will need to provide evidence of adequate health insurance for you and your family members for the duration of your stay in Australia.\n\nEvidence of English language\nProvide evidence that you have functional English language skills to undertake the training programme.\n\nYou do not need to provide these results if you hold a valid passport from:\n\nthe United Kingdom\nCanada\nNew Zealand\nthe United States\nthe Republic of Ireland\nWorkplace-based activity documents\nInclude a copy of your qualifications and curriculum vitae (CV).\n\nIf you need registrations or licences to do the training, add copies of these documents.\n\nProfessional Development documents\nInclude a statement from your sponsor confirming they are satisfied you:\n\nare doing the professional development training specified in the application\nhave relevant managerial or other professional skills and work experience to participate in the program.\nYou also need to include a signed letter on company letterhead from your current manager detailing your current position and duties.\n\nAlso provide a copy of your qualifications and curriculum vitae (CV).\n\nCharacter documents\nProvide an Australian police certificate if you have spent a total of 12 months or more in Australia in the last 10 years since you turned 16. We only accept complete disclosure National Police Certificates issued by the Australian Federal Police. We do not accept standard disclosure certificates or national police certificates issued by Australian state or territory police.\n\nAlso provide military service records or discharge papers if you served in the armed forces of any country.\n\nDepending on your circumstances, we may ask you to also provide an overseas police certificate from every country, including your home country, where you spent a total of 12 months or more in the last 10 years since you turned 16.\n\nComplete and provide the following forms:\n\nForm 80 Personal particulars for character assessment (596KB PDF)\nForm 1221 Additional personal particulars information (331KB PDF)\n \n\nTell us you are getting help\nTo nominate someone to:\n\nreceive your correspondence, use Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration assistance, use Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nPartner documents\nProvide your partner's:\n\nidentity documents\ncharacter documents\nmarriage certificate\ndocuments about other relationships, if applicable\nFor de facto relationships provide either:\n\nevidence that your relationship is registered by an Australian State or Territory\nenough documents to prove you have been in a de facto relationship with your partner for at least 12 months before you apply\nFor both married and de facto applicants you must provide evidence that you are in a genuine and continuing relationship. Evidence can include but is not limited to:\n\njoint bank account statements\nbilling accounts in joint names\njoint leases or mortgages\ndocuments that show your partner has lived at the same address as you\nDependants under 18 documents\nFor every dependant 18 years old or younger who is applying with you, provide:\n\ncopies of birth certificates or the family book showing the names of both parents of all your dependent children\ncopies of the adoption paper, if applicable. \nParental responsibility documents\nYou must get consent for any applicant under 18 years of age to migrate to Australia from anyone who:\n\nhas a legal right to decide where the child lives and\nis not coming to Australia with the child\nThey must complete either:\n\nForm 1229 Consent form to grant an Australian visa to a child under the age of 18 years (276KB PDF)\na statutory declaration giving their consent for the child to visit Australia on this visa\nAlternatively, you can show us:\n\nan Australian court order that allows your child to migrate to Australia, or\nthat the laws of your home country allow them to migrate\nInclude:\n\nan identity document that shows the signature and photo of the person who completed the form or declaration, such as a passport or driver’s licence\nadoption papers or other court documents if applicable\nDependants over 18 documents\nTo include your child who is over 18 in your visa application, they must be:\n\nover 18 years of age but not yet turned 23, and dependent on you or your partner, or\nover 23 years of age, unable to earn a living to support themselves due to physical or cognitive limitations and dependent on you or your partner\nProvide:\n\nidentity documents\ndocuments about their other relationships, if applicable\ncharacter documents\nYou must also provide proof the child is dependent on you:\n\nproof of your relationship with the dependent such as a birth certificate or adoption papers\na completed Form 47a Details of a child or other dependent family member aged 18 years or over (307KB PDF)\nproof of financial dependency such as bank statements, money transfers and rent receipts\nif the child is aged 23 or is likely to turn 23 while your application is being processed, you must also provide a report from a qualified medical practitioner that states they are dependent on you or your partner due to the total or partial loss of their bodily or mental functions\n \n\n \n\nPrepare your documents\nTranslate\nHave all non-English documents translated into English.\n\nTranslators in Australia must be accredited by the National Accreditation Authority for Translators and Interpreters. \n\nTranslators outside Australia do not have to be accredited. But on each translation, they must include their:\n\nfull name\naddress and telephone number\nqualifications and experience in the language they are translating\nThese details must be in English.\n\nNote: You do not need to have any documents certified.\n\nScan or photograph\nScan or photograph all documents (English and non-English) in colour.\n\nThe scans and photos must be clear.\n\nIf a document is more than one page, save it all as one file.\n\nKeep\nKeep a copy of your completed application.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 3,
+      "source_tab": "step_by_step",
+      "start_line": 241,
+      "end_line": 253,
+      "original_text": "Step 3\n\nApply for the visa\nYou must apply for this visa online.\n\nProvide accurate information\nProvide accurate information. See what happens if you can't prove your identity or don't provide true information.\n\nApply online\nCreate an account or log in to ImmiAccount\nAttach documents, including your sponsor's documents\nHave family applications processed together. Each family member must still have their application charge paid and documents attached to their application\nPay the application charge. We will not process your application until you pay the charge.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 4,
+      "source_tab": "step_by_step",
+      "start_line": 254,
+      "end_line": 337,
+      "original_text": "Step 4\n\nAfter you apply\nSee what you can and must do after you apply.\n\nStatus updates\nIf it is within standard processing times do not call. We can't provide any further updates on the application's progress.\n\nYou can see if we have asked for more information in your ImmiAccount.\n\nStay lawful\nMake sure you stay lawful by holding a valid visa while we process your application.\n\nIf you were in Australia when you applied for this visa, you were granted a Bridging visa A (BVA). If your current visa expires before we decide on your application, the BVA will start. You can stay in Australia on the BVA while we process your new visa application. You cannot travel on the BVA - there is no right of return on this visa; it cancels on departure.\n\nDo not cancel your current visa. If you do, you will:\n\nbe staying in Australia unlawfully\nnot be eligible for a Bridging visa A\nLearn more about visa expiry.\n\nTravel after you apply\nYou do not have to tell us if you want to travel outside Australia while we process your application. This is because you can be outside Australia when we make a decision.\n\nBut if you leave Australia, make sure you have a valid visa to return.\n\nLearn about visa expiry.\n\nHealth exams\nWe will let you know if you need health examinations.\n\nBiometrics\nWe might ask for biometrics. We will let you know if you need to provide them.\n\nAttach more information\nIf you did not attach all your documents when you applied, attach them as soon as possible in ImmiAccount.\n\nWe might also ask you to provide more information.\n\nAdd family members\nYou cannot add members of the family unit to your application after you apply but before we decide on your visa, unless it is a child born after you apply but before we make a decision on your visa.\n\n \n\nNewborn Children\nIf your child is born after you apply but before we make a decision on your visa, then your child is considered to have made the same visa application as you.\n\nYou must tell us as soon as possible and give us:\n\na copy of the child’s birth certificate\ncompleted Form 1022 Notification of changes in circumstances (172KB PDF)\nAttach supporting documents including the child's passport if available to your ImmiAccount.\n\n \n\nSubsequent entrants\nIf we grant you the visa, your family members might be able to apply to join you in Australia later as a subsequent entrant. They can do this using the Temporary Work and Activity Visa (Subsequent Entrant) (403,407,408) form in ImmiAccount.\n\nNewborn children\nFind out what to do if your child is born after you apply or when you hold your visa.\n\nMistakes on your application\nLet us know as soon as you can if you made a mistake on your application.\n\nComplete Form 1023 Notification of incorrect answers (168KB PDF)\n\nHelp with you application\nLet us know if you no longer want someone to:\n\nreceive your correspondence - complete Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration advice - complete Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nFor more information see Who can help you with your application.\n\nTell us if things change\nThings you need to let us know about include:\n\nyou want to withdraw your application\nchanges to your phone number, address or passport\nchanges to your relationship status\nthe birth of a child\nSee how to tell us if your situation changes.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 5,
+      "source_tab": "step_by_step",
+      "start_line": 338,
+      "end_line": 351,
+      "original_text": "Step 5\n\nVisa outcome\nWe will let you know in writing our decision about your visa application. We will tell you:\n\nyour visa grant number\nthe date your visa starts\nyour visa conditions\nKeep a copy of the decision with you when in Australia.\n\nIf we refuse your visa we will let you know in writing. We will tell you why we refused and whether you have a right to a review of the decision.\n\nWe will not refund the application charge if we refuse your application.",
+      "review_status": "needs_review"
+    }
+  ],
+  "training_types": [
+    {
+      "type_id": "registration",
+      "official_text": "Occupational training required for registration",
+      "source_section_id": "AU_407_ELIG_02",
+      "specific_requirements": null,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "type_id": "skills_improvement",
+      "official_text": "Occupational training to improve skills in an eligible occupation",
+      "source_section_id": "AU_407_ELIG_02",
+      "specific_requirements": null,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    {
+      "type_id": "overseas_capacity_building",
+      "official_text": "Occupational training for capacity building overseas.",
+      "source_section_id": "AU_407_ELIG_02",
+      "specific_requirements": null,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  ],
+  "conditional_requirements": {
+    "sponsorship_and_nomination": {
+      "review_points": [
+        "approved_temporary_activities_sponsor",
+        "approved_nomination_before_application",
+        "commonwealth_government_agency_exception",
+        "training_type_specific_nomination"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "training_purpose": {
+      "review_points": [
+        "occupational_training_for_registration",
+        "training_in_eligible_occupation",
+        "capacity_building_overseas",
+        "training_program_evidence"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "age": {
+      "review_points": [
+        "usually_at_least_18_at_decision",
+        "under_18_child_best_interests"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "qualifying_visa": {
+      "review_points": [
+        "eligible_substantive_visa",
+        "excluded_subclass_403_domestic_worker",
+        "excluded_subclass_771",
+        "excluded_special_purpose_visa",
+        "last_substantive_visa_conditions",
+        "28_day_application_window"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "english": {
+      "review_points": [
+        "functional_english",
+        "acceptable_evidence"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "temporary_intention": {
+      "review_points": [
+        "genuine_temporary_entrant",
+        "visa_conditions_compliance"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "health_insurance": {
+      "review_points": [
+        "adequate_cover_whole_stay",
+        "medically_necessary_treatment_and_transport",
+        "reciprocal_healthcare_agreements"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "sponsorship_nomination_policy": {
+    "approved_sponsor_required": true,
+    "approved_nomination_before_application": true,
+    "commonwealth_agency_nomination_exception": {
+      "requires_review": true,
+      "eligibility_rule": null
+    },
+    "source_section_ids": [
+      "AU_407_ELIG_01",
+      "AU_407_ELIG_02"
+    ],
+    "review_status": "needs_review"
+  },
+  "review_status": "needs_review",
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false
+}

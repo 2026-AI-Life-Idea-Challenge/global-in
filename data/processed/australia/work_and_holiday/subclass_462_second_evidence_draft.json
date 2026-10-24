@@ -1,0 +1,541 @@
+{
+  "program": "subclass_462_second",
+  "visa_subclass": "462",
+  "stream": "second_work_and_holiday",
+  "pathway_type": "work_and_holiday",
+  "official_sources": {
+    "about_this_visa": {
+      "source_file": "data/raw/australia/work_and_holiday/subclass_462_second_about_this_visa.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/second-work-holiday-462",
+      "source_sha256": "2aebc86afb3a90c451a04fdc76c739f4ff1e327c3dc0bc9e43f26fb242e0725b",
+      "char_count": 8996,
+      "review_status": "needs_review"
+    },
+    "eligibility": {
+      "source_file": "data/raw/australia/work_and_holiday/subclass_462_second_eligibility.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/second-work-holiday-462",
+      "source_sha256": "037c2654c81475b9471541d0bea5bc37f877c977376b82d93324e24852a7ca2d",
+      "char_count": 5274,
+      "review_status": "needs_review"
+    },
+    "step_by_step": {
+      "source_file": "data/raw/australia/work_and_holiday/subclass_462_second_step_by_step.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/second-work-holiday-462",
+      "source_sha256": "eecf832ae6f0cf8383b6389ebe6b5809198215b4e4a5ade663392667aadf7382",
+      "char_count": 10363,
+      "review_status": "needs_review"
+    },
+    "when_you_have_this_visa": {
+      "source_file": "data/raw/australia/work_and_holiday/subclass_462_second_when_you_have_this_visa.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/second-work-holiday-462",
+      "source_sha256": "2a7bf846cc761da6121adfdf62fde4e4f8dbc6d28599f05b8d4e10d91ebf2fea",
+      "char_count": 9141,
+      "review_status": "needs_review"
+    }
+  },
+  "eligibility_sections": [
+    {
+      "section_id": "AU_462_SECOND_ELIG_01",
+      "topic": "passport",
+      "heading": "Have this passport",
+      "source_tab": "eligibility",
+      "source_sha256": "037c2654c81475b9471541d0bea5bc37f877c977376b82d93324e24852a7ca2d",
+      "start_line": 37,
+      "end_line": 69,
+      "original_text": "Have this passport\nYou must be a citizen of and hold a valid passport from one of these countries:\n\nArgentina\nAustria\nBrazil\nChile\nChina, People's Republic of\nCzech Republic\nEcuador\nGreece\nHungary\nIndia\nIndonesia\nIsrael\nLuxembourg\nMalaysia\nMongolia\nPapua New Guinea (PNG)\nPeru\nPoland\nPortugal\nSan Marino\nSingapore\nSlovak Republic\nSlovenia\nSpain\nSwitzerland (from 1 Jan 2022)\nThailand\nTürkiye\nUruguay\nUSA\nVietnam",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_462_SECOND_ELIG_02",
+      "topic": "previous_visa",
+      "heading": "Current or previous visa",
+      "source_tab": "eligibility",
+      "source_sha256": "037c2654c81475b9471541d0bea5bc37f877c977376b82d93324e24852a7ca2d",
+      "start_line": 70,
+      "end_line": 76,
+      "original_text": "Current or previous visa\nYou must:\n\nhold or previously held one Work and Holiday visa (subclass 462)\nif in Australia, hold a substantive visa or your last substantive visa expired less than 28 days ago\nhave entered Australia on the visa\nhave complied with all the conditions on your first Work and Holiday visa",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_462_SECOND_ELIG_03",
+      "topic": "financial_capacity",
+      "heading": "Have enough money",
+      "source_tab": "eligibility",
+      "source_sha256": "037c2654c81475b9471541d0bea5bc37f877c977376b82d93324e24852a7ca2d",
+      "start_line": 77,
+      "end_line": 85,
+      "original_text": "Have enough money\nYou must have enough money to:\n\nsupport yourself while you are in Australia\nleave Australia at the end of your stay\nThis is usually about AUD5,000 for your initial stay, plus the fare to where you are going after leaving Australia. \n\nIf you are applying in Australia, you don’t need to provide evidence.  If you are applying outside Australia and don’t attach evidence to your application, processing may be delayed if we need to contact you to request further information.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_462_SECOND_ELIG_04",
+      "topic": "specified_work",
+      "heading": "Specified subclass 462 work",
+      "source_tab": "eligibility",
+      "source_sha256": "037c2654c81475b9471541d0bea5bc37f877c977376b82d93324e24852a7ca2d",
+      "start_line": 86,
+      "end_line": 88,
+      "original_text": "Specified subclass 462 work\nYou must have completed three months of specified subclass 462 work.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_462_SECOND_ELIG_05",
+      "topic": "age",
+      "heading": "Be this age",
+      "source_tab": "eligibility",
+      "source_sha256": "037c2654c81475b9471541d0bea5bc37f877c977376b82d93324e24852a7ca2d",
+      "start_line": 89,
+      "end_line": 107,
+      "original_text": "Be this age\nYou must be 18 to 30 years old (inclusive) when you apply.\n\n \n\n** You must apply for your visa before you turn 31 years old in Australian Eastern Standard Time (AEST)/Australian Eastern Daylight Savings Time (AEDST). The deadline to lodge an application is midnight AEST/AEDST the day before your 31st birthday. This time applies even if you are applying from outside Australia.\n\n \n\nNote that AEST/AEDST will be different to when your birthday ends in your country due to time differences between countries.\n\n \n\n*** Avoid submitting your application on your birthday, if possible.\n\n \n\nWe can still grant you the visa if you apply for it at 30 but turn 31 years old before we make a decision. You must still meet all other requirements.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_462_SECOND_ELIG_06",
+      "topic": "health",
+      "heading": "Meet the health requirement",
+      "source_tab": "eligibility",
+      "source_sha256": "037c2654c81475b9471541d0bea5bc37f877c977376b82d93324e24852a7ca2d",
+      "start_line": 108,
+      "end_line": 110,
+      "original_text": "Meet the health requirement\nYou must meet our health requirement.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_462_SECOND_ELIG_07",
+      "topic": "character",
+      "heading": "Meet the character requirement",
+      "source_tab": "eligibility",
+      "source_sha256": "037c2654c81475b9471541d0bea5bc37f877c977376b82d93324e24852a7ca2d",
+      "start_line": 111,
+      "end_line": 113,
+      "original_text": "Meet the character requirement\nYou must meet our character requirement.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_462_SECOND_ELIG_08",
+      "topic": "government_debt",
+      "heading": "Pay your debts to the Australian Government",
+      "source_tab": "eligibility",
+      "source_sha256": "037c2654c81475b9471541d0bea5bc37f877c977376b82d93324e24852a7ca2d",
+      "start_line": 114,
+      "end_line": 116,
+      "original_text": "Pay your debts to the Australian Government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_462_SECOND_ELIG_09",
+      "topic": "immigration_history",
+      "heading": "Not had a visa cancelled or an application refused",
+      "source_tab": "eligibility",
+      "source_sha256": "037c2654c81475b9471541d0bea5bc37f877c977376b82d93324e24852a7ca2d",
+      "start_line": 117,
+      "end_line": 131,
+      "original_text": "Not had a visa cancelled or an application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\n \n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\n \n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\n \n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "review_status": "needs_review"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "AU_462_SECOND_EVD_01",
+      "source_section_id": "AU_462_SECOND_ELIG_01",
+      "source_tab": "eligibility",
+      "start_line": 37,
+      "end_line": 69,
+      "exact_quote": "Have this passport\nYou must be a citizen of and hold a valid passport from one of these countries:\n\nArgentina\nAustria\nBrazil\nChile\nChina, People's Republic of\nCzech Republic\nEcuador\nGreece\nHungary\nIndia\nIndonesia\nIsrael\nLuxembourg\nMalaysia\nMongolia\nPapua New Guinea (PNG)\nPeru\nPoland\nPortugal\nSan Marino\nSingapore\nSlovak Republic\nSlovenia\nSpain\nSwitzerland (from 1 Jan 2022)\nThailand\nTürkiye\nUruguay\nUSA\nVietnam",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_462_SECOND_EVD_02",
+      "source_section_id": "AU_462_SECOND_ELIG_02",
+      "source_tab": "eligibility",
+      "start_line": 70,
+      "end_line": 76,
+      "exact_quote": "Current or previous visa\nYou must:\n\nhold or previously held one Work and Holiday visa (subclass 462)\nif in Australia, hold a substantive visa or your last substantive visa expired less than 28 days ago\nhave entered Australia on the visa\nhave complied with all the conditions on your first Work and Holiday visa",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_462_SECOND_EVD_03",
+      "source_section_id": "AU_462_SECOND_ELIG_03",
+      "source_tab": "eligibility",
+      "start_line": 77,
+      "end_line": 85,
+      "exact_quote": "Have enough money\nYou must have enough money to:\n\nsupport yourself while you are in Australia\nleave Australia at the end of your stay\nThis is usually about AUD5,000 for your initial stay, plus the fare to where you are going after leaving Australia. \n\nIf you are applying in Australia, you don’t need to provide evidence.  If you are applying outside Australia and don’t attach evidence to your application, processing may be delayed if we need to contact you to request further information.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_462_SECOND_EVD_04",
+      "source_section_id": "AU_462_SECOND_ELIG_04",
+      "source_tab": "eligibility",
+      "start_line": 86,
+      "end_line": 88,
+      "exact_quote": "Specified subclass 462 work\nYou must have completed three months of specified subclass 462 work.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_462_SECOND_EVD_05",
+      "source_section_id": "AU_462_SECOND_ELIG_05",
+      "source_tab": "eligibility",
+      "start_line": 89,
+      "end_line": 107,
+      "exact_quote": "Be this age\nYou must be 18 to 30 years old (inclusive) when you apply.\n\n \n\n** You must apply for your visa before you turn 31 years old in Australian Eastern Standard Time (AEST)/Australian Eastern Daylight Savings Time (AEDST). The deadline to lodge an application is midnight AEST/AEDST the day before your 31st birthday. This time applies even if you are applying from outside Australia.\n\n \n\nNote that AEST/AEDST will be different to when your birthday ends in your country due to time differences between countries.\n\n \n\n*** Avoid submitting your application on your birthday, if possible.\n\n \n\nWe can still grant you the visa if you apply for it at 30 but turn 31 years old before we make a decision. You must still meet all other requirements.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_462_SECOND_EVD_06",
+      "source_section_id": "AU_462_SECOND_ELIG_06",
+      "source_tab": "eligibility",
+      "start_line": 108,
+      "end_line": 110,
+      "exact_quote": "Meet the health requirement\nYou must meet our health requirement.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_462_SECOND_EVD_07",
+      "source_section_id": "AU_462_SECOND_ELIG_07",
+      "source_tab": "eligibility",
+      "start_line": 111,
+      "end_line": 113,
+      "exact_quote": "Meet the character requirement\nYou must meet our character requirement.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_462_SECOND_EVD_08",
+      "source_section_id": "AU_462_SECOND_ELIG_08",
+      "source_tab": "eligibility",
+      "start_line": 114,
+      "end_line": 116,
+      "exact_quote": "Pay your debts to the Australian Government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_462_SECOND_EVD_09",
+      "source_section_id": "AU_462_SECOND_ELIG_09",
+      "source_tab": "eligibility",
+      "start_line": 117,
+      "end_line": 131,
+      "exact_quote": "Not had a visa cancelled or an application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\n \n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\n \n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\n \n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "AU_462_SECOND_POL_01",
+      "program": "subclass_462_second",
+      "topic": "passport",
+      "source_section_id": "AU_462_SECOND_ELIG_01",
+      "source_text": "Have this passport\nYou must be a citizen of and hold a valid passport from one of these countries:\n\nArgentina\nAustria\nBrazil\nChile\nChina, People's Republic of\nCzech Republic\nEcuador\nGreece\nHungary\nIndia\nIndonesia\nIsrael\nLuxembourg\nMalaysia\nMongolia\nPapua New Guinea (PNG)\nPeru\nPoland\nPortugal\nSan Marino\nSingapore\nSlovak Republic\nSlovenia\nSpain\nSwitzerland (from 1 Jan 2022)\nThailand\nTürkiye\nUruguay\nUSA\nVietnam",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_02",
+      "program": "subclass_462_second",
+      "topic": "previous_visa",
+      "source_section_id": "AU_462_SECOND_ELIG_02",
+      "source_text": "Current or previous visa\nYou must:\n\nhold or previously held one Work and Holiday visa (subclass 462)\nif in Australia, hold a substantive visa or your last substantive visa expired less than 28 days ago\nhave entered Australia on the visa\nhave complied with all the conditions on your first Work and Holiday visa",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_03",
+      "program": "subclass_462_second",
+      "topic": "financial_capacity",
+      "source_section_id": "AU_462_SECOND_ELIG_03",
+      "source_text": "Have enough money\nYou must have enough money to:\n\nsupport yourself while you are in Australia\nleave Australia at the end of your stay\nThis is usually about AUD5,000 for your initial stay, plus the fare to where you are going after leaving Australia. \n\nIf you are applying in Australia, you don’t need to provide evidence.  If you are applying outside Australia and don’t attach evidence to your application, processing may be delayed if we need to contact you to request further information.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_04",
+      "program": "subclass_462_second",
+      "topic": "specified_work",
+      "source_section_id": "AU_462_SECOND_ELIG_04",
+      "source_text": "Specified subclass 462 work\nYou must have completed three months of specified subclass 462 work.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_05",
+      "program": "subclass_462_second",
+      "topic": "age",
+      "source_section_id": "AU_462_SECOND_ELIG_05",
+      "source_text": "Be this age\nYou must be 18 to 30 years old (inclusive) when you apply.\n\n \n\n** You must apply for your visa before you turn 31 years old in Australian Eastern Standard Time (AEST)/Australian Eastern Daylight Savings Time (AEDST). The deadline to lodge an application is midnight AEST/AEDST the day before your 31st birthday. This time applies even if you are applying from outside Australia.\n\n \n\nNote that AEST/AEDST will be different to when your birthday ends in your country due to time differences between countries.\n\n \n\n*** Avoid submitting your application on your birthday, if possible.\n\n \n\nWe can still grant you the visa if you apply for it at 30 but turn 31 years old before we make a decision. You must still meet all other requirements.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_06",
+      "program": "subclass_462_second",
+      "topic": "health",
+      "source_section_id": "AU_462_SECOND_ELIG_06",
+      "source_text": "Meet the health requirement\nYou must meet our health requirement.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_07",
+      "program": "subclass_462_second",
+      "topic": "character",
+      "source_section_id": "AU_462_SECOND_ELIG_07",
+      "source_text": "Meet the character requirement\nYou must meet our character requirement.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_08",
+      "program": "subclass_462_second",
+      "topic": "government_debt",
+      "source_section_id": "AU_462_SECOND_ELIG_08",
+      "source_text": "Pay your debts to the Australian Government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_09",
+      "program": "subclass_462_second",
+      "topic": "immigration_history",
+      "source_section_id": "AU_462_SECOND_ELIG_09",
+      "source_text": "Not had a visa cancelled or an application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\n \n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\n \n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\n \n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "requirement_type": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "application_steps": [
+    {
+      "step_number": 1,
+      "source_tab": "step_by_step",
+      "start_line": 37,
+      "end_line": 52,
+      "original_text": "Step 1\n\nBefore you apply\nOrganise health exams\nYou might need to have health examinations. You can complete them before you apply or you can wait and have them if we tell you to.\n\nFind out the examinations you need and how to arrange them if you want to have them before you apply.\n\nGet help with your application\nOnly some people can help you with your application. If you appoint someone to give you immigration assistance they must be:\n\na registered migration agent\na legal practitioner, or\nan exempt person.\nYou can appoint anyone to receive documents on your behalf relating to your visa matter.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 2,
+      "source_tab": "step_by_step",
+      "start_line": 53,
+      "end_line": 139,
+      "original_text": "Step 2\n\nGather your documents\nIdentity documents\nProvide the pages of your current passport showing your photo, personal details, and passport issue and expiry dates.\nAlso provide a copy of your birth certificate showing both your parents’ names. If you don’t have a birth certificate and you can’t get one, provide a copy of the identification pages of one of these:\n\na family book showing both your parents’ names\ngovernment-issued identification\na court-issued document that verifies your identity\nIf you have changed your name, provide proof such as:\n\na marriage or divorce certificate\nchange of name documents from an Australian Registry of Births, Deaths and Marriages, or the relevant overseas authority\ndocuments that show other names you have been known by\nEnough money for your stay and to leave\nProvide evidence you have enough money for your stay in Australia. This is usually AUD5,000. \n\nYou must also show us you have enough money to buy a ticket to leave Australia at the end of your stay, or that you already have the ticket. \n\nIf you are applying in Australia, you don’t need to provide evidence. If you are applying outside Australia and don’t attach evidence to your application, processing may be delayed if we need to contact you to request further information.\n\nProof of specified subclass 462 work\nProvide proof that you have completed 3 months of specified subclass 462 work on your previous WHM visa (or in other eligible circumstances). The proof must cover all periods you worked.\n\nYou can include any of the following:\n\npay slips or other evidence of payment such as Australian bank statements\npiece rate agreement with your employer, if you were paid piece rates. The agreement must show the pay rate per piece and how it is measured\ngroup certificates\npayment summaries\ntax returns\nemployer references\na written and signed agreement setting out any lawful deductions in pay\nWe might contact your employer(s) to check your work claims.\n\nIf you have completed volunteer bushfire or flood recovery work, provide:\n\na signed letter from your volunteer coordinator or host including:\nyour personal details including passport number\ndescription of volunteer duties undertaken\nlocation of volunteer work including postcode(s)\nnumber of days you provided volunteer assistance.\nCharacter documents\nWe might ask you to provide:\n\nan Australian police certificate if you have spent a total of 12 months or more in Australia in the last 10 years since you turned 16. We only accept complete disclosure National Police Certificates issued by the Australian Federal Police. We do not accept standard disclosure certificates or national police certificates issued by Australian state or territory police\nan overseas police certificate from every country, including your home country, where you spent a total of 12 months or more in the last 10 years since you turned 16\nmilitary service records or discharge papers if you served in the armed forces of any country\nWe will let you know if you need to give us these documents.\n\nTell us you are getting help\nTo nominate someone to:\n\nreceive your correspondence, use Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration assistance, use Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nPrepare your documents\nTranslate\nHave all non-English documents translated into English.\n\nProvide original and translated documents in your application. \n\nTranslators in Australia must be accredited by the National Accreditation Authority for Translators and Interpreters.\n\nTranslators outside Australia do not have to be accredited. But on each translation, they must include their:\n\nfull name\naddress and telephone number\nqualifications and experience in the language they are translating\nThese details must be in English.\n\nNote: You do not need to have any documents certified.\n\nScan or photograph\nScan or photograph all documents (English and non-English) in colour.\n\nThe scans and photos must be clear.\n\nIf a document is more than one page, save it all as one file.\n\nAttach\nAttach a document only once, even if you are using it to show more than one thing.\n\nLearn more about attaching documents.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 3,
+      "source_tab": "step_by_step",
+      "start_line": 140,
+      "end_line": 156,
+      "original_text": "Step 3\n\nApply for the visa\nProvide accurate information\nProvide accurate information. See what happens if you can't prove your identity or don't provide true information.\n\nApply online\nLog in or create an ImmiAccount.\nAttach documents.\n​Pay the application fee. We will not process your application until you pay the fee.\nNote the transaction reference number.\nApplicants with dependent children\n\nYou can’t apply online if you are the parent of a child under the age of 18.\n\nWork and Holiday visa holders cannot be accompanied by dependent children at any time during their stay in Australia. While it is possible to obtain a Work and Holiday visa if you have a child, your child cannot join you in Australia at any time while you are on your Work and Holiday visa – not even for one day.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 4,
+      "source_tab": "step_by_step",
+      "start_line": 157,
+      "end_line": 210,
+      "original_text": "Step 4\n\nAfter you apply\nSee what you can and must do after you apply.\n\nWe will let you know when we have received your application.\n\nTravel\nYou applied in Australia\nTell us if you want to travel outside Australia while we process your application. We need to know because you must be in Australia when we decide your visa.\n\nIf you leave Australia, make sure you have a valid visa to return.\n\nYou can travel outside Australia and return as many times as you want while the visa is valid.\n\nTime spent outside Australia does not extend the visa.\n\nYou applied outside Australia\nDo not arrange to travel to Australia until we let you know, in writing, that we have granted you the visa.\n\nBiometrics\nWe might ask for biometrics. We will let you know if you need to provide them.\n\nHealth exams\nIf you didn't have health examinations before you applied, we will let you know if you need them.\n\nAttach more information\nIf you didn't attach all documents when you applied, attach them as soon as you can in ImmiAccount .\n\nWe might also ask you to provide more information.\n\nMistakes on your application\nLet us know as soon as you can if you made a mistake on your application.\n\nComplete Form 1023 Notification of incorrect answers (168KB PDF) and attach it in ImmiAccount.\n\nHelp with your application\nLet us know if you no longer want someone to:\n\nreceive your correspondence - complete Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration advice - complete Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nFor more information, see Who can help you with your application.\n\nTell us if things change\nTell us if things change after you submit your application but before we decide your visa.\n\nThings you need to let us know about include:\n\nyou want to withdraw your application\nchanges to your passport\nchanges to your relationship status\nthe birth of a child",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 5,
+      "source_tab": "step_by_step",
+      "start_line": 211,
+      "end_line": 226,
+      "original_text": "Step 5\n\nVisa outcome\nWe will let you know our decision in writing.\n\nIf we grant your visa, we will tell you:\n\nyour visa grant number\nthe date your visa starts\nyour visa conditions\nKeep a copy of the decision notification with you when in Australia.\n\nIf we refuse your visa, we will tell you:\n\nwhy we refused the visa\nif you have a right to a review of the decision",
+      "review_status": "needs_review"
+    }
+  ],
+  "passport_country_guidance": {
+    "source_section_id": "AU_462_SECOND_ELIG_01",
+    "countries_as_published": [
+      "Argentina",
+      "Austria",
+      "Brazil",
+      "Chile",
+      "China, People's Republic of",
+      "Czech Republic",
+      "Ecuador",
+      "Greece",
+      "Hungary",
+      "India",
+      "Indonesia",
+      "Israel",
+      "Luxembourg",
+      "Malaysia",
+      "Mongolia",
+      "Papua New Guinea (PNG)",
+      "Peru",
+      "Poland",
+      "Portugal",
+      "San Marino",
+      "Singapore",
+      "Slovak Republic",
+      "Slovenia",
+      "Spain",
+      "Switzerland (from 1 Jan 2022)",
+      "Thailand",
+      "Türkiye",
+      "Uruguay",
+      "USA",
+      "Vietnam"
+    ],
+    "normalised_country_mapping": null,
+    "eligibility_rule": null,
+    "review_status": "needs_review"
+  },
+  "conditional_requirements": {
+    "passport_and_nationality": {
+      "source_section_ids": [
+        "AU_462_SECOND_ELIG_01"
+      ],
+      "review_points": [
+        "eligible_passport_countries",
+        "citizenship_and_valid_passport",
+        "passport_country_name_normalisation",
+        "country_specific_conditions"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "previous_visa_and_location": {
+      "source_section_ids": [
+        "AU_462_SECOND_ELIG_02"
+      ],
+      "review_points": [
+        "one_previous_subclass_462_visa",
+        "entry_on_first_462",
+        "first_462_condition_compliance",
+        "substantive_visa_for_onshore_application",
+        "less_than_28_days_since_expiry"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "specified_subclass_462_work": {
+      "source_section_ids": [
+        "AU_462_SECOND_ELIG_04"
+      ],
+      "review_points": [
+        "three_months_specified_subclass_462_work",
+        "eligible_work_categories",
+        "eligible_regions",
+        "work_period_calculation",
+        "accepted_work_evidence"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "age_requirement": {
+      "source_section_ids": [
+        "AU_462_SECOND_ELIG_05"
+      ],
+      "review_points": [
+        "age_18_to_30_inclusive",
+        "aest_aedt_application_deadline",
+        "age_at_application_vs_decision"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "financial_capacity": {
+      "source_section_ids": [
+        "AU_462_SECOND_ELIG_03"
+      ],
+      "review_points": [
+        "usual_aud_5000_initial_funds",
+        "onward_travel_fare",
+        "onshore_vs_offshore_evidence"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "health_character_and_history": {
+      "source_section_ids": [
+        "AU_462_SECOND_ELIG_06",
+        "AU_462_SECOND_ELIG_07",
+        "AU_462_SECOND_ELIG_08",
+        "AU_462_SECOND_ELIG_09"
+      ],
+      "review_points": [
+        "health_requirement",
+        "character_requirement",
+        "australian_government_debt",
+        "previous_visa_cancellation",
+        "previous_application_refusal"
+      ],
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "special_conditions": {
+    "previous_visa_conditions": {
+      "source_section_id": "AU_462_SECOND_ELIG_02",
+      "prior_visa_subclass": "462",
+      "prior_visa_sequence": "first",
+      "prior_entry_required": true,
+      "first_visa_condition_compliance": true,
+      "onshore_application": {
+        "substantive_visa_or_recent_expiry": true,
+        "mentioned_days": 28,
+        "operator_and_boundary": "review_source_text"
+      },
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "specified_work": {
+      "source_section_id": "AU_462_SECOND_ELIG_04",
+      "standard_requirement": {
+        "duration": "3 months",
+        "work_type": "specified subclass 462 work"
+      },
+      "eligible_jobs_and_locations": null,
+      "duration_calculation": null,
+      "accepted_evidence": null,
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "age": {
+      "source_section_id": "AU_462_SECOND_ELIG_05",
+      "minimum_age": 18,
+      "maximum_age": 30,
+      "application_deadline_timezone": "AEST/AEDT",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    },
+    "financial_guidance": {
+      "source_section_id": "AU_462_SECOND_ELIG_03",
+      "usual_initial_funds_aud": 5000,
+      "onward_travel_fare": "additional",
+      "onshore_offshore_evidence": "review_source_text",
+      "eligibility_rule": null,
+      "review_status": "needs_review"
+    }
+  },
+  "review_status": "needs_review",
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false
+}

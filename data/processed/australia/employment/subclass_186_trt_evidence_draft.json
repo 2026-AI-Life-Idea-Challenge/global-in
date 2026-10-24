@@ -1,0 +1,577 @@
+{
+  "program": "subclass_186_trt",
+  "visa_subclass": "186",
+  "stream": "temporary_residence_transition",
+  "pathway_type": "permanent_employment",
+  "official_sources": {
+    "about_this_visa": {
+      "source_file": "data/raw/australia/employment/subclass_186_trt_about_this_visa.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "source_sha256": "5097c58488224403d237f28604ddd383a690b62537528e31bf53594d4d7d0bf9",
+      "char_count": 7433,
+      "review_status": "needs_review"
+    },
+    "eligibility": {
+      "source_file": "data/raw/australia/employment/subclass_186_trt_eligibility.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "char_count": 7662,
+      "review_status": "needs_review"
+    },
+    "step_by_step": {
+      "source_file": "data/raw/australia/employment/subclass_186_trt_step_by_step.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "source_sha256": "f473599e3c4d6ded952993bc75142b01219bfbe971ba313ca5cc02ca25772962",
+      "char_count": 15364,
+      "review_status": "needs_review"
+    },
+    "when_you_have_this_visa": {
+      "source_file": "data/raw/australia/employment/subclass_186_trt_when_you_have_this_visa.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "source_sha256": "8535e868f02272cd50d7420821e922ab7f547eed3f9774e5fe8bfa09fdb279bf",
+      "char_count": 6018,
+      "review_status": "needs_review"
+    }
+  },
+  "eligibility_sections": [
+    {
+      "section_id": "AU_186_TRT_ELIG_01",
+      "topic": "required_skills",
+      "heading": "Have the required skills",
+      "source_tab": "eligibility",
+      "start_line": 39,
+      "end_line": 43,
+      "original_text": "Have the required skills\nYou must have the required skills and qualifications needed to perform the tasks of the nominated occupation.\n\nWe might ask you to get a skills assessment to show you have these skills.",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_186_TRT_ELIG_02",
+      "topic": "eligible_sponsored_employment",
+      "heading": "Have 2 years eligible sponsored employment in the 3 years prior to your application",
+      "source_tab": "eligibility",
+      "start_line": 44,
+      "end_line": 56,
+      "original_text": "Have 2 years eligible sponsored employment in the 3 years prior to your application\nYou must have been employed in eligible sponsored employment for a total of 2 years in the 3 years prior to the date you apply for your visa.\n\nEligible sponsored employment must be:\n\nfull-time\nundertaken in Australia\nundertaken while holding a subclass 457,482 or eligible bridging visa\nundertaken in an occupation you were granted a subclass 457 or subclass 482 visa to perform.\nIf you have held multiple subclass 457 or 482 visas in the 3 years prior to your application, sponsored employment can be counted in any occupation you were approved to work in.\n\nIf you have changed employers in the 3 years prior to your application, sponsored employment can be counted from the date an approved nomination was lodged, if you started working with them before the nomination was approved.",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_186_TRT_ELIG_03",
+      "topic": "licensing_registration",
+      "heading": "Licensing, registration or membership",
+      "source_tab": "eligibility",
+      "start_line": 57,
+      "end_line": 59,
+      "original_text": "Licensing, registration or membership\nYou must be licensed, registered or a member of a professional body if it is mandatory in the state or territory you intend to work in.",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_186_TRT_ELIG_04",
+      "topic": "last_sponsoring_employer_nomination",
+      "heading": "Be nominated by the employer who sponsored your temporary work visa",
+      "source_tab": "eligibility",
+      "start_line": 60,
+      "end_line": 62,
+      "original_text": "Be nominated by the employer who sponsored your temporary work visa\nYour employer must have been the last person to sponsor you to work full-time on your subclass 457 or subclass 482 visa.",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_186_TRT_ELIG_05",
+      "topic": "eligible_business",
+      "heading": "Eligible business",
+      "source_tab": "eligibility",
+      "start_line": 63,
+      "end_line": 78,
+      "original_text": "Eligible business\nYou must be nominated by an Australian employer whose business is actively and lawfully operating in Australia.\n\nYou must apply for the visa within 6 months of the nomination being approved.\n\nFind out if your employer is eligible to nominate you.\n\nWe can't grant you a visa if:\n\nwe are aware of adverse information about your nominator or any person associated with them, unless it is reasonable to disregard this information, or\nthe nomination is withdrawn, or\nthe position is no longer available\nWe can’t link a new nomination to your existing visa application. If this happens you may choose to withdraw your first visa application and submit a new visa application in relation to the new nomination.\n\nYou might be eligible for a refund of the visa application charge depending on the circumstances.",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_186_TRT_ELIG_06",
+      "topic": "age",
+      "heading": "Be this age",
+      "source_tab": "eligibility",
+      "start_line": 79,
+      "end_line": 90,
+      "original_text": "Be this age\nUsually, you must be under 45 years of age when you apply.\n\nYou are exempt from this criterion if any of the following applies to you:\n\nYou are nominated as an academic (university lecturer or faculty head at Academic Level A, B, C, D or E) by a university in Australia\nYou are nominated as a scientist, researcher or technical specialist at ANZSCO skill level 1 or 2 by an Australian scientific government agency or Australian university\nYou are nominated as a medical practitioner and in the 3 years immediately before you apply have worked in that occupation in a designated regional area of Australia for at least 2 years as a subclass 457 or 482 visa holder. The nominated position is in a designated regional area of Australia.\nAs a subclass 457 or 482 visa holder, you have worked in eligible sponsored employment for at least 2 years during the 3 years ending immediately before you apply, and your earnings for each year of that period were at least as much as the Fair Work High Income Threshold.\nTransitional arrangements\nIf you held (or had applied for and were later granted) a subclass 457 visa on 18 April 2017, you can still apply for this visa if you are under 50 when you apply.",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_186_TRT_ELIG_07",
+      "topic": "english_language",
+      "heading": "Have this level of English language",
+      "source_tab": "eligibility",
+      "start_line": 91,
+      "end_line": 95,
+      "original_text": "Have this level of English language\nYou must have at least Competent English.\n\nFrom 16 November 2019, there is no exemption to the English language requirement for this stream of the visa.",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_186_TRT_ELIG_08",
+      "topic": "qualifying_visa",
+      "heading": "Have this visa",
+      "source_tab": "eligibility",
+      "start_line": 96,
+      "end_line": 101,
+      "original_text": "Have this visa\nYou must currently be the primary visa holder of either a:\n\nsubclass 457 visa (any stream)\nsubclass 482 visa (any stream)\nBridging visa associated with a subclass 457, 482, 186 or 187 application, if your last substantive visa was a subclass 457 or 482.",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_186_TRT_ELIG_09",
+      "topic": "health",
+      "heading": "Meet our health requirement",
+      "source_tab": "eligibility",
+      "start_line": 102,
+      "end_line": 106,
+      "original_text": "Meet our health requirement\nYou and any family members who apply for the visa with you must meet our health requirement.\n\nWe might ask for health information about family not coming to Australia with you.",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_186_TRT_ELIG_10",
+      "topic": "character",
+      "heading": "Meet our character requirement",
+      "source_tab": "eligibility",
+      "start_line": 107,
+      "end_line": 111,
+      "original_text": "Meet our character requirement\nYou and family members aged 16 years and over who apply for the visa with you must meet our character requirement.\n\nWe might ask for character information about family not coming to Australia with you.",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_186_TRT_ELIG_11",
+      "topic": "australian_values_statement",
+      "heading": "Sign the Australian values statement",
+      "source_tab": "eligibility",
+      "start_line": 112,
+      "end_line": 116,
+      "original_text": "Sign the Australian values statement\nIf you are 18 years of age or older, you must:\n\nhave read, or had explained to you, the Life in Australia booklet and\nsign an Australian Values Statement that confirms you will respect the Australian way of life and obey Australian laws",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_186_TRT_ELIG_12",
+      "topic": "government_debt",
+      "heading": "Have paid back your debt to the Australian government",
+      "source_tab": "eligibility",
+      "start_line": 117,
+      "end_line": 119,
+      "original_text": "Have paid back your debt to the Australian government\nIf you owe the Australian Government money, you must have paid it back or have a formal arrangement to pay it back.",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_186_TRT_ELIG_13",
+      "topic": "immigration_history",
+      "heading": "Not have had a visa cancelled or a previous application refused",
+      "source_tab": "eligibility",
+      "start_line": 120,
+      "end_line": 128,
+      "original_text": "Not have had a visa cancelled or a previous application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "source_sha256": "615f3293402d6de1691949a88bfe0256d8a83864d9cd712fb6fa8331b170e3f4",
+      "review_status": "needs_review"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "AU_186_TRT_EVD_01",
+      "source_section_id": "AU_186_TRT_ELIG_01",
+      "source_tab": "eligibility",
+      "exact_quote": "Have the required skills\nYou must have the required skills and qualifications needed to perform the tasks of the nominated occupation.\n\nWe might ask you to get a skills assessment to show you have these skills.",
+      "start_line": 39,
+      "end_line": 43,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_186_TRT_EVD_02",
+      "source_section_id": "AU_186_TRT_ELIG_02",
+      "source_tab": "eligibility",
+      "exact_quote": "Have 2 years eligible sponsored employment in the 3 years prior to your application\nYou must have been employed in eligible sponsored employment for a total of 2 years in the 3 years prior to the date you apply for your visa.\n\nEligible sponsored employment must be:\n\nfull-time\nundertaken in Australia\nundertaken while holding a subclass 457,482 or eligible bridging visa\nundertaken in an occupation you were granted a subclass 457 or subclass 482 visa to perform.\nIf you have held multiple subclass 457 or 482 visas in the 3 years prior to your application, sponsored employment can be counted in any occupation you were approved to work in.\n\nIf you have changed employers in the 3 years prior to your application, sponsored employment can be counted from the date an approved nomination was lodged, if you started working with them before the nomination was approved.",
+      "start_line": 44,
+      "end_line": 56,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_186_TRT_EVD_03",
+      "source_section_id": "AU_186_TRT_ELIG_03",
+      "source_tab": "eligibility",
+      "exact_quote": "Licensing, registration or membership\nYou must be licensed, registered or a member of a professional body if it is mandatory in the state or territory you intend to work in.",
+      "start_line": 57,
+      "end_line": 59,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_186_TRT_EVD_04",
+      "source_section_id": "AU_186_TRT_ELIG_04",
+      "source_tab": "eligibility",
+      "exact_quote": "Be nominated by the employer who sponsored your temporary work visa\nYour employer must have been the last person to sponsor you to work full-time on your subclass 457 or subclass 482 visa.",
+      "start_line": 60,
+      "end_line": 62,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_186_TRT_EVD_05",
+      "source_section_id": "AU_186_TRT_ELIG_05",
+      "source_tab": "eligibility",
+      "exact_quote": "Eligible business\nYou must be nominated by an Australian employer whose business is actively and lawfully operating in Australia.\n\nYou must apply for the visa within 6 months of the nomination being approved.\n\nFind out if your employer is eligible to nominate you.\n\nWe can't grant you a visa if:\n\nwe are aware of adverse information about your nominator or any person associated with them, unless it is reasonable to disregard this information, or\nthe nomination is withdrawn, or\nthe position is no longer available\nWe can’t link a new nomination to your existing visa application. If this happens you may choose to withdraw your first visa application and submit a new visa application in relation to the new nomination.\n\nYou might be eligible for a refund of the visa application charge depending on the circumstances.",
+      "start_line": 63,
+      "end_line": 78,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_186_TRT_EVD_06",
+      "source_section_id": "AU_186_TRT_ELIG_06",
+      "source_tab": "eligibility",
+      "exact_quote": "Be this age\nUsually, you must be under 45 years of age when you apply.\n\nYou are exempt from this criterion if any of the following applies to you:\n\nYou are nominated as an academic (university lecturer or faculty head at Academic Level A, B, C, D or E) by a university in Australia\nYou are nominated as a scientist, researcher or technical specialist at ANZSCO skill level 1 or 2 by an Australian scientific government agency or Australian university\nYou are nominated as a medical practitioner and in the 3 years immediately before you apply have worked in that occupation in a designated regional area of Australia for at least 2 years as a subclass 457 or 482 visa holder. The nominated position is in a designated regional area of Australia.\nAs a subclass 457 or 482 visa holder, you have worked in eligible sponsored employment for at least 2 years during the 3 years ending immediately before you apply, and your earnings for each year of that period were at least as much as the Fair Work High Income Threshold.\nTransitional arrangements\nIf you held (or had applied for and were later granted) a subclass 457 visa on 18 April 2017, you can still apply for this visa if you are under 50 when you apply.",
+      "start_line": 79,
+      "end_line": 90,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_186_TRT_EVD_07",
+      "source_section_id": "AU_186_TRT_ELIG_07",
+      "source_tab": "eligibility",
+      "exact_quote": "Have this level of English language\nYou must have at least Competent English.\n\nFrom 16 November 2019, there is no exemption to the English language requirement for this stream of the visa.",
+      "start_line": 91,
+      "end_line": 95,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_186_TRT_EVD_08",
+      "source_section_id": "AU_186_TRT_ELIG_08",
+      "source_tab": "eligibility",
+      "exact_quote": "Have this visa\nYou must currently be the primary visa holder of either a:\n\nsubclass 457 visa (any stream)\nsubclass 482 visa (any stream)\nBridging visa associated with a subclass 457, 482, 186 or 187 application, if your last substantive visa was a subclass 457 or 482.",
+      "start_line": 96,
+      "end_line": 101,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_186_TRT_EVD_09",
+      "source_section_id": "AU_186_TRT_ELIG_09",
+      "source_tab": "eligibility",
+      "exact_quote": "Meet our health requirement\nYou and any family members who apply for the visa with you must meet our health requirement.\n\nWe might ask for health information about family not coming to Australia with you.",
+      "start_line": 102,
+      "end_line": 106,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_186_TRT_EVD_10",
+      "source_section_id": "AU_186_TRT_ELIG_10",
+      "source_tab": "eligibility",
+      "exact_quote": "Meet our character requirement\nYou and family members aged 16 years and over who apply for the visa with you must meet our character requirement.\n\nWe might ask for character information about family not coming to Australia with you.",
+      "start_line": 107,
+      "end_line": 111,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_186_TRT_EVD_11",
+      "source_section_id": "AU_186_TRT_ELIG_11",
+      "source_tab": "eligibility",
+      "exact_quote": "Sign the Australian values statement\nIf you are 18 years of age or older, you must:\n\nhave read, or had explained to you, the Life in Australia booklet and\nsign an Australian Values Statement that confirms you will respect the Australian way of life and obey Australian laws",
+      "start_line": 112,
+      "end_line": 116,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_186_TRT_EVD_12",
+      "source_section_id": "AU_186_TRT_ELIG_12",
+      "source_tab": "eligibility",
+      "exact_quote": "Have paid back your debt to the Australian government\nIf you owe the Australian Government money, you must have paid it back or have a formal arrangement to pay it back.",
+      "start_line": 117,
+      "end_line": 119,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_186_TRT_EVD_13",
+      "source_section_id": "AU_186_TRT_ELIG_13",
+      "source_tab": "eligibility",
+      "exact_quote": "Not have had a visa cancelled or a previous application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "start_line": 120,
+      "end_line": 128,
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "AU_186_TRT_POL_01",
+      "program": "subclass_186_trt",
+      "topic": "required_skills",
+      "source_section_id": "AU_186_TRT_ELIG_01",
+      "source_text": "Have the required skills\nYou must have the required skills and qualifications needed to perform the tasks of the nominated occupation.\n\nWe might ask you to get a skills assessment to show you have these skills.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_02",
+      "program": "subclass_186_trt",
+      "topic": "eligible_sponsored_employment",
+      "source_section_id": "AU_186_TRT_ELIG_02",
+      "source_text": "Have 2 years eligible sponsored employment in the 3 years prior to your application\nYou must have been employed in eligible sponsored employment for a total of 2 years in the 3 years prior to the date you apply for your visa.\n\nEligible sponsored employment must be:\n\nfull-time\nundertaken in Australia\nundertaken while holding a subclass 457,482 or eligible bridging visa\nundertaken in an occupation you were granted a subclass 457 or subclass 482 visa to perform.\nIf you have held multiple subclass 457 or 482 visas in the 3 years prior to your application, sponsored employment can be counted in any occupation you were approved to work in.\n\nIf you have changed employers in the 3 years prior to your application, sponsored employment can be counted from the date an approved nomination was lodged, if you started working with them before the nomination was approved.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_03",
+      "program": "subclass_186_trt",
+      "topic": "licensing_registration",
+      "source_section_id": "AU_186_TRT_ELIG_03",
+      "source_text": "Licensing, registration or membership\nYou must be licensed, registered or a member of a professional body if it is mandatory in the state or territory you intend to work in.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_04",
+      "program": "subclass_186_trt",
+      "topic": "last_sponsoring_employer_nomination",
+      "source_section_id": "AU_186_TRT_ELIG_04",
+      "source_text": "Be nominated by the employer who sponsored your temporary work visa\nYour employer must have been the last person to sponsor you to work full-time on your subclass 457 or subclass 482 visa.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_05",
+      "program": "subclass_186_trt",
+      "topic": "eligible_business",
+      "source_section_id": "AU_186_TRT_ELIG_05",
+      "source_text": "Eligible business\nYou must be nominated by an Australian employer whose business is actively and lawfully operating in Australia.\n\nYou must apply for the visa within 6 months of the nomination being approved.\n\nFind out if your employer is eligible to nominate you.\n\nWe can't grant you a visa if:\n\nwe are aware of adverse information about your nominator or any person associated with them, unless it is reasonable to disregard this information, or\nthe nomination is withdrawn, or\nthe position is no longer available\nWe can’t link a new nomination to your existing visa application. If this happens you may choose to withdraw your first visa application and submit a new visa application in relation to the new nomination.\n\nYou might be eligible for a refund of the visa application charge depending on the circumstances.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_06",
+      "program": "subclass_186_trt",
+      "topic": "age",
+      "source_section_id": "AU_186_TRT_ELIG_06",
+      "source_text": "Be this age\nUsually, you must be under 45 years of age when you apply.\n\nYou are exempt from this criterion if any of the following applies to you:\n\nYou are nominated as an academic (university lecturer or faculty head at Academic Level A, B, C, D or E) by a university in Australia\nYou are nominated as a scientist, researcher or technical specialist at ANZSCO skill level 1 or 2 by an Australian scientific government agency or Australian university\nYou are nominated as a medical practitioner and in the 3 years immediately before you apply have worked in that occupation in a designated regional area of Australia for at least 2 years as a subclass 457 or 482 visa holder. The nominated position is in a designated regional area of Australia.\nAs a subclass 457 or 482 visa holder, you have worked in eligible sponsored employment for at least 2 years during the 3 years ending immediately before you apply, and your earnings for each year of that period were at least as much as the Fair Work High Income Threshold.\nTransitional arrangements\nIf you held (or had applied for and were later granted) a subclass 457 visa on 18 April 2017, you can still apply for this visa if you are under 50 when you apply.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_07",
+      "program": "subclass_186_trt",
+      "topic": "english_language",
+      "source_section_id": "AU_186_TRT_ELIG_07",
+      "source_text": "Have this level of English language\nYou must have at least Competent English.\n\nFrom 16 November 2019, there is no exemption to the English language requirement for this stream of the visa.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_08",
+      "program": "subclass_186_trt",
+      "topic": "qualifying_visa",
+      "source_section_id": "AU_186_TRT_ELIG_08",
+      "source_text": "Have this visa\nYou must currently be the primary visa holder of either a:\n\nsubclass 457 visa (any stream)\nsubclass 482 visa (any stream)\nBridging visa associated with a subclass 457, 482, 186 or 187 application, if your last substantive visa was a subclass 457 or 482.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_09",
+      "program": "subclass_186_trt",
+      "topic": "health",
+      "source_section_id": "AU_186_TRT_ELIG_09",
+      "source_text": "Meet our health requirement\nYou and any family members who apply for the visa with you must meet our health requirement.\n\nWe might ask for health information about family not coming to Australia with you.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_10",
+      "program": "subclass_186_trt",
+      "topic": "character",
+      "source_section_id": "AU_186_TRT_ELIG_10",
+      "source_text": "Meet our character requirement\nYou and family members aged 16 years and over who apply for the visa with you must meet our character requirement.\n\nWe might ask for character information about family not coming to Australia with you.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_11",
+      "program": "subclass_186_trt",
+      "topic": "australian_values_statement",
+      "source_section_id": "AU_186_TRT_ELIG_11",
+      "source_text": "Sign the Australian values statement\nIf you are 18 years of age or older, you must:\n\nhave read, or had explained to you, the Life in Australia booklet and\nsign an Australian Values Statement that confirms you will respect the Australian way of life and obey Australian laws",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_12",
+      "program": "subclass_186_trt",
+      "topic": "government_debt",
+      "source_section_id": "AU_186_TRT_ELIG_12",
+      "source_text": "Have paid back your debt to the Australian government\nIf you owe the Australian Government money, you must have paid it back or have a formal arrangement to pay it back.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_13",
+      "program": "subclass_186_trt",
+      "topic": "immigration_history",
+      "source_section_id": "AU_186_TRT_ELIG_13",
+      "source_text": "Not have had a visa cancelled or a previous application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    }
+  ],
+  "application_steps": [
+    {
+      "step_number": 1,
+      "source_tab": "step_by_step",
+      "start_line": 39,
+      "end_line": 62,
+      "original_text": "Step 1\n\nBefore you apply\nYou might need to organise English and health exams.\n\nOrganise English exams\nMake sure your English test results are current for this visa. Your English test results cannot have been issued more than three years before you make your application. You must also receive your test results before you lodge your visa application. Have English exams if necessary.\n\nGet help with your application\nOnly some people can help you with your application. If you appoint someone to give you immigration assistance they must be:\n\na registered migration agent\na legal practitioner, or\nan exempt person.\nYou can appoint anyone to receive documents on your behalf relating to your visa matter.\n\nGet the nomination TRN\nMake sure your employer has submitted a nomination application. They will receive a nomination Transaction Reference Number (TRN) when they do.\n\nYou need the TRN to apply for the visa. You do not need to wait for the nomination to be approved to lodge your visa application.\n\nYour rights and your employer's responsibilities\nCriminal and civil penalties can be applied to anyone who asks for, receives, offers or provides a benefit in exchange for visa sponsorship. Learn more about work visa scams.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 2,
+      "source_tab": "step_by_step",
+      "start_line": 63,
+      "end_line": 220,
+      "original_text": "Step 2\n\nGather your documents\nGather and prepare these documents.\n\nProvide accurate information\nProvide accurate information. See what happens if you can't prove your identity or don't provide accurate information.\n\nIdentity documents\nProvide the pages of your current passport showing your photo, personal details, and passport issue and expiry dates.\n\nIf you have changed your name for any reason, you must also provide evidence of this. Documents that prove a change of name include:\n\na marriage or divorce certificate\nchange of name documents from an Australian Registry of Births, Deaths and Marriages, or the relevant overseas authority\ndocuments that show other names you have been known by\nLicencing, registrations and memberships\nProvide evidence of any licence, registration or professional membership mandatory to perform the nominated occupation in the state or territory you intend to work in, if applicable.\n\nSkills assessment\nWe will ask you to undertake a skills assessment if you are required to do so.\n\nWork experience documents\nProvide documents that verify your work experience for all periods of eligible sponsored employment. These documents should include:\n\nthe employment period\nany paid leave taken\nany unpaid leave taken\nany overseas trips for training or work.\nAlso provide:\n\nPAYG payment summaries for the period of employment\nemployment contracts\npayslips\nextracts of leave records.\nAge exemption documents\nIf you are 45 years old or older, provide documents to show you are exempt from the age eligibility criteria.\n\nYou are exempt from this criterion if any of the following applies to you:\n\nYou are nominated as an academic (university lecturer or faculty head at Academic Level A, B, C, D or E) by a university in Australia\nYou are nominated as a scientist, researcher or technical specialist at ANZSCO skill level 1 or 2 by an Australian scientific government agency or Australian university\nYou are nominated as a medical practitioner and in the 3 years immediately before you apply have worked in that occupation in a designated regional area of Australia for at least 2 years as a subclass 457 or 482 visa holder. The nominated position is in a designated regional area of Australia.\nAs a subclass 457 or 482 visa holder, you have worked in eligible sponsored employment for at least 2 years during the 3 years ending immediately before you apply, and your earnings for each year of that period were at least as much as the Fair Work High Income Threshold.\nEnglish language documents\nProvide documents that show you have Competent English at the time you submit your application.\n\nFrom 16 November 2019, there is no exemption to the English language requirement for this stream of the visa.\n\nHealth documents\nYou do not need to provide health documents. If you have had medical exams, the results are sent to us by your doctor.\n\nCharacter documents\nProvide an Australian police certificate if you have spent a total of 12 months or more in Australia in the last 10 years since you turned 16. We only accept complete disclosure National Police Certificates issued by the Australian Federal Police. We do not accept standard disclosure certificates or national police certificates issued by Australian state or territory police. For immigration purposes, Australian police certificates are valid for 12 months from the date of issue.\n\nAlso provide:\n\nan overseas police certificate from every country, including your home country, where you spent a total of 12 months or more in the last 10 years since you turned 16\nif required, penal check letters are available by contacting espd@homeaffairs.gov.au and include the words “Front end load – Penal Check Letter” in the subject line of your email.\nmilitary service records or discharge papers if you served in the armed forces of any country\nFurther information is available at: Character requirements for visas\n\nTell us you are getting help\nTo nominate someone to:\n\nreceive your correspondence, use Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration assistance, use Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nPartner documents\nProvide:\n\nidentity documents\ncharacter documents\nProvide either:\n\nyour current marriage certificate or\nenough documents to prove your partner has been in a de facto relationship with you for at least 12 months before you apply\nDocuments that prove a de facto relationship include:\n\njoint bank account statements\nbilling accounts in joint names\njoint leases or mortgages\ndocuments that show you have both lived at the same address\nProof of Functional English\nYou must show that any dependent applicant who was aged at least 18 years on the day you make your application has at least has Functional English.\n\nIf you can't prove Functional English\nIf you can't show that they have functional English, you will need to pay the second instalment when we ask you to.\n\nDependants under 18 documents\nFor every dependant under 18 years who is applying with you provide:\n\nidentity documents (if your child is under 5 years old you can include them in the application without a passport)\nproof of their relationship with you such as a birth or marriage certificate\ncharacter documents, if applicable.\nParental responsibility documents\nYou must get consent for the child to come to Australia from anyone who:\n\nhas a legal right to decide where the child lives and\nis not coming to Australia with the child.\nThey must complete either:\n\nForm 1229 Consent form to grant an Australian visa to a child under the age of 18 years (276KB PDF)\na statutory declaration giving their consent for the child to visit Australia on this visa.\nInclude a document with the signature and photo of the person who completed the form or declaration, such as a:\n\npassport\ndriver’s licence.\nDependants over 18\nFor every dependant 18 years old or older who is applying with you, provide:\n\nidentity documents\ndocuments about their other relationships, if applicable\ncharacter documents\nProof of dependence\nYou need to prove that this person is a family member and/or dependent on you. Provide:\n\na completed Form 47a Details of a child or other dependent family member aged 18 years or over (307KB PDF)\nproof of your relationship with the dependent such as a birth certificate or adoption papers\nYou must also prove this person has been financially dependent on you for at least 12 months before you apply. You could provide:\n\nproof they live with you\ntheir tax records\nproof they are currently studying\nFor other family members, if applicable, provide evidence the person:\n\nholds a subclass 457 or subclass 482 visa\nwas granted that visa because they were your family member and\nis included in your application for this subclass 186 visa\nProof of Functional English\nYou must prove your family member over 18 has Functional English.\n\nIf you can't prove Functional English\nIf you can't show your family member has Functional English, you will need to pay the second instalment when we ask you to.\n\nPrepare your documents\nTranslate\nHave all non-English documents translated into English.\n\nProvide original and translated documents in your application. \n\nTranslators in Australia must be accredited by the National Accreditation Authority for Translators and Interpreters.\n\nTranslators outside Australia do not have to be accredited. But on each translation, they must include their:\n\nfull name\naddress and telephone number\nqualifications and experience in the language they are translating\nThese details must be in English.\n\nScan or photograph\nScan or photograph all documents (English and non-English) in colour.\n\nThe scans and photos must be clear.\n\nIf a document is more than one page, save it all as one file.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 3,
+      "source_tab": "step_by_step",
+      "start_line": 221,
+      "end_line": 233,
+      "original_text": "Step 3\n\nApply for the visa\nApply for this visa online with ImmiAccount.\n\nProvide accurate information\nProvide accurate information. See what happens if you can't prove your identity or don't provide accurate information.\n\nApply for the visa online in ImmiAccount\nLog in or create an ImmiAccount.\nAttach documents.\nPay the application charge. We will not process your application until you pay.\nNote the Transaction Reference Number.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 4,
+      "source_tab": "step_by_step",
+      "start_line": 234,
+      "end_line": 313,
+      "original_text": "Step 4\n\nAfter you apply\nSee what you can and must do after you apply.\n\nWhat will happen after you apply\nWe will let you know when we have received your application.\n\nStatus updates\nWe can’t give updates on applications within the standard processing time.\n\nWait for us to contact you.\n\nTravel after you apply\nIf you are in Australia, you don't have to tell us if you want to travel outside Australia while we process your application. This is because you can be outside Australia when we decide on your application.\n\nBut if you leave Australia, make sure you have a valid visa to return.\n\nLearn about visa expiry.\n\nLearn about Bridging visas.\n\nHealth exams\nIf you didn't have health examinations before you applied, we will let you know if you need them. Check ImmiAccount.\n\nBiometrics\nWe might ask for biometrics (fingerprints and photo). We will let you know if you need to provide them.\n\nAttach more information\nWe might ask you to provide more information. Attach any additional documents we ask you for as soon as possible in ImmiAccount.\n\nStay lawful\nMake sure you stay lawful by holding a valid visa while we process your application.\n\nWhen you apply for this visa in Australia, you are likely to be granted a bridging visa. If your current visa expires before we decide your application, the bridging visa will start. You can stay in Australia on the bridging visa while we process your new visa application.\n\nLearn more about visa expiry.\n\nPay the second instalment\nIf you need to pay a second instalment, we will send you an invoice after you have met all other requirements for the visa. \n\nAdd family\nYou can add family members to your application before we decide on your visa.\n\nFor the purpose of adding family members to this visa, your family members are:\n\nyour partner\nyour dependent child and stepchild\nyour partner's dependent child and stepchild\nNewborn children\nFind out what to do if you had a baby.\n\nMistakes on your application\nLet us know as soon as you can if you made a mistake on your application.\n\nComplete Form 1023 Notification of incorrect answers (168KB PDF).\n\nHelp with your application\nLet us know if you no longer want someone to:\n\nreceive your correspondence - complete Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration advice - complete Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nFor more information see Who can help you with your application.\n\nTell us if things change\nTell us if things change after you submit your application but before we decide on your application.\n\nThings you need to let us know about include:\n\nyou want to withdraw your application\nchanges to your phone number, address or passport\nchanges to your relationship status\nthe birth of a child\nSee what to do if your situation changes.\n\nAdditional information for after you apply\nWe might ask you to get a skills assessment.",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 5,
+      "source_tab": "step_by_step",
+      "start_line": 314,
+      "end_line": 331,
+      "original_text": "Step 5\n\nVisa outcome\nYou can be inside or outside Australia when we decide on your application.\n\nIf we grant your visa, we will tell you:\n\nyour visa grant number\nthe date your visa starts\nyour visa conditions, if applicable\nKeep a copy of the decision.\n\nIf we refuse your visa, we will tell you:\n\nwhy we refused the visa\nwhether you have a right to a review of the decision\nWe will not refund the visa application charge if we refuse your application.",
+      "review_status": "needs_review"
+    }
+  ],
+  "conditional_requirements": {
+    "employment_period": {
+      "source_topic": "eligible_sponsored_employment",
+      "review_points": [
+        "two_years_within_three_years",
+        "full_time_employment",
+        "employment_in_australia",
+        "qualifying_visa_during_employment",
+        "approved_occupation",
+        "multiple_457_or_482_visas",
+        "employer_changes"
+      ],
+      "review_status": "needs_review",
+      "eligibility_rule": null
+    },
+    "age": {
+      "source_topic": "age",
+      "review_points": [
+        "under_45_general_requirement",
+        "academic_exemption",
+        "scientist_exemption",
+        "regional_medical_practitioner_exemption",
+        "high_income_exemption",
+        "subclass_457_transitional_arrangements"
+      ],
+      "review_status": "needs_review",
+      "eligibility_rule": null
+    },
+    "visa_status": {
+      "source_topic": "qualifying_visa",
+      "review_points": [
+        "subclass_457",
+        "subclass_482",
+        "eligible_bridging_visa",
+        "last_substantive_visa"
+      ],
+      "review_status": "needs_review",
+      "eligibility_rule": null
+    },
+    "employer_nomination": {
+      "source_topic": "last_sponsoring_employer_nomination",
+      "review_points": [
+        "last_sponsoring_employer",
+        "lawfully_operating_business",
+        "six_month_nomination_window",
+        "nomination_withdrawal",
+        "position_availability"
+      ],
+      "review_status": "needs_review",
+      "eligibility_rule": null
+    },
+    "english": {
+      "source_topic": "english_language",
+      "review_points": [
+        "competent_english",
+        "no_english_exemption_since_2019_11_16"
+      ],
+      "review_status": "needs_review",
+      "eligibility_rule": null
+    }
+  },
+  "review_status": "needs_review",
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false
+}

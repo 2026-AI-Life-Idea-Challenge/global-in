@@ -1,0 +1,426 @@
+{
+  "program": "subclass_482_labour_agreement",
+  "stream": "labour_agreement",
+  "official_sources": {
+    "about_this_visa": {
+      "source_file": "data/raw/australia/employment/subclass_482_labour_agreement_about_this_visa.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "source_sha256": "aba9b87c27fe3766f48456a8245082709343f7fbe2d70a562dffee7e93c66b1f",
+      "char_count": 9677,
+      "review_status": "needs_review"
+    },
+    "eligibility": {
+      "source_file": "data/raw/australia/employment/subclass_482_labour_agreement_eligibility.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "source_sha256": "9c9103ca1d0a4c3a7fb87257e0fad8e0a7c7c839887327f993d7b80283c7f2aa",
+      "char_count": 5141,
+      "review_status": "needs_review"
+    },
+    "step_by_step": {
+      "source_file": "data/raw/australia/employment/subclass_482_labour_agreement_step_by_step.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "source_sha256": "efd6e68787d71ffd3db198a72c78b993db925c9cf90cc2355e4fbf728155f7ea",
+      "char_count": 15121,
+      "review_status": "needs_review"
+    },
+    "when_you_have_this_visa": {
+      "source_file": "data/raw/australia/employment/subclass_482_labour_agreement_when_you_have_this_visa.txt",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "source_sha256": "b39d0d52f5e53c0cbf152a41c90251a51844c8b11a383b49e4540256de48846b",
+      "char_count": 5893,
+      "review_status": "needs_review"
+    }
+  },
+  "shared_sources": {
+    "english": {
+      "source_file": "data/raw/australia/employment/subclass_482_english_proficiency.txt",
+      "source_sha256": "4a19e6d92e2b6c58bcb73c615ecbac93189007ee68aa19bcb840e44ae6ec7c81",
+      "applicability": "needs_review"
+    },
+    "salary": {
+      "source_file": "data/raw/australia/employment/subclass_482_salary_requirements.txt",
+      "source_sha256": "f083744789c5faaa9c18471c22d54b8e6ac3ac1b88cd162c661f47d3e99d1988",
+      "applicability": "needs_review"
+    },
+    "skills_assessment": {
+      "source_file": "data/raw/australia/employment/subclass_482_mandatory_skills_assessment_immi_18_039.txt",
+      "source_sha256": "4304a65aae5038cb770466feaf28771855448bb2abcc90b687986bdec35dc480",
+      "applicability": "needs_review"
+    }
+  },
+  "eligibility_sections": [
+    {
+      "section_id": "AU_482_LA_01",
+      "topic": "labour_agreement_occupation",
+      "heading": "Be working under a labour agreement",
+      "source_tab": "eligibility",
+      "start_line": 39,
+      "end_line": 41,
+      "original_text": "Be working under a labour agreement\nThe nominated occupation must be the subject of a labour agreement between the Commonwealth and the nominator. See the labour agreement under which you will be working.",
+      "source_sha256": "9c9103ca1d0a4c3a7fb87257e0fad8e0a7c7c839887327f993d7b80283c7f2aa",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_LA_02",
+      "topic": "relevant_work_experience",
+      "heading": "Have at least 1 year of work experience",
+      "source_tab": "eligibility",
+      "start_line": 42,
+      "end_line": 44,
+      "original_text": "Have at least 1 year of work experience\nUnless otherwise specified in the Labour Agreement, you have gained at least 12 months relevant full-time work experience, or equivalent, within the last 5 years. Work carried out on a part-time or casual basis must be equivalent to at least 12 months full-time work.",
+      "source_sha256": "9c9103ca1d0a4c3a7fb87257e0fad8e0a7c7c839887327f993d7b80283c7f2aa",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_LA_03",
+      "topic": "employer_nomination",
+      "heading": "Be nominated",
+      "source_tab": "eligibility",
+      "start_line": 45,
+      "end_line": 47,
+      "original_text": "Be nominated\nYou must be nominated.",
+      "source_sha256": "9c9103ca1d0a4c3a7fb87257e0fad8e0a7c7c839887327f993d7b80283c7f2aa",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_LA_04",
+      "topic": "health_requirement",
+      "heading": "Meet our health requirement",
+      "source_tab": "eligibility",
+      "start_line": 48,
+      "end_line": 50,
+      "original_text": "Meet our health requirement\nYou and any family members who apply for the visa with you must meet our health requirement.",
+      "source_sha256": "9c9103ca1d0a4c3a7fb87257e0fad8e0a7c7c839887327f993d7b80283c7f2aa",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_LA_05",
+      "topic": "character_requirement",
+      "heading": "Meet our character requirement",
+      "source_tab": "eligibility",
+      "start_line": 51,
+      "end_line": 53,
+      "original_text": "Meet our character requirement\nYou and family members aged 16 years and over who apply for the visa with you must meet our character requirement.",
+      "source_sha256": "9c9103ca1d0a4c3a7fb87257e0fad8e0a7c7c839887327f993d7b80283c7f2aa",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_LA_06",
+      "topic": "english_language",
+      "heading": "Have a level of English language suitable for your occupation",
+      "source_tab": "eligibility",
+      "start_line": 54,
+      "end_line": 56,
+      "original_text": "Have a level of English language suitable for your occupation\nHave the level of English language suitable for the nominated occupation. English language requirements equivalent to the subclass 482 (Skills in Demand) visa will generally apply unless the labour agreement provides an English language concession.",
+      "source_sha256": "9c9103ca1d0a4c3a7fb87257e0fad8e0a7c7c839887327f993d7b80283c7f2aa",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_LA_07",
+      "topic": "australian_values_statement",
+      "heading": "Sign the Australian values statement",
+      "source_tab": "eligibility",
+      "start_line": 57,
+      "end_line": 59,
+      "original_text": "Sign the Australian values statement\nIf you are 18 years of age or older, you must confirm you will respect the Australian way of life and obey Australian laws when you agree to or sign an Australian Values Statement.",
+      "source_sha256": "9c9103ca1d0a4c3a7fb87257e0fad8e0a7c7c839887327f993d7b80283c7f2aa",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_LA_08",
+      "topic": "health_insurance",
+      "heading": "Have adequate health insurance",
+      "source_tab": "eligibility",
+      "start_line": 60,
+      "end_line": 71,
+      "original_text": "Have adequate health insurance\nYou are personally liable for all your healthcare costs while you are in Australia. Medical insurance helps limit your financial liability.\n\nYou must have adequate health cover for the whole of your stay to be granted this visa. Your cover should cover you for medically necessary treatment, including transport.\n\nSee what we consider adequate health insurance.\n\nSee more about health insurance for overseas visitors.\n\nReciprocal healthcare agreements\nSome countries have a reciprocal healthcare agreement with Australia. Find out more from Services Australia about reciprocal healthcare agreements.",
+      "source_sha256": "9c9103ca1d0a4c3a7fb87257e0fad8e0a7c7c839887327f993d7b80283c7f2aa",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_LA_09",
+      "topic": "government_debt",
+      "heading": "Have paid back your debt to the Australian government",
+      "source_tab": "eligibility",
+      "start_line": 72,
+      "end_line": 74,
+      "original_text": "Have paid back your debt to the Australian government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "source_sha256": "9c9103ca1d0a4c3a7fb87257e0fad8e0a7c7c839887327f993d7b80283c7f2aa",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_482_LA_10",
+      "topic": "immigration_history",
+      "heading": "Not have had a visa cancelled or a previous application refused",
+      "source_tab": "eligibility",
+      "start_line": 75,
+      "end_line": 83,
+      "original_text": "Not have had a visa cancelled or a previous application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "source_sha256": "9c9103ca1d0a4c3a7fb87257e0fad8e0a7c7c839887327f993d7b80283c7f2aa",
+      "review_status": "needs_review"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "AU_482_LA_01_EVD",
+      "source_section_id": "AU_482_LA_01",
+      "source_tab": "eligibility",
+      "exact_quote": "Be working under a labour agreement",
+      "line_number": 39,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_LA_02_EVD",
+      "source_section_id": "AU_482_LA_02",
+      "source_tab": "eligibility",
+      "exact_quote": "Have at least 1 year of work experience",
+      "line_number": 42,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_LA_03_EVD",
+      "source_section_id": "AU_482_LA_03",
+      "source_tab": "eligibility",
+      "exact_quote": "Be nominated",
+      "line_number": 45,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_LA_04_EVD",
+      "source_section_id": "AU_482_LA_04",
+      "source_tab": "eligibility",
+      "exact_quote": "Meet our health requirement",
+      "line_number": 48,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_LA_05_EVD",
+      "source_section_id": "AU_482_LA_05",
+      "source_tab": "eligibility",
+      "exact_quote": "Meet our character requirement",
+      "line_number": 51,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_LA_06_EVD",
+      "source_section_id": "AU_482_LA_06",
+      "source_tab": "eligibility",
+      "exact_quote": "Have a level of English language suitable for your occupation",
+      "line_number": 54,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_LA_07_EVD",
+      "source_section_id": "AU_482_LA_07",
+      "source_tab": "eligibility",
+      "exact_quote": "Sign the Australian values statement",
+      "line_number": 57,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_LA_08_EVD",
+      "source_section_id": "AU_482_LA_08",
+      "source_tab": "eligibility",
+      "exact_quote": "Have adequate health insurance",
+      "line_number": 60,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_LA_09_EVD",
+      "source_section_id": "AU_482_LA_09",
+      "source_tab": "eligibility",
+      "exact_quote": "Have paid back your debt to the Australian government",
+      "line_number": 72,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_482_LA_10_EVD",
+      "source_section_id": "AU_482_LA_10",
+      "source_tab": "eligibility",
+      "exact_quote": "Not have had a visa cancelled or a previous application refused",
+      "line_number": 75,
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "AU_482_LA_01_POL",
+      "program": "subclass_482_labour_agreement",
+      "topic": "labour_agreement_occupation",
+      "source_section_id": "AU_482_LA_01",
+      "source_text": "Be working under a labour agreement\nThe nominated occupation must be the subject of a labour agreement between the Commonwealth and the nominator. See the labour agreement under which you will be working.",
+      "requirement_type": "needs_review",
+      "labour_agreement_variation": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_LA_02_POL",
+      "program": "subclass_482_labour_agreement",
+      "topic": "relevant_work_experience",
+      "source_section_id": "AU_482_LA_02",
+      "source_text": "Have at least 1 year of work experience\nUnless otherwise specified in the Labour Agreement, you have gained at least 12 months relevant full-time work experience, or equivalent, within the last 5 years. Work carried out on a part-time or casual basis must be equivalent to at least 12 months full-time work.",
+      "requirement_type": "needs_review",
+      "labour_agreement_variation": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_LA_03_POL",
+      "program": "subclass_482_labour_agreement",
+      "topic": "employer_nomination",
+      "source_section_id": "AU_482_LA_03",
+      "source_text": "Be nominated\nYou must be nominated.",
+      "requirement_type": "needs_review",
+      "labour_agreement_variation": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_LA_04_POL",
+      "program": "subclass_482_labour_agreement",
+      "topic": "health_requirement",
+      "source_section_id": "AU_482_LA_04",
+      "source_text": "Meet our health requirement\nYou and any family members who apply for the visa with you must meet our health requirement.",
+      "requirement_type": "needs_review",
+      "labour_agreement_variation": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_LA_05_POL",
+      "program": "subclass_482_labour_agreement",
+      "topic": "character_requirement",
+      "source_section_id": "AU_482_LA_05",
+      "source_text": "Meet our character requirement\nYou and family members aged 16 years and over who apply for the visa with you must meet our character requirement.",
+      "requirement_type": "needs_review",
+      "labour_agreement_variation": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_LA_06_POL",
+      "program": "subclass_482_labour_agreement",
+      "topic": "english_language",
+      "source_section_id": "AU_482_LA_06",
+      "source_text": "Have a level of English language suitable for your occupation\nHave the level of English language suitable for the nominated occupation. English language requirements equivalent to the subclass 482 (Skills in Demand) visa will generally apply unless the labour agreement provides an English language concession.",
+      "requirement_type": "needs_review",
+      "labour_agreement_variation": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_LA_07_POL",
+      "program": "subclass_482_labour_agreement",
+      "topic": "australian_values_statement",
+      "source_section_id": "AU_482_LA_07",
+      "source_text": "Sign the Australian values statement\nIf you are 18 years of age or older, you must confirm you will respect the Australian way of life and obey Australian laws when you agree to or sign an Australian Values Statement.",
+      "requirement_type": "needs_review",
+      "labour_agreement_variation": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_LA_08_POL",
+      "program": "subclass_482_labour_agreement",
+      "topic": "health_insurance",
+      "source_section_id": "AU_482_LA_08",
+      "source_text": "Have adequate health insurance\nYou are personally liable for all your healthcare costs while you are in Australia. Medical insurance helps limit your financial liability.\n\nYou must have adequate health cover for the whole of your stay to be granted this visa. Your cover should cover you for medically necessary treatment, including transport.\n\nSee what we consider adequate health insurance.\n\nSee more about health insurance for overseas visitors.\n\nReciprocal healthcare agreements\nSome countries have a reciprocal healthcare agreement with Australia. Find out more from Services Australia about reciprocal healthcare agreements.",
+      "requirement_type": "needs_review",
+      "labour_agreement_variation": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_LA_09_POL",
+      "program": "subclass_482_labour_agreement",
+      "topic": "government_debt",
+      "source_section_id": "AU_482_LA_09",
+      "source_text": "Have paid back your debt to the Australian government\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government money, you or they must have paid it back or arranged to pay it back.",
+      "requirement_type": "needs_review",
+      "labour_agreement_variation": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    },
+    {
+      "policy_id": "AU_482_LA_10_POL",
+      "program": "subclass_482_labour_agreement",
+      "topic": "immigration_history",
+      "source_section_id": "AU_482_LA_10",
+      "source_text": "Not have had a visa cancelled or a previous application refused\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia.\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "requirement_type": "needs_review",
+      "labour_agreement_variation": "needs_review",
+      "exceptions": [],
+      "eligibility_rule": null,
+      "review_status": "needs_review",
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false
+    }
+  ],
+  "application_steps": [
+    {
+      "step_number": 1,
+      "heading": "Step 1",
+      "source_tab": "step_by_step",
+      "start_line": 39,
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 2,
+      "heading": "Step 2",
+      "source_tab": "step_by_step",
+      "start_line": 57,
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 3,
+      "heading": "Step 3",
+      "source_tab": "step_by_step",
+      "start_line": 214,
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 4,
+      "heading": "Step 4",
+      "source_tab": "step_by_step",
+      "start_line": 226,
+      "review_status": "needs_review"
+    }
+  ],
+  "agreement_specific_terms": {
+    "occupation": "needs_review",
+    "work_experience": "needs_review",
+    "english": "needs_review",
+    "salary": "needs_review"
+  },
+  "review_status": "needs_review",
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false
+}
