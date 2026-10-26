@@ -22,3 +22,17 @@ Thumbs.db
 # Raw source data and local backups
 data/raw/
 _local_backup/
+
+# Local JSON backups
+*.json.bak
+*.json.tmp
+
+# Generated review previews
+data/processed/usa/employment/west/2026_second_half/layout_previews/
+data/processed/usa/employment/west/2026_second_half/logical_page_previews/
+
+# Accidental Git command output files
+/a evidence and policy draft datasets*
+/a policy and evidence draft datasets*
+/h origin develop
+/tralia visa HTML sources*

@@ -1,0 +1,281 @@
+{
+  "program": "subclass_191_regional_provisional",
+  "visa_subclass": "191",
+  "stream": "regional_provisional",
+  "pathway_type": "permanent_residence",
+  "display_name": "Permanent Residence (Skilled Regional) visa (subclass 191) — Regional Provisional stream",
+  "official_sources": {
+    "eligibility": {
+      "path": "data/raw/australia/employment/subclass_191_regional_provisional_eligibility_verified.txt",
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-regional-191/regional-provisional#tm_source=chatgpt.com",
+      "sha256": "f7bdc20c5126f7374f9926970893b1151b25045f53ede709a90c09ef140cb5ec",
+      "body": "Have an eligible visa\nYou must hold an eligible visa when you apply. You must have held that visa for at least 3 years before you apply.\n\nAn eligible visa is a subclass 491 or subclass 494 visa.\n\nSatisfy the income requirement\nThere is no minimum income requirement.\n\nYou must provide notices of assessment issued by the Australian Taxation Office (ATO) for three income years out of the five years of your eligible visa.\n\nComply with the conditions of your eligible visa\nYou must have complied with the conditions of your eligible visa when in Australia. This requirement applies for the whole period you hold the visa(s).\n\nMeet our health requirement\nYou must meet our health requirement. This also applies for any family members who apply for the visa with you. Family members not coming to Australia may also need to meet the health requirement.\n\nMeet our character requirement\nYou must meet our character requirement. This also applies for family members aged 16 years and over who apply for the visa with you.\n\nOther family members not coming to Australia also need to meet the character requirement.\n\nSign the Australian values statement\nIf you are 16 years of age or older, you must:\n\nhave read, or had explained to you, the Life in Australia booklet, and\nsign an Australian Values Statement. This confirms you will respect the Australian way of life and obey Australian laws.\n\nPay back your debt to the Australian Government\nIf you or any family members owe the Australian Government money, you or they must pay it back. They can also make an arrangement to pay it back. This includes those who do not apply for the visa with you.\n\nNo prior visa cancellations or application refusals\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia (129KB PDF).\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "review_status": "needs_review"
+    },
+    "step_by_step": {
+      "path": "data/raw/australia/employment/subclass_191_regional_provisional_steps_verified.txt",
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-regional-191/regional-provisional#HowTo",
+      "sha256": "f1c0da3ae882adfb56804ee2a5521233c7b4c365a9d7480d1c9b0edf65fd48bf",
+      "body": "Step 1\n\nBefore you apply\nBefore applying you must gather and prepare your documents.\n\nGet help with your application\nOnly some people can help you with your application. If you appoint someone to give you immigration assistance they must be:\n\na registered migration agent\na legal practitioner, or\nan exempt person.\nYou can appoint anyone to receive documents on your behalf relating to your visa matter.\n\nCheck your passport is up-to-date\nYou and your all family members must have valid passports or travel documents to be able to submit an application for this visa.\n\nStep 2\n\nGather your documents\nYou will need to provide identity, character and other documents that show you have complied with your visa conditions in Australia. You will also need to provide documents for your partner and any dependent children.\n\nProvide accurate information\nProvide accurate information. See what happens if you can't prove your identity or do not provide true information.\n\nWork and residence documents\nYou must provide proof that, as the holder of your eligible visa, you lived, worked and studied in a designated area of Australia.\n\nProof of residence can include but is not limited to:\n\nleases or rental agreements\nutility bills such as telephone, gas or electricity that show your home address(es)\nschool reports\ntitle deeds to your home\nany other evidence that demonstrates you and any family members are resident in a designated area.\nProof of work can include but is not limited to:\n\nreference letters\npayslips.\nProof of study can include but is not limited to:\n\nschool reports\nacademic transcripts\nletters of completion.\nEvidence of income\nThere is no minimum income requirement.\n\nYou must provide notices of assessment issued by the Australian Taxation Office (ATO) for three income years out of the five years of your eligible visa.\n\nIf you owe money to the ATO, you must have paid it back or have an approved payment plan in place to pay it back. You should provide evidence of this.\n\nIdentity documents\nProvide the pages of your current passport showing your photo, personal details, and passport issue and expiry dates.\n\nAlso provide:\n\na national identity card, if you have one\nproof of change of name.\nDocuments that prove a change of name include:\n\na marriage or divorce certificate\nchange of name documents from an Australian Registry of Births, Deaths and Marriages, or the relevant overseas authority\ndocuments that show other names you have been known by.\nRelationship documents\nIf you are or have been married, widowed, divorced or permanently separated, provide proof such as marriage certificates, divorce documents, death certificates, separation documents or statutory declarations.\n\nIf your partner or dependent children are not included in this application, tell us the reason why (for example, they already hold Australian citizenship or are a permanent resident).\n\nCharacter documents\nProvide an Australian police certificate if you have spent a total of 12 months or more in Australia in the last 10 years since you turned 16.\n\nWe only accept complete disclosure National Police Certificates issued by the Australian Federal Police. We do not accept standard disclosure certificates or national police certificates issued by Australian state or territory police.\n\nFor immigration purposes, Australian police certificates are valid for 12 months from the date of issue.\n\nAlso provide:\n\nan overseas police certificate from every country, including your home country, where you spent a total of 12 months or more in the last 10 years since you turned 16.\nmilitary service records or discharge papers if you served in the armed forces of any country.\nComplete and provide the following forms:\n\nForm 80 – Personal particulars for character assessment (596KB PDF)\nForm 1221 Additional personal particulars information (331KB PDF)\nPartner documents\nWe need to see evidence of your partner's identity and relationship with you. \n\nProvide:\n\nidentity documents and photos\ncharacter documents\nmarriage certificate, if applicable\ndocuments about other relationships, if applicable.\nFor de facto relationships, provide either:\n\nevidence that your relationship is registered by an Australian State or Territory \ndocuments to prove you have been in a de facto relationship with your partner for at least 12 months before you apply.\nFor both married and de facto applicants you must provide evidence that you are in a genuine and continuing relationship. Evidence can include but is not limited to:\n\njoint bank account statements\nbilling accounts in joint names\njoint leases or mortgages\ndocuments that show your partner has lived at the same address as you.\nDependants under 18 documents\nFor every dependant 18 years old or younger who is applying with you, provide:\n\ncopies of birth certificates or the family book showing the names of both parents of all your dependent children\ncopies of the adoption paper, if applicable\nparental responsibility documents, if applicable. \nParental responsibility documents\nYou must get consent for any applicant under 18 years of age to migrate to Australia from anyone who:\n\nhas a legal right to decide where the child lives and\nis not coming to Australia with the child.\nThey must complete either:\n\nForm 1229 Consent form to grant an Australian visa to a child under the age of 18 years (276KB PDF), or\na statutory declaration giving their consent for the child to migrate to Australia on this visa.\nAlternatively, you can show us:\n\nan Australian court order that allows your child to migrate to Australia, or\nthat the laws of your home country allow them to migrate.\nInclude:\n\nan identity document that shows the signature and photo of the person who completed the form or declaration, such as a passport or driver’s licence\nadoption papers or other court documents, if applicable.\nDependants over 18 documents\nTo include your child who is over 18 in your visa application, they must hold an eligible visa that was granted on the basis that they were a member of your family unit.\n\nProvide:\n\nidentity documents\nproof of your relationship with the dependant such as a birth certificate or adoption papers\ncharacter documents\nmarriage certificate, if applicable\ndocuments about other relationships, if applicable.\nTell us you are getting help\nTo nominate someone to:\n\nreceive your correspondence, use Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration assistance, use Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nPrepare your documents\nTranslate\nHave all non-English documents translated into English.\n\nProvide original and translated documents in your application. \n\nTranslators in Australia must be accredited by the National Accreditation Authority for Translators and Interpreters.\n\nTranslators outside Australia do not have to be accredited but on each translation, they must include their:\n\nfull name\naddress and telephone number\nqualifications and experience in the language they are translating\nThese details must be in English.\n\nScan of photograph\nScan or photograph all documents (English and non-English) in colour.\n\nThe scans and photos must be clear.\n\nNote: You do not need to have any documents certified\n\nIf a document is more than 1 page, save it all as 1 file.\n\nStep 3\n\nApply for the visa\nYou can apply for this visa online. You can be inside or outside Australia when you apply.\n\nProvide accurate information\nProvide accurate information. See what happens if you can't prove your identity or do not provide true information.\n\nApply for this visa online in ImmiAccount\n\nLog in or create an ImmiAccount\nAttach your documents\nPay the first application charge. We will not process your application until you pay this first instalment of the visa application charge.\nNote your transaction reference number (TRN).\nStep 4\n\nAfter you apply\nWe will let you know when we have received your application.\n\nIf you are granted a bridging visa you will receive notification of your visa grant.\n\nStatus updates\nWe do not give updates on applications under assessment.\n\nYou can check if we need more information from you in ImmiAccount. \n\nTravel after you apply\nYou don't have to tell us if you want to travel outside Australia while we process your application.\n\nIf you leave Australia, make sure you have a valid visa to return. To see if you can return on your current visa, check VEVO.\n\nLearn about visa expiry.\n\nHealth exams\nWe will let you know if you need health examinations.\n\nBiometrics\nWe might ask for biometrics (fingerprints and photo). We will let you know if you need to provide them.\n\nAttach more information\nIf you did not attach all documents when you applied, attach them as soon as you can in ImmiAccount.\n\nWe might also ask you to provide more information; however we are not obliged to do so and we may make a decision on your application without asking for more documents.\n\nStay lawful\nYou can apply for this visa in or out of Australia.\n\nIf you apply for the visa in Australia, make sure you stay lawful by holding a valid visa while we process your application.\n\nIf you apply for the visa in Australia, you may be granted a bridging visa (BV). If your current visa expires before we decide on your application, the BV will come into effect. You can stay in Australia on the BV while we process your new visa application.\n\nDo not ask to have the visa you currently hold cancelled. If your visa is cancelled:\n\nyou will be staying in Australia unlawfully\nyour BV will cease.\nLearn more about visa expiry.\n\nAdd family\nYou can add members of the family unit to your application after you apply but before we decide on your visa.\n\nComplete Form 1436 - Adding an additional applicant after lodgement (481KB PDF), pay using ImmiAccount, attach the form and supporting documents to your ImmiAccount.\n\nFamily members who apply for the visa must meet our health and character requirements.\n\nFamily members who are not coming to Australia do have to meet our character requirement and might have to meet our health requirement.\n\nNewborn child\nIf your child is born after you submit your application but before we decide on your visa, you must tell us as soon as possible.\n\nFind out what to do if your child is born after you apply.\n\nMistakes on your application\nYou must tell us as soon as possible if you made a mistake on your application.\n\nComplete Form 1023 Notification of incorrect answers (168KB PDF) and attach it in ImmiAccount.\n\nHelp with your application\nLet us know if you no longer want someone to:\n\nreceive your correspondence - complete Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration advice - complete Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nFor more information see Who can help you with your application.\n\nTell us if things change\nThings you need to let us know about after you have applied include:\n\nchanges to your phone number, email, address or passport\nchanges to your marital or de facto status\nthe birth of a child\nyou want to withdraw your application. Removing your application from ImmiAccount does not withdraw it.\nSee how to tell us if your situation changes.\n\nStep 5\n\nVisa outcome\nYou can be inside or outside Australia when we decide your visa application. We will let you know our decision in writing.\n\nIf we grant your visa, we will tell you:\n\nyour visa grant number\nthe date your visa starts\nyour visa conditions, if applicable\nKeep a copy of the decision.\n\nIf we refuse your visa, we will tell you:\n\nwhy we refused the visa\nwhether you have a right to a review of the decision\nWe will not refund the application charge if we refuse your application.",
+      "review_status": "needs_review"
+    }
+  },
+  "eligibility_sections": [
+    {
+      "section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_01",
+      "topic": "topic_pending_review",
+      "heading": "Have an eligible visa",
+      "source_tab": "eligibility",
+      "source_sha256": "f7bdc20c5126f7374f9926970893b1151b25045f53ede709a90c09ef140cb5ec",
+      "start_line": 1,
+      "end_line": 5,
+      "original_text": "Have an eligible visa\nYou must hold an eligible visa when you apply. You must have held that visa for at least 3 years before you apply.\n\nAn eligible visa is a subclass 491 or subclass 494 visa.\n\n",
+      "detail_status": "segmented_needs_review",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_02",
+      "topic": "topic_pending_review",
+      "heading": "Satisfy the income requirement",
+      "source_tab": "eligibility",
+      "source_sha256": "f7bdc20c5126f7374f9926970893b1151b25045f53ede709a90c09ef140cb5ec",
+      "start_line": 6,
+      "end_line": 13,
+      "original_text": "Satisfy the income requirement\nThere is no minimum income requirement.\n\nYou must provide notices of assessment issued by the Australian Taxation Office (ATO) for three income years out of the five years of your eligible visa.\n\nComply with the conditions of your eligible visa\nYou must have complied with the conditions of your eligible visa when in Australia. This requirement applies for the whole period you hold the visa(s).\n\n",
+      "detail_status": "segmented_needs_review",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_03",
+      "topic": "topic_pending_review",
+      "heading": "Meet our health requirement",
+      "source_tab": "eligibility",
+      "source_sha256": "f7bdc20c5126f7374f9926970893b1151b25045f53ede709a90c09ef140cb5ec",
+      "start_line": 14,
+      "end_line": 16,
+      "original_text": "Meet our health requirement\nYou must meet our health requirement. This also applies for any family members who apply for the visa with you. Family members not coming to Australia may also need to meet the health requirement.\n\n",
+      "detail_status": "segmented_needs_review",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_04",
+      "topic": "topic_pending_review",
+      "heading": "Meet our character requirement",
+      "source_tab": "eligibility",
+      "source_sha256": "f7bdc20c5126f7374f9926970893b1151b25045f53ede709a90c09ef140cb5ec",
+      "start_line": 17,
+      "end_line": 21,
+      "original_text": "Meet our character requirement\nYou must meet our character requirement. This also applies for family members aged 16 years and over who apply for the visa with you.\n\nOther family members not coming to Australia also need to meet the character requirement.\n\n",
+      "detail_status": "segmented_needs_review",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_05",
+      "topic": "topic_pending_review",
+      "heading": "Sign the Australian values statement",
+      "source_tab": "eligibility",
+      "source_sha256": "f7bdc20c5126f7374f9926970893b1151b25045f53ede709a90c09ef140cb5ec",
+      "start_line": 22,
+      "end_line": 27,
+      "original_text": "Sign the Australian values statement\nIf you are 16 years of age or older, you must:\n\nhave read, or had explained to you, the Life in Australia booklet, and\nsign an Australian Values Statement. This confirms you will respect the Australian way of life and obey Australian laws.\n\n",
+      "detail_status": "segmented_needs_review",
+      "review_status": "needs_review"
+    },
+    {
+      "section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_06",
+      "topic": "topic_pending_review",
+      "heading": "Pay back your debt to the Australian Government",
+      "source_tab": "eligibility",
+      "source_sha256": "f7bdc20c5126f7374f9926970893b1151b25045f53ede709a90c09ef140cb5ec",
+      "start_line": 28,
+      "end_line": 38,
+      "original_text": "Pay back your debt to the Australian Government\nIf you or any family members owe the Australian Government money, you or they must pay it back. They can also make an arrangement to pay it back. This includes those who do not apply for the visa with you.\n\nNo prior visa cancellations or application refusals\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia (129KB PDF).\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "detail_status": "segmented_needs_review",
+      "review_status": "needs_review"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "AU_191_REGIONAL_PROVISIONAL_EVD_01",
+      "source_section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_01",
+      "source_tab": "eligibility",
+      "exact_quote": "Have an eligible visa\nYou must hold an eligible visa when you apply. You must have held that visa for at least 3 years before you apply.\n\nAn eligible visa is a subclass 491 or subclass 494 visa.\n\n",
+      "start_line": 1,
+      "end_line": 5,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_191_REGIONAL_PROVISIONAL_EVD_02",
+      "source_section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_02",
+      "source_tab": "eligibility",
+      "exact_quote": "Satisfy the income requirement\nThere is no minimum income requirement.\n\nYou must provide notices of assessment issued by the Australian Taxation Office (ATO) for three income years out of the five years of your eligible visa.\n\nComply with the conditions of your eligible visa\nYou must have complied with the conditions of your eligible visa when in Australia. This requirement applies for the whole period you hold the visa(s).\n\n",
+      "start_line": 6,
+      "end_line": 13,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_191_REGIONAL_PROVISIONAL_EVD_03",
+      "source_section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_03",
+      "source_tab": "eligibility",
+      "exact_quote": "Meet our health requirement\nYou must meet our health requirement. This also applies for any family members who apply for the visa with you. Family members not coming to Australia may also need to meet the health requirement.\n\n",
+      "start_line": 14,
+      "end_line": 16,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_191_REGIONAL_PROVISIONAL_EVD_04",
+      "source_section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_04",
+      "source_tab": "eligibility",
+      "exact_quote": "Meet our character requirement\nYou must meet our character requirement. This also applies for family members aged 16 years and over who apply for the visa with you.\n\nOther family members not coming to Australia also need to meet the character requirement.\n\n",
+      "start_line": 17,
+      "end_line": 21,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_191_REGIONAL_PROVISIONAL_EVD_05",
+      "source_section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_05",
+      "source_tab": "eligibility",
+      "exact_quote": "Sign the Australian values statement\nIf you are 16 years of age or older, you must:\n\nhave read, or had explained to you, the Life in Australia booklet, and\nsign an Australian Values Statement. This confirms you will respect the Australian way of life and obey Australian laws.\n\n",
+      "start_line": 22,
+      "end_line": 27,
+      "review_status": "needs_review"
+    },
+    {
+      "evidence_id": "AU_191_REGIONAL_PROVISIONAL_EVD_06",
+      "source_section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_06",
+      "source_tab": "eligibility",
+      "exact_quote": "Pay back your debt to the Australian Government\nIf you or any family members owe the Australian Government money, you or they must pay it back. They can also make an arrangement to pay it back. This includes those who do not apply for the visa with you.\n\nNo prior visa cancellations or application refusals\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia (129KB PDF).\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "start_line": 28,
+      "end_line": 38,
+      "review_status": "needs_review"
+    }
+  ],
+  "policy_candidates": [
+    {
+      "policy_id": "AU_191_REGIONAL_PROVISIONAL_POL_01",
+      "program": "subclass_191_regional_provisional",
+      "topic": "topic_pending_review",
+      "source_section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_01",
+      "source_text": "Have an eligible visa\nYou must hold an eligible visa when you apply. You must have held that visa for at least 3 years before you apply.\n\nAn eligible visa is a subclass 491 or subclass 494 visa.\n\n",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_191_REGIONAL_PROVISIONAL_POL_02",
+      "program": "subclass_191_regional_provisional",
+      "topic": "topic_pending_review",
+      "source_section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_02",
+      "source_text": "Satisfy the income requirement\nThere is no minimum income requirement.\n\nYou must provide notices of assessment issued by the Australian Taxation Office (ATO) for three income years out of the five years of your eligible visa.\n\nComply with the conditions of your eligible visa\nYou must have complied with the conditions of your eligible visa when in Australia. This requirement applies for the whole period you hold the visa(s).\n\n",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_191_REGIONAL_PROVISIONAL_POL_03",
+      "program": "subclass_191_regional_provisional",
+      "topic": "topic_pending_review",
+      "source_section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_03",
+      "source_text": "Meet our health requirement\nYou must meet our health requirement. This also applies for any family members who apply for the visa with you. Family members not coming to Australia may also need to meet the health requirement.\n\n",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_191_REGIONAL_PROVISIONAL_POL_04",
+      "program": "subclass_191_regional_provisional",
+      "topic": "topic_pending_review",
+      "source_section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_04",
+      "source_text": "Meet our character requirement\nYou must meet our character requirement. This also applies for family members aged 16 years and over who apply for the visa with you.\n\nOther family members not coming to Australia also need to meet the character requirement.\n\n",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_191_REGIONAL_PROVISIONAL_POL_05",
+      "program": "subclass_191_regional_provisional",
+      "topic": "topic_pending_review",
+      "source_section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_05",
+      "source_text": "Sign the Australian values statement\nIf you are 16 years of age or older, you must:\n\nhave read, or had explained to you, the Life in Australia booklet, and\nsign an Australian Values Statement. This confirms you will respect the Australian way of life and obey Australian laws.\n\n",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    },
+    {
+      "policy_id": "AU_191_REGIONAL_PROVISIONAL_POL_06",
+      "program": "subclass_191_regional_provisional",
+      "topic": "topic_pending_review",
+      "source_section_id": "AU_191_REGIONAL_PROVISIONAL_ELIG_06",
+      "source_text": "Pay back your debt to the Australian Government\nIf you or any family members owe the Australian Government money, you or they must pay it back. They can also make an arrangement to pay it back. This includes those who do not apply for the visa with you.\n\nNo prior visa cancellations or application refusals\nWe will consider your immigration history when we make a decision on your application, which means you might not be eligible for this visa if you have had a visa cancelled or refused.\n\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application refused see Limitations on applications in Australia (129KB PDF).\n\nIf applying for a visa from outside Australia see Can I go to Australia.\n\nIf you want immigration assistance, see Who can help with your visa application.",
+      "requirement_type": "needs_review",
+      "exception_review_status": "needs_review",
+      "eligibility_rule": null,
+      "legal_validation_approved": false,
+      "approved_for_eligibility_decision": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "application_steps": [
+    {
+      "step_number": 1,
+      "source_tab": "step_by_step",
+      "original_text": "Step 1\n\nBefore you apply\nBefore applying you must gather and prepare your documents.\n\nGet help with your application\nOnly some people can help you with your application. If you appoint someone to give you immigration assistance they must be:\n\na registered migration agent\na legal practitioner, or\nan exempt person.\nYou can appoint anyone to receive documents on your behalf relating to your visa matter.\n\nCheck your passport is up-to-date\nYou and your all family members must have valid passports or travel documents to be able to submit an application for this visa.",
+      "extraction_status": "automatically_segmented_needs_review",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 2,
+      "source_tab": "step_by_step",
+      "original_text": "Step 2\n\nGather your documents\nYou will need to provide identity, character and other documents that show you have complied with your visa conditions in Australia. You will also need to provide documents for your partner and any dependent children.\n\nProvide accurate information\nProvide accurate information. See what happens if you can't prove your identity or do not provide true information.\n\nWork and residence documents\nYou must provide proof that, as the holder of your eligible visa, you lived, worked and studied in a designated area of Australia.\n\nProof of residence can include but is not limited to:\n\nleases or rental agreements\nutility bills such as telephone, gas or electricity that show your home address(es)\nschool reports\ntitle deeds to your home\nany other evidence that demonstrates you and any family members are resident in a designated area.\nProof of work can include but is not limited to:\n\nreference letters\npayslips.\nProof of study can include but is not limited to:\n\nschool reports\nacademic transcripts\nletters of completion.\nEvidence of income\nThere is no minimum income requirement.\n\nYou must provide notices of assessment issued by the Australian Taxation Office (ATO) for three income years out of the five years of your eligible visa.\n\nIf you owe money to the ATO, you must have paid it back or have an approved payment plan in place to pay it back. You should provide evidence of this.\n\nIdentity documents\nProvide the pages of your current passport showing your photo, personal details, and passport issue and expiry dates.\n\nAlso provide:\n\na national identity card, if you have one\nproof of change of name.\nDocuments that prove a change of name include:\n\na marriage or divorce certificate\nchange of name documents from an Australian Registry of Births, Deaths and Marriages, or the relevant overseas authority\ndocuments that show other names you have been known by.\nRelationship documents\nIf you are or have been married, widowed, divorced or permanently separated, provide proof such as marriage certificates, divorce documents, death certificates, separation documents or statutory declarations.\n\nIf your partner or dependent children are not included in this application, tell us the reason why (for example, they already hold Australian citizenship or are a permanent resident).\n\nCharacter documents\nProvide an Australian police certificate if you have spent a total of 12 months or more in Australia in the last 10 years since you turned 16.\n\nWe only accept complete disclosure National Police Certificates issued by the Australian Federal Police. We do not accept standard disclosure certificates or national police certificates issued by Australian state or territory police.\n\nFor immigration purposes, Australian police certificates are valid for 12 months from the date of issue.\n\nAlso provide:\n\nan overseas police certificate from every country, including your home country, where you spent a total of 12 months or more in the last 10 years since you turned 16.\nmilitary service records or discharge papers if you served in the armed forces of any country.\nComplete and provide the following forms:\n\nForm 80 – Personal particulars for character assessment (596KB PDF)\nForm 1221 Additional personal particulars information (331KB PDF)\nPartner documents\nWe need to see evidence of your partner's identity and relationship with you. \n\nProvide:\n\nidentity documents and photos\ncharacter documents\nmarriage certificate, if applicable\ndocuments about other relationships, if applicable.\nFor de facto relationships, provide either:\n\nevidence that your relationship is registered by an Australian State or Territory \ndocuments to prove you have been in a de facto relationship with your partner for at least 12 months before you apply.\nFor both married and de facto applicants you must provide evidence that you are in a genuine and continuing relationship. Evidence can include but is not limited to:\n\njoint bank account statements\nbilling accounts in joint names\njoint leases or mortgages\ndocuments that show your partner has lived at the same address as you.\nDependants under 18 documents\nFor every dependant 18 years old or younger who is applying with you, provide:\n\ncopies of birth certificates or the family book showing the names of both parents of all your dependent children\ncopies of the adoption paper, if applicable\nparental responsibility documents, if applicable. \nParental responsibility documents\nYou must get consent for any applicant under 18 years of age to migrate to Australia from anyone who:\n\nhas a legal right to decide where the child lives and\nis not coming to Australia with the child.\nThey must complete either:\n\nForm 1229 Consent form to grant an Australian visa to a child under the age of 18 years (276KB PDF), or\na statutory declaration giving their consent for the child to migrate to Australia on this visa.\nAlternatively, you can show us:\n\nan Australian court order that allows your child to migrate to Australia, or\nthat the laws of your home country allow them to migrate.\nInclude:\n\nan identity document that shows the signature and photo of the person who completed the form or declaration, such as a passport or driver’s licence\nadoption papers or other court documents, if applicable.\nDependants over 18 documents\nTo include your child who is over 18 in your visa application, they must hold an eligible visa that was granted on the basis that they were a member of your family unit.\n\nProvide:\n\nidentity documents\nproof of your relationship with the dependant such as a birth certificate or adoption papers\ncharacter documents\nmarriage certificate, if applicable\ndocuments about other relationships, if applicable.\nTell us you are getting help\nTo nominate someone to:\n\nreceive your correspondence, use Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration assistance, use Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nPrepare your documents\nTranslate\nHave all non-English documents translated into English.\n\nProvide original and translated documents in your application. \n\nTranslators in Australia must be accredited by the National Accreditation Authority for Translators and Interpreters.\n\nTranslators outside Australia do not have to be accredited but on each translation, they must include their:\n\nfull name\naddress and telephone number\nqualifications and experience in the language they are translating\nThese details must be in English.\n\nScan of photograph\nScan or photograph all documents (English and non-English) in colour.\n\nThe scans and photos must be clear.\n\nNote: You do not need to have any documents certified\n\nIf a document is more than 1 page, save it all as 1 file.",
+      "extraction_status": "automatically_segmented_needs_review",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 3,
+      "source_tab": "step_by_step",
+      "original_text": "Step 3\n\nApply for the visa\nYou can apply for this visa online. You can be inside or outside Australia when you apply.\n\nProvide accurate information\nProvide accurate information. See what happens if you can't prove your identity or do not provide true information.\n\nApply for this visa online in ImmiAccount\n\nLog in or create an ImmiAccount\nAttach your documents\nPay the first application charge. We will not process your application until you pay this first instalment of the visa application charge.\nNote your transaction reference number (TRN).",
+      "extraction_status": "automatically_segmented_needs_review",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 4,
+      "source_tab": "step_by_step",
+      "original_text": "Step 4\n\nAfter you apply\nWe will let you know when we have received your application.\n\nIf you are granted a bridging visa you will receive notification of your visa grant.\n\nStatus updates\nWe do not give updates on applications under assessment.\n\nYou can check if we need more information from you in ImmiAccount. \n\nTravel after you apply\nYou don't have to tell us if you want to travel outside Australia while we process your application.\n\nIf you leave Australia, make sure you have a valid visa to return. To see if you can return on your current visa, check VEVO.\n\nLearn about visa expiry.\n\nHealth exams\nWe will let you know if you need health examinations.\n\nBiometrics\nWe might ask for biometrics (fingerprints and photo). We will let you know if you need to provide them.\n\nAttach more information\nIf you did not attach all documents when you applied, attach them as soon as you can in ImmiAccount.\n\nWe might also ask you to provide more information; however we are not obliged to do so and we may make a decision on your application without asking for more documents.\n\nStay lawful\nYou can apply for this visa in or out of Australia.\n\nIf you apply for the visa in Australia, make sure you stay lawful by holding a valid visa while we process your application.\n\nIf you apply for the visa in Australia, you may be granted a bridging visa (BV). If your current visa expires before we decide on your application, the BV will come into effect. You can stay in Australia on the BV while we process your new visa application.\n\nDo not ask to have the visa you currently hold cancelled. If your visa is cancelled:\n\nyou will be staying in Australia unlawfully\nyour BV will cease.\nLearn more about visa expiry.\n\nAdd family\nYou can add members of the family unit to your application after you apply but before we decide on your visa.\n\nComplete Form 1436 - Adding an additional applicant after lodgement (481KB PDF), pay using ImmiAccount, attach the form and supporting documents to your ImmiAccount.\n\nFamily members who apply for the visa must meet our health and character requirements.\n\nFamily members who are not coming to Australia do have to meet our character requirement and might have to meet our health requirement.\n\nNewborn child\nIf your child is born after you submit your application but before we decide on your visa, you must tell us as soon as possible.\n\nFind out what to do if your child is born after you apply.\n\nMistakes on your application\nYou must tell us as soon as possible if you made a mistake on your application.\n\nComplete Form 1023 Notification of incorrect answers (168KB PDF) and attach it in ImmiAccount.\n\nHelp with your application\nLet us know if you no longer want someone to:\n\nreceive your correspondence - complete Form 956A Appointment or withdrawal of an authorised recipient (301KB PDF)\nprovide immigration advice - complete Form 956 Appointment of a registered migration agent, legal practitioner or exempt person (308KB PDF).\nUpload your written notification or your forms to ImmiAccount.\n\nFor more information see Who can help you with your application.\n\nTell us if things change\nThings you need to let us know about after you have applied include:\n\nchanges to your phone number, email, address or passport\nchanges to your marital or de facto status\nthe birth of a child\nyou want to withdraw your application. Removing your application from ImmiAccount does not withdraw it.\nSee how to tell us if your situation changes.",
+      "extraction_status": "automatically_segmented_needs_review",
+      "review_status": "needs_review"
+    },
+    {
+      "step_number": 5,
+      "source_tab": "step_by_step",
+      "original_text": "Step 5\n\nVisa outcome\nYou can be inside or outside Australia when we decide your visa application. We will let you know our decision in writing.\n\nIf we grant your visa, we will tell you:\n\nyour visa grant number\nthe date your visa starts\nyour visa conditions, if applicable\nKeep a copy of the decision.\n\nIf we refuse your visa, we will tell you:\n\nwhy we refused the visa\nwhether you have a right to a review of the decision\nWe will not refund the application charge if we refuse your application.",
+      "extraction_status": "automatically_segmented_needs_review",
+      "review_status": "needs_review"
+    }
+  ],
+  "extraction_status": "sectioned_needs_review",
+  "detailed_rules_pending": [
+    "eligibility_topic_segmentation",
+    "conditional_requirements",
+    "required_documents",
+    "application_step_completeness",
+    "legal_validation"
+  ],
+  "review_status": "needs_review",
+  "legal_validation_approved": false,
+  "approved_for_eligibility_decision": false
+}
