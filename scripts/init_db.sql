@@ -1,5 +1,6 @@
 
 BEGIN;
+CREATE EXTENSION IF NOT EXISTS vector;
 
 CREATE TABLE IF NOT EXISTS programs (
     program_id TEXT PRIMARY KEY,
@@ -21,7 +22,7 @@ CREATE TABLE IF NOT EXISTS programs (
 CREATE TABLE IF NOT EXISTS support_programs (
     support_program_id TEXT PRIMARY KEY,
     country TEXT NOT NULL
-        CHECK (country IN ('japan', 'australia', 'usa', 'germany', 'canada')),
+        CHECK (country IN ('japan', 'australia', 'usa', 'germany', 'canada', 'multi_country')),
     name TEXT NOT NULL,
     provider TEXT,
     source_file TEXT,
@@ -52,7 +53,7 @@ CREATE TABLE IF NOT EXISTS policy_candidates (
     policy_id TEXT PRIMARY KEY,
     program_id TEXT NOT NULL REFERENCES programs(program_id),
     country TEXT NOT NULL
-        CHECK (country IN ('japan', 'australia', 'usa', 'germany', 'canada', 'multi_country')),
+        CHECK (country IN ('japan', 'australia', 'usa', 'germany', 'canada')),
     topic TEXT,
     source_evidence_ids TEXT[] NOT NULL DEFAULT '{}',
     policy_text TEXT,

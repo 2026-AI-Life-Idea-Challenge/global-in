@@ -76,6 +76,42 @@ PROGRAMS = [
             "종료. 다음 회차 일정은 미확인"
         ),
     },
+    {
+        "id": "KR_SUPPORT_WELL",
+        "country": "multi_country",
+        "name": "해외일경험지원사업(WELL)",
+        "provider": "한국산업인력공단",
+        "url": "https://www.worldjob.or.kr/ovsea/well.do",
+        "category": "overseas_work_experience",
+        "benefit": "해외 현지 일경험, 준비금, 수료금 및 체재비 지원",
+        "target": "사업 참여요건과 선발기준을 충족하는 청년",
+        "scope": "미국·캐나다·호주·독일·일본 등 사업 대상 국가",
+        "notes": "국가별 모집 여부, 비자, 어학요건 및 중복참여 제한 확인 필요",
+    },
+    {
+        "id": "KR_SUPPORT_JOB_MATCHING",
+        "country": "multi_country",
+        "name": "해외취업알선",
+        "provider": "한국산업인력공단",
+        "url": "https://www.worldjob.or.kr/ovsea/empymn.do?menuId=1000000040",
+        "category": "overseas_job_matching",
+        "benefit": "해외 구인기업과 구직자 간 취업 알선 및 매칭",
+        "target": "해외취업을 희망하는 구직자",
+        "scope": "채용공고별 국가와 직종 확인 필요",
+        "notes": "현금 지원사업이 아닌 취업연계 서비스. 공고별 지원자격 검토 필요",
+    },
+    {
+        "id": "KR_SUPPORT_KMOVE_MENTORING",
+        "country": "multi_country",
+        "name": "K-MOVE 멘토링",
+        "provider": "한국산업인력공단",
+        "url": "https://kmovefair.worldjob.or.kr/kmove/intro.do",
+        "category": "overseas_employment_mentoring",
+        "benefit": "해외취업 준비, 현지정보 및 정착 관련 멘토링",
+        "target": "해외진출을 준비하는 청년",
+        "scope": "멘토별 국가와 분야 확인 필요",
+        "notes": "현금 지원사업이 아닌 멘토링 서비스. 모집 및 신청조건 재확인 필요",
+    },
 ]
 
 
@@ -98,7 +134,7 @@ def main():
                 "SELECT COUNT(*) FROM support_programs"
             ).fetchone()[0]
 
-            if existing not in (0, len(PROGRAMS)):
+            if existing not in (0,4, len(PROGRAMS)):
                 raise RuntimeError(
                     f"예상하지 않은 기존 지원제도 데이터: {existing}건"
                 )
@@ -208,7 +244,7 @@ def main():
                 """
             ).fetchone()
 
-            if totals != (40, 590, 1241, 4):
+            if totals != (40, 590, 1241, len(PROGRAMS)):
                 raise RuntimeError(
                     f"전체 데이터 수 불일치: {totals}"
                 )
