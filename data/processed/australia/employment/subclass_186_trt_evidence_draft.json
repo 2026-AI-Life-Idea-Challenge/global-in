@@ -309,7 +309,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "d34fbb837cdf93ce",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_186_TRT_POL_02",
@@ -322,7 +334,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "4b9f0c9fac436482",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_186_TRT_POL_03",
@@ -335,7 +359,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "13481329ef5fe046",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_186_TRT_POL_04",
@@ -348,7 +384,23 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "0e6116df07277006",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "section_boundary_or_navigation_difference_verified",
+        "boundary_method": "split_current_nomination_section",
+        "current_section_fingerprints": [
+          "eaccf1f8a1b78a4d"
+        ]
+      }
     },
     {
       "policy_id": "AU_186_TRT_POL_05",
@@ -361,7 +413,23 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "49899b6d32b5bd8c",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "section_boundary_or_navigation_difference_verified",
+        "boundary_method": "split_current_nomination_section",
+        "current_section_fingerprints": [
+          "eaccf1f8a1b78a4d"
+        ]
+      }
     },
     {
       "policy_id": "AU_186_TRT_POL_06",
@@ -374,7 +442,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "496e2ad4c6d2861b",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_186_TRT_POL_07",
@@ -387,7 +467,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "a25ea702bb4386c9",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_186_TRT_POL_08",
@@ -400,7 +492,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "f730a62a9c198c1d",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_186_TRT_POL_09",
@@ -413,7 +517,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "d51532b59f7fdd04",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_186_TRT_POL_10",
@@ -426,7 +542,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "a09587df1e9a3634",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_186_TRT_POL_11",
@@ -439,7 +567,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "d32fbb098dd8dee4",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_186_TRT_POL_12",
@@ -452,7 +592,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "913ad4d6e3fad4ec",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_186_TRT_POL_13",
@@ -465,7 +617,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "5756dd1d3dce9b84",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     }
   ],
   "application_steps": [
@@ -573,5 +737,11 @@
   },
   "review_status": "needs_review",
   "legal_validation_approved": false,
-  "approved_for_eligibility_decision": false
+  "approved_for_eligibility_decision": false,
+  "official_review_summary": {
+    "reviewed_at": "2026-10-28",
+    "policy_count": 13,
+    "observed_live_section_count": 12,
+    "legal_validation_completed_count": 0
+  }
 }

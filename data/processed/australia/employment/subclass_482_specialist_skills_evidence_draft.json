@@ -319,7 +319,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "ac78485ef14a4a24",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_02",
@@ -333,7 +345,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "8dc306a63711a71f",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_03",
@@ -347,7 +371,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "2367b4824868d5ef",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_04",
@@ -361,7 +397,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "b94defdb673633d7",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_05",
@@ -375,7 +423,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "cb4975fdf0fef733",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_06",
@@ -389,7 +449,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "834bfaa148682636",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_07",
@@ -403,7 +475,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "9478375dd5b7d0c6",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_08",
@@ -417,7 +501,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "557bcdac7e237e1c",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_09",
@@ -431,7 +527,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "6cb745addfcc09c9",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_10",
@@ -445,7 +553,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "29a77e1d2224927d",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_11",
@@ -459,7 +579,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "8373ebe4de11bd53",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_12",
@@ -473,7 +605,24 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "d210ad1c8f3cade4",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "section_boundary_or_navigation_difference_verified",
+        "boundary_method": "join_current_sponsorship_and_english",
+        "current_section_fingerprints": [
+          "eb749cc62650b0d9",
+          "1c0b3e564328b7ef"
+        ]
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_13",
@@ -487,7 +636,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "c35d6ab2b7d976d0",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_14",
@@ -501,7 +662,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "6e04aba5cf774c3b",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_SPECIALIST_POL_15",
@@ -515,7 +688,23 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "6deb868c5e9c079a",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "section_boundary_or_navigation_difference_verified",
+        "boundary_method": "current_values_plus_old_navigation_footer",
+        "current_section_fingerprints": [
+          "5996e73caf917e2d"
+        ]
+      }
     }
   ],
   "supplemental_policy_candidates": [
@@ -588,5 +777,11 @@
     "source_file": "data/raw/australia/employment/subclass_482_specialist_skills_step_by_step.txt",
     "source_sha256": "b140bd7d064ed4277b08abdf04cc2a36387a5e09251487114a1705037eedf4fd",
     "review_status": "needs_review"
+  },
+  "official_review_summary": {
+    "reviewed_at": "2026-10-28",
+    "policy_count": 15,
+    "observed_live_section_count": 16,
+    "legal_validation_completed_count": 0
   }
 }

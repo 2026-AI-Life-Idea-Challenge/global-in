@@ -309,7 +309,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "001db1935ce96fa9",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_407_POL_02",
@@ -322,7 +334,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "da86379918e40a8a",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_407_POL_03",
@@ -335,7 +359,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "172d724de126d0d8",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_407_POL_04",
@@ -348,7 +384,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "c67bc44ae2b88928",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_407_POL_05",
@@ -361,7 +409,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "29e37a56b34f2a79",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_407_POL_06",
@@ -374,7 +434,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "6b6e59451c06828a",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_407_POL_07",
@@ -387,7 +459,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "50c4f5526e4ab9f3",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_407_POL_08",
@@ -400,7 +484,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "c19f2a6df9762f94",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_407_POL_09",
@@ -413,7 +509,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "04a8d3591e0b18ee",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_407_POL_10",
@@ -426,7 +534,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "d32fbb098dd8dee4",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_407_POL_11",
@@ -439,7 +559,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "0685d579e986b9f8",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_407_POL_12",
@@ -452,7 +584,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "000b0106d6ceb788",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_407_POL_13",
@@ -465,7 +609,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "a6c758e0ba193cb7",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     }
   ],
   "application_steps": [
@@ -618,5 +774,11 @@
   },
   "review_status": "needs_review",
   "legal_validation_approved": false,
-  "approved_for_eligibility_decision": false
+  "approved_for_eligibility_decision": false,
+  "official_review_summary": {
+    "reviewed_at": "2026-10-28",
+    "policy_count": 13,
+    "observed_live_section_count": 13,
+    "legal_validation_completed_count": 0
+  }
 }

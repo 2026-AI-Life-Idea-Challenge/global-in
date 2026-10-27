@@ -1,0 +1,45 @@
+{
+  "reviewed_at": "2026-10-28",
+  "stage": "review_corrections_versioned_and_evidence_reextracted_final_law_pending",
+  "policy_total": 590,
+  "initial_review_recorded": 590,
+  "initial_review_percent": 100,
+  "final_legal_validation_completed": 0,
+  "final_legal_validation_percent": 0,
+  "database_changed": false,
+  "us_jp_detailed_scope_review": {
+    "total": 327,
+    "recorded": 327,
+    "remaining": 0,
+    "percent": 100,
+    "definition": "policy-specific scope observations recorded, including unresolved issues; not final legal validation",
+    "country_counts": {
+      "usa": 161,
+      "japan": 166
+    },
+    "added_in_this_batch": 300,
+    "previous_recorded": 27,
+    "scope_correction_candidates": 26,
+    "priority_authority_holds": 8,
+    "context_clauses_checked": 6,
+    "original_broad_evidence_reextraction_pending": 0,
+    "official_pdf_table_rows_reextracted": 141,
+    "legal_paragraph_anchors_checked": 104,
+    "legal_resolution_complete": false
+  },
+  "us_jp_followup_resolution": {
+    "reviewed_at": "2026-10-28",
+    "correction_versions_recorded": 26,
+    "correction_total": 26,
+    "correction_recording_percent": 100,
+    "evidence_context_reextracted": 6,
+    "evidence_context_total": 6,
+    "evidence_reextraction_percent": 100,
+    "fee_rule_scope_checked": 2,
+    "priority_authority_holds_remaining": 8,
+    "court_order_primary_documents_checked": 3,
+    "final_legal_validation_completed": 0,
+    "final_legal_validation_percent": 0,
+    "database_changed": false
+  }
+}

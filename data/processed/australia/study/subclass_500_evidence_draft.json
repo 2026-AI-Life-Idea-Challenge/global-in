@@ -369,7 +369,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "0da169f52a3ba819",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_02",
@@ -382,7 +394,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "6030cfb081c2e16f",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_03",
@@ -395,7 +419,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "c43831bfaca19fe4",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_04",
@@ -408,7 +444,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "92197346fa4b7f0d",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_05",
@@ -421,7 +469,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "905de70194e94c6f",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_06",
@@ -434,7 +494,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "d25c3f7534532269",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_07",
@@ -447,7 +519,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "66c6596d66200dad",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_08",
@@ -460,7 +544,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "ce27fbb738a36265",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_09",
@@ -473,7 +569,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "10e4b6442476b240",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_10",
@@ -486,7 +594,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "c8321081f4f8a75c",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_11",
@@ -499,7 +619,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "501818cbd2705ac1",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_12",
@@ -512,7 +644,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "43fa0f989ee45be4",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_13",
@@ -525,7 +669,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "d32fbb098dd8dee4",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_14",
@@ -538,7 +694,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "0685d579e986b9f8",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_15",
@@ -551,7 +719,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "2d4e9ecc9bce8bc6",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_500_POL_16",
@@ -564,7 +744,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "a6c758e0ba193cb7",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     }
   ],
   "application_steps": [
@@ -846,5 +1038,11 @@
   },
   "review_status": "needs_review",
   "legal_validation_approved": false,
-  "approved_for_eligibility_decision": false
+  "approved_for_eligibility_decision": false,
+  "official_review_summary": {
+    "reviewed_at": "2026-10-28",
+    "policy_count": 16,
+    "observed_live_section_count": 16,
+    "legal_validation_completed_count": 0
+  }
 }

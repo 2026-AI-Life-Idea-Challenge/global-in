@@ -1,5 +1,7 @@
 # scripts
 
+법률 검토 작업은 기존 역할·국가 분류에 따라 `crawl/common/`, `ingest/common/legal_review/`, `ingest/국가/`, `evaluate/legal_review/`에서 관리합니다. 실행 순서는 [공통 검토 안내](ingest/common/legal_review/README.md), 전체 작업 위치는 [법률 검토 안내](../docs/legal_review/README.md)를 참고하세요.
+
 Global-In의 데이터 수집, 데이터 적재, 평가 및 검증을 위한 실행 Script를 관리하는 디렉터리입니다.
 
 실제 서비스 실행 로직은 `app/`과 `frontend/`에서 관리하고,

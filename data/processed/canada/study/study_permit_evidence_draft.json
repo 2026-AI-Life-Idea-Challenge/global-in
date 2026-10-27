@@ -56,7 +56,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "DLI 입학과 입학허가 자료를 확인한다. 고등교육기관의 입학확인 및 퀘벡 CAQ 요건도 적용될 수 있다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "study",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html"
+          },
+          {
+            "source_key": "r216",
+            "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-216.html"
+          }
+        ],
+        "pending_items": [
+          "LOA 진위확인·PAL/TAL 면제·학교/과정·퀘벡 적용범위 확인"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_STUDY_POL_02",
@@ -74,7 +95,66 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "캐나다 취업에 의존하지 않는 학비·생활비·왕복교통비를 검토한다. 생활비는 신청일·가족 수·지역별로 분리한다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "finance",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html"
+          },
+          {
+            "source_key": "r220",
+            "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-220.html?txthl=issue"
+          }
+        ],
+        "pending_items": [
+          "IRPR 215(1)(d)/(e) 예외 및 퀘벡 기준 확인; 재원 가용성과 전체 과정 재정계획 검토"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked",
+        "financial_reference": {
+          "source_key": "finance",
+          "application_date_from": "2026-09-01",
+          "region": "Canada excluding Quebec",
+          "currency": "CAD",
+          "period": "one_year",
+          "includes_applicant_in_family_count": true,
+          "amount_by_family_size": {
+            "1": 23448,
+            "2": 29192,
+            "3": 35888,
+            "4": 43572,
+            "5": 49419,
+            "6": 55736,
+            "7": 62054
+          },
+          "additional_person_above_seven": 6318,
+          "tuition_included": false,
+          "transportation_included": false,
+          "automatic_eligibility_rule": false
+        },
+        "exception_review": {
+          "checked_provisions": [
+            "IRPR 220",
+            "IRPR 215(1)(d)",
+            "IRPR 215(1)(e)"
+          ],
+          "finding": "재정요건의 명시적 예외는 집행 불가능한 추방명령 대상자 및 최소 6개월 유효한 IRPA 24(1) 임시거주허가 보유자와 연결된다.",
+          "source_urls": [
+            "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-220.html",
+            "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-215.html"
+          ],
+          "scope": "해당 조문 교차참조 확인; 일반 방문자 신분과 임시거주허가를 혼동하지 않음",
+          "remaining": [
+            "2026-09-30 이후 법령 변경 여부",
+            "퀘벡 및 개별 재정예외 적용 검토"
+          ]
+        }
+      }
     },
     {
       "policy_id": "CA_STUDY_POL_03",
@@ -91,7 +171,47 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "입국적격성·필요시 경찰증명/검진·허가기간 종료 시 출국 의사를 검토한다. 전과를 일률적 영구 부적격 규칙으로 만들지 않는다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "study",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html"
+          },
+          {
+            "source_key": "r216",
+            "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-216.html"
+          }
+        ],
+        "pending_items": [
+          "IRPR 216(2)의 출국요건 예외 및 개별 입국불허·회복 관련 법조문 검토"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked",
+        "exception_review": {
+          "checked_provisions": [
+            "IRPR 216(2)",
+            "IRPR 206",
+            "IRPR 207(c)",
+            "IRPR 207(d)"
+          ],
+          "finding": "출국요건의 명시적 예외는 206 및 207(c)/(d) 대상자에 한정해 교차참조해야 하며 207 전체로 확대하면 안 된다.",
+          "source_urls": [
+            "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-216.html",
+            "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-206.html",
+            "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-207.html"
+          ],
+          "scope": "보호신청·추방명령·보호대상자·특정 장관면제 관련 경로의 조문 연결 확인",
+          "remaining": [
+            "2026-09-30 이후 법령 변경 여부",
+            "개별 입국불허·의료·전과 관련 조항 검토"
+          ]
+        }
+      }
     },
     {
       "policy_id": "CA_STUDY_POL_04",
@@ -109,7 +229,53 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "학업 지속·허가조건 준수와 고등교육 DLI 변경 절차를 구분한다. 재학/학업진행 의무에는 법정 예외가 있다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "study_conditions",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/while-you-study/study-permit-conditions.html"
+          },
+          {
+            "source_key": "change_school",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/change-schools.html"
+          },
+          {
+            "source_key": "r220_1",
+            "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-220.1.html"
+          }
+        ],
+        "pending_items": [
+          "IRPR 220.1(2)/(3) 예외·변경허가 대기 중 새 DLI 수학 가능 사례·취업조건 검토"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked",
+        "exception_review": {
+          "checked_provisions": [
+            "IRPR 220.1(2)",
+            "IRPR 220.1(3)",
+            "IRPR 215(2)(a)-(i)",
+            "IRPR 300(2)(a)-(i)"
+          ],
+          "finding": "300조 원문을 확보했다. 220.1(3)은 300(2)(a)-(i)의 특정 사람 및 215(2)(a)-(i) 대상자의 특정 가족을 참조하므로 재학·학업진행 의무의 예외를 일반 학생에게 확대하지 않는다.",
+          "source_urls": [
+            "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-220.1.html",
+            "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-215.html",
+            "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-300.html"
+          ],
+          "source_archive": "data/raw/legal_review/20261028/aca953c4f9b8e675.html",
+          "source_archive_sha256": "788b98349e3604f58947a2a8044722491913d2d95d04d61db8bfbd3df92e2e83",
+          "scope": "300조 접근 실패 보류 해소 및 예외 범주 확인; 조항별 개인 적용은 별도",
+          "remaining": [
+            "2026-09-30 이후 변경 및 학교변경 사례",
+            "법정 예외 범주별 개인 적용 확인"
+          ]
+        }
+      }
     }
   ],
   "source_requirement_checks": {
@@ -1528,5 +1694,12 @@
     "legal_validation_approved": false,
     "approved_for_eligibility_decision": false,
     "review_status": "needs_review"
+  },
+  "official_review_summary": {
+    "reviewed_at": "2026-10-28",
+    "policy_count": 4,
+    "legal_validation_completed_count": 0,
+    "approval_flags_changed": false,
+    "scope": "dated official-source desk review; original evidence and candidate rules preserved"
   }
 }

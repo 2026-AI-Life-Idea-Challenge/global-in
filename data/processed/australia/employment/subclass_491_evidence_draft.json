@@ -267,7 +267,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "7c7d4b60da65c5bf",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_491_POL_02",
@@ -280,7 +292,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "8626c5cad9847826",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_491_POL_03",
@@ -293,7 +317,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "77db581907bf944a",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_491_POL_04",
@@ -306,7 +342,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "0b0fa6e8d831722c",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_491_POL_05",
@@ -319,7 +367,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "58d47674b2f24c13",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_491_POL_06",
@@ -332,7 +392,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "584d6e4757d80396",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_491_POL_07",
@@ -345,7 +417,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "12c8b7cf47b4bdc0",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_491_POL_08",
@@ -358,7 +442,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "35b7f9790dd5818e",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_491_POL_09",
@@ -371,7 +467,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "e501f6a6edfff09c",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_491_POL_10",
@@ -384,7 +492,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "cac776cbf73434aa",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_491_POL_11",
@@ -397,7 +517,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "b178c4d4f97c4aa8",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     }
   ],
   "application_steps": [
@@ -452,5 +584,11 @@
     "source_file": "data/raw/australia/employment/subclass_491_steps_verified.txt",
     "source_sha256": "970bceec046feac577a482da7a933f9e1ee02455b8d1ab8aecb4c4ba238df523",
     "review_status": "needs_review"
+  },
+  "official_review_summary": {
+    "reviewed_at": "2026-10-28",
+    "policy_count": 11,
+    "observed_live_section_count": 11,
+    "legal_validation_completed_count": 0
   }
 }

@@ -1,0 +1,3447 @@
+{
+  "reviewed_at": "2026-10-28",
+  "program_count": 20,
+  "policy_count": 223,
+  "observed_section_fingerprints": {
+    "subclass_186_direct_entry": [
+      "303ec99c0ff3389b",
+      "3b5e44a1c6f94f82",
+      "13481329ef5fe046",
+      "62b61bc7f5c85518",
+      "303c4dcf944109fa",
+      "4430ce27cfac9afe",
+      "d51532b59f7fdd04",
+      "a09587df1e9a3634",
+      "f606d42cca75979a",
+      "9be89d40c6687f58",
+      "913ad4d6e3fad4ec",
+      "5756dd1d3dce9b84"
+    ],
+    "subclass_186_labour_agreement": [
+      "5f6a0e5f06ca0bf7",
+      "13481329ef5fe046",
+      "f260fe82519317c4",
+      "6b90197765cf74b1",
+      "b575180737ba3ba9",
+      "d51532b59f7fdd04",
+      "a09587df1e9a3634",
+      "f606d42cca75979a",
+      "913ad4d6e3fad4ec",
+      "5756dd1d3dce9b84"
+    ],
+    "subclass_186_trt": [
+      "d34fbb837cdf93ce",
+      "4b9f0c9fac436482",
+      "13481329ef5fe046",
+      "eaccf1f8a1b78a4d",
+      "496e2ad4c6d2861b",
+      "a25ea702bb4386c9",
+      "f730a62a9c198c1d",
+      "d51532b59f7fdd04",
+      "a09587df1e9a3634",
+      "d32fbb098dd8dee4",
+      "913ad4d6e3fad4ec",
+      "5756dd1d3dce9b84"
+    ],
+    "subclass_189_points_tested": [
+      "29f77fe321a57220",
+      "2407f7ce980e5a79",
+      "3c9968b6a264de81",
+      "fef089d53b370271",
+      "f1d369465d96c9c2",
+      "73e0264991bf0893",
+      "95968db7400a88ac",
+      "5f56cfaebc21168d",
+      "e501f6a6edfff09c",
+      "cac776cbf73434aa",
+      "5ac23bd1f741bdfa",
+      "c35d6ab2b7d976d0"
+    ],
+    "subclass_190": [
+      "a27707643ba94b2c",
+      "b47c54441038bb4b",
+      "a6fc0c828657685d",
+      "3c9968b6a264de81",
+      "fef089d53b370271",
+      "f87fd638cbe783be",
+      "73e0264991bf0893",
+      "bc61bc5f5ec1a44e",
+      "5f56cfaebc21168d",
+      "e501f6a6edfff09c",
+      "cac776cbf73434aa",
+      "b178c4d4f97c4aa8"
+    ],
+    "subclass_191_regional_provisional": [
+      "c93926caa50a29e2",
+      "06fb502795a5a3a7",
+      "48413b85939ee914",
+      "64fad1aad359b542",
+      "66ac9ee2bee0da95",
+      "d318713d7340e48e",
+      "16139f04582c380f",
+      "70bf2db2745ce8ca"
+    ],
+    "subclass_491": [
+      "7c7d4b60da65c5bf",
+      "8626c5cad9847826",
+      "77db581907bf944a",
+      "0b0fa6e8d831722c",
+      "58d47674b2f24c13",
+      "584d6e4757d80396",
+      "12c8b7cf47b4bdc0",
+      "35b7f9790dd5818e",
+      "e501f6a6edfff09c",
+      "cac776cbf73434aa",
+      "b178c4d4f97c4aa8"
+    ],
+    "subclass_482_core_skills": [
+      "ac78485ef14a4a24",
+      "8812af85d9ca00b6",
+      "2367b4824868d5ef",
+      "a919451ebee71ea4",
+      "967a7718752fda68",
+      "834bfaa148682636",
+      "0a39a23cce0c0e0e",
+      "557bcdac7e237e1c",
+      "49ffd62496e2b6ca",
+      "29a77e1d2224927d",
+      "8373ebe4de11bd53",
+      "eb749cc62650b0d9",
+      "1153930c01c6a0f0",
+      "c35d6ab2b7d976d0",
+      "6e04aba5cf774c3b",
+      "5996e73caf917e2d"
+    ],
+    "subclass_482_specialist_skills": [
+      "ac78485ef14a4a24",
+      "8dc306a63711a71f",
+      "2367b4824868d5ef",
+      "b94defdb673633d7",
+      "cb4975fdf0fef733",
+      "834bfaa148682636",
+      "9478375dd5b7d0c6",
+      "557bcdac7e237e1c",
+      "6cb745addfcc09c9",
+      "29a77e1d2224927d",
+      "8373ebe4de11bd53",
+      "eb749cc62650b0d9",
+      "1c0b3e564328b7ef",
+      "c35d6ab2b7d976d0",
+      "6e04aba5cf774c3b",
+      "5996e73caf917e2d"
+    ],
+    "subclass_482_labour_agreement": [
+      "cd722fb7348a6aa6",
+      "3c93fe8f5e4d3556",
+      "530ac07adb411efd",
+      "29e37a56b34f2a79",
+      "d12a48b2f70a7ebb",
+      "895154f201c1c66a",
+      "0c124b783b3ccfce",
+      "e1410a35352769f3",
+      "48d46b3957338421",
+      "5756dd1d3dce9b84"
+    ],
+    "subclass_494_employer_sponsored": [
+      "558a931084737213",
+      "78f68b500d76d649",
+      "5cf8e2ebbe487ad0",
+      "e1a956a716bd48c0",
+      "47cc6d8ec6f7d74a",
+      "0fda7551e3293309",
+      "b39645098c551d33",
+      "48d46b3957338421",
+      "6931141663070a8c"
+    ],
+    "subclass_494_labour_agreement": [
+      "cd722fb7348a6aa6",
+      "75a7c21b9445ba87",
+      "87012c8bccbfbc17",
+      "e7edda7926df1233",
+      "7615132a10323def",
+      "0fda7551e3293309",
+      "b4015fbe3121cff7",
+      "48d46b3957338421",
+      "6931141663070a8c"
+    ],
+    "subclass_407": [
+      "001db1935ce96fa9",
+      "da86379918e40a8a",
+      "172d724de126d0d8",
+      "c67bc44ae2b88928",
+      "29e37a56b34f2a79",
+      "6b6e59451c06828a",
+      "50c4f5526e4ab9f3",
+      "c19f2a6df9762f94",
+      "04a8d3591e0b18ee",
+      "d32fbb098dd8dee4",
+      "0685d579e986b9f8",
+      "000b0106d6ceb788",
+      "a6c758e0ba193cb7"
+    ],
+    "subclass_500": [
+      "0da169f52a3ba819",
+      "6030cfb081c2e16f",
+      "c43831bfaca19fe4",
+      "92197346fa4b7f0d",
+      "905de70194e94c6f",
+      "d25c3f7534532269",
+      "66c6596d66200dad",
+      "ce27fbb738a36265",
+      "10e4b6442476b240",
+      "c8321081f4f8a75c",
+      "501818cbd2705ac1",
+      "43fa0f989ee45be4",
+      "d32fbb098dd8dee4",
+      "0685d579e986b9f8",
+      "2d4e9ecc9bce8bc6",
+      "a6c758e0ba193cb7"
+    ],
+    "subclass_417_first": [
+      "573f618838d49773",
+      "835bd9aa5403c1c1",
+      "e80906fb64c7276a",
+      "d97c037c8a986f6e",
+      "c912cd0d1feaef2f",
+      "417a1ec1ffdeda5a",
+      "4dffa0439f7a046a",
+      "000b0106d6ceb788",
+      "9a03d623d4217f63"
+    ],
+    "subclass_417_second": [
+      "8a636193da93e816",
+      "3f27423bc21da2bb",
+      "f99d246e300c870c",
+      "be57cfb99e1bff5b",
+      "21fac40a68e2852b",
+      "c912cd0d1feaef2f",
+      "417a1ec1ffdeda5a",
+      "4dffa0439f7a046a",
+      "000b0106d6ceb788",
+      "9a03d623d4217f63"
+    ],
+    "subclass_417_third": [
+      "8a636193da93e816",
+      "3f5a6edc753761f2",
+      "c87a27ca56e5a29c",
+      "72596ef7785b69d5",
+      "835bd9aa5403c1c1",
+      "c912cd0d1feaef2f",
+      "417a1ec1ffdeda5a",
+      "4dffa0439f7a046a",
+      "000b0106d6ceb788",
+      "9a03d623d4217f63"
+    ],
+    "subclass_462_first": [
+      "48363d6887e81a90",
+      "7a989fe3bd7baa7a",
+      "14e1598d4a050630",
+      "6275e3b4028f03b1",
+      "3dced11974e3162b",
+      "26f104e0256d8533",
+      "ae30f9dbe4af5667",
+      "c912cd0d1feaef2f",
+      "417a1ec1ffdeda5a",
+      "4dffa0439f7a046a",
+      "dedc7ea1ebdcd252",
+      "9a03d623d4217f63"
+    ],
+    "subclass_462_second": [
+      "68908a32fb814b16",
+      "25342c4d479829d6",
+      "c87a27ca56e5a29c",
+      "db40d66e5c026354",
+      "7a989fe3bd7baa7a",
+      "c912cd0d1feaef2f",
+      "417a1ec1ffdeda5a",
+      "4dffa0439f7a046a",
+      "000b0106d6ceb788"
+    ],
+    "subclass_462_third": [
+      "68908a32fb814b16",
+      "b2a2cda8a335941d",
+      "c87a27ca56e5a29c",
+      "c93266d17951cd61",
+      "7a989fe3bd7baa7a",
+      "c912cd0d1feaef2f",
+      "417a1ec1ffdeda5a",
+      "4dffa0439f7a046a",
+      "000b0106d6ceb788"
+    ]
+  },
+  "summary": {
+    "normalized_section_fingerprint_match": 213,
+    "section_boundary_or_navigation_difference_verified": 6,
+    "archived_detail_missing_live_summary_added": 4
+  },
+  "legal_validation_completed": 0,
+  "limitation": "64-bit normalized section fingerprints; not raw-page hashes or legal approval",
+  "database_applied": false,
+  "policy_reviews": [
+    {
+      "policy_id": "AU_186_DE_POL_01",
+      "program": "subclass_186_direct_entry",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "303ec99c0ff3389b",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_DE_POL_02",
+      "program": "subclass_186_direct_entry",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "3b5e44a1c6f94f82",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_DE_POL_03",
+      "program": "subclass_186_direct_entry",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "13481329ef5fe046",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_DE_POL_04",
+      "program": "subclass_186_direct_entry",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "62b61bc7f5c85518",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_DE_POL_05",
+      "program": "subclass_186_direct_entry",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "303c4dcf944109fa",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_DE_POL_06",
+      "program": "subclass_186_direct_entry",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "4430ce27cfac9afe",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_DE_POL_07",
+      "program": "subclass_186_direct_entry",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "d51532b59f7fdd04",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_DE_POL_08",
+      "program": "subclass_186_direct_entry",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "a09587df1e9a3634",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_DE_POL_09",
+      "program": "subclass_186_direct_entry",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "f606d42cca75979a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_DE_POL_10",
+      "program": "subclass_186_direct_entry",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "9be89d40c6687f58",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_DE_POL_11",
+      "program": "subclass_186_direct_entry",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "913ad4d6e3fad4ec",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_DE_POL_12",
+      "program": "subclass_186_direct_entry",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "5756dd1d3dce9b84",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_LA_POL_01",
+      "program": "subclass_186_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "5f6a0e5f06ca0bf7",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_LA_POL_02",
+      "program": "subclass_186_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "13481329ef5fe046",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_LA_POL_03",
+      "program": "subclass_186_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "f260fe82519317c4",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_LA_POL_04",
+      "program": "subclass_186_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "6b90197765cf74b1",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_LA_POL_05",
+      "program": "subclass_186_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "b575180737ba3ba9",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_LA_POL_06",
+      "program": "subclass_186_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "d51532b59f7fdd04",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_LA_POL_07",
+      "program": "subclass_186_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "a09587df1e9a3634",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_LA_POL_08",
+      "program": "subclass_186_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "f606d42cca75979a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_LA_POL_09",
+      "program": "subclass_186_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "913ad4d6e3fad4ec",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_LA_POL_10",
+      "program": "subclass_186_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "5756dd1d3dce9b84",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_01",
+      "program": "subclass_186_trt",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "d34fbb837cdf93ce",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_02",
+      "program": "subclass_186_trt",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "4b9f0c9fac436482",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_03",
+      "program": "subclass_186_trt",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "13481329ef5fe046",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_04",
+      "program": "subclass_186_trt",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "0e6116df07277006",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "section_boundary_or_navigation_difference_verified",
+      "boundary_method": "split_current_nomination_section",
+      "current_section_fingerprints": [
+        "eaccf1f8a1b78a4d"
+      ]
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_05",
+      "program": "subclass_186_trt",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "49899b6d32b5bd8c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "section_boundary_or_navigation_difference_verified",
+      "boundary_method": "split_current_nomination_section",
+      "current_section_fingerprints": [
+        "eaccf1f8a1b78a4d"
+      ]
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_06",
+      "program": "subclass_186_trt",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "496e2ad4c6d2861b",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_07",
+      "program": "subclass_186_trt",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "a25ea702bb4386c9",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_08",
+      "program": "subclass_186_trt",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "f730a62a9c198c1d",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_09",
+      "program": "subclass_186_trt",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "d51532b59f7fdd04",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_10",
+      "program": "subclass_186_trt",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "a09587df1e9a3634",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_11",
+      "program": "subclass_186_trt",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "d32fbb098dd8dee4",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_12",
+      "program": "subclass_186_trt",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "913ad4d6e3fad4ec",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_186_TRT_POL_13",
+      "program": "subclass_186_trt",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "5756dd1d3dce9b84",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_189_PT_POL_01",
+      "program": "subclass_189_points_tested",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "b6573b652727e7d6",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인",
+        "현재 세부 본문의 정식 원문 보관·Evidence 연결 보강"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "archived_detail_missing_live_summary_added",
+      "current_section_fingerprint": "29f77fe321a57220",
+      "reviewed_policy_text": "호주 내 신청 시 보유 비자 요건 및 491/494 이력의 최소 보유기간 조건을 별도 검토한다.",
+      "text_kind": "reviewer_summary_not_source_quote"
+    },
+    {
+      "policy_id": "AU_189_PT_POL_02",
+      "program": "subclass_189_points_tested",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "31c60a942efed037",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인",
+        "현재 세부 본문의 정식 원문 보관·Evidence 연결 보강"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "archived_detail_missing_live_summary_added",
+      "current_section_fingerprint": "2407f7ce980e5a79",
+      "reviewed_policy_text": "EOI 제출과 비자 신청을 구분하며 초청을 받아야 신청할 수 있다.",
+      "text_kind": "reviewer_summary_not_source_quote"
+    },
+    {
+      "policy_id": "AU_189_PT_POL_03",
+      "program": "subclass_189_points_tested",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "460af9d9ea9d8ed1",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인",
+        "현재 세부 본문의 정식 원문 보관·Evidence 연결 보강"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "archived_detail_missing_live_summary_added",
+      "current_section_fingerprint": "3c9968b6a264de81",
+      "reviewed_policy_text": "기술심사 요건·심사 유효기간·Thapa 판결 관련 초청 후 취득 안내 및 직종별 대안을 함께 검토한다.",
+      "text_kind": "reviewer_summary_not_source_quote"
+    },
+    {
+      "policy_id": "AU_189_PT_POL_04",
+      "program": "subclass_189_points_tested",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "3fc8fbcf75cf5ff6",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인",
+        "현재 세부 본문의 정식 원문 보관·Evidence 연결 보강"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "archived_detail_missing_live_summary_added",
+      "current_section_fingerprint": "fef089d53b370271",
+      "reviewed_policy_text": "45세 미만 여부는 초청 시점 기준이며 초청 후 45세가 되는 경우와 구분한다.",
+      "text_kind": "reviewer_summary_not_source_quote"
+    },
+    {
+      "policy_id": "AU_189_PT_POL_05",
+      "program": "subclass_189_points_tested",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "f1d369465d96c9c2",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_189_PT_POL_06",
+      "program": "subclass_189_points_tested",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "73e0264991bf0893",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_189_PT_POL_07",
+      "program": "subclass_189_points_tested",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "95968db7400a88ac",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_189_PT_POL_08",
+      "program": "subclass_189_points_tested",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "5f56cfaebc21168d",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_189_PT_POL_09",
+      "program": "subclass_189_points_tested",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "e501f6a6edfff09c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_189_PT_POL_10",
+      "program": "subclass_189_points_tested",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "cac776cbf73434aa",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_189_PT_POL_11",
+      "program": "subclass_189_points_tested",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "5ac23bd1f741bdfa",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_189_PT_POL_12",
+      "program": "subclass_189_points_tested",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c35d6ab2b7d976d0",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_190_POL_01",
+      "program": "subclass_190",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "a27707643ba94b2c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_190_POL_02",
+      "program": "subclass_190",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "b47c54441038bb4b",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_190_POL_03",
+      "program": "subclass_190",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "a6fc0c828657685d",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_190_POL_04",
+      "program": "subclass_190",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "3c9968b6a264de81",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_190_POL_05",
+      "program": "subclass_190",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "fef089d53b370271",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_190_POL_06",
+      "program": "subclass_190",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "f87fd638cbe783be",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_190_POL_07",
+      "program": "subclass_190",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "73e0264991bf0893",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_190_POL_08",
+      "program": "subclass_190",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "bc61bc5f5ec1a44e",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_190_POL_09",
+      "program": "subclass_190",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "5f56cfaebc21168d",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_190_POL_10",
+      "program": "subclass_190",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "e501f6a6edfff09c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_190_POL_11",
+      "program": "subclass_190",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "cac776cbf73434aa",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_190_POL_12",
+      "program": "subclass_190",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "b178c4d4f97c4aa8",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_191_REGIONAL_PROVISIONAL_POL_01",
+      "program": "subclass_191_regional_provisional",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-regional-191/regional-provisional#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c93926caa50a29e2",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_191_REGIONAL_PROVISIONAL_POL_02",
+      "program": "subclass_191_regional_provisional",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-regional-191/regional-provisional#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "dc18968a6e9a0f2c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "section_boundary_or_navigation_difference_verified",
+      "boundary_method": "join_current_income_and_compliance",
+      "current_section_fingerprints": [
+        "06fb502795a5a3a7",
+        "48413b85939ee914"
+      ]
+    },
+    {
+      "policy_id": "AU_191_REGIONAL_PROVISIONAL_POL_03",
+      "program": "subclass_191_regional_provisional",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-regional-191/regional-provisional#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "64fad1aad359b542",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_191_REGIONAL_PROVISIONAL_POL_04",
+      "program": "subclass_191_regional_provisional",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-regional-191/regional-provisional#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "66ac9ee2bee0da95",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_191_REGIONAL_PROVISIONAL_POL_05",
+      "program": "subclass_191_regional_provisional",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-regional-191/regional-provisional#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "d318713d7340e48e",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_191_REGIONAL_PROVISIONAL_POL_06",
+      "program": "subclass_191_regional_provisional",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-regional-191/regional-provisional#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "4f0b7e4c8ff9b2d3",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "section_boundary_or_navigation_difference_verified",
+      "boundary_method": "join_current_debt_and_immigration_history",
+      "current_section_fingerprints": [
+        "16139f04582c380f",
+        "70bf2db2745ce8ca"
+      ]
+    },
+    {
+      "policy_id": "AU_407_POL_01",
+      "program": "subclass_407",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "001db1935ce96fa9",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_407_POL_02",
+      "program": "subclass_407",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "da86379918e40a8a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_407_POL_03",
+      "program": "subclass_407",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "172d724de126d0d8",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_407_POL_04",
+      "program": "subclass_407",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c67bc44ae2b88928",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_407_POL_05",
+      "program": "subclass_407",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "29e37a56b34f2a79",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_407_POL_06",
+      "program": "subclass_407",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "6b6e59451c06828a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_407_POL_07",
+      "program": "subclass_407",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "50c4f5526e4ab9f3",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_407_POL_08",
+      "program": "subclass_407",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c19f2a6df9762f94",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_407_POL_09",
+      "program": "subclass_407",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "04a8d3591e0b18ee",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_407_POL_10",
+      "program": "subclass_407",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "d32fbb098dd8dee4",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_407_POL_11",
+      "program": "subclass_407",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "0685d579e986b9f8",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_407_POL_12",
+      "program": "subclass_407",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "000b0106d6ceb788",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_407_POL_13",
+      "program": "subclass_407",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "a6c758e0ba193cb7",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_01",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "ac78485ef14a4a24",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_02",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "8812af85d9ca00b6",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_03",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "2367b4824868d5ef",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_04",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "a919451ebee71ea4",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_05",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "967a7718752fda68",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_06",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "834bfaa148682636",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_07",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "0a39a23cce0c0e0e",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_08",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "557bcdac7e237e1c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_09",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "49ffd62496e2b6ca",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_10",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "29a77e1d2224927d",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_11",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "8373ebe4de11bd53",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_12",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "eb749cc62650b0d9",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_13",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "1153930c01c6a0f0",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_14",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c35d6ab2b7d976d0",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_15",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "6e04aba5cf774c3b",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_CORE_POL_16",
+      "program": "subclass_482_core_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "5996e73caf917e2d",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_LA_01_POL",
+      "program": "subclass_482_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "cd722fb7348a6aa6",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_LA_02_POL",
+      "program": "subclass_482_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "3c93fe8f5e4d3556",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_LA_03_POL",
+      "program": "subclass_482_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "530ac07adb411efd",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_LA_04_POL",
+      "program": "subclass_482_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "29e37a56b34f2a79",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_LA_05_POL",
+      "program": "subclass_482_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "d12a48b2f70a7ebb",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_LA_06_POL",
+      "program": "subclass_482_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "895154f201c1c66a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_LA_07_POL",
+      "program": "subclass_482_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "0c124b783b3ccfce",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_LA_08_POL",
+      "program": "subclass_482_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "e1410a35352769f3",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_LA_09_POL",
+      "program": "subclass_482_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "48d46b3957338421",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_LA_10_POL",
+      "program": "subclass_482_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "5756dd1d3dce9b84",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_01",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "ac78485ef14a4a24",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_02",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "8dc306a63711a71f",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_03",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "2367b4824868d5ef",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_04",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "b94defdb673633d7",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_05",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "cb4975fdf0fef733",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_06",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "834bfaa148682636",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_07",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "9478375dd5b7d0c6",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_08",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "557bcdac7e237e1c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_09",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "6cb745addfcc09c9",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_10",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "29a77e1d2224927d",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_11",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "8373ebe4de11bd53",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_12",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "d210ad1c8f3cade4",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "section_boundary_or_navigation_difference_verified",
+      "boundary_method": "join_current_sponsorship_and_english",
+      "current_section_fingerprints": [
+        "eb749cc62650b0d9",
+        "1c0b3e564328b7ef"
+      ]
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_13",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c35d6ab2b7d976d0",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_14",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "6e04aba5cf774c3b",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_482_SPECIALIST_POL_15",
+      "program": "subclass_482_specialist_skills",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "6deb868c5e9c079a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "section_boundary_or_navigation_difference_verified",
+      "boundary_method": "current_values_plus_old_navigation_footer",
+      "current_section_fingerprints": [
+        "5996e73caf917e2d"
+      ]
+    },
+    {
+      "policy_id": "AU_491_POL_01",
+      "program": "subclass_491",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "7c7d4b60da65c5bf",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_491_POL_02",
+      "program": "subclass_491",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "8626c5cad9847826",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_491_POL_03",
+      "program": "subclass_491",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "77db581907bf944a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_491_POL_04",
+      "program": "subclass_491",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "0b0fa6e8d831722c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_491_POL_05",
+      "program": "subclass_491",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "58d47674b2f24c13",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_491_POL_06",
+      "program": "subclass_491",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "584d6e4757d80396",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_491_POL_07",
+      "program": "subclass_491",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "12c8b7cf47b4bdc0",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_491_POL_08",
+      "program": "subclass_491",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "35b7f9790dd5818e",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_491_POL_09",
+      "program": "subclass_491",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "e501f6a6edfff09c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_491_POL_10",
+      "program": "subclass_491",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "cac776cbf73434aa",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_491_POL_11",
+      "program": "subclass_491",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "b178c4d4f97c4aa8",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_EMPLOYER_SPONSORED_POL_01",
+      "program": "subclass_494_employer_sponsored",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/employer-sponsored-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "558a931084737213",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_EMPLOYER_SPONSORED_POL_02",
+      "program": "subclass_494_employer_sponsored",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/employer-sponsored-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "78f68b500d76d649",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_EMPLOYER_SPONSORED_POL_03",
+      "program": "subclass_494_employer_sponsored",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/employer-sponsored-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "5cf8e2ebbe487ad0",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_EMPLOYER_SPONSORED_POL_04",
+      "program": "subclass_494_employer_sponsored",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/employer-sponsored-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "e1a956a716bd48c0",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_EMPLOYER_SPONSORED_POL_05",
+      "program": "subclass_494_employer_sponsored",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/employer-sponsored-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "47cc6d8ec6f7d74a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_EMPLOYER_SPONSORED_POL_06",
+      "program": "subclass_494_employer_sponsored",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/employer-sponsored-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "0fda7551e3293309",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_EMPLOYER_SPONSORED_POL_07",
+      "program": "subclass_494_employer_sponsored",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/employer-sponsored-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "b39645098c551d33",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_EMPLOYER_SPONSORED_POL_08",
+      "program": "subclass_494_employer_sponsored",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/employer-sponsored-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "48d46b3957338421",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_EMPLOYER_SPONSORED_POL_09",
+      "program": "subclass_494_employer_sponsored",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/employer-sponsored-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "6931141663070a8c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_LABOUR_AGREEMENT_POL_01",
+      "program": "subclass_494_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/labour-agreement-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "cd722fb7348a6aa6",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_LABOUR_AGREEMENT_POL_02",
+      "program": "subclass_494_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/labour-agreement-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "75a7c21b9445ba87",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_LABOUR_AGREEMENT_POL_03",
+      "program": "subclass_494_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/labour-agreement-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "87012c8bccbfbc17",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_LABOUR_AGREEMENT_POL_04",
+      "program": "subclass_494_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/labour-agreement-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "e7edda7926df1233",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_LABOUR_AGREEMENT_POL_05",
+      "program": "subclass_494_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/labour-agreement-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "7615132a10323def",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_LABOUR_AGREEMENT_POL_06",
+      "program": "subclass_494_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/labour-agreement-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "0fda7551e3293309",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_LABOUR_AGREEMENT_POL_07",
+      "program": "subclass_494_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/labour-agreement-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "b4015fbe3121cff7",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_LABOUR_AGREEMENT_POL_08",
+      "program": "subclass_494_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/labour-agreement-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "48d46b3957338421",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_494_LABOUR_AGREEMENT_POL_09",
+      "program": "subclass_494_labour_agreement",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494/labour-agreement-stream#tm_source=chatgpt.com",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "6931141663070a8c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_01",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "0da169f52a3ba819",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_02",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "6030cfb081c2e16f",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_03",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c43831bfaca19fe4",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_04",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "92197346fa4b7f0d",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_05",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "905de70194e94c6f",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_06",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "d25c3f7534532269",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_07",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "66c6596d66200dad",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_08",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "ce27fbb738a36265",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_09",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "10e4b6442476b240",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_10",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c8321081f4f8a75c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_11",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "501818cbd2705ac1",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_12",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "43fa0f989ee45be4",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_13",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "d32fbb098dd8dee4",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_14",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "0685d579e986b9f8",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_15",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "2d4e9ecc9bce8bc6",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_500_POL_16",
+      "program": "subclass_500",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "a6c758e0ba193cb7",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_FIRST_POL_01",
+      "program": "subclass_462_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "48363d6887e81a90",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_FIRST_POL_02",
+      "program": "subclass_462_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "7a989fe3bd7baa7a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_FIRST_POL_03",
+      "program": "subclass_462_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "14e1598d4a050630",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_FIRST_POL_04",
+      "program": "subclass_462_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "6275e3b4028f03b1",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_FIRST_POL_05",
+      "program": "subclass_462_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "3dced11974e3162b",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_FIRST_POL_06",
+      "program": "subclass_462_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "26f104e0256d8533",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_FIRST_POL_07",
+      "program": "subclass_462_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "ae30f9dbe4af5667",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_FIRST_POL_08",
+      "program": "subclass_462_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c912cd0d1feaef2f",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_FIRST_POL_09",
+      "program": "subclass_462_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "417a1ec1ffdeda5a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_FIRST_POL_10",
+      "program": "subclass_462_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "4dffa0439f7a046a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_FIRST_POL_11",
+      "program": "subclass_462_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "dedc7ea1ebdcd252",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_FIRST_POL_12",
+      "program": "subclass_462_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "9a03d623d4217f63",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_01",
+      "program": "subclass_462_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/second-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "68908a32fb814b16",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_02",
+      "program": "subclass_462_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/second-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "25342c4d479829d6",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_03",
+      "program": "subclass_462_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/second-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c87a27ca56e5a29c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_04",
+      "program": "subclass_462_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/second-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "db40d66e5c026354",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_05",
+      "program": "subclass_462_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/second-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "7a989fe3bd7baa7a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_06",
+      "program": "subclass_462_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/second-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c912cd0d1feaef2f",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_07",
+      "program": "subclass_462_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/second-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "417a1ec1ffdeda5a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_08",
+      "program": "subclass_462_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/second-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "4dffa0439f7a046a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_SECOND_POL_09",
+      "program": "subclass_462_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/second-work-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "000b0106d6ceb788",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_THIRD_POL_01",
+      "program": "subclass_462_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/third-work-and-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "68908a32fb814b16",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_THIRD_POL_02",
+      "program": "subclass_462_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/third-work-and-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "b2a2cda8a335941d",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_THIRD_POL_03",
+      "program": "subclass_462_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/third-work-and-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c87a27ca56e5a29c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_THIRD_POL_04",
+      "program": "subclass_462_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/third-work-and-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c93266d17951cd61",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_THIRD_POL_05",
+      "program": "subclass_462_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/third-work-and-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "7a989fe3bd7baa7a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_THIRD_POL_06",
+      "program": "subclass_462_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/third-work-and-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c912cd0d1feaef2f",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_THIRD_POL_07",
+      "program": "subclass_462_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/third-work-and-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "417a1ec1ffdeda5a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_THIRD_POL_08",
+      "program": "subclass_462_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/third-work-and-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "4dffa0439f7a046a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_462_THIRD_POL_09",
+      "program": "subclass_462_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/third-work-and-holiday-462",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "000b0106d6ceb788",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_01",
+      "program": "subclass_417_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "573f618838d49773",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_02",
+      "program": "subclass_417_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "835bd9aa5403c1c1",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_03",
+      "program": "subclass_417_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "e80906fb64c7276a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_04",
+      "program": "subclass_417_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "d97c037c8a986f6e",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_05",
+      "program": "subclass_417_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c912cd0d1feaef2f",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_06",
+      "program": "subclass_417_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "417a1ec1ffdeda5a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_07",
+      "program": "subclass_417_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "4dffa0439f7a046a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_08",
+      "program": "subclass_417_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "000b0106d6ceb788",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_FIRST_POL_09",
+      "program": "subclass_417_first",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/first-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "9a03d623d4217f63",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_SECOND_POL_01",
+      "program": "subclass_417_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/second-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "8a636193da93e816",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_SECOND_POL_02",
+      "program": "subclass_417_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/second-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "3f27423bc21da2bb",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_SECOND_POL_03",
+      "program": "subclass_417_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/second-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "f99d246e300c870c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_SECOND_POL_04",
+      "program": "subclass_417_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/second-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "be57cfb99e1bff5b",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_SECOND_POL_05",
+      "program": "subclass_417_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/second-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "21fac40a68e2852b",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_SECOND_POL_06",
+      "program": "subclass_417_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/second-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c912cd0d1feaef2f",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_SECOND_POL_07",
+      "program": "subclass_417_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/second-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "417a1ec1ffdeda5a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_SECOND_POL_08",
+      "program": "subclass_417_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/second-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "4dffa0439f7a046a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_SECOND_POL_09",
+      "program": "subclass_417_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/second-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "000b0106d6ceb788",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_SECOND_POL_10",
+      "program": "subclass_417_second",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/second-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "9a03d623d4217f63",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_THIRD_POL_01",
+      "program": "subclass_417_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/third-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "8a636193da93e816",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_THIRD_POL_02",
+      "program": "subclass_417_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/third-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "3f5a6edc753761f2",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_THIRD_POL_03",
+      "program": "subclass_417_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/third-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c87a27ca56e5a29c",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_THIRD_POL_04",
+      "program": "subclass_417_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/third-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "72596ef7785b69d5",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_THIRD_POL_05",
+      "program": "subclass_417_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/third-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "835bd9aa5403c1c1",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_THIRD_POL_06",
+      "program": "subclass_417_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/third-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "c912cd0d1feaef2f",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_THIRD_POL_07",
+      "program": "subclass_417_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/third-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "417a1ec1ffdeda5a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_THIRD_POL_08",
+      "program": "subclass_417_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/third-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "4dffa0439f7a046a",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_THIRD_POL_09",
+      "program": "subclass_417_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/third-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "000b0106d6ceb788",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    },
+    {
+      "policy_id": "AU_417_THIRD_POL_10",
+      "program": "subclass_417_third",
+      "reviewed_at": "2026-10-28",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/third-working-holiday-417",
+      "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+      "local_text_fingerprint": "9a03d623d4217f63",
+      "legal_validation_completed": false,
+      "pending_items": [
+        "현행 법령·위임명령·예외·적용 범위 확인"
+      ],
+      "source_snapshot_replaced": false,
+      "status": "normalized_section_fingerprint_match"
+    }
+  ]
+}

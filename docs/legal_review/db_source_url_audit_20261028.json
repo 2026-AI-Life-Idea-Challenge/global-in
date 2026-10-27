@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-28T00:47:26.139015+09:00",
+  "scope": "live DB URL presence and HTTP(S) syntax; not link availability or source-content correctness",
+  "transaction_read_only": "on",
+  "evidence": {
+    "total": 1241,
+    "with_valid_url": 1241,
+    "missing_ids": [],
+    "invalid_ids": [],
+    "by_country": {
+      "australia": {
+        "total": 249,
+        "with_valid_url": 249
+      },
+      "usa": {
+        "total": 602,
+        "with_valid_url": 602
+      },
+      "germany": {
+        "total": 38,
+        "with_valid_url": 38
+      },
+      "canada": {
+        "total": 182,
+        "with_valid_url": 182
+      },
+      "japan": {
+        "total": 170,
+        "with_valid_url": 170
+      }
+    }
+  },
+  "policies": {
+    "total": 590,
+    "with_complete_source_url_chain": 590,
+    "issues": []
+  },
+  "program_display_name_sources": {
+    "total": 40,
+    "with_valid_url": 40,
+    "missing_or_invalid_ids": []
+  },
+  "support_programs": {
+    "total": 7,
+    "with_valid_url": 7,
+    "missing_or_invalid_ids": []
+  },
+  "evidence_url_domains": {
+    "immi.homeaffairs.gov.au": 249,
+    "www.uscis.gov": 204,
+    "www.make-it-in-germany.com": 22,
+    "seoul.diplo.de": 16,
+    "studyinthestates.dhs.gov": 45,
+    "www.canada.ca": 179,
+    "j1visa.state.gov": 55,
+    "www.niied.go.kr": 245,
+    "www.govinfo.gov": 23,
+    "www.moj.go.jp": 141,
+    "www.federalregister.gov": 5,
+    "www.kr.emb-japan.go.jp": 24,
+    "www.dol.gov": 15,
+    "travel.state.gov": 10,
+    "www.mofa.go.jp": 5,
+    "ircc.canada.ca": 3
+  },
+  "examples": [
+    {
+      "evidence_id": "AU:482:RECOVERED:AU_482_CORE_ELIG_01",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream"
+    },
+    {
+      "evidence_id": "AU:482:RECOVERED:AU_482_CORE_ELIG_02",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream"
+    },
+    {
+      "evidence_id": "AU:482:RECOVERED:AU_482_CORE_ELIG_03",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream"
+    }
+  ]
+}

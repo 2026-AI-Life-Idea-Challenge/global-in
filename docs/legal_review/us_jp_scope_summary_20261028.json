@@ -1,0 +1,30 @@
+{
+  "reviewed_at": "2026-10-28",
+  "input_sha256": "043cf9bbb1d00c864d77912dca662e98960f5374766a219c36749bf7d2c69bd8",
+  "scope_recorded": 327,
+  "scope_total": 327,
+  "new_records": 300,
+  "issue_counts": {
+    "court_order_scope_unresolved": 8,
+    "wage_start_trigger_requires_clarification": 1,
+    "fee_employer_threshold_and_sunset_review": 2,
+    "full_time_condition_missing_in_brochure": 1,
+    "site_visit_and_or_conflict": 2,
+    "trailing_or_extraction_boundary": 1,
+    "selection_and_nondegree_conditions_mixed": 1,
+    "vwp_heading_overgeneralizes_wage_and_monitoring": 1,
+    "renewal_row_group_condition_requires_preservation": 6,
+    "source_condition_missing_in_structured_record": 1,
+    "nationality_column_scalar_status_unsafe": 9,
+    "multiple_legal_subjects_require_split": 1
+  },
+  "correction_action_counts": {
+    "retain_hold_pending_authority_review": 10,
+    "versioned_correction_candidate": 26
+  },
+  "original_evidence_context_pending": 6,
+  "pdf_rows": 141,
+  "legal_paragraph_anchors": 104,
+  "final_legal_validation_completed": 0,
+  "database_changed": false
+}

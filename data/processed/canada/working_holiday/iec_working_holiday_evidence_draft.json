@@ -84,7 +84,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "한국 국적의 Working Holiday 경로는 18~35세를 포함한다. 연령 계산 단계와 초청 여부는 별도 확인한다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "iec",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/eligibility.html?selection=kr-wh"
+          },
+          {
+            "source_key": "iec_profile",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/become-candidate.html"
+          }
+        ],
+        "pending_items": [
+          "생일과 프로필/초청/신청 단계별 연령 경계 처리 확인"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_IEC_WH_POL_02",
@@ -104,7 +125,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "한국인은 IEC 최대 두 번, 회당 최대 24개월이며 여권 유효기간 제한을 적용한다. 구 협정 참여도 총 횟수 검토에 포함한다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "iec",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/eligibility.html?selection=kr-wh"
+          },
+          {
+            "source_key": "iec_arrival",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/prepare-arrival.html"
+          }
+        ],
+        "pending_items": [
+          "2023-12-11 전 신청 경과규정·카테고리별 참여횟수·보험/생체정보 만료 확인"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_IEC_WH_POL_03",
@@ -122,7 +164,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "최소 CAD 2,500과 출국 항공권 또는 구입 재원을 검토한다. 입국 시 재정증명과 출발 전 발급시점도 확인한다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "iec",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/eligibility.html?selection=kr-wh"
+          },
+          {
+            "source_key": "iec_arrival",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/prepare-arrival.html"
+          }
+        ],
+        "pending_items": [
+          "출발 전 1주 이내 은행증명·실제 입국단계·지역 생활비 확인"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_IEC_WH_POL_04",
@@ -139,7 +202,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "체류 전 기간의 의료·입원·본국송환 보험과 입국적격성을 확인한다. 보험기간은 발급 허가기간에 영향을 준다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "iec_arrival",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/prepare-arrival.html"
+          },
+          {
+            "source_key": "iec",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/eligibility.html?selection=kr-wh"
+          }
+        ],
+        "pending_items": [
+          "보험증빙·부족 보험기간의 연장 제한·개별 입국불허 사유 확인"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_IEC_WH_POL_05",
@@ -158,7 +242,40 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "가족은 IEC에 부양가족으로 포함될 수 없지만 별도 방문·유학·취업 신청은 가능하다. 프로필과 ITA 및 허가신청은 별개 단계다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "iec_family",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/eligibility/family-members.html"
+          },
+          {
+            "source_key": "iec_profile",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/become-candidate.html"
+          },
+          {
+            "source_key": "iec_apply",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/apply-work-permit.html"
+          }
+        ],
+        "pending_items": [
+          "현재 시즌 운영상태·수수료·초청/제출기한 및 가족 개별 자격 확인"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked",
+        "season_observation": {
+          "season": 2026,
+          "observed_at": "2026-10-28",
+          "pool_status": "closed",
+          "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/become-candidate.html",
+          "recheck_before_answering": true,
+          "existing_invitation_or_application_status_not_determined": true
+        }
+      }
     }
   ],
   "source_requirement_checks": {
@@ -656,5 +773,12 @@
     "report_errors_before_leaving_port_of_entry": true,
     "eligibility_rule": null,
     "review_status": "needs_review"
+  },
+  "official_review_summary": {
+    "reviewed_at": "2026-10-28",
+    "policy_count": 5,
+    "legal_validation_completed_count": 0,
+    "approval_flags_changed": false,
+    "scope": "dated official-source desk review; original evidence and candidate rules preserved"
   }
 }

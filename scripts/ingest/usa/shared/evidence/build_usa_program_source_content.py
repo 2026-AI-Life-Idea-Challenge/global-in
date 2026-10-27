@@ -64,6 +64,8 @@ def inside_excluded_tag(node):
         if isinstance(parent, Tag):
             if parent.name in SKIP_TAGS:
                 return True
+            if set(parent.get("class", [])) & {"util-share", "twitter-share-button"}:
+                return True
         parent = parent.parent
 
     return False
@@ -125,7 +127,8 @@ def heading_sections(soup, expected_heading):
             if element is next_heading:
                 break
 
-            if isinstance(element, NavigableString):
+            # Comment/ProcessingInstruction inherit NavigableString but are not text.
+            if type(element) is NavigableString:
                 if inside_excluded_tag(element):
                     continue
 

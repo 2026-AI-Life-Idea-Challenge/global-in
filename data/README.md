@@ -1,5 +1,7 @@
 # data
 
+법률 검토의 원본 입력 스냅샷은 `processed/legal_review/inputs/`, 검토 원장과 수정본은 `processed/legal_review/`에 저장합니다. 국가·프로그램별 기존 자료 위치는 유지합니다. 원문 URL·해시 공유 목록은 `processed/legal_review/source_manifest_20261028.json`입니다.
+
 Global-In에서 사용하는 원본 데이터, 정제 데이터, Seed Data를 관리하는 디렉터리입니다.
 
 Global-In은 단순한 비자 정보뿐 아니라,

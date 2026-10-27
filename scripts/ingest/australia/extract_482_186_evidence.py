@@ -2748,3 +2748,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+    try:
+        from .review_support import refresh_reviews
+    except ImportError:
+        from review_support import refresh_reviews
+    refresh_reviews(programs=["subclass_482_core_skills","subclass_482_specialist_skills","subclass_482_labour_agreement","subclass_186_direct_entry","subclass_186_labour_agreement","subclass_186_trt"])

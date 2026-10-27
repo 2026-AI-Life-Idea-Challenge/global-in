@@ -925,8 +925,13 @@ def main():
         exist_ok=True
     )
 
+    try:
+        from .review_support import attach_official_review
+    except ImportError:
+        from review_support import attach_official_review
+    attach_official_review(result)
     OUTPUT.write_text(
-        json.dumps(result, ensure_ascii=False, indent=2),
+        json.dumps(result, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
 

@@ -1,0 +1,402 @@
+[
+  {
+    "source_url": "https://j1visa.state.gov/programs/college-and-university-student/",
+    "checked_at": "2026-10-28T00:50:27.0325657+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/4e4b7eef38543e3e.html",
+    "sha256": "cc312472afe7ff59179d8a295e8d6e9e7ef7fb1aa1a7db5f89ae57a7ec17fb6b",
+    "bytes": 61919
+  },
+  {
+    "source_url": "https://j1visa.state.gov/programs/intern/",
+    "checked_at": "2026-10-28T00:50:29.3861351+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/aec3af4c6ee43783.html",
+    "sha256": "a223198222d7a7704c06bdbcc69ba02fd75b128daec540dbacf514e7561af6d9",
+    "bytes": 63777
+  },
+  {
+    "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+    "checked_at": "2026-10-28T00:50:31.7815749+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/8917921e6c3d4b40.html",
+    "sha256": "6e249c6a03f4b668f9631c8def61f60f1ae03af6d6a620963e1f1a9e0fdd21ef",
+    "bytes": 74678
+  },
+  {
+    "source_url": "https://j1visa.state.gov/programs/trainee/",
+    "checked_at": "2026-10-28T00:50:33.9528248+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/af6deb9f0a705f2f.html",
+    "sha256": "6f5346c63760fee53e8f140f33c82f0b8ccaf37019d49adb7ae2b3bbde139fdf",
+    "bytes": 63739
+  },
+  {
+    "source_url": "https://studyinthestates.dhs.gov/school-search",
+    "checked_at": "2026-10-28T00:50:36.3131268+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/098083ce6314fa1f.html",
+    "sha256": "8a2738b5ad40e38d405b4743ee7ced8a1f2bfa4f1d2fda5c066f65792fdba4c2",
+    "bytes": 109892
+  },
+  {
+    "source_url": "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20",
+    "checked_at": "2026-10-28T00:50:36.9501738+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/1c9493a9ebc88afa.html",
+    "sha256": "7579e9449e78d7f2df0fa3f9b63b9da8accb6234c0f8b11d6e57571d795b1697",
+    "bytes": 86087
+  },
+  {
+    "source_url": "https://travel.state.gov/content/travel/en/us-visas/employment/temporary-worker-visas.html",
+    "checked_at": "2026-10-28T00:50:37.5166289+09:00",
+    "status": "fetch_failed",
+    "error_type": "HttpResponseException",
+    "http_status": 403
+  },
+  {
+    "source_url": "https://travel.state.gov/en/newsroom/visas/2025/announcement-of-expanded-screening-and-vetting-for-h-1b-and-dependent-h-4-visa-applicants.html",
+    "checked_at": "2026-10-28T00:50:38.0237761+09:00",
+    "status": "fetch_failed",
+    "error_type": "HttpResponseException",
+    "http_status": 403
+  },
+  {
+    "source_url": "https://travel.state.gov/en/newsroom/visas/2025/restriction-on-entry-of-certain-nonimmigrant-workers.html",
+    "checked_at": "2026-10-28T00:50:38.4596981+09:00",
+    "status": "fetch_failed",
+    "error_type": "HttpResponseException",
+    "http_status": 403
+  },
+  {
+    "source_url": "https://www.dol.gov/agencies/whd/immigration/h1b",
+    "checked_at": "2026-10-28T00:50:38.8830792+09:00",
+    "status": "fetch_failed",
+    "error_type": "HttpResponseException",
+    "http_status": 403
+  },
+  {
+    "source_url": "https://www.dol.gov/agencies/whd/laws-and-regulations/laws/ina/h1b",
+    "checked_at": "2026-10-28T00:50:38.9987302+09:00",
+    "status": "fetch_failed",
+    "error_type": "HttpResponseException",
+    "http_status": 403
+  },
+  {
+    "source_url": "https://www.federalregister.gov/documents/2025/12/29/2025-23853/weighted-selection-process-for-registrants-and-petitioners-seeking-to-file-cap-subject-h-1b?utm_source=chatgpt.com",
+    "checked_at": "2026-10-28T00:50:39.0380902+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/87dd0fa5c3e8efbe.html",
+    "sha256": "9776a9fb63861c17d6edcc103da6eb2e462af2869e57a76715ccd4ae2883ef5b",
+    "bytes": 1025118
+  },
+  {
+    "source_url": "https://www.govinfo.gov/content/pkg/FR-2024-12-18/html/2024-29354.htm",
+    "checked_at": "2026-10-28T00:50:40.1516165+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/4a478086736cd2e1.html",
+    "sha256": "1b151d689037a5ecfddc329161403c3a531fe4900e0f4108fdf669b34086ee30",
+    "bytes": 1005839
+  },
+  {
+    "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-08-10/html/2026-16231.htm",
+    "checked_at": "2026-10-28T00:50:43.7278846+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/0ed3b59d4572b682.html",
+    "sha256": "181dee5db9cface566e844e62afd2ccbb7e667887ee53f8e94befc1446c4584f",
+    "bytes": 165739
+  },
+  {
+    "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-09-23/html/2026-19554.htm",
+    "checked_at": "2026-10-28T00:50:44.3266894+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/7cf368f821b5e83d.html",
+    "sha256": "2b6c90903586b7c6fe55dc337f10ab92981305c41954928b1de4c00b1787e949",
+    "bytes": 17866
+  },
+  {
+    "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+    "checked_at": "2026-10-28T00:50:45.536848+09:00",
+    "status": "fetch_failed",
+    "error_type": "HttpResponseException",
+    "http_status": 403
+  },
+  {
+    "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+    "checked_at": "2026-10-28T00:50:45.6069337+09:00",
+    "status": "fetch_failed",
+    "error_type": "HttpResponseException",
+    "http_status": 403
+  },
+  {
+    "source_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/",
+    "checked_at": "2026-10-28T00:50:45.7120524+09:00",
+    "status": "fetch_failed",
+    "error_type": "HttpResponseException",
+    "http_status": 403
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001367009.pdf",
+    "checked_at": "2026-10-28T00:50:45.7637485+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/4b8625e365be687a.pdf",
+    "sha256": "472a27d772b1649e61fb99a2ec569e8eb48ee8cc6811789160cf1160a17fa622",
+    "bytes": 401134
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001404131.pdf",
+    "checked_at": "2026-10-28T00:50:45.9798584+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/92e707b0b8209817.pdf",
+    "sha256": "82c73ffac31d8ae19bfa87a573d2f87e3c79ce316451cdab86ea26fff7bba895",
+    "bytes": 449272
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001437254.pdf",
+    "checked_at": "2026-10-28T00:50:46.2392449+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/6b6943abb1e38542.pdf",
+    "sha256": "10b00e3d3b7adb2c8aef9c163149b131ae2676fabc150117bdd2f43266704a8b",
+    "bytes": 318029
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001437255.pdf",
+    "checked_at": "2026-10-28T00:50:46.475128+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/42e51f7b414f6e2a.pdf",
+    "sha256": "9eab6a01e10204096ad569adafa70cab06246634000621442b0651c0e730bdb3",
+    "bytes": 318524
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001463585.pdf",
+    "checked_at": "2026-10-28T00:50:46.6927684+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/e18923c0a6301bd1.pdf",
+    "sha256": "192d15403ff7ef4f88f77381ce60274eb2bff36bec4a8a0702e7b333990519fd",
+    "bytes": 413989
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001463586.pdf",
+    "checked_at": "2026-10-28T00:50:46.9589192+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/acab208bb2691e0f.pdf",
+    "sha256": "4594c3c0e7a4edfc1923644772db3fbf69b208fd22c7f373da5e06d1b1727ccd",
+    "bytes": 428256
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001463587.pdf",
+    "checked_at": "2026-10-28T00:50:47.2391283+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/183acab88d583d2a.pdf",
+    "sha256": "705edf7521db01c141f5cc30393a65e5bec51d68b785f428e8987b553bb43b73",
+    "bytes": 376961
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001463588.pdf",
+    "checked_at": "2026-10-28T00:50:47.4448231+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/358d15e19a7ab648.pdf",
+    "sha256": "340bc4838dada0644784c6d90a3aaca050213831ade69d6c9a74506bc1729407",
+    "bytes": 398020
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001463589.pdf",
+    "checked_at": "2026-10-28T00:50:47.6342865+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/7258a21edc6f12c7.pdf",
+    "sha256": "53719263f5629331aab500de70a3af3760d18d62d319a6a05cc73820a5fd0807",
+    "bytes": 407390
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001463590.pdf",
+    "checked_at": "2026-10-28T00:50:47.9006379+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/b21971c02b242cb6.pdf",
+    "sha256": "0de1641c111639d67ac3919ab2462f5384e75666bd6f22e7400412bd38f664ee",
+    "bytes": 373077
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001463591.pdf",
+    "checked_at": "2026-10-28T00:50:48.1172699+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/92bf8287abee0078.pdf",
+    "sha256": "a7b42ac4464a34c8eef06c6ab7a897547f16e5218f6f9845db80942a8b589a5f",
+    "bytes": 407287
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001463592.pdf",
+    "checked_at": "2026-10-28T00:50:48.3126938+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/3fcc78c44ab237ae.pdf",
+    "sha256": "50416a1f5c39cec4d4c19bd2383ecf51d007af3148b59e98ee7cf12b051f536d",
+    "bytes": 399558
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001463593.pdf",
+    "checked_at": "2026-10-28T00:50:48.4842341+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/04ec45701e676b18.pdf",
+    "sha256": "d594cca1e0435a7e265a8440ea652e3407ef306fd8fb2045473e71e9412c9160",
+    "bytes": 420159
+  },
+  {
+    "source_url": "https://www.niied.go.kr/web/main/nid/niied_board/5570",
+    "checked_at": "2026-10-28T00:50:48.6813524+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/9ec35094c23a6475.html",
+    "sha256": "fc64037998f29cc674f6f8beeeae94bc7cfe585134f28c74a32d37d9d6a29831",
+    "bytes": 36318
+  },
+  {
+    "source_url": "https://www.uscis.gov/sites/default/files/document/memos/H1B_Proc_Memo_FINAL.pdf",
+    "checked_at": "2026-10-28T00:50:49.4395658+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/1986a3dcb8d43dae.pdf",
+    "sha256": "ed63d9f5beaaf7ed038867a5456cb9fb2dc7b90be6c427a51df4694fe8cfdfcc",
+    "bytes": 155093
+  },
+  {
+    "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+    "checked_at": "2026-10-28T00:50:49.5629595+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/3e06874fe97f8428.html",
+    "sha256": "2e34552cf56288a1982d51df6f6da63ebd50eceeb59d1fc9b681a2ea3f7d6a9d",
+    "bytes": 121343
+  },
+  {
+    "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/h-1b-electronic-registration-process",
+    "checked_at": "2026-10-28T00:50:49.947655+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/48fcb0d44d493635.html",
+    "sha256": "40e2d70af0573f3f49c66967a71c698786737745c2ebd3d29cbf63b3c0ab80d4",
+    "bytes": 111037
+  },
+  {
+    "source_url": "https://www.niied.go.kr/web/main/file/download/uu/d38331d7144c4042b8069bfbbb7855da",
+    "checked_at": "2026-10-28T00:55:01.8836559+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/aeb31b5b876237d4.html",
+    "sha256": "6f11ae189a6ec58bde63eb52c2e7eba80b6ec4ffde1f0620f1dca95200542c31",
+    "bytes": 1704809
+  },
+  {
+    "source_url": "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-G/part-62/subpart-B/section-62.22",
+    "checked_at": "2026-10-28T00:55:02.9654231+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/d760aa01a90e1191.html",
+    "sha256": "9be9aa3a0e3ca91ef9b5992e1604dcd39c98f0cb029508643f287d72e5c7cd2b",
+    "bytes": 116356
+  },
+  {
+    "source_url": "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-G/part-62/subpart-B/section-62.23",
+    "checked_at": "2026-10-28T00:55:03.808783+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/12d64aa2b4b212da.html",
+    "sha256": "97cd0b974e2a3374e72b0831e1dcfab44d55b7bbad9ba4502c8a45519e5dd4a9",
+    "bytes": 123004
+  },
+  {
+    "source_url": "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-G/part-62/subpart-B/section-62.32",
+    "checked_at": "2026-10-28T00:55:04.6698591+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/f3f9ca07aaa73b99.html",
+    "sha256": "f78de92706669f47277b634b99d3f787ee2016efae44514b010ba54be3f1b587",
+    "bytes": 124843
+  },
+  {
+    "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.2",
+    "checked_at": "2026-10-28T00:55:05.5800525+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/ea098f95b5468356.html",
+    "sha256": "3a0a28acf24361eb7b7a3242d0a53d6cbdc2d62f299937ab5ff28e7129728150",
+    "bytes": 1417763
+  },
+  {
+    "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.1",
+    "checked_at": "2026-10-28T00:55:06.8337503+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/4ac393791dd3ff9d.html",
+    "sha256": "32e2cb69165e21b43b7b7d6f79820d7103b480e5ae02a1ba4420af1fae63795b",
+    "bytes": 162879
+  },
+  {
+    "source_url": "https://www.ecfr.gov/current/title-20/chapter-V/part-655/subpart-H/section-655.731",
+    "checked_at": "2026-10-28T00:55:07.7329883+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/017efcc091324cc6.html",
+    "sha256": "a5f8f2cd9f86fb39b79aaf615802c09213917ba21552cc3bb60dc92e1286726c",
+    "bytes": 166247
+  },
+  {
+    "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-300.html",
+    "checked_at": "2026-10-28T00:55:08.6287087+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/aca953c4f9b8e675.html",
+    "sha256": "788b98349e3604f58947a2a8044722491913d2d95d04d61db8bfbd3df92e2e83",
+    "bytes": 56979
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/content/001363332.pdf",
+    "checked_at": "2026-10-28T01:35:38.6839640+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/5cc4de35aa4f2f0c.pdf",
+    "sha256": "167ace852ab22a03173ae0d5b59a031ed64cf1e9baf214e04a4018758239ba45",
+    "bytes": 34370
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/applications/status/student.html",
+    "checked_at": "2026-10-28T01:35:38.7584838+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/e29600e77428dd8b.html",
+    "sha256": "c2de8d497817a5dfc95fc34df491fc966952b968937df0b3b40311814b0222e2",
+    "bytes": 52025
+  },
+  {
+    "source_url": "https://www.moj.go.jp/isa/10_00258.html",
+    "checked_at": "2026-10-28T01:35:38.7900800+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/76f8e4850dadff23.html",
+    "sha256": "3f9a185c57aff4b727a0f96f2e44c41289445d0742fb05e4000f858592d4413d",
+    "bytes": 28018
+  },
+  {
+    "source_url": "https://www.ca1.uscourts.gov/content/26-1699o_6828777",
+    "checked_at": "2026-10-28T01:35:38.8259138+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/1f323db92d86d591.html",
+    "sha256": "189958691e534a803029fe8a4e15c47e0b03951ab81f93792e689344172039b9",
+    "bytes": 22121
+  },
+  {
+    "source_url": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf",
+    "checked_at": "2026-10-28T01:35:38.8663757+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/c1f09bd1cbbd362a.pdf",
+    "sha256": "837c5f7eba23ee4dd64e34e21b12e9f029338f80b811c94a55fdfc1eb41d42b4",
+    "bytes": 147416
+  },
+  {
+    "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-mad-1_25-cv-13829/pdf/USCOURTS-mad-1_25-cv-13829-0.pdf",
+    "checked_at": "2026-10-28T01:35:38.8939508+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/279614ceb0a7ad82.pdf",
+    "sha256": "f9fdaa4311fd2db7ff93499aee928118ecf11813be2624448d2e45b1ab103a9a",
+    "bytes": 372156
+  },
+  {
+    "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+    "checked_at": "2026-10-28T01:35:38.9360480+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf",
+    "sha256": "b8af6e7d9db6e51e3e09f954e5ec8a9a4b8b864d8187f8a605b581b7c8404bcc",
+    "bytes": 545841
+  },
+  {
+    "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-106/section-106.2",
+    "checked_at": "2026-10-28T01:35:41.5680641+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/a00f3716703bf34b.html",
+    "sha256": "9d9aca12215bd615b0ea4289ede40d7fa4d1b653bbb8af16b7a15ef66f26fcc3",
+    "bytes": 172694
+  }
+]

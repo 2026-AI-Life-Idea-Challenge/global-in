@@ -80,7 +80,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "일자리 제안과 고용주 적격성을 확인한다. 고용계약이 있다는 사실만으로 취업허가를 승인하지 않는다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "employer",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/employer-specific.html"
+          },
+          {
+            "source_key": "r200",
+            "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-200.html"
+          }
+        ],
+        "pending_items": [
+          "고용주 불이행 목록·진정성·계약과 제출정보의 일치 확인"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_ESWP_POL_02",
@@ -97,7 +118,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "일반 신청요건·입국적격성·필요서류와 취업허가 면제 여부를 함께 검토한다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "employer",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/employer-specific.html"
+          },
+          {
+            "source_key": "r200",
+            "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-200.html"
+          }
+        ],
+        "pending_items": [
+          "일반요건 구 URL이 허브로 이동함; 신청 위치별 안내와 개별 입국불허 사유 검토"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_ESWP_POL_03",
@@ -115,7 +157,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "LMIA가 필요한 경로는 고용주의 선행 절차와 긍정 LMIA 및 관련 서류를 확인한다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "employer",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/employer-specific.html"
+          },
+          {
+            "source_key": "r203",
+            "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-203.html"
+          }
+        ],
+        "pending_items": [
+          "LMIA 면제 분류·유효기간·직무별 조건·고용주 절차 확인"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_ESWP_POL_04",
@@ -133,7 +196,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "LMIA 면제는 면제 코드별로 확인한다. 일반 IMP의 Employer Portal·고용제안 번호·고용주 수수료에도 예외가 있다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "imp",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/hire-temporary-foreign/international-mobility-program/how-to-hire.html"
+          },
+          {
+            "source_key": "r200",
+            "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-200.html"
+          }
+        ],
+        "pending_items": [
+          "적용 면제코드 및 포털·수수료 면제 여부 확인; open permit 절차와 혼동 금지"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_ESWP_POL_05",
@@ -153,7 +237,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "허가서의 고용주·직종·근무지·추가조건을 준수해야 하며 고용주 변경이 자동 허용되는 것은 아니다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "employer",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/employer-specific.html"
+          },
+          {
+            "source_key": "imp",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/hire-temporary-foreign/international-mobility-program/how-to-hire.html"
+          }
+        ],
+        "pending_items": [
+          "연장·조건변경·신청 위치·임시정책상 개별 허가와 maintained status 검토"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     }
   ],
   "lmia_path_review": {
@@ -2117,5 +2222,12 @@
     "legal_validation_approved": false,
     "approved_for_eligibility_decision": false,
     "review_status": "needs_review"
+  },
+  "official_review_summary": {
+    "reviewed_at": "2026-10-28",
+    "policy_count": 5,
+    "legal_validation_completed_count": 0,
+    "approval_flags_changed": false,
+    "scope": "dated official-source desk review; original evidence and candidate rules preserved"
   }
 }

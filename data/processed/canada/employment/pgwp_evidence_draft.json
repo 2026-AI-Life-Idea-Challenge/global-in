@@ -154,7 +154,24 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "적격 DLI·과정, 최소 과정기간, 전일제 이수와 마지막 학기 예외, 수료확인 후 180일 및 허가 유효성 조건을 함께 검토한다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "pgwp",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html"
+          }
+        ],
+        "pending_items": [
+          "Quebec 900시간·특수사례 및 허가 유효기간의 실제 날짜 확인"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_PGWP_POL_02",
@@ -174,7 +191,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "학위·기타 대학·비대학·비행학교 경로를 구분하며 DLI 졸업만으로 PGWP 자격이 보장되지는 않는다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "pgwp",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html"
+          },
+          {
+            "source_key": "pgwp_duration",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html"
+          }
+        ],
+        "pending_items": [
+          "개별 학교·과정 적격 여부와 비행학교 경로 확인"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_PGWP_POL_03",
@@ -194,7 +232,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "언어요건의 전환일은 PGWP 신청일이다. 학위·기타 대학은 CLB/NCLC 7, 비대학은 5를 기준으로 네 영역을 검토한다. 적격 비행학교 예외가 있다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "pgwp",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html"
+          },
+          {
+            "source_key": "pgwp_docs",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/get-documents.html"
+          }
+        ],
+        "pending_items": [
+          "승인 시험 종류·2년 미만 유효성·장애에 따른 평균점수 절차 검토"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_PGWP_POL_04",
@@ -214,7 +273,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "전공요건은 study permit 신청일·학위 예외·CIP 적용시점으로 구분한다. 학사·석사·박사 등 면제 경로를 먼저 확인한다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "pgwp",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html"
+          },
+          {
+            "source_key": "cip",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility/field-of-study.html"
+          }
+        ],
+        "pending_items": [
+          "개별 CIP 코드와 과거 신청일별 적격 상태 확인; 표의 개수 일치는 승인 아님"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_PGWP_POL_05",
@@ -234,7 +314,24 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "원격수업은 lock-in 날짜와 캐나다 내 대면수업 비율, 해외수학 기간 공제 및 과거 COVID 예외를 구분한다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "pgwp",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html"
+          }
+        ],
+        "pending_items": [
+          "개인별 수업 시작일·신청 접수일·수학 위치와 기간 재구성"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_PGWP_POL_06",
@@ -256,7 +353,28 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "단축과정·학교이전·휴학·기존 PGWP 및 공사립 제휴과정의 예외를 개별 검토한다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "pgwp",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html"
+          },
+          {
+            "source_key": "study_conditions",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/while-you-study/study-permit-conditions.html"
+          }
+        ],
+        "pending_items": [
+          "주간 제휴과정의 2023-02-01 경계일이 안내 문구상 공백이므로 단정 금지; 승인휴학·기존허가 이력 확인"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     },
     {
       "policy_id": "CA_PGWP_POL_07",
@@ -276,7 +394,36 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "stage": "official_desk_review_recorded",
+        "reviewed_policy_text": "신청·신분회복·대기 중 취업·허가기간을 구분한다. 신분회복 신청 중에는 취업을 자동 허용하지 않으며 기간은 학위·과정·여권에 좌우된다.",
+        "text_kind": "reviewer_summary_not_source_quote",
+        "source_references": [
+          {
+            "source_key": "pgwp_apply",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/apply.html"
+          },
+          {
+            "source_key": "pgwp_after",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/after-you-apply.html"
+          },
+          {
+            "source_key": "pgwp_duration",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html"
+          },
+          {
+            "source_key": "pgwp_docs",
+            "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/get-documents.html"
+          }
+        ],
+        "pending_items": [
+          "180일 신청기간과 90일 신분회복기간 별도 계산; 수수료 최신표; 대기취업 조건; 석사 특례 및 여권제한 검토"
+        ],
+        "legal_validation_completed": false,
+        "law_consolidation_limit": "Justice Laws pages inspected were current to 2026-09-30; later amendments must be checked"
+      }
     }
   ],
   "source_requirement_checks": {
@@ -26210,5 +26357,12 @@
     "legal_validation_approved": false,
     "approved_for_eligibility_decision": false,
     "review_status": "needs_review"
+  },
+  "official_review_summary": {
+    "reviewed_at": "2026-10-28",
+    "policy_count": 7,
+    "legal_validation_completed_count": 0,
+    "approval_flags_changed": false,
+    "scope": "dated official-source desk review; original evidence and candidate rules preserved"
   }
 }

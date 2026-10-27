@@ -777,7 +777,19 @@
       "provisional_classification": "no_age_requirement",
       "interpretation_note_draft": "The source states that there is no age requirement.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "ac78485ef14a4a24",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_02",
@@ -809,7 +821,19 @@
       "provisional_classification": "conditional",
       "interpretation_note_draft": "Specific visa status is required when applying in Australia.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "8812af85d9ca00b6",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_03",
@@ -841,7 +865,19 @@
       "provisional_classification": "conditional",
       "interpretation_note_draft": "Previous visa-condition compliance is relevant when in Australia.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "2367b4824868d5ef",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_04",
@@ -873,7 +909,19 @@
       "provisional_classification": "required",
       "interpretation_note_draft": "Employer nomination and sponsor status must be reviewed.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "a919451ebee71ea4",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_05",
@@ -905,7 +953,19 @@
       "provisional_classification": "required_with_possible_exceptions",
       "interpretation_note_draft": "Work restrictions depend on sponsor type and occupation.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "967a7718752fda68",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_06",
@@ -937,7 +997,19 @@
       "provisional_classification": "required",
       "interpretation_note_draft": "Relevant skills, qualifications and experience must be demonstrated.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "834bfaa148682636",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_07",
@@ -969,7 +1041,19 @@
       "provisional_classification": "required_with_recognition_rules",
       "interpretation_note_draft": "At least one year of relevant experience is stated, subject to recognition rules.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "0a39a23cce0c0e0e",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_08",
@@ -1001,7 +1085,19 @@
       "provisional_classification": "occupation_dependent",
       "interpretation_note_draft": "Mandatory assessment applies to certain applicants, with possible exemptions.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "557bcdac7e237e1c",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_09",
@@ -1033,7 +1129,19 @@
       "provisional_classification": "required",
       "interpretation_note_draft": "Adequate health cover must be maintained during the relevant stay.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "49ffd62496e2b6ca",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_10",
@@ -1065,7 +1173,19 @@
       "provisional_classification": "required",
       "interpretation_note_draft": "Health requirements apply to primary and relevant secondary applicants.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "29a77e1d2224927d",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_11",
@@ -1097,7 +1217,19 @@
       "provisional_classification": "required",
       "interpretation_note_draft": "Character requirements apply; document exemptions require review.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "8373ebe4de11bd53",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_12",
@@ -1129,7 +1261,19 @@
       "provisional_classification": "prohibition_with_possible_exception",
       "interpretation_note_draft": "Relevant sponsorship-payment conduct and ministerial discretion require review.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "eb749cc62650b0d9",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_13",
@@ -1171,6 +1315,18 @@
         "test_date_rules": "needs_review",
         "online_test_restrictions": "needs_review",
         "labour_agreement_exception": "needs_review"
+      },
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "1153930c01c6a0f0",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
       }
     },
     {
@@ -1203,7 +1359,19 @@
       "provisional_classification": "case_specific",
       "interpretation_note_draft": "Prior visa cancellation or refusal may affect eligibility.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "c35d6ab2b7d976d0",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_15",
@@ -1235,7 +1403,19 @@
       "provisional_classification": "conditional",
       "interpretation_note_draft": "Outstanding Australian government debt requires repayment or an arrangement.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "6e04aba5cf774c3b",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_CORE_POL_16",
@@ -1267,7 +1447,19 @@
       "provisional_classification": "age_conditional",
       "interpretation_note_draft": "Confirmation is required for applicants aged 18 or older.",
       "interpretation_review_status": "needs_review",
-      "rule_parameters_verified": false
+      "rule_parameters_verified": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "5996e73caf917e2d",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     }
   ],
   "policy_candidate_count": 16,
@@ -1385,5 +1577,11 @@
     "source_file": "data/raw/australia/employment/subclass_482_core_skills_step_by_step.txt",
     "source_sha256": "06e8875a62a5b0cf5eeb9c7982a63cce2d7f89b35a98fe9bede2f58f9ca4f8a9",
     "review_status": "needs_review"
+  },
+  "official_review_summary": {
+    "reviewed_at": "2026-10-28",
+    "policy_count": 16,
+    "observed_live_section_count": 16,
+    "legal_validation_completed_count": 0
   }
 }

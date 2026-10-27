@@ -1,0 +1,1844 @@
+{
+  "reviewed_at": "2026-10-28",
+  "input_sha256": "043cf9bbb1d00c864d77912dca662e98960f5374766a219c36749bf7d2c69bd8",
+  "definition": "versioned review corrections and replacement evidence; no DB import or final legal approval",
+  "nationality_reference": {
+    "source_url": "https://www.moj.go.jp/isa/content/001363332.pdf",
+    "source_file": "data/raw/legal_review/20261028/5cc4de35aa4f2f0c.pdf",
+    "source_sha256": "167ace852ab22a03173ae0d5b59a031ed64cf1e9baf214e04a4018758239ba45",
+    "linked_from": "https://www.moj.go.jp/isa/applications/status/student.html",
+    "linking_page_sha256": "c2de8d497817a5dfc95fc34df491fc966952b968937df0b3b40311814b0222e2",
+    "verified_member_mapping": {
+      "KOR": "listed_countries"
+    },
+    "other_country_code_mappings_verified": false,
+    "finding": "원문은 열거된 국가 이외를 신중심사 대상으로 지정한다. 한국은 열거된 국가에 포함된다. 전체 국가의 ISO 코드 자동 매핑은 승인하지 않았다."
+  },
+  "summary": {
+    "reviewed_at": "2026-10-28",
+    "correction_versions_recorded": 26,
+    "correction_total": 26,
+    "correction_recording_percent": 100,
+    "evidence_context_reextracted": 6,
+    "evidence_context_total": 6,
+    "evidence_reextraction_percent": 100,
+    "fee_rule_scope_checked": 2,
+    "priority_authority_holds_remaining": 8,
+    "court_order_primary_documents_checked": 3,
+    "final_legal_validation_completed": 0,
+    "final_legal_validation_percent": 0,
+    "database_changed": false
+  },
+  "policy_resolutions": {
+    "US-WK-01-POL-EMP-003": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "7f881773517372870a1222da326f0e8a3a49e65f88891f10eca0652d1b835f5b",
+        "resolved_review_issue_codes": [
+          "wage_start_trigger_requires_clarification"
+        ],
+        "source_urls": [
+          "https://www.dol.gov/agencies/whd/laws-and-regulations/laws/ina/h1b"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_review_components": [
+          "관련 비생산 기간 기준을 전제로, H-1B 근로자가 실제로 근무 가능 상태가 되거나 고용주의 지휘 아래 배정 대기·교육 등을 시작한 날부터 필요한 임금 지급 의무가 발생한다.",
+          "아직 고용을 시작하지 않았어도 LCA 인증 및 청원 승인을 받은 고용주는 해당 청원에 따른 최초 입국 30일 후, 또는 청원 승인 당시 미국에 있던 근로자가 해당 고용주를 위해 일할 자격을 얻은 날부터 60일 후에는 임금을 지급해야 한다. 이 기간은 더 일찍 고용을 시작한 근로자에 대한 무급 유예가 아니다."
+        ],
+        "text_kind": "reviewer_summary_not_source_quote",
+        "legal_reference": {
+          "source_url": "https://www.ecfr.gov/current/title-20/chapter-V/part-655/subpart-H/section-655.731",
+          "provision": "655.731(c)(6)",
+          "paragraph_anchor_found": true,
+          "source_file": "data/raw/legal_review/20261028/017efcc091324cc6.html",
+          "source_sha256": "a5f8f2cd9f86fb39b79aaf615802c09213917ba21552cc3bb60dc92e1286726c",
+          "normalized_paragraph_sha256": "d0ffe4633c8e3ae2ada378bb8d95a79e3162728740cfbad53e3931025b77b50e"
+        }
+      }
+    },
+    "US-J1-INTERN-POL-008": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "5ce17c14c6f2b2764d1794b9933c9a03837ca55ee7b3161b7ceb6812a51126c2",
+        "resolved_review_issue_codes": [
+          "evaluation_exactly_six_months_boundary_requires_regulation_over_brochure"
+        ],
+        "source_urls": [
+          "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-G/part-62/subpart-B/section-62.22"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_review_components": [
+          "6개월 이하의 훈련·인턴십은 최소 종료 평가가 필요하다. 6개월 초과는 최소 중간·종료 평가가 필요하다. 평가를 종료 전에 완료하고 참가자·직속 감독자가 서명하며 스폰서는 프로그램 종료 후 최소 3년간 보존한다."
+        ],
+        "text_kind": "reviewer_summary_not_source_quote",
+        "legal_reference": {
+          "source_url": "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-G/part-62/subpart-B/section-62.22",
+          "provision": "22 CFR 62.22(l)",
+          "reviewed_policy_text": "평가 주기는 6개월 초과와 6개월 이하로 구분한다. 정확히 6개월인 프로그램을 종료 평가 의무에서 제외하면 안 된다.",
+          "text_kind": "reviewer_summary_not_source_quote",
+          "historical_quote_changed": false,
+          "automatic_eligibility_rule_enabled": false
+        }
+      }
+    },
+    "US-J1-INTERN-POL-001": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "08cc919b9a8f74c09d9077d521fd6cfdff113923abd3baf635de3cb2e7b73b71",
+        "resolved_review_issue_codes": [
+          "full_time_condition_missing_in_brochure"
+        ],
+        "source_urls": [
+          "https://j1visa.state.gov/programs/intern/"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_review_components": [
+          "인턴은 미국 밖 학위·자격증 수여 고등교육기관의 전일제 재학생이거나, 해당 기관 졸업 후 교류 프로그램 시작일까지 12개월이 지나지 않은 외국인이어야 한다. 스폰서가 이를 확인한다."
+        ],
+        "text_kind": "reviewer_summary_not_source_quote",
+        "legal_reference": {
+          "source_url": "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-G/part-62/subpart-B/section-62.22",
+          "provision": "62.22(d)(3)",
+          "paragraph_anchor_found": true,
+          "source_file": "data/raw/legal_review/20261028/d760aa01a90e1191.html",
+          "source_sha256": "9be9aa3a0e3ca91ef9b5992e1604dcd39c98f0cb029508643f287d72e5c7cd2b",
+          "normalized_paragraph_sha256": "50bd55c81fd135c0cbec68887e843ff954fb8c2270b30fd92bb829e641c1744b"
+        }
+      }
+    },
+    "US-J1-INTERN-POL-005": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "e00c5fb8ad372b4b5e6a797f6b4f8917c02d78c10d5375a9837bcf162bb46d41",
+        "resolved_review_issue_codes": [
+          "site_visit_and_or_conflict"
+        ],
+        "source_urls": [
+          "https://j1visa.state.gov/programs/intern/"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_review_components": [
+          "스폰서는 성공적인 종전 참가 이력이 없는 호스트 중 직원 수가 25명 미만이거나 연매출이 300만 달러 미만인 곳을 현장 방문해야 한다. 학술기관 및 연방·주·지방 정부기관 배치는 이 방문 요건에서 제외된다."
+        ],
+        "text_kind": "reviewer_summary_not_source_quote",
+        "legal_reference": {
+          "source_url": "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-G/part-62/subpart-B/section-62.22",
+          "provision": "62.22(g)(4)",
+          "paragraph_anchor_found": true,
+          "source_file": "data/raw/legal_review/20261028/d760aa01a90e1191.html",
+          "source_sha256": "9be9aa3a0e3ca91ef9b5992e1604dcd39c98f0cb029508643f287d72e5c7cd2b",
+          "normalized_paragraph_sha256": "fd6984fdfa081b7a561d19be81e26e09aa9d2e02b91075509ecc045cb6dab6db"
+        }
+      }
+    },
+    "US-J1-TRAINEE-POL-008": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "c3647b8da85afd5d19ea91b396eea1a92177fccdc6979dcfdd5ed9ba52b79b6d",
+        "resolved_review_issue_codes": [
+          "site_visit_and_or_conflict"
+        ],
+        "source_urls": [
+          "https://j1visa.state.gov/programs/trainee/"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_review_components": [
+          "스폰서는 성공적인 종전 참가 이력이 없는 호스트 중 직원 수가 25명 미만이거나 연매출이 300만 달러 미만인 곳을 현장 방문해야 한다. 학술기관 및 연방·주·지방 정부기관 배치는 이 방문 요건에서 제외된다."
+        ],
+        "text_kind": "reviewer_summary_not_source_quote",
+        "legal_reference": {
+          "source_url": "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-G/part-62/subpart-B/section-62.22",
+          "provision": "62.22(g)(4)",
+          "paragraph_anchor_found": true,
+          "source_file": "data/raw/legal_review/20261028/d760aa01a90e1191.html",
+          "source_sha256": "9be9aa3a0e3ca91ef9b5992e1604dcd39c98f0cb029508643f287d72e5c7cd2b",
+          "normalized_paragraph_sha256": "fd6984fdfa081b7a561d19be81e26e09aa9d2e02b91075509ecc045cb6dab6db"
+        }
+      }
+    },
+    "US-J1-TRAINEE-POL-011": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "2296cd2dd479184e91e5ee466a755fdc0855938bd89c140461b254a4ff0e27de",
+        "resolved_review_issue_codes": [
+          "evaluation_exactly_six_months_boundary_requires_regulation_over_brochure"
+        ],
+        "source_urls": [
+          "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-G/part-62/subpart-B/section-62.22"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_review_components": [
+          "6개월 이하의 훈련·인턴십은 최소 종료 평가가 필요하다. 6개월 초과는 최소 중간·종료 평가가 필요하다. 평가를 종료 전에 완료하고 참가자·직속 감독자가 서명하며 스폰서는 프로그램 종료 후 최소 3년간 보존한다."
+        ],
+        "text_kind": "reviewer_summary_not_source_quote",
+        "legal_reference": {
+          "source_url": "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-G/part-62/subpart-B/section-62.22",
+          "provision": "22 CFR 62.22(l)",
+          "reviewed_policy_text": "평가 주기는 6개월 초과와 6개월 이하로 구분한다. 정확히 6개월인 프로그램을 종료 평가 의무에서 제외하면 안 된다.",
+          "text_kind": "reviewer_summary_not_source_quote",
+          "historical_quote_changed": false,
+          "automatic_eligibility_rule_enabled": false
+        }
+      }
+    },
+    "US-F1-POL-006": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "972c1e1a0ca624c29ce31d4847f605eb8c16c59d31e151f5f77aaf6a3156a9c3",
+        "resolved_review_issue_codes": [
+          "trailing_or_extraction_boundary"
+        ],
+        "source_urls": [
+          "https://studyinthestates.dhs.gov/students/prepare/students-and-the-form-i-20"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_policy_text": "You are expected to have the signed Form I-20 on hand as you enter the country. Do not pack it away in your suitcase. A U.S. Customs and Border Protection officer will instruct you to present your Form I-20 at the port of entry . You may arrive up to 30 days before the start date listed on your Form I-20.",
+        "text_kind": "edited_clause_not_verbatim_source_quote"
+      }
+    },
+    "US-J1-COLLEGE-POL-001": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "3861a72f07b35839d878e3afac9d255ede93d94d340f21fbc39f079bd0181782",
+        "resolved_review_issue_codes": [
+          "selection_and_nondegree_conditions_mixed"
+        ],
+        "source_urls": [
+          "https://j1visa.state.gov/programs/college-and-university-student/"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_review_components": [
+          "J-1 대학생 선정에는 22 CFR 62.23(c)의 정부·국제기구 재원, 정부·교육기관 간 협정, 개인·가족 외의 상당한 재원, 또는 규정상 학생 인턴 등의 경로 중 적용 경로를 확인한다.",
+          "비학위 과정의 전일제 학업 및 최대 24개월 조건은 선정 재원·협정 요건과 별도다. 비학위 등록만으로 선정 기준을 충족하는 새 경로를 만들지 않는다."
+        ],
+        "text_kind": "reviewer_summary_not_source_quote",
+        "legal_reference": {
+          "source_url": "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-G/part-62/subpart-B/section-62.23",
+          "provision": "62.23(c)",
+          "paragraph_anchor_found": true,
+          "source_file": "data/raw/legal_review/20261028/12d64aa2b4b212da.html",
+          "source_sha256": "97cd0b974e2a3374e72b0831e1dcfab44d55b7bbad9ba4502c8a45519e5dd4a9",
+          "normalized_paragraph_sha256": "0f1b20dc7034f758227ca74d69699a9305d23dcfdbf4477688a0550e5ecb841c"
+        }
+      }
+    },
+    "US-SWT-POL-009": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "e8cac91ee0ce2e4c098cc1fab8c8eb8156b90081b14b6c673b1117b4c974c180",
+        "resolved_review_issue_codes": [
+          "vwp_heading_overgeneralizes_wage_and_monitoring"
+        ],
+        "source_urls": [
+          "https://j1visa.state.gov/programs/summer-work-travel/"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_review_components": [
+          "VWP 국적 참가자의 사전 고용 없는 입국에 관한 구직·재정 지원 조건은 해당 참가자 범위로 구분한다. 이 조건이 비자면제 입국으로 SWT 취업을 허용한다는 뜻은 아니다.",
+          "스폰서는 모든 SWT 참가자의 임금에 대해 적용 연방·주·지방 최저임금과 유사한 미국인 근로자의 임금·혜택 기준 중 필요한 높은 수준을 확인하고, 최소 월별 개인 연락을 문서화하며 건강·안전·복지 문제에 대응해야 한다."
+        ],
+        "text_kind": "reviewer_summary_not_source_quote",
+        "legal_reference": {
+          "source_url": "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-G/part-62/subpart-B/section-62.32",
+          "provision": "62.32(i)",
+          "paragraph_anchor_found": true,
+          "source_file": "data/raw/legal_review/20261028/f3f9ca07aaa73b99.html",
+          "source_sha256": "f78de92706669f47277b634b99d3f787ee2016efae44514b010ba54be3f1b587",
+          "normalized_paragraph_sha256": "4624b1347fd75cca665a9c62d90293f6ee8dd5754d0b0ec09ed0cf81c4b5320c"
+        }
+      }
+    },
+    "US-WK-01-POL-0092": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "42ce1581b55b4d57ad76260c6f43b68e796f330b5620babc92c5be3d783db403",
+        "resolved_review_issue_codes": [
+          "multiple_legal_subjects_require_split"
+        ],
+        "source_urls": [
+          "https://www.govinfo.gov/content/pkg/FR-2024-12-18/html/2024-29354.htm"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_review_components": [
+          "연구기관 등에 대한 H-1B cap 면제는 해당 기관 정의와 개별 고용·업무 요건에 따라 판단하며 F-1 cap-gap과 구분한다.",
+          "적격 F-1의 H-1B 신분변경 청원에 따른 cap-gap 체류 연장과 해당되는 기존 취업허가 연장은 8 CFR 214.2(f)(5)(vii)의 요건·종료 사유에 따라 별도로 판단한다."
+        ],
+        "text_kind": "reviewer_summary_not_source_quote",
+        "legal_reference": {
+          "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.2",
+          "provision": "214.2(h)(8)",
+          "paragraph_anchor_found": true,
+          "source_file": "data/raw/legal_review/20261028/ea098f95b5468356.html",
+          "source_sha256": "3a0a28acf24361eb7b7a3242d0a53d6cbdc2d62f299937ab5ff28e7129728150",
+          "normalized_paragraph_sha256": "15c14bedb86344bc0086c39763cd2d870e3a9dfe814a87a038cdc849a5d63ccc"
+        }
+      }
+    },
+    "JP-POL-c08a57e18828062296b1df68": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "f6937e0fb44498f47dfe233e8b26debb5c9618ee687ea89d725efad9ab9c2503",
+        "resolved_review_issue_codes": [
+          "renewal_row_group_condition_requires_preservation"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001367009.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_scope": {
+          "application_type": "renewal",
+          "school_category": null,
+          "school_classification": null,
+          "observed_requirement_symbols": {
+            "1": null,
+            "2": null,
+            "3": "○",
+            "4": "○"
+          },
+          "row_group_condition_original_ja": "※カテゴリー３又は４の企業等に転職後の初回の更新許可申請の場合は 、上記資料に加え 、以下の資料も併せて提出願います（カテゴリー３の場合は 、提出資\n料１３は不要）\n。\n（注）カテゴリー３又は４の企業等に所属していて 、当初申請していた業務内容から言語能力を用いた対人業務等へ業務内容が変更した際は 、提出書類１２を\n提出願います\n。",
+          "condition_logic": "first_renewal_after_change_to_category_3_or_4_employer"
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001367009.pdf",
+          "source_file": "data/raw/legal_review/20261028/4b8625e365be687a.pdf",
+          "source_sha256": "472a27d772b1649e61fb99a2ec569e8eb48ee8cc6811789160cf1160a17fa622",
+          "page": 2,
+          "row": 8,
+          "cells": [
+            "8",
+            "活動内容等を明らかにするいずれかの資料\n（１）労働契約を締結する場合\n労働基準法第15条第１項及び同法施行規則第５条に基づき\n、\n労働者に交付される労働条件を明示する文書\n（２）日本法人である会社の役員に就任する場合\n役員報酬を定める定款の写し又は役員報酬を決議した株主\n総会の議事録（報酬委員会が設置されている会社にあっては\n同委員会の議事録）の写し\n（３）外国法人内の日本支店に転勤する場合及び会社以外の団体\nの役員に就任する場合\n地位（担当業務） 期間及び支払われる報酬額を明らかにする\n、\n所属団体の文書",
+            "",
+            "",
+            "○",
+            "○",
+            "□"
+          ]
+        },
+        "reviewer_text": [
+          "기술·인문지식·국제업무의 해당 COE·변경·갱신 신청과 소속 기관 카테고리에만 적용한다. 제출서류 목록을 실체 자격 승인으로 바꾸지 않는다.",
+          "공란을 모든 법령상 의무의 면제로 해석하지 않으며 다른 카테고리의 필수 표시를 복사하지 않는다.",
+          "이직 후 카테고리 3·4 기관에서 첫 갱신하는 공통 조건을 보존한다. 13번은 카테고리 3 제외이며 12번의 업무 변경 주석은 별도로 적용한다.",
+          "원문의 활동·기관 유형별 선택 자료를 모두 동시에 요구하는 누적 조건으로 변환하지 않는다."
+        ]
+      }
+    },
+    "JP-POL-6ecaea9a53746d2375e1030a": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "c0d4179f18caa30794f551933c39fe034e30096098c8e7277f00d685a7662873",
+        "resolved_review_issue_codes": [
+          "renewal_row_group_condition_requires_preservation"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001367009.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_scope": {
+          "application_type": "renewal",
+          "school_category": null,
+          "school_classification": null,
+          "observed_requirement_symbols": {
+            "1": null,
+            "2": null,
+            "3": "○",
+            "4": "○"
+          },
+          "row_group_condition_original_ja": "※カテゴリー３又は４の企業等に転職後の初回の更新許可申請の場合は 、上記資料に加え 、以下の資料も併せて提出願います（カテゴリー３の場合は 、提出資\n料１３は不要）\n。\n（注）カテゴリー３又は４の企業等に所属していて 、当初申請していた業務内容から言語能力を用いた対人業務等へ業務内容が変更した際は 、提出書類１２を\n提出願います\n。",
+          "condition_logic": "first_renewal_after_change_to_category_3_or_4_employer"
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001367009.pdf",
+          "source_file": "data/raw/legal_review/20261028/4b8625e365be687a.pdf",
+          "source_sha256": "472a27d772b1649e61fb99a2ec569e8eb48ee8cc6811789160cf1160a17fa622",
+          "page": 2,
+          "row": 9,
+          "cells": [
+            "9",
+            "登記事項証明書",
+            "",
+            "",
+            "○",
+            "○",
+            "□"
+          ]
+        },
+        "reviewer_text": [
+          "기술·인문지식·국제업무의 해당 COE·변경·갱신 신청과 소속 기관 카테고리에만 적용한다. 제출서류 목록을 실체 자격 승인으로 바꾸지 않는다.",
+          "공란을 모든 법령상 의무의 면제로 해석하지 않으며 다른 카테고리의 필수 표시를 복사하지 않는다.",
+          "이직 후 카테고리 3·4 기관에서 첫 갱신하는 공통 조건을 보존한다. 13번은 카테고리 3 제외이며 12번의 업무 변경 주석은 별도로 적용한다."
+        ]
+      }
+    },
+    "JP-POL-24b8dcfa215958b1c273d206": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "8f9cb5aa10d847b7994e09506e7b5e3aa18b1e915001bfafc9fdcf0f6724ac25",
+        "resolved_review_issue_codes": [
+          "renewal_row_group_condition_requires_preservation"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001367009.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_scope": {
+          "application_type": "renewal",
+          "school_category": null,
+          "school_classification": null,
+          "observed_requirement_symbols": {
+            "1": null,
+            "2": null,
+            "3": "○",
+            "4": "○"
+          },
+          "row_group_condition_original_ja": "※カテゴリー３又は４の企業等に転職後の初回の更新許可申請の場合は 、上記資料に加え 、以下の資料も併せて提出願います（カテゴリー３の場合は 、提出資\n料１３は不要）\n。\n（注）カテゴリー３又は４の企業等に所属していて 、当初申請していた業務内容から言語能力を用いた対人業務等へ業務内容が変更した際は 、提出書類１２を\n提出願います\n。",
+          "condition_logic": "first_renewal_after_change_to_category_3_or_4_employer"
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001367009.pdf",
+          "source_file": "data/raw/legal_review/20261028/4b8625e365be687a.pdf",
+          "source_sha256": "472a27d772b1649e61fb99a2ec569e8eb48ee8cc6811789160cf1160a17fa622",
+          "page": 2,
+          "row": 10,
+          "cells": [
+            "10",
+            "事業内容を明らかにする次のいずれかの資料\n（１）勤務先等の沿革 役員 組織 事業内容（主要取引先と取引\n、 、 、\n実績を含む ）等が詳細に記載された案内書\n。\n（２）その他勤務先等の作成した上記（１）に準ずる文書",
+            "",
+            "",
+            "○",
+            "○",
+            "□"
+          ]
+        },
+        "reviewer_text": [
+          "기술·인문지식·국제업무의 해당 COE·변경·갱신 신청과 소속 기관 카테고리에만 적용한다. 제출서류 목록을 실체 자격 승인으로 바꾸지 않는다.",
+          "공란을 모든 법령상 의무의 면제로 해석하지 않으며 다른 카테고리의 필수 표시를 복사하지 않는다.",
+          "이직 후 카테고리 3·4 기관에서 첫 갱신하는 공통 조건을 보존한다. 13번은 카테고리 3 제외이며 12번의 업무 변경 주석은 별도로 적용한다.",
+          "원문의 활동·기관 유형별 선택 자료를 모두 동시에 요구하는 누적 조건으로 변환하지 않는다."
+        ]
+      }
+    },
+    "JP-POL-7b1270fdbb1a4af5185bbf4e": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "f86688d2d2c49ec21f0ab13e3500cb37751912fc40c4e258ef49af92317c6c50",
+        "resolved_review_issue_codes": [
+          "renewal_row_group_condition_requires_preservation"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001367009.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_scope": {
+          "application_type": "renewal",
+          "school_category": null,
+          "school_classification": null,
+          "observed_requirement_symbols": {
+            "1": null,
+            "2": null,
+            "3": "○",
+            "4": "○"
+          },
+          "row_group_condition_original_ja": "※カテゴリー３又は４の企業等に転職後の初回の更新許可申請の場合は 、上記資料に加え 、以下の資料も併せて提出願います（カテゴリー３の場合は 、提出資\n料１３は不要）\n。\n（注）カテゴリー３又は４の企業等に所属していて 、当初申請していた業務内容から言語能力を用いた対人業務等へ業務内容が変更した際は 、提出書類１２を\n提出願います\n。",
+          "condition_logic": "first_renewal_after_change_to_category_3_or_4_employer"
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001367009.pdf",
+          "source_file": "data/raw/legal_review/20261028/4b8625e365be687a.pdf",
+          "source_sha256": "472a27d772b1649e61fb99a2ec569e8eb48ee8cc6811789160cf1160a17fa622",
+          "page": 2,
+          "row": 11,
+          "cells": [
+            "11",
+            "直近年度の決算文書の写し\n※新規事業の場合は事業計画書",
+            "",
+            "",
+            "○",
+            "○",
+            "□"
+          ]
+        },
+        "reviewer_text": [
+          "기술·인문지식·국제업무의 해당 COE·변경·갱신 신청과 소속 기관 카테고리에만 적용한다. 제출서류 목록을 실체 자격 승인으로 바꾸지 않는다.",
+          "공란을 모든 법령상 의무의 면제로 해석하지 않으며 다른 카테고리의 필수 표시를 복사하지 않는다.",
+          "이직 후 카테고리 3·4 기관에서 첫 갱신하는 공통 조건을 보존한다. 13번은 카테고리 3 제외이며 12번의 업무 변경 주석은 별도로 적용한다.",
+          "신규 사업의 사업계획서 대체 조건을 유지한다."
+        ]
+      }
+    },
+    "JP-POL-010dbd338448e60e988b89f8": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "d7602ed050c1bb901e76efe6c19b7814f9a460439f9bbcd3a3adcb4d0c1dbacd",
+        "resolved_review_issue_codes": [
+          "renewal_row_group_condition_requires_preservation"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001367009.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_scope": {
+          "application_type": "renewal",
+          "school_category": null,
+          "school_classification": null,
+          "observed_requirement_symbols": {
+            "1": null,
+            "2": null,
+            "3": "△",
+            "4": "△"
+          },
+          "row_group_condition_original_ja": "※カテゴリー３又は４の企業等に転職後の初回の更新許可申請の場合は 、上記資料に加え 、以下の資料も併せて提出願います（カテゴリー３の場合は 、提出資\n料１３は不要）\n。\n（注）カテゴリー３又は４の企業等に所属していて 、当初申請していた業務内容から言語能力を用いた対人業務等へ業務内容が変更した際は 、提出書類１２を\n提出願います\n。",
+          "condition_logic": "language_activity_change_note"
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001367009.pdf",
+          "source_file": "data/raw/legal_review/20261028/4b8625e365be687a.pdf",
+          "source_sha256": "472a27d772b1649e61fb99a2ec569e8eb48ee8cc6811789160cf1160a17fa622",
+          "page": 2,
+          "row": 12,
+          "cells": [
+            "12",
+            "（主に言語能力を用いて対人業務等に従事する場合）\n業務上使用する言語について 、ＣＥＦＲ・Ｂ２相当の言語能力を有する\nことを証する資料",
+            "",
+            "",
+            "△\n（注）",
+            "△\n（注）",
+            "□"
+          ]
+        },
+        "reviewer_text": [
+          "기술·인문지식·국제업무의 해당 COE·변경·갱신 신청과 소속 기관 카테고리에만 적용한다. 제출서류 목록을 실체 자격 승인으로 바꾸지 않는다.",
+          "공란을 모든 법령상 의무의 면제로 해석하지 않으며 다른 카테고리의 필수 표시를 복사하지 않는다.",
+          "이직 후 카테고리 3·4 기관에서 첫 갱신하는 공통 조건을 보존한다. 13번은 카테고리 3 제외이며 12번의 업무 변경 주석은 별도로 적용한다.",
+          "주로 언어 능력을 사용하는 대인 업무라는 조건과 갱신 주석을 보존한다. 모든 직종의 일본어 B2 필수로 확대하지 않는다."
+        ]
+      }
+    },
+    "JP-POL-d9230a5db8928c5c381eb6a4": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "f5eaec1b21bb6a04754a8c96dcdf7603970387168b185b7b47d4eb44b6a54030",
+        "resolved_review_issue_codes": [
+          "renewal_row_group_condition_requires_preservation"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001367009.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_scope": {
+          "application_type": "renewal",
+          "school_category": null,
+          "school_classification": null,
+          "observed_requirement_symbols": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": "○"
+          },
+          "row_group_condition_original_ja": "※カテゴリー３又は４の企業等に転職後の初回の更新許可申請の場合は 、上記資料に加え 、以下の資料も併せて提出願います（カテゴリー３の場合は 、提出資\n料１３は不要）\n。\n（注）カテゴリー３又は４の企業等に所属していて 、当初申請していた業務内容から言語能力を用いた対人業務等へ業務内容が変更した際は 、提出書類１２を\n提出願います\n。",
+          "condition_logic": "first_renewal_after_change_to_category_3_or_4_employer",
+          "category_3_document_excluded_by_group_note": true
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001367009.pdf",
+          "source_file": "data/raw/legal_review/20261028/4b8625e365be687a.pdf",
+          "source_sha256": "472a27d772b1649e61fb99a2ec569e8eb48ee8cc6811789160cf1160a17fa622",
+          "page": 2,
+          "row": 13,
+          "cells": [
+            "13",
+            "前年分の職員の給与所得の源泉徴収票等の法定調書合計表を提出できな\nい理由を明らかにする次のいずれかの資料\n（１）源泉徴収の免除を受ける機関の場合\n外国法人の源泉徴収に対する免除証明書その他の源泉徴収を\n要しないことを明らかにする資料\n（２）上記（１）を除く機関の場合\nア給与支払事務所等の開設届書の写し\nイ次のいずれかの資料\n（ア）直近３か月分の給与所得・退職所得等の所得税徴収\n高計算書（領収日付印のあるものの写し）\n（イ）納期の特例を受けている場合は その承認を受けている\n、\nことを明らかにする資料",
+            "",
+            "",
+            "",
+            "○",
+            "□"
+          ]
+        },
+        "reviewer_text": [
+          "기술·인문지식·국제업무의 해당 COE·변경·갱신 신청과 소속 기관 카테고리에만 적용한다. 제출서류 목록을 실체 자격 승인으로 바꾸지 않는다.",
+          "공란을 모든 법령상 의무의 면제로 해석하지 않으며 다른 카테고리의 필수 표시를 복사하지 않는다.",
+          "이직 후 카테고리 3·4 기관에서 첫 갱신하는 공통 조건을 보존한다. 13번은 카테고리 3 제외이며 12번의 업무 변경 주석은 별도로 적용한다.",
+          "원문의 활동·기관 유형별 선택 자료를 모두 동시에 요구하는 누적 조건으로 변환하지 않는다."
+        ]
+      }
+    },
+    "JP-POL-3228e6b88dd0a3afc04560d6": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "96e404d25bf30da4bbea6a824bd5c8331f2be48af6a14a72de8d21425c497e99",
+        "resolved_review_issue_codes": [
+          "source_condition_missing_in_structured_record"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001463593.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied"
+        ],
+        "corrected_scope": {
+          "application_type": "certificate_of_eligibility",
+          "school_category": "elementary_secondary_school",
+          "school_classification": "elementary_junior_high_high_school",
+          "observed_requirement_symbols": {
+            "all_in_this_table": "△"
+          },
+          "condition_original_ja": "中学校又は小学校に入学する場合"
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001463593.pdf",
+          "source_file": "data/raw/legal_review/20261028/04ec45701e676b18.pdf",
+          "source_sha256": "d594cca1e0435a7e265a8440ea652e3407ef306fd8fb2045473e71e9412c9160",
+          "page": 1,
+          "row": 14,
+          "cells": [
+            "14",
+            "監護するに至った経緯 監護計画を説明する資料\n、",
+            "△\n（備考欄参照）",
+            "有",
+            "無",
+            "中学校又は小学校に入学する場合"
+          ]
+        },
+        "reviewer_text": [
+          "COE 신청의 해당 학교 유형·적정교 분류에만 적용하며 변경·갱신 및 다른 학교로 확장하지 않는다.",
+          "조건부 표시와 비고를 함께 적용한다. 조건부를 공통 필수 또는 무조건 면제로 변환하지 않는다.",
+          "가공본에 빠진 조건을 원문 셀에서 복원해 검토 기록에 보존했다."
+        ]
+      }
+    },
+    "JP-POL-dea199897c1c19accaa2c825": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "5c4c849cf54674eb0de066aae11c741c2e273fc13b6a0450b0e1aeb72ad333f1",
+        "resolved_review_issue_codes": [
+          "nationality_column_scalar_status_unsafe"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001463591.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied",
+          "non_KOR_country_code_mapping_not_approved"
+        ],
+        "corrected_scope": {
+          "application_type": "certificate_of_eligibility",
+          "school_category": "japanese_language_school",
+          "school_classification": "appropriate_school_class_2",
+          "observed_requirement_symbols": {
+            "listed_countries": "－",
+            "other_countries": "○"
+          },
+          "requirement_status": "varies_by_nationality_column",
+          "nationality_reference": {
+            "source_url": "https://www.moj.go.jp/isa/content/001363332.pdf",
+            "source_file": "data/raw/legal_review/20261028/5cc4de35aa4f2f0c.pdf",
+            "source_sha256": "167ace852ab22a03173ae0d5b59a031ed64cf1e9baf214e04a4018758239ba45",
+            "linked_from": "https://www.moj.go.jp/isa/applications/status/student.html",
+            "linking_page_sha256": "c2de8d497817a5dfc95fc34df491fc966952b968937df0b3b40311814b0222e2",
+            "verified_member_mapping": {
+              "KOR": "listed_countries"
+            },
+            "other_country_code_mappings_verified": false,
+            "finding": "원문은 열거된 국가 이외를 신중심사 대상으로 지정한다. 한국은 열거된 국가에 포함된다. 전체 국가의 ISO 코드 자동 매핑은 승인하지 않았다."
+          }
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001463591.pdf",
+          "source_file": "data/raw/legal_review/20261028/92bf8287abee0078.pdf",
+          "source_sha256": "a7b42ac4464a34c8eef06c6ab7a897547f16e5218f6f9845db80942a8b589a5f",
+          "page": 1,
+          "row": 7,
+          "cells": [
+            "7",
+            "預金残高証明書(原本)",
+            "－",
+            "○",
+            "有",
+            "無",
+            ""
+          ]
+        },
+        "reviewer_text": [
+          "국적 열별 요구가 다르므로 단일 requirement_status를 모든 국적에 사용하지 않는다.",
+          "COE 신청의 해당 학교 유형·적정교 분류에만 적용하며 변경·갱신 및 다른 학교로 확장하지 않는다.",
+          "대시 표시는 이 표·국적 열의 제출 범위이며 자금·학업 등 실체 요건 전체의 면제가 아니다."
+        ]
+      }
+    },
+    "JP-POL-56ae4c8b16ed9662e837ac2d": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "c152233bb3e732c852bdccd578dc55db89b8e880031c994379f9b72d51a3b9a1",
+        "resolved_review_issue_codes": [
+          "nationality_column_scalar_status_unsafe"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001463591.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied",
+          "non_KOR_country_code_mapping_not_approved"
+        ],
+        "corrected_scope": {
+          "application_type": "certificate_of_eligibility",
+          "school_category": "japanese_language_school",
+          "school_classification": "appropriate_school_class_2",
+          "observed_requirement_symbols": {
+            "listed_countries": "△",
+            "other_countries": "○"
+          },
+          "requirement_status": "varies_by_nationality_column",
+          "nationality_reference": {
+            "source_url": "https://www.moj.go.jp/isa/content/001363332.pdf",
+            "source_file": "data/raw/legal_review/20261028/5cc4de35aa4f2f0c.pdf",
+            "source_sha256": "167ace852ab22a03173ae0d5b59a031ed64cf1e9baf214e04a4018758239ba45",
+            "linked_from": "https://www.moj.go.jp/isa/applications/status/student.html",
+            "linking_page_sha256": "c2de8d497817a5dfc95fc34df491fc966952b968937df0b3b40311814b0222e2",
+            "verified_member_mapping": {
+              "KOR": "listed_countries"
+            },
+            "other_country_code_mappings_verified": false,
+            "finding": "원문은 열거된 국가 이외를 신중심사 대상으로 지정한다. 한국은 열거된 국가에 포함된다. 전체 국가의 ISO 코드 자동 매핑은 승인하지 않았다."
+          }
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001463591.pdf",
+          "source_file": "data/raw/legal_review/20261028/92bf8287abee0078.pdf",
+          "source_sha256": "a7b42ac4464a34c8eef06c6ab7a897547f16e5218f6f9845db80942a8b589a5f",
+          "page": 1,
+          "row": 2,
+          "cells": [
+            "2",
+            "提出書類 一覧表（本表及び別紙「各種確認書」）",
+            "△\n（備考欄参照）",
+            "○",
+            "有",
+            "無",
+            "別表掲載国 ・地域の出身国籍である申請人が\n外国の高等教育機関（大学等）を卒業し そ\n、\nの卒業証書等を提出する場合 「各種確認\n、\n書」の提出は不要"
+          ]
+        },
+        "reviewer_text": [
+          "국적 열별 요구가 다르므로 단일 requirement_status를 모든 국적에 사용하지 않는다.",
+          "COE 신청의 해당 학교 유형·적정교 분류에만 적용하며 변경·갱신 및 다른 학교로 확장하지 않는다.",
+          "조건부 표시와 비고를 함께 적용한다. 조건부를 공통 필수 또는 무조건 면제로 변환하지 않는다.",
+          "본표와 별지 각종확인서의 제출을 구분한다. 별지의 학교·학력·국적 및 동일 기관 재신청 예외와 추가 자료 요구 가능성을 보존한다."
+        ]
+      }
+    },
+    "JP-POL-1876437904d6e87279c3d1a1": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "dcf1dedfe33d36d2c5879e9d7b684630df420e7cea6a7b6cad0f1ef8e965052e",
+        "resolved_review_issue_codes": [
+          "nationality_column_scalar_status_unsafe"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001463591.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied",
+          "non_KOR_country_code_mapping_not_approved"
+        ],
+        "corrected_scope": {
+          "application_type": "certificate_of_eligibility",
+          "school_category": "japanese_language_school",
+          "school_classification": "appropriate_school_class_2",
+          "observed_requirement_symbols": {
+            "listed_countries": "－",
+            "other_countries": "○"
+          },
+          "requirement_status": "varies_by_nationality_column",
+          "nationality_reference": {
+            "source_url": "https://www.moj.go.jp/isa/content/001363332.pdf",
+            "source_file": "data/raw/legal_review/20261028/5cc4de35aa4f2f0c.pdf",
+            "source_sha256": "167ace852ab22a03173ae0d5b59a031ed64cf1e9baf214e04a4018758239ba45",
+            "linked_from": "https://www.moj.go.jp/isa/applications/status/student.html",
+            "linking_page_sha256": "c2de8d497817a5dfc95fc34df491fc966952b968937df0b3b40311814b0222e2",
+            "verified_member_mapping": {
+              "KOR": "listed_countries"
+            },
+            "other_country_code_mappings_verified": false,
+            "finding": "원문은 열거된 국가 이외를 신중심사 대상으로 지정한다. 한국은 열거된 국가에 포함된다. 전체 국가의 ISO 코드 자동 매핑은 승인하지 않았다."
+          }
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001463591.pdf",
+          "source_file": "data/raw/legal_review/20261028/92bf8287abee0078.pdf",
+          "source_sha256": "a7b42ac4464a34c8eef06c6ab7a897547f16e5218f6f9845db80942a8b589a5f",
+          "page": 1,
+          "row": 5,
+          "cells": [
+            "5",
+            "経費支弁書",
+            "－",
+            "○",
+            "有",
+            "無",
+            ""
+          ]
+        },
+        "reviewer_text": [
+          "국적 열별 요구가 다르므로 단일 requirement_status를 모든 국적에 사용하지 않는다.",
+          "COE 신청의 해당 학교 유형·적정교 분류에만 적용하며 변경·갱신 및 다른 학교로 확장하지 않는다.",
+          "대시 표시는 이 표·국적 열의 제출 범위이며 자금·학업 등 실체 요건 전체의 면제가 아니다."
+        ]
+      }
+    },
+    "JP-POL-0d70e9278e88f64b8c077284": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "b1f5a6d788d613739ac6ce38701cf0a5908296f85bbdb09b0c79c8f3c7c9ac56",
+        "resolved_review_issue_codes": [
+          "nationality_column_scalar_status_unsafe"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001463591.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied",
+          "non_KOR_country_code_mapping_not_approved"
+        ],
+        "corrected_scope": {
+          "application_type": "certificate_of_eligibility",
+          "school_category": "japanese_language_school",
+          "school_classification": "appropriate_school_class_2",
+          "observed_requirement_symbols": {
+            "listed_countries": "－",
+            "other_countries": "○"
+          },
+          "requirement_status": "varies_by_nationality_column",
+          "nationality_reference": {
+            "source_url": "https://www.moj.go.jp/isa/content/001363332.pdf",
+            "source_file": "data/raw/legal_review/20261028/5cc4de35aa4f2f0c.pdf",
+            "source_sha256": "167ace852ab22a03173ae0d5b59a031ed64cf1e9baf214e04a4018758239ba45",
+            "linked_from": "https://www.moj.go.jp/isa/applications/status/student.html",
+            "linking_page_sha256": "c2de8d497817a5dfc95fc34df491fc966952b968937df0b3b40311814b0222e2",
+            "verified_member_mapping": {
+              "KOR": "listed_countries"
+            },
+            "other_country_code_mappings_verified": false,
+            "finding": "원문은 열거된 국가 이외를 신중심사 대상으로 지정한다. 한국은 열거된 국가에 포함된다. 전체 국가의 ISO 코드 자동 매핑은 승인하지 않았다."
+          }
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001463591.pdf",
+          "source_file": "data/raw/legal_review/20261028/92bf8287abee0078.pdf",
+          "source_sha256": "a7b42ac4464a34c8eef06c6ab7a897547f16e5218f6f9845db80942a8b589a5f",
+          "page": 1,
+          "row": 6,
+          "cells": [
+            "6",
+            "経費支弁者と申請人の関係を立証する資料",
+            "－",
+            "○",
+            "有",
+            "無",
+            ""
+          ]
+        },
+        "reviewer_text": [
+          "국적 열별 요구가 다르므로 단일 requirement_status를 모든 국적에 사용하지 않는다.",
+          "COE 신청의 해당 학교 유형·적정교 분류에만 적용하며 변경·갱신 및 다른 학교로 확장하지 않는다.",
+          "대시 표시는 이 표·국적 열의 제출 범위이며 자금·학업 등 실체 요건 전체의 면제가 아니다."
+        ]
+      }
+    },
+    "JP-POL-1b88638293274a686b68dfd8": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "a59f639b9740089b3516642a4083003e69222965009852fbbecb513c91641f60",
+        "resolved_review_issue_codes": [
+          "nationality_column_scalar_status_unsafe"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001463591.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied",
+          "non_KOR_country_code_mapping_not_approved"
+        ],
+        "corrected_scope": {
+          "application_type": "certificate_of_eligibility",
+          "school_category": "japanese_language_school",
+          "school_classification": "appropriate_school_class_2",
+          "observed_requirement_symbols": {
+            "listed_countries": "－",
+            "other_countries": "○"
+          },
+          "requirement_status": "varies_by_nationality_column",
+          "nationality_reference": {
+            "source_url": "https://www.moj.go.jp/isa/content/001363332.pdf",
+            "source_file": "data/raw/legal_review/20261028/5cc4de35aa4f2f0c.pdf",
+            "source_sha256": "167ace852ab22a03173ae0d5b59a031ed64cf1e9baf214e04a4018758239ba45",
+            "linked_from": "https://www.moj.go.jp/isa/applications/status/student.html",
+            "linking_page_sha256": "c2de8d497817a5dfc95fc34df491fc966952b968937df0b3b40311814b0222e2",
+            "verified_member_mapping": {
+              "KOR": "listed_countries"
+            },
+            "other_country_code_mappings_verified": false,
+            "finding": "원문은 열거된 국가 이외를 신중심사 대상으로 지정한다. 한국은 열거된 국가에 포함된다. 전체 국가의 ISO 코드 자동 매핑은 승인하지 않았다."
+          }
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001463591.pdf",
+          "source_file": "data/raw/legal_review/20261028/92bf8287abee0078.pdf",
+          "source_sha256": "a7b42ac4464a34c8eef06c6ab7a897547f16e5218f6f9845db80942a8b589a5f",
+          "page": 1,
+          "row": 8,
+          "cells": [
+            "8",
+            "過去１年間の資金形成経緯を明らかにする資料",
+            "－",
+            "○",
+            "有",
+            "無",
+            ""
+          ]
+        },
+        "reviewer_text": [
+          "국적 열별 요구가 다르므로 단일 requirement_status를 모든 국적에 사용하지 않는다.",
+          "COE 신청의 해당 학교 유형·적정교 분류에만 적용하며 변경·갱신 및 다른 학교로 확장하지 않는다.",
+          "대시 표시는 이 표·국적 열의 제출 범위이며 자금·학업 등 실체 요건 전체의 면제가 아니다."
+        ]
+      }
+    },
+    "JP-POL-f8e5c63e09ac1cf41f14d627": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "d5456ec5a8329f3724312acdf655625a3ab144118891958682983eecff722a7c",
+        "resolved_review_issue_codes": [
+          "nationality_column_scalar_status_unsafe"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001463591.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied",
+          "non_KOR_country_code_mapping_not_approved"
+        ],
+        "corrected_scope": {
+          "application_type": "certificate_of_eligibility",
+          "school_category": "japanese_language_school",
+          "school_classification": "appropriate_school_class_2",
+          "observed_requirement_symbols": {
+            "listed_countries": "－",
+            "other_countries": "△"
+          },
+          "requirement_status": "varies_by_nationality_column",
+          "nationality_reference": {
+            "source_url": "https://www.moj.go.jp/isa/content/001363332.pdf",
+            "source_file": "data/raw/legal_review/20261028/5cc4de35aa4f2f0c.pdf",
+            "source_sha256": "167ace852ab22a03173ae0d5b59a031ed64cf1e9baf214e04a4018758239ba45",
+            "linked_from": "https://www.moj.go.jp/isa/applications/status/student.html",
+            "linking_page_sha256": "c2de8d497817a5dfc95fc34df491fc966952b968937df0b3b40311814b0222e2",
+            "verified_member_mapping": {
+              "KOR": "listed_countries"
+            },
+            "other_country_code_mappings_verified": false,
+            "finding": "원문은 열거된 국가 이외를 신중심사 대상으로 지정한다. 한국은 열거된 국가에 포함된다. 전체 국가의 ISO 코드 자동 매핑은 승인하지 않았다."
+          }
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001463591.pdf",
+          "source_file": "data/raw/legal_review/20261028/92bf8287abee0078.pdf",
+          "source_sha256": "a7b42ac4464a34c8eef06c6ab7a897547f16e5218f6f9845db80942a8b589a5f",
+          "page": 1,
+          "row": 9,
+          "cells": [
+            "9",
+            "奨学金の給付に関する証明書",
+            "－",
+            "△\n（備考欄参照）",
+            "有",
+            "無",
+            "奨学金の給付を受ける場合（詳細は奨学\n金の給付に関する証明書 一覧のとおり）"
+          ]
+        },
+        "reviewer_text": [
+          "국적 열별 요구가 다르므로 단일 requirement_status를 모든 국적에 사용하지 않는다.",
+          "COE 신청의 해당 학교 유형·적정교 분류에만 적용하며 변경·갱신 및 다른 학교로 확장하지 않는다.",
+          "조건부 표시와 비고를 함께 적용한다. 조건부를 공통 필수 또는 무조건 면제로 변환하지 않는다.",
+          "대시 표시는 이 표·국적 열의 제출 범위이며 자금·학업 등 실체 요건 전체의 면제가 아니다."
+        ]
+      }
+    },
+    "JP-POL-28f3d28212d56e8d0e20f62d": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "dcf1dedfe33d36d2c5879e9d7b684630df420e7cea6a7b6cad0f1ef8e965052e",
+        "resolved_review_issue_codes": [
+          "nationality_column_scalar_status_unsafe"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001463588.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied",
+          "non_KOR_country_code_mapping_not_approved"
+        ],
+        "corrected_scope": {
+          "application_type": "certificate_of_eligibility",
+          "school_category": "vocational_school",
+          "school_classification": "appropriate_school_class_2",
+          "observed_requirement_symbols": {
+            "listed_countries": "－",
+            "other_countries": "○"
+          },
+          "requirement_status": "varies_by_nationality_column",
+          "nationality_reference": {
+            "source_url": "https://www.moj.go.jp/isa/content/001363332.pdf",
+            "source_file": "data/raw/legal_review/20261028/5cc4de35aa4f2f0c.pdf",
+            "source_sha256": "167ace852ab22a03173ae0d5b59a031ed64cf1e9baf214e04a4018758239ba45",
+            "linked_from": "https://www.moj.go.jp/isa/applications/status/student.html",
+            "linking_page_sha256": "c2de8d497817a5dfc95fc34df491fc966952b968937df0b3b40311814b0222e2",
+            "verified_member_mapping": {
+              "KOR": "listed_countries"
+            },
+            "other_country_code_mappings_verified": false,
+            "finding": "원문은 열거된 국가 이외를 신중심사 대상으로 지정한다. 한국은 열거된 국가에 포함된다. 전체 국가의 ISO 코드 자동 매핑은 승인하지 않았다."
+          }
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001463588.pdf",
+          "source_file": "data/raw/legal_review/20261028/358d15e19a7ab648.pdf",
+          "source_sha256": "340bc4838dada0644784c6d90a3aaca050213831ade69d6c9a74506bc1729407",
+          "page": 1,
+          "row": 5,
+          "cells": [
+            "5",
+            "経費支弁書",
+            "－",
+            "○",
+            "有",
+            "無",
+            ""
+          ]
+        },
+        "reviewer_text": [
+          "국적 열별 요구가 다르므로 단일 requirement_status를 모든 국적에 사용하지 않는다.",
+          "COE 신청의 해당 학교 유형·적정교 분류에만 적용하며 변경·갱신 및 다른 학교로 확장하지 않는다.",
+          "대시 표시는 이 표·국적 열의 제출 범위이며 자금·학업 등 실체 요건 전체의 면제가 아니다."
+        ]
+      }
+    },
+    "JP-POL-83a9c91916eefaa8685b916e": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "5c4c849cf54674eb0de066aae11c741c2e273fc13b6a0450b0e1aeb72ad333f1",
+        "resolved_review_issue_codes": [
+          "nationality_column_scalar_status_unsafe"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001463588.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied",
+          "non_KOR_country_code_mapping_not_approved"
+        ],
+        "corrected_scope": {
+          "application_type": "certificate_of_eligibility",
+          "school_category": "vocational_school",
+          "school_classification": "appropriate_school_class_2",
+          "observed_requirement_symbols": {
+            "listed_countries": "－",
+            "other_countries": "○"
+          },
+          "requirement_status": "varies_by_nationality_column",
+          "nationality_reference": {
+            "source_url": "https://www.moj.go.jp/isa/content/001363332.pdf",
+            "source_file": "data/raw/legal_review/20261028/5cc4de35aa4f2f0c.pdf",
+            "source_sha256": "167ace852ab22a03173ae0d5b59a031ed64cf1e9baf214e04a4018758239ba45",
+            "linked_from": "https://www.moj.go.jp/isa/applications/status/student.html",
+            "linking_page_sha256": "c2de8d497817a5dfc95fc34df491fc966952b968937df0b3b40311814b0222e2",
+            "verified_member_mapping": {
+              "KOR": "listed_countries"
+            },
+            "other_country_code_mappings_verified": false,
+            "finding": "원문은 열거된 국가 이외를 신중심사 대상으로 지정한다. 한국은 열거된 국가에 포함된다. 전체 국가의 ISO 코드 자동 매핑은 승인하지 않았다."
+          }
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001463588.pdf",
+          "source_file": "data/raw/legal_review/20261028/358d15e19a7ab648.pdf",
+          "source_sha256": "340bc4838dada0644784c6d90a3aaca050213831ade69d6c9a74506bc1729407",
+          "page": 1,
+          "row": 6,
+          "cells": [
+            "6",
+            "預金残高証明書(原本)",
+            "－",
+            "○",
+            "有",
+            "無",
+            ""
+          ]
+        },
+        "reviewer_text": [
+          "국적 열별 요구가 다르므로 단일 requirement_status를 모든 국적에 사용하지 않는다.",
+          "COE 신청의 해당 학교 유형·적정교 분류에만 적용하며 변경·갱신 및 다른 학교로 확장하지 않는다.",
+          "대시 표시는 이 표·국적 열의 제출 범위이며 자금·학업 등 실체 요건 전체의 면제가 아니다."
+        ]
+      }
+    },
+    "JP-POL-9546044a4ab845b176431d0b": {
+      "correction_v1": {
+        "version": "review-v1-20261028",
+        "status": "correction_text_and_scope_fixed_in_review_package",
+        "original_policy_text_sha256": "d5456ec5a8329f3724312acdf655625a3ab144118891958682983eecff722a7c",
+        "resolved_review_issue_codes": [
+          "nationality_column_scalar_status_unsafe"
+        ],
+        "source_urls": [
+          "https://www.moj.go.jp/isa/content/001463588.pdf"
+        ],
+        "legal_validation_approved": false,
+        "approved_for_user_answers": false,
+        "approved_for_embedding": false,
+        "approved_for_eligibility_decision": false,
+        "automatic_eligibility_rules_enabled": false,
+        "database_applied": false,
+        "remaining_review": [
+          "full_statutory_exceptions_and_final_approval",
+          "versioned_import_not_applied",
+          "non_KOR_country_code_mapping_not_approved"
+        ],
+        "corrected_scope": {
+          "application_type": "certificate_of_eligibility",
+          "school_category": "vocational_school",
+          "school_classification": "appropriate_school_class_2",
+          "observed_requirement_symbols": {
+            "listed_countries": "－",
+            "other_countries": "△"
+          },
+          "requirement_status": "varies_by_nationality_column",
+          "nationality_reference": {
+            "source_url": "https://www.moj.go.jp/isa/content/001363332.pdf",
+            "source_file": "data/raw/legal_review/20261028/5cc4de35aa4f2f0c.pdf",
+            "source_sha256": "167ace852ab22a03173ae0d5b59a031ed64cf1e9baf214e04a4018758239ba45",
+            "linked_from": "https://www.moj.go.jp/isa/applications/status/student.html",
+            "linking_page_sha256": "c2de8d497817a5dfc95fc34df491fc966952b968937df0b3b40311814b0222e2",
+            "verified_member_mapping": {
+              "KOR": "listed_countries"
+            },
+            "other_country_code_mappings_verified": false,
+            "finding": "원문은 열거된 국가 이외를 신중심사 대상으로 지정한다. 한국은 열거된 국가에 포함된다. 전체 국가의 ISO 코드 자동 매핑은 승인하지 않았다."
+          }
+        },
+        "official_pdf_row": {
+          "source_url": "https://www.moj.go.jp/isa/content/001463588.pdf",
+          "source_file": "data/raw/legal_review/20261028/358d15e19a7ab648.pdf",
+          "source_sha256": "340bc4838dada0644784c6d90a3aaca050213831ade69d6c9a74506bc1729407",
+          "page": 1,
+          "row": 7,
+          "cells": [
+            "7",
+            "奨学金の給付に関する証明書",
+            "－",
+            "△\n（備考欄参照）",
+            "有",
+            "無",
+            "奨学金の給付を受ける場合（詳細は奨学\n金の給付に関する証明書 一覧のとおり）"
+          ]
+        },
+        "reviewer_text": [
+          "국적 열별 요구가 다르므로 단일 requirement_status를 모든 국적에 사용하지 않는다.",
+          "COE 신청의 해당 학교 유형·적정교 분류에만 적용하며 변경·갱신 및 다른 학교로 확장하지 않는다.",
+          "조건부 표시와 비고를 함께 적용한다. 조건부를 공통 필수 또는 무조건 면제로 변환하지 않는다.",
+          "대시 표시는 이 표·국적 열의 제출 범위이며 자금·학업 등 실체 요건 전체의 면제가 아니다."
+        ]
+      }
+    },
+    "US-J1-INTERN-POL-009": {
+      "evidence_context_r1": {
+        "version": "context-r1-20261028",
+        "status": "reextracted_with_obligation_heading",
+        "original_evidence": [
+          {
+            "evidence_id": "US-EM-02-SECTION-013",
+            "original_quote_sha256": "9add92a07a85d75a1b52430894aafb66afbfa6441dee182c099984a02d2a45cc"
+          }
+        ],
+        "source_url": "https://j1visa.state.gov/programs/intern/",
+        "source_file": "data/raw/legal_review/20261028/aec3af4c6ee43783.html",
+        "source_sha256": "a223198222d7a7704c06bdbcc69ba02fd75b128daec540dbacf514e7561af6d9",
+        "selector_heading": "Hosts are required to:",
+        "replacement_quote": "Hosts are required to:\nSign a completed Form DS–7002 – Training/Internship Placement Plan (T/IPP) to verify that all placements are appropriate and consistent with the objectives of the interns as outlined in their program applications and as set forth in their T/IPPs. All parties involved in internship programs should recognize that interns are seeking entry-level training and experience. Accordingly, all placements must be tailored to the skills and experience level of the individual intern;\nNotify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs and contact sponsors immediately in the event of any emergency involving trainees or interns;\nAbide by all federal, state and local occupational health and safety laws;\nAbide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations;\nHave sufficient resources, plant, equipment and trained personnel available;\nProvide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and\nEnsure that interns obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances.",
+        "replacement_quote_sha256": "dd1c9c3b4f2aa3395469eda01a628135dd1f3105fd564b045da960c6b46f6e09",
+        "target_clause_reproduced": true,
+        "original_source_quote_overwritten": false,
+        "database_applied": false,
+        "legal_validation_approved": false
+      }
+    },
+    "US-J1-INTERN-POL-010": {
+      "evidence_context_r1": {
+        "version": "context-r1-20261028",
+        "status": "reextracted_with_obligation_heading",
+        "original_evidence": [
+          {
+            "evidence_id": "US-EM-02-SECTION-013",
+            "original_quote_sha256": "9add92a07a85d75a1b52430894aafb66afbfa6441dee182c099984a02d2a45cc"
+          }
+        ],
+        "source_url": "https://j1visa.state.gov/programs/intern/",
+        "source_file": "data/raw/legal_review/20261028/aec3af4c6ee43783.html",
+        "source_sha256": "a223198222d7a7704c06bdbcc69ba02fd75b128daec540dbacf514e7561af6d9",
+        "selector_heading": "Hosts are required to:",
+        "replacement_quote": "Hosts are required to:\nSign a completed Form DS–7002 – Training/Internship Placement Plan (T/IPP) to verify that all placements are appropriate and consistent with the objectives of the interns as outlined in their program applications and as set forth in their T/IPPs. All parties involved in internship programs should recognize that interns are seeking entry-level training and experience. Accordingly, all placements must be tailored to the skills and experience level of the individual intern;\nNotify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs and contact sponsors immediately in the event of any emergency involving trainees or interns;\nAbide by all federal, state and local occupational health and safety laws;\nAbide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations;\nHave sufficient resources, plant, equipment and trained personnel available;\nProvide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and\nEnsure that interns obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances.",
+        "replacement_quote_sha256": "dd1c9c3b4f2aa3395469eda01a628135dd1f3105fd564b045da960c6b46f6e09",
+        "target_clause_reproduced": true,
+        "original_source_quote_overwritten": false,
+        "database_applied": false,
+        "legal_validation_approved": false
+      }
+    },
+    "US-J1-INTERN-POL-011": {
+      "evidence_context_r1": {
+        "version": "context-r1-20261028",
+        "status": "reextracted_with_obligation_heading",
+        "original_evidence": [
+          {
+            "evidence_id": "US-EM-02-SECTION-013",
+            "original_quote_sha256": "9add92a07a85d75a1b52430894aafb66afbfa6441dee182c099984a02d2a45cc"
+          }
+        ],
+        "source_url": "https://j1visa.state.gov/programs/intern/",
+        "source_file": "data/raw/legal_review/20261028/aec3af4c6ee43783.html",
+        "source_sha256": "a223198222d7a7704c06bdbcc69ba02fd75b128daec540dbacf514e7561af6d9",
+        "selector_heading": "Hosts are required to:",
+        "replacement_quote": "Hosts are required to:\nSign a completed Form DS–7002 – Training/Internship Placement Plan (T/IPP) to verify that all placements are appropriate and consistent with the objectives of the interns as outlined in their program applications and as set forth in their T/IPPs. All parties involved in internship programs should recognize that interns are seeking entry-level training and experience. Accordingly, all placements must be tailored to the skills and experience level of the individual intern;\nNotify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs and contact sponsors immediately in the event of any emergency involving trainees or interns;\nAbide by all federal, state and local occupational health and safety laws;\nAbide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations;\nHave sufficient resources, plant, equipment and trained personnel available;\nProvide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and\nEnsure that interns obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances.",
+        "replacement_quote_sha256": "dd1c9c3b4f2aa3395469eda01a628135dd1f3105fd564b045da960c6b46f6e09",
+        "target_clause_reproduced": true,
+        "original_source_quote_overwritten": false,
+        "database_applied": false,
+        "legal_validation_approved": false
+      }
+    },
+    "US-J1-TRAINEE-POL-013": {
+      "evidence_context_r1": {
+        "version": "context-r1-20261028",
+        "status": "reextracted_with_obligation_heading",
+        "original_evidence": [
+          {
+            "evidence_id": "US-EM-03-SECTION-013",
+            "original_quote_sha256": "31ca8b49c46ae5ca81b74acf9fc76a7772a93d9b1e7ee5b8e881fea69bed5f17"
+          }
+        ],
+        "source_url": "https://j1visa.state.gov/programs/trainee/",
+        "source_file": "data/raw/legal_review/20261028/af6deb9f0a705f2f.html",
+        "source_sha256": "6f5346c63760fee53e8f140f33c82f0b8ccaf37019d49adb7ae2b3bbde139fdf",
+        "selector_heading": "Host Organizations are required to:",
+        "replacement_quote": "Host Organizations are required to:\nSign a completed Form DS–7002 to verify that all placements are appropriate and consistent with the objectives of the trainees or interns as outlined in their program applications and as set forth in their T/IPPs;\nNotify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs;\nContact sponsors immediately in the event of any emergency involving trainees or interns;\nAbide by all federal, state and local occupational health and safety laws;\nAbide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations;\nHave sufficient resources, plant, equipment and trained personnel available;\nProvide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and\nEnsure that trainees obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances.",
+        "replacement_quote_sha256": "241260a862857d8bb06f74938fe84f098b489d6dc288d188dd1be81667300f2e",
+        "target_clause_reproduced": true,
+        "original_source_quote_overwritten": false,
+        "database_applied": false,
+        "legal_validation_approved": false
+      }
+    },
+    "US-J1-TRAINEE-POL-014": {
+      "evidence_context_r1": {
+        "version": "context-r1-20261028",
+        "status": "reextracted_with_obligation_heading",
+        "original_evidence": [
+          {
+            "evidence_id": "US-EM-03-SECTION-013",
+            "original_quote_sha256": "31ca8b49c46ae5ca81b74acf9fc76a7772a93d9b1e7ee5b8e881fea69bed5f17"
+          }
+        ],
+        "source_url": "https://j1visa.state.gov/programs/trainee/",
+        "source_file": "data/raw/legal_review/20261028/af6deb9f0a705f2f.html",
+        "source_sha256": "6f5346c63760fee53e8f140f33c82f0b8ccaf37019d49adb7ae2b3bbde139fdf",
+        "selector_heading": "Host Organizations are required to:",
+        "replacement_quote": "Host Organizations are required to:\nSign a completed Form DS–7002 to verify that all placements are appropriate and consistent with the objectives of the trainees or interns as outlined in their program applications and as set forth in their T/IPPs;\nNotify sponsors promptly of any concerns about, changes in or deviations from T/IPPs during training and internship programs;\nContact sponsors immediately in the event of any emergency involving trainees or interns;\nAbide by all federal, state and local occupational health and safety laws;\nAbide by all program rules and regulations set forth by the sponsors, including the completion of all mandatory program evaluations;\nHave sufficient resources, plant, equipment and trained personnel available;\nProvide continuous on-site supervision and mentoring by experienced and knowledgeable staff; and\nEnsure that trainees obtain skills, knowledge, and competencies through structured and guided activities such as classroom training, seminars, rotation through several departments, on-the-job training, attendance at conferences and similar learning activities, as appropriate in specific circumstances.",
+        "replacement_quote_sha256": "241260a862857d8bb06f74938fe84f098b489d6dc288d188dd1be81667300f2e",
+        "target_clause_reproduced": true,
+        "original_source_quote_overwritten": false,
+        "database_applied": false,
+        "legal_validation_approved": false
+      }
+    },
+    "US-SWT-POL-010": {
+      "evidence_context_r1": {
+        "version": "context-r1-20261028",
+        "status": "reextracted_with_obligation_heading",
+        "original_evidence": [
+          {
+            "evidence_id": "US-WH-01-SECTION-019",
+            "original_quote_sha256": "5acde5acfe8b17afd4d9f7a66fc554141ae7abbc5a4f36b3e3a4665e4b4437e0"
+          }
+        ],
+        "source_url": "https://j1visa.state.gov/programs/summer-work-travel/",
+        "source_file": "data/raw/legal_review/20261028/8917921e6c3d4b40.html",
+        "source_sha256": "6e249c6a03f4b668f9631c8def61f60f1ae03af6d6a620963e1f1a9e0fdd21ef",
+        "selector_heading": "Host employers are required to:",
+        "replacement_quote": "Host employers are required to:\nProvide participants the number of hours of paid employment per week as identified on the job offer and agreed to when the sponsor vetted the jobs;\nPay those participants eligible for overtime worked in accordance with applicable state or federal law;\nNotify sponsors promptly when participants arrive at the work site and begins their programs; when there are any changes or deviations in the job placements during the participants’ programs; when participants are not meeting the requirements of job placements; or when participants leave their position ahead of their planned departure; and\nContact sponsors immediately in the event of any emergency involving participants or any situation that impacts the health, safety or welfare of participants.",
+        "replacement_quote_sha256": "721a57a55bb6267bdd7f0f5a9367ad3ea0648bd581b9c01f6281f7a7c1a721e6",
+        "target_clause_reproduced": true,
+        "original_source_quote_overwritten": false,
+        "database_applied": false,
+        "legal_validation_approved": false
+      }
+    },
+    "US-WK-01-POL-0001": {
+      "fee_scope_review": {
+        "status": "threshold_exception_and_sunset_confirmed_in_rule_text",
+        "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-106/section-106.2",
+        "source_file": "data/raw/legal_review/20261028/a00f3716703bf34b.html",
+        "source_sha256": "9d9aca12215bd615b0ea4289ede40d7fa4d1b653bbb8af16b7a15ef66f26fcc3",
+        "provision": "8 CFR 106.2(c)(8)-(9)",
+        "effective_date": "2026-09-09",
+        "statutory_last_filing_date": "2027-09-30",
+        "employer_us_headcount_minimum": 50,
+        "aggregate_h1b_l1_share_strictly_greater_than_percent": 50,
+        "h1b_fee_usd": 4000,
+        "l1_fee_usd": 4500,
+        "amended_petition_without_status_extension_exempt": true,
+        "final_rule_source_url": "https://www.govinfo.gov/content/pkg/FR-2026-08-10/html/2026-16231.htm",
+        "final_rule_sha256": "181dee5db9cface566e844e62afd2ccbb7e667887ee53f8e94befc1446c4584f",
+        "current_case_specific_payment_decision_approved": false,
+        "legal_validation_approved": false,
+        "remaining_review": [
+          "post_2026_10_23_changes_and_individual_case_application",
+          "final_approval_not_granted"
+        ]
+      }
+    },
+    "US-WK-01-POL-0061": {
+      "fee_scope_review": {
+        "status": "threshold_exception_and_sunset_confirmed_in_rule_text",
+        "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-106/section-106.2",
+        "source_file": "data/raw/legal_review/20261028/a00f3716703bf34b.html",
+        "source_sha256": "9d9aca12215bd615b0ea4289ede40d7fa4d1b653bbb8af16b7a15ef66f26fcc3",
+        "provision": "8 CFR 106.2(c)(8)-(9)",
+        "effective_date": "2026-09-09",
+        "statutory_last_filing_date": "2027-09-30",
+        "employer_us_headcount_minimum": 50,
+        "aggregate_h1b_l1_share_strictly_greater_than_percent": 50,
+        "h1b_fee_usd": 4000,
+        "l1_fee_usd": 4500,
+        "amended_petition_without_status_extension_exempt": true,
+        "final_rule_source_url": "https://www.govinfo.gov/content/pkg/FR-2026-08-10/html/2026-16231.htm",
+        "final_rule_sha256": "181dee5db9cface566e844e62afd2ccbb7e667887ee53f8e94befc1446c4584f",
+        "current_case_specific_payment_decision_approved": false,
+        "legal_validation_approved": false,
+        "remaining_review": [
+          "post_2026_10_23_changes_and_individual_case_application",
+          "final_approval_not_granted"
+        ]
+      }
+    },
+    "US-WK-01-POL-0008": {
+      "court_order_review": {
+        "status": "primary_orders_read_current_docket_hold_retained",
+        "district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-mad-1_25-cv-13829/pdf/USCOURTS-mad-1_25-cv-13829-0.pdf",
+          "source_file": "data/raw/legal_review/20261028/279614ceb0a7ad82.pdf",
+          "sha256": "f9fdaa4311fd2db7ff93499aee928118ecf11813be2624448d2e45b1ab103a9a",
+          "decision_date": "2026-06-08",
+          "operative_page": 42
+        },
+        "appellate_order": {
+          "source_url": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf",
+          "source_file": "data/raw/legal_review/20261028/c1f09bd1cbbd362a.pdf",
+          "sha256": "837c5f7eba23ee4dd64e34e21b12e9f029338f80b811c94a55fdfc1eb41d42b4",
+          "decision_date": "2026-07-24",
+          "operative_page": 7
+        },
+        "later_district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf",
+          "sha256": "b8af6e7d9db6e51e3e09f954e5ec8a9a4b8b864d8187f8a605b581b7c8404bcc",
+          "decision_date": "2026-09-30",
+          "operative_page": 34,
+          "case_number": "4:25-cv-08454-HSG",
+          "includes_2026_extension_proclamation": true
+        },
+        "finding": "6월 지방법원은 포고령 이행 정책을 무효화했고 7월 항소법원은 집행정지 신청을 기각했다. 9월 30일 Global Nurse Force 명령은 10973 및 연장 포고령 11069의 이행 정책을 무효화·환송하고 APA 의견수렴 및 RFA 분석 전 집행을 금지했다. 9월 30일 이후 명령과 항소·기관 조치의 현행 상태까지 확정한 것은 아니다.",
+        "current_docket_complete": false,
+        "current_payment_obligation_approved": false,
+        "remaining_review": [
+          "post_2026_09_30_orders_in_all_related_cases",
+          "subsequent_agency_actions_and_final_approval"
+        ]
+      }
+    },
+    "US-WK-01-POL-0007": {
+      "court_order_review": {
+        "status": "primary_orders_read_current_docket_hold_retained",
+        "district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-mad-1_25-cv-13829/pdf/USCOURTS-mad-1_25-cv-13829-0.pdf",
+          "source_file": "data/raw/legal_review/20261028/279614ceb0a7ad82.pdf",
+          "sha256": "f9fdaa4311fd2db7ff93499aee928118ecf11813be2624448d2e45b1ab103a9a",
+          "decision_date": "2026-06-08",
+          "operative_page": 42
+        },
+        "appellate_order": {
+          "source_url": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf",
+          "source_file": "data/raw/legal_review/20261028/c1f09bd1cbbd362a.pdf",
+          "sha256": "837c5f7eba23ee4dd64e34e21b12e9f029338f80b811c94a55fdfc1eb41d42b4",
+          "decision_date": "2026-07-24",
+          "operative_page": 7
+        },
+        "later_district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf",
+          "sha256": "b8af6e7d9db6e51e3e09f954e5ec8a9a4b8b864d8187f8a605b581b7c8404bcc",
+          "decision_date": "2026-09-30",
+          "operative_page": 34,
+          "case_number": "4:25-cv-08454-HSG",
+          "includes_2026_extension_proclamation": true
+        },
+        "finding": "6월 지방법원은 포고령 이행 정책을 무효화했고 7월 항소법원은 집행정지 신청을 기각했다. 9월 30일 Global Nurse Force 명령은 10973 및 연장 포고령 11069의 이행 정책을 무효화·환송하고 APA 의견수렴 및 RFA 분석 전 집행을 금지했다. 9월 30일 이후 명령과 항소·기관 조치의 현행 상태까지 확정한 것은 아니다.",
+        "current_docket_complete": false,
+        "current_payment_obligation_approved": false,
+        "remaining_review": [
+          "post_2026_09_30_orders_in_all_related_cases",
+          "subsequent_agency_actions_and_final_approval"
+        ]
+      }
+    },
+    "US-WK-01-POL-0072": {
+      "court_order_review": {
+        "status": "primary_orders_read_current_docket_hold_retained",
+        "district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-mad-1_25-cv-13829/pdf/USCOURTS-mad-1_25-cv-13829-0.pdf",
+          "source_file": "data/raw/legal_review/20261028/279614ceb0a7ad82.pdf",
+          "sha256": "f9fdaa4311fd2db7ff93499aee928118ecf11813be2624448d2e45b1ab103a9a",
+          "decision_date": "2026-06-08",
+          "operative_page": 42
+        },
+        "appellate_order": {
+          "source_url": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf",
+          "source_file": "data/raw/legal_review/20261028/c1f09bd1cbbd362a.pdf",
+          "sha256": "837c5f7eba23ee4dd64e34e21b12e9f029338f80b811c94a55fdfc1eb41d42b4",
+          "decision_date": "2026-07-24",
+          "operative_page": 7
+        },
+        "later_district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf",
+          "sha256": "b8af6e7d9db6e51e3e09f954e5ec8a9a4b8b864d8187f8a605b581b7c8404bcc",
+          "decision_date": "2026-09-30",
+          "operative_page": 34,
+          "case_number": "4:25-cv-08454-HSG",
+          "includes_2026_extension_proclamation": true
+        },
+        "finding": "6월 지방법원은 포고령 이행 정책을 무효화했고 7월 항소법원은 집행정지 신청을 기각했다. 9월 30일 Global Nurse Force 명령은 10973 및 연장 포고령 11069의 이행 정책을 무효화·환송하고 APA 의견수렴 및 RFA 분석 전 집행을 금지했다. 9월 30일 이후 명령과 항소·기관 조치의 현행 상태까지 확정한 것은 아니다.",
+        "current_docket_complete": false,
+        "current_payment_obligation_approved": false,
+        "remaining_review": [
+          "post_2026_09_30_orders_in_all_related_cases",
+          "subsequent_agency_actions_and_final_approval"
+        ]
+      }
+    },
+    "US-WK-01-POL-0103": {
+      "court_order_review": {
+        "status": "primary_orders_read_current_docket_hold_retained",
+        "district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-mad-1_25-cv-13829/pdf/USCOURTS-mad-1_25-cv-13829-0.pdf",
+          "source_file": "data/raw/legal_review/20261028/279614ceb0a7ad82.pdf",
+          "sha256": "f9fdaa4311fd2db7ff93499aee928118ecf11813be2624448d2e45b1ab103a9a",
+          "decision_date": "2026-06-08",
+          "operative_page": 42
+        },
+        "appellate_order": {
+          "source_url": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf",
+          "source_file": "data/raw/legal_review/20261028/c1f09bd1cbbd362a.pdf",
+          "sha256": "837c5f7eba23ee4dd64e34e21b12e9f029338f80b811c94a55fdfc1eb41d42b4",
+          "decision_date": "2026-07-24",
+          "operative_page": 7
+        },
+        "later_district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf",
+          "sha256": "b8af6e7d9db6e51e3e09f954e5ec8a9a4b8b864d8187f8a605b581b7c8404bcc",
+          "decision_date": "2026-09-30",
+          "operative_page": 34,
+          "case_number": "4:25-cv-08454-HSG",
+          "includes_2026_extension_proclamation": true
+        },
+        "finding": "6월 지방법원은 포고령 이행 정책을 무효화했고 7월 항소법원은 집행정지 신청을 기각했다. 9월 30일 Global Nurse Force 명령은 10973 및 연장 포고령 11069의 이행 정책을 무효화·환송하고 APA 의견수렴 및 RFA 분석 전 집행을 금지했다. 9월 30일 이후 명령과 항소·기관 조치의 현행 상태까지 확정한 것은 아니다.",
+        "current_docket_complete": false,
+        "current_payment_obligation_approved": false,
+        "remaining_review": [
+          "post_2026_09_30_orders_in_all_related_cases",
+          "subsequent_agency_actions_and_final_approval"
+        ]
+      }
+    },
+    "US-WK-01-POL-0022": {
+      "court_order_review": {
+        "status": "primary_orders_read_current_docket_hold_retained",
+        "district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-mad-1_25-cv-13829/pdf/USCOURTS-mad-1_25-cv-13829-0.pdf",
+          "source_file": "data/raw/legal_review/20261028/279614ceb0a7ad82.pdf",
+          "sha256": "f9fdaa4311fd2db7ff93499aee928118ecf11813be2624448d2e45b1ab103a9a",
+          "decision_date": "2026-06-08",
+          "operative_page": 42
+        },
+        "appellate_order": {
+          "source_url": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf",
+          "source_file": "data/raw/legal_review/20261028/c1f09bd1cbbd362a.pdf",
+          "sha256": "837c5f7eba23ee4dd64e34e21b12e9f029338f80b811c94a55fdfc1eb41d42b4",
+          "decision_date": "2026-07-24",
+          "operative_page": 7
+        },
+        "later_district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf",
+          "sha256": "b8af6e7d9db6e51e3e09f954e5ec8a9a4b8b864d8187f8a605b581b7c8404bcc",
+          "decision_date": "2026-09-30",
+          "operative_page": 34,
+          "case_number": "4:25-cv-08454-HSG",
+          "includes_2026_extension_proclamation": true
+        },
+        "finding": "6월 지방법원은 포고령 이행 정책을 무효화했고 7월 항소법원은 집행정지 신청을 기각했다. 9월 30일 Global Nurse Force 명령은 10973 및 연장 포고령 11069의 이행 정책을 무효화·환송하고 APA 의견수렴 및 RFA 분석 전 집행을 금지했다. 9월 30일 이후 명령과 항소·기관 조치의 현행 상태까지 확정한 것은 아니다.",
+        "current_docket_complete": false,
+        "current_payment_obligation_approved": false,
+        "remaining_review": [
+          "post_2026_09_30_orders_in_all_related_cases",
+          "subsequent_agency_actions_and_final_approval"
+        ]
+      }
+    },
+    "US-WK-01-POL-0053": {
+      "court_order_review": {
+        "status": "primary_orders_read_current_docket_hold_retained",
+        "district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-mad-1_25-cv-13829/pdf/USCOURTS-mad-1_25-cv-13829-0.pdf",
+          "source_file": "data/raw/legal_review/20261028/279614ceb0a7ad82.pdf",
+          "sha256": "f9fdaa4311fd2db7ff93499aee928118ecf11813be2624448d2e45b1ab103a9a",
+          "decision_date": "2026-06-08",
+          "operative_page": 42
+        },
+        "appellate_order": {
+          "source_url": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf",
+          "source_file": "data/raw/legal_review/20261028/c1f09bd1cbbd362a.pdf",
+          "sha256": "837c5f7eba23ee4dd64e34e21b12e9f029338f80b811c94a55fdfc1eb41d42b4",
+          "decision_date": "2026-07-24",
+          "operative_page": 7
+        },
+        "later_district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf",
+          "sha256": "b8af6e7d9db6e51e3e09f954e5ec8a9a4b8b864d8187f8a605b581b7c8404bcc",
+          "decision_date": "2026-09-30",
+          "operative_page": 34,
+          "case_number": "4:25-cv-08454-HSG",
+          "includes_2026_extension_proclamation": true
+        },
+        "finding": "6월 지방법원은 포고령 이행 정책을 무효화했고 7월 항소법원은 집행정지 신청을 기각했다. 9월 30일 Global Nurse Force 명령은 10973 및 연장 포고령 11069의 이행 정책을 무효화·환송하고 APA 의견수렴 및 RFA 분석 전 집행을 금지했다. 9월 30일 이후 명령과 항소·기관 조치의 현행 상태까지 확정한 것은 아니다.",
+        "current_docket_complete": false,
+        "current_payment_obligation_approved": false,
+        "remaining_review": [
+          "post_2026_09_30_orders_in_all_related_cases",
+          "subsequent_agency_actions_and_final_approval"
+        ]
+      }
+    },
+    "US-WK-01-POL-0057": {
+      "court_order_review": {
+        "status": "primary_orders_read_current_docket_hold_retained",
+        "district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-mad-1_25-cv-13829/pdf/USCOURTS-mad-1_25-cv-13829-0.pdf",
+          "source_file": "data/raw/legal_review/20261028/279614ceb0a7ad82.pdf",
+          "sha256": "f9fdaa4311fd2db7ff93499aee928118ecf11813be2624448d2e45b1ab103a9a",
+          "decision_date": "2026-06-08",
+          "operative_page": 42
+        },
+        "appellate_order": {
+          "source_url": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf",
+          "source_file": "data/raw/legal_review/20261028/c1f09bd1cbbd362a.pdf",
+          "sha256": "837c5f7eba23ee4dd64e34e21b12e9f029338f80b811c94a55fdfc1eb41d42b4",
+          "decision_date": "2026-07-24",
+          "operative_page": 7
+        },
+        "later_district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf",
+          "sha256": "b8af6e7d9db6e51e3e09f954e5ec8a9a4b8b864d8187f8a605b581b7c8404bcc",
+          "decision_date": "2026-09-30",
+          "operative_page": 34,
+          "case_number": "4:25-cv-08454-HSG",
+          "includes_2026_extension_proclamation": true
+        },
+        "finding": "6월 지방법원은 포고령 이행 정책을 무효화했고 7월 항소법원은 집행정지 신청을 기각했다. 9월 30일 Global Nurse Force 명령은 10973 및 연장 포고령 11069의 이행 정책을 무효화·환송하고 APA 의견수렴 및 RFA 분석 전 집행을 금지했다. 9월 30일 이후 명령과 항소·기관 조치의 현행 상태까지 확정한 것은 아니다.",
+        "current_docket_complete": false,
+        "current_payment_obligation_approved": false,
+        "remaining_review": [
+          "post_2026_09_30_orders_in_all_related_cases",
+          "subsequent_agency_actions_and_final_approval"
+        ]
+      }
+    },
+    "US-WK-01-POL-0100": {
+      "court_order_review": {
+        "status": "primary_orders_read_current_docket_hold_retained",
+        "district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-mad-1_25-cv-13829/pdf/USCOURTS-mad-1_25-cv-13829-0.pdf",
+          "source_file": "data/raw/legal_review/20261028/279614ceb0a7ad82.pdf",
+          "sha256": "f9fdaa4311fd2db7ff93499aee928118ecf11813be2624448d2e45b1ab103a9a",
+          "decision_date": "2026-06-08",
+          "operative_page": 42
+        },
+        "appellate_order": {
+          "source_url": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf",
+          "source_file": "data/raw/legal_review/20261028/c1f09bd1cbbd362a.pdf",
+          "sha256": "837c5f7eba23ee4dd64e34e21b12e9f029338f80b811c94a55fdfc1eb41d42b4",
+          "decision_date": "2026-07-24",
+          "operative_page": 7
+        },
+        "later_district_order": {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf",
+          "sha256": "b8af6e7d9db6e51e3e09f954e5ec8a9a4b8b864d8187f8a605b581b7c8404bcc",
+          "decision_date": "2026-09-30",
+          "operative_page": 34,
+          "case_number": "4:25-cv-08454-HSG",
+          "includes_2026_extension_proclamation": true
+        },
+        "finding": "6월 지방법원은 포고령 이행 정책을 무효화했고 7월 항소법원은 집행정지 신청을 기각했다. 9월 30일 Global Nurse Force 명령은 10973 및 연장 포고령 11069의 이행 정책을 무효화·환송하고 APA 의견수렴 및 RFA 분석 전 집행을 금지했다. 9월 30일 이후 명령과 항소·기관 조치의 현행 상태까지 확정한 것은 아니다.",
+        "current_docket_complete": false,
+        "current_payment_obligation_approved": false,
+        "remaining_review": [
+          "post_2026_09_30_orders_in_all_related_cases",
+          "subsequent_agency_actions_and_final_approval"
+        ]
+      }
+    }
+  }
+}

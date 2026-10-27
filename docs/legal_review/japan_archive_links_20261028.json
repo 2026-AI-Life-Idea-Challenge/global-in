@@ -1,0 +1,271 @@
+{
+  "review_date": "2026-10-28",
+  "input_sha256": "043cf9bbb1d00c864d77912dca662e98960f5374766a219c36749bf7d2c69bd8",
+  "database_applied": false,
+  "summary": {
+    "quote_reproduced_in_saved_html": 29
+  },
+  "results": [
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_008",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_rules:requirements:JP_WH_006",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_embassy.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html?utm_source=chatgpt.com",
+      "archive_sha256": "e92d57ef78942c127dd48e33bfadb31f3da5a5c2c38d803bc120d9b42c56f2d6",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_rules:requirements:JP_WH_004",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_embassy.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html?utm_source=chatgpt.com",
+      "archive_sha256": "e92d57ef78942c127dd48e33bfadb31f3da5a5c2c38d803bc120d9b42c56f2d6",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_002",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_009",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_010",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_rules:requirements:JP_WH_001",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_embassy.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html?utm_source=chatgpt.com",
+      "archive_sha256": "e92d57ef78942c127dd48e33bfadb31f3da5a5c2c38d803bc120d9b42c56f2d6",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_rules:requirements:JP_WH_002",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_embassy.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html?utm_source=chatgpt.com",
+      "archive_sha256": "e92d57ef78942c127dd48e33bfadb31f3da5a5c2c38d803bc120d9b42c56f2d6",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_visa_validity_structured:page_original_text:PAGE",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_embassy.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html?utm_source=chatgpt.com",
+      "archive_sha256": "e92d57ef78942c127dd48e33bfadb31f3da5a5c2c38d803bc120d9b42c56f2d6",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_work_conditions_structured:page_original_text:PAGE",
+      "source_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday.html",
+      "saved_from_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/index.html",
+      "archive_sha256": "c867a780feb270e31d7c602732d0795dee8e71d39fce48ee774997037e3d1b86",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_001",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_003",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_004",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_005",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_006",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_007",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_011",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_012",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_013",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_documents_structured:documents:JP_WH_DOC_014",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_documents.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html?utm_source=chatgpt.com",
+      "archive_sha256": "ab3c563bfec66fc72014032f56d2701b084af7479b747a7a29b4c1843076ad48",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_post_entry_structured:page_original_text:PAGE",
+      "source_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday.html",
+      "saved_from_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/index.html",
+      "archive_sha256": "c867a780feb270e31d7c602732d0795dee8e71d39fce48ee774997037e3d1b86",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_rules:requirements:JP_WH_003",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_embassy.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html?utm_source=chatgpt.com",
+      "archive_sha256": "e92d57ef78942c127dd48e33bfadb31f3da5a5c2c38d803bc120d9b42c56f2d6",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_rules:requirements:JP_WH_005",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_embassy.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html?utm_source=chatgpt.com",
+      "archive_sha256": "e92d57ef78942c127dd48e33bfadb31f3da5a5c2c38d803bc120d9b42c56f2d6",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_rules:requirements:JP_WH_007",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_embassy.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html?utm_source=chatgpt.com",
+      "archive_sha256": "e92d57ef78942c127dd48e33bfadb31f3da5a5c2c38d803bc120d9b42c56f2d6",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_rules:requirements:JP_WH_008",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_embassy.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html?utm_source=chatgpt.com",
+      "archive_sha256": "e92d57ef78942c127dd48e33bfadb31f3da5a5c2c38d803bc120d9b42c56f2d6",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_rules:requirements:JP_WH_009",
+      "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday_embassy.html",
+      "saved_from_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html?utm_source=chatgpt.com",
+      "archive_sha256": "e92d57ef78942c127dd48e33bfadb31f3da5a5c2c38d803bc120d9b42c56f2d6",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_rules:requirements:JP_WH_010",
+      "source_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday.html",
+      "saved_from_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/index.html",
+      "archive_sha256": "c867a780feb270e31d7c602732d0795dee8e71d39fce48ee774997037e3d1b86",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_rules:requirements:JP_WH_011",
+      "source_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday.html",
+      "saved_from_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/index.html",
+      "archive_sha256": "c867a780feb270e31d7c602732d0795dee8e71d39fce48ee774997037e3d1b86",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    },
+    {
+      "evidence_id": "JP:JP-WH-01:japan_working_holiday_useful_information_structured:page_original_text:PAGE",
+      "source_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/",
+      "status": "quote_reproduced_in_saved_html",
+      "archive_file": "data/raw/japan/working_holiday/japan_working_holiday.html",
+      "saved_from_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/index.html",
+      "archive_sha256": "c867a780feb270e31d7c602732d0795dee8e71d39fce48ee774997037e3d1b86",
+      "limitation": "hash identifies locally saved HTML including browser serialization; not original HTTP response bytes or current legal effect"
+    }
+  ]
+}

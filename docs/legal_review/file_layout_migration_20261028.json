@@ -1,0 +1,80 @@
+{
+  "description": "Moved task-created files; archived source bytes and DB unchanged",
+  "files": [
+    {
+      "old": "scripts/apply_australia_official_review.py",
+      "new": "scripts/ingest/australia/apply_australia_official_review.py",
+      "pre_move_sha256": "94993f41ab13b0377266eb4d3ec894389701bc9fbd26cfb4080f28a1f296bc11"
+    },
+    {
+      "old": "scripts/apply_canada_official_review.py",
+      "new": "scripts/ingest/canada/apply_canada_official_review.py",
+      "pre_move_sha256": "577398395a0bed9686abef667f2425eff88892454c24fbf3b894f56840f6a465"
+    },
+    {
+      "old": "scripts/audit_db_source_urls.py",
+      "new": "scripts/evaluate/legal_review/audit_db_source_urls.py",
+      "pre_move_sha256": "6cd3e6ba59019a78c777332237c77bbb4ff6f910bc00275d778d497572a37fa5"
+    },
+    {
+      "old": "scripts/audit_evidence_followup.py",
+      "new": "scripts/evaluate/legal_review/audit_evidence_followup.py",
+      "pre_move_sha256": "22af038bb2c9b7e18b926ea43606752d93621214fb28eaeb6481bc6e26a73ad4"
+    },
+    {
+      "old": "scripts/audit_policy_snapshot.py",
+      "new": "scripts/evaluate/legal_review/audit_policy_snapshot.py",
+      "pre_move_sha256": "10ade755d98db0e71c8d61de35ede31626c123a97a7c4ec317447776bd36af4a"
+    },
+    {
+      "old": "scripts/audit_us_jp_official_review.py",
+      "new": "scripts/ingest/common/legal_review/audit_us_jp_official_review.py",
+      "pre_move_sha256": "cbfd5e09d5e19cbdac7ecf574da9595cdcdd71ea5f002c4b3f4eae648d691a01"
+    },
+    {
+      "old": "scripts/build_remaining_us_jp_scope.py",
+      "new": "scripts/ingest/common/legal_review/build_remaining_us_jp_scope.py",
+      "pre_move_sha256": "56a8bca47028e84682ce403f3f2ca039f38d1ad07fbb5215b33f3665aca02bd1"
+    },
+    {
+      "old": "scripts/collect_us_jp_review_sources.ps1",
+      "new": "scripts/crawl/common/collect_us_jp_review_sources.ps1",
+      "pre_move_sha256": "bc125b377e1ebeda6a1161c7792c06332420da5c6979f91b1dfdcfdc6991f54a"
+    },
+    {
+      "old": "scripts/legal_scope_clarifications.py",
+      "new": "scripts/ingest/common/legal_review/legal_scope_clarifications.py",
+      "pre_move_sha256": "cd7735a2d33849584dc7f6b7d261131acbf8fcce5f2ffcfb29d6be38777e7a32"
+    },
+    {
+      "old": "scripts/repair_evidence_quotes.py",
+      "new": "scripts/ingest/common/legal_review/repair_evidence_quotes.py",
+      "pre_move_sha256": "4e6d8c662bd5b8ef621ecb78a0220ea72d407ba12065aae81d20afc89c83bd40"
+    },
+    {
+      "old": "scripts/resolve_us_jp_review.py",
+      "new": "scripts/ingest/common/legal_review/resolve_us_jp_review.py",
+      "pre_move_sha256": "1e5ad8a8282f6cf454a3e940e6c587344a01f2d8a3e0258062232cbd18e6a8c3"
+    },
+    {
+      "old": "scripts/summarize_us_jp_scope.py",
+      "new": "scripts/ingest/common/legal_review/summarize_us_jp_scope.py",
+      "pre_move_sha256": "8e265c52063766abd7b904cbf470ac2fc298181ebf34e792d53fe6c664bd1ae6"
+    },
+    {
+      "old": "scripts/trace_japan_source_archives.py",
+      "new": "scripts/ingest/japan/trace_japan_source_archives.py",
+      "pre_move_sha256": "50bbedf116e2080549a020491d1362c66aeb63f961451923063fc3df58858e5f"
+    },
+    {
+      "old": "scripts/us_policy_scope_notes.py",
+      "new": "scripts/ingest/usa/shared/review/us_policy_scope_notes.py",
+      "pre_move_sha256": "9e835faa86712124608411de6ea5496d86f00f8e3576d75366e86a98af735b1d"
+    },
+    {
+      "old": "global_in_policy_audit_input_20261027.json",
+      "new": "data/processed/legal_review/inputs/global_in_policy_audit_input_20261027.json",
+      "pre_move_sha256": "043cf9bbb1d00c864d77912dca662e98960f5374766a219c36749bf7d2c69bd8"
+    }
+  ]
+}

@@ -593,3 +593,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+    try:
+        from .review_support import refresh_reviews
+    except ImportError:
+        from review_support import refresh_reviews
+    refresh_reviews(programs=["subclass_462_third"])

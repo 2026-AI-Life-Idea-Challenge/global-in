@@ -302,7 +302,23 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "b6573b652727e7d6",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인",
+          "현재 세부 본문의 정식 원문 보관·Evidence 연결 보강"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "archived_detail_missing_live_summary_added",
+        "current_section_fingerprint": "29f77fe321a57220",
+        "reviewed_policy_text": "호주 내 신청 시 보유 비자 요건 및 491/494 이력의 최소 보유기간 조건을 별도 검토한다.",
+        "text_kind": "reviewer_summary_not_source_quote"
+      }
     },
     {
       "policy_id": "AU_189_PT_POL_02",
@@ -316,7 +332,23 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "31c60a942efed037",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인",
+          "현재 세부 본문의 정식 원문 보관·Evidence 연결 보강"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "archived_detail_missing_live_summary_added",
+        "current_section_fingerprint": "2407f7ce980e5a79",
+        "reviewed_policy_text": "EOI 제출과 비자 신청을 구분하며 초청을 받아야 신청할 수 있다.",
+        "text_kind": "reviewer_summary_not_source_quote"
+      }
     },
     {
       "policy_id": "AU_189_PT_POL_03",
@@ -330,7 +362,23 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "460af9d9ea9d8ed1",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인",
+          "현재 세부 본문의 정식 원문 보관·Evidence 연결 보강"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "archived_detail_missing_live_summary_added",
+        "current_section_fingerprint": "3c9968b6a264de81",
+        "reviewed_policy_text": "기술심사 요건·심사 유효기간·Thapa 판결 관련 초청 후 취득 안내 및 직종별 대안을 함께 검토한다.",
+        "text_kind": "reviewer_summary_not_source_quote"
+      }
     },
     {
       "policy_id": "AU_189_PT_POL_04",
@@ -344,7 +392,23 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "3fc8fbcf75cf5ff6",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인",
+          "현재 세부 본문의 정식 원문 보관·Evidence 연결 보강"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "archived_detail_missing_live_summary_added",
+        "current_section_fingerprint": "fef089d53b370271",
+        "reviewed_policy_text": "45세 미만 여부는 초청 시점 기준이며 초청 후 45세가 되는 경우와 구분한다.",
+        "text_kind": "reviewer_summary_not_source_quote"
+      }
     },
     {
       "policy_id": "AU_189_PT_POL_05",
@@ -358,7 +422,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "f1d369465d96c9c2",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_189_PT_POL_06",
@@ -372,7 +448,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "73e0264991bf0893",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_189_PT_POL_07",
@@ -386,7 +474,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "95968db7400a88ac",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_189_PT_POL_08",
@@ -400,7 +500,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "5f56cfaebc21168d",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_189_PT_POL_09",
@@ -414,7 +526,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "e501f6a6edfff09c",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_189_PT_POL_10",
@@ -428,7 +552,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "cac776cbf73434aa",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_189_PT_POL_11",
@@ -442,7 +578,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "5ac23bd1f741bdfa",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_189_PT_POL_12",
@@ -456,7 +604,19 @@
       "eligibility_rule": null,
       "legal_validation_approved": false,
       "approved_for_eligibility_decision": false,
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/189-skilled-independent-points-tested.aspx",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "c35d6ab2b7d976d0",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     }
   ],
   "application_steps": [
@@ -554,5 +714,11 @@
   },
   "review_status": "needs_review",
   "legal_validation_approved": false,
-  "approved_for_eligibility_decision": false
+  "approved_for_eligibility_decision": false,
+  "official_review_summary": {
+    "reviewed_at": "2026-10-28",
+    "policy_count": 12,
+    "observed_live_section_count": 12,
+    "legal_validation_completed_count": 0
+  }
 }

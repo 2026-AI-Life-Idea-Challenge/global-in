@@ -255,7 +255,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "cd722fb7348a6aa6",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_LA_02_POL",
@@ -269,7 +281,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "3c93fe8f5e4d3556",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_LA_03_POL",
@@ -283,7 +307,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "530ac07adb411efd",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_LA_04_POL",
@@ -297,7 +333,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "29e37a56b34f2a79",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_LA_05_POL",
@@ -311,7 +359,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "d12a48b2f70a7ebb",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_LA_06_POL",
@@ -325,7 +385,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "895154f201c1c66a",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_LA_07_POL",
@@ -339,7 +411,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "0c124b783b3ccfce",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_LA_08_POL",
@@ -353,7 +437,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "e1410a35352769f3",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_LA_09_POL",
@@ -367,7 +463,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "48d46b3957338421",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     },
     {
       "policy_id": "AU_482_LA_10_POL",
@@ -381,7 +489,19 @@
       "eligibility_rule": null,
       "review_status": "needs_review",
       "legal_validation_approved": false,
-      "approved_for_eligibility_decision": false
+      "approved_for_eligibility_decision": false,
+      "official_review": {
+        "reviewed_at": "2026-10-28",
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/labour-agreement-stream",
+        "comparison_method": "expanded_eligibility_DOM_normalized_SHA256_prefix_64bit",
+        "local_text_fingerprint": "5756dd1d3dce9b84",
+        "legal_validation_completed": false,
+        "pending_items": [
+          "현행 법령·위임명령·예외·적용 범위 확인"
+        ],
+        "source_snapshot_replaced": false,
+        "status": "normalized_section_fingerprint_match"
+      }
     }
   ],
   "application_steps": [
@@ -429,5 +549,11 @@
     "source_file": "data/raw/australia/employment/subclass_482_labour_agreement_step_by_step.txt",
     "source_sha256": "efd6e68787d71ffd3db198a72c78b993db925c9cf90cc2355e4fbf728155f7ea",
     "review_status": "needs_review"
+  },
+  "official_review_summary": {
+    "reviewed_at": "2026-10-28",
+    "policy_count": 10,
+    "observed_live_section_count": 10,
+    "legal_validation_completed_count": 0
   }
 }

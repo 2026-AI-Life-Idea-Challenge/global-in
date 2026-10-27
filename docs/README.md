@@ -1,5 +1,7 @@
 # docs
 
+법률 검토 보고서·진행률·코드 위치와 실행 안내는 [legal_review/README.md](legal_review/README.md)에서 확인하세요.
+
 Global-In의 기획, 시스템 설계, Agent 구조, Database / ERD, 데이터 정책 등
 프로젝트의 상세 설계 문서를 관리하는 디렉터리입니다.
 
