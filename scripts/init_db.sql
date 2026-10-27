@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS policy_candidates (
     policy_id TEXT PRIMARY KEY,
     program_id TEXT NOT NULL REFERENCES programs(program_id),
     country TEXT NOT NULL
-        CHECK (country IN ('japan', 'australia', 'usa', 'germany', 'canada')),
+        CHECK (country IN ('japan', 'australia', 'usa', 'germany', 'canada', 'multi_country')),
     topic TEXT,
     source_evidence_ids TEXT[] NOT NULL DEFAULT '{}',
     policy_text TEXT,
