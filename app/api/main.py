@@ -12,6 +12,15 @@ from app.models.program import Program, PolicyCandidate, Evidence, SupportProgra
 import secrets
 from fastapi import Depends, Header
 
+from typing import Literal
+
+CountryFilter = Literal["japan", "australia", "usa", "germany", "canada"]
+CategoryFilter = Literal["employment", "study", "working_holiday"]
+
+SupportCountryFilter = Literal[
+    "japan", "australia", "usa",
+    "germany", "canada", "multi_country",
+]
 
 load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
@@ -72,8 +81,10 @@ def health():
     dependencies=[Depends(require_internal_api_key)],
 )
 def list_programs(
-    country: str | None = Query(default=None),
-    category: str | None = Query(default=None),
+    country: CountryFilter | None = Query(default=None),
+    category: CategoryFilter | None = Query(default=None),
+    limit: int = Query(default=100, ge=1, le=100),
+    offset: int = Query(default=0, ge=0),
 ):
     query = """
         SELECT program_id, country, name, category, route_id,
@@ -92,7 +103,8 @@ def list_programs(
         query += " AND category = %s"
         params.append(category)
 
-    query += " ORDER BY country, program_id"
+    query += " ORDER BY country, program_id LIMIT %s OFFSET %s"
+    params.extend([limit, offset])
 
     try:
         with psycopg.connect(DATABASE_URL, row_factory=dict_row) as conn:
@@ -268,8 +280,10 @@ class PublicProgram(BaseModel):
 
 @app.get("/public/programs", response_model=list[PublicProgram])
 def list_public_programs(
-    country: str | None = Query(default=None),
-    category: str | None = Query(default=None),
+    country: CountryFilter | None = Query(default=None),
+    category: CategoryFilter | None = Query(default=None),
+    limit: int = Query(default=100, ge=1, le=100),
+    offset: int = Query(default=0, ge=0),
 ):
     query = """
         SELECT program_id, country, name, category
@@ -286,7 +300,78 @@ def list_public_programs(
         query += " AND category = %s"
         params.append(category)
 
-    query += " ORDER BY country, program_id"
+    query += " ORDER BY country, program_id LIMIT %s OFFSET %s"
+    params.extend([limit, offset])
+
+    try:
+        with psycopg.connect(DATABASE_URL, row_factory=dict_row) as conn:
+            return conn.execute(query, params).fetchall()
+    except psycopg.Error:
+        raise HTTPException(
+            status_code=503,
+            detail="Database query failed",
+        ) from None
+
+# 공개 상세·지원제도 API 구현
+
+class PublicSupportProgram(BaseModel):
+    support_program_id: str
+    country: str
+    name: str
+    provider: str | None = None
+
+
+@app.get(
+    "/public/programs/{program_id}",
+    response_model=PublicProgram,
+)
+def get_public_program(program_id: str):
+    query = """
+        SELECT program_id, country, name, category
+        FROM programs
+        WHERE program_id = %s
+    """
+
+    try:
+        with psycopg.connect(DATABASE_URL, row_factory=dict_row) as conn:
+            row = conn.execute(query, (program_id,)).fetchone()
+    except psycopg.Error:
+        raise HTTPException(
+            status_code=503,
+            detail="Database query failed",
+        ) from None
+
+    if row is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Program not found",
+        )
+
+    return row
+
+
+@app.get(
+    "/public/support-programs",
+    response_model=list[PublicSupportProgram],
+)
+def list_public_support_programs(
+    country: SupportCountryFilter | None = Query(default=None),
+    limit: int = Query(default=100, ge=1, le=100),
+    offset: int = Query(default=0, ge=0),
+):
+    query = """
+        SELECT support_program_id, country, name, provider
+        FROM support_programs
+        WHERE TRUE
+    """
+    params = []
+
+    if country is not None:
+        query += " AND country = %s"
+        params.append(country)
+
+    query += " ORDER BY country, support_program_id LIMIT %s OFFSET %s"
+    params.extend([limit, offset])
 
     try:
         with psycopg.connect(DATABASE_URL, row_factory=dict_row) as conn:
