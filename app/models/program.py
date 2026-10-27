@@ -12,6 +12,8 @@ Country = Literal[
     "canada",
 ]
 
+SupportCountry = Country | Literal["multi_country"]
+
 
 class Program(BaseModel):
     """국가별 비자·체류 프로그램의 공통 표현."""
@@ -36,7 +38,7 @@ class SupportProgram(BaseModel):
     """비자 프로그램과 분리되는 지원사업."""
 
     support_program_id: str
-    country: Country
+    country: SupportCountry
     name: str
 
     provider: str | None = None
