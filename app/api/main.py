@@ -9,10 +9,34 @@ from psycopg.rows import dict_row
 
 from app.models.program import Program, PolicyCandidate, Evidence, SupportProgram
 
+import secrets
+from fastapi import Depends, Header
+
 
 load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
 
+
+INTERNAL_API_KEY = os.getenv("INTERNAL_API_KEY")
+
+
+def require_internal_api_key(
+    x_internal_api_key: str | None = Header(default=None),
+):
+    if not INTERNAL_API_KEY:
+        raise HTTPException(
+            status_code=503,
+            detail="Internal API authentication is not configured",
+        )
+
+    if x_internal_api_key is None or not secrets.compare_digest(
+        x_internal_api_key,
+        INTERNAL_API_KEY,
+    ):
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid internal API key",
+        )
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -42,7 +66,11 @@ def health():
     return {"status": "ok"}
 
 
-@app.get("/programs", response_model=list[Program])
+@app.get(
+    "/programs",
+    response_model=list[Program],
+    dependencies=[Depends(require_internal_api_key)],
+)
 def list_programs(
     country: str | None = Query(default=None),
     category: str | None = Query(default=None),
@@ -78,7 +106,11 @@ def list_programs(
     return rows
 
 
-@app.get("/programs/{program_id}", response_model=Program)
+@app.get(
+    "/programs/{program_id}",
+    response_model=Program,
+    dependencies=[Depends(require_internal_api_key)],
+)
 def get_program(program_id: str):
     query = """
         SELECT program_id, country, name, category, route_id,
@@ -109,6 +141,7 @@ def get_program(program_id: str):
 @app.get(
     "/programs/{program_id}/policies",
     response_model=list[PolicyCandidate],
+    dependencies=[Depends(require_internal_api_key)],
 )
 def get_program_policies(program_id: str):
     query = """
@@ -151,6 +184,7 @@ def get_program_policies(program_id: str):
 @app.get(
     "/programs/{program_id}/evidence",
     response_model=list[Evidence],
+    dependencies=[Depends(require_internal_api_key)],
 )
 def get_program_evidence(program_id: str):
     query = """
@@ -187,7 +221,11 @@ def get_program_evidence(program_id: str):
     return rows
 
 
-@app.get("/support-programs", response_model=list[SupportProgram])
+@app.get(
+    "/support-programs",
+    response_model=list[SupportProgram],
+    dependencies=[Depends(require_internal_api_key)],
+)
 def list_support_programs(
     country: str | None = Query(default=None),
 ):
@@ -215,3 +253,46 @@ def list_support_programs(
         ) from None
 
     return rows
+
+# 서비스용 프로그램 목록 API 추가
+
+from pydantic import BaseModel
+
+
+class PublicProgram(BaseModel):
+    program_id: str
+    country: str
+    name: str
+    category: str | None = None
+
+
+@app.get("/public/programs", response_model=list[PublicProgram])
+def list_public_programs(
+    country: str | None = Query(default=None),
+    category: str | None = Query(default=None),
+):
+    query = """
+        SELECT program_id, country, name, category
+        FROM programs
+        WHERE TRUE
+    """
+    params = []
+
+    if country is not None:
+        query += " AND country = %s"
+        params.append(country)
+
+    if category is not None:
+        query += " AND category = %s"
+        params.append(category)
+
+    query += " ORDER BY country, program_id"
+
+    try:
+        with psycopg.connect(DATABASE_URL, row_factory=dict_row) as conn:
+            return conn.execute(query, params).fetchall()
+    except psycopg.Error:
+        raise HTTPException(
+            status_code=503,
+            detail="Database query failed",
+        ) from None
