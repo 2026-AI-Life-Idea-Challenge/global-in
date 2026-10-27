@@ -23,9 +23,27 @@ def is_evidence_field(name):
 
 
 def get_source(record, evidence, field):
-    # 대사관 근거는 대사관 출처를 우선 사용한다.
-    if field == "embassy_evidence":
-        source = record.get("embassy_source", {})
+    source_file = evidence.get("source_file")
+
+    matching_sources = [
+        value
+        for value in record.values()
+        if isinstance(value, dict)
+        and value.get("source_file") == source_file
+        and value.get("source_url")
+    ] if source_file else []
+
+    if matching_sources:
+        urls = {item["source_url"] for item in matching_sources}
+
+        if len(urls) != 1:
+            raise ValueError(
+                f"Conflicting source URLs for {source_file}"
+            )
+
+        source = matching_sources[0]
+    elif field == "embassy_evidence":
+        source = record.get("embassy_source") or {}
     else:
         source = (
             record.get("official_source")
@@ -38,10 +56,9 @@ def get_source(record, evidence, field):
 
     return (
         evidence.get("source_url") or source.get("source_url"),
-        evidence.get("source_file") or source.get("source_file"),
+        source_file or source.get("source_file"),
         evidence.get("source_sha256") or source.get("source_sha256"),
     )
-
 
 def source_location(evidence):
     if evidence.get("line_number") is not None:
