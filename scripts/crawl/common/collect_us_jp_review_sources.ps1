@@ -1,4 +1,4 @@
-param([switch]$SupplementalOnly, [switch]$ResolutionOnly)
+param([switch]$SupplementalOnly, [switch]$ResolutionOnly, [switch]$F1Only)
 $ErrorActionPreference = 'Stop'
 $reviewRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../../..'))
 $reviewInput = Get-Content -LiteralPath (Join-Path $reviewRoot 'data/processed/legal_review/inputs/global_in_policy_audit_input_20261027.json') -Raw | ConvertFrom-Json
@@ -34,9 +34,15 @@ if ($ResolutionOnly) {
         'https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-106/section-106.2'
     )
 }
+if ($F1Only) {
+    $reviewUrls = @(
+        'https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.13',
+        'https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html'
+    )
+}
 New-Item -ItemType Directory -Force -Path $reviewOut | Out-Null
 $reviewRows = [System.Collections.Generic.List[object]]::new()
-if (($SupplementalOnly -or $ResolutionOnly) -and (Test-Path -LiteralPath (Join-Path $reviewOut 'fetch_manifest.json'))) {
+if (($SupplementalOnly -or $ResolutionOnly -or $F1Only) -and (Test-Path -LiteralPath (Join-Path $reviewOut 'fetch_manifest.json'))) {
     foreach ($existing in (Get-Content -LiteralPath (Join-Path $reviewOut 'fetch_manifest.json') -Raw | ConvertFrom-Json)) {
         if ($existing.source_url -notin $reviewUrls) { $reviewRows.Add($existing) }
     }

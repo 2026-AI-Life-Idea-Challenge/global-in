@@ -190,6 +190,13 @@ def main():
     result['detailed_scope_review_count'] = len(scope_review_ids)
     result['six_policy_context_review_ids'] = [r['policy_id'] for r in policy_rows if 'broader_evidence_section_extraction_review' in r['legal_holds']]
     attach_resolution(result)
+    f1_review_path = ROOT / 'data/processed/legal_review/f1_statutory_review_20261028.json'
+    if f1_review_path.exists():
+        f1_review = json.loads(f1_review_path.read_text(encoding='utf-8'))
+        assert f1_review['input_sha256'] == result['input_sha256']
+        for pid, review in f1_review['policies'].items():
+            result['policies']['usa'][pid]['statutory_review'] = review
+        result['f1_statutory_review_summary'] = f1_review['summary']
     target = ROOT / 'data/processed/legal_review/us_jp_policy_review_20261028.json'
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

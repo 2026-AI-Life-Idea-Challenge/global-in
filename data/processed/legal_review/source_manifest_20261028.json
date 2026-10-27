@@ -337,7 +337,7 @@
   },
   {
     "source_url": "https://www.moj.go.jp/isa/content/001363332.pdf",
-    "checked_at": "2026-10-28T01:35:38.6839640+09:00",
+    "checked_at": "2026-10-28T01:35:38.683964+09:00",
     "status": "downloaded",
     "source_file": "data/raw/legal_review/20261028/5cc4de35aa4f2f0c.pdf",
     "sha256": "167ace852ab22a03173ae0d5b59a031ed64cf1e9baf214e04a4018758239ba45",
@@ -353,7 +353,7 @@
   },
   {
     "source_url": "https://www.moj.go.jp/isa/10_00258.html",
-    "checked_at": "2026-10-28T01:35:38.7900800+09:00",
+    "checked_at": "2026-10-28T01:35:38.79008+09:00",
     "status": "downloaded",
     "source_file": "data/raw/legal_review/20261028/76f8e4850dadff23.html",
     "sha256": "3f9a185c57aff4b727a0f96f2e44c41289445d0742fb05e4000f858592d4413d",
@@ -385,7 +385,7 @@
   },
   {
     "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
-    "checked_at": "2026-10-28T01:35:38.9360480+09:00",
+    "checked_at": "2026-10-28T01:35:38.936048+09:00",
     "status": "downloaded",
     "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf",
     "sha256": "b8af6e7d9db6e51e3e09f954e5ec8a9a4b8b864d8187f8a605b581b7c8404bcc",
@@ -398,5 +398,20 @@
     "source_file": "data/raw/legal_review/20261028/a00f3716703bf34b.html",
     "sha256": "9d9aca12215bd615b0ea4289ede40d7fa4d1b653bbb8af16b7a15ef66f26fcc3",
     "bytes": 172694
+  },
+  {
+    "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.13",
+    "checked_at": "2026-10-28T01:48:17.2692087+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/4c6e03c25ada9592.html",
+    "sha256": "4baf026c8696e26ff63e3b9fa7f7512041e32c05aad947a27dd69942a1c25752",
+    "bytes": 105969
+  },
+  {
+    "source_url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+    "checked_at": "2026-10-28T01:48:18.5636885+09:00",
+    "status": "fetch_failed",
+    "error_type": "HttpResponseException",
+    "http_status": 403
   }
 ]

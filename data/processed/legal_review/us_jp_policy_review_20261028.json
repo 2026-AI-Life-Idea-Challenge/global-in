@@ -4515,6 +4515,37 @@
           "source_section": "DHS SEVP school search; 8 CFR 214.2(f)(1)",
           "finding": "학교의 F-1/M-1 인증 범위와 해당 교육과정을 구분한다. 학교검색 등재만으로 개인 입학·비자·입국이 승인되지 않는다.",
           "issue_codes": []
+        },
+        "statutory_review": {
+          "policy_id": "US-F1-POL-001",
+          "reviewed_at": "2026-10-28",
+          "review_stage": "statutory_clause_and_exception_review_recorded",
+          "original_policy_text_sha256": "48e0b538a1466f594d7a311288e6ab542779e3578b1249c248186147f476b781",
+          "provisions": [
+            {
+              "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.2",
+              "source_file": "data/raw/legal_review/20261028/ea098f95b5468356.html",
+              "source_sha256": "3a0a28acf24361eb7b7a3242d0a53d6cbdc2d62f299937ab5ff28e7129728150",
+              "provision": "214.2(f)(1)(i)(A)",
+              "normalized_paragraph_sha256": "b442d5fff29e6995cf662c6cc143973fe91a3bd9072661136d54ca9913b9ad1c",
+              "text": "( A ) The student presents a Form I-20 or successor form issued in the student's name by a school certified by the Student and Exchange Visitor Program (SEVP) for attendance by F-1 foreign students;",
+              "legal_force_and_litigation_approval": false
+            }
+          ],
+          "findings": [
+            "학교의 F-1 인증과 해당 과정의 허용 범위를 확인한다. 학교 검색 지도는 탐색 도구이며 개별 입학·비자·입국 승인 자체가 아니다."
+          ],
+          "dos_observation": null,
+          "text_kind": "reviewer_summary_not_source_quote",
+          "remaining_review": [
+            "program_specific_school_certification_and_admission_requirements"
+          ],
+          "legal_validation_completed": false,
+          "legal_validation_approved": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false,
+          "approved_for_eligibility_decision": false,
+          "database_applied": false
         }
       },
       "US-F1-POL-002": {
@@ -4563,6 +4594,37 @@
             "source_sha256": "3a0a28acf24361eb7b7a3242d0a53d6cbdc2d62f299937ab5ff28e7129728150",
             "normalized_paragraph_sha256": "8aed8c0f16b8ceec7192649082383413322539b4f0d7b3710988068b97fd36ee"
           }
+        },
+        "statutory_review": {
+          "policy_id": "US-F1-POL-002",
+          "reviewed_at": "2026-10-28",
+          "review_stage": "statutory_clause_and_exception_review_recorded",
+          "original_policy_text_sha256": "a7b44719abefce577ea1482b88028df0ac5b1ce7f851440bd5a3b5198a95e319",
+          "provisions": [
+            {
+              "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.2",
+              "source_file": "data/raw/legal_review/20261028/ea098f95b5468356.html",
+              "source_sha256": "3a0a28acf24361eb7b7a3242d0a53d6cbdc2d62f299937ab5ff28e7129728150",
+              "provision": "214.2(f)(1)(i)(A)",
+              "normalized_paragraph_sha256": "b442d5fff29e6995cf662c6cc143973fe91a3bd9072661136d54ca9913b9ad1c",
+              "text": "( A ) The student presents a Form I-20 or successor form issued in the student's name by a school certified by the Student and Exchange Visitor Program (SEVP) for attendance by F-1 foreign students;",
+              "legal_force_and_litigation_approval": false
+            }
+          ],
+          "findings": [
+            "F-1 입국 자료는 본인 명의의 SEVP 인증 학교 I-20가 필요하다. 입학과 DSO 발행, 비자 발급, 입국 심사를 구분한다."
+          ],
+          "dos_observation": null,
+          "text_kind": "reviewer_summary_not_source_quote",
+          "remaining_review": [
+            "funding_full_course_intent_and_other_admissibility_conditions"
+          ],
+          "legal_validation_completed": false,
+          "legal_validation_approved": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false,
+          "approved_for_eligibility_decision": false,
+          "database_applied": false
         }
       },
       "US-F1-POL-003": {
@@ -4604,6 +4666,44 @@
           "source_section": "DHS Form I-20 guidance; 8 CFR 214.2(f)",
           "finding": "적격 동반가족의 개별 I-20와 본인 I-20 서명을 구분한다. 미성년 서명 조건과 F/M 과정 유형을 보존한다.",
           "issue_codes": []
+        },
+        "statutory_review": {
+          "policy_id": "US-F1-POL-003",
+          "reviewed_at": "2026-10-28",
+          "review_stage": "statutory_clause_and_exception_review_recorded",
+          "original_policy_text_sha256": "8f8214387c02e08b487973e093afbdaeb696a409be3dc1b59fdf80b47adf30f7",
+          "provisions": [
+            {
+              "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.2",
+              "source_file": "data/raw/legal_review/20261028/ea098f95b5468356.html",
+              "source_sha256": "3a0a28acf24361eb7b7a3242d0a53d6cbdc2d62f299937ab5ff28e7129728150",
+              "provision": "214.2(f)(3)",
+              "normalized_paragraph_sha256": "9953d7c9cdf915cfea5147034ba188f08727a811b32767327c21c75396c438cb",
+              "text": "( 3 ) Admission of the spouse and minor children of an F-1 student. The spouse and minor children accompanying an F-1 student are eligible for admission in F-2 status if the student is admitted in F-1 status. The spouse and minor children following-to-join an F-1 student are eligible for admission to the United States in F-2 status if they are able to demonstrate that the F-1 student has been admitted and is, or will be within 30 days, enrolled in a full course of study, or engaged in approved practical training following completion of studies. In either case, at the time they seek admission, the eligible spouse and minor children of an F-1 student must individually present a Form I-20 or successor form in the name of each F-2 dependent issued by a school certified by SEVP for attendance by F-1 students. A new Form I-20 or successor form is required for a dependent where there has been any substantive change in the F-1 student's current information.",
+              "legal_force_and_litigation_approval": false
+            }
+          ],
+          "findings": [
+            "적격 배우자·미성년 자녀는 각자 명의의 I-20를 제시한다. 동반과 추후 합류 조건을 구분한다.",
+            "F-1과 M-1의 학교·과정 유형, 본인·학교 관계자 서명 및 미성년자의 서명 안내는 서로 다른 조건으로 보존한다."
+          ],
+          "dos_observation": {
+            "source_url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+            "method": "official web tool page read on 2026-10-28",
+            "automated_download_status": "fetch_failed",
+            "archived_response_available": false,
+            "observation": "국무부 안내는 신규 학생의 비자 발급 최대 365일 전과 입국 최대 30일 전을 구분한다. 계속 재학 중인 학생은 SEVP 학교·SEVIS 등록 조건 아래 수업 시작 전 입국을 별도로 안내한다."
+          },
+          "text_kind": "reviewer_summary_not_source_quote",
+          "remaining_review": [
+            "minor_signature_form_instructions_and_m1_cross_category_review"
+          ],
+          "legal_validation_completed": false,
+          "legal_validation_approved": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false,
+          "approved_for_eligibility_decision": false,
+          "database_applied": false
         }
       },
       "US-F1-POL-004": {
@@ -4645,6 +4745,65 @@
           "source_section": "DHS I-901 SEVIS fee guidance",
           "finding": "I-20 수령 후 해당 I-901 수수료를 확인한다. 동반 F-2/M-2와 기존 학생의 재납부 예외를 별도 확인하며 모든 사람·입국에 새 납부를 강제하지 않는다.",
           "issue_codes": []
+        },
+        "statutory_review": {
+          "policy_id": "US-F1-POL-004",
+          "reviewed_at": "2026-10-28",
+          "review_stage": "statutory_clause_and_exception_review_recorded",
+          "original_policy_text_sha256": "334e37911e0d99801a8efa093f438c9c423fa19daa0d4af670f7a6009ec06d79",
+          "provisions": [
+            {
+              "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.13",
+              "source_file": "data/raw/legal_review/20261028/4c6e03c25ada9592.html",
+              "source_sha256": "4baf026c8696e26ff63e3b9fa7f7512041e32c05aad947a27dd69942a1c25752",
+              "provision": "214.13(d)(1)",
+              "normalized_paragraph_sha256": "d95b1348858bf8a2b11b52634b1ff430eba1a5be6422b1dcbd4acfc69b49a35d",
+              "text": "( 1 ) An alien seeking an F-1, F-3, J-1, M-1, or M-3 visa from a consular officer abroad for initial attendance at an SEVP-certified school or to commence participation in a Department of State-designated exchange visitor program, must pay the fee to DHS before issuance of the visa.",
+              "legal_force_and_litigation_approval": false
+            },
+            {
+              "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.13",
+              "source_file": "data/raw/legal_review/20261028/4c6e03c25ada9592.html",
+              "source_sha256": "4baf026c8696e26ff63e3b9fa7f7512041e32c05aad947a27dd69942a1c25752",
+              "provision": "214.13(b)(2)",
+              "normalized_paragraph_sha256": "bdea316426f1be010db1a5bec1459eecb75f033fc1cafa168226f4e1a315a454",
+              "text": "( 2 ) Dependents of F, M, or J nonimmigrants. The principal alien must pay the fee, when required under this section, in order for his/her qualifying dependents to obtain F-2, J-2, or M-2 status. However, an F-2, J-2, or M-2 dependent is not required to pay a separate fee under this section in order to obtain that status or during the time he/she remains in that status.",
+              "legal_force_and_litigation_approval": false
+            },
+            {
+              "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.13",
+              "source_file": "data/raw/legal_review/20261028/4c6e03c25ada9592.html",
+              "source_sha256": "4baf026c8696e26ff63e3b9fa7f7512041e32c05aad947a27dd69942a1c25752",
+              "provision": "214.13(e)",
+              "normalized_paragraph_sha256": "556a9a7b63c1fb6996778551eac085fd6d7f1154ba6f6804a56d749106ab5aca",
+              "text": "( e ) Circumstances where no new fee is required. ( 1 ) Extension of stay, transfer, or optional practical training for students. An F-1, F-3, M-1, or M-3 nonimmigrant is not required to pay a new fee in connection with: ( i ) An application for an extension of stay, as provided in 8 CFR 214.2(f)(7) or (m)(10) ; ( ii ) An application for transfer, as provided in 8 CFR 214.2(f)(8) or (m)(11) ; ( iii ) A change in educational level, as provided in 8 CFR 214.2(f)(5)(ii) ; or ( iv ) An application for post-completion practical training, as provided in 8 CFR 214.2(f)(10)(ii) or (m)(14) . ( 2 ) Extension of program or transfer for exchange visitors. A J-1 nonimmigrant is not required to pay a new fee in connection with: ( i ) An application for an extension of program, as provided in 22 CFR 62.43 ; or ( ii ) An application for transfer of program, as provided in 22 CFR 62.42 . ( 3 ) Visa issuance for a continuation of study. An F-1, F-3, J-1, M-1, or M-3 nonimmigrant who has previously paid the fee is not required to pay a new fee in order to be granted a visa to return to the United States as a continuing student or exchange visitor in a single course of study, so long as the nonimmigrant is not otherwise required to pay a new fee in accordance with the other provisions in this section. ( 4 ) Certain changes in student classification. ( i ) No fee is required for changes between the F-1 and F-3 classifications, and no fee is required for changes between the M-1 and M-3 classifications. ( ii ) Institutional reclassification. DHS retains the discretionary authority to waive the additional fee requirement when a nonimmigrant changes classification between F and M, if the change of status is due solely to institutional reclassification by the Student and Exchange Visitor Program during that nonimmigrant's course of study. ( 5 ) Re-application following denial of application by consular officer. An alien who fully paid a SEVIS fee in connection with an initial application for an F-1, F-3, M-1, or M-3 visa, or a J-1 visa in a particular program category, whose initial application was denied, and who is reapplying for the same status, or the same J-1 exchange visitor category, within 12 months following the initial notice of denial is not required to repay the SEVIS fee. ( 6 ) Re-application following denial of an application for a change of status. A nonimmigrant who fully paid a SEVIS fee in connection with an initial application for a change of status within in the United States to F-1, F-3, M-1, or M-3 classification, or for a change of status to a particular J-1 exchange visitor category, whose initial application was denied, and who is granted a motion to reopen the denied case is not required to repay the SEVIS fee if the motion to reopen is granted within 12 months of receipt of initial notice of denial.",
+              "legal_force_and_litigation_approval": false
+            },
+            {
+              "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.13",
+              "source_file": "data/raw/legal_review/20261028/4c6e03c25ada9592.html",
+              "source_sha256": "4baf026c8696e26ff63e3b9fa7f7512041e32c05aad947a27dd69942a1c25752",
+              "provision": "214.13(d)(3)",
+              "normalized_paragraph_sha256": "867f1ae5b64b9b5493722fd583af52d3323c53e19c89c125442b93ff3adac832",
+              "text": "( 3 ) A nonimmigrant alien in the United States seeking a change of status to F-1, F-3, J-1, M-1, or M-3 must pay the fee to DHS before the alien is granted the change of nonimmigrant status, except as provided in paragraph (e)(4) of this section.",
+              "legal_force_and_litigation_approval": false
+            }
+          ],
+          "findings": [
+            "해외 최초 학생비자 신청자는 비자 발급 전에 SEVIS 수수료를 납부해야 한다. 비자 면제 입국과 미국 내 신분변경은 각 절차의 납부 시점을 따로 적용한다.",
+            "F-2·M-2 동반가족의 별도 수수료 면제와 연장·전학·학위 단계 변경·실습·계속 재학·거절 후 재신청 등 재납부 예외를 구분한다. I-20를 새로 받았다는 사실만으로 재납부를 일률 요구하지 않는다."
+          ],
+          "dos_observation": null,
+          "text_kind": "reviewer_summary_not_source_quote",
+          "remaining_review": [
+            "case_specific_new_fee_triggers_and_effective_rule_check"
+          ],
+          "legal_validation_completed": false,
+          "legal_validation_approved": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false,
+          "approved_for_eligibility_decision": false,
+          "database_applied": false
         }
       },
       "US-F1-POL-005": {
@@ -4686,6 +4845,43 @@
           "source_section": "DHS Form I-20 guidance; 8 CFR 214.2(f)(5)(i)",
           "finding": "최초 학생의 비자 발급 가능 시점과 입국 가능 시점은 다르다. 365일 전 발급을 365일 전 입국 허용으로 사용하지 않는다.",
           "issue_codes": []
+        },
+        "statutory_review": {
+          "policy_id": "US-F1-POL-005",
+          "reviewed_at": "2026-10-28",
+          "review_stage": "statutory_clause_and_exception_review_recorded",
+          "original_policy_text_sha256": "dd9be928ae002997038d8f265216d92e7a552076b208a754fbf84d70a3bc02d6",
+          "provisions": [
+            {
+              "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.2",
+              "source_file": "data/raw/legal_review/20261028/ea098f95b5468356.html",
+              "source_sha256": "3a0a28acf24361eb7b7a3242d0a53d6cbdc2d62f299937ab5ff28e7129728150",
+              "provision": "214.2(f)(5)(i)",
+              "normalized_paragraph_sha256": "2a4771ae9cd498aec5196b773b04755e5cc69eb84652787117a1f2d47a629dc5",
+              "text": "( i ) General. An F-1 student is admitted for a fixed period of time, which is the period necessary to complete the course of study indicated on the Form I-20, or successor form, not to exceed a period of 4 years, plus additional times noted in this paragraph (f)(5)(i) . A continuing F-1 student may be granted additional time to complete their program of study, as described in paragraphs (f)(7) and (f)(8)(iv) of this section, begin a new program of study, as described in paragraphs (f)(5)(ii)(D) and (f)(7) of this section, or following the completion of studies to engage in post-completion optional practical training (OPT) and the Science, Technology, Engineering and Mathematics (STEM) extension of OPT, as described in paragraph (f)(5)(i)(D) of this section. An F-1 student described in this section may be admitted for a period of up to 30 days before the indicated report date or program start date listed on the Form I-20 or successor form. An alien described in this paragraph (f)(5)(i) may remain in the United States for an additional 30 days as provided in paragraph (f)(5)(v) of this section. The 30-day period before the indicated report date or program start date and 30 additional days following the program end date or the 4-year maximum period of admission do not count toward the maximum length of stay. The admission periods described in this paragraph (f)(5)(i) are subject to the following exceptions: ( A ) F-1 students whose course of study is in an English language training program are restricted to a maximum of admission period of 24 months, plus an additional 30-day period of stay for the purposes of departure or to otherwise seek to maintain lawful status. ( B ) Border commuter students under the provisions in paragraph (f)(18) of this section may be admitted for the applicable period described under paragraph (f)(18). ( C ) F-1 students attending a public high school, which may also include a charter school or other similar school funded by U.S. taxpayers, are restricted to an aggregate of no more than 12 months to complete their course of study, including any school breaks and annual vacations. ( D ) Students with pending employment authorization applications who are admitted based on the designated school official's recommended employment end date for post-completion OPT or STEM OPT as specified on their Form I-20, with a notice issued by USCIS indicating receipt of the Application for Employment Authorization, Form I-765, or successor form for post-completion OPT or STEM OPT, who cease employment pursuant to an Employment Authorization Document (EAD) that expires before the alien's fixed date of admission as noted on their Arrival/Departure Record, Form I-94, or successor form, will be considered to be in the United States in a period of authorized stay from the date of the expiration noted on their EAD until the fixed date of admission as noted on their Form I-94. ( E ) The authorized period of stay for F-2 dependents may not exceed the authorized period of stay of the principal F-1 student.",
+              "legal_force_and_litigation_approval": false
+            }
+          ],
+          "findings": [
+            "신규 학생의 비자 발급 가능 시점과 입국 가능 시점을 구분한다. 계속 재학 중인 학생에게 신규 학생의 30일 전 제한을 일률 적용하지 않는다."
+          ],
+          "dos_observation": {
+            "source_url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+            "method": "official web tool page read on 2026-10-28",
+            "automated_download_status": "fetch_failed",
+            "archived_response_available": false,
+            "observation": "국무부 안내는 신규 학생의 비자 발급 최대 365일 전과 입국 최대 30일 전을 구분한다. 계속 재학 중인 학생은 SEVP 학교·SEVIS 등록 조건 아래 수업 시작 전 입국을 별도로 안내한다."
+          },
+          "text_kind": "reviewer_summary_not_source_quote",
+          "remaining_review": [
+            "student_admission_rule_litigation_and_initial_vs_continuing_case"
+          ],
+          "legal_validation_completed": false,
+          "legal_validation_approved": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false,
+          "approved_for_eligibility_decision": false,
+          "database_applied": false
         }
       },
       "US-F1-POL-006": {
@@ -4763,6 +4959,52 @@
             "corrected_policy_text": "You are expected to have the signed Form I-20 on hand as you enter the country. Do not pack it away in your suitcase. A U.S. Customs and Border Protection officer will instruct you to present your Form I-20 at the port of entry . You may arrive up to 30 days before the start date listed on your Form I-20.",
             "text_kind": "edited_clause_not_verbatim_source_quote"
           }
+        },
+        "statutory_review": {
+          "policy_id": "US-F1-POL-006",
+          "reviewed_at": "2026-10-28",
+          "review_stage": "statutory_clause_and_exception_review_recorded",
+          "original_policy_text_sha256": "972c1e1a0ca624c29ce31d4847f605eb8c16c59d31e151f5f77aaf6a3156a9c3",
+          "provisions": [
+            {
+              "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.2",
+              "source_file": "data/raw/legal_review/20261028/ea098f95b5468356.html",
+              "source_sha256": "3a0a28acf24361eb7b7a3242d0a53d6cbdc2d62f299937ab5ff28e7129728150",
+              "provision": "214.2(f)(1)(ii)",
+              "normalized_paragraph_sha256": "0c610d0f1517edc0a2d470167708cca40b7d23212ac6116732e3c75decd80f24",
+              "text": "( ii ) Form I-20 or successor form requirements at the port-of-entry. When an F-1 student applies for admission with a complete Form I-20 or successor form, the inspecting officer will: ( A ) Transcribe the student's admission number from Form I-94 onto the student's Form I-20 or successor form (for students seeking initial admission only); ( B ) Endorse the Form I-20 or successor form; and ( C ) Return the Form I-20 or successor form to the student.",
+              "legal_force_and_litigation_approval": false
+            },
+            {
+              "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.2",
+              "source_file": "data/raw/legal_review/20261028/ea098f95b5468356.html",
+              "source_sha256": "3a0a28acf24361eb7b7a3242d0a53d6cbdc2d62f299937ab5ff28e7129728150",
+              "provision": "214.2(f)(5)(i)",
+              "normalized_paragraph_sha256": "2a4771ae9cd498aec5196b773b04755e5cc69eb84652787117a1f2d47a629dc5",
+              "text": "( i ) General. An F-1 student is admitted for a fixed period of time, which is the period necessary to complete the course of study indicated on the Form I-20, or successor form, not to exceed a period of 4 years, plus additional times noted in this paragraph (f)(5)(i) . A continuing F-1 student may be granted additional time to complete their program of study, as described in paragraphs (f)(7) and (f)(8)(iv) of this section, begin a new program of study, as described in paragraphs (f)(5)(ii)(D) and (f)(7) of this section, or following the completion of studies to engage in post-completion optional practical training (OPT) and the Science, Technology, Engineering and Mathematics (STEM) extension of OPT, as described in paragraph (f)(5)(i)(D) of this section. An F-1 student described in this section may be admitted for a period of up to 30 days before the indicated report date or program start date listed on the Form I-20 or successor form. An alien described in this paragraph (f)(5)(i) may remain in the United States for an additional 30 days as provided in paragraph (f)(5)(v) of this section. The 30-day period before the indicated report date or program start date and 30 additional days following the program end date or the 4-year maximum period of admission do not count toward the maximum length of stay. The admission periods described in this paragraph (f)(5)(i) are subject to the following exceptions: ( A ) F-1 students whose course of study is in an English language training program are restricted to a maximum of admission period of 24 months, plus an additional 30-day period of stay for the purposes of departure or to otherwise seek to maintain lawful status. ( B ) Border commuter students under the provisions in paragraph (f)(18) of this section may be admitted for the applicable period described under paragraph (f)(18). ( C ) F-1 students attending a public high school, which may also include a charter school or other similar school funded by U.S. taxpayers, are restricted to an aggregate of no more than 12 months to complete their course of study, including any school breaks and annual vacations. ( D ) Students with pending employment authorization applications who are admitted based on the designated school official's recommended employment end date for post-completion OPT or STEM OPT as specified on their Form I-20, with a notice issued by USCIS indicating receipt of the Application for Employment Authorization, Form I-765, or successor form for post-completion OPT or STEM OPT, who cease employment pursuant to an Employment Authorization Document (EAD) that expires before the alien's fixed date of admission as noted on their Arrival/Departure Record, Form I-94, or successor form, will be considered to be in the United States in a period of authorized stay from the date of the expiration noted on their EAD until the fixed date of admission as noted on their Form I-94. ( E ) The authorized period of stay for F-2 dependents may not exceed the authorized period of stay of the principal F-1 student.",
+              "legal_force_and_litigation_approval": false
+            }
+          ],
+          "findings": [
+            "입국 시 I-20 제시를 확인하고 원문의 끝 or 추출 흔적을 제거한 검토본을 사용한다. 신규·계속 학생 구분 없이 모든 입국을 30일 전으로 제한하지 않는다."
+          ],
+          "dos_observation": {
+            "source_url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+            "method": "official web tool page read on 2026-10-28",
+            "automated_download_status": "fetch_failed",
+            "archived_response_available": false,
+            "observation": "국무부 안내는 신규 학생의 비자 발급 최대 365일 전과 입국 최대 30일 전을 구분한다. 계속 재학 중인 학생은 SEVP 학교·SEVIS 등록 조건 아래 수업 시작 전 입국을 별도로 안내한다."
+          },
+          "text_kind": "reviewer_summary_not_source_quote",
+          "remaining_review": [
+            "student_admission_rule_litigation_and_reentry_conditions"
+          ],
+          "legal_validation_completed": false,
+          "legal_validation_approved": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false,
+          "approved_for_eligibility_decision": false,
+          "database_applied": false
         }
       },
       "US-F1-POL-007": {
@@ -4804,6 +5046,46 @@
           "source_section": "DHS Form I-20 guidance; 8 CFR 214.2(f)",
           "finding": "미국 내 F/M 신분변경에 필요한 I-20다. 발행만으로 신분변경 승인이나 학업 개시 허가가 되지 않는다.",
           "issue_codes": []
+        },
+        "statutory_review": {
+          "policy_id": "US-F1-POL-007",
+          "reviewed_at": "2026-10-28",
+          "review_stage": "statutory_clause_and_exception_review_recorded",
+          "original_policy_text_sha256": "caaa90296b222201a63b1e5c817f669b31c14ab31d0f6b795a3c88a24a4594cc",
+          "provisions": [
+            {
+              "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.2",
+              "source_file": "data/raw/legal_review/20261028/ea098f95b5468356.html",
+              "source_sha256": "3a0a28acf24361eb7b7a3242d0a53d6cbdc2d62f299937ab5ff28e7129728150",
+              "provision": "214.2(f)(1)(i)(A)",
+              "normalized_paragraph_sha256": "b442d5fff29e6995cf662c6cc143973fe91a3bd9072661136d54ca9913b9ad1c",
+              "text": "( A ) The student presents a Form I-20 or successor form issued in the student's name by a school certified by the Student and Exchange Visitor Program (SEVP) for attendance by F-1 foreign students;",
+              "legal_force_and_litigation_approval": false
+            },
+            {
+              "source_url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/section-214.13",
+              "source_file": "data/raw/legal_review/20261028/4c6e03c25ada9592.html",
+              "source_sha256": "4baf026c8696e26ff63e3b9fa7f7512041e32c05aad947a27dd69942a1c25752",
+              "provision": "214.13(d)(3)",
+              "normalized_paragraph_sha256": "867f1ae5b64b9b5493722fd583af52d3323c53e19c89c125442b93ff3adac832",
+              "text": "( 3 ) A nonimmigrant alien in the United States seeking a change of status to F-1, F-3, J-1, M-1, or M-3 must pay the fee to DHS before the alien is granted the change of nonimmigrant status, except as provided in paragraph (e)(4) of this section.",
+              "legal_force_and_litigation_approval": false
+            }
+          ],
+          "findings": [
+            "미국 내 F-1 신분변경에는 I-20 및 해당 수수료 절차를 확인한다. I-20 발행은 신분변경 승인이나 즉시 학업 개시 허가 자체가 아니다."
+          ],
+          "dos_observation": null,
+          "text_kind": "reviewer_summary_not_source_quote",
+          "remaining_review": [
+            "8_cfr_248_eligibility_exclusions_and_timing"
+          ],
+          "legal_validation_completed": false,
+          "legal_validation_approved": false,
+          "approved_for_user_answers": false,
+          "approved_for_embedding": false,
+          "approved_for_eligibility_decision": false,
+          "database_applied": false
         }
       },
       "US-SWT-POL-002": {
@@ -22404,6 +22686,15 @@
     "court_order_primary_documents_checked": 3,
     "final_legal_validation_completed": 0,
     "final_legal_validation_percent": 0,
+    "database_changed": false
+  },
+  "f1_statutory_review_summary": {
+    "reviewed_at": "2026-10-28",
+    "program": "F-1",
+    "statutory_review_recorded": 7,
+    "program_policy_total": 7,
+    "recording_percent": 100,
+    "final_legal_validation_completed": 0,
     "database_changed": false
   }
 }

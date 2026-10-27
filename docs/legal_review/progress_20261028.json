@@ -41,5 +41,15 @@
     "final_legal_validation_completed": 0,
     "final_legal_validation_percent": 0,
     "database_changed": false
-  }
+  },
+  "f1_statutory_review": {
+    "reviewed_at": "2026-10-28",
+    "program": "F-1",
+    "statutory_review_recorded": 7,
+    "program_policy_total": 7,
+    "recording_percent": 100,
+    "final_legal_validation_completed": 0,
+    "database_changed": false
+  },
+  "git_checkpoint_before_statutory_review": "ff5177d"
 }
