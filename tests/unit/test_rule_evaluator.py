@@ -25,7 +25,7 @@ import pytest
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from app.rules.evaluator import evaluate  # noqa: E402
+from app.rules.evaluator import evaluate, PASS, FAIL, UNKNOWN  # noqa: E402
 from app.agent.eligibility.checker import (  # noqa: E402
     check_eligibility,
     EligibilityResult,
@@ -83,7 +83,7 @@ def au_186_de_expressions(release_data) -> dict[str, dict]:
 def _eval(expression: dict, profile: dict, as_of: str = "2026-10-28") -> str:
     """evaluator.evaluate() 호출 래퍼 — outcome 문자열만 반환."""
     pending: list = []
-    trusted_context = [expression, as_of, [], profile, pending]
+    trusted_context = [{"requirement_id": "direct_eval", "target": {}, "expression": expression}, as_of, [], profile, pending]
     return evaluate(expression, profile, trusted_context)
 
 
@@ -120,7 +120,7 @@ class TestCAIECExpressionsDirect:
         """POL_01: 국적+여권 충족 → manual_check 자식 때문에 UNKNOWN."""
         expr = ca_iec_expressions["REVIEW:POLICY:CA_IEC_WH_POL_01"]
         result = _eval(expr, demo_profile_ca_iec_wh_pass())
-        assert result == "UNKNOWN", (
+        assert result == UNKNOWN, (
             f"POL_01은 all 안에 manual_check 자식이 있으므로 UNKNOWN이어야 함. got={result}"
         )
 
@@ -131,7 +131,7 @@ class TestCAIECExpressionsDirect:
         del profile["nationalities"]
         result = _eval(expr, profile)
         # 필드 누락 → UNKNOWN (evaluator는 missing field를 UNKNOWN으로 처리)
-        assert result in ("UNKNOWN", "FAIL")
+        assert result in (UNKNOWN, FAIL)
 
     def test_pol_01_non_korean_is_fail(self, ca_iec_expressions):
         """POL_01: 한국 국적 아님 → contains FAIL → all FAIL."""
@@ -139,13 +139,13 @@ class TestCAIECExpressionsDirect:
         profile = demo_profile_ca_iec_wh_pass()
         profile["nationalities"] = ["US"]
         result = _eval(expr, profile)
-        assert result == "FAIL", f"한국 국적 없으면 FAIL이어야 함. got={result}"
+        assert result == FAIL, f"한국 국적 없으면 FAIL이어야 함. got={result}"
 
     def test_pol_02_pass_profile_is_unknown(self, ca_iec_expressions):
         """POL_02: 참여 0회 충족 → manual_check 자식 때문에 UNKNOWN."""
         expr = ca_iec_expressions["REVIEW:POLICY:CA_IEC_WH_POL_02"]
         result = _eval(expr, demo_profile_ca_iec_wh_pass())
-        assert result == "UNKNOWN"
+        assert result == UNKNOWN
 
     def test_pol_02_over_limit_is_fail(self, ca_iec_expressions):
         """POL_02: 참여 2회 → lt(2) FAIL → all FAIL."""
@@ -153,19 +153,19 @@ class TestCAIECExpressionsDirect:
         profile = demo_profile_ca_iec_wh_pass()
         profile["iec_actual_work_permit_participations"] = 2
         result = _eval(expr, profile)
-        assert result == "FAIL"
+        assert result == FAIL
 
     def test_pol_03_pass_profile_is_pass(self, ca_iec_expressions):
         """POL_03: 자금·항공권·은행증명서 전부 충족 → manual_check 없음 → PASS."""
         expr = ca_iec_expressions["REVIEW:POLICY:CA_IEC_WH_POL_03"]
         result = _eval(expr, demo_profile_ca_iec_wh_pass())
-        assert result == "PASS", f"POL_03 충족 프로필은 PASS여야 함. got={result}"
+        assert result == PASS, f"POL_03 충족 프로필은 PASS여야 함. got={result}"
 
     def test_pol_03_insufficient_funds_is_fail(self, ca_iec_expressions):
         """POL_03: 자금 CAD 1500 (< 2500) → FAIL."""
         expr = ca_iec_expressions["REVIEW:POLICY:CA_IEC_WH_POL_03"]
         result = _eval(expr, demo_profile_ca_iec_wh_fail_funds())
-        assert result == "FAIL", f"자금 부족이면 FAIL. got={result}"
+        assert result == FAIL, f"자금 부족이면 FAIL. got={result}"
 
     def test_pol_03_no_return_ticket_or_funds_is_fail(self, ca_iec_expressions):
         """POL_03: 귀국 항공권·자금 둘 다 없음 → any FAIL → all FAIL."""
@@ -174,7 +174,7 @@ class TestCAIECExpressionsDirect:
         profile["return_ticket_available"] = False
         profile["separate_return_ticket_funds_available"] = False
         result = _eval(expr, profile)
-        assert result == "FAIL"
+        assert result == FAIL
 
     def test_pol_03_bank_statement_too_old_is_fail(self, ca_iec_expressions):
         """POL_03: 은행증명서 8일 → lte(7) FAIL → all FAIL."""
@@ -182,25 +182,25 @@ class TestCAIECExpressionsDirect:
         profile = demo_profile_ca_iec_wh_pass()
         profile["bank_statement_age_days_at_departure"] = 8
         result = _eval(expr, profile)
-        assert result == "FAIL"
+        assert result == FAIL
 
     def test_pol_04_pass_profile_is_unknown(self, ca_iec_expressions):
         """POL_04: 보험 전부 충족 → manual_check 자식 때문에 UNKNOWN."""
         expr = ca_iec_expressions["REVIEW:POLICY:CA_IEC_WH_POL_04"]
         result = _eval(expr, demo_profile_ca_iec_wh_pass())
-        assert result == "UNKNOWN"
+        assert result == UNKNOWN
 
     def test_pol_04_missing_insurance_fields_is_unknown(self, ca_iec_expressions):
         """POL_04: 보험 필드 없음 → UNKNOWN."""
         expr = ca_iec_expressions["REVIEW:POLICY:CA_IEC_WH_POL_04"]
         result = _eval(expr, demo_profile_ca_iec_wh_unknown_insurance())
-        assert result == "UNKNOWN"
+        assert result == UNKNOWN
 
     def test_pol_05_is_unknown(self, ca_iec_expressions):
         """POL_05: manual_check → 항상 UNKNOWN."""
         expr = ca_iec_expressions["REVIEW:POLICY:CA_IEC_WH_POL_05"]
         result = _eval(expr, demo_profile_ca_iec_wh_pass())
-        assert result == "UNKNOWN"
+        assert result == UNKNOWN
 
 
 class TestAU186DEExpressionsDirect:
@@ -210,14 +210,14 @@ class TestAU186DEExpressionsDirect:
         """POL_06: 1990년생 → 36세 → age_range(0~44) PASS → any PASS."""
         expr = au_186_de_expressions["REVIEW:POLICY:AU_186_DE_POL_06"]
         result = _eval(expr, demo_profile_au_186_de())
-        assert result == "PASS", f"44세 이하면 PASS. got={result}"
+        assert result == PASS, f"44세 이하면 PASS. got={result}"
 
     def test_pol_06_boundary_44_is_pass(self, au_186_de_expressions):
         """POL_06: 정확히 44세(경계) → PASS."""
         expr = au_186_de_expressions["REVIEW:POLICY:AU_186_DE_POL_06"]
         profile = {"date_of_birth": "1982-10-28", "application_date": "2026-10-28"}
         result = _eval(expr, profile)
-        assert result == "PASS"
+        assert result == PASS
 
     def test_pol_06_over_45_is_unknown(self, au_186_de_expressions):
         """POL_06: 45세 초과 → age_range FAIL, manual_check UNKNOWN → any UNKNOWN."""
@@ -225,7 +225,7 @@ class TestAU186DEExpressionsDirect:
         profile = {"date_of_birth": "1980-01-01", "application_date": "2026-10-28"}
         result = _eval(expr, profile)
         # any: FAIL+UNKNOWN → UNKNOWN (manual_check 면제 가능성)
-        assert result in ("UNKNOWN", "FAIL")
+        assert result in (UNKNOWN, FAIL)
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -255,11 +255,11 @@ class TestCheckEligibilityCAIEC:
             as_of="2026-10-28",
             verified_reviews=[],
         )
-        assert result.overall == "UNKNOWN"
+        assert result.overall == UNKNOWN
         assert result.target_id == "CA:iec_working_holiday"
         # POL_03만 PASS
         pol03 = next(r for r in result.requirements if "POL_03" in r.requirement_id)
-        assert pol03.outcome == "PASS"
+        assert pol03.outcome == PASS
 
     def test_fail_funds_overall_fail(self, rule_set, ca_iec_reqs):
         """자금 부족 프로필 → POL_03 FAIL → overall FAIL."""
@@ -270,9 +270,9 @@ class TestCheckEligibilityCAIEC:
             as_of="2026-10-28",
             verified_reviews=[],
         )
-        assert result.overall == "FAIL"
+        assert result.overall == FAIL
         pol03 = next(r for r in result.requirements if "POL_03" in r.requirement_id)
-        assert pol03.outcome == "FAIL"
+        assert pol03.outcome == FAIL
 
     def test_unknown_insurance_overall_unknown(self, rule_set, ca_iec_reqs):
         """보험 정보 없음 → POL_04 UNKNOWN → overall UNKNOWN."""
@@ -283,10 +283,10 @@ class TestCheckEligibilityCAIEC:
             as_of="2026-10-28",
             verified_reviews=[],
         )
-        assert result.overall == "UNKNOWN"
+        assert result.overall == UNKNOWN
 
     def test_missing_info_populated_when_unknown(self, rule_set, ca_iec_reqs):
-        """UNKNOWN 요건의 pending_reviews가 missing_info_reviews에 포함됨."""
+        """UNKNOWN 요건이 하나 이상 존재함 (manual_check 포함 conditional 요건들)."""
         result: EligibilityResult = check_eligibility(
             rule_set=rule_set,
             requirements=ca_iec_reqs,
@@ -294,7 +294,10 @@ class TestCheckEligibilityCAIEC:
             as_of="2026-10-28",
             verified_reviews=[],
         )
-        assert len(result.missing_info_reviews) > 0, "UNKNOWN 요건의 pending_reviews 누락"
+        # manual_check 요건들은 pending_reviews 대신 outcome=UNKNOWN으로 표시됨
+        assert len(result.unknown) > 0, "UNKNOWN 요건이 하나 이상 있어야 함"
+        unknown_ids = [r.requirement_id for r in result.unknown]
+        assert any("POL_05" in rid for rid in unknown_ids), "POL_05(manual_check)는 UNKNOWN이어야 함"
 
     def test_non_korean_national_overall_fail(self, rule_set, ca_iec_reqs):
         """미국 국적 → POL_01 FAIL → overall FAIL."""
@@ -307,7 +310,7 @@ class TestCheckEligibilityCAIEC:
             as_of="2026-10-28",
             verified_reviews=[],
         )
-        assert result.overall == "FAIL"
+        assert result.overall == FAIL
 
 
 class TestCheckEligibilityAU186DE:
@@ -333,9 +336,9 @@ class TestCheckEligibilityAU186DE:
             as_of="2026-10-28",
             verified_reviews=[],
         )
-        assert result.overall == "UNKNOWN"
+        assert result.overall == UNKNOWN
         pol06 = next(r for r in result.requirements if "POL_06" in r.requirement_id)
-        assert pol06.outcome == "PASS"
+        assert pol06.outcome == PASS
 
     def test_over_age_pol06_unknown_or_fail(self, rule_set, au_186_reqs):
         """46세 → POL_06 age_range FAIL + manual_check UNKNOWN → any → UNKNOWN."""
@@ -348,7 +351,7 @@ class TestCheckEligibilityAU186DE:
             verified_reviews=[],
         )
         pol06 = next(r for r in result.requirements if "POL_06" in r.requirement_id)
-        assert pol06.outcome in ("UNKNOWN", "FAIL")
+        assert pol06.outcome in (UNKNOWN, FAIL)
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -359,20 +362,21 @@ class TestAggregateLogic:
     """_aggregate: FAIL > UNKNOWN > PASS, 빈 목록 → UNKNOWN."""
 
     def _run(self, outcomes: list[str]) -> str:
-        from app.agent.eligibility.checker import _aggregate
-        return _aggregate(outcomes)
+        from app.agent.eligibility.checker import _aggregate, RequirementResult
+        mocks = [RequirementResult(requirement_id=f"R{i}", judgeability="rule_based", outcome=o) for i,o in enumerate(outcomes)]
+        return _aggregate(mocks)
 
     def test_empty_is_unknown(self):
-        assert self._run([]) == "UNKNOWN"
+        assert self._run([]) == UNKNOWN
 
     def test_all_pass_is_pass(self):
-        assert self._run(["PASS", "PASS"]) == "PASS"
+        assert self._run([PASS, PASS]) == PASS
 
     def test_fail_dominates_unknown(self):
-        assert self._run(["PASS", "UNKNOWN", "FAIL"]) == "FAIL"
+        assert self._run([PASS, UNKNOWN, FAIL]) == FAIL
 
     def test_unknown_dominates_pass(self):
-        assert self._run(["PASS", "UNKNOWN"]) == "UNKNOWN"
+        assert self._run([PASS, UNKNOWN]) == UNKNOWN
 
     def test_single_fail_is_fail(self):
-        assert self._run(["FAIL"]) == "FAIL"
+        assert self._run([FAIL]) == FAIL

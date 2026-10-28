@@ -21,6 +21,7 @@ import pytest
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(PROJECT_ROOT))
 
+from app.rules.evaluator import PASS, FAIL, UNKNOWN
 from app.agent.eligibility.checker import (
     check_eligibility,
     recheck_with_updated_profile,
@@ -86,9 +87,9 @@ class TestRecheckFundsSufficiency:
             as_of="2026-10-28",
             verified_reviews=[],
         )
-        assert result.overall == "FAIL"
+        assert result.overall == FAIL
         pol03 = next(r for r in result.requirements if "POL_03" in r.requirement_id)
-        assert pol03.outcome == "FAIL"
+        assert pol03.outcome == FAIL
 
     def test_recheck_after_funds_updated(self, rule_set, ca_iec_reqs):
         """자금 보완 후 재검토 → POL_03 PASS, overall UNKNOWN (manual_check 잔여)."""
@@ -102,9 +103,9 @@ class TestRecheckFundsSufficiency:
             as_of="2026-10-28",
             verified_reviews=[],
         )
-        assert result.overall == "UNKNOWN"  # FAIL 해소 → manual_check만 남음
+        assert result.overall == UNKNOWN  # FAIL 해소 → manual_check만 남음
         pol03 = next(r for r in result.requirements if "POL_03" in r.requirement_id)
-        assert pol03.outcome == "PASS"
+        assert pol03.outcome == PASS
 
     def test_recheck_result_is_independent_of_initial(self, rule_set, ca_iec_reqs):
         """재검토 결과가 이전 check_eligibility 결과에 영향받지 않음."""
@@ -125,7 +126,7 @@ class TestRecheckFundsSufficiency:
             as_of="2026-10-28",
             verified_reviews=[],
         )
-        assert result.overall != "FAIL"
+        assert result.overall != FAIL
 
 
 class TestRecheckReturnTicket:
@@ -142,7 +143,7 @@ class TestRecheckReturnTicket:
             as_of="2026-10-28",
             verified_reviews=[],
         )
-        assert result.overall == "FAIL"
+        assert result.overall == FAIL
 
     def test_pass_after_ticket_provided(self, rule_set, ca_iec_reqs):
         profile = demo_profile_ca_iec_wh_pass()
@@ -158,8 +159,8 @@ class TestRecheckReturnTicket:
             verified_reviews=[],
         )
         pol03 = next(r for r in result.requirements if "POL_03" in r.requirement_id)
-        assert pol03.outcome == "PASS"
-        assert result.overall == "UNKNOWN"  # manual_check 잔여
+        assert pol03.outcome == PASS
+        assert result.overall == UNKNOWN  # manual_check 잔여
 
     def test_pass_after_separate_funds_provided(self, rule_set, ca_iec_reqs):
         """별도 자금 보완 (항공권 대신)."""
@@ -175,7 +176,7 @@ class TestRecheckReturnTicket:
             verified_reviews=[],
         )
         pol03 = next(r for r in result.requirements if "POL_03" in r.requirement_id)
-        assert pol03.outcome == "PASS"
+        assert pol03.outcome == PASS
 
 
 class TestRecheckNationality:
@@ -193,7 +194,7 @@ class TestRecheckNationality:
             as_of="2026-10-28",
             verified_reviews=[],
         )
-        assert initial.overall == "FAIL"
+        assert initial.overall == FAIL
 
         # 재검토해도 국적은 여전히 US
         recheck = recheck_with_updated_profile(
@@ -203,7 +204,7 @@ class TestRecheckNationality:
             as_of="2026-10-28",
             verified_reviews=[],
         )
-        assert recheck.overall == "FAIL"
+        assert recheck.overall == FAIL
 
     def test_nationality_correction_changes_result(self, rule_set, ca_iec_reqs):
         """국적 KR로 수정 → POL_01 FAIL 해소 → overall UNKNOWN."""
@@ -219,7 +220,7 @@ class TestRecheckNationality:
             as_of="2026-10-28",
             verified_reviews=[],
         )
-        assert result.overall == "UNKNOWN"
+        assert result.overall == UNKNOWN
 
 
 class TestRecheckIdempotent:
