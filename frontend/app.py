@@ -31,6 +31,12 @@ if os.path.exists(_style_path):
     with open(_style_path, encoding="utf-8") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
+st.markdown("""
+<style>
+[data-testid="stToolbar"],[data-testid="stDecoration"],footer,#MainMenu { display:none !important; }
+</style>
+""", unsafe_allow_html=True)
+
 # ── 세션 초기화 ────────────────────────────────────────────
 init_session()
 

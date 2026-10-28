@@ -30,6 +30,7 @@ PURPOSE_OPTIONS = ["취업", "유학", "워킹홀리데이·교류", "미정"]
 
 
 def render():
+    
     render_header(right_label="내 프로필")
 
     profile = get_profile()
