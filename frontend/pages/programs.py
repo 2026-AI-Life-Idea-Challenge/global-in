@@ -131,10 +131,10 @@ def render():
 
     # 결과
     filters = {
-        "type": active_tab if active_tab != "전체" else None,
-        "country": active_country if active_country != "전체" else None,
-        "purpose": active_purpose if active_purpose != "전체" else None,
-        "query": query.strip() if query.strip() else None,
+        "tab":     active_tab,
+        "country": active_country,
+        "purpose": active_purpose,
+        "keyword": query.strip() if query else "",
     }
     programs = search_programs(filters)
 

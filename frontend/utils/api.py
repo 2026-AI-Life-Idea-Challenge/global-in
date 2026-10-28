@@ -8,10 +8,15 @@ import requests
 API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000")
 
 
-def chat_stream(session_id: str, message: str, profile: dict) -> str:
+def chat_stream(
+    message: str,
+    history: list | None = None,
+    profile: dict | None = None,
+    session_id: str = "",
+) -> str:
     """
     AI 에이전트에 메시지를 전송하고 응답 텍스트를 반환.
-    실제 연결 전이면 더미 응답을 반환.
+    백엔드 미연결 시 더미 응답을 반환.
     """
     try:
         resp = requests.post(
@@ -19,7 +24,8 @@ def chat_stream(session_id: str, message: str, profile: dict) -> str:
             json={
                 "session_id": session_id,
                 "message": message,
-                "profile": profile,
+                "history": history or [],
+                "profile": profile or {},
             },
             timeout=30,
         )
@@ -28,8 +34,8 @@ def chat_stream(session_id: str, message: str, profile: dict) -> str:
     except Exception:
         # 백엔드 미연결 시 더미 응답
         return (
-            "안녕하세요! 현재 AI 상담 서버와 연결 중이에요. "
-            "연결이 완료되면 맞춤 답변을 드릴게요. 😊"
+            "현재 AI 상담 서버 연결을 확인하고 있습니다. "
+            "잠시 후 다시 시도해 주세요."
         )
 
 

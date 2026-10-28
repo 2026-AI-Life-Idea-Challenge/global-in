@@ -63,7 +63,33 @@ SAMPLE_RESULT = {
 def render():
     render_header(right_label="상담 결과")
 
-    result = st.session_state.get("consultation_result", SAMPLE_RESULT)
+    result = st.session_state.get("consultation_result")
+
+    # ── 빈 결과 상태 ───────────────────────────────────────
+    if not result:
+        st.markdown(
+            "<div style='text-align:center;padding:4rem 1rem;'>"
+            "<div style='font-size:2rem;margin-bottom:1rem;'>★</div>"
+            "<div style='font-size:1rem;font-weight:700;color:#1a1a1a;"
+            "margin-bottom:0.5rem;'>아직 상담 결과가 없어요</div>"
+            "<div style='font-size:0.85rem;color:#aaa;margin-bottom:1.5rem;'>"
+            "AI와 대화를 나누면 맞춤 결과가 여기에 정리돼요.</div>"
+            "</div>",
+            unsafe_allow_html=True,
+        )
+        col1, col2 = st.columns([1, 1])
+        with col1:
+            if st.button("💬 AI 상담 시작하기", use_container_width=True, type="primary"):
+                from utils.session import go_to, PAGE_CHAT
+                go_to(PAGE_CHAT)
+        with col2:
+            # 개발 중 샘플 확인용 — 배포 시 제거
+            if st.button("샘플 결과 보기 (개발용)", use_container_width=True):
+                st.session_state["consultation_result"] = SAMPLE_RESULT
+                st.rerun()
+        return
+
+    # 실제 결과 렌더링 진행 ─ 이하 기존 코드
 
     # ── AI 분석 요약 배너 ──────────────────────────────────
     tags_html = "".join(

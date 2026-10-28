@@ -70,6 +70,22 @@ def render():
             unsafe_allow_html=True,
         )
 
+    # 오류 배너
+    if st.session_state.get("chat_error"):
+        col_err, col_retry = st.columns([5, 1])
+        with col_err:
+            st.markdown(
+                "<div style='background:#fff0f0;border-left:3px solid #e05050;"
+                "border-radius:0 8px 8px 0;padding:0.6rem 1rem;"
+                "font-size:0.82rem;color:#c03030;'>"
+                "⚠ 응답을 받지 못했습니다. 잠시 후 다시 시도해 주세요.</div>",
+                unsafe_allow_html=True,
+            )
+        with col_retry:
+            if st.button("재시도", key="chat_retry"):
+                st.session_state.pop("chat_error", None)
+                st.rerun()
+
     # 메시지 렌더링
     for msg in messages:
         render_message(msg["role"], msg["content"])
@@ -112,10 +128,15 @@ def _send_message(text: str):
         for m in messages[:-1]
     ]
 
+    session_id = st.session_state.get("current_chat_id", "")
+    st.session_state.pop("chat_error", None)
     with st.spinner(""):
-        reply = ""
-        for chunk in chat_stream(text, history, profile):
-            reply += chunk
-        messages.append({"role": "ai", "content": reply})
+        try:
+            reply = chat_stream(text, history, profile, session_id)
+            if not reply:
+                raise ValueError("empty response")
+            messages.append({"role": "ai", "content": reply})
+        except Exception as e:
+            st.session_state["chat_error"] = str(e)
 
     st.rerun()
