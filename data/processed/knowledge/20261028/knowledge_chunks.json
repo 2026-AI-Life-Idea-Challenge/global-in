@@ -33,7 +33,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -59,7 +59,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -85,7 +85,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -111,7 +111,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -137,7 +137,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -163,7 +163,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -189,7 +189,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -215,7 +215,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -241,7 +241,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -267,7 +267,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -293,7 +293,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -319,7 +319,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -345,7 +345,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -371,7 +371,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -397,7 +397,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -423,7 +423,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -449,7 +449,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -475,7 +475,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -501,7 +501,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -527,7 +527,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -553,7 +553,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -579,7 +579,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -605,7 +605,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -631,7 +631,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -657,7 +657,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -683,7 +683,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -709,7 +709,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -735,7 +735,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -761,7 +761,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -787,7 +787,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -813,7 +813,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -839,7 +839,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -865,7 +865,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -891,7 +891,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -917,7 +917,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -943,7 +943,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -969,7 +969,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -995,7 +995,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1021,7 +1021,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1047,7 +1047,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1073,7 +1073,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1099,7 +1099,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1125,7 +1125,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1151,7 +1151,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1177,7 +1177,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1203,7 +1203,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1229,7 +1229,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1255,7 +1255,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1281,7 +1281,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1307,7 +1307,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1333,7 +1333,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1359,7 +1359,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1385,7 +1385,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1411,7 +1411,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1437,7 +1437,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1463,7 +1463,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1489,7 +1489,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1515,7 +1515,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1541,7 +1541,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1567,7 +1567,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1593,7 +1593,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1619,7 +1619,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1645,7 +1645,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1671,7 +1671,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1697,7 +1697,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1723,7 +1723,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1749,7 +1749,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1775,7 +1775,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1801,7 +1801,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1827,7 +1827,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1853,7 +1853,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1879,7 +1879,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1905,7 +1905,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1931,7 +1931,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1957,7 +1957,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -1983,7 +1983,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2009,7 +2009,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2035,7 +2035,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2061,7 +2061,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2087,7 +2087,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2113,7 +2113,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2139,7 +2139,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2165,7 +2165,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2191,7 +2191,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2217,7 +2217,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2243,7 +2243,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2269,7 +2269,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2295,7 +2295,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2321,7 +2321,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2347,7 +2347,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2373,7 +2373,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2399,7 +2399,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2425,7 +2425,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2451,7 +2451,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2477,7 +2477,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2503,7 +2503,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2529,7 +2529,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2555,7 +2555,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2581,7 +2581,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2607,7 +2607,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2633,7 +2633,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2659,7 +2659,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2685,7 +2685,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2711,7 +2711,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2737,7 +2737,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2763,7 +2763,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2789,7 +2789,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2815,7 +2815,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2841,7 +2841,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2867,7 +2867,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2893,7 +2893,7 @@
         "split_strategy": "paragraph"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2919,7 +2919,7 @@
         "split_strategy": "paragraph"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2945,7 +2945,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2971,7 +2971,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -2997,7 +2997,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3023,7 +3023,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3049,7 +3049,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3075,7 +3075,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3101,7 +3101,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3127,7 +3127,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3153,7 +3153,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3179,7 +3179,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3205,7 +3205,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3231,7 +3231,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3257,7 +3257,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3283,7 +3283,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3309,7 +3309,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3335,7 +3335,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3361,7 +3361,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3387,7 +3387,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3413,7 +3413,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3439,7 +3439,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3465,7 +3465,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3491,7 +3491,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3517,7 +3517,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3543,7 +3543,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3569,7 +3569,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3595,7 +3595,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3621,7 +3621,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3647,7 +3647,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3673,7 +3673,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3699,7 +3699,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3725,7 +3725,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3751,7 +3751,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3777,7 +3777,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3803,7 +3803,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3829,7 +3829,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3855,7 +3855,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3881,7 +3881,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3907,7 +3907,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3933,7 +3933,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3959,7 +3959,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -3985,7 +3985,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4011,7 +4011,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4037,7 +4037,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4063,7 +4063,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4089,7 +4089,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4115,7 +4115,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4141,7 +4141,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4167,7 +4167,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4193,7 +4193,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4219,7 +4219,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4245,7 +4245,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4271,7 +4271,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4297,7 +4297,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4323,7 +4323,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4349,7 +4349,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4375,7 +4375,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4401,7 +4401,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4427,7 +4427,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4453,7 +4453,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4479,7 +4479,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4505,7 +4505,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4531,7 +4531,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4557,7 +4557,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4583,7 +4583,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4609,7 +4609,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4635,7 +4635,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4661,7 +4661,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4687,7 +4687,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4713,7 +4713,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4739,7 +4739,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4765,7 +4765,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4791,7 +4791,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4817,7 +4817,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4843,7 +4843,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4869,7 +4869,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4895,7 +4895,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4921,7 +4921,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4947,7 +4947,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4973,7 +4973,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -4999,7 +4999,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5025,7 +5025,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5051,7 +5051,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5077,7 +5077,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5103,7 +5103,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5129,7 +5129,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5155,7 +5155,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5181,7 +5181,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5207,7 +5207,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5233,7 +5233,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5259,7 +5259,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5285,7 +5285,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5311,7 +5311,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5337,7 +5337,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5363,7 +5363,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5389,7 +5389,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5415,7 +5415,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5441,7 +5441,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5467,7 +5467,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5493,7 +5493,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5519,7 +5519,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5545,7 +5545,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5571,7 +5571,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5597,7 +5597,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5623,7 +5623,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5649,7 +5649,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5675,7 +5675,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5701,7 +5701,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5727,7 +5727,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5753,7 +5753,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5779,7 +5779,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5805,7 +5805,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5831,7 +5831,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5857,7 +5857,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5883,7 +5883,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5909,7 +5909,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5935,7 +5935,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5961,7 +5961,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -5987,7 +5987,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6013,7 +6013,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6039,7 +6039,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6065,7 +6065,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6091,7 +6091,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6117,7 +6117,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6143,7 +6143,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6169,7 +6169,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6195,7 +6195,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6221,7 +6221,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6247,7 +6247,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6273,7 +6273,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6299,7 +6299,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6325,7 +6325,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6351,7 +6351,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6377,7 +6377,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6403,7 +6403,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6429,7 +6429,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6455,7 +6455,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6481,7 +6481,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6507,7 +6507,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6533,7 +6533,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6559,7 +6559,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6585,7 +6585,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6611,7 +6611,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6637,7 +6637,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6663,7 +6663,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6689,7 +6689,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6715,7 +6715,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6741,7 +6741,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6767,7 +6767,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6793,7 +6793,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6819,7 +6819,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6845,7 +6845,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6871,7 +6871,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6904,7 +6904,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6937,7 +6937,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -6970,7 +6970,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7003,7 +7003,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7029,7 +7029,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7062,7 +7062,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7095,7 +7095,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7128,7 +7128,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7161,7 +7161,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7194,7 +7194,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7220,7 +7220,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7253,7 +7253,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7286,7 +7286,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7319,7 +7319,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7352,7 +7352,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7378,7 +7378,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7411,7 +7411,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7444,7 +7444,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7477,7 +7477,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7510,7 +7510,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7543,7 +7543,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7576,7 +7576,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7609,7 +7609,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7635,7 +7635,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7668,7 +7668,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7701,7 +7701,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7734,7 +7734,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7767,7 +7767,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7800,7 +7800,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7833,7 +7833,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7866,7 +7866,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7899,7 +7899,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7925,7 +7925,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7958,7 +7958,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -7991,7 +7991,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8024,7 +8024,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8057,7 +8057,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8090,7 +8090,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8123,7 +8123,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8156,7 +8156,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8189,7 +8189,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8222,7 +8222,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8255,7 +8255,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8288,7 +8288,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8321,7 +8321,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8354,7 +8354,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8387,7 +8387,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8420,7 +8420,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8453,7 +8453,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8486,7 +8486,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8519,7 +8519,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8545,7 +8545,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8578,7 +8578,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8611,7 +8611,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8644,7 +8644,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8677,7 +8677,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8710,7 +8710,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8743,7 +8743,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8776,7 +8776,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8802,7 +8802,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8835,7 +8835,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8868,7 +8868,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8901,7 +8901,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8934,7 +8934,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -8967,7 +8967,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9000,7 +9000,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9033,7 +9033,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9066,7 +9066,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9099,7 +9099,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9132,7 +9132,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9165,7 +9165,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9191,7 +9191,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9224,7 +9224,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9257,7 +9257,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9283,7 +9283,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9316,7 +9316,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9349,7 +9349,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9375,7 +9375,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9401,7 +9401,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9434,7 +9434,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9460,7 +9460,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9493,7 +9493,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9526,7 +9526,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9559,7 +9559,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9592,7 +9592,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9625,7 +9625,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9658,7 +9658,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9691,7 +9691,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9717,7 +9717,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9750,7 +9750,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9783,7 +9783,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9809,7 +9809,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9835,7 +9835,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9868,7 +9868,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9901,7 +9901,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9934,7 +9934,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9967,7 +9967,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -9993,7 +9993,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10026,7 +10026,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10059,7 +10059,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10092,7 +10092,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10125,7 +10125,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10158,7 +10158,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10191,7 +10191,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10217,7 +10217,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10250,7 +10250,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10283,7 +10283,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10316,7 +10316,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10349,7 +10349,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10382,7 +10382,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10415,7 +10415,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10448,7 +10448,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10481,7 +10481,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10514,7 +10514,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10547,7 +10547,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10580,7 +10580,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10613,7 +10613,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10646,7 +10646,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10679,7 +10679,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10712,7 +10712,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10745,7 +10745,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10771,7 +10771,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10804,7 +10804,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10830,7 +10830,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10863,7 +10863,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10896,7 +10896,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10929,7 +10929,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10962,7 +10962,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -10988,7 +10988,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11021,7 +11021,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11054,7 +11054,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11087,7 +11087,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11120,7 +11120,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11146,7 +11146,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11179,7 +11179,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11212,7 +11212,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11245,7 +11245,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11278,7 +11278,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11311,7 +11311,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11344,7 +11344,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11377,7 +11377,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11410,7 +11410,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11443,7 +11443,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11476,7 +11476,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11509,7 +11509,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11542,7 +11542,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11575,7 +11575,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11608,7 +11608,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11641,7 +11641,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11674,7 +11674,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11707,7 +11707,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11740,7 +11740,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11773,7 +11773,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11806,7 +11806,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11839,7 +11839,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11865,7 +11865,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11891,7 +11891,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11917,7 +11917,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11950,7 +11950,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -11976,7 +11976,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12009,7 +12009,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12042,7 +12042,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12075,7 +12075,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12108,7 +12108,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12141,7 +12141,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12174,7 +12174,7 @@
         ]
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12200,7 +12200,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12226,7 +12226,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12252,7 +12252,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12278,7 +12278,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12304,7 +12304,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12330,7 +12330,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12356,7 +12356,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12382,7 +12382,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12408,7 +12408,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12434,7 +12434,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12460,7 +12460,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12486,7 +12486,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12512,7 +12512,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12538,7 +12538,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12564,7 +12564,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12590,7 +12590,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12616,7 +12616,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12642,7 +12642,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12668,7 +12668,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12694,7 +12694,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12720,7 +12720,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12746,7 +12746,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12772,7 +12772,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12798,7 +12798,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12824,7 +12824,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12850,7 +12850,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12876,7 +12876,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12902,7 +12902,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12928,7 +12928,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12954,7 +12954,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -12980,7 +12980,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13006,7 +13006,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13032,7 +13032,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13058,7 +13058,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13084,7 +13084,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13110,7 +13110,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13136,7 +13136,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13162,7 +13162,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13188,7 +13188,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13214,7 +13214,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13240,7 +13240,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13266,7 +13266,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13292,7 +13292,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13318,7 +13318,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13344,7 +13344,7 @@
         "split_strategy": "paragraph"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13370,7 +13370,7 @@
         "split_strategy": "paragraph"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13396,7 +13396,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13422,7 +13422,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13448,7 +13448,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13474,7 +13474,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13500,7 +13500,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13526,7 +13526,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13552,7 +13552,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13578,7 +13578,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13604,7 +13604,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13630,7 +13630,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13656,7 +13656,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13682,7 +13682,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13708,7 +13708,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13734,7 +13734,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13760,7 +13760,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13786,7 +13786,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13812,7 +13812,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13838,7 +13838,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13864,7 +13864,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13890,7 +13890,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13916,7 +13916,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13942,7 +13942,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13968,7 +13968,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -13994,7 +13994,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14020,7 +14020,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14046,7 +14046,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14072,7 +14072,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14098,7 +14098,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14124,7 +14124,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14150,7 +14150,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14176,7 +14176,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14202,7 +14202,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14228,7 +14228,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14254,7 +14254,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14280,7 +14280,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14306,7 +14306,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14332,7 +14332,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14358,7 +14358,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14384,7 +14384,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14410,7 +14410,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14436,7 +14436,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14462,7 +14462,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14488,7 +14488,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14514,7 +14514,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14540,7 +14540,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14566,7 +14566,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14592,7 +14592,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14618,7 +14618,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14644,7 +14644,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14670,7 +14670,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14696,7 +14696,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14722,7 +14722,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14748,7 +14748,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14774,7 +14774,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14800,7 +14800,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14826,7 +14826,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14852,7 +14852,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14878,7 +14878,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14904,7 +14904,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14930,7 +14930,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14956,7 +14956,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -14982,7 +14982,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15008,7 +15008,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15034,7 +15034,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15060,7 +15060,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15086,7 +15086,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15112,7 +15112,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15138,7 +15138,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15164,7 +15164,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15190,7 +15190,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15216,7 +15216,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15242,7 +15242,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15268,7 +15268,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15294,7 +15294,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15320,7 +15320,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15346,7 +15346,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15372,7 +15372,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15398,7 +15398,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15424,7 +15424,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15450,7 +15450,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15476,7 +15476,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15502,7 +15502,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15528,7 +15528,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15554,7 +15554,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15580,7 +15580,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15606,7 +15606,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15632,7 +15632,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15658,7 +15658,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15684,7 +15684,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15710,7 +15710,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15736,7 +15736,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15762,7 +15762,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15788,7 +15788,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15814,7 +15814,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15840,7 +15840,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15866,7 +15866,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15897,7 +15897,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15928,7 +15928,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15959,7 +15959,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -15990,7 +15990,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -16021,7 +16021,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -16048,7 +16048,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -16075,7 +16075,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -16102,7 +16102,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -16129,7 +16129,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -16156,7 +16156,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -16183,7 +16183,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -16210,7 +16210,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     },
     {
@@ -16237,7 +16237,7 @@
         "split_strategy": "single"
       },
       "active": true,
-      "embedding_approved": false,
+      "embedding_approved": true,
       "release_id": "knowledge-v1-20261028"
     }
   ]
