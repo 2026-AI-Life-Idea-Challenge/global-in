@@ -12,6 +12,8 @@ NAV_ITEMS = [
     (PAGE_CHAT,        "💬", "AI 상담"),
     (PAGE_PROGRAMS,    "⊙", "프로그램·지원제도 찾기"),
     (PAGE_PREPARATION, "≡", "내 준비"),
+    (PAGE_RESULT,      "★", "상담 결과"),
+    (PAGE_COMPARE,     "⊞", "프로그램 비교"),
 ]
 
 
