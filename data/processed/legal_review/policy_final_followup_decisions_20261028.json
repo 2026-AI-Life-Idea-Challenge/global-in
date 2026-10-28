@@ -1,0 +1,57 @@
+{
+  "reviewed_at": "2026-10-28",
+  "wording_updates": {
+    "DE_WH_POL_03": {
+      "text": "주한 독일대사관의 한국인 Working Holiday 신청 서류 안내에 따라 서명한 신청서, 전 체류기간에 유효한 여권과 필요한 사본, 6개월 이내 촬영한 흰 배경 3.5×4.5cm 여권사진 2매를 준비한다. 재정증명은 본인 명의의 최소 EUR 3,500 상당 잔고이며 한국어 안내의 영문·1주 이내 발급 조건을 확인한다. 공관은 귀국 항공권 또는 첫 3개월 확정 숙소의 지급증명을 제시하는 경우 해당 금액에서 각 EUR 1,000을 감액한다고 안내한다. 두 증빙을 함께 제출했을 때의 합산 최저액을 이 문구로 산출하지 않으며 공관의 실제 증빙 인정에 따른다. 전 체류기간에 독일에서 유효한 책임보험·의료보험·상해보험을 각각 최소 EUR 30,000 보장으로 준비하며 의료보험은 병원 치료와 한국 송환을 포함한다. 한국어 안내상 보험 목적 표기 Working Holiday 또는 Overseas Travel 및 영문 보험증서 원본을 확인한다. 필요 시 추가 서류가 요구될 수 있고 완비만으로 사증 발급이 보장되지는 않는다.",
+      "scope": "2026-10-28 공관 제출서류 안내·각 공제의 증빙 조건만. 중첩 공제 최저액 계산·개별 서류 인정·비자 발급 제외.",
+      "findings": [
+        "서류 전체와 보험 3종·각 보장액·기간·지급증명을 한 버전에 보존했다.",
+        "공제 중첩을 추론하는 계산을 승인 범위에서 명시적으로 제외했다. 공제 문구 자체와 계산값의 승인을 구분했다."
+      ],
+      "source_urls": [
+        "https://seoul.diplo.de/kr-de/service/05-visaeinreise/1991194-1991194",
+        "https://seoul.diplo.de/kr-ko/service/1694216-1694216?isLocal=false&isPreview=false"
+      ],
+      "capture_file": "final14_approved_wording_sources_20261028.json"
+    },
+    "US-WK-01-POL-0092": {
+      "text": "DHS의 2024-12-18 최종 규정(89 FR 103054, 문서 2024-29354)은 2025-01-17 시행일을 명시하고 비영리·정부 연구기관의 H-1B cap 면제 정의를 연구가 fundamental activity인 기준으로 조정했다. 이는 모든 연구기관이나 연구직의 자동 면제가 아니며 해당 기관의 법정 정의와 청원 증명이 필요하다. 같은 규정은 정해진 요건을 갖춘 F-1에서 H-1B로의 신분변경 청원과 관련된 cap-gap을 다룬다. 해당 규정상 종료는 요청 H-1B 회계연도 4월 1일 또는 승인 청원 효력 시작일 중 빠른 날이며 거절·철회·취소 등 조기 종료 조건과 신분 연장/취업 연장의 차이를 구분한다. 추첨 등록·선정만으로 cap-gap 취업이 발생하지 않는다. 이 항목은 2024 최종 규정에 무엇이 규정되었는지를 검증한 기록이며, 2026 체류기간 규칙 관련 소송·후속 명령의 현재 효력이나 특정 학생의 오늘 취업 가능 여부를 확정하지 않는다.",
+      "scope": "원문과 같은 2024 최종 규정의 내용·공표 시행일에 한정. 2026 소송의 현재 효력·특정 학생 cap-gap 자격과 취업 가능 여부는 승인하지 않음.",
+      "findings": [
+        "원문 주장은 2024 규정이 연구기관 면제와 cap-gap을 다뤘다는 공표 내용이며 원문과 같은 역사적 범위에서 확인했다.",
+        "2026-10-08 자료는 제안규칙이므로 새 시행 규정으로 사용하지 않았다. 2026 체류기간 규칙의 소송 효력 보류를 해제한 것으로 집계하지 않는다."
+      ],
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2024-12-18/pdf/2024-29354.pdf"
+      ],
+      "capture_file": "final14_approved_wording_sources_20261028.json"
+    }
+  },
+  "remaining_scope_issues": {
+    "DE_WH_POL_03": "공제 중첩의 실제 최소 잔고액은 확인되지 않아 승인 범위에서 제외.",
+    "US-WK-01-POL-0092": "2026 소송 이후 현재 cap-gap 효력과 개별 취업 판단은 확인되지 않아 승인 범위에서 제외."
+  },
+  "not_full_resolution_of_excluded_scope": true,
+  "remaining_policy_ids": [
+    "AU_189_PT_POL_03",
+    "AU_190_POL_04",
+    "AU_491_POL_04",
+    "AU_462_FIRST_POL_05",
+    "US-WK-01-POL-0007",
+    "US-WK-01-POL-0008",
+    "US-WK-01-POL-0022",
+    "US-WK-01-POL-0053",
+    "US-WK-01-POL-0057",
+    "US-WK-01-POL-0072",
+    "US-WK-01-POL-0100",
+    "US-WK-01-POL-0103"
+  ],
+  "source_access_results": {
+    "uscis_h1b_and_i129": "403; mirror text not accepted as official current enforcement verification",
+    "thapa_austlii": "403",
+    "herath_federal_court": "inaccessible; no primary judgment verified",
+    "govinfo_h1b_case": "official published opinion list through 2026-09-30; not a complete current appeal docket",
+    "home_affairs_skills": "departmental guidance found but primary judgment and later effect not established"
+  },
+  "terminal_batch_disposition": "Remaining 12 policies stay unapproved and excluded from service use. No claim that their legal issues were resolved."
+}

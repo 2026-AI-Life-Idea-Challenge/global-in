@@ -1,4 +1,12 @@
+**최신:** [팀 전달 준비 완료](team_completion_status_20261028.md). 현행 570개 문구의 내부 검토 완료·보류 0개, 과거 WEST 공고 20개 보관. 호주462와 독일 공제는 근거가 명시된 검토자 해석이며 기관 회신·독립 법률의견서가 아니다. 팀 공유 ZIP: data/exports/team_review_20261028.zip.
+
 # 법률 검토 작업 안내
+
+전체 590개 판정·현행 승인570개(96.61%)·과거 공고20개다. 최신 DB 검토 버전과 팀 공유 파일의 상태는 위 보고서 및 진행률 JSON을 확인한다. 서비스 답변·개인 자격·임베딩 허용 플래그는 별도다.
+
+호주 20개 프로그램·223개 정책의 공통 법령·면제·경과조치 기록 및 189 원문 보완은 [호주 법령 검토 보고서](australia_statutory_scope_20261028.md)에 있다. 실행·재현 안내는 `scripts/ingest/australia/README.md`, 별도 원문 manifest는 `data/processed/legal_review/australia_source_manifest_20261028.json`이다.
+
+공유 대화 이후의 보완 사항과 호주·독일 후속 상태는 [대조 보고서](shared_conversation_reconciliation_20261028.md)에 있다. 독일 19개의 적용 범위 기록은 최종 법률 승인과 구분하며, 생성 스크립트는 `scripts/ingest/germany/review_statutory_scope.py`이다.
 
 최신 상태는 [진행률](progress_20261028.json)과 [교정·재추출 보고서](us_jp_resolution_20261028.md)에서 확인한다. 상세 범위 기록은 327개 전체에 있고, 검토용 교정본 26개·재추출본 6개가 작성됐다. 최종 법률 승인과 DB 반영은 별도다.
 

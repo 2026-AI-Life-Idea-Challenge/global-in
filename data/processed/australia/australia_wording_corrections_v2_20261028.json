@@ -1,0 +1,65 @@
+{
+  "reviewed_at": "2026-10-28",
+  "corrections": {
+    "AU_500_POL_02": {
+      "source_ids": ["regulations_volume1", "regulations_volume2", "student_classes", "student_reform_2026"],
+      "additional_capture_file": "australia_course_evidence_web_capture_20261028.json",
+      "additional_source_urls": ["https://www.legislation.gov.au/F2024L01728/asmade/2024-12-23/text/original/epub/OEBPS/document_1/document_1.html"],
+      "text": "500 주신청은 원칙적으로 CRICOS 등록 과정에 등록하고 LIN24/109에 따라 신청 시 각 예정 과정의 취소·철회되지 않은 CoE 번호를 신청서 해당 필드에 제시해야 한다. 단순 offer letter로 대체하지 않는다. Foreign Affairs/Defence 지원서신, secondary exchange의AASES, 호주 내 postgraduate thesis 채점을 위해 체류가 필요하다는 교육기관 서신의 지정 대체 증거를 구분한다. 결정 시500.211의 등록·논문채점·정부 지원 분기도 충족해야 한다. 허용되는 코스 패키지는 각 과정 CoE·명확한 진학 연결과 과정 사이 통상2개월 미만 간격을 확인하고11월 학년말~다음2월 학년초의 안내상 예외는 별도다. 2026-10-02 이후 호주 내 기존500 재신청은1222(3)(aa) 및 LIN20/158의 별도 예외를 먼저 충족해야 하며 특히 section19 진학 경로의 추가 과정 하나 이하·AQF 및 higher education 조건을 지킨다. 학교·박사·provider default 등 다른 예외를 모든 재신청자의 패키징 허용으로 확대하지 않는다. 재정·영어 판단의 principal course는 해당 instrument 정의를 따르며 무조건 마지막 과정이라는 하나의 정의로 대체하지 않는다."
+    },
+    "AU_407_POL_03": {
+      "source_ids": ["regulations_volume2"],
+      "text": "Subclass407의407.211은 신청자가 만18세 이상이거나, 미성년자에게도 사증을 발급하는 것이 합리적이라고 장관이 인정하는 분기를 둔다. 일반18세 안내를 절대적인 예외 없는 연령 금지로 변환하지 않는다. 해당 연령 조건의 일반 문구만 검증하며 실제 재량 인정·후원·훈련 지명·미성년 복지 또는 다른 사증 요건 충족을 승인하지 않는다."
+    },
+    "AU_500_POL_06": {
+      "source_ids": ["regulations_volume1", "regulations_volume2", "student_reform_2026"],
+      "additional_source_urls": ["https://www.legislation.gov.au/F2026L01348/asmade/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html"],
+      "text": "2026-10-02부터 호주 내 500 신청은 Schedule1 item1222의 소재지·기존 비자 조건을 따른다. 실체 비자 보유자는 LIN26/102의17개 class(482 두 명칭을 포함한16개 subclass)에 해당하면 호주 밖에서 신청해야 한다. 제외 대상은400,403의Domestic Worker(Diplomatic or Consular)스트림만,407,408,417,457,462,482 Skills in Demand,482 Temporary Skill Shortage,485,600,601,602,651,771,988 및995 주기준 Division995.2로 발급된 보유자다. 403의 모든 스트림 또는995의 모든 부신청자로 확대하지 않는다. 실체 비자 미보유자는 단순히 만료28일 이내라는 이유만으로 신청할 수 없고1222(4A)/(4B)의 지정 마지막 비자·ART 취소 번복/통지 시점·28일·같은 방식 기발급 금지 등의 조건을 모두 충족해야 한다. 현재500 재신청자는1222(3)(aa)의 별도 호주 밖 신청 원칙과 지정 주신청자 예외도 적용한다. 신청 당시 밖에 있어야 했던 지정 경우는500.411에 따라 발급 시에도 밖에 있어야 한다. 실제 신청 유효성과 비자 승인·입국은 별도다."
+    },
+    "AU_190_POL_03": {
+      "source_ids": ["regulations_volume2"],
+      "text": "Subclass 190은 호주 주·준주 정부기관의 해당 지명이 필요하고 결정 시 그 지명이 철회되지 않아야 한다(190.215). EOI는 지명이나 초청을 보장하지 않으며 기관별 선정 기준과 현재 모집은 별도다. 지명 철회 시 해당 승인 기준을 충족하지 못한다는 문제와 신청 접수 자체가 소급하여 무효가 된다는 주장을 혼동하지 않는다."
+    },
+    "AU_191_REGIONAL_PROVISIONAL_POL_06": {
+      "source_ids": ["regulations_volume1", "regulations_volume2", "regulations_volume3", "act_volume1", "act_volume2"],
+      "text": "Subclass 191 Regional Provisional의 채무와 이력은 별도 조건이다. PIC 4004는 Commonwealth 미상환 채무가 없거나 상환을 위한 적절한 조치를 마련한 경우를 포함하며 가족 적용 범위는 191의 주/부신청자 조문을 따른다. 과거 거절·취소만으로 모든 신청이 자동 금지되지는 않는다. s48은 호주 내 소재·실체 비자 미보유·최근 입국 후 해당 거절/취소 및 reg 2.12의 허용 비자 class를 함께 판단한다. 인성 관련 s501E와 PIC 4013/4014 및 특별 재입국 기준은 별도다. 이 일반 조건은 특정인의 과거 이력을 심사하거나 모든 친족에게 동일 채무 요건을 확대 적용하지 않는다."
+    },
+    "AU_500_POL_07": {
+      "source_ids": ["regulations_volume1", "regulations_volume2", "student_classes", "student_reform_2026"],
+      "text": "2026-10-02 이후 이미 500을 보유한 사람이 다시 500의 주신청자로 신청하려면 원칙적으로 호주 밖에 있어야 한다(Schedule 1 item 1222(3)(aa)). 종전 500 부신청자는 이 조항의 주신청자 예외를 사용해 호주 내에서 주신청자로 전환하지 않는다. 종전 주신청자는 Defence·Foreign Affairs·school student 또는 LIN 20/158 sections 16–19의 지정 경로를 구분한다. 박사 경로는 신청 시 박사학위 과정 등록이다. Provider default 경로는 해당 과정에 default 당일 등록되어 있었고 대체 과정 등을 마치기 위한 재신청을 그 날부터 12개월 내 하며 같은 default로 이미 신청하지 않았어야 한다. 수료 경로는 현재 500 주과정 또는 같은 제공기관의 비자조건에 부합하는 대체 주과정을 이미 시작했으나 미수료 상태로 CoE 종료일 후 12개월 내 마치는 경우다. 진학 경로는 종전 허가에 부합하는 주과정을 마치고 추가 과정이 하나 이하여야 한다. 종전 과정에 AQF가 있으면 더 높은 AQF여야 하며 종전 higher education이면 새 과정도 higher education provider의 higher education이어야 한다. 종전 과정에 AQF가 없으면 새 과정에 AQF가 있거나 종전 과정 수학 시 school student였던 분기를 따른다. 각 예외 충족은 다른 유효 신청·영어·재정·체류조건을 면제하지 않는다."
+    },
+    "AU_500_POL_08": {
+      "source_ids": ["regulations_volume1", "regulations_volume2", "student_classes", "student_reform_2026"],
+      "text": "2026-10-02 이후 500 부신청자는 item 1222(3)(da)의 허용 분기를 충족해야 한다. 주신청자가 Defence/Foreign Affairs 또는 법정 Pacific-regional country 여권국(미크로네시아·피지·키리바시·나우루·팔라우·파푸아뉴기니·마셜제도·사모아·솔로몬제도·동티모르·통가·투발루·바누아투) 또는 subitem (5A)의 브루나이·캄보디아·인도네시아·라오스·말레이시아·미얀마·필리핀·싱가포르·태국·베트남 여권 보유자인 분기를 구분한다. 호주 내 종전 가족 경로는 시행 당시 이미 같은 주신청자에 연결된 500 부신청 비자를 보유한 경우, 시행 전 그 비자를 신청하여 이후 발급된 경우, 또는 시행 후 호주 출생 자녀로 주신청자가 시행 당시 해당 500을 보유하거나 시행 전 신청하여 이후 발급받은 경우의 지정 요건을 따른다. LIN 20/158 section 20은 외국 정부가 등록한 단일 과정 또는 모든 복수 과정의 비용 전액을 부담하는 학생의 가족, section 21은 박사과정 학생의 가족을 지정한다. Sections 22/23의 provider default·수료 연장 가족은 신청 시 기존 500 부신청자이고 같은 주신청자에 연결되어 있어야 하며 주신청자의 해당 12개월·기존 등록·미수료 및 같은 default 재사용 금지 조건도 충족해야 한다. 주신청자와 동시·동일 장소·결합 신청이라는 item 1222(3)(e), 신청자별 소재지·기존 비자 요건과 다른 가족 자격 기준은 별도다. 국적만으로 모든 가족·모든 호주 내 재신청 조건을 면제하지 않는다."
+    },
+    "AU_500_POL_09": {
+      "source_ids": ["regulations_volume2"],
+      "text": "Subclass 500은 체류·학비 및 해당 가족 비용을 충당할 자금에 실질적으로 접근할 수 있어야 하며 500.214에 따른 지정 재정 증명 요구를 충족해야 한다. 재정 증빙 제출이 기본 체크리스트에서 생략되더라도 실체적 재정 요건이 자동 면제되지는 않는다. 이 버전은 자금 접근·증명 의무의 일반 조건만 검증하며 현재의 금액표·환율·가족별 계산값 또는 특정 소득/예금의 충족 여부를 확정하지 않는다."
+    },
+    "AU_482_CORE_POL_13": {
+      "source_ids": ["regulations_volume2", "english_482_2025"],
+      "text": "482 Core Skills/Specialist Skills의 영어는 LIN 25/082(2025-09-13 시행)의 면제 또는 시험 경로를 따른다. 면제는 (1) 캐나다·뉴질랜드·아일랜드·영국·미국의 국적과 유효 여권을 모두 보유, (2) 영어 수업의 중등/고등교육을 최소 5년 전일제 이수, (3) standard business sponsor가 지명한 외국 외교·영사 공관 또는 호주 소재 대만 당국 사무소 직무, (4) 필요한 면허·등록·회원자격을 실제 취득하면서 동등 이상 영어를 증명한 경우, (5) 해외 기존 사업 회사에 고용되어 그 회사/관계회사의 지명을 받고 연소득 AUD 96,400 이상인 경우다. 고등교육 전일제의 정의는 매 학기/trimester 최소 3과목이며 중등은 해당 국가의 표준 수업시간이다. 시행 후 시험의 점수(듣기/읽기/쓰기/말하기)는 CELPIP General 5/5/5/5, IELTS Academic 또는 General Training 5/5/5/5, LANGUAGECERT Academic 41/44/45/54, MET 49/47/45/38, OET 220/240/200/270, PTE Academic 33/36/29/24, TOEFL iBT 8/8/9/14다. Section 6(2)(b)의 한 번 응시 또는 허용 구성요소 재응시 경로를 따르며 기본 test day는 점수 증거를 제공한 날보다 3년을 초과하여 이전이면 안 된다. 이를 무조건 신청일 전 또는 결정일 전 3년으로 바꾸지 않는다. 2025-09-13 전 시험의 section 7 경과 경로는 신청일 직전 3년 내 단일 응시이며 IELTS 전체·각 영역 5, OET 각 B, TOEFL 전체 35/듣기·읽기 각4/말하기·쓰기 각14, PTE 전체·각36, CAE 전체·각154를 사용한다. 시행 전 신청과 Labour Agreement는 별도 규정이다."
+    },
+    "AU_482_SPECIALIST_POL_12": {
+      "source_ids": ["regulations_volume2", "english_482_2025"],
+      "text": "복합 레코드의 첫 조건: 482.213은 최근 3년간 Migration Act 245AR(1)·245AS(1)·245AT(1)·245AU(1)의 금지 후원 대가 관련 행위를 하지 않았거나, 그런 행위가 있었더라도 장관이 이를 무시하는 것이 합리적이라고 인정하는 분기를 구분한다. 모든 금전 거래를 무조건 같은 위반으로 보거나 합리적 무시 분기를 삭제하지 않는다. 두 번째 영어 조건은 이 파일 AU_482_CORE_POL_13의 전체 영어 문구와 동일하며 그 문구를 해당 버전에 함께 고정한다.",
+      "include_complete_text_of": "AU_482_CORE_POL_13"
+    },
+    "AU_500_POL_04": {
+      "source_ids": ["regulations_volume2", "english_500_2025"],
+      "text": "500의 법정 영어 기준은 LIN 25/090(2025-08-07 시행)의 시험·면제·경과 경로를 따른다. 신청 시 시험 증거를 제출하면 신청일 직전 2년, 당시 제출하지 않으면 승인/거절 결정일 직전 2년의 시험이어야 한다. Schedule 1 기본/지정 10주 ELICOS·foundation·eligible pathway/지정 20주 ELICOS 점수는 CELPIP 7/6/5, IELTS Academic 또는 General Training 6/5.5/5, LANGUAGECERT Academic 61/54/46, MET 53/49/44, OET 1210/1090/1020, PTE Academic 47/39/31, TOEFL iBT 67/51/37이다. C1 Advanced는 기본 overall 161이며 이 새 시험표의 낮은 두 경로에서는 허용되지 않는다. ELICOS는 해당 주과정 동반·신청 후 시작 조건을 따르고 eligible pathway는 Schedule 2에 실제로 열거된 CRICOS 과정이어야 한다. 2025-08-07 전 시험의 section 8·Schedule 3 경로는 같은 증거제출/결정 기준의 24개월 조건과 CAE 169/162/154, IELTS overall 6/5.5/5, OET 각 영역 B, PTE 50/42/36, TOEFL 64/46/35를 사용한다. 면제는 5개국(캐나다·뉴질랜드·아일랜드·영국·미국)의 국적과 유효 여권, 신청 목적상 유일한 과정이 비영어 전달 과정/ELICOS/등록 school/등록 postgraduate research인 경우, Foreign Affairs/Defence/secondary exchange, 신청 전 2년 내 호주·영어 Year 12 수료 또는 student visa 중 AQF Certificate IV 이상 상당 부분 이수, 지정 7개국(호주·위 5개국·남아공) 영어 수학 합계 최소 5년 등 section 7의 각각의 조건을 따른다. 이 버전은 법정 점수·면제·기준일에 한정하며 시험 공급자의 실제 제공 형식, 온라인 시험 허용 또는 특정 날짜의 TOEFL/CAE 접수 가능 여부까지 승인하지 않는다. 시행 전 신청은 당시 규정으로 따로 검토한다."
+    },
+    "AU_186_DE_POL_03": {
+      "source_ids": ["regulations_volume2", "exemptions_186_494"],
+      "text": "186 Direct Entry의 연령은 원칙적으로 신청 시 만45세 미만이며 LIN 19/216 section 6(2)의 academic applicant·science applicant·444/461 worker는 지정 면제를 따른다. Academic은 호주 대학의 지명, Level A–E 학술직 및 faculty head 134411 또는 university lecturer 242111을 모두 충족해야 한다. B–E로 좁히지 않는다. Science는 Commonwealth/주·준주 과학기관 또는 호주 대학의 연구원·과학자·기술전문가 지명과 지정 ANZSCO skill level 1/2 조건이다. 444/461 worker는 신청 전3년 중 최소2년을 지명 고용주의 지명 직종에서 근무하고 그3년 거의 전 기간 해당444/461을 보유한 정의를 따른다. 무급휴가는 working으로 세지 않는다. 현재 2026년 신규 신청은 적용 amendment의 신청·지명 기준일을 따르며 과거 다른 스트림의 면제를 옮겨 적용하지 않는다."
+    },
+    "AU_186_TRT_POL_06": {
+      "source_ids": ["regulations_volume2", "exemptions_186_494"],
+      "text": "186 TRT 연령은 원칙적으로 신청 시 만45세 미만이며 LIN 19/216 section6(1)의 지정 면제는 각각의 정의를 충족해야 한다. Academic은 호주 대학 지명·Level A–E·지정134411/242111 직종, Science는 지정 과학기관/호주대학의 연구원·과학자·기술전문가와 ANZSCO skill level1/2다. Regional medical은 지명 근무지가 지정 지역이며 신청 전3년 중 최소2년 지정 지역 의료업무 및 지정457/482 또는 허용 관련 bridging 보유기간을 충족해야 한다. 457/482 worker는 신청 전3년 중 승인 지명 직위에서 합계2년 근무, 각 해당 연도 말 적용 high income threshold 이상의 연간 earnings, 지정 비자/bridging 합계2년의 조건을 모두 충족해야 한다. 관련 bridging은 마지막 실체 비자가457/482이고457/482/186/187 신청에 따라 발급된 정의를 따른다. Transitional 457 under50은 2017-04-18의457 보유 또는 당시 신청 후 발급 이력과 새 신청 시50세 미만을 모두 충족한다. 별도 legacy457 worker의2024-06-30 신청 마감은2026년 신규 신청에 사용할 수 없다."
+    },
+    "AU_494_EMPLOYER_SPONSORED_POL_01": {
+      "source_ids": ["regulations_volume2", "exemptions_186_494"],
+      "text": "494 Employer Sponsored의 연령은 원칙적으로 신청 시 만45세 미만이다. LIN19/216 section8(1)의 academic·regional medical·science·444/461·457/482 worker 면제는 각각 section5의 정의를 모두 충족해야 한다. Academic은 호주대학 지명·Level A–E·지정134411/242111, Science는 지정 공공과학기관/호주대학의 연구원·과학자·기술전문가와 ANZSCO skill level1/2다. Regional medical은 신청 전3년 중 지정 지역 의료업무2년·지정 비자/관련 bridging2년과 현재 지명 지역 조건을 따른다. 444/461은 신청 전3년 중 지명 고용주·직종에서2년 근무하고 거의 전3년 해당 비자를 보유해야 하며 무급휴가는 근무로 세지 않는다. 457/482는 신청 전3년 중 승인 지명 직위 합계2년·각 연도 말 high income threshold 이상 earnings·지정 비자/관련 bridging2년을 모두 요구한다. 관련 bridging은 마지막 실체 비자457/482 및457/482/186/187 신청 기반 정의를 따른다. 186 TRT의 별도 under50/종료된 legacy457 경로를494로 확장하지 않는다."
+    }
+  }
+}

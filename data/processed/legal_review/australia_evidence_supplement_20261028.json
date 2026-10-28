@@ -1,0 +1,60 @@
+{
+  "reviewed_at": "2026-10-28",
+  "input_sha256": "043cf9bbb1d00c864d77912dca662e98960f5374766a219c36749bf7d2c69bd8",
+  "policies": {
+    "AU_189_PT_POL_01": {
+      "evidence_id": "AU_189_RECAPTURE_01_20261028",
+      "policy_id": "AU_189_PT_POL_01",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested#Eligibility",
+      "source_file": "data/raw/legal_review/20261028/australia/189_rendered_sections.json",
+      "source_file_sha256": "74c0dd14a2a7d2a5945a662128d537d0a64d3e47457e0f0c9100ceb1daf6a1a6",
+      "normalized_section_sha256": "29f77fe321a57220c4719dd23ce01137a2476bb9c5518dc1dc65b8c6ae878582",
+      "source_text": "Have this visa If you are in Australia at the time you apply, you must hold one of the following: a substantive visa Bridging visa A - BVA - (subclass 010) Bridging visa B - BVB - (subclass 020) Bridging visa C - BVC - (subclass 030) If you currently hold, or your last substantive visa held was either: Skilled Work Regional (Provisional) (subclass 491); or Skilled Employer Sponsored Regional (Provisional) (subclass 494) You must have held that visa for at least 3 years at the time you apply.",
+      "text_kind": "normalized_rendered_official_page_text",
+      "captured_at": "2026-10-28",
+      "capture_method": "Rendered visible DOM after opening Eligibility and expanding four sections through browser UI. Text normalized by removing Hide/Details lines and zero-width characters and collapsing whitespace. Not original HTML bytes.",
+      "original_evidence_replaced": false
+    },
+    "AU_189_PT_POL_02": {
+      "evidence_id": "AU_189_RECAPTURE_02_20261028",
+      "policy_id": "AU_189_PT_POL_02",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested#Eligibility",
+      "source_file": "data/raw/legal_review/20261028/australia/189_rendered_sections.json",
+      "source_file_sha256": "74c0dd14a2a7d2a5945a662128d537d0a64d3e47457e0f0c9100ceb1daf6a1a6",
+      "normalized_section_sha256": "2407f7ce980e5a7993f9b3f2d790465a7be4493d7fefcb3d506bd935aba098c7",
+      "source_text": "Be invited to apply You can only apply for this visa if we invite you to. See before you apply. Submit an expression of interest (EOI) to let us know you would like to apply for the visa. After you have submitted an EOI, you will be ranked against other intending applicants and might be invited to apply for the visa. Invitations are issued regularly through SkillSelect.",
+      "text_kind": "normalized_rendered_official_page_text",
+      "captured_at": "2026-10-28",
+      "capture_method": "Rendered visible DOM after opening Eligibility and expanding four sections through browser UI. Text normalized by removing Hide/Details lines and zero-width characters and collapsing whitespace. Not original HTML bytes.",
+      "original_evidence_replaced": false
+    },
+    "AU_189_PT_POL_03": {
+      "evidence_id": "AU_189_RECAPTURE_03_20261028",
+      "policy_id": "AU_189_PT_POL_03",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested#Eligibility",
+      "source_file": "data/raw/legal_review/20261028/australia/189_rendered_sections.json",
+      "source_file_sha256": "74c0dd14a2a7d2a5945a662128d537d0a64d3e47457e0f0c9100ceb1daf6a1a6",
+      "normalized_section_sha256": "3c9968b6a264de816f6ee587f34a1e2b3722d5c8627e2a00671b26692ee854ce",
+      "source_text": "Have a suitable skills assessment For your application to be valid, you must declare that you have a suitable skills assessment at the time of invitation. Delegates of the Minister will now accept a suitable skills assessment for an applicant’s nominated skilled occupation which has been obtained within the 60 day invitation period. This change of approach is made as a result of the decision of Thapa v Minister for Immigration, Citizenship, Migrant Services and Multicultural Affairs [2021] FCCA 686 (Thapa). The Minister will administer the Migration Regulations 1994 in accordance with the decision in Thapa, but the Minister reserves the right to make submissions in a Court that Thapa was wrongly decided. You will need to provide a copy of this skills assessment with your application. For medical and legal practitioners, we also accept the following as proof of a skills assessment: full or unconditional or general medical registration with the Australian Health Practitioner Regulation Agency conditional specialist registration with the Australian Health Practitioner Regulation Agency. This only allows you to practise in your speciality. You need no further training or supervision admission to practice law in the relevant state or territory Your skills assessment must have been obtained in the 3 years before the date of your invitation. If the assessment was for a shorter period, that period must not have passed. If your skills were assessed on the basis of a qualification you got in Australia when you held a student visa, the qualification must be from studying a course registered on CRICOS.",
+      "text_kind": "normalized_rendered_official_page_text",
+      "captured_at": "2026-10-28",
+      "capture_method": "Rendered visible DOM after opening Eligibility and expanding four sections through browser UI. Text normalized by removing Hide/Details lines and zero-width characters and collapsing whitespace. Not original HTML bytes.",
+      "original_evidence_replaced": false
+    },
+    "AU_189_PT_POL_04": {
+      "evidence_id": "AU_189_RECAPTURE_04_20261028",
+      "policy_id": "AU_189_PT_POL_04",
+      "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested#Eligibility",
+      "source_file": "data/raw/legal_review/20261028/australia/189_rendered_sections.json",
+      "source_file_sha256": "74c0dd14a2a7d2a5945a662128d537d0a64d3e47457e0f0c9100ceb1daf6a1a6",
+      "normalized_section_sha256": "fef089d53b3702718c289d90481201550eb81bf7c9ca3d832f7268c44a1c1c57",
+      "source_text": "Be this age You must be aged under 45 when we invite you to apply for the visa. You can still apply for the visa if you turn 45 after we invite you to apply. If you turn 45 after you submit your EOI but before we invite you to apply, you will not be invited to apply.",
+      "text_kind": "normalized_rendered_official_page_text",
+      "captured_at": "2026-10-28",
+      "capture_method": "Rendered visible DOM after opening Eligibility and expanding four sections through browser UI. Text normalized by removing Hide/Details lines and zero-width characters and collapsing whitespace. Not original HTML bytes.",
+      "original_evidence_replaced": false
+    }
+  },
+  "database_applied": false,
+  "approved_for_embedding": false
+}

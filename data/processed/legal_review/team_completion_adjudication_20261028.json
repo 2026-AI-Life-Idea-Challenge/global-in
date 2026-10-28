@@ -1,0 +1,277 @@
+{
+  "reviewed_at": "2026-10-28",
+  "wording_updates": {
+    "US-WK-01-POL-0007": {
+      "text": "2026-10-28 확인 기준 USCIS 공식 페이지는 2026-06-08 시행 지침 취소와 2026-07-24 항소심 집행정지 신청 기각에 따르겠다는 경고문을 표시한다. 별도로 Global Nurse Force 사건의 2026-09-30 Doc130 p34는 포고령 10973 및 연장 포고령 11069의 시행정책을 취소·환송하고 APA 의견수렴·RFA 분석 전 집행을 금지한다. 따라서 아래 과거 안내를 현재 납부 명령으로 사용하지 않는다. 소송과 항소는 진행 중이고 추후 명령·새 규정이 나오면 재검토한다. 다른 일반 청원 수수료가 면제된다는 뜻은 아니다.\n2025-09-19 포고령은 지정 신규 H-1B 청원에 연계한 비자·입국 제한과 USD100,000 납부를 제시했다.",
+      "scope": "2026-10-28 기관 공식 집행 안내와 확보된 법원 명령에 따른 일반 납부 정책 설명. 미결 사건의 최종 승소·미래 효력·개별 납부액 보장 제외.",
+      "findings": [
+        "검색 도구의 403을 일반 브라우저로 보완해 실제 USCIS 공식 경고문과 접힌 기존 안내를 확인했다.",
+        "현행 집행 상태를 과거 요건보다 앞에 배치하고 정부의 명령 준수 표시 및 별도 9월 명령을 함께 반영했다."
+      ],
+      "source_urls": [
+        "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations"
+      ],
+      "capture_file": "team_completion_browser_evidence_20261028.json",
+      "additional_source_files": [
+        {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf"
+        }
+      ]
+    },
+    "US-WK-01-POL-0008": {
+      "text": "2026-10-28 확인 기준 USCIS 공식 페이지는 2026-06-08 시행 지침 취소와 2026-07-24 항소심 집행정지 신청 기각에 따르겠다는 경고문을 표시한다. 별도로 Global Nurse Force 사건의 2026-09-30 Doc130 p34는 포고령 10973 및 연장 포고령 11069의 시행정책을 취소·환송하고 APA 의견수렴·RFA 분석 전 집행을 금지한다. 따라서 아래 과거 안내를 현재 납부 명령으로 사용하지 않는다. 소송과 항소는 진행 중이고 추후 명령·새 규정이 나오면 재검토한다. 다른 일반 청원 수수료가 면제된다는 뜻은 아니다.\n2025 USCIS 시행 안내는 일정 신규 H-1B 청원에 USD100,000 추가 납부 조건을 제시했다.",
+      "scope": "2026-10-28 기관 공식 집행 안내와 확보된 법원 명령에 따른 일반 납부 정책 설명. 미결 사건의 최종 승소·미래 효력·개별 납부액 보장 제외.",
+      "findings": [
+        "검색 도구의 403을 일반 브라우저로 보완해 실제 USCIS 공식 경고문과 접힌 기존 안내를 확인했다.",
+        "현행 집행 상태를 과거 요건보다 앞에 배치하고 정부의 명령 준수 표시 및 별도 9월 명령을 함께 반영했다."
+      ],
+      "source_urls": [
+        "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations"
+      ],
+      "capture_file": "team_completion_browser_evidence_20261028.json",
+      "additional_source_files": [
+        {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf"
+        }
+      ]
+    },
+    "US-WK-01-POL-0072": {
+      "text": "2026-10-28 확인 기준 USCIS 공식 페이지는 2026-06-08 시행 지침 취소와 2026-07-24 항소심 집행정지 신청 기각에 따르겠다는 경고문을 표시한다. 별도로 Global Nurse Force 사건의 2026-09-30 Doc130 p34는 포고령 10973 및 연장 포고령 11069의 시행정책을 취소·환송하고 APA 의견수렴·RFA 분석 전 집행을 금지한다. 따라서 아래 과거 안내를 현재 납부 명령으로 사용하지 않는다. 소송과 항소는 진행 중이고 추후 명령·새 규정이 나오면 재검토한다. 다른 일반 청원 수수료가 면제된다는 뜻은 아니다.\n과거 USCIS 안내의 USD100,000은 모든 H-1B 연장·근로자가 부담하는 보편 수수료가 아니었고 지정 청원·수혜자 조건을 따랐다.",
+      "scope": "2026-10-28 기관 공식 집행 안내와 확보된 법원 명령에 따른 일반 납부 정책 설명. 미결 사건의 최종 승소·미래 효력·개별 납부액 보장 제외.",
+      "findings": [
+        "검색 도구의 403을 일반 브라우저로 보완해 실제 USCIS 공식 경고문과 접힌 기존 안내를 확인했다.",
+        "현행 집행 상태를 과거 요건보다 앞에 배치하고 정부의 명령 준수 표시 및 별도 9월 명령을 함께 반영했다."
+      ],
+      "source_urls": [
+        "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations"
+      ],
+      "capture_file": "team_completion_browser_evidence_20261028.json",
+      "additional_source_files": [
+        {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf"
+        }
+      ]
+    },
+    "US-WK-01-POL-0103": {
+      "text": "2026-10-28 확인 기준 USCIS 공식 페이지는 2026-06-08 시행 지침 취소와 2026-07-24 항소심 집행정지 신청 기각에 따르겠다는 경고문을 표시한다. 별도로 Global Nurse Force 사건의 2026-09-30 Doc130 p34는 포고령 10973 및 연장 포고령 11069의 시행정책을 취소·환송하고 APA 의견수렴·RFA 분석 전 집행을 금지한다. 따라서 아래 과거 안내를 현재 납부 명령으로 사용하지 않는다. 소송과 항소는 진행 중이고 추후 명령·새 규정이 나오면 재검토한다. 다른 일반 청원 수수료가 면제된다는 뜻은 아니다.\n과거 지침의 지정 납부 경로는 pay.gov였고 청원 제출 전 지급 예약 증명 또는 인정 예외 증명을 제출하도록 했다. 납부 페이지의 존재만으로 현재 납부 의무가 발생하지 않는다.",
+      "scope": "2026-10-28 기관 공식 집행 안내와 확보된 법원 명령에 따른 일반 납부 정책 설명. 미결 사건의 최종 승소·미래 효력·개별 납부액 보장 제외.",
+      "findings": [
+        "검색 도구의 403을 일반 브라우저로 보완해 실제 USCIS 공식 경고문과 접힌 기존 안내를 확인했다.",
+        "현행 집행 상태를 과거 요건보다 앞에 배치하고 정부의 명령 준수 표시 및 별도 9월 명령을 함께 반영했다."
+      ],
+      "source_urls": [
+        "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations"
+      ],
+      "capture_file": "team_completion_browser_evidence_20261028.json",
+      "additional_source_files": [
+        {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf"
+        }
+      ]
+    },
+    "US-WK-01-POL-0022": {
+      "text": "2026-10-28 확인 기준 USCIS 공식 페이지는 2026-06-08 시행 지침 취소와 2026-07-24 항소심 집행정지 신청 기각에 따르겠다는 경고문을 표시한다. 별도로 Global Nurse Force 사건의 2026-09-30 Doc130 p34는 포고령 10973 및 연장 포고령 11069의 시행정책을 취소·환송하고 APA 의견수렴·RFA 분석 전 집행을 금지한다. 따라서 아래 과거 안내를 현재 납부 명령으로 사용하지 않는다. 소송과 항소는 진행 중이고 추후 명령·새 규정이 나오면 재검토한다. 다른 일반 청원 수수료가 면제된다는 뜻은 아니다.\n2026 연장 포고령 문언은 지정 미국 외 H-1B 수혜자의 청원과 USD100,000 조건 및 DHS 국가이익 예외를 다뤘다. 과거 USCIS 예외 안내는 미국 근로자 부재·안보 및 복지 위해 없음·납부가 국익을 심각하게 해침 등의 결합 조건으로 단순 고용 제안과 구별했다.",
+      "scope": "2026-10-28 기관 공식 집행 안내와 확보된 법원 명령에 따른 일반 납부 정책 설명. 미결 사건의 최종 승소·미래 효력·개별 납부액 보장 제외.",
+      "findings": [
+        "검색 도구의 403을 일반 브라우저로 보완해 실제 USCIS 공식 경고문과 접힌 기존 안내를 확인했다.",
+        "현행 집행 상태를 과거 요건보다 앞에 배치하고 정부의 명령 준수 표시 및 별도 9월 명령을 함께 반영했다."
+      ],
+      "source_urls": [
+        "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations"
+      ],
+      "capture_file": "team_completion_browser_evidence_20261028.json",
+      "additional_source_files": [
+        {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf"
+        }
+      ]
+    },
+    "US-WK-01-POL-0053": {
+      "text": "2026-10-28 확인 기준 USCIS 공식 페이지는 2026-06-08 시행 지침 취소와 2026-07-24 항소심 집행정지 신청 기각에 따르겠다는 경고문을 표시한다. 별도로 Global Nurse Force 사건의 2026-09-30 Doc130 p34는 포고령 10973 및 연장 포고령 11069의 시행정책을 취소·환송하고 APA 의견수렴·RFA 분석 전 집행을 금지한다. 따라서 아래 과거 안내를 현재 납부 명령으로 사용하지 않는다. 소송과 항소는 진행 중이고 추후 명령·새 규정이 나오면 재검토한다. 다른 일반 청원 수수료가 면제된다는 뜻은 아니다.\n과거 시행 안내는 2025-09-21 00:01 미국 동부시간 이후 지정 접수분에 대해 미국 외의 유효 H-1B 비자 없는 수혜자 및 미국 내 수혜자의 영사 통지·입국항 통지·출국 전 심사 요청 분기를 설명했다. 국내 신분변경·수정·연장이 불승인되는 해당 분기도 구분했다.",
+      "scope": "2026-10-28 기관 공식 집행 안내와 확보된 법원 명령에 따른 일반 납부 정책 설명. 미결 사건의 최종 승소·미래 효력·개별 납부액 보장 제외.",
+      "findings": [
+        "검색 도구의 403을 일반 브라우저로 보완해 실제 USCIS 공식 경고문과 접힌 기존 안내를 확인했다.",
+        "현행 집행 상태를 과거 요건보다 앞에 배치하고 정부의 명령 준수 표시 및 별도 9월 명령을 함께 반영했다."
+      ],
+      "source_urls": [
+        "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations"
+      ],
+      "capture_file": "team_completion_browser_evidence_20261028.json",
+      "additional_source_files": [
+        {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf"
+        }
+      ]
+    },
+    "US-WK-01-POL-0057": {
+      "text": "2026-10-28 확인 기준 USCIS 공식 페이지는 2026-06-08 시행 지침 취소와 2026-07-24 항소심 집행정지 신청 기각에 따르겠다는 경고문을 표시한다. 별도로 Global Nurse Force 사건의 2026-09-30 Doc130 p34는 포고령 10973 및 연장 포고령 11069의 시행정책을 취소·환송하고 APA 의견수렴·RFA 분석 전 집행을 금지한다. 따라서 아래 과거 안내를 현재 납부 명령으로 사용하지 않는다. 소송과 항소는 진행 중이고 추후 명령·새 규정이 나오면 재검토한다. 다른 일반 청원 수수료가 면제된다는 뜻은 아니다.\n연장 포고령의 고용주 납부 증빙 확보·보존 문구와 USCIS의 접수 전 증명 제출 지침은 해당 시행정책의 일부였다. 근로자에게 일률적으로 비용을 전가하거나 현재 모든 청원의 선납 의무로 변환하지 않는다.",
+      "scope": "2026-10-28 기관 공식 집행 안내와 확보된 법원 명령에 따른 일반 납부 정책 설명. 미결 사건의 최종 승소·미래 효력·개별 납부액 보장 제외.",
+      "findings": [
+        "검색 도구의 403을 일반 브라우저로 보완해 실제 USCIS 공식 경고문과 접힌 기존 안내를 확인했다.",
+        "현행 집행 상태를 과거 요건보다 앞에 배치하고 정부의 명령 준수 표시 및 별도 9월 명령을 함께 반영했다."
+      ],
+      "source_urls": [
+        "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations"
+      ],
+      "capture_file": "team_completion_browser_evidence_20261028.json",
+      "additional_source_files": [
+        {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf"
+        }
+      ]
+    },
+    "US-WK-01-POL-0100": {
+      "text": "2026-10-28 확인 기준 USCIS 공식 페이지는 2026-06-08 시행 지침 취소와 2026-07-24 항소심 집행정지 신청 기각에 따르겠다는 경고문을 표시한다. 별도로 Global Nurse Force 사건의 2026-09-30 Doc130 p34는 포고령 10973 및 연장 포고령 11069의 시행정책을 취소·환송하고 APA 의견수렴·RFA 분석 전 집행을 금지한다. 따라서 아래 과거 안내를 현재 납부 명령으로 사용하지 않는다. 소송과 항소는 진행 중이고 추후 명령·새 규정이 나오면 재검토한다. 다른 일반 청원 수수료가 면제된다는 뜻은 아니다.\n과거 USCIS 안내는 2025-09-21 00:01 미국 동부시간 전 접수 청원, 기존 유효 H-1B 비자, 미국 내에서 승인되는 지정 신분변경·수정·연장 및 해당 승인 후의 여행 분기를 적용 제외로 설명했다. 모든 종전 승인만을 무조건 제외하는 것으로 확대하지 않는다.",
+      "scope": "2026-10-28 기관 공식 집행 안내와 확보된 법원 명령에 따른 일반 납부 정책 설명. 미결 사건의 최종 승소·미래 효력·개별 납부액 보장 제외.",
+      "findings": [
+        "검색 도구의 403을 일반 브라우저로 보완해 실제 USCIS 공식 경고문과 접힌 기존 안내를 확인했다.",
+        "현행 집행 상태를 과거 요건보다 앞에 배치하고 정부의 명령 준수 표시 및 별도 9월 명령을 함께 반영했다."
+      ],
+      "source_urls": [
+        "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations"
+      ],
+      "capture_file": "team_completion_browser_evidence_20261028.json",
+      "additional_source_files": [
+        {
+          "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+          "source_file": "data/raw/legal_review/20261028/2ab33a8d31d37e80.pdf"
+        }
+      ]
+    },
+    "AU_189_PT_POL_03": {
+      "text": "지명 직종에 대해 해당 지정 평가기관의 적합한 영주 이민용 기술심사가 필요하며 485용 잠정 심사로 대체하지 않는다. 일반 기준은 초청 시 유효한 심사이고, 3년 또는 평가기관이 정한 더 짧은 유효기간을 적용한다. 다만 내무부는 Thapa [2021] FCCA686에 따른 현행 행정 방침으로 60일 초청 유효기간 중 취득한 적합한 심사를 수용한다고 명시하며, 법정에서 Thapa가 잘못됐다는 주장을 할 권리는 유보한다. 이 예외를 초청 후 언제든 심사를 받아도 된다는 뜻으로 확대하지 않는다. Thapa는 만료된 종전 심사를 초청 기간 내 새 심사로 갱신한 사안이며, Herath [2024] FCA547 [23]–[25]는 187 영어 점수 미충족 사안에서 Thapa가 도움이 되지 않는다고 판시했을 뿐 기술심사 60일 경로를 폐기한 판결은 아니다. 호주 학생비자 중 취득한 학위를 근거로 평가했다면 CRICOS 등록 과정을 확인한다. 의사의 AHPRA 정식·일반·무조건 등록 또는 추가 훈련·감독이 필요 없는 조건부 전문의 등록, 법조인의 해당 주·준주 변호사 자격 인정은 내무부가 안내한 해당 대체 증빙이다. 복사본을 신청 증빙으로 제출하며, 타인의 경력·영어·점수 요건까지 이 경로로 연장하지 않는다.",
+      "scope": "189/190/491 해당 기술심사 일반 요건·초청기간 예외·유효기간·의사/법조 대체 증빙. 영어·점수 조건의 기한 연장이나 개인 비자 발급 보장 제외.",
+      "findings": [
+        "AustLII의 Thapa 판결 주문과 [28]–[31], 연방법원의 Herath [23]–[25]를 브라우저에서 직접 확인했다.",
+        "2026-10-12 갱신 내무부 페이지의 구체적인 60일 예외와 일반 경고를 구분했다. 법령과 반대되는 무제한 사후 취득 허용을 만들지 않았다."
+      ],
+      "source_urls": [
+        "https://www.austlii.edu.au/cgi-bin/viewdoc/au/cases/cth/FCCA/2021/686.html",
+        "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2024/2024fca0547",
+        "https://immi.homeaffairs.gov.au/visas/working-in-australia/skills-assessment"
+      ],
+      "capture_file": "team_completion_browser_evidence_20261028.json",
+      "supplemental_source_ids": [
+        "regulations_volume2"
+      ]
+    },
+    "AU_190_POL_04": {
+      "text": "지명 직종에 대해 해당 지정 평가기관의 적합한 영주 이민용 기술심사가 필요하며 485용 잠정 심사로 대체하지 않는다. 일반 기준은 초청 시 유효한 심사이고, 3년 또는 평가기관이 정한 더 짧은 유효기간을 적용한다. 다만 내무부는 Thapa [2021] FCCA686에 따른 현행 행정 방침으로 60일 초청 유효기간 중 취득한 적합한 심사를 수용한다고 명시하며, 법정에서 Thapa가 잘못됐다는 주장을 할 권리는 유보한다. 이 예외를 초청 후 언제든 심사를 받아도 된다는 뜻으로 확대하지 않는다. Thapa는 만료된 종전 심사를 초청 기간 내 새 심사로 갱신한 사안이며, Herath [2024] FCA547 [23]–[25]는 187 영어 점수 미충족 사안에서 Thapa가 도움이 되지 않는다고 판시했을 뿐 기술심사 60일 경로를 폐기한 판결은 아니다. 호주 학생비자 중 취득한 학위를 근거로 평가했다면 CRICOS 등록 과정을 확인한다. 의사의 AHPRA 정식·일반·무조건 등록 또는 추가 훈련·감독이 필요 없는 조건부 전문의 등록, 법조인의 해당 주·준주 변호사 자격 인정은 내무부가 안내한 해당 대체 증빙이다. 복사본을 신청 증빙으로 제출하며, 타인의 경력·영어·점수 요건까지 이 경로로 연장하지 않는다.",
+      "scope": "189/190/491 해당 기술심사 일반 요건·초청기간 예외·유효기간·의사/법조 대체 증빙. 영어·점수 조건의 기한 연장이나 개인 비자 발급 보장 제외.",
+      "findings": [
+        "AustLII의 Thapa 판결 주문과 [28]–[31], 연방법원의 Herath [23]–[25]를 브라우저에서 직접 확인했다.",
+        "2026-10-12 갱신 내무부 페이지의 구체적인 60일 예외와 일반 경고를 구분했다. 법령과 반대되는 무제한 사후 취득 허용을 만들지 않았다."
+      ],
+      "source_urls": [
+        "https://www.austlii.edu.au/cgi-bin/viewdoc/au/cases/cth/FCCA/2021/686.html",
+        "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2024/2024fca0547",
+        "https://immi.homeaffairs.gov.au/visas/working-in-australia/skills-assessment"
+      ],
+      "capture_file": "team_completion_browser_evidence_20261028.json",
+      "supplemental_source_ids": [
+        "regulations_volume2"
+      ]
+    },
+    "AU_491_POL_04": {
+      "text": "지명 직종에 대해 해당 지정 평가기관의 적합한 영주 이민용 기술심사가 필요하며 485용 잠정 심사로 대체하지 않는다. 일반 기준은 초청 시 유효한 심사이고, 3년 또는 평가기관이 정한 더 짧은 유효기간을 적용한다. 다만 내무부는 Thapa [2021] FCCA686에 따른 현행 행정 방침으로 60일 초청 유효기간 중 취득한 적합한 심사를 수용한다고 명시하며, 법정에서 Thapa가 잘못됐다는 주장을 할 권리는 유보한다. 이 예외를 초청 후 언제든 심사를 받아도 된다는 뜻으로 확대하지 않는다. Thapa는 만료된 종전 심사를 초청 기간 내 새 심사로 갱신한 사안이며, Herath [2024] FCA547 [23]–[25]는 187 영어 점수 미충족 사안에서 Thapa가 도움이 되지 않는다고 판시했을 뿐 기술심사 60일 경로를 폐기한 판결은 아니다. 호주 학생비자 중 취득한 학위를 근거로 평가했다면 CRICOS 등록 과정을 확인한다. 의사의 AHPRA 정식·일반·무조건 등록 또는 추가 훈련·감독이 필요 없는 조건부 전문의 등록, 법조인의 해당 주·준주 변호사 자격 인정은 내무부가 안내한 해당 대체 증빙이다. 복사본을 신청 증빙으로 제출하며, 타인의 경력·영어·점수 요건까지 이 경로로 연장하지 않는다.",
+      "scope": "189/190/491 해당 기술심사 일반 요건·초청기간 예외·유효기간·의사/법조 대체 증빙. 영어·점수 조건의 기한 연장이나 개인 비자 발급 보장 제외.",
+      "findings": [
+        "AustLII의 Thapa 판결 주문과 [28]–[31], 연방법원의 Herath [23]–[25]를 브라우저에서 직접 확인했다.",
+        "2026-10-12 갱신 내무부 페이지의 구체적인 60일 예외와 일반 경고를 구분했다. 법령과 반대되는 무제한 사후 취득 허용을 만들지 않았다."
+      ],
+      "source_urls": [
+        "https://www.austlii.edu.au/cgi-bin/viewdoc/au/cases/cth/FCCA/2021/686.html",
+        "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2024/2024fca0547",
+        "https://immi.homeaffairs.gov.au/visas/working-in-australia/skills-assessment"
+      ],
+      "capture_file": "team_completion_browser_evidence_20261028.json",
+      "supplemental_source_ids": [
+        "regulations_volume2"
+      ]
+    },
+    "US-WK-01-POL-0092": {
+      "text": "2024-12-18 최종 규정(2025-01-17 시행)은 연구가 fundamental activity인 비영리·정부 연구기관의 H-1B cap 면제 정의를 조정했다. 단순히 연구업무가 있다는 이유만으로 자동 면제하지 않는다. 2026-10-28 읽은 USCIS cap-gap 공식 안내는 해당 요건을 충족하는 적시 접수·비경솔한 cap-subject H-1B 신분변경 청원의 F-1 수혜자에게 신분 및 해당되는 취업허가 연장을 설명하며, 요청 H-1B 회계연도 4월 1일과 승인 청원의 효력 시작일 중 빠른 날까지를 상한으로 한다. 추첨 등록·선정만으로 연장이 발생하지 않는다. 청원 거절·철회·취소 등에 따른 종료 및 신분만 연장되는 경우와 취업허가도 연장되는 경우를 구분한다. 2026-09-14 법원 명령으로 연기된 고정 체류기간 규칙은 별도이며, 기존 cap-gap 제도가 자동 폐지되거나 모든 신청자에게 취업이 허용된다는 뜻이 아니다. 구체적인 I-20·OPT 유효기간·청원 접수일과 종료 사유는 개인별 사실로 확인한다.",
+      "scope": "2026-10-28 공식 USCIS cap-gap 안내와 2024 규정의 해당 일반 조건. 미래 명령·개인별 신분 또는 취업허가 자동 판정 제외.",
+      "findings": [
+        "USCIS cap-gap 공식 페이지를 브라우저에서 직접 확인해 역사적 규정 설명만으로 남겼던 범위를 현행 안내로 보완했다.",
+        "2026 고정 체류기간 규칙의 연기는 별도이고 cap-gap 기존 제도와 동일시하지 않았다."
+      ],
+      "source_urls": [
+        "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students"
+      ],
+      "capture_file": "team_completion_browser_evidence_20261028.json"
+    },
+    "AU_462_FIRST_POL_05": {
+      "text": "최초 462의 Functional English는 Migration Act s5(2), Migration Regulations 5.17 및 462.211·462.215에 따라 해당되는 법정 증거와 충족 요건을 함께 확인한다. LIN25/014 s6의 경로에는 캐나다·뉴질랜드·아일랜드·영국·미국의 국적과 유효 여권, 영어로 전 기간 수업한 초등 전 과정+중등 3년 또는 중등 5년, 호주에서 영어로 진행한 지정 학위·디플로마 과정의 전일제 1년(또는 시간제 동등), 지정 시험 점수가 있다. reg5.17(c)의 전 수업이 영어인 최소 2년 전일제 학위·상위학위·디플로마·trade certificate 및 지정 증거를 제공할 수 없는 경우 5.17(d)의 장관 면접 판단도 별도다. 내무부의 462 안내는 이스라엘 국적·여권+영어 Bagrut 3 study units 경로도 명시한다. 이를 LIN25/014의 여권국 목록에 이스라엘이 추가된 법정 일괄 면제로 오인하지 않는다.\n2025-08-07 이후 지정 시험은 4개 영어 영역을 바탕으로 CELPIP General overall5, IELTS Academic/General 평균4.5, LANGUAGECERT Academic overall38, MET overall38, OET overall1020, PTE Academic overall24, TOEFL iBT total26 이상이다. 일반 Functional English 안내의 완전 온라인·재택 시험 제한과 시험별 인정 방식도 확인한다. LIN25/014 s6(c)(ii)는 신청일 직전 12개월 또는 신청일 당일·이후 시험을 명시한다. 462 안내의 오래된 시험 불인정·신청 전 준비 안내를 이 법정 사후시험 증거 경로를 삭제하는 조문으로 사용하지 않는다. 다만 사후시험의 증거 적격성과 해당 462 신청의 요건 충족 판단은 별도이므로 사후시험만으로 모든 신청이 자동 적격이라고 처리하지 않는다. Berenguel [2010] HCA8 [24]–[26]은 시간 제목만으로 사후 시험을 일률 배제하지 않는 해석 근거이며, 그 사건 자체는 당시 885에 관한 것으로 구분한다.\n2025-08-07 전 시험은 s7의 신청 전 12개월 및 시행 전 시험 조건 아래 IELTS 평균4.5·TOEFL total32·PTE overall30·CAE overall147 경과 경로를 구분한다. 2026-10-28 새 신청에는 2025-08-06 이전 시험이 이미 12개월을 넘었으므로 그 시험 점수가 높다는 이유로 경과 경로를 연장하지 않는다. 추가 정보는 결정 전 제출 가능하지만 법 s55(2)는 자료를 기다리기 위해 결정을 무조건 늦출 의무를 부과하지 않는다.",
+      "scope": "Functional English 법정 증거·시험 시점·시행 경과 및 462 공식 안내의 출처별 역할을 함께 보존한 일반 문구. 개인별 visa grant·재량 행사·사후시험만의 자동 적격 판단 제외.",
+      "findings": [
+        "명시적인 LIN25/014 6(c)(ii)(B)를 단순 안내나 시간 제목으로 삭제하지 않는 법령 우선순위를 적용했다.",
+        "Berenguel 원문 주문과 [24]–[26]을 직접 확인했다. 다른 subclass 판결을462의 직접 판결로 인용하지 않았다.",
+        "사후 증거 제출과 실제 사후 시험, 증거 경로와 비자 요건 충족, Bagrut 안내와 법정 여권국 증거 목록을 구분해 모순된 단정 대신 조건부 규칙으로 교정했다."
+      ],
+      "source_urls": [
+        "https://www.austlii.edu.au/cgi-bin/viewdoc/au/cases/cth/HCA/2010/8.html"
+      ],
+      "capture_file": "team_final_interpretive_evidence_20261028.json",
+      "supplemental_source_ids": [
+        "act_volume1",
+        "regulations_volume1",
+        "regulations_volume2"
+      ],
+      "additional_source_files": [
+        {
+          "source_url": "https://www.legislation.gov.au/F2025L00904/asmade/2025-08-06/text/original/epub/OEBPS/document_1/document_1.html",
+          "source_file": "data/processed/legal_review/australia_additional_instruments_web_capture_20261028.json"
+        },
+        {
+          "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462#Eligibility",
+          "source_file": "data/processed/legal_review/team_completion_browser_evidence_20261028.json"
+        },
+        {
+          "source_url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language/functional-english",
+          "source_file": "data/processed/legal_review/team_final_english_sources_20261028.json"
+        }
+      ],
+      "interpretation_type": "reviewer_analysis_of_primary_sources_not_new_agency_ruling"
+    },
+    "DE_WH_POL_03": {
+      "text": "주한 독일대사관의 한국인 Working Holiday 신청 서류 안내에 따라 서명한 신청서, 전 체류기간에 유효한 여권과 필요한 사본, 6개월 이내 촬영한 흰 배경 3.5×4.5cm 여권사진 2매를 준비한다. 재정증명은 본인 명의의 최소 EUR 3,500 상당 잔고이며 한국어 안내의 영문·1주 이내 발급 조건을 확인한다. 공관은 귀국 항공권 또는 첫 3개월 확정 숙소의 지급증명을 제시하는 경우 해당 금액에서 각 EUR 1,000을 감액한다고 안내한다. 공관 원문의 각(je) 감액과 각 지급증명 조건에 따른 검토자의 조건부 계산은 3,500−1,000×n 유로다. n은 실제 인정되는 별개의 증빙 항목 수(0·1·2)이며, 0개는 3,500, 1개는 2,500, 2개 모두 인정되면 1,500유로로 산출된다. 이는 공관이 별도로 제시한 숫자 예시의 인용이나 신청인의 증빙 수리 보장이 아니라 원문에 대한 문언·산술 해석이다. 항공권 예약만 하거나 숙박 대금을 지급하지 않은 경우를 인정 증빙으로 자동 계산하지 않는다. 전 체류기간에 독일에서 유효한 책임보험·의료보험·상해보험을 각각 최소 EUR 30,000 보장으로 준비하며 의료보험은 병원 치료와 한국 송환을 포함한다. 한국어 안내상 보험 목적 표기 Working Holiday 또는 Overseas Travel 및 영문 보험증서 원본을 확인한다. 필요 시 추가 서류가 요구될 수 있고 완비만으로 사증 발급이 보장되지는 않는다.",
+      "scope": "2026-10-28 공관 서류·보험·재정 조건과 각 지급증명이 실제 인정된 경우의 문언상 계산 해석. 개별 증빙 수리·비자 발급 보장 제외.",
+      "findings": [
+        "독문 je(각)와 jeweils mit Zahlungsnachweis(각 지급증명)를 한국어 1,000유로씩 감액 안내와 대조했다.",
+        "3,500−1,000×n은 검토자의 조건부 파생값임을 표시한다. 별도 기관 회신이나 공식 숫자 예시를 확보했다고 주장하지 않는다."
+      ],
+      "source_urls": [
+        "https://seoul.diplo.de/kr-de/service/05-visaeinreise/1991194-1991194",
+        "https://seoul.diplo.de/kr-ko/service/1694216-1694216?isLocal=false&isPreview=false"
+      ],
+      "capture_file": "final14_approved_wording_sources_20261028.json",
+      "interpretation_type": "reviewer_conditional_arithmetic_from_official_wording_not_agency_confirmation",
+      "additional_source_files": [
+        {
+          "source_url": "https://seoul.diplo.de/kr-de/service/05-visaeinreise/1991194-1991194",
+          "source_file": "data/processed/legal_review/team_final_interpretive_evidence_20261028.json"
+        }
+      ]
+    }
+  },
+  "unresolved_policy_ids": [],
+  "unresolved_reason": null,
+  "additional_excluded_scope_issues": {},
+  "production_release_ready": false,
+  "internal_content_review_complete": true,
+  "agency_confirmations_obtained": false,
+  "lawyer_signed": false,
+  "interpretations_not_agency_rulings": [
+    "AU_462_FIRST_POL_05",
+    "DE_WH_POL_03"
+  ],
+  "meaning": "All current-catalog policy texts have dated bounded internal adjudications. Two explicit reviewer interpretations are retained, not passed off as agency rulings. No individual eligibility or production gate is granted."
+}

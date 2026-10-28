@@ -1,12 +1,12 @@
 {
   "reviewed_at": "2026-10-28",
-  "stage": "review_corrections_versioned_and_evidence_reextracted_final_law_pending",
+  "stage": "internal_wording_review_completed_and_saved_to_db",
   "policy_total": 590,
   "initial_review_recorded": 590,
   "initial_review_percent": 100,
-  "final_legal_validation_completed": 0,
-  "final_legal_validation_percent": 0,
-  "database_changed": false,
+  "final_legal_validation_completed": 570,
+  "final_legal_validation_percent": 96.61,
+  "database_changed": true,
   "us_jp_detailed_scope_review": {
     "total": 327,
     "recorded": 327,
@@ -51,5 +51,189 @@
     "final_legal_validation_completed": 0,
     "database_changed": false
   },
-  "git_checkpoint_before_statutory_review": "ff5177d"
+  "git_checkpoint_before_statutory_review": "ff5177d",
+  "germany_statutory_scope": {
+    "total": 19,
+    "scope_notes_recorded": 19,
+    "final_legal_validation_completed": 0,
+    "database_changed": false
+  },
+  "australia_germany_followup": {
+    "total": 242,
+    "coverage_records": 242,
+    "germany_scope_notes": 19,
+    "australia_statutory_pending": 223,
+    "final_legal_validation_completed": 0,
+    "australia_scope_notes": 223,
+    "australia_statutory_pending_definition": "final individual legal validation pending; common statutory scope records now exist for all 223"
+  },
+  "australia_statutory_scope": {
+    "program_total": 20,
+    "program_scope_records": 20,
+    "program_recording_percent": 100,
+    "policy_total": 223,
+    "policy_scope_records": 223,
+    "policy_recording_percent": 100,
+    "official_documents_archived": 25,
+    "clause_anchors_recorded": 186,
+    "supplemental_source_sections_recaptured": 4,
+    "final_legal_validation_completed": 0,
+    "final_legal_validation_percent": 0,
+    "database_changed": false,
+    "embedding_run": false
+  },
+  "final_legal_validation_definition": "bounded policy-content version review by Codex; not lawyer sign-off, government approval, or individual eligibility approval",
+  "final_legal_validation_registry": "data/processed/legal_review/policy_content_approval_registry_20261028.json",
+  "policy_content_approval": {
+    "policy_total": 590,
+    "batch_decisions_recorded": 590,
+    "batch_decision_recording_percent": 100,
+    "policy_content_versions_approved": 570,
+    "policy_content_not_approved": 20,
+    "final_legal_validation_percent": 96.61,
+    "australia_policy_total": 223,
+    "australia_content_approval_percent": 100.0,
+    "countries": {
+      "australia": {
+        "total": 223,
+        "approved": 223,
+        "not_approved": 0,
+        "approval_percent": 100.0
+      },
+      "canada": {
+        "total": 21,
+        "approved": 21,
+        "not_approved": 0,
+        "approval_percent": 100.0
+      },
+      "germany": {
+        "total": 19,
+        "approved": 19,
+        "not_approved": 0,
+        "approval_percent": 100.0
+      },
+      "japan": {
+        "total": 166,
+        "approved": 166,
+        "not_approved": 0,
+        "approval_percent": 100.0
+      },
+      "usa": {
+        "total": 161,
+        "approved": 141,
+        "not_approved": 20,
+        "approval_percent": 87.58
+      }
+    },
+    "queue_counts": {
+      "approved_bounded_content_version": 570,
+      "historical_notice_not_current_policy": 20
+    },
+    "historical_notice_excluded": 20,
+    "active_legal_holds": 0,
+    "additional_excluded_scope_issues": {},
+    "internal_content_review_complete": true,
+    "interpretations_not_agency_rulings": [
+      "AU_462_FIRST_POL_05",
+      "DE_WH_POL_03"
+    ],
+    "lawyer_signed": 0,
+    "service_release_approved": 0,
+    "database_changed": false,
+    "embedding_run": false,
+    "definition": "590 decisions recorded is not 590 substantive approvals or 100% legal validation."
+  },
+  "australia_public_followup": {
+    "jurisdictions_recorded": 8,
+    "linked_policies": 23,
+    "occupation_instruments_indexed": 5,
+    "unique_occupation_codes": 692,
+    "indexed_rows": 2594,
+    "english_timing_correction_drafts": 2,
+    "downloaded_followup_sources": 9,
+    "download_failures": 7,
+    "final_legal_validation_completed": 0,
+    "database_changed": false
+  },
+  "global_policy_wording_batch": {
+    "policy_total": 590,
+    "batch_decisions_recorded": 590,
+    "batch_decision_recording_percent": 100,
+    "policy_content_versions_approved": 570,
+    "policy_content_not_approved": 20,
+    "final_legal_validation_percent": 96.61,
+    "australia_policy_total": 223,
+    "australia_content_approval_percent": 100.0,
+    "countries": {
+      "australia": {
+        "total": 223,
+        "approved": 223,
+        "not_approved": 0,
+        "approval_percent": 100.0
+      },
+      "canada": {
+        "total": 21,
+        "approved": 21,
+        "not_approved": 0,
+        "approval_percent": 100.0
+      },
+      "germany": {
+        "total": 19,
+        "approved": 19,
+        "not_approved": 0,
+        "approval_percent": 100.0
+      },
+      "japan": {
+        "total": 166,
+        "approved": 166,
+        "not_approved": 0,
+        "approval_percent": 100.0
+      },
+      "usa": {
+        "total": 161,
+        "approved": 141,
+        "not_approved": 20,
+        "approval_percent": 87.58
+      }
+    },
+    "queue_counts": {
+      "approved_bounded_content_version": 570,
+      "historical_notice_not_current_policy": 20
+    },
+    "historical_notice_excluded": 20,
+    "active_legal_holds": 0,
+    "additional_excluded_scope_issues": {},
+    "internal_content_review_complete": true,
+    "interpretations_not_agency_rulings": [
+      "AU_462_FIRST_POL_05",
+      "DE_WH_POL_03"
+    ],
+    "lawyer_signed": 0,
+    "service_release_approved": 0,
+    "database_changed": false,
+    "embedding_run": false,
+    "definition": "590 decisions recorded is not 590 substantive approvals or 100% legal validation."
+  },
+  "database_review_metadata_update": {
+    "mode": "applied_and_verified",
+    "registry_sha256": "e3ab74207168122f8541f9ba5ada710eb8fc1aba032c79ec9228c5f9124919e6",
+    "total": 590,
+    "rows_needing_update": 590,
+    "approved_review_versions": 570,
+    "historical_excluded": 20,
+    "active_holds": 0,
+    "original_text_changed": false,
+    "service_gates_changed": false,
+    "additional_excluded_scope_issues": {},
+    "embedding_run": false,
+    "backup_file": "data/processed/legal_review/db_backups/policy_review_before_20261028T115252168754.json",
+    "namespace": "bounded_policy_review_20261028",
+    "applied_at": "2026-10-28T11:52:52.992344+09:00",
+    "internal_content_review_complete": true,
+    "interpretations_not_agency_rulings": [
+      "AU_462_FIRST_POL_05",
+      "DE_WH_POL_03"
+    ],
+    "development_view": "policy_reviewed_for_development"
+  }
 }

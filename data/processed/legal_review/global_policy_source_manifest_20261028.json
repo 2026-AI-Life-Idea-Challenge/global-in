@@ -1,0 +1,295 @@
+[
+  {
+    "source_id": "global_001",
+    "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-200.html",
+    "checked_at": "2026-10-28T05:58:51.8854381+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_001.html",
+    "sha256": "5591a632f757bce960a1d1255c7c18c731dfbaf04a7acc898b736d5434d49d94",
+    "bytes": 63428
+  },
+  {
+    "source_id": "global_002",
+    "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-203.html",
+    "checked_at": "2026-10-28T05:58:54.2074713+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_002.html",
+    "sha256": "00be773620c42121d312ffb3b44c1e6495e6e186a752897e34b9b0bc714e94f3",
+    "bytes": 70894
+  },
+  {
+    "source_id": "global_003",
+    "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-216.html",
+    "checked_at": "2026-10-28T05:58:55.5394774+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_003.html",
+    "sha256": "a3544107c195b1d9acb76f17f85f0c3e8902b0923f03c0c249aaa74881f528a3",
+    "bytes": 56532
+  },
+  {
+    "source_id": "global_004",
+    "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-220.1.html",
+    "checked_at": "2026-10-28T05:58:56.5124101+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_004.html",
+    "sha256": "34b89746293d88f54e6c11c8a9acfc431547604e975be8b47298520ebe58f3ae",
+    "bytes": 57463
+  },
+  {
+    "source_id": "global_005",
+    "source_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-220.html?txthl=issue",
+    "checked_at": "2026-10-28T05:58:57.6979270+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_005.html",
+    "sha256": "e7e03f5c5cb9dab1a3ebc16362e5beca24ecdf79a40ed92a570114a426d3d8e2",
+    "bytes": 54482
+  },
+  {
+    "source_id": "global_006",
+    "source_url": "https://seoul.diplo.de/kr-ko/service/1694216-1694216",
+    "checked_at": "2026-10-28T05:58:58.6880801+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_006.html",
+    "sha256": "d558aea9485d91babded244b568edcb71b5ae177904dff0e4d4b06f83916ec43",
+    "bytes": 60377
+  },
+  {
+    "source_id": "global_007",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/change-schools.html",
+    "checked_at": "2026-10-28T05:59:00.7142220+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_008",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+    "checked_at": "2026-10-28T05:59:18.7555549+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_009",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
+    "checked_at": "2026-10-28T05:59:36.7982439+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_010",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/while-you-study/study-permit-conditions.html",
+    "checked_at": "2026-10-28T05:59:54.8061547+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_011",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+    "checked_at": "2026-10-28T06:00:12.8200940+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_012",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/after-you-apply.html",
+    "checked_at": "2026-10-28T06:00:30.8398973+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_013",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/apply.html",
+    "checked_at": "2026-10-28T06:00:48.8489795+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_014",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html",
+    "checked_at": "2026-10-28T06:01:06.8676380+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_015",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility/field-of-study.html",
+    "checked_at": "2026-10-28T06:01:24.8748644+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_016",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/get-documents.html",
+    "checked_at": "2026-10-28T06:01:42.8861423+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_017",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/employer-specific.html",
+    "checked_at": "2026-10-28T06:02:00.9018225+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_018",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/hire-temporary-foreign/international-mobility-program/how-to-hire.html",
+    "checked_at": "2026-10-28T06:02:18.9143261+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_019",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/apply-work-permit.html",
+    "checked_at": "2026-10-28T06:02:36.9271218+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_020",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/become-candidate.html",
+    "checked_at": "2026-10-28T06:02:54.9441309+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_021",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/eligibility.html?selection=kr-wh",
+    "checked_at": "2026-10-28T06:03:12.9502159+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_022",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/eligibility/family-members.html",
+    "checked_at": "2026-10-28T06:03:30.9683126+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_023",
+    "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/prepare-arrival.html",
+    "checked_at": "2026-10-28T06:03:48.9734528+09:00",
+    "status": "download_failed",
+    "error": "The request was canceled due to the configured HttpClient.Timeout of 18 seconds elapsing."
+  },
+  {
+    "source_id": "global_024",
+    "source_url": "https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html",
+    "checked_at": "2026-10-28T06:04:06.9812961+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_024.html",
+    "sha256": "d2cb2d5e807a370a118d4fa604422e9a26e12b3a7a9278fca51c92517c6686cf",
+    "bytes": 11497
+  },
+  {
+    "source_id": "global_025",
+    "source_url": "https://www.gesetze-im-internet.de/aufenthg_2004/__17.html",
+    "checked_at": "2026-10-28T06:04:09.5858322+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_025.html",
+    "sha256": "6bcf5e3575736c22a677383453aad04f78388431e936ed52c776465a35900740",
+    "bytes": 5898
+  },
+  {
+    "source_id": "global_026",
+    "source_url": "https://www.gesetze-im-internet.de/aufenthg_2004/__18a.html",
+    "checked_at": "2026-10-28T06:04:10.5644232+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_026.html",
+    "sha256": "f35f3fc15eebf922fc740de123dce50349253ce8b65880c34162862bd73418f4",
+    "bytes": 3617
+  },
+  {
+    "source_id": "global_027",
+    "source_url": "https://www.gesetze-im-internet.de/aufenthg_2004/__18g.html",
+    "checked_at": "2026-10-28T06:04:11.4842325+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_027.html",
+    "sha256": "1972de7bb5ba9d7eb599172be9318b086b8fe28d1ce9871dab5016338519d482",
+    "bytes": 10235
+  },
+  {
+    "source_id": "global_028",
+    "source_url": "https://www.gesetze-im-internet.de/aufenthg_2004/__20a.html",
+    "checked_at": "2026-10-28T06:04:12.5042543+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_028.html",
+    "sha256": "eb92fe13bc22d367c47af60552258727f93af5b6e7aea9007d269e1ef16f87c9",
+    "bytes": 10477
+  },
+  {
+    "source_id": "global_029",
+    "source_url": "https://www.gesetze-im-internet.de/aufenthg_2004/__20b.html",
+    "checked_at": "2026-10-28T06:04:13.5259664+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_029.html",
+    "sha256": "7174c975f5e58d855d8b9ce39de9a1e5c49ecd5100d33a308f214e61961f0fb5",
+    "bytes": 8952
+  },
+  {
+    "source_id": "global_030",
+    "source_url": "https://www.gesetze-im-internet.de/aufenthg_2004/anlage.html",
+    "checked_at": "2026-10-28T06:04:14.5059910+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_030.html",
+    "sha256": "300115fbcf427d16ae105f4b34cd8f6ec452e228da4641703bd8bc37a0f4b00e",
+    "bytes": 6806
+  },
+  {
+    "source_id": "global_031",
+    "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+    "checked_at": "2026-10-28T06:04:15.4662763+09:00",
+    "status": "download_failed",
+    "error": "Response status code does not indicate success: 403 (Forbidden)."
+  },
+  {
+    "source_id": "global_032",
+    "source_url": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working_documents.html",
+    "checked_at": "2026-10-28T06:04:15.5820750+09:00",
+    "status": "download_failed",
+    "error": "Response status code does not indicate success: 403 (Forbidden)."
+  },
+  {
+    "source_id": "global_033",
+    "source_url": "https://www.make-it-in-germany.com/en/visa-recognition/opportunity-card/job-search",
+    "checked_at": "2026-10-28T06:04:15.6115156+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_033.html",
+    "sha256": "f4ebad70ee9fbb2a5296be28bd044a397237925389ac49095add903fed48b78b",
+    "bytes": 118379
+  },
+  {
+    "source_id": "global_034",
+    "source_url": "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/eu-blue-card",
+    "checked_at": "2026-10-28T06:04:17.3314748+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_034.html",
+    "sha256": "6aad60016f23f3991355276cf923e923d7334ddc9fb464b8626349aee6bd33fc",
+    "bytes": 118379
+  },
+  {
+    "source_id": "global_035",
+    "source_url": "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/qualified-professionals",
+    "checked_at": "2026-10-28T06:04:18.9468962+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_035.html",
+    "sha256": "2fae701a07a2bb0e1048e749c0a8d6569818f3258fe6b4a37d67dc1be3c110bf",
+    "bytes": 118379
+  },
+  {
+    "source_id": "global_036",
+    "source_url": "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/studying",
+    "checked_at": "2026-10-28T06:04:20.5574442+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/global/global_036.html",
+    "sha256": "0d5b5bf5635136bfb873ba06cf40027fe99abf6c34c5b77361f9cb5bf24fb055",
+    "bytes": 118379
+  },
+  {
+    "source_id": "global_037",
+    "source_url": "https://www.mofa.go.jp/j_info/visit/w_holiday/",
+    "checked_at": "2026-10-28T06:04:22.1026475+09:00",
+    "status": "download_failed",
+    "error": "Response status code does not indicate success: 403 (Forbidden)."
+  }
+]

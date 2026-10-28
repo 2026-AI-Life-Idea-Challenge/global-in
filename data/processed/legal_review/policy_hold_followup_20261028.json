@@ -1,0 +1,337 @@
+{
+  "reviewed_at": "2026-10-28",
+  "wording_updates": {
+    "CA_PGWP_POL_06": {
+      "text": "IRCC 업무 지침상 PGWP 부적격에는 종전 PGWP 발급, 영어·프랑스어 제2언어 또는 일반 교양 과정만 이수, 캐나다 소재 비캐나다 기관 과정, 비적격 DLI·과정 및 해당 원격수업 제한 위반 등이 포함된다. 귀국 의무가 명시된 Global Affairs Canada 장학금도 별도 제한이다. 공립기관의 교육과정을 사립기관이 제공하는 제휴과정은 원칙적으로 부적격이다. 타주 제휴과정은 2023-01-31까지 시작했거나 그날까지 수료하고 PGWP를 신청한 지정 경과 경로에서 나머지 요건 충족 시 적격일 수 있으며 2023-02-01 당일 이후 시작은 부적격이다. 동일 주 제휴과정은 2024-05-15 전 시작한 경우만 지정 경과 경로가 가능하고 2024-05-15 당일 이후 시작은 부적격이다. 이는 IRCC 업무 지침의 명시적 경계이며 일반 안내의 경계 표현 차이를 개인 자동 판정에 사용하지 않는다. 압축 과정은 실제 단축 수학기간만으로 본래 과정 길이를 줄이지 않으며, 전학·복수 과정 합산·승인된 학업 중단은 각 별도 조건과 증빙을 확인해야 한다.",
+      "scope": "IRCC 업무 지침의 부적격 사유·P3 날짜 경계에 한정한 새 문구. 원본 NULL 유지, 개별 적격 판단 제외.",
+      "findings": [
+        "타주 2023-02-01 포함·동일 주 2024-05-15 포함 부적격 경계를 업무 지침과 프랑스어 지침에서 대조했다.",
+        "일반 안내의 불명확한 경계는 업무 지침 출처를 명시한 문구로 대체하며 개인 판정에 적용하지 않는다."
+      ],
+      "capture_file": "follow_ca_operational_web_capture_20261028.json",
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/study-permits/post-graduation-work-permit-program.html"
+      ]
+    },
+    "US-F1-POL-005": {
+      "text": "신규 F/M 학생 비자는 과정 시작일 최대 365일 전부터 발급될 수 있지만 신규 학생의 미국 입국은 I-20 과정 시작일 30일 전보다 빨라서는 안 된다. 학생과 학교 담당자가 서명한 해당 I-20를 준비하고 비자 면접에 제출한다. 계속 재학 중이며 SEVP 인증 학교와 SEVIS 등록을 유지하는 학생의 비자·입국 시점은 신규 학생의 30일 제한과 구분한다. 비자나 I-20만으로 입국이 보장되지는 않는다.",
+      "scope": "신규/계속 학생의 국무부 안내상 비자 발급·입국 시점과 I-20 서명만. D/S·고정 체류기간·EOS·cap-gap 제외.",
+      "findings": [
+        "국무부 안내의 신규 학생 365일 발급과 30일 입국 제한을 구별했다.",
+        "계속 재학 예외를 보존하고 별도 체류기간 소송의 효력을 승인 범위에 포함하지 않았다."
+      ],
+      "capture_file": "follow_f1_web_capture_20261028.json",
+      "source_urls": [
+        "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html"
+      ]
+    },
+    "US-F1-POL-006": {
+      "text": "신규 F/M 학생은 I-20에 기재된 과정 시작일 30일 전부터 입국을 시도할 수 있으며 입국 심사에 여권·유효 비자와 서명된 I-20를 제시해야 한다. 실제 입국 허용은 CBP 심사 사항이다. 계속 재학하며 SEVP 인증 학교와 SEVIS 등록을 유지하는 학생에게 신규 학생의 30일 제한을 일괄 적용하지 않는다. I-20 소지나 비자 발급은 특정 체류기간·취업 허용의 보장이 아니다.",
+      "scope": "국무부 안내상 입국 제출자료·신규/계속 학생 시점만. 체류기간 규칙과 cap-gap 현행 효력 제외.",
+      "findings": [
+        "입국 제출자료와 신규 학생 30일 경계를 국무부 원문에서 확인했다.",
+        "불완전 추출 문장의 말미를 제거하고 CBP 입국 심사를 별도 명시했다."
+      ],
+      "capture_file": "follow_f1_web_capture_20261028.json",
+      "source_urls": [
+        "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html"
+      ]
+    },
+    "CA_PGWP_POL_01": {
+      "text": "PGWP 일반 경로는 적격 DLI의 적격 과정을 최소 8개월(해당 퀘벡 과정은 900시간) 이수하고 매 학기 전일제 상태를 유지해야 한다. 마지막 학기는 시간제 이수가 가능하다. 수료 확인 후 180일 내 신청과 수료 후 180일 중 study permit이 유효했던 시점이 있어야 하는 조건 및 별도 특수 사례·프로그램·소재지 요건을 함께 확인한다. DLI 재학만으로 자격이 보장되지는 않는다. 180일은 최종 성적 통지·수료 서면 통지·학위 등 증서 발급 중 최초 시점부터 계산하며 졸업식 날짜로 임의 대체하지 않는다.",
+      "scope": "IRCC 업무 지침의 해당 PGWP 조건 및 명시된 경과조치. 원본 NULL 유지·개별 적격/취업 판단 제외.",
+      "findings": [
+        "기존 승인 문구에 누락된 업무 지침의 날짜·예외·절차 분기를 대조해 새 버전으로 보완했다."
+      ],
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/study-permits/post-graduation-work-permit-program.html"
+      ],
+      "capture_file": "follow_ca_operational_web_capture_20261028.json"
+    },
+    "CA_PGWP_POL_03": {
+      "text": "2024-11-01 이후 PGWP 신청은 원칙적으로 영어 또는 프랑스어 증명이 필요하다. 학위·기타 대학 과정은 CLB/NCLC 7, 비대학 과정은 5를 네 영역 각각 충족하며 적격 비행학교 졸업은 예외다. 허용된 대면 시험의 결과는 신청 시 2년 미만이어야 한다. 장애로 영역 응시가 불가능한 경우에는 공식 평균점수·설명 제출 절차를 따른다. 문서 목록에서 optional로 표시되어도 해당 언어 증명 의무가 사라지지 않는다. 경과조치: 비대학 기관의 학사·석사·박사 학위 졸업자가 2024-11-01부터 2025-03-10까지 PGWP를 신청한 경우 CLB/NCLC 5 기준이며 2025-03-11부터 학위 졸업자 7 기준이다. 여권 유효기간 때문에 단축된 최초 PGWP의 연장 및 허가 조건 변경의 지정 언어 면제도 구분한다.",
+      "scope": "IRCC 업무 지침의 해당 PGWP 조건 및 명시된 경과조치. 원본 NULL 유지·개별 적격/취업 판단 제외.",
+      "findings": [
+        "기존 승인 문구에 누락된 업무 지침의 날짜·예외·절차 분기를 대조해 새 버전으로 보완했다."
+      ],
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/study-permits/post-graduation-work-permit-program.html"
+      ],
+      "capture_file": "follow_ca_operational_web_capture_20261028.json"
+    },
+    "CA_PGWP_POL_04": {
+      "text": "전공요건은 PGWP 신청일과 study permit 신청일을 구분한다. PGWP를 2024-11-01 전에 신청했거나 study permit을 그 전에 신청한 경우, 또는 학사·석사·박사 및 적격 비행학교 경로는 지정 면제를 확인한다. 적용 대상은 실제 졸업 과정의 6자리 CIP Canada 2021 코드가 study permit 신청 시 또는 PGWP 신청 시 적격 목록에 있는지 확인한다. 2026년 목록 동결을 영구 자격 보장으로 해석하지 않는다. 2024-11-01 전 study permit 신청에 따른 전공 면제는 동일 학업을 마치기 위한 이후 연장에도 적용 가능하다. 과거 permit 보유만으로 그날 이후 새 study permit 신청까지 면제하지 않는다.",
+      "scope": "IRCC 업무 지침의 해당 PGWP 조건 및 명시된 경과조치. 원본 NULL 유지·개별 적격/취업 판단 제외.",
+      "findings": [
+        "기존 승인 문구에 누락된 업무 지침의 날짜·예외·절차 분기를 대조해 새 버전으로 보완했다."
+      ],
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/study-permits/post-graduation-work-permit-program.html"
+      ],
+      "capture_file": "follow_ca_operational_web_capture_20261028.json"
+    },
+    "CA_PGWP_POL_07": {
+      "text": "PGWP 신청의 수료 후 180일 기한과 study permit 만료 후 신분회복의 90일 기한은 별도이며 둘 다 적용 여부를 확인한다. 신분회복 경로에서는 허가 승인 전 취업을 자동 허용하지 않는다. 유효 study permit 상태에서 PGWP 신청·과정 수료·종전 교외취업 자격 및 허용시간 준수 조건을 충족하면 심사 중 전일제 취업이 가능하며 거절 통지 시 중단한다. 허가기간은 과정·여권에 따르고, 2024-02-15 이후 적격 석사(최소 8개월/해당 퀘벡 900시간)는 다른 요건 충족 시 최대 3년 경로가 있다. 그 외 2년 미만 과정은 통상 과정 길이까지, 2년 이상은 최대 3년 경로다. 여권 만료로 단축된 경우의 연장과 복수 적격 과정 합산은 지정 조건을 별도 확인한다. 업무 지침상 캐나다 내 R199 신청 자격과 R197의 국외 처리 신청을 구분한다. 유학허가가 만료·무효인 경우 방문자 신분 유지 자체로 R199 자격이 생기지 않는다. R182 회복을 통한 동시 신청은 새 입학허가서 등 정규 유학허가 요건 및 그 허가 발급을 조건으로 처리하며 승인 전 R186(w) 취업을 허용하지 않는다.",
+      "scope": "IRCC 업무 지침의 해당 PGWP 조건 및 명시된 경과조치. 원본 NULL 유지·개별 적격/취업 판단 제외.",
+      "findings": [
+        "기존 승인 문구에 누락된 업무 지침의 날짜·예외·절차 분기를 대조해 새 버전으로 보완했다."
+      ],
+      "source_urls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/study-permits/post-graduation-work-permit-program.html"
+      ],
+      "capture_file": "follow_ca_operational_web_capture_20261028.json"
+    }
+  },
+  "remaining_dispositions": {
+    "AU_189_PT_POL_03": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "Thapa 및 Herath 2024 FCA547 원문 접근 실패. 2차 요약만으로 후속 판례와 현행 기술심사 날짜 경로를 승인하지 않았다."
+    },
+    "AU_190_POL_04": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "Thapa 및 Herath 2024 FCA547 원문 접근 실패. 2차 요약만으로 후속 판례와 현행 기술심사 날짜 경로를 승인하지 않았다."
+    },
+    "AU_462_FIRST_POL_05": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "법정 영어 증빙의 신청 후 시험 경로와 안내문 신청 전 12개월의 차이 및 Minister 판단 경로를 확인할 명시적 근거가 필요하다."
+    },
+    "AU_491_POL_04": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "Thapa 및 Herath 2024 FCA547 원문 접근 실패. 2차 요약만으로 후속 판례와 현행 기술심사 날짜 경로를 승인하지 않았다."
+    },
+    "US-WK-01-POL-0008": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "H-1B: 2026-09-30 Doc130 p34의 시행정책 vacatur·금지명령 확인. F-1: 2026-09-14 Doc50은 APA705 시행 연기이며 vacatur는 기각(재신청 가능). 이후 항소·명령 변동까지 확인한 것은 아니므로 현재 효력 보류 유지."
+    },
+    "US-WK-01-POL-0007": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "H-1B: 2026-09-30 Doc130 p34의 시행정책 vacatur·금지명령 확인. F-1: 2026-09-14 Doc50은 APA705 시행 연기이며 vacatur는 기각(재신청 가능). 이후 항소·명령 변동까지 확인한 것은 아니므로 현재 효력 보류 유지."
+    },
+    "US-WK-01-POL-0072": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "H-1B: 2026-09-30 Doc130 p34의 시행정책 vacatur·금지명령 확인. F-1: 2026-09-14 Doc50은 APA705 시행 연기이며 vacatur는 기각(재신청 가능). 이후 항소·명령 변동까지 확인한 것은 아니므로 현재 효력 보류 유지."
+    },
+    "US-WK-01-POL-0103": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "H-1B: 2026-09-30 Doc130 p34의 시행정책 vacatur·금지명령 확인. F-1: 2026-09-14 Doc50은 APA705 시행 연기이며 vacatur는 기각(재신청 가능). 이후 항소·명령 변동까지 확인한 것은 아니므로 현재 효력 보류 유지."
+    },
+    "US-WEST-01-POL-2026H1-ELIG-003": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-ELIG-001": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-ELIG-002": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-ELIG-004": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-ELIG-005": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-LANG-SHORT_TERM": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-LANG-MID_TERM": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-PROGRAM-SHORT_TERM": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-PROGRAM-MID_TERM": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-DOC-COND-001": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-DOC-COND-002": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-RESTRICT-004": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-APPLY-001": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-RESTRICT-001": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-RESTRICT-002": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-RESTRICT-003": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WK-01-POL-0022": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "H-1B: 2026-09-30 Doc130 p34의 시행정책 vacatur·금지명령 확인. F-1: 2026-09-14 Doc50은 APA705 시행 연기이며 vacatur는 기각(재신청 가능). 이후 항소·명령 변동까지 확인한 것은 아니므로 현재 효력 보류 유지."
+    },
+    "US-WK-01-POL-0053": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "H-1B: 2026-09-30 Doc130 p34의 시행정책 vacatur·금지명령 확인. F-1: 2026-09-14 Doc50은 APA705 시행 연기이며 vacatur는 기각(재신청 가능). 이후 항소·명령 변동까지 확인한 것은 아니므로 현재 효력 보류 유지."
+    },
+    "US-WK-01-POL-0057": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "H-1B: 2026-09-30 Doc130 p34의 시행정책 vacatur·금지명령 확인. F-1: 2026-09-14 Doc50은 APA705 시행 연기이며 vacatur는 기각(재신청 가능). 이후 항소·명령 변동까지 확인한 것은 아니므로 현재 효력 보류 유지."
+    },
+    "US-WK-01-POL-0092": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "H-1B: 2026-09-30 Doc130 p34의 시행정책 vacatur·금지명령 확인. F-1: 2026-09-14 Doc50은 APA705 시행 연기이며 vacatur는 기각(재신청 가능). 이후 항소·명령 변동까지 확인한 것은 아니므로 현재 효력 보류 유지."
+    },
+    "US-WK-01-POL-0100": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "H-1B: 2026-09-30 Doc130 p34의 시행정책 vacatur·금지명령 확인. F-1: 2026-09-14 Doc50은 APA705 시행 연기이며 vacatur는 기각(재신청 가능). 이후 항소·명령 변동까지 확인한 것은 아니므로 현재 효력 보류 유지."
+    },
+    "US-WEST-01-POL-2026H1-DOC-COMMON-001": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-DOC-COMMON-002": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-DOC-COMMON-003": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "US-WEST-01-POL-2026H1-DOC-COMMON-004": {
+      "lifecycle_disposition": "historical_notice_excluded",
+      "review_closed_for_current_catalog": true,
+      "reason": "2026 상반기 특정 모집 공고의 과거 레코드. 현행 일반 정책으로 승인하지 않고 원문·기간을 보존한다.",
+      "next_action": "향후 공고는 새 기간·새 ID로 별도 검토. 기존 H1 ID를 H2 문구로 덮어쓰지 않는다.",
+      "successor_notice_url": "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
+      "successor_approved": false,
+      "followup_finding": "H2 공식 공고 존재 확인. 보유 H2 PDF는 공고(안) 표기·FAQ 오류·재정 차이 및 첨부파일 출처 독립 확인이 남아 현행 승인에 사용하지 않는다."
+    },
+    "DE_WH_POL_03": {
+      "followup_checked_at": "2026-10-28",
+      "review_closed_for_current_catalog": false,
+      "followup_finding": "공관 독일어 원문의 각 EUR1000 공제·각 지급증명 문구 확인. 두 공제 합산 최저액의 명시적 설명은 확보하지 못해 EUR1500 자동 산정 보류."
+    }
+  }
+}

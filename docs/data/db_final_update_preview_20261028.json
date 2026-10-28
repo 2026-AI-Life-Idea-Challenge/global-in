@@ -1,0 +1,37 @@
+{
+  "mode": "read_only_preview",
+  "release_id": "knowledge-v1-20261028-f11f78920a87",
+  "counts": {
+    "program_profiles": 40,
+    "support_profiles": 12,
+    "documents": 582,
+    "program_support_links": 93,
+    "requirements": 582,
+    "preparation_items": 2
+  },
+  "embedding_executed": false,
+  "vector_count_before": 0,
+  "vector_count_after": 0,
+  "original_programs_policies_evidence_unchanged": true,
+  "service_gates_changed": false,
+  "backup_file": null,
+  "scope": {
+    "embedding_approval_changed": false,
+    "embedding_executed": false,
+    "full_eligibility_rules_complete": false,
+    "historical_excluded": 20,
+    "official_raw_documents_added": 0,
+    "policy_review_count": 570,
+    "program_count": 40,
+    "remaining": [
+      "비자·지원제도 전체 요건의 실행 가능한 규칙 변환과 테스트",
+      "조건별 공식 서류·절차·기한 추가 검증",
+      "워홀 등 목적별 지원제도의 추가 수집",
+      "UNKNOWN 모집 상태의 신청 직전 확인"
+    ],
+    "structured_automatic_rules": 0,
+    "support_coverage": "curated_initial_set_not_exhaustive",
+    "support_program_count": 12
+  },
+  "verified_at": "2026-10-28T12:18:27.983273"
+}

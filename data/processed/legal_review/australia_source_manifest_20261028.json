@@ -1,0 +1,237 @@
+[
+  {
+    "source_id": "regulations_volume1",
+    "source_url": "https://www.legislation.gov.au/F1996B03551/2026-10-02/2026-10-02/text/original/epub/OEBPS/document_1/document_1.html",
+    "checked_at": "2026-10-28T05:33:43.5135726+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/regulations_volume1.html",
+    "sha256": "e43c6dda5897e3c7078e8fd05596ecdc9f3d7f192a3e3a0616fe14701275ea08",
+    "bytes": 4101812
+  },
+  {
+    "source_id": "regulations_volume2",
+    "source_url": "https://www.legislation.gov.au/F1996B03551/2026-10-02/2026-10-02/text/original/epub/OEBPS/document_2/document_2.html",
+    "checked_at": "2026-10-28T05:33:43.5810018+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/regulations_volume2.html",
+    "sha256": "00dcbebaec7b82f881035f14e44ee7e54529588aed84dce01f9e310e840c5055",
+    "bytes": 2561166
+  },
+  {
+    "source_id": "regulations_volume3",
+    "source_url": "https://www.legislation.gov.au/F1996B03551/2026-10-02/2026-10-02/text/original/epub/OEBPS/document_3/document_3.html",
+    "checked_at": "2026-10-28T05:33:43.5961740+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/regulations_volume3.html",
+    "sha256": "17778e922056a5dfb57c79b5b1a4c392516355b64fa7b9483433292b94cf90ee",
+    "bytes": 1999634
+  },
+  {
+    "source_id": "student_reform_2026",
+    "source_url": "https://www.legislation.gov.au/F2026L01347/asmade/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html",
+    "checked_at": "2026-10-28T05:33:43.6124140+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/student_reform_2026.html",
+    "sha256": "2a050eb552f65c3485a37960e5dc90d16652df7d0a7eeb0483e4b2e310bfa43d",
+    "bytes": 32957
+  },
+  {
+    "source_id": "sid_reform_2024",
+    "source_url": "https://www.legislation.gov.au/F2024L01585/asmade/2024-12-06/text/original/epub/OEBPS/document_1/document_1.html",
+    "checked_at": "2026-10-28T05:33:43.6149782+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/sid_reform_2024.html",
+    "sha256": "668ff7d9f6fff958a973272901bc244137229fe855bb798d2ccee90f9455dbea",
+    "bytes": 135512
+  },
+  {
+    "source_id": "training_reform_2026",
+    "source_url": "https://www.legislation.gov.au/F2026L00221/asmade/2026-03-10/text/original/epub/OEBPS/document_1/document_1.html",
+    "checked_at": "2026-10-28T05:33:43.6178217+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/training_reform_2026.html",
+    "sha256": "e9247665d1788bbb159a89f05429e514d83cbb6f225a67f59316d8d9662ea2d6",
+    "bytes": 15938
+  },
+  {
+    "source_id": "english_482_2025",
+    "source_url": "https://www.legislation.gov.au/F2025L01066/asmade/2025-09-10/text/original/epub/OEBPS/document_1/document_1.html",
+    "checked_at": "2026-10-28T05:33:43.6204183+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/english_482_2025.html",
+    "sha256": "5efdc0ac7bdec12dc273f9a365e279effd7c25c7e76ba277dff743d6cdbc242c",
+    "bytes": 46461
+  },
+  {
+    "source_id": "wh_uk_exemption_2024",
+    "source_url": "https://www.legislation.gov.au/F2024L00661/asmade/2024-06-07/text/original/epub/OEBPS/document_1/document_1.html",
+    "checked_at": "2026-10-28T05:33:43.6229696+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/wh_uk_exemption_2024.html",
+    "sha256": "1c9bd8c709f1f965f1555a802f377dae8e13ddb055f16fb68e6235dc8d477bcc",
+    "bytes": 9043
+  },
+  {
+    "source_id": "exemptions_186_494",
+    "source_url": "https://www.legislation.gov.au/F2019L01404/2024-12-07/2024-12-07/text/1/epub/OEBPS/document_1/document_1.html",
+    "checked_at": "2026-10-28T05:33:43.6256788+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/exemptions_186_494.html",
+    "sha256": "2717b81a0cfb0418bb8470f78a938ce36be44e70a6f83b4d692a50b6de505601",
+    "bytes": 80718
+  },
+  {
+    "source_id": "student_classes",
+    "source_url": "https://www.legislation.gov.au/F2020L00955/2026-10-02/2026-10-02/text/original/epub/OEBPS/document_1/document_1.html",
+    "checked_at": "2026-10-28T05:33:43.6281206+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/student_classes.html",
+    "sha256": "7367cb26642233a8fd283a794e1939ce7fec0cef9caf5e145f39adbe1b0cc477",
+    "bytes": 94389
+  },
+  {
+    "source_id": "wh_age_reform_2026",
+    "source_url": "https://www.legislation.gov.au/F2026L00876/asmade/2026-06-30/text/original/epub/OEBPS/document_1/document_1.html",
+    "checked_at": "2026-10-28T05:33:43.6308923+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/wh_age_reform_2026.html",
+    "sha256": "74b98d4c4be7e3e7ed4c9cf57d45cad5bb2a45df3bb273b2a38675f78d9b3c55",
+    "bytes": 18738
+  },
+  {
+    "source_id": "wh_417_arrangements",
+    "source_url": "https://www.legislation.gov.au/F2026L00878/asmade/2026-06-30/text/original/epub/OEBPS/document_1/document_1.html",
+    "checked_at": "2026-10-28T05:33:43.6331579+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/wh_417_arrangements.html",
+    "sha256": "d828ef414717a3f195ebdce9fa9c9c383c88f26ed4a98905ee6b06ac6403e1b4",
+    "bytes": 39721
+  },
+  {
+    "source_id": "points_pass_mark",
+    "source_url": "https://www.legislation.gov.au/F2019L01400/asmade/2019-10-31/text/original/epub/OEBPS/document_1/document_1.html",
+    "checked_at": "2026-10-28T05:33:43.6358314+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/points_pass_mark.html",
+    "sha256": "972c72c93c43f657ad14efd8eb5e7332ef98a76990d8dc63f20535a0527580c6",
+    "bytes": 25807
+  },
+  {
+    "source_id": "english_500_2025",
+    "source_url": "https://www.legislation.gov.au/F2025L00906/latest/text",
+    "checked_at": "2026-10-28T05:33:43.6383461+09:00",
+    "status": "downloaded",
+    "resolved_source_url": "https://www.legislation.gov.au/F2025L00906/asmade/2025-08-06/text/original/epub/OEBPS/document_1/document_1.html",
+    "source_file": "data/raw/legal_review/20261028/australia/english_500_2025.html",
+    "sha256": "e4c387fbdf129449141fc6c445296e1faee78e33ef3c8cbb6b91b433652abd9e",
+    "bytes": 292884
+  },
+  {
+    "source_id": "english_levels_2025",
+    "source_url": "https://www.legislation.gov.au/F2025L00905/latest/text",
+    "checked_at": "2026-10-28T05:33:43.6446172+09:00",
+    "status": "downloaded",
+    "resolved_source_url": "https://www.legislation.gov.au/F2025L00905/asmade/2025-08-06/text/original/epub/OEBPS/document_1/document_1.html",
+    "source_file": "data/raw/legal_review/20261028/australia/english_levels_2025.html",
+    "sha256": "ddf1bd3e693591a6b876c44302a2d47ec7dd232af76683f9054067914047fd89",
+    "bytes": 94105
+  },
+  {
+    "source_id": "wh_462_arrangements",
+    "source_url": "https://www.legislation.gov.au/F2026L00883/asmade/text",
+    "checked_at": "2026-10-28T05:33:43.6476442+09:00",
+    "status": "downloaded",
+    "resolved_source_url": "https://www.legislation.gov.au/F2026L00883/asmade/2026-06-30/text/original/epub/OEBPS/document_1/document_1.html",
+    "source_file": "data/raw/legal_review/20261028/australia/wh_462_arrangements.html",
+    "sha256": "1f9f04d22b17812968695e6a8f8910f2237965e77c4b3db553b42122b4cccf68",
+    "bytes": 62503
+  },
+  {
+    "source_id": "skilled_occupations",
+    "source_url": "https://www.legislation.gov.au/F2019L00278/latest/text",
+    "checked_at": "2026-10-28T05:33:43.6506178+09:00",
+    "status": "downloaded",
+    "resolved_source_url": "https://www.legislation.gov.au/F2019L00278/2026-03-28/2026-03-28/text/original/epub/OEBPS/document_1/document_1.html",
+    "source_file": "data/raw/legal_review/20261028/australia/skilled_occupations.html",
+    "sha256": "be0a63a30b3e2d5b0b60654f9e8c101ddf5230d8604317ff122b6701d24cb4d5",
+    "bytes": 833789
+  },
+  {
+    "source_id": "occupations_482",
+    "source_url": "https://www.legislation.gov.au/F2024L01620/latest/text",
+    "checked_at": "2026-10-28T05:33:43.6564257+09:00",
+    "status": "downloaded",
+    "resolved_source_url": "https://www.legislation.gov.au/F2024L01620/2025-11-07/2025-11-07/text/original/epub/OEBPS/document_1/document_1.html",
+    "source_file": "data/raw/legal_review/20261028/australia/occupations_482.html",
+    "sha256": "42162853b65c0b930051a0fe44aa1ef84183b31b8b24f431209889469f7fb53d",
+    "bytes": 448822
+  },
+  {
+    "source_id": "occupations_494",
+    "source_url": "https://www.legislation.gov.au/F2019L01403/latest/text",
+    "checked_at": "2026-10-28T05:33:43.6629701+09:00",
+    "status": "downloaded",
+    "resolved_source_url": "https://www.legislation.gov.au/F2019L01403/2024-12-14/2024-12-14/text/original/epub/OEBPS/document_1/document_1.html",
+    "source_file": "data/raw/legal_review/20261028/australia/occupations_494.html",
+    "sha256": "d59cdab1d9821060e80b4318f5686350d06d0802b69abe4a027db39be322b2d8",
+    "bytes": 377619
+  },
+  {
+    "source_id": "mandatory_skills_482",
+    "source_url": "https://www.legislation.gov.au/F2018L00294/latest/text",
+    "checked_at": "2026-10-28T05:33:43.6670546+09:00",
+    "status": "downloaded",
+    "resolved_source_url": "https://www.legislation.gov.au/F2018L00294/2024-12-14/2024-12-14/text/original/epub/OEBPS/document_1/document_1.html",
+    "source_file": "data/raw/legal_review/20261028/australia/mandatory_skills_482.html",
+    "sha256": "80d0b058d0d87cac051f8e5f91493e934a66a9787b3c26f95b596e8d5ae1c22e",
+    "bytes": 104443
+  },
+  {
+    "source_id": "specified_work_462",
+    "source_url": "https://www.legislation.gov.au/F2022L00272/latest/text",
+    "checked_at": "2026-10-28T05:33:43.6700831+09:00",
+    "status": "downloaded",
+    "resolved_source_url": "https://www.legislation.gov.au/F2022L00272/2025-04-05/2025-04-05/text/original/epub/OEBPS/document_1/document_1.html",
+    "source_file": "data/raw/legal_review/20261028/australia/specified_work_462.html",
+    "sha256": "7fbba1817565d2fe66b73a656471b5fc06f87b5253326821d3e678ac9934bb02",
+    "bytes": 86880
+  },
+  {
+    "source_id": "specified_work_417",
+    "source_url": "https://www.legislation.gov.au/F2022L00271/latest/text",
+    "checked_at": "2026-10-28T05:33:43.6731849+09:00",
+    "status": "downloaded",
+    "resolved_source_url": "https://www.legislation.gov.au/F2022L00271/2025-04-05/2025-04-05/text/original/epub/OEBPS/document_1/document_1.html",
+    "source_file": "data/raw/legal_review/20261028/australia/specified_work_417.html",
+    "sha256": "fceb9c16a71e4d73479789742bd1a495d831b73e191c1091ac59c0d9f2324b32",
+    "bytes": 88090
+  },
+  {
+    "source_id": "occupations_186",
+    "source_url": "https://www.legislation.gov.au/F2024L01618/latest/text",
+    "checked_at": "2026-10-28T05:33:43.6761759+09:00",
+    "status": "downloaded",
+    "resolved_source_url": "https://www.legislation.gov.au/F2024L01618/2026-03-28/2026-03-28/text/original/epub/OEBPS/document_1/document_1.html",
+    "source_file": "data/raw/legal_review/20261028/australia/occupations_186.html",
+    "sha256": "ad71f913ab0aeb6a157aa4f215e2f9e90c0d2cbde65ac497becbd8c83ca2922c",
+    "bytes": 564729
+  },
+  {
+    "source_id": "act_volume1",
+    "source_url": "https://www.legislation.gov.au/C1958A00062/2026-10-08/2026-10-08/text/original/epub/OEBPS/document_1/document_1.html",
+    "checked_at": "2026-10-28T05:33:43.6804480+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/act_volume1.html",
+    "sha256": "52a074ece7fdf107db0802e2079a71870d33f75aeabb91b2ecb842537330d29b",
+    "bytes": 2670624
+  },
+  {
+    "source_id": "act_volume2",
+    "source_url": "https://www.legislation.gov.au/C1958A00062/2026-10-08/2026-10-08/text/original/epub/OEBPS/document_2/document_2.html",
+    "checked_at": "2026-10-28T05:33:45.0334904+09:00",
+    "status": "downloaded",
+    "source_file": "data/raw/legal_review/20261028/australia/act_volume2.html",
+    "sha256": "85cfa9c63bfebe5a85e2c2e84f7f69e66f38bcf77a522072a29c0f7796f6875c",
+    "bytes": 3635365
+  }
+]

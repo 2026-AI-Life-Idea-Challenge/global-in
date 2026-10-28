@@ -1,0 +1,22 @@
+{
+  "mode": "applied_and_verified",
+  "registry_sha256": "e3ab74207168122f8541f9ba5ada710eb8fc1aba032c79ec9228c5f9124919e6",
+  "total": 590,
+  "rows_needing_update": 590,
+  "approved_review_versions": 570,
+  "historical_excluded": 20,
+  "active_holds": 0,
+  "original_text_changed": false,
+  "service_gates_changed": false,
+  "additional_excluded_scope_issues": {},
+  "embedding_run": false,
+  "backup_file": "data/processed/legal_review/db_backups/policy_review_before_20261028T115252168754.json",
+  "namespace": "bounded_policy_review_20261028",
+  "applied_at": "2026-10-28T11:52:52.992344+09:00",
+  "internal_content_review_complete": true,
+  "interpretations_not_agency_rulings": [
+    "AU_462_FIRST_POL_05",
+    "DE_WH_POL_03"
+  ],
+  "development_view": "policy_reviewed_for_development"
+}

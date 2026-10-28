@@ -1,0 +1,52 @@
+{
+  "reviewed_at": "2026-10-28",
+  "english": {
+    "text": "최초 462의 Functional English는 Migration Act s5(2), Migration Regulations 5.17 및 462.211·462.215에 따라 해당되는 법정 증거와 충족 요건을 함께 확인한다. LIN25/014 s6의 경로에는 캐나다·뉴질랜드·아일랜드·영국·미국의 국적과 유효 여권, 영어로 전 기간 수업한 초등 전 과정+중등 3년 또는 중등 5년, 호주에서 영어로 진행한 지정 학위·디플로마 과정의 전일제 1년(또는 시간제 동등), 지정 시험 점수가 있다. reg5.17(c)의 전 수업이 영어인 최소 2년 전일제 학위·상위학위·디플로마·trade certificate 및 지정 증거를 제공할 수 없는 경우 5.17(d)의 장관 면접 판단도 별도다. 내무부의 462 안내는 이스라엘 국적·여권+영어 Bagrut 3 study units 경로도 명시한다. 이를 LIN25/014의 여권국 목록에 이스라엘이 추가된 법정 일괄 면제로 오인하지 않는다.\n2025-08-07 이후 지정 시험은 4개 영어 영역을 바탕으로 CELPIP General overall5, IELTS Academic/General 평균4.5, LANGUAGECERT Academic overall38, MET overall38, OET overall1020, PTE Academic overall24, TOEFL iBT total26 이상이다. 일반 Functional English 안내의 완전 온라인·재택 시험 제한과 시험별 인정 방식도 확인한다. LIN25/014 s6(c)(ii)는 신청일 직전 12개월 또는 신청일 당일·이후 시험을 명시한다. 462 안내의 오래된 시험 불인정·신청 전 준비 안내를 이 법정 사후시험 증거 경로를 삭제하는 조문으로 사용하지 않는다. 다만 사후시험의 증거 적격성과 해당 462 신청의 요건 충족 판단은 별도이므로 사후시험만으로 모든 신청이 자동 적격이라고 처리하지 않는다. Berenguel [2010] HCA8 [24]–[26]은 시간 제목만으로 사후 시험을 일률 배제하지 않는 해석 근거이며, 그 사건 자체는 당시 885에 관한 것으로 구분한다.\n2025-08-07 전 시험은 s7의 신청 전 12개월 및 시행 전 시험 조건 아래 IELTS 평균4.5·TOEFL total32·PTE overall30·CAE overall147 경과 경로를 구분한다. 2026-10-28 새 신청에는 2025-08-06 이전 시험이 이미 12개월을 넘었으므로 그 시험 점수가 높다는 이유로 경과 경로를 연장하지 않는다. 추가 정보는 결정 전 제출 가능하지만 법 s55(2)는 자료를 기다리기 위해 결정을 무조건 늦출 의무를 부과하지 않는다.",
+    "scope": "Functional English 법정 증거·시험 시점·시행 경과 및 462 공식 안내의 출처별 역할을 함께 보존한 일반 문구. 개인별 visa grant·재량 행사·사후시험만의 자동 적격 판단 제외.",
+    "findings": [
+      "명시적인 LIN25/014 6(c)(ii)(B)를 단순 안내나 시간 제목으로 삭제하지 않는 법령 우선순위를 적용했다.",
+      "Berenguel 원문 주문과 [24]–[26]을 직접 확인했다. 다른 subclass 판결을462의 직접 판결로 인용하지 않았다.",
+      "사후 증거 제출과 실제 사후 시험, 증거 경로와 비자 요건 충족, Bagrut 안내와 법정 여권국 증거 목록을 구분해 모순된 단정 대신 조건부 규칙으로 교정했다."
+    ],
+    "source_urls": [
+      "https://www.austlii.edu.au/cgi-bin/viewdoc/au/cases/cth/HCA/2010/8.html"
+    ],
+    "capture_file": "team_final_interpretive_evidence_20261028.json",
+    "supplemental_source_ids": [
+      "act_volume1",
+      "regulations_volume1",
+      "regulations_volume2"
+    ],
+    "additional_source_files": [
+      {
+        "source_url": "https://www.legislation.gov.au/F2025L00904/asmade/2025-08-06/text/original/epub/OEBPS/document_1/document_1.html",
+        "source_file": "data/processed/legal_review/australia_additional_instruments_web_capture_20261028.json"
+      },
+      {
+        "source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462#Eligibility",
+        "source_file": "data/processed/legal_review/team_completion_browser_evidence_20261028.json"
+      }
+    ],
+    "interpretation_type": "reviewer_analysis_of_primary_sources_not_new_agency_ruling"
+  },
+  "german_deduction": {
+    "formula": "3500 - 1000*n",
+    "qualifying_items": [
+      "paid return ticket",
+      "paid fixed accommodation for first three months"
+    ],
+    "n_values": [
+      0,
+      1,
+      2
+    ],
+    "derived_amounts_eur": [
+      3500,
+      2500,
+      1500
+    ],
+    "basis": "Embassy German je / jeweils and Korean 씩: each separately evidenced condition. Derived interpretation; not a quoted official example or guarantee of acceptance.",
+    "source_file": "team_final_interpretive_evidence_20261028.json"
+  },
+  "review_kind": "dated internal conditional policy wording adjudication; not individual visa decisions or independent lawyer sign-off"
+}

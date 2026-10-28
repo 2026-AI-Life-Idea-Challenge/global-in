@@ -47,6 +47,18 @@ def update_progress():
     progress['us_jp_detailed_scope_review']['priority_authority_holds'] = 8
     progress['final_legal_validation_completed'] = 0
     progress['final_legal_validation_percent'] = 0
+    registry_path = ROOT/'data/processed/legal_review/policy_content_approval_registry_20261028.json'
+    if registry_path.exists():
+        registry = json.loads(registry_path.read_text(encoding='utf-8'))
+        assert registry['input_sha256'] == package['input_sha256']
+        approved = sum(row['approval_status'] == 'policy_content_review_passed' and row['legal_validation_approved'] is True
+                       for row in registry['policies'].values())
+        progress['final_legal_validation_completed'] = approved
+        progress['final_legal_validation_percent'] = round(approved/progress['policy_total']*100, 2)
+        if approved:
+            progress['stage'] = ('global_wording_batch_decided_with_explicit_holds'
+                if registry['summary'].get('batch_decisions_recorded') == 590
+                else 'partial_policy_content_final_review_completed_service_release_pending')
     progress['database_changed'] = False
     write(path, progress)
 

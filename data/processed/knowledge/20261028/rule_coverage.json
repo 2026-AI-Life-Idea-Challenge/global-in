@@ -1,0 +1,23 @@
+{
+  "release_id": "knowledge-v1-20261028-b047abc2fee0",
+  "target_inventory_complete": true,
+  "full_eligibility_rules_complete": true,
+  "eligibility_complete_scope": "WEST 제외 39개 비자·12개 지원제도",
+  "total_targets": 52,
+  "partially_structured_targets": 51,
+  "manual_only_targets": 0,
+  "no_current_approved_requirements": [
+    "PROGRAM:US:US-WEST-01"
+  ],
+  "manual_requirements": 0,
+  "structured_requirements": 591,
+  "document_matrix_only_components": 155,
+  "official_assessment_root_count": 58,
+  "official_assessment_branch_count": 199,
+  "information_only_count": 19,
+  "conflict_guard_count": 8,
+  "source_gap_guard_count": 1,
+  "corpus_execution_paths_complete": true,
+  "substantive_criteria_exhaustiveness_certified": true,
+  "unresolved": []
+}

@@ -1,0 +1,19 @@
+{
+  "file": "data/exports/team_review_20261028.zip",
+  "sha256": "1a4db00e0216b138a6aa335767352f7fe1bb9ff9880d68889f771a5b4454bf07",
+  "bytes": 10649476,
+  "registry_sha256": "e3ab74207168122f8541f9ba5ada710eb8fc1aba032c79ec9228c5f9124919e6",
+  "counts": {
+    "programs": 40,
+    "support_programs": 7,
+    "evidence": 1241,
+    "policy_candidates": 590
+  },
+  "approved_versions": 570,
+  "source_files": 86,
+  "archive_reopened_and_verified": true,
+  "development_data_ready": true,
+  "internal_content_review_complete": true,
+  "independent_legal_opinion_complete": false,
+  "production_release_ready": false
+}

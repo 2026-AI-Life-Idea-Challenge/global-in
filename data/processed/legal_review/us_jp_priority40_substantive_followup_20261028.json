@@ -1,0 +1,618 @@
+{
+  "dataset_type": "us_jp_priority40_substantive_followup",
+  "review_date": "2026-10-28",
+  "source": "existing_policy_snapshot_and_statutory_review",
+  "record_count": 40,
+  "counts": {
+    "h1b_100k_litigation": 8,
+    "japan_working_holiday": 25,
+    "f1_statutory": 7
+  },
+  "important_findings": [
+    "H1B_100K_fee_enforcement_subject_to_2026_court_orders_and_appeals",
+    "JP_2026Q4_allows_zero_or_one_previous_WH_visa_while_older_QA_conflicts",
+    "F1_seven_statutory_review_records_exist_but_final_semantic_approval_is_pending"
+  ],
+  "findings_are_final_legal_approvals": false,
+  "legal_validation_approved": false,
+  "database_changed": false,
+  "records": [
+    {
+      "policy_id": "US-WK-01-POL-0008",
+      "topic": "h1b_100k_litigation",
+      "original_policy_text": "2025년 USCIS 지침은 일정한 H-1B 청원에 10만 달러 납부 요건을 적용한다고 명시했다. 현재 효력은 후속 법원 명령과 대조해야 한다.",
+      "assessment": "historical_claim_requires_court_order_scope_review",
+      "source_urls": [
+        "https://internationalcenter.umich.edu/about/news/100000-h-1b-executive-order-extended-fee-remains-blocked"
+      ],
+      "unresolved": [
+        "current_enforcement",
+        "appeal_or_stay",
+        "policy_specific_exceptions"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-WK-01-POL-0007",
+      "topic": "h1b_100k_litigation",
+      "original_policy_text": "2025년 포고령에 따라 일정한 H-1B 청원과 관련된 비자 발급·입국에 10만 달러 납부 조건이 제시됐다. 현재 집행 효력은 2026년 판결과 대조해야 한다.",
+      "assessment": "historical_claim_requires_court_order_scope_review",
+      "source_urls": [
+        "https://internationalcenter.umich.edu/about/news/100000-h-1b-executive-order-extended-fee-remains-blocked"
+      ],
+      "unresolved": [
+        "current_enforcement",
+        "appeal_or_stay",
+        "policy_specific_exceptions"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-WK-01-POL-0072",
+      "topic": "h1b_100k_litigation",
+      "original_policy_text": "2025년 포고령에 따른 일정 H-1B 청원의 10만 달러 추가 납부 조건이 USCIS 안내에 기재되어 있다. 법원 판결 이후의 집행 상태는 별도 검토해야 한다.",
+      "assessment": "historical_claim_requires_court_order_scope_review",
+      "source_urls": [
+        "https://internationalcenter.umich.edu/about/news/100000-h-1b-executive-order-extended-fee-remains-blocked"
+      ],
+      "unresolved": [
+        "current_enforcement",
+        "appeal_or_stay",
+        "policy_specific_exceptions"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-WK-01-POL-0103",
+      "topic": "h1b_100k_litigation",
+      "original_policy_text": "USCIS 안내에는 10만 달러 납부를 pay.gov를 통해 하도록 기재돼 있으나, 후속 법원 명령에 따른 현행 집행 여부를 확인해야 한다.",
+      "assessment": "historical_claim_requires_court_order_scope_review",
+      "source_urls": [
+        "https://internationalcenter.umich.edu/about/news/100000-h-1b-executive-order-extended-fee-remains-blocked"
+      ],
+      "unresolved": [
+        "current_enforcement",
+        "appeal_or_stay",
+        "policy_specific_exceptions"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-WK-01-POL-0022",
+      "topic": "h1b_100k_litigation",
+      "original_policy_text": "2026년 포고령 문구에 따르면 미국 밖에 있는 특정 H-1B 근로자의 청원에 10만 달러 납부 조건 및 국가이익 예외가 설정되어 있다. 법원 판결에 따른 집행 범위 확인이 필요하다.",
+      "assessment": "historical_claim_requires_court_order_scope_review",
+      "source_urls": [
+        "https://internationalcenter.umich.edu/about/news/100000-h-1b-executive-order-extended-fee-remains-blocked"
+      ],
+      "unresolved": [
+        "current_enforcement",
+        "appeal_or_stay",
+        "policy_specific_exceptions"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-WK-01-POL-0053",
+      "topic": "h1b_100k_litigation",
+      "original_policy_text": "2026년 포고령 문구는 효력 발생 후 입국 또는 입국 시도하는 특정 청원 수혜자에게 적용하고, 영사 통지·입국항 통지 등도 포함한다고 명시한다.",
+      "assessment": "historical_claim_requires_court_order_scope_review",
+      "source_urls": [
+        "https://internationalcenter.umich.edu/about/news/100000-h-1b-executive-order-extended-fee-remains-blocked"
+      ],
+      "unresolved": [
+        "current_enforcement",
+        "appeal_or_stay",
+        "policy_specific_exceptions"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-WK-01-POL-0057",
+      "topic": "h1b_100k_litigation",
+      "original_policy_text": "2026년 포고령 문구는 미국 외 체류자를 위한 특정 H-1B 청원 제출 전 고용주가 10만 달러 납부 증빙을 확보·보존하도록 규정한다. 집행 효력 검토가 필요하다.",
+      "assessment": "historical_claim_requires_court_order_scope_review",
+      "source_urls": [
+        "https://internationalcenter.umich.edu/about/news/100000-h-1b-executive-order-extended-fee-remains-blocked"
+      ],
+      "unresolved": [
+        "current_enforcement",
+        "appeal_or_stay",
+        "policy_specific_exceptions"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-WK-01-POL-0100",
+      "topic": "h1b_100k_litigation",
+      "original_policy_text": "2025년 USCIS 지침은 포고령 효력 발생 전 청원·기존 승인 청원·유효 H-1B 비자 보유자 등에 대한 적용 제외를 설명한다. 후속 효력 확인이 필요하다.",
+      "assessment": "historical_claim_requires_court_order_scope_review",
+      "source_urls": [
+        "https://internationalcenter.umich.edu/about/news/100000-h-1b-executive-order-extended-fee-remains-blocked"
+      ],
+      "unresolved": [
+        "current_enforcement",
+        "appeal_or_stay",
+        "policy_specific_exceptions"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-8401a71247c0d4e43fc4bb1b",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "Working-Holiday 제도를 이용하고 싶은 이유를 적은 진술서(일본어 또는 영어로 기재)",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-ef5d4fd5e19af42ba7396365",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "사증신청서 (소정양식: 한국어(PDF ) 영어(PDF ) ) ※ 사진부착: 대강 가로3.5cm X 세로4.5cm. 무배경 6개월 이내에 촬영한 것.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-b46cdf6c4ac08aaa18fb3fe0",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "이력서 (소정양식, 일본어 또는 영어로 기재)",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-6f5d3e261683b64d5aa32b26",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "여권복사(신분사항 란 및 지금까지 일본으로의 출입국도장이 있는 페이지 전부) ※1 아래 11의 자료에 있어서 만 18세 이후 90일이상의 출입국사실이 있는 경우는, 도항처를 불문하고, 해당하는 사증 및 출입국도장이 있는 페이지의 복사를 제출해 주십시오. ※2 과거에 워킹홀리데이 사증을 발급받은 경우에는 해당 사증이 부착된 페이지의 복사를 제출해 주십시오",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-970136ab34cc66d61e5fe5df",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "Working-Holiday 제도로 일본에 입국해서 무엇을 하고 싶은가를 적은 진술서(일본어 또는 영어로 기재) ※ 영어로 작성한 자는 영어능력입증자료(TOEFL,TOEIC,영어권의 대학 등의 졸업증명서 등)가 있는 경우는 제출해 주십시오. 또한 이들 입증자료가 없어도 신청은 가능합니다.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-c715475547da0fcc0fefacce",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "조사표 (소정양식, 일본어로 기재, 신청자 본인이 서명해 주십시오.) ※1~5의 서류는 반드시 신청자 본인이 작성해 주십시오.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-8370a129bb7b33c4bb8ed3b1",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "기본증명서 (상세)",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-297287b35131c1aaab60aa22",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "주민등록초본 ※ 주민등록증(앞, 뒷면) 복사 또는 주민등록등본도 신청은 가능합니다.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-0f19738f76eff5ce3e7f990b",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "재학증명서 또는 최종학력을 증명 하는 자료(졸업증명서 등) ※ 1.일본에 유학한 적이 있는 자(교환유학, 단기유학 등을 포함)는 재적한 학교의 졸업, 수료 등을 증명할 수 있는 자료를 제출해 주십시오. ※ 2.한국 및 일본 이외 국가 등의 대학교이나 대학원을 졸업 및 수료한 경우로 일본어, 한국어 및 영어 이외의 언어로 쓰여진 증명서인 경우, 번역을 첨부해 주십시오.(공증된 것) ※ 3.대학교나 대학원을 휴학하거나 퇴학한 경우 그것을 증명할 수 있는 서류를 제출해 주십시오.(휴학증명서, 제적증명서 등)",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-09a2d07f4b60ba8ae617d8c3",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "귀국 하기 위한 비행기 표를 구입할 수 있는 자금과 일본에서의 체재초기에 생계를 유지하기 위한 자금(1인: 280 만원 정도)을 소지한 것을 증명하는 은행 발행의 잔고증명서 ※ 학생 등이 가족으로부터 부양을 받고 있는 경우는 신청인 계좌(통장)가 아니라도 부양하는 가족의 은행 발행의 잔고증명서도 가능하지만, 이때는 부양자와의 관계를 알 수 있는 가족관계증명서를 제출해 주십시오.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-667c3c85a1be643c890d7102",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "한국의 출입국사실증명서 ※ 출생 후 현재까지의 기간의 출입국사실증명서를 제출해 주십시오. 또, 개명 등을 했을 경우, 개명 전후의 모든 기록을 제출해 주십시오.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-45947cca52da3ec434549dd9",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "제출 자료의 체크리스트(PDF ) ※ 반드시 신청인 본인이 작성하십시오. ※ 자료의 제출이 누락된 경우가 있으니, 제출하기 전에 신중하게 확인해주십시오.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-6ff49b598065727f4e9ebb0f",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "병역에 종사한 것을 증명할 수 있는 서류 (7의 주민등록초본과 겸용가능)",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-b4d544dfd74665d49a77a136",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "일본어능력입증자료 (일본국제교육지원협회인정의 일본어능력시험(JLPT)인정증, 일본어학교의 수료증서 등) 그 외에도 일본어 학습능력을 증명하는 자료(학습 기간이나 학습 내용이 기재되어 있는 것)가 있으면 제출해 주시기 바랍니다. 자료가 없다면 이력서나 사유서 안에서 지금까지의 일본어 학습이력에 대해 설명해 주시기 바랍니다.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-f8393e8d6f1d8da8055cdb11",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "대한민국에 거주하는 대한민국 국민일 것.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-8b804fe3bfeb2309fd2b2b60",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "대한민국에 거주하는 대한민국 국민일 것.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-f2b3c13e3729ec466981acca",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "사증신청 시점에서 원칙적으로 18세 이상 25세(부득이한 사정이 있다고 인정되는 경우는 30세) 이하일 것.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-6b986824f1c3095d6c1b0cf4",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "과거 워킹홀리데이 사증을 발급받은 횟수가 1회 또는 0회일 것.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-042a6b29505bb2833baa2522",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "자녀를 동반하지 않는 자일 것.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-c19b5e960c1c6cf759cdcf07",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "귀국 시 비행기 표를 구입하기에 충분한 자금과 일본에서의 체재 초기에 생계를 유지할 수 있을 만큼의 자금을 소지할 것 (280만원 정도).",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-f65c32fc6375614b0646e162",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "건강할 것.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-90c2c98c2f9ec0360560d8b1",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "일본에서 생활하기 위해 필요한 최저한도의 일본어 능력을 갖고 있거나, 혹은 습득할 의욕을 가질 것.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-1b1a2b57a695802cf1a9358e",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "주된 목적이 휴가를 보내기 위해 일본에 입국할 의도를 가질 것.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-7402f3813d9aa398419d6397",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "Possessing a valid passport of his or her country/region and a return travel ticket or sufficient funds with which to purchase such a ticket.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "JP-POL-54f47ecde2bc322be711ab35",
+      "topic": "japan_working_holiday",
+      "original_policy_text": "Possessing a valid passport of his or her country/region and a return travel ticket or sufficient funds with which to purchase such a ticket.",
+      "assessment": "official_general_and_2026q4_notice_comparison_pending_individual_clause",
+      "source_urls": [
+        "https://www.kr.emb-japan.go.jp/itpr_ko/visa_working.html",
+        "https://www.kr.emb-japan.go.jp/itpr_ko/working_holiday_20260930.html"
+      ],
+      "unresolved": [
+        "source_clause_scope",
+        "latest_notice_supersession",
+        "individual_eligibility"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-F1-POL-001",
+      "topic": "f1_statutory",
+      "statutory_review_record_present": true,
+      "assessment": "existing_statutory_review_requires_policy_exception_comparison",
+      "unresolved": [
+        "statutory_clause_alignment",
+        "exception_scope"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-F1-POL-002",
+      "topic": "f1_statutory",
+      "statutory_review_record_present": true,
+      "assessment": "existing_statutory_review_requires_policy_exception_comparison",
+      "unresolved": [
+        "statutory_clause_alignment",
+        "exception_scope"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-F1-POL-003",
+      "topic": "f1_statutory",
+      "statutory_review_record_present": true,
+      "assessment": "existing_statutory_review_requires_policy_exception_comparison",
+      "unresolved": [
+        "statutory_clause_alignment",
+        "exception_scope"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-F1-POL-004",
+      "topic": "f1_statutory",
+      "statutory_review_record_present": true,
+      "assessment": "existing_statutory_review_requires_policy_exception_comparison",
+      "unresolved": [
+        "statutory_clause_alignment",
+        "exception_scope"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-F1-POL-005",
+      "topic": "f1_statutory",
+      "statutory_review_record_present": true,
+      "assessment": "existing_statutory_review_requires_policy_exception_comparison",
+      "unresolved": [
+        "statutory_clause_alignment",
+        "exception_scope"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-F1-POL-006",
+      "topic": "f1_statutory",
+      "statutory_review_record_present": true,
+      "assessment": "existing_statutory_review_requires_policy_exception_comparison",
+      "unresolved": [
+        "statutory_clause_alignment",
+        "exception_scope"
+      ],
+      "legal_validation_approved": false
+    },
+    {
+      "policy_id": "US-F1-POL-007",
+      "topic": "f1_statutory",
+      "statutory_review_record_present": true,
+      "assessment": "existing_statutory_review_requires_policy_exception_comparison",
+      "unresolved": [
+        "statutory_clause_alignment",
+        "exception_scope"
+      ],
+      "legal_validation_approved": false
+    }
+  ]
+}

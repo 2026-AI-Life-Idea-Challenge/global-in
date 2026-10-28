@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "jurisdictions": 8,
+  "policy_links": 23,
+  "occupation_codes": 692,
+  "index_entries_replayed": 2594,
+  "primary_judgment_hold_preserved": true,
+  "bounded_english_correction_drafts_checked": 2,
+  "download_failures_not_misrepresented_as_archived": true,
+  "database_changed": false
+}

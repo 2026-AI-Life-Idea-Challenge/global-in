@@ -1,0 +1,49 @@
+{
+  "release_id": "knowledge-v1-20261028-b047abc2fee0",
+  "payload_file": "data/processed/knowledge/20261028/knowledge_release.json",
+  "payload_sha256": "b047abc2fee086f8be61b692ba085852467ec6d3916163e74725b05ce7c498b4",
+  "source_files": {
+    "data/processed/support_review/20261028/db_support_verification.json": "4784bd1c30ccfcdf5c887d760b08b8d40780800650c5ee38b1a40c82eeb25468",
+    "data/processed/support_review/20261028/preembed_verified_content.json": "c226d3f962f010d9432cdda3beeed2884c65272f2762e96dc7ed48bf3344bbfd",
+    "data/processed/support_review/20261028/db_support_scope_evidence.json": "e03cee48911d124ac54d0f79e64d609641f37d9ec5b690f851770a29d1841968",
+    "data/processed/support_review/20261028/qualification_followup_v3.json": "40f23b1c6c844e8c0ea89268a69837cf45887b48bdd7973301e8755874db9cb0",
+    "data/processed/support_review/20261028/preembed_kr_sources.json": "702a8f576be784cb7dbb1c83e1fb3bf834ac2318ed07916c77ea735e75f2491f",
+    "data/processed/support_review/20261028/availability_followup_v2.json": "191550dacf169995fc887e051947ded99d755a86a60dfbc214493083539973f0",
+    "data/processed/support_review/20261028/waterloo_verified_content.json": "9953a5f9bcc5c770846f8dd261a6f265f7e50a4574631faac7223b72680d040f"
+  },
+  "counts": {
+    "program_profiles": 40,
+    "support_profiles": 12,
+    "documents": 583,
+    "program_support_links": 93,
+    "requirements": 591,
+    "preparation_items": 23,
+    "rule_sets": 52
+  },
+  "scope": {
+    "program_count": 40,
+    "policy_review_count": 570,
+    "historical_excluded": 20,
+    "support_program_count": 12,
+    "support_coverage": "curated_initial_set_not_exhaustive",
+    "official_raw_documents_added": 0,
+    "structured_automatic_rules": 38,
+    "structured_condition_groups": 8,
+    "structured_visa_condition_groups": 292,
+    "rule_set_inventory_complete": true,
+    "full_eligibility_rules_complete": true,
+    "eligibility_complete_scope": "WEST(US:US-WEST-01) 제외 39개 비자 프로그램·12개 지원제도. WEST는 현재 회차 공식 공고 미게시로 근거 공백 차단 처리.",
+    "corpus_execution_paths_complete": true,
+    "substantive_criteria_exhaustiveness_certified": true,
+    "substantive_completeness_scope": "실행 경로 완성 및 잔여 검토 분기의 official_assessment 프로토콜 구현 기준. 기관 심사·개인 증빙은 인증된 검토 결과 저장소 연동 필요.",
+    "authenticated_review_store_integration_required": true,
+    "japan_document_matrix_components": 155,
+    "embedding_executed": false,
+    "embedding_approval_changed": false,
+    "remaining": [
+      "WEST 차기 회차 공식 공고 게시 후 요건 수집·구조화",
+      "기관·과정·모집회차별 세부 요건과 공식 검토 결과 저장소 연동",
+      "UNKNOWN 모집 상태의 신청 직전 확인"
+    ]
+  }
+}

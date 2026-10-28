@@ -1,0 +1,18 @@
+{
+  "mode": "read_only_preview",
+  "registry_sha256": "39dc630fd8591da3a354df534f1c8ab54b6de4353ed3f5ea4c8324e7501147f0",
+  "total": 590,
+  "rows_needing_update": 0,
+  "approved_review_versions": 569,
+  "historical_excluded": 20,
+  "active_holds": 1,
+  "original_text_changed": false,
+  "service_gates_changed": false,
+  "additional_excluded_scope_issues": {
+    "DE_WH_POL_03": "공관의 각(je) 공제 문언은 확보했으나 실제 중첩 인정 범위는 기관 확인 없이 확정하지 않는다."
+  },
+  "embedding_run": false,
+  "backup_file": null,
+  "namespace": "bounded_policy_review_20261028",
+  "applied_at": "2026-10-28T11:45:47.271236+09:00"
+}

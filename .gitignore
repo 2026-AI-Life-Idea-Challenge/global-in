@@ -22,6 +22,9 @@ Thumbs.db
 # Raw source data and local backups
 data/raw/
 _local_backup/
+data/processed/legal_review/db_backups/
+data/exports/*.zip
+data/exports/*.zip.tmp
 
 # Local JSON backups
 *.json.bak
@@ -36,3 +39,10 @@ data/processed/usa/employment/west/2026_second_half/logical_page_previews/
 /a policy and evidence draft datasets*
 /h origin develop
 /tralia visa HTML sources*
+
+# Temporary build outputs
+tmp/
+'source_url'
+
+# Intermediate knowledge release snapshots (keep only final)
+data/processed/knowledge/*/releases/

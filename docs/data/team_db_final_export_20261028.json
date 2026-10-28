@@ -1,0 +1,26 @@
+{
+  "file": "data/exports/team_db_final_20261028.zip",
+  "sha256": "ccde33d1489d541e20648e4bc4020e78f9fdbd7f17faedc7d856ed8c697760e6",
+  "bytes": 14008633,
+  "counts": {
+    "programs": 40,
+    "support_programs": 12,
+    "evidence": 1241,
+    "policy_candidates": 590,
+    "knowledge_releases": 5,
+    "program_profiles": 40,
+    "support_program_profiles": 12,
+    "program_support_links": 93,
+    "knowledge_documents": 584,
+    "knowledge_document_targets": 584,
+    "eligibility_requirements": 591,
+    "eligibility_rule_sets": 52,
+    "preparation_items": 23,
+    "knowledge_chunks": 0
+  },
+  "release_id": "knowledge-v1-20261028-aa8b46491234",
+  "source_files": 95,
+  "archive_reopened_and_verified": true,
+  "packaged_rule_tests_passed": true,
+  "embedding_executed": false
+}

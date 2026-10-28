@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-10-28",
+  "status": "passed",
+  "input_sha256": "043cf9bbb1d00c864d77912dca662e98960f5374766a219c36749bf7d2c69bd8",
+  "program_coverage": "20/20",
+  "policy_coverage": "223/223",
+  "verified_source_hashes": 25,
+  "provision_references": 186,
+  "supplemental_sections_verified": 4,
+  "original_policy_text_changed": false,
+  "approval_gate_violations": 0,
+  "ready_for_database_or_embedding": 0,
+  "pending_issue_groups": {
+    "ACT_CHARACTER_HISTORY": 35,
+    "AGREEMENT_TEXT": 29,
+    "STATE_NOMINATION": 23,
+    "INDIVIDUAL_OCCUPATION": 29,
+    "THAPA_PRIMARY_JUDGMENT": 1,
+    "GUIDANCE_LAW_TIMING": 2
+  },
+  "limitation": "원문·연결·승인 차단 검증이다. 법적 정확성에 대한 독립적인 최종 승인이 아니다."
+}

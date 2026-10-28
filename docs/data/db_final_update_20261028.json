@@ -1,0 +1,45 @@
+{
+  "mode": "applied_and_verified",
+  "release_id": "knowledge-v1-20261028-aa8b46491234",
+  "counts": {
+    "program_profiles": 40,
+    "support_profiles": 12,
+    "documents": 583,
+    "program_support_links": 93,
+    "requirements": 591,
+    "preparation_items": 23,
+    "rule_sets": 52
+  },
+  "embedding_executed": false,
+  "vector_count_before": 0,
+  "vector_count_after": 0,
+  "original_programs_policies_evidence_unchanged": true,
+  "service_gates_changed": false,
+  "backup_file": "data/processed/legal_review/db_backups/knowledge_before_20261028T134333472507.json",
+  "scope": {
+    "authenticated_review_store_integration_required": true,
+    "corpus_execution_paths_complete": true,
+    "embedding_approval_changed": false,
+    "embedding_executed": false,
+    "full_eligibility_rules_complete": false,
+    "historical_excluded": 20,
+    "japan_document_matrix_components": 155,
+    "official_raw_documents_added": 0,
+    "policy_review_count": 570,
+    "program_count": 40,
+    "remaining": [
+      "프로그램별 전체 실체 요건·예외의 누락 여부 검증",
+      "WEST의 현재 모집 회차 근거 공백",
+      "기관·과정·모집회차별 세부 요건과 공식 검토 결과 저장소 연동",
+      "UNKNOWN 모집 상태의 신청 직전 확인"
+    ],
+    "rule_set_inventory_complete": true,
+    "structured_automatic_rules": 38,
+    "structured_condition_groups": 8,
+    "structured_visa_condition_groups": 292,
+    "substantive_criteria_exhaustiveness_certified": false,
+    "support_coverage": "curated_initial_set_not_exhaustive",
+    "support_program_count": 12
+  },
+  "verified_at": "2026-10-28T13:43:35.023019"
+}

@@ -1,0 +1,56 @@
+{
+  "input_sha256": "043cf9bbb1d00c864d77912dca662e98960f5374766a219c36749bf7d2c69bd8",
+  "policies": {
+    "AU_482_CORE_POL_13": {
+      "policy_id": "AU_482_CORE_POL_13",
+      "version": "english-timing-v1-20261028",
+      "scope": "timing clarification only; not a replacement for the complete English requirement",
+      "reviewer_paraphrase": "2025-09-13 이후 신청에 적용되는 LIN 25/082의 경로를 구분한다. 제6조 경로의 시험일 유효기간은 해당 점수의 증거를 제출한 날 전 3년 이하이며, 구성 영역 재응시가 있는 경우 원래 시험일과 재응시일을 구분한다. 재응시일만으로 원래 시험일의 유효기간이 자동 연장되지는 않는다. 시행 전 시험에 제7조를 적용하는 경우에는 해당 신청일 직전 3년 및 해당 표의 점수를 단일 응시에서 취득한 조건을 확인한다. 이 교정본은 유효기간 설명만 다루며 면제·시험별 점수·승인된 시험 방식은 별도 검토 대상이다.",
+      "source": {
+        "source_id": "english_482_2025",
+        "source_url": "https://www.legislation.gov.au/F2025L01066/asmade/2025-09-10/text/original/epub/OEBPS/document_1/document_1.html",
+        "checked_at": "2026-10-28T05:33:43.6204183+09:00",
+        "status": "downloaded",
+        "source_file": "data/raw/legal_review/20261028/australia/english_482_2025.html",
+        "sha256": "5efdc0ac7bdec12dc273f9a365e279effd7c25c7e76ba277dff743d6cdbc242c",
+        "bytes": 46461
+      },
+      "provision_refs": [
+        "english_482_2025:6",
+        "english_482_2025:7",
+        "english_482_2025:8"
+      ],
+      "original_policy_text_sha256": "c192bb3d0aab8a69ac63c5756070efe98ec173ef1f0a1c8ff1013ab8b011930e",
+      "status": "correction_prepared_awaiting_complete_policy_content_review",
+      "legal_validation_approved": false,
+      "database_applied": false,
+      "approved_for_embedding": false
+    },
+    "AU_482_SPECIALIST_POL_12": {
+      "policy_id": "AU_482_SPECIALIST_POL_12",
+      "version": "english-timing-v1-20261028",
+      "scope": "timing clarification only; not a replacement for the complete English requirement",
+      "reviewer_paraphrase": "2025-09-13 이후 신청에 적용되는 LIN 25/082의 경로를 구분한다. 제6조 경로의 시험일 유효기간은 해당 점수의 증거를 제출한 날 전 3년 이하이며, 구성 영역 재응시가 있는 경우 원래 시험일과 재응시일을 구분한다. 재응시일만으로 원래 시험일의 유효기간이 자동 연장되지는 않는다. 시행 전 시험에 제7조를 적용하는 경우에는 해당 신청일 직전 3년 및 해당 표의 점수를 단일 응시에서 취득한 조건을 확인한다. 이 교정본은 유효기간 설명만 다루며 면제·시험별 점수·승인된 시험 방식은 별도 검토 대상이다.",
+      "source": {
+        "source_id": "english_482_2025",
+        "source_url": "https://www.legislation.gov.au/F2025L01066/asmade/2025-09-10/text/original/epub/OEBPS/document_1/document_1.html",
+        "checked_at": "2026-10-28T05:33:43.6204183+09:00",
+        "status": "downloaded",
+        "source_file": "data/raw/legal_review/20261028/australia/english_482_2025.html",
+        "sha256": "5efdc0ac7bdec12dc273f9a365e279effd7c25c7e76ba277dff743d6cdbc242c",
+        "bytes": 46461
+      },
+      "provision_refs": [
+        "english_482_2025:6",
+        "english_482_2025:7",
+        "english_482_2025:8"
+      ],
+      "original_policy_text_sha256": "8f50336188be27c2e2a6ff411d5aef5568cee0595161fe24bed3cae1305110a4",
+      "status": "correction_prepared_awaiting_complete_policy_content_review",
+      "legal_validation_approved": false,
+      "database_applied": false,
+      "approved_for_embedding": false
+    }
+  },
+  "original_policy_replaced": false
+}

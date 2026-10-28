@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "approved_content_versions": 570,
+  "total_policies": 590,
+  "not_approved": 20,
+  "decisions_recorded": 590,
+  "percentage": 96.61,
+  "source_hashes_verified": true,
+  "original_snapshot_unchanged": true,
+  "service_release_approvals": 0,
+  "lawyer_signatures": 0,
+  "database_changed": false,
+  "meaning": "Bounded policy wording/version review; no individual visa eligibility or government approval."
+}

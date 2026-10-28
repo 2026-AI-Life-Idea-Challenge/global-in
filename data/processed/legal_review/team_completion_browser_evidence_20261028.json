@@ -1,0 +1,57 @@
+{
+  "captured_at": "2026-10-28",
+  "capture_kind": "reviewer_transcription_of_browser_accessibility_output",
+  "hash_scope": "This saved record and transcribed excerpts, not origin HTML bytes",
+  "observations": [
+    {
+      "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "last_updated": "09/21/2026",
+      "observed_via": "cua_repl tab 8 AX elements 105,209-224",
+      "excerpt": "On July 24, 2026, the First Circuit denied the government’s motion. DHS strongly disagrees with the First Circuit’s order denying the stay request but will comply with the court’s order while DHS considers next steps. If this order is later lifted, DHS still plans to collect the payment.",
+      "finding": "Official alert is still displayed alongside old payment instructions. Old pay.gov instructions cannot establish current collection duty; read with Sept 30 Doc130."
+    },
+    {
+      "url": "https://www.austlii.edu.au/cgi-bin/viewdoc/au/cases/cth/FCCA/2021/686.html",
+      "observed_via": "cua_repl tab 9 AX",
+      "case": "[2021] FCCA 686, SYG3328/2019, 12 April2021",
+      "orders": [
+        "Application upheld",
+        "AAT decision quashed",
+        "Mandamus for determination according to law"
+      ],
+      "paras_28_30": "60-day invitation period; no express date-of-invitation restriction in the skills-assessment clause; additional updated assessment during invitation period considered. Original assessment expired by statutory three-year rule."
+    },
+    {
+      "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2024/2024fca0547",
+      "observed_via": "cua_repl tab10 AX",
+      "case": "[2024] FCA547, WAD29/2023, O'Sullivan J, 15 May2024",
+      "paras_23_25": "23 Mr Herath referred to two cases in the course of his submissions, Thapa v Minister for Immigration [2021] FCCA 686, and De Guzman [2022] AATA 5097. I have considered both those cases. 24 Thapa does not assist the appellants. Although the general principles espoused in that matter, which in turn rely on the High Court in Berenguel v Minister for Immigration and Citizenship [2010] HCA 8, may well be applicable to Mr Herath’s position. 25 At no time within the three years prior to the making of the visa application, nor in the period up to the time the delegate refused the visa, did Mr Herath satisfy the criteria.",
+      "finding": "187.232 competent English; no suitable scores in relevant periods. Not a reversal of Thapa skills-assessment invitation-period rule."
+    },
+    {
+      "url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skills-assessment",
+      "last_updated": "12 October2026",
+      "observed_via": "cua_repl tab11 AX149-181",
+      "excerpt": "Delegates of the Minister will now accept a suitable skills assessment for an applicant’s nominated skilled occupation which has been obtained within the 60 day invitation period.",
+      "limitations": "Same page preserves Minister's position that Thapa wrongly decided; generic pre-invitation warning remains elsewhere. Applies listed GSM189,190,489,491; valid for three years or shorter specified period; not485 provisional. AHPRA full/general or unsupervised conditional specialist registration and state/territory legal admission routes."
+    },
+    {
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462/first-work-holiday-462#Eligibility",
+      "last_updated": "23 September2026",
+      "observed_via": "cua_repl tab12 AX271-287",
+      "routes": [
+        "citizenship and valid passport UK/USA/Canada/NewZealand/Ireland",
+        "Israel citizenship and passport plus English Bagrut3 study units",
+        "English-medium education",
+        "approved test/assessment"
+      ],
+      "timing_excerpt": "You must have undertaken your English language test or assessment within 12 months of submitting your application. This applies even if you received a test score higher than ‘functional English’. We cannot accept a result of functional or higher if the test is older than 12 months at the time of application."
+    },
+    {
+      "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+      "last_updated": "01/17/2025",
+      "observed_via": "cua_repl tab8 AX95",
+      "excerpt": "The “cap-gap” period starts when an F-1 student’s status and employment authorization expires and, unless terminated, ends on April 1 of the fiscal year for which the H-1B status is being requested or until the validity start date of the approved petition, whichever is earlier."
+    }
+  ]
+}

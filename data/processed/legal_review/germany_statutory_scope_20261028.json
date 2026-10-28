@@ -1,0 +1,318 @@
+{
+  "reviewed_at": "2026-10-28",
+  "input_sha256": "043cf9bbb1d00c864d77912dca662e98960f5374766a219c36749bf7d2c69bd8",
+  "policies": {
+    "DE_OPP_POL_01": {
+      "policy_id": "DE_OPP_POL_01",
+      "program_id": "DE:opportunity_card",
+      "reviewer_paraphrase": "독일에서 인정되는 전문인력 경로는 점수 경로와 구분한다. 점수·언어 증명 면제와 생계 확보 요건을 혼동하지 않는다.",
+      "official_sources_read": [
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__20a.html",
+        "https://www.make-it-in-germany.com/en/visa-recognition/opportunity-card/job-search"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_OPP_POL_02": {
+      "policy_id": "DE_OPP_POL_02",
+      "program_id": "DE:opportunity_card",
+      "reviewer_paraphrase": "점수 경로는 인정 대상 외국 자격, 독일어 A1 또는 영어 B2 및 최소 6점을 함께 검토한다. §20b상 신청 시 만 35세 이하는 2점, 35세 초과 40세 이하는 1점이다. 언어 점수 중복과 경력 산정 기간은 별도 확인한다.",
+      "official_sources_read": [
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__20a.html",
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__20b.html",
+        "https://www.gesetze-im-internet.de/aufenthg_2004/anlage.html",
+        "https://www.make-it-in-germany.com/en/visa-recognition/opportunity-card/job-search"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_SKILLED_POL_01": {
+      "policy_id": "DE_SKILLED_POL_01",
+      "program_id": "DE:skilled_worker",
+      "reviewer_paraphrase": "직업교육 전문인력은 자격을 요하는 취업을 할 수 있다. 모든 일자리가 허용된다는 뜻은 아니다. 규제 직업 면허, 고용 승인, 45세 관련 조건은 별도 심사한다.",
+      "official_sources_read": [
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__18a.html",
+        "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/qualified-professionals"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "적용 시점·경과조치·개별 예외에 대한 최종 법률 승인 미완료",
+        "§18 및 §18b 직접 대조 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_SKILLED_POL_02": {
+      "policy_id": "DE_SKILLED_POL_02",
+      "program_id": "DE:skilled_worker",
+      "reviewer_paraphrase": "학위 전문인력 경로의 공식 안내는 확인했으나 §18b 및 공통 §18 본문 직접 열람은 시간 초과로 완료하지 못했다. 공통 요건과 45세 관련 예외는 보류한다.",
+      "official_sources_read": [
+        "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/qualified-professionals"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "적용 시점·경과조치·개별 예외에 대한 최종 법률 승인 미완료",
+        "§18 및 §18b 직접 대조 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_BLUE_CARD_POL_01": {
+      "policy_id": "DE_BLUE_CARD_POL_01",
+      "program_id": "DE:eu_blue_card",
+      "reviewer_paraphrase": "자격과 직무의 적합성, 최소 6개월 고용 및 해당 연도 급여 기준을 함께 적용한다. 동등 고등교육 자격은 최소 3년 및 ISCED/EQF 수준 조건을 확인한다. 2026년 안내의 일반 급여 기준은 연 50,700유로이다.",
+      "official_sources_read": [
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__18g.html",
+        "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/eu-blue-card"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_BLUE_CARD_POL_02": {
+      "policy_id": "DE_BLUE_CARD_POL_02",
+      "program_id": "DE:eu_blue_card",
+      "reviewer_paraphrase": "부족 직종은 법정 ISCO 분류로 확인한다. 2026년 하한 연 45,934.20유로와 연방고용청 승인 조건을 함께 기록하며 직함만으로 부족 직종을 확정하지 않는다.",
+      "official_sources_read": [
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__18g.html",
+        "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/eu-blue-card"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_BLUE_CARD_POL_03": {
+      "policy_id": "DE_BLUE_CARD_POL_03",
+      "program_id": "DE:eu_blue_card",
+      "reviewer_paraphrase": "신규 졸업자 경로는 신청 전 학위 취득 후 3년 이하인 경우를 포함한다(§18g(1)). 원문 안내의 less than 3 years를 엄격한 3년 미만으로 적용하지 않는다. 하한 급여와 연방고용청 승인도 필요하며 갱신은 별도 조건이다.",
+      "official_sources_read": [
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__18g.html",
+        "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/eu-blue-card"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_BLUE_CARD_POL_04": {
+      "policy_id": "DE_BLUE_CARD_POL_04",
+      "program_id": "DE:eu_blue_card",
+      "reviewer_paraphrase": "무학위 IT 경로는 해당 직종 분류, 최근 7년 중 최소 3년의 학위 수준 경력, 최소 6개월 고용, 급여 및 연방고용청 승인을 함께 확인한다.",
+      "official_sources_read": [
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__18g.html",
+        "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/eu-blue-card"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_STUDY_VISA_POL_01": {
+      "policy_id": "DE_STUDY_VISA_POL_01",
+      "program_id": "DE:study_visa",
+      "reviewer_paraphrase": "원칙적인 전일제 입학과 조건부 입학·준비 과정·시간제의 별도 허가 경로를 구분한다. 모든 교육기관의 입학이 동일한 체류 근거가 되는 것은 아니다.",
+      "official_sources_read": [
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html",
+        "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/studying"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_STUDY_VISA_POL_02": {
+      "policy_id": "DE_STUDY_VISA_POL_02",
+      "program_id": "DE:study_visa",
+      "reviewer_paraphrase": "2026년 공식 안내의 연 11,904유로는 입학 후 유학 경로의 기준이다. 차단계좌 외 장학금·보증서 대안과 입학처 탐색 경로의 월 1,091유로를 구분한다.",
+      "official_sources_read": [
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html",
+        "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/studying"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_STUDY_VISA_POL_03": {
+      "policy_id": "DE_STUDY_VISA_POL_03",
+      "program_id": "DE:study_visa",
+      "reviewer_paraphrase": "언어 증명은 입학 심사에서 이미 확인되지 않았고 준비 과정에서 취득할 예정도 아닌 경우 요구된다(§16b(1)). 안내의 통상 B2를 모든 신청자의 일률적 별도 증명 의무로 적용하지 않는다.",
+      "official_sources_read": [
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html",
+        "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/studying"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_SEEKING_HIGHER_EDUCATION_PLACE_POL_01": {
+      "policy_id": "DE_SEEKING_HIGHER_EDUCATION_PLACE_POL_01",
+      "program_id": "DE:seeking_higher_education_place",
+      "reviewer_paraphrase": "§17(2)는 학업 자격이 이미 있거나 최대 9개월 탐색 체류 중 취득할 수 있는 경우를 포함한다. §17(1)의 직업훈련 탐색 연령 제한을 대학 입학처 탐색에 옮겨 적용하지 않는다.",
+      "official_sources_read": [
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__17.html",
+        "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/studying"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_SEEKING_HIGHER_EDUCATION_PLACE_POL_02": {
+      "policy_id": "DE_SEEKING_HIGHER_EDUCATION_PLACE_POL_02",
+      "program_id": "DE:seeking_higher_education_place",
+      "reviewer_paraphrase": "§17(2)의 언어 조건은 이미 충족하거나 해당 탐색 체류 중 충족할 수 있는 경우를 포함한다. 반드시 입국 전 전부 충족해야 한다는 요건으로 축약하지 않는다.",
+      "official_sources_read": [
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__17.html",
+        "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/studying"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_SEEKING_HIGHER_EDUCATION_PLACE_POL_03": {
+      "policy_id": "DE_SEEKING_HIGHER_EDUCATION_PLACE_POL_03",
+      "program_id": "DE:seeking_higher_education_place",
+      "reviewer_paraphrase": "생계 확보를 별도로 확인한다. 2026년 안내의 월 1,091유로와 차단계좌·보증서 대안을 기록한다. 최대 체류 기간 및 부수 취업은 유학 허가와 구분한다.",
+      "official_sources_read": [
+        "https://www.gesetze-im-internet.de/aufenthg_2004/__17.html",
+        "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/studying"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_WH_POL_01": {
+      "policy_id": "DE_WH_POL_01",
+      "program_id": "DE:working_holiday",
+      "reviewer_paraphrase": "한국 국적 대상 워킹홀리데이는 최대 12개월이며 취업은 여행 경비 보충 목적이라는 안내 범위를 보존한다.",
+      "official_sources_read": [
+        "https://seoul.diplo.de/kr-ko/service/1694216-1694216"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_WH_POL_02": {
+      "policy_id": "DE_WH_POL_02",
+      "program_id": "DE:working_holiday",
+      "reviewer_paraphrase": "서울 독일 공관 안내의 신청 시 18~34세, 자녀 동반 불가 및 배우자 별도 자격 조건을 보존한다. 배우자 동반과 모든 가족의 독립 입국을 동일시하지 않는다.",
+      "official_sources_read": [
+        "https://seoul.diplo.de/kr-ko/service/1694216-1694216"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_WH_POL_03": {
+      "policy_id": "DE_WH_POL_03",
+      "program_id": "DE:working_holiday",
+      "reviewer_paraphrase": "기본 3,500유로와 항공권·선납 숙소 관련 감액 증빙을 구분한다. 감액의 중복 적용은 자동 계산하지 않는다. 최근 발급 영문 잔고 및 전 체류 기간 보험의 담보별 조건을 보존한다.",
+      "official_sources_read": [
+        "https://seoul.diplo.de/kr-ko/service/1694216-1694216"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_WH_POL_04": {
+      "policy_id": "DE_WH_POL_04",
+      "program_id": "DE:working_holiday",
+      "reviewer_paraphrase": "수수료 75유로의 원화 환산은 신청일 환율에 따르며 환불 조건과 분리한다. 원화 고정 금액으로 저장하지 않는다.",
+      "official_sources_read": [
+        "https://seoul.diplo.de/kr-ko/service/1694216-1694216"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    },
+    "DE_WH_POL_05": {
+      "policy_id": "DE_WH_POL_05",
+      "program_id": "DE:working_holiday",
+      "reviewer_paraphrase": "통상 3~5일은 처리 보장이 아니다. 추가 서류, 본인 신청 및 1회 참여 조건을 각각 보존한다.",
+      "official_sources_read": [
+        "https://seoul.diplo.de/kr-ko/service/1694216-1694216"
+      ],
+      "source_capture_method": "official web page read on 2026-10-28; no local source hash asserted",
+      "pending_items": [
+        "최종 법률 승인 및 개별 적용 심사 미완료"
+      ],
+      "original_policy_text_changed": false,
+      "legal_validation_approved": false,
+      "database_applied": false
+    }
+  },
+  "summary": {
+    "total": 19,
+    "scope_notes_recorded": 19,
+    "final_legal_validation_completed": 0,
+    "database_changed": false
+  },
+  "limitations": [
+    "공식 웹 열람에 근거한 검토자 요약이며 법령 원문 인용이나 최종 승인 기록이 아니다.",
+    "§18 및 §18b 직접 본문은 시간 초과로 확인 미완료. 급여는 2026년 안내 값이며 매년 재확인한다."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "captured_at": "2026-10-28",
+  "capture_kind": "reviewer_transcription_of_browser_accessibility_output",
+  "observations": [
+    {
+      "source_url": "https://www.austlii.edu.au/cgi-bin/viewdoc/au/cases/cth/HCA/2010/8.html",
+      "case": "Berenguel [2010] HCA8",
+      "observed_via": "cua_repl tab14, full judgment",
+      "finding": "The High Court's orders answered yes to post-lodgement IELTS report satisfying the old885 criterion. Paras24-26 distinguish specific wording from a time-of-application heading; the test in the case was actually taken after application. This is interpretive context, not a direct ruling on present462."
+    },
+    {
+      "source_url": "https://seoul.diplo.de/kr-de/service/05-visaeinreise/1991194-1991194",
+      "observed_via": "cua_repl tab15 AX100",
+      "excerpt": "dieser Betrag reduziert sich um je 1.000,- EUR bei Vorlage eines Rückflugtickets oder Nachweis einer festen Unterkunft für die ersten drei Monate - jeweils mit Zahlungsnachweis",
+      "reviewer_inference": "The word je associates EUR1000 with each evidenced item. Conditional derived arithmetic: 3500-1000*n where n=0,1,2 distinct qualifying items actually accepted. 1500 for both accepted is reviewer-derived, not a separately quoted embassy example or a guarantee of evidence acceptance."
+    }
+  ]
+}
