@@ -13,6 +13,7 @@ from utils.session import (
     init_session,
     PAGE_HOME, PAGE_CHAT, PAGE_PROGRAMS,
     PAGE_PREPARATION, PAGE_PROFILE,
+    PAGE_RESULT, PAGE_COMPARE,
 )
 
 # ── 페이지 설정 ────────────────────────────────────────────
@@ -59,6 +60,13 @@ elif page == PAGE_PREPARATION:
 
 elif page == PAGE_PROFILE:
     from pages.profile import render
+    render()
+elif page == PAGE_RESULT:
+    from pages.result import render
+    render()
+
+elif page == PAGE_COMPARE:
+    from pages.compare import render
     render()
 
 else:

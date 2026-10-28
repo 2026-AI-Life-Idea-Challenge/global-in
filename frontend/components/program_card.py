@@ -4,20 +4,29 @@ frontend/components/program_card.py
 """
 import streamlit as st
 
+MAX_COMPARE = 3
+
+
+def _compare_ids() -> list[str]:
+    return [
+        p.get("id", p.get("name", ""))
+        for p in st.session_state.get("compare_programs", [])
+    ]
+
 
 def render_program_card(program: dict, show_compare: bool = False):
     """
-    프로그램 또는 지원제도 카드 렌더링.
     program dict 필드:
-        type, country, country_emoji, purpose, name, description, condition_summary
+        id, type, country, country_emoji, purpose, name, description, condition_summary
     """
     p_type = program.get("type", "프로그램")
     badge_color = "#eef2ff" if p_type == "지원제도" else "#f0f0f0"
     badge_text_color = "#4f6ef7" if p_type == "지원제도" else "#555"
 
+    prog_id = program.get("id", program.get("name", ""))
     col_main, col_btn = st.columns([5, 1])
+
     with col_main:
-        # 배지 행
         type_html = (
             f'<span style="background:{badge_color}; color:{badge_text_color};'
             f' font-size:0.7rem; font-weight:600; padding:2px 8px;'
@@ -32,7 +41,6 @@ def render_program_card(program: dict, show_compare: bool = False):
             unsafe_allow_html=True,
         )
 
-        # 국가 이모지 + 이름
         emoji = program.get("country_emoji", "")
         name = program.get("name", "")
         st.markdown(
@@ -40,15 +48,11 @@ def render_program_card(program: dict, show_compare: bool = False):
             f'{emoji}&nbsp;&nbsp;{name}</div>',
             unsafe_allow_html=True,
         )
-
-        # 설명
         st.markdown(
             f'<div style="font-size:0.85rem; color:#555; margin-bottom:0.2rem;">'
             f'{program.get("description","")}</div>',
             unsafe_allow_html=True,
         )
-
-        # 조건 요약
         condition = program.get("condition_summary", "")
         if condition:
             st.markdown(
@@ -61,7 +65,7 @@ def render_program_card(program: dict, show_compare: bool = False):
         st.markdown("<div style='height:1.2rem'></div>", unsafe_allow_html=True)
         if st.button(
             "자세히 보기 ↗",
-            key=f"detail_{program.get('id',name)}",
+            key=f"detail_{prog_id}",
             use_container_width=True,
         ):
             st.session_state["detail_program"] = program
@@ -69,11 +73,31 @@ def render_program_card(program: dict, show_compare: bool = False):
             st.rerun()
 
         if show_compare:
-            st.button(
-                "비교에 담기",
-                key=f"compare_{program.get('id',name)}",
-                use_container_width=True,
-            )
+            compare_list: list = st.session_state.setdefault("compare_programs", [])
+            is_selected = prog_id in _compare_ids()
+
+            if is_selected:
+                if st.button(
+                    "✓ 선택됨",
+                    key=f"compare_{prog_id}",
+                    use_container_width=True,
+                    type="primary",
+                ):
+                    st.session_state["compare_programs"] = [
+                        p for p in compare_list
+                        if p.get("id", p.get("name", "")) != prog_id
+                    ]
+                    st.rerun()
+            else:
+                at_max = len(compare_list) >= MAX_COMPARE
+                if st.button(
+                    "비교에 담기",
+                    key=f"compare_{prog_id}",
+                    use_container_width=True,
+                    disabled=at_max,
+                ):
+                    st.session_state["compare_programs"].append(program)
+                    st.rerun()
 
     st.markdown(
         "<hr style='margin:0.75rem 0; border:none; border-top:1px solid #f5f5f5;'>",

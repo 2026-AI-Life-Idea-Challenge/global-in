@@ -6,7 +6,7 @@ import streamlit as st
 from components.header import render_header
 from components.sidebar import render_inner_sidebar
 from components.program_card import render_program_card
-from utils.session import PAGE_PROGRAMS
+from utils.session import PAGE_PROGRAMS, PAGE_COMPARE, go_to
 from utils.api import search_programs
 
 TABS = ["전체", "프로그램", "지원제도"]
@@ -126,6 +126,9 @@ def render():
     st.markdown("<hr style='margin:0.75rem 0;border:none;border-top:1px solid #f0f0f0;'>",
                 unsafe_allow_html=True)
 
+    # 비교 바
+    _render_compare_bar()
+
     # 결과
     filters = {
         "type": active_tab if active_tab != "전체" else None,
@@ -144,7 +147,7 @@ def render():
             unsafe_allow_html=True,
         )
         for prog in programs:
-            render_program_card(prog, show_compare=False)
+            render_program_card(prog, show_compare=True)
     else:
         st.markdown(
             """

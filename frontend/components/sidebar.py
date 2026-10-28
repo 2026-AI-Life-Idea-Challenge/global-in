@@ -4,7 +4,8 @@ frontend/components/sidebar.py
 """
 import streamlit as st
 from utils.session import (
-    PAGE_CHAT, PAGE_PROGRAMS, PAGE_PREPARATION, PAGE_PROFILE, go_to,
+    PAGE_CHAT, PAGE_PROGRAMS, PAGE_PREPARATION, PAGE_PROFILE,
+    PAGE_RESULT, PAGE_COMPARE, go_to,
 )
 
 NAV_ITEMS = [
