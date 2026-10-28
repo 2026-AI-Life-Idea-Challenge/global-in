@@ -46,3 +46,6 @@ tmp/
 
 # Intermediate knowledge release snapshots (keep only final)
 data/processed/knowledge/*/releases/
+
+# 임시 집계 파일
+'source_url'
