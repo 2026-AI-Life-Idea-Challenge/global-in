@@ -63,13 +63,6 @@ SAMPLE_CHECKLIST = [
     },
 ]
 
-# 샘플 관심 프로그램 카드
-SAMPLE_PROGRAMS = [
-    {"title": "호주 워킹홀리데이", "country": "🇦🇺 호주", "type": "워킹홀리데이", "pct": 65},
-    {"title": "독일 취업 비자", "country": "🇩🇪 독일", "type": "취업", "pct": 30},
-    {"title": "일본 어학연수", "country": "🇯🇵 일본", "type": "유학", "pct": 10},
-]
-
 
 def render():
     st.markdown(
@@ -83,7 +76,7 @@ def render():
         """,
         unsafe_allow_html=True,
     )
-    render_header(right_label="내 준비")
+    render_header(right_label="내 계획")
 
     items = st.session_state.get("preparation_items")
     if items is None:
@@ -97,7 +90,6 @@ def render():
         _render_empty_state()
         return
 
-    # 섹션 라벨
     st.markdown(
         "<span style='font-size:0.65rem;font-weight:700;letter-spacing:0.15em;color:#aaa;'>"
         "● MY PREPARATION</span>",
@@ -109,31 +101,42 @@ def render():
         unsafe_allow_html=True,
     )
 
-    # 관심 프로그램 가로 카드 (image9 상단)
+    # 관심 프로그램 가로 카드 — saved_programs에서 읽기
+    saved = list(st.session_state.get("saved_programs", {}).values())
+
     st.markdown(
         "<div style='font-size:0.78rem;font-weight:600;color:#1a1a1a;margin-bottom:0.5rem;'>"
-        "관심 프로그램</div>",
+        f"관심 프로그램 <span style='color:#aaa;font-weight:400;'>({len(saved)})</span></div>",
         unsafe_allow_html=True,
     )
-    prog_cols = st.columns(len(SAMPLE_PROGRAMS))
-    for col, prog in zip(prog_cols, SAMPLE_PROGRAMS):
-        with col:
-            pct = prog["pct"]
-            st.markdown(
-                f"""
-                <div style='border:1px solid #e8e8e8;border-radius:12px;padding:0.75rem;
-                     background:#fff;margin-bottom:0.5rem;'>
-                    <div style='font-size:0.78rem;font-weight:700;color:#1a1a1a;
-                         margin-bottom:0.2rem;'>{prog['title']}</div>
-                    <div style='font-size:0.7rem;color:#888;margin-bottom:0.6rem;'>
-                        {prog['country']} · {prog['type']}</div>
-                    <div style='background:#f0f0f0;border-radius:999px;height:4px;'>
-                        <div style='background:#1a1a1a;border-radius:999px;height:4px;
-                             width:{pct}%;'></div>
+
+    if not saved:
+        st.markdown(
+            "<div style='font-size:0.82rem;color:#aaa;margin-bottom:0.75rem;'>"
+            "아직 담은 프로그램이 없어요. 프로그램·지원제도 찾기에서 추가해 보세요.</div>",
+            unsafe_allow_html=True,
+        )
+    else:
+        prog_cols = st.columns(min(len(saved), 3))
+        for col, prog in zip(prog_cols, saved[:3]):
+            with col:
+                st.markdown(
+                    f"""
+                    <div style='border:1px solid #e8e8e8;border-radius:12px;padding:0.75rem;
+                         background:#fff;margin-bottom:0.5rem;'>
+                        <div style='font-size:0.7rem;color:#888;margin-bottom:0.2rem;'>
+                            {prog.get('type','')} · {prog.get('purpose','')}</div>
+                        <div style='font-size:0.82rem;font-weight:700;color:#1a1a1a;
+                             margin-bottom:0.2rem;'>
+                            {prog.get('country_emoji','')} {prog.get('name','')}</div>
+                        <div style='font-size:0.7rem;color:#aaa;'>{prog.get('country','')}</div>
                     </div>
-                    <div style='font-size:0.68rem;color:#aaa;margin-top:0.3rem;'>{pct}% 준비</div>
-                </div>
-                """,
+                    """,
+                    unsafe_allow_html=True,
+                )
+        if len(saved) > 3:
+            st.markdown(
+                f"<div style='font-size:0.75rem;color:#aaa;'>외 {len(saved)-3}개 더</div>",
                 unsafe_allow_html=True,
             )
 
@@ -146,7 +149,7 @@ def render():
         f"""
         <div style='display:flex;align-items:center;gap:1rem;margin-bottom:0.75rem;'>
             <div>
-                <div style='font-size:0.9rem;font-weight:700;color:#1a1a1a;'>준비 체크리스트</div>
+                <div style='font-size:0.9rem;font-weight:700;color:#1a1a1a;'>체크리스트</div>
                 <div style='font-size:0.75rem;color:#888;margin-top:0.15rem;'>
                     {total_count}개 항목 · {checked_count}개 완료</div>
             </div>
@@ -158,7 +161,7 @@ def render():
         unsafe_allow_html=True,
     )
 
-    # 필터 탭 (공식 준비 항목 / AI 추천 / 내가 추가)
+    # 필터 탭
     active_filter = st.session_state.get("prep_filter", None)
     filter_cols = st.columns(len(CHECKLIST_FILTERS))
     for col, f in zip(filter_cols, CHECKLIST_FILTERS):
@@ -178,17 +181,14 @@ def render():
 
     st.markdown("<div style='margin-top:0.75rem;'></div>", unsafe_allow_html=True)
 
-    # 01 신청 전 준비
     pre_items = [i for i in items
                  if not active_filter or active_filter in i.get("tags", [])]
     _render_section("01", "신청 전 준비", pre_items[:3])
 
-    # 02 신청 준비
     apply_items = [i for i in items
                    if not active_filter or active_filter in i.get("tags", [])]
     _render_section("02", "신청 준비", apply_items[3:])
 
-    # CTA
     st.markdown("<div style='margin-top:1.5rem;'></div>", unsafe_allow_html=True)
     if st.button("💬  AI에게 준비 방법 물어보기", key="prep_ask_ai",
                  use_container_width=True, type="primary"):

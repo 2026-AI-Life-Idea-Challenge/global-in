@@ -4,9 +4,7 @@ frontend/pages/programs.py
 """
 import streamlit as st
 from components.header import render_header
-from components.sidebar import render_inner_sidebar
 from components.program_card import render_program_card
-from utils.session import PAGE_PROGRAMS
 from utils.api import search_programs
 
 TABS = ["전체", "프로그램", "지원제도"]
@@ -20,6 +18,9 @@ COUNTRIES = [
 ]
 PURPOSES = ["전체", "취업", "유학·교환학생", "워킹홀리데이"]
 
+@st.cache_data(ttl=60)
+def _get_programs(tab, country, purpose, keyword):
+    return search_programs({"tab": tab, "country": country, "purpose": purpose, "keyword": keyword})
 
 def render():
     st.markdown(
@@ -46,7 +47,6 @@ def render():
         unsafe_allow_html=True,
     )
 
-    # 검색창
     query = st.text_input(
         "",
         placeholder="🔍  국가, 프로그램명, 목적 등으로 검색",
@@ -63,7 +63,7 @@ def render():
         with col:
             is_active = tab == active_tab
             if st.button(
-                f"**{tab}**" if is_active else tab,
+                tab,
                 key=f"tab_{tab}",
                 use_container_width=True,
                 type="primary" if is_active else "secondary",
@@ -83,12 +83,16 @@ def render():
         unsafe_allow_html=True,
     )
 
-    st.markdown("<hr style='margin:0.25rem 0 0.75rem;border:none;border-top:1px solid #f0f0f0;'>",
-                unsafe_allow_html=True)
+    st.markdown(
+        "<hr style='margin:0.25rem 0 0.75rem;border:none;border-top:1px solid #f0f0f0;'>",
+        unsafe_allow_html=True,
+    )
 
-    # 국가 필터 (flag emoji 포함)
-    st.markdown("<div style='font-size:0.75rem;color:#aaa;margin-bottom:0.3rem;'>국가</div>",
-                unsafe_allow_html=True)
+    # 국가 필터
+    st.markdown(
+        "<div style='font-size:0.75rem;color:#aaa;margin-bottom:0.3rem;'>국가</div>",
+        unsafe_allow_html=True,
+    )
     active_country = st.session_state.get("prog_country", "전체")
     country_cols = st.columns(len(COUNTRIES))
     for col, (c_name, c_flag) in zip(country_cols, COUNTRIES):
@@ -107,8 +111,10 @@ def render():
     st.markdown("<div style='margin-top:0.5rem;'></div>", unsafe_allow_html=True)
 
     # 목적 필터
-    st.markdown("<div style='font-size:0.75rem;color:#aaa;margin-bottom:0.3rem;'>목적</div>",
-                unsafe_allow_html=True)
+    st.markdown(
+        "<div style='font-size:0.75rem;color:#aaa;margin-bottom:0.3rem;'>목적</div>",
+        unsafe_allow_html=True,
+    )
     active_purpose = st.session_state.get("prog_purpose", "전체")
     purpose_cols = st.columns(len(PURPOSES))
     for col, p in zip(purpose_cols, PURPOSES):
@@ -123,28 +129,83 @@ def render():
                 st.session_state["prog_purpose"] = p
                 st.rerun()
 
-    st.markdown("<hr style='margin:0.75rem 0;border:none;border-top:1px solid #f0f0f0;'>",
-                unsafe_allow_html=True)
+    st.markdown(
+        "<hr style='margin:0.75rem 0;border:none;border-top:1px solid #f0f0f0;'>",
+        unsafe_allow_html=True,
+    )
 
     # 결과
     filters = {
-        "type": active_tab if active_tab != "전체" else None,
-        "country": active_country if active_country != "전체" else None,
-        "purpose": active_purpose if active_purpose != "전체" else None,
-        "query": query.strip() if query.strip() else None,
+        "tab": active_tab,
+        "country": active_country,
+        "purpose": active_purpose,
+        "keyword": query.strip() if query else "",
     }
-    programs = search_programs(filters)
+    programs = _get_programs(active_tab, active_country, active_purpose, query.strip() if query else "")
 
     if programs:
         prog_count = sum(1 for p in programs if p.get("type") == "프로그램")
         sup_count = sum(1 for p in programs if p.get("type") == "지원제도")
-        st.markdown(
-            f"<div style='font-size:0.78rem;color:#aaa;margin-bottom:0.75rem;'>"
-            f"총 {len(programs)}개 &nbsp;·&nbsp; 프로그램 {prog_count} &nbsp;·&nbsp; 지원제도 {sup_count}</div>",
-            unsafe_allow_html=True,
-        )
+
+        # 이전 렌더의 비교 체크박스 state
+        compared = [
+            p for p in programs
+            if st.session_state.get(f"chk_compare_{p.get('id', p.get('name', ''))}", False)
+        ]
+
+        count_col, compare_col = st.columns([4, 1])
+        with count_col:
+            st.markdown(
+                f"<div style='font-size:0.78rem;color:#aaa;margin-bottom:0.75rem;'>"
+                f"총 {len(programs)}개 &nbsp;·&nbsp; 프로그램 {prog_count} &nbsp;·&nbsp; 지원제도 {sup_count}</div>",
+                unsafe_allow_html=True,
+            )
+        with compare_col:
+            compare_count = len(compared)
+            if st.button(
+                f"비교하기 ({compare_count})" if compare_count >= 2 else "비교하기",
+                key="do_compare",
+                use_container_width=True,
+                type="primary" if compare_count >= 2 else "secondary",
+                disabled=(compare_count < 2),
+            ):
+                st.session_state["show_compare_panel"] = not st.session_state.get(
+                    "show_compare_panel", False
+                )
+
+        # 비교 패널
+        if st.session_state.get("show_compare_panel") and len(compared) >= 2:
+            st.markdown(
+                "<div style='background:#f8f8f8;border-radius:12px;padding:1rem;margin-bottom:1rem;'>",
+                unsafe_allow_html=True,
+            )
+            panel_cols = st.columns(len(compared))
+            for col, cp in zip(panel_cols, compared):
+                with col:
+                    st.markdown(
+                        f"<div style='font-size:0.7rem;color:#888;margin-bottom:0.2rem;'>"
+                        f"{cp.get('type','')} &nbsp;·&nbsp; {cp.get('country','')}</div>",
+                        unsafe_allow_html=True,
+                    )
+                    st.markdown(
+                        f"<div style='font-size:0.9rem;font-weight:700;margin-bottom:0.4rem;'>"
+                        f"{cp.get('country_emoji','')} {cp.get('name','')}</div>",
+                        unsafe_allow_html=True,
+                    )
+                    st.markdown(
+                        f"<div style='font-size:0.8rem;color:#555;'>{cp.get('description','')}</div>",
+                        unsafe_allow_html=True,
+                    )
+            close_col, _ = st.columns([1, 4])
+            with close_col:
+                if st.button("닫기", key="close_compare"):
+                    st.session_state["show_compare_panel"] = False
+                    st.rerun()
+            st.markdown("</div>", unsafe_allow_html=True)
+
         for prog in programs:
-            render_program_card(prog, show_compare=False)
+            render_program_card(prog, show_compare=True)
+
     else:
         st.markdown(
             """

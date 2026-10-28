@@ -62,6 +62,7 @@ def _sample_programs(filters: dict) -> list[dict]:
             "name": "기술·인문지식·국제업무",
             "description": "전문 지식과 기술을 활용해 일본에서 일하는 취업 경로.",
             "condition_summary": "담당 직무와 학력·경력 등 요건 확인",
+            "url": "https://www.naver.com/",
         },
         {
             "id": "kmove_support",
@@ -72,6 +73,7 @@ def _sample_programs(filters: dict) -> list[dict]:
             "name": "K-Move스쿨",
             "description": "해외취업에 필요한 어학·직무 연수와 취업 연계를 지원.",
             "condition_summary": "지원 내용: 맞춤형 교육·연수비·일부 취업 지원",
+            "url": "",
         },
         {
             "id": "de_chancenkarte",
@@ -82,6 +84,7 @@ def _sample_programs(filters: dict) -> list[dict]:
             "name": "기회카드 (Chancenkarte)",
             "description": "독일에서 일자리를 찾기 위한 체류 경로.",
             "condition_summary": "자격 인정 또는 점수 경로·언어·생계 요건 확인",
+            "url": "",
         },
         {
             "id": "au_wh_417",
@@ -92,6 +95,7 @@ def _sample_programs(filters: dict) -> list[dict]:
             "name": "워킹홀리데이 비자 (417)",
             "description": "호주에서 여행하며 단기 근로를 병행하는 경로.",
             "condition_summary": "나이·국가·연령 이전 참여 이력 등 요건 확인",
+            "url": "",
         },
         {
             "id": "us_f1_student",
@@ -102,6 +106,7 @@ def _sample_programs(filters: dict) -> list[dict]:
             "name": "학생 비자 (F-1)",
             "description": "미국의 대학 등 교육기관에서 학업을 위한 경로.",
             "condition_summary": "교육기관 학업 과정·I-20 등 확인",
+            "url": "",
         },
         {
             "id": "ca_fsw",
@@ -112,6 +117,7 @@ def _sample_programs(filters: dict) -> list[dict]:
             "name": "연방 전문인력 프로그램 (FSW)",
             "description": "해외 숙련 경력을 바탕으로 검토하는 캐나다 영주권 경로.",
             "condition_summary": "숙련 경력·공인어·학력 등 조건 확인",
+            "url": "",
         },
         {
             "id": "koreit_support",
@@ -122,14 +128,15 @@ def _sample_programs(filters: dict) -> list[dict]:
             "name": "해외취업정착지원금",
             "description": "해외취업 후 초기 정착과 경력 개발을 돕는 지원.",
             "condition_summary": "지원 내용: 해외취업자의 초기 정착을 위한 지원금",
+            "url": "",
         },
     ]
 
     result = samples
-    tab = filters.get("tab", "전체")
-    country = filters.get("country", "전체")
-    purpose = filters.get("purpose", "전체")
-    keyword = filters.get("keyword", "").strip()
+    country = filters.get("country") or "전체"
+    purpose = filters.get("purpose") or "전체"
+    keyword = (filters.get("keyword") or "").strip()
+    tab = filters.get("tab") or "전체"
 
     if tab == "프로그램":
         result = [p for p in result if p["type"] == "프로그램"]

@@ -16,6 +16,9 @@ NAV_ITEMS = [
 
 def render_inner_sidebar(active_page: str):
     with st.sidebar:
+        
+        st.markdown("<hr style='border:none;border-top:1px solid #f0f0f0;margin:0.5rem 0;'>",
+                    unsafe_allow_html=True)
         # 새 채팅 버튼
         if st.button("+ 새 채팅", key="sidebar_new_chat", use_container_width=True, type="primary"):
             st.session_state["chat_messages"] = []
