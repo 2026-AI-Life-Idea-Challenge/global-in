@@ -119,3 +119,13 @@ input[type="text"], textarea, [data-testid="stTextInput"] input {
 
 /* 10. 전체 여백 */
 .block-container { padding: 1.5rem 2rem !important; max-width: 900px; }
+
+/* Deploy 버튼 / 툴바 숨김 */
+[data-testid="stToolbar"],
+[data-testid="stDecoration"],
+[data-testid="stStatusWidget"],
+#MainMenu,
+footer { display:none !important; }
+
+/* 사이드바 토글 버튼 (홈 외 페이지에서도 깔끔하게) */
+[data-testid="stSidebarCollapsedControl"] { display:none !important; }

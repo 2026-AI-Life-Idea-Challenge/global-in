@@ -72,6 +72,7 @@ SAMPLE_PROGRAMS = [
 
 
 def render():
+    st.markdown("<style>[data-testid=\"stToolbar\"],[data-testid=\"stDecoration\"],footer,#MainMenu{display:none!important}</style>", unsafe_allow_html=True)
     render_header(right_label="내 준비")
     render_inner_sidebar(PAGE_PREPARATION)
 
