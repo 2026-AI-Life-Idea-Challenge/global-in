@@ -11,7 +11,8 @@ from fastapi import APIRouter, HTTPException
 
 from app.agent.graph import build_graph
 from app.agent.user_understanding import llm_extractor
-from app.models.consult import ChatRequest, ChatResponse, ProfileUpdateRequest, UserProfile
+from app.models.consult import ChatRequest, ChatResponse, ProfileUpdateRequest
+from app.models.user_profile import UserProfile
 
 
 def create_router(graph=None) -> APIRouter:
@@ -51,6 +52,6 @@ def create_router(graph=None) -> APIRouter:
 
     @router.patch("/sessions/{session_id}/profile")
     def update_profile(session_id: str, body: ProfileUpdateRequest) -> ChatResponse:
-        return run(session_id, None, body.model_dump(exclude_none=True))
+        return run(session_id, None, body.model_dump(mode="json", exclude_none=True))
 
     return router

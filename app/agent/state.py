@@ -8,8 +8,8 @@ from app.models.consult import (
     Intent,
     PrepItem,
     ProgramCandidate,
-    UserProfile,
 )
+from app.models.user_profile import UserProfile
 
 
 class ConsultState(TypedDict, total=False):

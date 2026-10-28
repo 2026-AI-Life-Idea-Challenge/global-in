@@ -15,7 +15,7 @@ from langgraph.graph import END, START, StateGraph
 
 from app.agent import preparation_planning, stubs, user_understanding
 from app.agent.state import ConsultState
-from app.models.consult import UserProfile
+from app.models.user_profile import UserProfile
 
 
 def build_graph(extractor: user_understanding.Extractor, checkpointer=None):
@@ -53,7 +53,7 @@ def build_graph(extractor: user_understanding.Extractor, checkpointer=None):
 
     def check(state: ConsultState) -> ConsultState:
         ids = [p.program_id for p in state["programs"]]
-        results = stubs.check_eligibility(state["profile"].model_dump(), ids, as_of=date.today().isoformat())
+        results = stubs.check_eligibility(state["profile"].to_evaluator_dict(), ids, as_of=date.today().isoformat())
         return {"eligibility": results}
 
     def guide(state: ConsultState) -> ConsultState:

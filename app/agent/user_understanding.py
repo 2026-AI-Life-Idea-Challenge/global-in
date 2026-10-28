@@ -5,32 +5,37 @@ from collections.abc import Callable
 
 from pydantic import ValidationError
 
-from app.models.consult import FollowUpQuestion, ProfileDelta, UserProfile
+from app.models.consult import FollowUpQuestion, ProfileDelta, ProfileUpdateRequest
+from app.models.user_profile import UserProfile
 
 # (발화, 현재 프로필) → 변경분. 테스트에서는 LLM 없이 가짜 추출기를 넣는다.
 Extractor = Callable[[str, UserProfile], ProfileDelta]
 
 _SYSTEM_PROMPT = """너는 해외 진출(워킹홀리데이·유학·취업) 상담의 사용자 이해 담당이다.
 사용자 발화에서 새로 언급되거나 바뀐 정보만 뽑아라. 언급되지 않은 필드는 반드시 null로 둔다.
+- date_of_birth: 생년월일을 YYYY-MM-DD로. 나이만 말했으면 추측하지 말고 null
+- nationalities: 국적 ISO 2자리 코드 목록 (예: 한국 → ["KR"])
 - target_country: japan, australia, usa, germany, canada 중 하나
-- purpose: working_holiday(워홀), study(유학), employment(취업) 중 하나
-- funds_krw: 원화 금액 정수 (예: 500만원 → 5000000)
+- target_visa_type: working_holiday(워홀), student(유학), employment(취업) 중 하나
+- purpose: 방문 목적에 대한 자유 텍스트 (있을 때만)
 - intent: recommend(프로그램 추천), check(자격 확인), prepare(준비 방법), update_info(정보 정정), other
 현재 프로필: {profile}"""
 
 # 추천·검토 전에 반드시 알아야 하는 기본 정보. 프로그램별 세부 조건은 A가 판단한다.
-REQUIRED_FIELDS = ["target_country", "purpose", "age"]
+REQUIRED_FIELDS = ["target_country", "target_visa_type", "date_of_birth"]
 
 FIELD_QUESTIONS: dict[str, FollowUpQuestion] = {
     "target_country": FollowUpQuestion(
         field="target_country", question="어느 나라로 가고 싶으세요?", input_type="select",
         options=["japan", "australia", "usa", "germany", "canada"],
     ),
-    "purpose": FollowUpQuestion(
-        field="purpose", question="워킹홀리데이, 유학, 취업 중 어떤 목적인가요?", input_type="select",
-        options=["working_holiday", "study", "employment"],
+    "target_visa_type": FollowUpQuestion(
+        field="target_visa_type", question="워킹홀리데이, 유학, 취업 중 어떤 목적인가요?", input_type="select",
+        options=["working_holiday", "student", "employment"],
     ),
-    "age": FollowUpQuestion(field="age", question="만 나이가 어떻게 되세요?", input_type="number"),
+    "date_of_birth": FollowUpQuestion(
+        field="date_of_birth", question="생년월일을 알려주세요. (예: 1998-05-15)", input_type="date",
+    ),
 }
 
 MAX_QUESTIONS_PER_TURN = 3
@@ -58,17 +63,20 @@ def llm_extractor() -> Extractor:
 
 
 def merge_profile(profile: UserProfile, updates: dict) -> tuple[UserProfile, list[str]]:
-    """None은 덮어쓰지 않고, 검증에 실패하는 값(예: 나이 200)은 버린다. (새 프로필, 바뀐 필드) 반환."""
+    """None은 덮어쓰지 않고, ProfileUpdateRequest 검증에 실패하는 값(예: 생년월일 1800-01-01)은 버린다.
+    (새 프로필, 바뀐 필드) 반환."""
     merged = profile.model_dump()
     changed = []
     for key, value in updates.items():
-        if value is None or merged.get(key) == value:
+        if value is None:
             continue
         try:
-            UserProfile.model_validate({**merged, key: value})
+            checked = ProfileUpdateRequest.model_validate({key: value}).model_dump(mode="json")[key]
         except ValidationError:
             continue
-        merged[key] = value
+        if merged.get(key) == checked:
+            continue
+        merged[key] = checked
         changed.append(key)
     return UserProfile.model_validate(merged), changed
 

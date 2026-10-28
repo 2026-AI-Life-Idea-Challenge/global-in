@@ -1,12 +1,15 @@
 """상담(C 파트) 공통 계약. 사용자 이해·준비 안내 에이전트와 A·B·D가 주고받는 형식."""
 
+from datetime import date
 from typing import Any, Literal
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 from app.models.program import Country
+from app.models.user_profile import UserProfile
 
-Purpose = Literal["working_holiday", "study", "employment"]
+# 공통 UserProfile.target_visa_type 값
+VisaType = Literal["working_holiday", "student", "employment"]
 Intent = Literal["recommend", "check", "prepare", "update_info", "other"]
 
 # A(자격 검토)의 overall / outcome 값
@@ -14,36 +17,46 @@ Outcome = Literal["조건 충족", "조건 미충족", "추가 확인 필요"]
 Judgeability = Literal["rule_based", "conditional", "manual_check"]
 
 
-# ---------- 사용자 프로필 ----------
-
-class UserProfile(BaseModel):
-    """모르는 값은 None. A에는 model_dump() 결과를 넘긴다."""
-
-    model_config = ConfigDict(extra="forbid")
-
-    target_country: Country | None = None
-    purpose: Purpose | None = None
-    age: int | None = Field(default=None, ge=15, le=80)
-    education: str | None = None
-    language_scores: dict[str, str] = Field(default_factory=dict)
-    funds_krw: int | None = Field(default=None, ge=0)
-    prior_visa_history: list[str] = Field(default_factory=list)
-
+# ---------- 사용자 프로필 (공통 UserProfile은 app/models/user_profile.py) ----------
 
 class ProfileDelta(BaseModel):
     """사용자 이해 에이전트(LLM)가 한 발화에서 뽑아내는 값. 언급 안 된 필드는 None."""
 
     intent: Intent = "other"
+    date_of_birth: str | None = None
+    nationalities: list[str] | None = None
     target_country: Country | None = None
-    purpose: Purpose | None = None
-    age: int | None = None
-    education: str | None = None
-    language_scores: dict[str, str] | None = None
-    funds_krw: int | None = None
-    prior_visa_history: list[str] | None = None
+    target_visa_type: VisaType | None = None
+    purpose: str | None = None
 
     def updates(self) -> dict[str, Any]:
         return self.model_dump(exclude={"intent"}, exclude_none=True)
+
+
+class ProfileUpdateRequest(BaseModel):
+    """공통 UserProfile에 넣기 전 C가 받는 값의 검증. 화면 PATCH와 LLM 추출값 모두 이걸 거친다."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    date_of_birth: date | None = None
+    nationalities: list[str] | None = None
+    target_country: Country | None = None
+    target_visa_type: VisaType | None = None
+    purpose: str | None = Field(default=None, max_length=500)
+
+    @field_validator("date_of_birth")
+    @classmethod
+    def _plausible_birth_date(cls, value: date | None) -> date | None:
+        if value is not None and not (date(date.today().year - 80, 1, 1) <= value <= date.today()):
+            raise ValueError("date_of_birth out of range")
+        return value
+
+    @field_validator("nationalities")
+    @classmethod
+    def _iso_alpha2(cls, value: list[str] | None) -> list[str] | None:
+        if value is not None and not all(len(code) == 2 and code.isalpha() for code in value):
+            raise ValueError("nationalities must be ISO 3166-1 alpha-2 codes")
+        return [code.upper() for code in value] if value is not None else None
 
 
 # ---------- B (탐색·근거) ----------
@@ -60,7 +73,7 @@ class ProgramCandidate(BaseModel):
     program_id: str  # 예: "CA:iec_working_holiday"
     name: str
     country: Country
-    purpose: Purpose
+    visa_type: VisaType
     summary: str
     citations: list[Citation] = Field(default_factory=list)
 
@@ -86,7 +99,7 @@ class EligibilityPayload(BaseModel):
 class FollowUpQuestion(BaseModel):
     field: str
     question: str
-    input_type: Literal["text", "number", "select"]
+    input_type: Literal["text", "number", "select", "date"]
     options: list[str] = Field(default_factory=list)
 
 
@@ -102,20 +115,6 @@ class PrepItem(BaseModel):
 
 class ChatRequest(BaseModel):
     message: str = Field(min_length=1, max_length=2000)
-
-
-class ProfileUpdateRequest(BaseModel):
-    """화면에서 조건을 직접 수정할 때. 보낸 필드만 바뀐다."""
-
-    model_config = ConfigDict(extra="forbid")
-
-    target_country: Country | None = None
-    purpose: Purpose | None = None
-    age: int | None = Field(default=None, ge=15, le=80)
-    education: str | None = None
-    language_scores: dict[str, str] | None = None
-    funds_krw: int | None = Field(default=None, ge=0)
-    prior_visa_history: list[str] | None = None
 
 
 class ChatResponse(BaseModel):

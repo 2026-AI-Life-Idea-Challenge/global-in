@@ -4,7 +4,10 @@ C 상담 흐름을 먼저 돌려보기 위한 예시 데이터다. A·B 실제 �
 graph.py에서 이 함수들 대신 실제 함수를 연결한다.
 """
 
-from app.models.consult import Citation, EligibilityPayload, Outcome, ProgramCandidate, RequirementPayload, UserProfile
+from datetime import date
+
+from app.models.consult import Citation, EligibilityPayload, Outcome, ProgramCandidate, RequirementPayload
+from app.models.user_profile import UserProfile
 
 # ---------- B: 프로그램 탐색 · 근거 검색 ----------
 
@@ -24,7 +27,7 @@ _PROGRAMS = [
         program_id="CA:iec_working_holiday",
         name="캐나다 워킹홀리데이 (IEC)",
         country="canada",
-        purpose="working_holiday",
+        visa_type="working_holiday",
         summary="(예시) 캐나다에서 일하며 체류할 수 있는 프로그램",
         citations=[_CA_IEC],
     ),
@@ -32,7 +35,7 @@ _PROGRAMS = [
         program_id="AU:working_holiday",
         name="호주 워킹홀리데이 (417)",
         country="australia",
-        purpose="working_holiday",
+        visa_type="working_holiday",
         summary="(예시) 호주에서 일하며 여행할 수 있는 비자",
         citations=[_AU_WHV],
     ),
@@ -42,11 +45,12 @@ _CITATIONS_BY_PREFIX = {"CA": [_CA_IEC], "AU": [_AU_WHV]}
 
 
 def search_programs(query: str, profile: UserProfile) -> list[ProgramCandidate]:
+    context = profile.to_search_context()
     return [
         p
         for p in _PROGRAMS
-        if (profile.target_country is None or p.country == profile.target_country)
-        and (profile.purpose is None or p.purpose == profile.purpose)
+        if context.get("target_country") in (None, p.country)
+        and context.get("target_visa_type") in (None, p.visa_type)
     ]
 
 
@@ -64,13 +68,20 @@ _POLICY_ID = {"CA:iec_working_holiday": "REVIEW:POLICY:CA_IEC_WH_POL_01", "AU:wo
 
 
 def check_eligibility(profile: dict, program_ids: list[str], as_of: str) -> list[EligibilityPayload]:
-    return [_evaluate(profile, pid) for pid in program_ids]
+    """profile은 UserProfile.to_evaluator_dict() 결과 (A evaluator 입력과 같은 형식)."""
+    return [_evaluate(profile, pid, as_of) for pid in program_ids]
 
 
-def _evaluate(profile: dict, program_id: str) -> EligibilityPayload:
+def _age_on(date_of_birth: str, as_of: str) -> int:
+    born, today = date.fromisoformat(date_of_birth), date.fromisoformat(as_of)
+    return today.year - born.year - ((today.month, today.day) < (born.month, born.day))
+
+
+def _evaluate(profile: dict, program_id: str, as_of: str) -> EligibilityPayload:
     prefix = program_id.split(":")[0]
     low, high = _AGE_LIMIT.get(program_id, (18, 30))
-    age = profile.get("age")
+    dob = profile.get("date_of_birth")
+    age = _age_on(dob, profile.get("application_date") or as_of) if dob else None
     if age is None:
         age_outcome: Outcome = "추가 확인 필요"
     elif low <= age <= high:
