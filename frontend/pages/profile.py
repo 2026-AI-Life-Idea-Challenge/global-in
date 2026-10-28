@@ -4,7 +4,11 @@ frontend/pages/profile.py
 """
 import streamlit as st
 from components.header import render_header
-from utils.session import go_to, get_profile, save_profile, PAGE_CHAT
+from components.sidebar import render_inner_sidebar
+from utils.session import (
+    go_to, get_profile, save_profile,
+    PAGE_CHAT, PAGE_PROFILE
+)
 
 
 NATIONALITY_OPTIONS = ["한국", "일본", "미국", "중국", "기타"]
@@ -106,14 +110,17 @@ def render():
             key="p_career_duration",
         )
 
-    # ── 언어 ───────────────────────────────────────────────────
+        # ── 언어 ───────────────────────────────────────────────────
     _section_title("언어")
 
     languages = st.multiselect(
-        "사용 언어",
-        LANGUAGE_OPTIONS,
-        default=profile.get("languages", []),
-        key="p_languages",
+    "사용 언어",
+    LANGUAGE_OPTIONS,
+    default=[
+        lang for lang in profile.get("languages", [])
+        if lang in LANGUAGE_OPTIONS
+    ],
+    key="p_languages",
     )
 
     col1, col2 = st.columns(2)

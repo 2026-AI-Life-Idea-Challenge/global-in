@@ -22,8 +22,18 @@ PURPOSES = ["전체", "취업", "유학·교환학생", "워킹홀리데이"]
 
 
 def render():
+    st.markdown(
+        """
+        <style>
+        [data-testid="stSidebar"]             { display:block !important; }
+        [data-testid="stSidebarCollapsedControl"] { display:block !important; }
+        [data-testid="stToolbar"],[data-testid="stDecoration"],footer,#MainMenu
+                                               { display:none !important; }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
     render_header(right_label="프로그램·지원제도 찾기")
-    render_inner_sidebar(PAGE_PROGRAMS)
 
     st.markdown(
         "<span style='font-size:0.65rem;font-weight:700;letter-spacing:0.15em;color:#aaa;'>"

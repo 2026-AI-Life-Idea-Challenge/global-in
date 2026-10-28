@@ -120,12 +120,35 @@ input[type="text"], textarea, [data-testid="stTextInput"] input {
 /* 10. 전체 여백 */
 .block-container { padding: 1.5rem 2rem !important; max-width: 900px; }
 
-/* Deploy 버튼 / 툴바 숨김 */
+/* ── 툴바/Deploy 숨김 ── */
 [data-testid="stToolbar"],
 [data-testid="stDecoration"],
 [data-testid="stStatusWidget"],
 #MainMenu,
 footer { display:none !important; }
 
-/* 사이드바 토글 버튼 (홈 외 페이지에서도 깔끔하게) */
-[data-testid="stSidebarCollapsedControl"] { display:none !important; }
+
+/* ── 사이드바 접기/펼치기 버튼 ── */
+[data-testid="stSidebarCollapsedControl"] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    position: fixed !important;
+    left: 0.5rem !important;
+    top: 0.5rem !important;
+    z-index: 999999 !important;
+    background: #ffffff !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12) !important;
+}
+
+[data-testid="stSidebarCollapsedControl"] button {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    color: #1a1a1a !important;
+    background: #ffffff !important;
+}

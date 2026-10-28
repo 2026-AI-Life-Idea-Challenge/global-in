@@ -8,9 +8,11 @@ import os
 
 sys.path.insert(0, os.path.dirname(__file__))
 
+from components.sidebar import render_inner_sidebar
 from utils.session import (
     init_session,
-    PAGE_HOME, PAGE_CHAT, PAGE_PROGRAMS, PAGE_PREPARATION, PAGE_PROFILE,
+    PAGE_HOME, PAGE_CHAT, PAGE_PROGRAMS,
+    PAGE_PREPARATION, PAGE_PROFILE,
 )
 
 # ── 페이지 설정 ────────────────────────────────────────────
@@ -34,27 +36,31 @@ init_session()
 
 # ── 라우팅 ────────────────────────────────────────────────
 page = st.session_state.get("page", PAGE_HOME)
+# 홈 화면에서는 사이드바를 표시하지 않고,
+# 나머지 화면에서는 공통 사이드바를 표시
+if page != PAGE_HOME:
+    render_inner_sidebar(page)
 
 if page == PAGE_HOME:
-    from views.home import render
+    from pages.home import render
     render()
 
 elif page == PAGE_CHAT:
-    from views.chat import render
+    from pages.chat import render
     render()
 
 elif page == PAGE_PROGRAMS:
-    from views.programs import render
+    from pages.programs import render
     render()
 
 elif page == PAGE_PREPARATION:
-    from views.preparation import render
+    from pages.preparation import render
     render()
 
 elif page == PAGE_PROFILE:
-    from views.profile import render
+    from pages.profile import render
     render()
 
 else:
-    from views.home import render
+    from pages.home import render
     render()
