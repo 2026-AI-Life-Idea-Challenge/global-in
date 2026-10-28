@@ -1,46 +1,38 @@
 """
 frontend/components/header.py
-공통 헤더 컴포넌트
+글로벌 헤더 — 로고 클릭 시 홈 이동
 """
 import streamlit as st
-from utils.session import go_to, PAGE_HOME
+from utils.session import PAGE_HOME, PAGE_CHAT, PAGE_PROGRAMS, go_to
 
 
 def render_header(right_label: str = "", show_nav: bool = False):
-    """
-    상단 헤더를 렌더링.
-    right_label: 우측에 표시할 텍스트 (예: '● 맞춤 상담', '● 내 프로필')
-    show_nav: 홈에서만 True — 서비스 소개 / 이용 방법 버튼 표시
-    """
-    left, right = st.columns([1, 1])
+    cols = st.columns([3, 6, 3])
 
-    with left:
-        if st.button(
-            "⊙  Global-In .",
-            key="header_logo",
-            help="홈으로",
-        ):
+    with cols[0]:
+        # 로고 버튼 → 홈 이동
+        if st.button("⊙  Global-In .", key="header_logo", help="홈으로"):
             go_to(PAGE_HOME)
 
-    with right:
+    with cols[1]:
+        if show_nav:
+            n1, n2 = st.columns(2)
+            with n1:
+                if st.button("서비스 소개", key="hdr_intro", use_container_width=True):
+                    go_to(PAGE_HOME)
+            with n2:
+                if st.button("이용 방법", key="hdr_how", use_container_width=True):
+                    go_to(PAGE_HOME)
+
+    with cols[2]:
         if right_label:
             st.markdown(
-                f"""
-                <div style="text-align:right; padding-top:0.6rem;
-                     font-size:0.82rem; color:#555; font-weight:500;">
-                    ● {right_label}
-                </div>
-                """,
+                f"<div style='text-align:right; padding-top:0.4rem; "
+                f"font-size:0.8rem; color:#888;'>● {right_label}</div>",
                 unsafe_allow_html=True,
             )
-        if show_nav:
-            c1, c2 = st.columns(2)
-            with c1:
-                st.button("서비스 소개", key="nav_intro", use_container_width=True)
-            with c2:
-                st.button("이용 방법", key="nav_howto", use_container_width=True)
 
     st.markdown(
-        "<hr style='margin:0.5rem 0 1rem 0; border:none; border-top:1px solid #f0f0f0;'>",
+        "<hr style='margin:0.25rem 0 0.75rem; border:none; border-top:1px solid #e8e8e8;'>",
         unsafe_allow_html=True,
     )

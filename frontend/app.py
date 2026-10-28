@@ -36,25 +36,25 @@ init_session()
 page = st.session_state.get("page", PAGE_HOME)
 
 if page == PAGE_HOME:
-    from pages.home import render
+    from views.home import render
     render()
 
 elif page == PAGE_CHAT:
-    from pages.chat import render
+    from views.chat import render
     render()
 
 elif page == PAGE_PROGRAMS:
-    from pages.programs import render
+    from views.programs import render
     render()
 
 elif page == PAGE_PREPARATION:
-    from pages.preparation import render
+    from views.preparation import render
     render()
 
 elif page == PAGE_PROFILE:
-    from pages.profile import render
+    from views.profile import render
     render()
 
 else:
-    from pages.home import render
+    from views.home import render
     render()
