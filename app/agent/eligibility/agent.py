@@ -7,11 +7,13 @@ LangGraph 노드로 사용되는 함수들을 정의합니다.
 State 흐름:
   profile + program_ids
       ↓
+  [fetch_program_context_node]  programs, knowledge_documents, evidence 등 조회
+      ↓
   [fetch_requirements_node]  DB에서 rule_set + requirements 조회
       ↓
   [check_eligibility_node]   evaluator로 각 요건 평가
       ↓
-  EligibilityState (overall, per-program 결과, missing_info)
+  EligibilityState (overall, per-program 결과, missing_info, program_contexts)
 """
 
 from __future__ import annotations
@@ -31,6 +33,10 @@ from app.agent.eligibility.checker import (
     EligibilityResult,
 )
 from app.rules.reviews import VerifiedReviewDecision
+from app.agent.eligibility.policy_fetcher import (
+    fetch_program_context,
+    ProgramContext,
+)
 
 DB_URL = os.environ.get(
     "DATABASE_URL",
@@ -55,9 +61,22 @@ class EligibilityState(TypedDict, total=False):
     results: dict[str, EligibilityResult]         # program_id → 검토 결과
     missing_info: list[dict[str, Any]]            # UNKNOWN 요건의 pending_reviews 합산
     overall_summary: dict[str, str]               # program_id → overall 판정
+    program_contexts: dict[str, ProgramContext]    # program_id → 프로그램 컨텍스트
 
 
 # ── 노드 함수 ──────────────────────────────────────────────────────────────────
+
+def fetch_program_context_node(state: EligibilityState) -> EligibilityState:
+    """DB에서 각 프로그램의 기본 정보, 지식문서, 정책(approved), 근거, 준비사항을 조회합니다."""
+    program_ids = state.get("program_ids", [])
+    target_type = state.get("target_type", "PROGRAM")
+
+    contexts: dict[str, ProgramContext] = {}
+    for pid in program_ids:
+        contexts[pid] = fetch_program_context(DB_URL, pid, target_type)
+
+    return {**state, "program_contexts": contexts}
+
 
 def fetch_requirements_node(state: EligibilityState) -> EligibilityState:
     """DB에서 각 프로그램의 rule_set과 requirements를 조회합니다."""
@@ -162,10 +181,12 @@ def build_eligibility_graph():
 
     builder = StateGraph(EligibilityState)
 
+    builder.add_node("fetch_context", fetch_program_context_node)
     builder.add_node("fetch", fetch_requirements_node)
     builder.add_node("check", check_eligibility_node)
 
-    builder.set_entry_point("fetch")
+    builder.set_entry_point("fetch_context")
+    builder.add_edge("fetch_context", "fetch")
     builder.add_edge("fetch", "check")
     builder.add_edge("check", END)
 
@@ -197,6 +218,7 @@ def run_direct(
         "as_of": as_of,
         "verified_reviews": [],
     }
+    state = fetch_program_context_node(state)
     state = fetch_requirements_node(state)
     state = check_eligibility_node(state)
     return state["results"]
