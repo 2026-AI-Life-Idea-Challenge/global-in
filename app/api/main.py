@@ -407,6 +407,7 @@ class ChatResponse(_BaseModel):
     roadmap: list[dict] | None = None
     eligibility_results: list[dict] | None = None
     follow_up_question: str | None = None
+    user_profile: dict | None = None
 
 
 @app.post("/chat", response_model=ChatResponse)
@@ -443,4 +444,5 @@ async def chat(req: ChatRequest):
         roadmap=result.get("roadmap") or [],
         eligibility_results=result.get("eligibility_results") or [],
         follow_up_question=result.get("follow_up_question"),
+        user_profile=result.get("user_profile"),
     )

@@ -3,34 +3,71 @@ frontend/utils/api.py
 FastAPI 백엔드 통신 유틸리티
 """
 import os
+import re
 import requests
 
 API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000")
+_API_KEY = os.getenv("INTERNAL_API_KEY", "")
 
 
-def chat_stream(session_id: str, message: str, profile: dict) -> str:
+def _add_paragraph_breaks(text: str) -> str:
+    """한국어 응답 텍스트에 문단 줄바꿈을 추가합니다."""
+    if not text:
+        return text
+    # 이미 줄바꿈이 있으면 그대로 반환
+    if "\n" in text:
+        return text
+    # 한국어 문장 종결 패턴(다/요/죠/네/까) + 구두점 + 공백 → \n\n
+    text = re.sub(r"([다요죠네까습])([.!?]) +(?=[가-힣①②③\-⚠️✅])", r"\1\2\n\n", text)
+    return text.strip()
+
+
+def chat_send(
+    user_query: str,
+    session_id: str | None = None,
+    history: list[dict] | None = None,
+    profile: dict | None = None,
+) -> dict:
     """
-    AI 에이전트에 메시지를 전송하고 응답 텍스트를 반환.
-    실제 연결 전이면 더미 응답을 반환.
+    AI 에이전트에 메시지를 전송하고 응답 딕셔너리를 반환.
+    반환값: {"text": str, "programs": list, "profile": dict}
+    백엔드 미연결 시 더미 응답 반환.
     """
     try:
         resp = requests.post(
             f"{API_BASE}/chat",
             json={
                 "session_id": session_id,
-                "message": message,
-                "profile": profile,
+                "user_query": user_query,
+                "history": history or [],
+                "user_profile": profile or {},
             },
-            timeout=30,
+            headers={"X-API-Key": _API_KEY},
+            timeout=60,
         )
         resp.raise_for_status()
-        return resp.json().get("reply", "")
+        data = resp.json()
+        # final_answer 우선, 없으면 follow_up_question
+        raw_text = data.get("final_answer") or data.get("follow_up_question") or ""
+        text = _add_paragraph_breaks(raw_text)
+        return {
+            "text": text,
+            "programs": data.get("eligibility_results") or [],
+            "profile": data.get("user_profile") or {},
+        }
     except Exception:
-        # 백엔드 미연결 시 더미 응답
-        return (
-            "안녕하세요! 현재 AI 상담 서버와 연결 중이에요. "
-            "연결이 완료되면 맞춤 답변을 드릴게요. 😊"
-        )
+        return {
+            "text": (
+                "안녕하세요! 현재 AI 상담 서버와 연결 중이에요. "
+                "연결이 완료되면 맞춤 답변을 드릴게요. 😊"
+            ),
+            "programs": [],
+            "profile": {},
+        }
+
+
+# 하위 호환용 alias
+chat_stream = chat_send
 
 
 def search_programs(filters: dict) -> list[dict]:

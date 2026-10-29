@@ -6,8 +6,9 @@ import streamlit as st
 from components.header import render_header
 from components.sidebar import render_inner_sidebar
 from components.chat_message import render_message, render_quick_replies
-from utils.session import PAGE_CHAT, go_to, get_profile
-from utils.api import chat_stream
+from utils.session import PAGE_CHAT, PAGE_PROGRAMS, go_to, get_profile, save_profile
+from utils.api import chat_send
+from utils.session import new_chat_session
 
 INITIAL_QUICK_REPLIES = [
     "워킹홀리데이 알아보기",
@@ -40,7 +41,7 @@ def render():
     # 메시지 초기화
     if "chat_messages" not in st.session_state or not st.session_state["chat_messages"]:
         st.session_state["chat_messages"] = [
-            {"role": "ai", "content": AI_GREETING}
+            {"role": "ai", "content": AI_GREETING, "programs": []}
         ]
         st.session_state.setdefault("chat_show_qr", True)
 
@@ -59,8 +60,24 @@ def render():
         )
 
     # 메시지 렌더링
-    for msg in messages:
+    for i, msg in enumerate(messages):
+        programs = msg.get("programs") or []
         render_message(msg["role"], msg["content"])
+
+        # AI 응답 뒤에 프로그램 버튼 표시
+        if msg["role"] == "ai" and programs and i > 0:
+            st.markdown(
+                "<div style='margin:0.25rem 0 0.5rem 2.75rem;'>",
+                unsafe_allow_html=True,
+            )
+            if st.button(
+                "🔍 관련 프로그램 보러가기",
+                key=f"prog_btn_{i}",
+                help="이 대화에서 언급된 프로그램을 검색 페이지에서 확인하세요.",
+            ):
+                go_to(PAGE_PROGRAMS)
+                st.rerun()
+            st.markdown("</div>", unsafe_allow_html=True)
 
     # 첫 빠른 답변
     if st.session_state.get("chat_show_qr", False):
@@ -91,19 +108,48 @@ def render():
 
 def _send_message(text: str):
     messages = st.session_state.setdefault("chat_messages", [])
-    messages.append({"role": "user", "content": text})
+    messages.append({"role": "user", "content": text, "programs": []})
     st.session_state["chat_show_qr"] = False
 
+    # session_id: 없으면 새로 생성
+    session_id = st.session_state.get("current_chat_id")
+    if not session_id:
+        session_id = new_chat_session()
+
     profile = get_profile()
+
+    # AI 메시지는 "assistant"로, user는 "user"로 변환해서 전달
     history = [
-        {"role": m["role"], "content": m["content"]}
-        for m in messages[:-1]
+        {
+            "role": "assistant" if m["role"] == "ai" else m["role"],
+            "content": m["content"],
+        }
+        for m in messages[:-1]  # 방금 추가한 user 메시지 제외
     ]
 
     with st.spinner(""):
-        reply = ""
-        for chunk in chat_stream(text, history, profile):
-            reply += chunk
-        messages.append({"role": "ai", "content": reply})
+        reply_data = chat_send(
+            user_query=text,
+            session_id=session_id,
+            history=history,
+            profile=profile,
+        )
+
+    # 응답 파싱
+    if isinstance(reply_data, dict):
+        reply_text = reply_data.get("text", "")
+        programs = reply_data.get("programs") or []
+        profile_updates = reply_data.get("profile") or {}
+    else:
+        # 하위 호환 (str 반환인 경우)
+        reply_text = reply_data
+        programs = []
+        profile_updates = {}
+
+    messages.append({"role": "ai", "content": reply_text, "programs": programs})
+
+    # 프로필 업데이트 (대화에서 추출된 사용자 정보 반영)
+    if profile_updates:
+        save_profile(profile_updates)
 
     st.rerun()
