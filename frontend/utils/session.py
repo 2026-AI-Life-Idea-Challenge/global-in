@@ -11,6 +11,8 @@ PAGE_CHAT = "chat"
 PAGE_PROGRAMS = "programs"
 PAGE_PREPARATION = "preparation"
 PAGE_PROFILE = "profile"
+PAGE_RESULT = "result"
+PAGE_COMPARE = "compare"
 
 
 def init_session():

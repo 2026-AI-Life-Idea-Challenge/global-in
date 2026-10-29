@@ -4,28 +4,17 @@ frontend/views/home.py
 """
 import streamlit as st
 from utils.session import go_to, PAGE_CHAT
-from components.header import render_header
 
 
 def render():
-    # 홈은 사이드바 없음 + Deploy 버튼 숨김
     st.markdown(
         """
         <style>
-        [data-testid="stSidebar"]          { display:none !important; }
-        [data-testid="stSidebarCollapsedControl"] { display:none !important; }
-        [data-testid="stToolbar"]          { display:none !important; }
-        [data-testid="stDecoration"]       { display:none !important; }
-        .block-container { padding:1rem 2rem !important; max-width:900px; }
+        .block-container { padding:1rem 2rem !important; }
         </style>
         """,
         unsafe_allow_html=True,
     )
-
-    # ── 헤더 ──────────────────────────────────────────────────
-    h_left, h_center, h_right = st.columns([1, 3.9, 1], gap="small")
-    with h_center:
-        render_header(right_label="홈")
 
     # ── HERO — 국가 코드 원형 배치 ────────────────────────────
     st.markdown(
