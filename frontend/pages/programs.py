@@ -31,7 +31,7 @@ def render():
 
     render_header(right_label="프로그램 찾기")
 
-    st.markdown("## 🔍 프로그램·지원제도 찾기")
+    st.markdown("## 프로그램·지원제도 찾기")
 
     query = st.text_input("", placeholder="검색어를 입력하세요 (예: 취업비자, 창업 지원...)", label_visibility="collapsed")
 

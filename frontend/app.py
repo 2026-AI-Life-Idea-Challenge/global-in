@@ -34,6 +34,16 @@ if os.path.exists(_style_path):
 st.markdown("""
 <style>
 [data-testid="stToolbar"],[data-testid="stDecoration"],footer,#MainMenu { display:none !important; }
+
+/* 메인 콘텐츠 상단·좌우 패딩 제거 → 헤더 full-width 가능 */
+[data-testid="stMainBlockContainer"] {
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+[data-testid="stMain"] > div:first-child {
+    padding-top: 0 !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
