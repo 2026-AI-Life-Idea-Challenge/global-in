@@ -73,10 +73,11 @@ def render_program_card(program: dict, show_compare: bool = False):
         if url:
             st.link_button("자세히 보기 ↗", url, use_container_width=True)
         else:
-            if st.button("자세히 보기 ↗", key=f"detail_{p_id}", use_container_width=True):
-                st.session_state["detail_program"] = program
-                st.session_state["page"] = "program_detail"
-                st.rerun()
+            st.markdown(
+                "<div style='font-size:0.78rem;color:#bbb;text-align:center;"
+                "padding:0.4rem 0;'>홈페이지 준비 중</div>",
+                unsafe_allow_html=True,
+            )
 
     st.markdown(
         "<hr style='margin:0.75rem 0; border:none; border-top:1px solid #f5f5f5;'>",

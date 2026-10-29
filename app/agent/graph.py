@@ -1,83 +1,158 @@
-"""상담 흐름 (LangGraph).
-
-understand ─┬─(기본 정보 부족)→ ask ──────────────────────────→ END
-            └─(충분)→ recommend ─┬─(후보 없음)→ END
-                                  └→ eligibility(A) → prep_guide → END
-
-대화 상태(프로필 등)는 checkpointer에 thread_id = session_id로 저장된다.
-A·B는 지금 stubs.py 대역을 쓴다.
 """
+app/agent/graph.py
 
-from datetime import date
+LangGraph 워크플로우 그래프 정의.
 
-from langgraph.checkpoint.memory import InMemorySaver
-from langgraph.graph import END, START, StateGraph
+5-에이전트 오케스트레이션:
+  user_understanding
+      ↓ (route)
+  route_recommendation ← (intent: route_recommendation)
+  eligibility_review   ← (intent: eligibility_review)
+  official_information ← (intent: official_information)
+  preparation_planning ← (intent: preparation_planning / 항상 거침)
+      ↓
+  end
 
-from app.agent import preparation_planning, stubs, user_understanding
-from app.agent.state import ConsultState
-from app.models.user_profile import UserProfile
+조건부 라우팅:
+  - 각 에이전트가 state.next_node 를 설정합니다.
+  - router.route() 가 next_node 값을 읽어 다음 노드를 결정합니다.
+  - "ask_user" 또는 "end" 는 종료 지점입니다.
+"""
+from __future__ import annotations
+
+import logging
+from functools import lru_cache
+
+from langgraph.graph import StateGraph, END
+
+from app.agent.state import AgentState
+from app.agent.router import route
+from app.agent import (
+    user_understanding,
+    route_recommendation,
+    eligibility_review,
+    official_information,
+    preparation_planning,
+)
+
+logger = logging.getLogger(__name__)
+
+# 종료 지점으로 매핑할 next_node 값 집합
+_END_NODES = {"ask_user", "end"}
 
 
-def build_graph(extractor: user_understanding.Extractor, checkpointer=None):
-    def understand(state: ConsultState) -> ConsultState:
-        profile = state.get("profile") or UserProfile()
-        message = state.get("user_message")
-        delta = extractor(message, profile) if message else None
-        updates = {**(delta.updates() if delta else {}), **state.get("profile_updates", {})}
-        profile, changed = user_understanding.merge_profile(profile, updates)
-        return {
-            "profile": profile,
-            "changed_fields": changed,
-            "intent": delta.intent if delta else "update_info",
-            # 이번 턴 입력·이전 턴 결과가 다음 턴에 남지 않게 초기화
-            "profile_updates": {},
-            "follow_up_questions": [],
-            "programs": [],
-            "eligibility": [],
-            "prep_items": [],
-        }
+def _make_graph() -> StateGraph:
+    """LangGraph StateGraph 를 구성하고 반환합니다."""
+    graph = StateGraph(AgentState)
 
-    def ask(state: ConsultState) -> ConsultState:
-        missing = user_understanding.missing_fields(state["profile"])
-        return {
-            "stage": "asking",
-            "reply": "맞춤 상담을 위해 몇 가지만 알려주세요.",
-            "follow_up_questions": user_understanding.follow_up_questions(missing),
-        }
+    # ── 노드 등록 ────────────────────────────────────────────────────────
+    graph.add_node("user_understanding",    user_understanding.run)
+    graph.add_node("route_recommendation",  route_recommendation.run)
+    graph.add_node("eligibility_review",    eligibility_review.run)
+    graph.add_node("official_information",  official_information.run)
+    graph.add_node("preparation_planning",  preparation_planning.run)
 
-    def recommend(state: ConsultState) -> ConsultState:
-        candidates = stubs.search_programs(state.get("user_message") or "", state["profile"])
-        if not candidates:
-            return {"stage": "result", "reply": "조건에 맞는 프로그램을 찾지 못했어요. 나라나 목적을 바꿔 보시겠어요?"}
-        return {"programs": candidates}
+    # ── 진입점 ───────────────────────────────────────────────────────────
+    graph.set_entry_point("user_understanding")
 
-    def check(state: ConsultState) -> ConsultState:
-        ids = [p.program_id for p in state["programs"]]
-        results = stubs.check_eligibility(state["profile"].to_evaluator_dict(), ids, as_of=date.today().isoformat())
-        return {"eligibility": results}
-
-    def guide(state: ConsultState) -> ConsultState:
-        items = preparation_planning.build_prep_items(state["programs"], state["eligibility"], stubs.search_citations)
-        return {
-            "stage": "result",
-            "reply": preparation_planning.build_reply(state["programs"], state["eligibility"], state["changed_fields"]),
-            "prep_items": items,
-        }
-
-    graph = StateGraph(ConsultState)
-    graph.add_node("understand", understand)
-    graph.add_node("ask", ask)
-    graph.add_node("recommend", recommend)
-    graph.add_node("eligibility", check)
-    graph.add_node("prep_guide", guide)
-
-    graph.add_edge(START, "understand")
+    # ── 조건부 엣지 (user_understanding → 다음 에이전트) ────────────────
     graph.add_conditional_edges(
-        "understand",
-        lambda s: "ask" if user_understanding.missing_fields(s["profile"]) else "recommend",
+        "user_understanding",
+        route,
+        {
+            "route_recommendation": "route_recommendation",
+            "eligibility_review":   "eligibility_review",
+            "official_information": "official_information",
+            "preparation_planning": "preparation_planning",
+            "ask_user": END,
+            "end":      END,
+        },
     )
-    graph.add_edge("ask", END)
-    graph.add_conditional_edges("recommend", lambda s: "eligibility" if s.get("programs") else END)
-    graph.add_edge("eligibility", "prep_guide")
-    graph.add_edge("prep_guide", END)
-    return graph.compile(checkpointer=checkpointer or InMemorySaver())
+
+    # ── route_recommendation → eligibility_review (항상) ─────────────────
+    graph.add_conditional_edges(
+        "route_recommendation",
+        route,
+        {
+            "eligibility_review":   "eligibility_review",
+            "official_information": "official_information",
+            "ask_user": END,
+            "end":      END,
+        },
+    )
+
+    # ── eligibility_review → official_information or ask_user ───────────
+    graph.add_conditional_edges(
+        "eligibility_review",
+        route,
+        {
+            "official_information": "official_information",
+            "ask_user": END,
+            "end":      END,
+        },
+    )
+
+    # ── official_information → preparation_planning (항상) ───────────────
+    graph.add_conditional_edges(
+        "official_information",
+        route,
+        {
+            "preparation_planning": "preparation_planning",
+            "ask_user": END,
+            "end":      END,
+        },
+    )
+
+    # ── preparation_planning → END ────────────────────────────────────────
+    graph.add_conditional_edges(
+        "preparation_planning",
+        route,
+        {
+            "ask_user": END,
+            "end":      END,
+        },
+    )
+
+    return graph
+
+
+@lru_cache(maxsize=1)
+def get_compiled_graph():
+    """
+    컴파일된 LangGraph 앱을 반환합니다.
+    lru_cache 로 싱글턴 보장 (한 번만 컴파일).
+    """
+    logger.info("[graph] LangGraph 그래프 컴파일 시작")
+    app = _make_graph().compile()
+    logger.info("[graph] LangGraph 그래프 컴파일 완료")
+    return app
+
+
+async def run_graph(state: dict) -> dict:
+    """
+    LangGraph 그래프를 비동기로 실행합니다.
+
+    Args:
+        state: initial_state() 로 생성된 AgentState dict
+
+    Returns:
+        최종 AgentState dict
+    """
+    app = get_compiled_graph()
+    result = await app.ainvoke(state)
+    return result
+
+
+def run_graph_sync(state: dict) -> dict:
+    """
+    LangGraph 그래프를 동기로 실행합니다.
+
+    Args:
+        state: initial_state() 로 생성된 AgentState dict
+
+    Returns:
+        최종 AgentState dict
+    """
+    app = get_compiled_graph()
+    result = app.invoke(state)
+    return result
