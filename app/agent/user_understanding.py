@@ -1,89 +1,122 @@
-"""사용자 이해 에이전트: 발화 → 프로필 변경분 추출, 프로필 병합, 부족한 정보 → 추가 질문."""
+"""
+app/agent/user_understanding.py
 
-import os
-from collections.abc import Callable
+사용자 이해 에이전트.
 
-from pydantic import ValidationError
+역할:
+- 사용자 Intent 분류
+- UserProfile 생성·갱신
+- Missing Information 탐지
+- 추가 질문 생성
+"""
+from __future__ import annotations
 
-from app.models.consult import FollowUpQuestion, ProfileDelta, ProfileUpdateRequest
-from app.models.user_profile import UserProfile
+import json
+import logging
+from typing import Any
 
-# (발화, 현재 프로필) → 변경분. 테스트에서는 LLM 없이 가짜 추출기를 넣는다.
-Extractor = Callable[[str, UserProfile], ProfileDelta]
+from app.agent.state import AgentState
+from app.services import llm
 
-_SYSTEM_PROMPT = """너는 해외 진출(워킹홀리데이·유학·취업) 상담의 사용자 이해 담당이다.
-사용자 발화에서 새로 언급되거나 바뀐 정보만 뽑아라. 언급되지 않은 필드는 반드시 null로 둔다.
-- date_of_birth: 생년월일을 YYYY-MM-DD로. 나이만 말했으면 추측하지 말고 null
-- nationalities: 국적 ISO 2자리 코드 목록 (예: 한국 → ["KR"])
-- target_country: japan, australia, usa, germany, canada 중 하나
-- target_visa_type: working_holiday(워홀), student(유학), employment(취업) 중 하나
-- purpose: 방문 목적에 대한 자유 텍스트 (있을 때만)
-- intent: recommend(프로그램 추천), check(자격 확인), prepare(준비 방법), update_info(정보 정정), other
-현재 프로필: {profile}"""
+logger = logging.getLogger(__name__)
 
-# 추천·검토 전에 반드시 알아야 하는 기본 정보. 프로그램별 세부 조건은 A가 판단한다.
-REQUIRED_FIELDS = ["target_country", "target_visa_type", "date_of_birth"]
+# ── 시스템 프롬프트 ────────────────────────────────────────────────────────
+_SYSTEM = """
+당신은 Global-In 의 사용자 이해 에이전트입니다.
 
-FIELD_QUESTIONS: dict[str, FollowUpQuestion] = {
-    "target_country": FollowUpQuestion(
-        field="target_country", question="어느 나라로 가고 싶으세요?", input_type="select",
-        options=["japan", "australia", "usa", "germany", "canada"],
-    ),
-    "target_visa_type": FollowUpQuestion(
-        field="target_visa_type", question="워킹홀리데이, 유학, 취업 중 어떤 목적인가요?", input_type="select",
-        options=["working_holiday", "student", "employment"],
-    ),
-    "date_of_birth": FollowUpQuestion(
-        field="date_of_birth", question="생년월일을 알려주세요. (예: 1998-05-15)", input_type="date",
-    ),
+역할:
+1. 사용자의 해외 진출 목적과 현황을 파악합니다.
+2. 사용자 프로필(나이, 국적, 학력, 경력, 언어, 희망 국가 등)을 추출·갱신합니다.
+3. 프로그램 검토에 필요한 정보가 부족한 경우에만 추가 질문을 생성합니다.
+
+중요한 구분:
+- '사용자 정보 부족' (정보가 아직 없음) vs '조건 미충족' (정보는 있지만 조건 불충족)
+- 조건 미충족 판정은 자격 검토 에이전트가 담당합니다.
+
+응답 형식: 반드시 JSON 만 출력합니다.
+{
+  "intent": "route_recommendation | eligibility_review | official_information | preparation_planning | general_inquiry",
+  "profile_updates": { /* UserProfile 필드명: 새로운 값 */ },
+  "missing_fields": [ /* 추가로 확인이 필요한 UserProfile 필드 이름 목록 */ ],
+  "follow_up_question": "사용자에게 물어볼 질문 (없으면 null)"
 }
 
-MAX_QUESTIONS_PER_TURN = 3
+intent 선택 기준:
+- route_recommendation: 국가/경로/프로그램 추천 요청
+- eligibility_review: 특정 프로그램 자격 확인 요청
+- official_information: 비자/규정/지원제도 공식 정보 조회
+- preparation_planning: 준비 절차/서류/일정 안내 요청
+- general_inquiry: 그 외 일반 문의
+""".strip()
 
 
-def llm_extractor() -> Extractor:
-    """OpenAI structured output으로 ProfileDelta를 뽑는다. OPENAI_API_KEY 필요."""
-    from openai import OpenAI
+def _build_prompt(state: AgentState) -> str:
+    history_text = ""
+    for msg in (state.get("history") or [])[-6:]:
+        role = "사용자" if msg["role"] == "user" else "어시스턴트"
+        history_text += f"{role}: {msg['content']}\n"
 
-    client = OpenAI()
-    model = os.environ.get("CONSULT_MODEL", "gpt-4o-mini")
+    profile_text = json.dumps(state.get("user_profile") or {}, ensure_ascii=False, indent=2)
 
-    def extract(message: str, profile: UserProfile) -> ProfileDelta:
-        response = client.responses.parse(
-            model=model,
-            input=[
-                {"role": "system", "content": _SYSTEM_PROMPT.format(profile=profile.model_dump_json())},
-                {"role": "user", "content": message},
-            ],
-            text_format=ProfileDelta,
-        )
-        return response.output_parsed or ProfileDelta()
+    return f"""## 대화 히스토리
+{history_text}
 
-    return extract
+## 현재 사용자 메시지
+{state['user_query']}
 
+## 현재 사용자 프로필
+{profile_text}
 
-def merge_profile(profile: UserProfile, updates: dict) -> tuple[UserProfile, list[str]]:
-    """None은 덮어쓰지 않고, ProfileUpdateRequest 검증에 실패하는 값(예: 생년월일 1800-01-01)은 버린다.
-    (새 프로필, 바뀐 필드) 반환."""
-    merged = profile.model_dump()
-    changed = []
-    for key, value in updates.items():
-        if value is None:
-            continue
-        try:
-            checked = ProfileUpdateRequest.model_validate({key: value}).model_dump(mode="json")[key]
-        except ValidationError:
-            continue
-        if merged.get(key) == checked:
-            continue
-        merged[key] = checked
-        changed.append(key)
-    return UserProfile.model_validate(merged), changed
+위 정보를 바탕으로 JSON 을 출력하세요.
+"""
 
 
-def missing_fields(profile: UserProfile) -> list[str]:
-    return [f for f in REQUIRED_FIELDS if getattr(profile, f) is None]
+def run(state: AgentState) -> dict[str, Any]:
+    """
+    사용자 이해 에이전트 노드.
+    LangGraph 노드 함수로 AgentState 업데이트 dict 를 반환합니다.
+    """
+    logger.info("[user_understanding] 실행")
+    prompt = _build_prompt(state)
 
+    try:
+        raw = llm.extract_json(prompt, system=_SYSTEM, max_tokens=512)
+        result = json.loads(raw)
+    except Exception as e:
+        logger.warning(f"[user_understanding] LLM 파싱 실패: {e}")
+        result = {
+            "intent": "general_inquiry",
+            "profile_updates": {},
+            "missing_fields": [],
+            "follow_up_question": None,
+        }
 
-def follow_up_questions(missing: list[str]) -> list[FollowUpQuestion]:
-    return [FIELD_QUESTIONS[f] for f in missing[:MAX_QUESTIONS_PER_TURN]]
+    # 프로필 갱신
+    profile = dict(state.get("user_profile") or {})
+    profile.update(result.get("profile_updates") or {})
+
+    intent = result.get("intent", "general_inquiry")
+    missing_fields = result.get("missing_fields") or []
+    follow_up_question = result.get("follow_up_question")
+
+    # 다음 노드 결정
+    if follow_up_question:
+        next_node = "ask_user"
+    else:
+        _intent_to_node = {
+            "route_recommendation": "route_recommendation",
+            "eligibility_review": "eligibility_review",
+            "official_information": "official_information",
+            "preparation_planning": "preparation_planning",
+            "general_inquiry": "official_information",
+        }
+        next_node = _intent_to_node.get(intent, "official_information")
+
+    return {
+        "user_profile": profile,
+        "intent": intent,
+        "missing_fields": missing_fields,
+        "follow_up_question": follow_up_question,
+        "next_node": next_node,
+        "current_agent": "user_understanding",
+    }
