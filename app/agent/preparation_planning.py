@@ -33,6 +33,17 @@ _SYSTEM = """
 - 지원제도(비자 외)는 별도 카테고리로 분류하세요.
 - 각 항목에는 구체적인 설명과 주의사항을 포함하세요.
 
+=== final_answer 작성 규칙 (매우 중요) ===
+final_answer 는 아래 구조로 작성하세요:
+1. 사용자 상황 요약 (1-2문장)
+2. 추천 프로그램/비자 목록 — 반드시 후보 비자/프로그램의 실제 이름을 언급하세요.
+   예: "○○ 비자", "△△ 장학금", "□□ 제도" 등 구체적인 명칭 사용
+3. 핵심 준비 사항 (2-3가지 구체적 항목)
+4. 다음 단계 안내
+
+generic 한 표현("비자를 알아보세요", "공식 채널을 확인하세요")은 사용하지 마세요.
+실제 프로그램 이름을 포함한 구체적이고 친절한 안내를 작성하세요.
+
 응답 형식: 반드시 JSON 만 출력합니다.
 {
   "checklist": [
@@ -51,7 +62,7 @@ _SYSTEM = """
       "target_ids": ["관련 program_id 또는 support_program_id 목록"]
     }
   ],
-  "final_answer": "사용자에게 전달할 종합 안내 메시지 (한국어, 친절하고 구체적으로)"
+  "final_answer": "사용자에게 전달할 종합 안내 메시지 (한국어, 친절하고 구체적으로, 실제 프로그램명 반드시 포함)"
 }
 """.strip()
 
@@ -79,8 +90,12 @@ def _build_context(state: AgentState) -> str:
         for p in programs:
             pid = p.get("program_id", "")
             pname = p.get("program_name") or p.get("name", "")
-            country = p.get("destination_country", "")
-            parts.append(f"- [{pid}] {pname} ({country})")
+            country = p.get("country") or p.get("destination_country", "")
+            reason = p.get("recommendation_reason", "")
+            line = f"- [{pid}] {pname} ({country})"
+            if reason:
+                line += f" — {reason}"
+            parts.append(line)
 
     # 후보 지원제도
     support_programs = state.get("candidate_support_programs") or []
@@ -125,6 +140,7 @@ def run(state: AgentState) -> dict[str, Any]:
 {context}
 
 위 정보를 바탕으로 사용자 맞춤 Checklist 와 Roadmap, 최종 안내 메시지를 JSON 으로 출력하세요.
+final_answer 에는 반드시 위에 나온 실제 프로그램 이름을 언급하세요.
 """
 
     try:
