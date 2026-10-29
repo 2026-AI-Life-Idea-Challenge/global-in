@@ -8,6 +8,7 @@ from fastapi import FastAPI, HTTPException, Query
 from psycopg.rows import dict_row
 
 from app.models.program import Program, PolicyCandidate, Evidence, SupportProgram
+from app.api.consult import create_router as create_consult_router
 
 import secrets
 from fastapi import Depends, Header
@@ -63,6 +64,8 @@ app = FastAPI(
     version="0.1.0",
     lifespan=lifespan,
 )
+
+app.include_router(create_consult_router(), dependencies=[Depends(require_internal_api_key)])
 
 
 @app.get("/")
