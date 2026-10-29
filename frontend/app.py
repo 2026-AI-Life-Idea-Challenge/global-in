@@ -59,6 +59,11 @@ init_session()
 
 # ── 라우팅 ────────────────────────────────────────────────
 page = st.session_state.get("page", PAGE_HOME)
+# 알 수 없는 페이지는 홈으로 reset
+_known_pages = {PAGE_HOME, PAGE_CHAT, PAGE_PROGRAMS, PAGE_PREPARATION, PAGE_PROFILE, PAGE_RESULT, PAGE_COMPARE}
+if page not in _known_pages:
+    st.session_state["page"] = PAGE_HOME
+    page = PAGE_HOME
 
 # ── 공통 헤더 (모든 페이지 동일) ──────────────────────────
 h_left, h_center, h_right = st.columns([1, 3.9, 1], gap="small")

@@ -84,32 +84,38 @@ def render():
         st.info("조건에 맞는 프로그램이 없습니다.")
         return
 
-    # 비교 패널 (2개 이상 체크 시만 표시)
+    # ── 비교하기 ─────────────────────────────────────────────
+    compare_keys = [
+        f"chk_compare_{prog.get('id', prog.get('name', ''))}"
+        for prog in programs
+    ]
     compared = [
         prog for prog in programs
         if st.session_state.get(f"chk_compare_{prog.get('id', prog.get('name', ''))}")
     ]
+    st.session_state["compare_list"] = compared
 
     if len(compared) >= 2:
-        with st.expander(f"📊 비교하기 ({len(compared)}개 선택)", expanded=True):
-            cols = st.columns(len(compared) + 1)
-            with cols[0]:
-                st.markdown("**항목**")
-            for i, prog in enumerate(compared):
-                p_id = prog.get("id", prog.get("name", ""))
-                with cols[i + 1]:
-                    st.markdown(f"**{prog.get('name', '')}**")
-                    if st.button("✕ 제외", key=f"remove_compare_{p_id}", use_container_width=True):
-                        st.session_state[f"chk_compare_{p_id}"] = False
-                        st.rerun()
-
-            for label, key in COMPARE_FIELDS:
-                row_cols = st.columns(len(compared) + 1)
-                with row_cols[0]:
-                    st.markdown(f"*{label}*")
-                for i, prog in enumerate(compared):
-                    with row_cols[i + 1]:
-                        st.markdown(str(prog.get(key, "-") or "-"))
+        st.markdown(
+            f'<div style="background:#f8f9ff;border:1px solid #dde3ff;border-radius:12px;'
+            f'padding:0.75rem 1rem;margin-bottom:1rem;">'
+            f'<span style="font-size:0.85rem;font-weight:700;color:#4f6ef7;">📊 {len(compared)}개 선택됨</span>'
+            f'<span style="font-size:0.82rem;color:#666;margin-left:0.5rem;">'
+            + ", ".join(p.get("name", "") for p in compared) +
+            f'</span></div>',
+            unsafe_allow_html=True,
+        )
+        col_cmp, col_clr = st.columns([2, 1])
+        with col_cmp:
+            if st.button("📊 선택 항목 비교하기", key="go_compare", type="primary", use_container_width=True):
+                from utils.session import PAGE_COMPARE
+                go_to(PAGE_COMPARE)
+        with col_clr:
+            if st.button("선택 초기화", key="clear_compare", use_container_width=True):
+                for k in compare_keys:
+                    st.session_state[k] = False
+                st.session_state["compare_list"] = []
+                st.rerun()
 
     st.markdown(f"**총 {len(programs)}개** 결과")
     for prog in programs:
