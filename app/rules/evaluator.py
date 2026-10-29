@@ -149,7 +149,7 @@ def evaluate(expression, profile, trusted_context=None):
         collected=[];states=[]
         for child in children:
             requests=[]
-            child_context=trusted_context[:4]+(requests,) if trusted_context and len(trusted_context)>4 else trusted_context
+            child_context=trusted_context[:4]+[requests] if trusted_context and len(trusted_context)>4 else trusted_context
             states.append(evaluate(child,profile,child_context));collected.append(requests)
         if op=='all':
             status=FAIL if FAIL in states else UNKNOWN if UNKNOWN in states else PASS
