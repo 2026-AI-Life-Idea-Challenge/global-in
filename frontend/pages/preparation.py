@@ -4,9 +4,8 @@ frontend/pages/preparation.py
 """
 import streamlit as st
 from components.header import render_header
-from components.sidebar import render_inner_sidebar
 from components.checklist_item import render_checklist_item
-from utils.session import PAGE_PREPARATION, PAGE_PROGRAMS, PAGE_CHAT, go_to
+from utils.session import PAGE_PROGRAMS, PAGE_CHAT, go_to
 
 CHECKLIST_FILTERS = ["공식 준비 항목", "AI 추천", "내가 추가"]
 
@@ -78,17 +77,22 @@ def render():
     )
     render_header(right_label="내 계획")
 
-    items = st.session_state.get("preparation_items")
-    if items is None:
+    saved = list(st.session_state.get("saved_programs", {}).values())
+
+    # saved가 없으면 checklist 초기화 후 빈 화면
+    if not saved:
+        st.session_state["preparation_items"] = []
+        st.session_state["selected_prog_id"] = None
+        _render_empty_state()
+        return
+
+    items = st.session_state.get("preparation_items") or []
+    if not items:
         items = SAMPLE_CHECKLIST
         st.session_state["preparation_items"] = items
 
     checked_count = sum(1 for i in items if i.get("checked"))
     total_count = len(items)
-
-    if total_count == 0:
-        _render_empty_state()
-        return
 
     st.markdown(
         "<span style='font-size:0.65rem;font-weight:700;letter-spacing:0.15em;color:#aaa;'>"
@@ -101,58 +105,66 @@ def render():
         unsafe_allow_html=True,
     )
 
-    # 관심 프로그램 가로 카드 — saved_programs에서 읽기
-    saved = list(st.session_state.get("saved_programs", {}).values())
-
+    # 관심 프로그램 — 클릭 가능한 카드
     st.markdown(
         "<div style='font-size:0.78rem;font-weight:600;color:#1a1a1a;margin-bottom:0.5rem;'>"
         f"관심 프로그램 <span style='color:#aaa;font-weight:400;'>({len(saved)})</span></div>",
         unsafe_allow_html=True,
     )
 
-    if not saved:
-        st.markdown(
-            "<div style='font-size:0.82rem;color:#aaa;margin-bottom:0.75rem;'>"
-            "아직 담은 프로그램이 없어요. 프로그램·지원제도 찾기에서 추가해 보세요.</div>",
-            unsafe_allow_html=True,
-        )
-    else:
-        prog_cols = st.columns(min(len(saved), 3))
-        for col, prog in zip(prog_cols, saved[:3]):
-            with col:
-                st.markdown(
-                    f"""
-                    <div style='border:1px solid #e8e8e8;border-radius:12px;padding:0.75rem;
-                         background:#fff;margin-bottom:0.5rem;'>
-                        <div style='font-size:0.7rem;color:#888;margin-bottom:0.2rem;'>
-                            {prog.get('type','')} · {prog.get('purpose','')}</div>
-                        <div style='font-size:0.82rem;font-weight:700;color:#1a1a1a;
-                             margin-bottom:0.2rem;'>
-                            {prog.get('country_emoji','')} {prog.get('name','')}</div>
-                        <div style='font-size:0.7rem;color:#aaa;'>{prog.get('country','')}</div>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                )
-        if len(saved) > 3:
+    selected_id = st.session_state.get("selected_prog_id")
+    prog_cols = st.columns(min(len(saved), 3))
+    for i, prog in enumerate(saved[:3]):
+        p_id = prog.get("id", prog.get("name", str(i)))
+        is_sel = selected_id == p_id
+        with prog_cols[i]:
+            # 카드 스타일 배경
+            border_color = "#1a1a1a" if is_sel else "#e8e8e8"
+            bg_color = "#f8f8f8" if is_sel else "#fff"
             st.markdown(
-                f"<div style='font-size:0.75rem;color:#aaa;'>외 {len(saved)-3}개 더</div>",
+                f"""<div style='border:1.5px solid {border_color};border-radius:12px;
+                     padding:0.75rem;background:{bg_color};margin-bottom:0.3rem;'>
+                    <div style='font-size:0.68rem;color:#888;'>
+                        {prog.get('type','')} · {prog.get('purpose','')}</div>
+                    <div style='font-size:0.82rem;font-weight:700;color:#1a1a1a;margin:0.15rem 0;'>
+                        {prog.get('country_emoji','')} {prog.get('name','')}</div>
+                    <div style='font-size:0.68rem;color:#aaa;'>{prog.get('country','')}</div>
+                </div>""",
                 unsafe_allow_html=True,
             )
+            btn_label = "✓ 선택됨" if is_sel else "선택하기"
+            if st.button(btn_label, key=f"sel_prog_{p_id}", use_container_width=True,
+                         type="primary" if is_sel else "secondary"):
+                st.session_state["selected_prog_id"] = None if is_sel else p_id
+                st.rerun()
 
-    st.markdown("<hr style='border:none;border-top:1px solid #f0f0f0;margin:0.5rem 0 1rem;'>",
+    if len(saved) > 3:
+        st.markdown(
+            f"<div style='font-size:0.75rem;color:#aaa;margin-top:0.25rem;'>외 {len(saved)-3}개 더</div>",
+            unsafe_allow_html=True,
+        )
+
+    st.markdown("<hr style='border:none;border-top:1px solid #f0f0f0;margin:0.75rem 0 1rem;'>",
                 unsafe_allow_html=True)
+
+    # 선택된 프로그램 표시
+    if selected_id:
+        sel_prog = next((p for p in saved if p.get("id", p.get("name")) == selected_id), None)
+        if sel_prog:
+            st.markdown(
+                f"<div style='font-size:0.78rem;color:#555;margin-bottom:0.5rem;'>"
+                f"📌 <b>{sel_prog.get('name','')}</b> 기준 체크리스트</div>",
+                unsafe_allow_html=True,
+            )
 
     # 진행 요약
     pct = int(checked_count / total_count * 100) if total_count else 0
     st.markdown(
         f"""
-        <div style='display:flex;align-items:center;gap:1rem;margin-bottom:0.75rem;'>
-            <div>
-                <div style='font-size:0.9rem;font-weight:700;color:#1a1a1a;'>체크리스트</div>
-                <div style='font-size:0.75rem;color:#888;margin-top:0.15rem;'>
-                    {total_count}개 항목 · {checked_count}개 완료</div>
-            </div>
+        <div style='margin-bottom:0.75rem;'>
+            <div style='font-size:0.9rem;font-weight:700;color:#1a1a1a;'>체크리스트</div>
+            <div style='font-size:0.75rem;color:#888;margin-top:0.15rem;'>
+                {total_count}개 항목 · {checked_count}개 완료</div>
         </div>
         <div style='background:#f0f0f0;border-radius:999px;height:5px;margin-bottom:1rem;'>
             <div style='background:#1a1a1a;border-radius:999px;height:5px;width:{pct}%;'></div>
@@ -167,27 +179,16 @@ def render():
     for col, f in zip(filter_cols, CHECKLIST_FILTERS):
         with col:
             is_active = f == active_filter
-            if st.button(
-                f,
-                key=f"prep_filter_{f}",
-                use_container_width=True,
-                type="primary" if is_active else "secondary",
-            ):
-                if is_active:
-                    st.session_state["prep_filter"] = None
-                else:
-                    st.session_state["prep_filter"] = f
+            if st.button(f, key=f"prep_filter_{f}", use_container_width=True,
+                         type="primary" if is_active else "secondary"):
+                st.session_state["prep_filter"] = None if is_active else f
                 st.rerun()
 
     st.markdown("<div style='margin-top:0.75rem;'></div>", unsafe_allow_html=True)
 
-    pre_items = [i for i in items
-                 if not active_filter or active_filter in i.get("tags", [])]
-    _render_section("01", "신청 전 준비", pre_items[:3])
-
-    apply_items = [i for i in items
-                   if not active_filter or active_filter in i.get("tags", [])]
-    _render_section("02", "신청 준비", apply_items[3:])
+    filtered = [i for i in items if not active_filter or active_filter in i.get("tags", [])]
+    _render_section("01", "신청 전 준비", filtered[:3], start_idx=0)
+    _render_section("02", "신청 준비", filtered[3:], start_idx=3)
 
     st.markdown("<div style='margin-top:1.5rem;'></div>", unsafe_allow_html=True)
     if st.button("💬  AI에게 준비 방법 물어보기", key="prep_ask_ai",
@@ -195,7 +196,7 @@ def render():
         go_to(PAGE_CHAT)
 
 
-def _render_section(num: str, title: str, section_items: list):
+def _render_section(num: str, title: str, section_items: list, start_idx: int = 0):
     if not section_items:
         return
     st.markdown(
@@ -214,7 +215,7 @@ def _render_section(num: str, title: str, section_items: list):
         unsafe_allow_html=True,
     )
     for idx, item in enumerate(section_items):
-        render_checklist_item(item, idx)
+        render_checklist_item(item, start_idx + idx)
     st.markdown("<div style='margin-bottom:0.75rem;'></div>", unsafe_allow_html=True)
 
 
@@ -245,6 +246,5 @@ def _render_empty_state():
                      use_container_width=True, type="primary"):
             go_to(PAGE_PROGRAMS)
     with col2:
-        if st.button("AI 상담하기", key="prep_empty_chat",
-                     use_container_width=True):
+        if st.button("AI 상담하기", key="prep_empty_chat", use_container_width=True):
             go_to(PAGE_CHAT)

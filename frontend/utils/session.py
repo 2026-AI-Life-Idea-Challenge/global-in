@@ -16,6 +16,9 @@ PAGE_PROFILE = "profile"
 def init_session():
     """앱 최초 실행 시 세션 상태 기본값 설정."""
 
+    if "saved_programs" not in st.session_state:
+        st.session_state["saved_programs"] = {}
+
     # 현재 페이지
     if "page" not in st.session_state:
         st.session_state.page = PAGE_HOME
