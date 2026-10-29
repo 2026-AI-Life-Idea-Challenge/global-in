@@ -8,6 +8,7 @@ import os
 
 sys.path.insert(0, os.path.dirname(__file__))
 
+from components.header import render_header
 from components.sidebar import render_inner_sidebar
 from utils.session import (
     init_session,
@@ -15,14 +16,11 @@ from utils.session import (
     PAGE_PREPARATION, PAGE_PROFILE,
 )
 
-# ── 페이지 설정 ────────────────────────────────────────────
-page_has_sidebar = True  # 사이드바 필요 여부는 아래서 결정
-
 st.set_page_config(
     page_title="Global-In",
     page_icon="⊙",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
 )
 
 # ── 전역 스타일 ────────────────────────────────────────────
@@ -34,15 +32,18 @@ if os.path.exists(_style_path):
 st.markdown("""
 <style>
 [data-testid="stToolbar"],[data-testid="stDecoration"],footer,#MainMenu { display:none !important; }
-
-/* 메인 콘텐츠 상단·좌우 패딩 제거 → 헤더 full-width 가능 */
+[data-testid="stSidebar"], [data-testid="stSidebarNav"],
+button[kind="header"], [data-testid="collapsedControl"] { display:none !important; }
 [data-testid="stMainBlockContainer"] {
-    padding-top: 0 !important;
+    padding-top: 1rem !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    max-width: 100% !important;
 }
-[data-testid="stMain"] > div:first-child {
-    padding-top: 0 !important;
+/* 헤더 제외하고 두 번째 블록(columns)부터 좌우 패딩 */
+[data-testid="stMainBlockContainer"] > div > div > div:nth-child(2) {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -52,31 +53,38 @@ init_session()
 
 # ── 라우팅 ────────────────────────────────────────────────
 page = st.session_state.get("page", PAGE_HOME)
-# 홈 화면에서는 사이드바를 표시하지 않고,
-# 나머지 화면에서는 공통 사이드바를 표시
-if page != PAGE_HOME:
-    render_inner_sidebar(page)
+
+PAGE_LABELS = {
+    PAGE_CHAT:        "AI 상담",
+    PAGE_PROGRAMS:    "프로그램·지원제도 찾기",
+    PAGE_PREPARATION: "내 준비",
+    PAGE_PROFILE:     "내 프로필",
+}
 
 if page == PAGE_HOME:
     from pages.home import render
     render()
-
-elif page == PAGE_CHAT:
-    from pages.chat import render
-    render()
-
-elif page == PAGE_PROGRAMS:
-    from pages.programs import render
-    render()
-
-elif page == PAGE_PREPARATION:
-    from pages.preparation import render
-    render()
-
-elif page == PAGE_PROFILE:
-    from pages.profile import render
-    render()
-
 else:
-    from pages.home import render
-    render()
+    # 헤더도 콘텐츠와 같은 너비로
+    h_left, h_center, h_right = st.columns([1, 3.9, 1], gap="small")
+    with h_center:
+        render_header(right_label=PAGE_LABELS.get(page, ""))
+
+    # 사이드바 + 콘텐츠
+    sp_left, col_side, col_main, sp_right = st.columns([1, 0.9, 3, 1], gap="small")
+
+    with col_side:
+        render_inner_sidebar(page)
+
+    with col_main:
+        if page == PAGE_CHAT:
+            from pages.chat import render
+        elif page == PAGE_PROGRAMS:
+            from pages.programs import render
+        elif page == PAGE_PREPARATION:
+            from pages.preparation import render
+        elif page == PAGE_PROFILE:
+            from pages.profile import render
+        else:
+            from pages.home import render
+        render()

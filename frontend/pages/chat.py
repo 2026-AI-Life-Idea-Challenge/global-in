@@ -24,12 +24,6 @@ AI_GREETING = (
 
 
 def render():
-    st.markdown("""
-    <style>
-    [data-testid="stToolbar"],[data-testid="stDecoration"],footer,#MainMenu { display:none !important; }
-    </style>
-    """, unsafe_allow_html=True)
-    render_header(right_label="AI 상담")
 
     # 내 프로필 반영 중 배지
     profile = get_profile()

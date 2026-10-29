@@ -4,6 +4,7 @@ frontend/views/home.py
 """
 import streamlit as st
 from utils.session import go_to, PAGE_CHAT
+from components.header import render_header
 
 
 def render():
@@ -22,28 +23,9 @@ def render():
     )
 
     # ── 헤더 ──────────────────────────────────────────────────
-    st.markdown(
-        """
-        <div style="display:flex; justify-content:space-between; align-items:center;
-             padding:0.5rem 0 0.75rem;">
-            <div style="border:1px solid #e0e0e0; border-radius:20px;
-                 padding:0.35rem 1rem; font-size:0.88rem; font-weight:600;
-                 color:#1a1a1a; cursor:pointer;">
-                ⊙  Global-In .
-            </div>
-            <div style="display:flex; gap:0.5rem;">
-                <div style="border:1px solid #e0e0e0; border-radius:8px;
-                     padding:0.35rem 1rem; font-size:0.85rem; color:#1a1a1a;
-                     cursor:pointer;">서비스 소개</div>
-                <div style="border:1px solid #e0e0e0; border-radius:8px;
-                     padding:0.35rem 1rem; font-size:0.85rem; color:#1a1a1a;
-                     cursor:pointer;">이용 방법</div>
-            </div>
-        </div>
-        <hr style="margin:0 0 0 0; border:none; border-top:1px solid #f0f0f0;">
-        """,
-        unsafe_allow_html=True,
-    )
+    h_left, h_center, h_right = st.columns([1, 3.9, 1], gap="small")
+    with h_center:
+        render_header(right_label="홈")
 
     # ── HERO — 국가 코드 원형 배치 ────────────────────────────
     st.markdown(

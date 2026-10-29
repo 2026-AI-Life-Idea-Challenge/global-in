@@ -64,18 +64,6 @@ SAMPLE_CHECKLIST = [
 
 
 def render():
-    st.markdown(
-        """
-        <style>
-        [data-testid="stSidebar"]             { display:block !important; }
-        [data-testid="stSidebarCollapsedControl"] { display:block !important; }
-        [data-testid="stToolbar"],[data-testid="stDecoration"],footer,#MainMenu
-                                               { display:none !important; }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-    render_header(right_label="내 계획")
 
     saved = list(st.session_state.get("saved_programs", {}).values())
 

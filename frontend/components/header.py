@@ -8,11 +8,6 @@ import streamlit as st
 def render_header(right_label: str = "", show_nav: bool = False):
     st.markdown(
         f"""
-        <style>
-        [data-testid="stToolbar"],[data-testid="stDecoration"],footer,#MainMenu {{
-            display:none !important;
-        }}
-        </style>
         <div style="
             background:#ffffff;
             border-bottom:1px solid #e8e8e8;
@@ -20,7 +15,7 @@ def render_header(right_label: str = "", show_nav: bool = False):
             display:flex;
             justify-content:space-between;
             align-items:center;
-            margin-bottom:1.5rem;
+            margin-bottom:0;
         ">
             <div style="display:flex;align-items:center;gap:10px;">
                 <div style="
@@ -34,6 +29,7 @@ def render_header(right_label: str = "", show_nav: bool = False):
             </div>
             <div style="font-size:0.85rem;color:#666;">● {right_label}</div>
         </div>
+        <hr style="margin:0 0 1rem;border:none;border-top:1px solid #e8e8e8;">
         """,
         unsafe_allow_html=True,
     )

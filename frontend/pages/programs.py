@@ -22,15 +22,6 @@ def render():
     from components.program_card import render_program_card
     from components.header import render_header
 
-    st.markdown("""
-    <style>
-    [data-testid="stToolbar"],[data-testid="stDecoration"],footer,#MainMenu { display:none !important; }
-    input[type="text"] { padding: 12px 16px !important; font-size: 1rem !important; }
-    </style>
-    """, unsafe_allow_html=True)
-
-    render_header(right_label="프로그램 찾기")
-
     st.markdown("## 프로그램·지원제도 찾기")
 
     query = st.text_input("", placeholder="검색어를 입력하세요 (예: 취업비자, 창업 지원...)", label_visibility="collapsed")

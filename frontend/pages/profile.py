@@ -30,12 +30,6 @@ PURPOSE_OPTIONS = ["취업", "유학", "워킹홀리데이·교류", "미정"]
 
 
 def render():
-    st.markdown("""
-    <style>
-    [data-testid="stToolbar"],[data-testid="stDecoration"],footer,#MainMenu { display:none !important; }
-    </style>
-    """, unsafe_allow_html=True)
-    render_header(right_label="내 프로필")
 
     profile = get_profile()
 
