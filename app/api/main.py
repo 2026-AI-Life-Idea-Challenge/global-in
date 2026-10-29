@@ -408,6 +408,8 @@ class ChatResponse(_BaseModel):
     eligibility_results: list[dict] | None = None
     follow_up_question: str | None = None
     user_profile: dict | None = None
+    candidate_programs: list[dict] | None = None
+    candidate_support_programs: list[dict] | None = None
 
 
 @app.post("/chat", response_model=ChatResponse)
@@ -445,4 +447,6 @@ async def chat(req: ChatRequest):
         eligibility_results=result.get("eligibility_results") or [],
         follow_up_question=result.get("follow_up_question"),
         user_profile=result.get("user_profile"),
+        candidate_programs=result.get("candidate_programs") or [],
+        candidate_support_programs=result.get("candidate_support_programs") or [],
     )
