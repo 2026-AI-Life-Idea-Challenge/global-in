@@ -381,3 +381,66 @@ def list_public_support_programs(
             status_code=503,
             detail="Database query failed",
         ) from None
+
+# ─── /chat 엔드포인트 ────────────────────────────────────────────────────────
+
+import uuid as _uuid
+from pydantic import BaseModel as _BaseModel
+
+from app.agent.state import initial_state
+from app.agent.graph import run_graph
+
+
+class ChatRequest(_BaseModel):
+    session_id: str | None = None
+    user_query: str
+    history: list[dict] | None = None
+    user_profile: dict | None = None
+
+
+class ChatResponse(_BaseModel):
+    session_id: str
+    final_answer: str
+    intent: str | None = None
+    next_node: str | None = None
+    checklist: list[dict] | None = None
+    roadmap: list[dict] | None = None
+    eligibility_results: list[dict] | None = None
+    follow_up_question: str | None = None
+
+
+@app.post("/chat", response_model=ChatResponse)
+async def chat(req: ChatRequest):
+    """
+    메인 챗 엔드포인트.
+
+    사용자 질문을 받아 LangGraph 5-에이전트 워크플로우를 실행하고
+    최종 응답을 반환합니다.
+    """
+    session_id = req.session_id or str(_uuid.uuid4())
+
+    state = initial_state(
+        session_id=session_id,
+        user_query=req.user_query,
+        history=req.history or [],
+        user_profile=req.user_profile or {},
+    )
+
+    try:
+        result = await run_graph(state)
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"에이전트 실행 오류: {str(e)}",
+        ) from e
+
+    return ChatResponse(
+        session_id=session_id,
+        final_answer=result.get("final_answer") or "",
+        intent=result.get("intent"),
+        next_node=result.get("next_node"),
+        checklist=result.get("checklist") or [],
+        roadmap=result.get("roadmap") or [],
+        eligibility_results=result.get("eligibility_results") or [],
+        follow_up_question=result.get("follow_up_question"),
+    )
