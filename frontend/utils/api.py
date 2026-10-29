@@ -145,9 +145,14 @@ def _map_profile(backend_profile: dict) -> dict:
         if backend_profile.get(k) is not None:
             updates[k] = backend_profile[k]
 
-    # extra 딕셔너리 내부도 병합
+    # extra 딕셔너리 내부도 병합 (단, age는 직접 넣지 않음)
     if isinstance(backend_profile.get("extra"), dict):
-        updates.update(backend_profile["extra"])
+        extra = {k: v for k, v in backend_profile["extra"].items() if k != "age"}
+        updates.update(extra)
+
+    # DOB 기반 만 나이가 있으면 항상 최종 override (stale age 방지)
+    if "age" in updates and "date_of_birth" in backend_profile:
+        pass  # already computed from DOB above; extra age already stripped
 
     return updates
 
