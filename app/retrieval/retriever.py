@@ -3,45 +3,51 @@ app/retrieval/retriever.py
 
 Retrieval 핵심 실행 로직.
 1. Query Embedding 생성
-2. Metadata Filtering (SQL WHERE 절)
-3. pgvector Similarity Search
+2. Metadata Filtering (knowledge_chunks.metadata jsonb)
+3. pgvector Similarity Search (knowledge_chunk_embeddings)
 4. Ranking
-5. Evidence 후보 반환
-
-document_chunks 테이블 예상 스키마:
-    chunk_id          TEXT PRIMARY KEY
-    document_id       TEXT
-    content           TEXT
-    embedding         vector(...)
-    destination_country TEXT
-    issuer_country    TEXT
-    purpose           TEXT
-    program_id        TEXT
-    support_program_id TEXT
-    target_nationality TEXT
-    information_topic TEXT
-    source_type       TEXT
-    official_agency   TEXT
-    source_title      TEXT
-    source_url        TEXT
-    original_updated_at DATE
-    effective_from    DATE
-    effective_until   DATE
-    verified_at       DATE
+5. 결과 반환
 """
 from __future__ import annotations
 
 import json
+import logging
 from typing import Any
 
 from app.retrieval.embeddings import embed_query
-from app.retrieval.filters import filters_to_sql_where
-from app.retrieval.ranking import rank
-from app.retrieval.evidence import validate_all
 from app.services.db import get_conn
 
+logger = logging.getLogger(__name__)
 
-_TABLE = "document_chunks"
+
+def _build_metadata_where(filters: dict[str, Any]) -> tuple[str, list[Any]]:
+    """
+    filters 딕셔너리를 knowledge_chunks.metadata jsonb 기반 WHERE 절로 변환.
+
+    지원 필터 키:
+        destination_country  → metadata->'destination_countries' @> '["AU"]'
+        information_topic    → metadata->'topics' @> '["eligible_occupation"]'
+        program_id           → metadata->'targets' @> '["AU:subclass_186_de"]'
+    """
+    clauses: list[str] = []
+    params: list[Any] = []
+
+    mapping = {
+        "destination_country": "destination_countries",
+        "information_topic": "topics",
+        "program_id": "targets",
+    }
+
+    for filter_key, meta_key in mapping.items():
+        val = filters.get(filter_key)
+        if not val:
+            continue
+        values = val if isinstance(val, list) else [val]
+        clauses.append(f"c.metadata->'{meta_key}' @> %s::jsonb")
+        params.append(json.dumps(values))
+
+    where = (" AND " + " AND ".join(clauses)) if clauses else ""
+    return where, params
 
 
 def retrieve(
@@ -52,17 +58,12 @@ def retrieve(
     as_of: str | None = None,
 ) -> list[dict[str, Any]]:
     """
-    pgvector 기반 Retrieval 을 실행하고 검증된 Evidence 후보를 반환합니다.
-
-    Args:
-        query_text: 검색할 텍스트 (사용자 질문 + 맥락)
-        filters: Metadata 필터 (build_filters() 반환값)
-        top_k: 최종 반환 개수
-        similarity_threshold: 최소 유사도 (이하 결과 제외)
-        as_of: Evidence 검증 기준일
+    pgvector 기반 Retrieval 을 실행하고 결과를 반환합니다.
 
     Returns:
-        ValidatedEvidence 후보 list (is_valid=True 인 것만)
+        dict 리스트. 각 항목:
+            chunk_id, document_id, content, score,
+            destination_country, source_title, information_topic
         없으면 빈 리스트.
     """
     if not filters:
@@ -72,65 +73,89 @@ def retrieve(
     try:
         query_vector = embed_query(query_text)
     except Exception as e:
-        # Embedding API 오류 시 빈 결과 반환 (안전 처리)
-        import logging
-        logging.getLogger(__name__).warning(f"Embedding 생성 실패: {e}")
+        logger.warning(f"Embedding 생성 실패: {e}")
         return []
 
     # 2. Metadata Filter → SQL
-    where_clause, filter_params = filters_to_sql_where(filters)
+    where_clause, filter_params = _build_metadata_where(filters)
 
     # 3. pgvector cosine similarity search
-    # 벡터를 PostgreSQL array literal 로 변환
     vector_literal = "[" + ",".join(str(v) for v in query_vector) + "]"
 
     sql = f"""
         SELECT
-            chunk_id,
-            document_id,
-            content,
-            destination_country,
-            issuer_country,
-            purpose,
-            program_id,
-            support_program_id,
-            target_nationality,
-            information_topic,
-            source_type,
-            official_agency,
-            source_title,
-            source_url,
-            original_updated_at::text,
-            effective_from::text,
-            effective_until::text,
-            verified_at::text,
-            1 - (embedding <=> %s::vector) AS score
-        FROM {_TABLE} c
-        WHERE 1=1
+            c.chunk_id,
+            c.document_id,
+            c.revision_id,
+            c.body                          AS content,
+            c.metadata->>'title'            AS source_title,
+            (c.metadata->'destination_countries'->>0) AS destination_country,
+            (c.metadata->'topics'->>0)      AS information_topic,
+            c.metadata                      AS metadata,
+            1 - (e.embedding <=> %s::vector) AS score
+        FROM knowledge_chunks c
+        JOIN knowledge_chunk_embeddings e ON c.chunk_id = e.chunk_id
+        WHERE c.active = true
+          AND c.embedding_approved = true
           {where_clause}
-          AND 1 - (embedding <=> %s::vector) >= %s
-        ORDER BY embedding <=> %s::vector
+          AND 1 - (e.embedding <=> %s::vector) >= %s
+        ORDER BY e.embedding <=> %s::vector
         LIMIT %s
     """
 
+    params = (
+        [vector_literal]
+        + filter_params
+        + [vector_literal, similarity_threshold, vector_literal, top_k * 3]
+    )
+
     try:
         with get_conn() as conn:
-            rows = conn.execute(
-                sql,
-                [vector_literal] + filter_params + [vector_literal, similarity_threshold, vector_literal, top_k * 3],
-            ).fetchall()
+            rows = conn.execute(sql, params).fetchall()
     except Exception as e:
-        import logging
-        logging.getLogger(__name__).warning(f"pgvector 검색 실패: {e}")
+        logger.warning(f"pgvector 검색 실패: {e}")
         return []
 
     if not rows:
         return []
 
-    # 4. Ranking
-    ranked = rank(list(rows), filters, top_k=top_k * 2)
+    # dict 변환
+    keys = [
+        "chunk_id", "document_id", "revision_id", "content",
+        "source_title", "destination_country", "information_topic",
+        "metadata", "score",
+    ]
+    results = [dict(zip(keys, row)) for row in rows]
 
-    # 5. Evidence Validation
-    validated = validate_all(ranked, filters, as_of)
+    return results[:top_k]
 
-    return validated[:top_k]
+
+def retrieve_relevant_chunks(
+    query_text: str,
+    filters: dict[str, Any] | None = None,
+    top_k: int = 5,
+    similarity_threshold: float = 0.45,
+) -> list[dict[str, Any]]:
+    """
+    official_information 에이전트에서 사용하는 간단한 래퍼.
+    chunk_text 키로 본문을 반환합니다.
+    """
+    raw = retrieve(
+        query_text=query_text,
+        filters=filters,
+        top_k=top_k,
+        similarity_threshold=similarity_threshold,
+    )
+    # official_information.py 가 기대하는 키 형식으로 변환
+    out = []
+    for r in raw:
+        out.append({
+            "chunk_text": r.get("content", ""),
+            "chunk_id": r.get("chunk_id", ""),
+            "document_id": r.get("document_id", ""),
+            "source_title": r.get("source_title", ""),
+            "destination_country": r.get("destination_country"),
+            "information_topic": r.get("information_topic"),
+            "score": r.get("score", 0.0),
+        })
+    return out
