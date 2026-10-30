@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 
 const FLAGS: Record<string, string> = {
@@ -150,6 +151,7 @@ export default function ProgramsPage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--bg)", display: "flex", flexDirection: "column" }}>
+      <Header rightLabel="해외 활동 탐색" />
 
       <div style={{ display: "flex", flex: 1, maxWidth: 1040, margin: "20px auto 0", width: "100%", padding: "0 20px" }}>
         <Sidebar />

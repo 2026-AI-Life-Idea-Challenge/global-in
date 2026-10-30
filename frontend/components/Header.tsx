@@ -15,15 +15,7 @@ export default function Header({ rightLabel, showNav = false }: HeaderProps) {
         display: "flex", justifyContent: "space-between", alignItems: "center",
         padding: "14px 28px",
       }}>
-        <button
-          onClick={() => router.push("/")}
-          style={{
-            display: "flex", gap: 10, alignItems: "center",
-            border: 0, background: "none", padding: 0, cursor: "pointer",
-          }}
-        >
-          <img src="/logo/global-in-logo.svg" alt="Global-In" style={{ height: 32 }} />
-        </button>
+        <div />
 
         {showNav ? (
           <div style={{ display: "flex", gap: 28, color: "#3b3f4d", fontSize: "0.9rem" }}>

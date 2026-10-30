@@ -35,7 +35,6 @@ const HOW_IT_WORKS = [
 
 export default function Home() {
   const router = useRouter();
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
@@ -79,24 +78,10 @@ export default function Home() {
         }
       `}</style>
 
-      {/* 로고 위치*/}
-      <div style={{
-        position: "absolute", top: 0, left: 0,
-        width: 210, padding: "20px 16px 14px",
-        display: "flex", justifyContent: "center",
-        zIndex: 10,
-      }}>
-        <img
-          src="/logo/global-in-logo.svg"
-          alt="Global-In"
-          style={{ width: "90%", height: "auto", cursor: "pointer" }}
-          onClick={() => router.push("/")}
-        />
-      </div>
 
       {/* 네비 - 우측 상단 고정 */}
       <div style={{
-        position: "absolute", top: 0, right: 0,
+        position: "fixed", top: 0, right: 0,
         padding: "22px 28px",
         display: "flex", gap: 28,
         color: "#3b3f4d", fontSize: "0.9rem",

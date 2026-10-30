@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import HomeLogo from "@/components/HomeLogo";
 
 export const metadata: Metadata = {
   title: "Global-In",
@@ -18,7 +19,7 @@ export default function RootLayout({
         <link rel="icon" href="/logo/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/logo/apple-touch-icon.png" />
       </head>
-      <body>{children}</body>
+      <body><HomeLogo />{children}</body>
     </html>
   );
 }
