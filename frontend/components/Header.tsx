@@ -24,16 +24,7 @@ export default function Header({ rightLabel, showNav = false }: HeaderProps) {
             border: 0, background: "none", padding: 0, cursor: "pointer",
           }}
         >
-          <span style={{
-            width: 32, height: 32, borderRadius: 9,
-            background: "var(--ink)", display: "grid", placeItems: "center",
-          }}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="1.8">
-              <circle cx="12" cy="12" r="4"/>
-              <path d="M4 9a9 9 0 0 1 14-4M20 15a9 9 0 0 1-14 4"/>
-            </svg>
-          </span>
-          Global-In <span style={{ color: "var(--ac)" }}>.</span>
+          <img src="/logo/global-in-logo.svg" alt="Global-In" style={{ height: 32 }} />
         </button>
 
         {showNav ? (
