@@ -154,8 +154,17 @@ def test_support_result_is_separate_and_closed_is_not_open(setup):
     assert data['support_programs'][0]['availability']=='CLOSED'
     assert data['support_eligibility'][0]['support_program_id']=='S:test'
     assert data['support_programs'][0]['citations']
-    assert 'CLOSED' in data['reply']
+    assert '마감으로 저장됨' in data['reply']
     assert data['prep_items'][0]['program_id']=='S:test'
+
+
+def test_old_stored_status_cannot_answer_current_application_access(setup, monkeypatch):
+    monkeypatch.setattr(support_rag, 'generate_support_draft', lambda *a, **k: RagGeneration(
+        RagDraft.model_validate(dict(items=[dict(question_part='현재 접수 여부',answer='지금 신청 가능합니다.',citation_ids=['p1.s1'])])), 'fake', 'fake'))
+    data=say(setup, '지원금 지금 신청할 수 있나요?')
+    assert data['rag_statuses'][0]['status']=='insufficient_evidence'
+    assert '지금 신청 가능합니다.' not in data['reply']
+    assert data['support_programs'][0]['availability']=='CLOSED'
 
 
 def test_b_search_failure_is_not_disguised_as_evidence_shortage(setup, monkeypatch):

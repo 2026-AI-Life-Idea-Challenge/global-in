@@ -304,7 +304,7 @@ class LLMAdapterTests(unittest.TestCase):
         self.client_class.return_value.__exit__.assert_called_once()
         self.client.responses.parse.assert_called_once()
         kwargs = self.client.responses.parse.call_args.kwargs
-        self.assertIs(kwargs["text_format"], RagDraft)
+        self.assertTrue(issubclass(kwargs["text_format"], RagDraft))
         self.assertIs(kwargs["store"], False)
         self.assertNotIn("tools", kwargs)
         self.assertNotIn("reasoning", kwargs)
@@ -326,7 +326,7 @@ class LLMAdapterTests(unittest.TestCase):
         self.assertEqual(kwargs["model"], "gpt-6-luna")
         self.assertEqual(kwargs["reasoning"], {"effort": "low"})
         self.assertEqual(kwargs["max_output_tokens"], 2500)
-        self.assertIs(kwargs["text_format"], RagDraft)
+        self.assertTrue(issubclass(kwargs["text_format"], RagDraft))
         self.assertIs(kwargs["store"], False)
 
     def test_invalid_rag_settings_rejected_without_fallback(self):

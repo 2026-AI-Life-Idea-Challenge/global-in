@@ -1,6 +1,7 @@
 """지원제도 활성 근거 -> 구절 ID 생성 -> 검증 -> 원본 출처 연결."""
 
 from copy import deepcopy
+from datetime import date
 import os
 
 from psycopg.rows import dict_row
@@ -14,6 +15,7 @@ from app.models.rag import (
 from app.models.support_rag import SupportInfo, SupportRagResult
 from app.retrieval.support_evidence import search_support_evidence
 from app.services.database import get_connection
+from app.services.answer_quality import guard_unsupported_absolutes
 from app.retrieval.hybrid_search import has_source_url
 from app.services.program_rag import (
     ANSWER_HEADERS, SHORTAGE_REASON, _bind_citations, _validate_evidence,
@@ -27,6 +29,38 @@ from app.services.rag_llm import (
 
 
 EVIDENCE_PAGE_SIZE = 100
+
+
+def guard_current_availability(draft, info, question, today=None, *, evidence):
+    """A stored unknown/old status is not evidence of current application access."""
+    current = any(word in question for word in ('현재', '지금', '오늘', '신청할 수 있', '접수 중', '모집 중'))
+    day = today or date.today()
+    unverified = info is None or info.availability in (None, 'UNKNOWN') or info.source_verified_at != day
+    if not current or not unverified:
+        return draft
+    spans = build_citation_spans(evidence)
+    items = []
+    for item in draft.items:
+        temporal = any(word in item.question_part for word in ('모집', '접수', '신청 가능', '신청가능', '신청 여부', '신청여부', '마감', '신청할 수'))
+        if temporal and all(c in spans for c in item.citation_ids):
+            item = item.model_copy(update={'answer': None, 'citation_ids': []})
+        items.append(item)
+    return RagDraft(items=items)
+
+
+def guard_duplicate_benefit_claims(draft, evidence):
+    """A separate review clause alone does not establish a blanket prohibition."""
+    spans = build_citation_spans(evidence)
+    items = []
+    prohibitions = ('불가능', '불가', '금지', '중복 수혜할 수 없', '중복 지원할 수 없', '중복 지원이 안')
+    for item in draft.items:
+        text = item.answer or ''
+        quotes = ' '.join(spans[c].quote for c in item.citation_ids if c in spans)
+        if (item.citation_ids and all(c in spans for c in item.citation_ids) and '중복' in text and '별도 심사' in quotes and any(term in text for term in prohibitions)
+                and not any(term in quotes for term in prohibitions)):
+            item = item.model_copy(update={'answer': None, 'citation_ids': []})
+        items.append(item)
+    return RagDraft(items=items)
 SYSTEM_PROMPT = PROGRAM_SYSTEM_PROMPT.replace(
     "선택된 한 프로그램", "선택된 한 지원제도", 1,
 ) + """
@@ -37,6 +71,8 @@ UNKNOWN은 모집 중이라는 뜻이 아니며, 현재 모집 여부를 묻는 
 확인할 근거가 없으므로 answer=null, citation_ids=[]로 두어라.
 OPEN/CLOSED/UPCOMING도 확인일 이후의 실시간 상태로 단정하지 마라.
 저장된 모집 상태·확인일 안내는 코드가 별도로 붙인다. 날짜를 추측하지 마라.
+근거가 '중복 지원·단계별 지급 요건은 별도 심사한다'이면 별도 심사라고만 설명한다.
+그 문구만으로 '중복 지원 불가'를 추가하지 마라. 연도·취업 개시자 등 적용 범위도 생략하지 마라.
 """
 
 
@@ -100,7 +136,7 @@ def _availability_notice(info: SupportInfo | None) -> str:
     state = info.availability
     label = labels.get(state, "상태 미기록")
     verified = info.source_verified_at.isoformat() if info.source_verified_at else "미기록"
-    notice = f"저장된 모집 상태: {state or '미기록'} ({label}), 확인일: {verified}."
+    notice = f"저장된 모집 상태: {label}, 확인일: {verified}."
     scope = (info.profile or {}).get("availability_scope")
     if isinstance(scope, str) and scope.strip():
         notice += f" 적용 범위: {scope}."
@@ -184,6 +220,9 @@ def answer_support_question(
             raise RagResponseValidationError("LLM 답변 항목 형식이 잘못되었습니다.", code="invalid_draft_type") from exc
         requested_model, model = generation.requested_model, generation.model
     try:
+        draft = guard_current_availability(draft, info, question, today, evidence=evidence)
+        draft = guard_duplicate_benefit_claims(draft, evidence)
+        draft = guard_unsupported_absolutes(draft, evidence)
         claims = _bind_citations(draft, evidence)
         unanswered = [UnansweredPart(part_index=i, question_part=item.question_part, reason=SHORTAGE_REASON)
                       for i, item in enumerate(draft.items) if item.answer is None]

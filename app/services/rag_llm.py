@@ -4,10 +4,12 @@ import json
 import os
 from pathlib import Path
 import re
+from functools import lru_cache
+from typing import Literal
 
 from dotenv import load_dotenv
 from openai import OpenAI
-from pydantic import ValidationError
+from pydantic import ValidationError, create_model
 
 from datetime import date
 
@@ -41,6 +43,11 @@ known_user_profile이 있으면 사용자가 직접 밝힌 정보이므로 그 �
 답변과 그 한정을 직접 뒷받침하는 구절 ID들을 선택하라. 인용문을 복사하거나
 새로운 ID·URL·출처·승인 상태를 만들지 마라. 원문과 출처는 코드가 연결한다.
 현재 검색된 자료 밖의 사실은 사용하지 마라. 근거 부족은 이 자료의 한계이다.
+비교 질문이어도 이 호출은 program_id 한 개만 다룬다. 다른 국가·프로그램의 조건을
+이 프로그램의 근거로 설명하거나 '두 국가 모두'로 일반화하지 마라.
+제목·프로그램명만 있는 구절은 구체적 조건의 근거가 아니다. 모든 조건과 예외는
+선택한 인용 구절 자체가 직접 뒷받침해야 한다. '이력을 구분한다'는 문구로
+'이력이 전혀 없어야 한다'를 추론하지 마라. 원문보다 강한 금지·의무를 만들지 마라.
 사용자 개인의 최종 신청 자격을 판정하지 마라. 개인 판정 요청은 근거 부족으로 두고
 설명 가능한 일반 요건만 답하라.
 """
@@ -188,11 +195,25 @@ def generate_rag_draft(
     )
 
 
+@lru_cache(maxsize=16)
+def _bounded_citation_schema(draft_type, citation_ids):
+    """Constrain the model's JSON choices before generation, not after failure."""
+    if not citation_ids:
+        return draft_type
+    item_type = draft_type.model_fields['items'].annotation.__args__[0]
+    allowed = Literal.__getitem__(citation_ids)
+    bounded_item = create_model('Bounded'+item_type.__name__, __base__=item_type, citation_ids=(list[allowed], ...))
+    return create_model('Bounded'+draft_type.__name__, __base__=draft_type, items=(list[bounded_item], ...))
+
+
 def _request_rag_draft(
     payload: dict, *, system_prompt: str, draft_type: type[RagDraft],
     model: str, effort: str | None,
 ) -> RagGeneration:
     """Shared one-shot transport; callers supply their own scope and schema."""
+    ids = tuple(dict.fromkeys(span['id'] for passage in payload.get('retrieved_passages', [])
+                              for span in passage.get('citation_spans', [])))
+    wire_type = _bounded_citation_schema(draft_type, ids)
     try:
         with OpenAI(timeout=45.0, max_retries=0) as client:
             response = client.responses.parse(
@@ -201,7 +222,7 @@ def _request_rag_draft(
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": json.dumps(payload, ensure_ascii=False)},
                 ],
-                text_format=draft_type,
+                text_format=wire_type,
                 max_output_tokens=2500,
                 store=False,
                 **({"reasoning": {"effort": effort}} if effort is not None else {}),
@@ -224,7 +245,8 @@ def _request_rag_draft(
             "LLM이 구조화된 답변을 반환하지 않았습니다.", code="missing_parsed_response"
         )
     try:
-        draft = draft_type.model_validate(response.output_parsed.model_dump())
+        validated = wire_type.model_validate(response.output_parsed.model_dump())
+        draft = draft_type.model_validate(validated.model_dump())
     except ValidationError as exc:
         raise RagResponseValidationError(
             "LLM 답변 항목이 일관되지 않습니다.", issues=schema_validation_issues(exc)

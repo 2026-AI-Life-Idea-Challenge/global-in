@@ -1,17 +1,9 @@
 "use client";
 import Header from "../../components/Header";
 import Sidebar from "../../components/Sidebar";
-import { useMemo, useSyncExternalStore } from 'react';
-import { COMPARE_KEY } from '@/lib/consultation';
+import { useComparison } from '@/lib/useComparison';
 
-type Program = { id: string; name: string; country?: string; type?: string; desc?: string };
-function subscribe(callback: () => void) {
-  window.addEventListener('storage', callback);
-  return () => window.removeEventListener('storage', callback);
-}
-function snapshot() {
-  try { return sessionStorage.getItem(COMPARE_KEY) || '[]'; } catch { return '[]'; }
-}
+type Program = { id: string | number; name: string; country?: string | null; type?: string; desc?: string };
 
 const ROWS: { label: string; key: keyof Program }[] = [
   { label: "국가", key: "country" },
@@ -21,13 +13,7 @@ const ROWS: { label: string; key: keyof Program }[] = [
 ];
 
 export default function ComparePage() {
-  const saved = useSyncExternalStore(subscribe, snapshot, () => '[]');
-  const PROGRAMS = useMemo<Program[]>(() => {
-    try {
-      const data = JSON.parse(saved);
-      return Array.isArray(data) ? data.filter(item => item && typeof item.id === 'string' && typeof item.name === 'string') : [];
-    } catch { return []; }
-  }, [saved]);
+  const { items: PROGRAMS, clear } = useComparison();
   return (
     <div className="min-h-screen flex flex-col">
       <Header rightLabel="비교" />
@@ -39,7 +25,8 @@ export default function ComparePage() {
 
         <main className="flex-1 px-6 py-6">
           <h2 className="text-lg font-bold mb-6">프로그램 비교</h2>
-          <p>상담에서 선택한 실제 프로그램을 비교합니다. 비용·기간 등 확인되지 않은 정보는 채우지 않습니다.</p>
+          <p>상담과 목록에서 선택한 실제 프로그램을 비교합니다. 비용·기간 등 확인되지 않은 정보는 채우지 않습니다.</p>
+          {PROGRAMS.length > 0 && <button onClick={clear}>선택 전체 해제</button>}
           {PROGRAMS.length < 2 && <p role="status">프로그램을 2개 이상 선택해 주세요. <a href="/chat">상담으로 이동 →</a></p>}
 
           <div className="overflow-x-auto">
