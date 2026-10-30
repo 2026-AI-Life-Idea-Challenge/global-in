@@ -34,6 +34,16 @@ export default function Sidebar({ sessions = [], currentSessionId, onNewChat }: 
       minHeight: "calc(100vh - 90px)",
     }}>
 
+    {/* 로고 */}
+<div style={{ padding: "20px 16px 14px", display: "flex", justifyContent: "center" }}>
+  <img
+    src="/logo/global-in-logo.svg"
+    alt="Global-In"
+    style={{ width: "90%", maxWidth: "90%", height: "auto", cursor: "pointer" }}
+    onClick={() => router.push("/")}
+  />
+</div>
+
       {/* 새 채팅 버튼 (chat일 때만) */}
       {isChat && (
         <div style={{ padding: "20px 16px 14px" }}>
