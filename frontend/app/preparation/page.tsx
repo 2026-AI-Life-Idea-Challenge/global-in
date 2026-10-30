@@ -2,9 +2,37 @@
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
+import { useMemo, useState, useSyncExternalStore } from "react";
+import { type ConsultationDetailsData, safeSource } from "@/components/ConsultationDetails";
+
+function subscribeToStorage(callback: () => void) {
+  window.addEventListener('storage', callback);
+  return () => window.removeEventListener('storage', callback);
+}
+function readResult() {
+  try { return sessionStorage.getItem('global-in-consult-result') || '{}'; } catch { return '{}'; }
+}
 
 export default function PreparationPage() {
   const router = useRouter();
+  const saved = useSyncExternalStore(subscribeToStorage, readResult, () => '{}');
+  const [editedItems, setItems] = useState<NonNullable<ConsultationDetailsData['prep_items']> | null>(null);
+  const storedItems = useMemo<NonNullable<ConsultationDetailsData['prep_items']>>(() => {
+    try {
+      const data = JSON.parse(saved);
+      return Array.isArray(data.prep_items) ? data.prep_items : [];
+    } catch { return []; }
+  }, [saved]);
+  const items = editedItems ?? storedItems;
+
+  function toggleItem(id: string) {
+    const next = items.map(item => item.id === id ? { ...item, done: !item.done } : item);
+    setItems(next);
+    try {
+      const data = JSON.parse(sessionStorage.getItem('global-in-consult-result') || '{}');
+      sessionStorage.setItem('global-in-consult-result', JSON.stringify({ ...data, prep_items: next }));
+    } catch { /* In-memory checklist remains usable if storage is unavailable. */ }
+  }
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--bg)", display: "flex", flexDirection: "column" }}>
@@ -28,7 +56,16 @@ export default function PreparationPage() {
           </div>
 
           {/* 빈 상태 카드 */}
-          <div style={{
+          {items.length > 0 ? <section aria-label="상담 준비 체크리스트">
+            <p>{items.filter(item => item.done).length} / {items.length}개 완료 · 완료 표시는 준비 진행 상태입니다.</p>
+            {items.map(item => <article key={item.id} style={{ background: '#fff', border: '1px solid var(--ln)', borderRadius: 12, padding: 18, marginBottom: 12 }}>
+              <label><input type="checkbox" checked={item.done} onChange={() => toggleItem(item.id)} /> {item.title}</label>
+              <p>{item.description}</p>
+              {item.citations?.filter(c => safeSource(c.source_url)).map((c, index) => <p key={index}><a href={c.source_url} target="_blank" rel="noopener noreferrer">{c.title}</a></p>)}
+              <small>{item.program_id} · {item.status === 'check_needed' ? '추가 확인 필요' : item.status === 'blocked' ? '선행 조건 확인 필요' : '준비 필요'}</small>
+            </article>)}
+            <button onClick={() => router.push('/chat')}>조건 수정·재상담</button>
+          </section> : <div style={{
             background: "#fff", border: "1px solid var(--ln)", borderRadius: 16,
             padding: "60px 40px", display: "flex", flexDirection: "column",
             alignItems: "center", textAlign: "center",
@@ -82,7 +119,7 @@ export default function PreparationPage() {
                 AI 상담하기
               </button>
             </div>
-          </div>
+          </div>}
         </main>
       </div>
 

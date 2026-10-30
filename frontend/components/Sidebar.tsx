@@ -127,6 +127,7 @@ export default function Sidebar({
   return (
     <>
       <aside
+        className="app-sidebar"
         style={{
           width: 210,
           minWidth: 210,
@@ -935,6 +936,7 @@ export default function Sidebar({
     </>
   );
 }
+
 
 // 공통 취소 버튼 스타일
 const cancelButtonStyle: React.CSSProperties = {

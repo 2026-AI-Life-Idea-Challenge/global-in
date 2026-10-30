@@ -2,7 +2,7 @@
 app/agent/eligibility/checker.py
 
 사용자 프로필과 요건 정의를 받아 자격 검토 결과를 반환합니다.
-evaluator.evaluate()를 호출하고 결과를 집계합니다.
+evaluator.evaluate_requirement()로 근거 시점과 조건식을 함께 평가합니다.
 """
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from dataclasses import dataclass, field
 from datetime import date
 from typing import Any
 
-from app.rules.evaluator import evaluate, PASS, FAIL, UNKNOWN
+from app.rules.evaluator import evaluate_requirement, PASS, FAIL, UNKNOWN
 from app.rules.reviews import VerifiedReviewDecision
 from app.agent.eligibility.fetcher import RequirementRecord, RuleSet
 
@@ -24,6 +24,7 @@ class RequirementResult:
     judgeability: str
     outcome: str          # PASS | FAIL | UNKNOWN
     pending_reviews: list[dict[str, Any]] = field(default_factory=list)
+    reason: str = ''
     # pending_reviews: official_assessment 노드 중 결과가 없는 것들
 
 
@@ -88,35 +89,42 @@ def check_eligibility(
 
     req_results: list[RequirementResult] = []
 
-    for req in requirements:
-        expression = req.definition
-
-        # trusted_context: [requirement_dict, as_of, records, original_profile, pending_list]
-        pending: list[dict[str, Any]] = []
-        trusted_context = [
-            {
-                "requirement_id": req.requirement_id,
-                "target": {
-                    "target_type": req.target_type,
-                    "target_id": req.target_id,
-                },
-                "expression": expression,
-            },
-            _as_of,
-            verified_reviews or [],
-            profile,
-            pending,
-        ]
-
-        outcome = evaluate(expression, profile, trusted_context)
+    # The DB stores full requirement definitions, not bare expressions.
+    # Bare expressions remain supported for existing fixtures and callers.
+    by_id = {req.requirement_id: req for req in requirements}
+    expected = rule_set.definition.get('requirement_ids') if rule_set else None
+    ids = expected if isinstance(expected, list) else list(by_id)
+    for requirement_id in ids:
+        req = by_id.get(requirement_id)
+        if req is None:
+            req_results.append(RequirementResult(requirement_id, 'manual_check', UNKNOWN, reason='요건 자료 누락'))
+            continue
+        target = {'target_type': target_type, 'target_id': target_id}
+        definition = req.definition
+        canonical = definition if 'expression' in definition else {
+            'requirement_id': req.requirement_id,
+            'target': {'target_type': req.target_type, 'target_id': req.target_id},
+            'source_document_ids': [], 'expression': definition,
+        }
+        duplicate = sum(item.requirement_id == requirement_id for item in requirements) > 1
+        if (duplicate or canonical.get('requirement_id') != requirement_id or canonical.get('target') != target
+                or req.target_type != target_type or req.target_id != target_id
+                or (rule_set and req.release_id != rule_set.release_id)):
+            result = {'status': UNKNOWN, 'reason': '요건 대상·릴리스·식별자 불일치 또는 중복'}
+        else:
+            result = evaluate_requirement(canonical, profile, _as_of, verified_reviews or [])
         req_results.append(RequirementResult(
             requirement_id=req.requirement_id,
             judgeability=req.judgeability,
-            outcome=outcome,
-            pending_reviews=pending,
+            outcome=result['status'],
+            pending_reviews=result.get('review_requests', []),
+            reason=result.get('reason', ''),
         ))
 
     overall = _aggregate(req_results)
+    # Passing a subset of known conditions never certifies overall eligibility.
+    if overall == PASS and (not coverage_complete or rule_set is None):
+        overall = UNKNOWN
 
     return EligibilityResult(
         target_type=target_type,

@@ -41,6 +41,7 @@ data/processed/usa/employment/west/2026_second_half/logical_page_previews/
 /tralia visa HTML sources*
 
 # Temporary build outputs
+data/runtime/
 tmp/
 'source_url'
 
@@ -58,3 +59,6 @@ data/processed/knowledge/*/releases/
 # 만약 dump라는 이름의 폴더 통째로 무시하고 싶다면
 dump/
 logs/
+
+# Local real-model evaluation transcripts (keep sanitized summaries in docs)
+data/processed/quality/consultation/

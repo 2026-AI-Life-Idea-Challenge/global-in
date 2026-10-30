@@ -1,4 +1,3 @@
-
 "use client";
 
 import {
@@ -9,13 +8,32 @@ import {
   Suspense,
 } from "react";
 import { useSearchParams } from "next/navigation";
+
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
+import ConsultationDetails, {
+  safeSource,
+  type ConsultationDetailsData,
+} from "@/components/ConsultationDetails";
+
+import {
+  CHAT_KEY,
+  PROFILE_KEY,
+  readSaved,
+  saveTab,
+  expireConsultation,
+  latestPrograms,
+  invalidateResults,
+} from "@/lib/consultation";
+
+import { useComparison } from "@/lib/useComparison";
+import { COUNTRY_NAMES, CATEGORY_NAMES } from "@/lib/catalog";
 
 interface Message {
   role: "user" | "assistant";
   content: string;
   programs?: Program[];
+  details?: ConsultationDetailsData;
 }
 
 interface Program {
@@ -36,6 +54,9 @@ interface ChatSession {
   title: string;
   messages: Message[];
   pinned?: boolean;
+
+  // 각 채팅에 연결된 백엔드 상담 세션 ID
+  sessionId?: string | null;
 }
 
 const STORAGE_KEY = "global-in-chats";
@@ -43,16 +64,38 @@ const ACTIVE_CHAT_KEY = "global-in-active-chat";
 const AI_LOGO = "/logo/global-in-icon-512.png";
 
 const FLAGS: Record<string, string> = {
-  독일: '<rect width="30" height="7" fill="#111"/><rect y="7" width="30" height="6.5" fill="#d00"/><rect y="13.5" width="30" height="6.5" fill="#ffce00"/>',
-  일본: '<rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="5" fill="#bc2a3a"/>',
-  호주: '<rect width="30" height="20" fill="#00247d"/><path d="M0 0l14 9M14 0L0 9" stroke="#fff" strokeWidth="1.6"/><path d="M7 0v9M0 4.5h14" stroke="#fff" strokeWidth="3"/><path d="M7 0v9M0 4.5h14" stroke="#cf142b" strokeWidth="1.6"/>',
-  미국: '<rect width="30" height="20" fill="#fff"/><rect y="0" width="30" height="1.55" fill="#b22234"/><rect y="3.1" width="30" height="1.55" fill="#b22234"/><rect y="6.2" width="30" height="1.55" fill="#b22234"/><rect y="9.3" width="30" height="1.55" fill="#b22234"/><rect y="12.4" width="30" height="1.55" fill="#b22234"/><rect y="15.5" width="30" height="1.55" fill="#b22234"/><rect y="18.6" width="30" height="1.55" fill="#b22234"/><rect width="13" height="10.8" fill="#3c3b6e"/>',
-  캐나다: '<rect width="30" height="20" fill="#fff"/><rect width="7.5" height="20" fill="#d52b1e"/><rect x="22.5" width="7.5" height="20" fill="#d52b1e"/><path d="M15 4l1.3 3 2-1-.6 4 1.7-.4-.4 1.8 1.5 1-3.5 2.4.2 2.2h-4.4l.2-2.2-3.5-2.4 1.5-1-.4-1.8 1.7.4-.6-4 2 1z" fill="#d52b1e"/>',
-  Japan: '<rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="5" fill="#bc2a3a"/>',
+  독일:
+    '<rect width="30" height="7" fill="#111"/><rect y="7" width="30" height="6.5" fill="#d00"/><rect y="13.5" width="30" height="6.5" fill="#ffce00"/>',
+  일본:
+    '<rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="5" fill="#bc2a3a"/>',
+  호주:
+    '<rect width="30" height="20" fill="#00247d"/><path d="M0 0l14 9M14 0L0 9" stroke="#fff" strokeWidth="1.6"/><path d="M7 0v9M0 4.5h14" stroke="#fff" strokeWidth="3"/><path d="M7 0v9M0 4.5h14" stroke="#cf142b" strokeWidth="1.6"/>',
+  미국:
+    '<rect width="30" height="20" fill="#fff"/><rect y="0" width="30" height="1.55" fill="#b22234"/><rect y="3.1" width="30" height="1.55" fill="#b22234"/><rect y="6.2" width="30" height="1.55" fill="#b22234"/><rect y="9.3" width="30" height="1.55" fill="#b22234"/><rect y="12.4" width="30" height="1.55" fill="#b22234"/><rect y="15.5" width="30" height="1.55" fill="#b22234"/><rect y="18.6" width="30" height="1.55" fill="#b22234"/><rect width="13" height="10.8" fill="#3c3b6e"/>',
+  캐나다:
+    '<rect width="30" height="20" fill="#fff"/><rect width="7.5" height="20" fill="#d52b1e"/><rect x="22.5" width="7.5" height="20" fill="#d52b1e"/><path d="M15 4l1.3 3 2-1-.6 4 1.7-.4-.4 1.8 1.5 1-3.5 2.4.2 2.2h-4.4l.2-2.2-3.5-2.4 1.5-1-.4-1.8 1.7.4-.6-4 2 1z" fill="#d52b1e"/>',
+  Japan:
+    '<rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="5" fill="#bc2a3a"/>',
   Australia: '<rect width="30" height="20" fill="#00247d"/>',
-  Germany: '<rect width="30" height="7" fill="#111"/><rect y="7" width="30" height="6.5" fill="#d00"/><rect y="13.5" width="30" height="6.5" fill="#ffce00"/>',
-  Canada: '<rect width="30" height="20" fill="#fff"/><rect width="7.5" height="20" fill="#d52b1e"/><rect x="22.5" width="7.5" height="20" fill="#d52b1e"/>',
+  Germany:
+    '<rect width="30" height="7" fill="#111"/><rect y="7" width="30" height="6.5" fill="#d00"/><rect y="13.5" width="30" height="6.5" fill="#ffce00"/>',
+  Canada:
+    '<rect width="30" height="20" fill="#fff"/><rect width="7.5" height="20" fill="#d52b1e"/><rect x="22.5" width="7.5" height="20" fill="#d52b1e"/>',
 };
+
+const SUGGESTIONS = [
+  "일본 취업을 알아보고 싶어요",
+  "여러 나라를 비교하고 싶어요",
+  "국가와 목적부터 정하고 싶어요",
+];
+
+const INITIAL_MESSAGES: Message[] = [
+  {
+    role: "assistant",
+    content:
+      "안녕하세요! 궁금한 점을 바로 질문해도 좋고,\n원하는 방향을 함께 찾아봐도 좋아요.\n\n**이번에는 어떤 내용을 알아보고 싶으세요?**",
+  },
+];
 
 function FlagSvg({
   country,
@@ -90,20 +133,6 @@ function FlagSvg({
     />
   );
 }
-
-const SUGGESTIONS = [
-  "일본 취업을 알아보고 싶어요",
-  "여러 나라를 비교하고 싶어요",
-  "국가와 목적부터 정하고 싶어요",
-];
-
-const INITIAL_MESSAGES: Message[] = [
-  {
-    role: "assistant",
-    content:
-      "안녕하세요! 궁금한 점을 바로 질문해도 좋고,\n원하는 방향을 함께 찾아봐도 좋아요.\n\n**이번에는 어떤 내용을 알아보고 싶으세요?**",
-  },
-];
 
 function renderContent(text: string) {
   return text.split("\n").map((line, i, arr) => {
@@ -160,6 +189,7 @@ function ProgramCard({
   onToggleCompare: (id: string | number) => void;
 }) {
   const officialUrl = program.official_url || program.officialUrl;
+
   const desc =
     program.desc ||
     program.description ||
@@ -286,36 +316,20 @@ function ProgramCard({
               userSelect: "none",
             }}
           >
-            <div
-              onClick={() => onToggleCompare(program.id)}
+            <input
+              type="checkbox"
+              aria-label={`${program.name} 비교하기`}
+              checked={isCompared}
+              onChange={() => onToggleCompare(program.id)}
               style={{
                 width: 16,
                 height: 16,
                 borderRadius: 4,
-                border: `1.5px solid ${
-                  isCompared ? "var(--ac)" : "#d0d3de"
-                }`,
-                background: isCompared ? "var(--ac)" : "#fff",
-                display: "grid",
-                placeItems: "center",
+                accentColor: "var(--ac)",
                 cursor: "pointer",
                 flexShrink: 0,
-                transition: "all 0.15s",
               }}
-            >
-              {isCompared && (
-                <svg
-                  width="9"
-                  height="9"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#fff"
-                  strokeWidth="3"
-                >
-                  <path d="M20 6L9 17l-5-5" />
-                </svg>
-              )}
-            </div>
+            />
 
             <span
               style={{
@@ -338,21 +352,31 @@ function ChatPageInner() {
   const [messages, setMessages] = useState<Message[]>(INITIAL_MESSAGES);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [currentChatId, setCurrentChatId] = useState<string | null>(null);
-  const [compareIds, setCompareIds] = useState<(string | number)[]>([]);
+
   const [isHydrated, setIsHydrated] = useState(false);
+  const [profilePending, setProfilePending] = useState(false);
+
+  const comparison = useComparison();
+  const compareIds = comparison.items.map((item) => item.id);
+  const comparePrograms: Program[] = comparison.items;
 
   const searchParams = useSearchParams();
 
   const autoSentRef = useRef(false);
   const messagesContainerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+
   const didMountRef = useRef(false);
+  const requestVersion = useRef(0);
+  const pendingRequest = useRef(false);
 
   // --------------------------------------------------
-  // 1. Local Storage에서 기존 채팅 복원
+  // 1. Local Storage에서 채팅 목록 및 현재 채팅 복원
   // --------------------------------------------------
+
   useEffect(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -376,39 +400,54 @@ function ChatPageInner() {
 
       setSessions(parsed);
 
-      const activeChat = parsed.find(
-        (chat) => chat.id === activeId
-      );
+      const activeChat = parsed.find((chat) => chat.id === activeId);
 
       if (activeChat) {
         setCurrentChatId(activeChat.id);
-        setMessages(activeChat.messages);
+        setMessages(activeChat.messages ?? INITIAL_MESSAGES);
+        setSessionId(activeChat.sessionId ?? null);
       } else {
         setCurrentChatId(null);
         setMessages(INITIAL_MESSAGES);
+        setSessionId(null);
       }
+
+      // 기존 버전에서 저장된 상담 상태 복원
+      const savedConsultation = readSaved<{
+        session_id?: string;
+        profile_pending?: boolean;
+      }>(CHAT_KEY, {});
+
+      if (
+        !activeChat &&
+        savedConsultation.session_id &&
+        /^[a-f0-9]{32}$/.test(savedConsultation.session_id)
+      ) {
+        setSessionId(savedConsultation.session_id);
+      }
+
+      setProfilePending(savedConsultation.profile_pending === true);
     } catch (error) {
       console.error("채팅 목록을 불러오지 못했습니다.", error);
 
       setSessions([]);
       setCurrentChatId(null);
       setMessages(INITIAL_MESSAGES);
+      setSessionId(null);
     } finally {
       setIsHydrated(true);
     }
   }, []);
 
   // --------------------------------------------------
-  // 2. 채팅 목록 자동 저장
+  // 2. Local Storage에 채팅 목록 자동 저장
   // --------------------------------------------------
+
   useEffect(() => {
     if (!isHydrated) return;
 
     try {
-      localStorage.setItem(
-        STORAGE_KEY,
-        JSON.stringify(sessions)
-      );
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(sessions));
     } catch (error) {
       console.error("채팅 목록을 저장하지 못했습니다.", error);
     }
@@ -417,49 +456,72 @@ function ChatPageInner() {
   // --------------------------------------------------
   // 3. 마지막으로 선택한 채팅 ID 저장
   // --------------------------------------------------
+
   useEffect(() => {
     if (!isHydrated) return;
 
     try {
-      localStorage.setItem(
-        ACTIVE_CHAT_KEY,
-        currentChatId ?? ""
-      );
+      localStorage.setItem(ACTIVE_CHAT_KEY, currentChatId ?? "");
     } catch (error) {
       console.error("현재 채팅 정보를 저장하지 못했습니다.", error);
     }
   }, [currentChatId, isHydrated]);
 
   // --------------------------------------------------
-  // 4. 현재 대화 내용이 바뀌면 해당 채팅에 반영
+  // 4. 현재 채팅의 메시지 및 sessionId 동기화
   // --------------------------------------------------
+
   useEffect(() => {
     if (!isHydrated || !currentChatId) return;
 
     setSessions((prev) =>
       prev.map((chat) =>
         chat.id === currentChatId
-          ? { ...chat, messages }
+          ? {
+              ...chat,
+              messages,
+              sessionId,
+            }
           : chat
       )
     );
-  }, [messages, currentChatId, isHydrated]);
+  }, [messages, sessionId, currentChatId, isHydrated]);
 
   // --------------------------------------------------
-  // 5. 입력 내용에 따라 입력창 높이 자동 조절
+  // 5. Session Storage에 현재 상담 상태 저장
   // --------------------------------------------------
+
+  useEffect(() => {
+    if (!isHydrated) return;
+
+    saveTab(CHAT_KEY, {
+      session_id: sessionId,
+      messages,
+      compareIds,
+      profile_pending: profilePending,
+    });
+  }, [
+    isHydrated,
+    sessionId,
+    messages,
+    compareIds,
+    profilePending,
+  ]);
+
+  // --------------------------------------------------
+  // 6. 입력창 높이 자동 조절
+  // --------------------------------------------------
+
   useLayoutEffect(() => {
     const textarea = inputRef.current;
+
     if (!textarea) return;
 
     const MAX_HEIGHT = 160;
 
     textarea.style.height = "auto";
 
-    const nextHeight = Math.min(
-      textarea.scrollHeight,
-      MAX_HEIGHT
-    );
+    const nextHeight = Math.min(textarea.scrollHeight, MAX_HEIGHT);
 
     textarea.style.height = `${nextHeight}px`;
 
@@ -468,8 +530,9 @@ function ChatPageInner() {
   }, [input]);
 
   // --------------------------------------------------
-  // 6. 상세 페이지에서 AI와 상담하기를 클릭한 경우
+  // 7. 상세 페이지에서 AI와 상담하기를 클릭한 경우
   // --------------------------------------------------
+
   useEffect(() => {
     if (!isHydrated || autoSentRef.current) return;
 
@@ -479,23 +542,25 @@ function ChatPageInner() {
 
     autoSentRef.current = true;
 
-    const timer = setTimeout(() => {
+    const timer = window.setTimeout(() => {
       send(
         program +
           "에 대해 자세히 알고 싶어요. 저에게 맞는지 상담해 주세요."
       );
     }, 400);
 
-    return () => clearTimeout(timer);
+    return () => window.clearTimeout(timer);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isHydrated, searchParams]);
 
   // --------------------------------------------------
-  // 7. 처음 화면에 들어왔을 때 스크롤 초기화
+  // 8. 페이지 최초 진입 시 스크롤 초기화
   // --------------------------------------------------
+
   useLayoutEffect(() => {
     const html = document.documentElement;
+
     const previousScrollBehavior = html.style.scrollBehavior;
     const previousScrollbarGutter = html.style.scrollbarGutter;
 
@@ -522,8 +587,9 @@ function ChatPageInner() {
   }, []);
 
   // --------------------------------------------------
-  // 8. 메시지가 추가되면 대화 영역 아래로 스크롤
+  // 9. 메시지가 추가되면 대화 영역 아래로 스크롤
   // --------------------------------------------------
+
   useEffect(() => {
     if (!isHydrated) return;
 
@@ -548,48 +614,44 @@ function ChatPageInner() {
   }, [messages, loading, isHydrated]);
 
   // --------------------------------------------------
-  // 9. 프로그램 비교 기능
+  // 10. 프로그램 비교 기능
   // --------------------------------------------------
+
   function toggleCompare(id: string | number) {
-    setCompareIds((prev) =>
-      prev.includes(id)
-        ? prev.filter((x) => x !== id)
-        : [...prev, id]
+    const program = latestPrograms(messages).find(
+      (item) => item.id === id
     );
+
+    if (program) {
+      comparison.toggle(program);
+    }
   }
 
-  const allPrograms: Program[] = [];
+  // 메시지에 포함된 프로그램이 변경되면 비교 가능한 항목 갱신
+  useEffect(() => {
+    if (!isHydrated) return;
 
-  messages.forEach((m) => {
-    if (m.programs) {
-      m.programs.forEach((p) => {
-        if (!allPrograms.find((x) => x.id === p.id)) {
-          allPrograms.push(p);
-        }
-      });
-    }
-  });
+    comparison.refresh(latestPrograms(messages));
 
-  const comparePrograms = allPrograms.filter((p) =>
-    compareIds.includes(p.id)
-  );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isHydrated, messages]);
 
   // --------------------------------------------------
-  // 10. 채팅 이름 변경
+  // 11. 채팅 이름 변경
   // --------------------------------------------------
+
   function renameChat(id: string, title: string) {
     setSessions((prev) =>
       prev.map((chat) =>
-        chat.id === id
-          ? { ...chat, title }
-          : chat
+        chat.id === id ? { ...chat, title } : chat
       )
     );
   }
 
   // --------------------------------------------------
-  // 11. 채팅 상단 고정 / 고정 해제
+  // 12. 채팅 상단 고정 / 고정 해제
   // --------------------------------------------------
+
   function togglePinChat(id: string) {
     setSessions((prev) =>
       prev.map((chat) =>
@@ -601,8 +663,19 @@ function ChatPageInner() {
   }
 
   // --------------------------------------------------
-  // 12. 채팅 삭제
+  // 13. 진행 중인 요청 무효화
   // --------------------------------------------------
+
+  function cancelPendingRequest() {
+    requestVersion.current += 1;
+    pendingRequest.current = false;
+    setLoading(false);
+  }
+
+  // --------------------------------------------------
+  // 14. 채팅 삭제
+  // --------------------------------------------------
+
   function deleteChat(id: string) {
     const remainingSessions = sessions.filter(
       (chat) => chat.id !== id
@@ -610,79 +683,111 @@ function ChatPageInner() {
 
     setSessions(remainingSessions);
 
-    // 현재 보고 있는 채팅을 삭제한 경우
-    if (currentChatId === id) {
-      if (remainingSessions.length > 0) {
-        // 고정된 채팅이 있으면 고정 채팅을 우선 선택
-        const sortedRemaining = [...remainingSessions].sort(
-          (a, b) => Number(!!b.pinned) - Number(!!a.pinned)
-        );
+    if (currentChatId !== id) return;
 
-        const nextChat = sortedRemaining[0];
+    cancelPendingRequest();
 
-        setCurrentChatId(nextChat.id);
-        setMessages(nextChat.messages ?? INITIAL_MESSAGES);
-      } else {
-        setCurrentChatId(null);
-        setMessages(INITIAL_MESSAGES);
-      }
+    if (remainingSessions.length > 0) {
+      const sortedRemaining = [...remainingSessions].sort(
+        (a, b) => Number(!!b.pinned) - Number(!!a.pinned)
+      );
 
+      const nextChat = sortedRemaining[0];
+
+      setCurrentChatId(nextChat.id);
+      setMessages(nextChat.messages ?? INITIAL_MESSAGES);
+      setSessionId(nextChat.sessionId ?? null);
+    } else {
+      setCurrentChatId(null);
+      setMessages(INITIAL_MESSAGES);
       setSessionId(null);
-      setInput("");
-      setLoading(false);
-      setCompareIds([]);
+    }
+
+    setInput("");
+    setProfilePending(false);
+    comparison.clear();
+
+    try {
+      sessionStorage.removeItem("global-in-consult-result");
+    } catch {
+      // Storage may be disabled.
     }
   }
 
   // --------------------------------------------------
-  // 13. 새 채팅 시작
+  // 15. 새 채팅 시작
   // --------------------------------------------------
+
   function startNewChat() {
+    cancelPendingRequest();
+
     setMessages(INITIAL_MESSAGES);
     setSessionId(null);
     setCurrentChatId(null);
     setInput("");
-    setLoading(false);
-    setCompareIds([]);
+    setProfilePending(false);
+
+    comparison.clear();
+
+    try {
+      sessionStorage.removeItem("global-in-consult-result");
+    } catch {
+      // Storage may be disabled.
+    }
 
     if (messagesContainerRef.current) {
-      messagesContainerRef.current.scrollTo({
-        top: 0,
-        behavior: "auto",
-      });
+      messagesContainerRef.current.scrollTop = 0;
     }
   }
 
   // --------------------------------------------------
-  // 14. 기존 채팅 선택
+  // 16. 기존 채팅 선택
   // --------------------------------------------------
+
   function selectChat(id: string) {
     const selected = sessions.find((chat) => chat.id === id);
 
     if (!selected) return;
 
+    cancelPendingRequest();
+
     setCurrentChatId(selected.id);
     setMessages(selected.messages ?? INITIAL_MESSAGES);
-    setSessionId(null);
+    setSessionId(selected.sessionId ?? null);
     setInput("");
-    setLoading(false);
-    setCompareIds([]);
+    setProfilePending(false);
+
+    comparison.clear();
+
+    try {
+      sessionStorage.removeItem("global-in-consult-result");
+    } catch {
+      // Storage may be disabled.
+    }
 
     if (messagesContainerRef.current) {
-      messagesContainerRef.current.scrollTo({
-        top: 0,
-        behavior: "auto",
-      });
+      messagesContainerRef.current.scrollTop = 0;
     }
   }
 
   // --------------------------------------------------
-  // 15. 메시지 전송
+  // 17. 메시지 전송
   // --------------------------------------------------
-  async function send(text: string) {
-    if (!isHydrated || !text.trim() || loading) return;
 
+  async function send(text: string) {
     const trimmedText = text.trim();
+
+    if (!isHydrated || !trimmedText || pendingRequest.current) {
+      return;
+    }
+
+    pendingRequest.current = true;
+
+    const version = ++requestVersion.current;
+
+    // 현재 채팅 ID와 백엔드 세션 ID를 요청 시작 시점에 고정
+    let chatId = currentChatId;
+    const requestSessionId = sessionId;
 
     const userMsg: Message = {
       role: "user",
@@ -691,9 +796,7 @@ function ChatPageInner() {
 
     const updatedMessages = [...messages, userMsg];
 
-    let chatId = currentChatId;
-
-    // 새 채팅이면 첫 메시지 전송 시 세션 생성
+    // 새 채팅이면 첫 메시지를 보내는 시점에 채팅 생성
     if (!chatId) {
       chatId = crypto.randomUUID();
 
@@ -705,12 +808,12 @@ function ChatPageInner() {
             : trimmedText,
         messages: updatedMessages,
         pinned: false,
+        sessionId: null,
       };
 
       setSessions((prev) => [newChat, ...prev]);
       setCurrentChatId(chatId);
     } else {
-      // 기존 채팅이면 해당 대화 내용 업데이트
       setSessions((prev) =>
         prev.map((chat) =>
           chat.id === chatId
@@ -725,6 +828,11 @@ function ChatPageInner() {
     setLoading(true);
 
     try {
+      const profile = readSaved<{ profile?: unknown }>(
+        PROFILE_KEY,
+        {}
+      ).profile;
+
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: {
@@ -732,34 +840,124 @@ function ChatPageInner() {
         },
         body: JSON.stringify({
           messages: updatedMessages,
-          session_id: sessionId,
+          session_id: requestSessionId,
+          profile_pending: profilePending,
+          profile,
         }),
       });
 
-      if (!res.ok) {
-        throw new Error(`요청 실패: ${res.status}`);
-      }
-
       const data = await res.json();
 
-      if (data.session_id) {
-        setSessionId(data.session_id);
+      // 채팅을 전환하거나 새 채팅을 시작했다면 이전 응답 무시
+      if (version !== requestVersion.current) return;
+
+      // 상담 세션 만료 처리
+      if (res.status === 404) {
+        expireConsultation();
+
+        setSessionId(null);
+        setProfilePending(false);
+
+        comparison.clear();
+
+        const expiredMessages = [
+          ...invalidateResults(updatedMessages),
+          {
+            role: "assistant" as const,
+            content:
+              "상담이 만료되어 이전 결과를 정리했습니다. 저장한 프로필은 유지됩니다. 질문을 다시 보내면 새 상담을 시작합니다.",
+          },
+        ];
+
+        setMessages(expiredMessages);
+
+        setSessions((prev) =>
+          prev.map((chat) =>
+            chat.id === chatId
+              ? {
+                  ...chat,
+                  messages: expiredMessages,
+                  sessionId: null,
+                }
+              : chat
+          )
+        );
+
+        return;
       }
 
-      const programs: Program[] = data.programs?.slice(0, 3) ?? [];
-
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: "assistant",
-          content:
+      if (!res.ok) {
+        throw new Error(
+          data.error ||
             data.content ||
-            data.message ||
-            "죄송해요, 오류가 발생했어요.",
-          programs: programs.length > 0 ? programs : undefined,
-        },
-      ]);
+            `요청 실패: ${res.status}`
+        );
+      }
+
+      // 백엔드에서 생성한 상담 세션 ID 저장
+      const nextSessionId = data.session_id ?? requestSessionId;
+
+      setSessionId(nextSessionId);
+
+      setSessions((prev) =>
+        prev.map((chat) =>
+          chat.id === chatId
+            ? {
+                ...chat,
+                sessionId: nextSessionId,
+              }
+            : chat
+        )
+      );
+
+      setProfilePending(false);
+
+      // 백엔드 프로그램 데이터를 프론트엔드 형식으로 변환
+      const programs: Program[] = (data.programs ?? [])
+        .slice(0, 3)
+        .map(
+          (program: {
+            program_id: string;
+            name: string;
+            country: string;
+            visa_type: string;
+            summary: string;
+          }) => ({
+            id: program.program_id,
+            name: program.name,
+            country:
+              COUNTRY_NAMES[program.country] || program.country,
+            type:
+              CATEGORY_NAMES[program.visa_type] ||
+              program.visa_type,
+            desc: program.summary,
+          })
+        );
+
+      // 상담 결과를 현재 브라우저 탭에 저장
+      try {
+        sessionStorage.setItem(
+          "global-in-consult-result",
+          JSON.stringify(data)
+        );
+      } catch {
+        // Storage may be disabled.
+      }
+
+      const assistantMessage: Message = {
+        role: "assistant",
+        content:
+          data.content ||
+          data.message ||
+          "죄송해요, 오류가 발생했어요.",
+        programs: programs.length > 0 ? programs : undefined,
+        details: data,
+      };
+
+      setMessages((prev) => [...prev, assistantMessage]);
     } catch (error) {
+      if (version !== requestVersion.current) return;
+
       console.error("채팅 API 요청 오류:", error);
 
       setMessages((prev) => [
@@ -767,19 +965,28 @@ function ChatPageInner() {
         {
           role: "assistant",
           content:
-            "아직 AI 상담 서버와 연결되지 않았어요. API 연결 후 실제 상담을 이용할 수 있어요.",
+            error instanceof Error
+              ? error.message
+              : "연결에 문제가 생겼어요. 잠시 후 다시 시도해 주세요.",
         },
       ]);
     } finally {
-      setLoading(false);
+      if (version === requestVersion.current) {
+        setLoading(false);
+        pendingRequest.current = false;
+      }
     }
   }
+
+  // --------------------------------------------------
+  // 18. 현재 채팅 제목
+  // --------------------------------------------------
 
   const currentTitle =
     sessions.find((chat) => chat.id === currentChatId)?.title ||
     "새 채팅";
 
-  // Local Storage 복원이 끝나기 전에는 화면 조작 방지
+  // Local Storage 복원 전 화면 조작 방지
   if (!isHydrated) {
     return (
       <div
@@ -913,12 +1120,20 @@ function ChatPageInner() {
                 >
                   <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
                 </svg>
-                내 프로필 반영 중
+                대화에서 확인한 정보를 바탕으로 안내
               </div>
 
               <div style={{ fontSize: "0.78rem", color: "#bbb" }}>
-                예시 프로필로 시작한 화면이에요.
+                조건이 달라지면 대화에서 수정해 주세요.
               </div>
+
+              {profilePending && (
+                <p role="status">
+                  프로필은 저장됐지만 재검토가 완료되지 않았습니다.
+                  다음 질문을 보내면 반영을 다시 시도합니다.{" "}
+                  <a href="/profile">프로필 확인</a>
+                </p>
+              )}
             </div>
 
             <hr
@@ -949,7 +1164,6 @@ function ChatPageInner() {
                         alignItems: "flex-start",
                       }}
                     >
-                      {/* AI 프로필 */}
                       <AiAvatar />
 
                       <div style={{ minWidth: 0, flex: 1 }}>
@@ -976,9 +1190,69 @@ function ChatPageInner() {
                             overflowWrap: "anywhere",
                           }}
                         >
-                          {renderContent(msg.content)}
+                          {msg.details?.answer_sections?.length ? (
+                            msg.details.answer_sections.map(
+                              (section, index) => (
+                                <article
+                                  key={index}
+                                  style={{ marginBottom: 14 }}
+                                >
+                                  <strong>
+                                    {section.target_name
+                                      ? section.target_name + " · "
+                                      : ""}
+                                    {section.title}
+                                  </strong>
+
+                                  <p style={{ margin: "6px 0" }}>
+                                    {renderContent(section.text)}
+                                  </p>
+
+                                  {section.scope_notes?.map((note) => (
+                                    <small
+                                      key={note}
+                                      style={{ display: "block" }}
+                                    >
+                                      근거의 적용 범위: {note}
+                                    </small>
+                                  ))}
+
+                                  {section.citations
+                                    .filter((c) =>
+                                      safeSource(c.source_url)
+                                    )
+                                    .map((c, citationIndex) => (
+                                      <a
+                                        key={citationIndex}
+                                        href={c.source_url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{
+                                          display: "block",
+                                          fontSize: "0.8rem",
+                                          color: "var(--mu)",
+                                        }}
+                                      >
+                                        {c.title} ↗
+                                        {c.verified_at
+                                          ? " · 확인일 " + c.verified_at
+                                          : ""}
+                                      </a>
+                                    ))}
+                                </article>
+                              )
+                            )
+                          ) : (
+                            renderContent(msg.content)
+                          )}
                         </div>
 
+                        {/* 상세 상담 결과 */}
+                        {msg.details && (
+                          <ConsultationDetails data={msg.details} />
+                        )}
+
+                        {/* 추천 프로그램 */}
                         {msg.programs && msg.programs.length > 0 && (
                           <div style={{ marginTop: 12 }}>
                             <div
@@ -990,7 +1264,7 @@ function ChatPageInner() {
                                 letterSpacing: "0.04em",
                               }}
                             >
-                              ● 추천 프로그램 TOP {msg.programs.length}
+                              ● 검토할 프로그램 후보 {msg.programs.length}개
                             </div>
 
                             <div
@@ -1001,11 +1275,13 @@ function ChatPageInner() {
                                 maxWidth: 520,
                               }}
                             >
-                              {msg.programs.map((p) => (
+                              {msg.programs.map((program) => (
                                 <ProgramCard
-                                  key={p.id}
-                                  program={p}
-                                  isCompared={compareIds.includes(p.id)}
+                                  key={program.id}
+                                  program={program}
+                                  isCompared={compareIds.includes(
+                                    program.id
+                                  )}
                                   onToggleCompare={toggleCompare}
                                 />
                               ))}
@@ -1063,10 +1339,10 @@ function ChatPageInner() {
                     marginTop: -8,
                   }}
                 >
-                  {SUGGESTIONS.map((s) => (
+                  {SUGGESTIONS.map((suggestion) => (
                     <button
-                      key={s}
-                      onClick={() => send(s)}
+                      key={suggestion}
+                      onClick={() => send(suggestion)}
                       disabled={loading}
                       style={{
                         border: "1px solid var(--ln)",
@@ -1078,7 +1354,7 @@ function ChatPageInner() {
                         color: "var(--ink)",
                       }}
                     >
-                      {s}
+                      {suggestion}
                     </button>
                   ))}
 
@@ -1121,7 +1397,7 @@ function ChatPageInner() {
                 </div>
               )}
 
-              {/* 프로그램 비교표 */}
+              {/* 프로그램 비교 */}
               {comparePrograms.length >= 2 && (
                 <div
                   style={{
@@ -1153,10 +1429,13 @@ function ChatPageInner() {
                       >
                         {comparePrograms.length}개 선택됨
                       </span>
+
+                      {" "}
+                      <a href="/compare">비교 화면 열기</a>
                     </div>
 
                     <button
-                      onClick={() => setCompareIds([])}
+                      onClick={comparison.clear}
                       style={{
                         background: "none",
                         border: "none",
@@ -1192,9 +1471,9 @@ function ChatPageInner() {
                             항목
                           </th>
 
-                          {comparePrograms.map((p) => (
+                          {comparePrograms.map((program) => (
                             <th
-                              key={p.id}
+                              key={program.id}
                               style={{
                                 padding: "10px 16px",
                                 textAlign: "left",
@@ -1202,7 +1481,7 @@ function ChatPageInner() {
                                 color: "var(--ink)",
                               }}
                             >
-                              {p.name}
+                              {program.name}
                             </th>
                           ))}
                         </tr>
@@ -1212,28 +1491,29 @@ function ChatPageInner() {
                         {[
                           {
                             label: "국가",
-                            render: (p: Program) =>
-                              p.country ?? "여러 국가",
+                            render: (program: Program) =>
+                              program.country ?? "여러 국가",
                           },
                           {
                             label: "유형",
-                            render: (p: Program) => p.type ?? "-",
+                            render: (program: Program) =>
+                              program.type ?? "-",
                           },
                           {
                             label: "설명",
-                            render: (p: Program) =>
-                              p.desc ||
-                              p.description ||
-                              p.condition_summary ||
+                            render: (program: Program) =>
+                              program.desc ||
+                              program.description ||
+                              program.condition_summary ||
                               "-",
                           },
-                        ].map((row, ri) => (
+                        ].map((row, rowIndex) => (
                           <tr
-                            key={ri}
+                            key={rowIndex}
                             style={{
                               borderTop: "1px solid var(--ln)",
                               background:
-                                ri % 2 === 0 ? "#fff" : "#fafbfc",
+                                rowIndex % 2 === 0 ? "#fff" : "#fafbfc",
                             }}
                           >
                             <td
@@ -1248,16 +1528,16 @@ function ChatPageInner() {
                               {row.label}
                             </td>
 
-                            {comparePrograms.map((p) => (
+                            {comparePrograms.map((program) => (
                               <td
-                                key={p.id}
+                                key={program.id}
                                 style={{
                                   padding: "10px 16px",
                                   color: "var(--ink)",
                                   lineHeight: 1.5,
                                 }}
                               >
-                                {row.render(p)}
+                                {row.render(program)}
                               </td>
                             ))}
                           </tr>
@@ -1275,12 +1555,14 @@ function ChatPageInner() {
                             공식 사이트
                           </td>
 
-                          {comparePrograms.map((p) => {
-                            const url = p.official_url || p.officialUrl;
+                          {comparePrograms.map((program) => {
+                            const url =
+                              program.official_url ||
+                              program.officialUrl;
 
                             return (
                               <td
-                                key={p.id}
+                                key={program.id}
                                 style={{ padding: "10px 16px" }}
                               >
                                 {url ? (
@@ -1421,7 +1703,7 @@ function ChatPageInner() {
                 marginTop: 10,
               }}
             >
-              채팅 내용은 현재 브라우저에 임시 저장돼요.
+              상담 기록은 이 브라우저에 저장되며, 안내 결과와 공식 출처를 함께 확인해 주세요.
             </div>
           </div>
         </main>
