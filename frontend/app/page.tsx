@@ -12,9 +12,9 @@ const FL: Record<string, string> = {
 };
 
 const CARDS = [
-  { icon: "M3 17l2 2 4-4M3 7l2 2 4-4M13 6h8M13 12h8M13 18h8", title: "나에게 맞는 프로그램 비교", desc: "관심 있는 프로그램의 차이를 한눈에", href: "/compare" },
   { icon: "M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20M16.2 7.8l-2.1 6.3-6.3 2.1 2.1-6.3z", title: "내 조건에 맞는지 확인", desc: "충족한 조건과 더 확인할 조건 정리", href: "/programs" },
   { icon: "M3 17l2 2 4-4M3 7l2 2 4-4M13 6h8M13 12h8M13 18h8", title: "준비할 일을 순서대로", desc: "필요한 서류와 할 일을 체크리스트로", href: "/preparation" },
+  { icon: "M3 17l2 2 4-4M3 7l2 2 4-4M13 6h8M13 12h8M13 18h8", title: "나에게 맞는 프로그램 비교", desc: "관심 있는 프로그램의 차이를 한눈에", href: "/profile" },
 ];
 
 const cardMargins = ["0 0 6px 0", "0 0 6px 0", "0 0 0 0"];
@@ -38,22 +38,22 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      const el = e.target as HTMLElement;
-      if (e.isIntersecting) {
-        el.style.opacity = "1";
-        el.style.transform = "translateY(0)";
-      } else {
-        el.style.opacity = "0";
-        el.style.transform = "translateY(30px)";
-      }
-    });
-  }, { threshold: 0.1 });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        const el = e.target as HTMLElement;
+        if (e.isIntersecting) {
+          el.style.opacity = "1";
+          el.style.transform = "translateY(0)";
+        } else {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(30px)";
+        }
+      });
+    }, { threshold: 0.1 });
 
-  document.querySelectorAll(".scroll-up").forEach(el => observer.observe(el));
-  return () => observer.disconnect();
-}, []);
+    document.querySelectorAll(".scroll-up").forEach(el => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--bg)" }}>
@@ -68,6 +68,10 @@ export default function Home() {
         @keyframes markIn {
           from { background-color: transparent; }
           to   { background-color: #dcdce0; }
+        }
+        @keyframes pulse {
+          0%, 100% { box-shadow: 0 0 0 0 rgba(123,135,214,0.5); }
+          50%       { box-shadow: 0 0 0 12px rgba(123,135,214,0); }
         }
         .scroll-up {
           opacity: 0;
@@ -123,11 +127,37 @@ export default function Home() {
             나에게 맞는 비자·체류 프로그램을 비교하고,<br />
             필요한 서류와 준비할 일을 함께 알아보세요.
           </p>
+
+          {/* ✅ 강조된 버튼 */}
           <button
             onClick={() => router.push("/chat")}
-            style={{ border: "1px solid var(--ink)", background: "var(--ink)", color: "#fff", borderRadius: 12, padding: "18px 34px", fontWeight: 600, display: "inline-flex", gap: 8, alignItems: "center", fontSize: "1rem", animation: "fadeUp 0.6s ease 0.45s both", transition: "transform 0.2s, box-shadow 0.2s", cursor: "pointer" }}
-            onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.2)"; }}
-            onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}
+            style={{
+              border: "none",
+              background: "linear-gradient(135deg, #5a67b8, #7b87d6)",
+              color: "#fff",
+              borderRadius: 12,
+              padding: "20px 40px",
+              fontWeight: 700,
+              display: "inline-flex",
+              gap: 8,
+              alignItems: "center",
+              fontSize: "1.05rem",
+              animation: "fadeUp 0.6s ease 0.45s both, pulse 2s ease-in-out 1.5s infinite",
+              transition: "transform 0.2s, filter 0.2s, box-shadow 0.2s",
+              cursor: "pointer",
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.transform = "translateY(-3px)";
+              e.currentTarget.style.filter = "brightness(1.1)";
+              e.currentTarget.style.animation = "none";
+              e.currentTarget.style.boxShadow = "0 12px 32px rgba(123,135,214,0.5)";
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.filter = "brightness(1)";
+              e.currentTarget.style.animation = "pulse 2s ease-in-out infinite";
+              e.currentTarget.style.boxShadow = "none";
+            }}
           >
             상담 시작하기
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M7 7h10v10M7 17L17 7"/></svg>
@@ -162,10 +192,7 @@ export default function Home() {
       </section>
 
       {/* Explore */}
-      <section
-        className="scroll-up"
-        style={{ textAlign: "center", padding: "56px 20px", borderTop: "1px solid var(--ln)" }}
-      >
+      <section className="scroll-up" style={{ textAlign: "center", padding: "56px 20px", borderTop: "1px solid var(--ln)" }}>
         <div style={{ fontSize: "0.72rem", letterSpacing: "0.16em", color: "var(--mu)", fontWeight: 600 }}>
           <span style={{ display: "inline-block", width: 6, height: 6, borderRadius: "50%", background: "var(--ac)", marginRight: 8, verticalAlign: "middle" }} />
           EXPLORE YOUR POSSIBILITIES
@@ -186,11 +213,7 @@ export default function Home() {
         <h2 className="scroll-up" style={{ fontSize: "2rem", letterSpacing: "-0.04em", margin: "12px 0 48px", transitionDelay: "0.1s" }}>궁금한 마음을, 준비하는 일상으로.</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 28, textAlign: "left", maxWidth: 960, margin: "0 auto" }}>
           {HOW_IT_WORKS.map(([title, desc], i) => (
-            <div
-              key={title}
-              className="scroll-up"
-              style={{ transitionDelay: `${0.15 + i * 0.1}s` }}
-            >
+            <div key={title} className="scroll-up" style={{ transitionDelay: `${0.15 + i * 0.1}s` }}>
               <small style={{ color: "#6672c4", fontWeight: 600 }}>0{i + 1}</small>
               <b style={{ display: "block", margin: "8px 0", fontSize: "1.05rem" }}>{title}</b>
               <span style={{ color: "var(--mu)", fontSize: "0.9rem" }}>{desc}</span>
@@ -200,10 +223,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <div
-        className="scroll-up"
-        style={{ display: "flex", justifyContent: "space-between", borderTop: "1px solid var(--ln)", padding: "28px 20px", color: "var(--mu)", fontSize: "0.8rem", maxWidth: 1040, margin: "0 auto" }}
-      >
+      <div className="scroll-up" style={{ display: "flex", justifyContent: "space-between", borderTop: "1px solid var(--ln)", padding: "28px 20px", color: "var(--mu)", fontSize: "0.8rem", maxWidth: 1040, margin: "0 auto" }}>
         <span>Global-In.</span>
         <span>해외에서의 다음 시작을 함께.</span>
       </div>
