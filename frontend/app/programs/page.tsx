@@ -113,6 +113,8 @@ export default function ProgramsPage() {
 
   // 자세히 보기 후 뒤로가기 시 필터 복원
   useEffect(() => {
+    // Read browser state after hydration without synchronous effect updates.
+    const timer = window.setTimeout(() => {
     try {
       const saved = sessionStorage.getItem("programs-filters");
       if (saved) {
@@ -124,6 +126,8 @@ export default function ProgramsPage() {
         sessionStorage.removeItem("programs-filters");
       }
     } catch {}
+    }, 0);
+    return () => window.clearTimeout(timer);
   }, []);
 
   const filtered = PROGRAMS.filter(p => {

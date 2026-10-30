@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import ConsultationDetails, { type ConsultationDetailsData } from "@/components/ConsultationDetails";
-import { CHAT_KEY, RESULT_KEY, PROFILE_KEY, COMPARE_KEY, readSaved, saveTab } from '@/lib/consultation';
+import { CHAT_KEY, PROFILE_KEY, COMPARE_KEY, readSaved, saveTab, expireConsultation, latestPrograms, invalidateResults } from '@/lib/consultation';
 
 interface Message {
   role: "user" | "assistant";
@@ -119,14 +119,13 @@ function ProgramCard({ program, isCompared, onToggleCompare }: {
             </a>
           )}
           <label style={{ display: "flex", alignItems: "center", gap: 5, cursor: "pointer", userSelect: "none" }}>
-            <div onClick={() => onToggleCompare(program.id)} style={{
+            <input type="checkbox" aria-label={`${program.name} 비교하기`} checked={isCompared} onChange={() => onToggleCompare(program.id)} style={{
               width: 16, height: 16, borderRadius: 4,
               border: `1.5px solid ${isCompared ? "var(--ac)" : "#d0d3de"}`,
               background: isCompared ? "var(--ac)" : "#fff",
               display: "grid", placeItems: "center", cursor: "pointer", flexShrink: 0, transition: "all 0.15s",
-            }}>
-              {isCompared && <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3"><path d="M20 6L9 17l-5-5"/></svg>}
-            </div>
+              accentColor: 'var(--ac)',
+            }} />
             <span style={{ fontSize: "0.76rem", color: isCompared ? "var(--ac)" : "var(--mu)", fontWeight: isCompared ? 600 : 400 }}>비교하기</span>
           </label>
         </div>
@@ -149,12 +148,14 @@ function ChatPageInner() {
   const requestVersion = useRef(0);
   const pendingRequest = useRef(false);
   const [restored, setRestored] = useState(false);
+  const [profilePending, setProfilePending] = useState(false);
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
-      const saved = readSaved<{ session_id?: string; messages?: Message[]; compareIds?: (string | number)[] }>(CHAT_KEY, {});
+      const saved = readSaved<{ session_id?: string; messages?: Message[]; compareIds?: (string | number)[]; profile_pending?: boolean }>(CHAT_KEY, {});
       if (saved.session_id && /^[a-f0-9]{32}$/.test(saved.session_id) && Array.isArray(saved.messages)) {
         setSessionId(saved.session_id); setMessages(saved.messages); setCompareIds(saved.compareIds || []);
+        setProfilePending(saved.profile_pending === true);
       }
       setRestored(true);
     }, 0);
@@ -162,8 +163,8 @@ function ChatPageInner() {
   }, []);
 
   useEffect(() => {
-    if (restored) saveTab(CHAT_KEY, { session_id: sessionId, messages, compareIds });
-  }, [restored, sessionId, messages, compareIds]);
+    if (restored) saveTab(CHAT_KEY, { session_id: sessionId, messages, compareIds, profile_pending: profilePending });
+  }, [restored, sessionId, messages, compareIds, profilePending]);
 
   // 상세 페이지에서 'AI와 상담하기' 클릭 시 자동으로 해당 프로그램 상담 시작
   useEffect(() => {
@@ -205,10 +206,7 @@ function ChatPageInner() {
     setCompareIds(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
   }
 
-  const allPrograms: Program[] = [];
-  messages.forEach(m => {
-    if (m.programs) m.programs.forEach(p => { if (!allPrograms.find(x => x.id === p.id)) allPrograms.push(p); });
-  });
+  const allPrograms: Program[] = latestPrograms(messages);
   const comparePrograms = allPrograms.filter(p => compareIds.includes(p.id));
   useEffect(() => {
     if (restored) saveTab(COMPARE_KEY, allPrograms.filter(p => compareIds.includes(p.id)));
@@ -230,15 +228,18 @@ function ChatPageInner() {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: updatedMessages, session_id: sessionId, profile: readSaved<{ profile?: unknown }>(PROFILE_KEY, {}).profile }),
+        body: JSON.stringify({ messages: updatedMessages, session_id: sessionId, profile_pending: profilePending, profile: readSaved<{ profile?: unknown }>(PROFILE_KEY, {}).profile }),
       });
       const data = await res.json();
       if (version !== requestVersion.current) return;
       if (res.status === 404) {
-        try { sessionStorage.removeItem(RESULT_KEY); } catch { /* Storage may be disabled. */ }
+        expireConsultation(); setSessionId(null); setCompareIds([]); setProfilePending(false);
+        setMessages([...invalidateResults(updatedMessages), { role: 'assistant', content: '상담이 만료되어 이전 결과를 정리했습니다. 저장한 프로필은 유지됩니다. 질문을 다시 보내면 새 상담을 시작합니다.' }]);
+        return;
       }
       if (!res.ok) throw new Error(data.error || data.content || `요청 실패: ${res.status}`);
       if (data.session_id) setSessionId(data.session_id);
+      setProfilePending(false);
       const programs: Program[] = (data.programs ?? []).map((program: { program_id: string; name: string; country: string; visa_type: string; summary: string }) => ({
         id: program.program_id, name: program.name, country: program.country, type: program.visa_type, desc: program.summary,
       }));
@@ -266,6 +267,7 @@ function ChatPageInner() {
     setInput("");
     setLoading(false);
     setCompareIds([]);
+    setProfilePending(false);
     try { sessionStorage.removeItem("global-in-consult-result"); } catch { /* Storage may be disabled. */ }
     saveTab(COMPARE_KEY, []);
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -295,6 +297,7 @@ function ChatPageInner() {
               대화에서 확인한 정보를 바탕으로 안내
             </div>
             <div style={{ fontSize: "0.78rem", color: "#bbb" }}>조건이 달라지면 대화에서 수정해 주세요.</div>
+            {profilePending && <p role="status">프로필은 저장됐지만 재검토가 완료되지 않았습니다. 다음 질문을 보내면 반영을 다시 시도합니다. <a href="/profile">프로필 확인</a></p>}
           </div>
 
           <hr style={{ border: "none", borderTop: "1px solid var(--ln)", margin: "20px 32px", flexShrink: 0 }} />
@@ -443,7 +446,7 @@ function ChatPageInner() {
               </button>
             </form>
             <div style={{ fontSize: "0.75rem", color: "#ccc", textAlign: "center", marginTop: 10 }}>
-              화면 시안 · 채팅은 현재 화면을 닫기 전까지 유지돼요. 실제 AI 상담은 연결 전이에요.
+              상담 기록은 이 탭에서 유지됩니다. 안내 결과와 공식 출처를 함께 확인해 주세요.
             </div>
           </div>
         </main>

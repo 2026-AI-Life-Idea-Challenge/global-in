@@ -28,7 +28,7 @@ export default function Sidebar({ sessions = [], currentSessionId, onNewChat }: 
   const isChat = pathname?.startsWith("/chat");
 
   return (
-    <aside style={{
+    <aside className="app-sidebar" style={{
       width: 210, flexShrink: 0, display: "flex", flexDirection: "column",
       borderRight: "1px solid var(--ln)", background: "var(--bg)",
       minHeight: "calc(100vh - 90px)",

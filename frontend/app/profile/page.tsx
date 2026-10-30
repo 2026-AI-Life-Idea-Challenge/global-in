@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Header from "../../components/Header";
-import { CHAT_KEY, RESULT_KEY, PROFILE_KEY, COUNTRY_CODES, VISA_CODES, readSaved, saveTab } from '@/lib/consultation';
+import { CHAT_KEY, RESULT_KEY, PROFILE_KEY, COMPARE_KEY, COUNTRY_CODES, VISA_CODES, readSaved, saveTab, expireConsultation, invalidateResults } from '@/lib/consultation';
 
 const COUNTRIES = [
   { flag: "🇯🇵", label: "일본" },
@@ -75,25 +75,38 @@ export default function ProfilePage() {
       target_visa_type: purposes.length === 1 ? VISA_CODES[purposes[0]] : null, purpose: context || null };
     const form = { nationality, age, residence, education, eduStatus, major, career, careerDuration, languages, certs,
       selectedCountries, selectedPurposes, undecidedCountry, undecidedPurpose };
-    setSaving(true); setNotice('');
+    if (!saveTab(PROFILE_KEY, { form, profile })) {
+      setNotice('프로필을 저장하지 못했습니다. 브라우저 저장 설정을 확인해 주세요.'); return;
+    }
+    setSaving(true); setNotice('프로필을 저장했습니다.');
     try {
-      const chat = readSaved<{ session_id?: string; messages?: unknown[] }>(CHAT_KEY, {});
+      const chat = readSaved<{ session_id?: string; messages?: { role: string; content: string; programs?: unknown; details?: unknown }[] }>(CHAT_KEY, {});
+      sessionStorage.removeItem(RESULT_KEY);
+      saveTab(COMPARE_KEY, []);
+      const pendingChat = { ...chat, messages: invalidateResults(chat.messages || []), compareIds: [], profile_pending: true };
       if (chat.session_id) {
+        if (!saveTab(CHAT_KEY, pendingChat)) throw new Error('프로필은 저장됐지만 상담 상태 저장에 실패했습니다.');
         const response = await fetch('/api/chat', { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ session_id: chat.session_id, profile }) });
         const result = await response.json();
         if (!response.ok) {
-          if (response.status === 404) sessionStorage.removeItem(CHAT_KEY);
-          throw new Error(result.error || '재검토에 실패했습니다.');
+          if (response.status === 404) {
+            expireConsultation();
+            setNotice('프로필은 저장했습니다. 상담이 만료되어 이전 결과를 정리했습니다. 이 정보로 상담하기를 눌러 새 상담을 시작하세요.');
+            return;
+          }
+          throw new Error('프로필은 저장했습니다. 재검토에 실패했으므로 저장 버튼으로 재시도하거나 상담에서 다시 질문해 주세요.');
         }
         saveTab(RESULT_KEY, result);
-        saveTab(CHAT_KEY, { ...chat, messages: [...(chat.messages || []), { role: 'assistant', content: result.content, details: result,
+        saveTab(CHAT_KEY, { ...pendingChat, profile_pending: false, messages: [...pendingChat.messages, { role: 'assistant', content: result.content, details: result,
           programs: (result.programs || []).map((p: { program_id: string; name: string; country: string; visa_type: string; summary: string }) => ({ id: p.program_id, name: p.name, country: p.country, type: p.visa_type, desc: p.summary })) }], compareIds: [] });
       }
-      if (!saveTab(PROFILE_KEY, { form, profile })) throw new Error('브라우저 저장소를 사용할 수 없습니다. 저장 설정을 확인해 주세요.');
       sessionStorage.removeItem('global-in-compare');
       setNotice(chat.session_id ? '프로필을 저장하고 재검토 결과를 갱신했습니다.' : '이 탭에 프로필을 저장했습니다. 다음 상담에 반영됩니다.');
       if (goToChat) router.push('/chat');
-    } catch (error) { setNotice(error instanceof Error ? error.message : '프로필을 저장하지 못했습니다.'); }
+    } catch (error) {
+      const message = error instanceof Error ? error.message : '재검토에 실패했습니다.';
+      setNotice(message.startsWith('프로필은 저장') ? message : `프로필은 저장했습니다. ${message} 저장 버튼으로 재검토를 다시 시도해 주세요.`);
+    }
     finally { setSaving(false); }
   }
 

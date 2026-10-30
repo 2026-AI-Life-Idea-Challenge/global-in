@@ -36,14 +36,14 @@ export async function POST(req: NextRequest) {
       }
       const sessionData = await sessionRes.json();
       sessionId = sessionData.session_id;
-      // A new session receives only the explicitly saved, validated profile.
-      if (body.profile && typeof body.profile === 'object' && !Array.isArray(body.profile)) {
+    }
+      // Apply a saved profile once when starting or retrying a failed recheck.
+      if ((!existingSessionId || body.profile_pending === true) && body.profile && typeof body.profile === 'object' && !Array.isArray(body.profile)) {
         const profileRes = await fetch(`${BACKEND}/consult/sessions/${sessionId}/profile`, {
           method: 'PATCH', headers, body: JSON.stringify(body.profile), signal: AbortSignal.timeout(120000),
         });
-        if (!profileRes.ok) return NextResponse.json({ error: '저장한 프로필을 확인해 주세요.' }, { status: profileRes.status });
+        if (!profileRes.ok) return NextResponse.json({ error: profileRes.status === 404 ? '상담이 만료됐습니다. 새 상담을 시작해 주세요.' : '프로필 반영에 실패했습니다. 저장한 정보는 유지됩니다. 다시 시도해 주세요.' }, { status: profileRes.status });
       }
-    }
 
     // 백엔드로 메시지 전송
     const msgRes = await fetch(`${BACKEND}/consult/sessions/${sessionId}/messages`, {
