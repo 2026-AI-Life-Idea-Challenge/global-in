@@ -49,3 +49,11 @@ data/processed/knowledge/*/releases/
 
 # 임시 집계 파일
 'source_url'
+# 확장자가 .dump인 모든 파일 무시
+*.dump
+
+# 특정 확장자(예: .sql 덤프 등)도 같이 무시하고 싶다면
+*.sql
+
+# 만약 dump라는 이름의 폴더 통째로 무시하고 싶다면
+dump/
