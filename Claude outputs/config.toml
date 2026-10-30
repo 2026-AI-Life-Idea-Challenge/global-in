@@ -11,6 +11,3 @@ headless = true
 
 [browser]
 gatherUsageStats = false
-
-[client]
-showErrorDetails = false

@@ -8,7 +8,7 @@ export default function PreparationPage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--bg)", display: "flex", flexDirection: "column" }}>
-      <Header rightLabel="나의 해외 활동 준비" />
+      <Header rightLabel="플랜" />
 
       <div style={{ display: "flex", flex: 1, maxWidth: 1040, margin: "20px auto 0", width: "100%", padding: "0 20px" }}>
         <Sidebar />
@@ -17,13 +17,13 @@ export default function PreparationPage() {
           {/* 헤더 */}
           <div style={{ marginBottom: 24 }}>
             <div style={{ fontSize: "0.72rem", letterSpacing: "0.14em", color: "var(--ac)", fontWeight: 600, marginBottom: 10 }}>
-              ● MY PREPARATION
+              ● MY PLAN
             </div>
             <h2 style={{ margin: "0 0 6px", fontSize: "1.6rem", fontWeight: 800, letterSpacing: "-0.04em" }}>
-              내 준비
+              플랜
             </h2>
             <p style={{ margin: 0, fontSize: "0.88rem", color: "var(--mu)" }}>
-              선택한 프로그램과 지원제도의 준비사항을 하나씩 확인해 보세요.
+              선택한 프로그램과 지원제도의 준비 계획을 한눈에 확인해 보세요.
             </p>
           </div>
 
