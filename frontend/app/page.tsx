@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const COUNTRY_CODE: Record<string, string> = {
   일본: "jp",
@@ -35,6 +35,16 @@ const HOW_IT_WORKS = [
 
 export default function Home() {
   const router = useRouter();
+  const [logoLeft, setLogoLeft] = useState<number>(20);
+
+  useEffect(() => {
+    const updateLogoLeft = () => {
+      setLogoLeft(Math.max(20, (window.innerWidth - 1040) / 2 + 20));
+    };
+    updateLogoLeft();
+    window.addEventListener("resize", updateLogoLeft);
+    return () => window.removeEventListener("resize", updateLogoLeft);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -79,12 +89,16 @@ export default function Home() {
         }
       `}</style>
 
-      {/* 로고 위치*/}
+      {/* 로고 - 사이드바와 동일 위치 (fixed) */}
       <div style={{
-        position: "absolute", top: 0, left: 0,
-        width: 210, padding: "20px 16px 14px",
-        display: "flex", justifyContent: "center",
-        zIndex: 10,
+        position: "fixed",
+        top: 91,
+        left: logoLeft,
+        width: 210,
+        padding: "20px 16px 14px",
+        display: "flex",
+        justifyContent: "center",
+        zIndex: 100,
       }}>
         <img
           src="/logo/global-in-logo.svg"
@@ -96,7 +110,7 @@ export default function Home() {
 
       {/* 네비 - 우측 상단 고정 */}
       <div style={{
-        position: "absolute", top: 0, right: 0,
+        position: "fixed", top: 0, right: 0,
         padding: "22px 28px",
         display: "flex", gap: 28,
         color: "#3b3f4d", fontSize: "0.9rem",
