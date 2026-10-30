@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef, useEffect, useLayoutEffect } from "react";
-import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 
 interface Message {
@@ -163,9 +162,6 @@ export default function ChatPage() {
         flexDirection: "column",
       }}
     >
-      <div style={{ flexShrink: 0 }}>
-        <Header rightLabel="맞춤 상담" />
-      </div>
 
       <div
         style={{

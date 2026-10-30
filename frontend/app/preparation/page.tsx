@@ -1,6 +1,5 @@
 "use client";
 import { useRouter } from "next/navigation";
-import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 
 export default function PreparationPage() {
@@ -8,7 +7,7 @@ export default function PreparationPage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--bg)", display: "flex", flexDirection: "column" }}>
-      <Header rightLabel="나의 해외 활동 준비" />
+      
 
       <div style={{ display: "flex", flex: 1, maxWidth: 1040, margin: "20px auto 0", width: "100%", padding: "0 20px" }}>
         <Sidebar />

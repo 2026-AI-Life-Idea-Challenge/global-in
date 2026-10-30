@@ -13,14 +13,12 @@ export default function Header({ rightLabel, showNav = false }: HeaderProps) {
       <div style={{
         maxWidth: 1040, margin: "0 auto",
         display: "flex", justifyContent: "space-between", alignItems: "center",
-        background: "#fff", border: "1px solid var(--ln)", borderRadius: 24,
-        padding: "14px 28px", boxShadow: "0 8px 24px rgba(30,35,70,.06)",
+        padding: "14px 28px",
       }}>
         <button
           onClick={() => router.push("/")}
           style={{
             display: "flex", gap: 10, alignItems: "center",
-            fontWeight: 800, fontSize: "1.3rem", letterSpacing: "-0.03em",
             border: 0, background: "none", padding: 0, cursor: "pointer",
           }}
         >
