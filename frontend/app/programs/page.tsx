@@ -62,7 +62,11 @@ export const PROGRAMS = [
   { id: 35, type: "프로그램", country: "미국", tags: ["미국", "취업"], name: "J-1 인턴십", desc: "인턴십 형태로 미국에서 실무 경험을 쌓는 교환 방문자 경로.", sub: "재학 중이거나 졸업 1년 이내·DS-2019·후원기관 요건 확인", officialUrl: "https://j1visa.state.gov/programs/intern/" },
   { id: 36, type: "프로그램", country: "미국", tags: ["미국", "취업"], name: "J-1 연수 (Trainee)", desc: "연수 형태로 미국에서 직업 훈련을 받는 교환 방문자 경로.", sub: "학위 또는 경력·DS-2019·후원기관 요건 확인", officialUrl: "https://j1visa.state.gov/programs/trainee/" },
   { id: 37, type: "프로그램", country: "미국", tags: ["미국", "워킹홀리데이"], name: "J-1 Summer Work Travel", desc: "대학생이 미국에서 여름방학 동안 일하며 여행하는 교환 방문자 경로.", sub: "재학 중·고용계약·DS-2019·후원기관 요건 확인", officialUrl: "https://j1visa.state.gov/programs/summer-work-travel/" },
-  { id: 38, type: "프로그램", country: "미국", tags: ["미국", "장학·연수"], name: "WEST 프로그램", desc: "한국 대학생이 미국에서 인턴십·연수를 경험하는 한미 교육 교류 프로그램.", sub: "재학생·어학·선발 심사 등 요건 확인", officialUrl: "https://www.niied.go.kr/web/niied/contents/niied_iee_west" },
+  { id: 38, type: "프로그램", country: "미국", tags: ["미국", "장학·연수"], name: "WEST 프로그램", desc: "한국 대학생이 미국에서 인턴십·연수를 경험하는 한미 교육 교류 프로그램.", sub: "재학생·어학·선발 심사 등 요건 확인", officialUrl: "https://www.niied.go.kr/web/niied/contents/niied_iee_west",
+    links: [
+      { label: "프로그램 소개", url: "https://www.niied.go.kr/web/niied/contents/niied_iee_west" },
+      { label: "모집 공고", url: "https://www.niied.go.kr/web/niied/nid/niied_board/5749" },
+    ] },
 
   // ─── 캐나다 프로그램 ───
   { id: 6, type: "프로그램", country: "캐나다", tags: ["캐나다", "취업"], name: "고용주 지정 취업허가 (ESWP)", desc: "특정 캐나다 고용주를 위해 발급되는 임시 취업 경로.", sub: "고용주 LMIA 또는 면제 요건·직종 확인", officialUrl: "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit/temporary/apply.html" },
@@ -78,7 +82,6 @@ export const PROGRAMS = [
   { id: 44, type: "지원제도", country: null, tags: ["여러 국가", "취업"], name: "해외일경험지원사업 WELL", desc: "단기 해외 일경험을 통한 청년 글로벌 역량 강화 지원.", sub: "재학·졸업 청년 대상·파견 기업 등 요건 확인", officialUrl: "https://www.worldjob.or.kr/ovsea/well.do" },
 
   // ─── 지원제도 (국가별) ───
-  { id: 45, type: "지원제도", country: "미국", tags: ["미국", "장학·연수"], name: "한·미 대학생 연수 WEST", desc: "미국에서 인턴십·연수를 경험하는 한미 교육 교류 프로그램 참가 지원.", sub: "참가비·체재비·어학연수비 일부 지원", officialUrl: "https://www.niied.go.kr/web/niied/nid/niied_board/5749" },
   { id: 46, type: "지원제도", country: "미국", tags: ["미국", "장학·연수"], name: "WEST 어학연수비 대출", desc: "WEST 프로그램 참가자를 위한 어학연수비 대출 지원.", sub: "WEST 합격자·대출 한도·상환 조건 확인", officialUrl: "https://www.kosaf.go.kr/ko/tuition.do?pg=PTHDWestAply_01M&ttab1=2" },
   { id: 47, type: "지원제도", country: "일본", tags: ["일본", "장학·연수"], name: "2027 MEXT 연구유학생 장학", desc: "일본 문부과학성이 지원하는 연구유학생 장학 프로그램.", sub: "대학 추천·연령·학업 성적 등 요건 확인", officialUrl: "https://www.kr.emb-japan.go.jp/itpr_ko/news_20260512.html" },
   { id: 48, type: "지원제도", country: "호주", tags: ["호주", "장학·연수"], name: "Research Training Program (RTP)", desc: "호주 정부가 지원하는 대학원 연구과정 장학 프로그램.", sub: "호주 대학 입학·연구 계획 등 요건 확인", officialUrl: "https://www.education.gov.au/research-block-grants/research-training-program" },

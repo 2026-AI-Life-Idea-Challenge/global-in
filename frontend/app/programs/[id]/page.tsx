@@ -91,7 +91,11 @@ const PROGRAMS = [
   { id: 37, type: "프로그램", country: "미국", tags: ["미국", "워킹홀리데이"], name: "J-1 Summer Work Travel", desc: "대학생이 미국에서 여름방학 동안 일하며 여행하는 교환 방문자 경로.", sub: "재학 중·고용계약·DS-2019·후원기관 요건 확인", officialUrl: "https://j1visa.state.gov/programs/summer-work-travel/",
     details: "외국 대학의 재학생이 미국에서 여름방학 기간(최대 4개월) 동안 취업하며 여행을 경험하는 J-1 비자 카테고리입니다. 미국 내 취업 오퍼를 먼저 받거나 후원 기관의 알선을 통해 고용 후 DS-2019를 발급받아 신청합니다." },
   { id: 38, type: "프로그램", country: "미국", tags: ["미국", "장학·연수"], name: "WEST 프로그램", desc: "한국 대학생이 미국에서 인턴십·연수를 경험하는 한미 교육 교류 프로그램.", sub: "재학생·어학·선발 심사 등 요건 확인", officialUrl: "https://www.niied.go.kr/web/niied/contents/niied_iee_west",
-    details: "Work, English Study and Travel의 약자로, 한·미 교육 교류 협정에 따라 한국 대학(원)생이 미국에서 어학연수와 인턴십을 동시에 경험하는 프로그램입니다. 국립국제교육원(NIIED)이 주관하며 서류·면접 전형을 통해 선발합니다." },
+    details: "Work, English Study and Travel의 약자로, 한·미 교육 교류 협정에 따라 한국 대학(원)생이 미국에서 어학연수와 인턴십을 동시에 경험하는 프로그램입니다. 국립국제교육원(NIIED)이 주관하며 서류·면접 전형을 통해 선발합니다.",
+    links: [
+      { label: "프로그램 소개", url: "https://www.niied.go.kr/web/niied/contents/niied_iee_west" },
+      { label: "모집 공고", url: "https://www.niied.go.kr/web/niied/nid/niied_board/5749" },
+    ] },
 
   // ─── 캐나다 프로그램 ───
   { id: 6, type: "프로그램", country: "캐나다", tags: ["캐나다", "취업"], name: "고용주 지정 취업허가 (ESWP)", desc: "특정 캐나다 고용주를 위해 발급되는 임시 취업 경로.", sub: "고용주 LMIA 또는 면제 요건·직종 확인", officialUrl: "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit/temporary/apply.html",
@@ -116,8 +120,6 @@ const PROGRAMS = [
     details: "Work Experience for Language and Leadership의 약자로, 청년들이 해외 기업에서 단기 일경험을 통해 글로벌 역량을 키울 수 있도록 지원하는 사업입니다. 항공료·체재비 일부를 지원하며, 현지 기업 파견을 통해 실무 경험을 제공합니다." },
 
   // ─── 지원제도 (국가별) ───
-  { id: 45, type: "지원제도", country: "미국", tags: ["미국", "장학·연수"], name: "한·미 대학생 연수 WEST", desc: "미국에서 인턴십·연수를 경험하는 한미 교육 교류 프로그램 참가 지원.", sub: "참가비·체재비·어학연수비 일부 지원", officialUrl: "https://www.niied.go.kr/web/niied/nid/niied_board/5749",
-    details: "국립국제교육원(NIIED)이 주관하는 WEST 프로그램 참가자를 위한 지원 사업입니다. 합격자에게 어학연수비 대출 및 일부 참가 비용 지원이 제공됩니다. 매년 상반기에 모집 공고가 나오며, 서류·면접 전형을 거쳐 선발합니다." },
   { id: 46, type: "지원제도", country: "미국", tags: ["미국", "장학·연수"], name: "WEST 어학연수비 대출", desc: "WEST 프로그램 참가자를 위한 어학연수비 대출 지원.", sub: "WEST 합격자·대출 한도·상환 조건 확인", officialUrl: "https://www.kosaf.go.kr/ko/tuition.do?pg=PTHDWestAply_01M&ttab1=2",
     details: "한국장학재단에서 WEST 프로그램 합격자를 대상으로 미국 현지 어학연수 비용을 저금리로 대출해주는 지원 사업입니다. 대출 한도와 상환 조건은 매년 변경될 수 있으며, 한국장학재단 홈페이지에서 최신 내용을 확인하세요." },
   { id: 47, type: "지원제도", country: "일본", tags: ["일본", "장학·연수"], name: "2027 MEXT 연구유학생 장학", desc: "일본 문부과학성이 지원하는 연구유학생 장학 프로그램.", sub: "대학 추천·연령·학업 성적 등 요건 확인", officialUrl: "https://www.kr.emb-japan.go.jp/itpr_ko/news_20260512.html",
@@ -303,23 +305,48 @@ export default function ProgramDetailPage() {
                 <p style={{ margin: "0 0 14px", fontSize: "0.82rem", color: "var(--mu)", lineHeight: 1.6 }}>
                   신청 방법, 자격 요건, 최신 공지를 공식 사이트에서 확인하세요.
                 </p>
-                <a
-                  href={program.officialUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
-                    width: "100%", padding: "11px 0", borderRadius: 10,
-                    border: "1.5px solid var(--ink)", background: "#fff",
-                    fontSize: "0.88rem", fontWeight: 600, color: "var(--ink)",
-                    textDecoration: "none", boxSizing: "border-box",
-                  }}
-                >
-                  공식 사이트 방문
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M7 7h10v10M7 17L17 7"/>
-                  </svg>
-                </a>
+                {(program as any).links ? (
+                  <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                    {(program as any).links.map((link: any, idx: number) => (
+                      <a
+                        key={idx}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+                          width: "100%", padding: "11px 0", borderRadius: 10,
+                          border: "1.5px solid var(--ink)", background: "#fff",
+                          fontSize: "0.88rem", fontWeight: 600, color: "var(--ink)",
+                          textDecoration: "none", boxSizing: "border-box",
+                        }}
+                      >
+                        {link.label}
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M7 7h10v10M7 17L17 7"/>
+                        </svg>
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <a
+                    href={program.officialUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+                      width: "100%", padding: "11px 0", borderRadius: 10,
+                      border: "1.5px solid var(--ink)", background: "#fff",
+                      fontSize: "0.88rem", fontWeight: 600, color: "var(--ink)",
+                      textDecoration: "none", boxSizing: "border-box",
+                    }}
+                  >
+                    공식 사이트 방문
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M7 7h10v10M7 17L17 7"/>
+                    </svg>
+                  </a>
+                )}
               </div>
 
               {/* AI 상담하기 */}
