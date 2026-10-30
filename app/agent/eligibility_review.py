@@ -59,25 +59,32 @@ Rule Evaluator 가 계산한 자격 검토 결과를 사용자에게 한국어�
 
 def _load_requirements(target_type: str, target_id: str) -> tuple[dict, list]:
     """
-    DB 에서 rule_set 과 requirements 를 조회합니다.
-    실제 DB 스키마가 없으면 빈 구조 반환.
+    Read canonical definitions from one read-only DB snapshot.
+
+    C uses lower-case target names; the knowledge DB uses upper-case names.
+    Connection/schema errors must propagate, rather than masquerade as absent
+    rules and producing an empty UNKNOWN review.
     """
-    try:
-        rule_set_row = db.query_one(
-            "SELECT * FROM rule_sets WHERE target_type = %s AND target_id = %s",
-            (target_type, target_id),
-        )
+    canonical_type = target_type.upper()
+    if canonical_type not in ('PROGRAM', 'SUPPORT_PROGRAM'):
+        raise ValueError('Unsupported eligibility target type')
+    with db.get_conn() as conn:
+        conn.execute('SET TRANSACTION ISOLATION LEVEL REPEATABLE READ, READ ONLY')
+        rule_set_row = conn.execute(
+            'SELECT definition, release_id FROM eligibility_rule_sets WHERE target_type = %s AND target_id = %s',
+            (canonical_type, target_id),
+        ).fetchone()
         if not rule_set_row:
             return {}, []
 
-        req_rows = db.query(
-            "SELECT * FROM requirements WHERE target_type = %s AND target_id = %s",
-            (target_type, target_id),
-        )
-        return rule_set_row, req_rows
-    except Exception as e:
-        logger.debug(f"[eligibility_review] rule_set 조회 실패 ({target_id}): {e}")
-        return {}, []
+        req_rows = conn.execute(
+            'SELECT definition FROM eligibility_requirements WHERE target_type = %s AND target_id = %s AND release_id = %s ORDER BY requirement_id',
+            (canonical_type, target_id, rule_set_row['release_id']),
+        ).fetchall()
+        definition = rule_set_row['definition']
+        if definition['target_type'] != canonical_type or definition['target_id'] != target_id:
+            raise ValueError('Rule-set target does not match the requested target')
+        return definition, [row['definition'] for row in req_rows]
 
 
 def _run_rule_evaluator(
@@ -88,7 +95,7 @@ def _run_rule_evaluator(
 ) -> EligibilityResult | None:
     """Rule Evaluator 를 실행하고 EligibilityResult 를 반환합니다."""
     rule_set, requirements = _load_requirements(target_type, target_id)
-    if not rule_set or not requirements:
+    if not rule_set:
         return None
 
     result = evaluate_target(rule_set, requirements, profile_dict, as_of)
