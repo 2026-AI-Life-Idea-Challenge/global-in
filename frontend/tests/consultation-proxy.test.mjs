@@ -11,7 +11,10 @@ const payload = { session_id: session, stage: 'result', reply: '공식 근거를
   programs: [{ program_id: 'CA:iec', name: 'IEC', country: 'canada', visa_type: 'working_holiday', summary: '교류 프로그램' }],
   eligibility: [{ program_id: 'CA:iec', overall: '추가 확인 필요', requirements: [] }],
   citations: [{ chunk_id: 'c1', title: '공식 안내', source_url: 'https://canada.ca/' }],
-  prep_items: [{ id: 'p1', program_id: 'CA:iec', title: '서류 확인', description: '공식 안내 확인', status: 'check_needed', done: false }] };
+  prep_items: [{ id: 'p1', program_id: 'CA:iec', title: '서류 확인', description: '공식 안내 확인', status: 'check_needed', done: false }],
+  support_programs: [{ support_program_id: 'S:test', name: '검증용 지원제도', availability: 'CLOSED', source_verified_at: '2026-10-28', citations: [] }],
+  support_eligibility: [{ support_program_id: 'S:test', overall: '추가 확인 필요', requirements: [] }],
+  rag_statuses: [{ status: 'partial', development_only: true, unanswered_parts: [{ question_part: '추가 서류' }] }] };
 const mock = http.createServer(async (req, res) => {
   assert.equal(req.headers['x-internal-api-key'], 'synthetic-test-key');
   let text = ''; for await (const part of req) text += part;
@@ -46,6 +49,9 @@ try {
   assert.equal(result.status, 200); let data = await result.json();
   assert.equal(data.programs[0].program_id, 'CA:iec'); assert.deepEqual(data.eligibility, payload.eligibility);
   assert.deepEqual(data.citations, payload.citations); assert.deepEqual(data.prep_items, payload.prep_items); passed++;
+  assert.deepEqual(data.support_programs, payload.support_programs);
+  assert.deepEqual(data.support_eligibility, payload.support_eligibility);
+  assert.deepEqual(data.rag_statuses, payload.rag_statuses);
   result = await send('POST', { session_id: session, messages: [{ role: 'user', content: '준비 항목' }] });
   assert.equal(result.status, 200); assert.equal(calls.filter(c => c.url === '/consult/sessions').length, 1); passed++;
   const before = calls.length;
@@ -60,10 +66,12 @@ try {
   assert.equal((await send('PATCH', { session_id: expired, profile: {} })).status, 404); passed++;
   result = await send('POST', { profile: { nationalities: ['KR'] }, messages: [{ role: 'user', content: '일본 취업' }] });
   assert.equal(result.status, 200);
-  assert.deepEqual(calls.slice(-3).map(c => c.method), ['POST', 'PATCH', 'POST']); passed++;
+  assert.deepEqual(calls.slice(-2).map(c => c.method), ['POST', 'POST']);
+  assert.deepEqual(calls.at(-1).body.profile, { nationalities: ['KR'] }); passed++;
   result = await send('POST', { session_id: session, profile_pending: true, profile: { nationalities: ['KR'] }, messages: [{ role: 'user', content: '재검토 재시도' }] });
   assert.equal(result.status, 200);
-  assert.deepEqual(calls.slice(-2).map(c => c.method), ['PATCH', 'POST']); passed++;
+  assert.equal(calls.at(-1).method, 'POST');
+  assert.deepEqual(calls.at(-1).body.profile, { nationalities: ['KR'] }); passed++;
   assert.ok((await (await fetch(base + '/profile')).text()).includes('type="date"'));
   assert.ok((await (await fetch(base + '/compare')).text()).includes('상담에서 선택한 실제 프로그램'));
   passed++;

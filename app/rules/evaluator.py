@@ -215,7 +215,10 @@ def evaluate_target(rule_set,requirements,profile,as_of,trusted_review_records=N
         if rid not in selected:
             results.append(dict(requirement_id=rid,status=UNKNOWN,reason='요건 자료 누락'))
         else:
-            results.append(evaluate_requirement(selected[rid],profile,as_of,trusted_review_records))
+            condition=evaluate_requirement(selected[rid],profile,as_of,trusted_review_records)
+            condition.setdefault('requirement_id',rid)
+            condition.setdefault('source_document_ids',selected[rid].get('source_document_ids',[]))
+            results.append(condition)
     return dict(target=target,overall_status=UNKNOWN,coverage_complete=rule_set['coverage_complete'],
         condition_results=results,application_availability=rule_set['application_availability'],
         final_eligibility=False,blockers=rule_set['blockers'])

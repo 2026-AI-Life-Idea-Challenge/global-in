@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import { useMemo, useState, useSyncExternalStore } from "react";
-import { type ConsultationDetailsData } from "@/components/ConsultationDetails";
+import { type ConsultationDetailsData, safeSource } from "@/components/ConsultationDetails";
 
 function subscribeToStorage(callback: () => void) {
   window.addEventListener('storage', callback);
@@ -61,6 +61,7 @@ export default function PreparationPage() {
             {items.map(item => <article key={item.id} style={{ background: '#fff', border: '1px solid var(--ln)', borderRadius: 12, padding: 18, marginBottom: 12 }}>
               <label><input type="checkbox" checked={item.done} onChange={() => toggleItem(item.id)} /> {item.title}</label>
               <p>{item.description}</p>
+              {item.citations?.filter(c => safeSource(c.source_url)).map((c, index) => <p key={index}><a href={c.source_url} target="_blank" rel="noopener noreferrer">{c.title}</a></p>)}
               <small>{item.program_id} · {item.status === 'check_needed' ? '추가 확인 필요' : item.status === 'blocked' ? '선행 조건 확인 필요' : '준비 필요'}</small>
             </article>)}
             <button onClick={() => router.push('/chat')}>조건 수정·재상담</button>

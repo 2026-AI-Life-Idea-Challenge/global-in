@@ -1,10 +1,13 @@
 "use client";
 
 export interface ConsultationDetailsData {
-  eligibility?: { program_id: string; overall: string; requirements: { requirement_id: string; outcome: string }[] }[];
+  eligibility?: { program_id: string; overall: string; requirements: { requirement_id: string; outcome: string; reason?: string | null }[] }[];
   citations?: { chunk_id: string; title: string; source_url: string }[];
-  prep_items?: { id: string; program_id: string; title: string; description: string; status: string; done: boolean }[];
+  prep_items?: { id: string; program_id: string; title: string; description: string; status: string; done: boolean; citations?: { title: string; source_url: string }[] }[];
   follow_up_questions?: { field: string; question: string }[];
+  support_programs?: { support_program_id: string; name: string; availability: string; source_verified_at?: string | null; citations?: { title: string; source_url: string }[] }[];
+  support_eligibility?: { support_program_id: string; overall: string; requirements: { requirement_id: string; outcome: string; reason?: string | null }[] }[];
+  rag_statuses?: { status: string; development_only: boolean; unanswered_parts: { question_part: string }[] }[];
 }
 
 export function safeSource(url: string) {
@@ -13,10 +16,22 @@ export function safeSource(url: string) {
 
 export default function ConsultationDetails({ data }: { data: ConsultationDetailsData }) {
   return <section aria-label="상담 검토와 공식 근거" style={{ marginTop: 12, lineHeight: 1.7 }}>
+    {data.rag_statuses?.some(item => item.development_only) && <p>현재 검색된 근거를 이용한 개발 검증 결과입니다. 최종 법률·자격 승인과 구분해 주세요.</p>}
+    {data.rag_statuses?.flatMap((item, i) => item.unanswered_parts.map((part, j) => <p key={`missing-${i}-${j}`}>근거 추가 확인: {part.question_part}</p>))}
     {data.eligibility?.map(item => <details key={item.program_id}>
       <summary>{item.program_id} · {item.overall}</summary>
       <p>항목별 검토 결과이며 최종 비자 발급·선정 결과를 의미하지 않습니다.</p>
-      {item.requirements.map((rule, index) => <p key={`${rule.requirement_id}-${index}`}>{rule.requirement_id} · {rule.outcome}</p>)}
+      {item.requirements.map((rule, index) => <p key={`${rule.requirement_id}-${index}`}>{rule.requirement_id} · {rule.outcome}{rule.reason && ` · ${rule.reason}`}</p>)}
+    </details>)}
+    {!!data.support_programs?.length && <div><strong>연결 후보 지원제도</strong>
+      {data.support_programs.map(item => <article key={item.support_program_id} style={{ border: '1px solid var(--ln)', padding: 12, marginTop: 8 }}>
+        <strong>{item.name}</strong><p>저장된 모집 상태: {item.availability} · 확인일: {item.source_verified_at || '미확인'}</p>
+        <p>목록 연결은 신청 자격이나 현재 접수 가능 여부를 확정하지 않습니다.</p>
+        {item.citations?.filter(c => safeSource(c.source_url)).map((c, index) => <p key={index}><a href={c.source_url} target="_blank" rel="noopener noreferrer">{c.title}</a></p>)}
+      </article>)}
+    </div>}
+    {data.support_eligibility?.map(item => <details key={item.support_program_id}><summary>지원제도 {item.support_program_id} · {item.overall}</summary>
+      {item.requirements.map((rule, index) => <p key={`${rule.requirement_id}-${index}`}>{rule.requirement_id} · {rule.outcome}{rule.reason && ` · ${rule.reason}`}</p>)}
     </details>)}
     {!!data.citations?.length && <div><strong>공식 출처</strong><ul>
       {data.citations.filter(item => safeSource(item.source_url)).map((item, index) => <li key={`${item.chunk_id}-${index}`}>

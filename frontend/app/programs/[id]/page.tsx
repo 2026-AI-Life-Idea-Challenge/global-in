@@ -12,7 +12,13 @@ const FLAGS: Record<string, string> = {
   캐나다: '<rect width="30" height="20" fill="#fff"/><rect width="7.5" height="20" fill="#d52b1e"/><rect x="22.5" width="7.5" height="20" fill="#d52b1e"/><path d="M15 4l1.3 3 2-1-.6 4 1.7-.4-.4 1.8 1.5 1-3.5 2.4.2 2.2h-4.4l.2-2.2-3.5-2.4 1.5-1-.4-1.8 1.7.4-.6-4 2 1z" fill="#d52b1e"/>',
 };
 
-const PROGRAMS = [
+type ProgramDetail = {
+  id: number; type: string; country: string | null; tags: string[]; name: string;
+  desc: string; sub: string; officialUrl: string; details?: string;
+  stages?: { label: string; details: string; sub: string }[];
+  links?: { label: string; url: string }[];
+};
+const PROGRAMS: ProgramDetail[] = [
   // ─── 일본 프로그램 ───
   { id: 1, type: "프로그램", country: "일본", tags: ["일본", "취업"], name: "기술·인문지식·국제업무", desc: "전문 지식과 기술을 활용해 일본에서 일하는 취업 경로.", sub: "담당 직무와 학력·경력 등 요건 확인", officialUrl: "https://www.moj.go.jp/isa/applications/status/gijinkoku.html",
     details: "일본 법무성이 지정하는 재류자격 중 하나로, 전문직 종사자를 대상으로 합니다. 법률·회계·IT·외국어 교육 등 넓은 분야에서 활용되며, 대학 졸업 또는 10년 이상 실무 경험이 필요합니다." },
@@ -232,12 +238,12 @@ export default function ProgramDetailPage() {
           <div style={{ display: "grid", gridTemplateColumns: "1fr 280px", gap: 16, alignItems: "start" }}>
             {/* 왼쪽: 상세 설명 + 대상 조건 */}
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              {(program as any).stages ? (
+              {program.stages ? (
                 /* 탭 UI: 다차 비자 (417/462 등) */
                 <div style={{ background: "#fff", border: "1px solid var(--ln)", borderRadius: 16, padding: "24px 28px" }}>
                   {/* 탭 버튼 */}
                   <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
-                    {(program as any).stages.map((stage: any, idx: number) => (
+                    {program.stages.map((stage, idx) => (
                       <button
                         key={idx}
                         onClick={() => setActiveStage(idx)}
@@ -260,13 +266,13 @@ export default function ProgramDetailPage() {
                   {/* 개요 */}
                   <div style={{ fontSize: "0.72rem", letterSpacing: "0.12em", color: "var(--ac)", fontWeight: 600, marginBottom: 12 }}>● 개요</div>
                   <p style={{ margin: "0 0 20px", fontSize: "0.9rem", color: "var(--ink)", lineHeight: 1.8 }}>
-                    {(program as any).stages[activeStage].details}
+                    {program.stages[activeStage].details}
                   </p>
                   {/* 대상·조건 */}
                   <div style={{ fontSize: "0.72rem", letterSpacing: "0.12em", color: "var(--ac)", fontWeight: 600, marginBottom: 12 }}>● 대상·조건</div>
                   <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                     <div style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--ac)", flexShrink: 0, marginTop: 7 }} />
-                    <span style={{ fontSize: "0.88rem", color: "var(--ink)", lineHeight: 1.7 }}>{(program as any).stages[activeStage].sub}</span>
+                    <span style={{ fontSize: "0.88rem", color: "var(--ink)", lineHeight: 1.7 }}>{program.stages[activeStage].sub}</span>
                   </div>
                   <p style={{ margin: "12px 0 0", fontSize: "0.8rem", color: "var(--mu)", lineHeight: 1.6 }}>
                     자격 조건과 신청 요건은 변경될 수 있으니, 공식 사이트에서 최신 정보를 꼭 확인하세요.
@@ -305,9 +311,9 @@ export default function ProgramDetailPage() {
                 <p style={{ margin: "0 0 14px", fontSize: "0.82rem", color: "var(--mu)", lineHeight: 1.6 }}>
                   신청 방법, 자격 요건, 최신 공지를 공식 사이트에서 확인하세요.
                 </p>
-                {(program as any).links ? (
+                {program.links ? (
                   <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                    {(program as any).links.map((link: any, idx: number) => (
+                    {program.links.map((link, idx) => (
                       <a
                         key={idx}
                         href={link.url}

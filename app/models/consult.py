@@ -54,7 +54,7 @@ class ProfileUpdateRequest(BaseModel):
     @field_validator("nationalities")
     @classmethod
     def _iso_alpha2(cls, value: list[str] | None) -> list[str] | None:
-        if value is not None and not all(len(code) == 2 and code.isalpha() for code in value):
+        if value is not None and not all(len(code) == 2 and code.isascii() and code.isalpha() for code in value):
             raise ValueError("nationalities must be ISO 3166-1 alpha-2 codes")
         return [code.upper() for code in value] if value is not None else None
 
@@ -67,6 +67,8 @@ class Citation(BaseModel):
     chunk_id: str
     title: str
     source_url: str
+    verified_at: str | None = None
+    content_review_status: str | None = None
 
 
 class ProgramCandidate(BaseModel):
@@ -85,6 +87,7 @@ class RequirementPayload(BaseModel):
     outcome: Outcome
     judgeability: Judgeability
     pending_reviews: list[Any] = Field(default_factory=list)
+    reason: str | None = None
 
 
 class EligibilityPayload(BaseModel):
@@ -115,6 +118,21 @@ class PrepItem(BaseModel):
 
 class ChatRequest(BaseModel):
     message: str = Field(min_length=1, max_length=2000)
+    profile: ProfileUpdateRequest | None = None
+
+
+class SupportCandidate(BaseModel):
+    support_program_id: str
+    name: str
+    availability: str = 'UNKNOWN'
+    source_verified_at: str | None = None
+    citations: list[Citation] = Field(default_factory=list)
+
+
+class SupportEligibilityPayload(BaseModel):
+    support_program_id: str
+    overall: Outcome
+    requirements: list[RequirementPayload] = Field(default_factory=list)
 
 
 class ChatResponse(BaseModel):
@@ -127,3 +145,6 @@ class ChatResponse(BaseModel):
     eligibility: list[EligibilityPayload] = Field(default_factory=list)
     prep_items: list[PrepItem] = Field(default_factory=list)
     citations: list[Citation] = Field(default_factory=list)
+    support_programs: list[SupportCandidate] = Field(default_factory=list)
+    support_eligibility: list[SupportEligibilityPayload] = Field(default_factory=list)
+    rag_statuses: list[dict[str, Any]] = Field(default_factory=list)
