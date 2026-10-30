@@ -13,14 +13,16 @@ import json
 import os
 import time
 
+from pydantic import ValidationError
+
 # Only query embeddings execute locally; prevent Hugging Face network access.
 os.environ["HF_HUB_OFFLINE"] = "1"
 os.environ["TRANSFORMERS_OFFLINE"] = "1"
 os.environ["HF_HUB_DISABLE_TELEMETRY"] = "1"
 
-from app.models.rag import RagLLMError, RagResponseValidationError, RagSearchError
+from app.models.rag import RagLLMError, RagResponseValidationError, RagResult, RagSearchError
 from app.retrieval.hybrid_search import search_program_evidence_hybrid
-from app.services.program_rag import answer_program_question, question_part_in_request
+from app.services.program_rag import answer_program_question
 from app.services.rag_llm import load_llm_environment
 from scripts.evaluate_program_retrieval import EVIDENCE, PROGRAM_ID
 
@@ -69,6 +71,11 @@ def emit(event, **values):
 
 
 def check_result(result, case):
+    try:
+        RagResult.model_validate(result)
+        structure_valid = True
+    except ValidationError:
+        structure_valid = False
     rows = {row["chunk_id"]: row for row in result["evidence"]}
     citation_checks = []
     cited_ids = set()
@@ -89,7 +96,7 @@ def check_result(result, case):
         "status_matches": result["status"] == case["expected_status"],
         "citation_identity_quote_and_provenance_match": all(citation_checks),
         "expected_evidence_cited_or_no_claims": gold_ok,
-        "question_parts_in_request": all(question_part_in_request(part, case["question"]) for part in result["question_parts"]),
+        "structure_valid": structure_valid,
         "development_only": result["development_only"],
         "public_release_status": result["public_release_status"],
         "eligibility_assessed": result["eligibility_assessed"],
@@ -104,6 +111,7 @@ def evaluate_live_cases(cases):
     """
     checks = []
     errors = skipped = 0
+    response_validation_errors = 0
     authentication_failed = False
     for case in cases:
         if authentication_failed:
@@ -119,6 +127,7 @@ def evaluate_live_cases(cases):
             status = getattr(cause, "status_code", None)
             status = status if type(status) is int else None
             errors += 1
+            response_validation_errors += isinstance(exc, RagResponseValidationError)
             emit("execution_error", case=case["id"], error_type=type(exc).__name__,
                  cause_type=type(cause).__name__ if cause else None,
                  http_status=status,
@@ -141,13 +150,16 @@ def evaluate_live_cases(cases):
              checks=outcome, semantic_review="각 주장과 원문 인용의 의미·대상·한정 조건을 검토해야 함")
     passed = sum(
         c["status_matches"] and c["citation_identity_quote_and_provenance_match"]
-        and c["expected_evidence_cited_or_no_claims"] and c["question_parts_in_request"]
+        and c["expected_evidence_cited_or_no_claims"] and c["structure_valid"]
         for c in checks
     )
     emit("summary", status="completed_with_errors" if errors else "completed",
          cases_planned=len(cases), live_cases_completed=len(checks),
          execution_errors=errors, skipped_cases=skipped,
-         structural_and_gold_checks_passed=passed,
+         response_validation_errors=response_validation_errors,
+         search_or_llm_errors=errors - response_validation_errors,
+         structural_checks_passed=sum(c["structure_valid"] and c["citation_identity_quote_and_provenance_match"] for c in checks),
+         expected_status_and_evidence_checks_passed=passed,
          semantic_review="자동 구조·정답 청크 검증과 별도로 출력된 주장·인용문을 검토해야 함")
     return 0 if passed == len(cases) else 1
 
