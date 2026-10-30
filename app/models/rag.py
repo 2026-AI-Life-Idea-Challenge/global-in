@@ -7,6 +7,13 @@ from pydantic import BaseModel, ConfigDict, Field, model_validator
 from pydantic_core import PydanticCustomError
 
 AnswerStatus = Literal["answered", "partial", "insufficient_evidence"]
+ReleaseMode = Literal["development", "production"]
+SourcePolicy = Literal["active", "active_with_source_url"]
+AnswerLayout = Literal["default", "overview"]
+# 막연한 준비 질문(overview)의 표시 구역. 비용은 다루지 않는다.
+OverviewSection = Literal["status", "conditions", "condition_notes", "steps"]
+OVERVIEW_SECTIONS = ("status", "conditions", "condition_notes", "steps")
+SOURCE_POLICIES = {"development": "active", "production": "active_with_source_url"}
 
 
 class RagSearchError(RuntimeError):
@@ -130,6 +137,35 @@ class RagDraft(StrictModel):
     items: list[DraftItem] = Field(min_length=1)
 
 
+class OverviewDraftItem(DraftItem):
+    """overview 전용: 같은 항목 계약에 표시 구역만 더한다."""
+
+    section: OverviewSection
+
+
+class OverviewDraft(RagDraft):
+    items: list[OverviewDraftItem] = Field(min_length=1)
+
+
+def validate_release_fields(result) -> None:
+    """실사용/개발 표시와 근거 기준·표시 구역이 서로 맞는지 확인한다.
+
+    실사용 모드도 공개 승인(public_release_status)이나 자격 판정을 뜻하지 않는다.
+    """
+    if result.development_only != (result.release_mode == "development"):
+        raise ValueError("development_only와 release_mode가 일치하지 않습니다.")
+    if result.source_policy != SOURCE_POLICIES[result.release_mode]:
+        raise ValueError("release_mode에 맞지 않는 근거 기준입니다.")
+    if result.source_policy == "active_with_source_url" and any(
+            not row.get("source_urls") for row in result.evidence):
+        raise ValueError("실사용 모드 근거에 출처 URL이 없습니다.")
+    if result.layout == "overview":
+        if result.part_sections is None or len(result.part_sections) != len(result.question_parts):
+            raise ValueError("overview 표시 구역이 질문 항목과 맞지 않습니다.")
+    elif result.part_sections is not None:
+        raise ValueError("기본 표시에는 표시 구역을 둘 수 없습니다.")
+
+
 @dataclass(frozen=True)
 class CitationSpan:
     chunk_id: str
@@ -177,12 +213,17 @@ class RagResult(StrictModel):
     evidence: list[dict[str, Any]]
     requested_model: str | None
     model: str | None
-    development_only: Literal[True] = True
+    development_only: bool = True
+    release_mode: ReleaseMode = "development"
+    source_policy: SourcePolicy = "active"
+    layout: AnswerLayout = "default"
+    part_sections: list[OverviewSection] | None = None
     public_release_status: Literal["not_assessed"] = "not_assessed"
     eligibility_assessed: Literal[False] = False
 
     @model_validator(mode="after")
     def consistent(self):
+        validate_release_fields(self)
         _validate_coverage(
             self.status, self.question_parts, self.claims,
             [part.part_index for part in self.unanswered_parts],

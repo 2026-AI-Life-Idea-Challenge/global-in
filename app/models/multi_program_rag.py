@@ -7,16 +7,20 @@ from pydantic import Field, model_validator
 from pydantic_core import PydanticCustomError
 
 from app.models.rag import (
-    AnswerStatus, DraftItem, RagCitation, RagClaim, RagDraft, StrictModel,
-    UnansweredPart, _validate_coverage,
+    AnswerLayout, AnswerStatus, DraftItem, OverviewSection, RagCitation, RagClaim, RagDraft,
+    ReleaseMode, SourcePolicy, StrictModel, UnansweredPart, _validate_coverage,
+    validate_release_fields,
 )
 
-COVERAGE_NOTE = (
-    "현재 검색된 자료 기준의 개발 검증용 답변입니다. 검색 범위의 전체 후보와 "
+_COVERAGE_BODY = (
+    "검색 범위의 전체 후보와 "
     "상위 근거에 연결된 프로그램, 실제 답변에 인용한 프로그램을 구분합니다. "
     "후보 전체의 조건 비교를 완료했다는 의미가 아니며, 검색되지 않은 조건은 "
     "확인 불가입니다. 검색 순위는 추천 적합도나 신청 가능성을 뜻하지 않습니다."
 )
+COVERAGE_NOTE = "현재 검색된 자료 기준의 개발 검증용 답변입니다. " + _COVERAGE_BODY
+PRODUCTION_COVERAGE_NOTE = "현재 검색된 자료 기준의 답변입니다. " + _COVERAGE_BODY
+COVERAGE_NOTES = {"development": COVERAGE_NOTE, "production": PRODUCTION_COVERAGE_NOTE}
 
 
 class ProgramInfo(StrictModel):
@@ -47,6 +51,14 @@ class ProgramDraftItem(DraftItem):
 
 class ProgramsDraft(RagDraft):
     items: list[ProgramDraftItem] = Field(min_length=1)
+
+
+class OverviewProgramDraftItem(ProgramDraftItem):
+    section: OverviewSection
+
+
+class OverviewProgramsDraft(ProgramsDraft):
+    items: list[OverviewProgramDraftItem] = Field(min_length=1)
 
 
 class ProgramCitation(RagCitation):
@@ -80,15 +92,22 @@ class ProgramsRagResult(StrictModel):
     programs_without_retrieved_evidence: list[ProgramInfo]
     evidence: list[dict[str, Any]]
     retrieval_limit: int
-    coverage_note: Literal[COVERAGE_NOTE] = COVERAGE_NOTE
+    coverage_note: Literal[COVERAGE_NOTE, PRODUCTION_COVERAGE_NOTE] = COVERAGE_NOTE
     requested_model: str | None
     model: str | None
-    development_only: Literal[True] = True
+    development_only: bool = True
+    release_mode: ReleaseMode = "development"
+    source_policy: SourcePolicy = "active"
+    layout: AnswerLayout = "default"
+    part_sections: list[OverviewSection] | None = None
     public_release_status: Literal["not_assessed"] = "not_assessed"
     eligibility_assessed: Literal[False] = False
 
     @model_validator(mode="after")
     def consistent(self):
+        validate_release_fields(self)
+        if self.coverage_note != COVERAGE_NOTES[self.release_mode]:
+            raise ValueError("release_mode에 맞지 않는 범위 안내입니다.")
         candidates = {p.program_id: p for p in self.candidate_programs}
         if len(candidates) != len(self.candidate_programs):
             raise ValueError("후보 프로그램이 중복되었습니다.")
