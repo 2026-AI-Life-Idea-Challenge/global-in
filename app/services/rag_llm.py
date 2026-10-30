@@ -38,6 +38,20 @@ def load_llm_environment() -> None:
     load_dotenv(dotenv_path=ENV_PATH, override=False)
 
 
+def get_rag_settings() -> tuple[str, str | None]:
+    """Read RAG overrides without changing the consultation configuration."""
+    model_setting = "RAG_MODEL" if "RAG_MODEL" in os.environ else "CONSULT_MODEL"
+    model = os.environ.get(model_setting, "gpt-4o-mini")
+    if not model.strip():
+        raise RagConfigurationError(f"{model_setting}이 빈 값입니다.")
+    effort = os.environ.get("RAG_REASONING_EFFORT")
+    if effort is not None and effort not in {
+        "none", "minimal", "low", "medium", "high", "xhigh", "max",
+    }:
+        raise RagConfigurationError("RAG_REASONING_EFFORT 설정을 확인해주세요.")
+    return model, effort
+
+
 def _citation_spans(body: str) -> list[str]:
     """Copyable source spans, not summaries or question-specific selections.
 
@@ -64,9 +78,7 @@ def generate_rag_draft(
     load_llm_environment()
     if not os.environ.get("OPENAI_API_KEY", "").strip():
         raise RagConfigurationError("OPENAI_API_KEY가 설정되어 있지 않습니다.")
-    model = os.environ.get("CONSULT_MODEL", "gpt-4o-mini")
-    if not model.strip():
-        raise RagConfigurationError("CONSULT_MODEL이 빈 값입니다.")
+    model, effort = get_rag_settings()
     spans = build_citation_spans(evidence)
     payload = {
         "program_id": program_id,
@@ -91,6 +103,7 @@ def generate_rag_draft(
                 text_format=RagDraft,
                 max_output_tokens=2500,
                 store=False,
+                **({"reasoning": {"effort": effort}} if effort is not None else {}),
             )
     except ValidationError as exc:
         raise RagResponseValidationError(

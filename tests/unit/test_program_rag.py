@@ -15,6 +15,7 @@ from app.models.rag import (
 from app.services import program_rag as rag
 from app.services import rag_llm as llm
 from scripts import evaluate_program_rag as evaluation
+from scripts import evaluate_rag_model as model_evaluation
 
 
 def evidence(chunk_id="chunk-a"):
@@ -306,10 +307,47 @@ class LLMAdapterTests(unittest.TestCase):
         self.assertIs(kwargs["text_format"], RagDraft)
         self.assertIs(kwargs["store"], False)
         self.assertNotIn("tools", kwargs)
+        self.assertNotIn("reasoning", kwargs)
 
     def test_configured_model_not_substituted(self):
         with patch.dict("os.environ", {"CONSULT_MODEL": "configured-model"}):
             self.assertEqual(self.generate().requested_model, "configured-model")
+
+    def test_rag_model_overrides_without_mutating_consult_model(self):
+        import os
+        with patch.dict("os.environ", {"RAG_MODEL": "gpt-6-luna", "CONSULT_MODEL": "consultation-model"}):
+            self.assertEqual(self.generate().requested_model, "gpt-6-luna")
+            self.assertEqual(os.environ["CONSULT_MODEL"], "consultation-model")
+
+    def test_explicit_low_reasoning_keeps_request_contract(self):
+        with patch.dict("os.environ", {"RAG_MODEL": "gpt-6-luna", "RAG_REASONING_EFFORT": "low"}):
+            self.generate()
+        kwargs = self.client.responses.parse.call_args.kwargs
+        self.assertEqual(kwargs["model"], "gpt-6-luna")
+        self.assertEqual(kwargs["reasoning"], {"effort": "low"})
+        self.assertEqual(kwargs["max_output_tokens"], 2500)
+        self.assertIs(kwargs["text_format"], RagDraft)
+        self.assertIs(kwargs["store"], False)
+
+    def test_invalid_rag_settings_rejected_without_fallback(self):
+        for env in (
+            {"RAG_MODEL": " ", "CONSULT_MODEL": "available-consult-model"},
+            {"RAG_REASONING_EFFORT": " "}, {"RAG_REASONING_EFFORT": "unknown"},
+        ):
+            with patch.dict("os.environ", env), self.assertRaises(RagConfigurationError):
+                self.generate()
+        self.client_class.assert_not_called()
+
+    def test_access_error_does_not_substitute_or_retry(self):
+        cause = RuntimeError("DO-NOT-LOG")
+        cause.status_code = 403
+        self.client.responses.parse.side_effect = cause
+        with patch.dict("os.environ", {"RAG_MODEL": "gpt-6-luna", "CONSULT_MODEL": "other-model"}):
+            with self.assertRaises(RagLLMError) as caught:
+                self.generate()
+        self.assertIs(caught.exception.__cause__, cause)
+        self.client.responses.parse.assert_called_once()
+        self.assertEqual(self.client.responses.parse.call_args.kwargs["model"], "gpt-6-luna")
 
     def test_missing_key_empty_model_before_client(self):
         for env in [{}, {"OPENAI_API_KEY": "fake", "CONSULT_MODEL": " "}]:
@@ -412,6 +450,123 @@ class EvaluationTests(unittest.TestCase):
         self.assertEqual(answer.call_count, 1)
         self.assertEqual(emit.call_args_list[1].args[0], "case_skipped")
         self.assertNotIn("NEVER-LOG-CREDENTIALS", str(emit.call_args_list))
+
+
+class FrozenModelEvaluationTests(unittest.TestCase):
+    def snapshot(self):
+        row = evidence()
+        row["program_id"] = evaluation.PROGRAM_ID
+        return {
+            "version": 1, "program_id": evaluation.PROGRAM_ID,
+            "system_prompt": llm.SYSTEM_PROMPT, "schema": RagDraft.model_json_schema(),
+            "cases": [
+                {"fixture": deepcopy(case), "evidence": [deepcopy(row)],
+                 "messages": model_evaluation.messages_for(case, [row])}
+                for case in model_evaluation.CASES
+            ],
+        }
+
+    def test_prepare_uses_one_search_per_case_and_copies_rows(self):
+        row = evidence()
+        row["program_id"] = evaluation.PROGRAM_ID
+        with patch.object(evaluation, "search_program_evidence_hybrid", return_value=[row]) as search, \
+                patch.object(evaluation, "emit"), patch.object(llm, "OpenAI") as client:
+            snapshot = model_evaluation.prepare_snapshot()
+        self.assertEqual(search.call_count, 8)
+        client.assert_not_called()
+        row["body"] = "changed after retrieval"
+        model_evaluation.validate_snapshot(snapshot)
+        self.assertNotEqual(snapshot["cases"][0]["evidence"][0]["body"], row["body"])
+
+    def test_modified_prompt_schema_or_evidence_rejected_before_call(self):
+        for field in ("system_prompt", "schema", "body", "span"):
+            snapshot = self.snapshot()
+            if field == "system_prompt": snapshot[field] += " modified"
+            elif field == "schema": snapshot[field] = {}
+            elif field == "body": snapshot["cases"][0]["evidence"][0]["body"] += " modified"
+            else: snapshot["cases"][0]["messages"][1]["content"] += " modified"
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                model_evaluation.validate_snapshot(snapshot)
+
+    def test_frozen_messages_equal_existing_llm_payload(self):
+        snapshot = self.snapshot()
+        item = snapshot["cases"][0]
+        client = unittest.mock.MagicMock()
+        client.responses.parse.return_value = SimpleNamespace(
+            status="completed", output=[], output_parsed=generation().draft, model="actual",
+        )
+        with patch.object(llm, "load_llm_environment"), \
+                patch.dict("os.environ", {"OPENAI_API_KEY": "offline-test-placeholder"}, clear=True), \
+                patch.object(llm, "OpenAI") as factory:
+            factory.return_value.__enter__.return_value = client
+            llm.generate_rag_draft(evaluation.PROGRAM_ID, item["fixture"]["question"], item["evidence"])
+        messages = client.responses.parse.call_args.kwargs["input"]
+        self.assertEqual(messages, item["messages"])
+        self.assertEqual(model_evaluation.digest(messages), model_evaluation.digest(item["messages"]))
+
+    def test_observer_records_actual_model_time_and_usage_once(self):
+        messages = self.snapshot()["cases"][0]["messages"]
+        metrics = {"requests": 0}
+        parse = unittest.mock.Mock(return_value=SimpleNamespace(
+            model="actual-model-snapshot", reasoning=SimpleNamespace(effort="low"),
+            usage=SimpleNamespace(input_tokens=100, output_tokens=20, total_tokens=120,
+                input_tokens_details=SimpleNamespace(cached_tokens=10),
+                output_tokens_details=SimpleNamespace(reasoning_tokens=7)),
+            output_parsed=generation().draft,
+        ))
+        observer = model_evaluation.request_observer(parse, metrics, messages, "gpt-6-luna", "low")
+        kwargs = dict(input=messages, model="gpt-6-luna", reasoning={"effort": "low"},
+                      text_format=RagDraft, max_output_tokens=2500, store=False)
+        observer(None, **kwargs)
+        self.assertEqual(metrics["actual_model"], "actual-model-snapshot")
+        self.assertEqual(metrics["usage"]["reasoning_tokens"], 7)
+        self.assertEqual(metrics["usage"]["cached_input_tokens"], 10)
+        self.assertGreaterEqual(metrics["llm_seconds"], 0)
+        self.assertEqual(metrics["draft"], generation().draft.model_dump())
+        with self.assertRaises(RuntimeError): observer(None, **kwargs)
+        parse.assert_called_once()
+
+    def test_observer_rejects_changed_input_before_request(self):
+        messages = self.snapshot()["cases"][0]["messages"]
+        parse = unittest.mock.Mock()
+        observer = model_evaluation.request_observer(parse, {"requests": 0}, messages, "gpt-6-luna", "low")
+        with self.assertRaises(RuntimeError):
+            observer(None, input=[], model="gpt-6-luna", reasoning={"effort": "low"},
+                     text_format=RagDraft, max_output_tokens=2500, store=False)
+        parse.assert_not_called()
+
+    def test_live_evaluation_uses_frozen_rows_without_db(self):
+        snapshot = self.snapshot()
+        checks = {"structure_valid": True, "citation_identity_quote_and_provenance_match": True,
+                  "status_matches": True, "expected_evidence_cited_or_no_claims": True}
+        with patch.object(llm, "load_llm_environment"), \
+                patch.object(llm, "get_rag_settings", return_value=("gpt-6-luna", "low")), \
+                patch.object(evaluation, "search_program_evidence_hybrid", side_effect=AssertionError("DB forbidden")), \
+                patch.object(rag, "generate_rag_draft", return_value=generation()) as generate, \
+                patch.object(evaluation, "check_result", return_value=checks), \
+                patch.object(evaluation, "emit") as emit:
+            code = model_evaluation.evaluate_snapshot(snapshot)
+        self.assertEqual(code, 0)
+        self.assertEqual(generate.call_count, 8)
+        self.assertEqual(emit.call_args_list[-1].kwargs["structural_checks_passed"], 8)
+
+    def test_access_errors_stop_remaining_cases_without_replacement(self):
+        for status in (400, 401, 403, 404, 429):
+            cause = RuntimeError("NEVER-LOG-SECRET")
+            cause.status_code, cause.code = status, "model_not_found"
+            failure = RagLLMError("request failed")
+            failure.__cause__ = cause
+            with patch.object(llm, "load_llm_environment"), \
+                    patch.object(llm, "get_rag_settings", return_value=("gpt-6-luna", "low")), \
+                    patch.object(rag, "answer_program_question", side_effect=failure) as answer, \
+                    patch.object(evaluation, "emit") as emit:
+                self.assertEqual(model_evaluation.evaluate_snapshot(self.snapshot()), 1)
+            answer.assert_called_once()
+            events = [(call.args[0], call.kwargs) for call in emit.call_args_list]
+            self.assertEqual(sum(name == "case_skipped" for name, _ in events), 7)
+            self.assertEqual(events[1][1]["http_status"], status)
+            self.assertEqual(events[1][1]["api_error_code"], "model_not_found")
+            self.assertNotIn("NEVER-LOG-SECRET", str(events))
 
 
 if __name__ == "__main__":

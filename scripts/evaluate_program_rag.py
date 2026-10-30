@@ -23,7 +23,7 @@ os.environ["HF_HUB_DISABLE_TELEMETRY"] = "1"
 from app.models.rag import RagLLMError, RagResponseValidationError, RagResult, RagSearchError
 from app.retrieval.hybrid_search import search_program_evidence_hybrid
 from app.services.program_rag import answer_program_question
-from app.services.rag_llm import load_llm_environment
+from app.services.rag_llm import get_rag_settings, load_llm_environment
 from scripts.evaluate_program_retrieval import EVIDENCE, PROGRAM_ID
 
 CASES = [
@@ -189,9 +189,10 @@ def main():
         emit("plan", cases=len(cases), instruction="실제 평가를 실행하려면 --live를 지정하세요.")
         return 0
     load_llm_environment()
+    model, effort = get_rag_settings()
     key_configured = bool(os.environ.get("OPENAI_API_KEY", "").strip())
     emit("environment", key_configured=key_configured,
-         requested_model=os.environ.get("CONSULT_MODEL", "gpt-4o-mini"),
+         requested_model=model, reasoning_effort=effort,
          maximum_requests=len(cases))
     if not key_configured:
         emit("summary", status="skipped", reason="OPENAI_API_KEY 미설정",
