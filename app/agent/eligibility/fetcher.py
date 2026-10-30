@@ -31,7 +31,7 @@ class RequirementRecord:
     target_type: str
     target_id: str
     judgeability: str          # rule_based | manual_check | conditional
-    definition: dict[str, Any] # expression tree (evaluator에 직접 전달)
+    definition: dict[str, Any] # Full requirement, including expression and source dates.
     release_id: str
 
 
