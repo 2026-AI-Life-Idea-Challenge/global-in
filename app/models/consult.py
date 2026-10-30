@@ -148,3 +148,4 @@ class ChatResponse(BaseModel):
     support_programs: list[SupportCandidate] = Field(default_factory=list)
     support_eligibility: list[SupportEligibilityPayload] = Field(default_factory=list)
     rag_statuses: list[dict[str, Any]] = Field(default_factory=list)
+    answer_sections: list[dict[str, Any]] = Field(default_factory=list)

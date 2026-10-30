@@ -14,6 +14,7 @@ from app.retrieval.hybrid_search import (
     EVIDENCE_FIELDS, has_source_url, search_program_evidence_hybrid,
 )
 from app.services.rag_llm import build_citation_spans, generate_rag_draft, validate_mode
+from app.services.answer_quality import guard_unsupported_absolutes
 
 RETRIEVAL_LIMIT = 5
 # overview(막연한 준비 질문)는 같은 검색을 주제별로 나눠 실행한다. 생성은 한 번이다.
@@ -192,6 +193,7 @@ def answer_program_question(
             ) from exc
         requested_model, model = generation.requested_model, generation.model
     try:
+        draft = guard_unsupported_absolutes(draft, evidence, program_id=program_id)
         claims = _bind_citations(draft, evidence)
         unanswered = [
             UnansweredPart(

@@ -21,6 +21,7 @@ from app.retrieval.program_search import (
     SUPPORTED_CATEGORIES, SUPPORTED_COUNTRIES, _validate_filter,
 )
 from app.services.database import get_connection
+from app.services.answer_quality import guard_unsupported_absolutes
 from app.services.program_rag import (
     ANSWER_HEADERS, RETRIEVAL_LIMIT, SHORTAGE_REASON, _bind_citations, _validate_evidence,
     ensure_source_policy, generation_kwargs, merge_unique_chunks, release_fields, search_queries,
@@ -245,6 +246,7 @@ def answer_programs_question(
             raise RagResponseValidationError("LLM 답변 항목 형식이 잘못되었습니다.", code="invalid_draft_type") from exc
         requested_model, model = generation.requested_model, generation.model
     try:
+        draft = guard_unsupported_absolutes(draft, evidence)
         claims = _bind_program_citations(draft, evidence, programs)
         unanswered = [ProgramUnanswered(
             part_index=i, question_part=item.question_part, reason=SHORTAGE_REASON,

@@ -8,6 +8,7 @@ PATCH /consult/sessions/{id}/profile       {필드: 값}    → ChatResponse (�
 import uuid
 import logging
 import os
+import re
 from pathlib import Path
 
 from fastapi import APIRouter, HTTPException
@@ -66,7 +67,9 @@ def create_router(graph=None, store=None) -> APIRouter:
     def to_response(session_id, state):
         def citations(items):
             return [dict(chunk_id=item.get('chunk_id', ''), title=item.get('source_title') or item.get('title') or '공식 근거',
-                         source_url=url, verified_at=str(item['verified_at']) if item.get('verified_at') else None,
+                         source_url=url, verified_at=str(date) if (date := item.get('verified_at') or next(
+                             (ref.get('verified_at') or ref.get('checked_at') for ref in item.get('source_references', [])
+                              if isinstance(ref, dict) and ref.get('source_url') == url), None)) else None,
                          content_review_status=item.get('content_review_status'))
                     for item in items for url in ([item['source_url']] if item.get('source_url') else item.get('source_urls', []))
                     if isinstance(url, str) and url.startswith(('https://', 'http://'))]
@@ -76,6 +79,17 @@ def create_router(graph=None, store=None) -> APIRouter:
             sources = [profile.get('source') or {}] + (profile.get('additional_sources') or [])
             return citations([dict(source, chunk_id='support-profile:'+support['support_program_id']) for source in sources if isinstance(source, dict)])
         evidence = state.get('validated_evidence', [])
+        names = {p['program_id']: p['name'] for p in state.get('candidate_programs', [])}
+        names.update({s['support_program_id']: s['name'] for s in state.get('candidate_support_programs', [])})
+        answer_sections = []
+        for result in state.get('rag_results', []):
+            for claim in result.get('claims', []):
+                target = claim.get('program_id') or result.get('program_id') or result.get('support_program_id')
+                labels = [result['question_parts'][i] for i in claim.get('part_indexes', []) if 0 <= i < len(result.get('question_parts', []))]
+                answer_sections.append(dict(title=' · '.join(labels) or '공식 안내', text=claim['text'], target_name=names.get(target),
+                                            citations=citations(claim.get('citations', [])),
+                                            scope_notes=sorted({match for citation in claim.get('citations', [])
+                                                for match in re.findall(r'20\d{2}년[^,.\n]{0,35}(?:기준|대상)', citation.get('quote', ''))})))
         programs = []
         for item in state.get('candidate_programs', []):
             category = item.get('visa_type') or item.get('category')
@@ -113,12 +127,22 @@ def create_router(graph=None, store=None) -> APIRouter:
             rag_statuses=[dict(status=r['status'], target_id=r.get('program_id') or r.get('support_program_id'),
                                development_only=r.get('development_only', True), release_mode=r.get('release_mode', 'development'),
                                unanswered_parts=r.get('unanswered_parts', [])) for r in state.get('rag_results', [])],
+            answer_sections=answer_sections,
         )
 
     @router.post("/sessions")
     def create_session() -> dict:
         session_id = store.create()
         return {"session_id": session_id}
+
+    @router.get('/catalog')
+    def catalog():
+        from app.services.consultation_catalog import load_catalog
+        try:
+            return load_catalog()
+        except Exception:
+            logging.getLogger(__name__).exception('Consultation catalog failed')
+            raise HTTPException(status_code=503, detail='catalog temporarily unavailable') from None
 
     @router.post("/sessions/{session_id}/messages")
     def send_message(session_id: str, body: ChatRequest) -> ChatResponse:

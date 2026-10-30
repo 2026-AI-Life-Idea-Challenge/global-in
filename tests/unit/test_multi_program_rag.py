@@ -338,7 +338,7 @@ class CatalogAndAdapterTests(unittest.TestCase):
         kwargs = self.client.responses.parse.call_args.kwargs
         self.assertEqual(kwargs["model"], "gpt-6-luna")
         self.assertEqual(kwargs["reasoning"], {"effort": "low"})
-        self.assertIs(kwargs["text_format"], ProgramsDraft)
+        self.assertTrue(issubclass(kwargs["text_format"], ProgramsDraft))
         self.assertIs(kwargs["store"], False)
         self.factory.assert_called_once_with(timeout=45.0, max_retries=0)
         self.client.responses.parse.assert_called_once()

@@ -67,6 +67,7 @@ export async function POST(req: NextRequest) {
       support_programs: data.support_programs ?? [],
       support_eligibility: data.support_eligibility ?? [],
       rag_statuses: data.rag_statuses ?? [],
+      answer_sections: data.answer_sections ?? [],
     });
   } catch (err) {
     console.error("[/api/chat] error:", err);

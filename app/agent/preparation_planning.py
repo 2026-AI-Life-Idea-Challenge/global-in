@@ -18,9 +18,10 @@ def run(state: AgentState) -> dict:
             if identity in seen:
                 continue
             seen.add(identity)
+            parts = [result['question_parts'][i] for i in claim.get('part_indexes', []) if 0 <= i < len(result.get('question_parts', []))]
             checklist.append(dict(item_id='confirm_' + hashlib.sha256(identity.encode()).hexdigest()[:16],
                                   category='support_program' if result.get('support_program_id') else 'visa',
-                                  target_id=target, title='공식 안내 확인', description=claim['text'],
+                                  target_id=target, title='확인: ' + ' · '.join(parts) if parts else '공식 안내 확인', description=claim['text'],
                                   status='추가 확인', stage='preparation', required=False, citations=sources))
     for review in state.get('eligibility_results', []):
         for condition in review.get('condition_results', []):

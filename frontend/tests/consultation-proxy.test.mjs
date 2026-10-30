@@ -11,6 +11,7 @@ const payload = { session_id: session, stage: 'result', reply: '공식 근거를
   programs: [{ program_id: 'CA:iec', name: 'IEC', country: 'canada', visa_type: 'working_holiday', summary: '교류 프로그램' }],
   eligibility: [{ program_id: 'CA:iec', overall: '추가 확인 필요', requirements: [] }],
   citations: [{ chunk_id: 'c1', title: '공식 안내', source_url: 'https://canada.ca/' }],
+  answer_sections: [{ title: '신청 조건', text: '공식 근거를 확인하세요.', target_name: 'IEC', scope_notes: ['2026년 취업 개시자 안내 기준'], citations: [{ title: '공식 안내', source_url: 'https://canada.ca/', verified_at: '2026-10-28' }] }],
   prep_items: [{ id: 'p1', program_id: 'CA:iec', title: '서류 확인', description: '공식 안내 확인', status: 'check_needed', done: false }],
   support_programs: [{ support_program_id: 'S:test', name: '검증용 지원제도', availability: 'CLOSED', source_verified_at: '2026-10-28', citations: [] }],
   support_eligibility: [{ support_program_id: 'S:test', overall: '추가 확인 필요', requirements: [] }],
@@ -21,6 +22,14 @@ const mock = http.createServer(async (req, res) => {
   const body = text ? JSON.parse(text) : {};
   calls.push({ method: req.method, url: req.url, body });
   res.setHeader('Content-Type', 'application/json');
+  if (req.url === '/consult/catalog') {
+    res.end(JSON.stringify({ items: [
+      ...payload.programs.map(p => ({ id: p.program_id, kind: 'program', name: p.name, country: p.country, category: p.visa_type,
+        provider: null, destination_countries: ['CA'], availability: 'UNKNOWN', source_verified_at: '2026-10-28', release_id: 'test', sources: [{ title: '테스트 공식 출처', source_url: 'https://canada.ca/' }] })),
+      ...payload.support_programs.map(p => ({ id: p.support_program_id, kind: 'support', name: p.name, country: 'multi_country', category: null,
+        provider: '테스트 기관', destination_countries: ['CA'], availability: p.availability, source_verified_at: p.source_verified_at, release_id: 'test', sources: [] })),
+    ] })); return;
+  }
   if (req.url.includes(expired)) { res.writeHead(404); res.end('{}'); return; }
   if (req.method === 'PATCH' && body.invalid) { res.writeHead(422); res.end('{}'); return; }
   res.end(JSON.stringify(req.url === '/consult/sessions' ? { session_id: session } : payload));
@@ -49,6 +58,7 @@ try {
   assert.equal(result.status, 200); let data = await result.json();
   assert.equal(data.programs[0].program_id, 'CA:iec'); assert.deepEqual(data.eligibility, payload.eligibility);
   assert.deepEqual(data.citations, payload.citations); assert.deepEqual(data.prep_items, payload.prep_items); passed++;
+  assert.deepEqual(data.answer_sections, payload.answer_sections);
   assert.deepEqual(data.support_programs, payload.support_programs);
   assert.deepEqual(data.support_eligibility, payload.support_eligibility);
   assert.deepEqual(data.rag_statuses, payload.rag_statuses);
@@ -73,7 +83,7 @@ try {
   assert.equal(calls.at(-1).method, 'POST');
   assert.deepEqual(calls.at(-1).body.profile, { nationalities: ['KR'] }); passed++;
   assert.ok((await (await fetch(base + '/profile')).text()).includes('type="date"'));
-  assert.ok((await (await fetch(base + '/compare')).text()).includes('상담에서 선택한 실제 프로그램'));
+  assert.ok((await (await fetch(base + '/compare')).text()).includes('상담과 목록에서 선택한 실제 프로그램'));
   passed++;
   console.log(`${passed} frontend proxy/SSR checks passed; synthetic backend only.`);
   if (process.env.RUN_BROWSER_TESTS === '1') {
