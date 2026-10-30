@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowLeft } from "lucide-react";
 import Header from "../../components/Header";
 
 const COUNTRIES = [
@@ -53,164 +52,191 @@ export default function ProfilePage() {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div style={{ minHeight: "100vh", background: "var(--bg)", display: "flex", flexDirection: "column" }}>
       <Header rightLabel="내 프로필" />
 
-      <main className="max-w-[860px] mx-auto w-full px-4 py-4 flex-1">
+      <main style={{ maxWidth: 860, margin: "0 auto", width: "100%", padding: "24px 16px", flex: 1 }}>
         <button
           onClick={() => router.back()}
-          className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-gray-600 mb-5"
+          style={{
+            display: "flex", alignItems: "center", gap: 6, fontSize: "0.78rem",
+            color: "var(--mu)", background: "none", border: "none", cursor: "pointer",
+            padding: "4px 0", marginBottom: 20,
+          }}
         >
-          <ArrowLeft size={12} /> 처음으로 돌아가기
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M19 12H5M12 5l-7 7 7 7"/>
+          </svg>
+          처음으로 돌아가기
         </button>
 
-        <p className="text-[0.6rem] font-bold tracking-widest text-gray-300 mb-1">● MY PROFILE</p>
-        <h2 className="text-xl font-extrabold text-gray-900 mb-1">내 프로필</h2>
-        <p className="text-xs text-gray-400 mb-6">상담에 사용할 기본 정보와 학력·경력·언어 정보를 관리합니다.</p>
+        <p style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.16em", color: "#ccc", marginBottom: 4 }}>● MY PROFILE</p>
+        <h2 style={{ fontSize: "1.25rem", fontWeight: 800, margin: "0 0 4px", color: "var(--ink)" }}>내 프로필</h2>
+        <p style={{ fontSize: "0.78rem", color: "var(--mu)", marginBottom: 24 }}>상담에 사용할 기본 정보와 학력·경력·언어 정보를 관리합니다.</p>
 
         {/* 기본 정보 */}
-        <section className="mb-8">
-          <div className="flex items-center justify-between mb-4">
-            <h3 className="text-sm font-bold text-gray-900">기본 정보</h3>
-            <span className="text-[0.65rem] text-gray-300">* 필수 입력</span>
+        <section style={{ marginBottom: 32 }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
+            <h3 style={{ fontSize: "0.88rem", fontWeight: 700, color: "var(--ink)", margin: 0 }}>기본 정보</h3>
+            <span style={{ fontSize: "0.65rem", color: "#ccc" }}>* 필수 입력</span>
           </div>
-          <div className="grid grid-cols-3 gap-3">
-            <div>
-              <label className="text-xs text-gray-500 block mb-1.5">국적 <span className="text-gray-400">*</span></label>
-              <input value={nationality} onChange={e => setNationality(e.target.value)} placeholder="선택 또는 입력" className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-gray-300 placeholder-gray-300" />
-            </div>
-            <div>
-              <label className="text-xs text-gray-500 block mb-1.5">만 나이 <span className="text-gray-400">*</span></label>
-              <div className="flex items-center border border-gray-200 rounded-xl px-3 py-2.5 gap-1">
-                <input value={age} onChange={e => setAge(e.target.value)} placeholder="예: 27" className="flex-1 text-sm outline-none placeholder-gray-300" />
-                <span className="text-xs text-gray-300">세</span>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12 }}>
+            {[
+              { label: "국적 *", value: nationality, onChange: setNationality, placeholder: "선택 또는 입력" },
+              { label: "만 나이 *", value: age, onChange: setAge, placeholder: "예: 27" },
+              { label: "현재 거주 국가 *", value: residence, onChange: setResidence, placeholder: "선택 또는 입력" },
+            ].map(({ label, value, onChange, placeholder }) => (
+              <div key={label}>
+                <label style={{ fontSize: "0.75rem", color: "var(--mu)", display: "block", marginBottom: 6 }}>{label}</label>
+                <input
+                  value={value} onChange={e => onChange(e.target.value)} placeholder={placeholder}
+                  style={{ width: "100%", border: "1px solid var(--ln)", borderRadius: 12, padding: "10px 12px", fontSize: "0.88rem", outline: "none", boxSizing: "border-box" }}
+                />
               </div>
-            </div>
-            <div>
-              <label className="text-xs text-gray-500 block mb-1.5">현재 거주 국가 <span className="text-gray-400">*</span></label>
-              <input value={residence} onChange={e => setResidence(e.target.value)} placeholder="선택 또는 입력" className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-gray-300 placeholder-gray-300" />
-            </div>
+            ))}
           </div>
         </section>
 
         {/* 학력 */}
-        <section className="mb-8 border-t border-gray-50 pt-6">
-          <h3 className="text-sm font-bold text-gray-900 mb-1">학력 <span className="text-xs font-normal text-gray-300 ml-1">선택 입력</span></h3>
-          <div className="grid grid-cols-3 gap-3 mt-4">
+        <section style={{ marginBottom: 32, borderTop: "1px solid var(--ln)", paddingTop: 24 }}>
+          <h3 style={{ fontSize: "0.88rem", fontWeight: 700, color: "var(--ink)", marginBottom: 16 }}>
+            학력 <span style={{ fontSize: "0.75rem", fontWeight: 400, color: "#ccc" }}>선택 입력</span>
+          </h3>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12 }}>
             <div>
-              <label className="text-xs text-gray-500 block mb-1.5">최종 학력</label>
-              <select value={education} onChange={e => setEducation(e.target.value)} className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none text-gray-700 bg-white">
+              <label style={{ fontSize: "0.75rem", color: "var(--mu)", display: "block", marginBottom: 6 }}>최종 학력</label>
+              <select value={education} onChange={e => setEducation(e.target.value)}
+                style={{ width: "100%", border: "1px solid var(--ln)", borderRadius: 12, padding: "10px 12px", fontSize: "0.88rem", outline: "none", background: "#fff", boxSizing: "border-box" }}>
                 <option value="">선택</option>
                 {EDUCATIONS.map(e => <option key={e}>{e}</option>)}
               </select>
             </div>
             <div>
-              <label className="text-xs text-gray-500 block mb-1.5">학적 상태</label>
-              <select value={eduStatus} onChange={e => setEduStatus(e.target.value)} className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none text-gray-700 bg-white">
+              <label style={{ fontSize: "0.75rem", color: "var(--mu)", display: "block", marginBottom: 6 }}>학적 상태</label>
+              <select value={eduStatus} onChange={e => setEduStatus(e.target.value)}
+                style={{ width: "100%", border: "1px solid var(--ln)", borderRadius: 12, padding: "10px 12px", fontSize: "0.88rem", outline: "none", background: "#fff", boxSizing: "border-box" }}>
                 <option value="">선택</option>
                 {EDU_STATUS.map(e => <option key={e}>{e}</option>)}
               </select>
             </div>
             <div>
-              <label className="text-xs text-gray-500 block mb-1.5">전공</label>
-              <input value={major} onChange={e => setMajor(e.target.value)} placeholder="예: 컴퓨터공학" className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-gray-300 placeholder-gray-300" />
+              <label style={{ fontSize: "0.75rem", color: "var(--mu)", display: "block", marginBottom: 6 }}>전공</label>
+              <input value={major} onChange={e => setMajor(e.target.value)} placeholder="예: 컴퓨터공학"
+                style={{ width: "100%", border: "1px solid var(--ln)", borderRadius: 12, padding: "10px 12px", fontSize: "0.88rem", outline: "none", boxSizing: "border-box" }} />
             </div>
           </div>
         </section>
 
         {/* 경력 */}
-        <section className="mb-8 border-t border-gray-50 pt-6">
-          <h3 className="text-sm font-bold text-gray-900 mb-1">경력 <span className="text-xs font-normal text-gray-300 ml-1">선택 입력</span></h3>
-          <div className="grid grid-cols-2 gap-3 mt-4">
+        <section style={{ marginBottom: 32, borderTop: "1px solid var(--ln)", paddingTop: 24 }}>
+          <h3 style={{ fontSize: "0.88rem", fontWeight: 700, color: "var(--ink)", marginBottom: 16 }}>
+            경력 <span style={{ fontSize: "0.75rem", fontWeight: 400, color: "#ccc" }}>선택 입력</span>
+          </h3>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
             <div>
-              <label className="text-xs text-gray-500 block mb-1.5">직무·경력 분야</label>
-              <input value={career} onChange={e => setCareer(e.target.value)} placeholder="예: 웹 개발" className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-gray-300 placeholder-gray-300" />
+              <label style={{ fontSize: "0.75rem", color: "var(--mu)", display: "block", marginBottom: 6 }}>직무·경력 분야</label>
+              <input value={career} onChange={e => setCareer(e.target.value)} placeholder="예: 웹 개발"
+                style={{ width: "100%", border: "1px solid var(--ln)", borderRadius: 12, padding: "10px 12px", fontSize: "0.88rem", outline: "none", boxSizing: "border-box" }} />
             </div>
             <div>
-              <label className="text-xs text-gray-500 block mb-1.5">경력 기간</label>
-              <input value={careerDuration} onChange={e => setCareerDuration(e.target.value)} placeholder="예: 2년 6개월 / 경력 없음" className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-gray-300 placeholder-gray-300" />
+              <label style={{ fontSize: "0.75rem", color: "var(--mu)", display: "block", marginBottom: 6 }}>경력 기간</label>
+              <input value={careerDuration} onChange={e => setCareerDuration(e.target.value)} placeholder="예: 2년 6개월 / 경력 없음"
+                style={{ width: "100%", border: "1px solid var(--ln)", borderRadius: 12, padding: "10px 12px", fontSize: "0.88rem", outline: "none", boxSizing: "border-box" }} />
             </div>
           </div>
         </section>
 
         {/* 언어 */}
-        <section className="mb-8 border-t border-gray-50 pt-6">
-          <h3 className="text-sm font-bold text-gray-900 mb-1">언어 <span className="text-xs font-normal text-gray-300 ml-1">선택 입력</span></h3>
-          <div className="grid grid-cols-2 gap-3 mt-4">
+        <section style={{ marginBottom: 32, borderTop: "1px solid var(--ln)", paddingTop: 24 }}>
+          <h3 style={{ fontSize: "0.88rem", fontWeight: 700, color: "var(--ink)", marginBottom: 16 }}>
+            언어 <span style={{ fontSize: "0.75rem", fontWeight: 400, color: "#ccc" }}>선택 입력</span>
+          </h3>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
             <div>
-              <label className="text-xs text-gray-500 block mb-1.5">사용 언어</label>
-              <input value={languages} onChange={e => setLanguages(e.target.value)} placeholder="예: 한국어, 영어, 일본어" className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-gray-300 placeholder-gray-300" />
+              <label style={{ fontSize: "0.75rem", color: "var(--mu)", display: "block", marginBottom: 6 }}>사용 언어</label>
+              <input value={languages} onChange={e => setLanguages(e.target.value)} placeholder="예: 한국어, 영어, 일본어"
+                style={{ width: "100%", border: "1px solid var(--ln)", borderRadius: 12, padding: "10px 12px", fontSize: "0.88rem", outline: "none", boxSizing: "border-box" }} />
             </div>
             <div>
-              <label className="text-xs text-gray-500 block mb-1.5">어학 시험·자격</label>
-              <input value={certs} onChange={e => setCerts(e.target.value)} placeholder="예: IELTS 6.5, JLPT N2" className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-gray-300 placeholder-gray-300" />
+              <label style={{ fontSize: "0.75rem", color: "var(--mu)", display: "block", marginBottom: 6 }}>어학 시험·자격</label>
+              <input value={certs} onChange={e => setCerts(e.target.value)} placeholder="예: IELTS 6.5, JLPT N2"
+                style={{ width: "100%", border: "1px solid var(--ln)", borderRadius: 12, padding: "10px 12px", fontSize: "0.88rem", outline: "none", boxSizing: "border-box" }} />
             </div>
           </div>
         </section>
 
         {/* 관심 국가 */}
-        <section className="mb-8 border-t border-gray-50 pt-6">
-          <h3 className="text-sm font-bold text-gray-900 mb-1">관심 국가 <span className="text-xs font-normal text-gray-300 ml-1">선택 입력 · 복수 선택 가능</span></h3>
-          <div className="grid grid-cols-5 gap-2 mt-4">
+        <section style={{ marginBottom: 32, borderTop: "1px solid var(--ln)", paddingTop: 24 }}>
+          <h3 style={{ fontSize: "0.88rem", fontWeight: 700, color: "var(--ink)", marginBottom: 16 }}>
+            관심 국가 <span style={{ fontSize: "0.75rem", fontWeight: 400, color: "#ccc" }}>선택 입력 · 복수 선택 가능</span>
+          </h3>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 8 }}>
             {COUNTRIES.map(({ flag, label }) => (
-              <button
-                key={label}
-                onClick={() => toggleCountry(label)}
-                className={`relative border rounded-2xl p-4 flex flex-col items-center gap-2 transition-colors ${
-                  selectedCountries.includes(label) ? "border-gray-400 bg-gray-50" : "border-gray-100 hover:border-gray-200"
-                }`}
-              >
-                <div className={`absolute top-2 right-2 w-3.5 h-3.5 rounded border ${selectedCountries.includes(label) ? "border-gray-700 bg-gray-700" : "border-gray-200"} flex items-center justify-center`}>
-                  {selectedCountries.includes(label) && <span className="text-white text-[8px]">✓</span>}
+              <button key={label} onClick={() => toggleCountry(label)}
+                style={{
+                  position: "relative", border: `1px solid ${selectedCountries.includes(label) ? "#6b7080" : "var(--ln)"}`,
+                  borderRadius: 16, padding: "16px 8px", display: "flex", flexDirection: "column",
+                  alignItems: "center", gap: 8, background: selectedCountries.includes(label) ? "#f5f5f7" : "#fff", cursor: "pointer",
+                }}>
+                <div style={{
+                  position: "absolute", top: 8, right: 8, width: 14, height: 14, borderRadius: 4,
+                  border: `1px solid ${selectedCountries.includes(label) ? "var(--ink)" : "var(--ln)"}`,
+                  background: selectedCountries.includes(label) ? "var(--ink)" : "transparent",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                }}>
+                  {selectedCountries.includes(label) && <span style={{ color: "#fff", fontSize: 8 }}>✓</span>}
                 </div>
-                <span className="text-2xl">{flag}</span>
-                <span className="text-xs text-gray-600">{label}</span>
+                <span style={{ fontSize: "1.5rem" }}>{flag}</span>
+                <span style={{ fontSize: "0.75rem", color: "var(--ink)" }}>{label}</span>
               </button>
             ))}
           </div>
-          <label className="flex items-center gap-2 mt-2 cursor-pointer">
-            <input type="checkbox" checked={undecidedCountry} onChange={e => setUndecidedCountry(e.target.checked)} className="accent-gray-700" />
-            <span className="text-xs text-gray-500">미정</span>
+          <label style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 8, cursor: "pointer" }}>
+            <input type="checkbox" checked={undecidedCountry} onChange={e => setUndecidedCountry(e.target.checked)} />
+            <span style={{ fontSize: "0.78rem", color: "var(--mu)" }}>미정</span>
           </label>
         </section>
 
         {/* 진출 목적 */}
-        <section className="mb-8 border-t border-gray-50 pt-6">
-          <h3 className="text-sm font-bold text-gray-900 mb-1">진출 목적 <span className="text-xs font-normal text-gray-300 ml-1">선택 입력 · 복수 선택 가능</span></h3>
-          <div className="grid grid-cols-3 gap-2 mt-4">
+        <section style={{ marginBottom: 32, borderTop: "1px solid var(--ln)", paddingTop: 24 }}>
+          <h3 style={{ fontSize: "0.88rem", fontWeight: 700, color: "var(--ink)", marginBottom: 16 }}>
+            진출 목적 <span style={{ fontSize: "0.75rem", fontWeight: 400, color: "#ccc" }}>선택 입력 · 복수 선택 가능</span>
+          </h3>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 8 }}>
             {PURPOSES.map(({ icon, label }) => (
-              <button
-                key={label}
-                onClick={() => togglePurpose(label)}
-                className={`relative border rounded-2xl p-5 flex flex-col items-center gap-2 transition-colors ${
-                  selectedPurposes.includes(label) ? "border-gray-400 bg-gray-50" : "border-gray-100 hover:border-gray-200"
-                }`}
-              >
-                <div className={`absolute top-2 right-2 w-3.5 h-3.5 rounded border ${selectedPurposes.includes(label) ? "border-gray-700 bg-gray-700" : "border-gray-200"} flex items-center justify-center`}>
-                  {selectedPurposes.includes(label) && <span className="text-white text-[8px]">✓</span>}
+              <button key={label} onClick={() => togglePurpose(label)}
+                style={{
+                  position: "relative", border: `1px solid ${selectedPurposes.includes(label) ? "#6b7080" : "var(--ln)"}`,
+                  borderRadius: 16, padding: "20px 8px", display: "flex", flexDirection: "column",
+                  alignItems: "center", gap: 8, background: selectedPurposes.includes(label) ? "#f5f5f7" : "#fff", cursor: "pointer",
+                }}>
+                <div style={{
+                  position: "absolute", top: 8, right: 8, width: 14, height: 14, borderRadius: 4,
+                  border: `1px solid ${selectedPurposes.includes(label) ? "var(--ink)" : "var(--ln)"}`,
+                  background: selectedPurposes.includes(label) ? "var(--ink)" : "transparent",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                }}>
+                  {selectedPurposes.includes(label) && <span style={{ color: "#fff", fontSize: 8 }}>✓</span>}
                 </div>
-                <span className="text-xl">{icon}</span>
-                <span className="text-xs text-gray-600">{label}</span>
+                <span style={{ fontSize: "1.25rem" }}>{icon}</span>
+                <span style={{ fontSize: "0.78rem", color: "var(--ink)" }}>{label}</span>
               </button>
             ))}
           </div>
-          <label className="flex items-center gap-2 mt-2 cursor-pointer">
-            <input type="checkbox" checked={undecidedPurpose} onChange={e => setUndecidedPurpose(e.target.checked)} className="accent-gray-700" />
-            <span className="text-xs text-gray-500">미정</span>
+          <label style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 8, cursor: "pointer" }}>
+            <input type="checkbox" checked={undecidedPurpose} onChange={e => setUndecidedPurpose(e.target.checked)} />
+            <span style={{ fontSize: "0.78rem", color: "var(--mu)" }}>미정</span>
           </label>
         </section>
 
-        <p className="text-xs text-gray-300 mb-6">선택 항목은 나중에 추가하거나 수정할 수 있습니다.</p>
+        <p style={{ fontSize: "0.75rem", color: "#ccc", marginBottom: 24 }}>선택 항목은 나중에 추가하거나 수정할 수 있습니다.</p>
 
-        {/* 버튼 */}
-        <div className="flex justify-end gap-3 pb-8">
-          <button className="border border-gray-200 text-gray-600 px-6 py-3 rounded-xl text-sm font-medium hover:bg-gray-50">
+        <div style={{ display: "flex", justifyContent: "flex-end", gap: 12, paddingBottom: 32 }}>
+          <button style={{ border: "1px solid var(--ln)", color: "var(--ink)", padding: "12px 24px", borderRadius: 12, fontSize: "0.88rem", fontWeight: 500, background: "#fff", cursor: "pointer" }}>
             프로필 저장하기
           </button>
-          <button
-            onClick={() => router.push("/chat")}
-            className="bg-gray-900 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-gray-700 transition-colors"
-          >
+          <button onClick={() => router.push("/chat")}
+            style={{ background: "var(--ink)", color: "#fff", padding: "12px 24px", borderRadius: 12, fontSize: "0.88rem", fontWeight: 600, border: "none", cursor: "pointer" }}>
             이 정보로 상담하기 →
           </button>
         </div>

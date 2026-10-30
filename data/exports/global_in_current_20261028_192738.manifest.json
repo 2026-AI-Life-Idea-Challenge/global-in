@@ -1,0 +1,30 @@
+{
+  "file": "C:\\Users\\ko\\Desktop\\global-in\\data\\exports\\global_in_current_20261028_192738.dump",
+  "created_at": "2026-10-28T19:27:40.363140+09:00",
+  "server_version": "17.11",
+  "bytes": 4575133,
+  "sha256": "6bb78a72914fbb511cec3d672fc30fd413cfb089ce9017325335c9126c7be639",
+  "public_table_counts": {
+    "eligibility_requirements": 591,
+    "eligibility_rule_sets": 52,
+    "evidence": 1241,
+    "evidence_embeddings": 0,
+    "knowledge_chunk_embeddings": 585,
+    "knowledge_chunks": 585,
+    "knowledge_document_targets": 584,
+    "knowledge_documents": 584,
+    "knowledge_releases": 6,
+    "policy_candidates": 590,
+    "preparation_items": 23,
+    "program_profiles": 40,
+    "program_support_links": 93,
+    "programs": 40,
+    "support_program_profiles": 12,
+    "support_programs": 12
+  },
+  "consistent_snapshot": true,
+  "archive_directory_verified": true,
+  "full_archive_read_verified": true,
+  "restore_into_database_tested": false,
+  "database_modified": false
+}
