@@ -3,12 +3,12 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Header from "@/components/Header";
 
-const FL: Record<string, string> = {
-  일본: '<rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="5" fill="#bc2a3a"/>',
-  독일: '<rect width="30" height="7" fill="#111"/><rect y="7" width="30" height="6.5" fill="#d00"/><rect y="13.5" width="30" height="6.5" fill="#ffce00"/>',
-  캐나다: '<rect width="30" height="20" fill="#fff"/><rect width="7.5" height="20" fill="#d52b1e"/><rect x="22.5" width="7.5" height="20" fill="#d52b1e"/><path d="M15 4l1.3 3 2-1-.6 4 1.7-.4-.4 1.8 1.5 1-3.5 2.4.2 2.2h-4.4l.2-2.2-3.5-2.4 1.5-1-.4-1.8 1.7.4-.6-4 2 1z" fill="#d52b1e"/>',
-  호주: '<rect width="30" height="20" fill="#00247d"/><path d="M0 0l14 9M14 0L0 9" stroke="#fff" strokeWidth="1.6"/><path d="M7 0v9M0 4.5h14" stroke="#fff" strokeWidth="3"/><path d="M7 0v9M0 4.5h14" stroke="#cf142b" strokeWidth="1.6"/>',
-  미국: '<rect width="30" height="20" fill="#fff"/><rect y="0" width="30" height="1.55" fill="#b22234"/><rect y="3.1" width="30" height="1.55" fill="#b22234"/><rect y="6.2" width="30" height="1.55" fill="#b22234"/><rect y="9.3" width="30" height="1.55" fill="#b22234"/><rect y="12.4" width="30" height="1.55" fill="#b22234"/><rect y="15.5" width="30" height="1.55" fill="#b22234"/><rect y="18.6" width="30" height="1.55" fill="#b22234"/><rect width="13" height="10.8" fill="#3c3b6e"/>',
+const COUNTRY_CODE: Record<string, string> = {
+  일본: "jp",
+  독일: "de",
+  캐나다: "ca",
+  호주: "au",
+  미국: "us",
 };
 
 const CARDS = [
@@ -83,14 +83,13 @@ export default function Home() {
       <Header showNav />
 
       {/* Hero */}
-      <section style={{ position: "relative", height: 900, overflow: "hidden", textAlign: "center" }}>
+      <section style={{ position: "relative", height: 900, overflow: "hidden", textAlign: "center",}}>
         {/* 동심원 */}
-        {[580, 900, 1320].map((w, i) => (
+        {[580, 900, 1320].map((w) => (
           <div key={w} style={{
             position: "absolute", left: "50%", top: 400,
             width: w, height: w, border: "1px solid #e8eaf3", borderRadius: "50%",
             transform: "translate(-50%, -50%)",
-            ...(i === 2 ? { animation: "spin-slow 60s linear infinite" } : {}),
           }} />
         ))}
 
@@ -101,18 +100,26 @@ export default function Home() {
             style={{
               position: "absolute", display: "flex", flexDirection: "column",
               alignItems: "center", gap: 6, fontSize: "0.78rem", color: "var(--mu)",
-              transition: "transform 0.2s", cursor: "default", ...style,
+              cursor: "default", ...style,
             }}
-            onMouseEnter={e => (e.currentTarget.style.transform = "scale(1.08)")}
-            onMouseLeave={e => (e.currentTarget.style.transform = "scale(1)")}
           >
-            <div style={{ width: 68, height: 68, borderRadius: "50%", background: "#fff", boxShadow: "0 4px 18px rgba(30,35,70,.1)", display: "grid", placeItems: "center", border: "1px solid var(--ln)" }}>
-              <svg viewBox="0 0 30 20" style={{ width: 36, height: 24, borderRadius: 2 }} dangerouslySetInnerHTML={{ __html: FL[country] }} />
+            <div style={{ width: 52, height: 52, borderRadius: "50%", overflow: "hidden", boxShadow: "0 4px 18px rgba(30,35,70,.1)", border: "1px solid var(--ln)" }}>
+              {country === "일본" ? (
+                <svg viewBox="0 0 100 100" style={{ width: "100%", height: "100%" }}>
+                  <circle cx="50" cy="50" r="50" fill="#fff"/>
+                  <circle cx="50" cy="50" r="22" fill="#bc2a3a"/>
+                </svg>
+              ) : (
+                <img
+                  src={`/flags/${COUNTRY_CODE[country]}.png`}
+                  alt={country}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              )}
             </div>
             {country}
           </div>
         ))}
-
         {/* 헤드라인 */}
         <div style={{ position: "absolute", left: 0, right: 0, top: 170 }}>
           <div style={{ fontSize: "0.72rem", letterSpacing: "0.16em", color: "var(--mu)", fontWeight: 600, marginBottom: 0, animation: "fadeUp 0.6s ease both" }}>
@@ -227,6 +234,9 @@ export default function Home() {
         <span>Global-In.</span>
         <span>해외에서의 다음 시작을 함께.</span>
       </div>
+      <p style={{ textAlign: "center", fontSize: "0.7rem", color: "var(--mu)", padding: "8px 0 16px" }}>
+        Icons by <a href="https://www.flaticon.com/" title="Flaticon" style={{ color: "var(--mu)" }}>Flaticon</a>
+      </p>
     </div>
   );
 }
