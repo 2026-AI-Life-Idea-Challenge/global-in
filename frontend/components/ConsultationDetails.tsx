@@ -1,14 +1,16 @@
 "use client";
 
+type Requirement = { requirement_id: string; outcome: string; reason?: string | null; description?: string | null; pending_reviews?: { authority_id?: string; questions?: string[] }[] };
+
 export interface ConsultationDetailsData {
   programs?: { program_id: string; name: string }[];
-  answer_sections?: { title: string; text: string; target_name?: string | null; scope_notes?: string[]; citations: { title: string; source_url: string; verified_at?: string | null }[] }[];
-  eligibility?: { program_id: string; overall: string; requirements: { requirement_id: string; outcome: string; reason?: string | null }[] }[];
+  answer_sections?: { title: string; text: string; target_name?: string | null; scope_notes?: string[]; citations: { title: string; source_url: string; verified_at?: string | null; quote?: string | null }[] }[];
+  eligibility?: { program_id: string; overall: string; requirements: Requirement[] }[];
   citations?: { chunk_id: string; title: string; source_url: string }[];
   prep_items?: { id: string; program_id: string; title: string; description: string; status: string; done: boolean; citations?: { title: string; source_url: string }[] }[];
   follow_up_questions?: { field: string; question: string }[];
   support_programs?: { support_program_id: string; name: string; availability: string; source_verified_at?: string | null; citations?: { title: string; source_url: string }[] }[];
-  support_eligibility?: { support_program_id: string; overall: string; requirements: { requirement_id: string; outcome: string; reason?: string | null }[] }[];
+  support_eligibility?: { support_program_id: string; overall: string; requirements: Requirement[] }[];
   rag_statuses?: { status: string; development_only: boolean; unanswered_parts: { question_part: string }[] }[];
 }
 
@@ -23,7 +25,7 @@ export default function ConsultationDetails({ data }: { data: ConsultationDetail
     {data.eligibility?.map(item => <details key={item.program_id}>
       <summary>{data.programs?.find(p => p.program_id === item.program_id)?.name || '프로그램'} · {item.overall}</summary>
       <p>항목별 검토 결과이며 최종 비자 발급·선정 결과를 의미하지 않습니다.</p>
-      {item.requirements.map((rule, index) => <p key={`${rule.requirement_id}-${index}`}>확인 항목 {index + 1} · {rule.outcome}{rule.reason && ` · ${rule.reason}`}</p>)}
+      {item.requirements.map((rule, index) => <div key={`${rule.requirement_id}-${index}`}><p>확인 항목 {index + 1} · {rule.outcome}{rule.reason && ` · ${rule.reason}`}</p>{rule.description && <p>{rule.description}</p>}{rule.pending_reviews?.flatMap(review => review.questions || []).map((question,j) => <p key={j}>기관에 확인할 내용: {question}</p>)}</div>)}
     </details>)}
     {!!data.support_programs?.length && <div><strong>연결 후보 지원제도</strong>
       {data.support_programs.map(item => <article key={item.support_program_id} style={{ border: '1px solid var(--ln)', padding: 12, marginTop: 8 }}>
@@ -33,7 +35,7 @@ export default function ConsultationDetails({ data }: { data: ConsultationDetail
       </article>)}
     </div>}
     {data.support_eligibility?.map(item => <details key={item.support_program_id}><summary>{data.support_programs?.find(p => p.support_program_id === item.support_program_id)?.name || '지원제도'} · {item.overall}</summary>
-      {item.requirements.map((rule, index) => <p key={`${rule.requirement_id}-${index}`}>확인 항목 {index + 1} · {rule.outcome}{rule.reason && ` · ${rule.reason}`}</p>)}
+      {item.requirements.map((rule, index) => <div key={`${rule.requirement_id}-${index}`}><p>확인 항목 {index + 1} · {rule.outcome}{rule.reason && ` · ${rule.reason}`}</p>{rule.description && <p>{rule.description}</p>}{rule.pending_reviews?.flatMap(review => review.questions || []).map((question,j) => <p key={j}>기관에 확인할 내용: {question}</p>)}</div>)}
     </details>)}
     {!!data.citations?.length && <div><strong>공식 출처</strong><ul>
       {data.citations.filter(item => safeSource(item.source_url)).map((item, index) => <li key={`${item.chunk_id}-${index}`}>

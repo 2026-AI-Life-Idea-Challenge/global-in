@@ -69,6 +69,7 @@ class Citation(BaseModel):
     source_url: str
     verified_at: str | None = None
     content_review_status: str | None = None
+    quote: str | None = None
 
 
 class ProgramCandidate(BaseModel):
@@ -88,6 +89,7 @@ class RequirementPayload(BaseModel):
     judgeability: Judgeability
     pending_reviews: list[Any] = Field(default_factory=list)
     reason: str | None = None
+    description: str | None = None
 
 
 class EligibilityPayload(BaseModel):

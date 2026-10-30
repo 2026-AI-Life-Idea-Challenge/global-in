@@ -324,6 +324,7 @@ function ChatPageInner() {
                           <strong>{section.target_name ? section.target_name + ' · ' : ''}{section.title}</strong>
                           <p style={{ margin: '6px 0' }}>{renderContent(section.text)}</p>
                           {section.scope_notes?.map(note => <small key={note} style={{ display: 'block' }}>근거의 적용 범위: {note}</small>)}
+                          {section.citations.some(c => c.quote) && <details><summary>검색 근거 구절 확인</summary>{[...new Set(section.citations.map(c => c.quote).filter(Boolean))].map(quote => <blockquote key={quote} style={{ margin: '8px 0', paddingLeft: 12, borderLeft: '2px solid var(--ln)' }}>{quote}</blockquote>)}</details>}
                           {section.citations.filter(c => safeSource(c.source_url)).map((c, i) => <a key={i} href={c.source_url} target="_blank" rel="noopener noreferrer" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--mu)' }}>{c.title} ↗ {c.verified_at ? '· 확인일 ' + c.verified_at : ''}</a>)}
                         </article>) : renderContent(msg.content)}
                       </div>

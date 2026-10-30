@@ -12,6 +12,8 @@ from openai import OpenAI
 from pydantic import ValidationError, create_model
 
 from datetime import date
+from app.services import grounding_review
+from app.services import request_budget
 
 from app.models.rag import (
     CitationSpan, OverviewDraft, RagConfigurationError, RagDraft, RagGeneration, RagLLMError,
@@ -48,6 +50,12 @@ known_user_profile이 있으면 사용자가 직접 밝힌 정보이므로 그 �
 제목·프로그램명만 있는 구절은 구체적 조건의 근거가 아니다. 모든 조건과 예외는
 선택한 인용 구절 자체가 직접 뒷받침해야 한다. '이력을 구분한다'는 문구로
 '이력이 전혀 없어야 한다'를 추론하지 마라. 원문보다 강한 금지·의무를 만들지 마라.
+공식 명칭은 원문을 병기하되 설명은 일관된 한국어 존댓말로 작성한다.
+eligible은 '대상 요건', character는 '품행 요건', work permit은 '취업허가'로 설명한다.
+'Most applicants'만으로 별도의 면제 자격을 만들어 설명하지 마라.
+목차·표 분류·신청 유형·학교 유형만으로 의무를 추론하지 마라. 조건절의 일부나
+나열된 비자 이름만으로 요건을 만들지 말고 결론까지 포함하는 인용 구절을 선택한다.
+연령 상한의 경계는 '다음 생일'만 쓰지 말고 근거에 명시된 몇 번째 생일인지와 신청 시점을 함께 쓴다.
 사용자 개인의 최종 신청 자격을 판정하지 마라. 개인 판정 요청은 근거 부족으로 두고
 설명 가능한 일반 요건만 답하라.
 """
@@ -142,7 +150,8 @@ def _citation_spans(body: str) -> list[str]:
     Keep the full body too: punctuation splitting does not determine meaning.
     Every hint must still pass the ordinary exact-substring citation check.
     """
-    spans = re.findall(r"[^;\n.!?]+(?:[;.!?]+|$)", body, flags=re.MULTILINE)
+    # Keep decimal amounts, scores, dimensions and legal section numbers intact.
+    spans = re.split(r'(?<=[.!?;])\s+|\n+', body)
     return list(dict.fromkeys(span.strip() for span in spans if span.strip()))
 
 
@@ -208,14 +217,14 @@ def _bounded_citation_schema(draft_type, citation_ids):
 
 def _request_rag_draft(
     payload: dict, *, system_prompt: str, draft_type: type[RagDraft],
-    model: str, effort: str | None,
+    model: str, effort: str | None, _allow_retry: bool = True,
 ) -> RagGeneration:
     """Shared one-shot transport; callers supply their own scope and schema."""
     ids = tuple(dict.fromkeys(span['id'] for passage in payload.get('retrieved_passages', [])
                               for span in passage.get('citation_spans', [])))
     wire_type = _bounded_citation_schema(draft_type, ids)
     try:
-        with OpenAI(timeout=45.0, max_retries=0) as client:
+        with OpenAI(timeout=request_budget.timeout(), max_retries=0) as client:
             response = client.responses.parse(
                 model=model,
                 input=[
@@ -228,6 +237,9 @@ def _request_rag_draft(
                 **({"reasoning": {"effort": effort}} if effort is not None else {}),
             )
     except ValidationError as exc:
+        if grounding_review.enabled.get() and _allow_retry:
+            return _request_rag_draft(payload,system_prompt=system_prompt+'\n구조 검증 재시도: answer=null이면 citation_ids=[]여야 하며 답변에는 실제 구절 ID가 필요하다. 질문 항목은 공백으로 두지 않는다.',
+                draft_type=draft_type,model=model,effort=effort,_allow_retry=False)
         raise RagResponseValidationError(
             "LLM 구조화 응답 검증에 실패했습니다.", issues=schema_validation_issues(exc)
         ) from exc
@@ -259,4 +271,9 @@ def _request_rag_draft(
         raise RagResponseValidationError(
             "실제 응답 모델을 확인할 수 없습니다.", code="missing_response_model", field=("model",)
         )
+    if grounding_review.enabled.get():
+        try:
+            draft=grounding_review.review_draft(draft,payload,model,effort)
+        except Exception as exc:
+            raise RagLLMError('답변의 근거 대조를 완료하지 못했습니다.') from exc
     return RagGeneration(draft=draft, requested_model=model, model=response.model)

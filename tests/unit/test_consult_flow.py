@@ -200,7 +200,8 @@ def test_main_app_requires_internal_key(monkeypatch):
     monkeypatch.setattr(main,'INTERNAL_API_KEY','synthetic-test-key')
     client=TestClient(main.app)
     assert client.post('/consult/sessions').status_code==401
-    assert client.post('/consult/sessions',headers={'x-internal-api-key':'synthetic-test-key'}).status_code==200
+    assert client.post('/consult/sessions',headers={'x-internal-api-key':'synthetic-test-key'}).status_code==401
+    assert client.post('/consult/sessions',headers={'x-internal-api-key':'synthetic-test-key','x-consult-owner':'a'*64}).status_code==200
 
 
 def test_bad_profile_is_rejected_before_graph(setup):

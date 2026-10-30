@@ -41,6 +41,9 @@ def resolve_candidates(state):
     return programs, supports
 
 
+from app.services.grounding_review import with_grounding_review
+
+@with_grounding_review
 def answer(state):
     """Reuse B citation validation; no extra interpreter or rewritten answer."""
     profile = state.get('user_profile') or {}

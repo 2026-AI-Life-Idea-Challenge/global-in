@@ -10,6 +10,7 @@ import os
 from typing import Any
 
 import openai
+from app.services import request_budget
 
 _client: openai.OpenAI | None = None
 
@@ -20,7 +21,7 @@ def _get_client() -> openai.OpenAI:
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
             raise RuntimeError("OPENAI_API_KEY 환경 변수가 설정되지 않았습니다.")
-        _client = openai.OpenAI(api_key=api_key)
+        _client = openai.OpenAI(api_key=api_key,timeout=45,max_retries=0)
     return _client
 
 
@@ -34,6 +35,7 @@ def chat(
     model: str | None = None,
     max_tokens: int = 2048,
     temperature: float = 0.0,
+    response_schema: dict | None = None,
 ) -> str:
     """
     단순 Chat 완성 요청.
@@ -55,10 +57,12 @@ def chat(
     full_messages.extend(messages)
 
     response = client.chat.completions.create(
+        timeout=request_budget.timeout(),
         model=model or _DEFAULT_MODEL,
         max_tokens=max_tokens,
         temperature=temperature,
         messages=full_messages,  # type: ignore[arg-type]
+        **({'response_format': {'type':'json_schema','json_schema':{'name':'ConsultExtraction','strict':True,'schema':response_schema}}} if response_schema else {}),
     )
     return response.choices[0].message.content or ""
 
@@ -68,6 +72,7 @@ def extract_json(
     system: str | None = None,
     model: str | None = None,
     max_tokens: int = 1024,
+    response_schema: dict | None = None,
 ) -> str:
     """
     JSON 추출에 특화된 호출.
@@ -84,6 +89,7 @@ def extract_json(
         model=model,
         max_tokens=max_tokens,
         temperature=0.0,
+        **({'response_schema':response_schema} if response_schema else {}),
     )
     # 마크다운 코드 블록 제거 (모델이 무시할 경우 대비)
     raw = raw.strip()
