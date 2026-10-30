@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useRouter, usePathname } from "next/navigation";
@@ -211,72 +212,91 @@ export default function Sidebar({
       {isChat && (
         <div
           style={{
+            display: "flex",
+            flexDirection: "column",
             flex: 1,
             minHeight: 0,
-            overflowY: "auto",
-            overflowX: "hidden",
-            padding: "14px 16px",
-            overscrollBehavior: "contain",
+            overflow: "hidden",
           }}
         >
+          {/* 고정되는 제목 */}
           {sessions.length > 0 && (
             <div
               style={{
-                fontSize: "0.72rem",
-                color: "var(--mu)",
-                fontWeight: 600,
-                letterSpacing: "0.06em",
-                marginBottom: 8,
-                paddingLeft: 2,
+                flexShrink: 0,
+                padding: "14px 16px 8px",
+                background: "var(--bg)",
               }}
             >
-              채팅 목록
+              <div
+                style={{
+                  fontSize: "0.72rem",
+                  color: "var(--mu)",
+                  fontWeight: 600,
+                  letterSpacing: "0.06em",
+                  paddingLeft: 2,
+                }}
+              >
+                채팅 목록
+              </div>
             </div>
           )}
 
-          {sessions.map((s) => (
-            <button
-              key={s.id}
-              onClick={() => onSelectSession?.(s.id)}
-              style={{
-                width: "100%",
-                textAlign: "left",
-                background:
-                  s.id === currentSessionId ? "var(--tn)" : "none",
-                border: "none",
-                padding: "8px 10px",
-                fontSize: "0.83rem",
-                borderRadius: 8,
-                cursor: "pointer",
-                color: "var(--ink)",
-                display: "flex",
-                alignItems: "center",
-                gap: 8,
-                marginBottom: 2,
-              }}
-            >
-              <svg
-                width="13"
-                height="13"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="var(--ac)"
-                strokeWidth="1.7"
-              >
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-              </svg>
-
-              <span
+          {/* 실제 채팅 항목만 스크롤 */}
+          <div
+            style={{
+              flex: 1,
+              minHeight: 0,
+              overflowY: "auto",
+              overflowX: "hidden",
+              padding: "0 16px 14px",
+              overscrollBehavior: "contain",
+            }}
+          >
+            {sessions.map((s) => (
+              <button
+                key={s.id}
+                onClick={() => onSelectSession?.(s.id)}
                 style={{
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  whiteSpace: "nowrap",
+                  width: "100%",
+                  textAlign: "left",
+                  background:
+                    s.id === currentSessionId ? "var(--tn)" : "none",
+                  border: "none",
+                  padding: "8px 10px",
+                  fontSize: "0.83rem",
+                  borderRadius: 8,
+                  cursor: "pointer",
+                  color: "var(--ink)",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 8,
+                  marginBottom: 2,
                 }}
               >
-                {s.title}
-              </span>
-            </button>
-          ))}
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--ac)"
+                  strokeWidth="1.7"
+                >
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+
+                <span
+                  style={{
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  {s.title}
+                </span>
+              </button>
+            ))}
+          </div>
         </div>
       )}
 

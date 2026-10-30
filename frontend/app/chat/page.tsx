@@ -1,3 +1,4 @@
+
 "use client";
 
 import {
@@ -38,6 +39,7 @@ interface ChatSession {
 
 const STORAGE_KEY = "global-in-chats";
 const ACTIVE_CHAT_KEY = "global-in-active-chat";
+const AI_LOGO = "/logo/global-in-icon-512.png";
 
 const FLAGS: Record<string, string> = {
   독일: '<rect width="30" height="7" fill="#111"/><rect y="7" width="30" height="6.5" fill="#d00"/><rect y="13.5" width="30" height="6.5" fill="#ffce00"/>',
@@ -115,6 +117,34 @@ function renderContent(text: string) {
       </span>
     );
   });
+}
+
+function AiAvatar() {
+  return (
+    <div
+      style={{
+        width: 36,
+        height: 36,
+        borderRadius: "50%",
+        border: "1.5px solid var(--ln)",
+        background: "#fff",
+        display: "grid",
+        placeItems: "center",
+        flexShrink: 0,
+        overflow: "hidden",
+      }}
+    >
+      <img
+        src={AI_LOGO}
+        alt="Global-In AI"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
+      />
+    </div>
+  );
 }
 
 function ProgramCard({
@@ -314,6 +344,7 @@ function ChatPageInner() {
 
   const autoSentRef = useRef(false);
   const messagesContainerRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
   const didMountRef = useRef(false);
 
   // --------------------------------------------------
@@ -412,7 +443,29 @@ function ChatPageInner() {
   }, [messages, currentChatId, isHydrated]);
 
   // --------------------------------------------------
-  // 5. 상세 페이지에서 AI와 상담하기를 클릭한 경우
+  // 5. 입력 내용에 따라 입력창 높이 자동 조절
+  // --------------------------------------------------
+  useLayoutEffect(() => {
+    const textarea = inputRef.current;
+    if (!textarea) return;
+
+    const MAX_HEIGHT = 160;
+
+    textarea.style.height = "auto";
+
+    const nextHeight = Math.min(
+      textarea.scrollHeight,
+      MAX_HEIGHT
+    );
+
+    textarea.style.height = `${nextHeight}px`;
+
+    textarea.style.overflowY =
+      textarea.scrollHeight > MAX_HEIGHT ? "auto" : "hidden";
+  }, [input]);
+
+  // --------------------------------------------------
+  // 6. 상세 페이지에서 AI와 상담하기를 클릭한 경우
   // --------------------------------------------------
   useEffect(() => {
     if (!isHydrated || autoSentRef.current) return;
@@ -436,7 +489,7 @@ function ChatPageInner() {
   }, [isHydrated, searchParams]);
 
   // --------------------------------------------------
-  // 6. 처음 화면에 들어왔을 때 스크롤 초기화
+  // 7. 처음 화면에 들어왔을 때 스크롤 초기화
   // --------------------------------------------------
   useLayoutEffect(() => {
     const html = document.documentElement;
@@ -446,7 +499,12 @@ function ChatPageInner() {
     html.style.scrollbarGutter = "stable";
     html.style.scrollBehavior = "auto";
 
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+
     html.scrollTop = 0;
     document.body.scrollTop = 0;
 
@@ -461,7 +519,7 @@ function ChatPageInner() {
   }, []);
 
   // --------------------------------------------------
-  // 7. 메시지가 추가되면 아래로 스크롤
+  // 8. 메시지가 추가되면 대화 영역 아래로 스크롤
   // --------------------------------------------------
   useEffect(() => {
     if (!isHydrated) return;
@@ -471,25 +529,23 @@ function ChatPageInner() {
       return;
     }
 
+    const container = messagesContainerRef.current;
+
+    if (!container) return;
+
     if (messages.length <= 1) {
-      if (messagesContainerRef.current) {
-        messagesContainerRef.current.scrollTop = 0;
-      }
+      container.scrollTop = 0;
       return;
     }
 
-    const container = messagesContainerRef.current;
-
-    if (container) {
-      container.scrollTo({
-        top: container.scrollHeight,
-        behavior: "smooth",
-      });
-    }
+    container.scrollTo({
+      top: container.scrollHeight,
+      behavior: "smooth",
+    });
   }, [messages, loading, isHydrated]);
 
   // --------------------------------------------------
-  // 8. 프로그램 비교 기능
+  // 9. 프로그램 비교 기능
   // --------------------------------------------------
   function toggleCompare(id: string | number) {
     setCompareIds((prev) =>
@@ -516,7 +572,7 @@ function ChatPageInner() {
   );
 
   // --------------------------------------------------
-  // 9. 새 채팅 시작
+  // 10. 새 채팅 시작
   // --------------------------------------------------
   function startNewChat() {
     setMessages(INITIAL_MESSAGES);
@@ -535,7 +591,7 @@ function ChatPageInner() {
   }
 
   // --------------------------------------------------
-  // 10. 기존 채팅 선택
+  // 11. 기존 채팅 선택
   // --------------------------------------------------
   function selectChat(id: string) {
     const selected = sessions.find((chat) => chat.id === id);
@@ -558,7 +614,7 @@ function ChatPageInner() {
   }
 
   // --------------------------------------------------
-  // 11. 메시지 전송
+  // 12. 메시지 전송
   // --------------------------------------------------
   async function send(text: string) {
     if (!isHydrated || !text.trim() || loading) return;
@@ -711,531 +767,524 @@ function ChatPageInner() {
         />
 
         <main
-          ref={messagesContainerRef}
           style={{
             flex: 1,
             display: "flex",
             flexDirection: "column",
             minWidth: 0,
             minHeight: 0,
-            overflowY: "auto",
-            overscrollBehavior: "contain",
+            overflow: "hidden",
           }}
         >
-          {/* 상담 페이지 상단 */}
-          <div style={{ padding: "24px 32px 0", flexShrink: 0 }}>
-            <div
-              style={{
-                fontSize: "0.72rem",
-                letterSpacing: "0.14em",
-                color: "var(--ac)",
-                fontWeight: 600,
-                marginBottom: 10,
-              }}
-            >
-              ● PERSONAL CONSULTATION
-            </div>
-
-            <h2
-              style={{
-                margin: "0 0 6px",
-                fontSize: "1.6rem",
-                fontWeight: 800,
-                letterSpacing: "-0.04em",
-              }}
-            >
-              {currentTitle}
-            </h2>
-
-            <p
-              style={{
-                margin: 0,
-                fontSize: "0.88rem",
-                color: "var(--mu)",
-              }}
-            >
-              궁금한 내용을 편하게 이야기해 주세요.
-            </p>
-
-            <div
-              style={{
-                margin: "12px 0 4px",
-                fontSize: "0.82rem",
-                color: "#555",
-                display: "flex",
-                alignItems: "center",
-                gap: 6,
-              }}
-            >
-              <svg
-                width="13"
-                height="13"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="var(--mu)"
-                strokeWidth="1.7"
-              >
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
-              </svg>
-              내 프로필 반영 중
-            </div>
-
-            <div style={{ fontSize: "0.78rem", color: "#bbb" }}>
-              예시 프로필로 시작한 화면이에요.
-            </div>
-          </div>
-
-          <hr
-            style={{
-              border: "none",
-              borderTop: "1px solid var(--ln)",
-              margin: "20px 32px",
-              flexShrink: 0,
-            }}
-          />
-
-          {/* 대화 내용 */}
+          {/* 상담 상단 + 대화 내용: 하나의 영역으로 함께 스크롤 */}
           <div
+            ref={messagesContainerRef}
             style={{
-              flex: "0 0 auto",
-              padding: "0 32px",
+              flex: "1 1 0%",
+              minHeight: 0,
+              overflowY: "auto",
+              overflowX: "hidden",
+              overscrollBehavior: "contain",
+              scrollbarGutter: "stable",
               display: "flex",
               flexDirection: "column",
-              gap: 20,
+              paddingBottom: 20,
             }}
           >
-            {messages.map((msg, i) => (
-              <div key={i}>
-                {msg.role === "assistant" ? (
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: 14,
-                      alignItems: "flex-start",
-                    }}
-                  >
+            {/* 상담 페이지 상단 */}
+            <div style={{ padding: "24px 32px 0", flexShrink: 0 }}>
+              <div
+                style={{
+                  fontSize: "0.72rem",
+                  letterSpacing: "0.14em",
+                  color: "var(--ac)",
+                  fontWeight: 600,
+                  marginBottom: 10,
+                }}
+              >
+                ● PERSONAL CONSULTATION
+              </div>
+
+              <h2
+                style={{
+                  margin: "0 0 6px",
+                  fontSize: "1.6rem",
+                  fontWeight: 800,
+                  letterSpacing: "-0.04em",
+                }}
+              >
+                {currentTitle}
+              </h2>
+
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: "0.88rem",
+                  color: "var(--mu)",
+                }}
+              >
+                궁금한 내용을 편하게 이야기해 주세요.
+              </p>
+
+              <div
+                style={{
+                  margin: "12px 0 4px",
+                  fontSize: "0.82rem",
+                  color: "#555",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 6,
+                }}
+              >
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--mu)"
+                  strokeWidth="1.7"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+                </svg>
+                내 프로필 반영 중
+              </div>
+
+              <div style={{ fontSize: "0.78rem", color: "#bbb" }}>
+                예시 프로필로 시작한 화면이에요.
+              </div>
+            </div>
+
+            <hr
+              style={{
+                border: "none",
+                borderTop: "1px solid var(--ln)",
+                margin: "20px 32px",
+                flexShrink: 0,
+              }}
+            />
+
+            {/* 대화 내용 */}
+            <div
+              style={{
+                padding: "0 32px 20px",
+                display: "flex",
+                flexDirection: "column",
+                gap: 20,
+              }}
+            >
+              {messages.map((msg, i) => (
+                <div key={i}>
+                  {msg.role === "assistant" ? (
                     <div
                       style={{
-                        width: 36,
-                        height: 36,
-                        borderRadius: "50%",
-                        border: "1.5px solid var(--ln)",
-                        background: "#fff",
-                        display: "grid",
-                        placeItems: "center",
-                        flexShrink: 0,
+                        display: "flex",
+                        gap: 14,
+                        alignItems: "flex-start",
                       }}
                     >
-                      <svg
-                        width="17"
-                        height="17"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="var(--ac)"
-                        strokeWidth="1.8"
-                      >
-                        <circle cx="12" cy="12" r="4" />
-                        <path d="M4 9a9 9 0 0 1 14-4M20 15a9 9 0 0 1-14 4" />
-                      </svg>
-                    </div>
+                      {/* AI 프로필 */}
+                      <AiAvatar />
 
-                    <div style={{ minWidth: 0, flex: 1 }}>
-                      <div
-                        style={{
-                          fontSize: "0.82rem",
-                          fontWeight: 600,
-                          color: "var(--ink)",
-                          marginBottom: 8,
-                        }}
-                      >
-                        Global-In
-                      </div>
+                      <div style={{ minWidth: 0, flex: 1 }}>
+                        <div
+                          style={{
+                            fontSize: "0.82rem",
+                            fontWeight: 600,
+                            color: "var(--ink)",
+                            marginBottom: 8,
+                          }}
+                        >
+                          Global-In
+                        </div>
 
-                      <div
-                        style={{
-                          background: "#fff",
-                          border: "1px solid var(--ln)",
-                          borderRadius: "4px 16px 16px 16px",
-                          padding: "16px 20px",
-                          fontSize: "0.92rem",
-                          lineHeight: 1.7,
-                          maxWidth: 520,
-                          overflowWrap: "anywhere",
-                        }}
-                      >
-                        {renderContent(msg.content)}
-                      </div>
+                        <div
+                          style={{
+                            background: "#fff",
+                            border: "1px solid var(--ln)",
+                            borderRadius: "4px 16px 16px 16px",
+                            padding: "16px 20px",
+                            fontSize: "0.92rem",
+                            lineHeight: 1.7,
+                            maxWidth: 520,
+                            overflowWrap: "anywhere",
+                          }}
+                        >
+                          {renderContent(msg.content)}
+                        </div>
 
-                      {msg.programs && msg.programs.length > 0 && (
-                        <div style={{ marginTop: 12 }}>
-                          <div
-                            style={{
-                              fontSize: "0.76rem",
-                              color: "var(--mu)",
-                              marginBottom: 8,
-                              fontWeight: 600,
-                              letterSpacing: "0.04em",
-                            }}
-                          >
-                            ● 추천 프로그램 TOP {msg.programs.length}
-                          </div>
-
-                          <div
-                            style={{
-                              display: "flex",
-                              flexDirection: "column",
-                              gap: 8,
-                              maxWidth: 520,
-                            }}
-                          >
-                            {msg.programs.map((p) => (
-                              <ProgramCard
-                                key={p.id}
-                                program={p}
-                                isCompared={compareIds.includes(p.id)}
-                                onToggleCompare={toggleCompare}
-                              />
-                            ))}
-                          </div>
-
-                          {compareIds.length === 1 && (
+                        {msg.programs && msg.programs.length > 0 && (
+                          <div style={{ marginTop: 12 }}>
                             <div
                               style={{
                                 fontSize: "0.76rem",
                                 color: "var(--mu)",
-                                marginTop: 6,
+                                marginBottom: 8,
+                                fontWeight: 600,
+                                letterSpacing: "0.04em",
                               }}
                             >
-                              1개 더 선택하면 비교표가 나타나요.
+                              ● 추천 프로그램 TOP {msg.programs.length}
                             </div>
-                          )}
-                        </div>
-                      )}
+
+                            <div
+                              style={{
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: 8,
+                                maxWidth: 520,
+                              }}
+                            >
+                              {msg.programs.map((p) => (
+                                <ProgramCard
+                                  key={p.id}
+                                  program={p}
+                                  isCompared={compareIds.includes(p.id)}
+                                  onToggleCompare={toggleCompare}
+                                />
+                              ))}
+                            </div>
+
+                            {compareIds.length === 1 && (
+                              <div
+                                style={{
+                                  fontSize: "0.76rem",
+                                  color: "var(--mu)",
+                                  marginTop: 6,
+                                }}
+                              >
+                                1개 더 선택하면 비교표가 나타나요.
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                ) : (
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "flex-end",
-                    }}
-                  >
+                  ) : (
                     <div
                       style={{
-                        background: "var(--ink)",
-                        color: "#fff",
-                        borderRadius: "16px 4px 16px 16px",
-                        padding: "12px 18px",
-                        fontSize: "0.92rem",
-                        lineHeight: 1.6,
-                        maxWidth: 400,
-                        overflowWrap: "anywhere",
+                        display: "flex",
+                        justifyContent: "flex-end",
                       }}
                     >
-                      {msg.content}
+                      <div
+                        style={{
+                          background: "var(--ink)",
+                          color: "#fff",
+                          borderRadius: "16px 4px 16px 16px",
+                          padding: "12px 18px",
+                          fontSize: "0.92rem",
+                          lineHeight: 1.6,
+                          maxWidth: 400,
+                          overflowWrap: "anywhere",
+                        }}
+                      >
+                        {msg.content}
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            ))}
+                  )}
+                </div>
+              ))}
 
-            {/* 추천 질문 */}
-            {messages.length === 1 && (
-              <div
-                style={{
-                  paddingLeft: 50,
-                  display: "flex",
-                  flexWrap: "wrap",
-                  gap: 8,
-                  marginTop: -8,
-                }}
-              >
-                {SUGGESTIONS.map((s) => (
-                  <button
-                    key={s}
-                    onClick={() => send(s)}
-                    disabled={loading}
+              {/* 추천 질문 */}
+              {messages.length === 1 && (
+                <div
+                  style={{
+                    paddingLeft: 50,
+                    display: "flex",
+                    flexWrap: "wrap",
+                    gap: 8,
+                    marginTop: -8,
+                  }}
+                >
+                  {SUGGESTIONS.map((s) => (
+                    <button
+                      key={s}
+                      onClick={() => send(s)}
+                      disabled={loading}
+                      style={{
+                        border: "1px solid var(--ln)",
+                        background: "#fff",
+                        borderRadius: 20,
+                        padding: "8px 16px",
+                        fontSize: "0.85rem",
+                        cursor: loading ? "default" : "pointer",
+                        color: "var(--ink)",
+                      }}
+                    >
+                      {s}
+                    </button>
+                  ))}
+
+                  <div
                     style={{
-                      border: "1px solid var(--ln)",
-                      background: "#fff",
-                      borderRadius: 20,
-                      padding: "8px 16px",
-                      fontSize: "0.85rem",
-                      cursor: loading ? "default" : "pointer",
-                      color: "var(--ink)",
+                      width: "100%",
+                      fontSize: "0.78rem",
+                      color: "#ccc",
+                      marginTop: 6,
                     }}
                   >
-                    {s}
-                  </button>
-                ))}
-
-                <div
-                  style={{
-                    width: "100%",
-                    fontSize: "0.78rem",
-                    color: "#ccc",
-                    marginTop: 6,
-                  }}
-                >
-                  가까운 답변을 고르거나, 아래에 직접 적어 주세요.
+                    가까운 답변을 고르거나, 아래에 직접 적어 주세요.
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
 
-            {/* 답변 로딩 */}
-            {loading && (
-              <div
-                style={{
-                  display: "flex",
-                  gap: 14,
-                  alignItems: "flex-start",
-                }}
-              >
+              {/* 답변 로딩 */}
+              {loading && (
                 <div
                   style={{
-                    width: 36,
-                    height: 36,
-                    borderRadius: "50%",
-                    border: "1.5px solid var(--ln)",
-                    background: "#fff",
-                    display: "grid",
-                    placeItems: "center",
-                    flexShrink: 0,
+                    display: "flex",
+                    gap: 14,
+                    alignItems: "flex-start",
                   }}
                 >
-                  <svg
-                    width="17"
-                    height="17"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="var(--ac)"
-                    strokeWidth="1.8"
+                  <div
+                    style={{
+                      width: 36,
+                      height: 36,
+                      borderRadius: "50%",
+                      border: "1.5px solid var(--ln)",
+                      background: "#fff",
+                      display: "grid",
+                      placeItems: "center",
+                      flexShrink: 0,
+                    }}
                   >
-                    <circle cx="12" cy="12" r="4" />
-                    <path d="M4 9a9 9 0 0 1 14-4M20 15a9 9 0 0 1-14 4" />
-                  </svg>
-                </div>
+                    <svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="var(--ac)"
+                      strokeWidth="1.8"
+                    >
+                      <circle cx="12" cy="12" r="4" />
+                      <path d="M4 9a9 9 0 0 1 14-4M20 15a9 9 0 0 1-14 4" />
+                    </svg>
+                  </div>
 
+                  <div
+                    style={{
+                      background: "#fff",
+                      border: "1px solid var(--ln)",
+                      borderRadius: "4px 16px 16px 16px",
+                      padding: "16px 20px",
+                      color: "var(--mu)",
+                      fontSize: "0.88rem",
+                    }}
+                  >
+                    답변을 준비하고 있어요…
+                  </div>
+                </div>
+              )}
+
+              {/* 프로그램 비교표 */}
+              {comparePrograms.length >= 2 && (
                 <div
                   style={{
                     background: "#fff",
                     border: "1px solid var(--ln)",
-                    borderRadius: "4px 16px 16px 16px",
-                    padding: "16px 20px",
-                    color: "var(--mu)",
-                    fontSize: "0.88rem",
+                    borderRadius: 14,
+                    overflow: "hidden",
+                    marginTop: 8,
                   }}
                 >
-                  답변을 준비하고 있어요…
-                </div>
-              </div>
-            )}
+                  <div
+                    style={{
+                      padding: "14px 20px",
+                      borderBottom: "1px solid var(--ln)",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                  >
+                    <div style={{ fontWeight: 700, fontSize: "0.92rem" }}>
+                      비교
+                      <span
+                        style={{
+                          fontSize: "0.78rem",
+                          fontWeight: 400,
+                          color: "var(--mu)",
+                          marginLeft: 8,
+                        }}
+                      >
+                        {comparePrograms.length}개 선택됨
+                      </span>
+                    </div>
 
-            {/* 프로그램 비교표 */}
-            {comparePrograms.length >= 2 && (
-              <div
-                style={{
-                  background: "#fff",
-                  border: "1px solid var(--ln)",
-                  borderRadius: 14,
-                  overflow: "hidden",
-                  marginTop: 8,
-                }}
-              >
-                <div
-                  style={{
-                    padding: "14px 20px",
-                    borderBottom: "1px solid var(--ln)",
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                  }}
-                >
-                  <div style={{ fontWeight: 700, fontSize: "0.92rem" }}>
-                    비교
-                    <span
+                    <button
+                      onClick={() => setCompareIds([])}
                       style={{
+                        background: "none",
+                        border: "none",
                         fontSize: "0.78rem",
-                        fontWeight: 400,
                         color: "var(--mu)",
-                        marginLeft: 8,
+                        cursor: "pointer",
                       }}
                     >
-                      {comparePrograms.length}개 선택됨
-                    </span>
+                      전체 해제
+                    </button>
                   </div>
 
-                  <button
-                    onClick={() => setCompareIds([])}
-                    style={{
-                      background: "none",
-                      border: "none",
-                      fontSize: "0.78rem",
-                      color: "var(--mu)",
-                      cursor: "pointer",
-                    }}
-                  >
-                    전체 해제
-                  </button>
-                </div>
-
-                <div style={{ overflowX: "auto" }}>
-                  <table
-                    style={{
-                      width: "100%",
-                      borderCollapse: "collapse",
-                      fontSize: "0.82rem",
-                    }}
-                  >
-                    <thead>
-                      <tr style={{ background: "#f7f8fa" }}>
-                        <th
-                          style={{
-                            padding: "10px 16px",
-                            textAlign: "left",
-                            fontWeight: 600,
-                            color: "var(--mu)",
-                            fontSize: "0.74rem",
-                            width: 80,
-                          }}
-                        >
-                          항목
-                        </th>
-
-                        {comparePrograms.map((p) => (
+                  <div style={{ overflowX: "auto" }}>
+                    <table
+                      style={{
+                        width: "100%",
+                        borderCollapse: "collapse",
+                        fontSize: "0.82rem",
+                      }}
+                    >
+                      <thead>
+                        <tr style={{ background: "#f7f8fa" }}>
                           <th
-                            key={p.id}
                             style={{
                               padding: "10px 16px",
                               textAlign: "left",
-                              fontWeight: 700,
-                              color: "var(--ink)",
+                              fontWeight: 600,
+                              color: "var(--mu)",
+                              fontSize: "0.74rem",
+                              width: 80,
                             }}
                           >
-                            {p.name}
+                            항목
                           </th>
-                        ))}
-                      </tr>
-                    </thead>
 
-                    <tbody>
-                      {[
-                        {
-                          label: "국가",
-                          render: (p: Program) => p.country ?? "여러 국가",
-                        },
-                        {
-                          label: "유형",
-                          render: (p: Program) => p.type ?? "-",
-                        },
-                        {
-                          label: "설명",
-                          render: (p: Program) =>
-                            p.desc ||
-                            p.description ||
-                            p.condition_summary ||
-                            "-",
-                        },
-                      ].map((row, ri) => (
-                        <tr
-                          key={ri}
-                          style={{
-                            borderTop: "1px solid var(--ln)",
-                            background: ri % 2 === 0 ? "#fff" : "#fafbfc",
-                          }}
-                        >
+                          {comparePrograms.map((p) => (
+                            <th
+                              key={p.id}
+                              style={{
+                                padding: "10px 16px",
+                                textAlign: "left",
+                                fontWeight: 700,
+                                color: "var(--ink)",
+                              }}
+                            >
+                              {p.name}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        {[
+                          {
+                            label: "국가",
+                            render: (p: Program) =>
+                              p.country ?? "여러 국가",
+                          },
+                          {
+                            label: "유형",
+                            render: (p: Program) => p.type ?? "-",
+                          },
+                          {
+                            label: "설명",
+                            render: (p: Program) =>
+                              p.desc ||
+                              p.description ||
+                              p.condition_summary ||
+                              "-",
+                          },
+                        ].map((row, ri) => (
+                          <tr
+                            key={ri}
+                            style={{
+                              borderTop: "1px solid var(--ln)",
+                              background:
+                                ri % 2 === 0 ? "#fff" : "#fafbfc",
+                            }}
+                          >
+                            <td
+                              style={{
+                                padding: "10px 16px",
+                                fontWeight: 600,
+                                color: "var(--mu)",
+                                fontSize: "0.74rem",
+                                whiteSpace: "nowrap",
+                              }}
+                            >
+                              {row.label}
+                            </td>
+
+                            {comparePrograms.map((p) => (
+                              <td
+                                key={p.id}
+                                style={{
+                                  padding: "10px 16px",
+                                  color: "var(--ink)",
+                                  lineHeight: 1.5,
+                                }}
+                              >
+                                {row.render(p)}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+
+                        <tr style={{ borderTop: "1px solid var(--ln)" }}>
                           <td
                             style={{
                               padding: "10px 16px",
                               fontWeight: 600,
                               color: "var(--mu)",
                               fontSize: "0.74rem",
-                              whiteSpace: "nowrap",
                             }}
                           >
-                            {row.label}
+                            공식 사이트
                           </td>
 
-                          {comparePrograms.map((p) => (
-                            <td
-                              key={p.id}
-                              style={{
-                                padding: "10px 16px",
-                                color: "var(--ink)",
-                                lineHeight: 1.5,
-                              }}
-                            >
-                              {row.render(p)}
-                            </td>
-                          ))}
-                        </tr>
-                      ))}
+                          {comparePrograms.map((p) => {
+                            const url = p.official_url || p.officialUrl;
 
-                      <tr style={{ borderTop: "1px solid var(--ln)" }}>
-                        <td
-                          style={{
-                            padding: "10px 16px",
-                            fontWeight: 600,
-                            color: "var(--mu)",
-                            fontSize: "0.74rem",
-                          }}
-                        >
-                          공식 사이트
-                        </td>
-
-                        {comparePrograms.map((p) => {
-                          const url = p.official_url || p.officialUrl;
-
-                          return (
-                            <td
-                              key={p.id}
-                              style={{ padding: "10px 16px" }}
-                            >
-                              {url ? (
-                                <a
-                                  href={url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  style={{
-                                    display: "inline-flex",
-                                    alignItems: "center",
-                                    gap: 3,
-                                    fontSize: "0.78rem",
-                                    color: "var(--ac)",
-                                    textDecoration: "none",
-                                    fontWeight: 500,
-                                  }}
-                                >
-                                  바로가기
-                                  <svg
-                                    width="10"
-                                    height="10"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
+                            return (
+                              <td
+                                key={p.id}
+                                style={{ padding: "10px 16px" }}
+                              >
+                                {url ? (
+                                  <a
+                                    href={url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                      display: "inline-flex",
+                                      alignItems: "center",
+                                      gap: 3,
+                                      fontSize: "0.78rem",
+                                      color: "var(--ac)",
+                                      textDecoration: "none",
+                                      fontWeight: 500,
+                                    }}
                                   >
-                                    <path d="M7 7h10v10M7 17L17 7" />
-                                  </svg>
-                                </a>
-                              ) : (
-                                "-"
-                              )}
-                            </td>
-                          );
-                        })}
-                      </tr>
-                    </tbody>
-                  </table>
+                                    바로가기
+                                    <svg
+                                      width="10"
+                                      height="10"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      strokeWidth="2"
+                                    >
+                                      <path d="M7 7h10v10M7 17L17 7" />
+                                    </svg>
+                                  </a>
+                                ) : (
+                                  "-"
+                                )}
+                              </td>
+                            );
+                          })}
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
 
-          {/* 메시지 입력창 */}
+          {/* 메시지 입력창: 스크롤 영역 바깥에 고정 */}
           <div
             style={{
-              padding: "20px 32px 16px",
+              padding: "20px 32px 10px",
               flexShrink: 0,
             }}
           >
@@ -1246,7 +1295,7 @@ function ChatPageInner() {
               }}
               style={{
                 display: "flex",
-                alignItems: "flex-end",
+                alignItems: "center",
                 gap: 10,
                 background: "#fff",
                 border: "1px solid var(--ln)",
@@ -1256,6 +1305,7 @@ function ChatPageInner() {
               }}
             >
               <textarea
+                ref={inputRef}
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => {
@@ -1269,13 +1319,22 @@ function ChatPageInner() {
                 style={{
                   flex: 1,
                   minWidth: 0,
+                  minHeight: 24,
+                  maxHeight: 160,
+                  height: 24,
                   border: "none",
                   outline: "none",
                   resize: "none",
+                  overflowY: "hidden",
+                  overflowX: "hidden",
                   fontSize: "0.92rem",
                   lineHeight: 1.6,
                   background: "transparent",
                   fontFamily: "inherit",
+                  padding: 0,
+                  boxSizing: "border-box",
+                  scrollbarWidth: "thin",
+                  alignSelf: "center",
                 }}
               />
 
