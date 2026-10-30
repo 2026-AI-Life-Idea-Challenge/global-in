@@ -13,7 +13,7 @@ const ROWS: { label: string; key: keyof Program }[] = [
 ];
 
 export default function ComparePage() {
-  const { items: PROGRAMS, clear } = useComparison();
+  const { items: PROGRAMS } = useComparison();
   return (
     <div className="min-h-screen flex flex-col">
       <Header rightLabel="비교" />
@@ -26,7 +26,6 @@ export default function ComparePage() {
         <main className="flex-1 px-6 py-6">
           <h2 className="text-lg font-bold mb-6">프로그램 비교</h2>
           <p>상담과 목록에서 선택한 실제 프로그램을 비교합니다. 비용·기간 등 확인되지 않은 정보는 채우지 않습니다.</p>
-          {PROGRAMS.length > 0 && <button onClick={clear}>선택 전체 해제</button>}
           {PROGRAMS.length < 2 && <p role="status">프로그램을 2개 이상 선택해 주세요. <a href="/chat">상담으로 이동 →</a></p>}
 
           <div className="overflow-x-auto">
