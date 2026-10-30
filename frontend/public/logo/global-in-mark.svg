@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512" role="img" aria-label="global.in">
+  <defs>
+    <mask id="m-back" maskUnits="userSpaceOnUse" x="-10" y="-10" width="120" height="120">
+      <rect x="-10" y="-10" width="120" height="120" fill="#fff"/>
+      <circle cx="50" cy="50" r="37.5" fill="#000"/>
+    </mask>
+    <mask id="m-cut" maskUnits="userSpaceOnUse" x="-10" y="-10" width="120" height="120">
+      <rect x="-10" y="-10" width="120" height="120" fill="#fff"/>
+      <path d="M4 50 A46 14 0 0 0 89.8 57 L93.3 55.1 M88.6 65.5 L93.3 55.1 L82 53.1" transform="rotate(-20 50 50)" fill="none" stroke="#000" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 50 A46 14 0 0 0 4 50" transform="rotate(-20 50 50)" stroke="#C9D3DC" stroke-width="7" mask="url(#m-back)"/>
+    <g mask="url(#m-cut)">
+      <circle cx="50" cy="50" r="34" stroke="#0F172A" stroke-width="7"/>
+      <ellipse cx="50" cy="50" rx="14" ry="34" stroke="#0F172A" stroke-width="4.5"/>
+      <path d="M16 50 H84" stroke="#0F172A" stroke-width="4.5"/>
+    </g>
+    <path d="M4 50 A46 14 0 0 0 89.8 57 L93.3 55.1 M88.6 65.5 L93.3 55.1 L82 53.1" transform="rotate(-20 50 50)" stroke="#5FA34E" stroke-width="7"/>
+  </g>
+  <circle cx="12" cy="24" r="3.5" fill="#5FA34E"/>
+</svg>
