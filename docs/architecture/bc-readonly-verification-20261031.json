@@ -1,0 +1,29 @@
+{
+  "keyword_graph_passed": true,
+  "support_graph_passed": true,
+  "profile_recheck_passed": true,
+  "first_message_interpreter_calls": 1,
+  "profile_patch_interpreter_calls": 0,
+  "source_citations": 3,
+  "support_citations": 1,
+  "counts_before": {
+    "programs": 40,
+    "policy_candidates": 590,
+    "knowledge_chunks": 585,
+    "knowledge_chunk_embeddings": 585
+  },
+  "counts_after": {
+    "programs": 40,
+    "policy_candidates": 590,
+    "knowledge_chunks": 585,
+    "knowledge_chunk_embeddings": 585
+  },
+  "model_calls_replaced": {
+    "interpreter": 2,
+    "generation": 4
+  },
+  "paid_llm_executed": false,
+  "embeddings_generated": false,
+  "knowledge_db_modified": false,
+  "semantic_answer_quality_verified": false
+}

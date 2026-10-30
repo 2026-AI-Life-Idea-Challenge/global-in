@@ -37,19 +37,13 @@ export async function POST(req: NextRequest) {
       const sessionData = await sessionRes.json();
       sessionId = sessionData.session_id;
     }
-      // Apply a saved profile once when starting or retrying a failed recheck.
-      if ((!existingSessionId || body.profile_pending === true) && body.profile && typeof body.profile === 'object' && !Array.isArray(body.profile)) {
-        const profileRes = await fetch(`${BACKEND}/consult/sessions/${sessionId}/profile`, {
-          method: 'PATCH', headers, body: JSON.stringify(body.profile), signal: AbortSignal.timeout(120000),
-        });
-        if (!profileRes.ok) return NextResponse.json({ error: profileRes.status === 404 ? '상담이 만료됐습니다. 새 상담을 시작해 주세요.' : '프로필 반영에 실패했습니다. 저장한 정보는 유지됩니다. 다시 시도해 주세요.' }, { status: profileRes.status });
-      }
+    const profile = (!existingSessionId || body.profile_pending === true) ? body.profile : undefined;
 
     // 백엔드로 메시지 전송
     const msgRes = await fetch(`${BACKEND}/consult/sessions/${sessionId}/messages`, {
       method: "POST",
       headers,
-      body: JSON.stringify({ message: lastUserMessage.content }),
+      body: JSON.stringify({ message: lastUserMessage.content, profile }),
       signal: AbortSignal.timeout(120000),
     });
 
@@ -70,6 +64,9 @@ export async function POST(req: NextRequest) {
       eligibility: data.eligibility ?? [],
       prep_items: data.prep_items ?? [],
       citations: data.citations ?? [],
+      support_programs: data.support_programs ?? [],
+      support_eligibility: data.support_eligibility ?? [],
+      rag_statuses: data.rag_statuses ?? [],
     });
   } catch (err) {
     console.error("[/api/chat] error:", err);

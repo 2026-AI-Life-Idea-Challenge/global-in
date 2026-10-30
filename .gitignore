@@ -41,6 +41,7 @@ data/processed/usa/employment/west/2026_second_half/logical_page_previews/
 /tralia visa HTML sources*
 
 # Temporary build outputs
+data/runtime/
 tmp/
 'source_url'
 

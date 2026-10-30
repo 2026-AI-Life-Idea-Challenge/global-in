@@ -1,92 +1,22 @@
-"""
-tests/integration/test_eligibility_review.py
-
-EligibilityReviewAgent 통합 테스트 (9개)
-"""
-from __future__ import annotations
-
-import json
-from unittest.mock import patch
-
-import pytest
-
-from app.agent.eligibility_review import EligibilityReviewAgent
-from app.agent.state import initial_state
+"""A's graph adapter reads actual rule definitions and does not ask an LLM."""
+from app.agent import eligibility_review as node
 
 
-def _make_state(programs: list | None = None) -> dict:
-    s = initial_state("ses", "test", [], {})
-    s["intent"] = "visa_inquiry"
-    s["user_profile"] = {"nationality": "korean", "age": 25}
-    s["recommended_programs"] = programs or ["aus_skilled_visa"]
-    return s
+def test_evaluator_result_and_id_survive_stale_source(monkeypatch):
+    target=dict(target_type='PROGRAM',target_id='P')
+    req=dict(requirement_id='r',target=target,verified_at='2026-10-28',source_document_ids=['doc'],
+             description='조건',judgeability='conditional',expression=dict(operator='equals',field='approved',value=True))
+    rules=dict(**target,requirement_ids=['r'],coverage_complete=False,application_availability='UNKNOWN',blockers=[])
+    monkeypatch.setattr(node,'_load_requirements',lambda *args:(rules,[req]))
+    result=node.run(dict(user_query='질문',user_profile={'application_date':'2026-10-31'},candidate_programs=[dict(program_id='P')]))
+    condition=result['eligibility_results'][0]['condition_results'][0]
+    assert condition['status']=='추가 확인 필요'
+    assert condition['requirement_id']=='r'
+    assert condition['source_document_ids']==['doc']
+    assert result['next_node']=='official_information'
 
 
-def _patch_llm(answer: dict):
-    return patch(
-        "app.agent.eligibility_review.extract_json",
-        return_value=json.dumps(answer),
-    )
-
-
-class TestEligibilityReviewAgent:
-    def test_eligible_result(self):
-        answer = {"eligibility_results": [{"program": "aus_skilled_visa", "eligible": True, "reason": "조건 충족"}]}
-        with _patch_llm(answer):
-            result = EligibilityReviewAgent().run(_make_state())
-        assert result["eligibility_results"][0]["eligible"] is True
-
-    def test_ineligible_result(self):
-        answer = {"eligibility_results": [{"program": "aus_skilled_visa", "eligible": False, "reason": "나이 초과"}]}
-        with _patch_llm(answer):
-            result = EligibilityReviewAgent().run(_make_state())
-        assert result["eligibility_results"][0]["eligible"] is False
-
-    def test_multiple_programs(self):
-        progs = ["aus_skilled_visa", "aus_working_holiday"]
-        answer = {"eligibility_results": [
-            {"program": "aus_skilled_visa", "eligible": True},
-            {"program": "aus_working_holiday", "eligible": False},
-        ]}
-        with _patch_llm(answer):
-            result = EligibilityReviewAgent().run(_make_state(progs))
-        assert len(result["eligibility_results"]) == 2
-
-    def test_empty_programs(self):
-        answer = {"eligibility_results": []}
-        with _patch_llm(answer):
-            result = EligibilityReviewAgent().run(_make_state([]))
-        assert result["eligibility_results"] == []
-
-    def test_invalid_json_no_crash(self):
-        with patch("app.agent.eligibility_review.extract_json", return_value="BAD"):
-            result = EligibilityReviewAgent().run(_make_state())
-        assert result is not None
-
-    def test_state_preserved(self):
-        answer = {"eligibility_results": []}
-        with _patch_llm(answer):
-            result = EligibilityReviewAgent().run(_make_state())
-        assert "session_id" in result
-        assert "user_profile" in result
-
-    def test_reason_field_present(self):
-        answer = {"eligibility_results": [{"program": "aus_skilled_visa", "eligible": True, "reason": "ok"}]}
-        with _patch_llm(answer):
-            result = EligibilityReviewAgent().run(_make_state())
-        assert "reason" in result["eligibility_results"][0]
-
-    def test_follow_up_question_set(self):
-        answer = {
-            "eligibility_results": [],
-            "follow_up_question": "현재 학력이 어떻게 되세요?",
-        }
-        with _patch_llm(answer):
-            result = EligibilityReviewAgent().run(_make_state())
-        assert result.get("follow_up_question")
-
-    def test_returns_dict(self):
-        answer = {"eligibility_results": []}
-        with _patch_llm(answer):
-            result = EligibilityReviewAgent().run(_make_state())
-        assert isinstance(result, dict)
+def test_no_registered_rule_stays_unknown(monkeypatch):
+    monkeypatch.setattr(node,'_load_requirements',lambda *args:({},[]))
+    result=node.run(dict(user_query='질문',candidate_support_programs=[dict(support_program_id='S')]))
+    assert result['eligibility_results'][0]['status']=='추가 확인 필요'

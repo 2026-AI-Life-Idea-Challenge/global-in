@@ -35,6 +35,8 @@ export async function runBrowserChecks(base, fixture) {
     await page.reload(); await page.locator('input[type="date"][value="1998-05-15"]').waitFor(); checks++;
     await page.getByRole('button', { name: /이 정보로 상담하기/ }).click();
     await question('프로그램 추천해줘');
+    await page.getByText('검증용 지원제도', { exact: true }).waitFor();
+    await page.getByText(/저장된 모집 상태: CLOSED/).waitFor();
     await page.getByLabel('비교하기').first().check();
     await page.getByLabel('비교하기').nth(1).check();
     await page.waitForFunction(() => JSON.parse(sessionStorage.getItem('global-in-compare') || '[]').length === 2);

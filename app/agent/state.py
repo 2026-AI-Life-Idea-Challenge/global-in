@@ -152,6 +152,13 @@ class AgentState(TypedDict):
 
     # 현재 처리 중인 에이전트 이름 (디버그·로깅용)
     current_agent: str
+    profile_updated: bool
+    catalog_programs: list[dict[str, Any]]
+    catalog_supports: list[dict[str, Any]]
+    requested_program_ids: list[str]
+    requested_support_ids: list[str]
+    information_scope: str
+    rag_results: list[dict[str, Any]]
 
 
 def initial_state(

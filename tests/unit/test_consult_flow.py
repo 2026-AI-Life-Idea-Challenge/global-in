@@ -1,125 +1,200 @@
-"""C 상담 흐름: 추가 질문 → 결과·출처·체크리스트 → 정보 변경 후 재검토. (LLM 대신 가짜 추출기, A·B는 stubs)"""
-
-import re
+"""Current C graph + real B validation + A evaluator, with fake I/O only."""
+from copy import deepcopy
 from datetime import date
+import json
 
 import pytest
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
 
-from app.agent.graph import build_graph
+from app.agent import user_understanding, eligibility_review, preparation_planning
+from app.agent.graph import _make_graph
 from app.api.consult import create_router
-from app.models.consult import ProfileDelta
-from app.models.user_profile import UserProfile
+from app.models.rag import RagDraft, RagGeneration
+from app.models.multi_program_rag import ProgramsDraft
+from app.models.support_rag import SupportInfo
+from app.services import consultation_b, program_rag, multi_program_rag, support_rag
 
-_COUNTRIES = {"캐나다": "canada", "호주": "australia", "일본": "japan", "미국": "usa", "독일": "germany"}
-
-
-def fake_extractor(message: str, profile: UserProfile) -> ProfileDelta:
-    delta = ProfileDelta()
-    for word, country in _COUNTRIES.items():
-        if word in message:
-            delta.target_country = country
-    if "워홀" in message:
-        delta.target_visa_type = "working_holiday"
-    if m := re.search(r"\d{4}-\d{2}-\d{2}", message):
-        delta.date_of_birth = m.group(0)
-    return delta
+PROGRAMS = [dict(program_id='CA:test', name='캐나다 테스트', country='canada', category='working_holiday'),
+            dict(program_id='AU:test', name='호주 테스트', country='australia', category='working_holiday')]
+SUPPORTS = [dict(support_program_id='S:test', name='테스트 지원', availability='CLOSED',
+                 destination_countries=['CA'], source_verified_at='2026-10-28',
+                 program_links=[dict(program_id='CA:test')])]
 
 
-def dob_for_age(age: int) -> str:
-    """오늘 기준 만 age살이 되는 생년월일."""
-    today = date.today()
-    try:
-        return today.replace(year=today.year - age).isoformat()
-    except ValueError:  # 2월 29일
-        return today.replace(year=today.year - age, day=28).isoformat()
+def row(pid='CA:test'):
+    return dict(program_id=pid, document_id='doc:'+pid, revision_id='v1', chunk_id='c:'+pid, ordinal=0,
+                title='테스트 공식 자료', body='A valid passport is required.', knowledge_kind='policy',
+                source_urls=['https://example.org/passport'], source_references=[],
+                document_active=True, chunk_active=True, document_embedding_approved=False,
+                chunk_embedding_approved=False, answer_approved=False, content_review_status='checked_scope_limited',
+                document_release_id='v1', chunk_release_id='v1',
+                vector_rank=None, vector_similarity=None, keyword_rank=1, keyword_score=1.0, rrf_score=1/61)
 
 
 @pytest.fixture
-def client():
-    app = FastAPI()
-    app.include_router(create_router(build_graph(fake_extractor)))
-    return TestClient(app)
+def setup(monkeypatch):
+    calls = []
+    def extract(prompt, **kwargs):
+        data = json.loads(prompt)
+        question = data['question']
+        calls.append(('interpret', question))
+        updates = {}
+        if '1998-05-15' in question: updates['date_of_birth'] = '1998-05-15'
+        if '1800-01-01' in question: updates['date_of_birth'] = '1800-01-01'
+        if '나이만' in question: updates['date_of_birth'] = '1998-01-01'
+        if '한국' in question: updates['nationalities'] = ['KR']
+        return json.dumps(dict(intent='eligibility_review' if '자격' in question else 'official_information',
+                               profile_updates=updates, program_ids=[] if '지원' in question or '미정' in question else ['CA:test'],
+                               support_program_ids=['S:test'] if '지원' in question else [],
+                               information_scope='support' if '지원' in question else 'program'))
+    monkeypatch.setattr(user_understanding, 'load_catalog', lambda: (deepcopy(PROGRAMS), deepcopy(SUPPORTS)))
+    monkeypatch.setattr(user_understanding.llm, 'extract_json', extract)
+    monkeypatch.setattr(program_rag, 'search_program_evidence_hybrid', lambda pid, *_args, **_kwargs: [row(pid)])
+    def generation(pid, question, evidence, **kwargs):
+        calls.append(('generate', pid))
+        return RagGeneration(RagDraft.model_validate(dict(items=[dict(question_part='여권 확인', answer='유효한 여권이 필요합니다.', citation_ids=['p1.s1'])])), 'fake', 'fake')
+    monkeypatch.setattr(program_rag, 'generate_rag_draft', generation)
+    monkeypatch.setattr(multi_program_rag, '_load_candidates', lambda *_: deepcopy(PROGRAMS))
+    def multi_rows(*_args, **_kwargs):
+        value = row(); value.pop('program_id')
+        value.update(program_ids=['CA:test'], programs=[PROGRAMS[0]])
+        return [value]
+    monkeypatch.setattr(multi_program_rag, 'search_programs_evidence_hybrid', multi_rows)
+    monkeypatch.setattr(multi_program_rag, 'generate_programs_draft', lambda *a, **k: RagGeneration(
+        ProgramsDraft.model_validate(dict(items=[dict(program_id='CA:test', question_part='여권', answer='여권 확인이 필요합니다.', citation_ids=['p1.s1'])])), 'fake', 'fake'))
+    def support_rows(_sid):
+        value=row(); value.pop('program_id'); value['support_program_id']='S:test'; return [value]
+    monkeypatch.setattr(support_rag, '_load_all_evidence', support_rows)
+    monkeypatch.setattr(support_rag, '_load_support_info', lambda sid: SupportInfo(
+        support_program_id=sid, name='테스트 지원', availability='CLOSED', source_verified_at=date(2026,10,28), profile={}, profile_release_id='v1'))
+    monkeypatch.setattr(support_rag, 'generate_support_draft', generation)
+    def requirements(kind, target):
+        rid='r:'+target
+        definition=dict(requirement_id=rid, target=dict(target_type=kind.upper(), target_id=target),
+                        source_document_ids=['doc:'+target], description='국적 조건 확인',
+                        judgeability='conditional', expression=dict(operator='contains', field='nationalities', value='KR'))
+        return dict(target_type=kind.upper(), target_id=target, requirement_ids=[rid], coverage_complete=False,
+                    application_availability='UNKNOWN', blockers=['partial coverage']), [definition]
+    monkeypatch.setattr(eligibility_review, '_load_requirements', requirements)
+    app=FastAPI(); app.include_router(create_router(_make_graph().compile()))
+    client=TestClient(app)
+    sid=client.post('/consult/sessions').json()['session_id']
+    return client, sid, calls
 
 
-@pytest.fixture
-def session_id(client):
-    return client.post("/consult/sessions").json()["session_id"]
+def say(setup, message, profile=None):
+    client,sid,_=setup
+    body=dict(message=message)
+    if profile is not None: body['profile']=profile
+    response=client.post(f'/consult/sessions/{sid}/messages', json=body)
+    assert response.status_code==200, response.text
+    return response.json()
 
 
-def say(client, session_id, message):
-    res = client.post(f"/consult/sessions/{session_id}/messages", json={"message": message})
-    assert res.status_code == 200, res.text
-    return res.json()
+def test_first_profile_and_message_use_one_graph_with_real_b_citations(setup):
+    data=say(setup, '공식 안내', dict(nationalities=['KR'], date_of_birth='1998-05-15'))
+    assert sum(kind=='interpret' for kind,_ in setup[2])==1
+    assert sum(kind=='generate' for kind,_ in setup[2])==1
+    assert data['citations'][0]['source_url']=='https://example.org/passport'
+    assert data['programs'][0]['citations']
+    assert any(item['citations'] for item in data['prep_items'])
+    assert data['rag_statuses'][0]['development_only'] is True
+    assert data['eligibility'][0]['overall']=='추가 확인 필요'
+    assert '유효한 여권이 필요합니다.' in data['reply']
 
 
-def test_full_consult_flow(client, session_id):
-    # 1. 기본 정보가 부족하면 추가 질문
-    first = say(client, session_id, "캐나다 워홀 가고 싶어요")
-    assert first["stage"] == "asking"
-    assert [q["field"] for q in first["follow_up_questions"]] == ["date_of_birth"]
-
-    # 2. 답하면 검토 결과 + 출처 있는 준비 항목
-    second = say(client, session_id, f"생년월일은 {dob_for_age(28)}이에요")
-    assert second["stage"] == "result"
-    assert second["profile"]["date_of_birth"] == dob_for_age(28)
-    [result] = second["eligibility"]
-    assert result["program_id"] == "CA:iec_working_holiday"
-    assert result["overall"] == "추가 확인 필요"
-    assert result["unknown_requirement_ids"] == ["REVIEW:POLICY:CA_IEC_WH_POL_01"]
-    statuses = {item["status"] for item in second["prep_items"]}
-    assert statuses == {"check_needed", "todo"}
-    assert all(item["citations"] for item in second["prep_items"])
-
-    # 3. 정보가 바뀌면 다시 검토
-    third = say(client, session_id, f"사실 {dob_for_age(40)}생이에요")
-    assert third["eligibility"][0]["overall"] == "조건 미충족"
-    assert "date_of_birth" in third["reply"]
-    assert any(item["status"] == "blocked" for item in third["prep_items"])
+def test_general_information_is_not_blocked_by_missing_personal_info(setup):
+    data=say(setup, '일반 정보')
+    assert data['stage']=='result'
+    assert data['profile']['nationalities'] is None
+    assert data['eligibility'][0]['unknown_requirement_ids']
 
 
-def test_profile_patch_rechecks(client, session_id):
-    say(client, session_id, f"캐나다 워홀 가고 싶어요, {dob_for_age(40)}생이에요")
-    res = client.patch(f"/consult/sessions/{session_id}/profile", json={"date_of_birth": dob_for_age(30)})
-    assert res.status_code == 200
-    assert res.json()["eligibility"][0]["overall"] == "추가 확인 필요"
+def test_personal_check_asks_for_exact_missing_info(setup):
+    data=say(setup, '자격 확인')
+    assert data['stage']=='asking'
+    assert '생년월일' in data['reply']
+    assert not any(kind=='generate' for kind,_ in setup[2])
 
 
-def test_invalid_input_rejected(client, session_id):
-    assert client.patch(f"/consult/sessions/{session_id}/profile", json={"date_of_birth": "1800-01-01"}).status_code == 422
-    assert client.patch(f"/consult/sessions/{session_id}/profile", json={"date_of_birth": "not-a-date"}).status_code == 422
-    assert client.patch(f"/consult/sessions/{session_id}/profile", json={"age": 30}).status_code == 422
-    assert client.patch(f"/consult/sessions/{session_id}/profile", json={"unknown": 1}).status_code == 422
-    assert client.post("/consult/sessions/nope/messages", json={"message": "hi"}).status_code == 404
+@pytest.mark.parametrize('message', ['나이만 28세 자격', '1800-01-01 자격'])
+def test_age_only_or_invalid_birth_date_is_not_invented(setup, message):
+    data=say(setup, message)
+    assert data['profile']['date_of_birth'] is None
+    assert data['stage']=='asking'
 
 
-def test_extracted_invalid_value_is_dropped(client, session_id):
-    body = say(client, session_id, "캐나다 워홀, 1800-01-01생이에요")
-    assert body["profile"]["date_of_birth"] is None
-    assert body["stage"] == "asking"
+def test_explicit_full_birth_date_and_nationality_are_retained(setup):
+    data=say(setup, '한국 국적, 1998-05-15 자격')
+    assert data['profile']['date_of_birth']=='1998-05-15'
+    assert data['profile']['nationalities']==['KR']
+    assert data['stage']=='result'
 
 
-def test_main_app_requires_internal_api_key(monkeypatch):
+def test_patch_rechecks_without_a_second_interpreter_call(setup):
+    say(setup, '공식 안내', dict(nationalities=['KR']))
+    before=sum(kind=='interpret' for kind,_ in setup[2])
+    response=setup[0].patch(f'/consult/sessions/{setup[1]}/profile', json=dict(target_country='canada', target_visa_type='student'))
+    assert response.status_code==200, response.text
+    assert sum(kind=='interpret' for kind,_ in setup[2])==before
+    assert response.json()['programs']==[]  # No stale working-holiday candidate.
+
+
+def test_identity_only_patch_preserves_explicit_program_selection(setup):
+    say(setup, '공식 안내')
+    response=setup[0].patch(f'/consult/sessions/{setup[1]}/profile', json=dict(date_of_birth='1998-05-15'))
+    assert response.status_code==200
+    assert [p['program_id'] for p in response.json()['programs']]==['CA:test']
+
+
+def test_support_result_is_separate_and_closed_is_not_open(setup):
+    data=say(setup, '지원 제도 알려줘')
+    assert data['programs']==[]
+    assert data['support_programs'][0]['availability']=='CLOSED'
+    assert data['support_eligibility'][0]['support_program_id']=='S:test'
+    assert data['support_programs'][0]['citations']
+    assert 'CLOSED' in data['reply']
+    assert data['prep_items'][0]['program_id']=='S:test'
+
+
+def test_b_search_failure_is_not_disguised_as_evidence_shortage(setup, monkeypatch):
+    monkeypatch.setattr(program_rag, 'search_program_evidence_hybrid', lambda *a, **k: (_ for _ in ()).throw(RuntimeError('offline')))
+    response=setup[0].post(f'/consult/sessions/{setup[1]}/messages', json=dict(message='공식 안내'))
+    assert response.status_code==503
+
+
+def test_no_evidence_remains_explicit_and_not_a_generated_answer(setup, monkeypatch):
+    monkeypatch.setattr(program_rag, 'search_program_evidence_hybrid', lambda *a, **k: [])
+    data=say(setup, '공식 안내')
+    assert data['rag_statuses'][0]['status']=='insufficient_evidence'
+    assert data['citations']==[]
+    assert not any(kind=='generate' for kind,_ in setup[2])
+
+
+def test_multi_program_search_is_connected_without_country_assumption(setup):
+    data=say(setup, '국가 미정 프로그램 알려줘')
+    assert {p['program_id'] for p in data['programs']}=={'CA:test','AU:test'}
+    assert data['profile']['target_country'] is None
+    assert data['citations']
+
+
+def test_preparation_does_not_overwrite_b_answer_or_invent_deadlines():
+    state=dict(final_answer='B의 출처 기반 원문 답변', rag_results=[], eligibility_results=[])
+    result=preparation_planning.run(state)
+    assert result['final_answer']==state['final_answer']
+    assert result['roadmap']==[]
+
+
+def test_main_app_requires_internal_key(monkeypatch):
     from app.api import main
+    monkeypatch.setattr(main,'INTERNAL_API_KEY','synthetic-test-key')
+    client=TestClient(main.app)
+    assert client.post('/consult/sessions').status_code==401
+    assert client.post('/consult/sessions',headers={'x-internal-api-key':'synthetic-test-key'}).status_code==200
 
-    monkeypatch.setattr(main, "INTERNAL_API_KEY", "test-key")
-    client = TestClient(main.app)  # lifespan(DB 연결)은 실행하지 않는다
-    assert client.post("/consult/sessions").status_code == 401
-    assert client.post("/consult/sessions", headers={"x-internal-api-key": "test-key"}).status_code == 200
 
-
-def test_eligibility_receives_evaluator_dict(client, session_id, monkeypatch):
-    from app.agent import stubs
-
-    seen = {}
-    original = stubs.check_eligibility
-
-    def spy(profile, program_ids, as_of):
-        seen["profile"] = profile
-        return original(profile, program_ids, as_of)
-
-    monkeypatch.setattr(stubs, "check_eligibility", spy)
-    say(client, session_id, f"캐나다 워홀, {dob_for_age(28)}생이에요")
-    # A에는 to_evaluator_dict() 형식으로 간다: 검색용 필드는 빠지고 생년월일은 그대로
-    assert seen["profile"] == {"date_of_birth": dob_for_age(28)}
+def test_bad_profile_is_rejected_before_graph(setup):
+    response=setup[0].post(f'/consult/sessions/{setup[1]}/messages',json=dict(message='질문',profile={'age':28}))
+    assert response.status_code==422
+    assert setup[2]==[]
