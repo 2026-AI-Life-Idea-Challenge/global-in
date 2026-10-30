@@ -64,6 +64,11 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+# D uses the session-based adapter; the existing /chat endpoint remains available.
+from app.api.consult import create_router
+
+app.include_router(create_router(), dependencies=[Depends(require_internal_api_key)])
+
 
 @app.get("/")
 def root():

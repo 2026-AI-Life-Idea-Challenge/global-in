@@ -23,7 +23,7 @@ function FlagSvg({ country, size = 22 }: { country: string; size?: number }) {
   );
 }
 
-export const PROGRAMS = [
+const PROGRAMS = [
   // ─── 일본 프로그램 ───
   { id: 1, type: "프로그램", country: "일본", tags: ["일본", "취업"], name: "기술·인문지식·국제업무", desc: "전문 지식과 기술을 활용해 일본에서 일하는 취업 경로.", sub: "담당 직무와 학력·경력 등 요건 확인", officialUrl: "https://www.moj.go.jp/isa/applications/status/gijinkoku.html" },
   { id: 8, type: "프로그램", country: "일본", tags: ["일본", "유학·교환학생"], name: "유학 비자 (留学)", desc: "일본의 대학, 전문학교 등 교육기관에서 학업을 위한 체류 경로.", sub: "입학허가서·재정 증빙 등 요건 확인", officialUrl: "https://www.moj.go.jp/isa/applications/procedures/index.html" },

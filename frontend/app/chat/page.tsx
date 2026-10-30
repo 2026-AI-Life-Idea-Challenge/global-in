@@ -4,11 +4,14 @@ import { useState, useRef, useEffect, useLayoutEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
+import ConsultationDetails, { type ConsultationDetailsData } from "@/components/ConsultationDetails";
+import { CHAT_KEY, RESULT_KEY, PROFILE_KEY, COMPARE_KEY, readSaved, saveTab } from '@/lib/consultation';
 
 interface Message {
   role: "user" | "assistant";
   content: string;
   programs?: Program[];
+  details?: ConsultationDetailsData;
 }
 
 interface Program {
@@ -143,10 +146,28 @@ function ChatPageInner() {
   const autoSentRef = useRef(false);
   const messagesContainerRef = useRef<HTMLDivElement>(null);
   const didMountRef = useRef(false);
+  const requestVersion = useRef(0);
+  const pendingRequest = useRef(false);
+  const [restored, setRestored] = useState(false);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      const saved = readSaved<{ session_id?: string; messages?: Message[]; compareIds?: (string | number)[] }>(CHAT_KEY, {});
+      if (saved.session_id && /^[a-f0-9]{32}$/.test(saved.session_id) && Array.isArray(saved.messages)) {
+        setSessionId(saved.session_id); setMessages(saved.messages); setCompareIds(saved.compareIds || []);
+      }
+      setRestored(true);
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (restored) saveTab(CHAT_KEY, { session_id: sessionId, messages, compareIds });
+  }, [restored, sessionId, messages, compareIds]);
 
   // 상세 페이지에서 'AI와 상담하기' 클릭 시 자동으로 해당 프로그램 상담 시작
   useEffect(() => {
-    if (autoSentRef.current) return;
+    if (!restored || autoSentRef.current) return;
     const program = searchParams.get('program');
     if (!program) return;
     autoSentRef.current = true;
@@ -155,7 +176,7 @@ function ChatPageInner() {
     }, 400);
     return () => clearTimeout(timer);
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [restored]);
 
 
   useLayoutEffect(() => {
@@ -189,9 +210,16 @@ function ChatPageInner() {
     if (m.programs) m.programs.forEach(p => { if (!allPrograms.find(x => x.id === p.id)) allPrograms.push(p); });
   });
   const comparePrograms = allPrograms.filter(p => compareIds.includes(p.id));
+  useEffect(() => {
+    if (restored) saveTab(COMPARE_KEY, allPrograms.filter(p => compareIds.includes(p.id)));
+  // Programme data is refreshed together with messages.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [restored, messages, compareIds]);
 
   async function send(text: string) {
-    if (!text.trim() || loading) return;
+    if (!text.trim() || pendingRequest.current || !restored) return;
+    pendingRequest.current = true;
+    const version = ++requestVersion.current;
     const userMsg: Message = { role: "user", content: text };
     const updatedMessages = [...messages, userMsg];
     setMessages(updatedMessages);
@@ -202,30 +230,44 @@ function ChatPageInner() {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: updatedMessages, session_id: sessionId }),
+        body: JSON.stringify({ messages: updatedMessages, session_id: sessionId, profile: readSaved<{ profile?: unknown }>(PROFILE_KEY, {}).profile }),
       });
-      if (!res.ok) throw new Error(`요청 실패: ${res.status}`);
       const data = await res.json();
+      if (version !== requestVersion.current) return;
+      if (res.status === 404) {
+        try { sessionStorage.removeItem(RESULT_KEY); } catch { /* Storage may be disabled. */ }
+      }
+      if (!res.ok) throw new Error(data.error || data.content || `요청 실패: ${res.status}`);
       if (data.session_id) setSessionId(data.session_id);
-      const programs: Program[] = data.programs?.slice(0, 3) ?? [];
+      const programs: Program[] = (data.programs ?? []).map((program: { program_id: string; name: string; country: string; visa_type: string; summary: string }) => ({
+        id: program.program_id, name: program.name, country: program.country, type: program.visa_type, desc: program.summary,
+      }));
+      // Keep profile and checklist within this browser tab, not persistent browser storage.
+      try { sessionStorage.setItem("global-in-consult-result", JSON.stringify(data)); } catch { /* Storage may be disabled. */ }
       setMessages(prev => [...prev, {
         role: "assistant",
         content: data.content || data.message || "죄송해요, 오류가 발생했어요.",
         programs: programs.length > 0 ? programs : undefined,
+        details: data,
       }]);
-    } catch {
-      setMessages(prev => [...prev, { role: "assistant", content: "연결에 문제가 생겼어요. 잠시 후 다시 시도해 주세요." }]);
+    } catch (error) {
+      if (version !== requestVersion.current) return;
+      setMessages(prev => [...prev, { role: "assistant", content: error instanceof Error ? error.message : "연결에 문제가 생겼어요. 잠시 후 다시 시도해 주세요." }]);
     } finally {
-      setLoading(false);
+      if (version === requestVersion.current) { setLoading(false); pendingRequest.current = false; }
     }
   }
 
   function startNewChat() {
+    requestVersion.current += 1;
+    pendingRequest.current = false;
     setMessages(INITIAL_MESSAGES);
     setSessionId(null);
     setInput("");
     setLoading(false);
     setCompareIds([]);
+    try { sessionStorage.removeItem("global-in-consult-result"); } catch { /* Storage may be disabled. */ }
+    saveTab(COMPARE_KEY, []);
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
@@ -250,9 +292,9 @@ function ChatPageInner() {
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--mu)" strokeWidth="1.7">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
               </svg>
-              내 프로필 반영 중
+              대화에서 확인한 정보를 바탕으로 안내
             </div>
-            <div style={{ fontSize: "0.78rem", color: "#bbb" }}>예시 프로필로 시작한 화면이에요.</div>
+            <div style={{ fontSize: "0.78rem", color: "#bbb" }}>조건이 달라지면 대화에서 수정해 주세요.</div>
           </div>
 
           <hr style={{ border: "none", borderTop: "1px solid var(--ln)", margin: "20px 32px", flexShrink: 0 }} />
@@ -275,6 +317,7 @@ function ChatPageInner() {
                       <div style={{ background: "#fff", border: "1px solid var(--ln)", borderRadius: "4px 16px 16px 16px", padding: "16px 20px", fontSize: "0.92rem", lineHeight: 1.7, maxWidth: 520, overflowWrap: "anywhere" }}>
                         {renderContent(msg.content)}
                       </div>
+                      {msg.details && <ConsultationDetails data={msg.details} />}
                       {msg.programs && msg.programs.length > 0 && (
                         <div style={{ marginTop: 12 }}>
                           <div style={{ fontSize: "0.76rem", color: "var(--mu)", marginBottom: 8, fontWeight: 600, letterSpacing: "0.04em" }}>
@@ -330,7 +373,7 @@ function ChatPageInner() {
               <div style={{ background: "#fff", border: "1px solid var(--ln)", borderRadius: 14, overflow: "hidden", marginTop: 8 }}>
                 <div style={{ padding: "14px 20px", borderBottom: "1px solid var(--ln)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <div style={{ fontWeight: 700, fontSize: "0.92rem" }}>
-                    비교 <span style={{ fontSize: "0.78rem", fontWeight: 400, color: "var(--mu)", marginLeft: 8 }}>{comparePrograms.length}개 선택됨</span>
+                    비교 <span style={{ fontSize: "0.78rem", fontWeight: 400, color: "var(--mu)", marginLeft: 8 }}>{comparePrograms.length}개 선택됨</span> <a href="/compare">비교 화면 열기</a>
                   </div>
                   <button onClick={() => setCompareIds([])} style={{ background: "none", border: "none", fontSize: "0.78rem", color: "var(--mu)", cursor: "pointer" }}>전체 해제</button>
                 </div>
