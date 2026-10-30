@@ -1,7 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import Header from "@/components/Header";
 
 const COUNTRY_CODE: Record<string, string> = {
   일본: "jp",
@@ -80,10 +79,35 @@ export default function Home() {
         }
       `}</style>
 
-      <Header showNav />
+      {/* 로고 위치*/}
+      <div style={{
+        position: "absolute", top: 0, left: 0,
+        width: 210, padding: "20px 16px 14px",
+        display: "flex", justifyContent: "center",
+        zIndex: 10,
+      }}>
+        <img
+          src="/logo/global-in-logo.svg"
+          alt="Global-In"
+          style={{ width: "90%", height: "auto", cursor: "pointer" }}
+          onClick={() => router.push("/")}
+        />
+      </div>
+
+      {/* 네비 - 우측 상단 고정 */}
+      <div style={{
+        position: "absolute", top: 0, right: 0,
+        padding: "22px 28px",
+        display: "flex", gap: 28,
+        color: "#3b3f4d", fontSize: "0.9rem",
+        zIndex: 10,
+      }}>
+        <a style={{ cursor: "pointer" }}>서비스 소개</a>
+        <a style={{ cursor: "pointer" }}>이용 방법</a>
+      </div>
 
       {/* Hero */}
-      <section style={{ position: "relative", height: 900, overflow: "hidden", textAlign: "center",}}>
+      <section style={{ position: "relative", height: 900, overflow: "hidden", textAlign: "center" }}>
         {/* 동심원 */}
         {[580, 900, 1320].map((w) => (
           <div key={w} style={{
@@ -120,6 +144,7 @@ export default function Home() {
             {country}
           </div>
         ))}
+
         {/* 헤드라인 */}
         <div style={{ position: "absolute", left: 0, right: 0, top: 170 }}>
           <div style={{ fontSize: "0.72rem", letterSpacing: "0.16em", color: "var(--mu)", fontWeight: 600, marginBottom: 0, animation: "fadeUp 0.6s ease both" }}>
@@ -135,7 +160,6 @@ export default function Home() {
             필요한 서류와 준비할 일을 함께 알아보세요.
           </p>
 
-          {/* ✅ 강조된 버튼 */}
           <button
             onClick={() => router.push("/chat")}
             style={{
