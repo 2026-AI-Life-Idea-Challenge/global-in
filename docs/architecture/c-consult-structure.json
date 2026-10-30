@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "C 파트 상담 서버 구조",
+    "locale": "ko",
+    "output": "docs/architecture/c-consult-structure.html",
+    "quality_profile": "showcase"
+  },
+  "components": [
+    {
+      "id": "llm",
+      "type": "external",
+      "label": "LLM",
+      "sublabel": "CONSULT_MODEL",
+      "pos": [
+        540,
+        40
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "dUi",
+      "type": "frontend",
+      "label": "D · 화면",
+      "sublabel": "Streamlit 화면",
+      "pos": [
+        40,
+        200
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "consult.py",
+      "sublabel": "FastAPI 상담 API",
+      "pos": [
+        290,
+        200
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "understand",
+      "type": "backend",
+      "label": "understand",
+      "sublabel": "사용자 이해 에이전트",
+      "pos": [
+        540,
+        200
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "recommend",
+      "type": "backend",
+      "label": "recommend",
+      "sublabel": "프로그램 후보 찾기",
+      "pos": [
+        790,
+        200
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "bPrograms",
+      "type": "external",
+      "label": "B · 프로그램 탐색",
+      "sublabel": "search_programs",
+      "tag": "지금은 stubs",
+      "pos": [
+        1040,
+        200
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "checkpointer",
+      "type": "database",
+      "label": "InMemorySaver",
+      "sublabel": "세션별 프로필·상태",
+      "pos": [
+        290,
+        360
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "ask",
+      "type": "backend",
+      "label": "ask",
+      "sublabel": "추가 질문 후 종료",
+      "pos": [
+        540,
+        360
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "check",
+      "type": "backend",
+      "label": "eligibility",
+      "sublabel": "A 검토 결과 받기",
+      "pos": [
+        790,
+        360
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "aEligibility",
+      "type": "external",
+      "label": "A · 자격 검토",
+      "sublabel": "check_eligibility",
+      "tag": "지금은 stubs",
+      "pos": [
+        1040,
+        360
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "prepGuide",
+      "type": "backend",
+      "label": "prep_guide",
+      "sublabel": "준비 안내 에이전트",
+      "pos": [
+        790,
+        520
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "bEvidence",
+      "type": "external",
+      "label": "B · 근거 검색",
+      "sublabel": "search_evidence",
+      "tag": "지금은 stubs",
+      "pos": [
+        1040,
+        520
+      ],
+      "size": [
+        150,
+        64
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "C 파트 · app/",
+      "wraps": [
+        "api",
+        "checkpointer",
+        "understand",
+        "ask",
+        "recommend",
+        "check",
+        "prepGuide"
+      ],
+      "pad": 34
+    },
+    {
+      "kind": "region",
+      "label": "app/agent/graph.py · LangGraph",
+      "wraps": [
+        "understand",
+        "ask",
+        "recommend",
+        "check",
+        "prepGuide"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "uiToApi",
+      "from": "dUi",
+      "to": "api",
+      "label": "POST·PATCH",
+      "variant": "emphasis"
+    },
+    {
+      "id": "apiToGraph",
+      "from": "api",
+      "to": "understand",
+      "label": "invoke",
+      "variant": "emphasis"
+    },
+    {
+      "id": "apiToState",
+      "from": "api",
+      "to": "checkpointer",
+      "label": "thread_id"
+    },
+    {
+      "id": "understandToLlm",
+      "from": "understand",
+      "to": "llm",
+      "label": "정보 추출"
+    },
+    {
+      "id": "understandToAsk",
+      "from": "understand",
+      "to": "ask",
+      "label": "정보 부족"
+    },
+    {
+      "id": "understandToRecommend",
+      "from": "understand",
+      "to": "recommend",
+      "label": "정보 충분",
+      "variant": "emphasis"
+    },
+    {
+      "id": "recommendToB",
+      "from": "recommend",
+      "to": "bPrograms",
+      "label": "후보 검색"
+    },
+    {
+      "id": "recommendToCheck",
+      "from": "recommend",
+      "to": "check",
+      "label": "후보 있음",
+      "variant": "emphasis"
+    },
+    {
+      "id": "checkToA",
+      "from": "check",
+      "to": "aEligibility",
+      "label": "자격 검토"
+    },
+    {
+      "id": "checkToPrep",
+      "from": "check",
+      "to": "prepGuide",
+      "label": "검토 결과",
+      "variant": "emphasis"
+    },
+    {
+      "id": "prepToEvidence",
+      "from": "prepGuide",
+      "to": "bEvidence",
+      "label": "근거 검색"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "파일 구조",
+      "items": [
+        "app/models/consult.py — A·B·D와 주고받는 형식",
+        "app/agent/user_understanding.py — 사용자 이해 에이전트",
+        "app/agent/preparation_planning.py — 준비 안내 에이전트",
+        "app/agent/graph.py · state.py — 흐름과 공유 State",
+        "app/agent/stubs.py — A·B 연결 전 임시 대역",
+        "app/api/consult.py — 상담 API (내부 API 키 필요)",
+        "tests/unit/test_consult_flow.py — 시나리오 5개"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "한 턴의 흐름",
+      "items": [
+        "나라·목적·나이 중 빠진 게 있으면 ask에서 질문하고 끝",
+        "다 있으면 B 후보 → A 검토 → 준비 안내 순서로 진행",
+        "정보가 바뀌면 같은 흐름을 다시 타서 재검토",
+        "ask나 prep_guide 결과를 consult.py가 ChatResponse로 반환"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "다음 단계",
+      "items": [
+        "stubs.py 대신 A·B 실제 함수 연결",
+        "API 키를 넣고 실제 LLM 추출 확인",
+        "A와 프로필 키 이름 맞추기"
+      ]
+    }
+  ]
+}

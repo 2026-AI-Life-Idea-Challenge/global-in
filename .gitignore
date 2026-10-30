@@ -57,3 +57,4 @@ data/processed/knowledge/*/releases/
 
 # 만약 dump라는 이름의 폴더 통째로 무시하고 싶다면
 dump/
+logs/
