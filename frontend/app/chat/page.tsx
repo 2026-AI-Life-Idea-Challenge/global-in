@@ -35,6 +35,7 @@ interface ChatSession {
   id: string;
   title: string;
   messages: Message[];
+  pinned?: boolean;
 }
 
 const STORAGE_KEY = "global-in-chats";
@@ -119,6 +120,7 @@ function renderContent(text: string) {
   });
 }
 
+// AI 프로필 이미지
 function AiAvatar() {
   return (
     <div
@@ -147,6 +149,7 @@ function AiAvatar() {
   );
 }
 
+// 프로그램 카드
 function ProgramCard({
   program,
   isCompared,
@@ -572,7 +575,67 @@ function ChatPageInner() {
   );
 
   // --------------------------------------------------
-  // 10. 새 채팅 시작
+  // 10. 채팅 이름 변경
+  // --------------------------------------------------
+  function renameChat(id: string, title: string) {
+    setSessions((prev) =>
+      prev.map((chat) =>
+        chat.id === id
+          ? { ...chat, title }
+          : chat
+      )
+    );
+  }
+
+  // --------------------------------------------------
+  // 11. 채팅 상단 고정 / 고정 해제
+  // --------------------------------------------------
+  function togglePinChat(id: string) {
+    setSessions((prev) =>
+      prev.map((chat) =>
+        chat.id === id
+          ? { ...chat, pinned: !chat.pinned }
+          : chat
+      )
+    );
+  }
+
+  // --------------------------------------------------
+  // 12. 채팅 삭제
+  // --------------------------------------------------
+  function deleteChat(id: string) {
+    const remainingSessions = sessions.filter(
+      (chat) => chat.id !== id
+    );
+
+    setSessions(remainingSessions);
+
+    // 현재 보고 있는 채팅을 삭제한 경우
+    if (currentChatId === id) {
+      if (remainingSessions.length > 0) {
+        // 고정된 채팅이 있으면 고정 채팅을 우선 선택
+        const sortedRemaining = [...remainingSessions].sort(
+          (a, b) => Number(!!b.pinned) - Number(!!a.pinned)
+        );
+
+        const nextChat = sortedRemaining[0];
+
+        setCurrentChatId(nextChat.id);
+        setMessages(nextChat.messages ?? INITIAL_MESSAGES);
+      } else {
+        setCurrentChatId(null);
+        setMessages(INITIAL_MESSAGES);
+      }
+
+      setSessionId(null);
+      setInput("");
+      setLoading(false);
+      setCompareIds([]);
+    }
+  }
+
+  // --------------------------------------------------
+  // 13. 새 채팅 시작
   // --------------------------------------------------
   function startNewChat() {
     setMessages(INITIAL_MESSAGES);
@@ -591,7 +654,7 @@ function ChatPageInner() {
   }
 
   // --------------------------------------------------
-  // 11. 기존 채팅 선택
+  // 14. 기존 채팅 선택
   // --------------------------------------------------
   function selectChat(id: string) {
     const selected = sessions.find((chat) => chat.id === id);
@@ -614,7 +677,7 @@ function ChatPageInner() {
   }
 
   // --------------------------------------------------
-  // 12. 메시지 전송
+  // 15. 메시지 전송
   // --------------------------------------------------
   async function send(text: string) {
     if (!isHydrated || !text.trim() || loading) return;
@@ -641,6 +704,7 @@ function ChatPageInner() {
             ? trimmedText.slice(0, 25) + "..."
             : trimmedText,
         messages: updatedMessages,
+        pinned: false,
       };
 
       setSessions((prev) => [newChat, ...prev]);
@@ -764,6 +828,9 @@ function ChatPageInner() {
           currentSessionId={currentChatId ?? ""}
           onNewChat={startNewChat}
           onSelectSession={selectChat}
+          onRenameSession={renameChat}
+          onDeleteSession={deleteChat}
+          onTogglePinSession={togglePinChat}
         />
 
         <main
@@ -1037,30 +1104,7 @@ function ChatPageInner() {
                     alignItems: "flex-start",
                   }}
                 >
-                  <div
-                    style={{
-                      width: 36,
-                      height: 36,
-                      borderRadius: "50%",
-                      border: "1.5px solid var(--ln)",
-                      background: "#fff",
-                      display: "grid",
-                      placeItems: "center",
-                      flexShrink: 0,
-                    }}
-                  >
-                    <svg
-                      width="17"
-                      height="17"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="var(--ac)"
-                      strokeWidth="1.8"
-                    >
-                      <circle cx="12" cy="12" r="4" />
-                      <path d="M4 9a9 9 0 0 1 14-4M20 15a9 9 0 0 1-14 4" />
-                    </svg>
-                  </div>
+                  <AiAvatar />
 
                   <div
                     style={{
