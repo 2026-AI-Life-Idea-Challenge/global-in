@@ -3,7 +3,7 @@
 from dataclasses import dataclass
 from typing import Any, Literal
 
-from pydantic import BaseModel, ConfigDict, model_validator
+from pydantic import BaseModel, ConfigDict, Field, model_validator
 from pydantic_core import PydanticCustomError
 
 AnswerStatus = Literal["answered", "partial", "insufficient_evidence"]
@@ -35,7 +35,7 @@ class RagResponseValidationError(RuntimeError):
 _SCHEMA_FIELDS = {
     "status", "question_parts", "claims", "unanswered_parts", "text",
     "part_indexes", "citations", "chunk_id", "quote", "part_index",
-    "question_part", "reason",
+    "question_part", "reason", "items", "answer", "citation_ids",
 }
 _RULE_FIELDS = {
     "empty_question_parts": "question_parts",
@@ -43,6 +43,10 @@ _RULE_FIELDS = {
     "duplicate_unanswered_parts": "unanswered_parts",
     "coverage_mismatch": "part_indexes",
     "status_mismatch": "status",
+    "empty_question_part": "question_part",
+    "empty_answer": "answer",
+    "answer_without_citations": "citation_ids",
+    "citations_without_answer": "citation_ids",
 }
 
 
@@ -55,8 +59,8 @@ def schema_validation_issues(exc):
             for item in error["loc"]
         ]
         code = error["type"]
-        if not field and code in _RULE_FIELDS:
-            field = [_RULE_FIELDS[code]]
+        if code in _RULE_FIELDS:
+            field.append(_RULE_FIELDS[code])
         issues.append({"code": code, "field": field})
     return issues
 
@@ -76,21 +80,31 @@ class DraftCitation(StrictModel):
         return self
 
 
-class DraftClaim(StrictModel):
-    text: str
-    part_indexes: list[int]
-    citations: list[DraftCitation]
+class DraftItem(StrictModel):
+    """One requested part and its answer, or an explicit evidence shortage."""
+
+    question_part: str
+    answer: str | None
+    citation_ids: list[str]
 
     @model_validator(mode="after")
     def grounded(self):
-        if not self.text.strip() or not self.part_indexes or not self.citations:
-            raise ValueError("주장은 내용·질문 항목·인용을 모두 가져야 합니다.")
-        if len(set(self.part_indexes)) != len(self.part_indexes):
-            raise ValueError("질문 항목 번호가 중복되었습니다.")
-        keys = [(item.chunk_id, item.quote) for item in self.citations]
-        if len(keys) != len(set(keys)):
-            raise ValueError("같은 인용을 중복할 수 없습니다.")
+        if not self.question_part.strip():
+            raise PydanticCustomError("empty_question_part", "질문 항목은 비어 있을 수 없습니다.")
+        if self.answer is None:
+            if self.citation_ids:
+                raise PydanticCustomError("citations_without_answer", "근거 부족 항목에는 인용을 달 수 없습니다.")
+        elif not self.answer.strip():
+            raise PydanticCustomError("empty_answer", "답변은 비어 있을 수 없습니다.")
+        elif not self.citation_ids:
+            raise PydanticCustomError("answer_without_citations", "답변에는 인용 ID가 필요합니다.")
         return self
+
+
+def answer_status(answered_count: int, unanswered_count: int) -> AnswerStatus:
+    if not answered_count:
+        return "insufficient_evidence"
+    return "partial" if unanswered_count else "answered"
 
 
 def _validate_coverage(status, parts, claims, unanswered):
@@ -105,27 +119,21 @@ def _validate_coverage(status, parts, claims, unanswered):
     valid = set(range(len(parts)))
     if covered & missing or covered | missing != valid:
         raise PydanticCustomError("coverage_mismatch", "각 질문 항목은 답변 또는 미답변 중 하나여야 합니다.")
-    expected = "partial" if claims and missing else (
-        "answered" if claims else "insufficient_evidence"
-    )
+    expected = answer_status(len(claims), len(missing))
     if status != expected:
         raise PydanticCustomError("status_mismatch", "status와 claims·unanswered_parts가 일치하지 않습니다.")
 
 
 class RagDraft(StrictModel):
-    """Only this schema is sent to the LLM; no URL or approval fields."""
+    """LLM wire format: no status, indexes, quotes, URLs or approval fields."""
 
-    status: AnswerStatus
-    question_parts: list[str]
-    claims: list[DraftClaim]
-    unanswered_parts: list[int]
+    items: list[DraftItem] = Field(min_length=1)
 
-    @model_validator(mode="after")
-    def consistent(self):
-        _validate_coverage(
-            self.status, self.question_parts, self.claims, self.unanswered_parts
-        )
-        return self
+
+@dataclass(frozen=True)
+class CitationSpan:
+    chunk_id: str
+    quote: str
 
 
 @dataclass(frozen=True)
