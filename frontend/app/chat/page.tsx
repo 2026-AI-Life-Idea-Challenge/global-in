@@ -4,7 +4,7 @@ import { useState, useRef, useEffect, useLayoutEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import ConsultationDetails, { safeSource, type ConsultationDetailsData } from "@/components/ConsultationDetails";
+import ConsultationDetails, { type ConsultationDetailsData } from "@/components/ConsultationDetails";
 import { CHAT_KEY, PROFILE_KEY, readSaved, saveTab, expireConsultation, latestPrograms, invalidateResults } from '@/lib/consultation';
 import { useComparison } from '@/lib/useComparison';
 import { COUNTRY_NAMES, CATEGORY_NAMES } from '@/lib/catalog';
@@ -320,13 +320,7 @@ function ChatPageInner() {
                     <div style={{ minWidth: 0, flex: 1 }}>
                       <div style={{ fontSize: "0.82rem", fontWeight: 600, color: "var(--ink)", marginBottom: 8 }}>Global-In</div>
                       <div style={{ background: "#fff", border: "1px solid var(--ln)", borderRadius: "4px 16px 16px 16px", padding: "16px 20px", fontSize: "0.92rem", lineHeight: 1.7, maxWidth: 520, overflowWrap: "anywhere" }}>
-                        {msg.details?.answer_sections?.length ? msg.details.answer_sections.map((section, index) => <article key={index} style={{ marginBottom: 14 }}>
-                          <strong>{section.target_name ? section.target_name + ' · ' : ''}{section.title}</strong>
-                          <p style={{ margin: '6px 0' }}>{renderContent(section.text)}</p>
-                          {section.scope_notes?.map(note => <small key={note} style={{ display: 'block' }}>근거의 적용 범위: {note}</small>)}
-                          {section.citations.some(c => c.quote) && <details><summary>검색 근거 구절 확인</summary>{[...new Set(section.citations.map(c => c.quote).filter(Boolean))].map(quote => <blockquote key={quote} style={{ margin: '8px 0', paddingLeft: 12, borderLeft: '2px solid var(--ln)' }}>{quote}</blockquote>)}</details>}
-                          {section.citations.filter(c => safeSource(c.source_url)).map((c, i) => <a key={i} href={c.source_url} target="_blank" rel="noopener noreferrer" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--mu)' }}>{c.title} ↗ {c.verified_at ? '· 확인일 ' + c.verified_at : ''}</a>)}
-                        </article>) : renderContent(msg.content)}
+                        {renderContent(msg.content)}
                       </div>
                       {msg.details && <ConsultationDetails data={msg.details} />}
                       {msg.programs && msg.programs.length > 0 && (

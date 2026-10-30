@@ -37,7 +37,13 @@ export default function ConsultationDetails({ data }: { data: ConsultationDetail
     {data.support_eligibility?.map(item => <details key={item.support_program_id}><summary>{data.support_programs?.find(p => p.support_program_id === item.support_program_id)?.name || '지원제도'} · {item.overall}</summary>
       {item.requirements.map((rule, index) => <div key={`${rule.requirement_id}-${index}`}><p>확인 항목 {index + 1} · {rule.outcome}{rule.reason && ` · ${rule.reason}`}</p>{rule.description && <p>{rule.description}</p>}{rule.pending_reviews?.flatMap(review => review.questions || []).map((question,j) => <p key={j}>기관에 확인할 내용: {question}</p>)}</div>)}
     </details>)}
-    {!!data.citations?.length && <div><strong>공식 출처</strong><ul>
+    {!!data.citations?.length && <div><strong>공식 출처</strong>
+      {!!data.answer_sections?.length && <details><summary>근거 적용 범위·인용 구절</summary>{data.answer_sections.map((section,index) => <div key={index}>
+        <p>{section.target_name} · {section.title}</p>
+        {section.scope_notes?.map(note => <p key={note}>{note}</p>)}
+        {[...new Set(section.citations.map(c => c.quote).filter(Boolean))].map(quote => <blockquote key={quote}>{quote}</blockquote>)}
+      </div>)}</details>}
+      <ul>
       {data.citations.filter(item => safeSource(item.source_url)).map((item, index) => <li key={`${item.chunk_id}-${index}`}>
         <a href={item.source_url} target="_blank" rel="noopener noreferrer">{item.title}</a>
       </li>)}
