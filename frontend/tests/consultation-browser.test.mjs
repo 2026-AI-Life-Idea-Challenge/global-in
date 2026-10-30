@@ -36,7 +36,6 @@ export async function runBrowserChecks(base, fixture) {
     await page.reload(); await page.locator('input[type="date"][value="1998-05-15"]').waitFor(); checks++;
     await page.getByRole('button', { name: /이 정보로 상담하기/ }).click();
     await question('프로그램 추천해줘');
-    await page.getByText('근거 적용 범위·인용 구절', { exact: true }).first().click();
     await page.getByText('2026년 취업 개시자 안내 기준', { exact: false }).first().waitFor();
     await page.getByRole('link', { name: /공식 안내/ }).first().waitFor(); checks++;
     await page.getByText('검증용 지원제도', { exact: true }).waitFor();
@@ -84,10 +83,10 @@ export async function runBrowserChecks(base, fixture) {
       await page.getByRole('navigation', { name: '모바일 메뉴' }).waitFor();
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `Mobile overflow at ${path}`);
     }
-    await page.getByRole('status', { name: /검색 결과/ }).waitFor();
-    await page.getByRole('button', { name: '지원제도', exact: true }).click();
+    await page.getByRole('status').filter({ hasText: '검색 결과' }).waitFor();
+    await page.getByRole('combobox', { name: '자료 유형' }).selectOption('support');
     await page.getByRole('checkbox', { name: /검증용 지원제도 비교/ }).check();
-    await page.getByRole('button', { name: '프로그램', exact: true }).click();
+    await page.getByRole('combobox', { name: '자료 유형' }).selectOption('program');
     await page.getByRole('checkbox', { name: /IEC 비교/ }).check();
     await page.goto(base + '/compare');
     await page.getByRole('columnheader', { name: '검증용 지원제도', exact: true }).waitFor();
@@ -98,14 +97,14 @@ export async function runBrowserChecks(base, fixture) {
     await page.goto(base + '/programs');
     await page.getByRole('textbox', { name: '프로그램 검색' }).fill('존재하지않는테스트');
     await page.reload();
-    await page.getByRole('status', { name: '검색 결과 0개', exact: true }).waitFor();
+    await page.getByRole('status').filter({ hasText: '검색 결과 0개' }).waitFor();
     assert.equal(await page.getByRole('textbox', { name: '프로그램 검색' }).inputValue(), '존재하지않는테스트'); checks++;
     await page.getByRole('textbox', { name: '프로그램 검색' }).fill('');
     let catalogFails = true;
     await page.route('**/api/catalog', route => catalogFails ? route.fulfill({ status: 503, json: { error: '테스트 조회 오류' } }) : route.continue());
     await page.reload(); await page.getByRole('alert').filter({ hasText: '테스트 조회 오류' }).waitFor();
     catalogFails = false; await page.getByRole('button', { name: '다시 불러오기' }).click();
-    await page.getByRole('status', { name: '검색 결과 1개', exact: true }).waitFor(); checks++;
+    await page.getByRole('status').filter({ hasText: '검색 결과 1개' }).waitFor(); checks++;
     await mkdir('../tmp/browser-checks', { recursive: true });
     await page.screenshot({ path: '../tmp/browser-checks/d-mobile.png', fullPage: false }); checks++;
     assert.deepEqual(errors, []);
