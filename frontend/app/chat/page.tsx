@@ -147,7 +147,7 @@ function ChatPageInner() {
   // 상세 페이지에서 'AI와 상담하기' 클릭 시 자동으로 해당 프로그램 상담 시작
   useEffect(() => {
     if (autoSentRef.current) return;
-    const program = searchParams.get('program');
+    const program = searchParams?.get('program');
     if (!program) return;
     autoSentRef.current = true;
     const timer = setTimeout(() => {
