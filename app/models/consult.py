@@ -126,3 +126,4 @@ class ChatResponse(BaseModel):
     programs: list[ProgramCandidate] = Field(default_factory=list)
     eligibility: list[EligibilityPayload] = Field(default_factory=list)
     prep_items: list[PrepItem] = Field(default_factory=list)
+    citations: list[Citation] = Field(default_factory=list)

@@ -1,7 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Header from "../../components/Header";
+import { CHAT_KEY, RESULT_KEY, PROFILE_KEY, COUNTRY_CODES, VISA_CODES, readSaved, saveTab } from '@/lib/consultation';
 
 const COUNTRIES = [
   { flag: "🇯🇵", label: "일본" },
@@ -23,7 +24,7 @@ const EDU_STATUS = ["재학", "휴학", "졸업", "중퇴"];
 export default function ProfilePage() {
   const router = useRouter();
   const [nationality, setNationality] = useState("");
-  const [age, setAge] = useState("");
+  const [age, setAge] = useState(""); // Stores an explicit date of birth; never derived from age.
   const [residence, setResidence] = useState("");
   const [education, setEducation] = useState("");
   const [eduStatus, setEduStatus] = useState("");
@@ -36,6 +37,65 @@ export default function ProfilePage() {
   const [undecidedCountry, setUndecidedCountry] = useState(true);
   const [selectedPurposes, setSelectedPurposes] = useState<string[]>([]);
   const [undecidedPurpose, setUndecidedPurpose] = useState(true);
+  const [notice, setNotice] = useState('');
+  const [saving, setSaving] = useState(false);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      const saved = readSaved<{ form?: Record<string, unknown> }>(PROFILE_KEY, {}).form;
+      if (!saved) return;
+      const fields = { nationality: setNationality, age: setAge, residence: setResidence, education: setEducation,
+        eduStatus: setEduStatus, major: setMajor, career: setCareer, careerDuration: setCareerDuration, languages: setLanguages, certs: setCerts };
+      Object.entries(fields).forEach(([key, setter]) => { if (typeof saved[key] === 'string') setter(saved[key] as string); });
+      if (Array.isArray(saved.selectedCountries)) setSelectedCountries(saved.selectedCountries as string[]);
+      if (Array.isArray(saved.selectedPurposes)) setSelectedPurposes(saved.selectedPurposes as string[]);
+      setUndecidedCountry(saved.undecidedCountry !== false);
+      setUndecidedPurpose(saved.undecidedPurpose !== false);
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  async function saveProfile(goToChat = false) {
+    if (saving) return;
+    const aliases: Record<string, string> = { 대한민국: 'KR', 한국: 'KR', 미국: 'US', 일본: 'JP', 호주: 'AU', 독일: 'DE', 캐나다: 'CA' };
+    const nationalities = nationality.split(/[,/]+/).map(value => aliases[value.trim()] || value.trim().toUpperCase()).filter(Boolean);
+    if (!nationalities.length || nationalities.some(value => !/^[A-Z]{2}$/.test(value))) {
+      setNotice('국적은 한국 또는 KR처럼 입력하세요. 복수 국적은 쉼표로 구분하세요.'); return;
+    }
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(age) || age > new Date().toLocaleDateString('sv-SE') || Number(age.slice(0, 4)) < new Date().getFullYear() - 80) {
+      setNotice('만 나이 대신 정확한 생년월일을 입력해 주세요.'); return;
+    }
+    const countries = undecidedCountry ? [] : selectedCountries;
+    const purposes = undecidedPurpose ? [] : selectedPurposes;
+    const context = [residence && `현재 거주: ${residence}`, education && `학력: ${education} ${eduStatus}`, major && `전공: ${major}`,
+      career && `경력: ${career} ${careerDuration}`, languages && `언어: ${languages}`, certs && `자격: ${certs}`,
+      countries.length && `희망 국가: ${countries.join(', ')}`, purposes.length && `목적: ${purposes.join(', ')}`].filter(Boolean).join('; ');
+    if (context.length > 500) { setNotice('학력·경력 등 부가 정보를 합계 500자 이내로 줄여 주세요.'); return; }
+    const profile = { date_of_birth: age, nationalities, target_country: countries.length === 1 ? COUNTRY_CODES[countries[0]] : null,
+      target_visa_type: purposes.length === 1 ? VISA_CODES[purposes[0]] : null, purpose: context || null };
+    const form = { nationality, age, residence, education, eduStatus, major, career, careerDuration, languages, certs,
+      selectedCountries, selectedPurposes, undecidedCountry, undecidedPurpose };
+    setSaving(true); setNotice('');
+    try {
+      const chat = readSaved<{ session_id?: string; messages?: unknown[] }>(CHAT_KEY, {});
+      if (chat.session_id) {
+        const response = await fetch('/api/chat', { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ session_id: chat.session_id, profile }) });
+        const result = await response.json();
+        if (!response.ok) {
+          if (response.status === 404) sessionStorage.removeItem(CHAT_KEY);
+          throw new Error(result.error || '재검토에 실패했습니다.');
+        }
+        saveTab(RESULT_KEY, result);
+        saveTab(CHAT_KEY, { ...chat, messages: [...(chat.messages || []), { role: 'assistant', content: result.content, details: result,
+          programs: (result.programs || []).map((p: { program_id: string; name: string; country: string; visa_type: string; summary: string }) => ({ id: p.program_id, name: p.name, country: p.country, type: p.visa_type, desc: p.summary })) }], compareIds: [] });
+      }
+      if (!saveTab(PROFILE_KEY, { form, profile })) throw new Error('브라우저 저장소를 사용할 수 없습니다. 저장 설정을 확인해 주세요.');
+      sessionStorage.removeItem('global-in-compare');
+      setNotice(chat.session_id ? '프로필을 저장하고 재검토 결과를 갱신했습니다.' : '이 탭에 프로필을 저장했습니다. 다음 상담에 반영됩니다.');
+      if (goToChat) router.push('/chat');
+    } catch (error) { setNotice(error instanceof Error ? error.message : '프로필을 저장하지 못했습니다.'); }
+    finally { setSaving(false); }
+  }
 
   const toggleCountry = (label: string) => {
     setUndecidedCountry(false);
@@ -83,13 +143,13 @@ export default function ProfilePage() {
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12 }}>
             {[
               { label: "국적 *", value: nationality, onChange: setNationality, placeholder: "선택 또는 입력" },
-              { label: "만 나이 *", value: age, onChange: setAge, placeholder: "예: 27" },
+              { label: "생년월일 *", value: age, onChange: setAge, placeholder: "YYYY-MM-DD" },
               { label: "현재 거주 국가 *", value: residence, onChange: setResidence, placeholder: "선택 또는 입력" },
             ].map(({ label, value, onChange, placeholder }) => (
               <div key={label}>
                 <label style={{ fontSize: "0.75rem", color: "var(--mu)", display: "block", marginBottom: 6 }}>{label}</label>
                 <input
-                  value={value} onChange={e => onChange(e.target.value)} placeholder={placeholder}
+                  type={label === '생년월일 *' ? 'date' : 'text'} value={value} onChange={e => onChange(e.target.value)} placeholder={placeholder}
                   style={{ width: "100%", border: "1px solid var(--ln)", borderRadius: 12, padding: "10px 12px", fontSize: "0.88rem", outline: "none", boxSizing: "border-box" }}
                 />
               </div>
@@ -232,14 +292,15 @@ export default function ProfilePage() {
         <p style={{ fontSize: "0.75rem", color: "#ccc", marginBottom: 24 }}>선택 항목은 나중에 추가하거나 수정할 수 있습니다.</p>
 
         <div style={{ display: "flex", justifyContent: "flex-end", gap: 12, paddingBottom: 32 }}>
-          <button style={{ border: "1px solid var(--ln)", color: "var(--ink)", padding: "12px 24px", borderRadius: 12, fontSize: "0.88rem", fontWeight: 500, background: "#fff", cursor: "pointer" }}>
+          <button disabled={saving} onClick={() => saveProfile()} style={{ border: "1px solid var(--ln)", color: "var(--ink)", padding: "12px 24px", borderRadius: 12, fontSize: "0.88rem", fontWeight: 500, background: "#fff", cursor: "pointer" }}>
             프로필 저장하기
           </button>
-          <button onClick={() => router.push("/chat")}
+          <button disabled={saving} onClick={() => saveProfile(true)}
             style={{ background: "var(--ink)", color: "#fff", padding: "12px 24px", borderRadius: 12, fontSize: "0.88rem", fontWeight: 600, border: "none", cursor: "pointer" }}>
             이 정보로 상담하기 →
           </button>
         </div>
+        <p role="status" aria-live="polite">{saving ? '프로필 반영·재검토 중…' : notice}</p>
       </main>
     </div>
   );
