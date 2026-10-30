@@ -241,7 +241,18 @@ function ChatPageInner() {
       <div style={{ display: "flex", flex: 1, minHeight: 0, maxWidth: 1040, margin: "20px auto 0", width: "100%", padding: "0 20px", boxSizing: "border-box" }}>
         <Sidebar sessions={sessions} currentSessionId="new" onNewChat={startNewChat} />
 
-        <main style={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0, minHeight: 0 }}>
+        <main
+        ref={messagesContainerRef}
+            style={{
+                flex: 1,
+                display: "flex",
+                flexDirection: "column",
+                minWidth: 0,
+                minHeight: 0,
+                overflowY: "auto",
+                overscrollBehavior: "contain",
+            }}
+        >
           <div style={{ padding: "24px 32px 0", flexShrink: 0 }}>
             <div style={{ fontSize: "0.72rem", letterSpacing: "0.14em", color: "var(--ac)", fontWeight: 600, marginBottom: 10 }}>● PERSONAL CONSULTATION</div>
             <h2 style={{ margin: "0 0 6px", fontSize: "1.6rem", fontWeight: 800, letterSpacing: "-0.04em" }}>새 채팅</h2>
@@ -257,10 +268,13 @@ function ChatPageInner() {
 
           <hr style={{ border: "none", borderTop: "1px solid var(--ln)", margin: "20px 32px", flexShrink: 0 }} />
 
-          <div ref={messagesContainerRef} style={{
-            flex: 1, minHeight: 0, overflowY: "auto", overscrollBehavior: "contain",
-            padding: "0 32px", display: "flex", flexDirection: "column", gap: 20,
-          }}>
+          <div style={{
+            flex: "0 0 auto",
+            padding: "0 32px",
+            display: "flex",
+            flexDirection: "column",
+            gap: 20,
+            }}>
             {messages.map((msg, i) => (
               <div key={i}>
                 {msg.role === "assistant" ? (
