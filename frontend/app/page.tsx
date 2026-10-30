@@ -27,7 +27,11 @@ const CARDS = [
   { icon: "M3 17l2 2 4-4M3 7l2 2 4-4M13 6h8M13 12h8M13 18h8", title: "준비할 일을 순서대로", desc: "필요한 서류와 할 일을 체크리스트로", href: "/preparation" },
 ];
 
-const cardMargins = ["0", "0 -12px 6px 20px", "0 10px 0 40px"];
+const cardMargins = [
+  "0 0 6px 0",
+  "0 0 6px 0",
+  "0 0 0 0",
+];
 
 export default function Home() {
   const router = useRouter();
@@ -86,8 +90,8 @@ export default function Home() {
               style={{
                 background: "#fff", border: "1px solid var(--ln)", borderRadius: 14,
                 padding: "16px 20px", display: "flex", gap: 14, alignItems: "center",
-                textAlign: "left", marginBottom: 6, width: "100%",
-                margin: cardMargins[i],
+                textAlign: "left", width: "100%",
+                margin: cardMargins[i],  // cardMargins에 bottom 포함시키기
               }}
             >
               <span style={{ width: 38, height: 38, borderRadius: 10, background: "var(--tn)", display: "grid", placeItems: "center", color: "#5a67b8", flexShrink: 0 }}>
@@ -99,7 +103,6 @@ export default function Home() {
               </div>
             </button>
           ))}
-          <div style={{ color: "var(--mu)", fontSize: "0.8rem", textAlign: "center", marginTop: 30 }}>서비스 화면 예시</div>
         </div>
       </section>
 
@@ -114,11 +117,7 @@ export default function Home() {
           국가나 목적을 아직 정하지 못했어도 괜찮아요.<br />
           일본·호주·미국·독일·캐나다에서의 시작을 함께 알아봐요.
         </p>
-        {[["🗂", "취업"], ["🎓", "유학"], ["✈️", "워킹홀리데이 / 교류"]].map(([icon, label]) => (
-          <button key={label} style={{ display: "inline-flex", gap: 8, alignItems: "center", border: "1px solid var(--ln)", background: "#fff", borderRadius: 999, padding: "10px 22px", margin: 4 }}>
-            {icon} {label}
-          </button>
-        ))}
+        
       </section>
 
       {/* How It Works */}
