@@ -1,24 +1,28 @@
-
 "use client";
+
 import { useRouter, usePathname } from "next/navigation";
 
 interface SidebarProps {
   sessions?: { id: string; title: string }[];
   currentSessionId?: string;
   onNewChat?: () => void;
+  onSelectSession?: (id: string) => void;
 }
 
 const NAV = [
   {
-    label: "AI 상담", href: "/chat",
+    label: "AI 상담",
+    href: "/chat",
     icon: "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z",
   },
   {
-    label: "프로그램·지원제도 찾기", href: "/programs",
+    label: "프로그램·지원제도 찾기",
+    href: "/programs",
     icon: "M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20M16.2 7.8l-2.1 6.3-6.3 2.1 2.1-6.3z",
   },
   {
-    label: "플랜", href: "/preparation",
+    label: "플랜",
+    href: "/preparation",
     icon: "M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9l2 2 4-4",
   },
 ];
@@ -27,29 +31,30 @@ export default function Sidebar({
   sessions = [],
   currentSessionId,
   onNewChat,
+  onSelectSession,
 }: SidebarProps) {
   const router = useRouter();
   const pathname = usePathname();
   const isChat = pathname?.startsWith("/chat");
 
   return (
-    <aside style={{
-  width: 210,
-  minWidth: 210,
-  flex: "0 0 210px",
-  height: "calc(100dvh - 130px)",
-  minHeight: "calc(100dvh - 130px)",
-  boxSizing: "border-box",
-  display: "flex",
-  flexDirection: "column",
-  borderRight: "1px solid var(--ln)",
-  background: "var(--bg)",
-
-  // 추가된 부분
-  position: "sticky",
-  top: 91,
-  alignSelf: "flex-start",
-}}>
+    <aside
+      style={{
+        width: 210,
+        minWidth: 210,
+        flex: "0 0 210px",
+        height: "calc(100dvh - 130px)",
+        minHeight: "calc(100dvh - 130px)",
+        boxSizing: "border-box",
+        display: "flex",
+        flexDirection: "column",
+        borderRight: "1px solid var(--ln)",
+        background: "var(--bg)",
+        position: "sticky",
+        top: 91,
+        alignSelf: "flex-start",
+      }}
+    >
       {/* 로고 */}
       <div
         style={{
@@ -195,13 +200,14 @@ export default function Sidebar({
               >
                 <path d={item.icon} />
               </svg>
+
               <span style={{ lineHeight: 1.3 }}>{item.label}</span>
             </button>
           );
         })}
       </nav>
 
-      {/* 채팅 목록: 이 영역에만 스크롤 적용 */}
+      {/* 채팅 목록 */}
       {isChat && (
         <div
           style={{
@@ -231,7 +237,7 @@ export default function Sidebar({
           {sessions.map((s) => (
             <button
               key={s.id}
-              onClick={() => router.push(`/chat/${s.id}`)}
+              onClick={() => onSelectSession?.(s.id)}
               style={{
                 width: "100%",
                 textAlign: "left",
@@ -259,6 +265,7 @@ export default function Sidebar({
               >
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
               </svg>
+
               <span
                 style={{
                   overflow: "hidden",
@@ -273,7 +280,7 @@ export default function Sidebar({
         </div>
       )}
 
-      {/* 내 프로필: 하단 고정, 내용만 약간 위로 */}
+      {/* 내 프로필 */}
       <div
         style={{
           marginTop: "auto",
