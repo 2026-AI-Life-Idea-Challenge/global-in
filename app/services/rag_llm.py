@@ -92,15 +92,26 @@ def generate_rag_draft(
             for row in evidence
         ],
     }
+    return _request_rag_draft(
+        payload, system_prompt=SYSTEM_PROMPT, draft_type=RagDraft,
+        model=model, effort=effort,
+    )
+
+
+def _request_rag_draft(
+    payload: dict, *, system_prompt: str, draft_type: type[RagDraft],
+    model: str, effort: str | None,
+) -> RagGeneration:
+    """Shared one-shot transport; callers supply their own scope and schema."""
     try:
         with OpenAI(timeout=45.0, max_retries=0) as client:
             response = client.responses.parse(
                 model=model,
                 input=[
-                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "system", "content": system_prompt},
                     {"role": "user", "content": json.dumps(payload, ensure_ascii=False)},
                 ],
-                text_format=RagDraft,
+                text_format=draft_type,
                 max_output_tokens=2500,
                 store=False,
                 **({"reasoning": {"effort": effort}} if effort is not None else {}),
@@ -123,7 +134,7 @@ def generate_rag_draft(
             "LLM이 구조화된 답변을 반환하지 않았습니다.", code="missing_parsed_response"
         )
     try:
-        draft = RagDraft.model_validate(response.output_parsed.model_dump())
+        draft = draft_type.model_validate(response.output_parsed.model_dump())
     except ValidationError as exc:
         raise RagResponseValidationError(
             "LLM 답변 항목이 일관되지 않습니다.", issues=schema_validation_issues(exc)
