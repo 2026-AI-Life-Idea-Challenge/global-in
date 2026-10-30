@@ -55,10 +55,16 @@ def _fuse_rankings(
     )[:limit]
 
 
+def has_source_url(urls) -> bool:
+    """사용자에게 보여줄 수 있는 출처 URL이 하나라도 있는지 확인한다."""
+    return isinstance(urls, list) and any(isinstance(u, str) and u.strip() for u in urls)
+
+
 def search_program_evidence_hybrid(
     program_id: str,
     text: str,
     limit: int = 5,
+    require_source_url: bool = False,
 ) -> list[dict]:
     """Fuse up to 100 candidates per search, using raw query embeddings.
 
@@ -66,6 +72,10 @@ def search_program_evidence_hybrid(
     score, each source's rank, and RRF score are separate fields. A keyword
     nonmatch has keyword_rank=None and keyword_score=None. Results do not
     imply answerability or answer-use approval. Errors are not suppressed.
+
+    require_source_url=True(실사용 모드)는 출처 URL이 없는 청크를 RRF 순위 계산
+    전에 제외한다. 남은 청크끼리 순위를 매긴다. 각 검색의 후보 100개 안에서
+    제외하므로, 후보 대부분이 출처 없는 청크면 반환 개수가 limit보다 적을 수 있다.
     """
     if not isinstance(program_id, str) or not program_id.strip():
         raise ValueError("program_id는 비어 있지 않은 문자열이어야 합니다.")
@@ -73,6 +83,8 @@ def search_program_evidence_hybrid(
         raise ValueError("text는 공백이 아닌 문자를 포함한 문자열이어야 합니다.")
     if type(limit) is not int or not 1 <= limit <= 100:
         raise ValueError("limit은 1 이상 100 이하의 정수여야 합니다.")
+    if type(require_source_url) is not bool:
+        raise ValueError("require_source_url은 bool이어야 합니다.")
     program_id = program_id.strip()
 
     keyword_rows = search_program_evidence_by_keyword(
@@ -82,4 +94,7 @@ def search_program_evidence_hybrid(
     vector_rows = search_program_evidence_by_vector(
         program_id, vector, limit=CANDIDATE_LIMIT
     )
+    if require_source_url:
+        keyword_rows = [row for row in keyword_rows if has_source_url(row["source_urls"])]
+        vector_rows = [row for row in vector_rows if has_source_url(row["source_urls"])]
     return _fuse_rankings(vector_rows, keyword_rows, limit)

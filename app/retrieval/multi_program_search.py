@@ -9,7 +9,7 @@ from pgvector import Vector
 from psycopg import IsolationLevel
 from psycopg.rows import dict_row
 
-from app.retrieval.hybrid_search import EVIDENCE_FIELDS, RRF_K
+from app.retrieval.hybrid_search import EVIDENCE_FIELDS, RRF_K, has_source_url
 from app.retrieval.keyword_search import (
     TEXT_SEARCH_CONFIG, _build_tsquery, expand_search_terms,
 )
@@ -118,6 +118,13 @@ def _evidence(row: dict, programs: dict[str, dict]) -> dict:
     return result
 
 
+def _row_has_source_url(row: dict) -> bool:
+    references = row["source_references"]
+    if not isinstance(references, list):
+        return False
+    return has_source_url([r.get("source_url") for r in references if isinstance(r, dict)])
+
+
 def _fuse_global_rankings(
     vector_rows: list[dict],
     keyword_rows: list[dict],
@@ -164,8 +171,12 @@ def search_programs_evidence_hybrid(
     country: str | None = None,
     category: str | None = None,
     limit: int = 5,
+    require_source_url: bool = False,
 ) -> list[dict]:
     """Return globally ranked evidence from every matching program.
+
+    require_source_url=True(실사용 모드)는 출처 URL이 없는 청크를 전역 순위
+    계산 전에 제외한다. 중간 개수 제한이 없으므로 SQL 단계 제외와 결과가 같다.
 
     None omits its filter. Inputs are checked before DB/model access. The
     question is embedded once when candidates exist; the original text is used.
@@ -188,6 +199,8 @@ def search_programs_evidence_hybrid(
     _validate_filter("category", category, SUPPORTED_CATEGORIES)
     if type(limit) is not int or not 1 <= limit <= 100:
         raise ValueError("limit은 1 이상 100 이하의 정수여야 합니다.")
+    if type(require_source_url) is not bool:
+        raise ValueError("require_source_url은 bool이어야 합니다.")
     text_query = _build_tsquery(expand_search_terms(text))
 
     with get_connection() as connection:
@@ -213,4 +226,7 @@ def search_programs_evidence_hybrid(
                 ("PROGRAM", program_ids, Vector(query_vector).to_text(), MODEL_NAME),
             )
             vector_rows = cursor.fetchall()
+    if require_source_url:
+        keyword_rows = [row for row in keyword_rows if _row_has_source_url(row)]
+        vector_rows = [row for row in vector_rows if _row_has_source_url(row)]
     return _fuse_global_rankings(vector_rows, keyword_rows, programs, limit)

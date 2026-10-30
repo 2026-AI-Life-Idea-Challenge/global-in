@@ -7,7 +7,7 @@ from psycopg import IsolationLevel
 from pydantic import ValidationError
 
 from app.models.multi_program_rag import (
-    COVERAGE_NOTE, ProgramCitation, ProgramClaim, ProgramDraftItem, ProgramInfo,
+    COVERAGE_NOTES, OverviewProgramsDraft, ProgramCitation, ProgramClaim, ProgramInfo,
     ProgramsDraft, ProgramsRagResult, ProgramUnanswered,
 )
 from app.models.rag import (
@@ -22,10 +22,12 @@ from app.retrieval.program_search import (
 )
 from app.services.database import get_connection
 from app.services.program_rag import (
-    RETRIEVAL_LIMIT, SHORTAGE_REASON, _bind_citations, _validate_evidence,
+    ANSWER_HEADERS, RETRIEVAL_LIMIT, SHORTAGE_REASON, _bind_citations, _validate_evidence,
+    ensure_source_policy, generation_kwargs, merge_unique_chunks, release_fields, search_queries,
 )
 from app.services.rag_llm import (
-    _request_rag_draft, build_citation_spans, load_llm_environment,
+    _request_rag_draft, build_citation_spans, load_llm_environment, request_context,
+    system_prompt_for, validate_mode,
 )
 
 RAG_MODEL = "gpt-6-luna"
@@ -41,7 +43,10 @@ candidate_programs는 검색 범위이고, retrieved_passages는 그 범위에�
 일부 청크다. 후보 전체를 비교·확인했다고 쓰지 마라. 검색되지 않은 프로그램이나
 항목은 현재 검색된 자료 기준으로 확인 불가이며, 규정이 없다는 뜻이 아니다.
 
-질문에서 요청한 세부 항목에 직접 답할 근거를 확인하고 items로 나누어라.
+질문이 실제로 요청한 항목에 직접 답할 근거를 확인하고 items로 나누어라.
+'준비하고 싶어'처럼 넓은 질문은 준비의 큰 순서와 지금 확인할 핵심만 2~4개 항목으로
+짧게 답하라. 가족 동반·세부 예외처럼 묻지 않은 내용은 나열하지 말고, 근거가 없는
+세부 항목을 만들어 null로 채우지도 마라.
 각 항목은 program_id 하나와 question_part, 한국어 answer, citation_ids를 담는다.
 프로그램이 다르면 반드시 별도 항목으로 나누어라. 같은 표현의 항목도 프로그램이
 다르면 따로 작성할 수 있다. 한 프로그램의 조건을 다른 프로그램에 적용하지 마라.
@@ -50,7 +55,15 @@ candidate_programs는 검색 범위이고, retrieved_passages는 그 범위에�
 수 없는 범위 전체의 근거 부족에만 program_id=null을 사용하라.
 검색된 프로그램에서도 질문의 일부만 답할 수 있다면 나머지 항목을 누락하지 마라.
 관련 주제라는 이유로 질문 밖 설명을 더하지 마라. 건강 기준은 보험 가입 의무에
-대한 근거가 아니다. 국적·시점·적용 범위·조건·예외와 '보통 약' 같은 한정을 유지하라.
+대한 근거가 아니다. answer는 사용자에게 바로 말하듯 결론부터 한두 문장으로 써라. 금액·나이·대상·
+적용 연도·국적·적용 범위·예외와 '보통 약' 같은 한정처럼 답의 의미를 바꾸는 조건은
+생략하지 말고 해당 문장 안에 붙여라. answer에 제목·출처·근거 부족 안내를 쓰지 마라.
+question_part는 사용자에게 보여줄 짧은 명사구로 써라(예: '신청 마감일').
+서류·조건·절차처럼 여러 가지를 나열해 묻는 질문은 서류 하나, 조건 하나마다 item을 나누고
+answer는 한 문장으로 짧게 써라. 여러 프로그램에 같은 근거가 같은 내용으로 적용되면 프로그램별
+item의 question_part와 answer를 글자까지 똑같이 써라(화면에서 한 줄로 합친다).
+known_user_profile이 있으면 사용자가 직접 밝힌 정보이므로 그 국적·나이에 해당하는
+근거를 우선 사용하되 충족 여부는 판정하지 마라. 없는 국적·나이는 추측하지 마라.
 구절 ID를 선택하고 인용문·URL·출처·프로그램명·승인 상태를 생성하지 마라.
 현재 검색된 자료 밖의 사실을 사용하지 마라. 검색 순위를 추천 적합도나 신청
 가능성으로 해석하지 마라. 사용자 개인의 최종 자격 판정은 하지 마라.
@@ -98,7 +111,8 @@ def _validate_scope(candidates, rows, country, category):
     return by_id
 
 
-def _messages_payload(question, candidates, evidence):
+def _messages_payload(question, candidates, evidence, profile=None,
+                      mode="development", layout="default", today=None):
     spans = build_citation_spans(evidence)
     return {
         "question": question,
@@ -114,10 +128,13 @@ def _messages_payload(question, candidates, evidence):
              ]}
             for row in evidence
         ],
+        **request_context(profile, mode, layout, today),
     }
 
 
-def generate_programs_draft(question, candidates, evidence):
+def generate_programs_draft(question, candidates, evidence, profile=None,
+                            *, mode="development", layout="default", today=None):
+    validate_mode(mode, layout)
     load_llm_environment()
     if not os.environ.get("OPENAI_API_KEY", "").strip():
         raise RagConfigurationError("OPENAI_API_KEY가 설정되어 있지 않습니다.")
@@ -126,8 +143,10 @@ def generate_programs_draft(question, candidates, evidence):
     if model != RAG_MODEL or effort != RAG_REASONING_EFFORT:
         raise RagConfigurationError("여러 프로그램 RAG는 RAG_MODEL=gpt-6-luna, RAG_REASONING_EFFORT=low를 사용합니다.")
     return _request_rag_draft(
-        _messages_payload(question, candidates, evidence),
-        system_prompt=SYSTEM_PROMPT, draft_type=ProgramsDraft, model=model, effort=effort,
+        _messages_payload(question, candidates, evidence, profile, mode, layout, today),
+        system_prompt=system_prompt_for(SYSTEM_PROMPT, mode, layout),
+        draft_type=OverviewProgramsDraft if layout == "overview" else ProgramsDraft,
+        model=model, effort=effort,
     )
 
 
@@ -171,6 +190,8 @@ def answer_programs_question(
     question: str,
     country: str | None = None,
     category: str | None = None,
+    profile: dict | None = None,
+    *, mode: str = "development", layout: str = "default", today=None,
 ) -> dict:
     """Answer only from the top retrieved chunks, not a complete comparison.
 
@@ -178,32 +199,44 @@ def answer_programs_question(
     Status covers returned question items; scope lists expose programs without
     retrieved evidence. Structural provenance checks do not prove entailment.
     Search, generation and validation errors propagate as distinct error types.
+    mode="production"은 출처 URL 있는 근거만 쓰고, layout="overview"는 주제별
+    검색(각 RETRIEVAL_LIMIT개)을 합쳐 한 번 생성한다.
     """
+    validate_mode(mode, layout)
     if not isinstance(question, str) or not question.strip():
         raise ValueError("question은 공백이 아닌 문자를 포함한 문자열이어야 합니다.")
     _validate_filter("country", country, SUPPORTED_COUNTRIES)
     _validate_filter("category", category, SUPPORTED_CATEGORIES)
+    search_kwargs = {"require_source_url": True} if mode == "production" else {}
     try:
         candidates = _load_candidates(country, category)
-        rows = search_programs_evidence_hybrid(
-            question, country=country, category=category, limit=RETRIEVAL_LIMIT,
-        )
+        batches = [search_programs_evidence_hybrid(
+            query, country=country, category=category, limit=RETRIEVAL_LIMIT, **search_kwargs,
+        ) for query in search_queries(question, layout)]
     except Exception as exc:
         raise RagSearchError("여러 프로그램 근거 검색에 실패했습니다.") from exc
-    programs = _validate_scope(candidates, rows, country, category)
+    programs = None
+    for batch in batches:
+        programs = _validate_scope(candidates, batch, country, category)
+    rows = merge_unique_chunks(batches)
+    ensure_source_policy(rows, mode)
+    draft_type = OverviewProgramsDraft if layout == "overview" else ProgramsDraft
     candidates = [deepcopy(programs[pid]) for pid in sorted(programs)]
     evidence = deepcopy(rows)
     requested_model = model = None
     if not evidence:
-        draft = ProgramsDraft(items=[ProgramDraftItem(
-            program_id=None, question_part=question, answer=None, citation_ids=[],
-        )])
+        empty = {"program_id": None, "question_part": question, "answer": None, "citation_ids": []}
+        draft = draft_type.model_validate(
+            {"items": [{**empty, "section": "conditions"} if layout == "overview" else empty]})
     else:
-        generation = generate_programs_draft(question, deepcopy(candidates), deepcopy(evidence))
+        generation = generate_programs_draft(
+            question, deepcopy(candidates), deepcopy(evidence),
+            **generation_kwargs(profile, mode, layout, today),
+        )
         if not isinstance(generation, RagGeneration):
             raise RagResponseValidationError("LLM 생성 결과 형식이 잘못되었습니다.", code="invalid_generation_type")
         try:
-            draft = ProgramsDraft.model_validate(generation.draft.model_dump())
+            draft = draft_type.model_validate(generation.draft.model_dump())
         except ValidationError as exc:
             raise RagResponseValidationError(
                 "답변 항목 구조가 올바르지 않습니다.", issues=schema_validation_issues(exc),
@@ -220,7 +253,7 @@ def answer_programs_question(
         ) for i, item in enumerate(draft.items) if item.answer is None]
         retrieved_ids = {pid for row in evidence for pid in row["program_ids"]}
         answered_ids = {claim.program_id for claim in claims}
-        lines = ["개발 검증용 답변 · 현재 검색된 자료 기준", COVERAGE_NOTE]
+        lines = [ANSWER_HEADERS[mode], COVERAGE_NOTES[mode]]
         lines.extend(f"{claim.program_name} ({claim.program_id}): {claim.text} [{i}]"
                      for i, claim in enumerate(claims, 1))
         if unanswered:
@@ -241,6 +274,7 @@ def answer_programs_question(
             programs_without_retrieved_evidence=[programs[pid] for pid in without_evidence],
             evidence=evidence, retrieval_limit=RETRIEVAL_LIMIT,
             requested_model=requested_model, model=model,
+            coverage_note=COVERAGE_NOTES[mode], **release_fields(mode, layout, draft),
         )
     except ValidationError as exc:
         raise RagResponseValidationError(
