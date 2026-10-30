@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
@@ -24,17 +24,74 @@ function FlagSvg({ country, size = 22 }: { country: string; size?: number }) {
 }
 
 export const PROGRAMS = [
+  // ─── 일본 프로그램 ───
   { id: 1, type: "프로그램", country: "일본", tags: ["일본", "취업"], name: "기술·인문지식·국제업무", desc: "전문 지식과 기술을 활용해 일본에서 일하는 취업 경로.", sub: "담당 직무와 학력·경력 등 요건 확인", officialUrl: "https://www.moj.go.jp/isa/applications/status/gijinkoku.html" },
-  { id: 2, type: "지원제도", country: null, tags: ["여러 국가", "과정별 상이", "취업"], name: "K-Move스쿨", desc: "해외취업에 필요한 어학·직무 연수와 취업 연계를 지원.", sub: "맞춤형 교육·연수비·일부 취업 지원", officialUrl: "https://worldjob.or.kr/kmove/kmoveSchool.do" },
-  { id: 3, type: "프로그램", country: "독일", tags: ["독일", "취업"], name: "기회카드 (Chancenkarte)", desc: "독일에서 일자리를 찾기 위한 체류 경로.", sub: "자격 인정 또는 점수 경로·언어·생계 요건 확인", officialUrl: "https://www.make-it-in-germany.com/en/visa-residence/types/opportunity-card" },
-  { id: 4, type: "프로그램", country: "호주", tags: ["호주", "워킹홀리데이"], name: "워킹홀리데이 비자 (417)", desc: "호주에서 여행하며 단기 근로를 병행하는 경로.", sub: "여권 국가·연령·이전 참여 이력 등 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417" },
+  { id: 8, type: "프로그램", country: "일본", tags: ["일본", "유학·교환학생"], name: "유학 비자 (留学)", desc: "일본의 대학, 전문학교 등 교육기관에서 학업을 위한 체류 경로.", sub: "입학허가서·재정 증빙 등 요건 확인", officialUrl: "https://www.moj.go.jp/isa/applications/procedures/index.html" },
+  { id: 9, type: "프로그램", country: "일본", tags: ["일본", "워킹홀리데이"], name: "워킹홀리데이 (일본)", desc: "한국-일본 협정에 따라 일본에서 여행·체험 근로를 병행하는 경로.", sub: "연령·과거 참여 이력·이중국적 등 요건 확인", officialUrl: "https://www.mofa.go.jp/mofaj/toko/visa/working_h.html" },
+
+  // ─── 독일 프로그램 ───
+  { id: 3, type: "프로그램", country: "독일", tags: ["독일", "취업"], name: "기회카드 (Chancenkarte)", desc: "독일에서 일자리를 찾기 위한 체류 경로.", sub: "자격 인정 또는 점수 경로·언어·생계 요건 확인", officialUrl: "https://www.make-it-in-germany.com/en/visa-recognition/opportunity-card" },
+  { id: 10, type: "프로그램", country: "독일", tags: ["독일", "취업"], name: "EU 블루카드", desc: "고학력 전문직을 위한 독일 취업 및 장기 체류 경로.", sub: "학위 인정·고용계약·최소임금 요건 확인", officialUrl: "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/eu-blue-card" },
+  { id: 11, type: "프로그램", country: "독일", tags: ["독일", "취업"], name: "숙련노동자 비자 (Fachkräfte)", desc: "독일 내 직업훈련 또는 학위 기반으로 취업하는 경로.", sub: "자격 인정·고용계약 요건 확인", officialUrl: "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/qualified-professionals" },
+  { id: 12, type: "프로그램", country: "독일", tags: ["독일", "유학·교환학생"], name: "독일 유학 비자", desc: "독일의 대학 또는 동등 교육기관에서 학업을 위한 경로.", sub: "입학허가·재정 증빙·어학 능력 등 요건 확인", officialUrl: "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/studying" },
+  { id: 13, type: "프로그램", country: "독일", tags: ["독일", "유학·교환학생"], name: "대학입학 준비 비자", desc: "독일 대학 입학 전 어학연수·입학수속 준비를 위한 체류 경로.", sub: "입학 예정·어학 과정 등 요건 확인", officialUrl: "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/other/language-acquisition" },
+  { id: 14, type: "프로그램", country: "독일", tags: ["독일", "워킹홀리데이"], name: "워킹홀리데이 (독일-한국)", desc: "한국-독일 협정에 따라 독일에서 여행·체험 근로를 병행하는 경로.", sub: "연령·과거 참여 이력 등 요건 확인", officialUrl: "https://seoul.diplo.de/kr-ko/service/1694216-1694216" },
+
+  // ─── 호주 프로그램 ───
+  { id: 4, type: "프로그램", country: "호주", tags: ["호주", "워킹홀리데이"], name: "워킹홀리데이 비자 (417)", desc: "호주에서 여행하며 단기 근로를 병행하는 경로. 지역 근무 조건 충족 시 최대 3차까지 연장 가능.", sub: "여권 국가·연령·이전 참여 이력 등 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417" },
+  { id: 17, type: "프로그램", country: "호주", tags: ["호주", "워킹홀리데이"], name: "워킹홀리데이 비자 (462)", desc: "지정 협정국 여권으로 신청하는 호주 워킹홀리데이 경로 (한국 포함). 지역 근무 조건 충족 시 최대 3차까지 연장 가능.", sub: "협정국 여권·연령·학력·어학 등 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-462" },
+  { id: 20, type: "프로그램", country: "호주", tags: ["호주", "취업"], name: "수요기술 취업 비자 (482) Core", desc: "수요직종에 해당하는 고용주 후원 임시취업 경로.", sub: "수요직종·고용주 후원·어학·경력 등 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-skill-shortage-482" },
+  { id: 21, type: "프로그램", country: "호주", tags: ["호주", "취업"], name: "수요기술 취업 비자 (482) 노동협약", desc: "노동협약을 통한 고용주 후원 임시취업 경로.", sub: "협약 고용주·해당 직종 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-skill-shortage-482" },
+  { id: 22, type: "프로그램", country: "호주", tags: ["호주", "취업"], name: "수요기술 취업 비자 (482) 전문기술", desc: "고임금 전문직을 위한 고용주 후원 임시취업 경로.", sub: "고임금 요건·고용주 후원 등 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-skill-shortage-482" },
+  { id: 23, type: "프로그램", country: "호주", tags: ["호주", "취업"], name: "지역기술임시 비자 (491)", desc: "지역 주정부 또는 가족의 추천을 받아 지역에서 취업하는 임시 경로.", sub: "주정부 추천·수요직종·어학·점수 등 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491" },
+  { id: 24, type: "프로그램", country: "호주", tags: ["호주", "취업"], name: "지역고용후원 비자 (494) 고용주 후원", desc: "지역 고용주의 후원을 받아 지역에서 취업하는 임시 경로.", sub: "지역 고용주 후원·수요직종·어학·경력 등 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494" },
+  { id: 52, type: "프로그램", country: "호주", tags: ["호주", "취업"], name: "지역고용후원 비자 (494) 노동협약", desc: "노동협약을 통한 지역 고용주 후원 임시취업 경로.", sub: "협약 고용주·지역 근무·해당 직종 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-employer-sponsored-regional-494" },
+  { id: 25, type: "프로그램", country: "호주", tags: ["호주", "취업"], name: "트레이닝 비자 (407)", desc: "직업 훈련 또는 업무 관련 연수를 위한 임시 체류 경로.", sub: "후원 기관·훈련 계획·재정 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407" },
+  { id: 26, type: "프로그램", country: "호주", tags: ["호주", "취업"], name: "고용주 노미네이트 비자 (186) 직접입국", desc: "호주 고용주가 직접 추천하는 영주권 경로.", sub: "고용주 추천·수요직종·어학·경력 등 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186" },
+  { id: 27, type: "프로그램", country: "호주", tags: ["호주", "취업"], name: "고용주 노미네이트 비자 (186) 임시→영주", desc: "임시취업(482)에서 고용주 추천 영주권으로 전환하는 경로.", sub: "482 비자 3년·동일 고용주·수요직종 등 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186" },
+  { id: 28, type: "프로그램", country: "호주", tags: ["호주", "취업"], name: "고용주 노미네이트 비자 (186) 노동협약", desc: "노동협약을 통한 고용주 추천 영주권 경로.", sub: "협약 고용주·해당 직종 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186" },
+  { id: 29, type: "프로그램", country: "호주", tags: ["호주", "취업"], name: "독립기술 이민 비자 (189)", desc: "고용주나 가족 보증 없이 점수제로 신청하는 영주권 경로.", sub: "EOI 제출·초청·수요직종·점수·어학 등 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189" },
+  { id: 30, type: "프로그램", country: "호주", tags: ["호주", "취업"], name: "주정부 노미네이트 비자 (190)", desc: "호주 주/테리토리 정부의 추천을 받아 신청하는 영주권 경로.", sub: "주정부 추천·수요직종·점수·어학 등 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190" },
+  { id: 31, type: "프로그램", country: "호주", tags: ["호주", "취업"], name: "지역영주 비자 (191)", desc: "지역 임시비자(491/494) 소지 후 3년 경력으로 신청하는 영주권 경로.", sub: "지역 임시비자 3년·소득 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-regional-191" },
+  { id: 32, type: "프로그램", country: "호주", tags: ["호주", "유학·교환학생"], name: "학생 비자 (500)", desc: "호주의 교육기관에 등록해 정규 과정을 이수하기 위한 경로.", sub: "입학허가(CoE)·재정·어학·GTE 요건 확인", officialUrl: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500" },
+
+  // ─── 미국 프로그램 ───
   { id: 5, type: "프로그램", country: "미국", tags: ["미국", "유학·교환학생"], name: "학생 비자 (F-1)", desc: "미국의 대학 등 교육기관에서 학업을 위한 경로.", sub: "교육기관·학업 과정·I-20 등 확인", officialUrl: "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html" },
-  { id: 6, type: "프로그램", country: "캐나다", tags: ["캐나다", "취업"], name: "연방 전문인력 프로그램 (FSW)", desc: "해외 숙련 경력을 바탕으로 검토하는 캐나다 영주권 경로.", sub: "숙련 경력·공인어학·학력 등 요건 확인", officialUrl: "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html" },
-  { id: 7, type: "지원제도", country: null, tags: ["여러 국가", "취업"], name: "해외취업정착지원금", desc: "해외취업 후 초기 정착과 경력 개발을 돕는 지원.", sub: "해외취업자의 초기 정착을 위한 지원금", officialUrl: "https://worldjob.or.kr/" },
+  { id: 33, type: "프로그램", country: "미국", tags: ["미국", "유학·교환학생"], name: "J-1 대학생 (Student)", desc: "미국 교육기관에서 학업을 위한 교환 방문자 경로.", sub: "교육기관·DS-2019·재정·어학 요건 확인", officialUrl: "https://j1visa.state.gov/programs/college-and-university-student/" },
+  { id: 34, type: "프로그램", country: "미국", tags: ["미국", "취업"], name: "H-1B 비자", desc: "미국 고용주가 후원하는 전문직 취업 비자.", sub: "학위·고용주 후원·추첨·LCA 등 요건 확인", officialUrl: "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations" },
+  { id: 35, type: "프로그램", country: "미국", tags: ["미국", "취업"], name: "J-1 인턴십", desc: "인턴십 형태로 미국에서 실무 경험을 쌓는 교환 방문자 경로.", sub: "재학 중이거나 졸업 1년 이내·DS-2019·후원기관 요건 확인", officialUrl: "https://j1visa.state.gov/programs/intern/" },
+  { id: 36, type: "프로그램", country: "미국", tags: ["미국", "취업"], name: "J-1 연수 (Trainee)", desc: "연수 형태로 미국에서 직업 훈련을 받는 교환 방문자 경로.", sub: "학위 또는 경력·DS-2019·후원기관 요건 확인", officialUrl: "https://j1visa.state.gov/programs/trainee/" },
+  { id: 37, type: "프로그램", country: "미국", tags: ["미국", "워킹홀리데이"], name: "J-1 Summer Work Travel", desc: "대학생이 미국에서 여름방학 동안 일하며 여행하는 교환 방문자 경로.", sub: "재학 중·고용계약·DS-2019·후원기관 요건 확인", officialUrl: "https://j1visa.state.gov/programs/summer-work-travel/" },
+  { id: 38, type: "프로그램", country: "미국", tags: ["미국", "장학·연수"], name: "WEST 프로그램", desc: "한국 대학생이 미국에서 인턴십·연수를 경험하는 한미 교육 교류 프로그램.", sub: "재학생·어학·선발 심사 등 요건 확인", officialUrl: "https://www.niied.go.kr/web/niied/contents/niied_iee_west",
+    links: [
+      { label: "프로그램 소개", url: "https://www.niied.go.kr/web/niied/contents/niied_iee_west" },
+      { label: "모집 공고", url: "https://www.niied.go.kr/web/niied/nid/niied_board/5749" },
+    ] },
+
+  // ─── 캐나다 프로그램 ───
+  { id: 6, type: "프로그램", country: "캐나다", tags: ["캐나다", "취업"], name: "고용주 지정 취업허가 (ESWP)", desc: "특정 캐나다 고용주를 위해 발급되는 임시 취업 경로.", sub: "고용주 LMIA 또는 면제 요건·직종 확인", officialUrl: "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit/temporary/apply.html" },
+  { id: 39, type: "프로그램", country: "캐나다", tags: ["캐나다", "워킹홀리데이"], name: "국제경험 캐나다 워킹홀리데이 (IEC)", desc: "협정 국가 청년을 위한 캐나다 워킹홀리데이 경로.", sub: "연령·Pool 지원·고용 오퍼 등 요건 확인", officialUrl: "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec.html" },
+  { id: 40, type: "프로그램", country: "캐나다", tags: ["캐나다", "취업"], name: "졸업 후 취업허가 (PGWP)", desc: "캐나다 공인 학교(DLI) 졸업자를 위한 취업허가 경로.", sub: "DLI 졸업·학업 기간 등 요건 확인", officialUrl: "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation.html" },
+  { id: 41, type: "프로그램", country: "캐나다", tags: ["캐나다", "유학·교환학생"], name: "학생 비자 (Study Permit)", desc: "캐나다 지정학교(DLI)에서 6개월 이상 학업을 위한 경로.", sub: "DLI 입학허가·재정·어학·목적 설명 요건 확인", officialUrl: "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html" },
+
+  // ─── 지원제도 (여러 국가) ───
+  { id: 2, type: "지원제도", country: null, tags: ["여러 국가", "취업"], name: "K-Move스쿨", desc: "해외취업에 필요한 어학·직무 연수와 취업 연계를 지원.", sub: "맞춤형 교육·연수비·일부 취업 지원", officialUrl: "https://www.worldjob.or.kr/ovsea/sdytrn.do" },
+  { id: 7, type: "지원제도", country: null, tags: ["여러 국가", "취업"], name: "해외취업정착지원금", desc: "해외취업 후 초기 정착과 경력 개발을 돕는 지원.", sub: "해외취업자의 초기 정착을 위한 지원금", officialUrl: "https://www.worldjob.or.kr/ovsea/sbsd.do" },
+  { id: 42, type: "지원제도", country: null, tags: ["여러 국가", "취업"], name: "해외취업알선", desc: "해외 고용주와 구직자를 연결하는 취업 알선 서비스.", sub: "월드잡플러스 가입·이력서 등록 등 확인", officialUrl: "https://www.worldjob.or.kr/ovsea/empymn.do?menuId=1000000040" },
+  { id: 43, type: "지원제도", country: null, tags: ["여러 국가", "취업"], name: "K-MOVE 멘토링", desc: "해외취업 경험자(멘토)와 구직자(멘티)를 연결하는 지원.", sub: "멘티 신청·매칭 후 온·오프라인 멘토링 진행", officialUrl: "https://www.worldjob.or.kr/kmove/intro.do" },
+  { id: 44, type: "지원제도", country: null, tags: ["여러 국가", "취업"], name: "해외일경험지원사업 WELL", desc: "단기 해외 일경험을 통한 청년 글로벌 역량 강화 지원.", sub: "재학·졸업 청년 대상·파견 기업 등 요건 확인", officialUrl: "https://www.worldjob.or.kr/ovsea/well.do" },
+
+  // ─── 지원제도 (국가별) ───
+  { id: 46, type: "지원제도", country: "미국", tags: ["미국", "장학·연수"], name: "WEST 어학연수비 대출", desc: "WEST 프로그램 참가자를 위한 어학연수비 대출 지원.", sub: "WEST 합격자·대출 한도·상환 조건 확인", officialUrl: "https://www.kosaf.go.kr/ko/tuition.do?pg=PTHDWestAply_01M&ttab1=2" },
+  { id: 47, type: "지원제도", country: "일본", tags: ["일본", "장학·연수"], name: "2027 MEXT 연구유학생 장학", desc: "일본 문부과학성이 지원하는 연구유학생 장학 프로그램.", sub: "대학 추천·연령·학업 성적 등 요건 확인", officialUrl: "https://www.kr.emb-japan.go.jp/itpr_ko/news_20260512.html" },
+  { id: 48, type: "지원제도", country: "호주", tags: ["호주", "장학·연수"], name: "Research Training Program (RTP)", desc: "호주 정부가 지원하는 대학원 연구과정 장학 프로그램.", sub: "호주 대학 입학·연구 계획 등 요건 확인", officialUrl: "https://www.education.gov.au/research-block-grants/research-training-program" },
+  { id: 49, type: "지원제도", country: "미국", tags: ["미국", "장학·연수"], name: "2027 풀브라이트 대학원 장학", desc: "미한교육위원회가 운영하는 미국 대학원 장학 프로그램.", sub: "한국 국적·학업 성적·어학·연구계획 등 요건 확인", officialUrl: "https://www.fulbright.or.kr/grant/graduate/" },
+  { id: 50, type: "지원제도", country: "독일", tags: ["독일", "장학·연수"], name: "베를린자유대 독일장학 (Deutschlandstipendium)", desc: "베를린자유대학교의 독일장학금 프로그램.", sub: "재학생·성적·사회 참여 등 요건 확인", officialUrl: "https://www.fu-berlin.de/en/sites/deutschlandstipendium" },
+  { id: 51, type: "지원제도", country: "캐나다", tags: ["캐나다", "장학·연수"], name: "워털루 국제석사 우수장학 (IMAE)", desc: "워털루대학교의 국제 석사과정 우수 장학금.", sub: "입학 예정 국제 석사생·성적 요건 확인", officialUrl: "https://uwaterloo.ca/current-graduate-students/awards-and-funding/international-student-funding" },
 ];
 
 const COUNTRIES = ["전체", "독일", "일본", "호주", "미국", "캐나다"];
-const PURPOSES = ["전체", "취업", "유학·교환학생", "워킹홀리데이"];
+const PURPOSES = ["전체", "취업", "유학·교환학생", "워킹홀리데이", "장학·연수"];
 const TYPES = ["전체", "프로그램", "지원제도"];
 
 type Program = typeof PROGRAMS[number];
@@ -53,6 +110,21 @@ export default function ProgramsPage() {
   const [countryFilter, setCountryFilter] = useState("전체");
   const [purposeFilter, setPurposeFilter] = useState("전체");
   const [compareIds, setCompareIds] = useState<number[]>([]);
+
+  // 자세히 보기 후 뒤로가기 시 필터 복원
+  useEffect(() => {
+    try {
+      const saved = sessionStorage.getItem("programs-filters");
+      if (saved) {
+        const f = JSON.parse(saved);
+        if (f.search !== undefined) setSearch(f.search);
+        if (f.typeFilter) setTypeFilter(f.typeFilter);
+        if (f.countryFilter) setCountryFilter(f.countryFilter);
+        if (f.purposeFilter) setPurposeFilter(f.purposeFilter);
+        sessionStorage.removeItem("programs-filters");
+      }
+    } catch {}
+  }, []);
 
   const filtered = PROGRAMS.filter(p => {
     if (search && !p.name.includes(search) && !p.desc.includes(search)) return false;
@@ -259,7 +331,10 @@ export default function ProgramsPage() {
 
                     {/* 자세히 보기 버튼 */}
                     <button
-                      onClick={() => router.push(`/programs/${p.id}`)}
+                      onClick={() => {
+                        try { sessionStorage.setItem("programs-filters", JSON.stringify({ search, typeFilter, countryFilter, purposeFilter })); } catch {}
+                        router.push(`/programs/${p.id}`);
+                      }}
                       style={{
                         border: "1px solid var(--ln)", background: "#fff", borderRadius: 10, padding: "8px 14px",
                         fontSize: "0.82rem", display: "flex", alignItems: "center", gap: 4,
