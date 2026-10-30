@@ -61,10 +61,17 @@ try {
   result = await send('POST', { profile: { nationalities: ['KR'] }, messages: [{ role: 'user', content: '일본 취업' }] });
   assert.equal(result.status, 200);
   assert.deepEqual(calls.slice(-3).map(c => c.method), ['POST', 'PATCH', 'POST']); passed++;
+  result = await send('POST', { session_id: session, profile_pending: true, profile: { nationalities: ['KR'] }, messages: [{ role: 'user', content: '재검토 재시도' }] });
+  assert.equal(result.status, 200);
+  assert.deepEqual(calls.slice(-2).map(c => c.method), ['PATCH', 'POST']); passed++;
   assert.ok((await (await fetch(base + '/profile')).text()).includes('type="date"'));
   assert.ok((await (await fetch(base + '/compare')).text()).includes('상담에서 선택한 실제 프로그램'));
   passed++;
   console.log(`${passed} frontend proxy/SSR checks passed; synthetic backend only.`);
+  if (process.env.RUN_BROWSER_TESTS === '1') {
+    const { runBrowserChecks } = await import('./consultation-browser.test.mjs');
+    await runBrowserChecks(base, payload);
+  }
 } finally {
   app.kill(); mock.closeAllConnections(); await new Promise(resolve => mock.close(resolve));
 }
