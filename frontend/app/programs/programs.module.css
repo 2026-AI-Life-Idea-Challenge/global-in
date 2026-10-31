@@ -8,6 +8,7 @@
 .secondary label:focus-within { outline: 2px solid var(--ac); outline-offset: 4px; border-radius: 4px; }
 .tableToggle { display: inline-flex; align-items: center; gap: 6px; border: none; padding: 4px 0; background: transparent; color: var(--mu); font-size: .8rem; }
 .tableToggle:hover { color: var(--ac); }
+.comparisonTable th, .comparisonTable td { word-break: keep-all; overflow-wrap: anywhere; vertical-align: top; }
 .empty { margin-bottom: 18px; padding: 30px 20px; text-align: center; border: 1px dashed var(--ln); border-radius: 14px; background: #fff; color: var(--mu); }
 .empty > svg { margin: 0 auto 10px; color: #9ca3bd; }
 .empty p { margin: 4px 0 12px; font-size: .83rem; }

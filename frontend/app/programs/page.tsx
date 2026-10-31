@@ -274,11 +274,15 @@ export default function ProgramsPage() {
                   <button onClick={() => setCompareIds([])} style={{ background: "none", border: "none", fontSize: "0.8rem", color: "var(--mu)", cursor: "pointer" }}>전체 해제</button>
                 </div>
               </div>
-              <div id="program-comparison-table" hidden={!comparisonExpanded} style={{ overflowX: "auto" }}>
-                <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.85rem" }}>
+              <div id="program-comparison-table" hidden={!comparisonExpanded} role="region" aria-label="선택한 프로그램 비교표, 좌우로 스크롤할 수 있습니다" tabIndex={0} style={{ overflowX: "auto" }}>
+                <table className={styles.comparisonTable} style={{ width: "100%", minWidth: 140 + comparePrograms.length * 260, tableLayout: "fixed", borderCollapse: "collapse", fontSize: "0.85rem" }}>
+                  <colgroup>
+                    <col style={{ width: 140 }} />
+                    {comparePrograms.map(p => <col key={p.id} />)}
+                  </colgroup>
                   <thead>
                     <tr style={{ background: "#f7f8fa" }}>
-                      <th style={{ padding: "12px 20px", textAlign: "left", fontWeight: 600, color: "var(--mu)", fontSize: "0.78rem", width: 100 }}>항목</th>
+                      <th style={{ padding: "12px 20px", textAlign: "left", fontWeight: 600, color: "var(--mu)", fontSize: "0.78rem" }}>항목</th>
                       {comparePrograms.map(p => (
                         <th key={p.id} style={{ padding: "12px 20px", textAlign: "left", fontWeight: 700, color: "var(--ink)" }}>
                           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
