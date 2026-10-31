@@ -20,7 +20,7 @@ from app.agent.graph import get_compiled_graph
 from app.agent.state import initial_state
 from copy import deepcopy
 from app.services.consultation_sessions import MemorySessions, SQLiteSessions, MissingSession, BusySession
-from app.models.consult import ChatRequest, ChatResponse, ProfileUpdateRequest
+from app.models.consult import ChatRequest, ChatResponse, ProfileUpdateRequest, PreparationRequest
 from app.models.user_profile import UserProfile
 
 
@@ -164,6 +164,18 @@ def create_router(graph=None, store=None, require_owner=None) -> APIRouter:
         except Exception:
             raise HTTPException(status_code=503,detail='session store temporarily unavailable') from None
         return {"session_id": session_id}
+
+    @router.post('/preparation')
+    def preparation(body: PreparationRequest):
+        from app.services.personal_preparation import build_preparation
+        try:
+            result = build_preparation(body.target_id, body.profile.model_dump(mode='json', exclude_unset=True))
+        except Exception:
+            logging.getLogger(__name__).exception('Preparation generation failed')
+            raise HTTPException(status_code=503, detail='preparation temporarily unavailable') from None
+        if result is None:
+            raise HTTPException(status_code=404, detail='catalog item not found')
+        return result
 
     @router.get('/catalog')
     def catalog():

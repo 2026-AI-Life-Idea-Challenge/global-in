@@ -63,8 +63,8 @@ eligible은 '대상 요건', character는 '품행 요건', work permit은 '취�
 
 PRODUCTION_RULES = """
 [실사용 모드]
-사용자는 대한민국 국적자다. 국적에 따라 달라지는 조건은 대한민국 국적자에게 적용되는
-근거만 사용하고, 대한민국 국적자에게 적용되는지 확인할 수 없는 조건은 답하지 마라.
+사용자 국적은 known_profile에 직접 확인된 값만 사용한다. 국적이 없으면 추측하지 마라.
+국적별 조건은 적용 대상을 명시하고, 개인에게 적용된다고 단정하지 마라.
 answer는 '~합니다', '~입니다'로 끝나는 공식적인 존댓말로 써라.
 today는 오늘 날짜다. 모집 기간·마감·신청 가능 여부처럼 시점에 따라 달라지는 내용은
 근거에 명시된 날짜를 today와 비교해서만 말하고, 근거에 날짜가 없으면 현재 상태를 단정하지 마라.
@@ -109,8 +109,8 @@ def system_prompt_for(base: str, mode: str, layout: str = "default") -> str:
 
 
 def production_profile(profile: dict | None) -> dict:
-    """실사용 모드는 국적을 대한민국으로 고정한다. 다른 직접 밝힌 값은 유지한다."""
-    return {**dict(profile or {}), "nationalities": ["KR"]}
+    """실사용 모드도 사용자가 직접 확인한 프로필만 사용한다."""
+    return dict(profile or {})
 
 
 def request_context(profile: dict | None, mode: str = "development",

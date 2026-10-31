@@ -7,7 +7,7 @@ def test_grounded_answer_and_only_claim_sources(monkeypatch):
                 evidence=[dict(chunk_id='unused',source_urls=['https://unused.org'])])
     monkeypatch.setattr(node,'answer',lambda state:[result])
     output=node.run(dict(user_query='질문'))
-    assert output['final_answer']=='B의 원문 답변'
+    assert output['final_answer']=='- 조건'
     assert [e['source_url'] for e in output['validated_evidence']]==['https://example.org']
 
 

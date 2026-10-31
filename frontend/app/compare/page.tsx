@@ -50,7 +50,10 @@ export default function ComparePage() {
                     ))}
                   </tr>
                 ))}
-                <tr className="border-b border-gray-50"><td className="text-xs text-gray-400 py-3 pr-4">공식 출처</td>{PROGRAMS.map(p => <td key={p.id} className="py-3 px-4 text-sm text-gray-700">{p.sources?.filter(source => safeSource(source.source_url)).map((source,index) => <p key={index}><a href={source.source_url} target="_blank" rel="noopener noreferrer">{source.title}</a></p>) || '공식 출처 확인 필요'}</td>)}</tr>
+                <tr className="border-b border-gray-50"><td className="text-xs text-gray-400 py-3 pr-4">공식 출처</td>{PROGRAMS.map(p => {
+                  const sources = (p.sources?.length ? p.sources : p.officialUrl ? [{ title: '공식 원문', source_url: p.officialUrl }] : []).filter(source => safeSource(source.source_url));
+                  return <td key={p.id} className="py-3 px-4 text-sm text-gray-700">{sources.length ? sources.map((source,index) => <p key={index}><a href={source.source_url} target="_blank" rel="noopener noreferrer">{source.title}</a></p>) : '공식 출처 확인 필요'}</td>;
+                })}</tr>
               </tbody>
             </table>
           </div>

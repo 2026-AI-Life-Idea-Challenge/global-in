@@ -8,6 +8,7 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator, model_valida
 from app.models.program import Country
 from app.models.user_profile import UserProfile
 
+
 # 공통 UserProfile.target_visa_type 값
 VisaType = Literal["working_holiday", "student", "employment"]
 Intent = Literal["recommend", "check", "prepare", "update_info", "other"]
@@ -168,3 +169,9 @@ class ChatResponse(BaseModel):
     support_eligibility: list[SupportEligibilityPayload] = Field(default_factory=list)
     rag_statuses: list[dict[str, Any]] = Field(default_factory=list)
     answer_sections: list[dict[str, Any]] = Field(default_factory=list)
+
+
+class PreparationRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    target_id: str = Field(min_length=1, max_length=200)
+    profile: ProfileUpdateRequest = Field(default_factory=ProfileUpdateRequest)

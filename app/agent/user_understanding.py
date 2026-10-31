@@ -110,7 +110,33 @@ def run(state: AgentState) -> dict:
         except ValidationError:
             # A malformed extracted field is absent, not a fabricated valid fact.
             continue
+    # Missing extracted values are not explicit requests to erase saved context.
+    validated = {k:v for k,v in validated.items() if v is not None}
     profile.update(validated)
+    query = state['user_query'].lower()
+    explicit_countries = [code for code, aliases in {
+        'australia': ('호주', 'australia'), 'japan': ('일본', 'japan'),
+        'usa': ('미국', 'united states'), 'germany': ('독일', 'germany'),
+        'canada': ('캐나다', 'canada')}.items() if any(alias in query for alias in aliases)]
+    if len(explicit_countries) == 1:
+        profile['target_country'] = explicit_countries[0]
+    explicit_wh = any(word in query for word in ('워홀', '워킹홀리데이', 'working holiday'))
+    if explicit_wh:
+        profile['target_visa_type'] = 'working_holiday'
+    overview = any(word in query for word in ('전체적으로', '전반적으로', '개요', '기본 정보', '전체 안내', '전체 단계', '모든 단계', '단계별')) and extracted.intent != 'eligibility_review'
+    if overview and not extracted.program_ids and not explicit_countries and not explicit_wh:
+        extracted.program_ids = state.get('requested_program_ids', [])
+        extracted.support_program_ids = state.get('requested_support_ids', [])
+        extracted.information_scope = state.get('information_scope', extracted.information_scope)
+    if explicit_wh and len(explicit_countries) == 1:
+        matching = [p['program_id'] for p in programs if p['country'] == explicit_countries[0] and p.get('category') == 'working_holiday']
+        families = [family for family in ('417', '462') if family in query]
+        if len(families) == 1:
+            matching = [pid for pid in matching if 'subclass_' + families[0] + '_' in pid]
+        extracted.program_ids = matching if overview else [pid for pid in extracted.program_ids if pid in matching] or matching
+        if not any(word in query for word in ('지원', '장학', 'support', 'scholarship')):
+            extracted.support_program_ids = []
+            extracted.information_scope = 'program'
     valid_programs = {p['program_id'] for p in programs}
     valid_supports = {s['support_program_id'] for s in supports}
     target_question = None
@@ -151,17 +177,19 @@ def run(state: AgentState) -> dict:
             chosen = prefix + stage
             if chosen in valid_programs:
                 extracted.program_ids = [pid for pid in extracted.program_ids if not pid.startswith(prefix)] + [chosen]
-        elif selected and not stage and not all_stages:
+        elif selected and not stage and not all_stages and not overview:
             stage_question = f'호주 {family}의 첫 신청·2차·3차는 별도 프로그램입니다. 어떤 단계인지 알려주세요. 단계별 비교가 목적이면 그렇게 말씀해 주세요.'
     missing = []
     if extracted.intent == 'eligibility_review':
         missing = [field for field in ('nationalities', 'date_of_birth') if not profile.get(field)]
+    if overview and not extracted.program_ids and not extracted.support_program_ids and not profile.get('target_country') and not profile.get('target_visa_type'):
+        target_question = '어느 국가와 진출 목적을 알아보고 싶으신가요? 국가·프로그램명을 알려주시면 해당 범위에서 안내할게요.'
     question = target_question
     if missing:
         question = '자격 검토를 위해 ' + ', '.join({'nationalities': '국적', 'date_of_birth': '정확한 생년월일'}[f] for f in missing) + '을 알려주세요. 나이만으로 생년월일을 추정하지 않습니다.'
     if stage_question:
         question = stage_question
-    return dict(user_profile=profile, intent=extracted.intent, missing_fields=missing,
+    return dict(overview=overview, user_profile=profile, intent=extracted.intent, missing_fields=missing,
                 follow_up_question=question, catalog_programs=programs, catalog_supports=supports,
                 requested_program_ids=extracted.program_ids, requested_support_ids=extracted.support_program_ids,
                 information_scope=extracted.information_scope, next_node='ask_user' if question else 'route_recommendation',

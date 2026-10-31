@@ -99,7 +99,7 @@ def test_first_profile_and_message_use_one_graph_with_real_b_citations(setup):
     assert data['citations'][0]['source_url']=='https://example.org/passport'
     assert data['programs'][0]['citations']
     assert any(item['citations'] for item in data['prep_items'])
-    assert data['rag_statuses'][0]['development_only'] is True
+    assert data['rag_statuses'][0]['development_only'] is False
     assert data['eligibility'][0]['overall']=='추가 확인 필요'
     assert '유효한 여권이 필요합니다.' in data['reply']
 
@@ -154,7 +154,7 @@ def test_support_result_is_separate_and_closed_is_not_open(setup):
     assert data['support_programs'][0]['availability']=='CLOSED'
     assert data['support_eligibility'][0]['support_program_id']=='S:test'
     assert data['support_programs'][0]['citations']
-    assert '마감으로 저장됨' in data['reply']
+    assert '접수 종료로 기록됨' in data['reply']
     assert data['prep_items'][0]['program_id']=='S:test'
 
 

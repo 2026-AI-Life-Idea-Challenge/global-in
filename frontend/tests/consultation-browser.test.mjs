@@ -25,6 +25,11 @@ export async function runBrowserChecks(base, fixture) {
     if (failed) return route.fulfill({ status: 503, json: { error: '테스트 오류' } });
     await route.fulfill({ json: result() });
   });
+  await page.route('**/api/preparation', async route => {
+    const body=route.request().postDataJSON();
+    assert.ok(body.profile && typeof body.target_id === 'string');
+    await route.fulfill({json:{items:[{id:'personal:'+body.target_id+':evidence',program_id:body.target_id,title:'프로필 기준 증빙 준비',description:'저장된 프로필과 실제 규칙 비교 결과',done:false,status:'todo',citations:[{title:'공식 증빙 안내',source_url:'https://example.org/evidence'}]}]}});
+  });
   const saved = async key => page.evaluate(name => JSON.parse(sessionStorage.getItem(name) || 'null'), key);
   async function question(text) {
     await page.getByPlaceholder('편하게 이야기해 주세요.').fill(text);
@@ -100,6 +105,8 @@ export async function runBrowserChecks(base, fixture) {
     await page.goto(base + '/compare');
     await page.getByRole('columnheader', { name: '검증용 지원제도', exact: true }).waitFor();
     await page.getByRole('columnheader', { name: 'IEC', exact: true }).waitFor(); checks++;
+    await page.getByRole('link', { name: '테스트 공식 출처', exact: true }).waitFor();
+    assert.equal(await page.getByRole('link', { name: '테스트 공식 출처', exact: true }).getAttribute('href'), 'https://canada.ca/'); checks++;
     await page.goto(base + '/programs/CA%3Aiec');
     await page.getByRole('heading', { name: 'IEC', exact: true }).waitFor();
     await page.getByText('테스트 데이터셋의 신청 요건입니다.', { exact: true }).waitFor(); checks++;
@@ -124,6 +131,7 @@ export async function runBrowserChecks(base, fixture) {
     await page.getByRole('button', { name: 'IEC 플랜에 추가', exact: true }).click();
     await page.getByRole('button', { name: '지원제도', exact: true }).click();
     await page.getByRole('button', { name: '검증용 지원제도 플랜에 추가', exact: true }).click();
+    await page.getByRole('status').filter({hasText:'개인별 준비 항목'}).last().waitFor();
     await page.goto(base + '/preparation');
     assert.equal(await page.getByRole('checkbox').count(), 2); checks++;
     await mkdir('../tmp/browser-checks', { recursive: true });
@@ -149,6 +157,7 @@ export async function runBrowserChecks(base, fixture) {
     await page.getByRole('heading', { name: 'IEC', exact: true }).waitFor(); checks++;
     await page.goto(base + '/chat');
     await page.getByRole('button', { name: 'IEC 플랜에 추가', exact: true }).last().click();
+    await page.getByRole('status').filter({hasText:'개인별 준비 항목'}).last().waitFor();
     await page.goto(base + '/profile');
     await page.locator('input[type="date"][value="1997-04-03"]').waitFor();
     assert.equal(await page.getByPlaceholder('예: 컴퓨터공학').inputValue(), '컴퓨터공학');

@@ -1,5 +1,5 @@
 import { useMemo, useSyncExternalStore } from 'react';
-import { RESULT_KEY, readSaved } from './consultation';
+import { RESULT_KEY, PROFILE_KEY, readSaved } from './consultation';
 import type { ComparedItem } from './useComparison';
 
 export const PLAN_KEY = 'global-in-plans-v1';
@@ -7,6 +7,26 @@ const event = 'global-in-plans-updated';
 export type PlanItem = { id: string; program_id: string; title: string; description: string; done: boolean;
   status: string; citations?: { title: string; source_url: string }[] };
 export type Plan = { target: ComparedItem; items: PlanItem[] };
+
+export async function personalizePlan(target: ComparedItem, supplied: PlanItem[] = [], existingOnly = false) {
+  const saved = readSaved<{ profile?: Record<string, unknown> }>(PROFILE_KEY, {});
+  const response = await fetch('/api/preparation', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ target_id: target.id, profile: saved.profile || {} }) });
+  const data = await response.json();
+  if (!response.ok || !Array.isArray(data.items) || !data.items.length) throw new Error(data.error || '개인별 준비 항목을 찾지 못했습니다.');
+  const store = read();
+  const old = store.plans.find(plan => plan.target.id === target.id);
+  // A deleted plan must not reappear after a late response.
+  if (existingOnly && !old) return;
+  const generated: PlanItem[] = data.items;
+  const next = [...generated, ...supplied.filter(item => item.program_id === target.id && !generated.some(row => row.id === item.id))];
+  const items = next.map(item => ({ ...item, done: old?.items.some(previous => previous.id === item.id && previous.description === item.description && previous.done) || false }));
+  if (old) {
+    const custom = old.items.filter(item => !item.id.startsWith('personal:') && !item.id.startsWith('dataset:') && !item.id.startsWith('source:') && !items.some(row => row.id === item.id));
+    old.target = { ...old.target, ...target }; old.items = [...items, ...custom];
+  } else store.plans.push({ target, items });
+  write(store);
+}
 type Store = { version: 1; plans: Plan[] };
 
 function valid(value: unknown): value is Plan {

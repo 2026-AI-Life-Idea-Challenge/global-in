@@ -2,15 +2,24 @@
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { safeSource } from "@/components/ConsultationDetails";
-import { usePlans } from '@/lib/plans';
+import { usePlans, personalizePlan } from '@/lib/plans';
 
 export default function PreparationPage() {
   const router = useRouter();
   const planner = usePlans();
   const items = planner.plans.flatMap(plan => plan.items.map(item => ({ ...item, targetName: plan.target.name })));
   const [notice, setNotice] = useState('');
+  const migrating = useRef(new Set<string>());
+  useEffect(() => {
+    for (const plan of planner.plans) {
+      const id = String(plan.target.id);
+      if (!plan.items.every(item => item.id.startsWith('source:')) || migrating.current.has(id)) continue;
+      migrating.current.add(id);
+      personalizePlan(plan.target, [], true).catch(() => setNotice('개인별 항목 생성에 실패했습니다. 준비 항목 다시 검토를 눌러 주세요.'));
+    }
+  }, [planner.plans]);
   const [editing, setEditing] = useState<{ target: string; id: string; title: string; description: string } | null>(null);
   const [newTitle, setNewTitle] = useState('');
   const [target, setTarget] = useState('');
@@ -69,6 +78,11 @@ export default function PreparationPage() {
               <button style={actionStyle} type="submit">항목 추가</button>
             </form>
             <button style={actionStyle} onClick={() => router.push('/chat')}>조건 수정·재상담</button>
+            {' '}<button style={actionStyle} onClick={async () => {
+              setNotice('현재 프로필로 준비 항목을 다시 검토하고 있습니다.');
+              try { for (const plan of planner.plans) await personalizePlan(plan.target, [], true); setNotice('현재 프로필 기준으로 준비 항목을 갱신했습니다.'); }
+              catch (error) { setNotice(error instanceof Error ? error.message : '갱신 실패'); }
+            }}>준비 항목 다시 검토</button>
           </section> : <div style={{
             background: "#fff", border: "1px solid var(--ln)", borderRadius: 16,
             padding: "60px 40px", display: "flex", flexDirection: "column",
