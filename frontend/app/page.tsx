@@ -11,9 +11,25 @@ const COUNTRY_CODE: Record<string, string> = {
 };
 
 const CARDS = [
-  { icon: "M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20M16.2 7.8l-2.1 6.3-6.3 2.1 2.1-6.3z", title: "내 조건에 맞는지 확인", desc: "충족한 조건과 더 확인할 조건 정리", href: "/programs" },
-  { icon: "M3 17l2 2 4-4M3 7l2 2 4-4M13 6h8M13 12h8M13 18h8", title: "준비할 일을 순서대로", desc: "필요한 서류와 할 일을 체크리스트로", href: "/preparation" },
-  { icon: "M3 17l2 2 4-4M3 7l2 2 4-4M13 6h8M13 12h8M13 18h8", title: "나에게 맞는 프로그램 비교", desc: "관심 있는 프로그램의 차이를 한눈에", href: "/profile" },
+  
+  {
+    icon: "M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M4 21a8 8 0 0 1 16 0",
+    title: "AI와 함께 찾는 나만의 해외 기회",
+    desc: "내 프로필을 분석해 맞춤 프로그램과 정보, 준비 체크리스트 제공",
+    href: "/chat",
+  },
+  {
+    icon: "M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20M16.2 7.8l-2.1 6.3-6.3 2.1 2.1-6.3z",
+    title: "나에게 맞는 프로그램 탐색",
+    desc: "해외 프로그램의 조건과 혜택을 살펴보고 한눈에 비교",
+    href: "/programs",
+  },
+  {
+    icon: "M3 17l2 2 4-4M3 7l2 2 4-4M13 6h8M13 12h8M13 18h8",
+    title: "선택한 프로그램별 준비 플랜",
+    desc: "프로그램별 준비 일정과 체크리스트를 확인하고 진행 상황 관리",
+    href: "/preparation",
+  },
 ];
 
 const cardMargins = ["0 0 6px 0", "0 0 6px 0", "0 0 0 0"];
@@ -137,8 +153,8 @@ export default function Home() {
             YOUR NEXT CHAPTER
           </div>
           <h1 style={{ fontSize: "clamp(2.2rem,5vw,3.5rem)", lineHeight: 1.2, letterSpacing: "-0.05em", fontWeight: 800, margin: "20px 0", animation: "fadeUp 0.6s ease 0.15s both" }}>
-            해외에서의 시작,<br />
-            내 <mark style={{ background: "transparent", padding: "0 4px", animationName: "markIn", animationDuration: "0.8s", animationDelay: "0.9s", animationFillMode: "forwards" }}>조건에</mark> 맞게.
+            가능성을 찾고,<br />
+            계획으로 완성하다.
           </h1>
           <p style={{ color: "var(--mu)", fontSize: "1.05rem", lineHeight: 2, margin: "0 0 32px", animation: "fadeUp 0.6s ease 0.3s both" }}>
             나에게 맞는 비자·체류 프로그램을 비교하고,<br />
@@ -175,7 +191,7 @@ export default function Home() {
               e.currentTarget.style.boxShadow = "none";
             }}
           >
-            상담 시작하기
+            AI 상담 시작하기
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M7 7h10v10M7 17L17 7"/></svg>
           </button>
         </div>
