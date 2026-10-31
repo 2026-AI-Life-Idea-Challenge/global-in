@@ -40,14 +40,14 @@ export default function ProgramDetailPage() {
   const rawId = typeof params?.id === 'string' ? params.id : '';
   let id = rawId;
   try { id = decodeURIComponent(rawId); } catch { /* Invalid links remain not found. */ }
+  if (id === 'KR_US_WEST') id = 'US:US-WEST-01';
   const [dataset, setDataset] = useState<{ id: string; sections?: DatasetSection[]; error?: string }>({ id: '' });
   const [revision, setRevision] = useState(0);
   useEffect(() => {
     if (!id) return;
     const controller = new AbortController();
-    fetch('/api/catalog/' + encodeURIComponent(id), { signal: controller.signal, cache: 'no-store' })
-      .then(async response => { const data = await response.json(); if (!response.ok) throw new Error(data.error || '상세 자료 조회 실패'); return data; })
-      .then(data => { if (!controller.signal.aborted) setDataset({ id, sections: data.sections || [] }); })
+    Promise.all((id === 'US:US-WEST-01' ? [id, 'KR_US_WEST'] : [id]).map(target => fetch('/api/catalog/' + encodeURIComponent(target), { signal: controller.signal, cache: 'no-store' }).then(async response => { if (target !== id && !response.ok) return { sections: [] }; const data = await response.json(); if (!response.ok) throw new Error(data.error || '상세 자료 조회 실패'); return data; }))).then(results => ({ sections: results.flatMap(result => result.sections || []) }))
+            .then(data => { if (!controller.signal.aborted) setDataset({ id, sections: data.sections || [] }); })
       .catch(error => { if (!controller.signal.aborted) setDataset({ id, error: error instanceof Error ? error.message : '조회 실패' }); });
     return () => controller.abort();
   }, [id, revision]);
@@ -56,19 +56,19 @@ export default function ProgramDetailPage() {
     : sections ? <ProgramRequirements sections={sections} /> : <span role="status">데이터셋의 요건·서류·절차를 불러오는 중…</span>;
   const item = items.find(p => p.id === id || encodeURIComponent(p.id) === id);
   const family = item?.id.match(/^(AU:subclass_(?:417|462)_)/)?.[1];
-  const stages = family ? items.filter(p => p.id.startsWith(family)) : [];
+  const stages = family ? items.filter(p => p.id.startsWith(family)).sort((a,b) => ['first','second','third'].indexOf(a.id.slice(family.length)) - ['first','second','third'].indexOf(b.id.slice(family.length))) : [];
   const activeStage = Math.max(0, stages.findIndex(p => p.id === item?.id));
   const program: ProgramDetail | undefined = item ? {
     id: item.id, type: item.kind === 'support' ? '지원제도' : '프로그램',
     country: catalogCountry(item), tags: [catalogCountry(item), CATEGORY_NAMES[item.category || ''] || '공식 자료'],
-    name: item.name, desc: item.provider ? '운영 기관: ' + item.provider : '공식 자료를 바탕으로 제공되는 프로그램 정보입니다.',
+    name: family ? `호주 ${family.includes('417') ? '워킹홀리데이 비자 417' : '워크앤홀리데이 비자 462'}` : item.name, desc: item.description || item.name,
     sub: item.kind === 'support' ? '저장된 모집 상태: ' + (AVAILABILITY_NAMES[item.availability] || '현재 접수 여부 미확인') : '개인별 자격 조건은 상담과 공식 근거를 통해 확인해 주세요.',
-    details: sections?.length ? `데이터셋의 공식 자료 ${sections.length}건을 연결했습니다. ${[...new Set(sections.map(section => datasetSectionLabel(section.title)))].join(' · ')}` : '공식 출처 확인일: ' + (item.source_verified_at || '자료별 확인 필요'),
+    details: sections?.length ? `데이터셋의 공식 자료 ${sections.length}건을 연결했습니다. ${[...new Set(sections.map(section => datasetSectionLabel(section.title)))].join(' · ')}` : item.source_verified_at ? '공식 출처 확인일: ' + item.source_verified_at : `연결된 공식 출처 ${item.sources.length}개에서 신청 요건·서류·절차를 확인할 수 있습니다.`,
     officialUrl: item.sources.find(source => safeSource(source.source_url))?.source_url || '',
     links: item.sources.filter(source => safeSource(source.source_url)).map(source => ({ label: source.title, url: source.source_url })),
     stages: stages.length > 1 ? stages.map(stage => ({ id: stage.id,
       label: stage.id.endsWith('_first') ? '첫 신청' : stage.id.endsWith('_second') ? '2차 신청' : '3차 신청',
-      details: stage.name, sub: '신청 단계별 조건은 공식 근거와 상담에서 확인해 주세요.' })) : undefined,
+      details: stage.description || stage.name, sub: '신청 단계별 조건은 공식 근거와 상담에서 확인해 주세요.' })) : undefined,
   } : undefined;
 
   if (!program) {

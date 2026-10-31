@@ -24,7 +24,7 @@ def run(state: AgentState) -> dict:
                     lines.append(label)
                 lines.append((name + '\n' if name else '') + claim['text'])
             if result.get('unanswered_parts'):
-                lines.append('질문 중 일부 항목은 검색된 공식 근거가 부족해 확정하지 못했습니다. 아래 추가 확인 항목을 확인하세요.')
+                lines.append('질문 중 일부 항목은 검색된 공식 근거가 부족해 확정하지 못했습니다. 확인되지 않은 세부 사항은 상담에서 구체적으로 질문해 주세요.')
         else:
             lines.append('선택한 범위에서 답변을 뒷받침할 공식 근거를 충분히 찾지 못했습니다. 제도명이나 확인할 항목을 좁혀 주세요.')
     supports = state.get('candidate_support_programs', [])

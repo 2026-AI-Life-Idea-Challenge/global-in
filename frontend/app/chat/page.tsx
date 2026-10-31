@@ -11,7 +11,7 @@ import { useSearchParams } from "next/navigation";
 
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import ConsultationDetails, {
+import {
   type ConsultationDetailsData,
 } from "@/components/ConsultationDetails";
 
@@ -26,7 +26,7 @@ import {
 } from "@/lib/consultation";
 
 import { useComparison } from "@/lib/useComparison";
-import { COUNTRY_NAMES, CATEGORY_NAMES, type CatalogItem } from "@/lib/catalog";
+import { COUNTRY_NAMES, CATEGORY_NAMES, programName, programDescription, presentCatalog, type CatalogItem } from "@/lib/catalog";
 import ProgramActions from '@/components/ProgramActions';
 import { syncConsultationProfile } from '@/lib/profileSync';
 import type { ComparedItem } from '@/lib/useComparison';
@@ -188,7 +188,7 @@ function AiAvatar() {
 
 // 프로그램 카드
 function ProgramCard({
-  program,
+  program: originalProgram,
   isCompared,
   onToggleCompare,
   prepItems,
@@ -198,11 +198,13 @@ function ProgramCard({
   onToggleCompare: (id: string | number) => void;
   prepItems?: PlanItem[];
 }) {
+  const program = { ...originalProgram, name: programName(String(originalProgram.id), originalProgram.name),
+    desc: originalProgram.desc && !originalProgram.desc.includes('공식 자료를 바탕으로') && !originalProgram.desc.includes('공식 조건 확인이 필요한 후보') ? originalProgram.desc : programDescription(String(originalProgram.id), originalProgram.desc) };
   const [catalogSource, setCatalogSource] = useState<string>();
   useEffect(() => {
     const controller = new AbortController();
     fetch('/api/catalog', { signal: controller.signal }).then(res => res.ok ? res.json() : null).then(data => {
-      const item = data?.items?.find((row: CatalogItem) => row.id === program.id);
+      const item = data?.items ? presentCatalog(data.items).find((row: CatalogItem) => row.id === program.id) : undefined;
       const url = item?.sources?.find((source: { source_url: string }) => /^https?:\/\//.test(source.source_url))?.source_url;
       setCatalogSource(url);
     }).catch(() => {});
@@ -565,8 +567,7 @@ function ChatPageInner() {
 
     const timer = window.setTimeout(() => {
       send(
-        program +
-          "에 대해 자세히 알고 싶어요. 저에게 맞는지 상담해 주세요."
+        program + " · " + (searchParams?.get("question")?.slice(0, 1000) || "에 대해 자세히 알고 싶어요. 저에게 맞는지 상담해 주세요.")
       );
     }, 400);
 
@@ -945,7 +946,7 @@ function ChatPageInner() {
             citations?: { title: string; source_url: string; verified_at?: string | null }[];
           }) => ({
             id: program.program_id,
-            name: program.name,
+            name: programName(program.program_id, program.name),
             country:
               COUNTRY_NAMES[program.country] || program.country,
             type:
@@ -957,6 +958,11 @@ function ChatPageInner() {
             eligibility: data.eligibility?.find((review: { program_id: string }) => review.program_id === program.program_id)?.overall,
           })
         );
+      for (const support of (data.support_programs || []) as { support_program_id: string; name: string; availability?: string; source_verified_at?: string; citations?: { title: string; source_url: string }[] }[]) {
+        programs.push({ id: support.support_program_id, name: programName(support.support_program_id, support.name), kind: 'support', type: '지원제도',
+          country: COUNTRY_NAMES[data.profile?.target_country] || '', desc: programDescription(support.support_program_id, support.name),
+          sources: support.citations || [], officialUrl: support.citations?.[0]?.source_url, availability: support.availability, verifiedAt: support.source_verified_at });
+      }
       syncConsultationProfile(data.profile);
 
       // 상담 결과를 현재 브라우저 탭에 저장
@@ -1218,10 +1224,6 @@ function ChatPageInner() {
                           {renderContent(msg.content)}
                         </div>
 
-                        {/* 상세 상담 결과 */}
-                        {msg.details && (
-                          <ConsultationDetails data={msg.details} reply={msg.content} />
-                        )}
 
                         {/* 추천 프로그램 */}
                         {msg.programs && msg.programs.length > 0 && (

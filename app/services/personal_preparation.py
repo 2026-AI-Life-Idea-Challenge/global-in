@@ -40,8 +40,11 @@ def build_preparation(target_id, profile):
     state = dict(user_profile=profile, candidate_programs=[], candidate_support_programs=[])
     state['candidate_programs' if kind == 'program' else 'candidate_support_programs'] = [
         {'program_id' if kind == 'program' else 'support_program_id': target_id}]
+    related = load_catalog_detail('KR_US_WEST') if target_id == 'US:US-WEST-01' else None
+    if related:
+        state['candidate_support_programs'] = [{'support_program_id': 'KR_US_WEST'}]
     reviews = review(state)['eligibility_results']
-    sources = detail.get('sources', [])
+    sources = list({source['source_url']: source for source in [*detail.get('sources', []), *(related or {}).get('sources', [])]}.values())
     groups = {}
     for result in reviews:
         for condition in result.get('condition_results', []):
@@ -66,7 +69,14 @@ def build_preparation(target_id, profile):
             context.append('현재 입력값으로 미충족 조건이 있습니다. 아래 근거와 대조해 보완 가능 여부를 확인하세요.')
         items.append(dict(id='action:' + target_id + ':' + hashlib.sha256(title.encode()).hexdigest()[:12], program_id=target_id,
             title=title, description=' '.join([group['action'], *context]), done=False, status=status,
-            task_version=2, citations=sources, evidence=[dict(text=c.get('description') or c['requirement_id'],
+            task_version=3, stage='preparation', origin='suggestion', citations=sources, evidence=[dict(text=c.get('description') or c['requirement_id'],
                 outcome=c.get('status'), reason=c.get('reason')) for c in conditions]))
+    for key, title, action in (
+        ('application', '신청 기간·접수 방법 확인하기', '선택한 경로의 공식 안내에서 신청 기간과 제출 경로를 확인하고 기록하세요. 확인되지 않은 일정은 확정하지 마세요.'),
+        ('form', '신청서 입력 정보와 제출 요청 대조하기', '공식 신청 경로에서 요구하는 정보·서류를 확인하고 본인의 입력값과 대조하세요. 실제 제출 자료는 신청 경로별로 확인하세요.'),
+        ('cost', '신청 비용 유무와 결제 안내 확인하기', '공식 안내에서 본인 경로에 적용되는 비용 유무·금액·결제 방법을 확인하세요. 확인 전에는 결제하거나 금액을 확정하지 마세요.'),
+    ):
+        items.append(dict(id='action:' + target_id + ':' + key,program_id=target_id,title=title,description=action,
+            done=False,status='check_needed',task_version=3,stage='application',origin='suggestion',citations=sources,evidence=[]))
     return dict(target_id=target_id, items=items, profile_fields=sorted(k for k,v in profile.items() if v is not None),
         scope='profile_rule_comparison_not_final_approval')

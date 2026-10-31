@@ -5,7 +5,7 @@ import type { ComparedItem } from './useComparison';
 export const PLAN_KEY = 'global-in-plans-v1';
 const event = 'global-in-plans-updated';
 export type PlanItem = { id: string; program_id: string; title: string; description: string; done: boolean;
-  status: string; task_version?: number; evidence?: { text: string; outcome?: string; reason?: string }[]; citations?: { title: string; source_url: string }[] };
+  status: string; task_version?: number; stage?: string; origin?: 'official' | 'suggestion' | 'manual'; evidence?: { text: string; outcome?: string; reason?: string }[]; citations?: { title: string; source_url: string }[] };
 export type Plan = { target: ComparedItem; items: PlanItem[] };
 
 export async function personalizePlan(target: ComparedItem, _supplied: PlanItem[] = [], existingOnly = false) {
@@ -22,9 +22,12 @@ export async function personalizePlan(target: ComparedItem, _supplied: PlanItem[
   if (existingOnly && !old) return;
   const generated: PlanItem[] = data.items;
   const next = generated;
-  const items = next.map(item => ({ ...item, done: old?.items.some(previous => previous.id === item.id && previous.description === item.description && previous.done) || false }));
+  const items = next.map(item => {
+    const previous = old?.items.find(previous => previous.id === item.id);
+    return previous?.origin === 'manual' ? previous : { ...item, done: previous?.description === item.description && previous.done || false };
+  });
   if (old) {
-    const custom = old.items.filter(item => !['personal:', 'dataset:', 'source:', 'action:', 'confirm_', 'review:'].some(prefix => item.id.startsWith(prefix)) && !items.some(row => row.id === item.id));
+    const custom = old.items.filter(item => (item.origin === 'manual' || !['personal:', 'dataset:', 'source:', 'action:', 'confirm_', 'review:'].some(prefix => item.id.startsWith(prefix))) && !items.some(row => row.id === item.id));
     old.target = { ...old.target, ...target }; old.items = [...items, ...custom];
   } else store.plans.push({ target, items });
   write(store);
@@ -94,8 +97,9 @@ export function usePlans() {
     add: addToPlan,
     toggle: (target: string, id: string) => update(target, items => items.map(item => item.id === id ? { ...item, done: !item.done } : item)),
     remove: (target: string, id: string) => update(target, items => items.filter(item => item.id !== id)),
-    edit: (target: string, id: string, title: string, description: string) => update(target, items => items.map(item => item.id === id ? { ...item, title: title.trim(), description: description.trim() } : item)),
-    append: (target: string, title: string) => update(target, items => [...items, { id: crypto.randomUUID(), program_id: target, title: title.trim(), description: '', done: false, status: 'todo' }]),
+    edit: (target: string, id: string, title: string, description: string) => update(target, items => items.map(item => item.id === id ? { ...item, title: title.trim(), description: description.trim(), origin: 'manual' } : item)),
+    append: (target: string, title: string, stage = 'preparation') => update(target, items => [...items, { id: crypto.randomUUID(), program_id: target, title: title.trim(), description: '', done: false, status: 'todo', origin: 'manual', stage }]),
+    removePlan: (target: string) => { const store = read(); write({ ...store, plans: store.plans.filter(plan => plan.target.id !== target) }); },
     clear: () => write({ version: 1, plans: [] }),
   };
 }

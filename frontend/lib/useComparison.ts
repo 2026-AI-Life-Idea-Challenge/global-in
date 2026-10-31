@@ -1,6 +1,6 @@
 "use client";
 import { useCallback, useMemo, useSyncExternalStore, useEffect } from 'react';
-import { toCompared, type CatalogItem } from './catalog';
+import { toCompared, presentCatalog, type CatalogItem } from './catalog';
 import { COMPARE_KEY, readSaved, saveTab } from './consultation';
 
 export type ComparedItem = { id: string | number; name: string; country?: string | null; type?: string; desc?: string; kind?: string;
@@ -25,7 +25,7 @@ export function useComparison() {
       if (!response.ok) throw new Error('catalog unavailable');
       return response.json();
     }).then(data => {
-      const catalog = new Map<string, CatalogItem>((data.items || []).map((item: CatalogItem) => [item.id, item]));
+      const catalog = new Map<string, CatalogItem>(presentCatalog(data.items || []).map((item: CatalogItem) => [item.id, item]));
       const old = readSaved<ComparedItem[]>(COMPARE_KEY, []);
       const next = old.map(item => {
         const row = catalog.get(String(item.id));

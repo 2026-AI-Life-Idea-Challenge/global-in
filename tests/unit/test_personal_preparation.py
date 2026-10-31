@@ -20,10 +20,10 @@ def test_personal_tasks_reflect_rule_outcomes_and_sources(monkeypatch):
             dict(requirement_id='funds',description='재정',status='추가 확인 필요',reason='정보 부족')]}]}
     monkeypatch.setattr(personal_preparation,'review',evaluate)
     result=personal_preparation.build_preparation('AU:test',{'nationalities':['KR']})
-    assert [item['status'] for item in result['items']] == ['todo','blocked','check_needed']
+    assert [item['status'] for item in result['items'][:3]] == ['todo','blocked','check_needed']
     assert all(item['citations'] and not item['done'] for item in result['items'])
     assert result['items'][0]['title']=='생년월일과 신청 예정일로 연령 조건 확인하기'
-    assert all(len(item['title']) < 60 and item['task_version']==2 for item in result['items'])
+    assert all(len(item['title']) < 60 and item['task_version']==3 for item in result['items'])
     assert result['items'][0]['evidence'][0]['text']=='나이'
 
 
