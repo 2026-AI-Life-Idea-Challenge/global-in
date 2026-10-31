@@ -38,10 +38,7 @@ from app.agent.eligibility.policy_fetcher import (
     ProgramContext,
 )
 
-DB_URL = os.environ.get(
-    "DATABASE_URL",
-    "postgresql://global_in_app:outsiders4@localhost:5432/global_in",
-)
+DB_URL = os.environ.get("DATABASE_URL")
 
 
 # ── LangGraph State ────────────────────────────────────────────────────────────
