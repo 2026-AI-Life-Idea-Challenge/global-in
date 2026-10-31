@@ -2,7 +2,9 @@
 import { useCallback, useMemo, useSyncExternalStore } from 'react';
 import { COMPARE_KEY, readSaved, saveTab } from './consultation';
 
-export type ComparedItem = { id: string | number; name: string; country?: string | null; type?: string; desc?: string; kind?: string };
+export type ComparedItem = { id: string | number; name: string; country?: string | null; type?: string; desc?: string; kind?: string;
+  provider?: string | null; availability?: string; verifiedAt?: string | null; eligibility?: string;
+  sources?: { title: string; source_url: string }[]; officialUrl?: string };
 const eventName = 'global-in-comparison-updated';
 function subscribe(callback: () => void) {
   window.addEventListener('storage', callback); window.addEventListener(eventName, callback);
@@ -21,7 +23,10 @@ export function useComparison() {
   const refresh = useCallback((current: ComparedItem[]) => {
       const byId = new Map(current.map(p => [p.id, p]));
       const old = readSaved<ComparedItem[]>(COMPARE_KEY, []);
-      const updated = old.map(p => byId.get(p.id) || p);
+      const updated = old.map(p => {
+        const current = byId.get(p.id);
+        return current ? { ...p, ...Object.fromEntries(Object.entries(current).filter(([, value]) => value !== undefined)) } : p;
+      });
       if (JSON.stringify(old) !== JSON.stringify(updated)) write(updated);
     }, []);
   return { items, toggle, clear, refresh };

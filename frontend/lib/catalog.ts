@@ -12,5 +12,7 @@ export function catalogCountry(item: CatalogItem): string {
 }
 export function toCompared(item: CatalogItem) {
   return { id: item.id, name: item.name, country: catalogCountry(item), type: item.kind === 'support' ? '지원제도' : CATEGORY_NAMES[item.category || ''] || '프로그램',
-    desc: '공식 원문과 개인별 적용 조건을 추가 확인하세요.', kind: item.kind };
+    desc: '공식 원문과 개인별 적용 조건을 추가 확인하세요.', kind: item.kind,
+    provider: item.provider, availability: item.kind === 'support' ? item.availability : undefined,
+    verifiedAt: item.source_verified_at, sources: item.sources, officialUrl: item.sources[0]?.source_url };
 }

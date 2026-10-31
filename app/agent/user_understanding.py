@@ -28,6 +28,9 @@ _SYSTEM = """사용자의 현재 질문에서 의도와 직접 밝힌 정보를 
 구조화 출력 스키마가 주어지면 profile_updates는 [{"field":"필드명","value":"사용자가 말한 값"}] 목록으로 출력한다.
 profile_updates 허용 필드: date_of_birth, nationalities(ISO 2자리 목록), target_country
 (japan|australia|usa|germany|canada), target_visa_type(student|employment|working_holiday), purpose(500자).
+추가 허용 필드: residence_country(현재 거주국 ISO 2자리), education(학력), education_status(재학·졸업 등),
+major(전공), career(경력), career_duration(경력 기간), languages(언어), certifications(자격).
+사용자가 직접 말한 정보만 해당 필드에 보존한다. 학력·언어 자유 텍스트를 자격 충족의 참/거짓으로 추론하지 않는다.
 information_scope는 사용자가 비자와 지원제도를 함께 물으면 both, 지원제도만 물으면 support다.
 """
 
@@ -72,7 +75,7 @@ def extraction_schema(programs,supports):
         return {'type':'array','items':{'type':'string',**({'enum':values} if values else {})},**({'maxItems':0} if not values else {})}
     props=dict(intent={'type':'string','enum':list(Extraction.model_fields['intent'].annotation.__args__)},
         profile_updates={'type':'array','items':{'type':'object','additionalProperties':False,'required':['field','value'],
-            'properties':{'field':{'type':'string','enum':['date_of_birth','nationalities','target_country','target_visa_type','purpose']},
+            'properties':{'field':{'type':'string','enum':['date_of_birth','nationalities','target_country','target_visa_type','purpose','residence_country','education','education_status','major','career','career_duration','languages','certifications']},
                 'value':{'anyOf':[{'type':'string'},{'type':'array','items':{'type':'string'}},{'type':'null'}]}}}},
         program_ids=ids([p['program_id'] for p in programs]),support_program_ids=ids([s['support_program_id'] for s in supports]),
         information_scope={'type':'string','enum':['program','support','both']})

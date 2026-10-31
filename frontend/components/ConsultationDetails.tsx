@@ -1,4 +1,5 @@
 "use client";
+import ProgramActions from './ProgramActions';
 
 type Requirement = { requirement_id: string; outcome: string; reason?: string | null; description?: string | null; pending_reviews?: { authority_id?: string; questions?: string[] }[] };
 
@@ -31,6 +32,7 @@ export default function ConsultationDetails({ data }: { data: ConsultationDetail
       {data.support_programs.map(item => <article key={item.support_program_id} style={{ border: '1px solid var(--ln)', padding: 12, marginTop: 8 }}>
         <strong>{item.name}</strong><p>저장된 모집 상태: {({ OPEN: '접수 중으로 기록됨', CLOSED: '접수 종료로 기록됨', UPCOMING: '접수 예정으로 기록됨', UNKNOWN: '접수 여부 확인 필요' } as Record<string, string>)[item.availability] || '확인 필요'} · 확인일: {item.source_verified_at || '미확인'}</p>
         <p>목록 연결은 신청 자격이나 현재 접수 가능 여부를 확정하지 않습니다.</p>
+        <ProgramActions item={{ id: item.support_program_id, name: item.name, kind: 'support', type: '지원제도', availability: item.availability, verifiedAt: item.source_verified_at, sources: item.citations }} prepItems={data.prep_items} showCompare />
         {item.citations?.filter(c => safeSource(c.source_url)).map((c, index) => <p key={index}><a href={c.source_url} target="_blank" rel="noopener noreferrer">{c.title}</a></p>)}
       </article>)}
     </div>}

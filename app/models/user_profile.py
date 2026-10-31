@@ -45,6 +45,14 @@ class UserProfile(BaseModel):
             "미입력 시 A 에이전트가 오늘 날짜로 대체."
         ),
     )
+    residence_country: str | None = Field(default=None, pattern=r'^[A-Z]{2}$')
+    education: str | None = Field(default=None, max_length=500)
+    education_status: str | None = Field(default=None, max_length=500)
+    major: str | None = Field(default=None, max_length=500)
+    career: str | None = Field(default=None, max_length=500)
+    career_duration: str | None = Field(default=None, max_length=500)
+    languages: str | None = Field(default=None, max_length=500)
+    certifications: str | None = Field(default=None, max_length=500)
     target_country: str | None = Field(
         default=None,
         description="목표 국가. B 에이전트 프로그램 검색에 사용. 예: 'canada'",
@@ -120,6 +128,9 @@ class UserProfile(BaseModel):
         data.pop("target_visa_type", None)
         data.pop("purpose", None)
         data.pop("extra", None)
+        # Free-text background informs conversation, not machine-certified facts.
+        for field in ("education", "education_status", "major", "career", "career_duration", "languages", "certifications"):
+            data.pop(field, None)
         return data
 
     def to_search_context(self) -> dict[str, Any]:

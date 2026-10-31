@@ -6,6 +6,9 @@ import { CATEGORY_NAMES, COUNTRY_NAMES, AVAILABILITY_NAMES, catalogCountry, toCo
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
+import ProgramActions from '@/components/ProgramActions';
+import { comparisonRows } from '@/lib/comparisonRows';
+import type { ComparedItem } from '@/lib/useComparison';
 
 const FLAGS: Record<string, string> = {
   독일: '<rect width="30" height="7" fill="#111"/><rect y="7" width="30" height="6.5" fill="#d00"/><rect y="13.5" width="30" height="6.5" fill="#ffce00"/>',
@@ -37,6 +40,7 @@ type Program = {
   sub: string;
   officialUrl: string;
   destinations: string[];
+  comparison: ComparedItem;
 };
 
 function toLegacyProgram(item: CatalogItem): Program {
@@ -65,6 +69,7 @@ function toLegacyProgram(item: CatalogItem): Program {
       ? `저장된 모집 상태: ${AVAILABILITY_NAMES[item.availability] || "현재 접수 여부 미확인"}`
       : `공식 출처 확인일: ${item.source_verified_at || "자료별 확인 필요"}`,
     officialUrl,
+    comparison: toCompared(item),
     destinations: item.kind === 'support' ? item.destination_countries.map(code => COUNTRY_NAMES[code] || code) : [country],
   };
 }
@@ -75,12 +80,7 @@ const TYPES = ["전체", "프로그램", "지원제도"];
 
 
 
-const COMPARE_ROWS: { label: string; render: (p: Program) => string }[] = [
-  { label: "국가", render: (p) => p.country ?? "여러 국가" },
-  { label: "유형", render: (p) => p.type },
-  { label: "목적", render: (p) => p.tags.filter(t => t !== p.country && t !== "여러 국가" && t !== "과정별 상이").join(", ") },
-  { label: "대상·조건", render: (p) => p.sub },
-];
+const COMPARE_ROWS = comparisonRows.map(row => ({ label: row.label, render: (p: Program) => row.value(p.comparison) }));
 
 export default function ProgramsPage() {
   const router = useRouter();
@@ -335,6 +335,7 @@ export default function ProgramsPage() {
                     </label>
 
                     {/* 자세히 보기 버튼 */}
+                    <ProgramActions item={p.comparison} showDetails={false} />
                     <button
                       onClick={() => {
                         try { sessionStorage.setItem("programs-filters", JSON.stringify({ search, typeFilter, countryFilter, purposeFilter })); } catch {}

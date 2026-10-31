@@ -27,6 +27,11 @@ import {
 
 import { useComparison } from "@/lib/useComparison";
 import { COUNTRY_NAMES, CATEGORY_NAMES } from "@/lib/catalog";
+import ProgramActions from '@/components/ProgramActions';
+import { syncConsultationProfile } from '@/lib/profileSync';
+import type { ComparedItem } from '@/lib/useComparison';
+import type { PlanItem } from '@/lib/plans';
+import { comparisonRows } from '@/lib/comparisonRows';
 
 interface Message {
   role: "user" | "assistant";
@@ -35,7 +40,7 @@ interface Message {
   details?: ConsultationDetailsData;
 }
 
-interface Program {
+interface Program extends ComparedItem {
   id: string | number;
   name: string;
   country?: string | null;
@@ -46,6 +51,10 @@ interface Program {
   condition_summary?: string;
   official_url?: string;
   officialUrl?: string;
+  kind?: string;
+  sources?: { title: string; source_url: string }[];
+  eligibility?: string;
+  verifiedAt?: string | null;
 }
 
 interface ChatSession {
@@ -182,10 +191,12 @@ function ProgramCard({
   program,
   isCompared,
   onToggleCompare,
+  prepItems,
 }: {
   program: Program;
   isCompared: boolean;
   onToggleCompare: (id: string | number) => void;
+  prepItems?: PlanItem[];
 }) {
   const officialUrl = program.official_url || program.officialUrl;
 
@@ -305,6 +316,7 @@ function ProgramCard({
               </svg>
             </a>
           )}
+          <ProgramActions item={program} prepItems={prepItems} />
 
           <label
             style={{
@@ -913,7 +925,6 @@ function ChatPageInner() {
 
       // 백엔드 프로그램 데이터를 프론트엔드 형식으로 변환
       const programs: Program[] = (data.programs ?? [])
-        .slice(0, 3)
         .map(
           (program: {
             program_id: string;
@@ -921,6 +932,7 @@ function ChatPageInner() {
             country: string;
             visa_type: string;
             summary: string;
+            citations?: { title: string; source_url: string; verified_at?: string | null }[];
           }) => ({
             id: program.program_id,
             name: program.name,
@@ -930,8 +942,12 @@ function ChatPageInner() {
               CATEGORY_NAMES[program.visa_type] ||
               program.visa_type,
             desc: program.summary,
+            kind: 'program', sources: program.citations || [], officialUrl: program.citations?.[0]?.source_url,
+            verifiedAt: program.citations?.[0]?.verified_at,
+            eligibility: data.eligibility?.find((review: { program_id: string }) => review.program_id === program.program_id)?.overall,
           })
         );
+      syncConsultationProfile(data.profile);
 
       // 상담 결과를 현재 브라우저 탭에 저장
       try {
@@ -1228,6 +1244,7 @@ function ChatPageInner() {
                                     program.id
                                   )}
                                   onToggleCompare={toggleCompare}
+                                  prepItems={msg.details?.prep_items}
                                 />
                               ))}
                             </div>
@@ -1433,26 +1450,7 @@ function ChatPageInner() {
                       </thead>
 
                       <tbody>
-                        {[
-                          {
-                            label: "국가",
-                            render: (program: Program) =>
-                              program.country ?? "여러 국가",
-                          },
-                          {
-                            label: "유형",
-                            render: (program: Program) =>
-                              program.type ?? "-",
-                          },
-                          {
-                            label: "설명",
-                            render: (program: Program) =>
-                              program.desc ||
-                              program.description ||
-                              program.condition_summary ||
-                              "-",
-                          },
-                        ].map((row, rowIndex) => (
+                        {comparisonRows.map((row, rowIndex) => (
                           <tr
                             key={rowIndex}
                             style={{
@@ -1482,7 +1480,7 @@ function ChatPageInner() {
                                   lineHeight: 1.5,
                                 }}
                               >
-                                {row.render(program)}
+                                {row.value(program)}
                               </td>
                             ))}
                           </tr>

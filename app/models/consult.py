@@ -40,6 +40,14 @@ class ProfileUpdateRequest(BaseModel):
 
     date_of_birth: date | None = None
     nationalities: list[str] | None = None
+    residence_country: str | None = Field(default=None, pattern=r'^[A-Z]{2}$')
+    education: str | None = Field(default=None, max_length=500)
+    education_status: str | None = Field(default=None, max_length=500)
+    major: str | None = Field(default=None, max_length=500)
+    career: str | None = Field(default=None, max_length=500)
+    career_duration: str | None = Field(default=None, max_length=500)
+    languages: str | None = Field(default=None, max_length=500)
+    certifications: str | None = Field(default=None, max_length=500)
     target_country: Country | None = None
     target_visa_type: VisaType | None = None
     purpose: str | None = Field(default=None, max_length=500)
