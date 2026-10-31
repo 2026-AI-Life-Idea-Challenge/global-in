@@ -14,6 +14,7 @@ from pydantic import ValidationError, create_model
 from datetime import date
 from app.services import grounding_review
 from app.services import request_budget
+from app.services.recommendation_context import PURPOSE_ANSWER_RULES
 
 from app.models.rag import (
     CitationSpan, OverviewDraft, RagConfigurationError, RagDraft, RagGeneration, RagLLMError,
@@ -60,6 +61,8 @@ eligible은 '대상 요건', character는 '품행 요건', work permit은 '취�
 설명 가능한 일반 요건만 답하라.
 """
 
+
+SYSTEM_PROMPT += PURPOSE_ANSWER_RULES
 
 PRODUCTION_RULES = """
 [실사용 모드]

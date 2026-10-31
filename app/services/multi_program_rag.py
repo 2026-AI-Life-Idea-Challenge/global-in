@@ -22,6 +22,7 @@ from app.retrieval.program_search import (
 )
 from app.services.database import get_connection
 from app.services.answer_quality import guard_unsupported_absolutes
+from app.services.recommendation_context import PURPOSE_ANSWER_RULES
 from app.services.program_rag import (
     ANSWER_HEADERS, RETRIEVAL_LIMIT, SHORTAGE_REASON, _bind_citations, _validate_evidence,
     ensure_source_policy, generation_kwargs, merge_unique_chunks, release_fields, search_queries,
@@ -69,6 +70,9 @@ known_user_profile이 있으면 사용자가 직접 밝힌 정보이므로 그 �
 현재 검색된 자료 밖의 사실을 사용하지 마라. 검색 순위를 추천 적합도나 신청
 가능성으로 해석하지 마라. 사용자 개인의 최종 자격 판정은 하지 마라.
 """
+
+
+SYSTEM_PROMPT += PURPOSE_ANSWER_RULES
 
 
 def _load_candidates(country, category):

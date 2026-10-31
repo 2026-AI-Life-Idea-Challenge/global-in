@@ -160,6 +160,8 @@ class AgentState(TypedDict):
     requested_support_ids: list[str]
     information_scope: str
     rag_results: list[dict[str, Any]]
+    answer_mode: str
+    clarification_needed: bool
 
 
 def initial_state(

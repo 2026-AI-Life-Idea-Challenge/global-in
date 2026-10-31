@@ -1,10 +1,18 @@
 """Call B's validated RAG and preserve its answers and citation provenance."""
+import logging
+from app.models.rag import RagResponseValidationError
 from app.agent.state import AgentState
 from app.services.consultation_b import answer, linked_evidence
 
 
 def run(state: AgentState) -> dict:
-    results = answer(state)
+    try:
+        results = answer(state)
+    except RagResponseValidationError:
+        logging.getLogger(__name__).warning('RAG response validation failed', exc_info=True)
+        return dict(rag_results=[], validated_evidence=[], retrieved_documents=[],
+                    final_answer='요청하신 제도 정보는 근거를 확인하지 못해 안내할 수 없습니다. 공식 자료를 확인해 주세요.',
+                    next_node='preparation_planning', current_agent='official_information')
     evidence = linked_evidence(results)
     lines = []
     if state.get('overview'):
