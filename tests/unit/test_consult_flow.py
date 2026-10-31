@@ -125,6 +125,21 @@ def test_merged_answer_modes_keep_team_routing_and_d_profile(setup, monkeypatch,
     assert again['profile']['nationalities'] == ['KR']
 
 
+@pytest.mark.parametrize('message', ['캐나다 워홀 프로그램 추천해줘', '필요한 서류를 알려줘', '호주 워홀 설명해줘'])
+def test_explicit_facts_recover_from_general_misclassification(setup, monkeypatch, message):
+    original = user_understanding.llm.extract_json
+    def extract(prompt, **kwargs):
+        parsed = json.loads(original(prompt, **kwargs))
+        parsed['answer_mode'] = 'general'
+        return json.dumps(parsed)
+    monkeypatch.setattr(user_understanding.llm, 'extract_json', extract)
+    monkeypatch.setattr(preparation_planning, 'general_guidance', lambda *a, **k: pytest.fail('factual request bypassed retrieval'))
+    data = say(setup, message)
+    assert any(kind == 'generate' for kind, _ in setup[2])
+    assert data['citations']
+    assert '일반적인 준비 안내' not in data['reply']
+
+
 def test_merged_mixed_clarification_keeps_missing_information_and_avoids_rag(setup, monkeypatch):
     original = user_understanding.llm.extract_json
     def extract(prompt, **kwargs):

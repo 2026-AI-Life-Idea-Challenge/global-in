@@ -119,6 +119,14 @@ def run(state: AgentState) -> dict:
     validated = {k:v for k,v in validated.items() if v is not None}
     profile.update(validated)
     query = state['user_query'].lower()
+    # Explicit factual requests must not bypass the catalog/RAG because of an
+    # inconsistent model classification (e.g. recommendation + general).
+    factual_request = bool(re.search(
+        r'(?:프로그램|지원제도|비자|워홀|워킹홀리데이).*(?:추천|알려|설명|비교)|'
+        r'추천.*(?:프로그램|지원제도|비자)|자격|요건|필요.*서류|신청.*(?:절차|기간|방법)|'
+        r'program.*recommend|visa.*(?:eligib|requirement)', query))
+    if extracted.answer_mode == 'general' and (factual_request or extracted.intent == 'route_recommendation'):
+        extracted.answer_mode = 'evidence'
     explicit_countries = [code for code, aliases in {
         'australia': ('호주', 'australia'), 'japan': ('일본', 'japan'),
         'usa': ('미국', 'united states'), 'germany': ('독일', 'germany'),
