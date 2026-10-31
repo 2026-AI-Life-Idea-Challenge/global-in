@@ -24,6 +24,8 @@
 - **테스트 URL**: https://global-in-outsiders.vercel.app
 - **데모 영상**: _추가 예정_
 
+빠른 이동: [로컬 실행](#실행-방법) · [배포 가이드](docs/DEPLOY.md) · [프로그램 데이터 현황](docs/data/db_final_status_20261028.md)
+
 ---
 
 ## 해결하려는 문제
@@ -91,19 +93,18 @@ flowchart TB
 
 ### 에이전트 흐름
 
-LangGraph가 첫 단계에서 질문 의도를 파악한 뒤, **필요한 에이전트만** 이어서 호출합니다. 어느 단계든 판단에 필요한 정보가 부족하면 그 자리에서 멈추고 사용자에게 추가 질문을 돌려줍니다.
+LangGraph가 첫 단계에서 질문 의도와 필요한 정보를 파악합니다. 일반적인 준비 상담은 준비 계획으로 이어지고, 제도 근거가 필요한 질문은 후보 선택·자격 검토·공식 정보 안내를 거칩니다. 정보가 부족하면 추가 질문을 돌려주며, 개요 안내는 자격 검토를 건너뛸 수 있습니다.
 
 ```mermaid
 flowchart TD
     Q(["💬 사용자 메시지"]) --> UU["① 사용자 이해<br/>프로필 추출 · 의도 파악"]
 
-    UU -- "추천 요청" --> RR["② 맞춤 추천<br/>프로그램 · 지원제도"]
-    UU -- "자격 문의" --> ER["③ 자격 검토<br/>Python 규칙 평가"]
-    UU -- "정보 문의" --> OI["④ 공식 정보 안내<br/>근거 검색 · 출처 표시"]
-    UU -- "준비 문의" --> PP["⑤ 준비 계획<br/>단계별 체크리스트"]
+    UU -- "추천 · 자격 · 제도 정보" --> RR["② 후보 선택<br/>프로그램 · 지원제도"]
+    UU -- "일반 준비 상담" --> PP["⑤ 준비 계획<br/>준비 방향 · 체크리스트"]
     UU -- "정보 부족" --> ASK(["❓ 추가 질문"])
 
-    RR --> ER
+    RR -- "자격 검토" --> ER["③ 자격 검토<br/>Python 규칙 평가"]
+    RR -- "개요 안내" --> OI["④ 공식 정보 안내<br/>근거 검색 · 출처 표시"]
     ER --> OI
     OI --> PP
     PP --> A(["✅ 최종 응답"])
@@ -142,6 +143,8 @@ flowchart LR
 ### 공식 정보 안내: 근거 우선 검색 (RAG)
 
 국가·주제·프로그램 메타데이터로 범위를 먼저 좁힌 뒤 키워드 검색과 벡터 검색을 결합합니다. 답변의 인용문이 원문과 일치하는지 검사하고, 근거가 부족한 질문은 부분 답변이나 근거 부족으로 구분합니다.
+
+로컬 임베딩 패키지나 모델 캐시가 없으면 프로그램 검색은 키워드 검색으로 이어집니다. 이때도 공식 출처 확인과 인용 검증은 유지되며, 검색 범위와 순위는 하이브리드 검색과 달라질 수 있습니다.
 
 ```mermaid
 flowchart TB
@@ -190,6 +193,8 @@ flowchart LR
 | 국내외 지원제도 | 12건 (한국 측 7 + 목적지 국가 관련 5) |
 | 검색용 문서 / 청크 | 583건 / 585개 — Qwen3-Embedding-0.6B (1024차원), pgvector HNSW |
 
+위 수치는 2026-10-28 DB 구축 현황 기준입니다. 화면에서는 관련 프로그램을 묶어 표시하므로 목록 카드 수와 DB 레코드 수가 다를 수 있습니다.
+
 미국처럼 워킹홀리데이 제도가 없는 국가는 J-1 Summer Work Travel 등 실제 제도에 매핑해, 사용자에게 보이는 분류와 공식 제도명을 구분했습니다. 자세한 구축 현황은 [docs/data/db_final_status_20261028.md](docs/data/db_final_status_20261028.md)를 참고하세요.
 
 ## 기술 스택
@@ -234,6 +239,8 @@ python3.11 -m venv .venv
 source .venv/bin/activate
 ```
 
+Windows PowerShell에서는 `py -3.11 -m venv .venv`로 생성하고 `.\.venv\Scripts\Activate.ps1`로 활성화합니다. Docker 배포 이미지는 Python 3.12를 사용합니다.
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -251,9 +258,9 @@ pip install -r requirements.txt
 uvicorn app.api.main:app --reload --port 8000
 ```
 
-API 문서는 http://localhost:8000/docs 에서 확인할 수 있습니다.
+API 문서는 [로컬 API 문서](http://localhost:8000/docs)에서 확인할 수 있습니다.
 
-검색에 쓰는 임베딩 모델(Qwen3-Embedding-0.6B, 약 1.2GB)은 실행 중에 자동으로 내려받지 않습니다. 처음 한 번만 아래 명령으로 받아 둡니다.
+벡터 검색에 쓰는 임베딩 모델(Qwen3-Embedding-0.6B, 약 1.2GB)은 실행 중에 자동으로 내려받지 않습니다. 하이브리드 검색을 사용하려면 처음 한 번 아래 명령으로 받아 둡니다. 캐시가 없으면 프로그램 검색은 키워드 검색으로 동작합니다.
 
 ```bash
 python -c "from huggingface_hub import snapshot_download; snapshot_download('Qwen/Qwen3-Embedding-0.6B', revision='97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3')"
@@ -275,13 +282,16 @@ npm install
 npm run dev
 ```
 
-http://localhost:3000 에서 서비스를 사용할 수 있습니다.
+[로컬 서비스](http://localhost:3000)에서 사용할 수 있습니다. 양쪽의 `INTERNAL_API_KEY`를 변경했다면 프런트엔드와 백엔드를 모두 재시작합니다.
 
 ### 4. 테스트
 
 ```bash
+python -m pip install pytest
 python -m pytest tests/unit
 ```
+
+프런트엔드는 `frontend/`에서 `npx tsc --noEmit`과 `npm run build`로 확인합니다. 빌드 후 `node tests/consultation-proxy.test.mjs`를 실행하면 외부 AI 호출 없이 가짜 백엔드로 상담 API를 검사할 수 있습니다.
 
 `tests/unit/test_rule_evaluator.py`는 지식 릴리즈 파일(`data/processed/knowledge/20261028/releases/.../knowledge_release.json`)이 있어야 실행되며, 이 파일은 DB 백업과 함께 별도로 전달합니다. `tests/integration`은 복원된 DB가 필요합니다.
 

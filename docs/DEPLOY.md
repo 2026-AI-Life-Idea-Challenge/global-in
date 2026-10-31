@@ -53,6 +53,13 @@ set -a; . ./.env.local; set +a; docker run --rm -e U="$DATABASE_URL_UNPOOLED" -v
 set -a; . ./.env.local; set +a; CONSULT_SESSION_DATABASE_URL="$DATABASE_URL_UNPOOLED" .venv/bin/python -c "import os; from app.services.postgres_sessions import PostgresSessions; PostgresSessions(os.environ['CONSULT_SESSION_DATABASE_URL']).initialize()"
 ```
 
+Windows PowerShell에서는 가상환경을 만든 저장소 루트에서 실행한다. `$env:DATABASE_URL_UNPOOLED`에는 `.env.local`의 direct 주소를 넣는다.
+
+```powershell
+$env:CONSULT_SESSION_DATABASE_URL = $env:DATABASE_URL_UNPOOLED
+.\.venv\Scripts\python.exe -c "import os; from app.services.postgres_sessions import PostgresSessions; PostgresSessions(os.environ['CONSULT_SESSION_DATABASE_URL']).initialize()"
+```
+
 > 상담 세션 저장소는 연결 시 `statement_timeout` 옵션을 보내는데, Neon pooler는 이를 거부한다. 그래서 세션 저장소에는 항상 direct 주소를 쓴다. 정책 조회(`DATABASE_URL`)는 pooled 주소를 쓴다.
 
 ## 2. 백엔드 (Google Cloud Run)
@@ -103,6 +110,7 @@ curl https://<서비스 주소>/health
 | `CONSULT_OWNER_SECRET` | `.env.deploy`와 같은 값 |
 
 4. Deploy. 기본 브랜치(develop)에 push하면 자동으로 다시 배포된다.
+5. 상담뿐 아니라 프로그램 목록·상세, 프로필 반영, 준비 플랜도 확인한다. `/health` 성공만으로 DB 검색·AI 답변까지 검증되지는 않는다. 프런트엔드는 상담 응답을 최대 120초 기다리고(`/api/chat`의 `maxDuration`은 130초), 백엔드 상담 처리 예산은 기본 100초다.
 
 ## Langfuse 트레이싱 (선택)
 
@@ -143,4 +151,6 @@ handle-consult-turn (agent)               사용자 메시지 → 최종 답변
 | 프런트에서 401/503 | 양쪽 `INTERNAL_API_KEY`가 같은지, Vercel `BACKEND_URL`이 맞는지 |
 | 상담 시 "session store unavailable" | `CONSULT_SESSION_DATABASE_URL`이 direct 주소인지, 1단계 세션 테이블 생성 여부 |
 | 상담 요청 시 403 (cross-origin) | `CONSULT_PUBLIC_ORIGIN`을 설정했다면 실제 접속 주소(https 포함)와 정확히 같은지 |
+| 키를 맞췄는데도 인증 실패 | 환경변수를 바꾼 뒤 프런트엔드(Redeploy)와 백엔드(배포 스크립트)를 모두 다시 배포했는지 |
 | 검색 단계에서 메모리 부족(OOM) | Cloud Run 메모리를 4Gi 이상으로 |
+| 로컬 임베딩을 사용할 수 없다는 경고 | 패키지와 모델 캐시를 확인한다. 프로그램 검색은 키워드 검색으로 이어지지만 결과가 달라질 수 있다 |

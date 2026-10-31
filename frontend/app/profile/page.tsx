@@ -30,7 +30,7 @@ const PURPOSES = [
   { icon: "✈️", label: "워킹홀리데이 / 교류" },
 ];
 
-const EDUCATIONS = ["고등학교", "전문대학", "대학교", "대학원 이상"];
+const EDUCATIONS = ["고등학교", "전문대학", "대학교", "대학원"];
 const EDU_STATUS = ["재학", "휴학", "졸업", "중퇴"];
 
 // 국가 이름과 국가 코드 매핑
@@ -258,7 +258,7 @@ export default function ProfilePage() {
       undecidedPurpose,
     };
 
-    if (!saveTab(PROFILE_KEY, { form, profile })) {
+    if (!saveTab(PROFILE_KEY, { form, profile, explicitProfile: profile })) {
       setNotice(
         "프로필을 저장하지 못했습니다. 브라우저 저장 설정을 확인해 주세요."
       );
@@ -269,6 +269,11 @@ export default function ProfilePage() {
     setNotice("프로필을 저장했습니다.");
 
     try {
+      if (goToChat) {
+        expireConsultation();
+        router.push('/chat');
+        return;
+      }
       const chat = readSaved<{
         session_id?: string;
         messages?: {
@@ -315,7 +320,7 @@ export default function ProfilePage() {
           }
 
           throw new Error(
-            "프로필은 저장했습니다. 재검토에 실패했으므로 저장 버튼으로 재시도하거나 상담에서 다시 질문해 주세요."
+            `프로필은 저장했습니다. ${result.error || "재검토에 실패했습니다."} 저장 버튼으로 재시도하거나 상담에서 다시 질문해 주세요.`
           );
         }
 

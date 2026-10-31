@@ -36,6 +36,11 @@ export async function runBrowserChecks(base, fixture) {
     await page.getByPlaceholder('편하게 이야기해 주세요.').press('Enter');
     await page.getByText(`테스트 상담 결과 ${revision}`, { exact: true }).last().waitFor();
   }
+  async function manageTask(title, action) {
+    const control = page.getByRole('button', { name: `${title} ${action}`, exact: true });
+    if (!await control.isVisible()) await page.getByLabel(`${title} 편집`, { exact: true }).click();
+    await control.click();
+  }
   try {
     await page.goto(base + '/profile');
     await page.locator('input').first().fill('한국');
@@ -63,11 +68,14 @@ export async function runBrowserChecks(base, fixture) {
     await page.getByRole('checkbox').first().check();
     await page.reload(); await page.getByRole('checkbox').first().waitFor();
     assert.equal(await page.getByRole('checkbox').first().isChecked(), true); checks++;
-    await page.goto(base + '/chat'); await page.getByText('테스트 상담 결과 2', { exact: true }).last().waitFor(); checks++;
+    await page.goto(base + '/chat');
+    assert.equal(await page.getByText('테스트 상담 결과 2', { exact: true }).count(), 0); checks++;
+    await page.getByRole('button', { name: '프로그램 추천해줘', exact: true }).click();
+    await page.getByText('테스트 상담 결과 2', { exact: true }).last().waitFor(); checks++;
     failed = true; await page.goto(base + '/profile');
     await page.locator('input[type="date"]').fill('1999-05-15');
     await page.getByRole('button', { name: '프로필 저장하기', exact: true }).click();
-    await page.getByRole('status').filter({ hasText: '재검토에 실패' }).waitFor();
+    await page.getByRole('status').filter({ hasText: '프로필은 저장했습니다.' }).waitFor();
     assert.equal((await saved('global-in-profile')).profile.date_of_birth, '1999-05-15');
     assert.equal((await saved('global-in-chat-state')).profile_pending, true);
     assert.equal(await saved('global-in-consult-result'), null);
@@ -108,8 +116,9 @@ export async function runBrowserChecks(base, fixture) {
     assert.equal(await page.getByRole('link', { name: '테스트 공식 출처', exact: true }).getAttribute('href'), 'https://canada.ca/'); checks++;
     await page.goto(base + '/programs/CA%3Aiec');
     await page.getByRole('heading', { name: 'IEC', exact: true }).waitFor();
-    await page.getByText('테스트 데이터셋의 신청 요건입니다.', { exact: true }).waitFor(); checks++;
-    await page.getByRole('link', { name: /테스트 공식 출처/ }).waitFor(); checks++;
+    await page.getByText('공식 원문·예외 규정 보기',{exact:true}).first().click();
+    await page.getByText('테스트 데이터셋의 신청 요건입니다.', { exact: true }).last().waitFor(); checks++;
+    await page.getByRole('link', { name: /공식 근거/ }).first().waitFor(); checks++;
     await page.goto(base + '/programs');
     await page.getByRole('textbox', { name: '프로그램 검색' }).fill('존재하지않는테스트');
     await page.reload();
@@ -141,12 +150,12 @@ export async function runBrowserChecks(base, fixture) {
     await page.getByRole('button', { name: '＋ 할 일 추가', exact: true }).click();
     await page.getByRole('textbox', { name: '새 준비 항목' }).fill('여권 준비');
     await page.getByRole('button', { name: '항목 추가', exact: true }).click();
-    await page.getByRole('button', { name: '여권 준비 수정', exact: true }).click();
+    await manageTask('여권 준비', '수정');
     await page.getByRole('textbox', { name: '준비 항목 이름 수정' }).fill('여권 사본 준비');
     await page.getByRole('button', { name: '수정 저장', exact: true }).click();
     await page.getByRole('checkbox', { name: '여권 사본 준비', exact: true }).check();
     await page.reload(); assert.ok(await page.getByRole('checkbox', { name: '여권 사본 준비', exact: true }).isChecked()); checks++;
-    await page.getByRole('button', { name: '여권 사본 준비 삭제', exact: true }).click();
+    await manageTask('여권 사본 준비', '삭제');
     assert.equal(await page.getByRole('checkbox').count(), 1); checks++;
     await page.getByRole('button', { name: '플랜 모두 삭제', exact: true }).click();
     await page.reload(); await page.getByRole('heading', { name: '아직 준비 중인 항목이 없어요.', exact: true }).waitFor(); checks++;
@@ -156,6 +165,8 @@ export async function runBrowserChecks(base, fixture) {
     await page.goto(base + '/programs/CA%3Aiec');
     await page.getByRole('heading', { name: 'IEC', exact: true }).waitFor(); checks++;
     await page.goto(base + '/chat');
+    await page.setViewportSize({width:1280,height:900});
+    await page.getByRole('button', { name: '프로필 정보 변경', exact: true }).click();
     await page.getByRole('button', { name: 'IEC 플랜에 추가', exact: true }).last().click();
     await page.getByRole('status').filter({hasText:'개인별 준비 항목'}).last().waitFor();
     await page.goto(base + '/profile');
@@ -180,10 +191,21 @@ export async function runBrowserChecks(base, fixture) {
     await page.getByRole('textbox',{name:'프로그램 검색'}).fill('');
     await page.getByText('호주 워킹홀리데이 비자 417',{exact:true}).waitFor();
     assert.equal(await page.getByText('호주 워킹홀리데이 비자 417 · 2차',{exact:true}).count(),0); checks++;
+    await page.getByRole('button', { name: '필터 초기화', exact: true }).click();
+    await page.getByLabel('호주 워킹홀리데이 비자 417 비교', { exact: true }).check();
+    await page.getByLabel('호주 워크앤홀리데이 비자 462 비교', { exact: true }).check();
+    await page.getByRole('button', { name: '비교표 접기', exact: true }).click();
+    assert.equal(await page.locator('#program-comparison-table').isVisible(), false); checks++;
+    await page.getByRole('button', { name: '비교표 보기', exact: true }).click();
+    await page.locator('#program-comparison-table').waitFor({ state: 'visible' }); checks++;
+    await page.getByRole('button', { name: '호주 워킹홀리데이 비자 417 비교 해제', exact: true }).click();
+    assert.equal(await page.getByLabel('호주 워킹홀리데이 비자 417 비교', { exact: true }).isChecked(), false); checks++;
     await page.goto(base+'/programs/AU%3Asubclass_417_first');
     await page.getByRole('button',{name:'2차 신청',exact:true}).click();
+    await page.getByText('공식 원문·예외 규정 보기',{exact:true}).first().click();
     await page.getByText('데이터셋: AU:subclass_417_second',{exact:true}).waitFor(); checks++;
     await page.getByRole('button',{name:'3차 신청',exact:true}).click();
+    await page.getByText('공식 원문·예외 규정 보기',{exact:true}).first().click();
     await page.getByText('데이터셋: AU:subclass_417_third',{exact:true}).waitFor(); checks++;
     await page.goto(base+'/programs/US%3AUS-WEST-01');
     await page.getByRole('link',{name:'프로그램 소개',exact:true}).waitFor();
@@ -202,7 +224,17 @@ export async function runBrowserChecks(base, fixture) {
     await page.setViewportSize({width:390,height:844});
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)); checks++;
     await page.screenshot({path:'../tmp/browser-checks/plan-workspace-mobile.png',fullPage:true});
-    await page.getByRole('button',{name:'담당 업무와 경력 정보 정리하기 수정',exact:true}).click();
+    await page.getByRole('checkbox',{name:'담당 업무와 경력 정보 정리하기',exact:true}).check();
+    const filters=page.getByRole('group',{name:'할 일 상태 필터'});
+    await filters.getByRole('button',{name:/^완료 /}).click();
+    assert.equal(await page.getByRole('checkbox').count(),1); checks++;
+    await filters.getByRole('button',{name:/^미완료 /}).click();
+    assert.equal(await page.getByRole('checkbox').count(),1); checks++;
+    await filters.getByRole('button',{name:/^전체 /}).click();
+    await manageTask('담당 업무와 경력 정보 정리하기', '삭제');
+    await page.getByRole('button',{name:'실행 취소',exact:true}).click();
+    assert.ok(await page.getByRole('checkbox',{name:'담당 업무와 경력 정보 정리하기',exact:true}).isChecked()); checks++;
+    await manageTask('담당 업무와 경력 정보 정리하기', '수정');
     await page.getByRole('textbox',{name:'준비 항목 이름 수정',exact:true}).fill('업무 이력 직접 정리하기');
     await page.getByRole('button',{name:'수정 저장',exact:true}).click();
     await page.getByRole('button',{name:'준비 항목 다시 검토',exact:true}).click();

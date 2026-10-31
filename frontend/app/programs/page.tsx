@@ -1,5 +1,7 @@
 "use client";
-import { useState, useEffect } from "react";
+import FlagSvg from "@/components/CountryFlag";
+import styles from './programs.module.css';
+import { useState, useEffect, useRef } from "react";
 import { useCatalog } from "@/lib/useCatalog";
 import { useComparison } from "@/lib/useComparison";
 import { CATEGORY_NAMES, COUNTRY_NAMES, AVAILABILITY_NAMES, catalogCountry, toCompared, groupedCatalog, type CatalogItem } from "@/lib/catalog";
@@ -10,24 +12,8 @@ import ProgramActions from '@/components/ProgramActions';
 import { comparisonRows } from '@/lib/comparisonRows';
 import type { ComparedItem } from '@/lib/useComparison';
 
-const FLAGS: Record<string, string> = {
-  독일: '<rect width="30" height="7" fill="#111"/><rect y="7" width="30" height="6.5" fill="#d00"/><rect y="13.5" width="30" height="6.5" fill="#ffce00"/>',
-  일본: '<rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="5" fill="#bc2a3a"/>',
-  호주: '<rect width="30" height="20" fill="#00247d"/><path d="M0 0l14 9M14 0L0 9" stroke="#fff" strokeWidth="1.6"/><path d="M7 0v9M0 4.5h14" stroke="#fff" strokeWidth="3"/><path d="M7 0v9M0 4.5h14" stroke="#cf142b" strokeWidth="1.6"/>',
-  미국: '<rect width="30" height="20" fill="#fff"/><rect y="0" width="30" height="1.55" fill="#b22234"/><rect y="3.1" width="30" height="1.55" fill="#b22234"/><rect y="6.2" width="30" height="1.55" fill="#b22234"/><rect y="9.3" width="30" height="1.55" fill="#b22234"/><rect y="12.4" width="30" height="1.55" fill="#b22234"/><rect y="15.5" width="30" height="1.55" fill="#b22234"/><rect y="18.6" width="30" height="1.55" fill="#b22234"/><rect width="13" height="10.8" fill="#3c3b6e"/>',
-  캐나다: '<rect width="30" height="20" fill="#fff"/><rect width="7.5" height="20" fill="#d52b1e"/><rect x="22.5" width="7.5" height="20" fill="#d52b1e"/><path d="M15 4l1.3 3 2-1-.6 4 1.7-.4-.4 1.8 1.5 1-3.5 2.4.2 2.2h-4.4l.2-2.2-3.5-2.4 1.5-1-.4-1.8 1.7.4-.6-4 2 1z" fill="#d52b1e"/>',
-};
 
-function FlagSvg({ country, size = 22 }: { country: string; size?: number }) {
-  if (!FLAGS[country]) return null;
-  return (
-    <svg
-      viewBox="0 0 30 20"
-      style={{ width: size, height: Math.round(size * 2 / 3), borderRadius: 2, flexShrink: 0 }}
-      dangerouslySetInnerHTML={{ __html: FLAGS[country] }}
-    />
-  );
-}
+
 
 
 type Program = {
@@ -91,6 +77,10 @@ export default function ProgramsPage() {
   const [countryFilter, setCountryFilter] = useState("전체");
   const [purposeFilter, setPurposeFilter] = useState("전체");
   const [restored, setRestored] = useState(false);
+  const [comparisonExpanded, setComparisonExpanded] = useState(true);
+  const filtersRef = useRef<HTMLDivElement>(null);
+  const comparisonRef = useRef<HTMLDivElement>(null);
+  const summaryRef = useRef<HTMLDivElement>(null);
   const compareIds = comparison.items.map(item => item.id);
   const setCompareIds = (ids: string[]) => {
     if (ids.length === 0) comparison.clear();
@@ -130,6 +120,10 @@ export default function ProgramsPage() {
   });
 
   const comparePrograms = PROGRAMS.filter(p => compareIds.includes(p.id));
+  const selectedFilters = [typeFilter, countryFilter, purposeFilter]
+    .filter(value => value !== "전체");
+  if (search.trim()) selectedFilters.push(`검색: ${search.trim()}`);
+  const filterSummary = selectedFilters.join(" · ") || "전체 국가 · 전체 목적";
 
   function toggleCompare(id: string) {
     const item = items.find(item => item.id === id);
@@ -167,8 +161,8 @@ export default function ProgramsPage() {
           </div>
 
           {/* 필터 카드 */}
-          <div style={{ background: "#fff", border: "1px solid var(--ln)", borderRadius: 16, padding: "20px 24px", marginBottom: 20 }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 10, border: "1px solid var(--ln)", borderRadius: 10, padding: "10px 14px", marginBottom: 16 }}>
+          <div ref={filtersRef} style={{ scrollMarginTop: 16, background: "#F5F6FC", border: "1px solid var(--ln)", borderRadius: 16, padding: "18px 22px", marginBottom: 20 }}>
+            <div style={{ background: "#FFF", display: "flex", alignItems: "center", gap: 10, border: "1px solid var(--ln)", borderRadius: 10, padding: "10px 14px", marginBottom: 14 }}>
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--mu)" strokeWidth="1.8">
                 <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
               </svg>
@@ -176,26 +170,34 @@ export default function ProgramsPage() {
                 style={{ flex: 1, border: "none", outline: "none", fontSize: "0.88rem", background: "transparent" }} />
             </div>
 
-            <div style={{ display: "flex", gap: 8, marginBottom: 14, alignItems: "center", justifyContent: "space-between" }}>
-              <div style={{ display: "flex", gap: 6 }}>
+            <div style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "center", justifyContent: "space-between" }}>
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                 {TYPES.map(t => <button key={t} onClick={() => setTypeFilter(t)} style={chipStyle(typeFilter === t)}>{t}</button>)}
               </div>
-              <button onClick={() => { setTypeFilter("전체"); setCountryFilter("전체"); setPurposeFilter("전체"); setSearch(""); comparison.clear(); }}
+              <button onClick={(event) => {
+                const icon = event.currentTarget.querySelector("svg");
+                icon?.getAnimations().forEach(animation => animation.cancel());
+                icon?.animate(
+                  [{ transform: "rotate(0deg)" }, { transform: "rotate(-360deg)" }],
+                  { duration: 350, easing: "ease-in-out" },
+                );
+                setTypeFilter("전체"); setCountryFilter("전체"); setPurposeFilter("전체"); setSearch(""); comparison.clear();
+              }}
                 style={{ display: "flex", alignItems: "center", gap: 4, background: "none", border: "none", fontSize: "0.8rem", color: "var(--mu)", cursor: "pointer" }}>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <svg aria-hidden="true" style={{ transformOrigin: "center", flexShrink: 0 }} width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                   <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/>
                 </svg>
                 필터 초기화
               </button>
             </div>
 
-            <div style={{ fontSize: "0.78rem", color: "var(--mu)", marginBottom: 14 }}>
+            <div style={{ fontSize: "0.78rem", color: "var(--mu)", marginBottom: 12 }}>
               <strong>프로그램</strong>은 해외 활동을 위한 경로, <strong>지원제도</strong>는 교육·비용·취업 연계 지원이에요.
             </div>
 
-            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 14 }}>
               <span style={{ fontSize: "0.78rem", color: "var(--mu)", width: 24, flexShrink: 0 }}>국가</span>
-              <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                 {COUNTRIES.map(c => (
                   <button key={c} onClick={() => setCountryFilter(c)} style={chipStyle(countryFilter === c)}>
                     {c !== "전체" && <FlagSvg country={c} size={18} />}{c}
@@ -204,9 +206,9 @@ export default function ProgramsPage() {
               </div>
             </div>
 
-            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
               <span style={{ fontSize: "0.78rem", color: "var(--mu)", width: 24, flexShrink: 0 }}>목적</span>
-              <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                 {PURPOSES.map(p => <button key={p} onClick={() => setPurposeFilter(p)} style={chipStyle(purposeFilter === p)}>{p}</button>)}
               </div>
             </div>
@@ -217,10 +219,22 @@ export default function ProgramsPage() {
             {error} <button onClick={retry}>다시 불러오기</button>
           </div>}
           {!loading && !error && filtered.length === 0 &&
-            <p role="status">검색 결과가 없습니다.</p>}
+            <div className={styles.empty}>
+              <svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 5 5" /></svg>
+              <p role="status" className={styles.emptyTitle}>검색 결과가 없습니다.</p>
+              <p>검색어를 바꾸거나 국가·목적 조건을 조금 넓혀 보세요.</p>
+              <button type="button" onClick={() => { setSearch(''); setTypeFilter('전체'); setCountryFilter('전체'); setPurposeFilter('전체'); }}>검색·필터 초기화</button>
+            </div>}
 
           {/* 결과 카운트 */}
-          <div role="status" aria-label={`검색 결과 ${filtered.length}개`} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 14 }}>
+          <div ref={summaryRef} style={{ position: "sticky", top: 12, zIndex: 10, marginBottom: 14, padding: "10px 14px", background: "#fff", border: "1px solid var(--ln)", borderRadius: 12, boxShadow: "0 4px 16px rgba(30,35,70,.06)" }}>
+            <button type="button" aria-label={`필터 변경: ${filterSummary}`} onClick={() => {
+              filtersRef.current?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' });
+            }} style={{ width: "100%", display: "flex", alignItems: "center", gap: 12, padding: "0 0 6px", border: "none", background: "transparent", textAlign: "left", fontSize: "0.8rem" }}>
+              <span style={{ flex: 1, minWidth: 0, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", fontWeight: 600 }} title={filterSummary}>{filterSummary}</span>
+              <span style={{ flexShrink: 0, color: "var(--ac)", fontSize: "0.75rem" }}>필터 변경 ↑</span>
+            </button>
+          <div role="status" aria-label={`검색 결과 ${filtered.length}개`} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
             <span style={{ fontSize: "0.85rem", color: "var(--ink)" }}>
               총 <strong>{filtered.length}개</strong>{" "}
               <span style={{ color: "var(--mu)", fontSize: "0.8rem" }}>
@@ -229,14 +243,22 @@ export default function ProgramsPage() {
             </span>
             {compareIds.length > 0 && (
               <span style={{ fontSize: "0.8rem", color: "var(--ac)", fontWeight: 600 }}>
-                {compareIds.length}개 선택됨 {compareIds.length >= 2 ? "· 아래에서 비교 중" : "· 1개 더 선택하면 비교"}
+                {compareIds.length}개 선택됨 {comparePrograms.length >= 2 ? (
+                  <>· <button type="button" onClick={() => {
+                    setComparisonExpanded(true);
+                    if (!comparisonRef.current) return;
+                    const top = window.scrollY + comparisonRef.current.getBoundingClientRect().top - (summaryRef.current?.offsetHeight || 0) - 24;
+                    window.scrollTo({ top, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+                  }} style={{ padding: 0, border: "none", background: "transparent", color: "inherit", font: "inherit", textDecoration: "underline", textUnderlineOffset: 3 }}>비교표 보기</button></>
+                ) : "· 1개 더 선택하면 비교"}
               </span>
             )}
+          </div>
           </div>
 
           {/* 비교표 — 필터 아래, 리스트 위 */}
           {comparePrograms.length >= 2 && (
-            <div style={{ marginBottom: 20, background: "#fff", border: "1.5px solid var(--ac)", borderRadius: 16, overflow: "hidden" }}>
+            <div ref={comparisonRef} style={{ marginBottom: 20, background: "#fff", border: "1.5px solid var(--ac)", borderRadius: 16, overflow: "hidden" }}>
               <div style={{ padding: "14px 24px", borderBottom: "1px solid var(--ln)", display: "flex", justifyContent: "space-between", alignItems: "center", background: "#f7f9ff" }}>
                 <div style={{ fontWeight: 700, fontSize: "0.95rem", color: "var(--ink)", display: "flex", alignItems: "center", gap: 8 }}>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--ac)" strokeWidth="2">
@@ -245,17 +267,33 @@ export default function ProgramsPage() {
                   비교표
                   <span style={{ fontSize: "0.8rem", fontWeight: 400, color: "var(--mu)" }}>{comparePrograms.length}개 선택됨</span>
                 </div>
-                <button onClick={() => setCompareIds([])} style={{ background: "none", border: "none", fontSize: "0.8rem", color: "var(--mu)", cursor: "pointer" }}>전체 해제</button>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
+                  <button type="button" aria-expanded={comparisonExpanded} aria-controls="program-comparison-table" onClick={() => setComparisonExpanded(value => !value)} className={styles.tableToggle}>
+                    {comparisonExpanded ? '접기' : '펼치기'} <span aria-hidden="true">{comparisonExpanded ? '⌃' : '⌄'}</span>
+                  </button>
+                  <button onClick={() => setCompareIds([])} style={{ background: "none", border: "none", fontSize: "0.8rem", color: "var(--mu)", cursor: "pointer" }}>전체 해제</button>
+                </div>
               </div>
-              <div style={{ overflowX: "auto" }}>
-                <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.85rem" }}>
+              <div id="program-comparison-table" hidden={!comparisonExpanded} role="region" aria-label="선택한 프로그램 비교표, 좌우로 스크롤할 수 있습니다" tabIndex={0} style={{ overflowX: "auto" }}>
+                <table className={styles.comparisonTable} style={{ width: "100%", minWidth: 140 + comparePrograms.length * 260, tableLayout: "fixed", borderCollapse: "collapse", fontSize: "0.85rem" }}>
+                  <colgroup>
+                    <col style={{ width: 140 }} />
+                    {comparePrograms.map(p => <col key={p.id} />)}
+                  </colgroup>
                   <thead>
                     <tr style={{ background: "#f7f8fa" }}>
-                      <th style={{ padding: "12px 20px", textAlign: "left", fontWeight: 600, color: "var(--mu)", fontSize: "0.78rem", width: 100 }}>항목</th>
+                      <th style={{ padding: "12px 20px", textAlign: "left", fontWeight: 600, color: "var(--mu)", fontSize: "0.78rem" }}>항목</th>
                       {comparePrograms.map(p => (
                         <th key={p.id} style={{ padding: "12px 20px", textAlign: "left", fontWeight: 700, color: "var(--ink)" }}>
                           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                            {p.country && <FlagSvg country={p.country} size={18} />}{p.name}
+                            {p.country && <FlagSvg country={p.country} size={18} />}
+                            <span style={{ flex: 1 }}>{p.name}</span>
+                            <button type="button" aria-label={`${p.name} 비교 해제`} title="비교 해제" onClick={() => toggleCompare(p.id)}
+                              style={{ display: "grid", placeItems: "center", width: 28, height: 28, flexShrink: 0, padding: 0, border: "none", borderRadius: 4, background: "transparent", color: "#9ca1af" }}>
+                              <svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
+                                <path d="m6 6 12 12M18 6 6 18" />
+                              </svg>
+                            </button>
                           </div>
                         </th>
                       ))}
@@ -290,16 +328,15 @@ export default function ProgramsPage() {
             {filtered.map(p => {
               const isChecked = compareIds.includes(p.id);
               return (
-                <div key={p.id} style={{
+                <div key={p.id} className={styles.card} style={{
                   background: "#fff",
                   border: `1px solid ${isChecked ? "var(--ac)" : "var(--ln)"}`,
                   borderRadius: 14, padding: "18px 20px",
-                  display: "flex", alignItems: "center", gap: 16,
                   transition: "border-color 0.15s",
                 }}>
                   {/* 국기 */}
-                  <div style={{ width: 40, height: 40, borderRadius: "50%", background: "var(--tn)", display: "grid", placeItems: "center", flexShrink: 0, overflow: "hidden" }}>
-                    {p.country ? <FlagSvg country={p.country} size={26} /> : (
+                  <div className={styles.flag} style={{ width: 40, height: 40, display: "grid", placeItems: "center", flexShrink: 0 }}>
+                    {p.country ? <FlagSvg country={p.country} size={38.808} /> : (
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--mu)" strokeWidth="1.6">
                         <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/>
                       </svg>
@@ -307,7 +344,7 @@ export default function ProgramsPage() {
                   </div>
 
                   {/* 내용 */}
-                  <div style={{ flex: 1, minWidth: 0 }}>
+                  <div className={styles.content} style={{ minWidth: 0 }}>
                     <div style={{ display: "flex", gap: 6, marginBottom: 6, flexWrap: "wrap" }}>
                       <span style={{ fontSize: "0.72rem", fontWeight: 600, padding: "2px 8px", borderRadius: 6, background: "var(--tn)", color: "var(--ac)" }}>{p.type}</span>
                       {p.tags.map(t => <span key={t} style={{ fontSize: "0.72rem", color: "var(--mu)", padding: "2px 8px", borderRadius: 6, background: "#f0f1f5" }}>{t}</span>)}
@@ -318,7 +355,8 @@ export default function ProgramsPage() {
                   </div>
 
                   {/* 버튼 영역 */}
-                  <div style={{ display: "flex", flexDirection: "column", gap: 8, flexShrink: 0, alignItems: "flex-end" }}>
+                  <div className={styles.actions}>
+                    <div className={styles.secondary}>
                     {/* 비교하기 체크박스 */}
                     <label style={{ position: 'relative', display: "flex", alignItems: "center", gap: 6, cursor: "pointer", userSelect: "none" }}>
                       <input type="checkbox" aria-label={`${p.name} 비교`} checked={isChecked} onChange={() => toggleCompare(p.id)} style={{ position: 'absolute', opacity: 0, width: 18, height: 18, margin: 0 }} />
@@ -334,16 +372,18 @@ export default function ProgramsPage() {
                     </label>
 
                     {/* 자세히 보기 버튼 */}
-                    <ProgramActions item={p.comparison} showDetails={false} />
+                    <ProgramActions item={p.comparison} showDetails={false} compact />
+                    </div>
                     <button
+                      className={styles.details}
                       onClick={() => {
                         try { sessionStorage.setItem("programs-filters", JSON.stringify({ search, typeFilter, countryFilter, purposeFilter })); } catch {}
                         router.push(`/programs/${encodeURIComponent(p.id)}`);
                       }}
                       style={{
-                        border: "1px solid var(--ln)", background: "#fff", borderRadius: 10, padding: "8px 14px",
+                        border: "1px solid #e1e4f4", background: "var(--tn)", borderRadius: 10, padding: "9px 16px",
                         fontSize: "0.82rem", display: "flex", alignItems: "center", gap: 4,
-                        color: "var(--ink)", fontWeight: 500, cursor: "pointer",
+                        color: "#626db5", fontWeight: 600, cursor: "pointer",
                       }}
                     >
                       자세히 보기

@@ -2,6 +2,16 @@ export const CHAT_KEY = 'global-in-chat-state';
 export const RESULT_KEY = 'global-in-consult-result';
 export const PROFILE_KEY = 'global-in-profile';
 export const COMPARE_KEY = 'global-in-compare';
+export const NEW_CHAT_EVENT = 'global-in-new-chat';
+export function requestNewChat() { window.dispatchEvent(new Event(NEW_CHAT_EVENT)); }
+
+/** Only explicitly saved profile data can seed another conversation. */
+export function newChatProfile(): Record<string, unknown> {
+  const saved = readSaved<{ profile?: Record<string, unknown>; explicitProfile?: Record<string, unknown> }>(PROFILE_KEY, {});
+  if (saved.explicitProfile) return { ...saved.explicitProfile };
+  // Old versions did not distinguish explicit goals from conversation-derived goals.
+  return Object.fromEntries(Object.entries(saved.profile || {}).filter(([key]) => !['target_country', 'target_visa_type', 'purpose'].includes(key)));
+}
 
 /** End consultation-derived state while keeping the explicitly saved profile. */
 export function expireConsultation(): void {

@@ -6,7 +6,7 @@ import Sidebar from "@/components/Sidebar";
 import { useCatalog } from '@/lib/useCatalog';
 import { CATEGORY_NAMES, AVAILABILITY_NAMES, catalogCountry } from '@/lib/catalog';
 import { safeSource } from '@/components/ConsultationDetails';
-import ProgramRequirements, { datasetSectionLabel, type DatasetSection } from '@/components/ProgramRequirements';
+import ProgramRequirements, { type DatasetSection } from '@/components/ProgramRequirements';
 
 const FLAGS: Record<string, string> = {
   독일: '<rect width="30" height="7" fill="#111"/><rect y="7" width="30" height="6.5" fill="#d00"/><rect y="13.5" width="30" height="6.5" fill="#ffce00"/>',
@@ -63,7 +63,9 @@ export default function ProgramDetailPage() {
     country: catalogCountry(item), tags: [catalogCountry(item), CATEGORY_NAMES[item.category || ''] || '공식 자료'],
     name: family ? `호주 ${family.includes('417') ? '워킹홀리데이 비자 417' : '워크앤홀리데이 비자 462'}` : item.name, desc: item.description || item.name,
     sub: item.kind === 'support' ? '저장된 모집 상태: ' + (AVAILABILITY_NAMES[item.availability] || '현재 접수 여부 미확인') : '개인별 자격 조건은 상담과 공식 근거를 통해 확인해 주세요.',
-    details: sections?.length ? `데이터셋의 공식 자료 ${sections.length}건을 연결했습니다. ${[...new Set(sections.map(section => datasetSectionLabel(section.title)))].join(' · ')}` : item.source_verified_at ? '공식 출처 확인일: ' + item.source_verified_at : `연결된 공식 출처 ${item.sources.length}개에서 신청 요건·서류·절차를 확인할 수 있습니다.`,
+    details: item.description + (item.kind === 'support'
+      ? ' 지원 대상과 제공 내용, 신청 방법을 구분해 살펴볼 수 있습니다. 비자·체류 자격과 지원제도 신청 자격은 별도로 확인해야 합니다.'
+      : ' 아래에서 이 경로의 대상과 조건을 살펴보고, 준비가 필요하면 AI 상담과 개인별 플랜으로 이어갈 수 있습니다.'),
     officialUrl: item.sources.find(source => safeSource(source.source_url))?.source_url || '',
     links: item.sources.filter(source => safeSource(source.source_url)).map(source => ({ label: source.title, url: source.source_url })),
     stages: stages.length > 1 ? stages.map(stage => ({ id: stage.id,

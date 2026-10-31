@@ -5,6 +5,8 @@ program_ids/programs contain every link within the requested program scope.
 Scores describe retrieval order, not eligibility, suitability or answer approval.
 """
 
+import logging
+
 from pgvector import Vector
 from psycopg import IsolationLevel
 from psycopg.rows import dict_row
@@ -16,7 +18,7 @@ from app.retrieval.keyword_search import (
 from app.retrieval.program_search import (
     SUPPORTED_CATEGORIES, SUPPORTED_COUNTRIES, _validate_filter,
 )
-from app.retrieval.query_embedding import MODEL_NAME, embed_query_local
+from app.retrieval.query_embedding import MODEL_NAME, LocalEmbeddingUnavailable, embed_query_local
 from app.services import tracing
 from app.services.database import get_connection
 
@@ -184,7 +186,8 @@ def search_programs_evidence_hybrid(
     question is embedded once when candidates exist; the original text is used.
     Candidate programs and source rankings have no intermediate result cap.
     A nonmatching keyword has no rank; a missing model embedding has no vector
-    rank but does not prevent keyword retrieval. Errors propagate unchanged.
+    rank but does not prevent keyword retrieval. An unavailable local model
+    also permits keyword retrieval; DB and inference errors still propagate.
 
     The 17 chunk/document fields from single-program retrieval are preserved;
     program_ids and programs replace its singular program_id. Links refer only
@@ -221,13 +224,18 @@ def search_programs_evidence_hybrid(
                      TEXT_SEARCH_CONFIG, TEXT_SEARCH_CONFIG),
                 )
                 keyword_rows = cursor.fetchall()
-        query_vector = embed_query_local(text)
-        with connection.cursor(row_factory=dict_row) as cursor:
-            cursor.execute(
-                _VECTOR_SQL,
-                ("PROGRAM", program_ids, Vector(query_vector).to_text(), MODEL_NAME),
-            )
-            vector_rows = cursor.fetchall()
+        try:
+            query_vector = embed_query_local(text)
+        except LocalEmbeddingUnavailable:
+            logging.getLogger(__name__).warning('Local embedding unavailable; using keyword evidence search')
+            vector_rows = []
+        else:
+            with connection.cursor(row_factory=dict_row) as cursor:
+                cursor.execute(
+                    _VECTOR_SQL,
+                    ("PROGRAM", program_ids, Vector(query_vector).to_text(), MODEL_NAME),
+                )
+                vector_rows = cursor.fetchall()
     if require_source_url:
         keyword_rows = [row for row in keyword_rows if _row_has_source_url(row)]
         vector_rows = [row for row in vector_rows if _row_has_source_url(row)]
