@@ -4,6 +4,7 @@ import ProgramActions from './ProgramActions';
 type Requirement = { requirement_id: string; outcome: string; reason?: string | null; description?: string | null; pending_reviews?: { authority_id?: string; questions?: string[] }[] };
 
 export interface ConsultationDetailsData {
+  profile?: Record<string, unknown>;
   programs?: { program_id: string; name: string }[];
   answer_sections?: { title: string; text: string; target_name?: string | null; scope_notes?: string[]; citations: { title: string; source_url: string; verified_at?: string | null; quote?: string | null }[] }[];
   eligibility?: { program_id: string; overall: string; requirements: Requirement[] }[];

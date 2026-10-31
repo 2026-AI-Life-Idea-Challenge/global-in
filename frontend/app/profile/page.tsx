@@ -258,7 +258,7 @@ export default function ProfilePage() {
       undecidedPurpose,
     };
 
-    if (!saveTab(PROFILE_KEY, { form, profile })) {
+    if (!saveTab(PROFILE_KEY, { form, profile, explicitProfile: profile })) {
       setNotice(
         "프로필을 저장하지 못했습니다. 브라우저 저장 설정을 확인해 주세요."
       );
@@ -269,6 +269,11 @@ export default function ProfilePage() {
     setNotice("프로필을 저장했습니다.");
 
     try {
+      if (goToChat) {
+        expireConsultation();
+        router.push('/chat');
+        return;
+      }
       const chat = readSaved<{
         session_id?: string;
         messages?: {
