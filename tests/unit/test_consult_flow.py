@@ -144,6 +144,31 @@ def test_merged_mixed_clarification_keeps_missing_information_and_avoids_rag(set
     assert not any(kind == 'generate' for kind, _ in setup[2])
 
 
+def test_distinct_chat_sessions_keep_profile_history_and_scope_separate(setup, monkeypatch):
+    client, australia_sid, _ = setup
+    original = user_understanding.llm.extract_json
+    contexts = []
+    def extract(prompt, **kwargs):
+        contexts.append(json.loads(prompt))
+        return original(prompt, **kwargs)
+    monkeypatch.setattr(user_understanding.llm, 'extract_json', extract)
+    first = say(setup, '호주 워홀 알려줘')
+    assert first['profile']['target_country'] == 'australia'
+    second_sid = client.post('/consult/sessions').json()['session_id']
+    assert second_sid != australia_sid
+    response = client.post(f'/consult/sessions/{second_sid}/messages', json={'message':'국가 미정 프로그램 알려줘'})
+    assert response.status_code == 200
+    assert response.json()['profile']['target_country'] is None
+    assert contexts[-1]['history'] == [] and contexts[-1]['profile'] == {}
+    client.post(f'/consult/sessions/{second_sid}/messages', json={'message':'비교 계속'})
+    assert any(message['content'] == '국가 미정 프로그램 알려줘' for message in contexts[-1]['history'])
+    assert not any(message['content'] == '호주 워홀 알려줘' for message in contexts[-1]['history'])
+    say(setup, '내 상담 이어서')
+    assert contexts[-1]['profile']['target_country'] == 'australia'
+    assert any(message['content'] == '호주 워홀 알려줘' for message in contexts[-1]['history'])
+    assert not any(message['content'] == '비교 계속' for message in contexts[-1]['history'])
+
+
 def test_first_profile_and_message_use_one_graph_with_real_b_citations(setup):
     data=say(setup, '공식 안내', dict(nationalities=['KR'], date_of_birth='1998-05-15'))
     assert sum(kind=='interpret' for kind,_ in setup[2])==1

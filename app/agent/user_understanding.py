@@ -123,7 +123,14 @@ def run(state: AgentState) -> dict:
         'australia': ('호주', 'australia'), 'japan': ('일본', 'japan'),
         'usa': ('미국', 'united states'), 'germany': ('독일', 'germany'),
         'canada': ('캐나다', 'canada')}.items() if any(alias in query for alias in aliases)]
-    if len(explicit_countries) == 1:
+    broad_country_comparison = bool(re.search(r'여러\s*(?:나라|국가)|(?:국가|나라)(?:별|\s*간).*비교|다른\s*(?:나라|국가)', query))
+    if len(explicit_countries) > 1 or broad_country_comparison:
+        profile['target_country'] = None
+        if broad_country_comparison:
+            # A stale resolver selection must not narrow a multi-country request.
+            extracted.program_ids = []
+            extracted.support_program_ids = []
+    elif len(explicit_countries) == 1:
         profile['target_country'] = explicit_countries[0]
     explicit_wh = any(word in query for word in ('워홀', '워킹홀리데이', 'working holiday'))
     if explicit_wh:
@@ -133,7 +140,7 @@ def run(state: AgentState) -> dict:
         extracted.program_ids = state.get('requested_program_ids', [])
         extracted.support_program_ids = state.get('requested_support_ids', [])
         extracted.information_scope = state.get('information_scope', extracted.information_scope)
-    if explicit_wh and len(explicit_countries) == 1:
+    if explicit_wh and len(explicit_countries) == 1 and not broad_country_comparison:
         matching = [p['program_id'] for p in programs if p['country'] == explicit_countries[0] and p.get('category') == 'working_holiday']
         families = [family for family in ('417', '462') if family in query]
         if len(families) == 1:

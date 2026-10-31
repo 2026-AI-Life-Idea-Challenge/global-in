@@ -258,7 +258,7 @@ export default function ProfilePage() {
       undecidedPurpose,
     };
 
-    if (!saveTab(PROFILE_KEY, { form, profile })) {
+    if (!saveTab(PROFILE_KEY, { form, profile, explicitProfile: profile })) {
       setNotice(
         "프로필을 저장하지 못했습니다. 브라우저 저장 설정을 확인해 주세요."
       );
@@ -269,6 +269,11 @@ export default function ProfilePage() {
     setNotice("프로필을 저장했습니다.");
 
     try {
+      if (goToChat) {
+        expireConsultation();
+        router.push('/chat');
+        return;
+      }
       const chat = readSaved<{
         session_id?: string;
         messages?: {
@@ -288,16 +293,6 @@ export default function ProfilePage() {
         compareIds: [],
         profile_pending: true,
       };
-
-      // Carry the saved profile into the next question without requiring an
-      // expensive re-evaluation of the previous conversation before navigation.
-      if (goToChat) {
-        if (!saveTab(CHAT_KEY, pendingChat)) {
-          throw new Error("프로필은 저장됐지만 상담 상태 저장에 실패했습니다.");
-        }
-        router.push("/chat");
-        return;
-      }
 
       if (chat.session_id) {
         if (!saveTab(CHAT_KEY, pendingChat)) {

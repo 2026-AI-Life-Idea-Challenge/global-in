@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
+import { requestNewChat } from '@/lib/consultation';
 
 interface SidebarProps {
   sessions?: {
@@ -261,7 +262,7 @@ export default function Sidebar({
             return (
               <button
                 key={item.href}
-                onClick={() => router.push(item.href)}
+                onClick={() => { if (item.href === '/chat') requestNewChat(); router.push(item.href); }}
                 style={{
                   width: "100%",
                   textAlign: "left",

@@ -1,9 +1,9 @@
-import { COUNTRY_CODES, VISA_CODES, PROFILE_KEY, readSaved, saveTab } from './consultation';
+import { COUNTRY_CODES, VISA_CODES, PROFILE_KEY, readSaved, saveTab, newChatProfile } from './consultation';
 
 /** Merge only API-confirmed structured values; never infer a birth date or qualifications. */
 export function syncConsultationProfile(profile: Record<string, unknown> | undefined) {
   if (!profile) return;
-  const saved = readSaved<{ form?: Record<string, unknown>; profile?: Record<string, unknown> }>(PROFILE_KEY, {});
+  const saved = readSaved<{ form?: Record<string, unknown>; profile?: Record<string, unknown>; explicitProfile?: Record<string, unknown> }>(PROFILE_KEY, {});
   const form = { ...saved.form };
   if (typeof profile.date_of_birth === 'string') form.age = profile.date_of_birth;
   if (Array.isArray(profile.nationalities)) form.nationality = profile.nationalities.join(', ');
@@ -20,5 +20,5 @@ export function syncConsultationProfile(profile: Record<string, unknown> | undef
     const label = Object.entries(codes).find(([, code]) => code === profile[field])?.[0];
     form[selected] = label ? [label] : []; form[undecided] = !label;
   }
-  saveTab(PROFILE_KEY, { ...saved, form, profile: { ...saved.profile, ...profile } });
+  saveTab(PROFILE_KEY, { ...saved, explicitProfile: saved.explicitProfile || newChatProfile(), form, profile: { ...saved.profile, ...profile } });
 }

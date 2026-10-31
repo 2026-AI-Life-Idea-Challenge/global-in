@@ -18,8 +18,8 @@ import {
 
 import {
   CHAT_KEY,
-  PROFILE_KEY,
-  readSaved,
+  NEW_CHAT_EVENT,
+  newChatProfile,
   saveTab,
   expireConsultation,
   latestPrograms,
@@ -66,6 +66,8 @@ interface ChatSession {
 
   // 각 채팅에 연결된 백엔드 상담 세션 ID
   sessionId?: string | null;
+  profile?: Record<string, unknown>;
+  sessionInvalidated?: boolean;
 }
 
 const STORAGE_KEY = "global-in-chats";
@@ -328,6 +330,7 @@ function ChatPageInner() {
 
   const [isHydrated, setIsHydrated] = useState(false);
   const [profilePending, setProfilePending] = useState(false);
+  const [chatProfile, setChatProfile] = useState<Record<string, unknown>>({});
 
   const comparison = useComparison();
   const compareIds = comparison.items.map((item) => item.id);
@@ -336,6 +339,7 @@ function ChatPageInner() {
   const searchParams = useSearchParams();
 
   const autoSentRef = useRef(false);
+  const autoTimerRef = useRef<number | null>(null);
   const messagesContainerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
@@ -350,7 +354,7 @@ function ChatPageInner() {
   useEffect(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
-      const activeId = localStorage.getItem(ACTIVE_CHAT_KEY);
+
 
       let parsed: ChatSession[] = [];
 
@@ -368,35 +372,19 @@ function ChatPageInner() {
         }
       }
 
+      const counts = new Map<string, number>();
+      for (const chat of parsed) if (chat.sessionId) counts.set(chat.sessionId, (counts.get(chat.sessionId) || 0) + 1);
+      parsed = parsed.map(chat => chat.sessionId && (counts.get(chat.sessionId) || 0) > 1
+        ? { ...chat, sessionId: null, sessionInvalidated: true } : chat);
       setSessions(parsed);
 
-      const activeChat = parsed.find((chat) => chat.id === activeId);
+      setCurrentChatId(null);
+      setMessages(INITIAL_MESSAGES);
+      setSessionId(null);
+      setChatProfile(newChatProfile());
+      setProfilePending(false);
+      expireConsultation();
 
-      if (activeChat) {
-        setCurrentChatId(activeChat.id);
-        setMessages(activeChat.messages ?? INITIAL_MESSAGES);
-        setSessionId(activeChat.sessionId ?? null);
-      } else {
-        setCurrentChatId(null);
-        setMessages(INITIAL_MESSAGES);
-        setSessionId(null);
-      }
-
-      // 기존 버전에서 저장된 상담 상태 복원
-      const savedConsultation = readSaved<{
-        session_id?: string;
-        profile_pending?: boolean;
-      }>(CHAT_KEY, {});
-
-      if (
-        !activeChat &&
-        savedConsultation.session_id &&
-        /^[a-f0-9]{32}$/.test(savedConsultation.session_id)
-      ) {
-        setSessionId(savedConsultation.session_id);
-      }
-
-      setProfilePending(savedConsultation.profile_pending === true);
     } catch (error) {
       console.error("채팅 목록을 불러오지 못했습니다.", error);
 
@@ -407,6 +395,18 @@ function ChatPageInner() {
     } finally {
       setIsHydrated(true);
     }
+  }, []);
+
+  useEffect(() => {
+    const reset = () => startNewChat();
+    window.addEventListener(NEW_CHAT_EVENT, reset);
+    return () => {
+      window.removeEventListener(NEW_CHAT_EVENT, reset);
+      requestVersion.current++;
+      pendingRequest.current = false;
+    };
+    // State setters and comparison.clear are stable; reset reads the saved profile on demand.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // --------------------------------------------------
@@ -451,11 +451,12 @@ function ChatPageInner() {
               ...chat,
               messages,
               sessionId,
+              profile: chatProfile,
             }
           : chat
       )
     );
-  }, [messages, sessionId, currentChatId, isHydrated]);
+  }, [messages, sessionId, currentChatId, isHydrated, chatProfile]);
 
   // --------------------------------------------------
   // 5. Session Storage에 현재 상담 상태 저장
@@ -513,10 +514,12 @@ function ChatPageInner() {
     autoSentRef.current = true;
 
     const timer = window.setTimeout(() => {
+      autoTimerRef.current = null;
       send(
         program + " · " + (searchParams?.get("question")?.slice(0, 1000) || "에 대해 자세히 알고 싶어요. 저에게 맞는지 상담해 주세요.")
       );
     }, 400);
+    autoTimerRef.current = timer;
 
     return () => window.clearTimeout(timer);
 
@@ -656,21 +659,10 @@ function ChatPageInner() {
 
     cancelPendingRequest();
 
-    if (remainingSessions.length > 0) {
-      const sortedRemaining = [...remainingSessions].sort(
-        (a, b) => Number(!!b.pinned) - Number(!!a.pinned)
-      );
-
-      const nextChat = sortedRemaining[0];
-
-      setCurrentChatId(nextChat.id);
-      setMessages(nextChat.messages ?? INITIAL_MESSAGES);
-      setSessionId(nextChat.sessionId ?? null);
-    } else {
-      setCurrentChatId(null);
-      setMessages(INITIAL_MESSAGES);
-      setSessionId(null);
-    }
+    setCurrentChatId(null);
+    setMessages(INITIAL_MESSAGES);
+    setSessionId(null);
+    setChatProfile(newChatProfile());
 
     setInput("");
     setProfilePending(false);
@@ -689,6 +681,8 @@ function ChatPageInner() {
 
   function startNewChat() {
     cancelPendingRequest();
+    if (autoTimerRef.current) { clearTimeout(autoTimerRef.current); autoTimerRef.current = null; }
+    setChatProfile(newChatProfile());
 
     setMessages(INITIAL_MESSAGES);
     setSessionId(null);
@@ -720,8 +714,9 @@ function ChatPageInner() {
 
     cancelPendingRequest();
 
+    setChatProfile(selected.profile || [...selected.messages].reverse().find(message => message.details?.profile)?.details?.profile || {});
     setCurrentChatId(selected.id);
-    setMessages(selected.messages ?? INITIAL_MESSAGES);
+    setMessages(selected.sessionInvalidated ? [...selected.messages, { role: 'assistant', content: '기존 대화 기록은 보관되어 있어요. 상담 연결을 새로 시작하므로 이어갈 내용을 짧게 알려주세요.' }] : selected.messages ?? INITIAL_MESSAGES);
     setSessionId(selected.sessionId ?? null);
     setInput("");
     setProfilePending(false);
@@ -778,6 +773,7 @@ function ChatPageInner() {
         messages: updatedMessages,
         pinned: false,
         sessionId: null,
+        profile: chatProfile,
       };
 
       setSessions((prev) => [newChat, ...prev]);
@@ -797,10 +793,7 @@ function ChatPageInner() {
     setLoading(true);
 
     try {
-      const profile = readSaved<{ profile?: unknown }>(
-        PROFILE_KEY,
-        {}
-      ).profile;
+      const profile = chatProfile;
 
       const res = await fetch("/api/chat", {
         method: "POST",
@@ -910,6 +903,7 @@ function ChatPageInner() {
           country: COUNTRY_NAMES[data.profile?.target_country] || '', desc: programDescription(support.support_program_id, support.name),
           sources: support.citations || [], officialUrl: support.citations?.[0]?.source_url, availability: support.availability, verifiedAt: support.source_verified_at });
       }
+      setChatProfile(data.profile || chatProfile);
       syncConsultationProfile(data.profile);
 
       // 상담 결과를 현재 브라우저 탭에 저장
