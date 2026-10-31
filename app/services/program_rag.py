@@ -18,7 +18,15 @@ from app.services.answer_quality import guard_unsupported_absolutes
 
 RETRIEVAL_LIMIT = 5
 # overview(막연한 준비 질문)는 같은 검색을 주제별로 나눠 실행한다. 생성은 한 번이다.
-OVERVIEW_QUERY_TOPICS = ("모집 일정 신청 기간", "신청 자격 기본 조건", "신청 절차 준비 순서")
+OVERVIEW_QUERY_TOPICS = (
+    "eligible passports nationality age 신청 국적 연령",
+    "length of stay work study conditions 체류 기간 근로 학업 제한",
+    "funds financial requirements health character 재정 건강 품행",
+    "apply online application documents steps 신청 절차 서류",
+    "second third visa specified work extension 연장 지정 근로",
+    "visa application charge processing time 신청 비용 처리 기간",
+    "opening closing application dates 모집 신청 기간",
+)
 ANSWER_HEADERS = {
     "development": "개발 검증용 답변 · 현재 검색된 자료 기준",
     "production": "현재 검색된 자료 기준 답변",
@@ -146,7 +154,7 @@ def answer_program_question(
     Errors are raised by stage. ``insufficient_evidence`` describes only the
     retrieved passages, not the entire database or the actual visa rules.
     ``profile`` is only what the user stated; it never changes retrieval.
-    mode="production"은 출처 URL 있는 근거만 쓰고 대한민국 국적 기준으로 생성한다.
+    mode="production"은 출처 URL 있는 근거와 직접 확인된 프로필로 생성한다.
     layout="overview"는 주제별 검색 결과를 합쳐 한 번 생성한다.
     """
     validate_mode(mode, layout)

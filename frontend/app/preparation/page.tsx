@@ -15,7 +15,7 @@ export default function PreparationPage() {
   useEffect(() => {
     for (const plan of planner.plans) {
       const id = String(plan.target.id);
-      if (!plan.items.every(item => item.id.startsWith('source:')) || migrating.current.has(id)) continue;
+      if (!plan.items.some(item => item.task_version !== 2 && ['personal:', 'dataset:', 'source:', 'confirm_', 'review:'].some(prefix => item.id.startsWith(prefix))) || migrating.current.has(id)) continue;
       migrating.current.add(id);
       personalizePlan(plan.target, [], true).catch(() => setNotice('개인별 항목 생성에 실패했습니다. 준비 항목 다시 검토를 눌러 주세요.'));
     }
@@ -60,6 +60,7 @@ export default function PreparationPage() {
             {items.map(item => <article key={`${item.program_id}:${item.id}`} style={{ background: '#fff', border: '1px solid var(--ln)', borderRadius: 12, padding: 18, marginBottom: 12 }}>
               <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.9rem', fontWeight: 600 }}><input type="checkbox" style={{ accentColor: 'var(--ac)' }} checked={item.done} onChange={() => change(() => planner.toggle(item.program_id, item.id))} /> {item.title}</label>
               <p style={{ fontSize: '0.85rem', color: 'var(--mu)', lineHeight: 1.7 }}>{item.description}</p>
+              {!!item.evidence?.length && <details><summary>관련 요건·검토 근거 확인</summary>{item.evidence.map((entry, index) => <div key={index}><p>{entry.outcome} · {entry.reason}</p><p>{entry.text}</p></div>)}</details>}
               {item.citations?.filter(c => safeSource(c.source_url)).map((c, index) => <p key={index}><a href={c.source_url} target="_blank" rel="noopener noreferrer">{c.title}</a></p>)}
               <small style={{ display: 'block', color: 'var(--mu)', marginBottom: 12, overflowWrap: 'anywhere' }}>{item.targetName} · {planner.plans.find(plan => plan.target.id === item.program_id)?.items.filter(row => row.done).length || 0}/{planner.plans.find(plan => plan.target.id === item.program_id)?.items.length || 0}개 완료 · {item.status === 'check_needed' ? '추가 확인 필요' : item.status === 'blocked' ? '선행 조건 확인 필요' : '준비 필요'}</small>
               <button style={actionStyle} aria-label={`${item.title} 수정`} onClick={() => setEditing({ target: item.program_id, id: item.id, title: item.title, description: item.description })}>수정</button>{' '}

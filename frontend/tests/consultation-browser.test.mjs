@@ -48,12 +48,12 @@ export async function runBrowserChecks(base, fixture) {
     await page.getByRole('button', { name: /이 정보로 상담하기/ }).click();
     await question('프로그램 추천해줘');
     assert.equal(await page.getByText('추가 확인: 테스트 상담 결과 1', { exact: true }).count(), 0); checks++;
-    assert.equal(await page.getByRole('button', { name: /플랜에 추가$/ }).count(), 5); checks++;
+    assert.equal(await page.getByRole('button', { name: /플랜에 추가$/ }).count(), 3); checks++;
     await page.getByText('근거 적용 범위·인용 구절', { exact: true }).first().click();
     await page.getByText('2026년 취업 개시자 안내 기준', { exact: false }).first().waitFor();
     await page.getByRole('link', { name: /공식 안내/ }).first().waitFor(); checks++;
-    await page.getByText('검증용 지원제도', { exact: true }).waitFor();
-    await page.getByText(/저장된 모집 상태: 접수 종료로 기록됨/).waitFor();
+    assert.equal(await page.locator('a[href^="/programs/"]').count(), 0); checks++;
+    assert.equal(await page.locator('nav a[href="/compare"]').count(), 0); checks++;
     await page.getByLabel('비교하기').first().check();
     await page.getByLabel('비교하기').nth(1).check();
     await page.waitForFunction(() => JSON.parse(sessionStorage.getItem('global-in-compare') || '[]').length === 2);
@@ -153,7 +153,7 @@ export async function runBrowserChecks(base, fixture) {
     await page.goto(base + '/chat'); revision = 6;
     profileUpdate = { nationalities: ['KR', 'CA'], date_of_birth: '1997-04-03', residence_country: 'KR', major: '컴퓨터공학', target_country: 'japan', target_visa_type: 'student' };
     await question('프로필 정보 변경');
-    await page.locator('a[href="/programs/CA%3Aiec"]').last().click();
+    await page.goto(base + '/programs/CA%3Aiec');
     await page.getByRole('heading', { name: 'IEC', exact: true }).waitFor(); checks++;
     await page.goto(base + '/chat');
     await page.getByRole('button', { name: 'IEC 플랜에 추가', exact: true }).last().click();
@@ -164,7 +164,7 @@ export async function runBrowserChecks(base, fixture) {
     const synced = await saved('global-in-profile');
     assert.deepEqual(synced.form.selectedCountries, ['일본']); assert.deepEqual(synced.form.selectedPurposes, ['유학']);
     assert.deepEqual(synced.profile.nationalities, ['KR','CA']); checks++;
-    await page.goto(base + '/preparation'); await page.getByRole('checkbox', { name: '서류 확인', exact: true }).waitFor(); checks++;
+    await page.goto(base + '/preparation'); await page.getByRole('checkbox', { name: '프로필 기준 증빙 준비', exact: true }).waitFor(); checks++;
     await page.goto(base + '/programs');
     await mkdir('../tmp/browser-checks', { recursive: true });
     await page.screenshot({ path: '../tmp/browser-checks/d-mobile.png', fullPage: false }); checks++;

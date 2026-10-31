@@ -22,11 +22,6 @@ type ModalType = "rename" | "delete" | null;
 
 const NAV = [
   {
-    label: "비교",
-    href: "/compare",
-    icon: "M9 3v18M15 3v18M3 9h18M3 15h18",
-  },
-  {
     label: "AI 상담",
     href: "/chat",
     icon: "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z",

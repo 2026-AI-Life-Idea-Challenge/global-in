@@ -26,7 +26,7 @@ import {
 } from "@/lib/consultation";
 
 import { useComparison } from "@/lib/useComparison";
-import { COUNTRY_NAMES, CATEGORY_NAMES } from "@/lib/catalog";
+import { COUNTRY_NAMES, CATEGORY_NAMES, type CatalogItem } from "@/lib/catalog";
 import ProgramActions from '@/components/ProgramActions';
 import { syncConsultationProfile } from '@/lib/profileSync';
 import type { ComparedItem } from '@/lib/useComparison';
@@ -198,7 +198,17 @@ function ProgramCard({
   onToggleCompare: (id: string | number) => void;
   prepItems?: PlanItem[];
 }) {
-  const officialUrl = program.official_url || program.officialUrl;
+  const [catalogSource, setCatalogSource] = useState<string>();
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch('/api/catalog', { signal: controller.signal }).then(res => res.ok ? res.json() : null).then(data => {
+      const item = data?.items?.find((row: CatalogItem) => row.id === program.id);
+      const url = item?.sources?.find((source: { source_url: string }) => /^https?:\/\//.test(source.source_url))?.source_url;
+      setCatalogSource(url);
+    }).catch(() => {});
+    return () => controller.abort();
+  }, [program.id]);
+  const officialUrl = catalogSource || program.official_url || program.officialUrl;
 
   const desc =
     program.desc ||
@@ -316,7 +326,7 @@ function ProgramCard({
               </svg>
             </a>
           )}
-          <ProgramActions item={program} prepItems={prepItems} />
+          <ProgramActions item={program} prepItems={prepItems} showDetails={false} />
 
           <label
             style={{
@@ -1225,7 +1235,7 @@ function ChatPageInner() {
                                 letterSpacing: "0.04em",
                               }}
                             >
-                              ● 검토할 프로그램 후보 {msg.programs.length}개
+                              ● 함께 살펴볼 프로그램 {Math.min(msg.programs.length, 3)}개
                             </div>
 
                             <div
@@ -1236,7 +1246,7 @@ function ChatPageInner() {
                                 maxWidth: 520,
                               }}
                             >
-                              {msg.programs.map((program) => (
+                              {msg.programs.slice().sort((a, b) => Number(!!b.sources?.length) - Number(!!a.sources?.length)).slice(0, 3).map((program) => (
                                 <ProgramCard
                                   key={program.id}
                                   program={program}
@@ -1393,7 +1403,7 @@ function ChatPageInner() {
                       </span>
 
                       {" "}
-                      <a href="/compare">비교 화면 열기</a>
+
                     </div>
 
                     <button

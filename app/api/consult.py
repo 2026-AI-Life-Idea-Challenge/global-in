@@ -123,8 +123,10 @@ def create_router(graph=None, store=None, require_owner=None) -> APIRouter:
             category = 'student' if category == 'study' else category
             if category in ('working_holiday', 'student', 'employment'):
                 programs.append(dict(program_id=item['program_id'], name=item['name'], country=item['country'], visa_type=category,
-                                     summary=item.get('description') or item.get('recommendation_reason') or '공식 조건 확인이 필요한 후보입니다.',
+                                     summary=next((claim['text'] for result in state.get('rag_results', []) for claim in result.get('claims', []) if (claim.get('program_id') or result.get('program_id')) == item['program_id']), None) or item.get('description') or item.get('recommendation_reason') or '해당 경로의 신청 조건과 준비 방법을 상담에서 확인해 보세요.',
                                      citations=citations([e for e in evidence if e.get('program_id') == item['program_id']])))
+        if state.get('overview'):
+            programs = [program for program in programs if program['citations']]
         eligibility = []
         for item in state.get('eligibility_results', []):
             if item.get('target_type') == 'program':

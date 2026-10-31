@@ -5,10 +5,12 @@ import type { ComparedItem } from './useComparison';
 export const PLAN_KEY = 'global-in-plans-v1';
 const event = 'global-in-plans-updated';
 export type PlanItem = { id: string; program_id: string; title: string; description: string; done: boolean;
-  status: string; citations?: { title: string; source_url: string }[] };
+  status: string; task_version?: number; evidence?: { text: string; outcome?: string; reason?: string }[]; citations?: { title: string; source_url: string }[] };
 export type Plan = { target: ComparedItem; items: PlanItem[] };
 
-export async function personalizePlan(target: ComparedItem, supplied: PlanItem[] = [], existingOnly = false) {
+export async function personalizePlan(target: ComparedItem, _supplied: PlanItem[] = [], existingOnly = false) {
+  // Legacy consultation items contain raw rules; the action API replaces them.
+  void _supplied;
   const saved = readSaved<{ profile?: Record<string, unknown> }>(PROFILE_KEY, {});
   const response = await fetch('/api/preparation', { method: 'POST', headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ target_id: target.id, profile: saved.profile || {} }) });
@@ -19,10 +21,10 @@ export async function personalizePlan(target: ComparedItem, supplied: PlanItem[]
   // A deleted plan must not reappear after a late response.
   if (existingOnly && !old) return;
   const generated: PlanItem[] = data.items;
-  const next = [...generated, ...supplied.filter(item => item.program_id === target.id && !generated.some(row => row.id === item.id))];
+  const next = generated;
   const items = next.map(item => ({ ...item, done: old?.items.some(previous => previous.id === item.id && previous.description === item.description && previous.done) || false }));
   if (old) {
-    const custom = old.items.filter(item => !item.id.startsWith('personal:') && !item.id.startsWith('dataset:') && !item.id.startsWith('source:') && !items.some(row => row.id === item.id));
+    const custom = old.items.filter(item => !['personal:', 'dataset:', 'source:', 'action:', 'confirm_', 'review:'].some(prefix => item.id.startsWith(prefix)) && !items.some(row => row.id === item.id));
     old.target = { ...old.target, ...target }; old.items = [...items, ...custom];
   } else store.plans.push({ target, items });
   write(store);

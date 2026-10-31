@@ -7,6 +7,8 @@ def run(state: AgentState) -> dict:
     results = answer(state)
     evidence = linked_evidence(results)
     lines = []
+    if state.get('overview'):
+        lines.append('질문하신 경로의 개요와 준비 방법을 공식 자료에서 확인한 범위로 안내할게요.')
     for result in results:
         claims = result.get('claims', [])
         if claims:
@@ -16,7 +18,11 @@ def run(state: AgentState) -> dict:
                 lines.append(heading)
             for claim in claims:
                 name = names.get(claim.get('program_id'))
-                lines.append(('- ' + name + ': ' if name else '- ') + claim['text'])
+                parts = [result.get('question_parts', [])[i] for i in claim.get('part_indexes', []) if 0 <= i < len(result.get('question_parts', []))]
+                label = ' · '.join(dict.fromkeys(parts))
+                if label:
+                    lines.append(label)
+                lines.append((name + '\n' if name else '') + claim['text'])
             if result.get('unanswered_parts'):
                 lines.append('질문 중 일부 항목은 검색된 공식 근거가 부족해 확정하지 못했습니다. 아래 추가 확인 항목을 확인하세요.')
         else:

@@ -22,7 +22,9 @@ def test_personal_tasks_reflect_rule_outcomes_and_sources(monkeypatch):
     result=personal_preparation.build_preparation('AU:test',{'nationalities':['KR']})
     assert [item['status'] for item in result['items']] == ['todo','blocked','check_needed']
     assert all(item['citations'] and not item['done'] for item in result['items'])
-    assert result['items'][0]['title'].startswith('충족 조건 증빙 준비')
+    assert result['items'][0]['title']=='생년월일과 신청 예정일로 연령 조건 확인하기'
+    assert all(len(item['title']) < 60 and item['task_version']==2 for item in result['items'])
+    assert result['items'][0]['evidence'][0]['text']=='나이'
 
 
 def test_wh_overview_is_scoped_even_if_interpreter_returns_empty(monkeypatch):
@@ -52,5 +54,15 @@ def test_overview_followup_retains_previous_scope(monkeypatch):
 def test_user_answer_omits_internal_catalogue_dump_but_keeps_claims(monkeypatch):
     monkeypatch.setattr(official_information,'answer',lambda _: [dict(answer='development internal list US:H1B',claims=[dict(text='근거에 있는 조건',citations=[])])])
     output=official_information.run({'candidate_programs':[]})
-    assert output['final_answer']=='- 근거에 있는 조건'
+    assert output['final_answer']=='근거에 있는 조건'
     assert 'US:H1B' not in output['final_answer']
+
+
+def test_long_rule_is_an_action_with_original_kept_as_evidence(monkeypatch):
+    original='Licensing, registration or membership You must be licensed, registered or a member of a professional body if mandatory. 적용 범위·예외: 노동협약 당하는 실제 해당 협약이 허용하는 요건에만 적용한다.'
+    monkeypatch.setattr(personal_preparation,'load_catalog_detail',lambda _:dict(kind='program',sources=[]))
+    monkeypatch.setattr(personal_preparation,'review',lambda _:{'eligibility_results':[{'condition_results':[dict(requirement_id='license',description=original,status='추가 확인 필요')]}]})
+    item=personal_preparation.build_preparation('AU:test',{})['items'][0]
+    assert item['title']=='근무 지역의 직업 면허·등록 필요 여부 확인하기'
+    assert 'Licensing' not in item['description']
+    assert item['evidence'][0]['text']==original
