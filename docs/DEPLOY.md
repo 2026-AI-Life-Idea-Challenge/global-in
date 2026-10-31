@@ -1,95 +1,146 @@
 # 배포 가이드
 
-배포는 세 부분으로 나뉜다.
+현재 배포 구성이다.
 
-| 구성 | 호스팅 | 결과 URL 예시 |
+| 구성 | 호스팅 | 주소 |
 |---|---|---|
-| 정책 DB (PostgreSQL 17 + pgvector) | Railway | 비공개 (Railway 내부 네트워크) |
-| 백엔드 (FastAPI, `Dockerfile`) | Railway | `https://global-in-api.up.railway.app` |
-| 프론트엔드 (Next.js, `frontend/`) | Vercel | `https://global-in.vercel.app` ← 공유할 주소 |
+| 프런트엔드 (Next.js, `frontend/`) | Vercel | https://global-in-outsiders.vercel.app ← 공유할 주소 |
+| 백엔드 (FastAPI, 루트 `Dockerfile`) | Google Cloud Run (`australia-southeast1`) | https://global-in-api-lugzdzxsda-ts.a.run.app |
+| 정책 DB (PostgreSQL + pgvector) | Neon (`aws-ap-southeast-2`, 시드니) | 비공개 |
 
-브라우저는 프론트엔드만 호출한다. 프론트엔드 서버가 `INTERNAL_API_KEY`를 붙여 백엔드를 호출하므로, 이 키는 브라우저에 노출되지 않는다.
-
-## 0. 준비
-
-- 계정: GitHub, Railway(Hobby 플랜 권장), Vercel
-- 비밀값 두 개를 생성해 둔다.
-
-```bash
-python3 -c "import secrets; print('INTERNAL_API_KEY=' + secrets.token_hex(32)); print('CONSULT_OWNER_SECRET=' + secrets.token_hex(32))"
+```mermaid
+flowchart LR
+    U(["👤 사용자"]) -- "HTTPS" --> V["Vercel<br/>Next.js"]
+    V -- "BACKEND_URL<br/>+ 내부 키" --> B["Cloud Run<br/>FastAPI (Docker)"]
+    B --> D[("Neon<br/>PostgreSQL + pgvector")]
+    B --> O(["OpenAI API"])
 ```
 
-- OpenAI API 키
-- 배포할 코드가 GitHub `develop`(또는 배포용 브랜치)에 push되어 있어야 한다.
+브라우저는 프런트엔드만 호출한다. 프런트엔드 서버가 `INTERNAL_API_KEY`를 붙여 백엔드를 호출하므로 이 키는 브라우저에 노출되지 않는다. 백엔드 주소는 공개돼 있지만 키 없는 내부·상담 API 호출은 401로 거부된다.
 
-## 1. DB (Railway)
+## 비밀값 파일 (git에 올라가지 않음)
 
-1. Railway에서 New Project를 만들고 템플릿 **pgvector**로 Postgres를 추가한다. 버전이 **17 이상**인지 확인한다. 덤프가 17.11 서버에서 생성되었다.
-2. DB 서비스의 Variables에서 외부 접속용 `DATABASE_PUBLIC_URL`을 복사한다.
-3. 로컬에서 덤프를 복원한다. pg_restore가 없으면 Docker로 실행한다.
+| 파일 | 내용 | 만드는 방법 |
+|---|---|---|
+| `.env.local` | `DATABASE_URL`(pooled), `DATABASE_URL_UNPOOLED`(direct) | `neon link` (아래 1단계) |
+| `.env.deploy` | `INTERNAL_API_KEY`, `CONSULT_OWNER_SECRET`, `OPENAI_API_KEY` | 직접 작성. 키는 `python3 -c "import secrets; print(secrets.token_hex(32))"`로 생성 |
+
+## 1. DB (Neon)
+
+Neon 콘솔에서 프로젝트를 만든 뒤 CLI로 연결한다. `DATABASE_URL`이 `.env.local`에 저장된다.
 
 ```bash
-export DB_PUBLIC_URL='postgresql://...railway...'
+npm i -g neon
 ```
 
 ```bash
-docker run --rm -v "$PWD":/dump:ro pgvector/pgvector:pg17 pg_restore --no-owner --no-privileges --dbname "$DB_PUBLIC_URL" /dump/global_in_current_20261028_192738.dump
+neon login
 ```
-
-4. 상담 세션 테이블(`consult_runtime` 스키마)을 한 번 생성한다.
 
 ```bash
-CONSULT_SESSION_DATABASE_URL="$DB_PUBLIC_URL" .venv/bin/python -c "import os; from app.services.postgres_sessions import PostgresSessions; PostgresSessions(os.environ['CONSULT_SESSION_DATABASE_URL']).initialize()"
+neon link --org-id <org-id> --project-id <project-id> --branch production -y
 ```
 
-## 2. 백엔드 (Railway)
+덤프를 복원한다. Neon pooler는 `pg_restore`에 맞지 않으므로 direct 주소(`DATABASE_URL_UNPOOLED`)를 쓴다. 로컬에 `pg_restore`가 없으면 Docker로 실행한다.
 
-1. 같은 프로젝트에서 New → GitHub Repo → `global-in`을 선택한다. 루트의 `Dockerfile`이 자동으로 사용된다.
-   - 이미지에는 Qwen3-Embedding-0.6B 모델이 포함되며 크기는 약 1.4GB(압축)다. 첫 빌드에 10분 이상 걸릴 수 있다.
-   - 첫 검색 요청 때 모델을 메모리에 올리며, 이때 약 3GB를 사용한다. 서비스 메모리 한도를 **4GB 이상**으로 둔다.
-   - Railway는 사용량 과금이다. 모델이 올라간 상태로 계속 켜 두면 메모리 비용이 대부분을 차지하므로, 시연 기간이 끝나면 서비스를 중지한다.
-2. Variables를 입력한다. DB 서비스 이름이 `pgvector`라면 다음과 같다.
+```bash
+set -a; . ./.env.local; set +a; docker run --rm -e U="$DATABASE_URL_UNPOOLED" -v "$PWD":/dump:ro pgvector/pgvector:pg17 sh -c 'pg_restore --no-owner --no-privileges --dbname "$U" /dump/global_in_current_20261028_192738.dump'
+```
+
+상담 세션 테이블(`consult_runtime` 스키마)을 한 번 만든다.
+
+```bash
+set -a; . ./.env.local; set +a; CONSULT_SESSION_DATABASE_URL="$DATABASE_URL_UNPOOLED" .venv/bin/python -c "import os; from app.services.postgres_sessions import PostgresSessions; PostgresSessions(os.environ['CONSULT_SESSION_DATABASE_URL']).initialize()"
+```
+
+> 상담 세션 저장소는 연결 시 `statement_timeout` 옵션을 보내는데, Neon pooler는 이를 거부한다. 그래서 세션 저장소에는 항상 direct 주소를 쓴다. 정책 조회(`DATABASE_URL`)는 pooled 주소를 쓴다.
+
+## 2. 백엔드 (Google Cloud Run)
+
+결제 계정이 연결된 Google Cloud 프로젝트가 필요하다. 접속이 없으면 인스턴스가 0대로 줄어 무료 한도 안에서 거의 비용이 들지 않는다.
+
+```bash
+brew install --cask gcloud-cli
+```
+
+```bash
+gcloud auth login
+```
+
+```bash
+gcloud services enable run.googleapis.com cloudbuild.googleapis.com artifactregistry.googleapis.com --project <프로젝트 ID>
+```
+
+배포한다. Cloud Build가 루트 `Dockerfile`로 이미지를 빌드한다(첫 빌드 10~15분). 업로드 대상은 `.gcloudignore`로 백엔드 파일만 남긴다.
+
+```bash
+GCP_PROJECT=<프로젝트 ID> scripts/deploy/cloud_run.sh
+```
+
+[scripts/deploy/cloud_run.sh](../scripts/deploy/cloud_run.sh)의 설정:
+
+- 메모리 4Gi, CPU 2: 임베딩 모델(Qwen3-Embedding-0.6B)을 올리면 약 3GB를 쓴다.
+- 최소 0대, 최대 1대: 비용 상한. 접속이 없으면 0대가 된다.
+- 지역 `australia-southeast1`: Neon DB와 같은 시드니라 DB 왕복이 짧다.
+- 환경변수 `DATABASE_URL`(pooled), `CONSULT_SESSION_DATABASE_URL`(direct), `INTERNAL_API_KEY`, `OPENAI_API_KEY`
+
+확인:
+
+```bash
+curl https://<서비스 주소>/health
+```
+
+## 3. 프런트엔드 (Vercel)
+
+1. Vercel에서 Add New → Project → `global-in` 저장소를 Import한다.
+2. **Root Directory를 `frontend`로 지정**한다. Vercel이 루트의 FastAPI를 보고 여러 서비스(services) 구성을 제안하더라도 쓰지 않는다. 백엔드는 모델 크기와 메모리 때문에 Vercel 함수에서 실행할 수 없다.
+3. Environment Variables:
 
 | 변수 | 값 |
 |---|---|
-| `DATABASE_URL` | `${{pgvector.DATABASE_URL}}` (내부 URL) |
-| `CONSULT_SESSION_DATABASE_URL` | `${{pgvector.DATABASE_URL}}` |
-| `INTERNAL_API_KEY` | 0단계에서 생성한 값 |
-| `OPENAI_API_KEY` | OpenAI 키 |
+| `BACKEND_URL` | Cloud Run 서비스 주소 (끝에 `/` 없이) |
+| `INTERNAL_API_KEY` | `.env.deploy`와 같은 값 |
+| `CONSULT_OWNER_SECRET` | `.env.deploy`와 같은 값 |
 
-3. Settings에서 Healthcheck Path를 `/health`로 지정하고, Networking → Generate Domain으로 공개 URL을 발급한다.
-4. 확인한다. `{"status":"ok"}`가 나오면 성공이다.
+4. Deploy. 기본 브랜치(develop)에 push하면 자동으로 다시 배포된다.
 
-```bash
-curl https://<백엔드 도메인>/health
+## Langfuse 트레이싱 (선택)
+
+`.env.deploy`에 `LANGFUSE_PUBLIC_KEY`, `LANGFUSE_SECRET_KEY`, `LANGFUSE_BASE_URL`을 넣고 배포 스크립트를 다시 실행하면 켜진다(환경은 `production`으로 기록). 키가 없으면 트레이싱 코드는 아무 일도 하지 않는다. 구현은 [app/services/tracing.py](../app/services/tracing.py).
+
+상담 한 턴이 trace 하나다. Langfuse의 Sessions 화면에서 대화 단위로, Users 화면에서 브라우저(익명 소유자 ID) 단위로 볼 수 있다.
+
+```text
+handle-consult-turn (agent)               사용자 메시지 → 최종 답변
+  run-consult-graph
+    user_understanding … preparation_planning   LangGraph 노드
+      retrieve-program-evidence (retriever)      질의, 결과 청크와 순위
+      draft-grounded-answer / review-answer-grounding / generate-chat-response (generation)
 ```
 
-## 3. 프론트엔드 (Vercel)
-
-1. Vercel에서 Add New → Project → `global-in` 저장소를 import한다.
-2. **Root Directory를 `frontend`로 지정**한다. Framework는 Next.js로 자동 인식된다.
-3. Environment Variables를 입력한다.
-
-| 변수 | 값 |
-|---|---|
-| `BACKEND_URL` | `https://<백엔드 도메인>` (끝에 `/` 없이) |
-| `INTERNAL_API_KEY` | 백엔드와 같은 값 |
-| `CONSULT_OWNER_SECRET` | 0단계에서 생성한 값 |
-| `CONSULT_PUBLIC_ORIGIN` | 비워 둔다. 프록시 뒤에서 접속 주소가 다르게 보일 때만 `https://<실제 도메인>`을 넣는다 |
-
-4. Deploy 후 Vercel 도메인에 접속해 상담 화면(`/chat`)에서 질문을 보내 본다.
+- 참조 카탈로그(`catalog_programs`, `catalog_supports`)는 개수만 남기고, LangGraph 조건부 엣지(`route`)와 FastAPI HTTP span은 보내지 않는다.
+- 상담 메시지에는 생년월일·국적 같은 개인정보가 들어 있고 그대로 Langfuse로 전송된다. 실서비스로 확장할 때는 마스킹을 추가한다.
 
 ## 업데이트
 
-- GitHub에 push하면 Railway와 Vercel이 각각 자동으로 재배포한다. 배포할 브랜치는 각 서비스 Settings에서 지정한다.
-- DB 내용을 바꾸면 새 덤프를 1단계와 같은 방법으로 복원한다. 기존 테이블이 있으면 `pg_restore`에 `--clean --if-exists`를 추가한다.
+| 바뀐 것 | 할 일 |
+|---|---|
+| 프런트엔드 코드 | develop에 머지하면 Vercel이 자동 배포 |
+| 백엔드 코드 | `scripts/deploy/cloud_run.sh` 다시 실행 |
+| DB 데이터 | 새 덤프를 1단계처럼 복원. 기존 테이블이 있으면 `pg_restore`에 `--clean --if-exists` 추가 |
+
+## 알아둘 점
+
+- **첫 요청이 느리다.** 인스턴스가 0대에서 깨어날 때와, 첫 검색에서 임베딩 모델을 메모리에 올릴 때 수십 초가 걸린다(실측 첫 검색 답변 약 51초). 시연 직전에 한 번 질문해 두면 이후 응답이 빨라진다.
+- **Neon도 쉬다가 깨어난다.** 무료 플랜은 유휴 시 컴퓨트가 멈추고 첫 연결에 몇 초가 더 든다.
+- 비밀값은 Cloud Run 환경변수로 들어간다. 프로젝트 소유자는 콘솔에서 볼 수 있으므로 프로젝트 권한을 넓게 주지 않는다.
 
 ## 문제 해결
 
 | 증상 | 확인할 것 |
 |---|---|
-| 백엔드가 시작 직후 종료 | `DATABASE_URL` 누락 또는 오타. 시작 시 DB 연결을 검사한다. |
-| 프론트에서 401/503 | 양쪽 `INTERNAL_API_KEY` 값이 같은지, 백엔드에 값이 설정되어 있는지 |
+| 백엔드가 시작 직후 종료 | `DATABASE_URL` 누락 또는 오타. 시작할 때 DB 연결을 검사한다 |
+| 프런트에서 401/503 | 양쪽 `INTERNAL_API_KEY`가 같은지, Vercel `BACKEND_URL`이 맞는지 |
+| 상담 시 "session store unavailable" | `CONSULT_SESSION_DATABASE_URL`이 direct 주소인지, 1단계 세션 테이블 생성 여부 |
 | 상담 요청 시 403 (cross-origin) | `CONSULT_PUBLIC_ORIGIN`을 설정했다면 실제 접속 주소(https 포함)와 정확히 같은지 |
-| 상담 중 "session store unavailable" | 1-4단계 세션 테이블 생성 여부 |
-| 검색 단계에서 메모리 부족(OOM) | 백엔드 메모리 한도를 4GB 이상으로 올린다 |
+| 검색 단계에서 메모리 부족(OOM) | Cloud Run 메모리를 4Gi 이상으로 |
