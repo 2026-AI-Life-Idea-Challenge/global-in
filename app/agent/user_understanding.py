@@ -28,6 +28,9 @@ _SYSTEM = """사용자의 현재 질문에서 의도와 직접 밝힌 정보를 
 구조화 출력 스키마가 주어지면 profile_updates는 [{"field":"필드명","value":"사용자가 말한 값"}] 목록으로 출력한다.
 profile_updates 허용 필드: date_of_birth, nationalities(ISO 2자리 목록), target_country
 (japan|australia|usa|germany|canada), target_visa_type(student|employment|working_holiday), purpose(500자).
+answer_mode는 준비 방향·시작 방법·목표 정리 등 일반 상담만 있으면 general,
+비자 요건·지원금·마감·자격 등 확인할 사실만 있으면 evidence, 둘 다 요청하면 mixed다.
+제도 사실이 조금이라도 포함되면 general로 분류하지 않는다.
 information_scope는 사용자가 비자와 지원제도를 함께 물으면 both, 지원제도만 물으면 support다.
 """
 
@@ -39,6 +42,7 @@ class Extraction(BaseModel):
     program_ids: list[str] = Field(default_factory=list)
     support_program_ids: list[str] = Field(default_factory=list)
     information_scope: Literal['program', 'support', 'both'] = 'program'
+    answer_mode: Literal['general', 'evidence', 'mixed'] = 'evidence'
 
 
 def normalize_extraction(raw):
@@ -75,7 +79,8 @@ def extraction_schema(programs,supports):
             'properties':{'field':{'type':'string','enum':['date_of_birth','nationalities','target_country','target_visa_type','purpose']},
                 'value':{'anyOf':[{'type':'string'},{'type':'array','items':{'type':'string'}},{'type':'null'}]}}}},
         program_ids=ids([p['program_id'] for p in programs]),support_program_ids=ids([s['support_program_id'] for s in supports]),
-        information_scope={'type':'string','enum':['program','support','both']})
+        information_scope={'type':'string','enum':['program','support','both']},
+        answer_mode={'type':'string','enum':['general','evidence','mixed']})
     return {'type':'object','additionalProperties':False,'required':list(props),'properties':props}
 
 
@@ -158,8 +163,13 @@ def run(state: AgentState) -> dict:
         question = '자격 검토를 위해 ' + ', '.join({'nationalities': '국적', 'date_of_birth': '정확한 생년월일'}[f] for f in missing) + '을 알려주세요. 나이만으로 생년월일을 추정하지 않습니다.'
     if stage_question:
         question = stage_question
+    mixed_question = question if extracted.answer_mode == 'mixed' else None
+    if mixed_question:
+        question = None
     return dict(user_profile=profile, intent=extracted.intent, missing_fields=missing,
+                final_answer=mixed_question or '', clarification_needed=bool(mixed_question),
                 follow_up_question=question, catalog_programs=programs, catalog_supports=supports,
                 requested_program_ids=extracted.program_ids, requested_support_ids=extracted.support_program_ids,
-                information_scope=extracted.information_scope, next_node='ask_user' if question else 'route_recommendation',
+                information_scope=extracted.information_scope, answer_mode=extracted.answer_mode,
+                next_node='ask_user' if question else ('preparation_planning' if extracted.answer_mode == 'general' or mixed_question else 'route_recommendation'),
                 current_agent='user_understanding')
