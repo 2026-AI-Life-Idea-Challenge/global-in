@@ -21,7 +21,7 @@
 |---|---|
 | ![Global-In 홈 화면](docs/images/home.png) | ![AI 상담 화면](docs/images/chat.png) |
 
-- **테스트 URL**: _배포 후 추가_
+- **테스트 URL**: https://global-in-outsiders.vercel.app
 - **데모 영상**: _추가 예정_
 
 ---
@@ -49,6 +49,12 @@ Global-In은 단순 검색이 아니라, 대화로 사용자 조건을 파악하
 | 프로그램·지원제도 찾기 | 국가·목적별로 프로그램과 지원제도를 탐색하고 비교표로 확인합니다. |
 
 ## 동작 구조
+
+### 사용자 흐름
+
+AI 챗봇 홈에서 **새 상담 / 프로필 작성 및 수정 / 이전 상담** 중 하나로 시작합니다. 사용자 메시지는 분석 후 기존 프로필·대화 정보와 통합되고, 후보 경로별 공식 요건과 대조됩니다. 자격 검토에 필요한 정보가 부족하면 누락·불명확한 조건을 묻는 질문을 만들고, 충분하면 검토 결과와 공식 근거를 정리해 경로 추천 → 비교 → 준비 계획으로 이어집니다.
+
+![챗봇 홈 사용자 흐름](docs/images/user-flow.png)
 
 ### 시스템 구성
 
@@ -281,13 +287,13 @@ python -m pytest tests/unit
 
 ## 배포
 
-프런트엔드는 Vercel, 백엔드와 DB는 Railway에 올리는 구성을 기준으로 합니다. 백엔드는 루트의 `Dockerfile`로 빌드하며, 임베딩 모델이 이미지에 포함되어 메모리가 4GB 이상 필요합니다.
+프런트엔드는 Vercel, 백엔드는 Google Cloud Run, DB는 Neon에 올라가 있습니다. 백엔드는 루트의 `Dockerfile`로 빌드하며, 임베딩 모델이 이미지에 포함되어 메모리가 4GB 이상 필요합니다.
 
 ```mermaid
 flowchart LR
     U(["👤 사용자"]) -- "HTTPS" --> V["Vercel<br/>Next.js"]
-    V -- "BACKEND_URL<br/>+ 내부 키" --> B["Railway<br/>FastAPI (Docker)"]
-    B -- "내부 네트워크" --> D[("Railway<br/>PostgreSQL + pgvector")]
+    V -- "BACKEND_URL<br/>+ 내부 키" --> B["Cloud Run<br/>FastAPI (Docker)"]
+    B --> D[("Neon<br/>PostgreSQL + pgvector")]
     B --> O(["OpenAI API"])
 ```
 
