@@ -1,0 +1,7 @@
+# 백엔드 이미지는 requirements.txt와 app/만 사용한다.
+*
+!requirements.txt
+!app/
+**/__pycache__
+**/*.py[cod]
+app/**/README.md
