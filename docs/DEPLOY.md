@@ -10,6 +10,8 @@
 
 브라우저는 프론트엔드만 호출한다. 프론트엔드 서버가 `INTERNAL_API_KEY`를 붙여 백엔드를 호출하므로, 이 키는 브라우저에 노출되지 않는다.
 
+아래 URL은 배포 예시이며 실제 서비스 주소가 아니다. 배포 전 현재 작업을 커밋하고 배포 대상 브랜치·환경변수를 확인한다. 로컬에서 문서를 검토하거나 빌드하는 것만으로 서비스가 배포되지는 않는다.
+
 ## 0. 준비
 
 - 계정: GitHub, Railway(Hobby 플랜 권장), Vercel
@@ -40,6 +42,13 @@ docker run --rm -v "$PWD":/dump:ro pgvector/pgvector:pg17 pg_restore --no-owner 
 
 ```bash
 CONSULT_SESSION_DATABASE_URL="$DB_PUBLIC_URL" .venv/bin/python -c "import os; from app.services.postgres_sessions import PostgresSessions; PostgresSessions(os.environ['CONSULT_SESSION_DATABASE_URL']).initialize()"
+```
+
+위 명령은 Bash 기준이다. Windows PowerShell에서는 가상환경을 만든 저장소 루트에서 다음과 같이 실행한다. `$env:DB_PUBLIC_URL`에는 외부 접속용 DB 주소를 설정한다.
+
+```powershell
+$env:CONSULT_SESSION_DATABASE_URL = $env:DB_PUBLIC_URL
+.\.venv\Scripts\python.exe -c "import os; from app.services.postgres_sessions import PostgresSessions; PostgresSessions(os.environ['CONSULT_SESSION_DATABASE_URL']).initialize()"
 ```
 
 ## 2. 백엔드 (Railway)
@@ -79,6 +88,8 @@ curl https://<백엔드 도메인>/health
 
 4. Deploy 후 Vercel 도메인에 접속해 상담 화면(`/chat`)에서 질문을 보내 본다.
 
+5. 상담뿐 아니라 프로그램 목록·상세, 프로필 반영, 준비 플랜도 확인한다. 현재 프런트엔드 상담 요청의 백엔드 대기 제한은 120초이며, 백엔드 상담 처리 예산은 기본 100초다. 호스팅의 함수 실행 시간 제한이 이 요청을 처리할 수 있도록 배포 설정을 확인한다. `/health` 성공만으로 DB 검색·AI 답변까지 검증되지는 않는다.
+
 ## 업데이트
 
 - GitHub에 push하면 Railway와 Vercel이 각각 자동으로 재배포한다. 배포할 브랜치는 각 서비스 Settings에서 지정한다.
@@ -90,6 +101,8 @@ curl https://<백엔드 도메인>/health
 |---|---|
 | 백엔드가 시작 직후 종료 | `DATABASE_URL` 누락 또는 오타. 시작 시 DB 연결을 검사한다. |
 | 프론트에서 401/503 | 양쪽 `INTERNAL_API_KEY` 값이 같은지, 백엔드에 값이 설정되어 있는지 |
+| 키를 맞췄는데도 인증 실패 | 환경변수를 변경한 프런트엔드와 백엔드를 모두 재배포했는지 |
 | 상담 요청 시 403 (cross-origin) | `CONSULT_PUBLIC_ORIGIN`을 설정했다면 실제 접속 주소(https 포함)와 정확히 같은지 |
 | 상담 중 "session store unavailable" | 1-4단계 세션 테이블 생성 여부 |
 | 검색 단계에서 메모리 부족(OOM) | 백엔드 메모리 한도를 4GB 이상으로 올린다 |
+| 프로그램 검색에서 로컬 임베딩을 사용할 수 없다는 경고 | 패키지와 모델 캐시를 확인한다. 프로그램 검색은 키워드 검색으로 이어지지만 검색 결과가 달라질 수 있다. |
