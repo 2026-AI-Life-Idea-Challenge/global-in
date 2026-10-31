@@ -111,6 +111,8 @@ try {
   if (process.env.RUN_BROWSER_TESTS === '1') {
     const { runBrowserChecks } = await import('./consultation-browser.test.mjs');
     await runBrowserChecks(base, payload);
+    const { runChatIsolationChecks } = await import('./chat-isolation-browser.test.mjs');
+    await runChatIsolationChecks(base);
   }
 } finally {
   app.kill(); mock.closeAllConnections(); await new Promise(resolve => mock.close(resolve));

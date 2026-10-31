@@ -51,6 +51,18 @@ def test_overview_followup_retains_previous_scope(monkeypatch):
     assert state['requested_program_ids']==['AU:417']
 
 
+def test_explicit_multi_country_question_clears_stale_australia_selection(monkeypatch):
+    programs=[dict(program_id='AU:417',name='호주 워홀',country='australia',category='working_holiday'),
+              dict(program_id='CA:iec',name='캐나다 워홀',country='canada',category='working_holiday')]
+    monkeypatch.setattr(user_understanding,'load_catalog',lambda:(programs,[]))
+    monkeypatch.setattr(user_understanding.llm,'extract_json',lambda *a,**k:json.dumps(dict(intent='official_information',profile_updates={},program_ids=['AU:417'],support_program_ids=[],information_scope='program')))
+    state=user_understanding.run(dict(user_query='여러 나라를 비교하고 싶어요',user_profile={'target_country':'australia','target_visa_type':'working_holiday'},requested_program_ids=['AU:417'],history=[]))
+    assert state['user_profile']['target_country'] is None
+    assert state['requested_program_ids']==[]
+    routed=route_recommendation.run(state)
+    assert {p['country'] for p in routed['candidate_programs']}=={'australia','canada'}
+
+
 def test_user_answer_omits_internal_catalogue_dump_but_keeps_claims(monkeypatch):
     monkeypatch.setattr(official_information,'answer',lambda _: [dict(answer='development internal list US:H1B',claims=[dict(text='근거에 있는 조건',citations=[])])])
     output=official_information.run({'candidate_programs':[]})

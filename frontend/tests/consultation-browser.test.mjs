@@ -63,7 +63,10 @@ export async function runBrowserChecks(base, fixture) {
     await page.getByRole('checkbox').first().check();
     await page.reload(); await page.getByRole('checkbox').first().waitFor();
     assert.equal(await page.getByRole('checkbox').first().isChecked(), true); checks++;
-    await page.goto(base + '/chat'); await page.getByText('테스트 상담 결과 2', { exact: true }).last().waitFor(); checks++;
+    await page.goto(base + '/chat');
+    assert.equal(await page.getByText('테스트 상담 결과 2', { exact: true }).count(), 0); checks++;
+    await page.getByRole('button', { name: '프로그램 추천해줘', exact: true }).click();
+    await page.getByText('테스트 상담 결과 2', { exact: true }).last().waitFor(); checks++;
     failed = true; await page.goto(base + '/profile');
     await page.locator('input[type="date"]').fill('1999-05-15');
     await page.getByRole('button', { name: '프로필 저장하기', exact: true }).click();
