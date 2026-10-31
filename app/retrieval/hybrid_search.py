@@ -1,7 +1,9 @@
 """Fuse independent keyword and vector rankings without changing either."""
 
+import logging
+
 from app.retrieval.keyword_search import search_program_evidence_by_keyword
-from app.retrieval.query_embedding import embed_query_local
+from app.retrieval.query_embedding import LocalEmbeddingUnavailable, embed_query_local
 from app.retrieval.vector_search import search_program_evidence_by_vector
 
 CANDIDATE_LIMIT = 100
@@ -71,7 +73,8 @@ def search_program_evidence_hybrid(
     The 18 evidence fields are preserved. Vector cosine similarity, keyword
     score, each source's rank, and RRF score are separate fields. A keyword
     nonmatch has keyword_rank=None and keyword_score=None. Results do not
-    imply answerability or answer-use approval. Errors are not suppressed.
+    imply answerability or answer-use approval. If the optional local model is
+    unavailable, keyword retrieval continues. DB and inference errors propagate.
 
     require_source_url=True(실사용 모드)는 출처 URL이 없는 청크를 RRF 순위 계산
     전에 제외한다. 남은 청크끼리 순위를 매긴다. 각 검색의 후보 100개 안에서
@@ -90,10 +93,15 @@ def search_program_evidence_hybrid(
     keyword_rows = search_program_evidence_by_keyword(
         program_id, text, limit=CANDIDATE_LIMIT
     )
-    vector = embed_query_local(text)
-    vector_rows = search_program_evidence_by_vector(
-        program_id, vector, limit=CANDIDATE_LIMIT
-    )
+    try:
+        vector = embed_query_local(text)
+    except LocalEmbeddingUnavailable:
+        logging.getLogger(__name__).warning('Local embedding unavailable; using keyword evidence search')
+        vector_rows = []
+    else:
+        vector_rows = search_program_evidence_by_vector(
+            program_id, vector, limit=CANDIDATE_LIMIT
+        )
     if require_source_url:
         keyword_rows = [row for row in keyword_rows if has_source_url(row["source_urls"])]
         vector_rows = [row for row in vector_rows if has_source_url(row["source_urls"])]
