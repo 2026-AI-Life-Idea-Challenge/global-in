@@ -9,7 +9,6 @@ import { usePlans, personalizePlan } from '@/lib/plans';
 export default function PreparationPage() {
   const router = useRouter();
   const planner = usePlans();
-  const items = planner.plans.flatMap(plan => plan.items.map(item => ({ ...item, targetName: plan.target.name })));
   const [notice, setNotice] = useState('');
   const migrating = useRef(new Set<string>());
   useEffect(() => {
@@ -43,7 +42,7 @@ export default function PreparationPage() {
           </div>
 
           {/* 빈 상태 카드 */}
-          {items.length > 0 ? <PlanWorkspace planner={planner} onNotice={setNotice} /> : <div style={{
+          {planner.plans.length > 0 ? <PlanWorkspace planner={planner} onNotice={setNotice} /> : <div style={{
             background: "#fff", border: "1px solid var(--ln)", borderRadius: 16,
             padding: "60px 40px", display: "flex", flexDirection: "column",
             alignItems: "center", textAlign: "center",

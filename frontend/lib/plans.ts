@@ -90,15 +90,24 @@ export function usePlans() {
   const plans = useMemo(() => raw === '__server__' ? [] : read().plans, [raw]);
   function update(targetId: string, fn: (items: PlanItem[]) => PlanItem[]) {
     const store = read();
-    store.plans = store.plans.map(plan => plan.target.id === targetId ? { ...plan, items: fn(plan.items) } : plan).filter(plan => plan.items.length);
+    store.plans = store.plans.map(plan => plan.target.id === targetId ? { ...plan, items: fn(plan.items) } : plan);
     write(store);
   }
   return { plans,
     add: addToPlan,
     toggle: (target: string, id: string) => update(target, items => items.map(item => item.id === id ? { ...item, done: !item.done } : item)),
     remove: (target: string, id: string) => update(target, items => items.filter(item => item.id !== id)),
+    restore: (target: string, item: PlanItem, index: number) => {
+      if (!read().plans.some(plan => plan.target.id === target)) throw new Error('삭제된 플랜에는 할 일을 복구할 수 없습니다.');
+      update(target, items => {
+        if (items.some(existing => existing.id === item.id)) return items;
+        const next = [...items];
+        next.splice(Math.min(Math.max(0, index), next.length), 0, item);
+        return next;
+      });
+    },
     edit: (target: string, id: string, title: string, description: string) => update(target, items => items.map(item => item.id === id ? { ...item, title: title.trim(), description: description.trim(), origin: 'manual' } : item)),
-    append: (target: string, title: string, stage = 'preparation') => update(target, items => [...items, { id: crypto.randomUUID(), program_id: target, title: title.trim(), description: '', done: false, status: 'todo', origin: 'manual', stage }]),
+    append: (target: string, title: string, stage = 'preparation', description = '') => update(target, items => [...items, { id: crypto.randomUUID(), program_id: target, title: title.trim(), description: description.trim(), done: false, status: 'todo', origin: 'manual', stage }]),
     removePlan: (target: string) => { const store = read(); write({ ...store, plans: store.plans.filter(plan => plan.target.id !== target) }); },
     clear: () => write({ version: 1, plans: [] }),
   };
