@@ -1,0 +1,11 @@
+.sections { display: grid; gap: 12px; min-width: 0; }
+.section { border: 1px solid var(--ln); border-radius: 12px; overflow: hidden; }
+.heading { padding: 14px 16px; cursor: pointer; font-size: .85rem; font-weight: 600; line-height: 1.65; overflow-wrap: anywhere; }
+.heading::marker { color: var(--ac); font-size: .75em; }
+.section[open] > .heading { background: #f7f8fc; border-bottom: 1px solid var(--ln); }
+.content { padding: 16px; }
+.body { margin: 0 0 18px; white-space: pre-line; overflow-wrap: anywhere; font-size: .84rem; line-height: 1.95; color: #444957; }
+.metadata { padding-top: 12px; border-top: 1px solid var(--ln); font-size: .72rem; line-height: 1.8; color: var(--mu); }
+.source { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; margin-top: 10px; font-size: .76rem; color: #626db5; }
+.source:hover { text-decoration: underline; text-underline-offset: 3px; }
+.sourceTitle { flex-basis: 100%; color: var(--mu); font-size: .7rem; overflow-wrap: anywhere; }

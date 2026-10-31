@@ -1,4 +1,5 @@
 import { safeSource } from './ConsultationDetails';
+import styles from './ProgramRequirements.module.css';
 export type DatasetSection = { id: string; title: string; body: string; document_title: string;
   verified_at?: string | null; effective_from?: string | null; effective_until?: string | null;
   sources: { title: string; source_url: string }[] };
@@ -14,10 +15,12 @@ export function datasetSectionLabel(title: string) {
 }
 export default function ProgramRequirements({ sections }: { sections: DatasetSection[] }) {
   if (!sections.length) return <span>현재 연결된 데이터셋에서 표시할 요건 본문을 찾지 못했습니다.</span>;
-  return <div>{sections.map((section,index) => <details key={section.id} open={index < 2}>
-    <summary>{datasetSectionLabel(section.title)}</summary>
-    <p style={{ whiteSpace: 'pre-line' }}>{section.body}</p>
-    <small>자료 확인일: {section.verified_at || '미확인'}{section.effective_from ? ` · 적용 시작: ${section.effective_from}` : ''}{section.effective_until ? ` · 적용 종료: ${section.effective_until}` : ''}</small>
-    {section.sources.filter(source => safeSource(source.source_url)).map((source,i) => <p key={i}><a href={source.source_url} target="_blank" rel="noopener noreferrer">{section.document_title} · 공식 근거 ↗</a></p>)}
+  return <div className={styles.sections}>{sections.map((section,index) => <details className={styles.section} key={section.id} open={index < 2}>
+    <summary className={styles.heading}>{datasetSectionLabel(section.title)}</summary>
+    <div className={styles.content}>
+      <p className={styles.body}>{section.body}</p>
+      <div className={styles.metadata}>자료 확인일: {section.verified_at || '미확인'}{section.effective_from ? ` · 적용 시작: ${section.effective_from}` : ''}{section.effective_until ? ` · 적용 종료: ${section.effective_until}` : ''}</div>
+      {section.sources.filter(source => safeSource(source.source_url)).map((source,i) => <a className={styles.source} key={i} href={source.source_url} target="_blank" rel="noopener noreferrer">공식 근거 확인 <span aria-hidden="true">↗</span><span className={styles.sourceTitle}>{section.document_title}</span></a>)}
+    </div>
   </details>)}</div>;
 }

@@ -1,4 +1,5 @@
 "use client";
+import FlagSvg from "@/components/CountryFlag";
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from "next/navigation";
 import Header from "@/components/Header";
@@ -8,13 +9,7 @@ import { CATEGORY_NAMES, AVAILABILITY_NAMES, catalogCountry } from '@/lib/catalo
 import { safeSource } from '@/components/ConsultationDetails';
 import ProgramRequirements, { datasetSectionLabel, type DatasetSection } from '@/components/ProgramRequirements';
 
-const FLAGS: Record<string, string> = {
-  독일: '<rect width="30" height="7" fill="#111"/><rect y="7" width="30" height="6.5" fill="#d00"/><rect y="13.5" width="30" height="6.5" fill="#ffce00"/>',
-  일본: '<rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="5" fill="#bc2a3a"/>',
-  호주: '<rect width="30" height="20" fill="#00247d"/><path d="M0 0l14 9M14 0L0 9" stroke="#fff" strokeWidth="1.6"/><path d="M7 0v9M0 4.5h14" stroke="#fff" strokeWidth="3"/><path d="M7 0v9M0 4.5h14" stroke="#cf142b" strokeWidth="1.6"/>',
-  미국: '<rect width="30" height="20" fill="#fff"/><rect y="0" width="30" height="1.55" fill="#b22234"/><rect y="3.1" width="30" height="1.55" fill="#b22234"/><rect y="6.2" width="30" height="1.55" fill="#b22234"/><rect y="9.3" width="30" height="1.55" fill="#b22234"/><rect y="12.4" width="30" height="1.55" fill="#b22234"/><rect y="15.5" width="30" height="1.55" fill="#b22234"/><rect y="18.6" width="30" height="1.55" fill="#b22234"/><rect width="13" height="10.8" fill="#3c3b6e"/>',
-  캐나다: '<rect width="30" height="20" fill="#fff"/><rect width="7.5" height="20" fill="#d52b1e"/><rect x="22.5" width="7.5" height="20" fill="#d52b1e"/><path d="M15 4l1.3 3 2-1-.6 4 1.7-.4-.4 1.8 1.5 1-3.5 2.4.2 2.2h-4.4l.2-2.2-3.5-2.4 1.5-1-.4-1.8 1.7.4-.6-4 2 1z" fill="#d52b1e"/>',
-};
+
 
 type ProgramDetail = {
   id: string; type: string; country: string | null; tags: string[]; name: string;
@@ -22,16 +17,6 @@ type ProgramDetail = {
   stages?: { id: string; label: string; details: string; sub: string }[];
   links?: { label: string; url: string }[];
 };
-function FlagSvg({ country, size = 22 }: { country: string; size?: number }) {
-  if (!FLAGS[country]) return null;
-  return (
-    <svg
-      viewBox="0 0 30 20"
-      style={{ width: size, height: Math.round(size * 2 / 3), borderRadius: 2, flexShrink: 0 }}
-      dangerouslySetInnerHTML={{ __html: FLAGS[country] }}
-    />
-  );
-}
 
 export default function ProgramDetailPage() {
   const params = useParams();
@@ -149,7 +134,7 @@ export default function ProgramDetailPage() {
             </div>
           </div>
 
-          <div className="program-detail-grid" style={{ display: "grid", gridTemplateColumns: "1fr 280px", gap: 16, alignItems: "start" }}>
+          <div className="program-detail-grid" style={{ display: "grid", gridTemplateColumns: "minmax(0, 1fr) 250px", gap: 20, alignItems: "start" }}>
             {/* 왼쪽: 상세 설명 + 대상 조건 */}
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               {program.stages ? (
@@ -178,14 +163,13 @@ export default function ProgramDetailPage() {
                     ))}
                   </div>
                   {/* 개요 */}
-                  <div style={{ fontSize: "0.72rem", letterSpacing: "0.12em", color: "var(--ac)", fontWeight: 600, marginBottom: 12 }}>● 개요</div>
+                  <div style={{ fontSize: "0.88rem", color: "var(--ink)", fontWeight: 700, marginBottom: 12 }}>개요</div>
                   <p style={{ margin: "0 0 20px", fontSize: "0.9rem", color: "var(--ink)", lineHeight: 1.8 }}>
                     {program.stages[activeStage].details}
                   </p>
                   {/* 대상·조건 */}
-                  <div style={{ fontSize: "0.72rem", letterSpacing: "0.12em", color: "var(--ac)", fontWeight: 600, marginBottom: 12 }}>● 대상·조건</div>
-                  <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
-                    <div style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--ac)", flexShrink: 0, marginTop: 7 }} />
+                  <div style={{ fontSize: "0.88rem", color: "var(--ink)", fontWeight: 700, marginBottom: 12 }}>대상·조건</div>
+                  <div style={{ display: "block", minWidth: 0 }}>
                     <div style={{ fontSize: "0.88rem", color: "var(--ink)", lineHeight: 1.7 }}>{requirements}</div>
                   </div>
                   <p style={{ margin: "12px 0 0", fontSize: "0.8rem", color: "var(--mu)", lineHeight: 1.6 }}>
@@ -196,7 +180,7 @@ export default function ProgramDetailPage() {
                 <>
                   {/* 개요 */}
                   <div style={{ background: "#fff", border: "1px solid var(--ln)", borderRadius: 16, padding: "24px 28px" }}>
-                    <div style={{ fontSize: "0.72rem", letterSpacing: "0.12em", color: "var(--ac)", fontWeight: 600, marginBottom: 12 }}>● 개요</div>
+                    <div style={{ fontSize: "0.88rem", color: "var(--ink)", fontWeight: 700, marginBottom: 12 }}>개요</div>
                     <p style={{ margin: 0, fontSize: "0.9rem", color: "var(--ink)", lineHeight: 1.8 }}>
                       {program.details}
                     </p>
@@ -204,10 +188,9 @@ export default function ProgramDetailPage() {
 
                   {/* 대상·조건 */}
                   <div style={{ background: "#fff", border: "1px solid var(--ln)", borderRadius: 16, padding: "24px 28px" }}>
-                    <div style={{ fontSize: "0.72rem", letterSpacing: "0.12em", color: "var(--ac)", fontWeight: 600, marginBottom: 12 }}>● 대상·조건</div>
-                    <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
-                      <div style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--ac)", flexShrink: 0, marginTop: 7 }} />
-                      <div style={{ fontSize: "0.88rem", color: "var(--ink)", lineHeight: 1.7 }}>{requirements}</div>
+                    <div style={{ fontSize: "0.88rem", color: "var(--ink)", fontWeight: 700, marginBottom: 12 }}>대상·조건</div>
+                    <div style={{ display: "block", minWidth: 0 }}>
+                        <div style={{ fontSize: "0.88rem", color: "var(--ink)", lineHeight: 1.7 }}>{requirements}</div>
                     </div>
                     <p style={{ margin: "12px 0 0", fontSize: "0.8rem", color: "var(--mu)", lineHeight: 1.6 }}>
                       자격 조건과 신청 요건은 변경될 수 있으니, 공식 사이트에서 최신 정보를 꼭 확인하세요.
@@ -221,7 +204,7 @@ export default function ProgramDetailPage() {
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {/* 공식 사이트 */}
               <div style={{ background: "#fff", border: "1px solid var(--ln)", borderRadius: 16, padding: "20px 22px" }}>
-                <div style={{ fontSize: "0.72rem", letterSpacing: "0.12em", color: "var(--ac)", fontWeight: 600, marginBottom: 12 }}>● 공식 사이트</div>
+                <div style={{ fontSize: "0.88rem", color: "var(--ink)", fontWeight: 700, marginBottom: 12 }}>공식 사이트</div>
                 <p style={{ margin: "0 0 14px", fontSize: "0.82rem", color: "var(--mu)", lineHeight: 1.6 }}>
                   신청 방법, 자격 요건, 최신 공지를 공식 사이트에서 확인하세요.
                 </p>
@@ -235,14 +218,14 @@ export default function ProgramDetailPage() {
                         rel="noopener noreferrer"
                         style={{
                           display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
-                          width: "100%", padding: "11px 0", borderRadius: 10,
-                          border: "1.5px solid var(--ink)", background: "#fff",
-                          fontSize: "0.88rem", fontWeight: 600, color: "var(--ink)",
+                          width: "100%", padding: "12px 14px", borderRadius: 10,
+                          border: "1px solid var(--ln)", background: "#f7f8fc",
+                          fontSize: "0.8rem", lineHeight: 1.7, fontWeight: 500, color: "#444957",
                           textDecoration: "none", boxSizing: "border-box",
                         }}
                       >
-                        {link.label}
-                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <span style={{ flex: 1, minWidth: 0, overflowWrap: "anywhere" }}>{link.label}</span>
+                        <svg style={{ flexShrink: 0, color: "var(--ac)" }} width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                           <path d="M7 7h10v10M7 17L17 7"/>
                         </svg>
                       </a>
@@ -256,8 +239,8 @@ export default function ProgramDetailPage() {
                     style={{
                       display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
                       width: "100%", padding: "11px 0", borderRadius: 10,
-                      border: "1.5px solid var(--ink)", background: "#fff",
-                      fontSize: "0.88rem", fontWeight: 600, color: "var(--ink)",
+                      border: "1px solid var(--ln)", background: "#f7f8fc",
+                      fontSize: "0.8rem", lineHeight: 1.7, fontWeight: 500, color: "#444957",
                       textDecoration: "none", boxSizing: "border-box",
                     }}
                   >
@@ -270,8 +253,8 @@ export default function ProgramDetailPage() {
               </div>
 
               {/* AI 상담하기 */}
-              <div style={{ background: "#fff", border: "1.5px solid var(--ac)", borderRadius: 16, padding: "20px 22px" }}>
-                <div style={{ fontSize: "0.72rem", letterSpacing: "0.12em", color: "var(--ac)", fontWeight: 600, marginBottom: 10 }}>● AI 상담</div>
+              <div style={{ background: "#f2f3fc", border: "1px solid #e1e4f4", borderRadius: 16, padding: "20px 22px" }}>
+                <div style={{ fontSize: "0.88rem", color: "var(--ink)", fontWeight: 700, marginBottom: 10 }}>AI 상담</div>
                 <p style={{ margin: "0 0 14px", fontSize: "0.82rem", color: "var(--mu)", lineHeight: 1.6 }}>
                   이 프로그램에 대해 궁금한 점을 AI와 함께 알아보세요.
                 </p>
@@ -295,7 +278,7 @@ export default function ProgramDetailPage() {
               {/* 안내 */}
               <div style={{ background: "#fff", border: "1px solid var(--ln)", borderRadius: 12, padding: "14px 16px" }}>
                 <p style={{ margin: 0, fontSize: "0.76rem", color: "var(--mu)", lineHeight: 1.6 }}>
-                  DB에 저장된 공식 자료입니다. 개인별 자격 요건과 현재 신청 정보는 공식 사이트에서 확인해 주세요.
+                  공식 자료를 바탕으로 제공하는 정보입니다. 개인별 자격 요건과 현재 신청 정보는 공식 사이트에서 확인해 주세요.
                 </p>
               </div>
             </div>
