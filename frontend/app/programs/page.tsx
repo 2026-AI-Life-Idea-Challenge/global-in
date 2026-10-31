@@ -167,8 +167,8 @@ export default function ProgramsPage() {
           </div>
 
           {/* 필터 카드 */}
-          <div style={{ background: "#fff", border: "1px solid var(--ln)", borderRadius: 16, padding: "20px 24px", marginBottom: 20 }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 10, border: "1px solid var(--ln)", borderRadius: 10, padding: "10px 14px", marginBottom: 16 }}>
+          <div style={{ background: "#F5F6FC", border: "1px solid var(--ln)", borderRadius: 16, padding: "20px 24px", marginBottom: 20 }}>
+            <div style={{ background: "#FFF", display: "flex", alignItems: "center", gap: 10, border: "1px solid var(--ln)", borderRadius: 10, padding: "10px 14px", marginBottom: 16 }}>
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--mu)" strokeWidth="1.8">
                 <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
               </svg>

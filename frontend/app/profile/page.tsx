@@ -30,7 +30,7 @@ const PURPOSES = [
   { icon: "✈️", label: "워킹홀리데이 / 교류" },
 ];
 
-const EDUCATIONS = ["고등학교", "전문대학", "대학교", "대학원 이상"];
+const EDUCATIONS = ["고등학교", "전문대학", "대학교", "대학원"];
 const EDU_STATUS = ["재학", "휴학", "졸업", "중퇴"];
 
 // 국가 이름과 국가 코드 매핑
@@ -289,6 +289,16 @@ export default function ProfilePage() {
         profile_pending: true,
       };
 
+      // Carry the saved profile into the next question without requiring an
+      // expensive re-evaluation of the previous conversation before navigation.
+      if (goToChat) {
+        if (!saveTab(CHAT_KEY, pendingChat)) {
+          throw new Error("프로필은 저장됐지만 상담 상태 저장에 실패했습니다.");
+        }
+        router.push("/chat");
+        return;
+      }
+
       if (chat.session_id) {
         if (!saveTab(CHAT_KEY, pendingChat)) {
           throw new Error("프로필은 저장됐지만 상담 상태 저장에 실패했습니다.");
@@ -315,7 +325,7 @@ export default function ProfilePage() {
           }
 
           throw new Error(
-            "프로필은 저장했습니다. 재검토에 실패했으므로 저장 버튼으로 재시도하거나 상담에서 다시 질문해 주세요."
+            `프로필은 저장했습니다. ${result.error || "재검토에 실패했습니다."} 저장 버튼으로 재시도하거나 상담에서 다시 질문해 주세요.`
           );
         }
 

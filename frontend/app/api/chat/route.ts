@@ -3,6 +3,33 @@ import { consultationOwner, CrossOriginConsultation } from '@/lib/consultationOw
 
 const BACKEND = process.env.BACKEND_URL || "http://localhost:8000";
 
+async function consultationFailure(response: Response) {
+  const body = await response.json().catch(() => ({}));
+  const detail = typeof body?.detail === 'string' ? body.detail : '';
+  let code = 'consultation_failed';
+  let error = '상담 답변 생성 중 서버 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.';
+  let retry = false;
+  if (response.status === 404) {
+    code = 'session_expired'; error = '상담이 만료됐습니다. 새 채팅을 시작해 주세요.';
+  } else if (response.status === 409) {
+    code = 'session_busy'; error = '이 상담의 이전 요청을 처리 중입니다. 잠시 후 다시 질문해 주세요.'; retry = true;
+  } else if (response.status === 422) {
+    code = 'invalid_input'; error = '저장된 프로필 또는 메시지의 입력 형식이 맞지 않습니다. 프로필에서 입력 내용을 확인한 뒤 다시 저장해 주세요.';
+  } else if (response.status === 401 || response.status === 403) {
+    code = 'server_authentication'; error = '상담 서버 인증 설정을 확인해야 합니다.';
+  } else if (detail === 'consultation capacity reached') {
+    code = 'capacity_reached'; error = '상담 서버가 혼잡합니다. 잠시 후 다시 시도해 주세요.'; retry = true;
+  } else if (detail === 'session store temporarily unavailable') {
+    code = 'session_store_unavailable'; error = '상담 기록 저장소에 연결할 수 없습니다. 잠시 후 다시 시도해 주세요.';
+  }
+  // Log only a controlled code; backend validation details may contain profile data.
+  console.error('[/api/chat] backend failure', { status: response.status, code });
+  return NextResponse.json({ error, code }, {
+    status: response.status,
+    ...(retry ? { headers: { 'Retry-After': '2' } } : {}),
+  });
+}
+
 export async function POST(req: NextRequest) {
   const apiKey = process.env.INTERNAL_API_KEY;
   if (!apiKey) return NextResponse.json({ error: "상담 서버 설정이 필요합니다." }, { status: 503 });
@@ -34,7 +61,7 @@ export async function POST(req: NextRequest) {
         signal: AbortSignal.timeout(15000),
       });
       if (!sessionRes.ok) {
-        throw new Error(`세션 생성 실패: ${sessionRes.status}`);
+        return consultationFailure(sessionRes);
       }
       const sessionData = await sessionRes.json();
       sessionId = sessionData.session_id;
@@ -50,10 +77,7 @@ export async function POST(req: NextRequest) {
     });
 
     if (!msgRes.ok) {
-      if (msgRes.status === 404) return NextResponse.json({ error: "상담이 만료됐습니다. 새 채팅을 시작해 주세요." }, { status: 404 });
-      if (msgRes.status === 409 || msgRes.status === 503) return NextResponse.json({ error: '상담을 처리 중이거나 서버가 혼잡합니다. 잠시 후 다시 시도해 주세요.' }, { status: msgRes.status, headers: { 'Retry-After': '2' } });
-      if (msgRes.status === 422) return NextResponse.json({ error: '저장된 프로필 또는 메시지의 입력 형식이 맞지 않습니다. 프로필에서 입력 내용을 확인한 뒤 다시 저장해 주세요.' }, { status: 422 });
-      throw new Error(`메시지 전송 실패: ${msgRes.status}`);
+      return consultationFailure(msgRes);
     }
 
     const data = await msgRes.json();
@@ -96,7 +120,9 @@ export async function PATCH(req: NextRequest) {
       method: 'PATCH', headers: { 'Content-Type': 'application/json', 'X-Internal-Api-Key': apiKey, 'X-Consult-Owner': owner },
       body: JSON.stringify(body.profile), signal: AbortSignal.timeout(120000),
     });
-    if (!result.ok) return NextResponse.json({ error: result.status === 404 ? '상담이 만료됐습니다. 새 채팅을 시작해 주세요.' : '프로필 재검토에 실패했습니다. 입력 내용을 확인해 주세요.' }, { status: result.status });
+    if (!result.ok) {
+      return consultationFailure(result);
+    }
     const data = await result.json();
     return NextResponse.json({ ...data, content: data.reply });
   } catch (err) {

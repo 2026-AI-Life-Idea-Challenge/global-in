@@ -73,6 +73,14 @@ class FakeConnection:
 
 
 class SearchTests(unittest.TestCase):
+    def test_local_model_unavailable_keeps_keyword_evidence(self):
+        self.embed.side_effect = search.LocalEmbeddingUnavailable('no local model')
+        rows = search.search_programs_evidence_hybrid('age', require_source_url=True)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]['keyword_rank'], 1)
+        self.assertIsNone(rows[0]['vector_rank'])
+        self.assertEqual(len(self.connection.executed), 2)
+
     def setUp(self):
         self.connection = FakeConnection([[program()], [chunk()], [chunk()]])
 

@@ -13,14 +13,21 @@ _cached_components: tuple[Any, Any] | None = None
 _load_lock = Lock()
 
 
+class LocalEmbeddingUnavailable(RuntimeError):
+    """Optional local model dependencies or cached weights are unavailable."""
+
+
 def _get_local_components() -> tuple[Any, Any]:
     """Load the tokenizer and CPU model once per process, without downloads."""
     global _cached_components
 
     with _load_lock:
         if _cached_components is None:
-            import torch
-            from transformers import AutoModel, AutoTokenizer
+            try:
+                import torch
+                from transformers import AutoModel, AutoTokenizer
+            except ImportError as exc:
+                raise LocalEmbeddingUnavailable('Local embedding dependencies are unavailable') from exc
 
             tokenizer = AutoTokenizer.from_pretrained(
                 MODEL_NAME,
@@ -55,7 +62,12 @@ def embed_query_local(text: str) -> list[float]:
     if not isinstance(text, str) or not text.strip():
         raise ValueError("text는 공백이 아닌 문자를 포함한 문자열이어야 합니다.")
 
-    tokenizer, model = _get_local_components()
+    try:
+        tokenizer, model = _get_local_components()
+    except OSError as exc:
+        # from_pretrained is local-only: missing/inaccessible cached weights
+        # should not disable the independent keyword retrieval path.
+        raise LocalEmbeddingUnavailable('Local embedding model cache is unavailable') from exc
     import torch
 
     inputs = tokenizer(

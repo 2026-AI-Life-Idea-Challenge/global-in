@@ -1160,8 +1160,8 @@ function ChatPageInner() {
 
               {profilePending && (
                 <p role="status">
-                  프로필은 저장됐지만 재검토가 완료되지 않았습니다.
-                  다음 질문을 보내면 반영을 다시 시도합니다.{" "}
+                  저장한 프로필을 다음 질문에 반영합니다.
+                  상담할 내용을 입력해 주세요.{" "}
                   <a href="/profile">프로필 확인</a>
                 </p>
               )}

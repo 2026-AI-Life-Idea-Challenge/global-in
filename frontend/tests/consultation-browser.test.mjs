@@ -12,6 +12,7 @@ export async function runBrowserChecks(base, fixture) {
   const errors = []; page.on('pageerror', error => errors.push(error.message));
   let failed = false, expired = false, revision = 1, checks = 0;
   let profileUpdate;
+  let patchCalls = 0;
   const result = () => ({ ...fixture, content: `테스트 상담 결과 ${revision}`, reply: `테스트 상담 결과 ${revision}`,
     follow_up_questions: [{ field: 'repeated', question: `테스트 상담 결과 ${revision}`, input_type: 'text' }],
     ...(profileUpdate ? { profile: profileUpdate } : {}),
@@ -21,6 +22,7 @@ export async function runBrowserChecks(base, fixture) {
       { program_id: 'DE:study', name: '독일 유학', country: 'germany', visa_type: 'student', summary: '검증용 후보' },
       { program_id: 'US:study', name: '미국 유학', country: 'usa', visa_type: 'student', summary: '검증용 후보' } ] });
   await page.route('**/api/chat', async route => {
+    if (route.request().method() === 'PATCH') patchCalls++;
     if (expired) return route.fulfill({ status: 404, json: { error: '만료' } });
     if (failed) return route.fulfill({ status: 503, json: { error: '테스트 오류' } });
     await route.fulfill({ json: result() });
@@ -67,11 +69,18 @@ export async function runBrowserChecks(base, fixture) {
     failed = true; await page.goto(base + '/profile');
     await page.locator('input[type="date"]').fill('1999-05-15');
     await page.getByRole('button', { name: '프로필 저장하기', exact: true }).click();
-    await page.getByRole('status').filter({ hasText: '재검토에 실패' }).waitFor();
+    await page.getByRole('status').filter({ hasText: '테스트 오류' }).waitFor();
     assert.equal((await saved('global-in-profile')).profile.date_of_birth, '1999-05-15');
     assert.equal((await saved('global-in-chat-state')).profile_pending, true);
     assert.equal(await saved('global-in-consult-result'), null);
     assert.deepEqual(await saved('global-in-compare'), []); checks++;
+    const patchesBeforeNavigation = patchCalls;
+    await page.getByRole('button', { name: /이 정보로 상담하기/ }).click();
+    await page.waitForURL('**/chat');
+    assert.equal(patchCalls, patchesBeforeNavigation);
+    assert.equal((await saved('global-in-chat-state')).profile_pending, true);
+    await page.getByText('저장한 프로필을 다음 질문에 반영합니다.', { exact: false }).waitFor(); checks++;
+    await page.goto(base + '/profile');
     failed = false; revision = 3;
     await page.getByRole('button', { name: '프로필 저장하기', exact: true }).click();
     await page.getByRole('status').filter({ hasText: '재검토 결과를 갱신' }).waitFor();
