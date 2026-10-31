@@ -111,8 +111,9 @@ export async function runBrowserChecks(base, fixture) {
     assert.equal(await page.getByRole('link', { name: '테스트 공식 출처', exact: true }).getAttribute('href'), 'https://canada.ca/'); checks++;
     await page.goto(base + '/programs/CA%3Aiec');
     await page.getByRole('heading', { name: 'IEC', exact: true }).waitFor();
-    await page.getByText('테스트 데이터셋의 신청 요건입니다.', { exact: true }).waitFor(); checks++;
-    await page.getByRole('link', { name: /테스트 공식 출처/ }).waitFor(); checks++;
+    await page.getByText('공식 원문·예외 규정 보기',{exact:true}).first().click();
+    await page.getByText('테스트 데이터셋의 신청 요건입니다.', { exact: true }).last().waitFor(); checks++;
+    await page.getByRole('link', { name: /공식 근거/ }).first().waitFor(); checks++;
     await page.goto(base + '/programs');
     await page.getByRole('textbox', { name: '프로그램 검색' }).fill('존재하지않는테스트');
     await page.reload();
@@ -159,6 +160,8 @@ export async function runBrowserChecks(base, fixture) {
     await page.goto(base + '/programs/CA%3Aiec');
     await page.getByRole('heading', { name: 'IEC', exact: true }).waitFor(); checks++;
     await page.goto(base + '/chat');
+    await page.setViewportSize({width:1280,height:900});
+    await page.getByRole('button', { name: '프로필 정보 변경', exact: true }).click();
     await page.getByRole('button', { name: 'IEC 플랜에 추가', exact: true }).last().click();
     await page.getByRole('status').filter({hasText:'개인별 준비 항목'}).last().waitFor();
     await page.goto(base + '/profile');
@@ -185,8 +188,10 @@ export async function runBrowserChecks(base, fixture) {
     assert.equal(await page.getByText('호주 워킹홀리데이 비자 417 · 2차',{exact:true}).count(),0); checks++;
     await page.goto(base+'/programs/AU%3Asubclass_417_first');
     await page.getByRole('button',{name:'2차 신청',exact:true}).click();
+    await page.getByText('공식 원문·예외 규정 보기',{exact:true}).first().click();
     await page.getByText('데이터셋: AU:subclass_417_second',{exact:true}).waitFor(); checks++;
     await page.getByRole('button',{name:'3차 신청',exact:true}).click();
+    await page.getByText('공식 원문·예외 규정 보기',{exact:true}).first().click();
     await page.getByText('데이터셋: AU:subclass_417_third',{exact:true}).waitFor(); checks++;
     await page.goto(base+'/programs/US%3AUS-WEST-01');
     await page.getByRole('link',{name:'프로그램 소개',exact:true}).waitFor();
