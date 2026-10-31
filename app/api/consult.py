@@ -9,9 +9,12 @@ import uuid
 import logging
 import os
 import re
+from threading import BoundedSemaphore
+import time
+from app.services import request_budget
 from pathlib import Path
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Header
 
 from app.agent.graph import get_compiled_graph
 from app.agent.state import initial_state
@@ -21,20 +24,40 @@ from app.models.consult import ChatRequest, ChatResponse, ProfileUpdateRequest
 from app.models.user_profile import UserProfile
 
 
-def create_router(graph=None, store=None) -> APIRouter:
+def create_router(graph=None, store=None, require_owner=None) -> APIRouter:
     router = APIRouter(prefix="/consult", tags=["consult"])
+    require_owner = graph is None if require_owner is None else require_owner
     if store is None:
-        store = MemorySessions() if graph is not None else SQLiteSessions(
-            os.environ.get('CONSULT_SESSION_DB', str(Path(__file__).resolve().parents[2]/'data/runtime/consultation.sqlite')))
+        if os.environ.get('CONSULT_SESSION_DATABASE_URL') and graph is None:
+            from app.services.postgres_sessions import PostgresSessions
+            store = PostgresSessions(os.environ['CONSULT_SESSION_DATABASE_URL'])
+        else:
+            store = MemorySessions() if graph is not None else SQLiteSessions(
+                os.environ.get('CONSULT_SESSION_DB', str(Path(__file__).resolve().parents[2]/'data/runtime/consultation.sqlite')))
     holder = {"graph": graph}
+    capacity = BoundedSemaphore(max(1,int(os.environ.get('CONSULT_MAX_CONCURRENT','4'))))
 
-    def run(session_id: str, user_message: str | None, profile_updates: dict) -> ChatResponse:
+    def owner_id(value):
+        if not value and not require_owner: return ''
+        if not value or not re.fullmatch('[a-f0-9]{64}',value):
+            raise HTTPException(status_code=401,detail='consultation owner required')
+        return value
+
+    def run(session_id: str, user_message: str | None, profile_updates: dict, owner='') -> ChatResponse:
         try:
-            previous, token = store.acquire(session_id)
+            previous, token = store.acquire(session_id, owner)
         except MissingSession:
             raise HTTPException(status_code=404, detail="session not found")
         except BusySession:
             raise HTTPException(status_code=409, detail="session request in progress")
+        except Exception:
+            logging.getLogger(__name__).exception('Consultation session store unavailable')
+            raise HTTPException(status_code=503,detail='session store temporarily unavailable') from None
+        admitted = capacity.acquire(blocking=False)
+        if not admitted:
+            store.release(session_id,token)
+            raise HTTPException(status_code=503,detail='consultation capacity reached',headers={'Retry-After':'2'})
+        deadline_token=request_budget.deadline.set(time.monotonic()+min(110,float(os.environ.get('CONSULT_REQUEST_TIMEOUT','100'))))
         try:
             profile = {**previous.get('user_profile', {}), **profile_updates}
             scope_changed = any(field in profile_updates and profile_updates[field] != previous.get('user_profile', {}).get(field)
@@ -51,8 +74,10 @@ def create_router(graph=None, store=None) -> APIRouter:
                 holder['graph'] = get_compiled_graph()
             state = holder['graph'].invoke(incoming)
             response = to_response(session_id, state)
-            state['history'] = previous.get('history', []) + [dict(role='user', content=query), dict(role='assistant', content=response.reply)]
-            store.commit(session_id, token, state)
+            state['history'] = (previous.get('history', []) + [dict(role='user', content=query), dict(role='assistant', content=response.reply)])[-20:]
+            # Catalogs and evidence are rebuilt from current DB records each turn.
+            saved={key:state[key] for key in ('user_profile','history','information_scope','requested_program_ids','requested_support_ids') if key in state}
+            store.commit(session_id, token, saved)
             return response
         except BusySession:
             raise HTTPException(status_code=409, detail='session lease expired; retry the request') from None
@@ -62,6 +87,8 @@ def create_router(graph=None, store=None) -> APIRouter:
             logging.getLogger(__name__).exception('Consultation failed')
             raise HTTPException(status_code=503, detail='consultation temporarily unavailable') from None
         finally:
+            request_budget.deadline.reset(deadline_token)
+            capacity.release()
             store.release(session_id, token)
 
     def to_response(session_id, state):
@@ -70,7 +97,7 @@ def create_router(graph=None, store=None) -> APIRouter:
                          source_url=url, verified_at=str(date) if (date := item.get('verified_at') or next(
                              (ref.get('verified_at') or ref.get('checked_at') for ref in item.get('source_references', [])
                               if isinstance(ref, dict) and ref.get('source_url') == url), None)) else None,
-                         content_review_status=item.get('content_review_status'))
+                         content_review_status=item.get('content_review_status'), quote=item.get('quote') or item.get('content'))
                     for item in items for url in ([item['source_url']] if item.get('source_url') else item.get('source_urls', []))
                     if isinstance(url, str) and url.startswith(('https://', 'http://'))]
         question = state.get('follow_up_question')
@@ -104,7 +131,7 @@ def create_router(graph=None, store=None) -> APIRouter:
                 eligibility.append(dict(program_id=item['target_id'], overall=item['status'], requirements=[
                     dict(requirement_id=condition.get('requirement_id') or condition.get('policy_id') or '',
                          outcome=condition.get('status', '추가 확인 필요'), judgeability=condition.get('judgeability', 'manual_check'),
-                         pending_reviews=condition.get('review_requests', []), reason=condition.get('reason')) for condition in item.get('condition_results', [])],
+                         pending_reviews=condition.get('review_requests', []), reason=condition.get('reason'), description=condition.get('description')) for condition in item.get('condition_results', [])],
                     unknown_requirement_ids=[c.get('requirement_id', '') for c in item.get('condition_results', []) if c.get('status') == '추가 확인 필요']))
         return ChatResponse(
             session_id=session_id,
@@ -122,7 +149,7 @@ def create_router(graph=None, store=None) -> APIRouter:
                               for s in state.get('candidate_support_programs', [])],
             support_eligibility=[dict(support_program_id=r['target_id'], overall=r['status'], requirements=[
                 dict(requirement_id=c.get('requirement_id', ''), outcome=c['status'], judgeability=c.get('judgeability', 'manual_check'),
-                     pending_reviews=c.get('review_requests', []), reason=c.get('reason')) for c in r.get('condition_results', [])])
+                     pending_reviews=c.get('review_requests', []), reason=c.get('reason'), description=c.get('description')) for c in r.get('condition_results', [])])
                 for r in state.get('eligibility_results', []) if r['target_type'] == 'support_program'],
             rag_statuses=[dict(status=r['status'], target_id=r.get('program_id') or r.get('support_program_id'),
                                development_only=r.get('development_only', True), release_mode=r.get('release_mode', 'development'),
@@ -131,8 +158,11 @@ def create_router(graph=None, store=None) -> APIRouter:
         )
 
     @router.post("/sessions")
-    def create_session() -> dict:
-        session_id = store.create()
+    def create_session(x_consult_owner: str | None = Header(default=None)) -> dict:
+        owner=owner_id(x_consult_owner)
+        try: session_id = store.create(owner)
+        except Exception:
+            raise HTTPException(status_code=503,detail='session store temporarily unavailable') from None
         return {"session_id": session_id}
 
     @router.get('/catalog')
@@ -145,11 +175,11 @@ def create_router(graph=None, store=None) -> APIRouter:
             raise HTTPException(status_code=503, detail='catalog temporarily unavailable') from None
 
     @router.post("/sessions/{session_id}/messages")
-    def send_message(session_id: str, body: ChatRequest) -> ChatResponse:
-        return run(session_id, body.message, body.profile.model_dump(mode='json', exclude_unset=True) if body.profile else {})
+    def send_message(session_id: str, body: ChatRequest, x_consult_owner: str | None = Header(default=None)) -> ChatResponse:
+        return run(session_id, body.message, body.profile.model_dump(mode='json', exclude_unset=True) if body.profile else {}, owner_id(x_consult_owner))
 
     @router.patch("/sessions/{session_id}/profile")
-    def update_profile(session_id: str, body: ProfileUpdateRequest) -> ChatResponse:
-        return run(session_id, None, body.model_dump(mode="json", exclude_unset=True))
+    def update_profile(session_id: str, body: ProfileUpdateRequest, x_consult_owner: str | None = Header(default=None)) -> ChatResponse:
+        return run(session_id, None, body.model_dump(mode="json", exclude_unset=True), owner_id(x_consult_owner))
 
     return router

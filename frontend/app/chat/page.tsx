@@ -12,7 +12,6 @@ import { useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import ConsultationDetails, {
-  safeSource,
   type ConsultationDetailsData,
 } from "@/components/ConsultationDetails";
 
@@ -1190,61 +1189,7 @@ function ChatPageInner() {
                             overflowWrap: "anywhere",
                           }}
                         >
-                          {msg.details?.answer_sections?.length ? (
-                            msg.details.answer_sections.map(
-                              (section, index) => (
-                                <article
-                                  key={index}
-                                  style={{ marginBottom: 14 }}
-                                >
-                                  <strong>
-                                    {section.target_name
-                                      ? section.target_name + " · "
-                                      : ""}
-                                    {section.title}
-                                  </strong>
-
-                                  <p style={{ margin: "6px 0" }}>
-                                    {renderContent(section.text)}
-                                  </p>
-
-                                  {section.scope_notes?.map((note) => (
-                                    <small
-                                      key={note}
-                                      style={{ display: "block" }}
-                                    >
-                                      근거의 적용 범위: {note}
-                                    </small>
-                                  ))}
-
-                                  {section.citations
-                                    .filter((c) =>
-                                      safeSource(c.source_url)
-                                    )
-                                    .map((c, citationIndex) => (
-                                      <a
-                                        key={citationIndex}
-                                        href={c.source_url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{
-                                          display: "block",
-                                          fontSize: "0.8rem",
-                                          color: "var(--mu)",
-                                        }}
-                                      >
-                                        {c.title} ↗
-                                        {c.verified_at
-                                          ? " · 확인일 " + c.verified_at
-                                          : ""}
-                                      </a>
-                                    ))}
-                                </article>
-                              )
-                            )
-                          ) : (
-                            renderContent(msg.content)
-                          )}
+                          {renderContent(msg.content)}
                         </div>
 
                         {/* 상세 상담 결과 */}

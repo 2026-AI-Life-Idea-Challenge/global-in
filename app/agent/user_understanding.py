@@ -25,6 +25,7 @@ _SYSTEM = """사용자의 현재 질문에서 의도와 직접 밝힌 정보를 
 목표 국가·목적을 명시적으로 바꿨으면 새 값으로 갱신한다.
 출력: {"intent":"route_recommendation|eligibility_review|official_information|preparation_planning|general_inquiry",
 "profile_updates":{},"program_ids":[],"support_program_ids":[],"information_scope":"program|support|both"}
+구조화 출력 스키마가 주어지면 profile_updates는 [{"field":"필드명","value":"사용자가 말한 값"}] 목록으로 출력한다.
 profile_updates 허용 필드: date_of_birth, nationalities(ISO 2자리 목록), target_country
 (japan|australia|usa|germany|canada), target_visa_type(student|employment|working_holiday), purpose(500자).
 information_scope는 사용자가 비자와 지원제도를 함께 물으면 both, 지원제도만 물으면 support다.
@@ -43,10 +44,13 @@ class Extraction(BaseModel):
 def normalize_extraction(raw):
     """Accept known legacy aliases without inventing an intent or target ID."""
     data = dict(raw)
+    if isinstance(data.get('profile_updates'),list):
+        data['profile_updates']={item['field']:item['value'] for item in data['profile_updates']}
     aliases = {'support_programs': 'official_information', 'support_discovery': 'official_information',
                'support_question': 'official_information', 'recommend': 'route_recommendation',
+               'support': 'official_information',
                'check': 'eligibility_review', 'prepare': 'preparation_planning', 'other': 'general_inquiry'}
-    if data.get('intent') in ('support_programs', 'support_discovery', 'support_question'):
+    if data.get('intent') in ('support_programs', 'support_discovery', 'support_question','support'):
         data['information_scope'] = 'both' if data.get('program_ids') else 'support'
     data['intent'] = aliases.get(data.get('intent'), data.get('intent'))
     for field, default in (('profile_updates', {}), ('program_ids', []), ('support_program_ids', [])):
@@ -63,6 +67,18 @@ def _build_prompt(state: AgentState) -> str:
                       ensure_ascii=False, default=str)
 
 
+def extraction_schema(programs,supports):
+    def ids(values):
+        return {'type':'array','items':{'type':'string',**({'enum':values} if values else {})},**({'maxItems':0} if not values else {})}
+    props=dict(intent={'type':'string','enum':list(Extraction.model_fields['intent'].annotation.__args__)},
+        profile_updates={'type':'array','items':{'type':'object','additionalProperties':False,'required':['field','value'],
+            'properties':{'field':{'type':'string','enum':['date_of_birth','nationalities','target_country','target_visa_type','purpose']},
+                'value':{'anyOf':[{'type':'string'},{'type':'array','items':{'type':'string'}},{'type':'null'}]}}}},
+        program_ids=ids([p['program_id'] for p in programs]),support_program_ids=ids([s['support_program_id'] for s in supports]),
+        information_scope={'type':'string','enum':['program','support','both']})
+    return {'type':'object','additionalProperties':False,'required':list(props),'properties':props}
+
+
 def run(state: AgentState) -> dict:
     programs, supports = load_catalog()
     context = {**state, 'catalog_programs': programs, 'catalog_supports': supports}
@@ -72,7 +88,8 @@ def run(state: AgentState) -> dict:
         extracted = Extraction(intent='route_recommendation', information_scope=state.get('information_scope', 'both'),
                                program_ids=state.get('requested_program_ids', []), support_program_ids=state.get('requested_support_ids', []))
     else:
-        extracted = normalize_extraction(json.loads(llm.extract_json(_build_prompt(context), system=_SYSTEM, max_tokens=1024)))
+        extracted = normalize_extraction(json.loads(llm.extract_json(_build_prompt(context), system=_SYSTEM, max_tokens=1024,
+            response_schema=extraction_schema(programs,supports))))
     updates = dict(extracted.profile_updates)
     if updates.get('target_visa_type') == 'study':
         updates['target_visa_type'] = 'student'
@@ -93,8 +110,20 @@ def run(state: AgentState) -> dict:
     profile.update(validated)
     valid_programs = {p['program_id'] for p in programs}
     valid_supports = {s['support_program_id'] for s in supports}
+    target_question = None
     if not set(extracted.program_ids) <= valid_programs or not set(extracted.support_program_ids) <= valid_supports:
-        raise ValueError('Extracted target ID is not in the official catalog')
+        # Recover only from a verbatim catalog name in this user message.
+        # Never fuzzy-map an invented ID to a different real program.
+        text = ' '.join(state['user_query'].casefold().split())
+        extracted.program_ids = [p['program_id'] for p in programs if ' '.join(p['name'].casefold().split()) in text]
+        extracted.support_program_ids = [s['support_program_id'] for s in supports if ' '.join(s['name'].casefold().split()) in text]
+        if not extracted.program_ids and not extracted.support_program_ids:
+            target_question = '대상 제도를 정확히 확인하지 못했습니다. 프로그램의 공식 이름이나 국가·비자 종류를 알려주세요.'
+    if extracted.support_program_ids and not extracted.program_ids and extracted.information_scope=='program':
+        extracted.information_scope='support'
+    elif extracted.program_ids and not extracted.support_program_ids and extracted.information_scope=='support':
+        support_question=any(word in state['user_query'].lower() for word in ('지원금','지원제도','장학','보조금','support','scholarship'))
+        if not support_question:extracted.information_scope='program'
     stage_question = None
     for family in ('417', '462'):
         prefix = 'AU:subclass_' + family + '_'
@@ -103,7 +132,12 @@ def run(state: AgentState) -> dict:
                             if message.get('role') == 'user' and family in message.get('content', '')]
         stage_text = state['user_query'].lower()
         if not any(marker in stage_text for marker in ('첫 신청', '처음', '1차', '2차', '3차', 'first', 'second', 'third')):
-            stage_text += ' ' + ' '.join(relevant_history).lower()
+            stage_text = next((text.lower() for text in reversed(relevant_history) if any(marker in text.lower()
+                for marker in ('첫 신청','처음','1차','2차','3차','first','second','third'))),stage_text)
+        for negation in ('말고','아니라'):
+            if negation in stage_text: stage_text=stage_text.rsplit(negation,1)[-1]
+        if any(marker in stage_text for marker in ('2차','3차','second','third')):
+            stage_text=stage_text.replace('처음','')
         stage = next((name for name, markers in (
             ('first', ('첫 신청', '처음', '1차', 'first')),
             ('second', ('2차', 'second')),
@@ -119,7 +153,7 @@ def run(state: AgentState) -> dict:
     missing = []
     if extracted.intent == 'eligibility_review':
         missing = [field for field in ('nationalities', 'date_of_birth') if not profile.get(field)]
-    question = None
+    question = target_question
     if missing:
         question = '자격 검토를 위해 ' + ', '.join({'nationalities': '국적', 'date_of_birth': '정확한 생년월일'}[f] for f in missing) + '을 알려주세요. 나이만으로 생년월일을 추정하지 않습니다.'
     if stage_question:

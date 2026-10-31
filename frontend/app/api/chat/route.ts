@@ -1,12 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
+import { consultationOwner, CrossOriginConsultation } from '@/lib/consultationOwner';
 
 const BACKEND = process.env.BACKEND_URL || "http://localhost:8000";
 
 export async function POST(req: NextRequest) {
   const apiKey = process.env.INTERNAL_API_KEY;
   if (!apiKey) return NextResponse.json({ error: "상담 서버 설정이 필요합니다." }, { status: 503 });
-  const headers = { "Content-Type": "application/json", "X-Internal-Api-Key": apiKey };
   try {
+    const owner = await consultationOwner(req, apiKey);
+    const headers = { "Content-Type": "application/json", "X-Internal-Api-Key": apiKey, "X-Consult-Owner": owner };
     const body = await req.json();
     const { messages, session_id: existingSessionId } = body as {
       messages: { role: string; content: string }[];
@@ -49,6 +51,7 @@ export async function POST(req: NextRequest) {
 
     if (!msgRes.ok) {
       if (msgRes.status === 404) return NextResponse.json({ error: "상담이 만료됐습니다. 새 채팅을 시작해 주세요." }, { status: 404 });
+      if (msgRes.status === 409 || msgRes.status === 503) return NextResponse.json({ error: '상담을 처리 중이거나 서버가 혼잡합니다. 잠시 후 다시 시도해 주세요.' }, { status: msgRes.status, headers: { 'Retry-After': '2' } });
       throw new Error(`메시지 전송 실패: ${msgRes.status}`);
     }
 
@@ -70,6 +73,7 @@ export async function POST(req: NextRequest) {
       answer_sections: data.answer_sections ?? [],
     });
   } catch (err) {
+    if (err instanceof CrossOriginConsultation) return NextResponse.json({ error: '다른 사이트에서 보낸 상담 요청은 허용하지 않습니다.' }, { status: 403 });
     console.error("[/api/chat] error:", err);
     return NextResponse.json(
       { content: "서버 연결에 문제가 생겼어요. 잠시 후 다시 시도해 주세요." },
@@ -82,18 +86,20 @@ export async function PATCH(req: NextRequest) {
   const apiKey = process.env.INTERNAL_API_KEY;
   if (!apiKey) return NextResponse.json({ error: '상담 서버 설정이 필요합니다.' }, { status: 503 });
   try {
+    const owner = await consultationOwner(req, apiKey);
     const body = await req.json();
     if (!body || !/^[a-f0-9]{32}$/.test(body.session_id || '') || !body.profile || typeof body.profile !== 'object' || Array.isArray(body.profile)) {
       return NextResponse.json({ error: '프로필과 상담 세션을 확인해 주세요.' }, { status: 400 });
     }
     const result = await fetch(`${BACKEND}/consult/sessions/${body.session_id}/profile`, {
-      method: 'PATCH', headers: { 'Content-Type': 'application/json', 'X-Internal-Api-Key': apiKey },
+      method: 'PATCH', headers: { 'Content-Type': 'application/json', 'X-Internal-Api-Key': apiKey, 'X-Consult-Owner': owner },
       body: JSON.stringify(body.profile), signal: AbortSignal.timeout(120000),
     });
     if (!result.ok) return NextResponse.json({ error: result.status === 404 ? '상담이 만료됐습니다. 새 채팅을 시작해 주세요.' : '프로필 재검토에 실패했습니다. 입력 내용을 확인해 주세요.' }, { status: result.status });
     const data = await result.json();
     return NextResponse.json({ ...data, content: data.reply });
-  } catch {
+  } catch (err) {
+    if (err instanceof CrossOriginConsultation) return NextResponse.json({ error: '다른 사이트에서 보낸 상담 요청은 허용하지 않습니다.' }, { status: 403 });
     return NextResponse.json({ error: '재검토 서버에 연결할 수 없습니다. 다시 시도해 주세요.' }, { status: 503 });
   }
 }

@@ -25,17 +25,19 @@ class MemorySessions:
     def __init__(self):
         self.sessions = {}
         self.tokens = {}
+        self.owners = {}
         self.lock = Lock()
 
-    def create(self):
+    def create(self, owner=''):
         sid = uuid.uuid4().hex
         with self.lock:
             self.sessions[sid] = {}
+            self.owners[sid] = owner
         return sid
 
-    def acquire(self, sid):
+    def acquire(self, sid, owner=''):
         with self.lock:
-            if sid not in self.sessions:
+            if sid not in self.sessions or self.owners[sid] != owner:
                 raise MissingSession()
             if sid in self.tokens:
                 raise BusySession()
@@ -60,23 +62,27 @@ class SQLiteSessions:
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.ttl, self.lease_seconds = ttl, lease_seconds
         with closing(sqlite3.connect(self.path, timeout=10)) as conn, conn:
+            conn.execute('BEGIN IMMEDIATE')
             conn.execute('''CREATE TABLE IF NOT EXISTS consult_sessions(
                 session_id TEXT PRIMARY KEY, payload TEXT NOT NULL, expires REAL NOT NULL,
                 token TEXT, lease_until REAL NOT NULL DEFAULT 0)''')
+            columns = {row[1] for row in conn.execute('PRAGMA table_info(consult_sessions)')}
+            if 'owner' not in columns:
+                conn.execute("ALTER TABLE consult_sessions ADD COLUMN owner TEXT NOT NULL DEFAULT ''")
 
-    def create(self):
+    def create(self, owner=''):
         sid = uuid.uuid4().hex
         now = time.time()
         with closing(sqlite3.connect(self.path, timeout=10)) as conn, conn:
             conn.execute('DELETE FROM consult_sessions WHERE expires < ? AND lease_until < ?', (now, now))
-            conn.execute('INSERT INTO consult_sessions(session_id,payload,expires) VALUES(?,?,?)', (sid, '{}', now+self.ttl))
+            conn.execute('INSERT INTO consult_sessions(session_id,payload,expires,owner) VALUES(?,?,?,?)', (sid, '{}', now+self.ttl, owner))
         return sid
 
-    def acquire(self, sid):
+    def acquire(self, sid, owner=''):
         now, token = time.time(), uuid.uuid4().hex
         with closing(sqlite3.connect(self.path, timeout=10)) as conn, conn:
             conn.execute('BEGIN IMMEDIATE')
-            row = conn.execute('SELECT payload,expires,lease_until FROM consult_sessions WHERE session_id=?', (sid,)).fetchone()
+            row = conn.execute('SELECT payload,expires,lease_until FROM consult_sessions WHERE session_id=? AND owner=?', (sid,owner)).fetchone()
             if row is None or row[1] < now:
                 raise MissingSession()
             if row[2] > now:

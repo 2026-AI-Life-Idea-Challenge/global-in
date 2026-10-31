@@ -139,3 +139,24 @@ def test_417_variants_are_not_mixed_or_assumed(monkeypatch,question,expected):
     else:
         assert result['next_node']=='ask_user'
         assert '어떤 단계' in result['follow_up_question']
+
+
+def test_latest_stage_in_history_wins_and_negated_first_is_not_selected(monkeypatch):
+    programs=[dict(program_id='AU:subclass_417_'+stage,name=stage,country='australia',category='working_holiday') for stage in ('first','second','third')]
+    monkeypatch.setattr(user_understanding,'load_catalog',lambda:(programs,[]))
+    monkeypatch.setattr(user_understanding.llm,'extract_json',lambda *a,**k:json.dumps(dict(intent='official_information',program_ids=[p['program_id'] for p in programs])))
+    history=[dict(role='user',content='호주 417 첫 신청'),dict(role='user',content='호주 417 2차로 바꿀게요')]
+    result=user_understanding.run(initial_state('test','호주 417 준비사항',history=history))
+    assert result['requested_program_ids']==['AU:subclass_417_second']
+    result=user_understanding.run(initial_state('test','호주 417 첫 신청 말고 2차 신청'))
+    assert result['requested_program_ids']==['AU:subclass_417_second']
+
+
+def test_program_scope_is_not_dropped_by_support_classification(monkeypatch):
+    programs=[dict(program_id='CA:iec',name='IEC',country='canada',category='working_holiday')]
+    monkeypatch.setattr(user_understanding,'load_catalog',lambda:(programs,[]))
+    monkeypatch.setattr(user_understanding.llm,'extract_json',lambda *a,**k:json.dumps(dict(intent='official_information',program_ids=['CA:iec'],information_scope='support')))
+    result=user_understanding.run(initial_state('test','IEC 신청 조건'))
+    assert result['information_scope']=='program'
+    result=user_understanding.run(initial_state('test','IEC와 연결되는 지원금'))
+    assert result['information_scope']=='support'

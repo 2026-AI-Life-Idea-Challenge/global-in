@@ -7,6 +7,7 @@ import { once } from 'node:events';
 const session = 'a'.repeat(32);
 const expired = 'b'.repeat(32);
 const calls = [];
+const owners = new Map();
 const payload = { session_id: session, stage: 'result', reply: '공식 근거를 확인하세요.', profile: { nationalities: ['KR'] },
   programs: [{ program_id: 'CA:iec', name: 'IEC', country: 'canada', visa_type: 'working_holiday', summary: '교류 프로그램' }],
   eligibility: [{ program_id: 'CA:iec', overall: '추가 확인 필요', requirements: [] }],
@@ -18,6 +19,7 @@ const payload = { session_id: session, stage: 'result', reply: '공식 근거를
   rag_statuses: [{ status: 'partial', development_only: true, unanswered_parts: [{ question_part: '추가 서류' }] }] };
 const mock = http.createServer(async (req, res) => {
   assert.equal(req.headers['x-internal-api-key'], 'synthetic-test-key');
+  if (req.url !== '/consult/catalog') assert.match(req.headers['x-consult-owner'] || '', /^[a-f0-9]{64}$/);
   let text = ''; for await (const part of req) text += part;
   const body = text ? JSON.parse(text) : {};
   calls.push({ method: req.method, url: req.url, body });
@@ -31,6 +33,8 @@ const mock = http.createServer(async (req, res) => {
     ] })); return;
   }
   if (req.url.includes(expired)) { res.writeHead(404); res.end('{}'); return; }
+  if (req.url === '/consult/sessions') owners.set(session, req.headers['x-consult-owner']);
+  else if (req.url.includes('/sessions/' + session) && owners.get(session) !== req.headers['x-consult-owner']) { res.writeHead(404); res.end('{}'); return; }
   if (req.method === 'PATCH' && body.invalid) { res.writeHead(422); res.end('{}'); return; }
   res.end(JSON.stringify(req.url === '/consult/sessions' ? { session_id: session } : payload));
 });
@@ -44,8 +48,12 @@ const app = spawn(process.execPath, ['node_modules/next/dist/bin/next', 'start',
 let output = ''; app.stdout.on('data', chunk => output += chunk); app.stderr.on('data', chunk => output += chunk);
 const base = `http://127.0.0.1:${port}`;
 let passed = 0;
+let ownerCookie;
 async function send(method, body) {
-  return fetch(base + '/api/chat', { method, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+  const result = await fetch(base + '/api/chat', { method, headers: { 'Content-Type': 'application/json', ...(ownerCookie ? { Cookie: ownerCookie } : {}) }, body: JSON.stringify(body) });
+  const cookie = result.headers.get('set-cookie');
+  if (cookie) { assert.match(cookie, /HttpOnly/i); assert.match(cookie, /SameSite=Strict/i); ownerCookie = cookie.split(';')[0]; }
+  return result;
 }
 try {
   const deadline = Date.now() + 45000;
@@ -59,6 +67,10 @@ try {
   assert.equal(data.programs[0].program_id, 'CA:iec'); assert.deepEqual(data.eligibility, payload.eligibility);
   assert.deepEqual(data.citations, payload.citations); assert.deepEqual(data.prep_items, payload.prep_items); passed++;
   assert.deepEqual(data.answer_sections, payload.answer_sections);
+  const stolen = await fetch(base + '/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ session_id: session, messages: [{ role: 'user', content: '다른 브라우저' }] }) });
+  assert.equal(stolen.status, 404); passed++;
+  const crossOrigin = await fetch(base + '/api/chat', { method: 'PATCH', headers: { 'Content-Type': 'application/json', Origin: 'https://untrusted.example', Cookie: ownerCookie }, body: JSON.stringify({ session_id: session, profile: {} }) });
+  assert.equal(crossOrigin.status, 403); passed++;
   assert.deepEqual(data.support_programs, payload.support_programs);
   assert.deepEqual(data.support_eligibility, payload.support_eligibility);
   assert.deepEqual(data.rag_statuses, payload.rag_statuses);

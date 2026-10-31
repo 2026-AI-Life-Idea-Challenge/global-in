@@ -23,4 +23,7 @@ def test_general_search_does_not_require_personal_info(monkeypatch):
 def test_unknown_target_id_is_rejected(monkeypatch):
     monkeypatch.setattr(node,'load_catalog',lambda:([],[]))
     monkeypatch.setattr(node.llm,'extract_json',lambda *a,**k:json.dumps(dict(intent='official_information',program_ids=['invented'])))
-    with pytest.raises(ValueError): node.run(initial_state('test','비자'))
+    result=node.run(initial_state('test','비자'))
+    assert result['next_node']=='ask_user'
+    assert result['requested_program_ids']==[]
+    assert '공식 이름' in result['follow_up_question']
