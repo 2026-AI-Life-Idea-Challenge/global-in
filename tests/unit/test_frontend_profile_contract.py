@@ -22,3 +22,15 @@ def test_residence_country_uses_explicit_iso_code():
     from pydantic import ValidationError
     assert ProfileUpdateRequest(residence_country='JP').residence_country=='JP'
     with pytest.raises(ValidationError):ProfileUpdateRequest(residence_country='일본')
+
+def test_full_response_can_round_trip_when_unset_internal_fields_are_null():
+    profile=UserProfile(nationalities=['KR'],date_of_birth='1998-05-15').model_dump()
+    assert 'insurance_medical_care' in profile
+    request=ProfileUpdateRequest.model_validate(profile)
+    assert request.nationalities==['KR']
+    assert 'insurance_medical_care' not in request.model_dump()
+
+def test_non_null_unknown_fields_are_not_silently_discarded():
+    import pytest
+    from pydantic import ValidationError
+    with pytest.raises(ValidationError):ProfileUpdateRequest.model_validate({'invented_approval':True})

@@ -13,6 +13,7 @@ export async function runBrowserChecks(base, fixture) {
   let failed = false, expired = false, revision = 1, checks = 0;
   let profileUpdate;
   const result = () => ({ ...fixture, content: `테스트 상담 결과 ${revision}`, reply: `테스트 상담 결과 ${revision}`,
+    follow_up_questions: [{ field: 'repeated', question: `테스트 상담 결과 ${revision}`, input_type: 'text' }],
     ...(profileUpdate ? { profile: profileUpdate } : {}),
     answer_sections: fixture.answer_sections.map(section => ({ ...section, text: `테스트 상담 결과 ${revision}` })),
     programs: [ { ...fixture.programs[0], summary: `최신 설명 ${revision}` },
@@ -41,6 +42,7 @@ export async function runBrowserChecks(base, fixture) {
     await page.reload(); await page.locator('input[type="date"][value="1998-05-15"]').waitFor(); checks++;
     await page.getByRole('button', { name: /이 정보로 상담하기/ }).click();
     await question('프로그램 추천해줘');
+    assert.equal(await page.getByText('추가 확인: 테스트 상담 결과 1', { exact: true }).count(), 0); checks++;
     assert.equal(await page.getByRole('button', { name: /플랜에 추가$/ }).count(), 5); checks++;
     await page.getByText('근거 적용 범위·인용 구절', { exact: true }).first().click();
     await page.getByText('2026년 취업 개시자 안내 기준', { exact: false }).first().waitFor();
@@ -100,6 +102,7 @@ export async function runBrowserChecks(base, fixture) {
     await page.getByRole('columnheader', { name: 'IEC', exact: true }).waitFor(); checks++;
     await page.goto(base + '/programs/CA%3Aiec');
     await page.getByRole('heading', { name: 'IEC', exact: true }).waitFor();
+    await page.getByText('테스트 데이터셋의 신청 요건입니다.', { exact: true }).waitFor(); checks++;
     await page.getByRole('link', { name: /테스트 공식 출처/ }).waitFor(); checks++;
     await page.goto(base + '/programs');
     await page.getByRole('textbox', { name: '프로그램 검색' }).fill('존재하지않는테스트');
@@ -123,6 +126,11 @@ export async function runBrowserChecks(base, fixture) {
     await page.getByRole('button', { name: '검증용 지원제도 플랜에 추가', exact: true }).click();
     await page.goto(base + '/preparation');
     assert.equal(await page.getByRole('checkbox').count(), 2); checks++;
+    await mkdir('../tmp/browser-checks', { recursive: true });
+    await page.screenshot({ path: '../tmp/browser-checks/plan-controls-mobile.png', fullPage: true });
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.screenshot({ path: '../tmp/browser-checks/plan-controls-desktop.png', fullPage: true });
+    await page.setViewportSize({ width: 390, height: 844 });
     await page.getByRole('textbox', { name: '새 준비 항목' }).fill('여권 준비');
     await page.getByRole('button', { name: '항목 추가', exact: true }).click();
     await page.getByRole('button', { name: '여권 준비 수정', exact: true }).click();

@@ -15,6 +15,8 @@ export default function PreparationPage() {
   const [newTitle, setNewTitle] = useState('');
   const [target, setTarget] = useState('');
   const selectedTarget = planner.plans.some(plan => plan.target.id === target) ? target : String(planner.plans[0]?.target.id || '');
+  const actionStyle = { background: '#fff', color: 'var(--ink)', border: '1px solid var(--ln)', borderRadius: 10, padding: '8px 14px', fontSize: '0.82rem', fontWeight: 500, cursor: 'pointer' };
+  const fieldStyle = { background: '#fff', color: 'var(--ink)', border: '1px solid var(--ln)', borderRadius: 10, padding: '10px 12px', fontSize: '0.85rem', minWidth: 0, maxWidth: '100%' };
   function change(action: () => void) {
     try { action(); setNotice('플랜을 저장했습니다.'); return true; }
     catch (error) { setNotice(error instanceof Error ? error.message : '저장 실패'); return false; }
@@ -43,30 +45,30 @@ export default function PreparationPage() {
 
           {/* 빈 상태 카드 */}
           {items.length > 0 ? <section aria-label="상담 준비 체크리스트">
-            <p>{items.filter(item => item.done).length} / {items.length}개 완료 · 완료 표시는 준비 진행 상태입니다.</p>
-            <p>이 브라우저에 저장됩니다. {planner.plans.map(plan => `${plan.target.name}: ${plan.items.filter(item => item.done).length}/${plan.items.length}개 완료`).join(' · ')}</p>
-            <button onClick={() => { if (change(planner.clear)) { setEditing(null); setTarget(''); setNewTitle(''); } }}>플랜 모두 삭제</button>
+            <p style={{ fontSize: '0.88rem', color: 'var(--ink)' }}>{items.filter(item => item.done).length} / {items.length}개 완료 · 완료 표시는 준비 진행 상태입니다.</p>
+            <p style={{ fontSize: '0.78rem', color: 'var(--mu)' }}>플랜은 이 브라우저에 저장됩니다.</p>
+            <button style={{ ...actionStyle, marginBottom: 16 }} onClick={() => { if (change(planner.clear)) { setEditing(null); setTarget(''); setNewTitle(''); } }}>플랜 모두 삭제</button>
             {items.map(item => <article key={`${item.program_id}:${item.id}`} style={{ background: '#fff', border: '1px solid var(--ln)', borderRadius: 12, padding: 18, marginBottom: 12 }}>
-              <label><input type="checkbox" checked={item.done} onChange={() => change(() => planner.toggle(item.program_id, item.id))} /> {item.title}</label>
-              <p>{item.description}</p>
+              <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.9rem', fontWeight: 600 }}><input type="checkbox" style={{ accentColor: 'var(--ac)' }} checked={item.done} onChange={() => change(() => planner.toggle(item.program_id, item.id))} /> {item.title}</label>
+              <p style={{ fontSize: '0.85rem', color: 'var(--mu)', lineHeight: 1.7 }}>{item.description}</p>
               {item.citations?.filter(c => safeSource(c.source_url)).map((c, index) => <p key={index}><a href={c.source_url} target="_blank" rel="noopener noreferrer">{c.title}</a></p>)}
-              <small>{item.targetName} · {item.status === 'check_needed' ? '추가 확인 필요' : item.status === 'blocked' ? '선행 조건 확인 필요' : '준비 필요'}</small>
-              <button aria-label={`${item.title} 수정`} onClick={() => setEditing({ target: item.program_id, id: item.id, title: item.title, description: item.description })}>수정</button>
-              <button aria-label={`${item.title} 삭제`} onClick={() => change(() => planner.remove(item.program_id, item.id))}>삭제</button>
+              <small style={{ display: 'block', color: 'var(--mu)', marginBottom: 12, overflowWrap: 'anywhere' }}>{item.targetName} · {planner.plans.find(plan => plan.target.id === item.program_id)?.items.filter(row => row.done).length || 0}/{planner.plans.find(plan => plan.target.id === item.program_id)?.items.length || 0}개 완료 · {item.status === 'check_needed' ? '추가 확인 필요' : item.status === 'blocked' ? '선행 조건 확인 필요' : '준비 필요'}</small>
+              <button style={actionStyle} aria-label={`${item.title} 수정`} onClick={() => setEditing({ target: item.program_id, id: item.id, title: item.title, description: item.description })}>수정</button>{' '}
+              <button style={actionStyle} aria-label={`${item.title} 삭제`} onClick={() => change(() => planner.remove(item.program_id, item.id))}>삭제</button>
               {editing?.id === item.id && editing.target === item.program_id && <form onSubmit={event => {
                 event.preventDefault(); if (editing.title.trim() && change(() => planner.edit(editing.target, editing.id, editing.title, editing.description))) setEditing(null);
               }}>
-                <input aria-label="준비 항목 이름 수정" required maxLength={200} value={editing.title} onChange={event => setEditing({ ...editing, title: event.target.value })} />
-                <textarea aria-label="준비 항목 설명 수정" maxLength={2000} value={editing.description} onChange={event => setEditing({ ...editing, description: event.target.value })} />
-                <button type="submit">수정 저장</button><button type="button" onClick={() => setEditing(null)}>취소</button>
+                <input style={{ ...fieldStyle, display: 'block', width: '100%', marginTop: 12 }} aria-label="준비 항목 이름 수정" required maxLength={200} value={editing.title} onChange={event => setEditing({ ...editing, title: event.target.value })} />
+                <textarea style={{ ...fieldStyle, display: 'block', width: '100%', margin: '8px 0' }} aria-label="준비 항목 설명 수정" maxLength={2000} value={editing.description} onChange={event => setEditing({ ...editing, description: event.target.value })} />
+                <button style={actionStyle} type="submit">수정 저장</button>{' '}<button style={actionStyle} type="button" onClick={() => setEditing(null)}>취소</button>
               </form>}
             </article>)}
-            <form onSubmit={event => { event.preventDefault(); if (selectedTarget && newTitle.trim() && change(() => planner.append(selectedTarget, newTitle))) setNewTitle(''); }}>
-              <select aria-label="준비 항목을 추가할 프로그램" value={selectedTarget} onChange={event => setTarget(event.target.value)}>{planner.plans.map(plan => <option key={plan.target.id} value={plan.target.id}>{plan.target.name}</option>)}</select>
-              <input aria-label="새 준비 항목" placeholder="추가할 준비 항목" required maxLength={200} value={newTitle} onChange={event => setNewTitle(event.target.value)} />
-              <button type="submit">항목 추가</button>
+            <form style={{ display: 'flex', gap: 10, flexWrap: 'wrap', margin: '20px 0 12px' }} onSubmit={event => { event.preventDefault(); if (selectedTarget && newTitle.trim() && change(() => planner.append(selectedTarget, newTitle))) setNewTitle(''); }}>
+              <select style={{ ...fieldStyle, flex: '1 1 220px' }} aria-label="준비 항목을 추가할 프로그램" value={selectedTarget} onChange={event => setTarget(event.target.value)}>{planner.plans.map(plan => <option key={plan.target.id} value={plan.target.id}>{plan.target.name}</option>)}</select>
+              <input style={{ ...fieldStyle, flex: '1 1 180px' }} aria-label="새 준비 항목" placeholder="추가할 준비 항목" required maxLength={200} value={newTitle} onChange={event => setNewTitle(event.target.value)} />
+              <button style={actionStyle} type="submit">항목 추가</button>
             </form>
-            <button onClick={() => router.push('/chat')}>조건 수정·재상담</button>
+            <button style={actionStyle} onClick={() => router.push('/chat')}>조건 수정·재상담</button>
           </section> : <div style={{
             background: "#fff", border: "1px solid var(--ln)", borderRadius: 16,
             padding: "60px 40px", display: "flex", flexDirection: "column",

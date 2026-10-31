@@ -1,10 +1,12 @@
 "use client";
+import { useEffect, useState } from 'react';
 import { useParams, useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import { useCatalog } from '@/lib/useCatalog';
 import { CATEGORY_NAMES, AVAILABILITY_NAMES, catalogCountry } from '@/lib/catalog';
 import { safeSource } from '@/components/ConsultationDetails';
+import ProgramRequirements, { datasetSectionLabel, type DatasetSection } from '@/components/ProgramRequirements';
 
 const FLAGS: Record<string, string> = {
   독일: '<rect width="30" height="7" fill="#111"/><rect y="7" width="30" height="6.5" fill="#d00"/><rect y="13.5" width="30" height="6.5" fill="#ffce00"/>',
@@ -35,7 +37,23 @@ export default function ProgramDetailPage() {
   const params = useParams();
   const router = useRouter();
   const { items, loading, error, retry } = useCatalog();
-  const id = typeof params?.id === 'string' ? params.id : '';
+  const rawId = typeof params?.id === 'string' ? params.id : '';
+  let id = rawId;
+  try { id = decodeURIComponent(rawId); } catch { /* Invalid links remain not found. */ }
+  const [dataset, setDataset] = useState<{ id: string; sections?: DatasetSection[]; error?: string }>({ id: '' });
+  const [revision, setRevision] = useState(0);
+  useEffect(() => {
+    if (!id) return;
+    const controller = new AbortController();
+    fetch('/api/catalog/' + encodeURIComponent(id), { signal: controller.signal, cache: 'no-store' })
+      .then(async response => { const data = await response.json(); if (!response.ok) throw new Error(data.error || '상세 자료 조회 실패'); return data; })
+      .then(data => { if (!controller.signal.aborted) setDataset({ id, sections: data.sections || [] }); })
+      .catch(error => { if (!controller.signal.aborted) setDataset({ id, error: error instanceof Error ? error.message : '조회 실패' }); });
+    return () => controller.abort();
+  }, [id, revision]);
+  const sections = dataset.id === id ? dataset.sections : undefined;
+  const requirements = dataset.id === id && dataset.error ? <span role="alert">{dataset.error} <button onClick={() => setRevision(value => value + 1)}>다시 불러오기</button></span>
+    : sections ? <ProgramRequirements sections={sections} /> : <span role="status">데이터셋의 요건·서류·절차를 불러오는 중…</span>;
   const item = items.find(p => p.id === id || encodeURIComponent(p.id) === id);
   const family = item?.id.match(/^(AU:subclass_(?:417|462)_)/)?.[1];
   const stages = family ? items.filter(p => p.id.startsWith(family)) : [];
@@ -45,7 +63,7 @@ export default function ProgramDetailPage() {
     country: catalogCountry(item), tags: [catalogCountry(item), CATEGORY_NAMES[item.category || ''] || '공식 자료'],
     name: item.name, desc: item.provider ? '운영 기관: ' + item.provider : '공식 자료를 바탕으로 제공되는 프로그램 정보입니다.',
     sub: item.kind === 'support' ? '저장된 모집 상태: ' + (AVAILABILITY_NAMES[item.availability] || '현재 접수 여부 미확인') : '개인별 자격 조건은 상담과 공식 근거를 통해 확인해 주세요.',
-    details: '공식 출처 확인일: ' + (item.source_verified_at || '자료별 확인 필요') + '. 개인별 적용 조건과 현재 접수 여부는 공식 기관에서 확인해 주세요.',
+    details: sections?.length ? `데이터셋의 공식 자료 ${sections.length}건을 연결했습니다. ${[...new Set(sections.map(section => datasetSectionLabel(section.title)))].join(' · ')}` : '공식 출처 확인일: ' + (item.source_verified_at || '자료별 확인 필요'),
     officialUrl: item.sources.find(source => safeSource(source.source_url))?.source_url || '',
     links: item.sources.filter(source => safeSource(source.source_url)).map(source => ({ label: source.title, url: source.source_url })),
     stages: stages.length > 1 ? stages.map(stage => ({ id: stage.id,
@@ -131,7 +149,7 @@ export default function ProgramDetailPage() {
             </div>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 280px", gap: 16, alignItems: "start" }}>
+          <div className="program-detail-grid" style={{ display: "grid", gridTemplateColumns: "1fr 280px", gap: 16, alignItems: "start" }}>
             {/* 왼쪽: 상세 설명 + 대상 조건 */}
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               {program.stages ? (
@@ -168,7 +186,7 @@ export default function ProgramDetailPage() {
                   <div style={{ fontSize: "0.72rem", letterSpacing: "0.12em", color: "var(--ac)", fontWeight: 600, marginBottom: 12 }}>● 대상·조건</div>
                   <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                     <div style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--ac)", flexShrink: 0, marginTop: 7 }} />
-                    <span style={{ fontSize: "0.88rem", color: "var(--ink)", lineHeight: 1.7 }}>{program.stages[activeStage].sub}</span>
+                    <div style={{ fontSize: "0.88rem", color: "var(--ink)", lineHeight: 1.7 }}>{requirements}</div>
                   </div>
                   <p style={{ margin: "12px 0 0", fontSize: "0.8rem", color: "var(--mu)", lineHeight: 1.6 }}>
                     자격 조건과 신청 요건은 변경될 수 있으니, 공식 사이트에서 최신 정보를 꼭 확인하세요.
@@ -189,7 +207,7 @@ export default function ProgramDetailPage() {
                     <div style={{ fontSize: "0.72rem", letterSpacing: "0.12em", color: "var(--ac)", fontWeight: 600, marginBottom: 12 }}>● 대상·조건</div>
                     <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                       <div style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--ac)", flexShrink: 0, marginTop: 7 }} />
-                      <span style={{ fontSize: "0.88rem", color: "var(--ink)", lineHeight: 1.7 }}>{program.sub}</span>
+                      <div style={{ fontSize: "0.88rem", color: "var(--ink)", lineHeight: 1.7 }}>{requirements}</div>
                     </div>
                     <p style={{ margin: "12px 0 0", fontSize: "0.8rem", color: "var(--mu)", lineHeight: 1.6 }}>
                       자격 조건과 신청 요건은 변경될 수 있으니, 공식 사이트에서 최신 정보를 꼭 확인하세요.
@@ -289,6 +307,7 @@ export default function ProgramDetailPage() {
         <span>Global-In.</span>
         <span>해외에서의 다음 시작을 함께.</span>
       </footer>
+      <style jsx>{`@media (max-width: 767px) { .program-detail-grid { grid-template-columns: minmax(0, 1fr) !important; } }`}</style>
     </div>
   );
 }

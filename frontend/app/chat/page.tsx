@@ -1210,7 +1210,7 @@ function ChatPageInner() {
 
                         {/* 상세 상담 결과 */}
                         {msg.details && (
-                          <ConsultationDetails data={msg.details} />
+                          <ConsultationDetails data={msg.details} reply={msg.content} />
                         )}
 
                         {/* 추천 프로그램 */}

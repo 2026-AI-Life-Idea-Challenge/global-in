@@ -19,7 +19,7 @@ export function safeSource(url: string) {
   try { return ["http:", "https:"].includes(new URL(url).protocol); } catch { return false; }
 }
 
-export default function ConsultationDetails({ data }: { data: ConsultationDetailsData }) {
+export default function ConsultationDetails({ data, reply = '' }: { data: ConsultationDetailsData; reply?: string }) {
   return <section aria-label="상담 검토와 공식 근거" style={{ marginTop: 12, lineHeight: 1.7 }}>
     {data.rag_statuses?.some(item => item.development_only) && <p>현재 검색된 근거를 이용한 개발 검증 결과입니다. 최종 법률·자격 승인과 구분해 주세요.</p>}
     {data.rag_statuses?.flatMap((item, i) => item.unanswered_parts.map((part, j) => <p key={`missing-${i}-${j}`}>근거 추가 확인: {part.question_part}</p>))}
@@ -51,6 +51,6 @@ export default function ConsultationDetails({ data }: { data: ConsultationDetail
       </li>)}
     </ul></div>}
     {!!data.prep_items?.length && <p>준비 항목 {data.prep_items.length}개 · <a href="/preparation">내 계획 확인하기 →</a></p>}
-    {data.follow_up_questions?.map((question, index) => <p key={`${question.field}-${index}`}>추가 확인: {question.question}</p>)}
+    {data.follow_up_questions?.filter(question => !reply.replace(/\s+/g, '').includes(question.question.replace(/\s+/g, ''))).map((question, index) => <p key={`${question.field}-${index}`}>추가 확인: {question.question}</p>)}
   </section>;
 }

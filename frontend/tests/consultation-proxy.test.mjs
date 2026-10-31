@@ -19,11 +19,16 @@ const payload = { session_id: session, stage: 'result', reply: '공식 근거를
   rag_statuses: [{ status: 'partial', development_only: true, unanswered_parts: [{ question_part: '추가 서류' }] }] };
 const mock = http.createServer(async (req, res) => {
   assert.equal(req.headers['x-internal-api-key'], 'synthetic-test-key');
-  if (req.url !== '/consult/catalog') assert.match(req.headers['x-consult-owner'] || '', /^[a-f0-9]{64}$/);
+  if (!req.url.startsWith('/consult/catalog')) assert.match(req.headers['x-consult-owner'] || '', /^[a-f0-9]{64}$/);
   let text = ''; for await (const part of req) text += part;
   const body = text ? JSON.parse(text) : {};
   calls.push({ method: req.method, url: req.url, body });
   res.setHeader('Content-Type', 'application/json');
+  if (req.url.startsWith('/consult/catalog/')) {
+    const id = decodeURIComponent(req.url.slice('/consult/catalog/'.length));
+    if (id !== 'CA:iec') { res.writeHead(404); res.end('{}'); return; }
+    res.end(JSON.stringify({ id, name: 'IEC', sections: [{ id: 'fixture-chunk', title: '테스트 요건', body: '테스트 데이터셋의 신청 요건입니다.', document_title: '테스트 정책', verified_at: '2026-10-28', sources: [{ title: '공식 안내', source_url: 'https://canada.ca/' }] }] })); return;
+  }
   if (req.url === '/consult/catalog') {
     res.end(JSON.stringify({ items: [
       ...payload.programs.map(p => ({ id: p.program_id, kind: 'program', name: p.name, country: p.country, category: p.visa_type,
@@ -36,6 +41,7 @@ const mock = http.createServer(async (req, res) => {
   if (req.url === '/consult/sessions') owners.set(session, req.headers['x-consult-owner']);
   else if (req.url.includes('/sessions/' + session) && owners.get(session) !== req.headers['x-consult-owner']) { res.writeHead(404); res.end('{}'); return; }
   if (req.method === 'PATCH' && body.invalid) { res.writeHead(422); res.end('{}'); return; }
+  if (body.profile?.invalid) { res.writeHead(422); res.end(JSON.stringify({ detail: [{ input: 'synthetic-private-value', loc: ['body','profile'] }] })); return; }
   res.end(JSON.stringify(req.url === '/consult/sessions' ? { session_id: session } : payload));
 });
 mock.listen(0, '127.0.0.1'); await once(mock, 'listening');
@@ -71,6 +77,10 @@ try {
   assert.equal(stolen.status, 404); passed++;
   const crossOrigin = await fetch(base + '/api/chat', { method: 'PATCH', headers: { 'Content-Type': 'application/json', Origin: 'https://untrusted.example', Cookie: ownerCookie }, body: JSON.stringify({ session_id: session, profile: {} }) });
   assert.equal(crossOrigin.status, 403); passed++;
+  const invalid = await send('POST', { session_id: session, profile_pending: true, profile: { invalid: true }, messages: [{ role: 'user', content: '검증' }] });
+  assert.equal(invalid.status, 422); assert.ok(!(await invalid.text()).includes('synthetic-private-value')); passed++;
+  const detail = await fetch(base + '/api/catalog/CA%3Aiec'); assert.equal(detail.status, 200);
+  assert.equal((await detail.json()).sections[0].body, '테스트 데이터셋의 신청 요건입니다.'); passed++;
   assert.deepEqual(data.support_programs, payload.support_programs);
   assert.deepEqual(data.support_eligibility, payload.support_eligibility);
   assert.deepEqual(data.rag_statuses, payload.rag_statuses);

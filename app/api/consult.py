@@ -178,6 +178,16 @@ def create_router(graph=None, store=None, require_owner=None) -> APIRouter:
     def send_message(session_id: str, body: ChatRequest, x_consult_owner: str | None = Header(default=None)) -> ChatResponse:
         return run(session_id, body.message, body.profile.model_dump(mode='json', exclude_unset=True) if body.profile else {}, owner_id(x_consult_owner))
 
+    @router.get('/catalog/{target_id}')
+    def catalog_detail(target_id: str):
+        from app.services.consultation_catalog import load_catalog_detail
+        try: result=load_catalog_detail(target_id)
+        except Exception:
+            logging.getLogger(__name__).exception('Consultation detail failed')
+            raise HTTPException(status_code=503,detail='catalog temporarily unavailable') from None
+        if result is None:raise HTTPException(status_code=404,detail='catalog item not found')
+        return result
+
     @router.patch("/sessions/{session_id}/profile")
     def update_profile(session_id: str, body: ProfileUpdateRequest, x_consult_owner: str | None = Header(default=None)) -> ChatResponse:
         return run(session_id, None, body.model_dump(mode="json", exclude_unset=True), owner_id(x_consult_owner))

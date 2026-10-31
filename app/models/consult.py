@@ -3,7 +3,7 @@
 from datetime import date
 from typing import Any, Literal
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 from app.models.program import Country
 from app.models.user_profile import UserProfile
@@ -51,6 +51,15 @@ class ProfileUpdateRequest(BaseModel):
     target_country: Country | None = None
     target_visa_type: VisaType | None = None
     purpose: str | None = Field(default=None, max_length=500)
+
+    @model_validator(mode='before')
+    @classmethod
+    def _ignore_unset_response_only_fields(cls, value):
+        # UserProfile responses include nullable internal fields. Null means no
+        # user input; non-null unknown fields still fail the strict contract.
+        if isinstance(value, dict):
+            return {key: item for key, item in value.items() if key in cls.model_fields or item is not None}
+        return value
 
     @field_validator("date_of_birth")
     @classmethod
