@@ -1,1384 +1,348 @@
+<div align="center">
+
 # 🌍 Global-In
 
-해외 진출을 준비하는 사용자를 위해
-국가별 진출 경로, 실제 비자·체류 Program, 지원제도, 공식 규정과 준비 절차를
-통합적으로 안내하는 AI 기반 해외 진출 지원 서비스입니다.
+**맞춤형 해외진출 상담 및 자격 검토 멀티 에이전트**
 
-Global-In은 단순한 정보 검색 서비스가 아니라,
-사용자의 상황을 이해하고,
-적합한 진출 경로와 관련 지원제도를 탐색한 뒤,
-공식 근거를 바탕으로 자격 검토와 준비 계획까지 연결하는 것을 목표로 합니다.
+일본·호주·미국·독일·캐나다의 워킹홀리데이·유학·취업 정보를 공식 근거로 추천하고,<br/>
+신청 요건 검토부터 준비 절차까지 안내하는 AI 상담 서비스입니다.
 
----
+![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?logo=langchain&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL_17-pgvector-4169E1?logo=postgresql&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?logo=openai&logoColor=white)
 
-## Project Overview
+2026 AI 라이프 솔루션 챌린지 출품작 · 팀 **외부인들** · 아이디어 03번
 
-Global-In은 다음 흐름을 중심으로 동작합니다.
+</div>
 
-```text
-사용자 입력
-   ↓
-사용자 상황 이해
-   ↓
-진출 경로 탐색
-   ↓
-실제 Program 및 SupportProgram 탐색
-   ↓
-자격 검토
-   ↓
-공식 정보 확인
-   ↓
-준비 계획 생성
-```
+| 홈 | AI 상담 |
+|---|---|
+| ![Global-In 홈 화면](docs/images/home.png) | ![AI 상담 화면](docs/images/chat.png) |
 
-사용자의 질문에 따라 모든 기능을 항상 실행하는 것이 아니라,
-필요한 Agent만 선택적으로 호출하는 구조를 사용합니다.
+- **테스트 URL**: _배포 후 추가_
+- **데모 영상**: _추가 예정_
 
 ---
 
-## Target Users
-
-Global-In의 주요 대상 사용자는
-해외 진출을 준비하는 한국의 20~30대 청년층입니다.
-
-예:
-
-```text
-워킹홀리데이 준비자
-교환학생 준비자
-유학생
-해외 취업 준비자
-해외 정착 가능성을 검토하는 사용자
-```
-
----
-
-## Target Countries
-
-초기 MVP에서는 다음 5개 국가를 대상으로 합니다.
-
-```text
-일본
-호주
-미국
-독일
-캐나다
-```
-
----
-
-## Top-Level Advancement Paths
-
-상위 진출 경로는 다음 3개로 구성합니다.
-
-```text
-워킹홀리데이 / 교환
-유학
-취업
-```
-
-5개 국가 × 3개 경로는
-15개의 개별 비자를 의미하지 않습니다.
-
-각 상위 경로 아래에
-실제 비자·체류·교환 Program을 연결합니다.
-
-예:
-
-```text
-Germany
-+
-Employment
-   ↓
-실제 독일 취업 관련 Program 후보
-```
-
-미국처럼 일반적인 Working Holiday Visa가 없는 국가의 경우,
-상위 사용자 경험에서는 `워킹홀리데이 / 교환`으로 유지하되,
-실제 구현에서는 J-1 등 관련 교환 Program과 연결합니다.
-
----
-
-## Core Information Scope
-
-Global-In은 크게 다음 3가지 정보 영역을 다룹니다.
-
-### 1. 한국에서 제공하는 해외 진출 지원 정보
-
-예:
-
-```text
-해외 취업 지원
-해외 연수
-준비 교육
-지원금
-해외 진출 가이드
-```
-
-주요 출처:
-
-```text
-한국 정부
-공공기관
-지원사업 운영기관
-```
-
----
-
-### 2. 목적지 국가의 외국인 진출·정착 지원 정보
-
-예:
-
-```text
-외국 인재 유치
-외국인 취업 지원
-유학 지원
-장학 지원
-정착 지원
-```
-
-주요 출처:
-
-```text
-목적지 국가 정부
-공공기관
-교육기관
-지원제도 운영기관
-```
-
----
-
-### 3. 목적지 국가의 비자·법률 정보
-
-예:
-
-```text
-비자
-입국
-체류
-근로
-학업
-자격 요건
-신청 절차
-필요 서류
-제한
-의무
-예외 규정
-```
-
-주요 출처:
-
-```text
-공식 법령
-이민기관
-대사관 / 영사관
-노동 관련 기관
-교육 관련 기관
-관할 행정기관
-```
-
----
-
-## Agent Architecture
-
-Global-In은 LangGraph 기반의 5개 Agent 구조를 사용합니다.
-
-```text
-1. 사용자 이해 에이전트
-2. 진출 경로 탐색·추천 에이전트
-3. 자격 검토 에이전트
-4. 공식 정보 안내 에이전트
-5. 준비 계획 에이전트
-```
-
-LangGraph는 각 Agent의 실행 순서와 분기를 관리합니다.
-
----
-
-## 1. 사용자 이해 에이전트
-
-사용자의 목적과 현재 상황을 파악합니다.
-
-주요 역할:
-
-```text
-Intent 파악
-User Profile 생성
-User Profile 갱신
-Missing Information 탐지
-추가 질문 생성
-```
-
-확인할 수 있는 정보 예:
-
-```text
-나이
-국적
-현재 거주지
-학력
-전공
-경력
-언어 능력
-희망 국가
-진출 목적
-희망 시기
-```
-
-지원제도 검토가 필요한 경우:
-
-```text
-재학 여부
-취업 상태
-기존 참여 이력
-기존 수혜 이력
-중복 수혜 여부
-```
-
-등을 추가로 확인할 수 있습니다.
-
----
-
-## 2. 진출 경로 탐색·추천 에이전트
-
-사용자 조건을 기반으로
-적합한 국가, 실제 Program, 관련 SupportProgram을 탐색하고 비교합니다.
-
-주요 역할:
-
-```text
-국가 추천
-진출 유형 추천
-Program Resolver 사용
-실제 Program 후보 탐색
-SupportProgram 탐색
-후보 비교
-추천 이유 생성
-```
-
-추천 결과는
-자격 검토 에이전트의 판정 결과를 반영할 수 있습니다.
-
----
-
-## 3. 자격 검토 에이전트
-
-공식 자격조건과 UserProfile을 비교합니다.
-
-주요 역할:
-
-```text
-Program Eligibility 검토
-SupportProgram Eligibility 검토
-Rule Evaluator 호출
-부족 조건 확인
-예외 조건 확인
-추가 확인 항목 정리
-```
-
-기본 판정 상태:
-
-```text
-조건 충족
-조건 미충족
-추가 확인 필요
-```
-
-구조화 가능한 조건은 Python 기반 Rule Evaluator가 판단하고,
-Agent는 결과를 설명하고 정리합니다.
-
----
-
-## 4. 공식 정보 안내 에이전트
-
-공식 문서를 검색하여
-비자, 체류, 근로, 학업, 지원제도 관련 정보를
-근거 기반으로 설명합니다.
-
-주요 역할:
-
-```text
-RAG Retrieval
-Evidence 확인
-공식 규정 설명
-지원제도 설명
-신청 절차 설명
-공식 출처 제공
-```
-
-중요한 제도명이나 법률 용어는
-필요한 경우 원문 명칭을 함께 제공합니다.
-
----
-
-## 5. 준비 계획 에이전트
-
-선택된 경로를 기준으로
-비자 준비와 지원제도 신청을 하나의 실행 계획으로 구성합니다.
-
-주요 역할:
-
-```text
-필요 서류 정리
-Checklist 생성
-단계별 Guide
-Roadmap 생성
-진행 상태 관리
-다음 행동 제안
-```
-
-기본 단계:
-
-```text
-준비
-   ↓
-신청
-   ↓
-승인 후
-   ↓
-출국 준비
-   ↓
-입국 후
-```
-
----
-
-## LangGraph Orchestration
-
-대표적인 전체 Workflow는 다음과 같습니다.
-
-```text
-User Input
-   ↓
-사용자 이해 에이전트
-   ↓
-정보 충분?
-   │
-   ├─ NO
-   │   ↓
-   │ 추가 질문
-   │   ↓
-   │ User Answer
-   │   ↓
-   │ User Profile Update
-   │   ↓
-   │ 사용자 이해 에이전트
-   │
-   └─ YES
-       ↓
-진출 경로 탐색·추천 에이전트
-       ↓
-자격 검토 에이전트
-       ↓
-공식 정보 안내 에이전트
-       ↓
-준비 계획 에이전트
-       ↓
-Final Response
-```
-
-모든 질문이 이 전체 흐름을 사용하는 것은 아닙니다.
-
-예:
-
-```text
-독일 취업 비자의 근로 조건만 알려줘.
-```
-
-와 같은 질문은
-공식 정보 안내 에이전트를 중심으로 처리할 수 있습니다.
-
----
-
-## Program과 SupportProgram
-
-Global-In에서는 해외 진출 Program과
-지원제도를 별도의 개념으로 관리합니다.
-
-### Program
-
-실제 비자·체류·교환 등
-해외 진출에 직접 연결되는 Program입니다.
-
-예:
-
-```text
-Working Holiday
-Student Visa
-Employment Visa
-Exchange Program
-Residence Status
-```
-
-### SupportProgram
-
-해외 진출 과정에서 활용할 수 있는
-국내외 지원제도입니다.
-
-예:
-
-```text
-해외취업 지원금
-해외 연수
-준비 교육
-장학 지원
-외국인 취업 지원
-정착 지원
-```
-
-하나의 SupportProgram은
-여러 Program과 연결될 수 있습니다.
-
-```text
-Program
-   ↑
-   │
-ProgramSupportLink
-   │
-   ↓
-SupportProgram
-```
-
----
-
-## Eligibility와 Application Availability
-
-다음 두 개념은 반드시 구분합니다.
-
-```text
-Eligibility
-→ 사용자가 공식 자격 요건을 충족하는가
-```
-
-```text
-Application Availability
-→ 현재 실제 신청 가능한 상태인가
-```
-
-예:
-
-```text
-자격 조건 충족
-+
-현재 모집 종료
-```
-
-가 동시에 존재할 수 있습니다.
-
-따라서:
-
-```text
-조건 충족
-≠
-현재 신청 가능
-```
-
-입니다.
-
-현재 접수 상태가 확인되지 않은 경우
-신청 가능하다고 단정하지 않습니다.
-
----
-
-## Missing Information과 Failed Requirement
-
-사용자 정보 부족과 조건 미충족도 구분합니다.
-
-### Missing Information
-
-```text
-공식 조건은 존재
-+
-사용자 정보 없음
-```
-
-예:
-
-```text
-경력 2년 필요
-사용자 경력 정보 없음
-```
-
-이 경우:
-
-```text
-사용자 이해 에이전트
-→ 추가 질문
-```
-
----
-
-### Failed Requirement
-
-```text
-공식 조건 존재
-+
-사용자 정보 확인
-+
-조건 미충족
-```
-
-예:
-
-```text
-경력 2년 필요
-사용자 경력 1년
-```
-
-이 경우:
-
-```text
-자격 검토 에이전트
-→ 조건 미충족
-```
-
----
-
-## Information Validation Principles
-
-Global-In은 다음 내용을 별도로 검증합니다.
-
-```text
-해당 Program이 실제 존재하는가
-
-해당 SupportProgram이 실제 존재하는가
-
-한국인에게 적용 가능한가
-
-현재 적용 가능한 제도인가
-
-현재 실제 신청 가능한가
-```
-
-이 정보들은 서로 동일하지 않습니다.
-
----
-
-## Evidence Principles
-
-Global-In은 공식 출처 기반 답변을 우선합니다.
-
-Evidence에는 가능한 한 다음 정보를 저장합니다.
-
-```text
-official_agency
-source_title
-source_url
-source_type
-
-original_published_at
-original_updated_at
-
-effective_from
-effective_until
-
-verified_at
-```
-
-날짜가 없는 경우 임의로 생성하지 않습니다.
-
----
-
-## Evidence Validation
-
-검색된 문서가 바로 최종 Evidence가 되는 것은 아닙니다.
-
-```text
-Retrieval Result
-   ↓
-Evidence Validation
-   ↓
-Validated Evidence
-```
-
-확인 항목:
-
-```text
-질문과 관련 있는가
+## 해결하려는 문제
 
-국가가 일치하는가
+해외진출을 처음 준비하는 20~30대 청년은 다음 문제를 겪습니다.
 
-Program이 일치하는가
+- **정보가 흩어져 있음** — 대사관·이민청·외무성·KOTRA 사이트가 제각각입니다.
+- **언어 장벽** — 공식 원문이 영어·일본어·독일어입니다.
+- **내 상황에 맞는지 모름** — 나이·학력·경력·재정에 따라 자격 조건이 다릅니다.
+- **비교가 어려움** — 같은 목적이라도 국가마다 자격·기간·비용·절차가 다릅니다.
 
-SupportProgram이 일치하는가
+Global-In은 단순 검색이 아니라, 대화로 사용자 조건을 파악하고 공식 근거에 맞춰 경로를 추천·검토합니다. 근거가 부족하거나 예외가 있는 경우에는 단정하지 않고 **‘추가 확인 필요’** 로 안내합니다.
 
-적용 대상이 일치하는가
+## 주요 기능
 
-공식 출처인가
+| 기능 | 설명 |
+|---|---|
+| AI 상담 | 대화로 목적·국가·나이·학력·경력 등 조건을 파악하고, 빠진 정보만 추가로 질문합니다. |
+| 맞춤 추천 | 조건에 맞는 비자·체류 프로그램과 국내외 지원제도를 추천하고 비교합니다. |
+| 자격 검토 | 공식 요건과 사용자 조건을 비교해 **충족 / 추가 확인 필요 / 미충족** 으로 구분합니다. |
+| 공식 정보 안내 | 검색된 공식 자료를 바탕으로 출처 URL과 함께 한국어로 답변합니다. |
+| 준비 플랜 | 준비 → 신청 → 승인 → 출국 → 입국 후 단계별 체크리스트를 만들고 진행 상태를 관리합니다. |
+| 프로그램·지원제도 찾기 | 국가·목적별로 프로그램과 지원제도를 탐색하고 비교표로 확인합니다. |
 
-적용 시점이 맞는가
-```
-
-공식 근거가 충돌하고 해소할 수 없는 경우:
-
-```text
-추가 확인 필요
-```
-
-로 처리합니다.
-
----
-
-## Technology Stack
-
-### Backend
-
-```text
-Python 3.11
-FastAPI
-LangGraph
-LangChain
-Pydantic
-```
-
-### LLM
-
-```text
-OpenAI
-Claude
-```
-
-### Database / Retrieval
-
-```text
-PostgreSQL
-pgvector
-```
-
-### Frontend
-
-```text
-Streamlit
-```
-
-### Data Collection
-
-```text
-requests
-BeautifulSoup4
-```
-
-JavaScript Rendering이 반드시 필요한 사이트의 경우
-추후 Playwright 사용을 검토합니다.
-
----
-
-## System Architecture
-
-```text
-User
-  ↓
-Streamlit
-  ↓
-FastAPI
-  ↓
-LangGraph Orchestrator
-  │
-  ├─ 사용자 이해 에이전트
-  ├─ 진출 경로 탐색·추천 에이전트
-  ├─ 자격 검토 에이전트
-  ├─ 공식 정보 안내 에이전트
-  └─ 준비 계획 에이전트
-  │
-  └─ Common Modules
-       ├─ Program Resolver
-       ├─ Rule Evaluator
-       ├─ Retrieval
-       ├─ Evidence Validation
-       └─ Services
-            ├─ PostgreSQL
-            ├─ pgvector
-            └─ LLM
-```
-
----
-
-## Project Structure
-
-```text
-global-in/
-├─ app/
-│  ├─ agent/
-│  ├─ api/
-│  ├─ models/
-│  ├─ retrieval/
-│  ├─ rules/
-│  └─ services/
-│
-├─ data/
-│  ├─ raw/
-│  ├─ processed/
-│  └─ seed/
-│
-├─ docs/
-│  ├─ architecture/
-│  └─ planning/
-│
-├─ frontend/
-│
-├─ scripts/
-│  ├─ crawl/
-│  ├─ ingest/
-│  └─ evaluate/
-│
-├─ tests/
-│  ├─ unit/
-│  ├─ integration/
-│  └─ scenarios/
-│
-├─ .env.example
-├─ .gitignore
-├─ requirements.txt
-└─ README.md
-```
-
----
-
-## Directory Roles
-
-### `app/`
-
-Backend 핵심 로직
-
-```text
-FastAPI
-Agent
-Models
-Retrieval
-Rules
-Services
-```
-
----
-
-### `app/agent/`
-
-LangGraph Orchestrator와
-5개 Agent 구현
-
----
-
-### `app/api/`
-
-FastAPI Endpoint 구현
-
----
-
-### `app/models/`
-
-공통 Data Schema와
-Agent State 정의
-
----
-
-### `app/retrieval/`
-
-공식 문서 검색 및
-pgvector 기반 RAG 구현
-
----
-
-### `app/rules/`
-
-구조화된 공식 조건을 판정하는
-Rule Evaluator 구현
-
----
-
-### `app/services/`
-
-Database, LLM, Embedding 등
-공통 외부 Service 연결
-
----
-
-### `data/`
-
-수집된 원본 데이터,
-정제 데이터,
-초기 Seed Data 관리
-
----
-
-### `docs/`
-
-기획 및 설계 문서 관리
-
-예:
-
-```text
-Agent 설계
-System Architecture
-ERD
-Database Schema
-API 설계
-```
-
----
-
-### `frontend/`
-
-Streamlit 기반 사용자 인터페이스
-
----
-
-### `scripts/`
-
-데이터 수집, 적재, 평가용 Script
-
----
-
-### `tests/`
-
-Unit, Integration, Scenario Test 관리
-
----
-
-## Current Main Files
-
-현재 초기 구현 파일은 다음과 같습니다.
-
-### FastAPI
-
-```text
-app/api/main.py
-```
-
-현재 Endpoint:
-
-```text
-GET /
-GET /health
-```
-
----
-
-### Streamlit
-
-```text
-frontend/app.py
-```
-
-현재 기본 Frontend 화면을 구성합니다.
-
----
-
-### Environment Variables
-
-```text
-.env.example
-```
-
-예:
-
-```text
-OPENAI_API_KEY=
-ANTHROPIC_API_KEY=
-DATABASE_URL=
-```
-
-실제 Key는 `.env`에 저장하고
-Git에 Commit하지 않습니다.
-
----
-
-## MVP Scope
-
-초기 MVP에서는 다음 기능을 구현합니다.
-
-```text
-사용자 Profile 파악
-
-진출 목적 파악
-
-실제 Program 탐색
-
-SupportProgram 탐색
-
-자격 검토
-
-공식 정보 Retrieval
-
-Evidence 기반 설명
-
-필요 서류 안내
-
-Checklist
-
-Roadmap
-
-Follow-up Question
-```
-
----
-
-## MVP에서 제외하는 기능
-
-초기 구현에서는 다음 기능을 우선 제외합니다.
-
-```text
-실시간 공고 수집
-실시간 채용 공고
-항공권
-주거 추천
-지역 Community
-환율
-Map 기반 추천
-생활비 계산기
-실제 비자 신청 자동화
-정책 실시간 자동 갱신
-```
-
----
-
-## Data Storage Strategy
-
-### PostgreSQL
-
-구조화된 정보를 저장합니다.
-
-예:
-
-```text
-Program
-SupportProgram
-EligibilityRequirement
-ApplicationInfo
-RequiredDocument
-Fee
-Support Detail
-Evidence Metadata
-```
-
----
-
-### pgvector
-
-공식 비정형 문서 검색에 사용합니다.
-
-예:
-
-```text
-법령
-공식 Guide
-FAQ
-예외 규정
-행정 안내
-지원제도 상세 설명
-```
-
----
-
-## Data Collection Principles
-
-공식 출처를 우선 수집합니다.
-
-각 데이터에는 가능한 한 다음을 기록합니다.
-
-```text
-공식 기관
-원문 제목
-원문 URL
-원문 게시일
-원문 수정일
-적용 기간
-Global-In 확인일
-```
-
-다음도 구분하여 관리합니다.
-
-```text
-issuer_country
-destination_country
-target_nationality
-residence_requirement
-```
-
----
-
-## Rule-Based Evaluation
-
-구조화할 수 있는 공식 조건은
-LLM이 아니라 Python Rule Evaluator가 판단합니다.
+## 동작 구조
 
-예:
+### 시스템 구성
 
-```text
-공식 조건:
-age <= 30
+브라우저는 프런트엔드만 호출합니다. 백엔드 호출에 필요한 내부 키는 Next.js 서버(API Route)에서만 붙이므로 브라우저에 노출되지 않습니다.
 
-사용자:
-age = 27
+```mermaid
+flowchart TB
+    U(["👤 사용자"]) --> FE
 
-결과:
-조건 충족
-```
-
-자동 판정이 어려운 경우:
-
-```text
-추가 확인 필요
-```
-
-로 처리합니다.
-
----
-
-## Retrieval Strategy
-
-공식 문서를 검색할 때
-가능한 한 Metadata Filtering 후 Vector Search를 수행합니다.
-
-예:
-
-```text
-destination_country
-purpose
-program_id
-support_program_id
-target_nationality
-information_topic
-source_type
-```
-
-이를 통해 다른 국가나 다른 Program의 정보가
-잘못 검색되는 문제를 줄입니다.
-
----
-
-## Development Principles
-
-```text
-공식 출처 우선
-
-Program과 SupportProgram 구분
-
-Agent 역할 분리
-
-LangGraph는 Workflow 관리
-
-구조화 가능한 판단은 Rule Evaluator 사용
-
-공식 문서 검색은 Retrieval 사용
-
-외부 시스템 접근은 Service Layer 사용
-
-공통 데이터는 Models 사용
+    subgraph FE["Next.js 프런트엔드"]
+        direction LR
+        UI["화면<br/>상담 · 찾기 · 비교 · 플랜"] --> BFF["API Route<br/>내부 키 첨부"]
+    end
 
-공식 정보와 AI 해석 구분
+    FE -- "X-Internal-API-Key" --> BE
 
-Missing Information과 Failed Requirement 구분
+    subgraph BE["FastAPI 백엔드"]
+        direction LR
+        API["상담 API<br/>/consult"] --> G["LangGraph<br/>오케스트레이터"]
+        G --> S["하이브리드 검색"]
+        S --> EMB["Qwen3 임베딩<br/>서버 내 실행"]
+    end
 
-Eligibility와 Application Availability 구분
+    BE -- "답변 생성 · 근거 검증" --> LLM(["OpenAI API"])
+    BE -- "규칙 · 근거 · 세션" --> DB[("PostgreSQL 17<br/>+ pgvector")]
 
-확인되지 않은 정보를 임의로 생성하지 않음
-
-모든 질문에서 모든 Agent를 호출하지 않음
-```
-
----
-
-## Branch Strategy
-
-기본 개발 Branch:
-
-```text
-develop
-```
-
-안정된 버전:
-
-```text
-main
-```
-
-개발 흐름:
-
-```text
-feature/*
-   ↓
-develop
-   ↓
-main
+    classDef ext fill:#f3f4f6,stroke:#9ca3af,color:#111827
+    classDef core fill:#e0ecff,stroke:#3b82f6,color:#1e3a8a
+    classDef store fill:#fef3c7,stroke:#d97706,color:#78350f
+    class U,LLM ext
+    class UI,BFF,API,G,S,EMB core
+    class DB store
 ```
 
----
+### 에이전트 흐름
 
-### `develop`
+LangGraph가 첫 단계에서 질문 의도를 파악한 뒤, **필요한 에이전트만** 이어서 호출합니다. 어느 단계든 판단에 필요한 정보가 부족하면 그 자리에서 멈추고 사용자에게 추가 질문을 돌려줍니다.
 
-현재 프로젝트의 기본 개발 Branch입니다.
+```mermaid
+flowchart TD
+    Q(["💬 사용자 메시지"]) --> UU["① 사용자 이해<br/>프로필 추출 · 의도 파악"]
 
-새로운 기능과 문서 변경은
-기본적으로 `develop`을 기준으로 진행합니다.
+    UU -- "추천 요청" --> RR["② 맞춤 추천<br/>프로그램 · 지원제도"]
+    UU -- "자격 문의" --> ER["③ 자격 검토<br/>Python 규칙 평가"]
+    UU -- "정보 문의" --> OI["④ 공식 정보 안내<br/>근거 검색 · 출처 표시"]
+    UU -- "준비 문의" --> PP["⑤ 준비 계획<br/>단계별 체크리스트"]
+    UU -- "정보 부족" --> ASK(["❓ 추가 질문"])
 
----
+    RR --> ER
+    ER --> OI
+    OI --> PP
+    PP --> A(["✅ 최종 응답"])
 
-### `main`
-
-배포 또는 안정된 버전을 유지합니다.
-
-검증되지 않은 코드를
-직접 Push하지 않는 것을 원칙으로 합니다.
-
----
-
-### Feature Branch
-
-기능 단위로 필요할 경우 별도 Branch를 생성합니다.
-
-예:
-
-```text
-feature/agent
-feature/database
-feature/retrieval
-feature/frontend
-```
-
-개발 완료 후:
-
-```text
-feature/*
-   ↓
-develop
+    classDef agent fill:#e0ecff,stroke:#3b82f6,color:#1e3a8a
+    classDef io fill:#f3f4f6,stroke:#9ca3af,color:#111827
+    classDef ask fill:#fef3c7,stroke:#d97706,color:#78350f
+    class UU,RR,ER,OI,PP agent
+    class Q,A io
+    class ASK ask
 ```
 
-형태로 Merge합니다.
+### 자격 검토: 규칙이 판정하고 LLM은 설명
 
----
+자격 요건 비교는 Python 규칙이 맡습니다. LLM은 판정 결과를 사용자에게 설명하는 역할만 합니다. 검증되지 않은 규칙이나 근거가 부족한 요건은 확정하지 않고 **추가 확인 필요**로 남깁니다.
 
-## Development Environment
+```mermaid
+flowchart LR
+    P["사용자 프로필<br/>나이 · 국적 · 학력 · 경력 · 재정"] --> E{"Python 규칙 평가"}
+    RS[("자격 규칙 · 요건<br/>공식 근거 연결")] --> E
 
-Python Version:
+    E -- "PASS" --> OK["✅ 충족"]
+    E -- "UNKNOWN" --> UK["⚠️ 추가 확인 필요"]
+    E -- "FAIL" --> NO["❌ 미충족"]
 
-```text
-Python 3.11
-```
+    OK & UK & NO --> X["LLM이 결과를 설명<br/>근거 · 출처와 함께"]
 
-가상환경 생성:
+    classDef pass fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef warn fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef fail fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    class OK pass
+    class UK warn
+    class NO fail
+```
+
+### 공식 정보 안내: 근거 우선 검색 (RAG)
+
+국가·주제·프로그램 메타데이터로 범위를 먼저 좁힌 뒤 키워드 검색과 벡터 검색을 결합합니다. 답변의 인용문이 원문과 일치하는지 검사하고, 근거가 부족한 질문은 부분 답변이나 근거 부족으로 구분합니다.
+
+```mermaid
+flowchart TB
+    Q["질문 + 사용자 프로필"] --> F["메타데이터 필터<br/>국가 · 주제 · 프로그램"]
+    F --> K["키워드 검색<br/>PostgreSQL 전문 검색"]
+    F --> V["벡터 검색<br/>pgvector"]
+    K --> RRF["순위 결합<br/>RRF"]
+    V --> RRF
+    RRF --> D["LLM 답변 초안<br/>근거 ID 인용"]
+    D --> C{"인용 검증<br/>원문 일치 · 근거 검토"}
+
+    C -- "근거 충분" --> A1["✅ 답변 + 출처 URL"]
+    C -- "일부만 확인" --> A2["⚠️ 부분 답변"]
+    C -- "근거 없음" --> A3["ℹ️ 근거 부족 안내"]
+
+    classDef pass fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef warn fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef info fill:#f3f4f6,stroke:#9ca3af,color:#111827
+    class A1 pass
+    class A2 warn
+    class A3 info
+```
+
+## 데이터
+
+각국 이민청·대사관·외무성 등 공식 기관의 원문(HTML·PDF)을 수집·가공했습니다.
+
+```mermaid
+flowchart LR
+    S["🏛️ 공식 기관 원문<br/>이민청 · 대사관 · 외무성"] --> C["수집<br/>HTML · PDF"]
+    C --> P["가공<br/>정책 후보 · 근거 추출"]
+    P --> R["검토<br/>원문 대조 · 법률 검토"]
+    R --> DB[("PostgreSQL<br/>프로그램 · 정책 · 근거")]
+    C --> CH["문서 청크"] --> EM["Qwen3 임베딩<br/>1024차원"] --> VDB[("pgvector")]
+
+    classDef store fill:#fef3c7,stroke:#d97706,color:#78350f
+    class DB,VDB store
+```
+
+| 항목 | 규모 |
+|---|---|
+| 대상 국가 | 5개국 (일본·호주·미국·독일·캐나다) |
+| 비자·체류 프로그램 | 40건 (워킹홀리데이·유학·취업) |
+| 자격·절차 정책 후보 | 590건 |
+| 공식 원문 근거 (Evidence) | 1,241건 — 출처 URL·원문 위치·SHA-256 해시·확인일 저장 |
+| 국내외 지원제도 | 12건 (한국 측 7 + 목적지 국가 관련 5) |
+| 검색용 문서 / 청크 | 583건 / 585개 — Qwen3-Embedding-0.6B (1024차원), pgvector HNSW |
+
+미국처럼 워킹홀리데이 제도가 없는 국가는 J-1 Summer Work Travel 등 실제 제도에 매핑해, 사용자에게 보이는 분류와 공식 제도명을 구분했습니다. 자세한 구축 현황은 [docs/data/db_final_status_20261028.md](docs/data/db_final_status_20261028.md)를 참고하세요.
+
+## 기술 스택
+
+| 영역 | 기술 |
+|---|---|
+| 프런트엔드 | Next.js 16, React 19, Tailwind CSS 4 |
+| 백엔드 | FastAPI, Uvicorn, Pydantic |
+| 에이전트 | LangGraph, OpenAI API |
+| 데이터베이스 | PostgreSQL 17 + pgvector |
+| 임베딩 | Qwen/Qwen3-Embedding-0.6B (transformers, torch) |
+| 데이터 수집 | requests, BeautifulSoup |
+
+## 실행 방법
+
+### 준비물
+
+- Python 3.11, Node.js 20 이상
+- PostgreSQL 17과 pgvector 확장
+- OpenAI API 키
+- 팀에서 별도로 전달하는 DB 백업 파일(`.dump`) — 용량 때문에 저장소에는 포함하지 않습니다.
+
+### 1. 데이터베이스 복원
 
 ```bash
-python -m venv .venv
+createdb global_in
 ```
-
-Windows 활성화:
 
 ```bash
-.venv\Scripts\activate
+pg_restore -d global_in --no-owner --no-privileges global_in_xxx.dump
 ```
 
-Package 설치:
+빈 DB에 백업을 복원할 때는 `scripts/init_db.sql`을 먼저 실행하지 않습니다(백업에 스키마가 포함되어 있습니다).
+
+### 2. 백엔드 (FastAPI)
+
+```bash
+python3.11 -m venv .venv
+```
+
+```bash
+source .venv/bin/activate
+```
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+`.env.example`을 `.env`로 복사한 뒤 값을 채웁니다.
 
-## Run FastAPI
-
-```bash
-uvicorn app.api.main:app --reload
-```
-
-기본 주소:
-
-```text
-http://127.0.0.1:8000
-```
-
-Health Check:
-
-```text
-http://127.0.0.1:8000/health
-```
-
----
-
-## Run Streamlit
+| 변수 | 설명 |
+|---|---|
+| `DATABASE_URL` | 정책 DB 접속 주소 (`postgresql://USER:PASSWORD@HOST:5432/global_in`) |
+| `INTERNAL_API_KEY` | 내부 API 인증 키. 프런트엔드와 같은 값을 사용합니다. |
+| `OPENAI_API_KEY` | OpenAI API 키 |
+| `CONSULT_SESSION_DATABASE_URL` | (선택) 상담 세션 저장소. 비우면 `data/runtime/consultation.sqlite`를 사용합니다. |
 
 ```bash
-streamlit run frontend/app.py
+uvicorn app.api.main:app --reload --port 8000
 ```
 
-기본 주소:
+API 문서는 http://localhost:8000/docs 에서 확인할 수 있습니다.
+
+검색에 쓰는 임베딩 모델(Qwen3-Embedding-0.6B, 약 1.2GB)은 실행 중에 자동으로 내려받지 않습니다. 처음 한 번만 아래 명령으로 받아 둡니다.
+
+```bash
+python -c "from huggingface_hub import snapshot_download; snapshot_download('Qwen/Qwen3-Embedding-0.6B', revision='97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3')"
+```
+
+### 3. 프런트엔드 (Next.js)
+
+```bash
+cd frontend
+```
+
+```bash
+npm install
+```
+
+`frontend/.env.example`을 `frontend/.env.local`로 복사한 뒤 `BACKEND_URL`(기본 `http://localhost:8000`)과 `INTERNAL_API_KEY`(백엔드와 같은 값)를 채웁니다.
+
+```bash
+npm run dev
+```
+
+http://localhost:3000 에서 서비스를 사용할 수 있습니다.
+
+### 4. 테스트
+
+```bash
+python -m pytest tests/unit
+```
+
+`tests/unit/test_rule_evaluator.py`는 지식 릴리즈 파일(`data/processed/knowledge/20261028/releases/.../knowledge_release.json`)이 있어야 실행되며, 이 파일은 DB 백업과 함께 별도로 전달합니다. `tests/integration`은 복원된 DB가 필요합니다.
+
+## 배포
+
+프런트엔드는 Vercel, 백엔드와 DB는 Railway에 올리는 구성을 기준으로 합니다. 백엔드는 루트의 `Dockerfile`로 빌드하며, 임베딩 모델이 이미지에 포함되어 메모리가 4GB 이상 필요합니다.
+
+```mermaid
+flowchart LR
+    U(["👤 사용자"]) -- "HTTPS" --> V["Vercel<br/>Next.js"]
+    V -- "BACKEND_URL<br/>+ 내부 키" --> B["Railway<br/>FastAPI (Docker)"]
+    B -- "내부 네트워크" --> D[("Railway<br/>PostgreSQL + pgvector")]
+    B --> O(["OpenAI API"])
+```
+
+단계별 절차와 환경변수는 [docs/DEPLOY.md](docs/DEPLOY.md)를 참고하세요.
+
+## API
+
+공개 API는 인증 없이, 내부 API와 상담 API는 `X-Internal-API-Key` 헤더로 호출합니다.
+
+| 구분 | Method | Endpoint | 설명 |
+|---|---|---|---|
+| 공개 | GET | `/health` | 상태 확인 |
+| 공개 | GET | `/public/programs` | 프로그램 목록 (`country`, `category`, `limit`, `offset`) |
+| 공개 | GET | `/public/programs/{program_id}` | 프로그램 상세 |
+| 공개 | GET | `/public/support-programs` | 지원제도 목록 |
+| 내부 | GET | `/programs`, `/programs/{program_id}` | 프로그램 및 내부 메타데이터 |
+| 내부 | GET | `/programs/{program_id}/policies` | 정책 후보 |
+| 내부 | GET | `/programs/{program_id}/evidence` | 원문 근거 |
+| 내부 | GET | `/support-programs` | 지원제도 및 메타데이터 |
+| 상담 | POST | `/consult/sessions` 외 | 상담 세션 생성, 메시지 전송, 카탈로그·준비 플랜 조회 |
+
+## 프로젝트 구조
 
 ```text
-http://localhost:8501
+global-in/
+├── app/
+│   ├── agent/       # LangGraph 그래프와 5개 에이전트
+│   ├── api/         # FastAPI 엔트리포인트, 상담 라우터
+│   ├── retrieval/   # 메타데이터 필터, 키워드·벡터·하이브리드 검색
+│   ├── rules/       # 자격 요건 규칙 평가기
+│   ├── models/      # Pydantic 모델, 프로그램 매핑
+│   └── services/    # LLM 호출, 상담 세션 저장소
+├── frontend/        # Next.js 웹 앱 (상담, 프로그램 찾기, 비교, 플랜, 프로필)
+├── data/            # 수집 원문(raw)과 가공 데이터(processed)
+├── scripts/         # 수집·적재·검색 평가 스크립트, init_db.sql
+├── tests/           # 단위·통합 테스트
+├── docs/            # 설계, 데이터 현황, 법률 검토, 배포 문서
+└── Dockerfile       # 백엔드 배포 이미지
 ```
 
----
-
-## Development Roadmap
-
-초기 개발 순서는 다음과 같이 진행합니다.
-
-```text
-1. Project Structure 구성
-
-2. Agent 역할 정의
-
-3. 공통 Data Schema 정의
-
-4. Database / ERD 설계
-
-5. 공식 데이터 수집
-
-6. PostgreSQL Seed Data 구성
-
-7. pgvector 문서 적재
-
-8. User Profile / Agent State 구현
-
-9. Program Resolver 구현
-
-10. Rule Evaluator 구현
-
-11. 진출 경로 탐색·추천 구현
-
-12. 자격 검토 구현
-
-13. Retrieval 구현
-
-14. Evidence Validation 구현
-
-15. 공식 정보 안내 구현
-
-16. Checklist / Roadmap 구현
-
-17. 준비 계획 구현
-
-18. LangGraph Routing 통합
-
-19. FastAPI 연결
-
-20. Streamlit 연결
-
-21. Unit / Integration / Scenario Test
-
-22. Demo 및 최종 검증
-```
-
----
-
-## Testing
-
-테스트는 크게 다음 세 영역으로 나눕니다.
-
-```text
-Unit Test
-Integration Test
-Scenario Test
-```
-
-### Unit Test
-
-개별 Module 검증
-
-예:
-
-```text
-Rule Evaluator
-Program Resolver
-Metadata Filter
-Evidence Validator
-```
-
-### Integration Test
-
-여러 Module 간 연결 검증
-
-예:
-
-```text
-Agent + Rule Evaluator
-
-Agent + Retrieval
-
-FastAPI + Agent
-
-Frontend + FastAPI
-```
-
-### Scenario Test
-
-실제 사용자 질문 흐름을 기준으로 검증합니다.
-
-예:
-
-```text
-독일 취업 준비자
-
-캐나다 유학 준비자
-
-일본 워킹홀리데이 준비자
-
-미국 교환 프로그램 준비자
-```
-
----
-
-## Important Validation Points
-
-```text
-사용자 정보가 부족하면 적절한 질문을 하는가
-
-Missing Information과 미충족 조건을 구분하는가
-
-실제 Program을 올바르게 연결하는가
-
-SupportProgram이 해당 사용자에게 적용되는가
-
-Program과 SupportProgram 자격을 별도로 판정하는가
-
-현재 접수 여부와 자격 여부를 혼동하지 않는가
-
-올바른 공식 Evidence를 사용하는가
-
-다른 국가의 근거가 섞이지 않는가
-
-근거가 부족한 정보를 확정적으로 설명하지 않는가
-
-Checklist와 Roadmap이 검토 결과에 맞게 생성되는가
-
-불필요한 Agent 호출이 없는가
-
-Workflow가 정상 종료되는가
-```
-
----
-
-## Current Status
-
-현재 완료된 기본 작업:
-
-```text
-Python 3.11 개발 환경 구성
-
-Project Directory 구성
-
-FastAPI 기본 실행 확인
-
-Streamlit 기본 실행 확인
-
-Git Repository 연결
-
-main / develop Branch 구성
-
-GitHub 기본 문서 구조 구성
-
-5개 Agent 역할 정의
-
-공식 정보 범위 정의
-```
-
-현재는 다음 단계로 진행 중입니다.
-
-```text
-Agent 상세 구조 구체화
-Database / ERD 설계
-공통 Schema 정의
-공식 데이터 수집 구조 설계
-```
-
-실제 Agent Skeleton과 DB 구조가 확정되면
-README와 Architecture 문서를 구현 결과에 맞게 지속적으로 갱신합니다.
+## 한계와 개선 방향
+
+- **법적 검증 범위**: 정책 데이터는 내부 검토를 거쳤지만 법률상 최종 승인본은 아닙니다. 그래서 확정적인 비자 발급·자격 판정 대신 출처와 확인일을 함께 보여주고, 예외는 ‘추가 확인 필요’로 안내합니다.
+- **접수 가능 여부**: 지원제도의 현재 모집 상태는 일부만 확인되어 있습니다(UNKNOWN 유지). 모집 공고 연동이 다음 과제입니다.
+- **정보 최신성**: 정책 자동 갱신은 아직 없습니다. 원문 해시와 확인일을 저장하는 구조를 바탕으로 변경 감지와 재수집을 자동화할 계획입니다.
+- **범위**: 5개국 40개 프로그램이 대상입니다. 공통 스키마를 따르므로 국가·경로는 데이터만 추가해 넓힐 수 있습니다.
+- **운영 비용**: 임베딩 모델을 서버에서 직접 실행하므로 메모리가 큰 서버가 필요합니다.
+
+## 팀 외부인들
+
+| 이름 | 소속 |
+|---|---|
+| 고여은 | 선문대학교 컴퓨터공학부 |
+| 김미진 | 한국외국어대학교 컴퓨터공학부 |
+| 조혜린 | 한국외국어대학교 컴퓨터공학부 |
+| 홍혜원 | 한국외국어대학교 산업경영학부 |
+
+초기 설계 문서(에이전트 역할 정의, 데이터 원칙 등)는 [docs/planning/design-overview.md](docs/planning/design-overview.md)에 있습니다.
