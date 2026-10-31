@@ -11,7 +11,7 @@ import os
 import re
 from threading import BoundedSemaphore
 import time
-from app.services import request_budget
+from app.services import request_budget, tracing
 from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, Header
@@ -72,8 +72,11 @@ def create_router(graph=None, store=None, require_owner=None) -> APIRouter:
             incoming['candidate_support_programs'] = deepcopy(previous.get('candidate_support_programs', []))
             if holder['graph'] is None:
                 holder['graph'] = get_compiled_graph()
-            state = holder['graph'].invoke(incoming)
-            response = to_response(session_id, state)
+            with tracing.consult_turn(session_id=session_id, owner=owner, query=query,
+                                      kind='message' if user_message is not None else 'profile-update') as (graph_kwargs, record_reply):
+                state = holder['graph'].invoke(incoming, **graph_kwargs)
+                response = to_response(session_id, state)
+                record_reply(response.reply)
             state['history'] = (previous.get('history', []) + [dict(role='user', content=query), dict(role='assistant', content=response.reply)])[-20:]
             # Catalogs and evidence are rebuilt from current DB records each turn.
             saved={key:state[key] for key in ('user_profile','history','information_scope','requested_program_ids','requested_support_ids') if key in state}

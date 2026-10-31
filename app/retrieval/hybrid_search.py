@@ -5,6 +5,7 @@ import logging
 from app.retrieval.keyword_search import search_program_evidence_by_keyword
 from app.retrieval.query_embedding import LocalEmbeddingUnavailable, embed_query_local
 from app.retrieval.vector_search import search_program_evidence_by_vector
+from app.services import tracing
 
 CANDIDATE_LIMIT = 100
 RRF_K = 60
@@ -62,6 +63,7 @@ def has_source_url(urls) -> bool:
     return isinstance(urls, list) and any(isinstance(u, str) and u.strip() for u in urls)
 
 
+@tracing.retriever("retrieve-program-evidence", ("program_id", "text", "limit", "require_source_url"))
 def search_program_evidence_hybrid(
     program_id: str,
     text: str,

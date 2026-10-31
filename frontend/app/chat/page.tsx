@@ -27,7 +27,7 @@ import {
 } from "@/lib/consultation";
 
 import { useComparison } from "@/lib/useComparison";
-import { COUNTRY_NAMES, CATEGORY_NAMES, programName, programDescription, presentCatalog, type CatalogItem } from "@/lib/catalog";
+import { COUNTRY_NAMES, CATEGORY_NAMES, programName, programDescription, requestCatalog, type CatalogItem } from "@/lib/catalog";
 import ProgramActions from '@/components/ProgramActions';
 import { syncConsultationProfile } from '@/lib/profileSync';
 import type { ComparedItem } from '@/lib/useComparison';
@@ -151,13 +151,13 @@ function ProgramCard({
     desc: originalProgram.desc && !originalProgram.desc.includes('공식 자료를 바탕으로') && !originalProgram.desc.includes('공식 조건 확인이 필요한 후보') ? originalProgram.desc : programDescription(String(originalProgram.id), originalProgram.desc) };
   const [catalogSource, setCatalogSource] = useState<string>();
   useEffect(() => {
-    const controller = new AbortController();
-    fetch('/api/catalog', { signal: controller.signal }).then(res => res.ok ? res.json() : null).then(data => {
-      const item = data?.items ? presentCatalog(data.items).find((row: CatalogItem) => row.id === program.id) : undefined;
+    let active = true;
+    requestCatalog().then(items => {
+      const item = items.find((row: CatalogItem) => row.id === program.id);
       const url = item?.sources?.find((source: { source_url: string }) => /^https?:\/\//.test(source.source_url))?.source_url;
-      setCatalogSource(url);
+      if (active) setCatalogSource(url);
     }).catch(() => {});
-    return () => controller.abort();
+    return () => { active = false; };
   }, [program.id]);
   const officialUrl = catalogSource || program.official_url || program.officialUrl;
 

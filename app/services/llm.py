@@ -9,19 +9,19 @@ from __future__ import annotations
 import os
 from typing import Any
 
-import openai
 from app.services import request_budget
+from app.services.tracing import OpenAI, generation_name
 
-_client: openai.OpenAI | None = None
+_client: OpenAI | None = None
 
 
-def _get_client() -> openai.OpenAI:
+def _get_client() -> OpenAI:
     global _client
     if _client is None:
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
             raise RuntimeError("OPENAI_API_KEY 환경 변수가 설정되지 않았습니다.")
-        _client = openai.OpenAI(api_key=api_key,timeout=45,max_retries=0)
+        _client = OpenAI(api_key=api_key,timeout=45,max_retries=0)
     return _client
 
 
@@ -63,6 +63,7 @@ def chat(
         temperature=temperature,
         messages=full_messages,  # type: ignore[arg-type]
         **({'response_format': {'type':'json_schema','json_schema':{'name':'ConsultExtraction','strict':True,'schema':response_schema}}} if response_schema else {}),
+        **generation_name("generate-chat-response"),
     )
     return response.choices[0].message.content or ""
 

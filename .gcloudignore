@@ -1,0 +1,8 @@
+# gcloud run deploy --source 업로드 대상. .dockerignore와 같이 백엔드 빌드에 필요한 파일만 올린다.
+*
+!Dockerfile
+!.dockerignore
+!requirements.txt
+!app/
+!app/**
+**/__pycache__

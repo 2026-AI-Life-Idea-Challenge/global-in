@@ -14,7 +14,7 @@ import logging
 from datetime import date
 from typing import Literal
 
-from openai import OpenAI
+from app.services.tracing import OpenAI, generation_name
 from pydantic import ConfigDict, Field, ValidationError
 
 from app.agent.router import route
@@ -174,7 +174,7 @@ def interpret_question(question, history, programs, supports, profile=None, *, m
                 model=model, reasoning={"effort": effort}, text_format=BRequest,
                 input=[{"role": "system", "content": interpreter_prompt(mode)},
                        {"role": "user", "content": json.dumps(payload, ensure_ascii=False, default=str)}],
-                max_output_tokens=1500, store=False,
+                max_output_tokens=1500, store=False, **generation_name("route-question"),
             )
     except ValidationError as exc:
         raise RagResponseValidationError("질문 해석 구조가 잘못되었습니다.", code="invalid_route") from exc

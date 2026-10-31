@@ -19,6 +19,7 @@ from app.retrieval.program_search import (
     SUPPORTED_CATEGORIES, SUPPORTED_COUNTRIES, _validate_filter,
 )
 from app.retrieval.query_embedding import MODEL_NAME, LocalEmbeddingUnavailable, embed_query_local
+from app.services import tracing
 from app.services.database import get_connection
 
 
@@ -168,6 +169,7 @@ def _fuse_global_rankings(
     )[:limit]
 
 
+@tracing.retriever("retrieve-multi-program-evidence", ("text", "country", "category", "limit", "require_source_url"))
 def search_programs_evidence_hybrid(
     text: str,
     country: str | None = None,

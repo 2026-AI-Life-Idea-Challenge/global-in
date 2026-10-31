@@ -8,7 +8,7 @@ from functools import lru_cache
 from typing import Literal
 
 from dotenv import load_dotenv
-from openai import OpenAI
+from app.services.tracing import OpenAI, generation_name
 from pydantic import ValidationError, create_model
 
 from datetime import date
@@ -246,6 +246,7 @@ def _request_rag_draft(
                 text_format=wire_type,
                 max_output_tokens=2500,
                 store=False,
+                **generation_name("draft-grounded-answer"),
                 **({"reasoning": {"effort": effort}} if effort is not None else {}),
             )
     except ValidationError as exc:
