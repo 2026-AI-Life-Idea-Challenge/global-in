@@ -1,14 +1,9 @@
 "use client";
+import CountryFlag from "@/components/CountryFlag";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
-const COUNTRY_CODE: Record<string, string> = {
-  일본: "jp",
-  독일: "de",
-  캐나다: "ca",
-  호주: "au",
-  미국: "us",
-};
+
 
 const CARDS = [
   
@@ -129,18 +124,7 @@ export default function Home() {
             }}
           >
             <div style={{ width: 52, height: 52, borderRadius: "50%", overflow: "hidden", boxShadow: "0 4px 18px rgba(30,35,70,.1)", border: "1px solid var(--ln)" }}>
-              {country === "일본" ? (
-                <svg viewBox="0 0 100 100" style={{ width: "100%", height: "100%" }}>
-                  <circle cx="50" cy="50" r="50" fill="#fff"/>
-                  <circle cx="50" cy="50" r="22" fill="#bc2a3a"/>
-                </svg>
-              ) : (
-                <img
-                  src={`/flags/${COUNTRY_CODE[country]}.png`}
-                  alt={country}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                />
-              )}
+              <CountryFlag country={country} size={50} />
             </div>
             {country}
           </div>

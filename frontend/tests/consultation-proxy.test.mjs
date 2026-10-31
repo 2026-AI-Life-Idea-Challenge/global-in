@@ -41,6 +41,16 @@ const mock = http.createServer(async (req, res) => {
   if (req.url === '/consult/sessions') owners.set(session, req.headers['x-consult-owner']);
   else if (req.url.includes('/sessions/' + session) && owners.get(session) !== req.headers['x-consult-owner']) { res.writeHead(404); res.end('{}'); return; }
   if (req.method === 'PATCH' && body.invalid) { res.writeHead(422); res.end('{}'); return; }
+  const failures = {
+    'test-busy': [409, 'session request in progress'],
+    'test-capacity': [503, 'consultation capacity reached'],
+    'test-generation': [503, 'consultation temporarily unavailable'],
+    'test-store': [503, 'session store temporarily unavailable'],
+  };
+  if (failures[body.message]) {
+    const [status, detail] = failures[body.message];
+    res.writeHead(status); res.end(JSON.stringify({ detail })); return;
+  }
   if (body.profile?.invalid) { res.writeHead(422); res.end(JSON.stringify({ detail: [{ input: 'synthetic-private-value', loc: ['body','profile'] }] })); return; }
   res.end(JSON.stringify(req.url === '/consult/sessions' ? { session_id: session } : payload));
 });
@@ -86,6 +96,17 @@ try {
   assert.deepEqual(data.rag_statuses, payload.rag_statuses);
   result = await send('POST', { session_id: session, messages: [{ role: 'user', content: '준비 항목' }] });
   assert.equal(result.status, 200); assert.equal(calls.filter(c => c.url === '/consult/sessions').length, 1); passed++;
+  for (const [message, code, retry] of [
+    ['test-busy', 'session_busy', true], ['test-capacity', 'capacity_reached', true],
+    ['test-generation', 'consultation_failed', false], ['test-store', 'session_store_unavailable', false],
+  ]) {
+    const failure = await send('POST', { session_id: session, messages: [{ role: 'user', content: message }] });
+    const body = await failure.json();
+    assert.equal(body.code, code);
+    assert.equal(failure.headers.has('Retry-After'), retry);
+    if (code === 'consultation_failed') assert.ok(!body.error.includes('혼잡'));
+    passed++;
+  }
   const before = calls.length;
   assert.equal((await send('POST', { messages: [] })).status, 400);
   assert.equal((await send('POST', { session_id: '../bad', messages: [{ role: 'user', content: '질문' }] })).status, 400);
