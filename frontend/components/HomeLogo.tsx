@@ -1,19 +1,9 @@
 "use client";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
 
 export default function HomeLogo() {
   const pathname = usePathname();
   const router = useRouter();
-  const [logoLeft, setLogoLeft] = useState(20);
-
-  useEffect(() => {
-    const update = () =>
-      setLogoLeft(Math.max(20, (window.innerWidth - 1040) / 2 + 20));
-    update();
-    window.addEventListener("resize", update);
-    return () => window.removeEventListener("resize", update);
-  }, []);
 
   if (pathname !== "/") return null;
 
@@ -22,7 +12,7 @@ export default function HomeLogo() {
       style={{
         position: "absolute",
         top: 91,
-        left: logoLeft,
+        left: "max(20px, calc((100vw - 1040px) / 2 + 20px))",
         width: 210,
         padding: "20px 16px 14px",
         display: "flex",
