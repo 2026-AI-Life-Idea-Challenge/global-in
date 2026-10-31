@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useCatalog } from "@/lib/useCatalog";
 import { useComparison } from "@/lib/useComparison";
 import { CATEGORY_NAMES, COUNTRY_NAMES, AVAILABILITY_NAMES, catalogCountry, toCompared, groupedCatalog, type CatalogItem } from "@/lib/catalog";
@@ -91,6 +91,8 @@ export default function ProgramsPage() {
   const [countryFilter, setCountryFilter] = useState("전체");
   const [purposeFilter, setPurposeFilter] = useState("전체");
   const [restored, setRestored] = useState(false);
+  const [comparisonExpanded, setComparisonExpanded] = useState(true);
+  const comparisonRef = useRef<HTMLDivElement>(null);
   const compareIds = comparison.items.map(item => item.id);
   const setCompareIds = (ids: string[]) => {
     if (ids.length === 0) comparison.clear();
@@ -229,25 +231,28 @@ export default function ProgramsPage() {
             </span>
             {compareIds.length > 0 && (
               <span style={{ fontSize: "0.8rem", color: "var(--ac)", fontWeight: 600 }}>
-                {compareIds.length}개 선택됨 {compareIds.length >= 2 ? "· 아래에서 비교 중" : "· 1개 더 선택하면 비교"}
+                {compareIds.length}개 선택됨 {comparePrograms.length >= 2 ? <>· <button type="button" onClick={() => {
+                  setComparisonExpanded(true);
+                  comparisonRef.current?.scrollIntoView({ block: 'start', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+                }} style={{ border: 'none', background: 'none', padding: 0, font: 'inherit', color: 'inherit', cursor: 'pointer' }}>비교표 보기</button></> : "· 1개 더 선택하면 비교"}
               </span>
             )}
           </div>
 
           {/* 비교표 — 필터 아래, 리스트 위 */}
           {comparePrograms.length >= 2 && (
-            <div style={{ marginBottom: 20, background: "#fff", border: "1.5px solid var(--ac)", borderRadius: 16, overflow: "hidden" }}>
+            <div ref={comparisonRef} style={{ marginBottom: 20, background: "#fff", border: "1.5px solid var(--ac)", borderRadius: 16, overflow: "hidden" }}>
               <div style={{ padding: "14px 24px", borderBottom: "1px solid var(--ln)", display: "flex", justifyContent: "space-between", alignItems: "center", background: "#f7f9ff" }}>
                 <div style={{ fontWeight: 700, fontSize: "0.95rem", color: "var(--ink)", display: "flex", alignItems: "center", gap: 8 }}>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--ac)" strokeWidth="2">
                     <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
                   </svg>
-                  비교표
+                  <button type="button" aria-expanded={comparisonExpanded} aria-controls="program-comparison-table" onClick={() => setComparisonExpanded(value => !value)} style={{ border: 'none', background: 'none', padding: 0, font: 'inherit', color: 'inherit', cursor: 'pointer' }}>비교표 {comparisonExpanded ? '접기' : '펼치기'}</button>
                   <span style={{ fontSize: "0.8rem", fontWeight: 400, color: "var(--mu)" }}>{comparePrograms.length}개 선택됨</span>
                 </div>
                 <button onClick={() => setCompareIds([])} style={{ background: "none", border: "none", fontSize: "0.8rem", color: "var(--mu)", cursor: "pointer" }}>전체 해제</button>
               </div>
-              <div style={{ overflowX: "auto" }}>
+              <div id="program-comparison-table" hidden={!comparisonExpanded} role="region" aria-label="선택한 프로그램 비교표, 좌우로 스크롤할 수 있습니다" tabIndex={0} style={{ overflowX: "auto" }}>
                 <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.85rem" }}>
                   <thead>
                     <tr style={{ background: "#f7f8fa" }}>
@@ -256,6 +261,7 @@ export default function ProgramsPage() {
                         <th key={p.id} style={{ padding: "12px 20px", textAlign: "left", fontWeight: 700, color: "var(--ink)" }}>
                           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                             {p.country && <FlagSvg country={p.country} size={18} />}{p.name}
+                            <button type="button" aria-label={`${p.name} 비교 해제`} onClick={() => toggleCompare(p.id)} style={{ border: 'none', background: 'none', padding: 0, color: 'var(--mu)', cursor: 'pointer' }}>×</button>
                           </div>
                         </th>
                       ))}
