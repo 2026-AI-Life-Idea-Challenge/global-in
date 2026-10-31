@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { consultationOwner, CrossOriginConsultation } from '@/lib/consultationOwner';
 
 const BACKEND = process.env.BACKEND_URL || "http://localhost:8000";
+// 백엔드 응답을 최대 120초 기다리므로(아래 AbortSignal) 배포 플랫폼의 함수 실행 한도도 그만큼 확보한다.
+export const maxDuration = 130;
 
 export async function POST(req: NextRequest) {
   const apiKey = process.env.INTERNAL_API_KEY;

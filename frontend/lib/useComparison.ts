@@ -1,6 +1,6 @@
 "use client";
 import { useCallback, useMemo, useSyncExternalStore, useEffect } from 'react';
-import { toCompared, presentCatalog, type CatalogItem } from './catalog';
+import { toCompared, requestCatalog, type CatalogItem } from './catalog';
 import { COMPARE_KEY, readSaved, saveTab } from './consultation';
 
 export type ComparedItem = { id: string | number; name: string; country?: string | null; type?: string; desc?: string; kind?: string;
@@ -20,12 +20,10 @@ export function useComparison() {
     catch { return []; }
   }, [raw]);
   useEffect(() => {
-    const controller = new AbortController();
-    fetch('/api/catalog', { signal: controller.signal }).then(response => {
-      if (!response.ok) throw new Error('catalog unavailable');
-      return response.json();
-    }).then(data => {
-      const catalog = new Map<string, CatalogItem>(presentCatalog(data.items || []).map((item: CatalogItem) => [item.id, item]));
+    let active = true;
+    requestCatalog().then(items => {
+      if (!active) return;
+      const catalog = new Map<string, CatalogItem>(items.map(item => [item.id, item]));
       const old = readSaved<ComparedItem[]>(COMPARE_KEY, []);
       const next = old.map(item => {
         const row = catalog.get(String(item.id));
@@ -33,7 +31,7 @@ export function useComparison() {
       });
       if (JSON.stringify(old) !== JSON.stringify(next)) write(next);
     }).catch(() => { /* Existing values remain available; do not invent metadata. */ });
-    return () => controller.abort();
+    return () => { active = false; };
   }, [raw]);
   const toggle = useCallback((item: ComparedItem) => { const old = readSaved<ComparedItem[]>(COMPARE_KEY, []); write(old.some(p => p.id === item.id) ? old.filter(p => p.id !== item.id) : [...old, item]); }, []);
   const clear = useCallback(() => write([]), []);

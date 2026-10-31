@@ -37,6 +37,21 @@ export function presentCatalog(items: CatalogItem[]): CatalogItem[] {
   });
 }
 
+let sharedCatalog: Promise<CatalogItem[]> | null = null;
+
+/** 한 화면의 여러 카드가 카탈로그를 각자 받지 않도록 요청 하나를 공유한다. refresh는 다시 시도할 때만 쓴다. */
+export function requestCatalog(refresh = false): Promise<CatalogItem[]> {
+  if (sharedCatalog && !refresh) return sharedCatalog;
+  const request = fetch('/api/catalog', { cache: 'no-store' }).then(async response => {
+    const data = await response.json();
+    if (!response.ok || !Array.isArray(data.items)) throw new Error(data.error || '자료 목록을 불러오지 못했습니다.');
+    return presentCatalog(data.items);
+  });
+  sharedCatalog = request;
+  request.catch(() => { if (sharedCatalog === request) sharedCatalog = null; });
+  return request;
+}
+
 export function groupedCatalog(items: CatalogItem[]): CatalogItem[] {
   return items.filter(item => {
     const match = item.id.match(/^(AU:subclass_(?:417|462)_)(second|third)$/);
