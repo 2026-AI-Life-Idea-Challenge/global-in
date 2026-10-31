@@ -191,6 +191,15 @@ export async function runBrowserChecks(base, fixture) {
     await page.getByRole('textbox',{name:'프로그램 검색'}).fill('');
     await page.getByText('호주 워킹홀리데이 비자 417',{exact:true}).waitFor();
     assert.equal(await page.getByText('호주 워킹홀리데이 비자 417 · 2차',{exact:true}).count(),0); checks++;
+    await page.getByRole('button', { name: '필터 초기화', exact: true }).click();
+    await page.getByLabel('호주 워킹홀리데이 비자 417 비교', { exact: true }).check();
+    await page.getByLabel('호주 워크앤홀리데이 비자 462 비교', { exact: true }).check();
+    await page.getByRole('button', { name: '비교표 접기', exact: true }).click();
+    assert.equal(await page.locator('#program-comparison-table').isVisible(), false); checks++;
+    await page.getByRole('button', { name: '비교표 보기', exact: true }).click();
+    await page.locator('#program-comparison-table').waitFor({ state: 'visible' }); checks++;
+    await page.getByRole('button', { name: '호주 워킹홀리데이 비자 417 비교 해제', exact: true }).click();
+    assert.equal(await page.getByLabel('호주 워킹홀리데이 비자 417 비교', { exact: true }).isChecked(), false); checks++;
     await page.goto(base+'/programs/AU%3Asubclass_417_first');
     await page.getByRole('button',{name:'2차 신청',exact:true}).click();
     await page.getByText('공식 원문·예외 규정 보기',{exact:true}).first().click();
