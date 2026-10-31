@@ -417,7 +417,11 @@ class ChatResponse(_BaseModel):
     candidate_support_programs: list[dict] | None = None
 
 
-@app.post("/chat", response_model=ChatResponse)
+@app.post(
+    "/chat",
+    response_model=ChatResponse,
+    dependencies=[Depends(require_internal_api_key)],
+)
 async def chat(req: ChatRequest):
     """
     메인 챗 엔드포인트.
