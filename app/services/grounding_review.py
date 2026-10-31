@@ -3,7 +3,7 @@ from contextvars import ContextVar
 from functools import wraps
 import json
 import os
-from openai import OpenAI
+from app.services.tracing import OpenAI, generation_name
 from pydantic import BaseModel, ConfigDict
 from app.services import request_budget
 
@@ -49,7 +49,7 @@ def review_draft(draft,payload,model,effort=None):
             for i,item in enumerate(draft.items) if item.answer is not None]
     if not claims:return draft
     with OpenAI(timeout=request_budget.timeout(),max_retries=0) as client:
-        response=client.responses.parse(model=model,store=False,max_output_tokens=1800,text_format=Review,
+        response=client.responses.parse(model=model,store=False,max_output_tokens=1800,text_format=Review,**generation_name('review-answer-grounding'),
             **({'reasoning':{'effort':effort}} if effort else {}),input=[dict(role='system',content=SYSTEM),
             dict(role='user',content=json.dumps(dict(question=payload.get('question'),claims=claims),ensure_ascii=False))])
     if response.status!='completed' or response.output_parsed is None:raise ValueError('Grounding review incomplete')
