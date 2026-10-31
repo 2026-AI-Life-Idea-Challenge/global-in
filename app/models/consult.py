@@ -3,10 +3,11 @@
 from datetime import date
 from typing import Any, Literal
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 from app.models.program import Country
 from app.models.user_profile import UserProfile
+
 
 # 공통 UserProfile.target_visa_type 값
 VisaType = Literal["working_holiday", "student", "employment"]
@@ -40,9 +41,26 @@ class ProfileUpdateRequest(BaseModel):
 
     date_of_birth: date | None = None
     nationalities: list[str] | None = None
+    residence_country: str | None = Field(default=None, pattern=r'^[A-Z]{2}$')
+    education: str | None = Field(default=None, max_length=500)
+    education_status: str | None = Field(default=None, max_length=500)
+    major: str | None = Field(default=None, max_length=500)
+    career: str | None = Field(default=None, max_length=500)
+    career_duration: str | None = Field(default=None, max_length=500)
+    languages: str | None = Field(default=None, max_length=500)
+    certifications: str | None = Field(default=None, max_length=500)
     target_country: Country | None = None
     target_visa_type: VisaType | None = None
     purpose: str | None = Field(default=None, max_length=500)
+
+    @model_validator(mode='before')
+    @classmethod
+    def _ignore_unset_response_only_fields(cls, value):
+        # UserProfile responses include nullable internal fields. Null means no
+        # user input; non-null unknown fields still fail the strict contract.
+        if isinstance(value, dict):
+            return {key: item for key, item in value.items() if key in cls.model_fields or item is not None}
+        return value
 
     @field_validator("date_of_birth")
     @classmethod
@@ -151,3 +169,9 @@ class ChatResponse(BaseModel):
     support_eligibility: list[SupportEligibilityPayload] = Field(default_factory=list)
     rag_statuses: list[dict[str, Any]] = Field(default_factory=list)
     answer_sections: list[dict[str, Any]] = Field(default_factory=list)
+
+
+class PreparationRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    target_id: str = Field(min_length=1, max_length=200)
+    profile: ProfileUpdateRequest = Field(default_factory=ProfileUpdateRequest)

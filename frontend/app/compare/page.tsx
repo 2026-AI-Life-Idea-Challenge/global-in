@@ -2,15 +2,9 @@
 import Header from "../../components/Header";
 import Sidebar from "../../components/Sidebar";
 import { useComparison } from '@/lib/useComparison';
+import { comparisonRows } from '@/lib/comparisonRows';
+import { safeSource } from '@/components/ConsultationDetails';
 
-type Program = { id: string | number; name: string; country?: string | null; type?: string; desc?: string };
-
-const ROWS: { label: string; key: keyof Program }[] = [
-  { label: "국가", key: "country" },
-  { label: "유형", key: "type" },
-  { label: "상담에서 반환한 설명", key: "desc" },
-  { label: "프로그램 ID", key: "id" },
-];
 
 export default function ComparePage() {
   const { items: PROGRAMS } = useComparison();
@@ -46,16 +40,20 @@ export default function ComparePage() {
                 </tr>
               </thead>
               <tbody>
-                {ROWS.map(({ label, key }) => (
-                  <tr key={key} className="border-b border-gray-50">
+                {comparisonRows.map(({ label, value }) => (
+                  <tr key={label} className="border-b border-gray-50">
                     <td className="text-xs text-gray-400 py-3 pr-4">{label}</td>
                     {PROGRAMS.map((p) => (
                       <td key={p.name} className="py-3 px-4 text-sm text-gray-700">
-                        {p[key] || '추가 확인 필요'}
+                        {value(p)}
                       </td>
                     ))}
                   </tr>
                 ))}
+                <tr className="border-b border-gray-50"><td className="text-xs text-gray-400 py-3 pr-4">공식 출처</td>{PROGRAMS.map(p => {
+                  const sources = (p.sources?.length ? p.sources : p.officialUrl ? [{ title: '공식 원문', source_url: p.officialUrl }] : []).filter(source => safeSource(source.source_url));
+                  return <td key={p.id} className="py-3 px-4 text-sm text-gray-700">{sources.length ? sources.map((source,index) => <p key={index}><a href={source.source_url} target="_blank" rel="noopener noreferrer">{source.title}</a></p>) : '공식 출처 확인 필요'}</td>;
+                })}</tr>
               </tbody>
             </table>
           </div>

@@ -14,7 +14,27 @@ def run(state: AgentState) -> dict:
                     final_answer='요청하신 제도 정보는 근거를 확인하지 못해 안내할 수 없습니다. 공식 자료를 확인해 주세요.',
                     next_node='preparation_planning', current_agent='official_information')
     evidence = linked_evidence(results)
-    lines = [result['answer'] for result in results]
+    lines = []
+    if state.get('overview'):
+        lines.append('질문하신 경로의 개요와 준비 방법을 공식 자료에서 확인한 범위로 안내할게요.')
+    for result in results:
+        claims = result.get('claims', [])
+        if claims:
+            names = {p['program_id']: p['name'] for p in state.get('candidate_programs', [])}
+            heading = names.get(result.get('program_id'))
+            if heading:
+                lines.append(heading)
+            for claim in claims:
+                name = names.get(claim.get('program_id'))
+                parts = [result.get('question_parts', [])[i] for i in claim.get('part_indexes', []) if 0 <= i < len(result.get('question_parts', []))]
+                label = ' · '.join(dict.fromkeys(parts))
+                if label:
+                    lines.append(label)
+                lines.append((name + '\n' if name else '') + claim['text'])
+            if result.get('unanswered_parts'):
+                lines.append('질문 중 일부 항목은 검색된 공식 근거가 부족해 확정하지 못했습니다. 확인되지 않은 세부 사항은 상담에서 구체적으로 질문해 주세요.')
+        else:
+            lines.append('선택한 범위에서 답변을 뒷받침할 공식 근거를 충분히 찾지 못했습니다. 제도명이나 확인할 항목을 좁혀 주세요.')
     supports = state.get('candidate_support_programs', [])
     if state.get('information_scope') in ('support', 'both') and supports:
         lines.append('연결 후보 지원제도 — 개인 자격이나 현재 접수 가능 여부를 확정한 목록은 아닙니다.')

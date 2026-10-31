@@ -92,6 +92,58 @@ def say(setup, message, profile=None):
     return response.json()
 
 
+@pytest.mark.parametrize('mode', ['general', 'evidence', 'mixed'])
+def test_merged_answer_modes_keep_team_routing_and_d_profile(setup, monkeypatch, mode):
+    """Exercise the compiled graph/API, rather than checking merged text only."""
+    original = user_understanding.llm.extract_json
+    def extract(prompt, **kwargs):
+        schema = kwargs['response_schema']['properties']
+        assert schema['answer_mode']['enum'] == ['general', 'evidence', 'mixed']
+        assert 'major' in schema['profile_updates']['items']['properties']['field']['enum']
+        parsed = json.loads(original(prompt, **kwargs))
+        parsed['answer_mode'] = mode
+        parsed['profile_updates']['major'] = '컴퓨터공학'
+        return json.dumps(parsed)
+    monkeypatch.setattr(user_understanding.llm, 'extract_json', extract)
+    guidance_calls = []
+    def guidance(question, history, profile, **kwargs):
+        guidance_calls.append((profile, kwargs))
+        return '일반 준비 방향 안내'
+    monkeypatch.setattr(preparation_planning, 'general_guidance', guidance)
+    data = say(setup, '공식 안내와 준비 방향', dict(nationalities=['KR']))
+    assert data['profile']['major'] == '컴퓨터공학'
+    assert bool(guidance_calls) == (mode != 'evidence')
+    assert any(kind == 'generate' for kind, _ in setup[2]) == (mode != 'general')
+    if mode != 'general':
+        assert data['citations']
+        assert '유효한 여권이 필요합니다.' in data['reply']
+    if mode != 'evidence':
+        assert '일반 준비 방향 안내' in data['reply']
+    # Reuse the same API session to ensure profile extensions survive another turn.
+    again = say(setup, '다음 준비 방향')
+    assert again['profile']['major'] == '컴퓨터공학'
+    assert again['profile']['nationalities'] == ['KR']
+
+
+def test_merged_mixed_clarification_keeps_missing_information_and_avoids_rag(setup, monkeypatch):
+    original = user_understanding.llm.extract_json
+    def extract(prompt, **kwargs):
+        parsed = json.loads(original(prompt, **kwargs))
+        parsed['answer_mode'] = 'mixed'
+        return json.dumps(parsed)
+    monkeypatch.setattr(user_understanding.llm, 'extract_json', extract)
+    calls = []
+    def guidance(question, history, profile, **kwargs):
+        calls.append(kwargs)
+        return '일반 준비 안내'
+    monkeypatch.setattr(preparation_planning, 'general_guidance', guidance)
+    data = say(setup, '자격과 준비 방향을 알려줘')
+    assert '국적' in data['reply'] and '생년월일' in data['reply']
+    assert '일반 준비 안내' in data['reply']
+    assert calls == [{'ask_question': False}]
+    assert not any(kind == 'generate' for kind, _ in setup[2])
+
+
 def test_first_profile_and_message_use_one_graph_with_real_b_citations(setup):
     data=say(setup, '공식 안내', dict(nationalities=['KR'], date_of_birth='1998-05-15'))
     assert sum(kind=='interpret' for kind,_ in setup[2])==1
@@ -99,7 +151,7 @@ def test_first_profile_and_message_use_one_graph_with_real_b_citations(setup):
     assert data['citations'][0]['source_url']=='https://example.org/passport'
     assert data['programs'][0]['citations']
     assert any(item['citations'] for item in data['prep_items'])
-    assert data['rag_statuses'][0]['development_only'] is True
+    assert data['rag_statuses'][0]['development_only'] is False
     assert data['eligibility'][0]['overall']=='추가 확인 필요'
     assert '유효한 여권이 필요합니다.' in data['reply']
 
@@ -154,7 +206,7 @@ def test_support_result_is_separate_and_closed_is_not_open(setup):
     assert data['support_programs'][0]['availability']=='CLOSED'
     assert data['support_eligibility'][0]['support_program_id']=='S:test'
     assert data['support_programs'][0]['citations']
-    assert '마감으로 저장됨' in data['reply']
+    assert '접수 종료로 기록됨' in data['reply']
     assert data['prep_items'][0]['program_id']=='S:test'
 
 

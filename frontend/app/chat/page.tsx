@@ -11,7 +11,7 @@ import { useSearchParams } from "next/navigation";
 
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import ConsultationDetails, {
+import {
   type ConsultationDetailsData,
 } from "@/components/ConsultationDetails";
 
@@ -26,7 +26,12 @@ import {
 } from "@/lib/consultation";
 
 import { useComparison } from "@/lib/useComparison";
-import { COUNTRY_NAMES, CATEGORY_NAMES } from "@/lib/catalog";
+import { COUNTRY_NAMES, CATEGORY_NAMES, programName, programDescription, presentCatalog, type CatalogItem } from "@/lib/catalog";
+import ProgramActions from '@/components/ProgramActions';
+import { syncConsultationProfile } from '@/lib/profileSync';
+import type { ComparedItem } from '@/lib/useComparison';
+import type { PlanItem } from '@/lib/plans';
+import { comparisonRows } from '@/lib/comparisonRows';
 
 interface Message {
   role: "user" | "assistant";
@@ -35,7 +40,7 @@ interface Message {
   details?: ConsultationDetailsData;
 }
 
-interface Program {
+interface Program extends ComparedItem {
   id: string | number;
   name: string;
   country?: string | null;
@@ -46,6 +51,10 @@ interface Program {
   condition_summary?: string;
   official_url?: string;
   officialUrl?: string;
+  kind?: string;
+  sources?: { title: string; source_url: string }[];
+  eligibility?: string;
+  verifiedAt?: string | null;
 }
 
 interface ChatSession {
@@ -179,15 +188,29 @@ function AiAvatar() {
 
 // 프로그램 카드
 function ProgramCard({
-  program,
+  program: originalProgram,
   isCompared,
   onToggleCompare,
+  prepItems,
 }: {
   program: Program;
   isCompared: boolean;
   onToggleCompare: (id: string | number) => void;
+  prepItems?: PlanItem[];
 }) {
-  const officialUrl = program.official_url || program.officialUrl;
+  const program = { ...originalProgram, name: programName(String(originalProgram.id), originalProgram.name),
+    desc: originalProgram.desc && !originalProgram.desc.includes('공식 자료를 바탕으로') && !originalProgram.desc.includes('공식 조건 확인이 필요한 후보') ? originalProgram.desc : programDescription(String(originalProgram.id), originalProgram.desc) };
+  const [catalogSource, setCatalogSource] = useState<string>();
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch('/api/catalog', { signal: controller.signal }).then(res => res.ok ? res.json() : null).then(data => {
+      const item = data?.items ? presentCatalog(data.items).find((row: CatalogItem) => row.id === program.id) : undefined;
+      const url = item?.sources?.find((source: { source_url: string }) => /^https?:\/\//.test(source.source_url))?.source_url;
+      setCatalogSource(url);
+    }).catch(() => {});
+    return () => controller.abort();
+  }, [program.id]);
+  const officialUrl = catalogSource || program.official_url || program.officialUrl;
 
   const desc =
     program.desc ||
@@ -305,6 +328,7 @@ function ProgramCard({
               </svg>
             </a>
           )}
+          <ProgramActions item={program} prepItems={prepItems} showDetails={false} />
 
           <label
             style={{
@@ -543,8 +567,7 @@ function ChatPageInner() {
 
     const timer = window.setTimeout(() => {
       send(
-        program +
-          "에 대해 자세히 알고 싶어요. 저에게 맞는지 상담해 주세요."
+        program + " · " + (searchParams?.get("question")?.slice(0, 1000) || "에 대해 자세히 알고 싶어요. 저에게 맞는지 상담해 주세요.")
       );
     }, 400);
 
@@ -913,7 +936,6 @@ function ChatPageInner() {
 
       // 백엔드 프로그램 데이터를 프론트엔드 형식으로 변환
       const programs: Program[] = (data.programs ?? [])
-        .slice(0, 3)
         .map(
           (program: {
             program_id: string;
@@ -921,17 +943,27 @@ function ChatPageInner() {
             country: string;
             visa_type: string;
             summary: string;
+            citations?: { title: string; source_url: string; verified_at?: string | null }[];
           }) => ({
             id: program.program_id,
-            name: program.name,
+            name: programName(program.program_id, program.name),
             country:
               COUNTRY_NAMES[program.country] || program.country,
             type:
               CATEGORY_NAMES[program.visa_type] ||
               program.visa_type,
             desc: program.summary,
+            kind: 'program', sources: program.citations || [], officialUrl: program.citations?.[0]?.source_url,
+            verifiedAt: program.citations?.[0]?.verified_at,
+            eligibility: data.eligibility?.find((review: { program_id: string }) => review.program_id === program.program_id)?.overall,
           })
         );
+      for (const support of (data.support_programs || []) as { support_program_id: string; name: string; availability?: string; source_verified_at?: string; citations?: { title: string; source_url: string }[] }[]) {
+        programs.push({ id: support.support_program_id, name: programName(support.support_program_id, support.name), kind: 'support', type: '지원제도',
+          country: COUNTRY_NAMES[data.profile?.target_country] || '', desc: programDescription(support.support_program_id, support.name),
+          sources: support.citations || [], officialUrl: support.citations?.[0]?.source_url, availability: support.availability, verifiedAt: support.source_verified_at });
+      }
+      syncConsultationProfile(data.profile);
 
       // 상담 결과를 현재 브라우저 탭에 저장
       try {
@@ -1192,10 +1224,6 @@ function ChatPageInner() {
                           {renderContent(msg.content)}
                         </div>
 
-                        {/* 상세 상담 결과 */}
-                        {msg.details && (
-                          <ConsultationDetails data={msg.details} />
-                        )}
 
                         {/* 추천 프로그램 */}
                         {msg.programs && msg.programs.length > 0 && (
@@ -1209,7 +1237,7 @@ function ChatPageInner() {
                                 letterSpacing: "0.04em",
                               }}
                             >
-                              ● 검토할 프로그램 후보 {msg.programs.length}개
+                              ● 함께 살펴볼 프로그램 {Math.min(msg.programs.length, 3)}개
                             </div>
 
                             <div
@@ -1220,7 +1248,7 @@ function ChatPageInner() {
                                 maxWidth: 520,
                               }}
                             >
-                              {msg.programs.map((program) => (
+                              {msg.programs.slice().sort((a, b) => Number(!!b.sources?.length) - Number(!!a.sources?.length)).slice(0, 3).map((program) => (
                                 <ProgramCard
                                   key={program.id}
                                   program={program}
@@ -1228,6 +1256,7 @@ function ChatPageInner() {
                                     program.id
                                   )}
                                   onToggleCompare={toggleCompare}
+                                  prepItems={msg.details?.prep_items}
                                 />
                               ))}
                             </div>
@@ -1376,7 +1405,7 @@ function ChatPageInner() {
                       </span>
 
                       {" "}
-                      <a href="/compare">비교 화면 열기</a>
+
                     </div>
 
                     <button
@@ -1433,26 +1462,7 @@ function ChatPageInner() {
                       </thead>
 
                       <tbody>
-                        {[
-                          {
-                            label: "국가",
-                            render: (program: Program) =>
-                              program.country ?? "여러 국가",
-                          },
-                          {
-                            label: "유형",
-                            render: (program: Program) =>
-                              program.type ?? "-",
-                          },
-                          {
-                            label: "설명",
-                            render: (program: Program) =>
-                              program.desc ||
-                              program.description ||
-                              program.condition_summary ||
-                              "-",
-                          },
-                        ].map((row, rowIndex) => (
+                        {comparisonRows.map((row, rowIndex) => (
                           <tr
                             key={rowIndex}
                             style={{
@@ -1482,7 +1492,7 @@ function ChatPageInner() {
                                   lineHeight: 1.5,
                                 }}
                               >
-                                {row.render(program)}
+                                {row.value(program)}
                               </td>
                             ))}
                           </tr>

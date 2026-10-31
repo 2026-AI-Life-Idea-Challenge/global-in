@@ -9,7 +9,8 @@ def state():
 
 
 def test_student_alias_and_linked_closed_support_are_preserved():
-    result=run(state())
+    data=state();data['information_scope']='both'
+    result=run(data)
     assert [p['program_id'] for p in result['candidate_programs']]==['CA:study']
     assert result['candidate_support_programs'][0]['availability']=='CLOSED'
     assert result['next_node']=='eligibility_review'

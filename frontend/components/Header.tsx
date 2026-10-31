@@ -32,7 +32,7 @@ export default function Header({ rightLabel, showNav = false }: HeaderProps) {
         ) : null}
       </div>
       <nav className="mobile-navigation" aria-label="모바일 메뉴">
-        <Link href="/chat">상담</Link><Link href="/programs">프로그램</Link><Link href="/compare">비교</Link><Link href="/preparation">플랜</Link><Link href="/profile">프로필</Link>
+        <Link href="/chat">상담</Link><Link href="/programs">프로그램</Link><Link href="/preparation">플랜</Link><Link href="/profile">프로필</Link>
       </nav>
     </div>
   );

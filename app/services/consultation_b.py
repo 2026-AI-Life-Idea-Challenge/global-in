@@ -38,6 +38,8 @@ def resolve_candidates(state):
                 and (not program_ids or any(link['program_id'] in program_ids for link in s.get('program_links', []))))]
     if state.get('information_scope') == 'support' and not requested:
         programs = []
+    if state.get('information_scope', 'program') == 'program':
+        supports = []
     return programs, supports
 
 
@@ -52,19 +54,25 @@ def answer(state):
     supports = state.get('candidate_support_programs', [])
     scope = state.get('information_scope', 'program')
     results = []
+    options = dict(mode='production', layout='overview' if state.get('overview') else 'default')
+    category = profile.get('target_visa_type')
+    category = 'study' if category == 'student' else category
+    scoped_ids = {p['program_id'] for p in state.get('catalog_programs', [])
+                  if p['country'] == profile.get('target_country') and p.get('category') == category}
+    scoped_overview = state.get('overview') and scoped_ids and {p['program_id'] for p in programs} == scoped_ids
     if scope != 'support' and programs:
-        if state.get('requested_program_ids') or len(programs) == 1:
+        if (state.get('requested_program_ids') and not scoped_overview) or len(programs) == 1:
             for program in programs:
-                results.append(answer_program_question(program['program_id'], question, profile=profile))
+                results.append(answer_program_question(program['program_id'], question, profile=profile, **options))
         else:
             category = profile.get('target_visa_type')
             results.append(answer_programs_question(question, country=profile.get('target_country'),
-                           category='study' if category == 'student' else category, profile=profile))
+                           category='study' if category == 'student' else category, profile=profile, **options))
     selected_supports = set(state.get('requested_support_ids', []))
     if scope in ('support', 'both'):
         for support in supports:
             if support['support_program_id'] in selected_supports or len(supports) == 1:
-                results.append(answer_support_question(support['support_program_id'], question, profile=profile))
+                results.append(answer_support_question(support['support_program_id'], question, profile=profile, mode='production'))
     return results
 
 

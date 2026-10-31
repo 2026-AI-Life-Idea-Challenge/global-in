@@ -20,7 +20,7 @@ from app.agent.graph import get_compiled_graph
 from app.agent.state import initial_state
 from copy import deepcopy
 from app.services.consultation_sessions import MemorySessions, SQLiteSessions, MissingSession, BusySession
-from app.models.consult import ChatRequest, ChatResponse, ProfileUpdateRequest
+from app.models.consult import ChatRequest, ChatResponse, ProfileUpdateRequest, PreparationRequest
 from app.models.user_profile import UserProfile
 
 
@@ -123,8 +123,10 @@ def create_router(graph=None, store=None, require_owner=None) -> APIRouter:
             category = 'student' if category == 'study' else category
             if category in ('working_holiday', 'student', 'employment'):
                 programs.append(dict(program_id=item['program_id'], name=item['name'], country=item['country'], visa_type=category,
-                                     summary=item.get('description') or item.get('recommendation_reason') or '공식 조건 확인이 필요한 후보입니다.',
+                                     summary=next((claim['text'] for result in state.get('rag_results', []) for claim in result.get('claims', []) if (claim.get('program_id') or result.get('program_id')) == item['program_id']), None) or item.get('description') or item.get('recommendation_reason') or '해당 경로의 신청 조건과 준비 방법을 상담에서 확인해 보세요.',
                                      citations=citations([e for e in evidence if e.get('program_id') == item['program_id']])))
+        if state.get('overview'):
+            programs = [program for program in programs if program['citations']]
         eligibility = []
         for item in state.get('eligibility_results', []):
             if item.get('target_type') == 'program':
@@ -165,6 +167,18 @@ def create_router(graph=None, store=None, require_owner=None) -> APIRouter:
             raise HTTPException(status_code=503,detail='session store temporarily unavailable') from None
         return {"session_id": session_id}
 
+    @router.post('/preparation')
+    def preparation(body: PreparationRequest):
+        from app.services.personal_preparation import build_preparation
+        try:
+            result = build_preparation(body.target_id, body.profile.model_dump(mode='json', exclude_unset=True))
+        except Exception:
+            logging.getLogger(__name__).exception('Preparation generation failed')
+            raise HTTPException(status_code=503, detail='preparation temporarily unavailable') from None
+        if result is None:
+            raise HTTPException(status_code=404, detail='catalog item not found')
+        return result
+
     @router.get('/catalog')
     def catalog():
         from app.services.consultation_catalog import load_catalog
@@ -177,6 +191,16 @@ def create_router(graph=None, store=None, require_owner=None) -> APIRouter:
     @router.post("/sessions/{session_id}/messages")
     def send_message(session_id: str, body: ChatRequest, x_consult_owner: str | None = Header(default=None)) -> ChatResponse:
         return run(session_id, body.message, body.profile.model_dump(mode='json', exclude_unset=True) if body.profile else {}, owner_id(x_consult_owner))
+
+    @router.get('/catalog/{target_id}')
+    def catalog_detail(target_id: str):
+        from app.services.consultation_catalog import load_catalog_detail
+        try: result=load_catalog_detail(target_id)
+        except Exception:
+            logging.getLogger(__name__).exception('Consultation detail failed')
+            raise HTTPException(status_code=503,detail='catalog temporarily unavailable') from None
+        if result is None:raise HTTPException(status_code=404,detail='catalog item not found')
+        return result
 
     @router.patch("/sessions/{session_id}/profile")
     def update_profile(session_id: str, body: ProfileUpdateRequest, x_consult_owner: str | None = Header(default=None)) -> ChatResponse:

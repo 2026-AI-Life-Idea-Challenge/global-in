@@ -232,6 +232,8 @@ export default function ProfilePage() {
       date_of_birth: age,
       nationalities,
       residence_country: residenceCode,
+      education: education || null, education_status: eduStatus || null, major: major || null,
+      career: career || null, career_duration: careerDuration || null, languages: languages || null, certifications: certs || null,
       target_country:
         countries.length === 1 ? COUNTRY_CODES[countries[0]] : null,
       target_visa_type:

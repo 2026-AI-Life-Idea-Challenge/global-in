@@ -52,6 +52,7 @@ export async function POST(req: NextRequest) {
     if (!msgRes.ok) {
       if (msgRes.status === 404) return NextResponse.json({ error: "상담이 만료됐습니다. 새 채팅을 시작해 주세요." }, { status: 404 });
       if (msgRes.status === 409 || msgRes.status === 503) return NextResponse.json({ error: '상담을 처리 중이거나 서버가 혼잡합니다. 잠시 후 다시 시도해 주세요.' }, { status: msgRes.status, headers: { 'Retry-After': '2' } });
+      if (msgRes.status === 422) return NextResponse.json({ error: '저장된 프로필 또는 메시지의 입력 형식이 맞지 않습니다. 프로필에서 입력 내용을 확인한 뒤 다시 저장해 주세요.' }, { status: 422 });
       throw new Error(`메시지 전송 실패: ${msgRes.status}`);
     }
 
